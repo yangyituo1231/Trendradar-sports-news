@@ -3,19 +3,28 @@ from pathlib import Path
 template = Path("daily-report.html").read_text(encoding="utf-8")
 
 data = {
-    "top1_title": "On昂跑亚太市场增长延续",
-    "top1_desc": "高端跑步与女性消费需求仍是运动品牌增长的重要观察点。",
-    "top2_title": "儿童轻户外与防晒需求升温",
-    "top2_desc": "夏季临近，防晒、凉感、速干、户外休闲品类值得重点关注。",
-    "trend1_title": "内容电商继续放大运动户外种草",
-    "trend1_desc": "抖音、小红书对轻运动、骑行、跑步装备的消费教育作用增强。",
-    "trend2_title": "奥莱与商场周末客流仍需关注",
-    "trend2_desc": "亲子客流、区域天气和节假日活动会直接影响门店转化。"
+    "title": "361°儿童行业热点日报",
+    "subtitle": "2026年5月15日｜运动童装行业观察",
+
+    "top1_title": "On品牌一季度增长超预期",
+    "top1_desc": "亚太市场增长明显，女性跑步需求持续提升。",
+
+    "top2_title": "儿童户外消费持续升温",
+    "top2_desc": "防晒、轻户外、骑行类商品热度明显提升。",
+
+    "trend1_title": "电商平台增长明显",
+    "trend1_desc": "内容电商带动运动童装成交持续增长。",
+
+    "trend2_title": "线下客流逐步恢复",
+    "trend2_desc": "五一后购物中心家庭消费逐步恢复。"
 }
 
 for key, value in data.items():
     template = template.replace("{{" + key + "}}", value)
 
-Path("daily-report-filled.html").write_text(template, encoding="utf-8")
+Path("daily-report-filled.html").write_text(
+    template,
+    encoding="utf-8"
+)
 
 print("daily-report-filled.html generated.")
