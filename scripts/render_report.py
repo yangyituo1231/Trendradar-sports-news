@@ -1,7 +1,7 @@
 from playwright.sync_api import sync_playwright
 import os
 
-HTML_FILE = "daily-report.html"
+HTML_FILE = "daily-report-filled.html"
 OUTPUT_FILE = "daily-report.png"
 
 def generate_image():
