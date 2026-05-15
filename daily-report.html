@@ -6,271 +6,401 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
+
 body{
-  background:#f3f6fb;
+  background:#eef3fb;
   font-family:"WenQuanYi Zen Hei","Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif;
-  color:#10224a;
-  padding:16px;
+  color:#12264f;
+  padding:14px;
 }
+
 .page{
   width:1180px;
   margin:0 auto;
-  background:#fff;
-  border:1px solid #d8e2f2;
-  border-radius:10px;
+  background:linear-gradient(180deg,#ffffff 0%,#fbfdff 100%);
+  border:1px solid #cfdcf0;
+  border-radius:12px;
   padding:16px;
+  box-shadow:0 8px 24px rgba(21,52,105,.08);
 }
+
 .header{
   display:grid;
-  grid-template-columns:1fr 560px;
+  grid-template-columns:1fr 555px;
   align-items:center;
-  border-bottom:2px solid #dbe5f6;
-  padding-bottom:12px;
+  padding:4px 4px 13px 4px;
   margin-bottom:12px;
+  border-bottom:2px solid #dde7f6;
 }
+
 .main-title{
-  font-size:44px;
-  font-weight:900;
-  color:#082b6f;
-  letter-spacing:-1px;
+  font-size:45px;
+  line-height:1;
+  font-weight:950;
+  color:#072b70;
+  letter-spacing:-1.5px;
 }
+
 .subtitle{
-  font-size:16px;
-  margin-top:6px;
-  color:#23406f;
+  font-size:15px;
+  margin-top:9px;
+  color:#314c7d;
   font-weight:700;
+  letter-spacing:.5px;
 }
+
 .stats{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
-  border-left:1px solid #d8e1f2;
+  grid-template-columns:1.15fr .95fr .95fr .95fr;
+  border-left:1px solid #d6e1f2;
 }
+
 .stat{
+  min-height:72px;
   text-align:center;
-  border-right:1px solid #d8e1f2;
-  padding:3px 8px;
+  border-right:1px solid #d6e1f2;
+  padding:5px 8px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
+
 .stat-title{
-  font-size:14px;
-  font-weight:800;
-  color:#233b6b;
+  font-size:13px;
+  font-weight:850;
+  color:#183b78;
 }
+
 .stat-num{
-  font-size:30px;
-  font-weight:900;
-  color:#0b55c8;
-  margin-top:6px;
+  font-size:31px;
   line-height:1;
+  font-weight:950;
+  color:#075ed1;
+  margin-top:6px;
 }
+
 .stat-small{
-  font-size:12px;
-  color:#41577d;
+  font-size:11.5px;
+  color:#53698d;
   margin-top:3px;
 }
+
 .grid-top{
   display:grid;
-  grid-template-columns:1fr 1.04fr;
+  grid-template-columns:1fr 1.05fr;
   gap:12px;
   margin-bottom:12px;
 }
+
 .section{
-  border:1px solid #d9e3f5;
-  border-radius:8px;
+  border:1px solid #d8e3f3;
+  border-radius:9px;
   overflow:hidden;
   background:#fff;
+  box-shadow:0 3px 10px rgba(26,66,125,.035);
 }
+
 .section-title{
-  background:linear-gradient(90deg,#042b78,#0745ad);
-  color:#fff;
-  font-size:19px;
-  font-weight:900;
-  padding:8px 14px;
+  background:linear-gradient(90deg,#062c78 0%,#0747ad 70%,#0b60d0 100%);
+  color:white;
+  font-size:18px;
+  font-weight:950;
+  padding:8px 13px;
   letter-spacing:.3px;
 }
-.section-body{padding:11px 13px}
-.news-list{display:flex;flex-direction:column;gap:8px}
+
+.section-body{padding:10px 12px}
+
+.news-list{display:flex;flex-direction:column;gap:7px}
+
 .news-item{
   display:grid;
-  grid-template-columns:32px 52px 1fr;
+  grid-template-columns:31px 50px 1fr;
   gap:10px;
   align-items:center;
-  padding-bottom:8px;
+  padding-bottom:7px;
   border-bottom:1px solid #e7edf7;
 }
+
 .news-item:last-child{border-bottom:none;padding-bottom:0}
+
 .rank{
-  width:29px;height:29px;border-radius:6px;color:#fff;font-weight:900;font-size:16px;
+  width:28px;height:28px;border-radius:7px;color:#fff;font-weight:950;font-size:15px;
   display:flex;align-items:center;justify-content:center;
+  box-shadow:0 2px 6px rgba(0,0,0,.12);
 }
-.r1{background:#0b65e5}.r2{background:#0a9b62}.r3{background:#ff8b00}.r4{background:#6b43d8}.r5{background:#0b80d8}
+
+.r1{background:#0965e8}.r2{background:#09a064}.r3{background:#ff8a00}.r4{background:#7044da}.r5{background:#0d88d8}
+
 .iconbox{
-  width:52px;height:52px;border-radius:12px;background:#eef4ff;
-  display:flex;align-items:center;justify-content:center;font-size:25px;
+  width:50px;height:50px;border-radius:13px;
+  background:linear-gradient(145deg,#eef5ff,#f9fbff);
+  display:flex;align-items:center;justify-content:center;font-size:24px;
+  border:1px solid #e6eefb;
 }
+
 .news-title{
-  font-size:16px;
-  font-weight:900;
-  color:#10224a;
-  line-height:1.28;
+  font-size:15.6px;
+  font-weight:950;
+  color:#10244e;
+  line-height:1.25;
+  letter-spacing:-.1px;
 }
+
 .news-meta{
-  font-size:11px;
-  color:#667899;
-  margin:3px 0;
+  font-size:10.8px;
+  color:#667b9c;
+  margin:2px 0 3px 0;
 }
+
 .news-desc{
-  font-size:12.5px;
-  color:#2c3e63;
-  line-height:1.38;
+  font-size:12.2px;
+  color:#2d4269;
+  line-height:1.36;
 }
+
 .tag{
   display:inline-block;
   float:right;
-  background:#edf4ff;
+  background:#edf5ff;
   color:#0b55c8;
   padding:2px 7px;
   border-radius:12px;
-  font-size:11px;
-  font-weight:800;
+  font-size:10.8px;
+  font-weight:850;
   margin-left:6px;
 }
-.weather-cards{
+
+/* 天气地图 */
+.weather-layout{
   display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:8px;
+  grid-template-columns:1.05fr .95fr;
+  gap:10px;
 }
+
+.weather-map{
+  position:relative;
+  height:238px;
+  border-radius:10px;
+  background:
+    radial-gradient(circle at 54% 50%,rgba(255,255,255,.95) 0%,rgba(255,255,255,.45) 42%,rgba(237,245,255,.95) 100%),
+    linear-gradient(135deg,#f5f9ff,#eef5ff);
+  border:1px solid #d9e5f5;
+  overflow:hidden;
+}
+
+.map-shape{
+  position:absolute;
+  left:84px;
+  top:22px;
+  width:292px;
+  height:188px;
+  background:linear-gradient(135deg,#dfead9 0%,#f4ead0 33%,#dbeafa 62%,#f4d5d8 100%);
+  clip-path:polygon(22% 12%,44% 6%,66% 14%,76% 28%,88% 36%,78% 50%,91% 66%,70% 75%,56% 90%,39% 82%,26% 88%,18% 70%,4% 62%,13% 47%,7% 31%);
+  opacity:.95;
+  border:1px solid rgba(30,70,130,.15);
+}
+
+.map-label{
+  position:absolute;
+  background:rgba(255,255,255,.88);
+  border:1px solid #d8e3f5;
+  border-radius:9px;
+  padding:7px 8px;
+  font-size:11.6px;
+  line-height:1.35;
+  color:#243c67;
+  box-shadow:0 3px 10px rgba(26,66,125,.06);
+}
+
+.l-north{left:18px;top:22px;width:158px}
+.l-east{right:10px;top:90px;width:156px}
+.l-south{left:42px;bottom:15px;width:190px}
+.l-west{left:15px;top:105px;width:142px}
+
+.dot{
+  position:absolute;width:8px;height:8px;border-radius:50%;
+  box-shadow:0 0 0 4px rgba(255,255,255,.7);
+}
+.d1{left:221px;top:72px;background:#ef4444}
+.d2{left:271px;top:126px;background:#2563eb}
+.d3{left:175px;top:152px;background:#16a34a}
+.d4{left:130px;top:88px;background:#f97316}
+
+.weather-side{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:7px;
+}
+
 .weather-card{
   border:1px solid #dce5f5;
   border-radius:8px;
-  padding:8px 9px;
-  min-height:72px;
-  background:#f8fbff;
+  padding:7px 8px;
+  min-height:51px;
+  background:linear-gradient(180deg,#fbfdff,#f5f9ff);
 }
+
 .weather-region{
-  font-size:14px;
-  font-weight:900;
+  font-size:13px;
+  font-weight:950;
   color:#0b3a8d;
-  margin-bottom:4px;
+  margin-bottom:2px;
 }
+
 .weather-text{
-  font-size:12.5px;
-  line-height:1.42;
+  font-size:11.4px;
+  line-height:1.34;
   color:#2f4269;
 }
+
 .weather-table{
   width:100%;
   border-collapse:collapse;
   margin-top:8px;
-  font-size:12.5px;
+  font-size:11.8px;
 }
+
 .weather-table th{
   background:#eef4ff;
   color:#163b7c;
-  padding:6px;
+  padding:5px;
   border:1px solid #d8e3f5;
 }
+
 .weather-table td{
   text-align:center;
-  padding:6px;
+  padding:5px;
   border:1px solid #d8e3f5;
   color:#263b62;
 }
+
 .big-table{
   width:100%;
   border-collapse:collapse;
-  font-size:13px;
+  font-size:12.6px;
 }
+
 .big-table th{
   background:#f0f5ff;
   color:#0a377f;
-  padding:8px;
+  padding:7px;
   border:1px solid #d9e3f5;
-  font-weight:900;
+  font-weight:950;
 }
+
 .big-table td{
-  padding:8px;
+  padding:7px;
   border:1px solid #d9e3f5;
   text-align:center;
-  line-height:1.38;
+  line-height:1.34;
   color:#21375f;
 }
+
 .region-name{
-  font-weight:900;
+  font-weight:950;
   color:#0a377f;
 }
+
 .stars{
-  font-size:21px;
+  font-size:20px;
   letter-spacing:1px;
-  color:#12315f;
-  font-weight:900;
+  color:#143568;
+  font-weight:950;
 }
+
 .grid-bottom{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:12px;
   margin-top:12px;
 }
+
 .trend-item{
   display:grid;
-  grid-template-columns:42px 1fr 86px;
-  gap:10px;
+  grid-template-columns:40px 1fr 82px;
+  gap:9px;
   align-items:center;
-  padding:8px 0;
+  padding:7px 0;
   border-bottom:1px solid #e7edf7;
 }
+
 .trend-item:last-child{border-bottom:none}
-.trend-icon{font-size:28px;color:#0b65e5}
+
+.trend-icon{
+  width:36px;height:36px;border-radius:10px;
+  background:#f0f6ff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:23px;
+}
+
 .trend-title{
-  font-size:16px;
-  font-weight:900;
+  font-size:15px;
+  font-weight:950;
   color:#0a377f;
 }
+
 .trend-desc{
-  font-size:12.5px;
+  font-size:12px;
   color:#33476d;
-  line-height:1.38;
+  line-height:1.34;
   margin-top:2px;
 }
+
 .trend-tag{
-  font-size:11px;
+  font-size:10.8px;
   background:#eef7ef;
   color:#16844a;
   border-radius:12px;
-  padding:4px 7px;
-  font-weight:800;
+  padding:4px 6px;
+  font-weight:850;
   text-align:center;
 }
+
+/* 词云优化：错落、分层、不重叠 */
 .word-cloud{
   height:218px;
   position:relative;
-  background:radial-gradient(circle at center,#fff 0%,#f7fbff 70%);
-  border-radius:8px;
+  background:
+    radial-gradient(circle at 50% 48%,#ffffff 0%,#fbfdff 48%,#f2f7ff 100%);
+  border-radius:9px;
   overflow:hidden;
+  border:1px solid #edf2fb;
 }
-.word{position:absolute;font-weight:900;white-space:nowrap}
-.w1{font-size:48px;color:#082b6f;left:242px;top:64px}
-.w2{font-size:39px;color:#0b65e5;left:218px;top:118px}
-.w3{font-size:31px;color:#159957;left:248px;top:166px}
-.w4{font-size:26px;color:#dc2626;left:470px;top:101px}
-.w5{font-size:23px;color:#f97316;left:42px;top:82px}
-.w6{font-size:21px;color:#16a34a;left:78px;top:139px}
-.w7{font-size:20px;color:#6d28d9;left:135px;top:32px}
-.w8{font-size:19px;color:#0b55c8;left:482px;top:156px}
-.w9{font-size:17px;color:#dc2626;left:82px;top:190px}
-.w10{font-size:17px;color:#0f766e;left:390px;top:30px}
-.w11{font-size:16px;color:#2563eb;left:524px;top:53px}
-.w12{font-size:15px;color:#9333ea;left:370px;top:195px}
+
+.word{
+  position:absolute;
+  font-weight:950;
+  white-space:nowrap;
+  line-height:1;
+  text-shadow:0 1px 0 rgba(255,255,255,.8);
+}
+
+.w1{font-size:50px;color:#082b6f;left:230px;top:72px}
+.w2{font-size:38px;color:#0b65e5;left:218px;top:122px}
+.w3{font-size:29px;color:#159957;left:260px;top:168px}
+.w4{font-size:25px;color:#dc2626;left:458px;top:104px}
+.w5{font-size:22px;color:#f97316;left:42px;top:87px}
+.w6{font-size:20px;color:#16a34a;left:88px;top:142px}
+.w7{font-size:19px;color:#6d28d9;left:130px;top:34px}
+.w8{font-size:18px;color:#0b55c8;left:488px;top:158px}
+.w9{font-size:16px;color:#dc2626;left:76px;top:188px}
+.w10{font-size:16px;color:#0f766e;left:385px;top:31px}
+.w11{font-size:15px;color:#2563eb;left:526px;top:56px}
+.w12{font-size:14px;color:#9333ea;left:390px;top:196px}
+
 .footer{
   margin-top:10px;
-  font-size:11.5px;
+  font-size:11px;
   color:#5c6f91;
   display:flex;
   justify-content:space-between;
 }
+
 .note{
-  font-size:11.5px;
+  font-size:11px;
   color:#667899;
-  margin-top:7px;
+  margin-top:6px;
 }
 </style>
 </head>
@@ -292,17 +422,16 @@ body{
   </div>
 
   <div class="grid-top">
+
     <div class="section">
       <div class="section-title">一、重点资讯精选（TOP 5）</div>
       <div class="section-body">
         <div class="news-list">
-
           <div class="news-item"><div class="rank r1">1</div><div class="iconbox">🏃</div><div><div class="news-title">{{top1_title}} <span class="tag">{{top1_tag}}</span></div><div class="news-meta">{{top1_time}} ｜ {{top1_source}}</div><div class="news-desc">{{top1_desc}}</div></div></div>
           <div class="news-item"><div class="rank r2">2</div><div class="iconbox">👟</div><div><div class="news-title">{{top2_title}} <span class="tag">{{top2_tag}}</span></div><div class="news-meta">{{top2_time}} ｜ {{top2_source}}</div><div class="news-desc">{{top2_desc}}</div></div></div>
           <div class="news-item"><div class="rank r3">3</div><div class="iconbox">🧒</div><div><div class="news-title">{{top3_title}} <span class="tag">{{top3_tag}}</span></div><div class="news-meta">{{top3_time}} ｜ {{top3_source}}</div><div class="news-desc">{{top3_desc}}</div></div></div>
           <div class="news-item"><div class="rank r4">4</div><div class="iconbox">🛍️</div><div><div class="news-title">{{top4_title}} <span class="tag">{{top4_tag}}</span></div><div class="news-meta">{{top4_time}} ｜ {{top4_source}}</div><div class="news-desc">{{top4_desc}}</div></div></div>
           <div class="news-item"><div class="rank r5">5</div><div class="iconbox">🌦️</div><div><div class="news-title">{{top5_title}} <span class="tag">{{top5_tag}}</span></div><div class="news-meta">{{top5_time}} ｜ {{top5_source}}</div><div class="news-desc">{{top5_desc}}</div></div></div>
-
         </div>
         <div class="note">注：以上资讯来自公开媒体及平台，仅供经营观察参考。</div>
       </div>
@@ -311,11 +440,23 @@ body{
     <div class="section">
       <div class="section-title">二、全国天气预报概览（{{weather_range}}）</div>
       <div class="section-body">
-        <div class="weather-cards">
-          <div class="weather-card"><div class="weather-region">华北/东北</div><div class="weather-text">{{weather_north}}</div></div>
-          <div class="weather-card"><div class="weather-region">华东/华中</div><div class="weather-text">{{weather_east}}</div></div>
-          <div class="weather-card"><div class="weather-region">华南/西南</div><div class="weather-text">{{weather_southwest}}</div></div>
-          <div class="weather-card"><div class="weather-region">西北</div><div class="weather-text">{{weather_northwest}}</div></div>
+
+        <div class="weather-layout">
+          <div class="weather-map">
+            <div class="map-shape"></div>
+            <div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="dot d4"></div>
+            <div class="map-label l-north"><b>华北：</b>{{weather_north}}</div>
+            <div class="map-label l-east"><b>东部沿海：</b>{{weather_east}}</div>
+            <div class="map-label l-south"><b>华南/西南：</b>{{weather_southwest}}</div>
+            <div class="map-label l-west"><b>西北：</b>{{weather_northwest}}</div>
+          </div>
+
+          <div class="weather-side">
+            <div class="weather-card"><div class="weather-region">暴雨/强对流</div><div class="weather-text">关注华南、华东局部降雨对客流节奏影响。</div></div>
+            <div class="weather-card"><div class="weather-region">高温/升温</div><div class="weather-text">防晒、凉感、短袖短裤启动节奏值得关注。</div></div>
+            <div class="weather-card"><div class="weather-region">户外出行</div><div class="weather-text">北方与西北户外活动恢复，轻户外品类可强化。</div></div>
+            <div class="weather-card"><div class="weather-region">门店提示</div><div class="weather-text">雨天加强室内体验承接，晴天强化出行场景陈列。</div></div>
+          </div>
         </div>
 
         <table class="weather-table">
@@ -330,6 +471,7 @@ body{
         <div class="note">数据来源：公开气象信息整理，重点用于客流及商品节奏判断。</div>
       </div>
     </div>
+
   </div>
 
   <div class="section">
