@@ -1,157 +1,659 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-      background: #f4f6fb;
-      font-family: "WenQuanYi Zen Hei", "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif;
-      padding: 40px;
-      color: #1f2937;
-    }
+body {
+  background: #f3f6fb;
+  font-family: "WenQuanYi Zen Hei", "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif;
+  color: #10224a;
+  padding: 18px;
+}
 
-    .container {
-      width: 1200px;
-      margin: 0 auto;
-    }
+.page {
+  width: 1180px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #d6e0f2;
+  border-radius: 10px;
+  padding: 18px;
+}
 
-    .header {
-      background: #16357a;
-      color: white;
-      border-radius: 18px;
-      padding: 30px 40px;
-      margin-bottom: 24px;
-    }
+.header {
+  display: grid;
+  grid-template-columns: 1fr 560px;
+  align-items: center;
+  border-bottom: 2px solid #d9e3f5;
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+}
 
-    .title {
-      font-size: 42px;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
+.main-title {
+  font-size: 46px;
+  font-weight: 900;
+  color: #082b6f;
+  letter-spacing: -1px;
+}
 
-    .subtitle {
-      font-size: 18px;
-      opacity: 0.85;
-    }
+.subtitle {
+  font-size: 17px;
+  margin-top: 8px;
+  color: #23406f;
+  font-weight: 600;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-    }
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-left: 1px solid #d8e1f2;
+}
 
-    .card {
-      background: white;
-      border-radius: 18px;
-      padding: 26px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
+.stat {
+  text-align: center;
+  border-right: 1px solid #d8e1f2;
+  padding: 4px 10px;
+}
 
-    .card-title {
-      font-size: 30px;
-      font-weight: 700;
-      color: #16357a;
-      margin-bottom: 20px;
-    }
+.stat-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #233b6b;
+}
 
-    .news-item {
-      padding: 18px 0;
-      border-bottom: 1px solid #e5e7eb;
-    }
+.stat-num {
+  font-size: 31px;
+  font-weight: 900;
+  color: #0b55c8;
+  margin-top: 8px;
+}
 
-    .news-item:last-child {
-      border-bottom: none;
-    }
+.stat-small {
+  font-size: 13px;
+  color: #41577d;
+  margin-top: 2px;
+}
 
-    .tag {
-      display: inline-block;
-      background: #eef2ff;
-      color: #4f46e5;
-      font-size: 14px;
-      padding: 6px 12px;
-      border-radius: 999px;
-      margin-bottom: 10px;
-      font-weight: 600;
-    }
+.grid-top {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
 
-    .news-title {
-      font-size: 22px;
-      font-weight: 700;
-      margin-bottom: 8px;
-      line-height: 1.4;
-    }
+.section {
+  border: 1px solid #d9e3f5;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
 
-    .news-desc {
-      font-size: 17px;
-      color: #6b7280;
-      line-height: 1.7;
-    }
+.section-title {
+  background: linear-gradient(90deg, #042b78, #0745ad);
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 8px 14px;
+  letter-spacing: 0.5px;
+}
 
-    .footer {
-      text-align: center;
-      margin-top: 24px;
-      color: #9ca3af;
-      font-size: 15px;
-    }
-  </style>
+.section-body {
+  padding: 12px 14px;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 34px 54px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e7edf7;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.rank {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 900;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.r1 { background: #0b65e5; }
+.r2 { background: #0a9b62; }
+.r3 { background: #ff8b00; }
+.r4 { background: #6b43d8; }
+.r5 { background: #0b80d8; }
+
+.iconbox {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  background: #eef4ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.news-title {
+  font-size: 17px;
+  font-weight: 900;
+  color: #10224a;
+  line-height: 1.32;
+}
+
+.news-meta {
+  font-size: 12px;
+  color: #667899;
+  margin: 4px 0;
+}
+
+.news-desc {
+  font-size: 13px;
+  color: #2c3e63;
+  line-height: 1.45;
+}
+
+.tag {
+  display: inline-block;
+  float: right;
+  background: #edf4ff;
+  color: #0b55c8;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.weather-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.weather-card {
+  border: 1px solid #dce5f5;
+  border-radius: 8px;
+  padding: 10px;
+  min-height: 84px;
+  background: #f8fbff;
+}
+
+.weather-region {
+  font-size: 15px;
+  font-weight: 900;
+  color: #0b3a8d;
+  margin-bottom: 6px;
+}
+
+.weather-text {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #2f4269;
+}
+
+.weather-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.weather-table th {
+  background: #eef4ff;
+  color: #163b7c;
+  padding: 7px;
+  border: 1px solid #d8e3f5;
+}
+
+.weather-table td {
+  text-align: center;
+  padding: 7px;
+  border: 1px solid #d8e3f5;
+  color: #263b62;
+}
+
+.big-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.big-table th {
+  background: #f0f5ff;
+  color: #0a377f;
+  padding: 9px;
+  border: 1px solid #d9e3f5;
+  font-weight: 900;
+}
+
+.big-table td {
+  padding: 9px;
+  border: 1px solid #d9e3f5;
+  text-align: center;
+  line-height: 1.45;
+  color: #21375f;
+}
+
+.region-name {
+  font-weight: 900;
+  color: #0a377f;
+}
+
+.stars {
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #e22b2b;
+  font-weight: 900;
+}
+
+.grid-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.trend-item {
+  display: grid;
+  grid-template-columns: 46px 1fr 90px;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e7edf7;
+}
+
+.trend-item:last-child {
+  border-bottom: none;
+}
+
+.trend-icon {
+  font-size: 30px;
+  color: #0b65e5;
+}
+
+.trend-title {
+  font-size: 17px;
+  font-weight: 900;
+  color: #0a377f;
+}
+
+.trend-desc {
+  font-size: 13px;
+  color: #33476d;
+  line-height: 1.45;
+  margin-top: 3px;
+}
+
+.trend-tag {
+  font-size: 12px;
+  background: #eef7ef;
+  color: #16844a;
+  border-radius: 12px;
+  padding: 4px 8px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.word-cloud {
+  height: 238px;
+  position: relative;
+  background: radial-gradient(circle at center, #ffffff 0%, #f7fbff 68%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.word {
+  position: absolute;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.w1 { font-size: 52px; color: #082b6f; left: 240px; top: 72px; }
+.w2 { font-size: 43px; color: #0b65e5; left: 210px; top: 130px; }
+.w3 { font-size: 34px; color: #159957; left: 245px; top: 184px; }
+.w4 { font-size: 28px; color: #dc2626; left: 470px; top: 108px; }
+.w5 { font-size: 25px; color: #f97316; left: 40px; top: 92px; }
+.w6 { font-size: 23px; color: #16a34a; left: 75px; top: 150px; }
+.w7 { font-size: 22px; color: #6d28d9; left: 135px; top: 36px; }
+.w8 { font-size: 21px; color: #0b55c8; left: 480px; top: 170px; }
+.w9 { font-size: 19px; color: #dc2626; left: 80px; top: 205px; }
+.w10 { font-size: 18px; color: #0f766e; left: 390px; top: 36px; }
+.w11 { font-size: 17px; color: #2563eb; left: 530px; top: 58px; }
+.w12 { font-size: 16px; color: #9333ea; left: 365px; top: 212px; }
+
+.footer {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #5c6f91;
+  display: flex;
+  justify-content: space-between;
+}
+
+.note {
+  font-size: 12px;
+  color: #667899;
+  margin-top: 8px;
+}
+</style>
 </head>
 
 <body>
-  <div class="container">
+<div class="page">
 
-    <div class="header">
-      <div class="title">{{title}}</div>
+  <div class="header">
+    <div>
+      <div class="main-title">{{title}}</div>
       <div class="subtitle">{{subtitle}}</div>
     </div>
 
-    <div class="grid">
-
-      <div class="card">
-        <div class="card-title">重点资讯 TOP5</div>
-
-        <div class="news-item">
-          <div class="tag">运动品牌</div>
-          <div class="news-title">{{top1_title}}</div>
-          <div class="news-desc">{{top1_desc}}</div>
-        </div>
-
-        <div class="news-item">
-          <div class="tag">儿童消费</div>
-          <div class="news-title">{{top2_title}}</div>
-          <div class="news-desc">{{top2_desc}}</div>
-        </div>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-title">{{date}}</div>
+        <div class="stat-small">{{weekday}}</div>
+        <div class="stat-small">更新于 {{update_time}}</div>
       </div>
-
-      <div class="card">
-        <div class="card-title">经营趋势观察</div>
-
-        <div class="news-item">
-          <div class="tag">平台趋势</div>
-          <div class="news-title">{{trend1_title}}</div>
-          <div class="news-desc">{{trend1_desc}}</div>
-        </div>
-
-        <div class="news-item">
-          <div class="tag">线下零售</div>
-          <div class="news-title">{{trend2_title}}</div>
-          <div class="news-desc">{{trend2_desc}}</div>
-        </div>
+      <div class="stat">
+        <div class="stat-title">今日监测</div>
+        <div class="stat-num">{{monitor_count}}</div>
+        <div class="stat-small">条资讯</div>
       </div>
+      <div class="stat">
+        <div class="stat-title">RSS资讯</div>
+        <div class="stat-num">{{rss_count}}</div>
+        <div class="stat-small">条</div>
+      </div>
+      <div class="stat">
+        <div class="stat-title">重点摘要</div>
+        <div class="stat-num">{{focus_count}}</div>
+        <div class="stat-small">条</div>
+      </div>
+    </div>
+  </div>
 
+  <div class="grid-top">
+
+    <div class="section">
+      <div class="section-title">一、重点资讯精选（TOP 5）</div>
+      <div class="section-body">
+        <div class="news-list">
+
+          <div class="news-item">
+            <div class="rank r1">1</div>
+            <div class="iconbox">🏃</div>
+            <div>
+              <div class="news-title">{{top1_title}} <span class="tag">{{top1_tag}}</span></div>
+              <div class="news-meta">{{top1_time}} ｜ {{top1_source}}</div>
+              <div class="news-desc">{{top1_desc}}</div>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="rank r2">2</div>
+            <div class="iconbox">👟</div>
+            <div>
+              <div class="news-title">{{top2_title}} <span class="tag">{{top2_tag}}</span></div>
+              <div class="news-meta">{{top2_time}} ｜ {{top2_source}}</div>
+              <div class="news-desc">{{top2_desc}}</div>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="rank r3">3</div>
+            <div class="iconbox">🧒</div>
+            <div>
+              <div class="news-title">{{top3_title}} <span class="tag">{{top3_tag}}</span></div>
+              <div class="news-meta">{{top3_time}} ｜ {{top3_source}}</div>
+              <div class="news-desc">{{top3_desc}}</div>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="rank r4">4</div>
+            <div class="iconbox">🛍️</div>
+            <div>
+              <div class="news-title">{{top4_title}} <span class="tag">{{top4_tag}}</span></div>
+              <div class="news-meta">{{top4_time}} ｜ {{top4_source}}</div>
+              <div class="news-desc">{{top4_desc}}</div>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="rank r5">5</div>
+            <div class="iconbox">🌦️</div>
+            <div>
+              <div class="news-title">{{top5_title}} <span class="tag">{{top5_tag}}</span></div>
+              <div class="news-meta">{{top5_time}} ｜ {{top5_source}}</div>
+              <div class="news-desc">{{top5_desc}}</div>
+            </div>
+          </div>
+
+        </div>
+        <div class="note">注：以上资讯来自公开媒体及平台，仅供经营观察参考。</div>
+      </div>
     </div>
 
-    <div class="footer">
-      TrendRadar × DeepSeek 自动生成
+    <div class="section">
+      <div class="section-title">二、全国天气预报概览（{{weather_range}}）</div>
+      <div class="section-body">
+
+        <div class="weather-cards">
+          <div class="weather-card">
+            <div class="weather-region">华北/东北</div>
+            <div class="weather-text">{{weather_north}}</div>
+          </div>
+          <div class="weather-card">
+            <div class="weather-region">华东/华中</div>
+            <div class="weather-text">{{weather_east}}</div>
+          </div>
+          <div class="weather-card">
+            <div class="weather-region">华南/西南</div>
+            <div class="weather-text">{{weather_southwest}}</div>
+          </div>
+          <div class="weather-card">
+            <div class="weather-region">西北</div>
+            <div class="weather-text">{{weather_northwest}}</div>
+          </div>
+        </div>
+
+        <table class="weather-table">
+          <tr>
+            <th>区域</th>
+            <th>{{day1}}</th>
+            <th>{{day2}}</th>
+            <th>{{day3}}</th>
+          </tr>
+          <tr>
+            <td>华北/东北</td>
+            <td>{{north_day1}}</td>
+            <td>{{north_day2}}</td>
+            <td>{{north_day3}}</td>
+          </tr>
+          <tr>
+            <td>华中/华东</td>
+            <td>{{east_day1}}</td>
+            <td>{{east_day2}}</td>
+            <td>{{east_day3}}</td>
+          </tr>
+          <tr>
+            <td>华南</td>
+            <td>{{south_day1}}</td>
+            <td>{{south_day2}}</td>
+            <td>{{south_day3}}</td>
+          </tr>
+          <tr>
+            <td>西南</td>
+            <td>{{southwest_day1}}</td>
+            <td>{{southwest_day2}}</td>
+            <td>{{southwest_day3}}</td>
+          </tr>
+          <tr>
+            <td>西北</td>
+            <td>{{northwest_day1}}</td>
+            <td>{{northwest_day2}}</td>
+            <td>{{northwest_day3}}</td>
+          </tr>
+        </table>
+
+        <div class="note">数据来源：公开气象信息整理，重点用于客流及商品节奏判断。</div>
+      </div>
     </div>
 
   </div>
+
+  <div class="section">
+    <div class="section-title">三、区域热点资讯与消费动态（精选）</div>
+    <div class="section-body">
+      <table class="big-table">
+        <tr>
+          <th>区域</th>
+          <th>热点资讯</th>
+          <th>商圈/客流动态</th>
+          <th>消费信号</th>
+          <th>对门店/品牌启示</th>
+          <th>关注等级</th>
+        </tr>
+        <tr>
+          <td class="region-name">华东<br>{{east_city}}</td>
+          <td>{{east_hot}}</td>
+          <td>{{east_flow}}</td>
+          <td>{{east_signal}}</td>
+          <td>{{east_action}}</td>
+          <td class="stars">{{east_star}}</td>
+        </tr>
+        <tr>
+          <td class="region-name">华中<br>{{central_city}}</td>
+          <td>{{central_hot}}</td>
+          <td>{{central_flow}}</td>
+          <td>{{central_signal}}</td>
+          <td>{{central_action}}</td>
+          <td class="stars">{{central_star}}</td>
+        </tr>
+        <tr>
+          <td class="region-name">华南<br>{{south_city}}</td>
+          <td>{{south_hot}}</td>
+          <td>{{south_flow}}</td>
+          <td>{{south_signal}}</td>
+          <td>{{south_action}}</td>
+          <td class="stars">{{south_star}}</td>
+        </tr>
+        <tr>
+          <td class="region-name">西南<br>{{southwest_city}}</td>
+          <td>{{southwest_hot}}</td>
+          <td>{{southwest_flow}}</td>
+          <td>{{southwest_signal}}</td>
+          <td>{{southwest_action}}</td>
+          <td class="stars">{{southwest_star}}</td>
+        </tr>
+        <tr>
+          <td class="region-name">西北<br>{{northwest_city}}</td>
+          <td>{{northwest_hot}}</td>
+          <td>{{northwest_flow}}</td>
+          <td>{{northwest_signal}}</td>
+          <td>{{northwest_action}}</td>
+          <td class="stars">{{northwest_star}}</td>
+        </tr>
+      </table>
+      <div class="note">关注等级说明：★★★重点关注　★★持续跟踪　★一般观察</div>
+    </div>
+  </div>
+
+  <div class="grid-bottom">
+
+    <div class="section">
+      <div class="section-title">五、行业趋势与品牌观察（精选）</div>
+      <div class="section-body">
+
+        <div class="trend-item">
+          <div class="trend-icon">📈</div>
+          <div>
+            <div class="trend-title">{{trend1_title}}</div>
+            <div class="trend-desc">{{trend1_desc}}</div>
+          </div>
+          <div class="trend-tag">{{trend1_tag}}</div>
+        </div>
+
+        <div class="trend-item">
+          <div class="trend-icon">🧒</div>
+          <div>
+            <div class="trend-title">{{trend2_title}}</div>
+            <div class="trend-desc">{{trend2_desc}}</div>
+          </div>
+          <div class="trend-tag">{{trend2_tag}}</div>
+        </div>
+
+        <div class="trend-item">
+          <div class="trend-icon">🏷️</div>
+          <div>
+            <div class="trend-title">{{trend3_title}}</div>
+            <div class="trend-desc">{{trend3_desc}}</div>
+          </div>
+          <div class="trend-tag">{{trend3_tag}}</div>
+        </div>
+
+        <div class="trend-item">
+          <div class="trend-icon">🚴</div>
+          <div>
+            <div class="trend-title">{{trend4_title}}</div>
+            <div class="trend-desc">{{trend4_desc}}</div>
+          </div>
+          <div class="trend-tag">{{trend4_tag}}</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">六、关键词热度（近3天）</div>
+      <div class="section-body">
+        <div class="word-cloud">
+          <div class="word w1">{{word1}}</div>
+          <div class="word w2">{{word2}}</div>
+          <div class="word w3">{{word3}}</div>
+          <div class="word w4">{{word4}}</div>
+          <div class="word w5">{{word5}}</div>
+          <div class="word w6">{{word6}}</div>
+          <div class="word w7">{{word7}}</div>
+          <div class="word w8">{{word8}}</div>
+          <div class="word w9">{{word9}}</div>
+          <div class="word w10">{{word10}}</div>
+          <div class="word w11">{{word11}}</div>
+          <div class="word w12">{{word12}}</div>
+        </div>
+        <div class="note">注：字体大小代表热度感知强弱，用于识别短期资讯密度。</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div>数据来源：TrendRadar RSS日报 · Google News · 公开气象信息</div>
+    <div>生成时间：{{generate_time}}</div>
+    <div>制作：运动品牌资讯日报自动化系统</div>
+  </div>
+
+</div>
 </body>
 </html>
