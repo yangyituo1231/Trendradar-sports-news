@@ -1,136 +1,157 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<title>运动品牌行业资讯日报</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
-body{
-    font-family: Arial, sans-serif;
-    background:#f3f6fb;
-    padding:20px;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-.container{
-    width:1200px;
-    margin:auto;
-}
+    body {
+      background: #f4f6fb;
+      font-family: "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif;
+      padding: 40px;
+      color: #1f2937;
+    }
 
-.header{
-    background:#0d2c6c;
-    color:white;
-    padding:25px;
-    border-radius:16px;
-}
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+    }
 
-.title{
-    font-size:42px;
-    font-weight:bold;
-}
+    .header {
+      background: #16357a;
+      color: white;
+      border-radius: 18px;
+      padding: 30px 40px;
+      margin-bottom: 24px;
+    }
 
-.subtitle{
-    margin-top:10px;
-    font-size:18px;
-    opacity:0.9;
-}
+    .title {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
 
-.grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px;
-    margin-top:20px;
-}
+    .subtitle {
+      font-size: 18px;
+      opacity: 0.85;
+    }
 
-.card{
-    background:white;
-    border-radius:16px;
-    padding:20px;
-}
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
 
-.card-title{
-    font-size:24px;
-    font-weight:bold;
-    color:#0d2c6c;
-    margin-bottom:15px;
-}
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
 
-.news-item{
-    margin-bottom:15px;
-    padding-bottom:15px;
-    border-bottom:1px solid #eee;
-}
+    .card-title {
+      font-size: 30px;
+      font-weight: 700;
+      color: #16357a;
+      margin-bottom: 20px;
+    }
 
-.tag{
-    display:inline-block;
-    background:#e8f0ff;
-    color:#0d2c6c;
-    padding:4px 10px;
-    border-radius:20px;
-    font-size:12px;
-    margin-bottom:8px;
-}
+    .news-item {
+      padding: 18px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
 
-.footer{
-    margin-top:20px;
-    text-align:center;
-    color:#888;
-}
-</style>
+    .news-item:last-child {
+      border-bottom: none;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #eef2ff;
+      color: #4f46e5;
+      font-size: 14px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .news-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .news-desc {
+      font-size: 17px;
+      color: #6b7280;
+      line-height: 1.7;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 24px;
+      color: #9ca3af;
+      font-size: 15px;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="container">
 
-<div class="container">
+    <div class="header">
+      <div class="title">{{title}}</div>
+      <div class="subtitle">{{subtitle}}</div>
+    </div>
 
-<div class="header">
-<div class="title">运动品牌行业资讯日报</div>
-<div class="subtitle">
-每日精选｜洞察趋势｜辅助决策
-</div>
-</div>
+    <div class="grid">
 
-<div class="grid">
+      <div class="card">
+        <div class="card-title">重点资讯 TOP5</div>
 
-<div class="card">
-<div class="card-title">重点资讯 TOP5</div>
+        <div class="news-item">
+          <div class="tag">运动品牌</div>
+          <div class="news-title">{{top1_title}}</div>
+          <div class="news-desc">{{top1_desc}}</div>
+        </div>
 
-<div class="news-item">
-<div class="tag">运动品牌</div>
-<div><b>{{top1_title}}</b></div>
-<div>{{top1_desc}}</div>
-</div>
+        <div class="news-item">
+          <div class="tag">儿童消费</div>
+          <div class="news-title">{{top2_title}}</div>
+          <div class="news-desc">{{top2_desc}}</div>
+        </div>
+      </div>
 
-<div class="news-item">
-<div class="tag">儿童消费</div>
-<div><b>{{top2_title}}</b></div>
-<div>{{top2_desc}}</div></div>
+      <div class="card">
+        <div class="card-title">经营趋势观察</div>
 
-</div>
+        <div class="news-item">
+          <div class="tag">平台趋势</div>
+          <div class="news-title">{{trend1_title}}</div>
+          <div class="news-desc">{{trend1_desc}}</div>
+        </div>
 
-<div class="card">
-<div class="card-title">经营趋势观察</div>
+        <div class="news-item">
+          <div class="tag">线下零售</div>
+          <div class="news-title">{{trend2_title}}</div>
+          <div class="news-desc">{{trend2_desc}}</div>
+        </div>
+      </div>
 
-<div class="news-item">
-<div class="tag">平台趋势</div>
-<div><b>{{trend1_title}}</b></div>
-<div>{{trend1_desc}}</div>
-</div>
+    </div>
 
-<div class="news-item">
-<div class="tag">线下零售</div>
-<div><b>{{trend2_title}}</b></div>
-<div>{{trend2_desc}}</div>
-</div>
+    <div class="footer">
+      TrendRadar × DeepSeek 自动生成
+    </div>
 
-</div>
-
-</div>
-
-<div class="footer">
-TrendRadar × DeepSeek 自动生成
-</div>
-
-</div>
-
+  </div>
 </body>
 </html>
