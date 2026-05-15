@@ -16,8 +16,10 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install Playwright
+      - name: Install Chinese fonts and Playwright
         run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
           pip install playwright
           playwright install chromium
 
