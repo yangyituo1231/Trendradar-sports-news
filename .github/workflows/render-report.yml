@@ -21,9 +21,13 @@ jobs:
           pip install playwright
           playwright install chromium
 
-      - name: Render HTML to PNG
-        run: |
-          python scripts/render_report.py
+     - name: Fill HTML template
+  run: |
+    python scripts/fill_report.py
+
+- name: Render HTML to PNG
+  run: |
+    python scripts/render_report.py
 
       - name: Upload PNG
         uses: actions/upload-artifact@v4
