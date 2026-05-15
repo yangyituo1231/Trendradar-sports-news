@@ -1,0 +1,32 @@
+name: Render Daily Report Image
+
+on:
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          playwright install chromium
+
+      - name: Render HTML to PNG
+        run: |
+          python scripts/render_report.py
+
+      - name: Upload PNG
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-report-image
+          path: daily-report.png
