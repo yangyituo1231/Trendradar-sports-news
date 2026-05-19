@@ -2,10 +2,7 @@ from pathlib import Path
 from datetime import datetime, timedelta
 import random
 import json
-
-# =========================
-# 基础设置
-# =========================
+import re
 
 template = Path("daily-report.html").read_text(encoding="utf-8")
 
@@ -15,28 +12,30 @@ day2 = today + timedelta(days=1)
 day3 = today + timedelta(days=2)
 
 weekday_map = {
-    0: "星期一",
-    1: "星期二",
-    2: "星期三",
-    3: "星期四",
-    4: "星期五",
-    5: "星期六",
-    6: "星期日",
+    0: "星期一", 1: "星期二", 2: "星期三", 3: "星期四",
+    4: "星期五", 5: "星期六", 6: "星期日",
 }
 
 def md(d):
     return d.strftime("%m-%d")
 
-def short(text, n=34):
+def clean_title(text):
     text = str(text or "").replace("\n", "").strip()
+    text = re.sub(r"\s+", " ", text)
+    text = re.sub(r" - .*?$", "", text)
+    text = re.sub(r"_.*?$", "", text)
+    return text
+
+def short(text, n=40):
+    text = clean_title(text)
     return text if len(text) <= n else text[:n] + "..."
 
 # =========================
 # 读取真实资讯
 # =========================
 
-news_items = []
 news_file = Path("output/news/latest.json")
+news_items = []
 
 if news_file.exists():
     try:
@@ -48,39 +47,39 @@ if news_file.exists():
     except Exception:
         news_items = []
 
-titles = [str(x.get("title", "")) for x in news_items if isinstance(x, dict) and x.get("title")]
+titles = [clean_title(x.get("title", "")) for x in news_items if isinstance(x, dict) and x.get("title")]
 
 # =========================
-# 分类规则：TOP5 固定结构
+# TOP5分类：一类一条，避免大促刷屏
 # =========================
 
 CATEGORY_RULES = {
     "大促电商": {
-        "keywords": ["618", "双11", "双十一", "大促", "预售", "电商", "直播", "抖音", "小红书"],
+        "keywords": ["618", "双11", "双十一", "大促", "预售", "电商", "直播", "抖音", "小红书", "种草"],
         "tag": "大促/电商",
         "logo": "大促",
         "icon": "🛒",
         "class": "logo-blue",
-        "desc": "大促节奏影响夏季品类曝光与转化，应关注商品节奏、直播种草和终端承接。",
+        "desc": "大促内容适度关注，重点看夏季品类曝光、直播种草、转化效率和终端承接。",
     },
     "童装儿童": {
-        "keywords": ["童装", "儿童", "亲子", "校园", "儿童运动", "运动童装"],
+        "keywords": ["童装", "儿童", "亲子", "校园", "儿童运动", "运动童装", "Kids", "KIDS"],
         "tag": "童装/儿童运动",
         "logo": "童装",
         "icon": "🧒",
         "class": "logo-sky",
-        "desc": "儿童运动消费从单品购买转向校园、亲子、户外等多场景经营。",
+        "desc": "儿童消费从单品购买转向亲子、校园、户外和运动场景综合经营。",
     },
     "天气防晒": {
-        "keywords": ["高温", "防晒", "凉感", "速干", "暴雨", "强对流", "降雨", "天气", "防雨"],
+        "keywords": ["高温", "防晒", "凉感", "速干", "暴雨", "强对流", "降雨", "天气", "防雨", "夏日", "夏季"],
         "tag": "天气影响消费",
         "logo": "天气",
         "icon": "☀️",
         "class": "logo-sky",
-        "desc": "天气变化直接影响客流和品类节奏，防晒、凉感、速干及轻防护品类需前置。",
+        "desc": "天气变化会影响客流和主推节奏，防晒、凉感、速干及轻防护品类需前置。",
     },
     "户外骑行": {
-        "keywords": ["户外", "骑行", "露营", "文旅", "出行", "夜经济", "跑步", "轻户外"],
+        "keywords": ["户外", "骑行", "露营", "文旅", "出行", "夜经济", "跑步", "轻户外", "徒步"],
         "tag": "户外/运动场景",
         "logo": "户外",
         "icon": "🚴",
@@ -88,7 +87,7 @@ CATEGORY_RULES = {
         "desc": "户外、文旅、骑行和夜间消费延伸运动场景，带动轻运动与亲子需求。",
     },
     "商圈消费": {
-        "keywords": ["商场", "商圈", "门店", "客流", "奥莱", "折扣", "会员", "零售", "消费"],
+        "keywords": ["商场", "商圈", "门店", "客流", "奥莱", "折扣", "会员", "零售", "消费", "本地生活"],
         "tag": "商圈/零售经营",
         "logo": "商圈",
         "icon": "🏬",
@@ -98,66 +97,71 @@ CATEGORY_RULES = {
 }
 
 fallback_by_category = {
-    "大促电商": {
-        "title": "618节奏持续推进，运动品牌关注夏季品类转化",
-        "source": "平台资讯",
-    },
-    "童装儿童": {
-        "title": "儿童运动消费场景外扩，亲子与校园需求继续升温",
-        "source": "消费观察",
-    },
-    "天气防晒": {
-        "title": "高温与降雨并行，防晒凉感与轻防护品类进入主推窗口",
-        "source": "公开气象信息",
-    },
-    "户外骑行": {
-        "title": "城市骑行、文旅出行与轻户外需求延续",
-        "source": "消费观察",
-    },
-    "商圈消费": {
-        "title": "商圈活动与会员运营联动，周末客流修复仍需关注",
-        "source": "商业观察",
-    },
+    "大促电商": {"title": "618节奏持续推进，运动品牌关注夏季品类转化", "source": "平台资讯"},
+    "童装儿童": {"title": "儿童运动消费场景外扩，亲子与校园需求继续升温", "source": "消费观察"},
+    "天气防晒": {"title": "高温与降雨并行，防晒凉感与轻防护品类进入主推窗口", "source": "公开气象信息"},
+    "户外骑行": {"title": "城市骑行、文旅出行与轻户外需求延续", "source": "消费观察"},
+    "商圈消费": {"title": "商圈活动与会员运营联动，周末客流修复仍需关注", "source": "商业观察"},
 }
 
-def classify_title(title):
-    scores = {}
-    for cat, rule in CATEGORY_RULES.items():
-        score = 0
-        for kw in rule["keywords"]:
-            if kw in title:
-                score += 1
-        scores[cat] = score
-    best = max(scores, key=scores.get)
-    return best if scores[best] > 0 else None
+def category_score(title, cat):
+    rule = CATEGORY_RULES[cat]
+    return sum(1 for kw in rule["keywords"] if kw in title)
+
+def item_score(item, cat):
+    title = clean_title(item.get("title", ""))
+    source = str(item.get("source", ""))
+
+    score = category_score(title, cat) * 10
+
+    # 降低大促霸屏，但不完全排除
+    if cat != "大促电商" and any(k in title for k in ["618", "双11", "双十一", "大促"]):
+        score -= 8
+
+    # 经理主管视角优先：消费、零售、门店、商品、童装、天气
+    for kw in ["童装", "儿童", "亲子", "防晒", "凉感", "门店", "商场", "商圈", "客流", "零售", "消费", "户外"]:
+        if kw in title:
+            score += 3
+
+    # 过滤过于泛体育赛事
+    for kw in ["比赛", "夺冠", "冠军", "联赛", "球队", "球员", "比分", "赛程", "奥运会", "国家队"]:
+        if kw in title:
+            score -= 12
+
+    # 来源偏好
+    for src in ["界面新闻", "36氪", "赢商网", "联商网", "亿邦动力", "电商报", "新华网", "澎湃新闻", "证券时报"]:
+        if src in source:
+            score += 2
+
+    return score
 
 def pick_top_news():
-    used_titles = set()
+    used = set()
     result = []
 
-    # 每类最多选1条，避免618或某一类刷屏
     for cat in ["大促电商", "童装儿童", "天气防晒", "户外骑行", "商圈消费"]:
-        matched = []
-        for item in news_items:
-            title = str(item.get("title", ""))
-            if not title or title in used_titles:
-                continue
-            if classify_title(title) == cat:
-                matched.append(item)
-
         rule = CATEGORY_RULES[cat]
+        candidates = []
 
-        if matched:
-            item = matched[0]
-            title = short(item.get("title", ""), 36)
+        for item in news_items:
+            title = clean_title(item.get("title", ""))
+            if not title or title in used:
+                continue
+            if category_score(title, cat) > 0:
+                candidates.append((item_score(item, cat), item))
+
+        candidates.sort(key=lambda x: x[0], reverse=True)
+
+        if candidates and candidates[0][0] > 0:
+            item = candidates[0][1]
+            title = short(item.get("title", ""), 42)
             source = item.get("source", "公开资讯")
         else:
             fb = fallback_by_category[cat]
             title = fb["title"]
             source = fb["source"]
 
-        used_titles.add(title)
-
+        used.add(title)
         result.append({
             "title": title,
             "tag": rule["tag"],
@@ -173,7 +177,7 @@ def pick_top_news():
 top_news = pick_top_news()
 
 # =========================
-# 区域热点：真实标题 → 经营语言
+# 区域热点：不直接搬标题，转成经营语言
 # =========================
 
 region_map = {
@@ -225,19 +229,18 @@ region_map = {
 }
 
 def business_summary_from_title(title, region_key):
-    title = str(title or "")
-
-    if any(k in title for k in ["高温", "防晒", "凉感", "天气"]):
+    title = clean_title(title)
+    if any(k in title for k in ["高温", "防晒", "凉感", "天气", "夏日", "夏季"]):
         return "高温天气带动防晒与凉感品类需求"
-    if any(k in title for k in ["暴雨", "降雨", "强对流"]):
+    if any(k in title for k in ["暴雨", "降雨", "强对流", "防雨"]):
         return "降雨天气扰动客流，轻防护品类关注提升"
     if any(k in title for k in ["亲子", "儿童", "童装", "校园"]):
         return "亲子与儿童运动场景升温"
-    if any(k in title for k in ["骑行", "露营", "户外", "文旅"]):
+    if any(k in title for k in ["骑行", "露营", "户外", "文旅", "出行"]):
         return "户外出行与轻运动消费活跃"
-    if any(k in title for k in ["商场", "商圈", "客流", "会员", "奥莱"]):
+    if any(k in title for k in ["商场", "商圈", "客流", "会员", "奥莱", "门店"]):
         return "商圈活动与会员运营带动客流"
-    if any(k in title for k in ["618", "大促", "电商", "直播"]):
+    if any(k in title for k in ["618", "大促", "电商", "直播", "小红书", "抖音"]):
         return "大促与内容平台影响购买决策"
     return random.choice(region_map[region_key]["fallback"])
 
@@ -249,7 +252,7 @@ def pick_region_hot(region_key):
     return random.choice(cfg["fallback"])
 
 # =========================
-# 趋势观察：经理/主管可读
+# 趋势观察
 # =========================
 
 trend_pool = [
@@ -264,31 +267,52 @@ trend_pool = [
 trends = random.sample(trend_pool, 4)
 
 # =========================
-# 关键词：适度经营化，不太宏观
+# 关键词云：经营导向，不让大促过大
 # =========================
 
 strategic_words = [
-    "618", "防晒衣", "凉感科技", "周末客流", "亲子运动", "运动童装",
+    "防晒衣", "凉感科技", "周末客流", "亲子运动", "运动童装",
     "商圈活动", "会员运营", "内容种草", "抖音直播", "小红书种草",
     "城市骑行", "轻户外", "暑期消费", "校园运动", "奥莱折扣",
     "门店陈列", "防雨装备", "短裤", "速干", "本地生活", "夜经济",
     "文旅客流", "消费复苏", "大促预售", "户外休闲", "天气扰动",
-    "安踏", "李宁", "特步", "361儿童", "On昂跑", "lululemon"
+    "品类切换", "客流修复", "夏季主推", "会员转化", "亲子经济",
+    "618", "安踏", "李宁", "特步", "361儿童", "On昂跑", "lululemon"
 ]
 
-matched_words = []
 joined = " ".join(titles)
+matched_words = []
 
 for w in strategic_words:
     if w in joined:
         matched_words.append(w)
+
+# 保证618有机会出现，但不一定最大
+if any(k in joined for k in ["618", "大促", "预售"]) and "618" not in matched_words:
+    matched_words.append("618")
 
 while len(matched_words) < 18:
     w = random.choice(strategic_words)
     if w not in matched_words:
         matched_words.append(w)
 
-selected_words = matched_words[:18]
+# 控制大促词不超过2个
+promo_words = {"618", "大促预售"}
+final_words = []
+promo_count = 0
+for w in matched_words:
+    if w in promo_words:
+        if promo_count >= 2:
+            continue
+        promo_count += 1
+    final_words.append(w)
+
+while len(final_words) < 18:
+    w = random.choice(strategic_words)
+    if w not in final_words:
+        final_words.append(w)
+
+selected_words = final_words[:18]
 
 # =========================
 # 数据填充
