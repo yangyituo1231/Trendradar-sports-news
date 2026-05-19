@@ -47,17 +47,18 @@ body{background:#edf3fb;font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,s
 .weather-legend{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:7px}
 .legend-item{height:25px;display:flex;align-items:center;justify-content:center;gap:3px;border-radius:8px;background:#f5f9ff;border:1px solid #dce7f7;font-size:11px;font-weight:850;color:#183b78}
 .weather-map{position:relative;height:252px;border-radius:11px;background:radial-gradient(circle at 50% 45%,#fff 0%,#f8fbff 48%,#edf5ff 100%);border:1px solid #d9e5f5;overflow:hidden}
-.china-map{position:absolute;left:168px;top:14px;width:385px;height:210px}
-.map-main{position:absolute;left:40px;top:8px;width:286px;height:190px;background:linear-gradient(135deg,#f4dab1 0%,#f7e4c5 28%,#cfe4f7 52%,#bfe0d2 68%,#d8c4ef 88%);clip-path:polygon(28% 8%,43% 2%,60% 6%,73% 14%,82% 26%,76% 38%,91% 52%,74% 61%,65% 73%,57% 92%,43% 84%,29% 91%,23% 73%,7% 64%,18% 50%,5% 36%,19% 25%);filter:drop-shadow(0 6px 11px rgba(30,70,130,.15))}
-.map-ne{position:absolute;left:260px;top:35px;width:78px;height:67px;background:#f4dfc8;clip-path:polygon(0 22%,58% 0,100% 35%,70% 100%,18% 82%);opacity:.88}
-.map-hainan{position:absolute;left:238px;top:188px;width:15px;height:10px;background:#d4c2ee;border-radius:50%;opacity:.9}
-.map-taiwan{position:absolute;left:322px;top:145px;width:10px;height:34px;background:#d6c8ef;border-radius:50%;transform:rotate(22deg);opacity:.9}
-.map-islands{position:absolute;right:3px;bottom:3px;width:62px;height:54px;border:1px solid #d7e3f4;border-radius:9px;background:rgba(255,255,255,.7)}
-.map-islands:before{content:"";position:absolute;left:22px;top:16px;width:3px;height:3px;background:#6aa9e8;border-radius:50%;box-shadow:12px 8px 0 #6aa9e8,5px 20px 0 #6aa9e8,25px 24px 0 #6aa9e8}
+.china-map{position:absolute;left:148px;top:6px;width:420px;height:230px;display:flex;align-items:center;justify-content:center}
+.china-map-img{width:86%;max-height:220px;object-fit:contain;opacity:.95;filter:drop-shadow(0 6px 12px rgba(30,70,130,.16))}
+.map-dot{position:absolute;width:10px;height:10px;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 10px rgba(0,0,0,.18)}
+.dot-north{top:62px;right:185px;background:#ef4444}
+.dot-east{top:118px;right:110px;background:#2563eb}
+.dot-south{bottom:45px;right:185px;background:#7c3aed}
+.dot-west{top:120px;left:105px;background:#f97316}
+.dot-center{top:145px;left:190px;background:#16a34a}
+
 .map-label{position:absolute;background:rgba(255,255,255,.95);border:1px solid #d8e3f5;border-radius:9px;padding:7px 9px;font-size:11.2px;line-height:1.35;color:#243c67;box-shadow:0 5px 12px rgba(26,66,125,.08)}
 .l-north{right:15px;top:32px;width:154px}.l-east{right:15px;top:113px;width:160px}.l-south{left:160px;bottom:15px;width:250px}.l-west{left:18px;top:43px;width:155px}.l-sw{left:18px;top:133px;width:160px}
-.dot{position:absolute;width:9px;height:9px;border-radius:50%;box-shadow:0 0 0 4px rgba(255,255,255,.75)}
-.d1{left:340px;top:72px;background:#ef4444}.d2{left:430px;top:132px;background:#2563eb}.d3{left:265px;top:153px;background:#16a34a}.d4{left:230px;top:93px;background:#f97316}.d5{left:385px;top:184px;background:#7c3aed}
+
 .weather-table{width:100%;border-collapse:collapse;margin-top:8px;font-size:11.6px}
 .weather-table th{background:#eef4ff;color:#163b7c;padding:5px;border:1px solid #d8e3f5;font-weight:950}
 .weather-table td{text-align:center;padding:5px;border:1px solid #d8e3f5;color:#263b62}
@@ -121,8 +122,14 @@ body{background:#edf3fb;font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,s
     <div class="section-body">
       <div class="weather-legend"><div class="legend-item">☔ 暴雨/强对流</div><div class="legend-item">🌡️ 高温/升温</div><div class="legend-item">☀️ 户外出行</div><div class="legend-item">🌧️ 局地冰雹</div><div class="legend-item">🌬️ 阵风影响</div></div>
       <div class="weather-map">
-        <div class="china-map"><div class="map-main"></div><div class="map-ne"></div><div class="map-taiwan"></div><div class="map-hainan"></div><div class="map-islands"></div></div>
-        <div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="dot d4"></div><div class="dot d5"></div>
+        <div class="china-map">
+          <img src="_image/china-map.png" class="china-map-img">
+          <div class="map-dot dot-north"></div>
+          <div class="map-dot dot-east"></div>
+          <div class="map-dot dot-south"></div>
+          <div class="map-dot dot-west"></div>
+          <div class="map-dot dot-center"></div>
+        </div>
         <div class="map-label l-north"><b>华北/东北</b><br>{{weather_north}}</div>
         <div class="map-label l-east"><b>华东地区</b><br>{{weather_east}}</div>
         <div class="map-label l-south"><b>华南地区</b><br>{{weather_southwest}}</div>
