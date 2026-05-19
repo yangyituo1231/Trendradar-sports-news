@@ -42,10 +42,6 @@ def season_name(month):
 
 SEASON = season_name(today.month)
 
-# =========================
-# 读取新闻
-# =========================
-
 news_items = []
 news_file = Path("output/news/latest.json")
 
@@ -62,10 +58,6 @@ titles = [
     if isinstance(x, dict) and x.get("title")
 ]
 joined = " ".join(titles)
-
-# =========================
-# 读取天气
-# =========================
 
 weather_file = Path("output/weather/latest.json")
 weather = {}
@@ -171,6 +163,34 @@ def weather_business_type(key):
         return "winter_mild"
     return "normal"
 
+def heat_class_by_weather(key):
+    t = weather_business_type(key)
+
+    if t in ["very_hot", "hot"]:
+        return "heat-dot-hot"
+    if t in ["storm", "rain"]:
+        return "heat-dot-rain"
+    if t in ["snow_ice", "cold", "winter_mild"]:
+        return "heat-dot-cold"
+    return "heat-dot-normal"
+
+def map_heat_class():
+    weather_types = [
+        weather_business_type("north"),
+        weather_business_type("east"),
+        weather_business_type("south"),
+        weather_business_type("southwest"),
+        weather_business_type("northwest"),
+    ]
+
+    if any(t in weather_types for t in ["very_hot", "hot"]):
+        return "heat-hot"
+    if any(t in weather_types for t in ["storm", "rain"]):
+        return "heat-rain"
+    if any(t in weather_types for t in ["snow_ice", "cold", "winter_mild"]):
+        return "heat-cold"
+    return "heat-normal"
+
 def weather_desc(key):
     t = weather_business_type(key)
     mapping = {
@@ -187,10 +207,6 @@ def weather_desc(key):
         "normal": "天气整体平稳，户外与亲子活动具备恢复基础",
     }
     return mapping.get(t, mapping["normal"])
-
-# =========================
-# 区域评分
-# =========================
 
 def news_heat_score(keywords):
     score = 0
@@ -232,10 +248,6 @@ def total_region_score(weather_key, region_keywords):
         + business_keyword_score(),
         100,
     )
-
-# =========================
-# TOP5
-# =========================
 
 CATEGORY_RULES = {
     "大促电商": {
@@ -352,10 +364,6 @@ def pick_top_news():
     return result
 
 top_news = pick_top_news()
-
-# =========================
-# 区域经营内容
-# =========================
 
 def report_for_weather_type(weather_key):
     t = weather_business_type(weather_key)
@@ -474,10 +482,6 @@ for idx, r in enumerate(sorted_regions):
     else:
         stars[r] = "★"
 
-# =========================
-# 第四部分：真实新闻驱动经营观察
-# =========================
-
 def detect_trend_from_news():
     rules = [
         (["抖音", "小红书", "直播", "种草", "内容"], {"title": "内容平台影响转化", "desc": "抖音、小红书与直播内容影响新品传播、到店转化和线上成交。", "tag": "内容电商"}),
@@ -522,10 +526,6 @@ def detect_trend_from_news():
     return trends[:4]
 
 trend_items = detect_trend_from_news()
-
-# =========================
-# 第五部分：真实词频 + 泛运动热点
-# =========================
 
 KEYWORD_MAP = {
     "抖音": "抖音直播",
@@ -640,10 +640,6 @@ def build_words():
 
 words = build_words()
 
-# =========================
-# 数据填充
-# =========================
-
 data = {
     "title": "运动品牌行业资讯日报",
     "subtitle": "每日精选 · 洞察趋势 · 辅助决策",
@@ -655,6 +651,13 @@ data = {
     "monitor_count": str(max(len(news_items), random.randint(150, 260))),
     "rss_count": str(max(min(len(news_items), 99), random.randint(35, 80))),
     "focus_count": "5",
+
+    "weather_heat_class": map_heat_class(),
+    "north_heat": heat_class_by_weather("north"),
+    "east_heat": heat_class_by_weather("east"),
+    "south_heat": heat_class_by_weather("south"),
+    "northwest_heat": heat_class_by_weather("northwest"),
+    "central_heat": heat_class_by_weather("east"),
 
     "weather_range": f"{md(today)} ~ {md(day3)}",
     "day1": md(today),
