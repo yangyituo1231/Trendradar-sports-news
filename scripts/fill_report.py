@@ -1,6 +1,9 @@
 from pathlib import Path
 from datetime import datetime, timedelta
 import random
+import re
+import json
+from collections import Counter
 
 template = Path("daily-report.html").read_text(encoding="utf-8")
 
@@ -10,23 +13,56 @@ day2 = today + timedelta(days=1)
 day3 = today + timedelta(days=2)
 
 weekday_map = {
-    0: "星期一",
-    1: "星期二",
-    2: "星期三",
-    3: "星期四",
-    4: "星期五",
-    5: "星期六",
-    6: "星期日",
+    0: "星期一", 1: "星期二", 2: "星期三", 3: "星期四",
+    4: "星期五", 5: "星期六", 6: "星期日",
 }
 
 def md(d):
     return d.strftime("%m-%d")
 
 # =========================
-# 一、TOP5资讯池
+# 1. 读取真实资讯源
+# 优先读取 output/news/latest.json
+# 没有时自动用备用池
 # =========================
 
-top_news_pool = [
+news_items = []
+
+possible_news_files = [
+    Path("output/news/latest.json"),
+    Path("output/news/news.json"),
+    Path("output/news/latest_news.json"),
+]
+
+for p in possible_news_files:
+    if p.exists():
+        try:
+            raw = json.loads(p.read_text(encoding="utf-8"))
+            if isinstance(raw, list):
+                news_items = raw
+            elif isinstance(raw, dict):
+                news_items = raw.get("items", []) or raw.get("news", []) or raw.get("data", [])
+            break
+        except Exception:
+            news_items = []
+
+def get_text(item, key, default=""):
+    if isinstance(item, dict):
+        return str(item.get(key, default) or default)
+    return str(item)
+
+titles = []
+for item in news_items:
+    title = get_text(item, "title", "")
+    if title:
+        titles.append(title)
+
+# =========================
+# 2. 备用资讯池
+# 如果真实资讯源为空，就用备用池
+# =========================
+
+fallback_top_news = [
     {
         "title": "618预售升温，运动品牌加大儿童与夏季品类投放",
         "tag": "大促/电商",
@@ -92,26 +128,86 @@ top_news_pool = [
     },
 ]
 
-top_news = random.sample(top_news_pool, 5)
-
 # =========================
-# 二、关键词池
+# 3. 资讯分类/图标规则
 # =========================
 
-priority_words_pool = [
-    "618",
-    "暴雨预警",
-    "高温天气",
-    "防晒衣",
-    "抖音直播",
-    "小红书种草",
-    "文旅客流",
-    "周末客流",
-    "城市骑行",
-    "商圈活动",
-]
+def classify_news(title):
+    title = title or ""
 
-hot_words_pool = [
+    if any(k in title for k in ["618", "双11", "双十一", "大促", "预售", "电商"]):
+        return "大促/电商", "618", "🛒", "logo-blue"
+
+    if any(k in title for k in ["高温", "防晒", "凉感", "速干", "暴雨", "降雨", "强对流", "天气"]):
+        return "天气影响消费", "高温", "☀️", "logo-sky"
+
+    if any(k in title for k in ["抖音", "小红书", "直播", "种草", "内容", "短视频"]):
+        return "内容电商", "内容", "🎵", "logo-dark"
+
+    if any(k in title for k in ["骑行", "露营", "户外", "文旅", "夜经济", "出行"]):
+        return "户外消费", "户外", "🚴", "logo-green"
+
+    if any(k in title for k in ["奥莱", "折扣", "会员", "商场", "商圈", "门店", "零售"]):
+        return "线下零售经营", "商圈", "🏬", "logo-dark"
+
+    if any(k in title for k in ["儿童", "童装", "亲子", "校园"]):
+        return "儿童消费趋势", "亲子", "🧒", "logo-sky"
+
+    if any(k in title for k in ["安踏", "李宁", "特步", "361", "耐克", "阿迪", "lululemon", "On", "始祖鸟"]):
+        return "运动品牌动态", "品牌", "🏃", "logo-blue"
+
+    return "行业观察", "资讯", "讯", "logo-blue"
+
+def make_desc(title):
+    title = title or ""
+    if any(k in title for k in ["618", "大促", "预售"]):
+        return "大促节奏带动夏季品类与儿童运动消费关注，需关注商品节奏与转化效率。"
+    if any(k in title for k in ["高温", "防晒", "凉感", "暴雨", "强对流"]):
+        return "天气变化对门店客流和品类需求形成扰动，防晒、凉感、轻防护品类值得关注。"
+    if any(k in title for k in ["抖音", "小红书", "直播", "种草"]):
+        return "内容平台正在影响新品传播、用户种草和购买转化，线上线下联动价值提升。"
+    if any(k in title for k in ["骑行", "露营", "文旅", "户外", "夜经济"]):
+        return "户外、文旅和夜间消费场景延伸，带动轻运动、亲子和场景化商品需求。"
+    if any(k in title for k in ["商场", "商圈", "奥莱", "会员"]):
+        return "商圈活动与会员运营影响周末客流和终端转化，门店需关注活动承接。"
+    return "该资讯体现近期行业与消费环境变化，可作为门店经营和商品节奏的参考信号。"
+
+def source_from_item(item):
+    if isinstance(item, dict):
+        return item.get("source") or item.get("publisher") or item.get("site") or "公开资讯"
+    return "公开资讯"
+
+# =========================
+# 4. 生成TOP5
+# =========================
+
+top_news = []
+
+if titles:
+    selected_real = titles[:5]
+    for idx, title in enumerate(selected_real):
+        tag, logo, icon, cls = classify_news(title)
+        src = source_from_item(news_items[idx]) if idx < len(news_items) else "公开资讯"
+        top_news.append({
+            "title": title[:34],
+            "tag": tag,
+            "source": src,
+            "desc": make_desc(title),
+            "logo": logo,
+            "icon": icon,
+            "class": cls,
+        })
+
+while len(top_news) < 5:
+    item = random.choice(fallback_top_news)
+    if item["title"] not in [x["title"] for x in top_news]:
+        top_news.append(item)
+
+# =========================
+# 5. 关键词提取
+# =========================
+
+keyword_pool = [
     "618", "高温天气", "暴雨预警", "强对流", "防晒衣", "凉感科技",
     "抖音直播", "小红书种草", "内容电商", "直播带货", "本地生活",
     "周末客流", "商场活动", "会员运营", "奥莱折扣", "夜经济",
@@ -123,95 +219,86 @@ hot_words_pool = [
     "大促预售", "防雨装备", "户外休闲", "亲子运动", "夏季新品",
 ]
 
-priority_words = random.sample(priority_words_pool, 3)
-remaining_words = [w for w in hot_words_pool if w not in priority_words]
-selected_words = priority_words + random.sample(remaining_words, 15)
+found_words = []
+joined_titles = " ".join(titles)
+
+for kw in keyword_pool:
+    if kw in joined_titles:
+        found_words.append(kw)
+
+if len(found_words) < 18:
+    remaining = [w for w in keyword_pool if w not in found_words]
+    found_words += random.sample(remaining, min(18 - len(found_words), len(remaining)))
+
+selected_words = found_words[:18]
 
 # =========================
-# 三、区域热点池
+# 6. 区域资讯匹配
 # =========================
 
-east_news = [
-    "上海核心商圈周末客流回暖，运动品牌活动密集",
-    "杭州城市骑行热度升温，轻运动装备关注提升",
-    "南京购物中心亲子运动活动增多",
-    "苏州奥莱折扣活动带动家庭客群到店",
-    "宁波商圈亲子活动增加，儿童运动品类关注提升",
-]
+region_keywords = {
+    "east": ["上海", "杭州", "南京", "苏州", "宁波", "江苏", "浙江"],
+    "central": ["武汉", "长沙", "南昌", "郑州", "湖北", "湖南", "江西"],
+    "south": ["广州", "深圳", "佛山", "南宁", "厦门", "广东", "广西", "福建"],
+    "southwest": ["成都", "重庆", "贵阳", "昆明", "四川", "贵州", "云南"],
+    "northwest": ["西安", "兰州", "银川", "乌鲁木齐", "陕西", "甘肃", "宁夏", "新疆"],
+}
 
-central_news = [
-    "武汉商场会员日活动提升到店转化",
-    "长沙夜经济恢复明显，运动休闲消费活跃",
-    "南昌亲子消费场景增加，儿童品类关注提升",
-    "武汉高校周边运动消费热度提升",
-    "郑州商圈活动升温，周末家庭客群回流",
-]
+fallback_region_news = {
+    "east": [
+        "上海核心商圈周末客流回暖，运动品牌活动密集",
+        "杭州城市骑行热度升温，轻运动装备关注提升",
+        "南京购物中心亲子运动活动增多",
+    ],
+    "central": [
+        "武汉商场会员日活动提升到店转化",
+        "长沙夜经济恢复明显，运动休闲消费活跃",
+        "南昌亲子消费场景增加，儿童品类关注提升",
+    ],
+    "south": [
+        "广州高温天气推动防晒与凉感需求",
+        "深圳户外运动消费活跃，轻户外品类升温",
+        "南宁文旅客流提升，亲子出行需求释放",
+    ],
+    "southwest": [
+        "成都亲子露营热度持续，轻户外需求增加",
+        "重庆文旅带动户外消费，夜间客流活跃",
+        "贵阳避暑经济升温，凉感防晒品类受关注",
+    ],
+    "northwest": [
+        "西安户外消费活跃，周末出行热度提升",
+        "兰州周末客流回暖，轻防护用品关注提升",
+        "银川露营消费增加，亲子户外活动升温",
+    ],
+}
 
-south_news = [
-    "广州高温天气推动防晒与凉感需求",
-    "深圳户外运动消费活跃，轻户外品类升温",
-    "佛山商圈周末活动带动家庭客流",
-    "南宁文旅客流提升，亲子出行需求释放",
-    "厦门滨海出行热度上升，轻户外用品关注提升",
-]
-
-southwest_news = [
-    "成都亲子露营热度持续，轻户外需求增加",
-    "重庆文旅带动户外消费，夜间客流活跃",
-    "贵阳避暑经济升温，凉感防晒品类受关注",
-    "成都购物中心儿童运动体验活动增加",
-    "昆明周末出游升温，亲子休闲消费修复",
-]
-
-northwest_news = [
-    "西安户外消费活跃，周末出行热度提升",
-    "兰州周末客流回暖，轻防护用品关注提升",
-    "银川露营消费增加，亲子户外活动升温",
-    "西安商圈活动带动运动休闲消费",
-    "乌鲁木齐户外出行增加，防晒与轻运动需求提升",
-]
+def pick_region_news(region_key):
+    keys = region_keywords[region_key]
+    matched = []
+    for t in titles:
+        if any(k in t for k in keys):
+            matched.append(t)
+    if matched:
+        return matched[0][:24]
+    return random.choice(fallback_region_news[region_key])
 
 # =========================
-# 四、趋势观察池
+# 7. 趋势观察
 # =========================
 
 trend_pool = [
-    (
-        "大促节点前置，夏季品类进入放量窗口",
-        "618节奏提前带动防晒、凉感、速干、童装等品类集中曝光。",
-        "大促趋势",
-    ),
-    (
-        "内容平台影响购买决策链路",
-        "种草、短视频和直播正在改变新品传播、到店转化与线上成交节奏。",
-        "内容趋势",
-    ),
-    (
-        "儿童运动消费场景持续外扩",
-        "童装消费正从服饰购买转向亲子、校园、户外与运动场景综合经营。",
-        "儿童消费趋势",
-    ),
-    (
-        "天气驱动品类节奏切换",
-        "高温、防晒、降雨与强对流共同影响门店客流和商品主推节奏。",
-        "季节趋势",
-    ),
-    (
-        "区域商圈活动价值提升",
-        "周末客流、会员运营、商圈活动与本地生活平台联动成为转化关键。",
-        "渠道趋势",
-    ),
-    (
-        "户外与文旅场景带动运动需求",
-        "骑行、露营、亲子出行和文旅活动共同推动轻户外商品机会。",
-        "消费趋势",
-    ),
+    ("大促节点前置，夏季品类进入放量窗口", "618节奏提前带动防晒、凉感、速干、童装等品类集中曝光。", "大促趋势"),
+    ("内容平台影响购买决策链路", "种草、短视频和直播正在改变新品传播、到店转化与线上成交节奏。", "内容趋势"),
+    ("儿童运动消费场景持续外扩", "童装消费正从服饰购买转向亲子、校园、户外与运动场景综合经营。", "儿童消费趋势"),
+    ("天气驱动品类节奏切换", "高温、防晒、降雨与强对流共同影响门店客流和商品主推节奏。", "季节趋势"),
+    ("区域商圈活动价值提升", "周末客流、会员运营、商圈活动与本地生活平台联动成为转化关键。", "渠道趋势"),
+    ("户外与文旅场景带动运动需求", "骑行、露营、亲子出行和文旅活动共同推动轻户外商品机会。", "消费趋势"),
 ]
 
 trends = random.sample(trend_pool, 4)
 
 # =========================
-# 五、基础数据
+# 8. 基础数据
 # =========================
 
 data = {
@@ -222,8 +309,8 @@ data = {
     "weekday": weekday_map[today.weekday()],
     "update_time": today.strftime("%H:%M"),
 
-    "monitor_count": str(random.randint(150, 260)),
-    "rss_count": str(random.randint(35, 75)),
+    "monitor_count": str(max(len(news_items), random.randint(150, 260))),
+    "rss_count": str(max(min(len(news_items), 99), random.randint(35, 75))),
     "focus_count": "5",
 
     "weather_range": f"{md(today)} ~ {md(day3)}",
@@ -239,53 +326,49 @@ data = {
     "north_day1": "晴到多云",
     "north_day2": "多云",
     "north_day3": "晴",
-
     "east_day1": "局部阵雨",
     "east_day2": "阵雨",
     "east_day3": "多云",
-
     "south_day1": "阵雨/雷阵雨",
     "south_day2": "中到大雨",
     "south_day3": "降雨减弱",
-
     "southwest_day1": "阵雨",
     "southwest_day2": "多云",
     "southwest_day3": "多云",
-
     "northwest_day1": "晴到多云",
     "northwest_day2": "多云",
     "northwest_day3": "晴",
 
     "east_city": "上海/江苏/浙江",
-    "east_hot": random.choice(east_news),
+    "east_hot": pick_region_news("east"),
     "east_flow": "商圈客流回暖但雨天扰动仍在，周末波动较大",
     "east_signal": "防晒、轻外套、运动场景及室内体验需求提升",
     "east_action": "关注骑行周边、轻户外、运动场景及室内承接",
     "east_star": "★★★",
 
     "central_city": "湖北/湖南/江西",
-    "central_hot": random.choice(central_news),
+    "central_hot": pick_region_news("central"),
     "central_flow": "商圈客流存在波动，活动转化需更精细",
     "central_signal": "短袖启动偏慢，轻防护需求提升",
     "central_action": "结合天气节奏主推薄外套、防雨及轻运动单品",
     "central_star": "★★",
 
     "south_city": "广东/广西",
-    "south_hot": random.choice(south_news),
+    "south_hot": pick_region_news("south"),
     "south_flow": "夜间客流增加，夜经济活跃",
     "south_signal": "凉感、短裤、防晒品类需求上升",
     "south_action": "关注夜场活动、防晒陈列及户外场景搭配",
     "south_star": "★★★",
 
     "southwest_city": "四川/重庆/贵州",
-    "southwest_hot": random.choice(southwest_news),
+    "southwest_hot": pick_region_news("southwest"),
     "southwest_flow": "文旅客流活跃，亲子客群增长",
     "southwest_signal": "亲子休闲、户外轻运动增长",
     "southwest_action": "围绕亲子体验与户外场景化陈列展开",
     "southwest_star": "★★",
 
     "northwest_city": "陕西/甘肃/宁夏",
-    "northwest_hot": random.choice(northwest_news),
+    "northwest_hot": pick_region_news("northwest"),
     "northwest_flow": "户外客流活跃，周末出行增加",
     "northwest_signal": "防护用品、帽子等轻防护需求提升",
     "northwest_action": "加强防晒、防风装备陈列",
@@ -295,7 +378,7 @@ data = {
 }
 
 # =========================
-# 六、填入TOP5
+# 9. 填充TOP5
 # =========================
 
 for i, item in enumerate(top_news, start=1):
@@ -309,7 +392,7 @@ for i, item in enumerate(top_news, start=1):
     data[f"top{i}_logo_class"] = item["class"]
 
 # =========================
-# 七、填入趋势
+# 10. 填充趋势
 # =========================
 
 for i, item in enumerate(trends, start=1):
@@ -318,14 +401,14 @@ for i, item in enumerate(trends, start=1):
     data[f"trend{i}_tag"] = item[2]
 
 # =========================
-# 八、填入关键词
+# 11. 填充关键词
 # =========================
 
 for i, word in enumerate(selected_words, start=1):
     data[f"word{i}"] = word
 
 # =========================
-# 九、模板替换
+# 12. 替换输出
 # =========================
 
 for key, value in data.items():
