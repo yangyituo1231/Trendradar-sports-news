@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
 
   schedule:
-    # 北京时间 早上8:00
-    - cron: "0 1 * * *"
+    # 北京时间早上8:00 = UTC 00:00
+    - cron: "0 0 * * *"
 
 permissions:
   contents: write
@@ -15,95 +15,62 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 拉代码
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Python
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # 安装依赖
       - name: Install dependencies
         run: |
           pip install requests beautifulsoup4 pyyaml lxml pillow playwright
 
-      # 安装中文字体 + Chromium
-      - name: Install browser & fonts
+      - name: Install browser and fonts
         run: |
           sudo apt-get update
           sudo apt-get install -y fonts-noto-cjk fonts-wqy-zenhei fontconfig
           sudo fc-cache -fv
           playwright install --with-deps chromium
 
-      # 抓新闻
       - name: Fetch News
         run: |
           python scripts/get_hot_news.py
 
-      # 抓天气
       - name: Fetch Weather
         run: |
           python scripts/get_weather.py
 
-      # 生成HTML
       - name: Fill Report
         run: |
           python scripts/fill_report.py
 
-      # 渲染图片
       - name: Render Report
         run: |
           python scripts/render_report.py
 
-      # 保存图片产物
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: daily-report-image
           path: daily-report.png
 
-      # 提交更新的数据
       - name: Commit files
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-
           git add .
           git commit -m "auto update report" || echo "nothing to commit"
-
           git push
 
-      # 上传图片到临时图床
-      - name: Upload image
-        id: upload
-        run: |
-          RESPONSE=$(curl -s \
-            -F "file=@daily-report.png" \
-            https://tmpfiles.org/api/v1/upload)
-
-          echo $RESPONSE
-
-          URL=$(echo $RESPONSE | python -c "
-import sys, json
-data=json.load(sys.stdin)
-u=data['data']['url']
-u=u.replace('tmpfiles.org/', 'tmpfiles.org/dl/')
-print(u)
-")
-
-          echo "IMAGE_URL=$URL" >> $GITHUB_ENV
-
-      # 企业微信发送图片链接
       - name: Send WeCom Message
         run: |
-          curl "${{ secrets.REPORT_WEBHOOK }}" \
-          -H 'Content-Type: application/json' \
-          -d "{
-            \"msgtype\": \"markdown\",
-            \"markdown\": {
-              \"content\": \"# 运动品牌行业资讯日报\n\n日报已生成：\n[点击查看图片](${IMAGE_URL})\"
-            }
-          }"
+          curl '${{ secrets.REPORT_WEBHOOK }}' \
+            -H 'Content-Type: application/json' \
+            -d '{
+              "msgtype": "markdown",
+              "markdown": {
+                "content": "# 运动品牌行业资讯日报\n\n今日日报已自动生成。\n\n请在 GitHub Actions 的 daily-report-image 产物中查看图片。"
+              }
+            }'
