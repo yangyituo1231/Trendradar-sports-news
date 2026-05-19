@@ -46,8 +46,49 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
 
 .weather-legend{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:8px}
 .legend-item{height:26px;border-radius:8px;border:1px solid #dbe6f6;background:#f7fbff;display:flex;align-items:center;justify-content:center;gap:4px;font-size:11px;font-weight:850}
-.weather-map{position:relative;height:250px;border-radius:12px;border:1px solid #dbe6f6;overflow:hidden;background:linear-gradient(180deg,#fbfdff 0%,#eef5ff 100%)}
+.weather-map{
+position:relative;
+height:250px;
+border-radius:12px;
+border:1px solid #dbe6f6;
+overflow:hidden;
+background:linear-gradient(180deg,#fbfdff 0%,#eef5ff 100%)
+}
 
+/* 天气热力图 */
+.weather-map.heat-hot{
+background:linear-gradient(180deg,#fff7ed 0%,#ffe8cc 100%)
+}
+
+.weather-map.heat-rain{
+background:linear-gradient(180deg,#eff6ff 0%,#dbeafe 100%)
+}
+
+.weather-map.heat-cold{
+background:linear-gradient(180deg,#f0f9ff 0%,#dff4ff 100%)
+}
+
+.weather-map.heat-normal{
+background:linear-gradient(180deg,#fbfdff 0%,#eef5ff 100%)
+}
+
+/* 地图点位颜色 */
+.heat-dot-hot{
+background:#ef4444!important
+}
+
+.heat-dot-rain{
+background:#2563eb!important
+}
+
+.heat-dot-cold{
+background:#38bdf8!important
+}
+
+.heat-dot-normal{
+background:#16a34a!important
+}
+  
 .china-map{position:absolute;left:78px;top:4px;width:405px;height:218px;display:flex;align-items:center;justify-content:center}
 .china-map-img{width:94%;max-height:212px;object-fit:contain;opacity:.98;filter:drop-shadow(0 8px 18px rgba(25,70,130,.10))}
 
@@ -163,10 +204,14 @@ z-index:5;
       <div class="weather-legend">
         <div class="legend-item">☔ 暴雨/强对流</div><div class="legend-item">🌡️ 高温/升温</div><div class="legend-item">☀️ 户外出行</div><div class="legend-item">🌧️ 局地冰雹</div><div class="legend-item">🌬️ 阵风影响</div>
       </div>
-      <div class="weather-map">
+      <div class="weather-map {{weather_heat_class}}">
         <div class="china-map">
           <img src="_image/china-map.png" class="china-map-img">
-          <div class="map-dot dot-north"></div><div class="map-dot dot-east"></div><div class="map-dot dot-south"></div><div class="map-dot dot-west"></div><div class="map-dot dot-center"></div>
+       <div class="map-dot dot-north {{north_heat}}"></div>
+       <div class="map-dot dot-east {{east_heat}}"></div>
+       <div class="map-dot dot-south {{south_heat}}"></div>
+       <div class="map-dot dot-west {{northwest_heat}}"></div>
+       <div class="map-dot dot-center {{central_heat}}"></div> 
         </div>
         <div class="map-label l1"><b>华北/东北</b><br>{{weather_north}}</div>
         <div class="map-label l2"><b>华东地区</b><br>{{weather_east}}</div>
