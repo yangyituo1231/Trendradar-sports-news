@@ -8,58 +8,56 @@
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{
-  background:#eef3fb;
+  background:#edf3fb;
   font-family:"WenQuanYi Zen Hei","Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif;
   color:#10224a;
-  padding:12px;
+  padding:10px;
 }
 
 .page{
   width:1180px;
   margin:0 auto;
-  background:#fff;
-  border:1px solid #cfdcf0;
-  border-radius:10px;
+  background:linear-gradient(180deg,#ffffff 0%,#fbfdff 100%);
+  border:1px solid #cad8ec;
+  border-radius:12px;
   padding:14px;
-  box-shadow:0 8px 22px rgba(20,55,110,.08);
+  box-shadow:0 12px 28px rgba(16,45,95,.10);
 }
 
 .header{
   display:grid;
-  grid-template-columns:1fr 555px;
+  grid-template-columns:1fr 540px;
   align-items:center;
-  padding:2px 4px 11px 4px;
+  padding:2px 4px 12px;
   margin-bottom:10px;
-  border-bottom:2px solid #dce6f7;
+  border-bottom:2px solid #dbe5f6;
 }
 
 .main-title{
-  font-size:48px;
+  font-size:50px;
   line-height:1;
   font-weight:950;
-  color:#06286a;
-  letter-spacing:-2px;
+  color:#082b6f;
+  letter-spacing:-2.4px;
 }
 
 .subtitle{
   font-size:16px;
   margin-top:8px;
-  color:#1e3d70;
+  color:#274575;
   font-weight:800;
-  letter-spacing:.5px;
 }
 
 .stats{
   display:grid;
-  grid-template-columns:1.15fr .95fr .95fr .95fr;
-  border-left:1px solid #d6e1f2;
+  grid-template-columns:1.1fr .95fr .95fr .95fr;
+  border-left:1px solid #d8e2f1;
 }
 
 .stat{
-  min-height:70px;
+  height:72px;
   text-align:center;
-  border-right:1px solid #d6e1f2;
-  padding:4px 8px;
+  border-right:1px solid #d8e2f1;
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -67,21 +65,21 @@ body{
 
 .stat-title{
   font-size:13px;
-  font-weight:850;
-  color:#183b78;
+  font-weight:900;
+  color:#153773;
 }
 
 .stat-num{
-  font-size:32px;
-  line-height:1;
+  font-size:34px;
   font-weight:950;
+  line-height:1;
   color:#075ed1;
   margin-top:5px;
 }
 
 .stat-small{
-  font-size:11.5px;
-  color:#53698d;
+  font-size:11px;
+  color:#5a6f91;
   margin-top:3px;
 }
 
@@ -93,125 +91,135 @@ body{
 }
 
 .section{
-  border:1px solid #d8e3f3;
-  border-radius:8px;
-  overflow:hidden;
   background:#fff;
-  box-shadow:0 3px 10px rgba(26,66,125,.035);
+  border:1px solid #d8e3f3;
+  border-radius:9px;
+  overflow:hidden;
+  box-shadow:0 5px 14px rgba(22,61,120,.045);
 }
 
 .section-title{
-  background:linear-gradient(90deg,#04246a 0%,#0644a8 72%,#0b62d5 100%);
-  color:white;
+  background:linear-gradient(90deg,#04246a 0%,#053f9b 68%,#0b66d8 100%);
+  color:#fff;
   font-size:18px;
   font-weight:950;
   padding:7px 13px;
   letter-spacing:.2px;
 }
 
-.section-body{padding:9px 11px}
+.section-body{
+  padding:8px 10px;
+}
 
-/* TOP5 */
-.news-list{display:flex;flex-direction:column;gap:6px}
+.news-list{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+}
 
 .news-item{
   display:grid;
-  grid-template-columns:30px 52px 1fr;
+  grid-template-columns:30px 50px 1fr;
   gap:9px;
   align-items:center;
   padding-bottom:6px;
-  border-bottom:1px solid #e6edf7;
+  border-bottom:1px solid #e8eef8;
 }
 
-.news-item:last-child{border-bottom:none;padding-bottom:0}
+.news-item:last-child{
+  border-bottom:none;
+  padding-bottom:0;
+}
 
 .rank{
-  width:28px;height:28px;border-radius:6px;color:#fff;font-weight:950;font-size:15px;
-  display:flex;align-items:center;justify-content:center;
-  box-shadow:0 2px 6px rgba(0,0,0,.12);
+  width:27px;
+  height:27px;
+  border-radius:6px;
+  color:#fff;
+  font-weight:950;
+  font-size:15px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .r1{background:#0965e8}.r2{background:#09a064}.r3{background:#ff8a00}.r4{background:#7044da}.r5{background:#0d88d8}
 
 .logo-box{
-  width:52px;height:52px;border-radius:12px;
-  display:flex;align-items:center;justify-content:center;
+  width:50px;
+  height:50px;
+  border-radius:13px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   color:#fff;
-  font-size:17px;
+  font-size:16px;
   font-weight:950;
-  letter-spacing:-.5px;
-  box-shadow:inset 0 0 0 1px rgba(255,255,255,.25),0 4px 9px rgba(10,40,90,.12);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.28),0 5px 10px rgba(10,40,90,.13);
 }
 
-.logo-on{background:linear-gradient(145deg,#06286a,#0d55c7);font-size:19px}
-.logo-sport{background:linear-gradient(145deg,#059669,#10b981)}
-.logo-kids{background:linear-gradient(145deg,#fb7c00,#ffb020)}
-.logo-sale{background:linear-gradient(145deg,#6d28d9,#9b5cff)}
-.logo-weather{background:linear-gradient(145deg,#0b7bd3,#38bdf8)}
+.logo-on{background:linear-gradient(145deg,#06266a,#0d57c9);font-size:19px}
+.logo-sport{background:linear-gradient(145deg,#05865d,#10b981);font-size:13px}
+.logo-kids{background:linear-gradient(145deg,#fb7c00,#ffb020);font-size:14px}
+.logo-sale{background:linear-gradient(145deg,#6d28d9,#9b5cff);font-size:22px}
+.logo-weather{background:linear-gradient(145deg,#0b7bd3,#38bdf8);font-size:18px}
 
 .news-title{
-  font-size:15.3px;
+  font-size:15.2px;
   font-weight:950;
   color:#10244e;
-  line-height:1.23;
-  letter-spacing:-.15px;
+  line-height:1.2;
 }
 
 .news-meta{
-  font-size:10.6px;
-  color:#667b9c;
-  margin:2px 0 3px 0;
+  font-size:10.5px;
+  color:#71829f;
+  margin:2px 0;
 }
 
 .news-desc{
-  font-size:12px;
-  color:#2d4269;
+  font-size:11.8px;
+  color:#2e4269;
   line-height:1.32;
 }
 
 .tag{
-  display:inline-block;
   float:right;
   background:#edf5ff;
   color:#0b55c8;
   padding:2px 7px;
   border-radius:12px;
-  font-size:10.5px;
-  font-weight:850;
+  font-size:10.3px;
+  font-weight:900;
   margin-left:6px;
 }
 
-/* 天气区 */
 .weather-legend{
   display:grid;
   grid-template-columns:repeat(5,1fr);
-  gap:6px;
-  margin-bottom:7px;
+  gap:5px;
+  margin-bottom:6px;
 }
 
 .legend-item{
-  height:25px;
+  height:23px;
   display:flex;
   align-items:center;
   justify-content:center;
-  gap:4px;
+  gap:3px;
   border-radius:7px;
-  background:#f3f7ff;
+  background:#f4f8ff;
   border:1px solid #dce7f7;
-  font-size:11.3px;
+  font-size:10.8px;
   font-weight:850;
   color:#183b78;
 }
 
-.legend-icon{font-size:15px}
-
 .weather-map{
   position:relative;
-  height:230px;
+  height:228px;
   border-radius:10px;
-  background:
-    radial-gradient(circle at 54% 50%,rgba(255,255,255,.96) 0%,rgba(255,255,255,.55) 42%,rgba(235,244,255,.95) 100%),
-    linear-gradient(135deg,#f5f9ff,#eef5ff);
+  background:radial-gradient(circle at 50% 45%,#fff 0%,#f8fbff 48%,#eef5ff 100%);
   border:1px solid #d9e5f5;
   overflow:hidden;
 }
@@ -219,36 +227,40 @@ body{
 .map-shape{
   position:absolute;
   left:210px;
-  top:23px;
+  top:24px;
   width:300px;
-  height:178px;
-  background:linear-gradient(135deg,#dae8d3 0%,#f4ead0 29%,#d7e8fb 58%,#f4d1d5 100%);
+  height:176px;
+  background:linear-gradient(135deg,#dbe9d4 0%,#f3ead0 30%,#d7e8fb 58%,#f4d2d6 100%);
   clip-path:polygon(18% 10%,39% 5%,60% 12%,73% 25%,88% 34%,78% 50%,91% 66%,69% 75%,55% 91%,38% 82%,25% 89%,17% 72%,3% 63%,12% 47%,6% 31%);
   opacity:.96;
-  filter:drop-shadow(0 4px 9px rgba(35,75,130,.12));
+  filter:drop-shadow(0 5px 10px rgba(30,70,130,.14));
 }
 
 .map-label{
   position:absolute;
-  background:rgba(255,255,255,.90);
+  background:rgba(255,255,255,.92);
   border:1px solid #d8e3f5;
   border-radius:8px;
   padding:6px 8px;
-  font-size:11.4px;
-  line-height:1.34;
+  font-size:11.1px;
+  line-height:1.3;
   color:#243c67;
-  box-shadow:0 3px 9px rgba(26,66,125,.06);
+  box-shadow:0 4px 10px rgba(26,66,125,.07);
 }
 
-.l-north{left:24px;top:28px;width:180px}
+.l-north{left:24px;top:28px;width:178px}
 .l-east{right:22px;top:88px;width:170px}
 .l-south{left:150px;bottom:14px;width:235px}
 .l-west{left:28px;top:116px;width:160px}
 
 .dot{
-  position:absolute;width:8px;height:8px;border-radius:50%;
+  position:absolute;
+  width:8px;
+  height:8px;
+  border-radius:50%;
   box-shadow:0 0 0 4px rgba(255,255,255,.72);
 }
+
 .d1{left:330px;top:74px;background:#ef4444}
 .d2{left:385px;top:126px;background:#2563eb}
 .d3{left:260px;top:152px;background:#16a34a}
@@ -258,7 +270,7 @@ body{
   width:100%;
   border-collapse:collapse;
   margin-top:7px;
-  font-size:11.7px;
+  font-size:11.5px;
 }
 
 .weather-table th{
@@ -275,26 +287,25 @@ body{
   color:#263b62;
 }
 
-/* 区域表 */
 .big-table{
   width:100%;
   border-collapse:collapse;
-  font-size:12.4px;
+  font-size:12.2px;
 }
 
 .big-table th{
   background:#f0f5ff;
   color:#0a377f;
   padding:7px;
-  border:1px solid #d9e3f5;
+  border:1px solid #e2eaf6;
   font-weight:950;
 }
 
 .big-table td{
   padding:7px;
-  border:1px solid #d9e3f5;
+  border:1px solid #e2eaf6;
   text-align:center;
-  line-height:1.33;
+  line-height:1.32;
   color:#21375f;
 }
 
@@ -304,7 +315,7 @@ body{
 }
 
 .region-ico{
-  font-size:20px;
+  font-size:19px;
   display:block;
   margin-bottom:2px;
 }
@@ -328,37 +339,41 @@ body{
 
 .trend-item{
   display:grid;
-  grid-template-columns:39px 1fr 82px;
+  grid-template-columns:38px 1fr 80px;
   gap:8px;
   align-items:center;
   padding:7px 0;
-  border-bottom:1px solid #e7edf7;
+  border-bottom:1px solid #e8eef8;
 }
 
 .trend-item:last-child{border-bottom:none}
 
 .trend-icon{
-  width:35px;height:35px;border-radius:10px;
+  width:34px;
+  height:34px;
+  border-radius:10px;
   background:#f0f6ff;
-  display:flex;align-items:center;justify-content:center;
-  font-size:22px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:21px;
 }
 
 .trend-title{
-  font-size:14.7px;
+  font-size:14.5px;
   font-weight:950;
   color:#0a377f;
 }
 
 .trend-desc{
-  font-size:11.8px;
+  font-size:11.7px;
   color:#33476d;
-  line-height:1.32;
+  line-height:1.3;
   margin-top:2px;
 }
 
 .trend-tag{
-  font-size:10.5px;
+  font-size:10.3px;
   background:#eef7ef;
   color:#16844a;
   border-radius:12px;
@@ -367,11 +382,10 @@ body{
   text-align:center;
 }
 
-/* 词云：重新收缩，避免截断 */
 .word-cloud{
-  height:218px;
+  height:216px;
   position:relative;
-  background:radial-gradient(circle at 50% 48%,#fff 0%,#fbfdff 48%,#f2f7ff 100%);
+  background:radial-gradient(circle at 50% 48%,#fff 0%,#fbfdff 50%,#f2f7ff 100%);
   border-radius:9px;
   overflow:hidden;
   border:1px solid #edf2fb;
@@ -382,32 +396,32 @@ body{
   font-weight:950;
   white-space:nowrap;
   line-height:1;
-  text-shadow:0 1px 0 rgba(255,255,255,.85);
+  text-shadow:0 1px 0 rgba(255,255,255,.86);
 }
 
-.w1{font-size:48px;color:#082b6f;left:220px;top:72px}
-.w2{font-size:36px;color:#0b65e5;left:205px;top:123px}
-.w3{font-size:28px;color:#159957;left:240px;top:166px}
-.w4{font-size:24px;color:#dc2626;left:438px;top:104px}
-.w5{font-size:22px;color:#f97316;left:44px;top:88px}
-.w6{font-size:20px;color:#16a34a;left:84px;top:143px}
-.w7{font-size:19px;color:#6d28d9;left:126px;top:34px}
-.w8{font-size:18px;color:#0b55c8;left:448px;top:158px}
-.w9{font-size:16px;color:#dc2626;left:80px;top:188px}
-.w10{font-size:16px;color:#0f766e;left:370px;top:31px}
-.w11{font-size:15px;color:#2563eb;left:480px;top:56px}
-.w12{font-size:14px;color:#9333ea;left:365px;top:195px}
+.w1{font-size:46px;color:#082b6f;left:210px;top:72px}
+.w2{font-size:35px;color:#0b65e5;left:205px;top:122px}
+.w3{font-size:27px;color:#159957;left:245px;top:166px}
+.w4{font-size:23px;color:#dc2626;left:430px;top:103px}
+.w5{font-size:21px;color:#f97316;left:48px;top:88px}
+.w6{font-size:19px;color:#16a34a;left:84px;top:143px}
+.w7{font-size:18px;color:#6d28d9;left:126px;top:34px}
+.w8{font-size:17px;color:#0b55c8;left:448px;top:158px}
+.w9{font-size:15px;color:#dc2626;left:82px;top:188px}
+.w10{font-size:15px;color:#0f766e;left:370px;top:31px}
+.w11{font-size:14px;color:#2563eb;left:475px;top:56px}
+.w12{font-size:13px;color:#9333ea;left:365px;top:195px}
 
 .footer{
   margin-top:9px;
-  font-size:10.8px;
+  font-size:10.6px;
   color:#5c6f91;
   display:flex;
   justify-content:space-between;
 }
 
 .note{
-  font-size:10.8px;
+  font-size:10.5px;
   color:#667899;
   margin-top:5px;
 }
@@ -449,13 +463,12 @@ body{
     <div class="section">
       <div class="section-title">二、全国天气预报概览（{{weather_range}}）</div>
       <div class="section-body">
-
         <div class="weather-legend">
-          <div class="legend-item"><span class="legend-icon">☔</span>暴雨/强对流</div>
-          <div class="legend-item"><span class="legend-icon">🌡️</span>高温/升温</div>
-          <div class="legend-item"><span class="legend-icon">☀️</span>户外出行</div>
-          <div class="legend-item"><span class="legend-icon">🌧️</span>局地冰雹</div>
-          <div class="legend-item"><span class="legend-icon">🌬️</span>阵风影响</div>
+          <div class="legend-item">☔ 暴雨/强对流</div>
+          <div class="legend-item">🌡️ 高温/升温</div>
+          <div class="legend-item">☀️ 户外出行</div>
+          <div class="legend-item">🌧️ 局地冰雹</div>
+          <div class="legend-item">🌬️ 阵风影响</div>
         </div>
 
         <div class="weather-map">
@@ -475,7 +488,6 @@ body{
           <tr><td>西南</td><td>{{southwest_day1}}</td><td>{{southwest_day2}}</td><td>{{southwest_day3}}</td></tr>
           <tr><td>西北</td><td>{{northwest_day1}}</td><td>{{northwest_day2}}</td><td>{{northwest_day3}}</td></tr>
         </table>
-
         <div class="note">数据来源：公开气象信息整理，重点用于客流及商品节奏判断。</div>
       </div>
     </div>
