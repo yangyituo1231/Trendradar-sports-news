@@ -25,20 +25,29 @@ jobs:
         run: |
           pip install requests beautifulsoup4 pyyaml lxml
 
+      # 1. 抓新闻
       - name: Run News Fetcher
         run: |
           python scripts/get_hot_news.py
 
+      # 2. 抓实时天气
+      - name: Run Weather Fetcher
+        run: |
+          python scripts/get_weather.py
+
+      # 3. 生成日报
       - name: Run Fill Report
         run: |
           python scripts/fill_report.py
 
+      # 4. 自动提交
       - name: Commit Generated Files
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
 
           git add .
+
           git commit -m "auto update report" || echo "nothing to commit"
 
           git push
