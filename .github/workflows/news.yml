@@ -27,7 +27,7 @@ jobs:
 
       - name: Run News Fetcher
         run: |
-          python get_hot_news.py
+          python scripts/get_hot_news.py
 
       - name: Run Fill Report
         run: |
