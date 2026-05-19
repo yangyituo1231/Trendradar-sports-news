@@ -26,7 +26,7 @@ def clean_title(text):
     text = re.sub(r"_.*?$", "", text)
     return text
 
-def short(text, n=40):
+def short(text, n=42):
     text = clean_title(text)
     return text if len(text) <= n else text[:n] + "..."
 
@@ -50,7 +50,7 @@ if news_file.exists():
 titles = [clean_title(x.get("title", "")) for x in news_items if isinstance(x, dict) and x.get("title")]
 
 # =========================
-# TOP5分类：一类一条，避免大促刷屏
+# 1. TOP5：贴近原文，但一类一条
 # =========================
 
 CATEGORY_RULES = {
@@ -60,7 +60,7 @@ CATEGORY_RULES = {
         "logo": "大促",
         "icon": "🛒",
         "class": "logo-blue",
-        "desc": "大促内容适度关注，重点看夏季品类曝光、直播种草、转化效率和终端承接。",
+        "desc": "大促信息适度关注，重点看夏季品类曝光、直播种草、转化效率和终端承接。",
     },
     "童装儿童": {
         "keywords": ["童装", "儿童", "亲子", "校园", "儿童运动", "运动童装", "Kids", "KIDS"],
@@ -76,7 +76,7 @@ CATEGORY_RULES = {
         "logo": "天气",
         "icon": "☀️",
         "class": "logo-sky",
-        "desc": "天气变化会影响客流和主推节奏，防晒、凉感、速干及轻防护品类需前置。",
+        "desc": "天气变化影响客流和主推节奏，防晒、凉感、速干及轻防护品类需前置。",
     },
     "户外骑行": {
         "keywords": ["户外", "骑行", "露营", "文旅", "出行", "夜经济", "跑步", "轻户外", "徒步"],
@@ -105,30 +105,24 @@ fallback_by_category = {
 }
 
 def category_score(title, cat):
-    rule = CATEGORY_RULES[cat]
-    return sum(1 for kw in rule["keywords"] if kw in title)
+    return sum(1 for kw in CATEGORY_RULES[cat]["keywords"] if kw in title)
 
 def item_score(item, cat):
     title = clean_title(item.get("title", ""))
     source = str(item.get("source", ""))
-
     score = category_score(title, cat) * 10
 
-    # 降低大促霸屏，但不完全排除
     if cat != "大促电商" and any(k in title for k in ["618", "双11", "双十一", "大促"]):
         score -= 8
 
-    # 经理主管视角优先：消费、零售、门店、商品、童装、天气
     for kw in ["童装", "儿童", "亲子", "防晒", "凉感", "门店", "商场", "商圈", "客流", "零售", "消费", "户外"]:
         if kw in title:
             score += 3
 
-    # 过滤过于泛体育赛事
     for kw in ["比赛", "夺冠", "冠军", "联赛", "球队", "球员", "比分", "赛程", "奥运会", "国家队"]:
         if kw in title:
             score -= 12
 
-    # 来源偏好
     for src in ["界面新闻", "36氪", "赢商网", "联商网", "亿邦动力", "电商报", "新华网", "澎湃新闻", "证券时报"]:
         if src in source:
             score += 2
@@ -177,7 +171,36 @@ def pick_top_news():
 top_news = pick_top_news()
 
 # =========================
-# 区域热点：不直接搬标题，转成经营语言
+# 2. AI经营摘要：把资讯转成经营语言
+# =========================
+
+def business_sentence(title):
+    title = clean_title(title)
+
+    if any(k in title for k in ["618", "双11", "双十一", "大促", "预售"]):
+        return "大促窗口开启，重点关注夏季品类曝光、直播转化和门店承接。"
+    if any(k in title for k in ["童装", "儿童", "亲子", "校园"]):
+        return "儿童消费场景继续外扩，亲子、校园和运动体验价值提升。"
+    if any(k in title for k in ["高温", "防晒", "凉感", "速干"]):
+        return "高温天气推升防晒、凉感、速干等夏季功能品类需求。"
+    if any(k in title for k in ["暴雨", "降雨", "强对流", "防雨"]):
+        return "降雨天气扰动客流，门店需加强防雨与轻防护品类陈列。"
+    if any(k in title for k in ["户外", "露营", "骑行", "文旅", "出行"]):
+        return "户外出行与文旅场景升温，轻运动和亲子装备需求提升。"
+    if any(k in title for k in ["商场", "商圈", "客流", "门店", "会员", "奥莱"]):
+        return "商圈活动和会员运营带动客流恢复，终端转化效率值得关注。"
+    if any(k in title for k in ["抖音", "小红书", "直播", "种草", "内容"]):
+        return "内容平台影响购买决策，种草、直播与新品转化联动增强。"
+    return "行业与消费环境持续变化，门店需关注商品节奏与场景化运营。"
+
+business_summaries = []
+for t in titles[:20]:
+    s = business_sentence(t)
+    if s not in business_summaries:
+        business_summaries.append(s)
+
+# =========================
+# 3. 区域热点经营化
 # =========================
 
 region_map = {
@@ -252,6 +275,57 @@ def pick_region_hot(region_key):
     return random.choice(cfg["fallback"])
 
 # =========================
+# 4. 战略关键词池：经理/主管可读
+# =========================
+
+core_words = [
+    "防晒衣", "凉感科技", "周末客流", "亲子运动", "运动童装",
+    "商圈活动", "会员运营", "内容种草", "抖音直播", "小红书种草",
+    "城市骑行", "轻户外", "暑期消费", "校园运动", "奥莱折扣",
+    "门店陈列", "防雨装备", "短裤", "速干", "本地生活", "夜经济",
+    "文旅客流", "消费复苏", "大促预售", "户外休闲", "天气扰动",
+    "品类切换", "客流修复", "夏季主推", "会员转化", "亲子经济",
+    "618", "安踏", "李宁", "特步", "361儿童", "On昂跑", "lululemon"
+]
+
+joined = " ".join(titles)
+matched_words = []
+
+for w in core_words:
+    if w in joined:
+        matched_words.append(w)
+
+for s in business_summaries:
+    for w in core_words:
+        if w in s and w not in matched_words:
+            matched_words.append(w)
+
+if any(k in joined for k in ["618", "大促", "预售"]) and "618" not in matched_words:
+    matched_words.append("618")
+
+promo_words = {"618", "大促预售"}
+final_words = []
+promo_count = 0
+
+for w in matched_words:
+    if w in promo_words:
+        if promo_count >= 2:
+            continue
+        promo_count += 1
+    final_words.append(w)
+
+while len(final_words) < 18:
+    w = random.choice(core_words)
+    if w not in final_words:
+        if w in promo_words and promo_count >= 2:
+            continue
+        if w in promo_words:
+            promo_count += 1
+        final_words.append(w)
+
+selected_words = final_words[:18]
+
+# =========================
 # 趋势观察
 # =========================
 
@@ -265,54 +339,6 @@ trend_pool = [
 ]
 
 trends = random.sample(trend_pool, 4)
-
-# =========================
-# 关键词云：经营导向，不让大促过大
-# =========================
-
-strategic_words = [
-    "防晒衣", "凉感科技", "周末客流", "亲子运动", "运动童装",
-    "商圈活动", "会员运营", "内容种草", "抖音直播", "小红书种草",
-    "城市骑行", "轻户外", "暑期消费", "校园运动", "奥莱折扣",
-    "门店陈列", "防雨装备", "短裤", "速干", "本地生活", "夜经济",
-    "文旅客流", "消费复苏", "大促预售", "户外休闲", "天气扰动",
-    "品类切换", "客流修复", "夏季主推", "会员转化", "亲子经济",
-    "618", "安踏", "李宁", "特步", "361儿童", "On昂跑", "lululemon"
-]
-
-joined = " ".join(titles)
-matched_words = []
-
-for w in strategic_words:
-    if w in joined:
-        matched_words.append(w)
-
-# 保证618有机会出现，但不一定最大
-if any(k in joined for k in ["618", "大促", "预售"]) and "618" not in matched_words:
-    matched_words.append("618")
-
-while len(matched_words) < 18:
-    w = random.choice(strategic_words)
-    if w not in matched_words:
-        matched_words.append(w)
-
-# 控制大促词不超过2个
-promo_words = {"618", "大促预售"}
-final_words = []
-promo_count = 0
-for w in matched_words:
-    if w in promo_words:
-        if promo_count >= 2:
-            continue
-        promo_count += 1
-    final_words.append(w)
-
-while len(final_words) < 18:
-    w = random.choice(strategic_words)
-    if w not in final_words:
-        final_words.append(w)
-
-selected_words = final_words[:18]
 
 # =========================
 # 数据填充
