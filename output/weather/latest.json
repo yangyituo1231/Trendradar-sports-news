@@ -1,0 +1,211 @@
+{
+  "generated_at": "2026-05-19 12:09:06",
+  "source": "Open-Meteo",
+  "regions": {
+    "north": {
+      "name": "华北/东北",
+      "city": "Beijing",
+      "days": [
+        {
+          "date": "2026-05-19",
+          "code": 3,
+          "weather": "阴",
+          "temp_max": 25.2,
+          "temp_min": 17.4,
+          "precipitation": 0.0,
+          "wind": 9.6,
+          "risk_score": 0,
+          "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
+        },
+        {
+          "date": "2026-05-20",
+          "code": 51,
+          "weather": "小雨",
+          "temp_max": 24.1,
+          "temp_min": 17.4,
+          "precipitation": 1.2,
+          "wind": 9.4,
+          "risk_score": 0,
+          "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
+        },
+        {
+          "date": "2026-05-21",
+          "code": 3,
+          "weather": "阴",
+          "temp_max": 25.2,
+          "temp_min": 16.5,
+          "precipitation": 0.0,
+          "wind": 13.6,
+          "risk_score": 0,
+          "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
+        }
+      ],
+      "risk_score": 0,
+      "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
+    },
+    "east": {
+      "name": "华中/华东",
+      "city": "Shanghai",
+      "days": [
+        {
+          "date": "2026-05-19",
+          "code": 63,
+          "weather": "中雨",
+          "temp_max": 28.0,
+          "temp_min": 21.8,
+          "precipitation": 12.4,
+          "wind": 16.1,
+          "risk_score": 34,
+          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+        },
+        {
+          "date": "2026-05-20",
+          "code": 80,
+          "weather": "阵雨",
+          "temp_max": 26.9,
+          "temp_min": 22.1,
+          "precipitation": 18.8,
+          "wind": 14.2,
+          "risk_score": 34,
+          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+        },
+        {
+          "date": "2026-05-21",
+          "code": 3,
+          "weather": "阴",
+          "temp_max": 27.6,
+          "temp_min": 18.5,
+          "precipitation": 0.0,
+          "wind": 11.7,
+          "risk_score": 0,
+          "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
+        }
+      ],
+      "risk_score": 34,
+      "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+    },
+    "south": {
+      "name": "华南",
+      "city": "Guangzhou",
+      "days": [
+        {
+          "date": "2026-05-19",
+          "code": 81,
+          "weather": "阵雨",
+          "temp_max": 25.2,
+          "temp_min": 23.6,
+          "precipitation": 27.2,
+          "wind": 17.3,
+          "risk_score": 34,
+          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+        },
+        {
+          "date": "2026-05-20",
+          "code": 81,
+          "weather": "阵雨",
+          "temp_max": 30.0,
+          "temp_min": 23.1,
+          "precipitation": 32.3,
+          "wind": 12.2,
+          "risk_score": 67,
+          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+        },
+        {
+          "date": "2026-05-21",
+          "code": 81,
+          "weather": "阵雨",
+          "temp_max": 28.4,
+          "temp_min": 24.0,
+          "precipitation": 37.5,
+          "wind": 14.8,
+          "risk_score": 47,
+          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+        }
+      ],
+      "risk_score": 67,
+      "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+    },
+    "southwest": {
+      "name": "西南",
+      "city": "Chengdu",
+      "days": [
+        {
+          "date": "2026-05-19",
+          "code": 53,
+          "weather": "小雨",
+          "temp_max": 29.4,
+          "temp_min": 18.7,
+          "precipitation": 1.2,
+          "wind": 8.5,
+          "risk_score": 0,
+          "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
+        },
+        {
+          "date": "2026-05-20",
+          "code": 3,
+          "weather": "阴",
+          "temp_max": 32.2,
+          "temp_min": 19.0,
+          "precipitation": 0.0,
+          "wind": 11.6,
+          "risk_score": 20,
+          "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
+        },
+        {
+          "date": "2026-05-21",
+          "code": 51,
+          "weather": "小雨",
+          "temp_max": 31.6,
+          "temp_min": 23.2,
+          "precipitation": 0.1,
+          "wind": 13.0,
+          "risk_score": 20,
+          "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
+        }
+      ],
+      "risk_score": 20,
+      "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
+    },
+    "northwest": {
+      "name": "西北",
+      "city": "Xi'an",
+      "days": [
+        {
+          "date": "2026-05-19",
+          "code": 3,
+          "weather": "阴",
+          "temp_max": 23.3,
+          "temp_min": 17.0,
+          "precipitation": 0.0,
+          "wind": 8.4,
+          "risk_score": 0,
+          "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
+        },
+        {
+          "date": "2026-05-20",
+          "code": 3,
+          "weather": "阴",
+          "temp_max": 27.0,
+          "temp_min": 12.9,
+          "precipitation": 0.0,
+          "wind": 17.7,
+          "risk_score": 0,
+          "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
+        },
+        {
+          "date": "2026-05-21",
+          "code": 53,
+          "weather": "小雨",
+          "temp_max": 30.4,
+          "temp_min": 17.9,
+          "precipitation": 0.7,
+          "wind": 15.4,
+          "risk_score": 20,
+          "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
+        }
+      ],
+      "risk_score": 20,
+      "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
+    }
+  }
+}
