@@ -417,23 +417,71 @@ region_map = {
 def dynamic_store_action(weather_key, local_text, report):
     t = weather_business_type(weather_key)
 
-    if t in ["storm", "rain"]:
-        return "关注雨天客流承接与防雨防滑陈列"
-    if t in ["very_hot", "hot"]:
-        return "关注防晒凉感前置与短裤连带"
-    if t in ["snow_ice", "cold"]:
-        return "关注保暖防滑及童鞋连带销售"
+    weather_actions = {
+        "storm": [
+            "关注雨天客流承接与防雨防滑陈列",
+            "加强防雨、防滑鞋与轻外套组合销售",
+            "关注室内运动与亲子场景转化",
+        ],
+        "rain": [
+            "关注雨天客流承接与防雨防滑陈列",
+            "加强轻防护、防水鞋与帽类陈列",
+            "关注室内运动与亲子消费转化",
+        ],
+        "very_hot": [
+            "加强防晒衣、凉感T与短裤前置",
+            "关注高温天气下凉感科技品类转化",
+            "强化防晒、速干与轻户外场景陈列",
+        ],
+        "hot": [
+            "关注防晒凉感前置与短裤连带",
+            "强化速干、轻薄T恤与童鞋搭配",
+            "加强夏季轻运动与亲子场景展示",
+        ],
+        "snow_ice": [
+            "关注保暖防滑及童鞋连带销售",
+            "加强羽绒、棉服与防滑鞋陈列",
+            "关注室内运动与冬季客流承接",
+        ],
+        "cold": [
+            "加强保暖、防风外套与帽类组合",
+            "关注低温天气下保暖鞋服需求",
+            "强化冬季基础款与室内场景转化",
+        ],
+    }
+
+    # 天气动作
+    if t in weather_actions:
+        base_action = random.choice(weather_actions[t])
+    else:
+        base_action = report["action"]
+
+    # 新闻联动动作
+    news_actions = []
+
     if any(k in local_text for k in ["618", "双11", "双十二", "双12", "大促", "预售"]):
-        return "关注爆款承接、直播同款与价格带陈列"
+        news_actions.append("同步强化爆款与价格带承接")
+
     if any(k in local_text for k in ["赛事", "跑步", "马拉松", "训练"]):
-        return "关注跑鞋、训练装备与赛事场景陈列"
-    if any(k in local_text for k in ["童装", "儿童", "亲子", "校园"]):
-        return "关注童鞋、速干T与运动短裤组合"
-    if any(k in local_text for k in ["商场", "商圈", "客流", "会员"]):
-        return "关注会员活动、门口堆头与连带搭配"
+        news_actions.append("增加跑鞋与训练装备场景曝光")
+
     if any(k in local_text for k in ["户外", "骑行", "露营", "徒步"]):
-        return "关注轻户外、帽包配件与防护用品"
-    return report["action"]
+        news_actions.append("强化轻户外与配件组合销售")
+
+    if any(k in local_text for k in ["童装", "儿童", "亲子", "校园"]):
+        news_actions.append("加强亲子与校园运动陈列")
+
+    if any(k in local_text for k in ["抖音", "小红书", "直播", "种草"]):
+        news_actions.append("关注内容同款与门店种草承接")
+
+    if any(k in local_text for k in ["商场", "商圈", "会员", "客流"]):
+        news_actions.append("加强会员活动与周末客流运营")
+
+    # 避免完全重复
+    if news_actions:
+        return base_action + "；" + random.choice(news_actions)
+
+    return base_action
 
 def build_region_reports():
     reports = {}
@@ -597,6 +645,98 @@ SPORT_TREND_POOL = [
 ]
 
 def build_words():
+    counter = Counter()
+
+    # 1. 真实新闻标题词频
+    for t in titles[:100]:
+        for raw, mapped in KEYWORD_MAP.items():
+            if raw in t:
+                counter[mapped] += 2
+
+    # 2. 从新闻标题中提取更实时的短语
+    phrase_patterns = [
+        r"618[^，。！？、\s]{0,6}",
+        r"双11[^，。！？、\s]{0,6}",
+        r"抖音[^，。！？、\s]{0,6}",
+        r"小红书[^，。！？、\s]{0,6}",
+        r"防晒[^，。！？、\s]{0,6}",
+        r"凉感[^，。！？、\s]{0,6}",
+        r"户外[^，。！？、\s]{0,6}",
+        r"亲子[^，。！？、\s]{0,6}",
+        r"儿童[^，。！？、\s]{0,6}",
+        r"跑步[^，。！？、\s]{0,6}",
+        r"骑行[^，。！？、\s]{0,6}",
+        r"露营[^，。！？、\s]{0,6}",
+        r"商场[^，。！？、\s]{0,6}",
+        r"客流[^，。！？、\s]{0,6}",
+        r"品牌[^，。！？、\s]{0,6}",
+        r"运动[^，。！？、\s]{0,6}",
+    ]
+
+    for t in titles[:60]:
+        for pattern in phrase_patterns:
+            for phrase in re.findall(pattern, t):
+                phrase = clean_title(phrase)
+                if 2 <= len(phrase) <= 8:
+                    counter[phrase] += 1
+
+    # 3. 天气带来的实时热词
+    for key in ["north", "east", "south", "southwest", "northwest"]:
+        sig = weather_desc(key)
+        for raw, mapped in KEYWORD_MAP.items():
+            if raw in sig:
+                counter[mapped] += 2
+
+    # 4. 泛运动趋势词：只作为补充，不强行霸屏
+    sport_context_words = {
+        "跑步经济": ["跑步", "跑鞋", "马拉松", "训练"],
+        "专业跑鞋": ["跑步", "跑鞋", "马拉松"],
+        "城市骑行": ["骑行", "城市骑行"],
+        "户外运动": ["户外", "露营", "徒步", "轻户外"],
+        "轻户外": ["轻户外", "户外", "露营"],
+        "训练装备": ["训练", "跑步", "赛事"],
+        "运动科技": ["运动科技", "科技", "缓震", "碳板"],
+        "儿童体适能": ["儿童", "校园", "体适能"],
+        "校园体育": ["校园", "儿童运动"],
+        "女子运动": ["女性", "女子", "女神节", "38"],
+        "潮流运动": ["潮流", "联名", "街头"],
+        "运动康复": ["康复", "恢复", "护具"],
+    }
+
+    for mapped, triggers in sport_context_words.items():
+        if any(tg in joined for tg in triggers):
+            counter[mapped] += 2
+
+    # 5. 当前大促/季节兜底
+    seasonal_fallback = {
+        "spring": ["春季出行", "轻外套", "亲子运动", "校园体育", "城市骑行"],
+        "summer": ["防晒品类", "凉感科技", "速干", "短裤", "618", "夏季主推"],
+        "autumn": ["开学季", "校园体育", "轻外套", "户外运动", "99大促"],
+        "winter": ["保暖", "防滑鞋", "童鞋", "室内运动", "训练装备"],
+    }.get(SEASON, [])
+
+    broad_fallback = [
+        "运动童装", "儿童运动", "轻户外", "抖音直播", "小红书种草",
+        "商圈客流", "门店陈列", "客流修复", "跑步经济", "专业跑鞋",
+        "Nike", "阿迪达斯", "安踏", "李宁", "特步", "On昂跑", "HOKA",
+        "户外运动", "运动科技", "训练装备", "城市骑行"
+    ]
+
+    # 6. 排序：真实命中优先，兜底后补
+    preferred = [w for w, _ in counter.most_common()]
+
+    words = []
+    for w in preferred + seasonal_fallback + broad_fallback:
+        if not w:
+            continue
+        if len(w) > 8:
+            continue
+        if w not in words:
+            words.append(w)
+        if len(words) >= 18:
+            break
+
+    return words[:18]
     counter = Counter()
 
     for t in titles[:80]:
