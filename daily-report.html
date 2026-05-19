@@ -16,19 +16,21 @@ body{background:#edf3fb;font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,s
 .stat-num{font-size:36px;font-weight:950;line-height:1;color:#075ed1;margin-top:5px}
 .stat-small{font-size:11px;color:#5a6f91;margin-top:3px}
 
-.grid-top{display:grid;grid-template-columns:.96fr 1.04fr;gap:12px;margin-bottom:11px}
+.grid-top{display:grid;grid-template-columns:.97fr 1.03fr;gap:12px;margin-bottom:11px}
 .section{background:#fff;border:1px solid #d7e3f4;border-radius:10px;overflow:hidden;box-shadow:0 5px 16px rgba(22,61,120,.05)}
 .section-title{height:38px;background:linear-gradient(90deg,#03266f 0%,#0645a8 68%,#0b67dc 100%);color:#fff;font-size:18.5px;font-weight:950;padding:0 14px;letter-spacing:.2px;display:flex;justify-content:space-between;align-items:center}
 .more{font-size:12px;font-weight:850;color:#dcecff}
-.section-body{padding:10px 12px}
+.section-body{padding:11px 13px}
 
 /* TOP5 */
-.news-list{display:flex;flex-direction:column;gap:8px}
-.news-item{display:grid;grid-template-columns:30px 60px 1fr;gap:11px;align-items:center;padding-bottom:9px;border-bottom:1px solid #e8eef8}
+.news-list{display:flex;flex-direction:column;gap:10px}
+.news-item{display:grid;grid-template-columns:30px 62px 1fr;gap:12px;align-items:center;min-height:70px;padding-bottom:10px;border-bottom:1px solid #e8eef8}
 .news-item:last-child{border-bottom:none;padding-bottom:0}
 .rank{width:28px;height:28px;border-radius:7px;color:#fff;font-weight:950;font-size:15px;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 8px rgba(0,40,120,.16)}
 .r1{background:#0965e8}.r2{background:#09a064}.r3{background:#ff8a00}.r4{background:#7044da}.r5{background:#0d88d8}
-.logo-box{width:58px;height:58px;border-radius:15px;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:950;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25),0 8px 15px rgba(14,48,105,.18);letter-spacing:-.5px}
+.logo-box{width:60px;height:60px;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:950;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25),0 8px 15px rgba(14,48,105,.18);letter-spacing:-.3px}
+.logo-icon{font-size:18px;line-height:1;margin-bottom:3px}
+.logo-text{font-size:13px;line-height:1}
 .logo-blue{background:linear-gradient(145deg,#083b92,#0b74e8);color:#fff}
 .logo-green{background:linear-gradient(145deg,#047857,#12b981);color:#fff}
 .logo-orange{background:linear-gradient(145deg,#fb8500,#ffb703);color:#fff}
@@ -36,21 +38,21 @@ body{background:#edf3fb;font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,s
 .logo-sky{background:linear-gradient(145deg,#0284c7,#38bdf8);color:#fff}
 .logo-red{background:linear-gradient(145deg,#dc2626,#fb7185);color:#fff}
 .logo-dark{background:linear-gradient(145deg,#0f172a,#334155);color:#fff}
-.news-title{font-size:16.2px;font-weight:950;color:#10244e;line-height:1.28}
-.news-meta{font-size:11px;color:#71829f;margin:3px 0}
-.news-desc{font-size:12.3px;color:#2e4269;line-height:1.38}
+.news-title{font-size:16.4px;font-weight:950;color:#10244e;line-height:1.28}
+.news-meta{font-size:11px;color:#71829f;margin:4px 0}
+.news-desc{font-size:12.4px;color:#2e4269;line-height:1.38}
 .tag{float:right;background:#edf5ff;color:#0b55c8;padding:3px 8px;border-radius:12px;font-size:10.5px;font-weight:900;margin-left:6px}
 
-/* 天气 */
+/* 天气地图 */
 .weather-legend{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:7px}
 .legend-item{height:25px;display:flex;align-items:center;justify-content:center;gap:3px;border-radius:8px;background:#f5f9ff;border:1px solid #dce7f7;font-size:11px;font-weight:850;color:#183b78}
 .weather-map{position:relative;height:252px;border-radius:11px;background:radial-gradient(circle at 50% 45%,#fff 0%,#f8fbff 48%,#edf5ff 100%);border:1px solid #d9e5f5;overflow:hidden}
-.china-map{position:absolute;left:178px;top:18px;width:365px;height:205px}
-.map-main{position:absolute;left:38px;top:8px;width:275px;height:185px;background:linear-gradient(135deg,#f6ddb2 0%,#f6e5c7 28%,#cfe3f7 52%,#bedecf 68%,#d8c4ef 88%);clip-path:polygon(31% 5%,47% 1%,61% 7%,72% 12%,83% 28%,74% 40%,86% 54%,72% 61%,64% 78%,52% 91%,40% 83%,27% 88%,22% 71%,6% 62%,17% 48%,6% 35%,19% 25%);filter:drop-shadow(0 6px 11px rgba(30,70,130,.15));opacity:.95}
-.map-ne{position:absolute;left:255px;top:34px;width:72px;height:62px;background:#f3dec4;clip-path:polygon(0 22%,58% 0,100% 35%,70% 100%,18% 82%);opacity:.85}
-.map-hainan{position:absolute;left:235px;top:183px;width:14px;height:10px;background:#d4c2ee;border-radius:50%;opacity:.9}
-.map-taiwan{position:absolute;left:314px;top:142px;width:10px;height:32px;background:#d6c8ef;border-radius:50%;transform:rotate(22deg);opacity:.9}
-.map-islands{position:absolute;right:7px;bottom:7px;width:62px;height:54px;border:1px solid #d7e3f4;border-radius:9px;background:rgba(255,255,255,.7)}
+.china-map{position:absolute;left:168px;top:14px;width:385px;height:210px}
+.map-main{position:absolute;left:40px;top:8px;width:286px;height:190px;background:linear-gradient(135deg,#f4dab1 0%,#f7e4c5 28%,#cfe4f7 52%,#bfe0d2 68%,#d8c4ef 88%);clip-path:polygon(28% 8%,43% 2%,60% 6%,73% 14%,82% 26%,76% 38%,91% 52%,74% 61%,65% 73%,57% 92%,43% 84%,29% 91%,23% 73%,7% 64%,18% 50%,5% 36%,19% 25%);filter:drop-shadow(0 6px 11px rgba(30,70,130,.15))}
+.map-ne{position:absolute;left:260px;top:35px;width:78px;height:67px;background:#f4dfc8;clip-path:polygon(0 22%,58% 0,100% 35%,70% 100%,18% 82%);opacity:.88}
+.map-hainan{position:absolute;left:238px;top:188px;width:15px;height:10px;background:#d4c2ee;border-radius:50%;opacity:.9}
+.map-taiwan{position:absolute;left:322px;top:145px;width:10px;height:34px;background:#d6c8ef;border-radius:50%;transform:rotate(22deg);opacity:.9}
+.map-islands{position:absolute;right:3px;bottom:3px;width:62px;height:54px;border:1px solid #d7e3f4;border-radius:9px;background:rgba(255,255,255,.7)}
 .map-islands:before{content:"";position:absolute;left:22px;top:16px;width:3px;height:3px;background:#6aa9e8;border-radius:50%;box-shadow:12px 8px 0 #6aa9e8,5px 20px 0 #6aa9e8,25px 24px 0 #6aa9e8}
 .map-label{position:absolute;background:rgba(255,255,255,.95);border:1px solid #d8e3f5;border-radius:9px;padding:7px 9px;font-size:11.2px;line-height:1.35;color:#243c67;box-shadow:0 5px 12px rgba(26,66,125,.08)}
 .l-north{right:15px;top:32px;width:154px}.l-east{right:15px;top:113px;width:160px}.l-south{left:160px;bottom:15px;width:250px}.l-west{left:18px;top:43px;width:155px}.l-sw{left:18px;top:133px;width:160px}
@@ -66,7 +68,8 @@ body{background:#edf3fb;font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,s
 .big-table td{padding:8px 7px;border:1px solid #e2eaf6;text-align:center;line-height:1.34;color:#21375f}
 .col-region{width:110px}.col-hot{width:230px}.col-flow{width:220px}.col-signal{width:220px}.col-action{width:245px}.col-star{width:90px}
 .region-name{font-weight:950;color:#0a377f}.region-ico{font-size:20px;display:block;margin-bottom:2px}
-.stars{font-size:21px;letter-spacing:1px;font-weight:950}.star-red{color:#e11d48}.star-orange{color:#f97316}.star-green{color:#0b72d9}
+.stars{font-size:21px;letter-spacing:1px;font-weight:950}
+.star-red{color:#e11d48}.star-orange{color:#f97316}.star-blue{color:#0b72d9}.star-green{color:#16a34a}
 
 /* 底部 */
 .grid-bottom{display:grid;grid-template-columns:.92fr 1.08fr;gap:12px;margin-top:11px}
@@ -105,11 +108,11 @@ body{background:#edf3fb;font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,s
   <div class="section">
     <div class="section-title"><span>一、重点资讯精选（TOP 5）</span><span class="more">查看更多 ›</span></div>
     <div class="section-body"><div class="news-list">
-      <div class="news-item"><div class="rank r1">1</div><div class="logo-box {{top1_logo_class}}">{{top1_logo}}</div><div><div class="news-title">{{top1_title}} <span class="tag">{{top1_tag}}</span></div><div class="news-meta">{{top1_time}} ｜ {{top1_source}}</div><div class="news-desc">{{top1_desc}}</div></div></div>
-      <div class="news-item"><div class="rank r2">2</div><div class="logo-box {{top2_logo_class}}">{{top2_logo}}</div><div><div class="news-title">{{top2_title}} <span class="tag">{{top2_tag}}</span></div><div class="news-meta">{{top2_time}} ｜ {{top2_source}}</div><div class="news-desc">{{top2_desc}}</div></div></div>
-      <div class="news-item"><div class="rank r3">3</div><div class="logo-box {{top3_logo_class}}">{{top3_logo}}</div><div><div class="news-title">{{top3_title}} <span class="tag">{{top3_tag}}</span></div><div class="news-meta">{{top3_time}} ｜ {{top3_source}}</div><div class="news-desc">{{top3_desc}}</div></div></div>
-      <div class="news-item"><div class="rank r4">4</div><div class="logo-box {{top4_logo_class}}">{{top4_logo}}</div><div><div class="news-title">{{top4_title}} <span class="tag">{{top4_tag}}</span></div><div class="news-meta">{{top4_time}} ｜ {{top4_source}}</div><div class="news-desc">{{top4_desc}}</div></div></div>
-      <div class="news-item"><div class="rank r5">5</div><div class="logo-box {{top5_logo_class}}">{{top5_logo}}</div><div><div class="news-title">{{top5_title}} <span class="tag">{{top5_tag}}</span></div><div class="news-meta">{{top5_time}} ｜ {{top5_source}}</div><div class="news-desc">{{top5_desc}}</div></div></div>
+      <div class="news-item"><div class="rank r1">1</div><div class="logo-box {{top1_logo_class}}"><div class="logo-icon">{{top1_icon}}</div><div class="logo-text">{{top1_logo}}</div></div><div><div class="news-title">{{top1_title}} <span class="tag">{{top1_tag}}</span></div><div class="news-meta">{{top1_time}} ｜ {{top1_source}}</div><div class="news-desc">{{top1_desc}}</div></div></div>
+      <div class="news-item"><div class="rank r2">2</div><div class="logo-box {{top2_logo_class}}"><div class="logo-icon">{{top2_icon}}</div><div class="logo-text">{{top2_logo}}</div></div><div><div class="news-title">{{top2_title}} <span class="tag">{{top2_tag}}</span></div><div class="news-meta">{{top2_time}} ｜ {{top2_source}}</div><div class="news-desc">{{top2_desc}}</div></div></div>
+      <div class="news-item"><div class="rank r3">3</div><div class="logo-box {{top3_logo_class}}"><div class="logo-icon">{{top3_icon}}</div><div class="logo-text">{{top3_logo}}</div></div><div><div class="news-title">{{top3_title}} <span class="tag">{{top3_tag}}</span></div><div class="news-meta">{{top3_time}} ｜ {{top3_source}}</div><div class="news-desc">{{top3_desc}}</div></div></div>
+      <div class="news-item"><div class="rank r4">4</div><div class="logo-box {{top4_logo_class}}"><div class="logo-icon">{{top4_icon}}</div><div class="logo-text">{{top4_logo}}</div></div><div><div class="news-title">{{top4_title}} <span class="tag">{{top4_tag}}</span></div><div class="news-meta">{{top4_time}} ｜ {{top4_source}}</div><div class="news-desc">{{top4_desc}}</div></div></div>
+      <div class="news-item"><div class="rank r5">5</div><div class="logo-box {{top5_logo_class}}"><div class="logo-icon">{{top5_icon}}</div><div class="logo-text">{{top5_logo}}</div></div><div><div class="news-title">{{top5_title}} <span class="tag">{{top5_tag}}</span></div><div class="news-meta">{{top5_time}} ｜ {{top5_source}}</div><div class="news-desc">{{top5_desc}}</div></div></div>
     </div><div class="note">注：以上资讯来自公开媒体及平台，仅供经营观察参考。</div></div>
   </div>
 
@@ -139,8 +142,8 @@ body{background:#edf3fb;font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,s
     <tr><td class="region-name"><span class="region-ico">👥</span>华中<br>{{central_city}}</td><td>{{central_hot}}</td><td>{{central_flow}}</td><td>{{central_signal}}</td><td>{{central_action}}</td><td class="stars star-orange">{{central_star}}</td></tr>
     <tr><td class="region-name"><span class="region-ico">☀️</span>华南<br>{{south_city}}</td><td>{{south_hot}}</td><td>{{south_flow}}</td><td>{{south_signal}}</td><td>{{south_action}}</td><td class="stars star-red">{{south_star}}</td></tr>
     <tr><td class="region-name"><span class="region-ico">⛰️</span>西南<br>{{southwest_city}}</td><td>{{southwest_hot}}</td><td>{{southwest_flow}}</td><td>{{southwest_signal}}</td><td>{{southwest_action}}</td><td class="stars star-orange">{{southwest_star}}</td></tr>
-    <tr><td class="region-name"><span class="region-ico">🌬️</span>西北<br>{{northwest_city}}</td><td>{{northwest_hot}}</td><td>{{northwest_flow}}</td><td>{{northwest_signal}}</td><td>{{northwest_action}}</td><td class="stars star-green">{{northwest_star}}</td></tr>
-  </table><div class="note">关注等级说明：★★★重点关注　★★持续跟踪　★一般观察</div></div>
+    <tr><td class="region-name"><span class="region-ico">🌬️</span>西北<br>{{northwest_city}}</td><td>{{northwest_hot}}</td><td>{{northwest_flow}}</td><td>{{northwest_signal}}</td><td>{{northwest_action}}</td><td class="stars star-blue">{{northwest_star}}</td></tr>
+  </table><div class="note">关注等级说明：<span class="star-red">★★★</span>重点关注　<span class="star-orange">★★</span>持续跟踪　<span class="star-blue">★</span>一般观察</div></div>
 </div>
 
 <div class="grid-bottom">
