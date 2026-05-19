@@ -15,49 +15,60 @@ body{background:#edf3fb;font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,s
 .stat-title{font-size:13px;font-weight:950;color:#153773}
 .stat-num{font-size:36px;font-weight:950;line-height:1;color:#075ed1;margin-top:5px}
 .stat-small{font-size:11px;color:#5a6f91;margin-top:3px}
+
 .grid-top{display:grid;grid-template-columns:.96fr 1.04fr;gap:12px;margin-bottom:11px}
 .section{background:#fff;border:1px solid #d7e3f4;border-radius:10px;overflow:hidden;box-shadow:0 5px 16px rgba(22,61,120,.05)}
 .section-title{height:38px;background:linear-gradient(90deg,#03266f 0%,#0645a8 68%,#0b67dc 100%);color:#fff;font-size:18.5px;font-weight:950;padding:0 14px;letter-spacing:.2px;display:flex;justify-content:space-between;align-items:center}
 .more{font-size:12px;font-weight:850;color:#dcecff}
 .section-body{padding:10px 12px}
 
+/* TOP5 */
 .news-list{display:flex;flex-direction:column;gap:8px}
-.news-item{display:grid;grid-template-columns:30px 58px 1fr;gap:11px;align-items:center;padding-bottom:9px;border-bottom:1px solid #e8eef8}
+.news-item{display:grid;grid-template-columns:30px 60px 1fr;gap:11px;align-items:center;padding-bottom:9px;border-bottom:1px solid #e8eef8}
 .news-item:last-child{border-bottom:none;padding-bottom:0}
 .rank{width:28px;height:28px;border-radius:7px;color:#fff;font-weight:950;font-size:15px;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 8px rgba(0,40,120,.16)}
 .r1{background:#0965e8}.r2{background:#09a064}.r3{background:#ff8a00}.r4{background:#7044da}.r5{background:#0d88d8}
-.logo-box{width:54px;height:54px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:950;box-shadow:0 7px 14px rgba(14,48,105,.15);border:1px solid rgba(255,255,255,.75)}
-.logo-blue{background:linear-gradient(145deg,#eaf3ff,#d7e8ff);color:#075ed1}
-.logo-green{background:linear-gradient(145deg,#ecfdf5,#d7f5e6);color:#059669}
-.logo-orange{background:linear-gradient(145deg,#fff7ed,#ffedd5);color:#f97316}
-.logo-purple{background:linear-gradient(145deg,#f5f3ff,#ede9fe);color:#6d28d9}
-.logo-sky{background:linear-gradient(145deg,#f0f9ff,#dff3ff);color:#0284c7}
-.logo-red{background:linear-gradient(145deg,#fff1f2,#ffe4e6);color:#e11d48}
-.logo-dark{background:linear-gradient(145deg,#111827,#374151);color:#fff}
+.logo-box{width:58px;height:58px;border-radius:15px;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:950;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25),0 8px 15px rgba(14,48,105,.18);letter-spacing:-.5px}
+.logo-blue{background:linear-gradient(145deg,#083b92,#0b74e8);color:#fff}
+.logo-green{background:linear-gradient(145deg,#047857,#12b981);color:#fff}
+.logo-orange{background:linear-gradient(145deg,#fb8500,#ffb703);color:#fff}
+.logo-purple{background:linear-gradient(145deg,#5b21b6,#8b5cf6);color:#fff}
+.logo-sky{background:linear-gradient(145deg,#0284c7,#38bdf8);color:#fff}
+.logo-red{background:linear-gradient(145deg,#dc2626,#fb7185);color:#fff}
+.logo-dark{background:linear-gradient(145deg,#0f172a,#334155);color:#fff}
 .news-title{font-size:16.2px;font-weight:950;color:#10244e;line-height:1.28}
 .news-meta{font-size:11px;color:#71829f;margin:3px 0}
 .news-desc{font-size:12.3px;color:#2e4269;line-height:1.38}
 .tag{float:right;background:#edf5ff;color:#0b55c8;padding:3px 8px;border-radius:12px;font-size:10.5px;font-weight:900;margin-left:6px}
 
+/* 天气 */
 .weather-legend{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:7px}
 .legend-item{height:25px;display:flex;align-items:center;justify-content:center;gap:3px;border-radius:8px;background:#f5f9ff;border:1px solid #dce7f7;font-size:11px;font-weight:850;color:#183b78}
 .weather-map{position:relative;height:252px;border-radius:11px;background:radial-gradient(circle at 50% 45%,#fff 0%,#f8fbff 48%,#edf5ff 100%);border:1px solid #d9e5f5;overflow:hidden}
-.map-shape{position:absolute;left:182px;top:22px;width:350px;height:200px;background:linear-gradient(135deg,#f3dfba 0%,#f8ead0 30%,#cde0f4 55%,#d5c5ef 78%,#f0d7e2 100%);clip-path:polygon(18% 10%,39% 5%,60% 12%,73% 25%,88% 34%,78% 50%,91% 66%,69% 75%,55% 91%,38% 82%,25% 89%,17% 72%,3% 63%,12% 47%,6% 31%);filter:drop-shadow(0 6px 11px rgba(30,70,130,.15));opacity:.88}
-.map-label{position:absolute;background:rgba(255,255,255,.94);border:1px solid #d8e3f5;border-radius:9px;padding:7px 9px;font-size:11.3px;line-height:1.35;color:#243c67;box-shadow:0 5px 12px rgba(26,66,125,.08)}
-.l-north{right:16px;top:30px;width:154px}.l-east{right:16px;top:110px;width:160px}.l-south{left:166px;bottom:16px;width:245px}.l-west{left:18px;top:44px;width:155px}.l-sw{left:18px;top:135px;width:160px}
+.china-map{position:absolute;left:178px;top:18px;width:365px;height:205px}
+.map-main{position:absolute;left:38px;top:8px;width:275px;height:185px;background:linear-gradient(135deg,#f6ddb2 0%,#f6e5c7 28%,#cfe3f7 52%,#bedecf 68%,#d8c4ef 88%);clip-path:polygon(31% 5%,47% 1%,61% 7%,72% 12%,83% 28%,74% 40%,86% 54%,72% 61%,64% 78%,52% 91%,40% 83%,27% 88%,22% 71%,6% 62%,17% 48%,6% 35%,19% 25%);filter:drop-shadow(0 6px 11px rgba(30,70,130,.15));opacity:.95}
+.map-ne{position:absolute;left:255px;top:34px;width:72px;height:62px;background:#f3dec4;clip-path:polygon(0 22%,58% 0,100% 35%,70% 100%,18% 82%);opacity:.85}
+.map-hainan{position:absolute;left:235px;top:183px;width:14px;height:10px;background:#d4c2ee;border-radius:50%;opacity:.9}
+.map-taiwan{position:absolute;left:314px;top:142px;width:10px;height:32px;background:#d6c8ef;border-radius:50%;transform:rotate(22deg);opacity:.9}
+.map-islands{position:absolute;right:7px;bottom:7px;width:62px;height:54px;border:1px solid #d7e3f4;border-radius:9px;background:rgba(255,255,255,.7)}
+.map-islands:before{content:"";position:absolute;left:22px;top:16px;width:3px;height:3px;background:#6aa9e8;border-radius:50%;box-shadow:12px 8px 0 #6aa9e8,5px 20px 0 #6aa9e8,25px 24px 0 #6aa9e8}
+.map-label{position:absolute;background:rgba(255,255,255,.95);border:1px solid #d8e3f5;border-radius:9px;padding:7px 9px;font-size:11.2px;line-height:1.35;color:#243c67;box-shadow:0 5px 12px rgba(26,66,125,.08)}
+.l-north{right:15px;top:32px;width:154px}.l-east{right:15px;top:113px;width:160px}.l-south{left:160px;bottom:15px;width:250px}.l-west{left:18px;top:43px;width:155px}.l-sw{left:18px;top:133px;width:160px}
 .dot{position:absolute;width:9px;height:9px;border-radius:50%;box-shadow:0 0 0 4px rgba(255,255,255,.75)}
-.d1{left:335px;top:72px;background:#ef4444}.d2{left:424px;top:132px;background:#2563eb}.d3{left:258px;top:153px;background:#16a34a}.d4{left:230px;top:93px;background:#f97316}.d5{left:378px;top:184px;background:#7c3aed}
+.d1{left:340px;top:72px;background:#ef4444}.d2{left:430px;top:132px;background:#2563eb}.d3{left:265px;top:153px;background:#16a34a}.d4{left:230px;top:93px;background:#f97316}.d5{left:385px;top:184px;background:#7c3aed}
 .weather-table{width:100%;border-collapse:collapse;margin-top:8px;font-size:11.6px}
 .weather-table th{background:#eef4ff;color:#163b7c;padding:5px;border:1px solid #d8e3f5;font-weight:950}
 .weather-table td{text-align:center;padding:5px;border:1px solid #d8e3f5;color:#263b62}
 
+/* 区域表 */
 .big-table{width:100%;border-collapse:collapse;font-size:12.3px}
 .big-table th{background:#f0f5ff;color:#0a377f;padding:7px;border:1px solid #e2eaf6;font-weight:950}
 .big-table td{padding:8px 7px;border:1px solid #e2eaf6;text-align:center;line-height:1.34;color:#21375f}
-.col-region{width:110px}.col-hot{width:220px}.col-flow{width:220px}.col-signal{width:220px}.col-action{width:255px}.col-star{width:90px}
+.col-region{width:110px}.col-hot{width:230px}.col-flow{width:220px}.col-signal{width:220px}.col-action{width:245px}.col-star{width:90px}
 .region-name{font-weight:950;color:#0a377f}.region-ico{font-size:20px;display:block;margin-bottom:2px}
 .stars{font-size:21px;letter-spacing:1px;font-weight:950}.star-red{color:#e11d48}.star-orange{color:#f97316}.star-green{color:#0b72d9}
 
+/* 底部 */
 .grid-bottom{display:grid;grid-template-columns:.92fr 1.08fr;gap:12px;margin-top:11px}
 .trend-item{display:grid;grid-template-columns:40px 1fr 84px;gap:9px;align-items:center;padding:10px 0;border-bottom:1px solid #e8eef8}
 .trend-item:last-child{border-bottom:none}
@@ -67,7 +78,12 @@ body{background:#edf3fb;font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,s
 .trend-tag{font-size:10.6px;background:#eef7ef;color:#16844a;border-radius:13px;padding:4px 7px;font-weight:850;text-align:center}
 .word-cloud{height:238px;position:relative;background:radial-gradient(circle at 50% 48%,#fff 0%,#fbfdff 48%,#f2f7ff 100%);border-radius:10px;overflow:hidden;border:1px solid #edf2fb}
 .word{position:absolute;font-weight:950;white-space:nowrap;line-height:1;text-shadow:0 1px 0 rgba(255,255,255,.86)}
-.w1{font-size:50px;color:#082b6f;left:210px;top:78px}.w2{font-size:37px;color:#0b65e5;left:210px;top:132px}.w3{font-size:29px;color:#159957;left:250px;top:178px}.w4{font-size:24px;color:#dc2626;left:445px;top:108px}.w5{font-size:22px;color:#f97316;left:52px;top:92px}.w6{font-size:20px;color:#16a34a;left:88px;top:148px}.w7{font-size:19px;color:#6d28d9;left:135px;top:36px}.w8{font-size:18px;color:#0b55c8;left:460px;top:165px}.w9{font-size:16px;color:#dc2626;left:84px;top:198px}.w10{font-size:16px;color:#0f766e;left:385px;top:34px}.w11{font-size:15px;color:#2563eb;left:492px;top:60px}.w12{font-size:14px;color:#9333ea;left:385px;top:207px}
+.w1{font-size:48px;color:#082b6f;left:210px;top:77px}.w2{font-size:36px;color:#0b65e5;left:215px;top:128px}.w3{font-size:27px;color:#159957;left:255px;top:174px}
+.w4{font-size:23px;color:#dc2626;left:445px;top:108px}.w5{font-size:22px;color:#f97316;left:55px;top:90px}.w6{font-size:20px;color:#16a34a;left:88px;top:145px}
+.w7{font-size:18px;color:#6d28d9;left:135px;top:36px}.w8{font-size:17px;color:#0b55c8;left:460px;top:160px}.w9{font-size:16px;color:#dc2626;left:85px;top:196px}
+.w10{font-size:16px;color:#0f766e;left:385px;top:34px}.w11{font-size:15px;color:#2563eb;left:490px;top:60px}.w12{font-size:14px;color:#9333ea;left:385px;top:205px}
+.w13{font-size:13px;color:#ea580c;left:30px;top:32px}.w14{font-size:13px;color:#0f766e;left:515px;top:25px}.w15{font-size:12px;color:#1d4ed8;left:20px;top:220px}
+.w16{font-size:12px;color:#be123c;left:505px;top:205px}.w17{font-size:12px;color:#7c3aed;left:315px;top:18px}.w18{font-size:12px;color:#15803d;left:150px;top:215px}
 .footer{margin-top:10px;font-size:10.8px;color:#5c6f91;display:flex;justify-content:space-between}
 .note{font-size:10.6px;color:#667899;margin-top:6px}
 </style>
@@ -75,29 +91,69 @@ body{background:#edf3fb;font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,s
 
 <body>
 <div class="page">
-<div class="header"><div><div class="main-title">{{title}}</div><div class="subtitle">{{subtitle}}</div></div><div class="stats"><div class="stat"><div class="stat-title">📅 {{date}}</div><div class="stat-small">{{weekday}}</div><div class="stat-small">更新于 {{update_time}}</div></div><div class="stat"><div class="stat-title">今日监测</div><div class="stat-num">{{monitor_count}}</div><div class="stat-small">条资讯</div></div><div class="stat"><div class="stat-title">RSS资讯</div><div class="stat-num">{{rss_count}}</div><div class="stat-small">条</div></div><div class="stat"><div class="stat-title">重点摘要</div><div class="stat-num">{{focus_count}}</div><div class="stat-small">条</div></div></div></div>
-
-<div class="grid-top">
-<div class="section"><div class="section-title"><span>一、重点资讯精选（TOP 5）</span><span class="more">查看更多 ›</span></div><div class="section-body"><div class="news-list">
-<div class="news-item"><div class="rank r1">1</div><div class="logo-box {{top1_logo_class}}">{{top1_logo}}</div><div><div class="news-title">{{top1_title}} <span class="tag">{{top1_tag}}</span></div><div class="news-meta">{{top1_time}} ｜ {{top1_source}}</div><div class="news-desc">{{top1_desc}}</div></div></div>
-<div class="news-item"><div class="rank r2">2</div><div class="logo-box {{top2_logo_class}}">{{top2_logo}}</div><div><div class="news-title">{{top2_title}} <span class="tag">{{top2_tag}}</span></div><div class="news-meta">{{top2_time}} ｜ {{top2_source}}</div><div class="news-desc">{{top2_desc}}</div></div></div>
-<div class="news-item"><div class="rank r3">3</div><div class="logo-box {{top3_logo_class}}">{{top3_logo}}</div><div><div class="news-title">{{top3_title}} <span class="tag">{{top3_tag}}</span></div><div class="news-meta">{{top3_time}} ｜ {{top3_source}}</div><div class="news-desc">{{top3_desc}}</div></div></div>
-<div class="news-item"><div class="rank r4">4</div><div class="logo-box {{top4_logo_class}}">{{top4_logo}}</div><div><div class="news-title">{{top4_title}} <span class="tag">{{top4_tag}}</span></div><div class="news-meta">{{top4_time}} ｜ {{top4_source}}</div><div class="news-desc">{{top4_desc}}</div></div></div>
-<div class="news-item"><div class="rank r5">5</div><div class="logo-box {{top5_logo_class}}">{{top5_logo}}</div><div><div class="news-title">{{top5_title}} <span class="tag">{{top5_tag}}</span></div><div class="news-meta">{{top5_time}} ｜ {{top5_source}}</div><div class="news-desc">{{top5_desc}}</div></div></div>
-</div><div class="note">注：以上资讯来自公开媒体及平台，仅供经营观察参考。</div></div></div>
-
-<div class="section"><div class="section-title"><span>二、全国天气预报概览（{{weather_range}}）</span></div><div class="section-body">
-<div class="weather-legend"><div class="legend-item">☔ 暴雨/强对流</div><div class="legend-item">🌡️ 高温/升温</div><div class="legend-item">☀️ 户外出行</div><div class="legend-item">🌧️ 局地冰雹</div><div class="legend-item">🌬️ 阵风影响</div></div>
-<div class="weather-map"><div class="map-shape"></div><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="dot d4"></div><div class="dot d5"></div><div class="map-label l-north"><b>华北/东北</b><br>{{weather_north}}</div><div class="map-label l-east"><b>华东地区</b><br>{{weather_east}}</div><div class="map-label l-south"><b>华南地区</b><br>{{weather_southwest}}</div><div class="map-label l-west"><b>西北地区</b><br>{{weather_northwest}}</div><div class="map-label l-sw"><b>西南地区</b><br>防晒与轻户外需求需结合天气灵活调整。</div></div>
-<table class="weather-table"><tr><th>区域</th><th>{{day1}}</th><th>{{day2}}</th><th>{{day3}}</th></tr><tr><td>华北/东北</td><td>{{north_day1}}</td><td>{{north_day2}}</td><td>{{north_day3}}</td></tr><tr><td>华中/华东</td><td>{{east_day1}}</td><td>{{east_day2}}</td><td>{{east_day3}}</td></tr><tr><td>华南</td><td>{{south_day1}}</td><td>{{south_day2}}</td><td>{{south_day3}}</td></tr><tr><td>西南</td><td>{{southwest_day1}}</td><td>{{southwest_day2}}</td><td>{{southwest_day3}}</td></tr><tr><td>西北</td><td>{{northwest_day1}}</td><td>{{northwest_day2}}</td><td>{{northwest_day3}}</td></tr></table>
-<div class="note">数据来源：公开气象信息整理，重点用于客流及商品节奏判断。</div></div></div>
+<div class="header">
+  <div><div class="main-title">{{title}}</div><div class="subtitle">{{subtitle}}</div></div>
+  <div class="stats">
+    <div class="stat"><div class="stat-title">📅 {{date}}</div><div class="stat-small">{{weekday}}</div><div class="stat-small">更新于 {{update_time}}</div></div>
+    <div class="stat"><div class="stat-title">今日监测</div><div class="stat-num">{{monitor_count}}</div><div class="stat-small">条资讯</div></div>
+    <div class="stat"><div class="stat-title">RSS资讯</div><div class="stat-num">{{rss_count}}</div><div class="stat-small">条</div></div>
+    <div class="stat"><div class="stat-title">重点摘要</div><div class="stat-num">{{focus_count}}</div><div class="stat-small">条</div></div>
+  </div>
 </div>
 
-<div class="section"><div class="section-title"><span>三、区域热点资讯与消费动态（精选）</span><span class="more">查看更多 ›</span></div><div class="section-body"><table class="big-table"><colgroup><col class="col-region"><col class="col-hot"><col class="col-flow"><col class="col-signal"><col class="col-action"><col class="col-star"></colgroup><tr><th>区域</th><th>热点资讯</th><th>商圈/客流动态</th><th>消费信号</th><th>对门店/品牌启示</th><th>关注等级</th></tr><tr><td class="region-name"><span class="region-ico">☔</span>华东<br>{{east_city}}</td><td>{{east_hot}}</td><td>{{east_flow}}</td><td>{{east_signal}}</td><td>{{east_action}}</td><td class="stars star-red">{{east_star}}</td></tr><tr><td class="region-name"><span class="region-ico">👥</span>华中<br>{{central_city}}</td><td>{{central_hot}}</td><td>{{central_flow}}</td><td>{{central_signal}}</td><td>{{central_action}}</td><td class="stars star-orange">{{central_star}}</td></tr><tr><td class="region-name"><span class="region-ico">☀️</span>华南<br>{{south_city}}</td><td>{{south_hot}}</td><td>{{south_flow}}</td><td>{{south_signal}}</td><td>{{south_action}}</td><td class="stars star-red">{{south_star}}</td></tr><tr><td class="region-name"><span class="region-ico">⛰️</span>西南<br>{{southwest_city}}</td><td>{{southwest_hot}}</td><td>{{southwest_flow}}</td><td>{{southwest_signal}}</td><td>{{southwest_action}}</td><td class="stars star-orange">{{southwest_star}}</td></tr><tr><td class="region-name"><span class="region-ico">🌬️</span>西北<br>{{northwest_city}}</td><td>{{northwest_hot}}</td><td>{{northwest_flow}}</td><td>{{northwest_signal}}</td><td>{{northwest_action}}</td><td class="stars star-green">{{northwest_star}}</td></tr></table><div class="note">关注等级说明：★★★重点关注　★★持续跟踪　★一般观察</div></div></div>
+<div class="grid-top">
+  <div class="section">
+    <div class="section-title"><span>一、重点资讯精选（TOP 5）</span><span class="more">查看更多 ›</span></div>
+    <div class="section-body"><div class="news-list">
+      <div class="news-item"><div class="rank r1">1</div><div class="logo-box {{top1_logo_class}}">{{top1_logo}}</div><div><div class="news-title">{{top1_title}} <span class="tag">{{top1_tag}}</span></div><div class="news-meta">{{top1_time}} ｜ {{top1_source}}</div><div class="news-desc">{{top1_desc}}</div></div></div>
+      <div class="news-item"><div class="rank r2">2</div><div class="logo-box {{top2_logo_class}}">{{top2_logo}}</div><div><div class="news-title">{{top2_title}} <span class="tag">{{top2_tag}}</span></div><div class="news-meta">{{top2_time}} ｜ {{top2_source}}</div><div class="news-desc">{{top2_desc}}</div></div></div>
+      <div class="news-item"><div class="rank r3">3</div><div class="logo-box {{top3_logo_class}}">{{top3_logo}}</div><div><div class="news-title">{{top3_title}} <span class="tag">{{top3_tag}}</span></div><div class="news-meta">{{top3_time}} ｜ {{top3_source}}</div><div class="news-desc">{{top3_desc}}</div></div></div>
+      <div class="news-item"><div class="rank r4">4</div><div class="logo-box {{top4_logo_class}}">{{top4_logo}}</div><div><div class="news-title">{{top4_title}} <span class="tag">{{top4_tag}}</span></div><div class="news-meta">{{top4_time}} ｜ {{top4_source}}</div><div class="news-desc">{{top4_desc}}</div></div></div>
+      <div class="news-item"><div class="rank r5">5</div><div class="logo-box {{top5_logo_class}}">{{top5_logo}}</div><div><div class="news-title">{{top5_title}} <span class="tag">{{top5_tag}}</span></div><div class="news-meta">{{top5_time}} ｜ {{top5_source}}</div><div class="news-desc">{{top5_desc}}</div></div></div>
+    </div><div class="note">注：以上资讯来自公开媒体及平台，仅供经营观察参考。</div></div>
+  </div>
 
-<div class="grid-bottom"><div class="section"><div class="section-title"><span>四、行业趋势与品牌观察（精选）</span><span class="more">查看更多 ›</span></div><div class="section-body"><div class="trend-item"><div class="trend-icon">📈</div><div><div class="trend-title">{{trend1_title}}</div><div class="trend-desc">{{trend1_desc}}</div></div><div class="trend-tag">{{trend1_tag}}</div></div><div class="trend-item"><div class="trend-icon">🧒</div><div><div class="trend-title">{{trend2_title}}</div><div class="trend-desc">{{trend2_desc}}</div></div><div class="trend-tag">{{trend2_tag}}</div></div><div class="trend-item"><div class="trend-icon">🛍️</div><div><div class="trend-title">{{trend3_title}}</div><div class="trend-desc">{{trend3_desc}}</div></div><div class="trend-tag">{{trend3_tag}}</div></div><div class="trend-item"><div class="trend-icon">🚴</div><div><div class="trend-title">{{trend4_title}}</div><div class="trend-desc">{{trend4_desc}}</div></div><div class="trend-tag">{{trend4_tag}}</div></div></div></div>
+  <div class="section">
+    <div class="section-title"><span>二、全国天气预报概览（{{weather_range}}）</span></div>
+    <div class="section-body">
+      <div class="weather-legend"><div class="legend-item">☔ 暴雨/强对流</div><div class="legend-item">🌡️ 高温/升温</div><div class="legend-item">☀️ 户外出行</div><div class="legend-item">🌧️ 局地冰雹</div><div class="legend-item">🌬️ 阵风影响</div></div>
+      <div class="weather-map">
+        <div class="china-map"><div class="map-main"></div><div class="map-ne"></div><div class="map-taiwan"></div><div class="map-hainan"></div><div class="map-islands"></div></div>
+        <div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="dot d4"></div><div class="dot d5"></div>
+        <div class="map-label l-north"><b>华北/东北</b><br>{{weather_north}}</div>
+        <div class="map-label l-east"><b>华东地区</b><br>{{weather_east}}</div>
+        <div class="map-label l-south"><b>华南地区</b><br>{{weather_southwest}}</div>
+        <div class="map-label l-west"><b>西北地区</b><br>{{weather_northwest}}</div>
+        <div class="map-label l-sw"><b>西南地区</b><br>防晒与轻户外需求需结合天气灵活调整。</div>
+      </div>
+      <table class="weather-table"><tr><th>区域</th><th>{{day1}}</th><th>{{day2}}</th><th>{{day3}}</th></tr><tr><td>华北/东北</td><td>{{north_day1}}</td><td>{{north_day2}}</td><td>{{north_day3}}</td></tr><tr><td>华中/华东</td><td>{{east_day1}}</td><td>{{east_day2}}</td><td>{{east_day3}}</td></tr><tr><td>华南</td><td>{{south_day1}}</td><td>{{south_day2}}</td><td>{{south_day3}}</td></tr><tr><td>西南</td><td>{{southwest_day1}}</td><td>{{southwest_day2}}</td><td>{{southwest_day3}}</td></tr><tr><td>西北</td><td>{{northwest_day1}}</td><td>{{northwest_day2}}</td><td>{{northwest_day3}}</td></tr></table>
+      <div class="note">数据来源：公开气象信息整理，重点用于客流及商品节奏判断。</div>
+    </div>
+  </div>
+</div>
 
-<div class="section"><div class="section-title"><span>五、关键词热度（近3天）</span></div><div class="section-body"><div class="word-cloud"><div class="word w1">{{word1}}</div><div class="word w2">{{word2}}</div><div class="word w3">{{word3}}</div><div class="word w4">{{word4}}</div><div class="word w5">{{word5}}</div><div class="word w6">{{word6}}</div><div class="word w7">{{word7}}</div><div class="word w8">{{word8}}</div><div class="word w9">{{word9}}</div><div class="word w10">{{word10}}</div><div class="word w11">{{word11}}</div><div class="word w12">{{word12}}</div></div><div class="note">注：字体大小代表热度感知强弱，用于识别短期资讯密度。</div></div></div></div>
+<div class="section">
+  <div class="section-title"><span>三、区域热点资讯与消费动态（精选）</span><span class="more">查看更多 ›</span></div>
+  <div class="section-body"><table class="big-table"><colgroup><col class="col-region"><col class="col-hot"><col class="col-flow"><col class="col-signal"><col class="col-action"><col class="col-star"></colgroup><tr><th>区域</th><th>热点资讯</th><th>商圈/客流动态</th><th>消费信号</th><th>对门店/品牌启示</th><th>关注等级</th></tr>
+    <tr><td class="region-name"><span class="region-ico">☔</span>华东<br>{{east_city}}</td><td>{{east_hot}}</td><td>{{east_flow}}</td><td>{{east_signal}}</td><td>{{east_action}}</td><td class="stars star-red">{{east_star}}</td></tr>
+    <tr><td class="region-name"><span class="region-ico">👥</span>华中<br>{{central_city}}</td><td>{{central_hot}}</td><td>{{central_flow}}</td><td>{{central_signal}}</td><td>{{central_action}}</td><td class="stars star-orange">{{central_star}}</td></tr>
+    <tr><td class="region-name"><span class="region-ico">☀️</span>华南<br>{{south_city}}</td><td>{{south_hot}}</td><td>{{south_flow}}</td><td>{{south_signal}}</td><td>{{south_action}}</td><td class="stars star-red">{{south_star}}</td></tr>
+    <tr><td class="region-name"><span class="region-ico">⛰️</span>西南<br>{{southwest_city}}</td><td>{{southwest_hot}}</td><td>{{southwest_flow}}</td><td>{{southwest_signal}}</td><td>{{southwest_action}}</td><td class="stars star-orange">{{southwest_star}}</td></tr>
+    <tr><td class="region-name"><span class="region-ico">🌬️</span>西北<br>{{northwest_city}}</td><td>{{northwest_hot}}</td><td>{{northwest_flow}}</td><td>{{northwest_signal}}</td><td>{{northwest_action}}</td><td class="stars star-green">{{northwest_star}}</td></tr>
+  </table><div class="note">关注等级说明：★★★重点关注　★★持续跟踪　★一般观察</div></div>
+</div>
+
+<div class="grid-bottom">
+  <div class="section"><div class="section-title"><span>四、行业趋势与品牌观察（精选）</span><span class="more">查看更多 ›</span></div><div class="section-body">
+    <div class="trend-item"><div class="trend-icon">📈</div><div><div class="trend-title">{{trend1_title}}</div><div class="trend-desc">{{trend1_desc}}</div></div><div class="trend-tag">{{trend1_tag}}</div></div>
+    <div class="trend-item"><div class="trend-icon">🧒</div><div><div class="trend-title">{{trend2_title}}</div><div class="trend-desc">{{trend2_desc}}</div></div><div class="trend-tag">{{trend2_tag}}</div></div>
+    <div class="trend-item"><div class="trend-icon">🛍️</div><div><div class="trend-title">{{trend3_title}}</div><div class="trend-desc">{{trend3_desc}}</div></div><div class="trend-tag">{{trend3_tag}}</div></div>
+    <div class="trend-item"><div class="trend-icon">🚴</div><div><div class="trend-title">{{trend4_title}}</div><div class="trend-desc">{{trend4_desc}}</div></div><div class="trend-tag">{{trend4_tag}}</div></div>
+  </div></div>
+  <div class="section"><div class="section-title"><span>五、关键词热度（近3天）</span></div><div class="section-body"><div class="word-cloud">
+    <div class="word w1">{{word1}}</div><div class="word w2">{{word2}}</div><div class="word w3">{{word3}}</div><div class="word w4">{{word4}}</div><div class="word w5">{{word5}}</div><div class="word w6">{{word6}}</div><div class="word w7">{{word7}}</div><div class="word w8">{{word8}}</div><div class="word w9">{{word9}}</div><div class="word w10">{{word10}}</div><div class="word w11">{{word11}}</div><div class="word w12">{{word12}}</div><div class="word w13">{{word13}}</div><div class="word w14">{{word14}}</div><div class="word w15">{{word15}}</div><div class="word w16">{{word16}}</div><div class="word w17">{{word17}}</div><div class="word w18">{{word18}}</div>
+  </div><div class="note">注：字体大小代表热度感知强弱，用于识别短期资讯密度。</div></div></div>
+</div>
 
 <div class="footer"><div>数据来源：TrendRadar RSS日报 · Google News · 公开气象信息</div><div>生成时间：{{generate_time}}</div><div>制作：运动品牌资讯日报自动化系统</div></div>
 </div>
