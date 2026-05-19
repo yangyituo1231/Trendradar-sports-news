@@ -43,12 +43,10 @@ def read_news_texts():
         for p in root.rglob("*"):
             if p.suffix.lower() not in [".txt", ".md", ".html", ".json"]:
                 continue
-
             try:
                 content = p.read_text(encoding="utf-8", errors="ignore")
             except Exception:
                 continue
-
             content = clean_text(content)
             if content:
                 texts.append(content)
@@ -57,24 +55,21 @@ def read_news_texts():
 
 def extract_candidate_titles(texts):
     candidates = []
-
     keywords = [
         "运动", "童装", "儿童", "跑步", "户外", "防晒", "品牌", "消费", "零售",
         "奥莱", "折扣", "会员", "商场", "客流", "电商", "直播", "小红书",
         "抖音", "安踏", "李宁", "特步", "361", "耐克", "阿迪", "彪马",
         "On", "昂跑", "lululemon", "露营", "骑行", "校园", "天气", "暴雨",
-        "高温", "凉感", "短袖", "短裤", "亲子", "文旅"
+        "高温", "凉感", "短袖", "短裤", "亲子", "文旅", "ANTA", "NIKE",
+        "Adidas", "PUMA", "FILA", "迪卡侬"
     ]
 
     for text in texts:
         parts = re.split(r"[。！？\n\r]|(?<=\d)\.\s+", text)
-
         for part in parts:
             part = clean_text(part)
-
             if len(part) < 8 or len(part) > 90:
                 continue
-
             if any(x in part for x in keywords):
                 candidates.append(part)
 
@@ -109,7 +104,7 @@ top_titles = candidate_titles[:5]
 news_text_all = " ".join(candidate_titles)
 
 def infer_tag(title):
-    if any(x in title for x in ["安踏", "李宁", "特步", "耐克", "阿迪", "彪马", "On", "昂跑", "lululemon", "361"]):
+    if any(x in title for x in ["安踏", "ANTA", "李宁", "特步", "耐克", "NIKE", "阿迪", "Adidas", "彪马", "PUMA", "On", "昂跑", "lululemon", "361", "FILA", "迪卡侬"]):
         return "运动品牌动态"
     if any(x in title for x in ["童装", "儿童", "亲子", "校园"]):
         return "童装/儿童运动"
@@ -133,10 +128,10 @@ def infer_source(title):
     return "公开资讯"
 
 def infer_desc(title):
-    if any(x in title for x in ["安踏", "李宁", "特步", "耐克", "阿迪", "彪马", "On", "昂跑", "lululemon", "361"]):
-        return "品牌动向反映运动消费结构变化，需关注产品、渠道与营销节奏。"
+    if any(x in title for x in ["安踏", "ANTA", "李宁", "特步", "耐克", "NIKE", "阿迪", "Adidas", "彪马", "PUMA", "On", "昂跑", "lululemon", "361", "FILA", "迪卡侬"]):
+        return "多家头部品牌加大中国市场投入，渠道、产品与营销本土化成为关键。"
     if any(x in title for x in ["童装", "儿童", "亲子", "校园"]):
-        return "儿童消费从单品需求转向场景经营，亲子、校园与户外价值提升。"
+        return "童装消费从单品需求转向场景经营，亲子、校园与户外价值提升。"
     if any(x in title for x in ["电商", "直播", "小红书", "抖音", "种草"]):
         return "内容平台正在影响消费决策链路，种草、直播与会员转化值得关注。"
     if any(x in title for x in ["天气", "暴雨", "降雨", "高温", "防晒", "强对流"]):
@@ -146,6 +141,35 @@ def infer_desc(title):
     if any(x in title for x in ["露营", "骑行", "户外", "文旅"]):
         return "户外与文旅场景带动运动消费延展，可关注轻量化、舒适型商品机会。"
     return "该资讯体现近期行业与消费端变化，可作为门店经营和商品节奏的参考信号。"
+
+def infer_logo(title, tag):
+    t = title + tag
+
+    rules = [
+        (["安踏", "ANTA"], "ANTA", "logo-dark"),
+        (["李宁"], "李", "logo-red"),
+        (["特步"], "特", "logo-red"),
+        (["耐克", "NIKE", "Nike"], "N", "logo-dark"),
+        (["阿迪", "Adidas"], "A", "logo-dark"),
+        (["彪马", "PUMA"], "PUMA", "logo-green"),
+        (["On", "昂跑"], "On", "logo-dark"),
+        (["lululemon", "Lululemon"], "lulu", "logo-red"),
+        (["361"], "361", "logo-blue"),
+        (["FILA"], "FILA", "logo-blue"),
+        (["迪卡侬"], "迪", "logo-blue"),
+        (["童装", "儿童", "亲子", "校园"], "童", "logo-orange"),
+        (["电商", "直播", "抖音", "小红书", "种草", "内容"], "电", "logo-purple"),
+        (["奥莱", "折扣", "会员", "商场", "客流"], "折", "logo-red"),
+        (["天气", "暴雨", "降雨", "强对流", "高温"], "雨", "logo-sky"),
+        (["防晒", "凉感", "短裤", "短袖", "轻外套"], "季", "logo-orange"),
+        (["户外", "露营", "骑行", "文旅"], "野", "logo-green"),
+    ]
+
+    for keys, logo, cls in rules:
+        if any(k in t for k in keys):
+            return logo, cls
+
+    return "讯", random.choice(["logo-blue", "logo-green", "logo-orange", "logo-purple"])
 
 hot_words_pool = [
     "安踏", "李宁", "特步", "耐克", "阿迪", "彪马", "On 昂跑", "lululemon",
@@ -159,8 +183,8 @@ hot_words_pool = [
 
 def build_hot_words():
     scored_words = []
-
     compact_text = news_text_all.replace(" ", "")
+
     for word in hot_words_pool:
         score = compact_text.count(word.replace(" ", "")) + news_text_all.count(word)
         if score > 0:
@@ -174,7 +198,6 @@ def build_hot_words():
             dynamic_words.append(w)
 
     selected = dynamic_words[:12]
-
     if len(selected) < 12:
         selected += random.sample(hot_words_pool, 12 - len(selected))
 
@@ -267,22 +290,18 @@ def build_region_insights(words, titles):
         "east_flow": "商圈客流回暖但雨天扰动仍在，周末波动较大",
         "east_signal": "防晒、轻外套、运动场景及室内体验需求提升",
         "east_action": "可关注骑行周边、轻户外、运动场景及室内承接",
-
         "central_hot": central_hot,
         "central_flow": "商圈客流存在波动，活动转化需更精细",
         "central_signal": "短袖启动偏慢，轻防护需求提升",
         "central_action": "结合天气节奏主推薄外套、防雨、防晒及轻运动单品",
-
         "south_hot": south_hot,
         "south_flow": "夜间客流增加，夜经济活跃",
         "south_signal": "凉感、短裤、短袖及防晒品类需求上升",
         "south_action": "可关注夜场活动、防晒陈列及户外场景搭配",
-
         "southwest_hot": southwest_hot,
         "southwest_flow": "文旅客流活跃，亲子客群增长",
         "southwest_signal": "亲子休闲、户外轻运动增长",
         "southwest_action": "可围绕亲子体验、户外品类与场景化陈列展开",
-
         "northwest_hot": northwest_hot,
         "northwest_flow": "户外客流活跃，周末出行增加",
         "northwest_signal": "防护用品、帽子等轻防护需求提升",
@@ -296,20 +315,18 @@ region = build_region_insights(selected_words, top_titles)
 data = {
     "title": "运动品牌行业资讯日报",
     "subtitle": "每日精选 · 洞察趋势 · 辅助决策",
-
     "date": today.strftime("%Y-%m-%d"),
     "weekday": week_map[today.weekday()],
     "update_time": now.strftime("%H:%M"),
     "monitor_count": str(max(80, len(candidate_titles) * 15)),
     "rss_count": str(max(20, len(texts))),
     "focus_count": "5",
-
     "weather_range": f"{md(today)} ~ {md(day3)}",
     "day1": md(today),
     "day2": md(day2),
     "day3": md(day3),
 
-    "weather_north": "北方多地天气转晴，户外及商场客流具备恢复基础。",
+    "weather_north": "北方多地天气转晴，周末空气转好，户外及商场客流具备恢复基础。",
     "weather_east": "华东局部降雨延续，短途出行与商圈客流可能出现波动。",
     "weather_southwest": "华南、西南局部降雨增强，防晒与轻户外需求需结合天气灵活调整。",
     "weather_northwest": "西北多地晴到多云，户外露营、亲子活动关注度有望提升。",
@@ -348,11 +365,16 @@ data = {
 data.update(region)
 
 for idx, title in enumerate(top_titles[:5], start=1):
+    tag = infer_tag(title)
+    logo, logo_class = infer_logo(title, tag)
+
     data[f"top{idx}_title"] = short(title, 32)
-    data[f"top{idx}_tag"] = infer_tag(title)
+    data[f"top{idx}_tag"] = tag
     data[f"top{idx}_time"] = now.strftime("%m-%d %H:%M")
     data[f"top{idx}_source"] = infer_source(title)
     data[f"top{idx}_desc"] = infer_desc(title)
+    data[f"top{idx}_logo"] = logo
+    data[f"top{idx}_logo_class"] = logo_class
 
 for i, (title, desc, tag) in enumerate(trends, start=1):
     data[f"trend{i}_title"] = title
