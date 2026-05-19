@@ -30,6 +30,17 @@ def short(text, n=42):
     text = clean_title(text)
     return text if len(text) <= n else text[:n] + "..."
 
+def season_name(month):
+    if month in [3, 4, 5]:
+        return "spring"
+    if month in [6, 7, 8]:
+        return "summer"
+    if month in [9, 10, 11]:
+        return "autumn"
+    return "winter"
+
+SEASON = season_name(today.month)
+
 # =========================
 # 读取新闻
 # =========================
@@ -72,20 +83,107 @@ def get_day_weather(key, idx):
         return days[idx]
     return {
         "weather": "多云",
-        "risk_score": 30,
+        "code": 2,
+        "temp_max": 25,
+        "temp_min": 18,
+        "precipitation": 0,
+        "wind": 12,
+        "risk_score": 25,
         "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
     }
 
-def weather_desc(key):
-    region = get_weather_region(key)
-    return region.get("signal", "天气整体平稳，户外与亲子活动具备恢复基础")
-
-def weather_risk(key):
-    region = get_weather_region(key)
-    return int(region.get("risk_score", 30))
-
 def weather_day_label(key, idx):
     return get_day_weather(key, idx).get("weather", "多云")
+
+def weather_risk_raw(key):
+    region = get_weather_region(key)
+    return int(region.get("risk_score", 25))
+
+def weather_stats(key):
+    days = [get_day_weather(key, i) for i in range(3)]
+
+    max_temp = max(float(d.get("temp_max", 25)) for d in days)
+    min_temp = min(float(d.get("temp_min", 18)) for d in days)
+    max_rain = max(float(d.get("precipitation", 0)) for d in days)
+    max_wind = max(float(d.get("wind", 12)) for d in days)
+    codes = [int(d.get("code", 2)) for d in days]
+    weathers = [str(d.get("weather", "多云")) for d in days]
+
+    return {
+        "max_temp": max_temp,
+        "min_temp": min_temp,
+        "max_rain": max_rain,
+        "max_wind": max_wind,
+        "codes": codes,
+        "weathers": weathers,
+        "risk": weather_risk_raw(key),
+    }
+
+def has_snow(stats):
+    return any(c in [71, 73, 75, 77, 85, 86] for c in stats["codes"]) or any("雪" in w for w in stats["weathers"])
+
+def has_rain(stats):
+    return stats["max_rain"] >= 3 or any(c in [51, 53, 55, 61, 63, 65, 80, 81, 82, 95, 96, 99] for c in stats["codes"]) or any("雨" in w for w in stats["weathers"])
+
+def has_storm(stats):
+    return stats["max_rain"] >= 20 or any(c in [82, 95, 96, 99] for c in stats["codes"]) or any("雷" in w or "强" in w for w in stats["weathers"])
+
+def is_hot(stats):
+    return stats["max_temp"] >= 30
+
+def is_very_hot(stats):
+    return stats["max_temp"] >= 35
+
+def is_cold(stats):
+    return stats["min_temp"] <= 5
+
+def is_freezing(stats):
+    return stats["min_temp"] <= 0
+
+def is_windy(stats):
+    return stats["max_wind"] >= 25
+
+def weather_business_type(key):
+    stats = weather_stats(key)
+
+    if has_snow(stats) or is_freezing(stats):
+        return "snow_ice"
+    if is_cold(stats):
+        return "cold"
+    if has_storm(stats):
+        return "storm"
+    if has_rain(stats):
+        return "rain"
+    if is_very_hot(stats):
+        return "very_hot"
+    if is_hot(stats):
+        return "hot"
+    if is_windy(stats):
+        return "wind"
+    if SEASON == "spring":
+        return "spring_mild"
+    if SEASON == "autumn":
+        return "autumn_mild"
+    if SEASON == "winter":
+        return "winter_mild"
+    return "normal"
+
+def weather_desc(key):
+    t = weather_business_type(key)
+    mapping = {
+        "snow_ice": "雨雪或低温结冰风险提升，防滑、保暖及室内客流承接需关注",
+        "cold": "低温天气影响户外停留，保暖、棉服、帽类及运动鞋需求提升",
+        "storm": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
+        "rain": "降雨影响客流，防雨、轻防护与室内运动场景需求提升",
+        "very_hot": "高温天气明显，防晒、凉感、速干品类进入主推窗口",
+        "hot": "气温偏高，防晒、短裤、轻薄T恤需求提升",
+        "wind": "阵风偏强，轻外套、帽子等防护单品关注提升",
+        "spring_mild": "春季出行恢复，轻外套、亲子运动与户外场景具备增长基础",
+        "autumn_mild": "秋季运动与开学场景延续，轻外套、长裤及校园运动需求提升",
+        "winter_mild": "冬季温和天气下，保暖基础款与室内运动场景仍需关注",
+        "normal": "天气整体平稳，户外与亲子活动具备恢复基础",
+    }
+    return mapping.get(t, mapping["normal"])
 
 # =========================
 # 新闻热度评分
@@ -95,25 +193,55 @@ def news_heat_score(keywords):
     score = 0
     for title in titles:
         if any(k in title for k in keywords):
-            score += 8
-        if any(k in title for k in ["618", "大促", "防晒", "凉感", "童装", "儿童", "亲子", "商场", "商圈", "客流"]):
-            score += 2
-    return min(score, 35)
+            score += 5
+        if any(k in title for k in ["618", "大促", "防晒", "凉感", "童装", "儿童", "亲子", "商场", "商圈", "客流", "户外", "骑行"]):
+            score += 1
+    return min(score, 25)
 
 def business_keyword_score():
     score = 0
-    for k in ["防晒", "凉感", "童装", "儿童", "亲子", "618", "商场", "商圈", "客流", "户外", "骑行", "小红书", "抖音"]:
+    for k in ["防晒", "凉感", "童装", "儿童", "亲子", "618", "商场", "商圈", "客流", "户外", "骑行", "小红书", "抖音", "保暖", "防滑", "羽绒", "棉服"]:
         if k in joined:
-            score += 3
-    return min(score, 25)
+            score += 2
+    return min(score, 20)
+
+def seasonal_weather_score(weather_key):
+    stats = weather_stats(weather_key)
+    t = weather_business_type(weather_key)
+
+    score_map = {
+        "snow_ice": 55,
+        "storm": 50,
+        "very_hot": 48,
+        "cold": 38,
+        "rain": 35,
+        "hot": 32,
+        "wind": 28,
+        "spring_mild": 18,
+        "autumn_mild": 20,
+        "winter_mild": 22,
+        "normal": 15,
+    }
+
+    base = score_map.get(t, 15)
+
+    # 对真实天气原始风险做适度补充，但避免一刀切导致星级虚高
+    base += min(weather_risk_raw(weather_key) * 0.25, 18)
+
+    return min(base, 65)
 
 def total_region_score(weather_key, region_keywords):
-    return min(weather_risk(weather_key) * 0.55 + news_heat_score(region_keywords) + business_keyword_score(), 100)
+    return min(
+        seasonal_weather_score(weather_key)
+        + news_heat_score(region_keywords)
+        + business_keyword_score(),
+        100
+    )
 
 def star_by_total_score(score):
-    if score >= 65:
+    if score >= 70:
         return "★★★"
-    if score >= 40:
+    if score >= 48:
         return "★★"
     return "★"
 
@@ -139,12 +267,12 @@ CATEGORY_RULES = {
         "desc": "儿童消费从单品购买转向亲子、校园、户外和运动场景综合经营。",
     },
     "天气防晒": {
-        "keywords": ["高温", "防晒", "凉感", "速干", "暴雨", "强对流", "降雨", "天气", "防雨", "夏日", "夏季"],
+        "keywords": ["高温", "防晒", "凉感", "速干", "暴雨", "强对流", "降雨", "天气", "防雨", "夏日", "夏季", "降雪", "结冰", "低温", "防滑", "保暖"],
         "tag": "天气影响消费",
         "logo": "天气",
         "icon": "☀️",
         "class": "logo-sky",
-        "desc": "天气变化影响客流和主推节奏，防晒、凉感、速干及轻防护品类需前置。",
+        "desc": "天气变化影响客流和主推节奏，防晒、凉感、防雨、防滑及保暖品类需动态前置。",
     },
     "户外骑行": {
         "keywords": ["户外", "骑行", "露营", "文旅", "出行", "夜经济", "跑步", "轻户外", "徒步"],
@@ -167,7 +295,7 @@ CATEGORY_RULES = {
 fallback_by_category = {
     "大促电商": {"title": "618节奏持续推进，运动品牌关注夏季品类转化", "source": "平台资讯"},
     "童装儿童": {"title": "儿童运动消费场景外扩，亲子与校园需求继续升温", "source": "消费观察"},
-    "天气防晒": {"title": "高温与降雨并行，防晒凉感与轻防护品类进入主推窗口", "source": "公开气象信息"},
+    "天气防晒": {"title": "天气变化影响客流节奏，功能品类进入动态调整窗口", "source": "公开气象信息"},
     "户外骑行": {"title": "城市骑行、文旅出行与轻户外需求延续", "source": "消费观察"},
     "商圈消费": {"title": "商圈活动与会员运营联动，周末客流修复仍需关注", "source": "商业观察"},
 }
@@ -183,7 +311,7 @@ def item_score(item, cat):
     if cat != "大促电商" and any(k in title for k in ["618", "双11", "双十一", "大促"]):
         score -= 8
 
-    for kw in ["童装", "儿童", "亲子", "防晒", "凉感", "门店", "商场", "商圈", "客流", "零售", "消费", "户外"]:
+    for kw in ["童装", "儿童", "亲子", "防晒", "凉感", "防雨", "防滑", "保暖", "门店", "商场", "商圈", "客流", "零售", "消费", "户外"]:
         if kw in title:
             score += 3
 
@@ -239,19 +367,77 @@ def pick_top_news():
 top_news = pick_top_news()
 
 # =========================
-# 区域经营日报：核心变化 / 经营影响 / 推荐动作
+# 区域经营日报：四季天气 + 去重
 # =========================
 
-REGION_REPORT_POOL = [
+def report_for_weather_type(weather_key):
+    t = weather_business_type(weather_key)
+
+    mapping = {
+        "snow_ice": {
+            "change": "雨雪结冰影响出行",
+            "impact": "防滑鞋、保暖服饰与室内客流关注提升",
+            "action": "建议强化防滑鞋、保暖外套及室内运动陈列",
+        },
+        "cold": {
+            "change": "低温天气影响户外停留",
+            "impact": "棉服、羽绒、帽类及保暖运动鞋需求提升",
+            "action": "建议加强保暖系列与童鞋连带销售",
+        },
+        "storm": {
+            "change": "强降雨扰动商圈客流",
+            "impact": "室内运动与防雨、防滑品类关注提升",
+            "action": "建议强化防雨、防滑及轻外套陈列",
+        },
+        "rain": {
+            "change": "降雨天气扰动客流",
+            "impact": "室内运动与轻防护品类关注提升",
+            "action": "建议强化防雨、轻外套及室内运动场景陈列",
+        },
+        "very_hot": {
+            "change": "高温天气带动夏季消费",
+            "impact": "防晒、凉感、速干类需求提升",
+            "action": "建议加强防晒单品与短裤连带销售",
+        },
+        "hot": {
+            "change": "气温偏高带动轻薄品类",
+            "impact": "短T、短裤、凉感及防晒需求提升",
+            "action": "建议前置凉感、速干及夏季主推陈列",
+        },
+        "wind": {
+            "change": "大风天气影响户外活动",
+            "impact": "轻外套、帽类及防风装备关注提升",
+            "action": "建议加强轻外套、帽类及户外配件组合",
+        },
+        "spring_mild": {
+            "change": "春季出行与亲子活动恢复",
+            "impact": "轻外套、运动童装与户外场景需求提升",
+            "action": "建议强化春季轻外套与亲子搭配展示",
+        },
+        "autumn_mild": {
+            "change": "秋季运动与开学场景延续",
+            "impact": "长袖、长裤、轻外套及校园运动需求提升",
+            "action": "建议前置校园运动与秋季轻外套组合",
+        },
+        "winter_mild": {
+            "change": "冬季基础保暖需求延续",
+            "impact": "保暖基础款、运动鞋及室内运动需求稳定",
+            "action": "建议关注保暖基础款与童鞋连带销售",
+        },
+        "normal": {
+            "change": "天气平稳利于户外恢复",
+            "impact": "亲子活动、轻户外与运动休闲需求增加",
+            "action": "建议增加轻户外及亲子运动场景曝光",
+        },
+    }
+
+    return mapping.get(t, mapping["normal"])
+
+NEWS_REPORTS = [
     {
-        "change": "降雨天气扰动客流",
-        "impact": "室内运动与轻防护品类关注提升",
-        "action": "建议强化防晒、防雨及轻运动场景陈列",
-    },
-    {
-        "change": "高温天气带动夏季消费",
-        "impact": "防晒、凉感、速干类需求提升",
-        "action": "建议加强防晒单品与短裤连带销售",
+        "change": "商圈活动与会员运营增加",
+        "impact": "周末客流与互动活跃度提升",
+        "action": "建议加强会员活动引流",
     },
     {
         "change": "亲子与校园运动场景升温",
@@ -264,63 +450,29 @@ REGION_REPORT_POOL = [
         "action": "建议增加轻户外系列曝光",
     },
     {
-        "change": "商圈活动与会员运营增加",
-        "impact": "周末客流与互动活跃度提升",
-        "action": "建议加强会员活动引流",
-    },
-    {
         "change": "夜经济消费持续活跃",
         "impact": "运动休闲与轻消费场景延伸",
         "action": "建议关注夜间场景商品组合",
     },
+    {
+        "change": "内容平台种草影响增强",
+        "impact": "小红书、抖音带动新品关注与到店转化",
+        "action": "建议加强爆款同款与内容陈列承接",
+    },
 ]
 
-def region_report_by_weather(weather_key):
-    signal = weather_desc(weather_key)
-
-    if "高温" in signal or "防晒" in signal or "凉感" in signal:
-        return {
-            "change": "高温天气带动夏季消费",
-            "impact": "防晒、凉感、速干类需求提升",
-            "action": "建议加强防晒单品与短裤连带销售",
-        }
-
-    if "降雨" in signal or "防雨" in signal or "小雨" in signal or "中雨" in signal:
-        return {
-            "change": "降雨天气扰动客流",
-            "impact": "室内运动与轻防护品类关注提升",
-            "action": "建议强化防雨、轻外套及室内运动场景陈列",
-        }
-
-    return random.choice(REGION_REPORT_POOL[2:])
-
-def region_report_with_news(weather_key, region_keywords):
-    # 如果新闻里有明显区域/经营热点，优先结合新闻场景
-    local_titles = [t for t in titles if any(k in t for k in region_keywords)]
-    text = " ".join(local_titles[:5])
-
+def report_by_news_text(text):
     if any(k in text for k in ["商场", "商圈", "客流", "会员", "奥莱"]):
-        return {
-            "change": "商圈活动与会员运营增加",
-            "impact": "周末客流与互动活跃度提升",
-            "action": "建议加强会员活动引流",
-        }
-
-    if any(k in text for k in ["骑行", "户外", "露营", "文旅", "出行"]):
-        return {
-            "change": "轻户外与骑行热度提升",
-            "impact": "骑行、露营、徒步消费增加",
-            "action": "建议增加轻户外系列曝光",
-        }
-
+        return NEWS_REPORTS[0]
     if any(k in text for k in ["童装", "儿童", "亲子", "校园"]):
-        return {
-            "change": "亲子与校园运动场景升温",
-            "impact": "儿童运动与轻户外需求增加",
-            "action": "建议强化校园运动与亲子搭配展示",
-        }
-
-    return region_report_by_weather(weather_key)
+        return NEWS_REPORTS[1]
+    if any(k in text for k in ["骑行", "户外", "露营", "文旅", "出行"]):
+        return NEWS_REPORTS[2]
+    if any(k in text for k in ["夜经济", "夜间"]):
+        return NEWS_REPORTS[3]
+    if any(k in text for k in ["抖音", "小红书", "种草", "直播"]):
+        return NEWS_REPORTS[4]
+    return None
 
 region_map = {
     "east": {
@@ -350,12 +502,59 @@ region_map = {
     },
 }
 
-reports = {}
-scores = {}
+def build_region_reports():
+    reports = {}
+    used_changes = set()
 
-for region, cfg in region_map.items():
-    reports[region] = region_report_with_news(cfg["weather_key"], cfg["keywords"])
-    scores[region] = total_region_score(cfg["weather_key"], cfg["keywords"])
+    # 按区域逐个生成，优先天气，其次新闻；如重复则换备用
+    for region, cfg in region_map.items():
+        local_titles = [t for t in titles if any(k in t for k in cfg["keywords"])]
+        local_text = " ".join(local_titles[:5])
+
+        weather_report = report_for_weather_type(cfg["weather_key"])
+        news_report = report_by_news_text(local_text)
+
+        # 天气风险较高时优先天气，否则优先新闻
+        if seasonal_weather_score(cfg["weather_key"]) >= 38:
+            candidate = weather_report
+        else:
+            candidate = news_report or weather_report
+
+        if candidate["change"] in used_changes:
+            alternatives = []
+            if news_report:
+                alternatives.append(news_report)
+            alternatives.extend(NEWS_REPORTS)
+            alternatives.append(weather_report)
+
+            for alt in alternatives:
+                if alt["change"] not in used_changes:
+                    candidate = alt
+                    break
+
+        used_changes.add(candidate["change"])
+        reports[region] = candidate
+
+    return reports
+
+reports = build_region_reports()
+scores = {
+    region: total_region_score(cfg["weather_key"], cfg["keywords"])
+    for region, cfg in region_map.items()
+}
+
+# 星级校准：避免满屏三星；最多3个三星，最低保留区域差异
+sorted_regions = sorted(scores.keys(), key=lambda r: scores[r], reverse=True)
+stars = {}
+
+for idx, region in enumerate(sorted_regions):
+    score = scores[region]
+    if idx <= 2 and score >= 62:
+        stars[region] = "★★★"
+    elif score >= 45:
+        stars[region] = "★★"
+    else:
+        stars[region] = "★"
 
 # =========================
 # 经营观察
@@ -363,6 +562,8 @@ for region, cfg in region_map.items():
 
 TREND_POOL = [
     {"title": "防晒与凉感品类持续升温", "desc": "高温天气下，防晒、凉感、速干等功能型商品关注提升。", "tag": "季节趋势"},
+    {"title": "防雨与轻防护品类切换", "desc": "雨季及强对流天气影响客流节奏，防雨、轻外套、防滑品类需动态调整。", "tag": "季节趋势"},
+    {"title": "保暖与防滑需求需前置", "desc": "低温、雨雪或结冰天气下，保暖、防滑、童鞋及室内运动场景更关键。", "tag": "冬季趋势"},
     {"title": "618预售前置明显", "desc": "平台大促提前蓄水，防晒、短裤等夏季品类曝光提升。", "tag": "大促趋势"},
     {"title": "校园运动场景持续扩张", "desc": "儿童运动从单品类转向亲子、校园、户外综合场景。", "tag": "儿童消费趋势"},
     {"title": "轻户外与骑行消费增长", "desc": "城市骑行、露营、徒步等场景持续带动运动消费。", "tag": "消费趋势"},
@@ -370,19 +571,34 @@ TREND_POOL = [
     {"title": "会员运营影响门店转化", "desc": "周末商圈活动增加，会员权益与亲子互动可提升到店转化。", "tag": "渠道趋势"},
 ]
 
-trend_items = random.sample(TREND_POOL, 4)
+# 根据季节过滤趋势，避免夏天出现太多冬季内容
+if SEASON == "summer":
+    trend_candidates = [t for t in TREND_POOL if t["tag"] != "冬季趋势"]
+elif SEASON == "winter":
+    trend_candidates = [t for t in TREND_POOL if t["title"] != "防晒与凉感品类持续升温"]
+else:
+    trend_candidates = TREND_POOL
+
+trend_items = random.sample(trend_candidates, 4)
 
 # =========================
 # 关键词云
 # =========================
 
-WORD_POOL = [
-    "防晒衣", "凉感科技", "运动童装", "轻户外", "小红书种草", "618",
-    "短裤", "速干", "校园运动", "会员运营", "夜经济", "亲子",
-    "安踏", "李宁", "特步", "lululemon", "商圈活动", "夏季主推",
-    "门店陈列", "客流修复", "城市骑行", "户外休闲", "抖音直播", "品类切换",
-    "防雨装备", "周末客流", "亲子经济", "内容种草"
+WORD_POOL_BY_SEASON = {
+    "spring": ["轻外套", "春季出行", "亲子运动", "校园运动", "运动童装", "城市骑行", "户外休闲", "防雨装备"],
+    "summer": ["防晒衣", "凉感科技", "短裤", "速干", "夏季主推", "轻户外", "小红书种草", "618"],
+    "autumn": ["轻外套", "长袖", "长裤", "开学季", "校园运动", "城市徒步", "亲子运动", "会员运营"],
+    "winter": ["保暖", "羽绒", "棉服", "防滑鞋", "加绒裤", "帽子手套", "室内运动", "童鞋"],
+}
+
+COMMON_WORDS = [
+    "运动童装", "轻户外", "小红书种草", "618", "校园运动", "会员运营",
+    "夜经济", "亲子", "安踏", "李宁", "特步", "lululemon",
+    "商圈活动", "门店陈列", "客流修复", "城市骑行", "抖音直播", "品类切换"
 ]
+
+WORD_POOL = WORD_POOL_BY_SEASON.get(SEASON, []) + COMMON_WORDS
 
 words = []
 for w in WORD_POOL:
@@ -391,12 +607,14 @@ for w in WORD_POOL:
 
 for key in ["east", "south", "southwest", "northwest"]:
     sig = weather_desc(key)
-    if "防晒" in sig and "防晒衣" not in words:
+    if any(k in sig for k in ["防晒", "凉感"]) and "防晒衣" not in words:
         words.append("防晒衣")
-    if "凉感" in sig and "凉感科技" not in words:
-        words.append("凉感科技")
-    if "防雨" in sig and "防雨装备" not in words:
+    if any(k in sig for k in ["防雨", "降雨"]) and "防雨装备" not in words:
         words.append("防雨装备")
+    if any(k in sig for k in ["保暖", "低温"]) and "保暖" not in words:
+        words.append("保暖")
+    if any(k in sig for k in ["防滑", "结冰", "雨雪"]) and "防滑鞋" not in words:
+        words.append("防滑鞋")
 
 while len(words) < 18:
     w = random.choice(WORD_POOL)
@@ -456,35 +674,35 @@ data = {
     "east_flow": reports["east"]["impact"],
     "east_signal": reports["east"]["action"],
     "east_action": "重点关注区域运营节奏",
-    "east_star": star_by_total_score(scores["east"]),
+    "east_star": stars["east"],
 
     "central_city": region_map["central"]["city"],
     "central_hot": reports["central"]["change"],
     "central_flow": reports["central"]["impact"],
     "central_signal": reports["central"]["action"],
     "central_action": "重点关注区域运营节奏",
-    "central_star": star_by_total_score(scores["central"]),
+    "central_star": stars["central"],
 
     "south_city": region_map["south"]["city"],
     "south_hot": reports["south"]["change"],
     "south_flow": reports["south"]["impact"],
     "south_signal": reports["south"]["action"],
     "south_action": "重点关注区域运营节奏",
-    "south_star": star_by_total_score(scores["south"]),
+    "south_star": stars["south"],
 
     "southwest_city": region_map["southwest"]["city"],
     "southwest_hot": reports["southwest"]["change"],
     "southwest_flow": reports["southwest"]["impact"],
     "southwest_signal": reports["southwest"]["action"],
     "southwest_action": "重点关注区域运营节奏",
-    "southwest_star": star_by_total_score(scores["southwest"]),
+    "southwest_star": stars["southwest"],
 
     "northwest_city": region_map["northwest"]["city"],
     "northwest_hot": reports["northwest"]["change"],
     "northwest_flow": reports["northwest"]["impact"],
     "northwest_signal": reports["northwest"]["action"],
     "northwest_action": "重点关注区域运营节奏",
-    "northwest_star": star_by_total_score(scores["northwest"]),
+    "northwest_star": stars["northwest"],
 
     "trend1_title": trend_items[0]["title"],
     "trend1_desc": trend_items[0]["desc"],
