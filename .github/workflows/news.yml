@@ -5,6 +5,9 @@ on:
     - cron: "0 */2 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build-report:
     runs-on: ubuntu-latest
@@ -20,7 +23,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install pillow wordcloud
+          pip install requests beautifulsoup4 jinja2 pyyaml pillow wordcloud matplotlib selenium webdriver-manager
 
       - name: Run News Fetcher
         run: |
@@ -37,6 +40,6 @@ jobs:
 
           git add .
 
-          git diff --cached --quiet || git commit -m "auto update report"
+          git commit -m "auto update report" || echo "no changes"
 
           git push
