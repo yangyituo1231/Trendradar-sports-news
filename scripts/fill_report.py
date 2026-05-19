@@ -1,7 +1,20 @@
 from pathlib import Path
 from datetime import datetime
+import random
 
 template = Path("daily-report.html").read_text(encoding="utf-8")
+
+# 关键词池：后续可以继续增加行业热词
+hot_words_pool = [
+    "On 昂跑", "暴雨预警", "童装生活方式", "防晒", "轻户外", "凉感",
+    "对流", "夜经济", "奥莱", "lululemon", "彪马", "骑行经济",
+    "儿童经济", "短裤", "轻外套", "户外休闲", "亲子消费", "校园运动",
+    "跑步热", "运动童装", "折扣零售", "会员运营", "商场客流", "奥特莱斯",
+    "暑期消费", "防晒衣", "速干", "露营", "文旅消费", "内容电商",
+    "小红书种草", "抖音电商", "618", "品牌联名", "女性运动", "高端跑鞋"
+]
+
+selected_words = random.sample(hot_words_pool, 12)
 
 data = {
     "title": "运动品牌行业资讯日报",
@@ -119,21 +132,12 @@ data = {
     "trend4_desc": "骑行经济、文旅消费与亲子户外共同带动运动场景与周边需求。",
     "trend4_tag": "消费趋势",
 
-    "word1": "On 昂跑",
-    "word2": "暴雨预警",
-    "word3": "童装生活方式",
-    "word4": "对流",
-    "word5": "防晒",
-    "word6": "彪马",
-    "word7": "夜经济",
-    "word8": "奥莱",
-    "word9": "lululemon",
-    "word10": "凉感",
-    "word11": "轻外套",
-    "word12": "儿童经济",
-
     "generate_time": datetime.now().strftime("%Y-%m-%d %H:%M"),
 }
+
+# 动态关键词填入
+for i, word in enumerate(selected_words, start=1):
+    data[f"word{i}"] = word
 
 for key, value in data.items():
     template = template.replace("{{" + key + "}}", str(value))
