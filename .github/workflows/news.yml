@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Fill Report
         run: |
-          python fill_report.py
+          python scripts/fill_report.py
 
       - name: Commit Generated Files
         run: |
