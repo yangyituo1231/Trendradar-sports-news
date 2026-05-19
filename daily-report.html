@@ -48,14 +48,29 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
 .legend-item{height:26px;border-radius:8px;border:1px solid #dbe6f6;background:#f7fbff;display:flex;align-items:center;justify-content:center;gap:4px;font-size:11px;font-weight:850}
 .weather-map{position:relative;height:250px;border-radius:12px;border:1px solid #dbe6f6;overflow:hidden;background:linear-gradient(180deg,#fbfdff 0%,#eef5ff 100%)}
 
-.china-map{position:absolute;left:128px;top:4px;width:405px;height:218px;display:flex;align-items:center;justify-content:center}
+.china-map{position:absolute;left:78px;top:4px;width:405px;height:218px;display:flex;align-items:center;justify-content:center}
 .china-map-img{width:94%;max-height:212px;object-fit:contain;opacity:.98;filter:drop-shadow(0 8px 18px rgba(25,70,130,.10))}
-.map-dot{position:absolute;width:10px;height:10px;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 10px rgba(0,0,0,.15)}
-.dot-north{top:63px;right:168px;background:#ef4444}
-.dot-east{top:120px;right:103px;background:#2563eb}
-.dot-south{bottom:49px;right:162px;background:#8b5cf6}
-.dot-west{top:115px;left:123px;background:#ff8c1a}
-.dot-center{top:140px;left:187px;background:#16a34a}
+
+.map-dot{
+position:absolute;
+border-radius:50%;
+border:3px solid #fff;
+box-shadow:0 0 0 5px rgba(13,111,233,.08),0 6px 18px rgba(20,60,120,.20);
+animation:heatPulse 2.4s infinite ease-in-out;
+z-index:5;
+}
+
+.heat-east{width:16px;height:16px;top:118px;right:102px;background:#e11d48}
+.heat-south{width:14px;height:14px;bottom:47px;right:160px;background:#0d6fe9}
+.heat-central{width:12px;height:12px;top:140px;left:187px;background:#ff8c1a}
+.heat-southwest{width:10px;height:10px;top:158px;left:142px;background:#16a34a}
+.heat-northwest{width:9px;height:9px;top:78px;left:112px;background:#94a3b8}
+
+@keyframes heatPulse{
+0%{transform:scale(1);opacity:.82}
+50%{transform:scale(1.25);opacity:1}
+100%{transform:scale(1);opacity:.82}
+}
 
 .map-label{position:absolute;background:rgba(255,255,255,.96);border:1px solid #dbe6f6;border-radius:10px;padding:7px 10px;font-size:11px;line-height:1.4;box-shadow:0 5px 14px rgba(20,60,110,.08)}
 .l1{top:24px;right:12px;width:150px}
@@ -129,7 +144,7 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
 
 <div class="top-grid">
   <div class="section">
-    <div class="section-title"><span>一、重点资讯精选（TOP 5）</span><span class="more">查看更多 ›</span></div>
+<div class="section-title"><span>一、重点资讯精选（TOP 5）</span><span class="more">查看更多 ›</span></div>
     <div class="section-body">
       <div class="news-list">
         <div class="news-item"><div class="rank r1">1</div><div class="logo-box {{top1_logo_class}}"><div class="logo-icon">{{top1_icon}}</div><div class="logo-text">{{top1_logo}}</div></div><div><div class="news-title">{{top1_title}} <span class="tag">{{top1_tag}}</span></div><div class="news-meta">{{top1_time}} ｜ {{top1_source}}</div><div class="news-desc">{{top1_desc}}</div></div></div>
