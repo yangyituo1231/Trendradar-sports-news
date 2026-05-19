@@ -42,6 +42,10 @@ def season_name(month):
 
 SEASON = season_name(today.month)
 
+# =========================
+# 读取新闻
+# =========================
+
 news_items = []
 news_file = Path("output/news/latest.json")
 
@@ -58,6 +62,10 @@ titles = [
     if isinstance(x, dict) and x.get("title")
 ]
 joined = " ".join(titles)
+
+# =========================
+# 读取天气
+# =========================
 
 weather_file = Path("output/weather/latest.json")
 weather = {}
@@ -165,7 +173,6 @@ def weather_business_type(key):
 
 def heat_class_by_weather(key):
     t = weather_business_type(key)
-
     if t in ["very_hot", "hot"]:
         return "heat-dot-hot"
     if t in ["storm", "rain"]:
@@ -208,6 +215,10 @@ def weather_desc(key):
     }
     return mapping.get(t, mapping["normal"])
 
+# =========================
+# 区域评分
+# =========================
+
 def news_heat_score(keywords):
     score = 0
     for t in titles:
@@ -248,6 +259,10 @@ def total_region_score(weather_key, region_keywords):
         + business_keyword_score(),
         100,
     )
+
+# =========================
+# TOP5
+# =========================
 
 CATEGORY_RULES = {
     "大促电商": {
@@ -365,6 +380,10 @@ def pick_top_news():
 
 top_news = pick_top_news()
 
+# =========================
+# 区域经营内容
+# =========================
+
 def report_for_weather_type(weather_key):
     t = weather_business_type(weather_key)
     mapping = {
@@ -414,104 +433,40 @@ region_map = {
     "northwest": {"city": "陕西/甘肃/宁夏", "weather_key": "northwest", "keywords": ["西安", "兰州", "银川", "陕西", "甘肃", "宁夏", "新疆"]},
 }
 
- def dynamic_store_action(weather_key, local_text, report):
+def dynamic_store_action(weather_key, local_text, report):
     t = weather_business_type(weather_key)
 
     weather_actions = {
-        "storm": [
-            "雨天承接+防滑陈列",
-            "防雨防滑+室内运动",
-            "雨天客流转室内承接",
-        ],
-        "rain": [
-            "雨天承接+轻防护",
-            "防水鞋服+室内场景",
-            "防雨陈列+亲子承接",
-        ],
-        "very_hot": [
-            "防晒凉感前置",
-            "短裤速干连带",
-            "高温品类前置陈列",
-        ],
-        "hot": [
-            "防晒凉感前置",
-            "速干短裤连带",
-            "夏季轻运动陈列",
-        ],
-        "snow_ice": [
-            "防滑鞋+保暖陈列",
-            "雨雪客流室内承接",
-            "棉服童鞋连带",
-        ],
-        "cold": [
-            "保暖鞋服前置",
-            "棉服童鞋连带",
-            "低温室内场景承接",
-        ],
-        "wind": [
-            "轻外套帽类组合",
-            "防风外套前置",
-            "户外防护配件补充",
-        ],
+        "storm": ["雨天承接+防滑陈列", "防雨防滑+室内运动", "雨天客流转室内承接"],
+        "rain": ["雨天承接+轻防护", "防水鞋服+室内场景", "防雨陈列+亲子承接"],
+        "very_hot": ["防晒凉感前置", "短裤速干连带", "高温品类前置陈列"],
+        "hot": ["防晒凉感前置", "速干短裤连带", "夏季轻运动陈列"],
+        "snow_ice": ["防滑鞋+保暖陈列", "雨雪客流室内承接", "棉服童鞋连带"],
+        "cold": ["保暖鞋服前置", "棉服童鞋连带", "低温室内场景承接"],
+        "wind": ["轻外套帽类组合", "防风外套前置", "户外防护配件补充"],
     }
 
-    if t in weather_actions:
-        base_action = random.choice(weather_actions[t])
-    else:
-        base_action = report["action"]
+    base_action = random.choice(weather_actions[t]) if t in weather_actions else report["action"]
 
     news_actions = []
 
     if any(k in local_text for k in ["618", "双11", "双十二", "双12", "大促", "预售"]):
         news_actions.append("爆款价格带承接")
-
     if any(k in local_text for k in ["赛事", "跑步", "马拉松", "训练"]):
         news_actions.append("跑鞋训练场景")
-
     if any(k in local_text for k in ["户外", "骑行", "露营", "徒步"]):
         news_actions.append("轻户外配件连带")
-
     if any(k in local_text for k in ["童装", "儿童", "亲子", "校园"]):
         news_actions.append("亲子校园组合")
-
     if any(k in local_text for k in ["抖音", "小红书", "直播", "种草"]):
         news_actions.append("内容同款承接")
-
     if any(k in local_text for k in ["商场", "商圈", "会员", "客流"]):
         news_actions.append("会员活动转化")
 
     if news_actions:
-        combined = base_action + "；" + random.choice(news_actions)
-        return combined[:26]
+        return (base_action + "；" + random.choice(news_actions))[:26]
 
     return base_action[:26]
-
-    # 新闻联动动作
-    news_actions = []
-
-    if any(k in local_text for k in ["618", "双11", "双十二", "双12", "大促", "预售"]):
-        news_actions.append("同步强化爆款与价格带承接")
-
-    if any(k in local_text for k in ["赛事", "跑步", "马拉松", "训练"]):
-        news_actions.append("增加跑鞋与训练装备场景曝光")
-
-    if any(k in local_text for k in ["户外", "骑行", "露营", "徒步"]):
-        news_actions.append("强化轻户外与配件组合销售")
-
-    if any(k in local_text for k in ["童装", "儿童", "亲子", "校园"]):
-        news_actions.append("加强亲子与校园运动陈列")
-
-    if any(k in local_text for k in ["抖音", "小红书", "直播", "种草"]):
-        news_actions.append("关注内容同款与门店种草承接")
-
-    if any(k in local_text for k in ["商场", "商圈", "会员", "客流"]):
-        news_actions.append("加强会员活动与周末客流运营")
-
-    # 避免完全重复
-    if news_actions:
-        return base_action + "；" + random.choice(news_actions)
-
-    return base_action
 
 def build_region_reports():
     reports = {}
@@ -605,12 +560,20 @@ def detect_trend_from_news():
 
 trend_items = detect_trend_from_news()
 
+# =========================
+# 第五部分：实时热词
+# =========================
+
 KEYWORD_MAP = {
     "抖音": "抖音直播",
     "直播": "直播带货",
     "小红书": "小红书种草",
     "种草": "内容种草",
     "618": "618",
+    "成绩单": "618战报",
+    "战报": "618战报",
+    "品牌": "品牌站位",
+    "C位": "品牌站位",
     "双11": "双11预售",
     "双十一": "双11预售",
     "双12": "双12",
@@ -668,16 +631,9 @@ KEYWORD_MAP = {
     "结冰": "防滑鞋",
 }
 
-SPORT_TREND_POOL = [
-    "跑步经济", "户外运动", "城市骑行", "马拉松", "训练装备", "运动科技",
-    "专业跑鞋", "潮流运动", "女子运动", "儿童体适能", "校园体育",
-    "轻户外", "露营经济", "徒步", "越野跑", "运动康复"
-]
-
 def build_words():
     counter = Counter()
 
-    # 1. TOP5标题优先进入热词候选
     top_titles = [item["title"] for item in top_news if item.get("title")]
     top_joined = " ".join(top_titles)
 
@@ -702,13 +658,11 @@ def build_words():
         if raw in top_joined:
             counter[mapped] += 5
 
-    # 2. 真实新闻标题词频
     for t in titles[:100]:
         for raw, mapped in KEYWORD_MAP.items():
             if raw in t:
                 counter[mapped] += 2
 
-    # 3. 抽取当天更像热点的短语
     phrase_patterns = [
         r"618[^，。！？、\s]{0,6}",
         r"抖音[^，。！？、\s]{0,6}",
@@ -738,14 +692,12 @@ def build_words():
                 if 2 <= len(phrase) <= 8 and phrase not in bad_phrases:
                     counter[phrase] += 1
 
-    # 4. 天气热词
     for key in ["north", "east", "south", "southwest", "northwest"]:
         sig = weather_desc(key)
         for raw, mapped in KEYWORD_MAP.items():
             if raw in sig:
                 counter[mapped] += 2
 
-    # 5. 泛运动趋势词：只在相关新闻触发时增强
     sport_context_words = {
         "跑步经济": ["跑步", "跑鞋", "马拉松", "训练"],
         "专业跑鞋": ["跑步", "跑鞋", "马拉松", "HOKA", "亚瑟士", "On"],
@@ -765,7 +717,6 @@ def build_words():
         if any(tg in joined for tg in triggers):
             counter[mapped] += 2
 
-    # 6. 降低过泛词权重，避免每次霸屏
     for generic in ["儿童运动", "户外运动", "运动童装"]:
         if counter[generic] > 4:
             counter[generic] = 4
@@ -792,46 +743,6 @@ def build_words():
             continue
         if len(w) > 8:
             continue
-        if w not in words:
-            words.append(w)
-        if len(words) >= 18:
-            break
-
-    return words[:18]
-    counter = Counter()
-
-    for t in titles[:80]:
-        for raw, mapped in KEYWORD_MAP.items():
-            if raw in t:
-                counter[mapped] += 1
-
-    for key in ["north", "east", "south", "southwest", "northwest"]:
-        sig = weather_desc(key)
-        for raw, mapped in KEYWORD_MAP.items():
-            if raw in sig:
-                counter[mapped] += 2
-
-    for w in SPORT_TREND_POOL:
-        if w in joined:
-            counter[w] += 2
-
-    preferred = [w for w, _ in counter.most_common()]
-
-    seasonal_fallback = {
-        "spring": ["春季出行", "轻外套", "亲子运动", "校园体育", "城市骑行"],
-        "summer": ["防晒品类", "凉感科技", "速干", "短裤", "618"],
-        "autumn": ["开学季", "校园体育", "轻外套", "户外运动", "99大促"],
-        "winter": ["保暖", "防滑鞋", "童鞋", "室内运动", "训练装备"],
-    }.get(SEASON, [])
-
-    fallback = seasonal_fallback + [
-        "运动童装", "儿童运动", "轻户外", "抖音直播", "小红书种草",
-        "商圈客流", "门店陈列", "客流修复", "跑步经济", "专业跑鞋",
-        "Nike", "阿迪达斯", "安踏", "李宁", "特步", "On昂跑", "HOKA"
-    ]
-
-    words = []
-    for w in preferred + fallback:
         if w not in words:
             words.append(w)
         if len(words) >= 18:
