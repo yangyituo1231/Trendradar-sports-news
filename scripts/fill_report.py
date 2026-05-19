@@ -70,7 +70,11 @@ def get_day_weather(key, idx):
     days = region.get("days", [])
     if idx < len(days):
         return days[idx]
-    return {"weather": "多云", "risk_score": 30, "signal": "天气整体平稳，户外与亲子活动具备恢复基础"}
+    return {
+        "weather": "多云",
+        "risk_score": 30,
+        "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
+    }
 
 def weather_desc(key):
     region = get_weather_region(key)
@@ -80,41 +84,82 @@ def weather_risk(key):
     region = get_weather_region(key)
     return int(region.get("risk_score", 30))
 
-def star_by_score(score):
+def weather_day_label(key, idx):
+    return get_day_weather(key, idx).get("weather", "多云")
+
+# =========================
+# 新闻热度评分
+# =========================
+
+def news_heat_score(keywords):
+    score = 0
+    for title in titles:
+        if any(k in title for k in keywords):
+            score += 8
+        if any(k in title for k in ["618", "大促", "防晒", "凉感", "童装", "儿童", "亲子", "商场", "商圈", "客流"]):
+            score += 2
+    return min(score, 35)
+
+def business_keyword_score():
+    score = 0
+    for k in ["防晒", "凉感", "童装", "儿童", "亲子", "618", "商场", "商圈", "客流", "户外", "骑行", "小红书", "抖音"]:
+        if k in joined:
+            score += 3
+    return min(score, 25)
+
+def total_region_score(weather_key, region_keywords):
+    return min(weather_risk(weather_key) * 0.55 + news_heat_score(region_keywords) + business_keyword_score(), 100)
+
+def star_by_total_score(score):
     if score >= 65:
         return "★★★"
-    if score >= 35:
+    if score >= 40:
         return "★★"
     return "★"
 
 # =========================
-# TOP5分类
+# TOP5：贴近新闻原文，但一类一条
 # =========================
 
 CATEGORY_RULES = {
     "大促电商": {
         "keywords": ["618", "双11", "双十一", "大促", "预售", "电商", "直播", "抖音", "小红书", "种草"],
-        "tag": "大促/电商", "logo": "大促", "icon": "🛒", "class": "logo-blue",
+        "tag": "大促/电商",
+        "logo": "大促",
+        "icon": "🛒",
+        "class": "logo-blue",
         "desc": "大促信息适度关注，重点看夏季品类曝光、直播种草、转化效率和终端承接。",
     },
     "童装儿童": {
         "keywords": ["童装", "儿童", "亲子", "校园", "儿童运动", "运动童装", "Kids", "KIDS"],
-        "tag": "童装/儿童运动", "logo": "童装", "icon": "🧒", "class": "logo-sky",
+        "tag": "童装/儿童运动",
+        "logo": "童装",
+        "icon": "🧒",
+        "class": "logo-sky",
         "desc": "儿童消费从单品购买转向亲子、校园、户外和运动场景综合经营。",
     },
     "天气防晒": {
         "keywords": ["高温", "防晒", "凉感", "速干", "暴雨", "强对流", "降雨", "天气", "防雨", "夏日", "夏季"],
-        "tag": "天气影响消费", "logo": "天气", "icon": "☀️", "class": "logo-sky",
+        "tag": "天气影响消费",
+        "logo": "天气",
+        "icon": "☀️",
+        "class": "logo-sky",
         "desc": "天气变化影响客流和主推节奏，防晒、凉感、速干及轻防护品类需前置。",
     },
     "户外骑行": {
         "keywords": ["户外", "骑行", "露营", "文旅", "出行", "夜经济", "跑步", "轻户外", "徒步"],
-        "tag": "户外/运动场景", "logo": "户外", "icon": "🚴", "class": "logo-green",
+        "tag": "户外/运动场景",
+        "logo": "户外",
+        "icon": "🚴",
+        "class": "logo-green",
         "desc": "户外、文旅、骑行和夜间消费延伸运动场景，带动轻运动与亲子需求。",
     },
     "商圈消费": {
         "keywords": ["商场", "商圈", "门店", "客流", "奥莱", "折扣", "会员", "零售", "消费", "本地生活"],
-        "tag": "商圈/零售经营", "logo": "商圈", "icon": "🏬", "class": "logo-dark",
+        "tag": "商圈/零售经营",
+        "logo": "商圈",
+        "icon": "🏬",
+        "class": "logo-dark",
         "desc": "商圈活动、会员运营和折扣零售影响周末客流与终端转化效率。",
     },
 }
@@ -180,8 +225,13 @@ def pick_top_news():
 
         used.add(title)
         result.append({
-            "title": title, "tag": rule["tag"], "source": source, "desc": rule["desc"],
-            "logo": rule["logo"], "icon": rule["icon"], "class": rule["class"],
+            "title": title,
+            "tag": rule["tag"],
+            "source": source,
+            "desc": rule["desc"],
+            "logo": rule["logo"],
+            "icon": rule["icon"],
+            "class": rule["class"],
         })
 
     return result
@@ -189,76 +239,123 @@ def pick_top_news():
 top_news = pick_top_news()
 
 # =========================
-# 区域动态内容
+# 区域经营日报：核心变化 / 经营影响 / 推荐动作
 # =========================
 
+REGION_REPORT_POOL = [
+    {
+        "change": "降雨天气扰动客流",
+        "impact": "室内运动与轻防护品类关注提升",
+        "action": "建议强化防晒、防雨及轻运动场景陈列",
+    },
+    {
+        "change": "高温天气带动夏季消费",
+        "impact": "防晒、凉感、速干类需求提升",
+        "action": "建议加强防晒单品与短裤连带销售",
+    },
+    {
+        "change": "亲子与校园运动场景升温",
+        "impact": "儿童运动与轻户外需求增加",
+        "action": "建议强化校园运动与亲子搭配展示",
+    },
+    {
+        "change": "轻户外与骑行热度提升",
+        "impact": "骑行、露营、徒步消费增加",
+        "action": "建议增加轻户外系列曝光",
+    },
+    {
+        "change": "商圈活动与会员运营增加",
+        "impact": "周末客流与互动活跃度提升",
+        "action": "建议加强会员活动引流",
+    },
+    {
+        "change": "夜经济消费持续活跃",
+        "impact": "运动休闲与轻消费场景延伸",
+        "action": "建议关注夜间场景商品组合",
+    },
+]
+
+def region_report_by_weather(weather_key):
+    signal = weather_desc(weather_key)
+
+    if "高温" in signal or "防晒" in signal or "凉感" in signal:
+        return {
+            "change": "高温天气带动夏季消费",
+            "impact": "防晒、凉感、速干类需求提升",
+            "action": "建议加强防晒单品与短裤连带销售",
+        }
+
+    if "降雨" in signal or "防雨" in signal or "小雨" in signal or "中雨" in signal:
+        return {
+            "change": "降雨天气扰动客流",
+            "impact": "室内运动与轻防护品类关注提升",
+            "action": "建议强化防雨、轻外套及室内运动场景陈列",
+        }
+
+    return random.choice(REGION_REPORT_POOL[2:])
+
+def region_report_with_news(weather_key, region_keywords):
+    # 如果新闻里有明显区域/经营热点，优先结合新闻场景
+    local_titles = [t for t in titles if any(k in t for k in region_keywords)]
+    text = " ".join(local_titles[:5])
+
+    if any(k in text for k in ["商场", "商圈", "客流", "会员", "奥莱"]):
+        return {
+            "change": "商圈活动与会员运营增加",
+            "impact": "周末客流与互动活跃度提升",
+            "action": "建议加强会员活动引流",
+        }
+
+    if any(k in text for k in ["骑行", "户外", "露营", "文旅", "出行"]):
+        return {
+            "change": "轻户外与骑行热度提升",
+            "impact": "骑行、露营、徒步消费增加",
+            "action": "建议增加轻户外系列曝光",
+        }
+
+    if any(k in text for k in ["童装", "儿童", "亲子", "校园"]):
+        return {
+            "change": "亲子与校园运动场景升温",
+            "impact": "儿童运动与轻户外需求增加",
+            "action": "建议强化校园运动与亲子搭配展示",
+        }
+
+    return region_report_by_weather(weather_key)
+
 region_map = {
-    "east": {"city": "上海/江苏/浙江", "weather_key": "east"},
-    "central": {"city": "湖北/湖南/江西", "weather_key": "east"},
-    "south": {"city": "广东/广西", "weather_key": "south"},
-    "southwest": {"city": "四川/重庆/贵州", "weather_key": "southwest"},
-    "northwest": {"city": "陕西/甘肃/宁夏", "weather_key": "northwest"},
+    "east": {
+        "city": "上海/江苏/浙江",
+        "weather_key": "east",
+        "keywords": ["上海", "杭州", "南京", "苏州", "宁波", "江苏", "浙江"],
+    },
+    "central": {
+        "city": "湖北/湖南/江西",
+        "weather_key": "east",
+        "keywords": ["武汉", "长沙", "南昌", "郑州", "湖北", "湖南", "江西"],
+    },
+    "south": {
+        "city": "广东/广西",
+        "weather_key": "south",
+        "keywords": ["广州", "深圳", "佛山", "南宁", "广东", "广西", "厦门", "福建"],
+    },
+    "southwest": {
+        "city": "四川/重庆/贵州",
+        "weather_key": "southwest",
+        "keywords": ["成都", "重庆", "贵阳", "昆明", "四川", "贵州", "云南"],
+    },
+    "northwest": {
+        "city": "陕西/甘肃/宁夏",
+        "weather_key": "northwest",
+        "keywords": ["西安", "兰州", "银川", "陕西", "甘肃", "宁夏", "新疆"],
+    },
 }
 
-def hot_by_weather(key):
-    risk = weather_risk(key)
-    signal = weather_desc(key)
+reports = {}
+scores = {}
 
-    if "高温" in signal or "防晒" in signal:
-        return "高温天气带动防晒与凉感品类需求"
-    if "降雨" in signal or "防雨" in signal:
-        return "降雨天气扰动客流，轻防护品类关注提升"
-    if risk >= 65:
-        return "天气扰动增强，门店需关注客流波动"
-    return random.choice([
-        "商圈活动与会员运营带动客流",
-        "亲子与儿童运动场景升温",
-        "城市骑行与轻户外热度提升",
-        "校园运动与亲子消费升温",
-        "夜经济活跃，运动休闲消费增加",
-        "露营与户外场景持续升温",
-    ])
-
-def flow_by_weather(key):
-    signal = weather_desc(key)
-    if "降雨" in signal:
-        return "降雨扰动客流，室内商圈承接更关键"
-    if "高温" in signal:
-        return "高温影响户外停留，商场与夜间客流更重要"
-    return random.choice([
-        "商圈客流回暖但天气扰动仍在",
-        "周末客流恢复明显",
-        "会员活动带动亲子消费",
-        "夜间客流增加，夜经济活跃",
-        "商场活动与会员运营带动客流",
-    ])
-
-def signal_by_weather(key):
-    signal = weather_desc(key)
-    if "防晒" in signal or "高温" in signal:
-        return "防晒、凉感、短裤、速干品类需求上升"
-    if "防雨" in signal or "降雨" in signal:
-        return "轻防护、防雨装备、室内运动场景需求提升"
-    return random.choice([
-        "防晒、轻外套、运动场景需求提升",
-        "运动童装与校园场景热度增加",
-        "亲子休闲、户外轻运动增长",
-        "小红书种草影响线下成交",
-    ])
-
-def action_by_weather(key):
-    signal = weather_desc(key)
-    if "防晒" in signal or "高温" in signal:
-        return "建议加强防晒、凉感、速干系列前置陈列"
-    if "防雨" in signal or "降雨" in signal:
-        return "建议强化防雨、轻外套及室内运动场景搭配"
-    return random.choice([
-        "建议关注短裤与速干T连带销售",
-        "建议强化校园运动场景搭配",
-        "建议增加轻户外系列曝光",
-        "建议重点关注周末亲子客流",
-        "建议加强会员活动引流",
-    ])
+for region, cfg in region_map.items():
+    reports[region] = region_report_with_news(cfg["weather_key"], cfg["keywords"])
+    scores[region] = total_region_score(cfg["weather_key"], cfg["keywords"])
 
 # =========================
 # 经营观察
@@ -309,13 +406,6 @@ while len(words) < 18:
 words = words[:18]
 
 # =========================
-# 天气日期
-# =========================
-
-def weather_day_label(key, idx):
-    return get_day_weather(key, idx).get("weather", "多云")
-
-# =========================
 # 数据填充
 # =========================
 
@@ -362,39 +452,39 @@ data = {
     "northwest_day3": weather_day_label("northwest", 2),
 
     "east_city": region_map["east"]["city"],
-    "east_hot": hot_by_weather("east"),
-    "east_flow": flow_by_weather("east"),
-    "east_signal": signal_by_weather("east"),
-    "east_action": action_by_weather("east"),
-    "east_star": star_by_score(weather_risk("east")),
+    "east_hot": reports["east"]["change"],
+    "east_flow": reports["east"]["impact"],
+    "east_signal": reports["east"]["action"],
+    "east_action": "重点关注区域运营节奏",
+    "east_star": star_by_total_score(scores["east"]),
 
     "central_city": region_map["central"]["city"],
-    "central_hot": hot_by_weather("east"),
-    "central_flow": flow_by_weather("east"),
-    "central_signal": signal_by_weather("east"),
-    "central_action": action_by_weather("east"),
-    "central_star": star_by_score(weather_risk("east")),
+    "central_hot": reports["central"]["change"],
+    "central_flow": reports["central"]["impact"],
+    "central_signal": reports["central"]["action"],
+    "central_action": "重点关注区域运营节奏",
+    "central_star": star_by_total_score(scores["central"]),
 
     "south_city": region_map["south"]["city"],
-    "south_hot": hot_by_weather("south"),
-    "south_flow": flow_by_weather("south"),
-    "south_signal": signal_by_weather("south"),
-    "south_action": action_by_weather("south"),
-    "south_star": star_by_score(weather_risk("south")),
+    "south_hot": reports["south"]["change"],
+    "south_flow": reports["south"]["impact"],
+    "south_signal": reports["south"]["action"],
+    "south_action": "重点关注区域运营节奏",
+    "south_star": star_by_total_score(scores["south"]),
 
     "southwest_city": region_map["southwest"]["city"],
-    "southwest_hot": hot_by_weather("southwest"),
-    "southwest_flow": flow_by_weather("southwest"),
-    "southwest_signal": signal_by_weather("southwest"),
-    "southwest_action": action_by_weather("southwest"),
-    "southwest_star": star_by_score(weather_risk("southwest")),
+    "southwest_hot": reports["southwest"]["change"],
+    "southwest_flow": reports["southwest"]["impact"],
+    "southwest_signal": reports["southwest"]["action"],
+    "southwest_action": "重点关注区域运营节奏",
+    "southwest_star": star_by_total_score(scores["southwest"]),
 
     "northwest_city": region_map["northwest"]["city"],
-    "northwest_hot": hot_by_weather("northwest"),
-    "northwest_flow": flow_by_weather("northwest"),
-    "northwest_signal": signal_by_weather("northwest"),
-    "northwest_action": action_by_weather("northwest"),
-    "northwest_star": star_by_score(weather_risk("northwest")),
+    "northwest_hot": reports["northwest"]["change"],
+    "northwest_flow": reports["northwest"]["impact"],
+    "northwest_signal": reports["northwest"]["action"],
+    "northwest_action": "重点关注区域运营节奏",
+    "northwest_star": star_by_total_score(scores["northwest"]),
 
     "trend1_title": trend_items[0]["title"],
     "trend1_desc": trend_items[0]["desc"],
