@@ -17,46 +17,33 @@ weekday_map = {
 def md(d):
     return d.strftime("%m-%d")
 
-# =========================
-# TOP5：带图案的动态图标
-# =========================
-
 top_news = [
     {
-        "title": "安踏、李宁等品牌加码儿童运动场景，暑期需求提前升温",
-        "tag": "运动品牌动态",
-        "source": "公开资讯",
-        "desc": "品牌加大儿童训练、校园运动和亲子场景布局，暑期消费窗口值得关注。",
-        "logo": "ANTA",
-        "icon": "🏃",
-        "class": "logo-dark",
-    },
-    {
-        "title": "抖音、小红书内容种草带动运动童装成交",
-        "tag": "内容电商",
+        "title": "618预售升温，运动品牌加大儿童与夏季品类投放",
+        "tag": "大促/电商",
         "source": "平台资讯",
-        "desc": "短视频、直播与种草内容正在影响新品传播、到店转化和线上成交节奏。",
-        "logo": "抖音",
-        "icon": "🎵",
-        "class": "logo-purple",
+        "desc": "618节奏提前带动防晒、凉感、短裤、童装等夏季品类关注提升。",
+        "logo": "618",
+        "icon": "🛒",
+        "class": "logo-red",
     },
     {
-        "title": "高温与强对流天气并行，防晒凉感品类进入主推期",
+        "title": "高温天气持续，防晒衣与凉感科技进入主推窗口",
         "tag": "天气影响消费",
         "source": "公开气象信息",
-        "desc": "高温、防晒、降雨和强对流共同影响门店客流与品类节奏。",
-        "logo": "天气",
-        "icon": "🌦️",
-        "class": "logo-sky",
+        "desc": "高温与强对流并行，门店需关注防晒、凉感、速干及轻外套陈列。",
+        "logo": "高温",
+        "icon": "☀️",
+        "class": "logo-orange",
     },
     {
-        "title": "奥莱折扣与会员运营升温，终端转化效率成重点",
-        "tag": "线下零售经营",
-        "source": "商业观察",
-        "desc": "折扣场景、会员权益和组合陈列仍是提升终端销售效率的关键抓手。",
-        "logo": "折扣",
-        "icon": "%",
-        "class": "logo-red",
+        "title": "抖音直播与小红书种草继续影响运动童装成交",
+        "tag": "内容电商",
+        "source": "平台资讯",
+        "desc": "短视频、直播与种草内容正在改变新品传播、到店转化和线上成交节奏。",
+        "logo": "内容",
+        "icon": "🎵",
+        "class": "logo-purple",
     },
     {
         "title": "城市骑行、露营与夜经济延续，轻户外需求释放",
@@ -67,14 +54,18 @@ top_news = [
         "icon": "🚴",
         "class": "logo-green",
     },
+    {
+        "title": "奥莱折扣与会员运营升温，终端转化效率成重点",
+        "tag": "线下零售经营",
+        "source": "商业观察",
+        "desc": "折扣场景、会员权益和组合陈列仍是提升终端销售效率的关键抓手。",
+        "logo": "折扣",
+        "icon": "%",
+        "class": "logo-blue",
+    },
 ]
 
 random.shuffle(top_news)
-
-# =========================
-# 更实时、更综合的关键词池
-# 不局限运动行业
-# =========================
 
 hot_words_pool = [
     "618", "高温天气", "暴雨预警", "强对流", "防晒衣", "凉感科技",
@@ -87,20 +78,13 @@ hot_words_pool = [
     "门店陈列", "商圈恢复", "折扣零售", "消费复苏", "天气扰动"
 ]
 
-selected_words = random.sample(hot_words_pool, 18)
-
-# 强制让前3个更像热点大词
 priority_words = random.sample([
     "618", "高温天气", "暴雨预警", "抖音直播", "小红书种草",
     "防晒衣", "城市骑行", "文旅客流", "周末客流"
 ], 3)
 
-for i in range(3):
-    selected_words[i] = priority_words[i]
-
-# =========================
-# 区域资讯：更具体
-# =========================
+remaining_words = [w for w in hot_words_pool if w not in priority_words]
+selected_words = priority_words + random.sample(remaining_words, 15)
 
 east_news = [
     "上海核心商圈周末客流回暖，运动品牌活动密集",
@@ -137,12 +121,8 @@ northwest_news = [
     "西安商圈活动带动运动休闲消费"
 ]
 
-# =========================
-# 趋势
-# =========================
-
 trend_pool = [
-    ("品牌竞争进入结构分化期", "头部运动品牌竞争从规模扩张转向专业品类、渠道效率与人群经营。", "品牌趋势"),
+    ("大促节点前置，夏季品类进入放量窗口", "618节奏提前带动防晒、凉感、速干、童装等品类集中曝光。", "大促趋势"),
     ("内容平台影响购买决策链路", "种草、短视频和直播正在改变新品传播、到店转化与线上成交节奏。", "内容趋势"),
     ("儿童运动消费场景持续外扩", "童装消费正从服饰购买转向亲子、校园、户外与运动场景综合经营。", "儿童消费趋势"),
     ("天气驱动品类节奏切换", "高温、防晒、降雨与强对流共同影响门店客流和商品主推节奏。", "季节趋势"),
@@ -151,10 +131,6 @@ trend_pool = [
 ]
 
 trends = random.sample(trend_pool, 4)
-
-# =========================
-# 基础数据
-# =========================
 
 data = {
     "title": "运动品牌行业资讯日报",
@@ -232,10 +208,6 @@ data = {
     "generate_time": today.strftime("%Y-%m-%d %H:%M"),
 }
 
-# =========================
-# TOP5填入
-# =========================
-
 for i, item in enumerate(top_news[:5], start=1):
     data[f"top{i}_title"] = item["title"]
     data[f"top{i}_tag"] = item["tag"]
@@ -246,25 +218,13 @@ for i, item in enumerate(top_news[:5], start=1):
     data[f"top{i}_icon"] = item["icon"]
     data[f"top{i}_logo_class"] = item["class"]
 
-# =========================
-# 趋势填入
-# =========================
-
 for i, item in enumerate(trends, start=1):
     data[f"trend{i}_title"] = item[0]
     data[f"trend{i}_desc"] = item[1]
     data[f"trend{i}_tag"] = item[2]
 
-# =========================
-# 18关键词填入
-# =========================
-
 for i, word in enumerate(selected_words, start=1):
     data[f"word{i}"] = word
-
-# =========================
-# 替换输出
-# =========================
 
 for key, value in data.items():
     template = template.replace("{{" + key + "}}", str(value))
