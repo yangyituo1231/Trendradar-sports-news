@@ -64,13 +64,19 @@ jobs:
           git commit -m "auto update report" || echo "nothing to commit"
           git push
 
-      - name: Send WeCom Message
+      - name: Send WeCom Text
         run: |
           curl '${{ secrets.REPORT_WEBHOOK }}' \
             -H 'Content-Type: application/json' \
             -d '{
               "msgtype": "markdown",
               "markdown": {
-                "content": "# 运动品牌行业资讯日报\n\n今日日报已自动生成。\n\n请在 GitHub Actions 的 daily-report-image 产物中查看图片。"
+                "content": "# 运动品牌行业资讯日报\n\n今日日报已自动生成，图片如下。"
               }
             }'
+
+      - name: Send WeCom Image
+        env:
+          REPORT_WEBHOOK: ${{ secrets.REPORT_WEBHOOK }}
+        run: |
+          python scripts/send_wecom_image.py
