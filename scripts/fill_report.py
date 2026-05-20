@@ -433,69 +433,221 @@ region_map = {
     "northwest": {"city": "陕西/甘肃/宁夏", "weather_key": "northwest", "keywords": ["西安", "兰州", "银川", "陕西", "甘肃", "宁夏", "新疆"]},
 }
 
-def dynamic_store_action(weather_key, local_text, report):
+# =========================
+# 动态经营建议引擎（AI经营逻辑）
+# =========================
+
+def detect_business_scene(text, weather_key):
+    text = str(text)
+
     t = weather_business_type(weather_key)
 
-    weather_actions = {
-        "storm": ["雨天承接+防滑陈列", "防雨防滑+室内运动", "雨天客流转室内承接"],
-        "rain": ["雨天承接+轻防护", "防水鞋服+室内场景", "防雨陈列+亲子承接"],
-        "very_hot": ["防晒凉感前置", "短裤速干连带", "高温品类前置陈列"],
-        "hot": ["防晒凉感前置", "速干短裤连带", "夏季轻运动陈列"],
-        "snow_ice": ["防滑鞋+保暖陈列", "雨雪客流室内承接", "棉服童鞋连带"],
-        "cold": ["保暖鞋服前置", "棉服童鞋连带", "低温室内场景承接"],
-        "wind": ["轻外套帽类组合", "防风外套前置", "户外防护配件补充"],
+    scenes = []
+
+    # 天气
+    if t in ["very_hot", "hot"]:
+        scenes.append("high_temp")
+
+    if t in ["storm", "rain"]:
+        scenes.append("rain")
+
+    if t in ["snow_ice", "cold"]:
+        scenes.append("cold")
+
+    # 大促
+    if any(k in text for k in [
+        "618", "双11", "双十一", "双12",
+        "99大促", "38大促", "预售", "百亿补贴"
+    ]):
+        scenes.append("promotion")
+
+    # 内容平台
+    if any(k in text for k in [
+        "抖音", "小红书", "种草", "直播", "达人"
+    ]):
+        scenes.append("content")
+
+    # 亲子儿童
+    if any(k in text for k in [
+        "童装", "儿童", "亲子", "校园"
+    ]):
+        scenes.append("kids")
+
+    # 户外
+    if any(k in text for k in [
+        "户外", "露营", "骑行", "徒步", "Citywalk"
+    ]):
+        scenes.append("outdoor")
+
+    # 跑步赛事
+    if any(k in text for k in [
+        "跑步", "马拉松", "赛事",
+        "越野跑", "训练", "跑鞋"
+    ]):
+        scenes.append("running")
+
+    # 商圈
+    if any(k in text for k in [
+        "商场", "商圈", "客流",
+        "门店", "会员", "奥莱"
+    ]):
+        scenes.append("mall")
+
+    return list(set(scenes))
+
+
+def generate_store_strategy(region_name, weather_key, local_text):
+    scenes = detect_business_scene(local_text, weather_key)
+
+    hot_parts = []
+    flow_parts = []
+    signal_parts = []
+    action_parts = []
+
+    # =====================
+    # 高温
+    # =====================
+
+    if "high_temp" in scenes:
+        hot_parts.append("高温天气带动夏季消费")
+        flow_parts.append("防晒、凉感与短裤需求提升")
+        signal_parts.append("夏季功能型商品热度上升")
+        action_parts.append("前置防晒、凉感与短裤陈列")
+
+    # =====================
+    # 雨天
+    # =====================
+
+    if "rain" in scenes:
+        hot_parts.append("降雨天气扰动客流")
+        flow_parts.append("室内消费与轻防护需求增加")
+        signal_parts.append("防雨、防滑与轻外套需求提升")
+        action_parts.append("加强防雨、防滑及室内场景承接")
+
+    # =====================
+    # 冬季
+    # =====================
+
+    if "cold" in scenes:
+        hot_parts.append("低温天气影响户外停留")
+        flow_parts.append("保暖与室内运动需求增加")
+        signal_parts.append("棉服、防滑鞋与帽类需求提升")
+        action_parts.append("强化保暖、防滑及童鞋连带")
+
+    # =====================
+    # 大促
+    # =====================
+
+    if "promotion" in scenes:
+        hot_parts.append("平台大促热度提升")
+        flow_parts.append("直播与价格带关注增强")
+        signal_parts.append("爆款与直播同款转化提升")
+        action_parts.append("强化爆款堆头与价格带陈列")
+
+    # =====================
+    # 内容平台
+    # =====================
+
+    if "content" in scenes:
+        hot_parts.append("内容平台种草影响增强")
+        flow_parts.append("线上内容影响到店转化")
+        signal_parts.append("短视频同款关注提升")
+        action_parts.append("加强内容同款与新品承接")
+
+    # =====================
+    # 儿童
+    # =====================
+
+    if "kids" in scenes:
+        hot_parts.append("亲子与校园场景持续升温")
+        flow_parts.append("儿童运动需求增加")
+        signal_parts.append("童鞋与运动短裤热度提升")
+        action_parts.append("强化亲子与校园场景陈列")
+
+    # =====================
+    # 户外
+    # =====================
+
+    if "outdoor" in scenes:
+        hot_parts.append("轻户外与骑行热度提升")
+        flow_parts.append("户外休闲消费增加")
+        signal_parts.append("帽包与轻户外装备关注提升")
+        action_parts.append("增加轻户外与配件组合展示")
+
+    # =====================
+    # 跑步
+    # =====================
+
+    if "running" in scenes:
+        hot_parts.append("跑步与赛事场景热度提升")
+        flow_parts.append("专业运动装备需求增加")
+        signal_parts.append("跑鞋与训练系列关注提升")
+        action_parts.append("强化跑鞋与训练场景表达")
+
+    # =====================
+    # 商圈
+    # =====================
+
+    if "mall" in scenes:
+        hot_parts.append("商圈活动与会员运营增加")
+        flow_parts.append("周末客流恢复增强")
+        signal_parts.append("互动活动与连带消费增加")
+        action_parts.append("加强会员活动与门口堆头")
+
+    # fallback
+
+    if not hot_parts:
+        hot_parts.append("区域消费节奏整体平稳")
+
+    if not flow_parts:
+        flow_parts.append("户外与商圈消费保持恢复")
+
+    if not signal_parts:
+        signal_parts.append("运动休闲与亲子消费维持增长")
+
+    if not action_parts:
+        action_parts.append("关注夏季主推与客流承接")
+
+    return {
+        "hot": "、".join(hot_parts[:2]),
+        "flow": "、".join(flow_parts[:2]),
+        "signal": "、".join(signal_parts[:2]),
+        "action": "、".join(action_parts[:2]),
     }
 
-    base_action = random.choice(weather_actions[t]) if t in weather_actions else report["action"]
-
-    news_actions = []
-
-    if any(k in local_text for k in ["618", "双11", "双十二", "双12", "大促", "预售"]):
-        news_actions.append("爆款价格带承接")
-    if any(k in local_text for k in ["赛事", "跑步", "马拉松", "训练"]):
-        news_actions.append("跑鞋训练场景")
-    if any(k in local_text for k in ["户外", "骑行", "露营", "徒步"]):
-        news_actions.append("轻户外配件连带")
-    if any(k in local_text for k in ["童装", "儿童", "亲子", "校园"]):
-        news_actions.append("亲子校园组合")
-    if any(k in local_text for k in ["抖音", "小红书", "直播", "种草"]):
-        news_actions.append("内容同款承接")
-    if any(k in local_text for k in ["商场", "商圈", "会员", "客流"]):
-        news_actions.append("会员活动转化")
-
-    if news_actions:
-        return (base_action + "；" + random.choice(news_actions))[:26]
-
-    return base_action[:26]
 
 def build_region_reports():
+
     reports = {}
     actions = {}
-    used = set()
 
     for region, cfg in region_map.items():
-        local_titles = [t for t in titles if any(k in t for k in cfg["keywords"])]
-        local_text = " ".join(local_titles[:8])
 
-        weather_report = report_for_weather_type(cfg["weather_key"])
-        news_report = report_by_news_text(local_text)
+        local_titles = [
+            t for t in titles
+            if any(k in t for k in cfg["keywords"])
+        ]
 
-        if seasonal_weather_score(cfg["weather_key"]) >= 38:
-            candidate = weather_report
-        else:
-            candidate = news_report or weather_report
+        local_text = " ".join(local_titles[:10])
 
-        if candidate["change"] in used:
-            for alt in NEWS_REPORTS + [weather_report]:
-                if alt["change"] not in used:
-                    candidate = alt
-                    break
+        result = generate_store_strategy(
+            cfg["city"],
+            cfg["weather_key"],
+            local_text
+        )
 
-        used.add(candidate["change"])
-        reports[region] = candidate
-        actions[region] = dynamic_store_action(cfg["weather_key"], local_text, candidate)
+        reports[region] = {
+            "change": result["hot"],
+            "impact": result["flow"],
+            "action": result["signal"],
+        }
+
+        actions[region] = result["action"]
 
     return reports, actions
+
+
+reports, actions = build_region_reports()
 
 reports, actions = build_region_reports()
 
