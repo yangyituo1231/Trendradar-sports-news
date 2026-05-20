@@ -12,6 +12,8 @@ today = now
 day2 = today + timedelta(days=1)
 day3 = today + timedelta(days=2)
 
+random.seed(today.strftime("%Y-%m-%d-%H"))
+
 weekday_map = {
     0: "星期一", 1: "星期二", 2: "星期三", 3: "星期四",
     4: "星期五", 5: "星期六", 6: "星期日",
@@ -381,260 +383,195 @@ def pick_top_news():
 top_news = pick_top_news()
 
 # =========================
-# 区域经营内容
+# 区域经营内容：动作池版
 # =========================
-
-def report_for_weather_type(weather_key):
-    t = weather_business_type(weather_key)
-    mapping = {
-        "snow_ice": {"change": "雨雪结冰影响出行", "impact": "防滑鞋、保暖服饰与室内客流关注提升", "action": "建议强化防滑鞋、保暖外套及室内运动陈列"},
-        "cold": {"change": "低温天气影响户外停留", "impact": "棉服、羽绒、帽类及保暖运动鞋需求提升", "action": "建议加强保暖系列与童鞋连带销售"},
-        "storm": {"change": "强降雨扰动商圈客流", "impact": "室内运动与防雨、防滑品类关注提升", "action": "建议强化防雨、防滑及轻外套陈列"},
-        "rain": {"change": "降雨天气扰动客流", "impact": "室内运动与轻防护品类关注提升", "action": "建议强化防雨、轻外套及室内运动场景陈列"},
-        "very_hot": {"change": "高温天气带动夏季消费", "impact": "防晒、凉感、速干类需求提升", "action": "建议加强防晒单品与短裤连带销售"},
-        "hot": {"change": "气温偏高带动轻薄品类", "impact": "短T、短裤、凉感及防晒需求提升", "action": "建议前置凉感、速干及夏季主推陈列"},
-        "wind": {"change": "大风天气影响户外活动", "impact": "轻外套、帽类及防风装备关注提升", "action": "建议加强轻外套、帽类及户外配件组合"},
-        "spring_mild": {"change": "春季出行与亲子活动恢复", "impact": "轻外套、运动童装与户外场景需求提升", "action": "建议强化春季轻外套与亲子搭配展示"},
-        "autumn_mild": {"change": "秋季运动与开学场景延续", "impact": "长袖、长裤、轻外套及校园运动需求提升", "action": "建议前置校园运动与秋季轻外套组合"},
-        "winter_mild": {"change": "冬季基础保暖需求延续", "impact": "保暖基础款、运动鞋及室内运动需求稳定", "action": "建议关注保暖基础款与童鞋连带销售"},
-        "normal": {"change": "天气平稳利于户外恢复", "impact": "亲子活动、轻户外与运动休闲需求增加", "action": "建议增加轻户外及亲子运动场景曝光"},
-    }
-    return mapping.get(t, mapping["normal"])
-
-NEWS_REPORTS = [
-    {"change": "商圈活动与会员运营增加", "impact": "周末客流与互动活跃度提升", "action": "建议加强会员活动引流"},
-    {"change": "亲子与校园运动场景升温", "impact": "儿童运动与轻户外需求增加", "action": "建议强化校园运动与亲子搭配展示"},
-    {"change": "轻户外与骑行热度提升", "impact": "骑行、露营、徒步消费增加", "action": "建议增加轻户外系列曝光"},
-    {"change": "赛事与跑步热度提升", "impact": "专业跑鞋、训练装备与运动科技关注增加", "action": "建议放大跑步鞋与训练装备场景陈列"},
-    {"change": "内容平台种草影响增强", "impact": "小红书、抖音带动新品关注与到店转化", "action": "建议加强爆款同款与内容陈列承接"},
-    {"change": "大促节点带动关注", "impact": "爆款、价格带与直播同款转化更关键", "action": "建议强化大促爆款、价格带及门口堆头"},
-]
-
-def report_by_news_text(text):
-    if any(k in text for k in ["618", "双11", "双十一", "双12", "大促", "预售"]):
-        return NEWS_REPORTS[5]
-    if any(k in text for k in ["商场", "商圈", "客流", "会员", "奥莱"]):
-        return NEWS_REPORTS[0]
-    if any(k in text for k in ["童装", "儿童", "亲子", "校园"]):
-        return NEWS_REPORTS[1]
-    if any(k in text for k in ["骑行", "户外", "露营", "文旅", "出行"]):
-        return NEWS_REPORTS[2]
-    if any(k in text for k in ["赛事", "跑步", "马拉松", "训练", "越野跑"]):
-        return NEWS_REPORTS[3]
-    if any(k in text for k in ["抖音", "小红书", "种草", "直播"]):
-        return NEWS_REPORTS[4]
-    return None
 
 region_map = {
-    "east": {"city": "上海/江苏/浙江", "weather_key": "east", "keywords": ["上海", "杭州", "南京", "苏州", "宁波", "江苏", "浙江"]},
-    "central": {"city": "湖北/湖南/江西", "weather_key": "east", "keywords": ["武汉", "长沙", "南昌", "郑州", "湖北", "湖南", "江西"]},
-    "south": {"city": "广东/广西", "weather_key": "south", "keywords": ["广州", "深圳", "佛山", "南宁", "广东", "广西", "厦门", "福建"]},
-    "southwest": {"city": "四川/重庆/贵州", "weather_key": "southwest", "keywords": ["成都", "重庆", "贵阳", "昆明", "四川", "贵州", "云南"]},
-    "northwest": {"city": "陕西/甘肃/宁夏", "weather_key": "northwest", "keywords": ["西安", "兰州", "银川", "陕西", "甘肃", "宁夏", "新疆"]},
+    "east": {
+        "city": "上海/江苏/浙江",
+        "weather_key": "east",
+        "keywords": ["上海", "杭州", "南京", "苏州", "宁波", "江苏", "浙江"],
+        "bias": ["mall", "content", "promotion"]
+    },
+    "central": {
+        "city": "湖北/湖南/江西",
+        "weather_key": "east",
+        "keywords": ["武汉", "长沙", "南昌", "郑州", "湖北", "湖南", "江西"],
+        "bias": ["mall", "kids", "school"]
+    },
+    "south": {
+        "city": "广东/广西",
+        "weather_key": "south",
+        "keywords": ["广州", "深圳", "佛山", "南宁", "广东", "广西", "厦门", "福建"],
+        "bias": ["high_temp", "content", "promotion"]
+    },
+    "southwest": {
+        "city": "四川/重庆/贵州",
+        "weather_key": "southwest",
+        "keywords": ["成都", "重庆", "贵阳", "昆明", "四川", "贵州", "云南"],
+        "bias": ["outdoor", "kids", "tourism"]
+    },
+    "northwest": {
+        "city": "陕西/甘肃/宁夏",
+        "weather_key": "northwest",
+        "keywords": ["西安", "兰州", "银川", "陕西", "甘肃", "宁夏", "新疆"],
+        "bias": ["outdoor", "travel", "wind"]
+    },
 }
 
-# =========================
-# 动态经营建议引擎（AI经营逻辑）
-# =========================
+SCENE_POOLS = {
+    "rain": {
+        "hot": ["降雨扰动商圈客流", "雨天出行影响到店", "局地降雨影响周末客流"],
+        "flow": ["室内消费与亲子客流承接增强", "商场客流向室内活动集中", "雨天客流更依赖商场活动"],
+        "signal": ["防雨、防滑与轻外套需求提升", "室内运动与轻防护品类升温", "防水鞋服与帽类关注提升"],
+        "action": ["强化防雨、防滑与室内场景", "前置轻防护与童鞋连带", "用会员活动承接雨天客流"],
+    },
+    "high_temp": {
+        "hot": ["高温带动夏季品类升温", "暑热天气推升防晒需求", "夏季功能品类进入主推窗口"],
+        "flow": ["防晒、凉感与短裤需求提升", "轻薄速干品类关注上升", "户外停留下降但功能品类增强"],
+        "signal": ["凉感科技、防晒衣与速干T升温", "短裤、凉感T和防晒配件走强", "亲子户外防晒需求提升"],
+        "action": ["前置防晒凉感与短裤组合", "强化夏季功能品类堆头", "加强凉感T与童鞋连带"],
+    },
+    "cold": {
+        "hot": ["低温影响户外停留", "雨雪结冰影响出行", "冬季保暖需求延续"],
+        "flow": ["室内运动与保暖需求增加", "保暖鞋服与童鞋关注提升", "商场客流更依赖室内活动"],
+        "signal": ["防滑鞋、棉服与帽类需求提升", "保暖基础款与运动鞋需求稳定", "防风保暖与室内运动升温"],
+        "action": ["强化保暖防滑与童鞋连带", "前置棉服帽类与防滑鞋", "做室内运动场景承接"],
+    },
+    "promotion": {
+        "hot": ["大促节点带动关注", "平台预售强化价格心智", "618带动夏季品类曝光"],
+        "flow": ["直播与价格带关注增强", "爆款与直播同款转化提升", "线上热度向门店承接外溢"],
+        "signal": ["爆款、价格带与同款转化关键", "夏季主推与直播同款关注提升", "消费者比价与爆款心智增强"],
+        "action": ["强化爆款堆头与价格带", "承接直播同款与门店转化", "突出夏季核心品类组合"],
+    },
+    "content": {
+        "hot": ["内容平台种草影响增强", "短视频影响购买决策", "社交平台带动新品关注"],
+        "flow": ["线上内容影响到店转化", "种草内容带动同款咨询", "达人内容提升新品触达"],
+        "signal": ["小红书与抖音同款关注提升", "内容同款与新品试穿需求增加", "直播种草影响成交路径"],
+        "action": ["加强内容同款与新品承接", "设置种草同款展示区", "强化导购话术与试穿转化"],
+    },
+    "kids": {
+        "hot": ["亲子与校园场景升温", "儿童运动需求扩张", "童装消费场景继续外扩"],
+        "flow": ["儿童运动与亲子客流增加", "校园与亲子活动带动连带", "童鞋童服组合需求增强"],
+        "signal": ["童鞋、速干T与运动短裤热度提升", "校园运动与亲子搭配关注增加", "儿童运动装备需求提升"],
+        "action": ["强化亲子与校园场景陈列", "做童鞋+速干T连带", "增加儿童运动套装展示"],
+    },
+    "outdoor": {
+        "hot": ["轻户外与骑行热度提升", "户外出行带动运动消费", "文旅与轻户外场景延伸"],
+        "flow": ["骑行、露营、徒步消费增加", "户外休闲客群活跃", "亲子户外装备需求增加"],
+        "signal": ["帽包、轻外套与户外装备关注提升", "防晒、速干与轻户外组合升温", "户外配件连带空间提升"],
+        "action": ["增加轻户外与配件组合", "强化骑行露营场景展示", "提升亲子户外陈列占比"],
+    },
+    "running": {
+        "hot": ["跑步与赛事热度提升", "训练场景带动装备需求", "运动科技关注提升"],
+        "flow": ["专业跑鞋与训练装备需求增加", "赛事人群带动运动消费", "跑步场景提升鞋类关注"],
+        "signal": ["跑鞋、速干与训练系列关注提升", "缓震、透气与轻量化卖点增强", "专业运动装备询问增加"],
+        "action": ["强化跑鞋与训练场景表达", "突出缓震透气科技卖点", "增加跑步装备组合陈列"],
+    },
+    "mall": {
+        "hot": ["商圈活动与会员运营增加", "周末商场活动带动客流", "门店客流进入精细运营期"],
+        "flow": ["周末客流与互动活跃度提升", "会员活动带动到店转化", "商场活动提升亲子停留"],
+        "signal": ["会员互动与连带消费增加", "门口堆头与爆款陈列更关键", "客流修复但转化仍需跟进"],
+        "action": ["加强会员活动与门口堆头", "提升导购连带与试穿转化", "重点承接周末亲子客流"],
+    },
+}
 
-def detect_business_scene(text, weather_key):
+def detect_business_scene(text, weather_key, bias=None):
     text = str(text)
-
+    bias = bias or []
     t = weather_business_type(weather_key)
-
     scenes = []
 
-    # 天气
     if t in ["very_hot", "hot"]:
         scenes.append("high_temp")
-
     if t in ["storm", "rain"]:
         scenes.append("rain")
-
     if t in ["snow_ice", "cold"]:
         scenes.append("cold")
 
-    # 大促
-    if any(k in text for k in [
-        "618", "双11", "双十一", "双12",
-        "99大促", "38大促", "预售", "百亿补贴"
-    ]):
+    if any(k in text for k in ["618", "双11", "双十一", "双12", "99大促", "38大促", "预售", "百亿补贴"]):
         scenes.append("promotion")
-
-    # 内容平台
-    if any(k in text for k in [
-        "抖音", "小红书", "种草", "直播", "达人"
-    ]):
+    if any(k in text for k in ["抖音", "小红书", "种草", "直播", "达人"]):
         scenes.append("content")
-
-    # 亲子儿童
-    if any(k in text for k in [
-        "童装", "儿童", "亲子", "校园"
-    ]):
+    if any(k in text for k in ["童装", "儿童", "亲子", "校园", "Kids", "KIDS"]):
         scenes.append("kids")
-
-    # 户外
-    if any(k in text for k in [
-        "户外", "露营", "骑行", "徒步", "Citywalk"
-    ]):
+    if any(k in text for k in ["户外", "露营", "骑行", "徒步", "Citywalk", "文旅", "出行"]):
         scenes.append("outdoor")
-
-    # 跑步赛事
-    if any(k in text for k in [
-        "跑步", "马拉松", "赛事",
-        "越野跑", "训练", "跑鞋"
-    ]):
+    if any(k in text for k in ["跑步", "马拉松", "赛事", "越野跑", "训练", "跑鞋"]):
         scenes.append("running")
-
-    # 商圈
-    if any(k in text for k in [
-        "商场", "商圈", "客流",
-        "门店", "会员", "奥莱"
-    ]):
+    if any(k in text for k in ["商场", "商圈", "客流", "门店", "会员", "奥莱"]):
         scenes.append("mall")
 
-    return list(set(scenes))
+    for b in bias:
+        if b in SCENE_POOLS:
+            scenes.append(b)
 
+    scenes = list(dict.fromkeys(scenes))
 
-def generate_store_strategy(region_name, weather_key, local_text):
-    scenes = detect_business_scene(local_text, weather_key)
+    if not scenes:
+        if SEASON == "summer":
+            scenes = ["high_temp", "kids"]
+        elif SEASON == "winter":
+            scenes = ["cold", "mall"]
+        else:
+            scenes = ["kids", "outdoor"]
 
-    hot_parts = []
-    flow_parts = []
-    signal_parts = []
-    action_parts = []
+    return scenes[:4]
 
-    # =====================
-    # 高温
-    # =====================
+def pick_from_scene(scenes, field, used):
+    candidates = []
+    for scene in scenes:
+        candidates.extend(SCENE_POOLS.get(scene, {}).get(field, []))
 
-    if "high_temp" in scenes:
-        hot_parts.append("高温天气带动夏季消费")
-        flow_parts.append("防晒、凉感与短裤需求提升")
-        signal_parts.append("夏季功能型商品热度上升")
-        action_parts.append("前置防晒、凉感与短裤陈列")
+    random.shuffle(candidates)
 
-    # =====================
-    # 雨天
-    # =====================
+    for c in candidates:
+        if c not in used:
+            used.add(c)
+            return c
 
-    if "rain" in scenes:
-        hot_parts.append("降雨天气扰动客流")
-        flow_parts.append("室内消费与轻防护需求增加")
-        signal_parts.append("防雨、防滑与轻外套需求提升")
-        action_parts.append("加强防雨、防滑及室内场景承接")
+    if candidates:
+        return candidates[0]
 
-    # =====================
-    # 冬季
-    # =====================
+    fallback = {
+        "hot": "区域消费节奏整体平稳",
+        "flow": "户外与商圈消费保持恢复",
+        "signal": "运动休闲与亲子消费维持增长",
+        "action": "关注主推品类与客流承接",
+    }
+    return fallback[field]
 
-    if "cold" in scenes:
-        hot_parts.append("低温天气影响户外停留")
-        flow_parts.append("保暖与室内运动需求增加")
-        signal_parts.append("棉服、防滑鞋与帽类需求提升")
-        action_parts.append("强化保暖、防滑及童鞋连带")
+def generate_store_strategy(region_key, cfg, local_text):
+    scenes = detect_business_scene(local_text, cfg["weather_key"], cfg.get("bias", []))
 
-    # =====================
-    # 大促
-    # =====================
-
-    if "promotion" in scenes:
-        hot_parts.append("平台大促热度提升")
-        flow_parts.append("直播与价格带关注增强")
-        signal_parts.append("爆款与直播同款转化提升")
-        action_parts.append("强化爆款堆头与价格带陈列")
-
-    # =====================
-    # 内容平台
-    # =====================
-
-    if "content" in scenes:
-        hot_parts.append("内容平台种草影响增强")
-        flow_parts.append("线上内容影响到店转化")
-        signal_parts.append("短视频同款关注提升")
-        action_parts.append("加强内容同款与新品承接")
-
-    # =====================
-    # 儿童
-    # =====================
-
-    if "kids" in scenes:
-        hot_parts.append("亲子与校园场景持续升温")
-        flow_parts.append("儿童运动需求增加")
-        signal_parts.append("童鞋与运动短裤热度提升")
-        action_parts.append("强化亲子与校园场景陈列")
-
-    # =====================
-    # 户外
-    # =====================
-
-    if "outdoor" in scenes:
-        hot_parts.append("轻户外与骑行热度提升")
-        flow_parts.append("户外休闲消费增加")
-        signal_parts.append("帽包与轻户外装备关注提升")
-        action_parts.append("增加轻户外与配件组合展示")
-
-    # =====================
-    # 跑步
-    # =====================
-
-    if "running" in scenes:
-        hot_parts.append("跑步与赛事场景热度提升")
-        flow_parts.append("专业运动装备需求增加")
-        signal_parts.append("跑鞋与训练系列关注提升")
-        action_parts.append("强化跑鞋与训练场景表达")
-
-    # =====================
-    # 商圈
-    # =====================
-
-    if "mall" in scenes:
-        hot_parts.append("商圈活动与会员运营增加")
-        flow_parts.append("周末客流恢复增强")
-        signal_parts.append("互动活动与连带消费增加")
-        action_parts.append("加强会员活动与门口堆头")
-
-    # fallback
-
-    if not hot_parts:
-        hot_parts.append("区域消费节奏整体平稳")
-
-    if not flow_parts:
-        flow_parts.append("户外与商圈消费保持恢复")
-
-    if not signal_parts:
-        signal_parts.append("运动休闲与亲子消费维持增长")
-
-    if not action_parts:
-        action_parts.append("关注夏季主推与客流承接")
+    used = set()
+    hot = "、".join([pick_from_scene(scenes, "hot", used) for _ in range(2)])
+    flow = "、".join([pick_from_scene(scenes, "flow", used) for _ in range(2)])
+    signal = "、".join([pick_from_scene(scenes, "signal", used) for _ in range(2)])
+    action = "、".join([pick_from_scene(scenes, "action", used) for _ in range(2)])
 
     return {
-        "hot": "、".join(hot_parts[:2]),
-        "flow": "、".join(flow_parts[:2]),
-        "signal": "、".join(signal_parts[:2]),
-        "action": "、".join(action_parts[:2]),
+        "hot": hot,
+        "flow": flow,
+        "signal": signal,
+        "action": action,
     }
 
-
 def build_region_reports():
-
     reports = {}
     actions = {}
 
     for region, cfg in region_map.items():
-
         local_titles = [
             t for t in titles
             if any(k in t for k in cfg["keywords"])
         ]
 
         local_text = " ".join(local_titles[:10])
+        if not local_text:
+            local_text = joined[:300]
 
-        result = generate_store_strategy(
-            cfg["city"],
-            cfg["weather_key"],
-            local_text
-        )
+        result = generate_store_strategy(region, cfg, local_text)
 
         reports[region] = {
             "change": result["hot"],
@@ -645,9 +582,6 @@ def build_region_reports():
         actions[region] = result["action"]
 
     return reports, actions
-
-
-reports, actions = build_region_reports()
 
 reports, actions = build_region_reports()
 
@@ -666,6 +600,10 @@ for idx, r in enumerate(sorted_regions):
         stars[r] = "★★"
     else:
         stars[r] = "★"
+
+# =========================
+# 第四部分：真实新闻驱动经营观察
+# =========================
 
 def detect_trend_from_news():
     rules = [
@@ -713,12 +651,14 @@ def detect_trend_from_news():
 trend_items = detect_trend_from_news()
 
 # =========================
-# 第五部分：实时热词
+# 第五部分：实时热词增强版
 # =========================
 
 KEYWORD_MAP = {
     "抖音": "抖音直播",
     "直播": "直播带货",
+    "店播": "店播",
+    "达人": "达人矩阵",
     "小红书": "小红书种草",
     "种草": "内容种草",
     "618": "618",
@@ -733,15 +673,21 @@ KEYWORD_MAP = {
     "38大促": "38大促",
     "大促": "大促预售",
     "预售": "大促预售",
+    "百亿补贴": "百亿补贴",
+    "GMV": "GMV",
+    "退货率": "退货率",
     "防晒": "防晒品类",
     "防晒衣": "防晒衣",
     "凉感": "凉感科技",
-    "速干": "速干",
+    "速干": "速干T",
     "短裤": "短裤",
+    "运动凉鞋": "运动凉鞋",
+    "透气": "透气跑鞋",
     "童装": "运动童装",
     "儿童": "儿童运动",
     "亲子": "亲子运动",
     "校园": "校园体育",
+    "体适能": "儿童体适能",
     "商场": "商场活动",
     "商圈": "商圈客流",
     "客流": "客流修复",
@@ -751,8 +697,14 @@ KEYWORD_MAP = {
     "轻户外": "轻户外",
     "骑行": "城市骑行",
     "露营": "露营经济",
+    "徒步": "徒步",
     "文旅": "文旅客流",
     "夜经济": "夜经济",
+    "Citywalk": "Citywalk",
+    "山系": "山系穿搭",
+    "机能": "机能风",
+    "松弛感": "松弛感",
+    "多巴胺": "多巴胺穿搭",
     "赛事": "体育赛事",
     "跑步": "跑步经济",
     "马拉松": "马拉松",
@@ -775,6 +727,10 @@ KEYWORD_MAP = {
     "361": "361儿童",
     "乔丹": "乔丹",
     "lululemon": "lululemon",
+    "消费分层": "消费分层",
+    "理性消费": "理性消费",
+    "悦己": "悦己消费",
+    "情绪消费": "情绪消费",
     "防雨": "防雨装备",
     "低温": "保暖",
     "保暖": "保暖",
@@ -789,28 +745,11 @@ def build_words():
     top_titles = [item["title"] for item in top_news if item.get("title")]
     top_joined = " ".join(top_titles)
 
-    top_keyword_boost = {
-        "618": "618战报",
-        "成绩单": "618战报",
-        "战报": "618战报",
-        "品牌": "品牌站位",
-        "C位": "品牌站位",
-        "童装": "运动童装",
-        "儿童": "儿童运动",
-        "防晒": "防晒品类",
-        "凉感": "凉感科技",
-        "户外": "户外运动",
-        "抖音": "抖音直播",
-        "直播": "直播带货",
-        "商圈": "商圈客流",
-        "客流": "客流修复",
-    }
-
-    for raw, mapped in top_keyword_boost.items():
+    for raw, mapped in KEYWORD_MAP.items():
         if raw in top_joined:
             counter[mapped] += 5
 
-    for t in titles[:100]:
+    for t in titles[:120]:
         for raw, mapped in KEYWORD_MAP.items():
             if raw in t:
                 counter[mapped] += 2
@@ -830,14 +769,15 @@ def build_words():
         r"商场[^，。！？、\s]{0,6}",
         r"客流[^，。！？、\s]{0,6}",
         r"品牌[^，。！？、\s]{0,6}",
-        r"运动[^，。！？、\s]{0,6}",
         r"训练[^，。！？、\s]{0,6}",
         r"跑鞋[^，。！？、\s]{0,6}",
+        r"山系[^，。！？、\s]{0,6}",
+        r"机能[^，。！？、\s]{0,6}",
     ]
 
-    bad_phrases = ["运动品牌行业", "品牌行业资讯", "运动品牌", "儿童运动消费场景"]
+    bad_phrases = ["运动品牌行业", "品牌行业资讯", "运动品牌", "儿童运动消费场景", "品牌行业"]
 
-    for t in titles[:60]:
+    for t in titles[:80]:
         for pattern in phrase_patterns:
             for phrase in re.findall(pattern, t):
                 phrase = clean_title(phrase)
@@ -850,41 +790,19 @@ def build_words():
             if raw in sig:
                 counter[mapped] += 2
 
-    sport_context_words = {
-        "跑步经济": ["跑步", "跑鞋", "马拉松", "训练"],
-        "专业跑鞋": ["跑步", "跑鞋", "马拉松", "HOKA", "亚瑟士", "On"],
-        "城市骑行": ["骑行", "城市骑行"],
-        "户外运动": ["户外", "露营", "徒步", "轻户外"],
-        "轻户外": ["轻户外", "户外", "露营"],
-        "训练装备": ["训练", "跑步", "赛事"],
-        "运动科技": ["运动科技", "科技", "缓震", "碳板"],
-        "儿童体适能": ["儿童", "校园", "体适能"],
-        "校园体育": ["校园", "儿童运动"],
-        "女子运动": ["女性", "女子", "女神节", "38"],
-        "潮流运动": ["潮流", "联名", "街头"],
-        "运动康复": ["康复", "恢复", "护具"],
-    }
-
-    for mapped, triggers in sport_context_words.items():
-        if any(tg in joined for tg in triggers):
-            counter[mapped] += 2
-
-    for generic in ["儿童运动", "户外运动", "运动童装"]:
-        if counter[generic] > 4:
-            counter[generic] = 4
-
     seasonal_fallback = {
-        "spring": ["春季出行", "轻外套", "亲子运动", "校园体育", "城市骑行"],
-        "summer": ["防晒品类", "凉感科技", "速干", "短裤", "618"],
-        "autumn": ["开学季", "校园体育", "轻外套", "户外运动", "99大促"],
-        "winter": ["保暖", "防滑鞋", "童鞋", "室内运动", "训练装备"],
+        "spring": ["春季出行", "轻外套", "亲子运动", "校园体育", "城市骑行", "山系穿搭"],
+        "summer": ["防晒品类", "凉感科技", "速干T", "短裤", "运动凉鞋", "透气跑鞋", "618"],
+        "autumn": ["开学季", "校园体育", "轻外套", "户外运动", "99大促", "城市骑行"],
+        "winter": ["保暖", "防滑鞋", "童鞋", "室内运动", "训练装备", "羽绒服"],
     }.get(SEASON, [])
 
     broad_fallback = [
-        "618战报", "品牌站位", "直播带货", "门店陈列", "客流修复",
-        "运动童装", "儿童运动", "轻户外", "抖音直播", "小红书种草",
-        "跑步经济", "专业跑鞋", "户外运动", "运动科技", "训练装备",
-        "Nike", "阿迪达斯", "安踏", "李宁", "特步", "On昂跑", "HOKA"
+        "618战报", "品牌站位", "直播带货", "店播", "达人矩阵",
+        "门店陈列", "客流修复", "运动童装", "儿童运动", "轻户外",
+        "抖音直播", "小红书种草", "跑步经济", "专业跑鞋", "户外运动",
+        "运动科技", "训练装备", "Nike", "阿迪达斯", "安踏", "李宁",
+        "特步", "On昂跑", "HOKA", "理性消费", "情绪消费"
     ]
 
     preferred = [w for w, _ in counter.most_common()]
@@ -903,6 +821,10 @@ def build_words():
     return words[:18]
 
 words = build_words()
+
+# =========================
+# 数据填充
+# =========================
 
 data = {
     "title": "运动品牌行业资讯日报",
