@@ -5,22 +5,34 @@ HTML_FILE = "daily-report-filled.html"
 OUTPUT_FILE = "daily-report.png"
 
 def generate_image():
+
     with sync_playwright() as p:
+
         browser = p.chromium.launch()
+
         page = browser.new_page(
             viewport={
-                "width": 1300,
-                "height": 1800
-            }
+                "width": 1800,
+                "height": 2600
+            },
+            device_scale_factor=2
         )
 
         file_path = f"file://{os.path.abspath(HTML_FILE)}"
 
-        page.goto(file_path)
+        page.goto(
+            file_path,
+            wait_until="networkidle"
+        )
+
+        page.evaluate("""
+            document.body.style.background = '#ffffff';
+        """)
 
         page.screenshot(
             path=OUTPUT_FILE,
-            full_page=True
+            full_page=True,
+            type="png"
         )
 
         browser.close()
