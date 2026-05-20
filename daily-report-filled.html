@@ -6,7 +6,7 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;color:#1b3566;padding:12px}
-.page{width:1180px;margin:auto;background:linear-gradient(180deg,#fff 0%,#fbfdff 100%);border-radius:16px;border:1px solid #d8e3f2;box-shadow:0 12px 32px rgba(28,61,119,.10);padding:16px 18px 14px}
+.page{width:1180px;margin:auto;background:linear-gradient(180deg,#fff 0%,#fbfdff 100%);border-radius:18px;border:1px solid #d8e3f2;box-shadow:0 14px 34px rgba(28,61,119,.12);padding:16px 18px 14px}
 
 .header{display:grid;grid-template-columns:1fr 540px;gap:12px;align-items:center;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #dde7f4}
 .main-title{font-size:56px;font-weight:950;line-height:1;letter-spacing:-2px;color:#06276a}
@@ -18,12 +18,12 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
 .stat-small{margin-top:4px;font-size:11px;color:#7083a6}
 
 .insight-panel{display:grid;grid-template-columns:.9fr 2.1fr;gap:12px;margin-bottom:13px}
-.insight-card{border-radius:13px;border:1px solid #d8e3f2;background:linear-gradient(135deg,#f7fbff 0%,#eef6ff 100%);box-shadow:0 6px 16px rgba(20,60,110,.055);padding:12px 15px;min-height:82px}
+.insight-card{border-radius:14px;border:1px solid #d8e3f2;background:linear-gradient(135deg,#f7fbff 0%,#eef6ff 100%);box-shadow:0 6px 16px rgba(20,60,110,.06);padding:12px 15px;min-height:82px}
 .insight-label{font-size:12px;font-weight:950;color:#0b5cd3;margin-bottom:6px;letter-spacing:.5px}
 .today-insight{font-size:20px;line-height:1.38;font-weight:950;color:#092c6d}
 .ai-summary{font-size:14px;line-height:1.55;font-weight:700;color:#28466f}
 
-.section{background:#fff;border:1px solid #d8e3f2;border-radius:13px;overflow:hidden;box-shadow:0 6px 16px rgba(20,60,110,.055)}
+.section{background:#fff;border:1px solid #d8e3f2;border-radius:14px;overflow:hidden;box-shadow:0 6px 16px rgba(20,60,110,.055)}
 .section-title{height:40px;padding:0 14px;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(90deg,#052b78 0%,#0a4cb5 65%,#0d6fe9 100%);color:#fff;font-size:19px;font-weight:950}
 .more{font-size:12px;color:#dcecff}
 .section-body{padding:13px 15px}
@@ -90,19 +90,54 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
 .weather-table th{background:#f0f5ff;color:#173d7e;padding:5px;border:1px solid #dbe6f6;font-weight:950}
 .weather-table td{text-align:center;padding:5px;border:1px solid #dbe6f6}
 
-.big-table{width:100%;border-collapse:collapse;font-size:12px}
-.big-table th{background:#f1f6ff;color:#133d7d;padding:8px 7px;border:1px solid #e1eaf7;font-weight:950}
-.big-table td{border:1px solid #e1eaf7;padding:9px 8px;text-align:center;line-height:1.46}
-.region-col{width:95px}
-.hot-col{width:210px}
-.flow-col{width:230px}
-.signal-col{width:520px}
-.star-col{width:82px}
-.region-name{font-weight:950;color:#0d3777}
-.region-icon{display:block;font-size:20px;margin-bottom:2px}
-.smart-advice{text-align:left;color:#1d3761;font-weight:700}
-.smart-advice .line{display:block;margin-bottom:4px}
-.smart-advice .line:before{content:"◆ ";color:#0b5cd3;font-weight:950}
+/* 第三部分：高级区域经营雷达 */
+.region-radar{display:grid;grid-template-columns:1fr;gap:10px}
+.radar-row{
+  display:grid;
+  grid-template-columns:132px 215px 250px 1fr 86px;
+  gap:0;
+  border:1px solid #e1eaf7;
+  border-radius:14px;
+  overflow:hidden;
+  background:linear-gradient(180deg,#ffffff 0%,#fbfdff 100%);
+}
+.radar-head{
+  display:grid;
+  grid-template-columns:132px 215px 250px 1fr 86px;
+  background:#f1f6ff;
+  border:1px solid #e1eaf7;
+  border-radius:12px;
+  overflow:hidden;
+  color:#133d7d;
+  font-size:12px;
+  font-weight:950;
+}
+.radar-head div{padding:8px 10px;text-align:center;border-right:1px solid #e1eaf7}
+.radar-head div:last-child{border-right:none}
+.radar-cell{padding:10px 11px;border-right:1px solid #e1eaf7;display:flex;align-items:center;justify-content:center;text-align:center;min-height:76px}
+.radar-cell:last-child{border-right:none}
+.region-card{display:flex;align-items:center;justify-content:flex-start;gap:8px;text-align:left}
+.region-icon{font-size:23px;width:28px;text-align:center}
+.region-name{font-size:13px;line-height:1.35;font-weight:950;color:#0d3777}
+.region-city{font-size:11px;line-height:1.25;color:#4a638f;margin-top:2px;font-weight:800}
+.signal-pill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:28px;
+  padding:6px 10px;
+  border-radius:999px;
+  background:#eef6ff;
+  color:#0b4db3;
+  font-weight:950;
+  font-size:12px;
+  line-height:1.35;
+}
+.flow-text{font-size:12.2px;line-height:1.45;color:#28466f;font-weight:800}
+.ai-judge{text-align:left;width:100%}
+.ai-main{font-size:13px;line-height:1.42;color:#0d2d68;font-weight:950;margin-bottom:5px}
+.ai-action{font-size:12px;line-height:1.45;color:#365379;font-weight:750}
+.ai-action:before{content:"建议：";color:#0b5cd3;font-weight:950}
 .star-red{color:#e11d48;font-size:21px;font-weight:950}
 .star-orange{color:#ff8c1a;font-size:21px;font-weight:950}
 .star-blue{color:#0d6fe9;font-size:21px;font-weight:950}
@@ -150,8 +185,8 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
     <div class="sub-title">每日精选 · 洞察趋势 · 辅助决策</div>
   </div>
   <div class="stats">
-    <div class="stat"><div class="stat-title">📅 2026-05-20</div><div class="stat-small">星期三</div><div class="stat-small">更新于 11:33</div></div>
-    <div class="stat"><div class="stat-title">今日监测</div><div class="stat-num">219</div><div class="stat-small">条资讯</div></div>
+    <div class="stat"><div class="stat-title">📅 2026-05-20</div><div class="stat-small">星期三</div><div class="stat-small">更新于 11:57</div></div>
+    <div class="stat"><div class="stat-title">今日监测</div><div class="stat-num">208</div><div class="stat-small">条资讯</div></div>
     <div class="stat"><div class="stat-title">RSS资讯</div><div class="stat-num">80</div><div class="stat-small">条</div></div>
     <div class="stat"><div class="stat-title">重点摘要</div><div class="stat-num">5</div><div class="stat-small">条</div></div>
   </div>
@@ -173,11 +208,11 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
     <div class="section-title"><span>一、重点资讯精选（TOP 5）</span><span class="more">查看更多 ›</span></div>
     <div class="section-body">
       <div class="news-list">
-        <div class="news-item"><div class="rank r1">1</div><div class="logo-box logo-blue"><div class="logo-icon">🛒</div><div class="logo-text">大促</div></div><div><div class="news-title">抖音电商618成绩单揭晓！哪些品牌站上行业 C 位？ <span class="tag">大促/电商</span></div><div class="news-meta">05-20 11:33 ｜ news.tom.com</div><div class="news-desc">大促信息适度关注，重点看夏季品类曝光、直播种草、转化效率和终端承接。</div></div></div>
-        <div class="news-item"><div class="rank r2">2</div><div class="logo-box logo-sky"><div class="logo-icon">🧒</div><div class="logo-text">童装</div></div><div><div class="news-title">户外运动童装成市场新宠，特步儿童未来3-5年加大科研合作力度 <span class="tag">童装/儿童运动</span></div><div class="news-meta">05-20 11:33 ｜ 新京报</div><div class="news-desc">儿童消费从单品购买转向亲子、校园、户外和运动场景综合经营。</div></div></div>
-        <div class="news-item"><div class="rank r3">3</div><div class="logo-box logo-sky"><div class="logo-icon">☀️</div><div class="logo-text">天气</div></div><div><div class="news-title">夏天穿衣就得透气凉快，今天这款情侣防晒凉感T特别适合怕热的宝子们！[开学季]上身凉感... <span class="tag">天气/功能消费</span></div><div class="news-meta">05-20 11:33 ｜ 新浪网</div><div class="news-desc">天气变化影响客流和主推节奏，防晒、凉感、防雨、防滑及保暖品类需动态前置。</div></div></div>
-        <div class="news-item"><div class="rank r4">4</div><div class="logo-box logo-green"><div class="logo-icon">🚴</div><div class="logo-text">户外</div></div><div><div class="news-title">全球“户外热”引运动用品市场扩张，钛动科技助推361°和特步等品牌跑步出海 <span class="tag">户外/运动场景</span></div><div class="news-meta">05-20 11:33 ｜ 中国网</div><div class="news-desc">户外、跑步、骑行、赛事和夜间消费延伸运动场景，带动装备与亲子需求。</div></div></div>
-        <div class="news-item"><div class="rank r5">5</div><div class="logo-box logo-dark"><div class="logo-icon">🏬</div><div class="logo-text">商圈</div></div><div><div class="news-title">折扣零售风起服饰消费先行 新中产女生奥莱唯品会挖到“宝藏” <span class="tag">商圈/零售经营</span></div><div class="news-meta">05-20 11:33 ｜ 新华网</div><div class="news-desc">商圈活动、会员运营和折扣零售影响周末客流与终端转化效率。</div></div></div>
+        <div class="news-item"><div class="rank r1">1</div><div class="logo-box logo-blue"><div class="logo-icon">🛒</div><div class="logo-text">大促</div></div><div><div class="news-title">抖音电商618战报公布，商城订单量同比增长94% <span class="tag">大促/电商</span></div><div class="news-meta">05-20 11:57 ｜ 搜狐网</div><div class="news-desc">大促信息适度关注，重点看夏季品类曝光、直播种草、转化效率和终端承接。</div></div></div>
+        <div class="news-item"><div class="rank r2">2</div><div class="logo-box logo-sky"><div class="logo-icon">🧒</div><div class="logo-text">童装</div></div><div><div class="news-title">户外运动童装成市场新宠，特步儿童未来3-5年加大科研合作力度 <span class="tag">童装/儿童运动</span></div><div class="news-meta">05-20 11:57 ｜ 新京报</div><div class="news-desc">儿童消费从单品购买转向亲子、校园、户外和运动场景综合经营。</div></div></div>
+        <div class="news-item"><div class="rank r3">3</div><div class="logo-box logo-sky"><div class="logo-icon">☀️</div><div class="logo-text">天气</div></div><div><div class="news-title">夏天穿衣就得透气凉快，今天这款情侣防晒凉感T特别适合怕热的宝子们！[开学季]上身凉感... <span class="tag">天气/功能消费</span></div><div class="news-meta">05-20 11:57 ｜ 新浪网</div><div class="news-desc">天气变化影响客流和主推节奏，防晒、凉感、防雨、防滑及保暖品类需动态前置。</div></div></div>
+        <div class="news-item"><div class="rank r4">4</div><div class="logo-box logo-green"><div class="logo-icon">🚴</div><div class="logo-text">户外</div></div><div><div class="news-title">全球“户外热”引运动用品市场扩张，钛动科技助推361°和特步等品牌跑步出海 <span class="tag">户外/运动场景</span></div><div class="news-meta">05-20 11:57 ｜ 中国网</div><div class="news-desc">户外、跑步、骑行、赛事和夜间消费延伸运动场景，带动装备与亲子需求。</div></div></div>
+        <div class="news-item"><div class="rank r5">5</div><div class="logo-box logo-dark"><div class="logo-icon">🏬</div><div class="logo-text">商圈</div></div><div><div class="news-title">折扣零售风起服饰消费先行 新中产女生奥莱唯品会挖到“宝藏” <span class="tag">商圈/零售经营</span></div><div class="news-meta">05-20 11:57 ｜ 新华网</div><div class="news-desc">商圈活动、会员运营和折扣零售影响周末客流与终端转化效率。</div></div></div>
       </div>
       <div class="note">注：以上资讯来自公开媒体及平台，仅供经营观察参考。</div>
     </div>
@@ -218,52 +253,68 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
 </div>
 
 <div class="section">
-  <div class="section-title"><span>三、区域热点资讯与消费动态（精选）</span><span class="more">查看更多 ›</span></div>
+  <div class="section-title"><span>三、区域经营雷达（AI精选）</span><span class="more">查看更多 ›</span></div>
   <div class="section-body">
-    <table class="big-table">
-      <tr>
-        <th class="region-col">区域</th>
-        <th class="hot-col">热点资讯</th>
-        <th class="flow-col">商圈/客流动态</th>
-        <th class="signal-col">消费信号与门店/品牌启示（AI智能匹配）</th>
-        <th class="star-col">关注等级</th>
-      </tr>
-      <tr>
-        <td class="region-name"><span class="region-icon">☔</span>华东<br>上海/江苏/浙江</td>
-        <td>户外出行带动消费</td>
-        <td>童鞋童服组合增强</td>
-        <td class="smart-advice"><span class="line">轻防护品类升温</span><span class="line">前置室内运动场景</span></td>
-        <td class="star-red">★★★</td>
-      </tr>
-      <tr>
-        <td class="region-name"><span class="region-icon">👥</span>华中<br>湖北/湖南/江西</td>
-        <td>降雨扰动客流</td>
-        <td>室内客流承接增强</td>
-        <td class="smart-advice"><span class="line">运动套装受关注</span><span class="line">前置室内运动场景</span></td>
-        <td class="star-orange">★★★</td>
-      </tr>
-      <tr>
-        <td class="region-name"><span class="region-icon">☀️</span>华南<br>广东/广西</td>
-        <td>商圈活动带动关注</td>
-        <td>商场活动更关键</td>
-        <td class="smart-advice"><span class="line">轻防护品类升温</span><span class="line">提升试穿转化</span></td>
-        <td class="star-red">★★★</td>
-      </tr>
-      <tr>
-        <td class="region-name"><span class="region-icon">⛰️</span>西南<br>四川/重庆/贵州</td>
-        <td>文旅场景延伸</td>
-        <td>户外休闲客群活跃</td>
-        <td class="smart-advice"><span class="line">轻防护品类升温</span><span class="line">强化防雨防滑陈列</span></td>
-        <td class="star-orange">★★</td>
-      </tr>
-      <tr>
-        <td class="region-name"><span class="region-icon">🌬️</span>西北<br>陕西/甘肃/宁夏</td>
-        <td>轻户外热度提升</td>
-        <td>骑行露营消费增加</td>
-        <td class="smart-advice"><span class="line">防雨防滑需求提升</span><span class="line">强化防雨防滑陈列</span></td>
-        <td class="star-blue">★★</td>
-      </tr>
-    </table>
+    <div class="region-radar">
+      <div class="radar-head">
+        <div>区域</div>
+        <div>核心信号</div>
+        <div>客流/场景判断</div>
+        <div>AI经营判断与动作</div>
+        <div>关注等级</div>
+      </div>
+
+      <div class="radar-row">
+        <div class="radar-cell">
+          <div class="region-card"><div class="region-icon">☔</div><div><div class="region-name">华东</div><div class="region-city">上海/江苏/浙江</div></div></div>
+        </div>
+        <div class="radar-cell"><div class="signal-pill">雨天影响到店</div></div>
+        <div class="radar-cell"><div class="flow-text">校园运动带动连带</div></div>
+        <div class="radar-cell"><div class="ai-judge"><div class="ai-main">童鞋需求提升</div><div class="ai-action">强化出行场景展示</div></div></div>
+        <div class="radar-cell star-red">★★★</div>
+      </div>
+
+      <div class="radar-row">
+        <div class="radar-cell">
+          <div class="region-card"><div class="region-icon">👥</div><div><div class="region-name">华中</div><div class="region-city">湖北/湖南/江西</div></div></div>
+        </div>
+        <div class="radar-cell"><div class="signal-pill">降雨扰动客流</div></div>
+        <div class="radar-cell"><div class="flow-text">商场活动提升停留</div></div>
+        <div class="radar-cell"><div class="ai-judge"><div class="ai-main">客流修复仍需转化</div><div class="ai-action">用会员活动承接客流</div></div></div>
+        <div class="radar-cell star-orange">★★★</div>
+      </div>
+
+      <div class="radar-row">
+        <div class="radar-cell">
+          <div class="region-card"><div class="region-icon">☀️</div><div><div class="region-name">华南</div><div class="region-city">广东/广西</div></div></div>
+        </div>
+        <div class="radar-cell"><div class="signal-pill">户外出行带动消费</div></div>
+        <div class="radar-cell"><div class="flow-text">会员活动带动转化</div></div>
+        <div class="radar-cell"><div class="ai-judge"><div class="ai-main">客流修复仍需转化</div><div class="ai-action">加强会员活动</div></div></div>
+        <div class="radar-cell star-red">★★★</div>
+      </div>
+
+      <div class="radar-row">
+        <div class="radar-cell">
+          <div class="region-card"><div class="region-icon">⛰️</div><div><div class="region-name">西南</div><div class="region-city">四川/重庆/贵州</div></div></div>
+        </div>
+        <div class="radar-cell"><div class="signal-pill">雨天影响到店</div></div>
+        <div class="radar-cell"><div class="flow-text">会员活动带动转化</div></div>
+        <div class="radar-cell"><div class="ai-judge"><div class="ai-main">帽包配件升温</div><div class="ai-action">增加轻户外组合</div></div></div>
+        <div class="radar-cell star-orange">★★</div>
+      </div>
+
+      <div class="radar-row">
+        <div class="radar-cell">
+          <div class="region-card"><div class="region-icon">🌬️</div><div><div class="region-name">西北</div><div class="region-city">陕西/甘肃/宁夏</div></div></div>
+        </div>
+        <div class="radar-cell"><div class="signal-pill">户外出行带动消费</div></div>
+        <div class="radar-cell"><div class="flow-text">商场活动更关键</div></div>
+        <div class="radar-cell"><div class="ai-judge"><div class="ai-main">帽包配件升温</div><div class="ai-action">前置室内运动场景</div></div></div>
+        <div class="radar-cell star-blue">★★</div>
+      </div>
+    </div>
+
     <div class="note">关注等级说明：<span class="star-red">★★★</span>重点关注　<span class="star-orange">★★</span>持续跟踪　<span class="star-blue">★</span>一般观察</div>
   </div>
 </div>
@@ -283,7 +334,7 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
     <div class="section-title"><span>五、行业热词雷达（近3天）</span></div>
     <div class="section-body">
       <div class="word-cloud">
-        <div class="word w1">儿童运动</div><div class="word w2">安踏</div><div class="word w3">品牌站位</div><div class="word w4">户外运动</div><div class="word w5">客流修复</div><div class="word w6">抖音直播</div><div class="word w7">特步</div><div class="word w8">361儿童</div><div class="word w9">618</div><div class="word w10">防晒品类</div><div class="word w11">门店陈列</div><div class="word w12">李宁</div><div class="word w13">运动童装</div><div class="word w14">On昂跑</div><div class="word w15">凉感科技</div><div class="word w16">运动科技</div><div class="word w17">Nike</div><div class="word w18">跑步经济</div>
+        <div class="word w1">儿童运动</div><div class="word w2">安踏</div><div class="word w3">户外运动</div><div class="word w4">品牌站位</div><div class="word w5">抖音直播</div><div class="word w6">客流修复</div><div class="word w7">特步</div><div class="word w8">361儿童</div><div class="word w9">618</div><div class="word w10">防晒品类</div><div class="word w11">李宁</div><div class="word w12">门店陈列</div><div class="word w13">运动童装</div><div class="word w14">On昂跑</div><div class="word w15">凉感科技</div><div class="word w16">运动科技</div><div class="word w17">Nike</div><div class="word w18">618战报</div>
       </div>
       <div class="note">注：热词综合新闻、天气、平台、鞋服品类与泛运动热点生成，用于识别短期行业情绪。</div>
     </div>
@@ -292,7 +343,7 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
 
 <div class="footer">
   <div>数据来源：TrendRadar RSS日报 · Google News · 公开气象信息</div>
-  <div>生成时间：2026-05-20 11:33</div>
+  <div>生成时间：2026-05-20 11:57</div>
   <div>制作：运动品牌资讯日报自动化系统</div>
 </div>
 
