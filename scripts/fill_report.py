@@ -638,39 +638,51 @@ def build_region_reports_deepseek():
     region_payload = []
     for region, cfg in region_map.items():
         local_titles = [t for t in titles if any(k in t for k in cfg["keywords"])]
+        if not local_titles:
+            local_titles = titles[:8]
+
         region_payload.append({
             "key": region,
             "name": cfg["name"],
             "city": cfg["city"],
             "weather": weather_desc(cfg["weather_key"]),
-            "news": local_titles[:8],
+            "weather_type": weather_business_type(cfg["weather_key"]),
+            "news": local_titles[:10],
         })
 
-    prompt = f"""
-你是361°儿童总部经营管理部的运动鞋服区域经营分析助手。
-请基于区域新闻、天气、大促、鞋服品类、儿童运动和商圈客流，为5个区域生成经营雷达内容。
+    top_news_text = "\n".join([f"{i+1}. {x['title']}｜{x['tag']}" for i, x in enumerate(top_news)])
+    global_news_text = "\n".join(titles[:35])
 
-要求：
-1. 输出严格JSON对象；
+    prompt = f"""
+你是361°儿童总部经营管理部的区域经营分析师。
+请基于【区域新闻、全国热点、天气、大促、电商平台、鞋服品类、儿童运动、商圈客流】，
+为5个区域生成“区域经营雷达”。
+
+核心要求：
+1. 输出严格JSON对象，不要解释；
 2. key必须为 east, central, south, southwest, northwest；
 3. 每个区域包含4个字段：
-   hot：核心信号，8字以内；
-   flow：客流/场景判断，12字以内；
-   signal：AI经营判断，18字以内；
-   action：建议动作，18字以内；
-4. 每个区域内容必须有差异，不能全都一样；
-5. 不要空话，不要长句；
-6. 要结合区域天气和区域新闻；
-7. 偏运动童装、鞋服、门店经营、品类节奏。
+   hot：核心信号，10-14字，必须结合新闻或天气；
+   flow：客流/场景判断，14-20字，判断客流、商圈、亲子、户外或到店变化；
+   signal：AI经营判断，22-34字，要说明品类或消费机会，不能空泛；
+   action：建议动作，22-34字，要具体到门店/商品/陈列/会员/导购动作；
+4. 每个区域内容必须明显不同，不能重复；
+5. 不要写“关注提升”“需求提升”这种单独空话，必须有对象，例如“防晒衣与速干T需求提升”；
+6. 华东更关注商圈、内容、电商承接；华中关注校园亲子与会员运营；华南关注高温、防晒、夏季品类；西南关注文旅、户外、亲子；西北关注出行、天气扰动和轻户外；
+7. 如果区域新闻不足，可以结合全国热点和天气推断，但必须写得像经营判断；
+8. 内容要适合放在日报表格中，短但有判断力。
+
+今日TOP资讯：
+{top_news_text}
 
 全局新闻：
-{chr(10).join(titles[:30])}
+{global_news_text}
 
 区域数据：
 {json.dumps(region_payload, ensure_ascii=False)}
 """
 
-    obj = ask_deepseek_json(prompt, max_tokens=1000)
+    obj = ask_deepseek_json(prompt, max_tokens=1400)
     if not isinstance(obj, dict):
         return build_region_reports_rule()
 
@@ -686,10 +698,10 @@ def build_region_reports_deepseek():
             actions[region] = fallback_actions[region]
             continue
 
-        hot = short_cn(row.get("hot", fallback_reports[region]["change"]), 10)
-        flow = short_cn(row.get("flow", fallback_reports[region]["impact"]), 14)
-        signal = short_cn(row.get("signal", fallback_reports[region]["action"]), 20)
-        action = short_cn(row.get("action", fallback_actions[region]), 20)
+        hot = short_cn(row.get("hot", fallback_reports[region]["change"]), 16)
+        flow = short_cn(row.get("flow", fallback_reports[region]["impact"]), 22)
+        signal = short_cn(row.get("signal", fallback_reports[region]["action"]), 36)
+        action = short_cn(row.get("action", fallback_actions[region]), 36)
 
         reports[region] = {
             "change": hot,
@@ -776,15 +788,15 @@ def make_ai_summary_deepseek():
         weather_desc("northwest"),
     ])
 
-    prompt = f"""
+        prompt = f"""
 你是361°儿童经营管理部的行业情报分析师。
-请基于以下新闻和天气，生成一段80字以内的AI经营摘要。
+请基于以下新闻和天气，生成一段90字以内的AI经营摘要。
 
 要求：
-1. 比普通摘要更有判断力；
-2. 同时覆盖行业热点、鞋服品类、儿童运动、天气/客流、大促或平台；
-3. 不要写成口号；
-4. 不要分点；
+1. 要有明确判断，不要只是罗列；
+2. 同时覆盖：大促/平台流量、夏季功能品类、儿童运动或亲子场景、天气对客流的影响；
+3. 要体现“当前最应该关注什么”；
+4. 不要分点，不要口号；
 5. 适合放在日报顶部。
 
 新闻：
@@ -796,7 +808,7 @@ def make_ai_summary_deepseek():
     text = ask_deepseek_text(prompt, max_tokens=160)
     if not text:
         return make_ai_summary_rule()
-    return text[:120]
+    return text[:150]
 
 today_insight = make_today_insight_deepseek()
 ai_summary = make_ai_summary_deepseek()
