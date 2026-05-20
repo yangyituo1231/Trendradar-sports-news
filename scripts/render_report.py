@@ -11,7 +11,7 @@ def generate_image():
         page = browser.new_page(
             viewport={
                 "width": 1400,
-                "height": 1800
+                "height": 2400
             },
             device_scale_factor=2
         )
