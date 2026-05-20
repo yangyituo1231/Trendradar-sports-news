@@ -34,7 +34,7 @@ def short(text, n=42):
     text = clean_title(text)
     return text if len(text) <= n else text[:n] + "..."
 
-def short_cn(text, n=18):
+def short_cn(text, n=32):
     text = clean_title(text)
     return text if len(text) <= n else text[:n]
 
@@ -240,6 +240,7 @@ def extract_json(text):
     if not text:
         return None
     text = text.strip()
+
     try:
         return json.loads(text)
     except Exception:
@@ -250,18 +251,18 @@ def extract_json(text):
         try:
             return json.loads(match.group(0))
         except Exception:
-            return None
+            pass
 
     match = re.search(r"\[.*\]", text, re.S)
     if match:
         try:
             return json.loads(match.group(0))
         except Exception:
-            return None
+            pass
 
     return None
 
-def ask_deepseek_json(prompt, max_tokens=600):
+def ask_deepseek_json(prompt, max_tokens=900):
     client = deepseek_client()
     if client is None:
         return None
@@ -276,7 +277,7 @@ def ask_deepseek_json(prompt, max_tokens=600):
                 },
                 {"role": "user", "content": prompt},
             ],
-            temperature=0.25,
+            temperature=0.28,
             max_tokens=max_tokens,
         )
         text = response.choices[0].message.content.strip()
@@ -284,7 +285,7 @@ def ask_deepseek_json(prompt, max_tokens=600):
     except Exception:
         return None
 
-def ask_deepseek_text(prompt, max_tokens=180):
+def ask_deepseek_text(prompt, max_tokens=220):
     client = deepseek_client()
     if client is None:
         return None
@@ -467,7 +468,7 @@ def pick_top_news_deepseek():
 
     news_text = "\n".join(
         f"{i+1}. {clean_title(item.get('title',''))}｜{item.get('source','')}"
-        for i, item in enumerate(news_items[:40])
+        for i, item in enumerate(news_items[:45])
         if isinstance(item, dict) and item.get("title")
     )
 
@@ -479,7 +480,7 @@ def pick_top_news_deepseek():
 3. 输出严格JSON数组，长度5；
 4. 每项包含：title、category、reason；
 5. category只能从以下选择：大促/电商、童装/儿童运动、天气/功能消费、户外/运动场景、商圈/零售经营。
-6. reason控制在28字以内，偏经营启示。
+6. reason控制在30字以内，偏经营启示。
 
 新闻：
 {news_text}
@@ -497,7 +498,11 @@ def pick_top_news_deepseek():
         "商圈/零售经营": CATEGORY_RULES["商圈消费"],
     }
 
-    source_lookup = {clean_title(x.get("title", "")): x.get("source", "公开资讯") for x in news_items if isinstance(x, dict)}
+    source_lookup = {
+        clean_title(x.get("title", "")): x.get("source", "公开资讯")
+        for x in news_items
+        if isinstance(x, dict)
+    }
 
     result = []
     used = set()
@@ -508,13 +513,16 @@ def pick_top_news_deepseek():
         title = short(row.get("title", ""), 42)
         if not title or title in used:
             continue
+
         tag = row.get("category", "商圈/零售经营")
         rule = rule_by_tag.get(tag, CATEGORY_RULES["商圈消费"])
         source = "公开资讯"
+
         for raw_title, raw_source in source_lookup.items():
             if title[:10] in raw_title or raw_title[:10] in title:
                 source = raw_source
                 break
+
         desc = clean_title(row.get("reason", "")) or rule["desc"]
 
         result.append({
@@ -540,7 +548,7 @@ def pick_top_news_deepseek():
 top_news = pick_top_news_deepseek()
 
 # =========================
-# 区域经营雷达：DeepSeek优先
+# 区域经营雷达
 # =========================
 
 region_map = {
@@ -555,38 +563,38 @@ SCENE_POOLS = {
     "rain": {
         "hot": ["降雨扰动客流", "雨天影响到店", "局地降雨需关注"],
         "flow": ["室内客流承接增强", "商场活动更关键", "客流向室内集中"],
-        "signal": ["防雨防滑需求提升", "轻防护品类升温", "防水鞋服受关注"],
-        "action": ["强化防雨防滑陈列", "前置室内运动场景", "用会员活动承接客流"],
+        "signal": ["防雨防滑与轻防护品类关注提升"],
+        "action": ["强化防雨防滑陈列，前置室内运动场景"],
     },
     "high_temp": {
         "hot": ["高温带动夏季品类", "防晒凉感热度上升", "暑热推动功能消费"],
         "flow": ["防晒与速干需求提升", "短裤T恤关注上升", "户外转向功能防护"],
-        "signal": ["凉感科技升温", "防晒衣需求增加", "速干T进入主推"],
-        "action": ["前置防晒凉感组合", "强化短裤T恤连带", "突出夏季功能卖点"],
+        "signal": ["防晒衣、凉感T和速干短裤进入主推窗口"],
+        "action": ["前置防晒凉感组合，强化短裤T恤连带"],
     },
     "promotion": {
         "hot": ["大促节点带动关注", "平台预售强化心智", "618带动品类曝光"],
         "flow": ["直播同款转化提升", "爆款价格带受关注", "线上热度外溢门店"],
-        "signal": ["爆款转化关键", "价格带竞争加剧", "夏季主推受关注"],
-        "action": ["强化爆款价格带", "承接直播同款", "突出夏季核心品类"],
+        "signal": ["大促心智强化，夏季爆款与直播同款承接更关键"],
+        "action": ["强化爆款价格带，承接直播同款与门店转化"],
     },
     "kids": {
         "hot": ["儿童运动场景扩张", "亲子需求升温", "校园场景延续"],
         "flow": ["亲子客流增加", "校园运动带动连带", "童鞋童服组合增强"],
-        "signal": ["童鞋需求提升", "运动套装受关注", "速干T热度增加"],
-        "action": ["强化亲子校园陈列", "做童鞋服装连带", "增加儿童套装展示"],
+        "signal": ["儿童运动、校园和亲子场景继续带动鞋服组合需求"],
+        "action": ["强化亲子校园陈列，提升童鞋服装连带"],
     },
     "outdoor": {
         "hot": ["轻户外热度提升", "户外出行带动消费", "文旅场景延伸"],
         "flow": ["骑行露营消费增加", "户外休闲客群活跃", "亲子户外需求增加"],
-        "signal": ["帽包配件升温", "轻外套受关注", "户外鞋服连带提升"],
-        "action": ["增加轻户外组合", "强化出行场景展示", "提升帽包配件连带"],
+        "signal": ["轻户外、帽包配件和防晒装备存在连带空间"],
+        "action": ["增加轻户外组合，强化出行场景展示"],
     },
     "mall": {
         "hot": ["商圈活动带动关注", "会员运营增强", "门店客流需跟进"],
         "flow": ["周末客流活跃", "会员活动带动转化", "商场活动提升停留"],
-        "signal": ["连带消费提升", "门口陈列更关键", "客流修复仍需转化"],
-        "action": ["加强会员活动", "优化门口堆头", "提升试穿转化"],
+        "signal": ["商圈客流修复，但转化仍依赖会员和连带运营"],
+        "action": ["加强会员活动、门口堆头和导购试穿转化"],
     },
 }
 
@@ -594,6 +602,7 @@ def detect_scene_rule(local_text, weather_key):
     text = str(local_text)
     scenes = []
     t = weather_business_type(weather_key)
+
     if t in ["storm", "rain"]:
         scenes.append("rain")
     if t in ["very_hot", "hot"]:
@@ -606,8 +615,10 @@ def detect_scene_rule(local_text, weather_key):
         scenes.append("outdoor")
     if any(k in text for k in ["商场", "商圈", "客流", "门店", "会员"]):
         scenes.append("mall")
+
     if not scenes:
         scenes = ["kids", "mall"] if SEASON == "summer" else ["mall", "outdoor"]
+
     return list(dict.fromkeys(scenes))[:3]
 
 def pick_scene_word(scenes, field):
@@ -636,6 +647,7 @@ def build_region_reports_rule():
 
 def build_region_reports_deepseek():
     region_payload = []
+
     for region, cfg in region_map.items():
         local_titles = [t for t in titles if any(k in t for k in cfg["keywords"])]
         if not local_titles:
@@ -647,6 +659,11 @@ def build_region_reports_deepseek():
             "city": cfg["city"],
             "weather": weather_desc(cfg["weather_key"]),
             "weather_type": weather_business_type(cfg["weather_key"]),
+            "weather_3days": [
+                weather_day_label(cfg["weather_key"], 0),
+                weather_day_label(cfg["weather_key"], 1),
+                weather_day_label(cfg["weather_key"], 2),
+            ],
             "news": local_titles[:10],
         })
 
@@ -655,22 +672,26 @@ def build_region_reports_deepseek():
 
     prompt = f"""
 你是361°儿童总部经营管理部的区域经营分析师。
-请基于【区域新闻、全国热点、天气、大促、电商平台、鞋服品类、儿童运动、商圈客流】，
-为5个区域生成“区域经营雷达”。
+请基于区域新闻、全国热点、天气、大促、电商平台、鞋服品类、儿童运动、商圈客流，为5个区域生成“区域经营雷达”。
 
-核心要求：
-1. 输出严格JSON对象，不要解释；
-2. key必须为 east, central, south, southwest, northwest；
-3. 每个区域包含4个字段：
-   hot：核心信号，10-14字，必须结合新闻或天气；
-   flow：客流/场景判断，14-20字，判断客流、商圈、亲子、户外或到店变化；
-   signal：AI经营判断，22-34字，要说明品类或消费机会，不能空泛；
-   action：建议动作，22-34字，要具体到门店/商品/陈列/会员/导购动作；
-4. 每个区域内容必须明显不同，不能重复；
-5. 不要写“关注提升”“需求提升”这种单独空话，必须有对象，例如“防晒衣与速干T需求提升”；
-6. 华东更关注商圈、内容、电商承接；华中关注校园亲子与会员运营；华南关注高温、防晒、夏季品类；西南关注文旅、户外、亲子；西北关注出行、天气扰动和轻户外；
-7. 如果区域新闻不足，可以结合全国热点和天气推断，但必须写得像经营判断；
-8. 内容要适合放在日报表格中，短但有判断力。
+输出严格JSON对象，不要解释。
+key必须为 east, central, south, southwest, northwest。
+
+每个区域包含4个字段：
+hot：核心信号，10-16字，必须结合新闻或天气；
+flow：客流/场景判断，16-24字，判断客流、商圈、亲子、户外或到店变化；
+signal：AI经营判断，28-42字，要说明具体品类、场景或消费机会，不能空泛；
+action：建议动作，28-42字，要具体到门店、商品、陈列、会员、导购或线上承接动作。
+
+要求：
+1. 每个区域内容必须明显不同，不能重复；
+2. 不要写“关注提升”“需求提升”这种空话，必须有对象；
+3. 华东关注商圈、内容、电商承接；
+4. 华中关注校园亲子、会员运营、商场活动；
+5. 华南关注高温、防晒、夏季品类、大促；
+6. 西南关注文旅、户外、亲子、雨天承接；
+7. 西北关注出行、天气扰动、轻户外和配件；
+8. 如果区域新闻不足，可以结合全国热点和天气推断，但必须像经营判断。
 
 今日TOP资讯：
 {top_news_text}
@@ -682,7 +703,7 @@ def build_region_reports_deepseek():
 {json.dumps(region_payload, ensure_ascii=False)}
 """
 
-    obj = ask_deepseek_json(prompt, max_tokens=1400)
+    obj = ask_deepseek_json(prompt, max_tokens=1600)
     if not isinstance(obj, dict):
         return build_region_reports_rule()
 
@@ -698,10 +719,10 @@ def build_region_reports_deepseek():
             actions[region] = fallback_actions[region]
             continue
 
-        hot = short_cn(row.get("hot", fallback_reports[region]["change"]), 16)
-        flow = short_cn(row.get("flow", fallback_reports[region]["impact"]), 22)
-        signal = short_cn(row.get("signal", fallback_reports[region]["action"]), 36)
-        action = short_cn(row.get("action", fallback_actions[region]), 36)
+        hot = short_cn(row.get("hot", fallback_reports[region]["change"]), 18)
+        flow = short_cn(row.get("flow", fallback_reports[region]["impact"]), 26)
+        signal = short_cn(row.get("signal", fallback_reports[region]["action"]), 46)
+        action = short_cn(row.get("action", fallback_actions[region]), 46)
 
         reports[region] = {
             "change": hot,
@@ -721,6 +742,7 @@ scores = {
 
 sorted_regions = sorted(scores.keys(), key=lambda r: scores[r], reverse=True)
 stars = {}
+
 for idx, r in enumerate(sorted_regions):
     s = scores[r]
     if idx <= 2 and s >= 62:
@@ -764,6 +786,7 @@ def make_today_insight_deepseek():
 
 def make_ai_summary_rule():
     parts = []
+
     if any(k in joined for k in ["618", "大促", "预售", "战报"]):
         parts.append("大促与平台流量仍是短期主线")
     if any(k in joined for k in ["防晒", "凉感", "速干", "高温"]):
@@ -774,9 +797,11 @@ def make_ai_summary_rule():
         parts.append("轻户外与跑步场景带动鞋服装备关注")
     if any(weather_business_type(k) in ["rain", "storm"] for k in ["north", "east", "south", "southwest", "northwest"]):
         parts.append("降雨天气可能影响区域客流")
+
     if not parts:
         parts.append("今日行业信息整体平稳，关注商圈客流、商品节奏和区域差异")
-    return "；".join(parts[:3]) + "。"
+
+    return "；".join(parts[:4]) + "。"
 
 def make_ai_summary_deepseek():
     news_text = "\n".join(titles[:30])
@@ -788,7 +813,7 @@ def make_ai_summary_deepseek():
         weather_desc("northwest"),
     ])
 
-        prompt = f"""
+    prompt = f"""
 你是361°儿童经营管理部的行业情报分析师。
 请基于以下新闻和天气，生成一段90字以内的AI经营摘要。
 
@@ -805,7 +830,7 @@ def make_ai_summary_deepseek():
 天气：
 {weather_text}
 """
-    text = ask_deepseek_text(prompt, max_tokens=160)
+    text = ask_deepseek_text(prompt, max_tokens=180)
     if not text:
         return make_ai_summary_rule()
     return text[:150]
@@ -839,6 +864,7 @@ def detect_trend_from_news():
 
     trends = []
     seen = set()
+
     for _, trend in candidates:
         if trend["title"] not in seen:
             trends.append(trend)
