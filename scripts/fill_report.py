@@ -222,6 +222,20 @@ def weather_desc(key):
     }
     return mapping.get(t, mapping["normal"])
 
+def weather_icon(key):
+    t = weather_business_type(key)
+    if t in ["storm", "rain"]:
+        return "☔"
+    if t in ["very_hot", "hot"]:
+        return "☀️"
+    if t in ["snow_ice", "cold", "winter_mild"]:
+        return "❄️"
+    if t == "wind":
+        return "🌬️"
+    if t in ["spring_mild", "autumn_mild", "normal"]:
+        return "🌤️"
+    return "🌤️"
+
 # =========================
 # DeepSeek工具
 # =========================
@@ -1042,6 +1056,13 @@ data = {
     "focus_count": "5",
 
     "weather_heat_class": map_heat_class(),
+
+    "east_icon": weather_icon("east"),
+    "central_icon": weather_icon("east"),
+    "south_icon": weather_icon("south"),
+    "southwest_icon": weather_icon("southwest"),
+    "northwest_icon": weather_icon("northwest"),
+    
     "north_heat": heat_class_by_weather("north"),
     "east_heat": heat_class_by_weather("east"),
     "south_heat": heat_class_by_weather("south"),
