@@ -17,12 +17,11 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
 .stat-num{font-size:38px;font-weight:950;color:#085fde;line-height:1;margin-top:5px}
 .stat-small{margin-top:4px;font-size:11px;color:#7083a6}
 
-.insight-panel{display:grid;grid-template-columns:1.02fr 1.98fr;gap:12px;margin-bottom:13px}
-.insight-card{border-radius:13px;border:1px solid #d8e3f2;background:linear-gradient(135deg,#f7fbff 0%,#eef6ff 100%);box-shadow:0 6px 16px rgba(20,60,110,.055);padding:12px 15px;min-height:78px}
+.insight-panel{display:grid;grid-template-columns:.9fr 2.1fr;gap:12px;margin-bottom:13px}
+.insight-card{border-radius:13px;border:1px solid #d8e3f2;background:linear-gradient(135deg,#f7fbff 0%,#eef6ff 100%);box-shadow:0 6px 16px rgba(20,60,110,.055);padding:12px 15px;min-height:82px}
 .insight-label{font-size:12px;font-weight:950;color:#0b5cd3;margin-bottom:6px;letter-spacing:.5px}
-.today-insight{font-size:20px;line-height:1.35;font-weight:950;color:#092c6d}
+.today-insight{font-size:20px;line-height:1.38;font-weight:950;color:#092c6d}
 .ai-summary{font-size:14px;line-height:1.55;font-weight:700;color:#28466f}
-.ai-summary b{color:#0b5cd3}
 
 .section{background:#fff;border:1px solid #d8e3f2;border-radius:13px;overflow:hidden;box-shadow:0 6px 16px rgba(20,60,110,.055)}
 .section-title{height:40px;padding:0 14px;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(90deg,#052b78 0%,#0a4cb5 65%,#0d6fe9 100%);color:#fff;font-size:19px;font-weight:950}
@@ -93,9 +92,17 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
 
 .big-table{width:100%;border-collapse:collapse;font-size:12px}
 .big-table th{background:#f1f6ff;color:#133d7d;padding:8px 7px;border:1px solid #e1eaf7;font-weight:950}
-.big-table td{border:1px solid #e1eaf7;padding:9px 8px;text-align:center;line-height:1.42}
+.big-table td{border:1px solid #e1eaf7;padding:9px 8px;text-align:center;line-height:1.46}
+.region-col{width:95px}
+.hot-col{width:210px}
+.flow-col{width:230px}
+.signal-col{width:520px}
+.star-col{width:82px}
 .region-name{font-weight:950;color:#0d3777}
 .region-icon{display:block;font-size:20px;margin-bottom:2px}
+.smart-advice{text-align:left;color:#1d3761;font-weight:700}
+.smart-advice .line{display:block;margin-bottom:4px}
+.smart-advice .line:before{content:"◆ ";color:#0b5cd3;font-weight:950}
 .star-red{color:#e11d48;font-size:21px;font-weight:950}
 .star-orange{color:#ff8c1a;font-size:21px;font-weight:950}
 .star-blue{color:#0d6fe9;font-size:21px;font-weight:950}
@@ -156,7 +163,7 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
     <div class="today-insight">{{today_insight}}</div>
   </div>
   <div class="insight-card">
-    <div class="insight-label">GPT经营摘要</div>
+    <div class="insight-label">AI经营摘要（由DeepSeek生成）</div>
     <div class="ai-summary">{{ai_summary}}</div>
   </div>
 </div>
@@ -214,12 +221,48 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
   <div class="section-title"><span>三、区域热点资讯与消费动态（精选）</span><span class="more">查看更多 ›</span></div>
   <div class="section-body">
     <table class="big-table">
-      <tr><th>区域</th><th>热点资讯</th><th>商圈/客流动态</th><th>消费信号</th><th>对门店/品牌启示</th><th>关注等级</th></tr>
-      <tr><td class="region-name"><span class="region-icon">☔</span>华东<br>{{east_city}}</td><td>{{east_hot}}</td><td>{{east_flow}}</td><td>{{east_signal}}</td><td>{{east_action}}</td><td class="star-red">{{east_star}}</td></tr>
-      <tr><td class="region-name"><span class="region-icon">👥</span>华中<br>{{central_city}}</td><td>{{central_hot}}</td><td>{{central_flow}}</td><td>{{central_signal}}</td><td>{{central_action}}</td><td class="star-orange">{{central_star}}</td></tr>
-      <tr><td class="region-name"><span class="region-icon">☀️</span>华南<br>{{south_city}}</td><td>{{south_hot}}</td><td>{{south_flow}}</td><td>{{south_signal}}</td><td>{{south_action}}</td><td class="star-red">{{south_star}}</td></tr>
-      <tr><td class="region-name"><span class="region-icon">⛰️</span>西南<br>{{southwest_city}}</td><td>{{southwest_hot}}</td><td>{{southwest_flow}}</td><td>{{southwest_signal}}</td><td>{{southwest_action}}</td><td class="star-orange">{{southwest_star}}</td></tr>
-      <tr><td class="region-name"><span class="region-icon">🌬️</span>西北<br>{{northwest_city}}</td><td>{{northwest_hot}}</td><td>{{northwest_flow}}</td><td>{{northwest_signal}}</td><td>{{northwest_action}}</td><td class="star-blue">{{northwest_star}}</td></tr>
+      <tr>
+        <th class="region-col">区域</th>
+        <th class="hot-col">热点资讯</th>
+        <th class="flow-col">商圈/客流动态</th>
+        <th class="signal-col">消费信号与门店/品牌启示（AI智能匹配）</th>
+        <th class="star-col">关注等级</th>
+      </tr>
+      <tr>
+        <td class="region-name"><span class="region-icon">☔</span>华东<br>{{east_city}}</td>
+        <td>{{east_hot}}</td>
+        <td>{{east_flow}}</td>
+        <td class="smart-advice"><span class="line">{{east_signal}}</span><span class="line">{{east_action}}</span></td>
+        <td class="star-red">{{east_star}}</td>
+      </tr>
+      <tr>
+        <td class="region-name"><span class="region-icon">👥</span>华中<br>{{central_city}}</td>
+        <td>{{central_hot}}</td>
+        <td>{{central_flow}}</td>
+        <td class="smart-advice"><span class="line">{{central_signal}}</span><span class="line">{{central_action}}</span></td>
+        <td class="star-orange">{{central_star}}</td>
+      </tr>
+      <tr>
+        <td class="region-name"><span class="region-icon">☀️</span>华南<br>{{south_city}}</td>
+        <td>{{south_hot}}</td>
+        <td>{{south_flow}}</td>
+        <td class="smart-advice"><span class="line">{{south_signal}}</span><span class="line">{{south_action}}</span></td>
+        <td class="star-red">{{south_star}}</td>
+      </tr>
+      <tr>
+        <td class="region-name"><span class="region-icon">⛰️</span>西南<br>{{southwest_city}}</td>
+        <td>{{southwest_hot}}</td>
+        <td>{{southwest_flow}}</td>
+        <td class="smart-advice"><span class="line">{{southwest_signal}}</span><span class="line">{{southwest_action}}</span></td>
+        <td class="star-orange">{{southwest_star}}</td>
+      </tr>
+      <tr>
+        <td class="region-name"><span class="region-icon">🌬️</span>西北<br>{{northwest_city}}</td>
+        <td>{{northwest_hot}}</td>
+        <td>{{northwest_flow}}</td>
+        <td class="smart-advice"><span class="line">{{northwest_signal}}</span><span class="line">{{northwest_action}}</span></td>
+        <td class="star-blue">{{northwest_star}}</td>
+      </tr>
     </table>
     <div class="note">关注等级说明：<span class="star-red">★★★</span>重点关注　<span class="star-orange">★★</span>持续跟踪　<span class="star-blue">★</span>一般观察</div>
   </div>
