@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20 14:18:55",
+  "generated_at": "2026-05-20 14:42:10",
   "source": "Open-Meteo",
   "regions": {
     "north": {
@@ -172,8 +172,8 @@
       "days": [
         {
           "date": "2026-05-20",
-          "code": 3,
-          "weather": "阴",
+          "code": 2,
+          "weather": "多云",
           "temp_max": 26.9,
           "temp_min": 14.2,
           "precipitation": 0.0,
