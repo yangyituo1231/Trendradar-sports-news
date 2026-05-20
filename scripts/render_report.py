@@ -40,7 +40,7 @@ def generate_image():
             document.body.style.height = 'auto';
         """)
 
-        page.screenshot(
+        page.locator(".page").screenshot(
             path=OUTPUT_FILE,
             full_page=True,
             type="png"
