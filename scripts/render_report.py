@@ -10,8 +10,8 @@ def generate_image():
 
         page = browser.new_page(
             viewport={
-                "width": 1800,
-                "height": 1500
+                "width": 1400,
+                "height": 1800
             },
             device_scale_factor=2
         )
@@ -27,16 +27,9 @@ def generate_image():
             document.body.style.background = '#ffffff';
         """)
 
-        page.screenshot(
+        page.locator(".page").screenshot(
             path=OUTPUT_FILE,
-            full_page=False,
-            type="png",
-            clip={
-                "x": 0,
-                "y": 0,
-                "width": 1800,
-                "height": 1480
-            }
+            type="png"
         )
 
         browser.close()
