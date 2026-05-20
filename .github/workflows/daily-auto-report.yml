@@ -4,8 +4,12 @@ on:
   workflow_dispatch:
 
   schedule:
-    # 北京时间早上8:00 = UTC 00:00
+    # 北京时间早上8:00
     - cron: "0 0 * * *"
+
+    # 备用触发（北京时间8:10）
+    - cron: "10 0 * * *"
+
 env:
   TZ: Asia/Shanghai
 
@@ -32,8 +36,13 @@ jobs:
       - name: Install browser and fonts
         run: |
           sudo apt-get update
-          sudo apt-get install -y fonts-noto-cjk fonts-wqy-zenhei fontconfig
+          sudo apt-get install -y \
+            fonts-noto-cjk \
+            fonts-wqy-zenhei \
+            fontconfig
+
           sudo fc-cache -fv
+
           playwright install --with-deps chromium
 
       - name: Fetch News
@@ -62,8 +71,11 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
+
           git add .
+
           git commit -m "auto update report" || echo "nothing to commit"
+
           git push
 
       - name: Send WeCom Text
