@@ -8,7 +8,7 @@
 body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;color:#1b3566;padding:12px}
 .page{width:1180px;margin:auto;background:linear-gradient(180deg,#fff 0%,#fbfdff 100%);border-radius:16px;border:1px solid #d8e3f2;box-shadow:0 12px 32px rgba(28,61,119,.10);padding:16px 18px 14px}
 
-.header{display:grid;grid-template-columns:1fr 540px;gap:12px;align-items:center;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #dde7f4}
+.header{display:grid;grid-template-columns:1fr 540px;gap:12px;align-items:center;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #dde7f4}
 .main-title{font-size:56px;font-weight:950;line-height:1;letter-spacing:-2px;color:#06276a}
 .sub-title{margin-top:10px;font-size:17px;font-weight:700;color:#304d82}
 .stats{display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr;border-left:1px solid #dde7f4}
@@ -16,6 +16,13 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
 .stat-title{font-size:13px;color:#183a76;font-weight:900}
 .stat-num{font-size:38px;font-weight:950;color:#085fde;line-height:1;margin-top:5px}
 .stat-small{margin-top:4px;font-size:11px;color:#7083a6}
+
+.insight-panel{display:grid;grid-template-columns:1.02fr 1.98fr;gap:12px;margin-bottom:13px}
+.insight-card{border-radius:13px;border:1px solid #d8e3f2;background:linear-gradient(135deg,#f7fbff 0%,#eef6ff 100%);box-shadow:0 6px 16px rgba(20,60,110,.055);padding:12px 15px;min-height:78px}
+.insight-label{font-size:12px;font-weight:950;color:#0b5cd3;margin-bottom:6px;letter-spacing:.5px}
+.today-insight{font-size:20px;line-height:1.35;font-weight:950;color:#092c6d}
+.ai-summary{font-size:14px;line-height:1.55;font-weight:700;color:#28466f}
+.ai-summary b{color:#0b5cd3}
 
 .section{background:#fff;border:1px solid #d8e3f2;border-radius:13px;overflow:hidden;box-shadow:0 6px 16px rgba(20,60,110,.055)}
 .section-title{height:40px;padding:0 14px;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(90deg,#052b78 0%,#0a4cb5 65%,#0d6fe9 100%);color:#fff;font-size:19px;font-weight:950}
@@ -46,66 +53,26 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
 
 .weather-legend{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:8px}
 .legend-item{height:26px;border-radius:8px;border:1px solid #dbe6f6;background:#f7fbff;display:flex;align-items:center;justify-content:center;gap:4px;font-size:11px;font-weight:850}
-.weather-map{
-position:relative;
-height:250px;
-border-radius:12px;
-border:1px solid #dbe6f6;
-overflow:hidden;
-background:linear-gradient(180deg,#fbfdff 0%,#eef5ff 100%)
-}
 
-/* 天气热力图 */
-.weather-map.heat-hot{
-background:linear-gradient(180deg,#fff7ed 0%,#ffe8cc 100%)
-}
+.weather-map{position:relative;height:250px;border-radius:12px;border:1px solid #dbe6f6;overflow:hidden;background:linear-gradient(180deg,#fbfdff 0%,#eef5ff 100%)}
+.weather-map.heat-hot{background:linear-gradient(180deg,#fff7ed 0%,#ffe8cc 100%)}
+.weather-map.heat-rain{background:linear-gradient(180deg,#eff6ff 0%,#dbeafe 100%)}
+.weather-map.heat-cold{background:linear-gradient(180deg,#f0f9ff 0%,#dff4ff 100%)}
+.weather-map.heat-normal{background:linear-gradient(180deg,#fbfdff 0%,#eef5ff 100%)}
 
-.weather-map.heat-rain{
-background:linear-gradient(180deg,#eff6ff 0%,#dbeafe 100%)
-}
+.heat-dot-hot{background:#ef4444!important}
+.heat-dot-rain{background:#2563eb!important}
+.heat-dot-cold{background:#38bdf8!important}
+.heat-dot-normal{background:#16a34a!important}
 
-.weather-map.heat-cold{
-background:linear-gradient(180deg,#f0f9ff 0%,#dff4ff 100%)
-}
-
-.weather-map.heat-normal{
-background:linear-gradient(180deg,#fbfdff 0%,#eef5ff 100%)
-}
-
-/* 地图点位颜色 */
-.heat-dot-hot{
-background:#ef4444!important
-}
-
-.heat-dot-rain{
-background:#2563eb!important
-}
-
-.heat-dot-cold{
-background:#38bdf8!important
-}
-
-.heat-dot-normal{
-background:#16a34a!important
-}
-  
 .china-map{position:absolute;left:78px;top:4px;width:405px;height:218px;display:flex;align-items:center;justify-content:center}
 .china-map-img{width:94%;max-height:212px;object-fit:contain;opacity:.98;filter:drop-shadow(0 8px 18px rgba(25,70,130,.10))}
-
-.map-dot{
-position:absolute;
-border-radius:50%;
-border:3px solid #fff;
-box-shadow:0 0 0 5px rgba(13,111,233,.08),0 6px 18px rgba(20,60,120,.20);
-animation:heatPulse 2.4s infinite ease-in-out;
-z-index:5;
-}
-
-.heat-east{width:16px;height:16px;top:118px;right:102px;background:#e11d48}
-.heat-south{width:14px;height:14px;bottom:47px;right:160px;background:#0d6fe9}
-.heat-central{width:12px;height:12px;top:140px;left:187px;background:#ff8c1a}
-.heat-southwest{width:10px;height:10px;top:158px;left:142px;background:#16a34a}
-.heat-northwest{width:9px;height:9px;top:78px;left:112px;background:#94a3b8}
+.map-dot{position:absolute;width:11px;height:11px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 5px rgba(13,111,233,.08),0 6px 18px rgba(20,60,120,.20);animation:heatPulse 2.4s infinite ease-in-out;z-index:5}
+.dot-north{top:63px;right:168px}
+.dot-east{top:120px;right:103px}
+.dot-south{bottom:49px;right:162px}
+.dot-west{top:115px;left:123px}
+.dot-center{top:140px;left:187px}
 
 @keyframes heatPulse{
 0%{transform:scale(1);opacity:.82}
@@ -183,9 +150,20 @@ z-index:5;
   </div>
 </div>
 
+<div class="insight-panel">
+  <div class="insight-card">
+    <div class="insight-label">今日一句</div>
+    <div class="today-insight">{{today_insight}}</div>
+  </div>
+  <div class="insight-card">
+    <div class="insight-label">GPT经营摘要</div>
+    <div class="ai-summary">{{ai_summary}}</div>
+  </div>
+</div>
+
 <div class="top-grid">
   <div class="section">
-<div class="section-title"><span>一、重点资讯精选（TOP 5）</span><span class="more">查看更多 ›</span></div>
+    <div class="section-title"><span>一、重点资讯精选（TOP 5）</span><span class="more">查看更多 ›</span></div>
     <div class="section-body">
       <div class="news-list">
         <div class="news-item"><div class="rank r1">1</div><div class="logo-box {{top1_logo_class}}"><div class="logo-icon">{{top1_icon}}</div><div class="logo-text">{{top1_logo}}</div></div><div><div class="news-title">{{top1_title}} <span class="tag">{{top1_tag}}</span></div><div class="news-meta">{{top1_time}} ｜ {{top1_source}}</div><div class="news-desc">{{top1_desc}}</div></div></div>
@@ -207,16 +185,16 @@ z-index:5;
       <div class="weather-map {{weather_heat_class}}">
         <div class="china-map">
           <img src="_image/china-map.png" class="china-map-img">
-       <div class="map-dot dot-north {{north_heat}}"></div>
-       <div class="map-dot dot-east {{east_heat}}"></div>
-       <div class="map-dot dot-south {{south_heat}}"></div>
-       <div class="map-dot dot-west {{northwest_heat}}"></div>
-       <div class="map-dot dot-center {{central_heat}}"></div> 
+          <div class="map-dot dot-north {{north_heat}}"></div>
+          <div class="map-dot dot-east {{east_heat}}"></div>
+          <div class="map-dot dot-south {{south_heat}}"></div>
+          <div class="map-dot dot-west {{northwest_heat}}"></div>
+          <div class="map-dot dot-center {{central_heat}}"></div>
         </div>
         <div class="map-label l1"><b>华北/东北</b><br>{{weather_north}}</div>
         <div class="map-label l2"><b>华东地区</b><br>{{weather_east}}</div>
         <div class="map-label l3"><b>西北地区</b><br>{{weather_northwest}}</div>
-        <div class="map-label l4"><b>西南地区</b><br>防晒与轻户外需求需结合天气灵活调整。</div>
+        <div class="map-label l4"><b>西南地区</b><br>{{weather_southwest_label}}</div>
         <div class="map-label l5"><b>华南地区</b><br>{{weather_southwest}}</div>
       </div>
       <table class="weather-table">
@@ -259,12 +237,12 @@ z-index:5;
   </div>
 
   <div class="section">
-    <div class="section-title"><span>五、关键词热度（近3天）</span></div>
+    <div class="section-title"><span>五、行业热词雷达（近3天）</span></div>
     <div class="section-body">
       <div class="word-cloud">
         <div class="word w1">{{word1}}</div><div class="word w2">{{word2}}</div><div class="word w3">{{word3}}</div><div class="word w4">{{word4}}</div><div class="word w5">{{word5}}</div><div class="word w6">{{word6}}</div><div class="word w7">{{word7}}</div><div class="word w8">{{word8}}</div><div class="word w9">{{word9}}</div><div class="word w10">{{word10}}</div><div class="word w11">{{word11}}</div><div class="word w12">{{word12}}</div><div class="word w13">{{word13}}</div><div class="word w14">{{word14}}</div><div class="word w15">{{word15}}</div><div class="word w16">{{word16}}</div><div class="word w17">{{word17}}</div><div class="word w18">{{word18}}</div>
       </div>
-      <div class="note">注：字体大小代表热度感知强弱，用于识别短期资讯密度。</div>
+      <div class="note">注：热词综合新闻、天气、平台、鞋服品类与泛运动热点生成，用于识别短期行业情绪。</div>
     </div>
   </div>
 </div>
