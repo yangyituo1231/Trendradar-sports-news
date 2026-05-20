@@ -9,19 +9,15 @@ def generate_image():
         browser = p.chromium.launch()
 
         page = browser.new_page(
-            viewport={"width": 1400, "height": 3000},
+            viewport={"width": 1400, "height": 2600},
             device_scale_factor=2
         )
 
         file_path = f"file://{os.path.abspath(HTML_FILE)}"
-
         page.goto(file_path, wait_until="networkidle")
 
         page.evaluate("""
             document.body.style.background = '#ffffff';
-            document.documentElement.style.height = 'auto';
-            document.body.style.height = 'auto';
-
             const el = document.querySelector('.page');
             if (el) {
                 el.style.height = 'auto';
@@ -30,9 +26,8 @@ def generate_image():
             }
         """)
 
-        page.screenshot(
+        page.locator(".page").screenshot(
             path=OUTPUT_FILE,
-            full_page=True,
             type="png"
         )
 
