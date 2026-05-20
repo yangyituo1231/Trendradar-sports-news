@@ -751,7 +751,7 @@ action：建议动作，40-60字。
         reports[region] = {
             "change": hot,
             "impact": flow,
-            "action": signal,
+            "action": signal + "；" + action,
         }
         actions[region] = action
 
@@ -866,50 +866,99 @@ ai_summary = make_ai_summary_deepseek()
 # 第四部分
 # =========================
 
-def detect_trend_from_news():
-    rules = [
-        (["618", "双11", "双十一", "双12", "大促", "预售", "战报"], {"title": "大促节点提前蓄水", "desc": "平台活动前置，需关注爆款、价格带、直播同款与门店承接。", "tag": "大促趋势"}),
-        (["防晒", "凉感", "速干", "高温"], {"title": "季节功能品类升温", "desc": "防晒、凉感、速干等功能品类热度提升，门店陈列节奏需前置。", "tag": "季节趋势"}),
-        (["童装", "儿童", "亲子", "校园"], {"title": "儿童运动场景扩张", "desc": "亲子、校园与儿童运动场景热度延续，童装连带与场景搭配更关键。", "tag": "儿童消费趋势"}),
-        (["抖音", "小红书", "直播", "种草", "内容"], {"title": "内容平台影响转化", "desc": "抖音、小红书与直播内容影响新品传播、到店转化和线上成交。", "tag": "内容电商"}),
-        (["商场", "商圈", "客流", "门店", "会员", "奥莱"], {"title": "线下客流运营增强", "desc": "商圈活动、会员运营和奥莱折扣带动门店客流与转化效率变化。", "tag": "渠道趋势"}),
-        (["户外", "骑行", "露营", "文旅", "徒步", "出行"], {"title": "轻户外场景延展", "desc": "骑行、露营、徒步与文旅出行带动轻户外和运动休闲需求。", "tag": "消费趋势"}),
-        (["赛事", "跑步", "马拉松", "越野跑", "训练", "跑鞋"], {"title": "泛运动热度扩散", "desc": "跑步、赛事和训练场景带动专业跑鞋、运动科技与装备需求。", "tag": "运动趋势"}),
-        (["雨", "暴雨", "强对流", "防雨"], {"title": "天气扰动品类切换", "desc": "降雨与强对流影响客流节奏，防雨、轻外套和室内运动场景需关注。", "tag": "天气趋势"}),
-    ]
+def build_ai_trends():
+    news_text = "\n".join(titles[:35])
 
-    candidates = []
-    for words, trend in rules:
-        hit = sum(1 for t in titles[:60] if any(w in t for w in words))
-        if hit > 0:
-            candidates.append((hit, trend))
+    weather_text = "；".join([
+        weather_desc("north"),
+        weather_desc("east"),
+        weather_desc("south"),
+        weather_desc("southwest"),
+        weather_desc("northwest"),
+    ])
 
-    candidates.sort(key=lambda x: x[0], reverse=True)
+    prompt = f"""
+你是361°儿童总部经营管理部经营分析负责人。
 
-    trends = []
-    seen = set()
+请基于：
+1. 行业新闻
+2. 天气变化
+3. 大促平台动态
+4. 儿童运动与户外消费
+5. 商圈客流
 
-    for _, trend in candidates:
-        if trend["title"] not in seen:
-            trends.append(trend)
-            seen.add(trend["title"])
+生成4条“经营观察与动作建议”。
 
-    fallback = [
-        {"title": "门店场景陈列更关键", "desc": "从单品销售转向场景组合，亲子、校园和轻户外陈列价值提升。", "tag": "零售趋势"},
-        {"title": "区域客流分化加剧", "desc": "天气、商圈活动和出行场景共同影响区域客流，需差异化跟进。", "tag": "区域趋势"},
-        {"title": "商品节奏需要前置", "desc": "天气与平台活动共同影响品类节奏，核心品类需提前陈列承接。", "tag": "商品趋势"},
-    ]
+要求：
+1. 每条包含：
+title：10-18字
+desc：40-65字
+tag：6字以内
 
-    for f in fallback:
-        if len(trends) >= 4:
-            break
-        if f["title"] not in seen:
-            trends.append(f)
-            seen.add(f["title"])
+2. 不要写空话；
+3. 必须有经营判断；
+4. 必须说明：
+- 什么趋势
+- 为什么发生
+- 对门店/商品意味着什么
 
-    return trends[:4]
+5. 要像总部经营周会里的分析；
+6. 四条内容不能重复；
+7. 覆盖：
+- 大促
+- 夏季功能品类
+- 儿童运动
+- 商圈客流
+- 户外场景
+中的至少4项。
 
-trend_items = detect_trend_from_news()
+输出严格JSON数组。
+
+新闻：
+{news_text}
+
+天气：
+{weather_text}
+"""
+
+    arr = ask_deepseek_json(prompt, max_tokens=1200)
+
+    if not isinstance(arr, list) or len(arr) < 4:
+        return [
+            {
+                "title": "大促节点提前蓄水",
+                "desc": "平台流量前置叠加夏季功能消费升温，门店需提前承接防晒、凉感与直播同款转化。",
+                "tag": "大促趋势"
+            },
+            {
+                "title": "儿童运动场景扩张",
+                "desc": "校园、亲子与轻户外场景持续活跃，儿童运动套装与童鞋连带值得强化。",
+                "tag": "儿童趋势"
+            },
+            {
+                "title": "商圈客流恢复分化",
+                "desc": "天气与区域活动影响到店节奏，重点商圈更依赖会员活动与场景陈列承接。",
+                "tag": "商圈趋势"
+            },
+            {
+                "title": "夏季功能品类升温",
+                "desc": "防晒、凉感与速干品类进入高频曝光阶段，需提前布局门店核心陈列。",
+                "tag": "季节趋势"
+            }
+        ]
+
+    result = []
+
+    for row in arr[:4]:
+        result.append({
+            "title": short_cn(row.get("title", ""), 18),
+            "desc": short_cn(row.get("desc", ""), 80),
+            "tag": short_cn(row.get("tag", ""), 8),
+        })
+
+    return result
+
+trend_items = build_ai_trends()
 
 # =========================
 # 第五部分：DeepSeek热词
