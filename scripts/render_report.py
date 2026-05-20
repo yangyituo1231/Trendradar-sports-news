@@ -5,15 +5,13 @@ HTML_FILE = "daily-report-filled.html"
 OUTPUT_FILE = "daily-report.png"
 
 def generate_image():
-
     with sync_playwright() as p:
-
         browser = p.chromium.launch()
 
         page = browser.new_page(
             viewport={
                 "width": 1800,
-                "height": 2600
+                "height": 1500
             },
             device_scale_factor=2
         )
@@ -31,8 +29,14 @@ def generate_image():
 
         page.screenshot(
             path=OUTPUT_FILE,
-            full_page=True,
-            type="png"
+            full_page=False,
+            type="png",
+            clip={
+                "x": 0,
+                "y": 0,
+                "width": 1800,
+                "height": 1480
+            }
         )
 
         browser.close()
