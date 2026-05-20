@@ -684,7 +684,7 @@ def build_region_reports_deepseek():
     top_news_text = "\n".join([f"{i+1}. {x['title']}｜{x['tag']}" for i, x in enumerate(top_news)])
     global_news_text = "\n".join(titles[:35])
 
-        prompt = f"""
+    prompt = f"""
 你是361°儿童总部经营管理部的区域经营分析师。
 请基于区域新闻、全国热点、天气、大促、电商平台、鞋服品类、儿童运动、商圈客流，为5个区域生成“AI区域经营判断”。
 
