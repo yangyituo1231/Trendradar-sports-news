@@ -686,26 +686,36 @@ def build_region_reports_deepseek():
 
     prompt = f"""
 你是361°儿童总部经营管理部的区域经营分析师。
-请基于区域新闻、全国热点、天气、大促、电商平台、鞋服品类、儿童运动、商圈客流，为5个区域生成“AI区域经营判断”。
+请基于【区域新闻、全国热点、天气、大促、电商平台、鞋服品类、儿童运动、商圈客流】，
+为5个区域生成“区域经营雷达”。
 
 输出严格JSON对象，不要解释。
 key必须为 east, central, south, southwest, northwest。
 
 每个区域包含4个字段：
-hot：核心信号，10-16字，必须结合新闻或天气；
-flow：客流/场景判断，18-28字，判断客流、商圈、亲子、户外或到店变化；
-signal：AI经营判断，36-55字，要结合天气+区域新闻+鞋服品类机会，不能空泛；
-action：建议动作，34-52字，要具体到商品、陈列、会员、导购、直播同款或商圈承接动作。
 
-要求：
-1. 每个区域内容必须明显不同，不能重复；
-2. 不要写“关注提升”“需求提升”这种空话，必须写清楚什么品类、什么场景、什么动作；
-3. 华东关注商圈、内容、电商承接、轻户外；
-4. 华中关注校园亲子、会员运营、商场活动；
-5. 华南关注高温、防晒、夏季品类、大促；
-6. 西南关注文旅、户外、亲子、雨天承接；
-7. 西北关注出行、天气扰动、轻户外和配件；
-8. 内容要像总部给区域销售看的经营建议，不要像普通天气说明。
+hot：核心信号，14-22字。
+要求：不要只写“降雨扰动客流”“会员运营增强”这种模板词，要结合区域天气/新闻/消费热点，写成有判断的短句。
+
+flow：客流/场景判断，24-38字。
+要求：判断客流从哪里来、往哪里去、什么场景更强，比如商场、亲子、校园、户外、室内运动、大促到店承接。
+
+signal：AI经营判断，40-60字。
+要求：结合天气+区域新闻+鞋服品类机会，说明具体品类、消费机会和潜在风险。
+
+action：建议动作，40-60字。
+要求：具体到门店、商品、陈列、会员、导购、直播同款、商圈承接或区域运营动作。
+
+强制要求：
+1. 五个区域内容必须明显不同，不能复用同一句；
+2. 不要写空泛词，比如“关注提升”“需求增加”，必须写清楚什么品类、什么场景、什么动作；
+3. 华东：偏商圈、内容种草、电商承接、轻户外；
+4. 华中：偏校园亲子、会员运营、商场活动；
+5. 华南：偏高温/降雨、防晒凉感、夏季品类、大促；
+6. 西南：偏文旅、户外、亲子、雨天承接；
+7. 西北：偏出行、天气扰动、轻户外、帽包配件；
+8. 语气要像总部给区域销售看的经营判断，不要像普通天气说明；
+9. 内容适合放在日报表格中，短句但要有信息密度。
 
 今日TOP资讯：
 {top_news_text}
@@ -733,10 +743,10 @@ action：建议动作，34-52字，要具体到商品、陈列、会员、导购
             actions[region] = fallback_actions[region]
             continue
 
-        hot = short_cn(row.get("hot", fallback_reports[region]["change"]), 18)
-        flow = short_cn(row.get("flow", fallback_reports[region]["impact"]), 30)
-        signal = short_cn(row.get("signal", fallback_reports[region]["action"]), 60)
-        action = short_cn(row.get("action", fallback_actions[region]), 56)
+        hot = short_cn(row.get("hot", fallback_reports[region]["change"]), 24)
+        flow = short_cn(row.get("flow", fallback_reports[region]["impact"]), 42)
+        signal = short_cn(row.get("signal", fallback_reports[region]["action"]), 66)
+        action = short_cn(row.get("action", fallback_actions[region]), 66)
 
         reports[region] = {
             "change": hot,
