@@ -989,7 +989,18 @@ def build_words_rule():
     return words[:18]
 
 def build_words_deepseek():
-    news_text = "\n".join(titles[:35])
+
+    news_text = "\n".join([
+        clean_title(x.get("title", ""))
+        for x in news_items[:45]
+        if isinstance(x, dict)
+    ])
+
+    top_text = "\n".join([
+        f"{i+1}. {x['title']}｜{x['tag']}"
+        for i, x in enumerate(top_news)
+    ])
+
     weather_text = "；".join([
         weather_desc("north"),
         weather_desc("east"),
@@ -999,14 +1010,43 @@ def build_words_deepseek():
     ])
 
     prompt = f"""
-请基于以下运动鞋服行业新闻和天气，提取18个适合放在“行业热词雷达”的短热词。
+你是运动鞋服行业情报系统。
+
+请基于：
+1. 今日行业新闻
+2. TOP重点资讯
+3. 全国天气
+4. 当前消费趋势
+
+生成18个适合“行业热词雷达”的真实热词。
+
 要求：
-1. 输出严格JSON数组；
-2. 每个词2到6个汉字或英文品牌名；
-3. 覆盖：鞋、服、童装、户外、跑步、电商、品牌、天气、实时热点；
-4. 不要过度重复“儿童运动、品牌站位、安踏”；
-5. 尽量结合当日新闻真实热点；
-6. 只输出JSON数组。
+
+1. 输出严格JSON数组
+2. 每个词2-8字
+3. 必须更像“当天行业热点”
+4. 不要大量重复：
+   儿童运动、品牌站位、户外运动
+5. 必须覆盖：
+   - 电商
+   - 夏季功能品类
+   - 鞋类
+   - 服装
+   - 户外
+   - 商圈
+   - 品牌
+   - 实时趋势
+6. 至少包含：
+   - 3个当天真实新闻词
+   - 3个功能品类词
+   - 2个鞋类词
+   - 2个平台/渠道词
+7. 不要空泛词
+8. 尽量像：
+   防晒衣、凉感科技、运动凉鞋、店播增长、618战报、城市骑行、速干T、山系穿搭
+
+TOP资讯：
+{top_text}
 
 新闻：
 {news_text}
@@ -1015,17 +1055,54 @@ def build_words_deepseek():
 {weather_text}
 """
 
-    arr = ask_deepseek_json(prompt, max_tokens=500)
-    if not isinstance(arr, list):
-        return build_words_rule()
+    arr = ask_deepseek_json(prompt, max_tokens=600)
 
     words = []
-    for w in arr:
-        w = clean_title(str(w))
-        if 1 < len(w) <= 8 and w not in words:
-            words.append(w)
 
-    fallback = build_words_rule()
+    if isinstance(arr, list):
+
+        for w in arr:
+
+            w = clean_title(str(w))
+
+            bad_words = [
+                "儿童运动",
+                "品牌站位",
+                "户外运动",
+                "运动消费",
+                "消费趋势",
+                "行业趋势",
+                "运动品牌",
+            ]
+
+            if (
+                2 <= len(w) <= 8
+                and w not in bad_words
+                and w not in words
+            ):
+                words.append(w)
+
+    fallback = [
+        "618战报",
+        "防晒衣",
+        "凉感科技",
+        "速干T",
+        "运动凉鞋",
+        "专业跑鞋",
+        "碳板跑鞋",
+        "城市骑行",
+        "山系穿搭",
+        "店播增长",
+        "直播带货",
+        "商场活动",
+        "会员裂变",
+        "校园体育",
+        "户外露营",
+        "透气跑鞋",
+        "功能面料",
+        "亲子出行",
+    ]
+
     for w in fallback:
         if len(words) >= 18:
             break
