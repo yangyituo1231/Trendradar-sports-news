@@ -861,6 +861,68 @@ def make_ai_summary_deepseek():
 
 today_insight = make_today_insight_deepseek()
 ai_summary = make_ai_summary_deepseek()
+def make_ai_warnings():
+
+    news_text = "\n".join(titles[:25])
+
+    weather_text = "；".join([
+        weather_desc("north"),
+        weather_desc("east"),
+        weather_desc("south"),
+        weather_desc("southwest"),
+        weather_desc("northwest"),
+    ])
+
+    prompt = f"""
+你是361°儿童经营管理负责人。
+
+请基于：
+1. 今日行业新闻
+2. 全国天气
+3. 电商大促
+4. 区域消费趋势
+
+生成3条：
+经营风险/机会预警。
+
+要求：
+1. 输出严格JSON数组
+2. 每条30-50字
+3. 必须像总部经营预警
+4. 不要空话
+5. 必须具体到：
+   客流、品类、会员、直播、天气、商圈、区域
+
+新闻：
+{news_text}
+
+天气：
+{weather_text}
+"""
+
+    arr = ask_deepseek_json(prompt, max_tokens=300)
+
+    if not isinstance(arr, list):
+        return [
+            "618预售持续升温，直播同款与低价爆款竞争加剧，需关注核心SKU库存与价格带。",
+            "华南与华中降雨增强，室内客流承接能力将影响周末门店转化效率。",
+            "轻户外与亲子场景持续升温，帽包、防晒与运动凉鞋存在连带增长机会。"
+        ]
+
+    result = []
+
+    for x in arr:
+        t = clean_title(str(x))
+        if t:
+            result.append(t[:60])
+
+    while len(result) < 3:
+        result.append("区域消费与天气变化仍需动态关注。")
+
+    return result[:3]
+
+
+warnings = make_ai_warnings()
 
 # =========================
 # 第四部分
@@ -1182,6 +1244,10 @@ data = {
 
     "today_insight": today_insight,
     "ai_summary": ai_summary,
+
+    "warning1": warnings[0],
+    "warning2": warnings[1],
+    "warning3": warnings[2],
 
     "date": today.strftime("%Y-%m-%d"),
     "weekday": weekday_map[today.weekday()],
