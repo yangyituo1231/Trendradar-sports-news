@@ -42,7 +42,6 @@ def generate_image():
 
         page.locator(".page").screenshot(
             path=OUTPUT_FILE,
-            full_page=True,
             type="png"
         )
 
