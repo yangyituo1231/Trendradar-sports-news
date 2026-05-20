@@ -3,6 +3,7 @@ from datetime import datetime, timedelta
 import random
 import json
 import re
+import os
 from collections import Counter
 
 template = Path("daily-report.html").read_text(encoding="utf-8")
@@ -578,7 +579,60 @@ def make_ai_summary():
     return "；".join(parts[:3]) + "。"
 
 today_insight = make_today_insight()
-ai_summary = make_ai_summary()
+def make_deepseek_summary():
+    api_key = os.getenv("DEEPSEEK_API_KEY")
+    if not api_key:
+        return make_ai_summary()
+
+    try:
+        from openai import OpenAI
+
+        client = OpenAI(
+            api_key=api_key,
+            base_url="https://api.deepseek.com"
+        )
+
+        news_text = "\n".join(titles[:20])
+        weather_text = "；".join([
+            weather_desc("north"),
+            weather_desc("east"),
+            weather_desc("south"),
+            weather_desc("southwest"),
+            weather_desc("northwest"),
+        ])
+
+        prompt = f"""
+你是运动鞋服零售行业经营分析师。请基于以下新闻和天气，生成一段80字以内的经营摘要。
+要求：
+1. 面向361°儿童经营管理部
+2. 关注鞋服品类、天气、客流、门店动作、电商大促
+3. 不要空话
+4. 输出一段话
+
+新闻：
+{news_text}
+
+天气：
+{weather_text}
+"""
+
+        response = client.chat.completions.create(
+            model="deepseek-chat",
+            messages=[
+                {"role": "system", "content": "你是专业、简洁、偏经营实战的运动鞋服零售分析师。"},
+                {"role": "user", "content": prompt},
+            ],
+            temperature=0.4,
+            max_tokens=160,
+        )
+
+        text = response.choices[0].message.content.strip()
+        return text[:140]
+
+    except Exception:
+        return make_ai_summary()
+
+ai_summary = make_deepseek_summary()
 
 # =========================
 # 第四部分
