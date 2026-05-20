@@ -4,6 +4,52 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+  .risk-alert-section{
+  margin:18px 0;
+  background:#fff;
+  border-radius:18px;
+  padding:16px 18px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.risk-grid{
+  display:flex;
+  gap:14px;
+  margin-top:12px;
+}
+
+.risk-card{
+  flex:1;
+  border-radius:14px;
+  padding:14px;
+  background:#f8fafc;
+  border:1px solid #e5e7eb;
+}
+
+.risk-tag{
+  font-size:13px;
+  font-weight:700;
+  margin-bottom:8px;
+  color:#111827;
+}
+
+.risk-text{
+  font-size:13px;
+  line-height:1.7;
+  color:#374151;
+}
+
+.risk-red{
+  border-left:5px solid #ef4444;
+}
+
+.risk-orange{
+  border-left:5px solid #f59e0b;
+}
+
+.risk-blue{
+  border-left:5px solid #3b82f6;
+}
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;color:#1b3566;padding:12px}
 .page{width:1180px;margin:auto;background:linear-gradient(180deg,#fff 0%,#fbfdff 100%);border-radius:18px;border:1px solid #d8e3f2;box-shadow:0 14px 34px rgba(28,61,119,.12);padding:16px 18px 14px}
@@ -252,7 +298,28 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
   </div>
 </div>
 
-<div class="section">
+  <div class="risk-alert-section">
+    <div class="section-title">
+        <span>AI经营风险预警</span>
+    </div>
+
+    <div class="risk-grid">
+        <div class="risk-card risk-red">
+            <div class="risk-tag">大促预警</div>
+            <div class="risk-text">{{warning1}}</div>
+        </div>
+
+        <div class="risk-card risk-orange">
+            <div class="risk-tag">天气预警</div>
+            <div class="risk-text">{{warning2}}</div>
+        </div>
+
+        <div class="risk-card risk-blue">
+            <div class="risk-tag">区域机会</div>
+            <div class="risk-text">{{warning3}}</div>
+        </div>
+    </div>
+</div>
   <div class="section-title"><span>三、区域经营雷达（AI精选）</span><span class="more">查看更多 ›</span></div>
   <div class="section-body">
     <div class="region-radar">
