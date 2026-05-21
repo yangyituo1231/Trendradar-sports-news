@@ -83,7 +83,7 @@ jobs:
             -d '{
               "msgtype": "markdown",
               "markdown": {
-                "content": "# 运动品牌行业资讯日报\n\n今日日报已自动生成，图片如下。"
+                "content": "# 运动品牌行业资讯日报如下"
               }
             }'
 
