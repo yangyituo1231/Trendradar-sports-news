@@ -599,9 +599,11 @@ for idx, r in enumerate(sorted_regions):
     else: stars[r] = '★'
 
 def star_class(star):
-    if star == "***":
+    star = str(star)
+
+    if star == "★★★":
         return "star-red"
-    if star == "**":
+    if star == "★★":
         return "star-orange"
     return "star-blue"
 
