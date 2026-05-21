@@ -17,7 +17,7 @@ day2 = today + timedelta(days=1)
 day3 = today + timedelta(days=2)
 random.seed(today.strftime('%Y-%m-%d-%H'))
 
-weekday_map = {0:'星期一',1:'星期二',2:'星期三',3:'星期三',4:'星期五',5:'星期六',6:'星期日'}
+weekday_map = {0:'星期一',1:'星期二',2:'星期三',3:'星期四',4:'星期五',5:'星期六',6:'星期日'}
 
 def md(d):
     return d.strftime('%m-%d')
@@ -460,11 +460,13 @@ def build_region_payload():
             if not title:
                 continue
 
-            if any(k in title for k in cfg["keywords"]):
+            item_region = item.get("region", "")
+
+            if item_region == cfg["name"] or any(k in title for k in cfg["keywords"]):
                 if title not in region_news:
                     region_news.append(title)
 
-        payload[key] = {
+       payload[key] = {
             "region": cfg["name"],
             "cities": cfg["city"],
 
