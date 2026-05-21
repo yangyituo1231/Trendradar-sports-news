@@ -123,6 +123,27 @@ REGION_CITY_MAP = {
     "西南": ["成都", "重庆", "贵阳", "昆明"],
     "西北": ["西安", "兰州", "银川", "乌鲁木齐"],
 }
+LOCAL_PLACE_REGION_MAP = {
+    # 华东
+    "南京东路": "华东", "淮海路": "华东", "湖滨银泰": "华东", "武林商圈": "华东",
+    "苏州中心": "华东", "河西金鹰": "华东", "合肥砂之船": "华东",
+
+    # 华中
+    "江汉路": "华中", "武商梦时代": "华中", "楚河汉街": "华中",
+    "五一商圈": "华中", "红谷滩": "华中", "二七商圈": "华中",
+
+    # 华南
+    "天河路": "华南", "北京路": "华南", "万象天地": "华南",
+    "海岸城": "华南", "东门商圈": "华南", "中山路": "华南",
+
+    # 西南
+    "春熙路": "西南", "太古里": "西南", "解放碑": "西南",
+    "观音桥": "西南", "宽窄巷子": "西南",
+
+    # 西北
+    "小寨商圈": "西北", "钟楼商圈": "西北", "赛格国际": "西北",
+    "兰州中心": "西北", "大悦城": "西北",
+}
 
 CITY_TO_REGION = {}
 for region, cities in REGION_CITY_MAP.items():
@@ -476,6 +497,10 @@ def detect_region(title: str) -> str:
     city = detect_city(title)
     if city:
         return CITY_TO_REGION.get(city, "全国")
+
+    for place, region in LOCAL_PLACE_REGION_MAP.items():
+        if place in title:
+            return region
 
     for region, cities in REGION_CITY_MAP.items():
         if region in title:
