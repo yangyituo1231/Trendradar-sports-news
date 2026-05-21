@@ -719,11 +719,36 @@ top_news = pick_top_news_deepseek()
 # =========================
 
 region_map = {
-    "east": {"name": "华东", "city": "上海/江苏/浙江", "weather_key": "east", "keywords": ["上海", "杭州", "南京", "苏州", "宁波", "江苏", "浙江"]},
-    "central": {"name": "华中", "city": "湖北/湖南/江西", "weather_key": "east", "keywords": ["武汉", "长沙", "南昌", "郑州", "湖北", "湖南", "江西", "河南"]},
-    "south": {"name": "华南", "city": "广东/广西", "weather_key": "south", "keywords": ["广州", "深圳", "佛山", "南宁", "广东", "广西", "厦门", "福建"]},
-    "southwest": {"name": "西南", "city": "四川/重庆/贵州", "weather_key": "southwest", "keywords": ["成都", "重庆", "贵阳", "昆明", "四川", "贵州", "云南"]},
-    "northwest": {"name": "西北", "city": "陕西/甘肃/宁夏", "weather_key": "northwest", "keywords": ["西安", "兰州", "银川", "陕西", "甘肃", "宁夏", "新疆"]},
+    "east": {
+        "name": "华东",
+        "city": "上海/江苏/浙江",
+        "weather_key": "east",
+        "keywords": ["上海","江苏","浙江","南京","苏州","杭州","宁波","无锡","合肥","安徽"]
+    },
+    "central": {
+        "name": "华中",
+        "city": "湖北/湖南/江西",
+        "weather_key": "east",
+        "keywords": ["湖北","湖南","江西","武汉","长沙","南昌","郑州","河南"]
+    },
+    "south": {
+        "name": "华南",
+        "city": "广东/广西",
+        "weather_key": "south",
+        "keywords": ["广东","广西","广州","深圳","佛山","东莞","南宁","福建","厦门","福州"]
+    },
+    "southwest": {
+        "name": "西南",
+        "city": "四川/重庆/贵州",
+        "weather_key": "southwest",
+        "keywords": ["四川","重庆","贵州","云南","成都","贵阳","昆明"]
+    },
+    "northwest": {
+        "name": "西北",
+        "city": "陕西/甘肃/宁夏",
+        "weather_key": "northwest",
+        "keywords": ["陕西","甘肃","宁夏","新疆","西安","兰州","银川","乌鲁木齐"]
+    },
 }
 
 SCENE_POOLS = {
@@ -892,30 +917,121 @@ action：40-60字，具体到门店、商品、陈列、会员、导购、直播
         "signal": short_cn(obj.get("signal", ""), 66),
         "action": short_cn(obj.get("action", ""), 66),
     }
+def get_region_news(cfg, max_n=10):
+    local = []
+    for item in news_items:
+        if not isinstance(item, dict):
+            continue
+
+        title = clean_title(item.get("title", ""))
+        source = str(item.get("source", ""))
+        link = str(item.get("link") or item.get("url") or "")
+
+        if any(k in title for k in cfg["keywords"]):
+            local.append({
+                "title": title,
+                "source": source,
+                "link": link
+            })
+
+    return local[:max_n]
+
+
+def build_region_payload():
+    payload = {}
+
+    for key, cfg in region_map.items():
+        payload[key] = {
+            "region": cfg["name"],
+            "cities": cfg["city"],
+            "weather": {
+                "summary": weather_desc(cfg["weather_key"]),
+                "day1": weather_day_label(cfg["weather_key"], 0),
+                "day2": weather_day_label(cfg["weather_key"], 1),
+                "day3": weather_day_label(cfg["weather_key"], 2),
+                "type": weather_business_type(cfg["weather_key"]),
+            },
+            "local_news": get_region_news(cfg),
+        }
+
+    return payload
 
 def build_region_reports_deepseek():
     fallback_reports, fallback_actions = build_region_reports_rule()
 
-    top_news_text = "\n".join([f"{i+1}. {x['title']}｜{x['tag']}" for i, x in enumerate(top_news)])
-    global_news_text = "\n".join(titles[:30])
+    region_payload = build_region_payload()
+
+    top_news_text = "\n".join([
+        f"{i+1}. {x['title']}｜{x['tag']}"
+        for i, x in enumerate(top_news)
+    ])
+
+    global_news_text = "\n".join(titles[:40])
+
+    prompt = f"""
+你是361°儿童总部经营管理部的区域经营分析师。
+
+请基于以下信息，为5个区域生成“区域经营雷达”。
+
+重要要求：
+1. 必须根据当天新闻、区域新闻、天气、平台热点、消费趋势动态判断；
+2. 不允许固定把某个区域定义为某个方向；
+3. 每个区域必须不同；
+4. 每个区域必须至少体现一个具体触发因素：区域新闻、天气、大促、平台、商圈、文旅、宏观消费、品牌动作、AI科技；
+5. 如果某区域没有本地新闻，可以结合全国新闻和当地天气推断，但必须说明推断依据；
+6. 不要写空话，不要写“关注提升”“需求增加”这种泛词；
+7. 语气像总部给区域销售看的经营提醒；
+8. 内容适合放进日报表格。
+
+输出严格JSON对象，不要解释。
+
+key必须为：
+east, central, south, southwest, northwest
+
+每个区域包含：
+hot：核心信号，14-22字；
+flow：客流/消费场景判断，24-38字；
+signal：区域经营判断，40-60字；
+action：动作建议，40-60字。
+
+今日TOP资讯：
+{top_news_text}
+
+全国新闻：
+{global_news_text}
+
+区域数据：
+{json.dumps(region_payload, ensure_ascii=False)}
+"""
+
+    obj = ask_deepseek_json(prompt, max_tokens=1800)
+
+    if not isinstance(obj, dict):
+        return fallback_reports, fallback_actions
 
     reports = {}
     actions = {}
 
-    for region, cfg in region_map.items():
-        row = build_one_region_deepseek(region, cfg, top_news_text, global_news_text)
+    for region in region_map.keys():
+        row = obj.get(region, {})
 
-        if row is None:
+        if not isinstance(row, dict):
             reports[region] = fallback_reports[region]
             actions[region] = fallback_actions[region]
             continue
 
+        hot = short_cn(row.get("hot", fallback_reports[region]["change"]), 24)
+        flow = short_cn(row.get("flow", fallback_reports[region]["impact"]), 42)
+        signal = short_cn(row.get("signal", fallback_reports[region]["action"]), 66)
+        action = short_cn(row.get("action", fallback_actions[region]), 66)
+
         reports[region] = {
-            "change": row["hot"],
-            "impact": row["flow"],
-            "action": row["signal"],
+            "change": hot,
+            "impact": flow,
+            "action": signal,
         }
-        actions[region] = row["action"]
+
+        actions[region] = action
 
     return reports, actions
 
