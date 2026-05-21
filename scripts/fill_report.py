@@ -468,7 +468,10 @@ def build_region_reports_deepseek():
 2. 同一区域今天可能是商圈，明天可能是天气，后天可能是校园或文旅，判断方向必须随输入数据变化；
 3. 每个区域必须说明“为什么今天关注这个点”，触发依据必须来自区域新闻、天气或全国热点；
 4. 五个区域表达要有差异，但差异来自数据，不来自人为固定分工；
-5. action不能重复，必须根据该区域当日触发因素生成不同动作。
+5. action不能重复，必须根据该区域当日触发因素生成不同动作；
+6. signal和action必须写得像正式经营建议，有“为什么+怎么办”，不能只写一句口号；
+7. action必须以“建议：”开头，且每个区域动作不能重复；
+8. action至少包含：商品组合、门店陈列、导购话术、会员触达、商圈活动承接中的至少2项；
 
 输出严格JSON对象，不要解释。
 
@@ -476,10 +479,10 @@ key必须为：
 east, central, south, southwest, northwest
 
 每个区域包含：
-hot：核心信号，14-22字；
-flow：客流/消费场景判断，24-38字；
-signal：区域经营判断，40-60字；
-action：动作建议，40-60字。
+hot：核心信号，18-26字，必须像“618大促拉动明显”“降雨影响客流”“亲子出行活跃”这种结论；
+flow：区域客流与消费场景判断，24-42字，说明客流来源、消费场景、受天气或新闻影响的方向；
+signal：区域经营判断，50-75字，必须包含“触发因素+经营影响+重点品类/场景”，不能只写泛泛判断；
+action：动作建议，50-80字，必须以“建议：”开头，必须具体到门店陈列、商品组合、会员触达、导购话术或商圈承接动作；
 
 今日TOP资讯：
 {top_news_text}
@@ -537,6 +540,13 @@ for idx, r in enumerate(sorted_regions):
     if idx <= 2 and s >= 62: stars[r] = '★★★'
     elif s >= 45: stars[r] = '★★'
     else: stars[r] = '★'
+
+def star_class(star):
+    if star == "***":
+        return "star-red"
+    if star == "**":
+        return "star-orange"
+    return "star-blue"
 
 # =========================================================
 # 今日一句、摘要、预警、第四部分、第五部分
@@ -752,6 +762,7 @@ for region in ['east','central','south','southwest','northwest']:
     data[f'{region}_signal'] = reports[region]['action']
     data[f'{region}_action'] = actions[region]
     data[f'{region}_star'] = stars[region]
+    data[f'{region}_star_class'] = star_class(stars[region])
 
 for i,item in enumerate(trend_items, start=1):
     data[f'trend{i}_title'] = item['title']
