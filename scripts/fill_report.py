@@ -457,8 +457,9 @@ def build_region_payload():
 def build_region_reports_deepseek():
     fallback_reports, fallback_actions = build_region_reports_rule()
     region_payload = build_region_payload()
-    top_news_text = '\n'.join([f"{i+1}. {x['title']}｜{x['tag']}" for i,x in enumerate(top_news)])
+    top_news_text = '\n'.join([f"{i+1}. {x['title']}｜{x['tag']}" for i, x in enumerate(top_news)])
     global_news_text = '\n'.join(titles[:40])
+
     prompt = f"""
 你是361°儿童总部经营管理部的区域经营分析师。
 请基于以下信息，为5个区域生成“区域经营雷达”。
@@ -470,8 +471,7 @@ def build_region_reports_deepseek():
 4. 五个区域表达要有差异，但差异来自数据，不来自人为固定分工；
 5. action不能重复，必须根据该区域当日触发因素生成不同动作；
 6. signal必须写成“因为什么 -> 导致什么经营变化 -> 哪个品类/场景受影响”。
-7. action必须包含至少2个具体动作，例如：
-   商品组合、门店陈列、会员触达、导购话术、直播间、价格带、折扣节奏、户外陈列、儿童专区、防晒陈列等。
+7. action必须包含至少2个具体动作，例如：商品组合、门店陈列、会员触达、导购话术、直播间、价格带、折扣节奏、户外陈列、儿童专区、防晒陈列等。
 8. 不允许出现“强化运营”“关注转化”“提升效率”这种空泛表述。
 9. 每个区域动作必须不同，不能重复。
 10. flow必须说明“客流变化方向”和“消费场景变化”。
@@ -497,17 +497,24 @@ action：动作建议，50-80字，必须以“建议：”开头，必须具体
 区域数据：
 {json.dumps(region_payload, ensure_ascii=False)}
 """
+
     obj = ask_deepseek_json(prompt, max_tokens=1800)
     print("region deepseek result:", obj)
-    
-    if not isinstance(obj, dict): return fallback_reports, fallback_actions
+
+    if not isinstance(obj, dict):
+        return fallback_reports, fallback_actions
+
     reports, actions = {}, {}
+
     for region in region_map.keys():
         row = obj.get(region, {})
+
         if not isinstance(row, dict):
-            reports[region], actions[region] = fallback_reports[region], fallback_actions[region]
+            reports[region] = fallback_reports[region]
+            actions[region] = fallback_actions[region]
             continue
-        hot = short_cn(row.get('hot', fallback_reports[region]['change']), 24)
+
+        hot = short_cn(row.get('hot', fallback_reports[region]['change']), 26)
         flow = short_cn(row.get('flow', fallback_reports[region]['impact']), 60)
         signal = short_cn(row.get('signal', fallback_reports[region]['action']), 90)
         action = short_cn(row.get('action', fallback_actions[region]), 95)
@@ -518,7 +525,7 @@ action：动作建议，50-80字，必须以“建议：”开头，必须具体
         if action in actions.values():
             action = (
                 f"建议：结合{region_map[region]['city']}当日新闻和天气变化，"
-                "调整主推商品组合，强化门店陈列、会员触达和导购转化。"
+                "调整主推商品组合，优化门店陈列、会员触达和导购话术。"
             )
 
         reports[region] = {
