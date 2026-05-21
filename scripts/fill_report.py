@@ -448,33 +448,36 @@ def build_region_payload():
 
     for key, cfg in region_map.items():
 
-        # =========================
-        # 新增：区域新闻标题
-        # =========================
         region_news = []
 
-        for item in filtered_news:
-            if item.get("region") == cfg["name"]:
-                title = clean_title(item.get("title", ""))
+        # 从全部新闻里找该区域相关标题
+        for item in news_items:
+            if not isinstance(item, dict):
+                continue
 
-                if title and title not in region_news:
+            title = clean_title(item.get("title", ""))
+
+            if not title:
+                continue
+
+            if any(k in title for k in cfg["keywords"]):
+                if title not in region_news:
                     region_news.append(title)
 
         payload[key] = {
-            'region': cfg['name'],
-            'cities': cfg['city'],
+            "region": cfg["name"],
+            "cities": cfg["city"],
 
-            'weather': {
-                'summary': weather_desc(cfg['weather_key']),
-                'day1': weather_day_label(cfg['weather_key']),
+            "weather": {
+                "summary": weather_desc(cfg["weather_key"]),
+                "day1": weather_day_label(cfg["weather_key"], 0),
+                "day2": weather_day_label(cfg["weather_key"], 1),
+                "day3": weather_day_label(cfg["weather_key"], 2),
+                "type": weather_business_type(cfg["weather_key"]),
             },
 
-            'local_news': get_region_news(cfg),
-
-            # =========================
-            # 新增给 DeepSeek 的真实区域新闻
-            # =========================
-            'news_titles': region_news[:8]
+            "local_news": get_region_news(cfg),
+            "news_titles": region_news[:8],
         }
 
     return payload
