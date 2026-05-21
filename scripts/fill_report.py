@@ -516,10 +516,16 @@ if not action.startswith("建议："):
     action = "建议：" + action
 
 # 防止AI或兜底动作重复
-if action in actions.values():
-    action = f"建议：结合{region_map[region]['city']}当日新闻和天气变化，调整主推商品组合，强化门店陈列、会员触达和导购转化。"
-        reports[region] = {'change':hot,'impact':flow,'action':signal}
+        if action in actions.values():
+            action = f"建议：结合{region_map[region]['city']}当日新闻和天气变化，调整主推商品组合，强化门店陈列、会员触达和导购转化。"
+
+        reports[region] = {
+            "change": hot,
+            "impact": flow,
+            "action": signal
+        }
         actions[region] = action
+
     return reports, actions
 
 reports, actions = build_region_reports_deepseek()
