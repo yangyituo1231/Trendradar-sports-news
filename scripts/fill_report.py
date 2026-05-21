@@ -396,14 +396,14 @@ region_map = {
 }
 
 SCENE_POOLS = {
-    'rain': {'hot':['雨天到店承接','降雨影响客流','室内场景前置'], 'flow':['客流更容易向商场和室内运动场景集中'], 'signal':['防雨、防滑、轻防护和室内运动品类承接更关键'], 'action':['强化防雨防滑陈列，前置室内运动和试穿体验']},
-    'high_temp': {'hot':['暑热带动功能消费','防晒凉感窗口','夏季品类前置'], 'flow':['防晒、凉感、速干和短裤T恤关注度提升'], 'signal':['防晒衣、凉感T、速干短裤和透气童鞋进入主推窗口'], 'action':['前置防晒凉感组合，强化夏季功能区和连带陈列']},
-    'promotion': {'hot':['平台热度外溢','大促心智强化','直播同款承接'], 'flow':['线上内容种草可能外溢到门店试穿和比价'], 'signal':['大促和直播同款强化价格心智，门店需承接爆款和套装需求'], 'action':['强化爆款价格带、直播同款提示和导购转化话术']},
-    'kids': {'hot':['亲子运动延伸','校园场景活跃','童装连带提升'], 'flow':['亲子、校园和周末运动场景带动童鞋童服组合'], 'signal':['儿童运动、校园和亲子场景继续带动鞋服组合需求'], 'action':['强化亲子校园陈列，提升童鞋服装和配件连带']},
-    'outdoor': {'hot':['轻户外客群活跃','城市出行升温','文旅场景延伸'], 'flow':['骑行、露营、文旅和亲子户外带动装备需求'], 'signal':['轻户外、帽包配件、防晒装备和舒适鞋履存在连带空间'], 'action':['增加轻户外组合，强化出行场景和帽包配件展示']},
-    'mall': {'hot':['商圈活动承接','会员转化关键','门店体验强化'], 'flow':['商场活动和会员运营影响到店停留与成交效率'], 'signal':['商圈客流修复仍依赖会员活动、陈列展示和导购试穿转化'], 'action':['加强会员活动、门口堆头、场景陈列和导购试穿转化']},
-    'macro': {'hot':['消费信心分化','宏观消费跟踪','客单压力关注'], 'flow':['收入预期和社零变化可能影响客单、折扣敏感度和会员复购'], 'signal':['宏观消费分化下，中低价格带、功能刚需和会员精细化更关键'], 'action':['关注价格带结构，优化折扣节奏和会员分层触达']},
-    'tech': {'hot':['AI科技热度外溢','智能内容种草','科技心智升温'], 'flow':['AI和智能硬件话题提升年轻家庭对科技运动装备的关注'], 'signal':['科技热点可转化为运动科技、功能面料和智能内容种草机会'], 'action':['强化运动科技卖点表达，结合短视频内容进行场景化种草']},
+    'rain': {'hot':['雨天到店承接','降雨影响客流','室内场景前置'], 'flow':['客流更容易向商场和室内运动场景集中'], 'signal':['降雨影响到店节奏，防雨、防滑、轻防护和室内运动品类承接更关键'], 'action':['建议：前置防雨防滑陈列，强化室内运动组合和试穿体验']},
+    'high_temp': {'hot':['暑热带动功能消费','防晒凉感窗口','夏季品类前置'], 'flow':['防晒、凉感、速干和短裤T恤关注度提升'], 'signal':['高温带动功能消费，防晒衣、凉感T、速干短裤和透气童鞋进入主推窗口'], 'action':['建议：前置防晒凉感组合，强化夏季功能区和连带陈列']},
+    'promotion': {'hot':['平台热度外溢','大促心智强化','直播同款承接'], 'flow':['平台内容和大促话题带动比价、试穿和到店验证'], 'signal':['大促和直播同款强化价格心智，门店需承接爆款、套装和价格带需求'], 'action':['建议：强化爆款价格带、直播同款提示和导购转化话术']},
+    'kids': {'hot':['亲子运动延伸','校园场景活跃','童装连带提升'], 'flow':['亲子、校园和周末运动场景带动童鞋童服组合'], 'signal':['儿童运动、校园和亲子场景继续带动鞋服组合需求，童鞋与套装连带更关键'], 'action':['建议：强化亲子校园陈列，提升童鞋、服装和配件连带']},
+    'outdoor': {'hot':['轻户外客群活跃','城市出行升温','文旅场景延伸'], 'flow':['骑行、露营、文旅和亲子户外带动装备需求'], 'signal':['轻户外、帽包配件、防晒装备和舒适鞋履存在连带空间'], 'action':['建议：增加轻户外组合，强化出行场景和帽包配件展示']},
+    'mall': {'hot':['商圈活动承接','会员转化关键','门店体验强化'], 'flow':['商场活动和会员运营影响到店停留与成交效率'], 'signal':['商圈客流修复仍依赖会员活动、陈列展示和导购试穿转化'], 'action':['建议：加强会员活动、门口堆头、场景陈列和导购试穿转化']},
+    'macro': {'hot':['消费信心分化','宏观消费跟踪','客单压力关注'], 'flow':['收入预期和社零变化可能影响客单、折扣敏感度和会员复购'], 'signal':['宏观消费分化下，中低价格带、功能刚需和会员精细化更关键'], 'action':['建议：关注价格带结构，优化折扣节奏和会员分层触达']},
+    'tech': {'hot':['AI科技热度外溢','智能内容种草','科技心智升温'], 'flow':['AI和智能硬件话题提升年轻家庭对科技运动装备的关注'], 'signal':['科技热点可转化为运动科技、功能面料和智能内容种草机会'], 'action':['建议：强化运动科技卖点表达，结合短视频内容进行场景化种草']},
 }
 
 def detect_scene_rule(local_text, weather_key):
@@ -416,59 +416,71 @@ def detect_scene_rule(local_text, weather_key):
     if any(k in text for k in ['商场','商圈','客流','门店','会员','购物中心']): scenes.append('mall')
     if any(k in text for k in ['GDP','社零','消费','就业','收入','政策','补贴','内需']): scenes.append('macro')
     if any(k in text for k in ['AI','人工智能','机器人','智能','科技']): scenes.append('tech')
-    if not scenes: scenes = ['kids','mall'] if SEASON == 'summer' else ['mall','outdoor']
+    if not scenes:
+        scenes = ['kids','mall'] if SEASON == 'summer' else ['mall','outdoor']
     return list(dict.fromkeys(scenes))[:3]
 
 def pick_scene_word(scenes, field):
     candidates = []
-    for scene in scenes: candidates.extend(SCENE_POOLS.get(scene, {}).get(field, []))
+    for scene in scenes:
+        candidates.extend(SCENE_POOLS.get(scene, {}).get(field, []))
     return random.choice(candidates) if candidates else '关注主推品类'
-
-def build_region_reports_rule():
-    reports, actions = {}, {}
-    for region, cfg in region_map.items():
-        local_titles = [t for t in titles if any(k in t for k in cfg['keywords'])]
-        local_text = ' '.join(local_titles[:10]) or joined[:500]
-        scenes = detect_scene_rule(local_text, cfg['weather_key'])
-        reports[region] = {'change':pick_scene_word(scenes,'hot'),'impact':pick_scene_word(scenes,'flow'),'action':pick_scene_word(scenes,'signal')}
-        actions[region] = pick_scene_word(scenes,'action')
-    return reports, actions
 
 def get_region_news(cfg, max_n=10):
     local = []
     for item in news_items:
-        if not isinstance(item, dict): continue
+        if not isinstance(item, dict):
+            continue
+
         title = clean_title(item.get('title',''))
-        if any(k in title for k in cfg['keywords']):
-            local.append({'title':title,'source':str(item.get('source','')),'link':str(item.get('link') or item.get('url') or item.get('href') or '')})
+        if not title:
+            continue
+
+        item_region = item.get("region", "")
+        if item_region == cfg["name"] or any(k in title for k in cfg["keywords"]):
+            local.append({
+                'title': title,
+                'source': str(item.get('source','')),
+                'link': str(item.get('link') or item.get('url') or item.get('href') or '')
+            })
+
     return local[:max_n]
+
+def build_region_reports_rule():
+    reports, actions = {}, {}
+
+    for region, cfg in region_map.items():
+        local_news = get_region_news(cfg, max_n=8)
+        local_titles = [x["title"] for x in local_news]
+        local_text = ' '.join(local_titles) or joined[:500]
+
+        scenes = detect_scene_rule(local_text, cfg['weather_key'])
+
+        reports[region] = {
+            'change': pick_scene_word(scenes, 'hot'),
+            'impact': pick_scene_word(scenes, 'flow'),
+            'action': pick_scene_word(scenes, 'signal')
+        }
+
+        actions[region] = pick_scene_word(scenes, 'action')
+
+    return reports, actions
 
 def build_region_payload():
     payload = {}
 
     for key, cfg in region_map.items():
+        local_news = get_region_news(cfg, max_n=8)
         region_news = []
 
-        # 从全部新闻里找该区域相关标题
-        for item in news_items:
-            if not isinstance(item, dict):
-                continue
-
+        for item in local_news:
             title = clean_title(item.get("title", ""))
-
-            if not title:
-                continue
-
-            item_region = item.get("region", "")
-
-            if item_region == cfg["name"] or any(k in title for k in cfg["keywords"]):
-                if title not in region_news:
-                    region_news.append(title)
+            if title and title not in region_news:
+                region_news.append(title)
 
         payload[key] = {
             "region": cfg["name"],
             "cities": cfg["city"],
-
             "weather": {
                 "summary": weather_desc(cfg["weather_key"]),
                 "day1": weather_day_label(cfg["weather_key"], 0),
@@ -476,9 +488,8 @@ def build_region_payload():
                 "day3": weather_day_label(cfg["weather_key"], 2),
                 "type": weather_business_type(cfg["weather_key"]),
             },
-
-            "local_news": get_region_news(cfg),
-            "news_titles": region_news[:8],
+            "local_news": local_news[:4],
+            "news_titles": region_news[:4],
         }
 
     return payload
@@ -486,43 +497,29 @@ def build_region_payload():
 def build_region_reports_deepseek():
     fallback_reports, fallback_actions = build_region_reports_rule()
     region_payload = build_region_payload()
-    top_news_text = '\n'.join([f"{i+1}. {x['title']}｜{x['tag']}" for i, x in enumerate(top_news)])
-    global_news_text = '\n'.join(titles[:40])
+
+    top_news_text = '\n'.join([f"{i+1}. {x['title']}｜{x['tag']}" for i, x in enumerate(top_news[:5])])
+    global_news_text = '\n'.join(titles[:12])
 
     prompt = f"""
 你是361°儿童总部经营管理部的区域经营分析师。
-请基于以下信息，为5个区域生成“区域经营雷达”。
-
-重要要求：
-1. 不能预设固定经营重点，必须根据该区域城市新闻、天气、平台热点和消费事件自动判断；
-2. 同一区域今天可能是商圈，明天可能是天气，后天可能是校园或文旅，判断方向必须随输入数据变化；
-3. 每个区域必须说明“为什么今天关注这个点”，触发依据必须来自区域新闻、天气或全国热点；
-4. 五个区域表达要有差异，但差异来自数据，不来自人为固定分工；
-5. action不能重复，必须根据该区域当日触发因素生成不同动作；
-6. signal必须写成“因为什么 -> 导致什么经营变化 -> 哪个品类/场景受影响”；
-7. action必须包含至少2个具体动作，例如：商品组合、门店陈列、会员触达、导购话术、直播间、价格带、折扣节奏、户外陈列、儿童专区、防晒陈列等；
-8. 不允许出现“强化运营”“关注转化”“提升效率”这种空泛表述；
-9. 每个区域动作必须不同，不能重复；
-10. flow必须说明“客流变化方向”和“消费场景变化”；
-11. 结果必须像经营管理层巡店分析，而不是新闻摘要；
-12. 如果 news_titles 不为空，hot、flow、signal 三项中至少两项必须直接使用 news_titles 中的具体城市、商圈、活动或事件；
-13. 如果 news_titles 为空，才允许使用全国热点、天气和TOP资讯推断；
-14. 不允许使用“线上内容种草可能外溢到门店试穿和比价”“防雨防滑轻防护”等通用模板句；
-15. 每个区域必须写出不同触发来源，例如：本地商圈、区域天气、平台大促、文旅客流、AI科技、品牌动作；
-16. 如果五个区域出现相同 signal 或 action，视为错误，必须重写为不同内容；
-17. action 必须以“建议：”开头，并包含至少两个具体动作：商品组合、陈列位置、会员触达、导购话术、价格带、直播同款、亲子专区、户外专区、防晒陈列等。
-
+请为5个区域生成“区域经营雷达”。
 
 输出严格JSON对象，不要解释。
-
-key必须为：
-east, central, south, southwest, northwest
+key必须为：east, central, south, southwest, northwest。
 
 每个区域包含：
-hot：核心信号，18-26字，必须像“618大促拉动明显”“降雨影响客流”“亲子出行活跃”这种结论；
-flow：区域客流与消费场景判断，24-42字，说明客流来源、消费场景、受天气或新闻影响的方向；
-signal：区域经营判断，50-75字，必须包含“触发因素+经营影响+重点品类/场景”，不能只写泛泛判断；
-action：动作建议，50-80字，必须以“建议：”开头，必须具体到门店陈列、商品组合、会员触达、导购话术或商圈承接动作；
+hot：18-26字，核心信号；
+flow：24-42字，说明客流变化方向和消费场景变化；
+signal：50-75字，写成“触发因素 -> 经营影响 -> 重点品类/场景”；
+action：50-80字，必须以“建议：”开头，至少包含2个具体动作。
+
+要求：
+1. 优先使用区域数据里的news_titles；
+2. 如果news_titles不为空，hot、flow、signal中至少两项要引用其中的城市、商圈、活动或事件；
+3. 不得使用通用模板句；
+4. 五个区域的hot、signal、action不能重复；
+5. action必须具体到商品组合、门店陈列、会员触达、导购话术、价格带、直播同款、亲子专区、户外专区、防晒陈列等。
 
 今日TOP资讯：
 {top_news_text}
@@ -530,18 +527,11 @@ action：动作建议，50-80字，必须以“建议：”开头，必须具体
 全国新闻：
 {global_news_text}
 
-请特别注意：
-- 区域数据里的 news_titles 是该区域当天真实新闻标题，优先级最高；
-- 如果 news_titles 不为空，必须优先围绕 news_titles 生成，不得只根据全国新闻和天气泛化；
-- hot 必须体现 news_titles、天气或TOP资讯中的一个明确触发点；
-- signal 必须写出“本地新闻/天气/平台事件 → 客流或消费变化 → 受影响品类/场景”；
-- action 必须写成总部可下发给区域/门店的动作建议，不能只写概念。
-
 区域数据：
 {json.dumps(region_payload, ensure_ascii=False)}
 """
 
-    obj = ask_deepseek_json(prompt, max_tokens=1800)
+    obj = ask_deepseek_json(prompt, max_tokens=1600)
     print("region deepseek result:", obj)
 
     if not isinstance(obj, dict):
@@ -568,7 +558,7 @@ action：动作建议，50-80字，必须以“建议：”开头，必须具体
         if action in actions.values():
             action = (
                 f"建议：结合{region_map[region]['city']}当日新闻和天气变化，"
-                "调整主推商品组合，优化门店陈列、会员触达和导购话术。"
+                "调整主推商品组合，优化门店陈列和会员触达。"
             )
 
         reports[region] = {
