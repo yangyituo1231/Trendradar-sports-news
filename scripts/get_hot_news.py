@@ -492,6 +492,11 @@ def detect_city(title: str) -> str:
             return city
     return ""
 
+def detect_local_place(title: str) -> str:
+    for place in LOCAL_PLACE_REGION_MAP.keys():
+        if place in title:
+            return place
+    return ""
 
 def detect_region(title: str) -> str:
     city = detect_city(title)
@@ -516,7 +521,10 @@ def is_weather_abnormal(title: str) -> bool:
 
 
 def is_local_business(title: str) -> bool:
-    return detect_city(title) != "" and has_any(title, LOCAL_BUSINESS_WORDS)
+    return (
+        detect_city(title) != ""
+        or detect_local_place(title) != ""
+    ) and has_any(title, LOCAL_BUSINESS_WORDS)
 
 
 def wrong_campaign_terms():
@@ -577,6 +585,7 @@ def fetch_google_news_rss(keyword: str):
 
         if title:
             city = detect_city(title)
+            local_place = detect_local_place(title)
             region = detect_region(title)
             weather_abnormal = is_weather_abnormal(title)
 
@@ -588,6 +597,7 @@ def fetch_google_news_rss(keyword: str):
                 "keyword": keyword,
                 "campaign": CAMPAIGN,
                 "city": city,
+                "local_place": local_place,
                 "region": region,
                 "weather_abnormal": weather_abnormal,
                 "local_business": is_local_business(title),
