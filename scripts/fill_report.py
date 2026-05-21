@@ -232,8 +232,6 @@ def weather_icon(key):
         return "❄️"
     if t == "wind":
         return "🌬️"
-    if t in ["spring_mild", "autumn_mild", "normal"]:
-        return "🌤️"
     return "🌤️"
 
 # =========================
@@ -254,20 +252,24 @@ def extract_json(text):
     if not text:
         return None
     text = text.strip()
+    text = re.sub(r"^```json\s*", "", text)
+    text = re.sub(r"^```\s*", "", text)
+    text = re.sub(r"\s*```$", "", text)
 
     try:
         return json.loads(text)
     except Exception:
         pass
 
-    match = re.search(r"\{.*\}", text, re.S)
+    # 优先取数组，再取对象，避免对象正则吞掉数组内对象
+    match = re.search(r"\[.*\]", text, re.S)
     if match:
         try:
             return json.loads(match.group(0))
         except Exception:
             pass
 
-    match = re.search(r"\[.*\]", text, re.S)
+    match = re.search(r"\{.*\}", text, re.S)
     if match:
         try:
             return json.loads(match.group(0))
@@ -291,12 +293,13 @@ def ask_deepseek_json(prompt, max_tokens=900):
                 },
                 {"role": "user", "content": prompt},
             ],
-            temperature=0.28,
+            temperature=0.22,
             max_tokens=max_tokens,
         )
         text = response.choices[0].message.content.strip()
         return extract_json(text)
-    except Exception:
+    except Exception as e:
+        print("DeepSeek JSON error:", repr(e))
         return None
 
 def ask_deepseek_text(prompt, max_tokens=220):
@@ -320,7 +323,8 @@ def ask_deepseek_text(prompt, max_tokens=220):
         text = response.choices[0].message.content.strip()
         text = re.sub(r"\s+", "", text)
         return text
-    except Exception:
+    except Exception as e:
+        print("DeepSeek text error:", repr(e))
         return None
 
 # =========================
@@ -332,13 +336,13 @@ def news_heat_score(keywords):
     for t in titles:
         if any(k in t for k in keywords):
             score += 5
-        if any(k in t for k in ["618", "大促", "防晒", "凉感", "童装", "儿童", "亲子", "商场", "商圈", "客流", "户外", "骑行", "赛事", "跑步", "马拉松"]):
+        if any(k in t for k in ["618", "大促", "防晒", "凉感", "童装", "儿童", "亲子", "商场", "商圈", "客流", "户外", "骑行", "赛事", "跑步", "马拉松", "GDP", "社零", "消费", "就业", "政策", "文旅", "AI"]):
             score += 1
     return min(score, 25)
 
 def business_keyword_score():
     score = 0
-    for k in ["防晒", "凉感", "童装", "儿童", "亲子", "618", "商场", "商圈", "客流", "户外", "骑行", "小红书", "抖音", "保暖", "防滑", "赛事", "跑步", "马拉松"]:
+    for k in ["防晒", "凉感", "童装", "儿童", "亲子", "618", "商场", "商圈", "客流", "户外", "骑行", "小红书", "抖音", "保暖", "防滑", "赛事", "跑步", "马拉松", "GDP", "社零", "消费", "就业", "政策", "文旅", "AI", "出海"]:
         if k in joined:
             score += 2
     return min(score, 20)
@@ -373,17 +377,22 @@ def total_region_score(weather_key, region_keywords):
 # =========================
 
 CATEGORY_RULES = {
-    "大促电商": {
-        "keywords": ["618", "双11", "双十一", "双12", "99大促", "38大促", "大促", "预售", "电商", "直播", "抖音", "小红书", "种草", "百亿补贴", "战报"],
+    "电商平台": {
+        "keywords": ["618", "双11", "双十一", "双12", "99大促", "38大促", "大促", "预售", "电商", "直播", "抖音", "小红书", "种草", "百亿补贴", "战报", "平台", "店播"],
         "tag": "大促/电商", "logo": "大促", "icon": "🛒", "class": "logo-blue",
-        "desc": "大促信息适度关注，重点看夏季品类曝光、直播种草、转化效率和终端承接。",
+        "desc": "平台流量与大促节奏变化，重点观察夏季品类曝光、直播转化与终端承接。",
+    },
+    "品牌竞争": {
+        "keywords": ["品牌", "Nike", "耐克", "阿迪", "安踏", "李宁", "特步", "361", "Kappa", "HOKA", "昂跑", "亚瑟士", "C位", "市场份额"],
+        "tag": "品牌竞争", "logo": "品牌", "icon": "🏷️", "class": "logo-purple",
+        "desc": "品牌动作反映行业竞争重心，需关注价格带、产品心智与渠道打法变化。",
     },
     "童装儿童": {
-        "keywords": ["童装", "儿童", "亲子", "校园", "儿童运动", "运动童装", "Kids", "KIDS", "童鞋"],
+        "keywords": ["童装", "儿童", "亲子", "校园", "儿童运动", "运动童装", "Kids", "KIDS", "童鞋", "青少年"],
         "tag": "童装/儿童运动", "logo": "童装", "icon": "🧒", "class": "logo-sky",
         "desc": "儿童消费从单品购买转向亲子、校园、户外和运动场景综合经营。",
     },
-    "天气防晒": {
+    "天气消费": {
         "keywords": ["高温", "防晒", "凉感", "速干", "暴雨", "强对流", "降雨", "天气", "防雨", "夏日", "夏季", "降雪", "结冰", "低温", "防滑", "保暖"],
         "tag": "天气/功能消费", "logo": "天气", "icon": "☀️", "class": "logo-sky",
         "desc": "天气变化影响客流和主推节奏，防晒、凉感、防雨、防滑及保暖品类需动态前置。",
@@ -393,19 +402,44 @@ CATEGORY_RULES = {
         "tag": "户外/运动场景", "logo": "户外", "icon": "🚴", "class": "logo-green",
         "desc": "户外、跑步、骑行、赛事和夜间消费延伸运动场景，带动装备与亲子需求。",
     },
-    "商圈消费": {
-        "keywords": ["商场", "商圈", "门店", "客流", "奥莱", "折扣", "会员", "零售", "消费", "本地生活"],
+    "商圈零售": {
+        "keywords": ["商场", "商圈", "门店", "客流", "奥莱", "折扣", "会员", "零售", "本地生活", "购物中心"],
         "tag": "商圈/零售经营", "logo": "商圈", "icon": "🏬", "class": "logo-dark",
         "desc": "商圈活动、会员运营和折扣零售影响周末客流与终端转化效率。",
+    },
+    "宏观消费": {
+        "keywords": ["GDP", "社零", "社会消费品", "消费", "CPI", "PPI", "经济", "收入", "就业", "信心", "政策", "补贴", "以旧换新", "内需"],
+        "tag": "宏观消费", "logo": "宏观", "icon": "📊", "class": "logo-dark",
+        "desc": "宏观消费与收入预期影响零售信心，需关注客单、折扣和会员活跃变化。",
+    },
+    "文旅出行": {
+        "keywords": ["文旅", "旅游", "暑期", "出行", "景区", "演唱会", "赛事", "周末", "亲子游", "酒店", "交通"],
+        "tag": "文旅出行", "logo": "文旅", "icon": "🧳", "class": "logo-green",
+        "desc": "文旅与城市出行带动周末客流，亲子、轻户外和功能鞋服存在连带机会。",
+    },
+    "AI科技": {
+        "keywords": ["AI", "人工智能", "机器人", "智能", "科技", "算法", "大模型", "智能硬件"],
+        "tag": "AI科技", "logo": "AI", "icon": "🤖", "class": "logo-blue",
+        "desc": "AI与智能硬件热点提升科技心智，可观察运动科技、内容种草和人群触达机会。",
+    },
+    "政策监管": {
+        "keywords": ["政策", "监管", "标准", "质量", "抽检", "合规", "补贴", "消费券", "促消费"],
+        "tag": "政策监管", "logo": "政策", "icon": "📌", "class": "logo-red",
+        "desc": "政策与监管变化影响渠道节奏、消费者信心和终端活动设计。",
     },
 }
 
 fallback_by_category = {
-    "大促电商": {"title": "618节点持续推进，运动品牌关注夏季品类转化", "source": "平台资讯"},
+    "电商平台": {"title": "平台大促进入预热期，夏季功能品类承接需前置", "source": "平台资讯"},
+    "品牌竞争": {"title": "运动品牌竞争加剧，产品心智与渠道效率成为关键", "source": "行业观察"},
     "童装儿童": {"title": "儿童运动消费场景外扩，亲子与校园需求继续升温", "source": "消费观察"},
-    "天气防晒": {"title": "天气变化影响客流节奏，功能品类进入动态调整窗口", "source": "公开气象信息"},
+    "天气消费": {"title": "天气变化影响客流节奏，功能品类进入动态调整窗口", "source": "公开气象信息"},
     "户外运动": {"title": "跑步、骑行与轻户外场景延续，运动装备需求扩张", "source": "消费观察"},
-    "商圈消费": {"title": "商圈活动与会员运营联动，周末客流修复仍需关注", "source": "商业观察"},
+    "商圈零售": {"title": "商圈活动与会员运营联动，周末客流修复仍需关注", "source": "商业观察"},
+    "宏观消费": {"title": "宏观消费信心分化，零售端需关注客单与折扣效率", "source": "宏观观察"},
+    "文旅出行": {"title": "文旅出行热度延续，亲子轻户外场景值得承接", "source": "文旅观察"},
+    "AI科技": {"title": "AI科技热度延续，运动品牌内容与效率工具值得关注", "source": "科技观察"},
+    "政策监管": {"title": "促消费与监管信息需跟踪，终端活动应兼顾效率与合规", "source": "政策观察"},
 }
 
 def category_score(title, cat):
@@ -419,7 +453,8 @@ def item_score(item, cat):
     value_words = [
         "618", "大促", "战报", "防晒", "凉感", "速干", "童装", "儿童", "亲子",
         "跑鞋", "户外", "骑行", "露营", "商场", "商圈", "客流", "会员", "直播",
-        "小红书", "抖音", "Nike", "耐克", "阿迪", "安踏", "李宁", "特步", "HOKA", "昂跑", "亚瑟士", "361"
+        "小红书", "抖音", "Nike", "耐克", "阿迪", "安踏", "李宁", "特步", "HOKA",
+        "昂跑", "亚瑟士", "361", "GDP", "社零", "消费", "就业", "政策", "文旅", "AI", "出海"
     ]
 
     for kw in value_words:
@@ -431,7 +466,7 @@ def item_score(item, cat):
         if kw in title:
             score -= 16
 
-    reliable_sources = ["界面新闻", "36氪", "赢商网", "联商网", "亿邦动力", "电商报", "新华网", "澎湃新闻", "证券时报", "新京报", "新浪财经"]
+    reliable_sources = ["界面新闻", "36氪", "赢商网", "联商网", "亿邦动力", "电商报", "新华网", "澎湃新闻", "证券时报", "新京报", "新浪财经", "国家统计局", "央视新闻"]
     for src in reliable_sources:
         if src in source:
             score += 2
@@ -441,40 +476,64 @@ def item_score(item, cat):
 def pick_top_news_rule():
     used_titles = set()
     result = []
+    priority = ["电商平台", "品牌竞争", "童装儿童", "天气消费", "户外运动", "商圈零售", "宏观消费", "文旅出行", "AI科技", "政策监管"]
 
-    for cat in ["大促电商", "童装儿童", "天气防晒", "户外运动", "商圈消费"]:
+    # 先按分数跨类别挑选，不再固定第一条必须是618
+    candidates = []
+    for item in news_items:
+        title = clean_title(item.get("title", ""))
+        if not title:
+            continue
+        best_cat = max(priority, key=lambda c: item_score(item, c))
+        score = item_score(item, best_cat)
+        if score > 0:
+            candidates.append((score, best_cat, item))
+
+    candidates.sort(key=lambda x: x[0], reverse=True)
+
+    used_cats = set()
+    for _, cat, item in candidates:
+        if len(result) >= 5:
+            break
+        title = short(item.get("title", ""), 42)
+        if not title or title in used_titles:
+            continue
+        # 大促/电商最多一条，避免连日霸榜
+        if cat == "电商平台" and "电商平台" in used_cats:
+            continue
+
         rule = CATEGORY_RULES[cat]
-        candidates = []
-
-        for item in news_items:
-            title = clean_title(item.get("title", ""))
-            if not title or title in used_titles:
-                continue
-            if category_score(title, cat) > 0:
-                candidates.append((item_score(item, cat), item))
-
-        candidates.sort(key=lambda x: x[0], reverse=True)
-
-        if candidates and candidates[0][0] > 0:
-            item = candidates[0][1]
-            title = short(item.get("title", ""), 42)
-            source = item.get("source", "公开资讯")
-        else:
-            fb = fallback_by_category[cat]
-            title, source = fb["title"], fb["source"]
-
-        used_titles.add(title)
         result.append({
             "title": title,
             "tag": rule["tag"],
-            "source": source,
+            "source": item.get("source", "公开资讯"),
             "desc": rule["desc"],
             "logo": rule["logo"],
             "icon": rule["icon"],
             "class": rule["class"],
         })
+        used_titles.add(title)
+        used_cats.add(cat)
 
-    return result
+    # 不足5条再用兜底
+    for cat in priority:
+        if len(result) >= 5:
+            break
+        fb = fallback_by_category[cat]
+        rule = CATEGORY_RULES[cat]
+        if fb["title"] not in used_titles:
+            result.append({
+                "title": fb["title"],
+                "tag": rule["tag"],
+                "source": fb["source"],
+                "desc": rule["desc"],
+                "logo": rule["logo"],
+                "icon": rule["icon"],
+                "class": rule["class"],
+            })
+            used_titles.add(fb["title"])
+
+    return result[:5]
 
 def pick_top_news_deepseek():
     if not titles:
@@ -482,23 +541,27 @@ def pick_top_news_deepseek():
 
     news_text = "\n".join(
         f"{i+1}. {clean_title(item.get('title',''))}｜{item.get('source','')}"
-        for i, item in enumerate(news_items[:45])
+        for i, item in enumerate(news_items[:55])
         if isinstance(item, dict) and item.get("title")
     )
 
+    allowed_categories = "、".join(CATEGORY_RULES.keys())
+
     prompt = f"""
 你是运动鞋服行业资讯筛选助手。请从以下新闻中选出5条最适合361°儿童经营管理部每日阅读的重点资讯。
+
 要求：
 1. 必须基于今日新闻生成，不得使用历史模板和固定排序；
 2. 优先选择当天最新、信息增量最大、对经营最有参考价值的新闻；
 3. 不要让“618战报/抖音战报/大促战报”连续固定排第一，除非它确实是当天最重要新闻；
 4. 如果多条新闻主题相似，只保留1条，优先发布时间更新、信息更具体的一条；
-5. 必须覆盖或优先考虑：电商平台、品牌竞争、童装儿童、天气消费、户外运动、商圈零售、宏观消费、GDP/社零、就业收入、文旅出行、AI科技、政策监管；
-6. 过滤纯体育比赛比分、球员转会、娱乐八卦；
-7. 输出严格JSON数组，长度5；
-8. 每项包含：title、category、reason；
-9. category只能从以下选择：电商平台、品牌竞争、童装儿童、天气消费、户外运动、商圈零售、宏观消费、文旅出行、AI科技、政策监管；
-10. reason控制在28字以内，必须写经营启示，不要空话。
+5. 覆盖范围要更广：电商平台、品牌竞争、童装儿童、天气消费、户外运动、商圈零售、宏观消费、GDP/社零、就业收入、文旅出行、AI科技、政策监管；
+6. GDP、社零、就业、消费信心、促消费政策、文旅客流等宏观新闻，如果对零售经营有启示，可以优先入选；
+7. 过滤纯体育比赛比分、球员转会、娱乐八卦；
+8. 输出严格JSON数组，长度5；
+9. 每项包含：title、category、reason；
+10. category只能从以下选择：{allowed_categories}；
+11. reason控制在28字以内，必须写经营启示，不要空话。
 
 如果今日新闻与昨日主题接近，也必须选择“信息增量更大”的新闻，不允许机械重复昨日TOP1。
 
@@ -506,17 +569,9 @@ def pick_top_news_deepseek():
 {news_text}
 """
 
-    arr = ask_deepseek_json(prompt, max_tokens=900)
+    arr = ask_deepseek_json(prompt, max_tokens=1100)
     if not isinstance(arr, list) or len(arr) < 3:
         return pick_top_news_rule()
-
-    rule_by_tag = {
-        "大促/电商": CATEGORY_RULES["大促电商"],
-        "童装/儿童运动": CATEGORY_RULES["童装儿童"],
-        "天气/功能消费": CATEGORY_RULES["天气防晒"],
-        "户外/运动场景": CATEGORY_RULES["户外运动"],
-        "商圈/零售经营": CATEGORY_RULES["商圈消费"],
-    }
 
     source_lookup = {
         clean_title(x.get("title", "")): x.get("source", "公开资讯")
@@ -526,28 +581,36 @@ def pick_top_news_deepseek():
 
     result = []
     used = set()
+    used_cats = set()
 
     for row in arr:
+        if len(result) >= 5:
+            break
         if not isinstance(row, dict):
             continue
+
         title = short(row.get("title", ""), 42)
         if not title or title in used:
             continue
 
-        tag = row.get("category", "商圈/零售经营")
-        rule = rule_by_tag.get(tag, CATEGORY_RULES["商圈消费"])
-        source = "公开资讯"
+        cat = clean_title(row.get("category", "商圈零售"))
+        rule = CATEGORY_RULES.get(cat, CATEGORY_RULES["商圈零售"])
 
+        # 同类最多两条，电商平台最多一条，避免618霸屏
+        if cat == "电商平台" and cat in used_cats:
+            continue
+
+        source = "公开资讯"
         for raw_title, raw_source in source_lookup.items():
             if title[:10] in raw_title or raw_title[:10] in title:
                 source = raw_source
                 break
 
-        desc = clean_title(row.get("reason", "")) or rule["desc"]
+        desc = short_cn(row.get("reason", ""), 32) or rule["desc"]
 
         result.append({
             "title": title,
-            "tag": tag,
+            "tag": rule["tag"],
             "source": source,
             "desc": desc,
             "logo": rule["logo"],
@@ -555,6 +618,7 @@ def pick_top_news_deepseek():
             "class": rule["class"],
         })
         used.add(title)
+        used_cats.add(cat)
 
     fallback = pick_top_news_rule()
     for item in fallback:
@@ -573,7 +637,7 @@ top_news = pick_top_news_deepseek()
 
 region_map = {
     "east": {"name": "华东", "city": "上海/江苏/浙江", "weather_key": "east", "keywords": ["上海", "杭州", "南京", "苏州", "宁波", "江苏", "浙江"]},
-    "central": {"name": "华中", "city": "湖北/湖南/江西", "weather_key": "east", "keywords": ["武汉", "长沙", "南昌", "郑州", "湖北", "湖南", "江西"]},
+    "central": {"name": "华中", "city": "湖北/湖南/江西", "weather_key": "east", "keywords": ["武汉", "长沙", "南昌", "郑州", "湖北", "湖南", "江西", "河南"]},
     "south": {"name": "华南", "city": "广东/广西", "weather_key": "south", "keywords": ["广州", "深圳", "佛山", "南宁", "广东", "广西", "厦门", "福建"]},
     "southwest": {"name": "西南", "city": "四川/重庆/贵州", "weather_key": "southwest", "keywords": ["成都", "重庆", "贵阳", "昆明", "四川", "贵州", "云南"]},
     "northwest": {"name": "西北", "city": "陕西/甘肃/宁夏", "weather_key": "northwest", "keywords": ["西安", "兰州", "银川", "陕西", "甘肃", "宁夏", "新疆"]},
@@ -581,40 +645,52 @@ region_map = {
 
 SCENE_POOLS = {
     "rain": {
-        "hot": ["降雨扰动客流", "雨天影响到店", "局地降雨需关注"],
-        "flow": ["室内客流承接增强", "商场活动更关键", "客流向室内集中"],
-        "signal": ["防雨防滑与轻防护品类关注提升"],
-        "action": ["强化防雨防滑陈列，前置室内运动场景"],
+        "hot": ["雨天到店承接", "降雨影响客流", "室内场景前置"],
+        "flow": ["客流更容易向商场和室内运动场景集中"],
+        "signal": ["防雨、防滑、轻防护和室内运动品类承接更关键"],
+        "action": ["强化防雨防滑陈列，前置室内运动和试穿体验"],
     },
     "high_temp": {
-        "hot": ["高温带动夏季品类", "防晒凉感热度上升", "暑热推动功能消费"],
-        "flow": ["防晒与速干需求提升", "短裤T恤关注上升", "户外转向功能防护"],
-        "signal": ["防晒衣、凉感T和速干短裤进入主推窗口"],
-        "action": ["前置防晒凉感组合，强化短裤T恤连带"],
+        "hot": ["暑热带动功能消费", "防晒凉感窗口", "夏季品类前置"],
+        "flow": ["防晒、凉感、速干和短裤T恤关注度提升"],
+        "signal": ["防晒衣、凉感T、速干短裤和透气童鞋进入主推窗口"],
+        "action": ["前置防晒凉感组合，强化夏季功能区和连带陈列"],
     },
     "promotion": {
-        "hot": ["大促节点带动关注", "平台预售强化心智", "618带动品类曝光"],
-        "flow": ["直播同款转化提升", "爆款价格带受关注", "线上热度外溢门店"],
-        "signal": ["大促心智强化，夏季爆款与直播同款承接更关键"],
-        "action": ["强化爆款价格带，承接直播同款与门店转化"],
+        "hot": ["平台热度外溢", "大促心智强化", "直播同款承接"],
+        "flow": ["线上内容种草可能外溢到门店试穿和比价"],
+        "signal": ["大促和直播同款强化价格心智，门店需承接爆款和套装需求"],
+        "action": ["强化爆款价格带、直播同款提示和导购转化话术"],
     },
     "kids": {
-        "hot": ["儿童运动场景扩张", "亲子需求升温", "校园场景延续"],
-        "flow": ["亲子客流增加", "校园运动带动连带", "童鞋童服组合增强"],
+        "hot": ["亲子运动延伸", "校园场景活跃", "童装连带提升"],
+        "flow": ["亲子、校园和周末运动场景带动童鞋童服组合"],
         "signal": ["儿童运动、校园和亲子场景继续带动鞋服组合需求"],
-        "action": ["强化亲子校园陈列，提升童鞋服装连带"],
+        "action": ["强化亲子校园陈列，提升童鞋服装和配件连带"],
     },
     "outdoor": {
-        "hot": ["轻户外热度提升", "户外出行带动消费", "文旅场景延伸"],
-        "flow": ["骑行露营消费增加", "户外休闲客群活跃", "亲子户外需求增加"],
-        "signal": ["轻户外、帽包配件和防晒装备存在连带空间"],
-        "action": ["增加轻户外组合，强化出行场景展示"],
+        "hot": ["轻户外客群活跃", "城市出行升温", "文旅场景延伸"],
+        "flow": ["骑行、露营、文旅和亲子户外带动装备需求"],
+        "signal": ["轻户外、帽包配件、防晒装备和舒适鞋履存在连带空间"],
+        "action": ["增加轻户外组合，强化出行场景和帽包配件展示"],
     },
     "mall": {
-        "hot": ["商圈活动带动关注", "会员运营增强", "门店客流需跟进"],
-        "flow": ["周末客流活跃", "会员活动带动转化", "商场活动提升停留"],
-        "signal": ["商圈客流修复，但转化仍依赖会员和连带运营"],
-        "action": ["加强会员活动、门口堆头和导购试穿转化"],
+        "hot": ["商圈活动承接", "会员转化关键", "门店体验强化"],
+        "flow": ["商场活动和会员运营影响到店停留与成交效率"],
+        "signal": ["商圈客流修复仍依赖会员活动、陈列展示和导购试穿转化"],
+        "action": ["加强会员活动、门口堆头、场景陈列和导购试穿转化"],
+    },
+    "macro": {
+        "hot": ["消费信心分化", "宏观消费跟踪", "客单压力关注"],
+        "flow": ["收入预期和社零变化可能影响客单、折扣敏感度和会员复购"],
+        "signal": ["宏观消费分化下，中低价格带、功能刚需和会员精细化更关键"],
+        "action": ["关注价格带结构，优化折扣节奏和会员分层触达"],
+    },
+    "tech": {
+        "hot": ["AI科技热度外溢", "智能内容种草", "科技心智升温"],
+        "flow": ["AI和智能硬件话题提升年轻家庭对科技运动装备的关注"],
+        "signal": ["科技热点可转化为运动科技、功能面料和智能内容种草机会"],
+        "action": ["强化运动科技卖点表达，结合短视频内容进行场景化种草"],
     },
 }
 
@@ -627,14 +703,18 @@ def detect_scene_rule(local_text, weather_key):
         scenes.append("rain")
     if t in ["very_hot", "hot"]:
         scenes.append("high_temp")
-    if any(k in text for k in ["618", "大促", "预售", "战报", "直播"]):
+    if any(k in text for k in ["618", "大促", "预售", "战报", "直播", "抖音", "小红书"]):
         scenes.append("promotion")
-    if any(k in text for k in ["童装", "儿童", "亲子", "校园"]):
+    if any(k in text for k in ["童装", "儿童", "亲子", "校园", "青少年"]):
         scenes.append("kids")
-    if any(k in text for k in ["户外", "骑行", "露营", "文旅", "出行"]):
+    if any(k in text for k in ["户外", "骑行", "露营", "文旅", "出行", "赛事"]):
         scenes.append("outdoor")
-    if any(k in text for k in ["商场", "商圈", "客流", "门店", "会员"]):
+    if any(k in text for k in ["商场", "商圈", "客流", "门店", "会员", "购物中心"]):
         scenes.append("mall")
+    if any(k in text for k in ["GDP", "社零", "消费", "就业", "收入", "政策", "补贴", "内需"]):
+        scenes.append("macro")
+    if any(k in text for k in ["AI", "人工智能", "机器人", "智能", "科技"]):
+        scenes.append("tech")
 
     if not scenes:
         scenes = ["kids", "mall"] if SEASON == "summer" else ["mall", "outdoor"]
@@ -653,7 +733,7 @@ def build_region_reports_rule():
 
     for region, cfg in region_map.items():
         local_titles = [t for t in titles if any(k in t for k in cfg["keywords"])]
-        local_text = " ".join(local_titles[:10]) or joined[:300]
+        local_text = " ".join(local_titles[:10]) or joined[:500]
         scenes = detect_scene_rule(local_text, cfg["weather_key"])
 
         reports[region] = {
@@ -665,102 +745,94 @@ def build_region_reports_rule():
 
     return reports, actions
 
-def build_region_reports_deepseek():
-    region_payload = []
+def region_news_text_for(cfg):
+    local_titles = [t for t in titles if any(k in t for k in cfg["keywords"])]
+    if not local_titles:
+        local_titles = titles[:12]
+    return "\n".join(local_titles[:12])
 
-    for region, cfg in region_map.items():
-        local_titles = [t for t in titles if any(k in t for k in cfg["keywords"])]
-        if not local_titles:
-            local_titles = titles[:8]
-
-        region_payload.append({
-            "key": region,
-            "name": cfg["name"],
-            "city": cfg["city"],
-            "weather": weather_desc(cfg["weather_key"]),
-            "weather_type": weather_business_type(cfg["weather_key"]),
-            "weather_3days": [
-                weather_day_label(cfg["weather_key"], 0),
-                weather_day_label(cfg["weather_key"], 1),
-                weather_day_label(cfg["weather_key"], 2),
-            ],
-            "news": local_titles[:10],
-        })
-
-    top_news_text = "\n".join([f"{i+1}. {x['title']}｜{x['tag']}" for i, x in enumerate(top_news)])
-    global_news_text = "\n".join(titles[:35])
+def build_one_region_deepseek(region, cfg, top_news_text, global_news_text):
+    local_news_text = region_news_text_for(cfg)
+    weather_text = f"{weather_desc(cfg['weather_key'])}；未来三天：{weather_day_label(cfg['weather_key'],0)}、{weather_day_label(cfg['weather_key'],1)}、{weather_day_label(cfg['weather_key'],2)}"
 
     prompt = f"""
 你是361°儿童总部经营管理部的区域经营分析师。
-请基于【区域新闻、全国热点、宏观消费、GDP/社零、就业收入、文旅出行、天气、大促、电商平台、鞋服品类、儿童运动、商圈客流】，为5个区域生成“区域经营雷达”。
-每个区域必须优先使用对应区域新闻；如果区域新闻不足，再结合全国宏观消费、天气和平台热点推断。
-每个区域内容必须体现“当地实事/天气/消费场景”至少一个具体触发因素，不能只写通用经营话术。
+请为【{cfg['name']}（{cfg['city']}）】生成日报表格中的一行“区域经营雷达”。
 
-输出严格JSON对象，不要解释。
-key必须为 east, central, south, southwest, northwest。
+必须基于当天信息，不要套用固定区域模板。
+优先使用本区域新闻；如果本区域新闻不足，再结合全国宏观消费、天气、平台热点和品类趋势推断，但必须写出具体触发因素。
 
-每个区域包含4个字段：
+输出严格JSON对象，不要解释，字段只能是：
+hot, flow, signal, action
 
-hot：核心信号，14-22字。
-要求：不要只写“降雨扰动客流”“会员运营增强”这种模板词，要结合区域天气/新闻/消费热点，写成有判断的短句。
+字段要求：
+hot：14-22字，核心信号，必须体现一个具体触发因素。
+flow：24-38字，判断客流从哪里来、往哪里去、什么场景更强。
+signal：40-60字，结合天气/新闻/品类机会，说明消费机会或潜在风险。
+action：40-60字，具体到门店、商品、陈列、会员、导购、直播同款或商圈承接动作。
 
-flow：客流/场景判断，24-38字。
-要求：判断客流从哪里来、往哪里去、什么场景更强，比如商场、亲子、校园、户外、室内运动、大促到店承接。
+限制：
+1. 不要写“降雨扰动客流”“会员运营增强”“关注提升”这种模板词；
+2. 必须出现至少一个具体因素：本地新闻、天气、平台大促、宏观消费、文旅出行、AI科技、品牌动作或品类机会；
+3. 语气像总部给区域销售看的经营提醒，不像天气说明；
+4. 短句、有信息密度，适合放进日报表格。
 
-signal：AI经营判断，40-60字。
-要求：结合天气+区域新闻+鞋服品类机会，说明具体品类、消费机会和潜在风险。
-
-action：建议动作，40-60字。
-要求：具体到门店、商品、陈列、会员、导购、直播同款、商圈承接或区域运营动作。
-
-强制要求：
-1. 五个区域内容必须明显不同，不能复用同一句；
-2. 不要写空泛词，比如“关注提升”“需求增加”，必须写清楚什么品类、什么场景、什么动作；
-3. 不预设区域方向，必须根据当日区域新闻、天气、消费热点自动判断；
-4. 若某区域无明显本地新闻，可结合全国热点与该区域天气推断，但必须写出推断依据；
-5. 每个区域的判断应体现差异，不允许五个区域套用同一套品类或动作；
-6. 优先写“今天为什么值得关注”，再写“门店应该怎么接”；
-7. 内容要像总部给区域销售看的经营提醒，不要像天气说明。
-8. 语气要像总部给区域销售看的经营判断，不要像普通天气说明；
-9. 内容适合放在日报表格中，不要长句，偏向中短句但要有信息密度。
+本区域新闻：
+{local_news_text}
 
 今日TOP资讯：
 {top_news_text}
 
-全局新闻：
+全局新闻摘要：
 {global_news_text}
 
-区域数据：
-{json.dumps(region_payload, ensure_ascii=False)}
+天气：
+{weather_text}
 """
-
-    obj = ask_deepseek_json(prompt, max_tokens=1600)
+    obj = ask_deepseek_json(prompt, max_tokens=650)
     if not isinstance(obj, dict):
-        return build_region_reports_rule()
+        return None
+
+    required = ["hot", "flow", "signal", "action"]
+    if not all(clean_title(obj.get(k, "")) for k in required):
+        return None
+
+    # 过滤明显模板化输出，失败则交给规则兜底
+    bad_phrases = ["降雨扰动客流", "会员运营增强", "关注提升", "需求增加", "商场活动更关键"]
+    joined_obj = "".join(clean_title(obj.get(k, "")) for k in required)
+    if any(p in joined_obj for p in bad_phrases):
+        return None
+
+    return {
+        "hot": short_cn(obj.get("hot", ""), 24),
+        "flow": short_cn(obj.get("flow", ""), 42),
+        "signal": short_cn(obj.get("signal", ""), 66),
+        "action": short_cn(obj.get("action", ""), 66),
+    }
+
+def build_region_reports_deepseek():
+    fallback_reports, fallback_actions = build_region_reports_rule()
+
+    top_news_text = "\n".join([f"{i+1}. {x['title']}｜{x['tag']}" for i, x in enumerate(top_news)])
+    global_news_text = "\n".join(titles[:30])
 
     reports = {}
     actions = {}
 
-    fallback_reports, fallback_actions = build_region_reports_rule()
+    for region, cfg in region_map.items():
+        row = build_one_region_deepseek(region, cfg, top_news_text, global_news_text)
 
-    for region in region_map.keys():
-        row = obj.get(region, {})
-        if not isinstance(row, dict):
+        if row is None:
             reports[region] = fallback_reports[region]
             actions[region] = fallback_actions[region]
             continue
 
-        hot = short_cn(row.get("hot", fallback_reports[region]["change"]), 24)
-        flow = short_cn(row.get("flow", fallback_reports[region]["impact"]), 42)
-        signal = short_cn(row.get("signal", fallback_reports[region]["action"]), 66)
-        action = short_cn(row.get("action", fallback_actions[region]), 66)
-
         reports[region] = {
-            "change": hot,
-            "impact": flow,
-            "action": signal + "；" + action,
+            "change": row["hot"],
+            "impact": row["flow"],
+            "action": row["signal"],
         }
-        actions[region] = action
+        actions[region] = row["action"]
 
     return reports, actions
 
@@ -788,6 +860,8 @@ for idx, r in enumerate(sorted_regions):
 # =========================
 
 def make_today_insight_rule():
+    if any(k in joined for k in ["GDP", "社零", "消费", "就业", "收入", "政策", "内需"]):
+        return "宏观消费与平台流量共同影响零售节奏，价格带、客流与功能品类需同步跟踪。"
     if any(k in joined for k in ["618", "战报", "大促", "预售"]):
         return "618战报持续释放，运动品牌线上增长与夏季品类竞争同步升温。"
     if any(k in joined for k in ["防晒", "凉感", "速干", "高温"]):
@@ -800,15 +874,15 @@ def make_today_insight_rule():
 
 def make_today_insight_deepseek():
     prompt = f"""
-请基于以下运动鞋服行业新闻，写一句今日行业判断。
+请基于以下新闻，写一句今日行业判断。
 要求：
-1. 只讲资讯趋势，不写门店执行动作；
-2. 45字以内；
-3. 面向运动鞋服/童装行业；
+1. 可以覆盖运动鞋服、童装、宏观消费、社零/GDP、文旅出行、AI科技和平台流量；
+2. 只讲资讯趋势，不写门店执行动作；
+3. 45字以内；
 4. 不要口号，不要空话。
 
 新闻：
-{chr(10).join(titles[:25])}
+{chr(10).join(titles[:30])}
 """
     text = ask_deepseek_text(prompt, max_tokens=120)
     if not text:
@@ -818,14 +892,16 @@ def make_today_insight_deepseek():
 def make_ai_summary_rule():
     parts = []
 
+    if any(k in joined for k in ["GDP", "社零", "消费", "就业", "收入", "政策", "内需"]):
+        parts.append("宏观消费与收入预期影响零售信心")
     if any(k in joined for k in ["618", "大促", "预售", "战报"]):
         parts.append("大促与平台流量仍是短期主线")
     if any(k in joined for k in ["防晒", "凉感", "速干", "高温"]):
         parts.append("防晒、凉感、速干等夏季功能品类升温")
     if any(k in joined for k in ["童装", "儿童", "亲子", "校园"]):
         parts.append("儿童运动与亲子校园场景延续")
-    if any(k in joined for k in ["户外", "骑行", "露营", "跑步", "赛事"]):
-        parts.append("轻户外与跑步场景带动鞋服装备关注")
+    if any(k in joined for k in ["户外", "骑行", "露营", "跑步", "赛事", "文旅"]):
+        parts.append("轻户外与文旅场景带动鞋服装备关注")
     if any(weather_business_type(k) in ["rain", "storm"] for k in ["north", "east", "south", "southwest", "northwest"]):
         parts.append("降雨天气可能影响区域客流")
 
@@ -835,7 +911,7 @@ def make_ai_summary_rule():
     return "；".join(parts[:4]) + "。"
 
 def make_ai_summary_deepseek():
-    news_text = "\n".join(titles[:30])
+    news_text = "\n".join(titles[:35])
     weather_text = "；".join([
         weather_desc("north"),
         weather_desc("east"),
@@ -850,7 +926,7 @@ def make_ai_summary_deepseek():
 
 要求：
 1. 要有明确判断，不要只是罗列；
-2. 同时覆盖：大促/平台流量、夏季功能品类、儿童运动或亲子场景、天气对客流的影响；
+2. 可覆盖：宏观消费/GDP社零、平台流量、大促、夏季功能品类、儿童运动、文旅出行、AI科技、天气对客流影响；
 3. 要体现“当前最应该关注什么”；
 4. 不要分点，不要口号；
 5. 适合放在日报顶部。
@@ -868,10 +944,9 @@ def make_ai_summary_deepseek():
 
 today_insight = make_today_insight_deepseek()
 ai_summary = make_ai_summary_deepseek()
+
 def make_ai_warnings():
-
-    news_text = "\n".join(titles[:25])
-
+    news_text = "\n".join(titles[:30])
     weather_text = "；".join([
         weather_desc("north"),
         weather_desc("east"),
@@ -888,17 +963,16 @@ def make_ai_warnings():
 2. 全国天气
 3. 电商大促
 4. 区域消费趋势
+5. 宏观消费、政策、社零/GDP、文旅出行、AI科技热点
 
-生成3条：
-经营风险/机会预警。
+生成3条经营风险/机会预警。
 
 要求：
-1. 输出严格JSON数组
-2. 每条30-50字
-3. 必须像总部经营预警
-4. 不要空话
-5. 必须具体到：
-   客流、品类、会员、直播、天气、商圈、区域
+1. 输出严格JSON数组；
+2. 每条30-50字；
+3. 必须像总部经营预警；
+4. 不要空话；
+5. 必须具体到客流、品类、会员、直播、天气、商圈、区域、价格带或政策影响。
 
 新闻：
 {news_text}
@@ -906,18 +980,16 @@ def make_ai_warnings():
 天气：
 {weather_text}
 """
-
-    arr = ask_deepseek_json(prompt, max_tokens=300)
+    arr = ask_deepseek_json(prompt, max_tokens=400)
 
     if not isinstance(arr, list):
         return [
-            "618预售持续升温，直播同款与低价爆款竞争加剧，需关注核心SKU库存与价格带。",
-            "华南与华中降雨增强，室内客流承接能力将影响周末门店转化效率。",
+            "平台流量和促消费信息交织，需关注核心SKU库存、价格带和直播同款承接。",
+            "局地降雨影响到店节奏，室内客流承接能力将影响周末门店转化效率。",
             "轻户外与亲子场景持续升温，帽包、防晒与运动凉鞋存在连带增长机会。"
         ]
 
     result = []
-
     for x in arr:
         t = clean_title(str(x))
         if t:
@@ -928,16 +1000,85 @@ def make_ai_warnings():
 
     return result[:3]
 
-
 warnings = make_ai_warnings()
 
 # =========================
 # 第四部分
 # =========================
 
-def build_ai_trends():
-    news_text = "\n".join(titles[:35])
+def build_ai_trends_rule():
+    # 兜底也要基于当日新闻关键词，不再返回固定模板
+    candidates = []
+    if any(k in joined for k in ["GDP", "社零", "消费", "就业", "政策", "收入"]):
+        candidates.append({
+            "title": "宏观消费影响客单",
+            "desc": "消费与收入预期变化影响客单和折扣敏感度，门店需优化价格带与会员转化。",
+            "tag": "宏观趋势"
+        })
+    if any(k in joined for k in ["618", "大促", "预售", "直播", "抖音", "小红书"]):
+        candidates.append({
+            "title": "平台热度外溢门店",
+            "desc": "大促和内容种草带动比价与试穿需求，需承接直播同款和核心爆款。",
+            "tag": "平台趋势"
+        })
+    if any(k in joined for k in ["防晒", "凉感", "速干", "高温", "降雨", "防雨"]):
+        candidates.append({
+            "title": "天气驱动功能陈列",
+            "desc": "天气变化带动防晒、凉感、防雨与速干需求，门店陈列需随区域动态调整。",
+            "tag": "天气趋势"
+        })
+    if any(k in joined for k in ["童装", "儿童", "亲子", "校园"]):
+        candidates.append({
+            "title": "亲子校园带动连带",
+            "desc": "儿童运动、亲子和校园场景带动套装与童鞋组合，导购需强化搭配转化。",
+            "tag": "儿童趋势"
+        })
+    if any(k in joined for k in ["户外", "骑行", "露营", "文旅", "出行", "赛事"]):
+        candidates.append({
+            "title": "文旅户外延伸场景",
+            "desc": "文旅、骑行和轻户外带动出行装备需求，帽包、防晒和舒适鞋履可连带。",
+            "tag": "场景趋势"
+        })
+    if any(k in joined for k in ["AI", "人工智能", "机器人", "智能", "科技"]):
+        candidates.append({
+            "title": "AI热点带动科技心智",
+            "desc": "AI和智能硬件话题提升年轻家庭关注，运动科技和功能面料卖点需加强表达。",
+            "tag": "科技趋势"
+        })
 
+    fallback = [
+        {
+            "title": "区域客流需要细分",
+            "desc": "天气、商圈活动与平台热点影响到店节奏，重点商圈需强化会员和试穿转化。",
+            "tag": "客流趋势"
+        },
+        {
+            "title": "夏季商品节奏前置",
+            "desc": "夏季功能品类进入高频曝光阶段，防晒、凉感、速干和舒适鞋履需前置陈列。",
+            "tag": "季节趋势"
+        },
+        {
+            "title": "会员运营承接流量",
+            "desc": "线上种草和商圈活动带来短期客流，门店需用会员活动提升复购和转化。",
+            "tag": "会员趋势"
+        },
+        {
+            "title": "亲子出行关注提升",
+            "desc": "周末亲子与户外出行场景仍有需求，童装、童鞋和帽包配件可组合推荐。",
+            "tag": "亲子趋势"
+        },
+    ]
+
+    result = []
+    for x in candidates + fallback:
+        if len(result) >= 4:
+            break
+        if x["title"] not in [r["title"] for r in result]:
+            result.append(x)
+    return result[:4]
+
+def build_ai_trends():
+    news_text = "\n".join(titles[:40])
     weather_text = "；".join([
         weather_desc("north"),
         weather_desc("east"),
@@ -950,17 +1091,19 @@ def build_ai_trends():
 你是361°儿童总部经营管理部经营分析负责人。
 
 请基于：
-1. 行业新闻
+1. 今日行业新闻
 2. 天气变化
 3. 电商平台动态
 4. 运动与户外消费
 5. 商圈客流
+6. 宏观消费/GDP社零/就业收入/促消费政策
+7. 文旅出行、AI科技、品牌竞争
 
 生成4条“经营观察与动作建议”。
 
 要求：
 1. 必须基于今日新闻生成，不得使用通用模板；
-2. 每条必须体现当天新闻、天气变化或平台变化；
+2. 每条必须体现当天新闻、天气变化、平台变化、宏观消费或科技/文旅热点；
 3. 每条标题不能使用“大促节点提前蓄水、儿童运动场景扩张、商圈客流恢复分化、夏季功能品类升温”等固定模板；
 4. 每条内容要能看出今天发生了什么、对经营有什么影响；
 5. 输出严格JSON数组，长度4；
@@ -970,7 +1113,7 @@ def build_ai_trends():
 9. tag控制在4-6字；
 10. 不要空话，不要泛泛写“需求提升、场景升温、持续关注”。
 
-如果今日新闻里没有足够增量，也要从“天气变化、平台活动、区域客流、品牌动作”里提炼差异，不允许回到固定模板。
+如果今日新闻里没有足够增量，也要从“宏观消费、天气变化、平台活动、区域客流、品牌动作、文旅出行、AI科技”里提炼差异，不允许回到固定模板。
 
 新闻：
 {news_text}
@@ -982,39 +1125,31 @@ def build_ai_trends():
     arr = ask_deepseek_json(prompt, max_tokens=1200)
 
     if not isinstance(arr, list) or len(arr) < 4:
-        return [
-            {
-                "title": "大促节点提前蓄水",
-                "desc": "平台流量前置叠加夏季功能消费升温，门店需提前承接防晒、凉感与直播同款转化。",
-                "tag": "大促趋势"
-            },
-            {
-                "title": "儿童运动场景扩张",
-                "desc": "校园、亲子与轻户外场景持续活跃，儿童运动套装与童鞋连带值得强化。",
-                "tag": "儿童趋势"
-            },
-            {
-                "title": "商圈客流恢复分化",
-                "desc": "天气与区域活动影响到店节奏，重点商圈更依赖会员活动与场景陈列承接。",
-                "tag": "商圈趋势"
-            },
-            {
-                "title": "夏季功能品类升温",
-                "desc": "防晒、凉感与速干品类进入高频曝光阶段，需提前布局门店核心陈列。",
-                "tag": "季节趋势"
-            }
-        ]
+        return build_ai_trends_rule()
 
     result = []
+    bad_titles = ["大促节点提前蓄水", "儿童运动场景扩张", "商圈客流恢复分化", "夏季功能品类升温"]
 
-    for row in arr[:4]:
-        result.append({
-            "title": short_cn(row.get("title", ""), 18),
-            "desc": short_cn(row.get("desc", ""), 80),
-            "tag": short_cn(row.get("tag", ""), 8),
-        })
+    for row in arr:
+        if len(result) >= 4:
+            break
+        if not isinstance(row, dict):
+            continue
+        title = short_cn(row.get("title", ""), 18)
+        desc = short_cn(row.get("desc", ""), 80)
+        tag = short_cn(row.get("tag", ""), 8)
+        if not title or title in bad_titles:
+            continue
+        result.append({"title": title, "desc": desc, "tag": tag})
 
-    return result
+    if len(result) < 4:
+        for item in build_ai_trends_rule():
+            if len(result) >= 4:
+                break
+            if item["title"] not in [r["title"] for r in result]:
+                result.append(item)
+
+    return result[:4]
 
 trend_items = build_ai_trends()
 
@@ -1054,33 +1189,14 @@ KEYWORD_MAP = {
     "消费分层": "消费分层", "理性消费": "理性消费", "悦己": "悦己消费", "情绪消费": "情绪消费",
     "防雨": "防雨装备", "低温": "保暖", "保暖": "保暖", "防滑": "防滑鞋", "降雪": "防滑鞋", "结冰": "防滑鞋",
 
-    "AI": "AI",
-    "人工智能": "人工智能",
-   "机器人": "智能机器人",
-   "智能机器人": "智能机器人",
-   "国际化": "国际化",
-   "出海": "品牌出海",
-   "00后": "00后",
-   "年轻人": "年轻消费",
-   "体育精神": "体育精神",
-   "热爱": "热爱运动",
-   "成长": "关注成长",
-   "住房": "住房福利",
-   "福利": "员工福利",
-   "健身房": "健身房福利",
-   "蓬勃": "蓬勃发展",
-   "多品牌": "多品牌",
-   "解压": "运动解压",
-   "健康": "健康生活",
-   "消费": "消费趋势",
-   "科技": "科技趋势",
-   "产业": "产业趋势",
-   "政策": "政策信号",
-   "教育": "教育关注",
-   "就业": "就业趋势",
-   "暑期": "暑期消费",
-   "旅游": "文旅消费",
-   "亲子游": "亲子出行",
+    "AI": "AI", "人工智能": "人工智能", "机器人": "智能机器人", "智能机器人": "智能机器人",
+    "国际化": "国际化", "出海": "出海", "00后": "00后", "年轻人": "年轻人",
+    "体育精神": "体育精神", "热爱": "热爱运动", "成长": "关注成长",
+    "住房": "住房福利", "福利": "员工福利", "健身房": "健身房福利", "蓬勃": "蓬勃发展",
+    "多品牌": "多品牌", "解压": "运动最解压", "健康": "健康生活",
+    "消费": "消费趋势", "政策": "政策信号", "教育": "教育关注", "就业": "就业趋势",
+    "暑期": "暑期消费", "旅游": "文旅消费", "亲子游": "亲子出行",
+    "GDP": "GDP", "社零": "社零", "银发": "银发经济", "下沉": "下沉市场",
 }
 
 def build_words_rule():
@@ -1111,57 +1227,14 @@ def build_words_rule():
     }.get(SEASON, [])
 
     broad_fallback = [
-        "618战报", "品牌站位", "直播带货", "店播", "达人矩阵",
-        "门店陈列", "客流修复", "运动童装", "儿童运动", "轻户外",
-        "专业跑鞋", "篮球鞋", "户外鞋", "运动T恤", "功能面料",
-        "运动科技", "训练装备", "Nike", "阿迪达斯", "安踏", "李宁",
-        "特步", "On昂跑", "HOKA", "理性消费", "情绪消费"
+        "AI", "出海", "国际化", "体育精神", "年轻人", "情绪消费", "城市骑行", "健康生活",
+        "智能机器人", "运动最解压", "直播带货", "店播增长", "会员裂变", "多品牌",
+        "功能面料", "校园体育", "亲子出行", "智能穿戴", "运动社交", "户外露营",
+        "山系穿搭", "速干T", "防晒衣", "凉感科技", "碳板跑鞋", "透气跑鞋",
+        "新消费", "性价比", "松弛感", "悦己", "国潮", "她经济", "下沉市场", "银发经济",
+        "GDP", "社零", "暑假消费"
     ]
 
-    fallback = [
-
-    "AI",
-    "出海",
-    "国际化",
-    "00后",
-    "年轻人",
-
-    "体育精神",
-    "热爱运动",
-    "运动最解压",
-    "健康生活",
-    "关注成长",
-
-    "智能机器人",
-    "人工智能",
-    "智能穿戴",
-    "功能面料",
-
-    "城市骑行",
-    "户外露营",
-    "校园体育",
-    "运动社交",
-
-    "多品牌",
-    "店播增长",
-    "直播带货",
-    "会员裂变",
-
-    "情绪消费",
-    "女性消费",
-    "泛娱乐",
-    "社交话题",
-
-    "618战报",
-    "防晒衣",
-    "凉感科技",
-    "速干T",
-    "碳板跑鞋",
-
-    "山系穿搭",
-    "亲子出行",
-    "透气跑鞋",
-]
     preferred = [w for w, _ in counter.most_common()]
 
     words = []
@@ -1178,10 +1251,9 @@ def build_words_rule():
     return words[:18]
 
 def build_words_deepseek():
-
     news_text = "\n".join([
         clean_title(x.get("title", ""))
-        for x in news_items[:45]
+        for x in news_items[:50]
         if isinstance(x, dict)
     ])
 
@@ -1206,47 +1278,21 @@ def build_words_deepseek():
 2. TOP重点资讯
 3. 全国天气
 4. 当前消费趋势
+5. 宏观消费、GDP/社零、就业收入、文旅出行、AI科技、社会热点
 
 生成18个适合“行业热词雷达”的真实热词。
 
 要求：
-
 1. 输出严格JSON数组
 2. 每个词2-8字
 3. 必须更像“当天行业热点”
-4. 不要大量重复：
-   儿童运动、品牌站位、户外运动
-5. 必须覆盖：
-- 鞋服
-- 童装
-- 户外跑步
-- 电商平台
-- 品牌竞争
-- 天气消费
-- AI科技
-- 年轻人
-- 体育精神
-- 国际化
-- 出海
-- 城市消费
-- 健康生活
-- 社会热点
-6. 至少包含：
-- 3个当天真实热点
-- 3个运动行业词
-- 3个社会趋势词
-- 2个年轻人消费词
-7. 热词风格参考：
-商业媒体词云、微博热榜、36氪、晚点、虎嗅、抖音热点、消费趋势报告风格。
-
-不要只生成“鞋服品类词”，
-而是生成“运动行业 × 社会情绪 × 消费趋势 × 科技热点”的融合热词。
-
-真正的大厂BI热词，不只是行业词，而是行业、社会情绪、消费趋势的融合。
-请优先选择能体现“经营趋势中台BI”感的词。
-
-8. 尽量像：
-防晒衣、凉感科技、运动凉鞋、店播增长、618战报、城市骑行、速干T、山系穿搭、AI、出海、国际化、体育精神、年轻人、情绪消费、健康生活、多品牌、智能机器人、运动最解压
+4. 不要大量重复：儿童运动、品牌站位、户外运动
+5. 必须覆盖：鞋服、童装、户外跑步、电商平台、品牌竞争、天气消费、AI科技、年轻人、体育精神、国际化、出海、城市消费、健康生活、社会热点、情绪消费、女性消费、校园体育、智能硬件、多品牌、功能面料、运动社交、健身生活、泛娱乐热点、宏观消费
+6. 至少包含：3个当天真实热点、3个运动行业词、3个社会趋势词、2个年轻人消费词、1个宏观/消费信号词
+7. 热词风格参考：商业媒体词云、微博热榜、36氪、晚点、虎嗅、抖音热点、消费趋势报告风格。
+8. 不要只生成“鞋服品类词”，而是生成“运动行业 × 社会情绪 × 消费趋势 × 科技热点 × 宏观消费”的融合热词。
+9. 优先选择能体现“经营趋势中台BI”感的词。
+10. 尽量像：防晒衣、凉感科技、运动凉鞋、店播增长、618战报、城市骑行、速干T、山系穿搭、AI、出海、国际化、体育精神、年轻人、情绪消费、健康生活、多品牌、智能机器人、运动最解压、GDP、社零、下沉市场。
 
 TOP资讯：
 {top_text}
@@ -1258,24 +1304,15 @@ TOP资讯：
 {weather_text}
 """
 
-    arr = ask_deepseek_json(prompt, max_tokens=600)
-
+    arr = ask_deepseek_json(prompt, max_tokens=650)
     words = []
 
     if isinstance(arr, list):
-
         for w in arr:
-
             w = clean_title(str(w))
-
             bad_words = [
-                "儿童运动",
-                "品牌站位",
-                "户外运动",
-                "运动消费",
-                "消费趋势",
-                "行业趋势",
-                "运动品牌",
+                "儿童运动", "品牌站位", "户外运动", "运动消费", "消费趋势",
+                "行业趋势", "运动品牌", "运动行业"
             ]
 
             if (
@@ -1285,47 +1322,7 @@ TOP资讯：
             ):
                 words.append(w)
 
-    fallback = [
-    "AI",
-    "出海",
-    "国际化",
-    "体育精神",
-    "年轻人",
-    "情绪消费",
-    "城市骑行",
-    "健康生活",
-    "智能机器人",
-    "运动最解压",
-    "直播带货",
-    "店播增长",
-    "会员裂变",
-    "多品牌",
-    "功能面料",
-    "校园体育",
-    "亲子出行",
-    "智能穿戴",
-    "运动社交",
-    "户外露营",
-    "山系穿搭",
-    "速干T",
-    "防晒衣",
-    "凉感科技",
-    "碳板跑鞋",
-    "透气跑鞋",
-    "夏季轻户外",
-    "城市运动",
-    "新消费",
-    "性价比",
-    "松弛感",
-    "悦己",
-    "国潮",
-    "她经济",
-    "下沉市场",
-    "银发经济",
-    "暑假消费",
-]
-
-    for w in fallback:
+    for w in build_words_rule():
         if len(words) >= 18:
             break
         if w not in words:
@@ -1365,7 +1362,7 @@ data = {
     "south_icon": weather_icon("south"),
     "southwest_icon": weather_icon("southwest"),
     "northwest_icon": weather_icon("northwest"),
-    
+
     "north_heat": heat_class_by_weather("north"),
     "east_heat": heat_class_by_weather("east"),
     "south_heat": heat_class_by_weather("south"),
