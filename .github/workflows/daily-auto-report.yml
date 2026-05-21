@@ -52,6 +52,8 @@ jobs:
           python scripts/get_weather.py
 
       - name: Fill Report
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
           python scripts/fill_report.py
 
