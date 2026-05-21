@@ -10,7 +10,7 @@ WEBHOOK = os.getenv("REPORT_WEBHOOK")
 
 SOURCE_FILE = "daily-report.png"
 SEND_FILE = "daily-report-send.jpg"
-NEWS_FILE = Path("output/news/latest.json")
+NEWS_FILE = Path("output/news/top_news.json")
 
 
 def compress_image():
