@@ -469,9 +469,13 @@ def build_region_reports_deepseek():
 3. 每个区域必须说明“为什么今天关注这个点”，触发依据必须来自区域新闻、天气或全国热点；
 4. 五个区域表达要有差异，但差异来自数据，不来自人为固定分工；
 5. action不能重复，必须根据该区域当日触发因素生成不同动作；
-6. signal和action必须写得像正式经营建议，有“为什么+怎么办”，不能只写一句口号；
-7. action必须以“建议：”开头，且每个区域动作不能重复；
-8. action至少包含：商品组合、门店陈列、导购话术、会员触达、商圈活动承接中的至少2项；
+6. signal必须写成“因为什么 -> 导致什么经营变化 -> 哪个品类/场景受影响”。
+7. action必须包含至少2个具体动作，例如：
+   商品组合、门店陈列、会员触达、导购话术、直播间、价格带、折扣节奏、户外陈列、儿童专区、防晒陈列等。
+8. 不允许出现“强化运营”“关注转化”“提升效率”这种空泛表述。
+9. 每个区域动作必须不同，不能重复。
+10. flow必须说明“客流变化方向”和“消费场景变化”。
+11. 结果必须像经营管理层巡店分析，而不是新闻摘要。
 
 输出严格JSON对象，不要解释。
 
@@ -494,6 +498,8 @@ action：动作建议，50-80字，必须以“建议：”开头，必须具体
 {json.dumps(region_payload, ensure_ascii=False)}
 """
     obj = ask_deepseek_json(prompt, max_tokens=1800)
+    print("region deepseek result:", obj)
+    
     if not isinstance(obj, dict): return fallback_reports, fallback_actions
     reports, actions = {}, {}
     for region in region_map.keys():
@@ -502,9 +508,16 @@ action：动作建议，50-80字，必须以“建议：”开头，必须具体
             reports[region], actions[region] = fallback_reports[region], fallback_actions[region]
             continue
         hot = short_cn(row.get('hot', fallback_reports[region]['change']), 24)
-        flow = short_cn(row.get('flow', fallback_reports[region]['impact']), 42)
-        signal = short_cn(row.get('signal', fallback_reports[region]['action']), 66)
-        action = short_cn(row.get('action', fallback_actions[region]), 66)
+        flow = short_cn(row.get('flow', fallback_reports[region]['impact']), 60)
+        signal = short_cn(row.get('signal', fallback_reports[region]['action']), 90)
+        action = short_cn(row.get('action', fallback_actions[region]), 95)
+
+if not action.startswith("建议："):
+    action = "建议：" + action
+
+# 防止AI或兜底动作重复
+if action in actions.values():
+    action = f"建议：结合{region_map[region]['city']}当日新闻和天气变化，调整主推商品组合，强化门店陈列、会员触达和导购转化。"
         reports[region] = {'change':hot,'impact':flow,'action':signal}
         actions[region] = action
     return reports, actions
