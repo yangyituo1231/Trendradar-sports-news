@@ -193,7 +193,12 @@ def extract_json(text):
     return None
 
 def ask_deepseek_json(prompt, max_tokens=900):
+    print("ask_deepseek_json called")
+    
     client = deepseek_client()
+
+    print("client =", client)
+    
     if client is None: return None
     try:
         resp = client.chat.completions.create(
