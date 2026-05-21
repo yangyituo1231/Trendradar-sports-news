@@ -447,7 +447,6 @@ def build_region_payload():
     payload = {}
 
     for key, cfg in region_map.items():
-
         region_news = []
 
         # 从全部新闻里找该区域相关标题
@@ -466,7 +465,7 @@ def build_region_payload():
                 if title not in region_news:
                     region_news.append(title)
 
-       payload[key] = {
+        payload[key] = {
             "region": cfg["name"],
             "cities": cfg["city"],
 
