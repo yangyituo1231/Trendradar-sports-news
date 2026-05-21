@@ -110,8 +110,78 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
 .heat-dot-cold{background:#38bdf8!important}
 .heat-dot-normal{background:#16a34a!important}
 
-.china-map{position:absolute;left:78px;top:4px;width:405px;height:218px;display:flex;align-items:center;justify-content:center}
-.china-map-img{width:94%;max-height:212px;object-fit:contain;opacity:.98;filter:drop-shadow(0 8px 18px rgba(25,70,130,.10))}
+.china-map{
+  position:absolute;
+  left:78px;
+  top:4px;
+  width:405px;
+  height:218px;
+}
+.region{
+  position:absolute;
+  opacity:0.30;
+  filter:blur(10px);
+  border-radius:80px;
+  z-index:1;
+  pointer-events:none;
+}
+
+/* 华北/东北 */
+.north{
+  width:180px;
+  height:120px;
+  left:120px;
+  top:20px;
+  background:#ffd66b;
+}
+
+/* 华东 */
+.east{
+  width:160px;
+  height:180px;
+  right:80px;
+  top:90px;
+  background:#7ec8ff;
+}
+
+/* 华南 */
+.south{
+  width:170px;
+  height:120px;
+  right:120px;
+  bottom:30px;
+  background:#ff8f8f;
+}
+
+/* 西南 */
+.southwest{
+  width:180px;
+  height:150px;
+  left:100px;
+  bottom:40px;
+  background:#9ee6a0;
+}
+
+/* 西北 */
+.northwest{
+  width:220px;
+  height:160px;
+  left:10px;
+  top:80px;
+  background:#d8dde5;
+}
+
+.china-map-img{
+  position:absolute;
+  left:12px;
+  top:3px;
+  width:94%;
+  max-height:212px;
+  object-fit:contain;
+  opacity:.98;
+  filter:drop-shadow(0 8px 18px rgba(25,70,130,.10));
+  z-index:2;
+}
 .map-dot{position:absolute;width:11px;height:11px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 5px rgba(13,111,233,.08),0 6px 18px rgba(20,60,120,.20);animation:heatPulse 2.4s infinite ease-in-out;z-index:5}
 .dot-north{top:63px;right:168px}
 .dot-east{top:120px;right:103px}
@@ -289,7 +359,14 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
         <div class="legend-item">☔ 暴雨/强对流</div><div class="legend-item">🌡️ 高温/升温</div><div class="legend-item">☀️ 户外出行</div><div class="legend-item">🌧️ 局地冰雹</div><div class="legend-item">🌬️ 阵风影响</div>
       </div>
       <div class="weather-map {{weather_heat_class}}">
-        <div class="china-map">
+     <div class="china-map">
+
+       <div class="region north"></div>
+       <div class="region east"></div>
+       <div class="region south"></div>
+       <div class="region southwest"></div>
+       <div class="region northwest"></div>
+          
           <img src="_image/china-map.png" class="china-map-img">
           <div class="map-dot dot-north {{north_heat}}"></div>
           <div class="map-dot dot-east {{east_heat}}"></div>
