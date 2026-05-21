@@ -376,14 +376,37 @@ def total_region_score(weather_key, region_keywords):
 # 第一部分：DeepSeek优先资讯精选
 # =========================
 
+def topic_key(title):
+    title = clean_title(title)
+    title = re.sub(r"[，。！？、；：:,.!?（）()【】\[\]「」“”\"'《》]", "", title)
+
+    groups = {
+        "品牌PK": ["安踏", "李宁", "特步", "361", "度", "PK", "对比", "谁更", "成绩单", "克阿迪"],
+        "平台大促": ["618", "大促", "预售", "战报", "抖音", "天猫", "京东", "唯品", "直播"],
+        "防晒凉感": ["防晒", "凉感", "速干", "高温", "夏天", "防晒衣"],
+        "户外跑步": ["户外", "跑步", "跑鞋", "骑行", "露营", "徒步", "马拉松", "越野跑"],
+        "童装儿童": ["童装", "儿童", "亲子", "校园", "童鞋", "青少年", "Kappa Kids"],
+        "商圈客流": ["商场", "商圈", "门店", "客流", "会员", "奥莱", "购物中心"],
+        "宏观消费": ["GDP", "社零", "消费", "就业", "收入", "政策", "补贴", "内需"],
+        "文旅出行": ["文旅", "旅游", "暑期", "出行", "景区", "亲子游"],
+        "AI科技": ["AI", "人工智能", "机器人", "智能", "大模型", "科技"],
+    }
+
+    for k, words in groups.items():
+        if any(w in title for w in words):
+            return k
+
+    return title[:12]
+
+
 CATEGORY_RULES = {
     "电商平台": {
-        "keywords": ["618", "双11", "双十一", "双12", "99大促", "38大促", "大促", "预售", "电商", "直播", "抖音", "小红书", "种草", "百亿补贴", "战报", "平台", "店播"],
+        "keywords": ["618", "双11", "双十一", "双12", "大促", "预售", "电商", "直播", "抖音", "小红书", "种草", "百亿补贴", "战报", "平台", "店播"],
         "tag": "大促/电商", "logo": "大促", "icon": "🛒", "class": "logo-blue",
         "desc": "平台流量与大促节奏变化，重点观察夏季品类曝光、直播转化与终端承接。",
     },
     "品牌竞争": {
-        "keywords": ["品牌", "Nike", "耐克", "阿迪", "安踏", "李宁", "特步", "361", "Kappa", "HOKA", "昂跑", "亚瑟士", "C位", "市场份额"],
+        "keywords": ["品牌", "Nike", "耐克", "阿迪", "安踏", "李宁", "特步", "361", "Kappa", "HOKA", "昂跑", "亚瑟士", "C位", "市场份额", "PK"],
         "tag": "品牌竞争", "logo": "品牌", "icon": "🏷️", "class": "logo-purple",
         "desc": "品牌动作反映行业竞争重心，需关注价格带、产品心智与渠道打法变化。",
     },
@@ -442,8 +465,10 @@ fallback_by_category = {
     "政策监管": {"title": "促消费与监管信息需跟踪，终端活动应兼顾效率与合规", "source": "政策观察"},
 }
 
+
 def category_score(title, cat):
     return sum(1 for kw in CATEGORY_RULES[cat]["keywords"] if kw in title)
+
 
 def item_score(item, cat):
     title = clean_title(item.get("title", ""))
@@ -473,36 +498,48 @@ def item_score(item, cat):
 
     return score
 
+
 def pick_top_news_rule():
     used_titles = set()
+    used_topics = set()
+    used_cats = set()
     result = []
+
     priority = ["电商平台", "品牌竞争", "童装儿童", "天气消费", "户外运动", "商圈零售", "宏观消费", "文旅出行", "AI科技", "政策监管"]
 
-    # 先按分数跨类别挑选，不再固定第一条必须是618
     candidates = []
+
     for item in news_items:
+        if not isinstance(item, dict):
+            continue
+
         title = clean_title(item.get("title", ""))
         if not title:
             continue
+
         best_cat = max(priority, key=lambda c: item_score(item, c))
         score = item_score(item, best_cat)
+
         if score > 0:
             candidates.append((score, best_cat, item))
 
     candidates.sort(key=lambda x: x[0], reverse=True)
 
-    used_cats = set()
     for _, cat, item in candidates:
         if len(result) >= 5:
             break
+
         title = short(item.get("title", ""), 42)
-        if not title or title in used_titles:
+        tk = topic_key(title)
+
+        if not title or title in used_titles or tk in used_topics:
             continue
-        # 大促/电商最多一条，避免连日霸榜
-        if cat == "电商平台" and "电商平台" in used_cats:
+
+        if cat == "电商平台" and cat in used_cats:
             continue
 
         rule = CATEGORY_RULES[cat]
+
         result.append({
             "title": title,
             "tag": rule["tag"],
@@ -511,29 +548,42 @@ def pick_top_news_rule():
             "logo": rule["logo"],
             "icon": rule["icon"],
             "class": rule["class"],
+            "link": item.get("link") or item.get("url") or item.get("href") or "",
         })
+
         used_titles.add(title)
+        used_topics.add(tk)
         used_cats.add(cat)
 
-    # 不足5条再用兜底
     for cat in priority:
         if len(result) >= 5:
             break
+
         fb = fallback_by_category[cat]
+        tk = topic_key(fb["title"])
+
+        if fb["title"] in used_titles or tk in used_topics:
+            continue
+
         rule = CATEGORY_RULES[cat]
-        if fb["title"] not in used_titles:
-            result.append({
-                "title": fb["title"],
-                "tag": rule["tag"],
-                "source": fb["source"],
-                "desc": rule["desc"],
-                "logo": rule["logo"],
-                "icon": rule["icon"],
-                "class": rule["class"],
-            })
-            used_titles.add(fb["title"])
+
+        result.append({
+            "title": fb["title"],
+            "tag": rule["tag"],
+            "source": fb["source"],
+            "desc": rule["desc"],
+            "logo": rule["logo"],
+            "icon": rule["icon"],
+            "class": rule["class"],
+            "link": "",
+        })
+
+        used_titles.add(fb["title"])
+        used_topics.add(tk)
+        used_cats.add(cat)
 
     return result[:5]
+
 
 def pick_top_news_deepseek():
     if not titles:
@@ -561,73 +611,106 @@ def pick_top_news_deepseek():
 8. 输出严格JSON数组，长度5；
 9. 每项包含：title、category、reason；
 10. category只能从以下选择：{allowed_categories}；
-11. reason控制在28字以内，必须写经营启示，不要空话。
-
-如果今日新闻与昨日主题接近，也必须选择“信息增量更大”的新闻，不允许机械重复昨日TOP1。
+11. reason控制在28字以内，必须写经营启示，不要空话；
+12. 同一主题只能入选1条，例如“安踏/李宁/特步/361对比PK”只能保留最有信息量的一条；
+13. 5条应尽量分散在不同方向，不能4条都是品牌PK或618战报。
 
 新闻：
 {news_text}
 """
 
     arr = ask_deepseek_json(prompt, max_tokens=1100)
+
     if not isinstance(arr, list) or len(arr) < 3:
-        return pick_top_news_rule()
+        result = pick_top_news_rule()
+    else:
+        source_lookup = {
+            clean_title(x.get("title", "")): {
+                "source": x.get("source", "公开资讯"),
+                "link": x.get("link") or x.get("url") or x.get("href") or "",
+            }
+            for x in news_items
+            if isinstance(x, dict)
+        }
 
-    source_lookup = {
-        clean_title(x.get("title", "")): x.get("source", "公开资讯")
-        for x in news_items
-        if isinstance(x, dict)
-    }
+        result = []
+        used_titles = set()
+        used_topics = set()
+        used_cats = set()
 
-    result = []
-    used = set()
-    used_cats = set()
-
-    for row in arr:
-        if len(result) >= 5:
-            break
-        if not isinstance(row, dict):
-            continue
-
-        title = short(row.get("title", ""), 42)
-        if not title or title in used:
-            continue
-
-        cat = clean_title(row.get("category", "商圈零售"))
-        rule = CATEGORY_RULES.get(cat, CATEGORY_RULES["商圈零售"])
-
-        # 同类最多两条，电商平台最多一条，避免618霸屏
-        if cat == "电商平台" and cat in used_cats:
-            continue
-
-        source = "公开资讯"
-        for raw_title, raw_source in source_lookup.items():
-            if title[:10] in raw_title or raw_title[:10] in title:
-                source = raw_source
+        for row in arr:
+            if len(result) >= 5:
                 break
 
-        desc = short_cn(row.get("reason", ""), 32) or rule["desc"]
+            if not isinstance(row, dict):
+                continue
 
-        result.append({
-            "title": title,
-            "tag": rule["tag"],
-            "source": source,
-            "desc": desc,
-            "logo": rule["logo"],
-            "icon": rule["icon"],
-            "class": rule["class"],
-        })
-        used.add(title)
-        used_cats.add(cat)
+            title = short(row.get("title", ""), 42)
+            if not title:
+                continue
 
-    fallback = pick_top_news_rule()
-    for item in fallback:
-        if len(result) >= 5:
-            break
-        if item["title"] not in used:
-            result.append(item)
+            tk = topic_key(title)
+
+            if title in used_titles or tk in used_topics:
+                continue
+
+            cat = clean_title(row.get("category", "商圈零售"))
+            rule = CATEGORY_RULES.get(cat, CATEGORY_RULES["商圈零售"])
+
+            if cat == "电商平台" and cat in used_cats:
+                continue
+
+            source = "公开资讯"
+            link = ""
+
+            for raw_title, info in source_lookup.items():
+                if title[:10] in raw_title or raw_title[:10] in title:
+                    source = info["source"]
+                    link = info["link"]
+                    break
+
+            desc = short_cn(row.get("reason", ""), 32) or rule["desc"]
+
+            result.append({
+                "title": title,
+                "tag": rule["tag"],
+                "source": source,
+                "desc": desc,
+                "logo": rule["logo"],
+                "icon": rule["icon"],
+                "class": rule["class"],
+                "link": link,
+            })
+
+            used_titles.add(title)
+            used_topics.add(tk)
+            used_cats.add(cat)
+
+        fallback = pick_top_news_rule()
+
+        for item in fallback:
+            if len(result) >= 5:
+                break
+
+            tk = topic_key(item["title"])
+
+            if item["title"] not in used_titles and tk not in used_topics:
+                result.append(item)
+                used_titles.add(item["title"])
+                used_topics.add(tk)
+
+    # 输出给企业微信markdown使用，避免markdown继续发原始重复新闻
+    try:
+        Path("output/news").mkdir(parents=True, exist_ok=True)
+        Path("output/news/top_news.json").write_text(
+            json.dumps({"items": result}, ensure_ascii=False, indent=2),
+            encoding="utf-8"
+        )
+    except Exception as e:
+        print("write top_news.json error:", repr(e))
 
     return result[:5]
+
 
 top_news = pick_top_news_deepseek()
 
