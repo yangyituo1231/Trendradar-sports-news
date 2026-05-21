@@ -1,18 +1,21 @@
 import os
+import json
 import base64
 import hashlib
 import requests
+from pathlib import Path
 from PIL import Image
 
 WEBHOOK = os.getenv("REPORT_WEBHOOK")
 
 SOURCE_FILE = "daily-report.png"
 SEND_FILE = "daily-report-send.jpg"
+NEWS_FILE = Path("output/news/latest.json")
+
 
 def compress_image():
     img = Image.open(SOURCE_FILE).convert("RGB")
 
-    # 控制宽度，避免企业微信图片过大
     max_width = 1200
     if img.width > max_width:
         ratio = max_width / img.width
@@ -31,6 +34,7 @@ def compress_image():
         quality -= 8
 
     print(f"warning: image still large: {os.path.getsize(SEND_FILE) / 1024:.1f} KB")
+
 
 def send_image():
     if not WEBHOOK:
@@ -53,10 +57,84 @@ def send_image():
     }
 
     r = requests.post(WEBHOOK, json=payload, timeout=30)
-    print(r.status_code)
-    print(r.text)
-
+    print("image status:", r.status_code)
+    print("image response:", r.text)
     r.raise_for_status()
+
+
+def load_news_items():
+    if not NEWS_FILE.exists():
+        return []
+
+    try:
+        raw = json.loads(NEWS_FILE.read_text(encoding="utf-8"))
+        return raw.get("items", []) if isinstance(raw, dict) else raw
+    except Exception as e:
+        print("load news error:", repr(e))
+        return []
+
+
+def build_news_markdown(news_items):
+    lines = []
+    lines.append("## 📌 今日重点资讯")
+    lines.append("")
+
+    count = 0
+
+    for item in news_items:
+        if count >= 8:
+            break
+
+        if not isinstance(item, dict):
+            continue
+
+        title = str(item.get("title", "")).strip()
+        link = str(
+            item.get("link")
+            or item.get("url")
+            or item.get("href")
+            or ""
+        ).strip()
+        source = str(item.get("source", "行业资讯")).strip()
+
+        if not title or not link:
+            continue
+
+        count += 1
+        lines.append(f"{count}. [{title}]({link})")
+        lines.append(f"<font color=\"comment\">来源：{source}</font>")
+        lines.append("")
+
+    if count == 0:
+        return ""
+
+    return "\n".join(lines)
+
+
+def send_markdown(content):
+    if not content:
+        print("markdown empty, skipped")
+        return
+
+    if not WEBHOOK:
+        raise RuntimeError("REPORT_WEBHOOK is missing")
+
+    payload = {
+        "msgtype": "markdown",
+        "markdown": {
+            "content": content
+        }
+    }
+
+    r = requests.post(WEBHOOK, json=payload, timeout=30)
+    print("markdown status:", r.status_code)
+    print("markdown response:", r.text)
+    r.raise_for_status()
+
 
 if __name__ == "__main__":
     send_image()
+
+    news_items = load_news_items()
+    markdown_text = build_news_markdown(news_items)
+    send_markdown(markdown_text)
