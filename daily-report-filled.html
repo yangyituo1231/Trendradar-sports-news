@@ -196,39 +196,43 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
 .trend-desc{margin-top:2px;font-size:12px;line-height:1.35;color:#3c4f73}
 .trend-tag{background:#eef8ef;color:#1d8c54;border-radius:12px;text-align:center;padding:4px 7px;font-size:10px;font-weight:850}
 
-.word-cloud{height:245px;position:relative;border-radius:12px;border:1px solid #edf2fa;background:linear-gradient(135deg,
-
-    #fff7ed 0%,
-
-    #fff1f2 40%,
-
-    #fef9c3 100%);overflow:visible}
+.word-cloud{
+  height:245px;
+  position:relative;
+  border-radius:12px;
+  border:1px solid #edf2fa;
+  background:linear-gradient(180deg,#fbfdff 0%,#f4f8ff 100%);
+  overflow:hidden;
+}
 .word{
   position:absolute;
-  padding:10px 18px;
-  border-radius:18px;
+  font-weight:950;
+  white-space:nowrap;
+  line-height:1;
+  padding:7px 13px;
+  border-radius:13px;
   color:#fff;
-  font-weight:900;
-  box-shadow:0 4px 12px rgba(0,0,0,.12);
+  box-shadow:0 5px 12px rgba(20,60,110,.12);
 }
-.w1{font-size:46px;color:#063b88;left:215px;top:85px}
-.w2{font-size:34px;color:#0b64d8;left:220px;top:135px}
-.w3{font-size:28px;color:#0f9f6e;left:265px;top:185px}
-.w4{font-size:25px;color:#dc2626;left:470px;top:112px}
-.w5{font-size:24px;color:#f97316;left:70px;top:96px}
-.w6{font-size:22px;color:#16a34a;left:92px;top:158px}
-.w7{font-size:20px;color:#7c3aed;left:145px;top:45px}
-.w8{font-size:19px;color:#0b55c8;left:510px;top:170px}
-.w9{font-size:18px;color:#dc2626;left:78px;top:218px}
-.w10{font-size:17px;color:#0f766e;left:430px;top:45px}
-.w11{font-size:16px;color:#2563eb;left:555px;top:68px}
-.w12{font-size:15px;color:#9333ea;left:430px;top:228px}
-.w13{font-size:15px;color:#ea580c;left:34px;top:38px}
-.w14{font-size:14px;color:#0f766e;left:585px;top:36px}
-.w15{font-size:14px;color:#1d4ed8;left:26px;top:232px}
-.w16{font-size:13px;color:#be123c;left:570px;top:226px}
-.w17{font-size:13px;color:#7c3aed;left:330px;top:24px}
-.w18{font-size:13px;color:#15803d;left:165px;top:230px}
+
+.w1{font-size:36px;background:#ef4b2b;left:245px;top:78px}
+.w2{font-size:27px;background:#1767d8;left:255px;top:130px}
+.w3{font-size:23px;background:#20b85a;left:285px;top:178px}
+.w4{font-size:22px;background:#ef4b2b;left:455px;top:112px}
+.w5{font-size:21px;background:#f97316;left:70px;top:96px}
+.w6{font-size:20px;background:#20b85a;left:80px;top:158px}
+.w7{font-size:20px;background:#8b5cf6;left:285px;top:28px}
+.w8{font-size:18px;background:#1767d8;left:500px;top:76px}
+.w9{font-size:18px;background:#ef4b2b;left:82px;top:205px}
+.w10{font-size:17px;background:#10a36d;left:430px;top:36px}
+.w11{font-size:16px;background:#2563eb;left:530px;top:160px}
+.w12{font-size:15px;background:#9333ea;left:400px;top:205px}
+.w13{font-size:15px;background:#ea580c;left:35px;top:35px}
+.w14{font-size:15px;background:#22c55e;left:540px;top:24px}
+.w15{font-size:14px;background:#1d4ed8;left:25px;top:226px}
+.w16{font-size:14px;background:#be123c;left:540px;top:215px}
+.w17{font-size:14px;background:#7c3aed;left:350px;top:235px}
+.w18{font-size:14px;background:#15803d;left:175px;top:225px}
 
 .note{margin-top:6px;font-size:10px;color:#7384a2}
 .footer{margin-top:10px;display:flex;justify-content:space-between;font-size:10px;color:#7384a2}
@@ -244,7 +248,7 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
     <div class="sub-title">每日精选 · 洞察趋势 · 辅助决策</div>
   </div>
   <div class="stats">
-    <div class="stat"><div class="stat-title">📅 2026-05-21</div><div class="stat-small">星期四</div><div class="stat-small">更新于 10:06</div></div>
+    <div class="stat"><div class="stat-title">📅 2026-05-21</div><div class="stat-small">星期四</div><div class="stat-small">更新于 10:14</div></div>
     <div class="stat"><div class="stat-title">今日监测</div><div class="stat-num">208</div><div class="stat-small">条资讯</div></div>
     <div class="stat"><div class="stat-title">RSS资讯</div><div class="stat-num">80</div><div class="stat-small">条</div></div>
     <div class="stat"><div class="stat-title">重点摘要</div><div class="stat-num">5</div><div class="stat-small">条</div></div>
@@ -267,11 +271,11 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
     <div class="section-title"><span>一、重点资讯精选（TOP 5）</span><span class="more">查看更多 ›</span></div>
     <div class="section-body">
       <div class="news-list">
-        <div class="news-item"><div class="rank r1">1</div><div class="logo-box logo-blue"><div class="logo-icon">🛒</div><div class="logo-text">大促</div></div><div><div class="news-title">抖音电商618战报公布，商城订单量同比增长94% <span class="tag">大促/电商</span></div><div class="news-meta">05-21 10:06 ｜ 搜狐网</div><div class="news-desc">大促信息适度关注，重点看夏季品类曝光、直播种草、转化效率和终端承接。</div></div></div>
-        <div class="news-item"><div class="rank r2">2</div><div class="logo-box logo-sky"><div class="logo-icon">🧒</div><div class="logo-text">童装</div></div><div><div class="news-title">抖音618运动童鞋占据半壁江山，Kappa Kids、安踏儿童、吉普强势登榜 <span class="tag">童装/儿童运动</span></div><div class="news-meta">05-21 10:06 ｜ 母婴行业观察</div><div class="news-desc">儿童消费从单品购买转向亲子、校园、户外和运动场景综合经营。</div></div></div>
-        <div class="news-item"><div class="rank r3">3</div><div class="logo-box logo-sky"><div class="logo-icon">☀️</div><div class="logo-text">天气</div></div><div><div class="news-title">夏天穿衣就得透气凉快，今天这款情侣防晒凉感T特别适合怕热的宝子们！[开学季]上身凉感... <span class="tag">天气/功能消费</span></div><div class="news-meta">05-21 10:06 ｜ 新浪网</div><div class="news-desc">天气变化影响客流和主推节奏，防晒、凉感、防雨、防滑及保暖品类需动态前置。</div></div></div>
-        <div class="news-item"><div class="rank r4">4</div><div class="logo-box logo-green"><div class="logo-icon">🚴</div><div class="logo-text">户外</div></div><div><div class="news-title">安踏儿童助力儿童平衡车顶级赛事 新生代感受专业骑行运动魅力 <span class="tag">户外/运动场景</span></div><div class="news-meta">05-21 10:06 ｜ sh.chinanews.com.cn</div><div class="news-desc">户外、跑步、骑行、赛事和夜间消费延伸运动场景，带动装备与亲子需求。</div></div></div>
-        <div class="news-item"><div class="rank r5">5</div><div class="logo-box logo-dark"><div class="logo-icon">🏬</div><div class="logo-text">商圈</div></div><div><div class="news-title">折扣零售风起服饰消费先行 新中产女生奥莱唯品会挖到“宝藏” <span class="tag">商圈/零售经营</span></div><div class="news-meta">05-21 10:06 ｜ 新华网</div><div class="news-desc">商圈活动、会员运营和折扣零售影响周末客流与终端转化效率。</div></div></div>
+        <div class="news-item"><div class="rank r1">1</div><div class="logo-box logo-blue"><div class="logo-icon">🛒</div><div class="logo-text">大促</div></div><div><div class="news-title">抖音电商618战报公布，商城订单量同比增长94% <span class="tag">大促/电商</span></div><div class="news-meta">05-21 10:14 ｜ 搜狐网</div><div class="news-desc">大促信息适度关注，重点看夏季品类曝光、直播种草、转化效率和终端承接。</div></div></div>
+        <div class="news-item"><div class="rank r2">2</div><div class="logo-box logo-sky"><div class="logo-icon">🧒</div><div class="logo-text">童装</div></div><div><div class="news-title">抖音618运动童鞋占据半壁江山，Kappa Kids、安踏儿童、吉普强势登榜 <span class="tag">童装/儿童运动</span></div><div class="news-meta">05-21 10:14 ｜ 母婴行业观察</div><div class="news-desc">儿童消费从单品购买转向亲子、校园、户外和运动场景综合经营。</div></div></div>
+        <div class="news-item"><div class="rank r3">3</div><div class="logo-box logo-sky"><div class="logo-icon">☀️</div><div class="logo-text">天气</div></div><div><div class="news-title">夏天穿衣就得透气凉快，今天这款情侣防晒凉感T特别适合怕热的宝子们！[开学季]上身凉感... <span class="tag">天气/功能消费</span></div><div class="news-meta">05-21 10:14 ｜ 新浪网</div><div class="news-desc">天气变化影响客流和主推节奏，防晒、凉感、防雨、防滑及保暖品类需动态前置。</div></div></div>
+        <div class="news-item"><div class="rank r4">4</div><div class="logo-box logo-green"><div class="logo-icon">🚴</div><div class="logo-text">户外</div></div><div><div class="news-title">洛阳首家骆驼户外运动城日前在@洛阳王府井购物中心开业，门店囊括了户外徒步、户外露营、... <span class="tag">户外/运动场景</span></div><div class="news-meta">05-21 10:14 ｜ 新浪网</div><div class="news-desc">户外、跑步、骑行、赛事和夜间消费延伸运动场景，带动装备与亲子需求。</div></div></div>
+        <div class="news-item"><div class="rank r5">5</div><div class="logo-box logo-dark"><div class="logo-icon">🏬</div><div class="logo-text">商圈</div></div><div><div class="news-title">折扣零售风起服饰消费先行 新中产女生奥莱唯品会挖到“宝藏” <span class="tag">商圈/零售经营</span></div><div class="news-meta">05-21 10:14 ｜ 新华网</div><div class="news-desc">商圈活动、会员运营和折扣零售影响周末客流与终端转化效率。</div></div></div>
       </div>
       <div class="note">注：以上资讯来自公开媒体及平台，仅供经营观察参考。</div>
     </div>
@@ -425,7 +429,7 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
 
 <div class="footer">
   <div>数据来源：TrendRadar RSS日报 · Google News · 公开气象信息</div>
-  <div>生成时间：2026-05-21 10:06</div>
+  <div>生成时间：2026-05-21 10:14</div>
   <div>制作：运动品牌资讯日报自动化系统</div>
 </div>
 
