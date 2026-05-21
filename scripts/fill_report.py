@@ -205,7 +205,9 @@ def ask_deepseek_json(prompt, max_tokens=900):
             temperature=0.22,
             max_tokens=max_tokens,
         )
-        return extract_json(resp.choices[0].message.content.strip())
+        raw_text = resp.choices[0].message.content.strip()
+        print("deepseek raw:", raw_text[:1200])
+        return extract_json(raw_text)
     except Exception as e:
         print('DeepSeek JSON error:', repr(e))
         return None
