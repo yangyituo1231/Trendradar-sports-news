@@ -1,14 +1,11 @@
 name: Daily Auto Report
 
 on:
-  schedule:
-    - cron: '07 6 * * *'
+ schedule:
+  - cron: '27 22 * * *'
+  - cron: '37 22 * * *'
 
   workflow_dispatch:
-
-  push:
-    branches:
-      - master
 
 env:
   TZ: Asia/Shanghai
