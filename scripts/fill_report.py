@@ -55,24 +55,11 @@ if news_file.exists():
     try:
         raw = json.loads(news_file.read_text(encoding='utf-8'))
         news_items = raw.get('items', []) if isinstance(raw, dict) else raw
-        def parse_news_time(item):
-    v = item.get('published_at') or item.get('pubDate') or item.get('date') or item.get('time') or ''
-    if not v:
-        return 0
-    try:
-        dt = parsedate_to_datetime(v)
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone.utc)
-        return dt.timestamp()
-    except Exception:
-        return 0
-
-news_items = sorted(
-    [x for x in news_items if isinstance(x, dict)],
-    key=lambda x: (x.get('score', 0), parse_news_time(x)),
-    reverse=True
-)
     except Exception as e:
+        print('load latest news error:', repr(e))
+
+titles = [clean_title(x.get('title','')) for x in news_items if isinstance(x, dict) and x.get('title')]
+joined = ' '.join(titles)
         print('load latest news error:', repr(e))
 
 titles = [clean_title(x.get('title','')) for x in news_items if isinstance(x, dict) and x.get('title')]
@@ -889,12 +876,23 @@ for i,item in enumerate(trend_items, start=1):
 
 for i,item in enumerate(top_news, start=1):
     data[f'top{i}_title'] = item['title']
-   
     data[f'top{i}_tag'] = item['tag']
-    pub_time = item.get('published_at') or item.get('pubDate') or ''
+
+    pub_time = (
+        item.get('published_at')
+        or item.get('pubDate')
+        or item.get('date')
+        or item.get('time')
+        or ''
+    )
+
     data[f'top{i}_time'] = clean_title(pub_time)[:16] if pub_time else today.strftime('%m-%d %H:%M')
-    
+
     data[f'top{i}_source'] = item['source']
+    data[f'top{i}_desc'] = item['desc']
+    data[f'top{i}_logo'] = item['logo']
+    data[f'top{i}_icon'] = item['icon']
+    data[f'top{i}_logo_class'] = item['class']
     data[f'top{i}_desc'] = item['desc']
     data[f'top{i}_logo'] = item['logo']
     data[f'top{i}_icon'] = item['icon']
