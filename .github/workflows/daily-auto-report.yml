@@ -2,8 +2,7 @@ name: Daily Auto Report
 
 on:
   schedule:
-    - cron: '40 5 * * *'
-    - cron: '45 5 * * *'
+    - cron: '07 6 * * *'
 
   workflow_dispatch:
 
