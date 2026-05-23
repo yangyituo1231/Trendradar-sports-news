@@ -826,7 +826,7 @@ data = {
     'east_icon':weather_icon('east'),'central_icon':weather_icon('east'),'south_icon':weather_icon('south'),'southwest_icon':weather_icon('southwest'),'northwest_icon':weather_icon('northwest'),
     'north_heat':heat_class_by_weather('north'),'east_heat':heat_class_by_weather('east'),'south_heat':heat_class_by_weather('south'),'northwest_heat':heat_class_by_weather('northwest'),'central_heat':heat_class_by_weather('east'),
     'weather_range':f'{md(today)} ~ {md(day3)}','day1':md(today),'day2':md(day2),'day3':md(day3),
-    'weather_north':weather_desc('north'),'weather_east':weather_desc('east'),'weather_south':weather_desc('south'),'weather_southwest_label':weather_desc('southwest'),'weather_northwest':weather_desc('northwest'),
+    'weather_north':weather_desc('north'),'weather_east':weather_desc('east'),'weather_south':weather_desc('south'),'weather_southwest':weather_desc('southwest'),'weather_northwest':weather_desc('northwest'),
     'north_day1':weather_day_label('north',0),'north_day2':weather_day_label('north',1),'north_day3':weather_day_label('north',2),
     'east_day1':weather_day_label('east',0),'east_day2':weather_day_label('east',1),'east_day3':weather_day_label('east',2),
     'south_day1':weather_day_label('south',0),'south_day2':weather_day_label('south',1),'south_day3':weather_day_label('south',2),
