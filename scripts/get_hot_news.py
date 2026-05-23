@@ -4,7 +4,8 @@ import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 MAX_ITEMS = 100
@@ -609,6 +610,36 @@ def fetch_google_news_rss(keyword: str):
 def is_hard_negative(title: str) -> bool:
     return has_any(title, NEGATIVE_KEYWORDS)
 
+def parse_pub_time(item):
+    v = item.get("published_at") or item.get("pubDate") or item.get("date") or ""
+    if not v:
+        return None
+    try:
+        return parsedate_to_datetime(v)
+    except Exception:
+        return None
+
+
+def freshness_bonus(item):
+    dt = parse_pub_time(item)
+    if not dt:
+        return -10
+
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+
+    now = datetime.now(timezone.utc)
+    hours = (now - dt).total_seconds() / 3600
+
+    if hours <= 12:
+        return 35
+    if hours <= 24:
+        return 25
+    if hours <= 48:
+        return 12
+    if hours <= 72:
+        return 3
+    return -30
 
 def relevance_score(item: dict) -> int:
     title = item.get("title", "")
@@ -681,6 +712,7 @@ def relevance_score(item: dict) -> int:
     if "财报" in title and not has_any(title, ["童装", "儿童", "品牌", "零售", "消费", "渠道", "361", "安踏", "李宁", "特步"]):
         score -= 12
 
+    score += freshness_bonus(item)
     return score
 
 
@@ -790,7 +822,13 @@ def diversify(items):
     for key in order:
         final.extend(buckets[key][:limits[key]])
 
-    final.sort(key=lambda x: x.get("score", 0), reverse=True)
+    final.sort(
+    key=lambda x: (
+        x.get("score", 0),
+        parse_pub_time(x).timestamp() if parse_pub_time(x) else 0
+    ),
+    reverse=True
+)
     return final[:MAX_ITEMS]
 
 
@@ -818,7 +856,13 @@ def main():
             item["score"] = score
             filtered.append(item)
 
-    filtered.sort(key=lambda x: x.get("score", 0), reverse=True)
+    filtered.sort(
+    key=lambda x: (
+        x.get("score", 0),
+        parse_pub_time(x).timestamp() if parse_pub_time(x) else 0
+    ),
+    reverse=True
+)
     filtered = diversify(filtered)
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
