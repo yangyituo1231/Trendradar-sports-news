@@ -1,5 +1,6 @@
 from pathlib import Path
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 import random, json, re, os
 from collections import Counter
 
@@ -54,6 +55,23 @@ if news_file.exists():
     try:
         raw = json.loads(news_file.read_text(encoding='utf-8'))
         news_items = raw.get('items', []) if isinstance(raw, dict) else raw
+        def parse_news_time(item):
+    v = item.get('published_at') or item.get('pubDate') or item.get('date') or item.get('time') or ''
+    if not v:
+        return 0
+    try:
+        dt = parsedate_to_datetime(v)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.timestamp()
+    except Exception:
+        return 0
+
+news_items = sorted(
+    [x for x in news_items if isinstance(x, dict)],
+    key=lambda x: (x.get('score', 0), parse_news_time(x)),
+    reverse=True
+)
     except Exception as e:
         print('load latest news error:', repr(e))
 
@@ -404,7 +422,7 @@ region_map = {
 }
 
 SCENE_POOLS = {
-    'rain': {'hot':['雨天到店承接','降雨影响客流','室内场景前置'], 'flow':['客流更容易向商场和室内运动场景集中'], 'signal':['降雨影响到店节奏，防雨、防滑、轻防护和室内运动品类承接更关键'], 'action':['：前置防雨防滑陈列，强化室内运动组合和试穿体验']},
+    'rain': {'hot':['雨天到店承接','降雨影响客流','室内场景前置'], 'flow':['客流更容易向商场和室内运动场景集中'], 'signal':['降雨影响到店节奏，防雨、防滑、轻防护和室内运动品类承接更关键'], 'action':['建议：前置防雨防滑陈列，强化室内运动组合和试穿体验']},
     'high_temp': {'hot':['暑热带动功能消费','防晒凉感窗口','夏季品类前置'], 'flow':['防晒、凉感、速干和短裤T恤关注度提升'], 'signal':['高温带动功能消费，防晒衣、凉感T、速干短裤和透气童鞋进入主推窗口'], 'action':['建议：前置防晒凉感组合，强化夏季功能区和连带陈列']},
     'promotion': {'hot':['平台热度外溢','大促心智强化','直播同款承接'], 'flow':['平台内容和大促话题带动比价、试穿和到店验证'], 'signal':['大促和直播同款强化价格心智，门店需承接爆款、套装和价格带需求'], 'action':['建议：强化爆款价格带、直播同款提示和导购转化话术']},
     'kids': {'hot':['亲子运动延伸','校园场景活跃','童装连带提升'], 'flow':['亲子、校园和周末运动场景带动童鞋童服组合'], 'signal':['儿童运动、校园和亲子场景继续带动鞋服组合需求，童鞋与套装连带更关键'], 'action':['建议：强化亲子校园陈列，提升童鞋、服装和配件连带']},
