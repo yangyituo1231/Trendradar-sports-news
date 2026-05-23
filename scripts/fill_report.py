@@ -316,6 +316,26 @@ def item_score(item, cat):
         if kw in title: score -= 16
     for src in reliable_sources:
         if src in source: score += 2
+
+   try:
+    from email.utils import parsedate_to_datetime
+    from datetime import timezone
+    pub = item.get("published_at") or item.get("pubDate") or ""
+    dt = parsedate_to_datetime(pub) if pub else None
+    if dt:
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        hours = (datetime.now(timezone.utc) - dt).total_seconds() / 3600
+        if hours <= 12:
+            score += 35
+        elif hours <= 24:
+            score += 25
+        elif hours <= 48:
+            score += 10
+        else:
+            score -= 30
+except Exception:
+    score -= 5 
     return score
 
 def pick_top_news_rule():
@@ -869,8 +889,11 @@ for i,item in enumerate(trend_items, start=1):
 
 for i,item in enumerate(top_news, start=1):
     data[f'top{i}_title'] = item['title']
+   
     data[f'top{i}_tag'] = item['tag']
-    data[f'top{i}_time'] = today.strftime('%m-%d %H:%M')
+    pub_time = item.get('published_at') or item.get('pubDate') or ''
+    data[f'top{i}_time'] = clean_title(pub_time)[:16] if pub_time else today.strftime('%m-%d %H:%M')
+    
     data[f'top{i}_source'] = item['source']
     data[f'top{i}_desc'] = item['desc']
     data[f'top{i}_logo'] = item['logo']
