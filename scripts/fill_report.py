@@ -51,6 +51,18 @@ SEASON = season_name(today.month)
 # =========================================================
 news_items = []
 news_file = Path('output/news/latest.json')
+
+def parse_news_time(item):
+    v = item.get('published_at') or item.get('pubDate') or item.get('date') or item.get('time') or ''
+    if not v:
+        return 0
+    try:
+        from email.utils import parsedate_to_datetime
+        dt = parsedate_to_datetime(v)
+        return dt.timestamp()
+    except Exception:
+        return 0
+
 if news_file.exists():
     try:
         raw = json.loads(news_file.read_text(encoding='utf-8'))
@@ -58,11 +70,13 @@ if news_file.exists():
     except Exception as e:
         print('load latest news error:', repr(e))
 
-titles = [clean_title(x.get('title','')) for x in news_items if isinstance(x, dict) and x.get('title')]
-joined = ' '.join(titles)
-        print('load latest news error:', repr(e))
+news_items = sorted(
+    [x for x in news_items if isinstance(x, dict)],
+    key=parse_news_time,
+    reverse=True
+)
 
-titles = [clean_title(x.get('title','')) for x in news_items if isinstance(x, dict) and x.get('title')]
+titles = [clean_title(x.get('title','')) for x in news_items if x.get('title')]
 joined = ' '.join(titles)
 
 # =========================================================
