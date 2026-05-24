@@ -794,22 +794,66 @@ KEYWORD_MAP = {'抖音':'抖音直播','直播':'直播带货','店播':'店播'
 
 def build_words_rule():
     counter = Counter()
+
     top_joined = ' '.join([item['title'] for item in top_news if item.get('title')])
-    for raw,mapped in KEYWORD_MAP.items():
-        if raw in top_joined: counter[mapped] += 6
-    for t in titles[:120]:
-        for raw,mapped in KEYWORD_MAP.items():
-            if raw in t: counter[mapped] += 2
+
+    for raw, mapped in KEYWORD_MAP.items():
+        if raw in top_joined:
+            counter[mapped] += 3
+
+    for idx, t in enumerate(titles[:80]):
+        weight = 5 if idx < 10 else 3
+
+        for raw, mapped in KEYWORD_MAP.items():
+            if raw in t:
+                counter[mapped] += weight
+
     for key in ['north','east','south','southwest','northwest']:
         sig = weather_desc(key)
-        for raw,mapped in KEYWORD_MAP.items():
-            if raw in sig: counter[mapped] += 2
-    seasonal = {'spring':['春季出行','轻外套','亲子运动','校园体育','城市骑行','山系穿搭','运动T恤'], 'summer':['防晒品类','凉感科技','速干T','短裤','运动凉鞋','透气跑鞋','618','防晒衣'], 'autumn':['开学季','校园体育','卫衣','轻外套','户外运动','99大促','城市骑行'], 'winter':['保暖','防滑鞋','童鞋','室内运动','训练装备','羽绒服','冲锋衣']}.get(SEASON, [])
+
+        for raw, mapped in KEYWORD_MAP.items():
+            if raw in sig:
+                counter[mapped] += 2
+
+    OVERUSED_WORDS = [
+        '消费趋势',
+        '儿童运动',
+        '品牌站位',
+        '客流修复',
+        '618',
+        '双11',
+        'AI',
+        '防晒品类',
+    ]
+
+    for w in OVERUSED_WORDS:
+        if w in counter:
+            counter[w] *= 0.45
+
+    seasonal = {
+        'spring':['春季出行','轻外套','亲子运动','校园体育','城市骑行','山系穿搭','运动T恤'],
+        'summer':['防晒品类','凉感科技','速干T','短裤','运动凉鞋','透气跑鞋','618','防晒衣'],
+        'autumn':['开学季','校园体育','卫衣','轻外套','户外运动','99大促','城市骑行'],
+        'winter':['保暖','防滑鞋','童鞋','室内运动','训练装备','羽绒服','冲锋衣']
+    }.get(SEASON, [])
+
     broad = ['AI','出海','国际化','体育精神','年轻人','情绪消费','城市骑行','健康生活','智能机器人','运动最解压','直播带货','店播增长','会员裂变','多品牌','功能面料','校园体育','亲子出行','智能穿戴','运动社交','户外露营','山系穿搭','速干T','防晒衣','凉感科技','碳板跑鞋','透气跑鞋','新消费','性价比','松弛感','悦己','国潮','她经济','下沉市场','银发经济','GDP','社零','暑假消费']
+
     words = []
-    for w in [w for w,_ in counter.most_common()] + seasonal + broad:
-        if w and len(w) <= 8 and w not in words: words.append(w)
-        if len(words) >= 18: break
+    candidate_words = [w for w, _ in counter.most_common()]
+
+    if len(candidate_words) < 12:
+        candidate_words += seasonal
+
+    if len(candidate_words) < 16:
+        candidate_words += random.sample(broad, min(6, len(broad)))
+
+    for w in candidate_words:
+        if w and len(w) <= 8 and w not in words:
+            words.append(w)
+        if len(words) >= 18:
+            break
+
     return words[:18]
 
 def build_words_deepseek():
