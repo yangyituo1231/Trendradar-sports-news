@@ -848,6 +848,11 @@ def build_words_rule():
     if len(candidate_words) < 16:
         candidate_words += random.sample(broad, min(6, len(broad)))
 
+    head = candidate_words[:10]
+    tail = candidate_words[10:]
+    random.shuffle(head)
+    candidate_words = head + tail
+
     for w in candidate_words:
         if w and len(w) <= 8 and w not in words:
             words.append(w)
