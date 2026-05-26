@@ -2,12 +2,11 @@ name: Daily Auto Report
 
 on:
   schedule:
-    - cron: '27 22 * * *'  # 北京时间 06:30
-    - cron: '41 22 * * *'  # 北京时间 06:40 备用
+    - cron: '27 6 * * *'
+      timezone: 'Asia/Shanghai'
+    - cron: '47 6 * * *'
+      timezone: 'Asia/Shanghai'
   workflow_dispatch:
-
-env:
-  TZ: Asia/Shanghai
 
 permissions:
   contents: write
