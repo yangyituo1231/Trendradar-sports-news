@@ -2,11 +2,12 @@ name: Daily Auto Report
 
 on:
   schedule:
-    - cron: '27 6 * * *'
-      timezone: 'Asia/Shanghai'
-    - cron: '47 6 * * *'
-      timezone: 'Asia/Shanghai'
+    - cron: '27 22 * * *'
+    - cron: '47 22 * * *'
   workflow_dispatch:
+  
+env:
+  TZ: Asia/Shanghai
 
 permissions:
   contents: write
