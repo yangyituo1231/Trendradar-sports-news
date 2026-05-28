@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28 12:51:57",
+  "generated_at": "2026-05-29 02:23:15",
   "source": "Open-Meteo",
   "regions": {
     "north": {
@@ -7,24 +7,13 @@
       "city": "Beijing",
       "days": [
         {
-          "date": "2026-05-28",
-          "code": 2,
-          "weather": "多云",
-          "temp_max": 28.5,
-          "temp_min": 20.4,
-          "precipitation": 0.0,
-          "wind": 19.6,
-          "risk_score": 0,
-          "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
-        },
-        {
           "date": "2026-05-29",
           "code": 0,
           "weather": "晴",
           "temp_max": 30.2,
           "temp_min": 16.8,
           "precipitation": 0.0,
-          "wind": 13.8,
+          "wind": 14.7,
           "risk_score": 20,
           "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         },
@@ -35,29 +24,29 @@
           "temp_max": 33.7,
           "temp_min": 17.9,
           "precipitation": 0.0,
-          "wind": 20.4,
+          "wind": 19.4,
+          "risk_score": 20,
+          "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
+        },
+        {
+          "date": "2026-05-31",
+          "code": 3,
+          "weather": "阴",
+          "temp_max": 32.3,
+          "temp_min": 22.2,
+          "precipitation": 0.0,
+          "wind": 19.0,
           "risk_score": 20,
           "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         }
       ],
       "risk_score": 20,
-      "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
+      "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
     },
     "east": {
       "name": "华中/华东",
       "city": "Shanghai",
       "days": [
-        {
-          "date": "2026-05-28",
-          "code": 51,
-          "weather": "小雨",
-          "temp_max": 27.7,
-          "temp_min": 21.6,
-          "precipitation": 2.4,
-          "wind": 11.5,
-          "risk_score": 0,
-          "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
-        },
         {
           "date": "2026-05-29",
           "code": 3,
@@ -65,7 +54,7 @@
           "temp_max": 26.1,
           "temp_min": 19.0,
           "precipitation": 0.0,
-          "wind": 12.1,
+          "wind": 11.2,
           "risk_score": 0,
           "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
         },
@@ -76,7 +65,18 @@
           "temp_max": 27.8,
           "temp_min": 17.5,
           "precipitation": 0.0,
-          "wind": 9.1,
+          "wind": 9.6,
+          "risk_score": 0,
+          "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
+        },
+        {
+          "date": "2026-05-31",
+          "code": 3,
+          "weather": "阴",
+          "temp_max": 27.5,
+          "temp_min": 17.3,
+          "precipitation": 0.0,
+          "wind": 11.2,
           "risk_score": 0,
           "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
         }
@@ -89,24 +89,13 @@
       "city": "Guangzhou",
       "days": [
         {
-          "date": "2026-05-28",
-          "code": 95,
-          "weather": "雷阵雨",
-          "temp_max": 35.3,
-          "temp_min": 27.4,
-          "precipitation": 0.0,
-          "wind": 11.9,
-          "risk_score": 60,
-          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
-        },
-        {
           "date": "2026-05-29",
           "code": 95,
           "weather": "雷阵雨",
           "temp_max": 34.1,
           "temp_min": 25.8,
           "precipitation": 8.3,
-          "wind": 8.4,
+          "wind": 10.0,
           "risk_score": 57,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         },
@@ -117,8 +106,19 @@
           "temp_max": 33.1,
           "temp_min": 24.9,
           "precipitation": 31.6,
-          "wind": 13.6,
+          "wind": 7.4,
           "risk_score": 67,
+          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+        },
+        {
+          "date": "2026-05-31",
+          "code": 81,
+          "weather": "阵雨",
+          "temp_max": 32.0,
+          "temp_min": 24.5,
+          "precipitation": 10.4,
+          "wind": 8.9,
+          "risk_score": 54,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         }
       ],
@@ -130,24 +130,13 @@
       "city": "Chengdu",
       "days": [
         {
-          "date": "2026-05-28",
-          "code": 51,
-          "weather": "小雨",
-          "temp_max": 26.5,
-          "temp_min": 20.5,
-          "precipitation": 0.1,
-          "wind": 16.3,
-          "risk_score": 0,
-          "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
-        },
-        {
           "date": "2026-05-29",
           "code": 3,
           "weather": "阴",
           "temp_max": 29.0,
           "temp_min": 20.8,
           "precipitation": 0.0,
-          "wind": 11.6,
+          "wind": 12.1,
           "risk_score": 0,
           "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
         },
@@ -158,7 +147,18 @@
           "temp_max": 31.3,
           "temp_min": 21.0,
           "precipitation": 0.0,
-          "wind": 8.7,
+          "wind": 8.1,
+          "risk_score": 20,
+          "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
+        },
+        {
+          "date": "2026-05-31",
+          "code": 3,
+          "weather": "阴",
+          "temp_max": 32.5,
+          "temp_min": 22.8,
+          "precipitation": 0.0,
+          "wind": 11.1,
           "risk_score": 20,
           "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         }
@@ -171,24 +171,13 @@
       "city": "Xi'an",
       "days": [
         {
-          "date": "2026-05-28",
-          "code": 3,
-          "weather": "阴",
-          "temp_max": 24.4,
-          "temp_min": 18.8,
-          "precipitation": 0.0,
-          "wind": 8.9,
-          "risk_score": 0,
-          "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
-        },
-        {
           "date": "2026-05-29",
           "code": 3,
           "weather": "阴",
           "temp_max": 23.5,
           "temp_min": 16.1,
           "precipitation": 0.0,
-          "wind": 13.1,
+          "wind": 10.3,
           "risk_score": 0,
           "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
         },
@@ -199,12 +188,23 @@
           "temp_max": 28.6,
           "temp_min": 13.6,
           "precipitation": 0.0,
-          "wind": 8.7,
+          "wind": 9.4,
           "risk_score": 0,
           "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
+        },
+        {
+          "date": "2026-05-31",
+          "code": 3,
+          "weather": "阴",
+          "temp_max": 30.0,
+          "temp_min": 16.8,
+          "precipitation": 0.0,
+          "wind": 9.5,
+          "risk_score": 20,
+          "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         }
       ],
-      "risk_score": 0,
+      "risk_score": 20,
       "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
     }
   }
