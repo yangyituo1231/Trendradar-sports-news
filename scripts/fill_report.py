@@ -984,6 +984,55 @@ for i,word in enumerate(words, start=1):
 
 for key,value in data.items():
     template = template.replace('{{' + key + '}}', str(value))
+# =========================================================
+# 保存日报历史数据：供后续周报PPT使用
+# =========================================================
+history_dir = Path("output/history")
+history_dir.mkdir(parents=True, exist_ok=True)
+
+history_data = {
+    "date": today.strftime("%Y-%m-%d"),
+    "weekday": weekday_map[today.weekday()],
+    "generate_time": today.strftime("%Y-%m-%d %H:%M"),
+
+    "today_insight": today_insight,
+    "ai_summary": ai_summary,
+
+    "top_news": top_news,
+    "warnings": warnings,
+
+    "region_reports": {
+        region: {
+            "name": region_map[region]["name"],
+            "city": region_map[region]["city"],
+            "hot": data.get(f"{region}_hot", ""),
+            "flow": data.get(f"{region}_flow", ""),
+            "focus": data.get(f"{region}_focus", ""),
+            "action": data.get(f"{region}_action", ""),
+            "star": data.get(f"{region}_star", "")
+        }
+        for region in ["east", "central", "south", "southwest", "northwest"]
+    },
+
+    "trend_items": trend_items,
+    "words": words,
+
+    "weather": {
+        "north": weather_desc("north"),
+        "east": weather_desc("east"),
+        "south": weather_desc("south"),
+        "southwest": weather_desc("southwest"),
+        "northwest": weather_desc("northwest")
+    }
+}
+
+history_file = history_dir / f"{today.strftime('%Y-%m-%d')}.json"
+history_file.write_text(
+    json.dumps(history_data, ensure_ascii=False, indent=2),
+    encoding="utf-8"
+)
+
+print(f"history saved: {history_file}")
 
 OUTPUT_HTML.write_text(template, encoding='utf-8')
 print('daily-report-filled.html generated.')
