@@ -996,8 +996,13 @@ for region in ['east','central','south','southwest','northwest']:
     data[f'{region}_city'] = region_map[region]['city']
     data[f'{region}_hot'] = reports[region]['change']
     data[f'{region}_flow'] = reports[region]['impact']
-    data[f'{region}_focus'] = reports[region]['focus']
+
+    # 经营抓手：对应HTML里的 {{east_focus}}
+    data[f'{region}_focus'] = reports[region]['action']
+
+    # 动作建议：对应HTML里的 {{east_action}}
     data[f'{region}_action'] = actions[region]
+
     data[f'{region}_star'] = stars[region]
     data[f'{region}_star_class'] = star_class(stars[region])
 
