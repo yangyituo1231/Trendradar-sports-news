@@ -159,7 +159,7 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
 
 .radar-row{
   display:grid;
-  grid-template-columns:145px 170px 220px 130px 1fr 78px;
+  grid-template-columns:145px 190px 250px 120px 1fr 78px;
   gap:0;
   border:1px solid #e1eaf7;
   border-radius:14px;
@@ -169,7 +169,7 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
 
 .radar-head{
   display:grid;
-  grid-template-columns:145px 170px 220px 130px 1fr 78px;
+  grid-template-columns:145px 190px 250px 120px 1fr 78px;
   background:#f1f6ff;
   border:1px solid #e1eaf7;
   border-radius:12px;
@@ -244,6 +244,29 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
   font-weight:950;
   font-size:12px;
   line-height:1.25;
+}
+  .focus-pill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:5px 10px;
+  border-radius:999px;
+  background:#f0f7ff;
+  color:#0b4db3;
+  font-size:12px;
+  font-weight:950;
+  line-height:1.25;
+  white-space:nowrap;
+}
+
+.action-text{
+  width:100%;
+  text-align:center;
+  font-size:12.3px;
+  line-height:1.45;
+  color:#0d2d68;
+  font-weight:900;
+  padding:0 6px;
 }
 
 .flow-text{
@@ -394,7 +417,7 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
       <div class="radar-head">
         <div>区域</div>
         <div>核心信号</div>
-        <div>客流场景</div>
+        <div>客流影响</div>
         <div>经营抓手</div>
         <div>动作建议</div>
         <div>关注等级</div>
@@ -404,8 +427,8 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
         <div class="radar-cell"><div class="region-card"><div class="region-icon">{{east_icon}}</div><div><div class="region-name">华东</div><div class="region-city">{{east_city}}</div></div></div></div>
         <div class="radar-cell"><div class="signal-pill">{{east_hot}}</div></div>
         <div class="radar-cell"><div class="flow-text">{{east_flow}}</div></div>
-        <div class="radar-cell"><div class="ai-main">{{east_focus}}</div></div>
-        <div class="radar-cell"><div class="ai-action">{{east_action}}</div></div>
+        <div class="radar-cell"><div class="focus-pill">{{east_focus}}</div></div>
+        <div class="radar-cell"><div class="action-text">{{east_action}}</div></div>
         <div class="radar-cell {{east_star_class}}">{{east_star}}</div>
       </div>
 
@@ -413,8 +436,8 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
         <div class="radar-cell"><div class="region-card"><div class="region-icon">{{central_icon}}</div><div><div class="region-name">华中</div><div class="region-city">{{central_city}}</div></div></div></div>
         <div class="radar-cell"><div class="signal-pill">{{central_hot}}</div></div>
         <div class="radar-cell"><div class="flow-text">{{central_flow}}</div></div>
-        <div class="radar-cell"><div class="ai-main">{{central_focus}}</div></div>
-        <div class="radar-cell"><div class="ai-action">{{central_action}}</div></div>
+        <div class="radar-cell"><div class="focus-pill">{{central_focus}}</div></div>
+        <div class="radar-cell"><div class="action-text">{{central_action}}</div></div>
         <div class="radar-cell {{central_star_class}}">{{central_star}}</div>
       </div>
 
@@ -422,8 +445,8 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
         <div class="radar-cell"><div class="region-card"><div class="region-icon">{{south_icon}}</div><div><div class="region-name">华南</div><div class="region-city">{{south_city}}</div></div></div></div>
         <div class="radar-cell"><div class="signal-pill">{{south_hot}}</div></div>
         <div class="radar-cell"><div class="flow-text">{{south_flow}}</div></div>
-        <div class="radar-cell"><div class="ai-main">{{south_focus}}</div></div>
-        <div class="radar-cell"><div class="ai-action">{{south_action}}</div></div>
+        <div class="radar-cell"><div class="focus-pill">{{south_focus}}</div></div>
+        <div class="radar-cell"><div class="action-text">{{south_action}}</div></div>
         <div class="radar-cell {{south_star_class}}">{{south_star}}</div>
       </div>
 
@@ -431,8 +454,8 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
         <div class="radar-cell"><div class="region-card"><div class="region-icon">{{southwest_icon}}</div><div><div class="region-name">西南</div><div class="region-city">{{southwest_city}}</div></div></div></div>
         <div class="radar-cell"><div class="signal-pill">{{southwest_hot}}</div></div>
         <div class="radar-cell"><div class="flow-text">{{southwest_flow}}</div></div>
-        <div class="radar-cell"><div class="ai-main">{{southwest_focus}}</div></div>
-        <div class="radar-cell"><div class="ai-action">{{southwest_action}}</div></div>
+        <div class="radar-cell"><div class="focus-pill">{{southwest_focus}}</div></div>
+        <div class="radar-cell"><div class="action-text">{{southwest_action}}</div></div>
         <div class="radar-cell {{southwest_star_class}}">{{southwest_star}}</div>
       </div>
 
@@ -440,8 +463,8 @@ body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;c
         <div class="radar-cell"><div class="region-card"><div class="region-icon">{{northwest_icon}}</div><div><div class="region-name">西北</div><div class="region-city">{{northwest_city}}</div></div></div></div>
         <div class="radar-cell"><div class="signal-pill">{{northwest_hot}}</div></div>
         <div class="radar-cell"><div class="flow-text">{{northwest_flow}}</div></div>
-        <div class="radar-cell"><div class="ai-main">{{northwest_focus}}</div></div>
-        <div class="radar-cell"><div class="ai-action">{{northwest_action}}</div></div>
+        <div class="radar-cell"><div class="focus-pill">{{northwest_focus}}</div></div>
+        <div class="radar-cell"><div class="action-text">{{northwest_action}}</div></div>
         <div class="radar-cell {{northwest_star_class}}">{{northwest_star}}</div>
       </div>
     </div>
