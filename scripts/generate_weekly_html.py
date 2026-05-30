@@ -186,7 +186,8 @@ if isinstance(brands, list):
                 "heat": p.get("sales_heat", 0),
                 "trend": p.get("trend", ""),
                 "tags": p.get("tags", []),
-                "reason": p.get("reason", "")
+                "reason": p.get("reason", ""),
+                "image": p.get("image", "")
             })
 
 product_cards = sorted(product_cards, key=lambda x: int(x.get("heat") or 0), reverse=True)[:12]
@@ -248,6 +249,7 @@ def render_product_cards():
         tag_text = " / ".join(tags[:3]) if isinstance(tags, list) else ""
         html += f"""
         <div class="product-card">
+          <img class="product-img" src="{p.get("image", "")}" alt="">
           <div class="product-brand">{p.get("brand", "")}</div>
           <div class="product-name">{short(p.get("name", ""), 28)}</div>
           <div class="product-meta">
@@ -469,6 +471,14 @@ li{{
   padding:12px;
   min-height:132px;
 }}
+.product-img{
+  width:100%;
+  height:118px;
+  object-fit:cover;
+  border-radius:12px;
+  background:#edf5ff;
+  margin-bottom:8px;
+}
 .product-brand{{
   font-size:13px;
   color:#0b63d8;
