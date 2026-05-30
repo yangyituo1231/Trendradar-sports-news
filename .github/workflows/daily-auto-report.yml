@@ -79,6 +79,10 @@ jobs:
       - name: Analyze Weekly Data
         run: |
           python scripts/analyze_weekly.py
+    
+    - name: Generate Weekly HTML
+        run: |
+          python scripts/generate_weekly_html.py
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
