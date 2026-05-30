@@ -64,7 +64,9 @@ jobs:
       - name: Generate Products Data
         run: |
           python scripts/get_products.py
-
+      - name: Analyze Weekly Data
+         run: |
+           python scripts/analyze_weekly.py
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
