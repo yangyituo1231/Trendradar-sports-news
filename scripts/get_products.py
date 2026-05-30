@@ -72,6 +72,7 @@ def make_products_for_brand(brand):
             "trend": random.choice(["up", "up", "flat", "hot", "new"]),
             "sales_heat": random.randint(60, 98),
             "tags": tags,
+            "image": f"https://placehold.co/300x300/png?text={brand}",
             "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
         })
 
