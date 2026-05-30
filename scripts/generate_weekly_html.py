@@ -263,7 +263,24 @@ def render_product_cards():
 def render_list(items):
     html = ""
     for item in items[:6]:
-        html += f"<li>{clean(item)}</li>"
+        if isinstance(item, dict):
+            theme = item.get("theme", "")
+            heat = item.get("heat", "")
+            suggestion = item.get("suggestion", "")
+
+            text_parts = []
+            if theme:
+                text_parts.append(f"【{theme}】")
+            if heat != "":
+                text_parts.append(f"热度{heat}。")
+            if suggestion:
+                text_parts.append(suggestion)
+
+            text = "".join(text_parts) or clean(item)
+        else:
+            text = clean(item)
+
+        html += f"<li>{text}</li>"
     return html
 
 # =========================================================
