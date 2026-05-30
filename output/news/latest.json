@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-31 03:52:54",
+  "generated_at": "2026-05-31 03:59:43",
   "campaign": "五一六一618预热",
   "count": 100,
   "region_counts": {
-    "全国": 69,
+    "全国": 67,
     "西北": 3,
-    "华东": 9,
+    "华东": 10,
     "华中": 10,
-    "西南": 2,
+    "西南": 3,
     "华南": 7
   },
   "items": [
@@ -317,6 +317,20 @@
       "region": "全国",
       "weather_abnormal": true,
       "local_business": false,
+      "score": 53
+    },
+    {
+      "title": "从西湖到千岛湖：“防晒衣+溯溪鞋”成杭州人轻户外标配​​",
+      "source": "ori.hangzhou.com.cn",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBndHRRQ2ZnUE1zWUVQcWRWTkFXSE91bVZUek05WVlEOGZoYnZSOHZJM1dBT05KUlE5LUUtdmFETzBqWDBuU1lkWlJtTC12cWxuaF9CWFZPNkI0WEhybkgwUW41WXBOV1FLak1oMTBBWkJRRFJCNTBRWF9DLXljdw?oc=5",
+      "published_at": "Mon, 28 Apr 2025 07:00:00 GMT",
+      "keyword": "城市徒步 轻户外 消费",
+      "campaign": "五一六一618预热",
+      "city": "杭州",
+      "local_place": "",
+      "region": "华东",
+      "weather_abnormal": true,
+      "local_business": true,
       "score": 53
     },
     {
@@ -712,20 +726,6 @@
       "score": 41
     },
     {
-      "title": "消费群像｜从看展到玩展 这场工美博览会凭什么治愈周末？",
-      "source": "搜狐网",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOX2w3QXR6dHlYamI1VkkwdEFoSS1hMmpnU2JEaWprdm9ncm1vNTRPWUVTV3NJYkVfakZZVVNVNXVNY2dBc0RjM2pZTVZBYXRSdzJ0MTVyenFBeVNBTTZVY2E1Q0hYeDlzXzA5TWg1cks1T0JkaUp1emdQTkNMZ0VfclkweVN0bGRK?oc=5",
-      "published_at": "Sat, 30 May 2026 14:54:18 GMT",
-      "keyword": "治愈消费",
-      "campaign": "五一六一618预热",
-      "city": "",
-      "local_place": "",
-      "region": "全国",
-      "weather_abnormal": false,
-      "local_business": false,
-      "score": 40
-    },
-    {
       "title": "2026山东省体育消费季暨济南市潮流体育消费季正式启幕",
       "source": "搜狐网",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPaTZHQjlJTWFjNWR6SHVVOEhCc09oRFU4MWdRbmdzRUoyeFVQdVprWTdlS0NBbzRZbE1oVTNHVVVrUFY3SFpsOVhiczBVLVluaVc2aXRpVml1Tkx6andFQzhLajh0R0tEV1A3TF9CMDVqaXQtbE1rSkUxOG9GZmYtMVNqYk9XN3A3ODNZTQ?oc=5",
@@ -755,14 +755,28 @@
     },
     {
       "title": "米字高铁网核心 蜜雪胖东来扎堆郑州东站",
-      "source": "中国评论",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBMZlo5YmlhU0dlcmRaYmFzQW0tOUl2RFZST1RhUWpWUEtWdU9iX2tyOGRseFhBNXktRGd0T0ZlbGJiVWJWZ01URWRzNnd4TjBwNWM1Z2pJSE0?oc=5",
+      "source": "中國評論新聞",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBoRlRLRHdhOUxCSDR6cEJZbHpFY1NMLUpaa0g3c2hJVHU4RjQ0WUxvbllPWWtUS3ZTMEYyREx1NUhXcGNmc3VxemZlbzBRS2l0dUVQMUtEb2JIS1VwdUNnVHl1bU94blU?oc=5",
       "published_at": "Sat, 30 May 2026 11:50:24 GMT",
       "keyword": "郑州 商圈 客流 消费",
       "campaign": "五一六一618预热",
       "city": "郑州",
       "local_place": "",
       "region": "华中",
+      "weather_abnormal": false,
+      "local_business": false,
+      "score": 40
+    },
+    {
+      "title": "体育+消费新场景！全国全民体能大赛落户北粮国际体育小镇",
+      "source": "中华网",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1ST2Q4MVZxS2s0bHV4Qjgya3VaTzJsWTFtcndMZUFvbFJrTGZVUW1Jb3pMTFQ1UjJUOXhEUTE1amFjQXhIRUNBSmpvbk9pbnZhSk9COTYxVzAwMEF3ZV83YXRQek5PNmtOSG9kdnJB?oc=5",
+      "published_at": "Sat, 30 May 2026 10:45:06 GMT",
+      "keyword": "城市运动 消费",
+      "campaign": "五一六一618预热",
+      "city": "",
+      "local_place": "",
+      "region": "全国",
       "weather_abnormal": false,
       "local_business": false,
       "score": 40
@@ -866,20 +880,6 @@
       "score": 38
     },
     {
-      "title": "运动女孩夏日新穿搭：室内瑜伽裤，户外防晒衣",
-      "source": "36氪",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE50cWw3TmE3TlFGMEdxYjFMbGQyRE0tNUJnb19ZbzNCTW56LXAyNmV1N2MwYVNDOTV6dG1XQjN3cE1RekxqR0VFTWZxYTF6dw?oc=5",
-      "published_at": "Tue, 04 Jul 2023 07:00:00 GMT",
-      "keyword": "防晒 消费 运动品牌",
-      "campaign": "五一六一618预热",
-      "city": "",
-      "local_place": "",
-      "region": "全国",
-      "weather_abnormal": true,
-      "local_business": false,
-      "score": 38
-    },
-    {
       "title": "掘金悦己与服务消费双主线 工银消费悦享混合6月1 日起发行",
       "source": "MSN",
       "url": "https://news.google.com/rss/articles/CBMijgNBVV95cUxOVjBlMVhSamVmbVc2eDUxS3N2Z1VIUTYwTk1nWjM2RnlzV2tCYVZ6TkZoOVpMWWczNGRRQjdGanFKak1IcXVrbDkyajR4UmpseThTM2tvdHZRVVl1a214WmpKWkZ6aWhtS09lbnZCUjBlTnMwN0JoRUpCT3ZraEppdmNLalJmSE9UaEZ4dVdwS1YydVVNdDlRdzNxdlo1aHl6N2NZUENnSmQwV3VHUm9UOFJQcWtSUnBDMVc4SHROYWtGOWpSN04zYVhlX2FXejh4NWRrOU9kZzB4dXJDaWM1akh3eW5RaHJnLVBSVnpGYXJTMUZGeUhaOUVEcjNkbTVTWV9ZaXRvOWVXc0d6UzAtbmRHM3NzdTNHTHlYMTNnSjlVaDFmV09PQk1OdGdLcnE2d0pMVS0yVTlVeV95dUtrZTB0T1JENm5HcG5rbFJfRHBiSHFwVXRqeGQ1ZlU1Z19xN1lvRDZEN1NqRmNzYjlMaS1lQTJ2T3BnbERuSVNpY29VbkVsMlg4MUMyUTJpQQ?oc=5",
@@ -906,6 +906,20 @@
       "weather_abnormal": false,
       "local_business": true,
       "score": 37
+    },
+    {
+      "title": "重庆秀山隘口镇：直播带货助农增收",
+      "source": "12371.gov.cn",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5KR1dhZUdlME9iMFptZ01IR0FoVER2ZWstT2J4THAtbGFuQy1kSVFWb0ZiWUI0eVVYMEIzYTNzOGV5c3ljUXc5VW5mbm5zajJBUkF0Rldudm1DelB6RnpMYmRqcVg3SjlISjZmVGdB?oc=5",
+      "published_at": "Sat, 30 May 2026 03:18:26 GMT",
+      "keyword": "直播带货",
+      "campaign": "五一六一618预热",
+      "city": "重庆",
+      "local_place": "",
+      "region": "西南",
+      "weather_abnormal": false,
+      "local_business": false,
+      "score": 36
     },
     {
       "title": "走起！2026唐山夜经济消费季开始了",
@@ -990,6 +1004,20 @@
       "weather_abnormal": false,
       "local_business": false,
       "score": 35
+    },
+    {
+      "title": "上海国际花卉节观察②公园“慢消费”：都市生活另一种可能",
+      "source": "thepaper.cn",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBqUDJRMEtWVFdEX19icDl4eHZhWjZMMkU2b3BzSWZKWUtpcE1MQUhIc3BnRFNYVEZETmRKVkh1ZDloQXhZYjQ0QkF6WnM4ZzFOVlM4RENCQTRHTHdscWc?oc=5",
+      "published_at": "Fri, 29 May 2026 08:26:00 GMT",
+      "keyword": "露营 亲子 户外 消费",
+      "campaign": "五一六一618预热",
+      "city": "上海",
+      "local_place": "",
+      "region": "华东",
+      "weather_abnormal": false,
+      "local_business": true,
+      "score": 34
     },
     {
       "title": "海鼎CEO蒋作梁2026便利店大会分享——深耕30余年，海鼎用四大引擎重新定义零售AI落地",
@@ -1160,25 +1188,11 @@
       "score": 26
     },
     {
-      "title": "客流量264万人次，销售额超4亿元！南京玄武区“五一”消费市场“热”力全开",
-      "source": "紫牛新闻",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBNWWtib1F0dTBfRUhTWjluaHNLSG1kSFI1Ukd6YnJneEE2ZXA3LUt4LTExOHRmeExmNHJrLXFYVFJ1UTQ5NVN1QTl1RWJUbXZHci1XcVE3WFlxc2FGLXhKdG9kSjV5LUF5S3lvRXFPZ09xOUo1VVNfd1Jn?oc=5",
-      "published_at": "Tue, 05 May 2026 07:00:00 GMT",
-      "keyword": "文旅 客流 商圈",
-      "campaign": "五一六一618预热",
-      "city": "南京",
-      "local_place": "",
-      "region": "华东",
-      "weather_abnormal": false,
-      "local_business": true,
-      "score": 26
-    },
-    {
       "title": "运动装备成“社交货币”？直播间靠“懂年轻人”接住这波运动热",
       "source": "紫牛新闻",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE90aFdHQ2VhamlMMWVLNEhWcDQzTDVCNzdWTVdtYUY5Sl9oOURUYkFCajRtdG1sSmxyS0dtZHhVQnVoaVd6dGpXbEVnempzRjhlTTZMVC1yZllsNDNaaW5mRTFzUWhMQ1hV?oc=5",
       "published_at": "Fri, 29 May 2026 11:37:00 GMT",
-      "keyword": "户外 露营 骑行 亲子消费",
+      "keyword": "阿迪达斯 儿童 运动",
       "campaign": "五一六一618预热",
       "city": "",
       "local_place": "",
@@ -1245,10 +1259,10 @@
     },
     {
       "title": "文旅添彩，活力涌动——探访假日消费市场",
-      "source": "昆明信息港",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1BQ2UzMDV0b25tLUZieHJlVVBjbUlMZFFUaXRybTJBU2NxR0JfSHY4d2NWcFhMejBaYVpRZENrcFhRV3YydzZQN3JjT0dDT01ETGp5QlNNTUFrTjZQa1JJbmUtWQ?oc=5",
-      "published_at": "Fri, 29 May 2026 13:26:10 GMT",
-      "keyword": "昆明 文旅 户外 亲子",
+      "source": "大河网",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5fblludlpRZ2taZkJ5aEUxWGdXeUE2QXNjV0NIeEtOaHBNYTJmQS01Ry1XejkwZVVZSEtzNHYyRFFMdVFRb2RTb1dWSjgtdkJIWWxOUlRyTQ?oc=5",
+      "published_at": "Fri, 29 May 2026 13:33:58 GMT",
+      "keyword": "露营 亲子 户外 消费",
       "campaign": "五一六一618预热",
       "city": "",
       "local_place": "",
@@ -1388,20 +1402,6 @@
       "source": "搜狐网",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaUxQVTBOWU4tZjhTSi16TkRjZkhOcGF4REhYS1B3WXhwMVJXaHRyWDYyaGhkYmkyOWdQSXZrdEo1Z0RDNW1saFpsTDNhRTFrX2xDTjJYeXFZZF9KamJhN0MyZ1RWVzJxRTZOOERkTmhFTW8yQ01CZzV4ZDE5RWs0SS10ZG84OEV1M2I3Zw?oc=5",
       "published_at": "Fri, 29 May 2026 11:39:13 GMT",
-      "keyword": "直播带货",
-      "campaign": "五一六一618预热",
-      "city": "",
-      "local_place": "",
-      "region": "全国",
-      "weather_abnormal": false,
-      "local_business": false,
-      "score": 18
-    },
-    {
-      "title": "单款销量纷纷破万！淘宝直播带你云游湖北，千万人围观抢好货",
-      "source": "搜狐网",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQWFRzMlBxQVZzay1UMEZhbmFWbElDbjdqS3lrbG9EMUVyRV9lc09zSGUxX2pvVkNFTkJlT2ZnQzR2ZU1OUkJwanJvT0pnTGJmeWt0Tkx6RU80WWVzUzFGWGo3WnNUMTZwdUI4cWdEMUExWHdRRVR1RHhmMmZkQmRyYXdaS0NITlYycmw0Qw?oc=5",
-      "published_at": "Fri, 29 May 2026 10:00:36 GMT",
       "keyword": "直播带货",
       "campaign": "五一六一618预热",
       "city": "",
