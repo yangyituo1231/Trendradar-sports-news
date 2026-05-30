@@ -27,7 +27,16 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4 pyyaml lxml pillow playwright openai
+          pip install \
+            requests \
+            beautifulsoup4 \
+            pyyaml \
+            lxml \
+            pillow \
+            playwright \
+            openai \
+            python-pptx \
+            pandas
 
       - name: Install browser and fonts
         run: |
@@ -58,15 +67,18 @@ jobs:
       - name: Render Report
         run: |
           python scripts/render_report.py
+          
       - name: Generate Weekly Data
         run: |
           python scripts/generate_weekly.py
+          
       - name: Generate Products Data
         run: |
           python scripts/get_products.py
+          
       - name: Analyze Weekly Data
-         run: |
-           python scripts/analyze_weekly.py
+        run: |
+          python scripts/analyze_weekly.py
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
