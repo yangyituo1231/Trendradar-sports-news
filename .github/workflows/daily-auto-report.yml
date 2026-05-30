@@ -80,7 +80,7 @@ jobs:
         run: |
           python scripts/analyze_weekly.py
     
-    - name: Generate Weekly HTML
+      - name: Generate Weekly HTML
         run: |
           python scripts/generate_weekly_html.py
 
@@ -89,6 +89,11 @@ jobs:
         with:
           name: daily-report-image
           path: daily-report.png
+      - name: Upload Weekly HTML
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-report-html
+          path: output/weekly/weekly_report.html
 
       - name: Commit files
         run: |
