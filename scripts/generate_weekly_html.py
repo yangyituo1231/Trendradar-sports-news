@@ -106,11 +106,30 @@ top_regions = region_counter.most_common(8)
 # =========================================================
 # 周报分析
 # =========================================================
-weekly_summary = clean(
-    analysis.get("summary")
-    or analysis.get("weekly_summary")
-    or "本周行业热点围绕运动消费、天气品类、平台流量、儿童运动和轻户外场景展开，后续需关注品类节奏、区域客流和爆款商品趋势。"
-)
+summary_raw = analysis.get("summary") or analysis.get("weekly_summary") or ""
+
+if isinstance(summary_raw, dict):
+    date_range = summary_raw.get("date_range", "")
+    core_judgement = summary_raw.get("core_judgement", "")
+    product_direction = summary_raw.get("product_direction", "")
+    regional_direction = summary_raw.get("regional_direction", "")
+    next_action = summary_raw.get("next_action", "")
+
+    weekly_summary = "｜".join([
+        x for x in [
+            f"统计周期：{date_range}" if date_range else "",
+            core_judgement,
+            product_direction,
+            regional_direction,
+            next_action
+        ] if x
+    ])
+
+else:
+    weekly_summary = clean(
+        summary_raw
+        or "本周行业热点围绕运动消费、天气品类、平台流量、儿童运动和轻户外场景展开，后续需关注品类节奏、区域客流和爆款商品趋势。"
+    )
 
 opportunities = get_list(analysis, "opportunities")
 risks = get_list(analysis, "risks")
