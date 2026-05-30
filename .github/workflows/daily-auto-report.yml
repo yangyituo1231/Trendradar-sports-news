@@ -61,9 +61,10 @@ jobs:
       - name: Generate Weekly Data
         run: |
           python scripts/generate_weekly.py
-      - name: Generate Weekly PPT
+      - name: Generate Products Data
         run: |
-        python scripts/generate_weekly_ppt.py
+          python scripts/get_products.py
+
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
