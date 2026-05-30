@@ -1,104 +1,55 @@
 {
   "date": "2026-05-31",
   "source": "TrendRadar product monitor",
-  "desc": "运动品牌鞋服热卖商品趋势池，覆盖儿童、青少年、成人、国内、国际及趋势品牌。",
+  "desc": "半真实运动品牌鞋服商品趋势池：覆盖儿童、青少年、成人、国内、国际及趋势品牌；用于周报商品观察，后续可升级为平台真实抓取。",
   "brands": [
     {
       "brand": "安踏儿童",
       "products": [
         {
           "rank": 1,
-          "name": "安踏儿童儿童休闲鞋户外系列1",
-          "category": "儿童休闲鞋",
-          "price": 599,
-          "trend": "up",
-          "sales_heat": 94,
+          "name": "安踏儿童足弓成长鞋",
+          "category": "儿童跑鞋",
+          "price": 299,
+          "trend": "flat",
+          "sales_heat": 95,
           "tags": [
-            "轻量",
-            "新品",
-            "凉感",
-            "防晒",
-            "训练"
+            "足弓支撑",
+            "校园运动",
+            "儿童专业鞋"
           ],
-          "image": "https://placehold.co/300x300/png?text=安踏儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 2,
-          "name": "安踏儿童儿童凉鞋新品系列2",
-          "category": "儿童凉鞋",
-          "price": 199,
+          "name": "安踏儿童氮科技跑鞋",
+          "category": "青少年跑鞋",
+          "price": 399,
           "trend": "up",
-          "sales_heat": 67,
+          "sales_heat": 96,
           "tags": [
-            "科技感",
-            "功能面料",
-            "防滑",
-            "跑步",
-            "青少年"
+            "轻量缓震",
+            "成人化设计",
+            "跑步"
           ],
-          "image": "https://placehold.co/300x300/png?text=安踏儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 3,
-          "name": "安踏儿童乒羽鞋专业系列3",
-          "category": "乒羽鞋",
-          "price": 129,
-          "trend": "flat",
-          "sales_heat": 98,
-          "tags": [
-            "训练",
-            "网面",
-            "凉感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=安踏儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "安踏儿童成人化运动套装经典系列4",
-          "category": "成人化运动套装",
-          "price": 299,
-          "trend": "flat",
-          "sales_heat": 88,
-          "tags": [
-            "防滑",
-            "缓震",
-            "网面"
-          ],
-          "image": "https://placehold.co/300x300/png?text=安踏儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "安踏儿童书包篮球系列5",
-          "category": "书包",
-          "price": 299,
-          "trend": "hot",
-          "sales_heat": 81,
-          "tags": [
-            "防滑",
-            "凉感",
-            "缓震"
-          ],
-          "image": "https://placehold.co/300x300/png?text=安踏儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "安踏儿童两面穿外套篮球系列6",
-          "category": "两面穿外套",
-          "price": 299,
+          "name": "安踏儿童防晒衣",
+          "category": "防晒衣",
+          "price": 199,
           "trend": "new",
-          "sales_heat": 71,
+          "sales_heat": 92,
           "tags": [
-            "高性价比",
-            "凉感",
-            "校园"
+            "防晒",
+            "轻薄",
+            "夏季功能"
           ],
-          "image": "https://placehold.co/300x300/png?text=安踏儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1523381294911-8d3cead13475?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         }
       ]
     },
@@ -107,66 +58,48 @@
       "products": [
         {
           "rank": 1,
-          "name": "361儿童乒羽鞋透气系列1",
-          "category": "乒羽鞋",
-          "price": 399,
+          "name": "361儿童飞燃青少年跑鞋",
+          "category": "青少年跑鞋",
+          "price": 359,
           "trend": "up",
-          "sales_heat": 74,
+          "sales_heat": 98,
           "tags": [
-            "缓震",
-            "功能面料",
-            "科技感"
+            "竞速感",
+            "轻量",
+            "成人化"
           ],
-          "image": "https://placehold.co/300x300/png?text=361儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 2,
-          "name": "361儿童套装青少年系列2",
-          "category": "套装",
-          "price": 199,
-          "trend": "new",
+          "name": "361儿童校园训练鞋",
+          "category": "校园运动鞋",
+          "price": 259,
+          "trend": "up",
           "sales_heat": 93,
           "tags": [
-            "速干",
-            "专业运动",
-            "缓震",
-            "功能面料",
-            "跑步"
+            "校园",
+            "训练",
+            "高性价比"
           ],
-          "image": "https://placehold.co/300x300/png?text=361儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://placehold.co/420x300/eaf2ff/0b4db3?text=361%E5%84%BF%E7%AB%A5%20%E6%A0%A1%E5%9B%AD%E8%BF%90%E5%8A%A8%E9%9E%8B",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 3,
-          "name": "361儿童外套夏季系列3",
-          "category": "外套",
-          "price": 1099,
-          "trend": "up",
-          "sales_heat": 94,
-          "tags": [
-            "爆款",
-            "大促",
-            "新品"
-          ],
-          "image": "https://placehold.co/300x300/png?text=361儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "361儿童帽子夏季系列4",
-          "category": "帽子",
+          "name": "361儿童凉感速干T恤",
+          "category": "凉感T恤",
           "price": 129,
           "trend": "up",
-          "sales_heat": 68,
+          "sales_heat": 89,
           "tags": [
-            "跑步",
-            "新品",
-            "通勤",
-            "高性价比"
+            "凉感",
+            "速干",
+            "夏季"
           ],
-          "image": "https://placehold.co/300x300/png?text=361儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         }
       ]
     },
@@ -175,119 +108,48 @@
       "products": [
         {
           "rank": 1,
-          "name": "李宁YOUNG外套新品系列1",
-          "category": "外套",
-          "price": 259,
-          "trend": "hot",
-          "sales_heat": 88,
+          "name": "李宁YOUNG超轻儿童跑鞋",
+          "category": "儿童跑鞋",
+          "price": 399,
+          "trend": "up",
+          "sales_heat": 93,
           "tags": [
-            "亲子",
-            "训练",
-            "轻量",
-            "爆款",
-            "通勤"
+            "超轻",
+            "跑步",
+            "校园"
           ],
-          "image": "https://placehold.co/300x300/png?text=李宁YOUNG",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 2,
-          "name": "李宁YOUNG儿童休闲鞋足球系列2",
-          "category": "儿童休闲鞋",
-          "price": 699,
-          "trend": "hot",
-          "sales_heat": 95,
+          "name": "李宁YOUNG篮球训练鞋",
+          "category": "青少年篮球鞋",
+          "price": 459,
+          "trend": "up",
+          "sales_heat": 91,
           "tags": [
-            "专业运动",
-            "透气",
-            "大促",
-            "潮流"
+            "篮球",
+            "缓震",
+            "专业运动"
           ],
-          "image": "https://placehold.co/300x300/png?text=李宁YOUNG",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 3,
-          "name": "李宁YOUNG亲子同款成人化系列3",
-          "category": "亲子同款",
-          "price": 1099,
-          "trend": "flat",
-          "sales_heat": 95,
-          "tags": [
-            "跑步",
-            "舒适",
-            "高性价比",
-            "亲子",
-            "凉感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=李宁YOUNG",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "李宁YOUNG书包凉感系列4",
-          "category": "书包",
-          "price": 159,
-          "trend": "new",
-          "sales_heat": 90,
-          "tags": [
-            "青少年",
-            "成人化",
-            "防滑",
-            "训练"
-          ],
-          "image": "https://placehold.co/300x300/png?text=李宁YOUNG",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "李宁YOUNG套装青少年系列5",
-          "category": "套装",
-          "price": 199,
-          "trend": "up",
-          "sales_heat": 67,
-          "tags": [
-            "青少年",
-            "舒适",
-            "速干",
-            "轻量"
-          ],
-          "image": "https://placehold.co/300x300/png?text=李宁YOUNG",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "李宁YOUNG卫衣网球系列6",
-          "category": "卫衣",
-          "price": 599,
+          "name": "李宁YOUNG国潮运动套装",
+          "category": "运动套装",
+          "price": 299,
           "trend": "hot",
-          "sales_heat": 80,
+          "sales_heat": 87,
           "tags": [
-            "网面",
-            "跑步",
-            "防滑",
-            "篮球",
-            "爆款"
+            "国潮",
+            "套装",
+            "亲子"
           ],
-          "image": "https://placehold.co/300x300/png?text=李宁YOUNG",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 7,
-          "name": "李宁YOUNG裙子足球系列7",
-          "category": "裙子",
-          "price": 399,
-          "trend": "new",
-          "sales_heat": 93,
-          "tags": [
-            "大促",
-            "爆款",
-            "科技感",
-            "防滑",
-            "功能面料"
-          ],
-          "image": "https://placehold.co/300x300/png?text=李宁YOUNG",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         }
       ]
     },
@@ -296,116 +158,48 @@
       "products": [
         {
           "rank": 1,
-          "name": "FILA Kids帽子新品系列1",
-          "category": "帽子",
-          "price": 699,
+          "name": "FILA Kids小白鞋",
+          "category": "儿童休闲鞋",
+          "price": 499,
           "trend": "up",
-          "sales_heat": 67,
+          "sales_heat": 92,
           "tags": [
-            "舒适",
-            "大促",
-            "专业运动"
+            "精致",
+            "小白鞋",
+            "城市休闲"
           ],
-          "image": "https://placehold.co/300x300/png?text=FILA Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 2,
-          "name": "FILA Kids儿童板鞋训练系列2",
-          "category": "儿童板鞋",
-          "price": 159,
+          "name": "FILA Kids网球风套装",
+          "category": "运动套装",
+          "price": 599,
           "trend": "new",
-          "sales_heat": 78,
+          "sales_heat": 90,
           "tags": [
-            "防晒",
-            "缓震",
-            "凉感",
-            "户外"
+            "网球风",
+            "高端童装",
+            "穿搭"
           ],
-          "image": "https://placehold.co/300x300/png?text=FILA Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 3,
-          "name": "FILA Kids儿童凉鞋透气系列3",
-          "category": "儿童凉鞋",
+          "name": "FILA Kids轻户外外套",
+          "category": "儿童外套",
           "price": 699,
-          "trend": "flat",
-          "sales_heat": 66,
-          "tags": [
-            "功能面料",
-            "防晒",
-            "跑步",
-            "透气",
-            "篮球"
-          ],
-          "image": "https://placehold.co/300x300/png?text=FILA Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "FILA Kids袜子轻户外系列4",
-          "category": "袜子",
-          "price": 599,
-          "trend": "up",
-          "sales_heat": 77,
-          "tags": [
-            "凉感",
-            "跑步",
-            "网面",
-            "科技感",
-            "通勤"
-          ],
-          "image": "https://placehold.co/300x300/png?text=FILA Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "FILA Kids长裤成人化系列5",
-          "category": "长裤",
-          "price": 299,
           "trend": "new",
-          "sales_heat": 63,
+          "sales_heat": 89,
           "tags": [
-            "户外",
-            "功能面料",
-            "网面"
+            "轻户外",
+            "精致",
+            "亲子"
           ],
-          "image": "https://placehold.co/300x300/png?text=FILA Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "FILA Kids成人化运动套装篮球系列6",
-          "category": "成人化运动套装",
-          "price": 599,
-          "trend": "up",
-          "sales_heat": 78,
-          "tags": [
-            "篮球",
-            "亲子",
-            "专业运动",
-            "成人化"
-          ],
-          "image": "https://placehold.co/300x300/png?text=FILA Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 7,
-          "name": "FILA Kids卫衣透气系列7",
-          "category": "卫衣",
-          "price": 599,
-          "trend": "new",
-          "sales_heat": 64,
-          "tags": [
-            "功能面料",
-            "跑步",
-            "校园",
-            "新品",
-            "青少年"
-          ],
-          "image": "https://placehold.co/300x300/png?text=FILA Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://placehold.co/420x300/eaf2ff/0b4db3?text=FILA%20Kids%20%E5%84%BF%E7%AB%A5%E5%A4%96%E5%A5%97",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         }
       ]
     },
@@ -414,66 +208,48 @@
       "products": [
         {
           "rank": 1,
-          "name": "Nike Kids儿童跑鞋校园系列1",
+          "name": "Nike Kids Pegasus儿童跑鞋",
           "category": "儿童跑鞋",
-          "price": 259,
-          "trend": "new",
-          "sales_heat": 73,
+          "price": 499,
+          "trend": "up",
+          "sales_heat": 94,
           "tags": [
             "跑步",
-            "网面",
+            "经典系列",
             "缓震"
           ],
-          "image": "https://placehold.co/300x300/png?text=Nike Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 2,
-          "name": "Nike Kids青少年训练鞋透气系列2",
-          "category": "青少年训练鞋",
-          "price": 299,
+          "name": "Nike Kids Dunk童鞋",
+          "category": "儿童板鞋",
+          "price": 599,
           "trend": "new",
-          "sales_heat": 68,
+          "sales_heat": 93,
           "tags": [
-            "通勤",
-            "篮球",
-            "训练",
-            "亲子"
+            "潮流",
+            "板鞋",
+            "校园"
           ],
-          "image": "https://placehold.co/300x300/png?text=Nike Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 3,
-          "name": "Nike Kids两面穿外套夏季系列3",
-          "category": "两面穿外套",
-          "price": 599,
-          "trend": "flat",
-          "sales_heat": 69,
+          "name": "Nike Kids篮球训练鞋",
+          "category": "儿童篮球鞋",
+          "price": 529,
+          "trend": "new",
+          "sales_heat": 91,
           "tags": [
-            "新品",
-            "高性价比",
-            "篮球"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Nike Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "Nike Kids跳绳鞋篮球系列4",
-          "category": "跳绳鞋",
-          "price": 159,
-          "trend": "flat",
-          "sales_heat": 97,
-          "tags": [
-            "成人化",
-            "科技感",
             "篮球",
-            "缓震",
-            "专业运动"
+            "训练",
+            "运动心智"
           ],
-          "image": "https://placehold.co/300x300/png?text=Nike Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         }
       ]
     },
@@ -482,856 +258,48 @@
       "products": [
         {
           "rank": 1,
-          "name": "Adidas Kids足球鞋成长系列1",
-          "category": "足球鞋",
+          "name": "Adidas Kids Samba童鞋",
+          "category": "儿童板鞋",
           "price": 599,
           "trend": "up",
-          "sales_heat": 90,
-          "tags": [
-            "通勤",
-            "训练",
-            "大促"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Adidas Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "Adidas Kids儿童休闲鞋夏季系列2",
-          "category": "儿童休闲鞋",
-          "price": 199,
-          "trend": "new",
-          "sales_heat": 68,
-          "tags": [
-            "防晒",
-            "速干",
-            "爆款"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Adidas Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "Adidas Kids两面穿外套专业系列3",
-          "category": "两面穿外套",
-          "price": 1099,
-          "trend": "up",
-          "sales_heat": 62,
-          "tags": [
-            "防晒",
-            "跑步",
-            "篮球"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Adidas Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "Adidas Kids两面穿外套网球系列4",
-          "category": "两面穿外套",
-          "price": 399,
-          "trend": "up",
-          "sales_heat": 65,
-          "tags": [
-            "爆款",
-            "防晒",
-            "功能面料",
-            "大促"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Adidas Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "Adidas Kids溯溪鞋成长系列5",
-          "category": "溯溪鞋",
-          "price": 259,
-          "trend": "flat",
-          "sales_heat": 69,
-          "tags": [
-            "缓震",
-            "网面",
-            "跑步",
-            "篮球",
-            "防晒"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Adidas Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "特步儿童",
-      "products": [
-        {
-          "rank": 1,
-          "name": "特步儿童短裤训练系列1",
-          "category": "短裤",
-          "price": 299,
-          "trend": "hot",
-          "sales_heat": 66,
-          "tags": [
-            "新品",
-            "缓震",
-            "爆款",
-            "舒适",
-            "潮流"
-          ],
-          "image": "https://placehold.co/300x300/png?text=特步儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "特步儿童足球套校园系列2",
-          "category": "足球套",
-          "price": 229,
-          "trend": "flat",
-          "sales_heat": 88,
-          "tags": [
-            "训练",
-            "篮球",
-            "爆款"
-          ],
-          "image": "https://placehold.co/300x300/png?text=特步儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "特步儿童书包校园系列3",
-          "category": "书包",
-          "price": 1099,
-          "trend": "new",
-          "sales_heat": 72,
-          "tags": [
-            "凉感",
-            "户外",
-            "通勤",
-            "网面"
-          ],
-          "image": "https://placehold.co/300x300/png?text=特步儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "特步儿童外套轻量系列4",
-          "category": "外套",
-          "price": 899,
-          "trend": "flat",
-          "sales_heat": 83,
-          "tags": [
-            "透气",
-            "专业运动",
-            "防滑",
-            "科技感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=特步儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "特步儿童书包夏季系列5",
-          "category": "书包",
-          "price": 499,
-          "trend": "hot",
-          "sales_heat": 89,
-          "tags": [
-            "跑步",
-            "青少年",
-            "成人化",
-            "缓震",
-            "功能面料"
-          ],
-          "image": "https://placehold.co/300x300/png?text=特步儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "特步儿童校园运动鞋足球系列6",
-          "category": "校园运动鞋",
-          "price": 299,
-          "trend": "up",
-          "sales_heat": 91,
-          "tags": [
-            "成人化",
-            "青少年",
-            "透气",
-            "潮流"
-          ],
-          "image": "https://placehold.co/300x300/png?text=特步儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "鸿星尔克儿童",
-      "products": [
-        {
-          "rank": 1,
-          "name": "鸿星尔克儿童亲子同款校园系列1",
-          "category": "亲子同款",
-          "price": 499,
-          "trend": "hot",
-          "sales_heat": 68,
-          "tags": [
-            "科技感",
-            "潮流",
-            "缓震"
-          ],
-          "image": "https://placehold.co/300x300/png?text=鸿星尔克儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "鸿星尔克儿童卫衣训练系列2",
-          "category": "卫衣",
-          "price": 1099,
-          "trend": "up",
-          "sales_heat": 90,
-          "tags": [
-            "防滑",
-            "舒适",
-            "网面"
-          ],
-          "image": "https://placehold.co/300x300/png?text=鸿星尔克儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "鸿星尔克儿童防晒衣校园系列3",
-          "category": "防晒衣",
-          "price": 229,
-          "trend": "hot",
-          "sales_heat": 91,
-          "tags": [
-            "大促",
-            "专业运动",
-            "功能面料"
-          ],
-          "image": "https://placehold.co/300x300/png?text=鸿星尔克儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "鸿星尔克儿童防晒衣篮球系列4",
-          "category": "防晒衣",
-          "price": 199,
-          "trend": "flat",
-          "sales_heat": 91,
-          "tags": [
-            "透气",
-            "轻量",
-            "速干",
-            "高性价比"
-          ],
-          "image": "https://placehold.co/300x300/png?text=鸿星尔克儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "鸿星尔克儿童套装篮球系列5",
-          "category": "套装",
-          "price": 899,
-          "trend": "hot",
-          "sales_heat": 72,
-          "tags": [
-            "透气",
-            "户外",
-            "科技感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=鸿星尔克儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "匹克儿童",
-      "products": [
-        {
-          "rank": 1,
-          "name": "匹克儿童运动袜训练系列1",
-          "category": "运动袜",
-          "price": 99,
-          "trend": "new",
-          "sales_heat": 76,
-          "tags": [
-            "高性价比",
-            "透气",
-            "防晒"
-          ],
-          "image": "https://placehold.co/300x300/png?text=匹克儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "匹克儿童长裤户外系列2",
-          "category": "长裤",
-          "price": 229,
-          "trend": "flat",
-          "sales_heat": 97,
-          "tags": [
-            "大促",
-            "凉感",
-            "校园"
-          ],
-          "image": "https://placehold.co/300x300/png?text=匹克儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "匹克儿童儿童凉鞋透气系列3",
-          "category": "儿童凉鞋",
-          "price": 199,
-          "trend": "hot",
-          "sales_heat": 74,
-          "tags": [
-            "功能面料",
-            "新品",
-            "篮球"
-          ],
-          "image": "https://placehold.co/300x300/png?text=匹克儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "匹克儿童儿童跑鞋成人化系列4",
-          "category": "儿童跑鞋",
-          "price": 499,
-          "trend": "hot",
-          "sales_heat": 92,
-          "tags": [
-            "新品",
-            "成人化",
-            "舒适"
-          ],
-          "image": "https://placehold.co/300x300/png?text=匹克儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "乔丹儿童",
-      "products": [
-        {
-          "rank": 1,
-          "name": "乔丹儿童速干T恤户外系列1",
-          "category": "速干T恤",
-          "price": 899,
-          "trend": "new",
-          "sales_heat": 86,
-          "tags": [
-            "青少年",
-            "校园",
-            "大促",
-            "防晒",
-            "训练"
-          ],
-          "image": "https://placehold.co/300x300/png?text=乔丹儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "乔丹儿童裙子网球系列2",
-          "category": "裙子",
-          "price": 99,
-          "trend": "up",
-          "sales_heat": 67,
-          "tags": [
-            "速干",
-            "爆款",
-            "网面",
-            "轻量",
-            "舒适"
-          ],
-          "image": "https://placehold.co/300x300/png?text=乔丹儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "乔丹儿童防晒衣轻户外系列3",
-          "category": "防晒衣",
-          "price": 229,
-          "trend": "hot",
-          "sales_heat": 90,
-          "tags": [
-            "新品",
-            "青少年",
-            "凉感",
-            "亲子"
-          ],
-          "image": "https://placehold.co/300x300/png?text=乔丹儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "乔丹儿童儿童篮球鞋训练系列4",
-          "category": "儿童篮球鞋",
-          "price": 699,
-          "trend": "up",
-          "sales_heat": 67,
-          "tags": [
-            "篮球",
-            "通勤",
-            "防晒",
-            "透气",
-            "潮流"
-          ],
-          "image": "https://placehold.co/300x300/png?text=乔丹儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "乔丹儿童青少年训练鞋透气系列5",
-          "category": "青少年训练鞋",
-          "price": 359,
-          "trend": "up",
-          "sales_heat": 77,
-          "tags": [
-            "亲子",
-            "专业运动",
-            "科技感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=乔丹儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "乔丹儿童儿童篮球鞋青少年系列6",
-          "category": "儿童篮球鞋",
-          "price": 399,
-          "trend": "new",
-          "sales_heat": 61,
-          "tags": [
-            "校园",
-            "爆款",
-            "专业运动",
-            "缓震"
-          ],
-          "image": "https://placehold.co/300x300/png?text=乔丹儿童",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "Puma Kids",
-      "products": [
-        {
-          "rank": 1,
-          "name": "Puma Kids卫衣凉感系列1",
-          "category": "卫衣",
-          "price": 499,
-          "trend": "flat",
-          "sales_heat": 71,
-          "tags": [
-            "新品",
-            "缓震",
-            "大促"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Puma Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "Puma Kids校园运动鞋经典系列2",
-          "category": "校园运动鞋",
-          "price": 229,
-          "trend": "up",
-          "sales_heat": 77,
-          "tags": [
-            "舒适",
-            "网面",
-            "防晒",
-            "校园",
-            "科技感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Puma Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "Puma Kids凉感T恤专业系列3",
-          "category": "凉感T恤",
-          "price": 199,
-          "trend": "up",
-          "sales_heat": 73,
-          "tags": [
-            "校园",
-            "新品",
-            "速干",
-            "防晒",
-            "潮流"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Puma Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "Puma Kids青少年跑鞋经典系列4",
-          "category": "青少年跑鞋",
-          "price": 1099,
-          "trend": "new",
-          "sales_heat": 81,
-          "tags": [
-            "网面",
-            "户外",
-            "防晒",
-            "高性价比"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Puma Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "Puma Kids篮球套校园系列5",
-          "category": "篮球套",
-          "price": 99,
-          "trend": "hot",
-          "sales_heat": 95,
-          "tags": [
-            "亲子",
-            "大促",
-            "新品"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Puma Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "Puma Kids足球鞋校园系列6",
-          "category": "足球鞋",
-          "price": 129,
-          "trend": "up",
-          "sales_heat": 97,
-          "tags": [
-            "爆款",
-            "潮流",
-            "科技感",
-            "透气"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Puma Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "Skechers Kids",
-      "products": [
-        {
-          "rank": 1,
-          "name": "Skechers Kids篮球套网球系列1",
-          "category": "篮球套",
-          "price": 599,
-          "trend": "new",
-          "sales_heat": 79,
-          "tags": [
-            "爆款",
-            "新品",
-            "成人化",
-            "防滑"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Skechers Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "Skechers Kids裙子成人化系列2",
-          "category": "裙子",
-          "price": 1099,
-          "trend": "up",
-          "sales_heat": 91,
-          "tags": [
-            "防滑",
-            "专业运动",
-            "防晒"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Skechers Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "Skechers Kids羽绒服成长系列3",
-          "category": "羽绒服",
-          "price": 129,
-          "trend": "hot",
-          "sales_heat": 87,
-          "tags": [
-            "跑步",
-            "爆款",
-            "透气",
-            "新品"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Skechers Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "Skechers Kids袜子透气系列4",
-          "category": "袜子",
-          "price": 99,
-          "trend": "up",
-          "sales_heat": 76,
-          "tags": [
-            "成人化",
-            "校园",
-            "潮流",
-            "通勤"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Skechers Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "Skechers Kids帽子凉感系列5",
-          "category": "帽子",
-          "price": 1099,
-          "trend": "up",
-          "sales_heat": 92,
-          "tags": [
-            "功能面料",
-            "凉感",
-            "成人化",
-            "潮流",
-            "科技感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Skechers Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "New Balance Kids",
-      "products": [
-        {
-          "rank": 1,
-          "name": "New Balance Kids篮球套经典系列1",
-          "category": "篮球套",
-          "price": 129,
-          "trend": "hot",
-          "sales_heat": 69,
-          "tags": [
-            "凉感",
-            "篮球",
-            "训练",
-            "高性价比",
-            "防滑"
-          ],
-          "image": "https://placehold.co/300x300/png?text=New Balance Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "New Balance Kids儿童户外鞋轻户外系列2",
-          "category": "儿童户外鞋",
-          "price": 229,
-          "trend": "up",
-          "sales_heat": 70,
-          "tags": [
-            "通勤",
-            "透气",
-            "缓震",
-            "防晒",
-            "爆款"
-          ],
-          "image": "https://placehold.co/300x300/png?text=New Balance Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "New Balance Kids儿童户外鞋专业系列3",
-          "category": "儿童户外鞋",
-          "price": 499,
-          "trend": "new",
-          "sales_heat": 79,
-          "tags": [
-            "透气",
-            "防滑",
-            "亲子",
-            "科技感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=New Balance Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "New Balance Kids袜子校园系列4",
-          "category": "袜子",
-          "price": 359,
-          "trend": "flat",
-          "sales_heat": 65,
-          "tags": [
-            "防晒",
-            "高性价比",
-            "爆款"
-          ],
-          "image": "https://placehold.co/300x300/png?text=New Balance Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "New Balance Kids校园运动鞋校园系列5",
-          "category": "校园运动鞋",
-          "price": 499,
-          "trend": "hot",
-          "sales_heat": 68,
-          "tags": [
-            "跑步",
-            "潮流",
-            "校园"
-          ],
-          "image": "https://placehold.co/300x300/png?text=New Balance Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "Asics Kids",
-      "products": [
-        {
-          "rank": 1,
-          "name": "Asics Kids外套新品系列1",
-          "category": "外套",
-          "price": 499,
-          "trend": "new",
-          "sales_heat": 83,
-          "tags": [
-            "防晒",
-            "新品",
-            "专业运动"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Asics Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "Asics Kids溯溪鞋经典系列2",
-          "category": "溯溪鞋",
-          "price": 899,
-          "trend": "up",
-          "sales_heat": 74,
-          "tags": [
-            "透气",
-            "训练",
-            "凉感",
-            "功能面料",
-            "速干"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Asics Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "Asics Kids足球套篮球系列3",
-          "category": "足球套",
-          "price": 399,
-          "trend": "new",
-          "sales_heat": 89,
-          "tags": [
-            "专业运动",
-            "篮球",
-            "舒适",
-            "大促"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Asics Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "Asics Kids儿童凉鞋透气系列4",
-          "category": "儿童凉鞋",
-          "price": 159,
-          "trend": "hot",
-          "sales_heat": 67,
-          "tags": [
-            "舒适",
-            "防晒",
-            "通勤",
-            "青少年",
-            "篮球"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Asics Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "Jordan Kids",
-      "products": [
-        {
-          "rank": 1,
-          "name": "Jordan Kids套装校园系列1",
-          "category": "套装",
-          "price": 259,
-          "trend": "up",
-          "sales_heat": 94,
-          "tags": [
-            "大促",
-            "缓震",
-            "新品"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Jordan Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "Jordan Kids儿童篮球鞋户外系列2",
-          "category": "儿童篮球鞋",
-          "price": 399,
-          "trend": "up",
-          "sales_heat": 64,
-          "tags": [
-            "户外",
-            "大促",
-            "青少年",
-            "成人化"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Jordan Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "Jordan Kids卫衣户外系列3",
-          "category": "卫衣",
-          "price": 159,
-          "trend": "hot",
           "sales_heat": 96,
           "tags": [
+            "Samba",
+            "复古",
+            "潮流"
+          ],
+          "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
+        },
+        {
+          "rank": 2,
+          "name": "Adidas Kids Ultraboost童鞋",
+          "category": "儿童跑鞋",
+          "price": 699,
+          "trend": "new",
+          "sales_heat": 91,
+          "tags": [
             "缓震",
-            "亲子",
-            "爆款",
+            "跑步",
             "舒适"
           ],
-          "image": "https://placehold.co/300x300/png?text=Jordan Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
-          "rank": 4,
-          "name": "Jordan Kids速干T恤校园系列4",
-          "category": "速干T恤",
+          "rank": 3,
+          "name": "Adidas Kids三叶草套装",
+          "category": "运动套装",
           "price": 499,
           "trend": "up",
-          "sales_heat": 74,
+          "sales_heat": 87,
           "tags": [
-            "专业运动",
-            "训练",
-            "校园"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Jordan Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "Jordan Kids外套新品系列5",
-          "category": "外套",
-          "price": 899,
-          "trend": "new",
-          "sales_heat": 88,
-          "tags": [
-            "防滑",
+            "三叶草",
             "潮流",
-            "高性价比",
-            "轻量"
+            "亲子"
           ],
-          "image": "https://placehold.co/300x300/png?text=Jordan Kids",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         }
       ]
     },
@@ -1340,68 +308,48 @@
       "products": [
         {
           "rank": 1,
-          "name": "安踏防晒衣专业系列1",
-          "category": "防晒衣",
-          "price": 99,
-          "trend": "hot",
-          "sales_heat": 67,
+          "name": "安踏冠军跑鞋系列",
+          "category": "跑鞋",
+          "price": 599,
+          "trend": "up",
+          "sales_heat": 94,
           "tags": [
-            "亲子",
-            "科技感",
-            "篮球",
-            "高性价比",
-            "速干"
+            "专业跑步",
+            "国货科技",
+            "缓震"
           ],
-          "image": "https://placehold.co/300x300/png?text=安踏",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 2,
-          "name": "安踏板鞋校园系列2",
-          "category": "板鞋",
-          "price": 899,
+          "name": "安踏轻户外防晒衣",
+          "category": "防晒衣",
+          "price": 299,
           "trend": "flat",
-          "sales_heat": 68,
+          "sales_heat": 92,
           "tags": [
-            "新品",
-            "跑步",
-            "训练",
-            "高性价比"
+            "防晒",
+            "轻户外",
+            "夏季"
           ],
-          "image": "https://placehold.co/300x300/png?text=安踏",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1523381294911-8d3cead13475?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 3,
-          "name": "安踏瑜伽服训练系列3",
-          "category": "瑜伽服",
-          "price": 699,
-          "trend": "flat",
-          "sales_heat": 80,
+          "name": "安踏篮球训练鞋",
+          "category": "篮球鞋",
+          "price": 499,
+          "trend": "up",
+          "sales_heat": 89,
           "tags": [
             "篮球",
             "训练",
-            "科技感",
-            "户外"
+            "缓震"
           ],
-          "image": "https://placehold.co/300x300/png?text=安踏",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "安踏短裤成长系列4",
-          "category": "短裤",
-          "price": 299,
-          "trend": "up",
-          "sales_heat": 77,
-          "tags": [
-            "通勤",
-            "科技感",
-            "专业运动",
-            "速干"
-          ],
-          "image": "https://placehold.co/300x300/png?text=安踏",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         }
       ]
     },
@@ -1410,82 +358,48 @@
       "products": [
         {
           "rank": 1,
-          "name": "李宁凉鞋轻量系列1",
-          "category": "凉鞋",
-          "price": 229,
-          "trend": "hot",
-          "sales_heat": 61,
+          "name": "李宁超轻系列跑鞋",
+          "category": "跑鞋",
+          "price": 599,
+          "trend": "up",
+          "sales_heat": 95,
           "tags": [
-            "透气",
-            "户外",
-            "防晒"
+            "超轻",
+            "跑步",
+            "专业"
           ],
-          "image": "https://placehold.co/300x300/png?text=李宁",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 2,
-          "name": "李宁防晒衣凉感系列2",
-          "category": "防晒衣",
-          "price": 899,
+          "name": "李宁赤兔系列跑鞋",
+          "category": "跑鞋",
+          "price": 399,
           "trend": "flat",
-          "sales_heat": 83,
+          "sales_heat": 91,
           "tags": [
-            "功能面料",
-            "新品",
-            "防滑"
+            "入门跑步",
+            "性价比",
+            "训练"
           ],
-          "image": "https://placehold.co/300x300/png?text=李宁",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 3,
-          "name": "李宁冲锋衣透气系列3",
-          "category": "冲锋衣",
-          "price": 699,
-          "trend": "up",
-          "sales_heat": 63,
-          "tags": [
-            "防滑",
-            "户外",
-            "跑步",
-            "专业运动",
-            "篮球"
-          ],
-          "image": "https://placehold.co/300x300/png?text=李宁",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "李宁瑜伽服凉感系列4",
-          "category": "瑜伽服",
-          "price": 699,
-          "trend": "up",
-          "sales_heat": 96,
-          "tags": [
-            "功能面料",
-            "校园",
-            "轻量",
-            "专业运动",
-            "凉感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=李宁",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "李宁轻户外服装足球系列5",
-          "category": "轻户外服装",
+          "name": "李宁韦德篮球鞋",
+          "category": "篮球鞋",
           "price": 899,
-          "trend": "up",
-          "sales_heat": 93,
+          "trend": "flat",
+          "sales_heat": 89,
           "tags": [
-            "校园",
-            "大促",
-            "亲子"
+            "篮球",
+            "IP",
+            "专业运动"
           ],
-          "image": "https://placehold.co/300x300/png?text=李宁",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         }
       ]
     },
@@ -1494,113 +408,48 @@
       "products": [
         {
           "rank": 1,
-          "name": "361°防晒衣训练系列1",
-          "category": "防晒衣",
-          "price": 499,
+          "name": "361°飞燃系列跑鞋",
+          "category": "跑鞋",
+          "price": 599,
           "trend": "hot",
-          "sales_heat": 74,
+          "sales_heat": 94,
           "tags": [
-            "校园",
-            "轻量",
+            "竞速",
             "跑步",
-            "潮流",
-            "功能面料"
+            "专业"
           ],
-          "image": "https://placehold.co/300x300/png?text=361°",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 2,
-          "name": "361°户外鞋训练系列2",
-          "category": "户外鞋",
-          "price": 359,
-          "trend": "hot",
-          "sales_heat": 82,
+          "name": "361°雨屏科技外套",
+          "category": "轻户外服装",
+          "price": 399,
+          "trend": "new",
+          "sales_heat": 93,
           "tags": [
-            "网面",
-            "爆款",
-            "青少年"
+            "轻户外",
+            "防护",
+            "功能面料"
           ],
-          "image": "https://placehold.co/300x300/png?text=361°",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 3,
-          "name": "361°卫衣专业系列3",
-          "category": "卫衣",
-          "price": 259,
+          "name": "361°运动凉鞋",
+          "category": "运动凉鞋",
+          "price": 199,
           "trend": "up",
-          "sales_heat": 78,
+          "sales_heat": 87,
           "tags": [
-            "潮流",
-            "大促",
-            "青少年"
+            "夏季",
+            "凉鞋",
+            "舒适"
           ],
-          "image": "https://placehold.co/300x300/png?text=361°",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "361°户外鞋青少年系列4",
-          "category": "户外鞋",
-          "price": 359,
-          "trend": "up",
-          "sales_heat": 70,
-          "tags": [
-            "凉感",
-            "舒适",
-            "潮流"
-          ],
-          "image": "https://placehold.co/300x300/png?text=361°",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "361°休闲鞋篮球系列5",
-          "category": "休闲鞋",
-          "price": 99,
-          "trend": "up",
-          "sales_heat": 91,
-          "tags": [
-            "高性价比",
-            "防滑",
-            "功能面料",
-            "新品"
-          ],
-          "image": "https://placehold.co/300x300/png?text=361°",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "361°户外鞋足球系列6",
-          "category": "户外鞋",
-          "price": 259,
-          "trend": "hot",
-          "sales_heat": 75,
-          "tags": [
-            "专业运动",
-            "缓震",
-            "户外",
-            "训练",
-            "防晒"
-          ],
-          "image": "https://placehold.co/300x300/png?text=361°",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 7,
-          "name": "361°防晒衣夏季系列7",
-          "category": "防晒衣",
-          "price": 699,
-          "trend": "hot",
-          "sales_heat": 60,
-          "tags": [
-            "青少年",
-            "透气",
-            "通勤"
-          ],
-          "image": "https://placehold.co/300x300/png?text=361°",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         }
       ]
     },
@@ -1609,524 +458,48 @@
       "products": [
         {
           "rank": 1,
-          "name": "特步冲锋衣新品系列1",
-          "category": "冲锋衣",
-          "price": 159,
-          "trend": "new",
-          "sales_heat": 74,
-          "tags": [
-            "防晒",
-            "新品",
-            "潮流",
-            "防滑",
-            "轻量"
-          ],
-          "image": "https://placehold.co/300x300/png?text=特步",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "特步训练鞋专业系列2",
-          "category": "训练鞋",
-          "price": 899,
-          "trend": "new",
-          "sales_heat": 71,
-          "tags": [
-            "舒适",
-            "大促",
-            "功能面料",
-            "防滑",
-            "科技感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=特步",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "特步跑鞋足球系列3",
+          "name": "特步冠军版跑鞋",
           "category": "跑鞋",
-          "price": 399,
-          "trend": "up",
-          "sales_heat": 82,
-          "tags": [
-            "通勤",
-            "跑步",
-            "防滑",
-            "透气",
-            "舒适"
-          ],
-          "image": "https://placehold.co/300x300/png?text=特步",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "特步训练鞋夏季系列4",
-          "category": "训练鞋",
-          "price": 99,
-          "trend": "flat",
-          "sales_heat": 88,
-          "tags": [
-            "速干",
-            "户外",
-            "潮流",
-            "大促"
-          ],
-          "image": "https://placehold.co/300x300/png?text=特步",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "特步健身服篮球系列5",
-          "category": "健身服",
-          "price": 229,
-          "trend": "up",
-          "sales_heat": 73,
-          "tags": [
-            "速干",
-            "校园",
-            "轻量",
-            "防滑"
-          ],
-          "image": "https://placehold.co/300x300/png?text=特步",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "鸿星尔克",
-      "products": [
-        {
-          "rank": 1,
-          "name": "鸿星尔克户外鞋校园系列1",
-          "category": "户外鞋",
-          "price": 359,
-          "trend": "up",
-          "sales_heat": 81,
-          "tags": [
-            "防晒",
-            "防滑",
-            "篮球",
-            "青少年"
-          ],
-          "image": "https://placehold.co/300x300/png?text=鸿星尔克",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "鸿星尔克轻户外服装透气系列2",
-          "category": "轻户外服装",
-          "price": 299,
-          "trend": "hot",
-          "sales_heat": 70,
-          "tags": [
-            "防滑",
-            "训练",
-            "跑步",
-            "潮流"
-          ],
-          "image": "https://placehold.co/300x300/png?text=鸿星尔克",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "鸿星尔克轻户外服装足球系列3",
-          "category": "轻户外服装",
-          "price": 259,
-          "trend": "new",
-          "sales_heat": 97,
-          "tags": [
-            "轻量",
-            "校园",
-            "训练",
-            "防滑"
-          ],
-          "image": "https://placehold.co/300x300/png?text=鸿星尔克",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "鸿星尔克户外鞋成人化系列4",
-          "category": "户外鞋",
-          "price": 299,
-          "trend": "flat",
-          "sales_heat": 98,
-          "tags": [
-            "篮球",
-            "新品",
-            "透气"
-          ],
-          "image": "https://placehold.co/300x300/png?text=鸿星尔克",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "鸿星尔克跑鞋经典系列5",
-          "category": "跑鞋",
-          "price": 159,
-          "trend": "up",
-          "sales_heat": 82,
-          "tags": [
-            "跑步",
-            "轻量",
-            "青少年"
-          ],
-          "image": "https://placehold.co/300x300/png?text=鸿星尔克",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "鸿星尔克轻户外服装轻户外系列6",
-          "category": "轻户外服装",
-          "price": 229,
-          "trend": "up",
-          "sales_heat": 98,
-          "tags": [
-            "防晒",
-            "潮流",
-            "训练",
-            "高性价比",
-            "校园"
-          ],
-          "image": "https://placehold.co/300x300/png?text=鸿星尔克",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "匹克",
-      "products": [
-        {
-          "rank": 1,
-          "name": "匹克健身服夏季系列1",
-          "category": "健身服",
-          "price": 299,
-          "trend": "hot",
-          "sales_heat": 83,
-          "tags": [
-            "训练",
-            "透气",
-            "校园",
-            "潮流"
-          ],
-          "image": "https://placehold.co/300x300/png?text=匹克",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "匹克健身服凉感系列2",
-          "category": "健身服",
-          "price": 229,
-          "trend": "up",
-          "sales_heat": 97,
-          "tags": [
-            "缓震",
-            "爆款",
-            "轻量",
-            "舒适"
-          ],
-          "image": "https://placehold.co/300x300/png?text=匹克",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "匹克冲锋衣凉感系列3",
-          "category": "冲锋衣",
-          "price": 499,
-          "trend": "up",
-          "sales_heat": 89,
-          "tags": [
-            "篮球",
-            "防滑",
-            "舒适",
-            "校园",
-            "训练"
-          ],
-          "image": "https://placehold.co/300x300/png?text=匹克",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "匹克瑜伽服网球系列4",
-          "category": "瑜伽服",
-          "price": 1099,
-          "trend": "flat",
-          "sales_heat": 82,
-          "tags": [
-            "校园",
-            "成人化",
-            "舒适",
-            "专业运动"
-          ],
-          "image": "https://placehold.co/300x300/png?text=匹克",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "匹克户外鞋透气系列5",
-          "category": "户外鞋",
-          "price": 399,
-          "trend": "up",
-          "sales_heat": 71,
-          "tags": [
-            "训练",
-            "潮流",
-            "成人化",
-            "凉感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=匹克",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "匹克轻户外服装网球系列6",
-          "category": "轻户外服装",
-          "price": 359,
-          "trend": "up",
-          "sales_heat": 77,
-          "tags": [
-            "大促",
-            "爆款",
-            "网面",
-            "缓震",
-            "凉感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=匹克",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 7,
-          "name": "匹克瑜伽服足球系列7",
-          "category": "瑜伽服",
-          "price": 199,
-          "trend": "hot",
-          "sales_heat": 91,
-          "tags": [
-            "透气",
-            "潮流",
-            "凉感",
-            "专业运动",
-            "篮球"
-          ],
-          "image": "https://placehold.co/300x300/png?text=匹克",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "乔丹",
-      "products": [
-        {
-          "rank": 1,
-          "name": "乔丹凉鞋成长系列1",
-          "category": "凉鞋",
-          "price": 899,
-          "trend": "flat",
-          "sales_heat": 77,
-          "tags": [
-            "科技感",
-            "高性价比",
-            "跑步",
-            "防滑"
-          ],
-          "image": "https://placehold.co/300x300/png?text=乔丹",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "乔丹防晒衣校园系列2",
-          "category": "防晒衣",
-          "price": 299,
-          "trend": "hot",
-          "sales_heat": 67,
-          "tags": [
-            "成人化",
-            "训练",
-            "轻量",
-            "潮流",
-            "爆款"
-          ],
-          "image": "https://placehold.co/300x300/png?text=乔丹",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "乔丹瑜伽服成长系列3",
-          "category": "瑜伽服",
           "price": 599,
           "trend": "flat",
-          "sales_heat": 72,
+          "sales_heat": 94,
           "tags": [
-            "高性价比",
-            "成人化",
-            "舒适"
-          ],
-          "image": "https://placehold.co/300x300/png?text=乔丹",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "乔丹训练鞋轻量系列4",
-          "category": "训练鞋",
-          "price": 1099,
-          "trend": "up",
-          "sales_heat": 79,
-          "tags": [
-            "缓震",
-            "防晒",
-            "大促"
-          ],
-          "image": "https://placehold.co/300x300/png?text=乔丹",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "乔丹跑鞋成长系列5",
-          "category": "跑鞋",
-          "price": 499,
-          "trend": "new",
-          "sales_heat": 93,
-          "tags": [
-            "防滑",
-            "训练",
-            "透气"
-          ],
-          "image": "https://placehold.co/300x300/png?text=乔丹",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "乔丹运动长裤青少年系列6",
-          "category": "运动长裤",
-          "price": 259,
-          "trend": "new",
-          "sales_heat": 72,
-          "tags": [
-            "高性价比",
-            "新品",
             "跑步",
-            "轻量"
+            "马拉松",
+            "竞速"
           ],
-          "image": "https://placehold.co/300x300/png?text=乔丹",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 7,
-          "name": "乔丹速干T恤成人化系列7",
-          "category": "速干T恤",
-          "price": 259,
-          "trend": "up",
-          "sales_heat": 90,
-          "tags": [
-            "青少年",
-            "速干",
-            "亲子",
-            "缓震",
-            "户外"
-          ],
-          "image": "https://placehold.co/300x300/png?text=乔丹",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "FILA",
-      "products": [
-        {
-          "rank": 1,
-          "name": "FILA跑鞋网球系列1",
-          "category": "跑鞋",
-          "price": 299,
-          "trend": "hot",
-          "sales_heat": 86,
-          "tags": [
-            "通勤",
-            "跑步",
-            "青少年"
-          ],
-          "image": "https://placehold.co/300x300/png?text=FILA",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 2,
-          "name": "FILA篮球鞋篮球系列2",
-          "category": "篮球鞋",
-          "price": 159,
-          "trend": "up",
-          "sales_heat": 91,
+          "name": "特步轻量训练鞋",
+          "category": "训练鞋",
+          "price": 299,
+          "trend": "new",
+          "sales_heat": 89,
           "tags": [
-            "新品",
-            "爆款",
-            "户外",
-            "校园",
-            "青少年"
+            "训练",
+            "轻量",
+            "校园"
           ],
-          "image": "https://placehold.co/300x300/png?text=FILA",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://placehold.co/420x300/eaf2ff/0b4db3?text=%E7%89%B9%E6%AD%A5%20%E8%AE%AD%E7%BB%83%E9%9E%8B",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 3,
-          "name": "FILA板鞋足球系列3",
-          "category": "板鞋",
-          "price": 499,
-          "trend": "flat",
-          "sales_heat": 91,
-          "tags": [
-            "功能面料",
-            "篮球",
-            "专业运动",
-            "科技感",
-            "大促"
-          ],
-          "image": "https://placehold.co/300x300/png?text=FILA",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "FILA卫衣轻量系列4",
-          "category": "卫衣",
-          "price": 99,
-          "trend": "hot",
+          "name": "特步夏季速干T恤",
+          "category": "速干T恤",
+          "price": 129,
+          "trend": "new",
           "sales_heat": 90,
           "tags": [
-            "通勤",
-            "舒适",
-            "新品"
+            "速干",
+            "夏季",
+            "跑步"
           ],
-          "image": "https://placehold.co/300x300/png?text=FILA",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "FILA凉鞋户外系列5",
-          "category": "凉鞋",
-          "price": 359,
-          "trend": "up",
-          "sales_heat": 62,
-          "tags": [
-            "通勤",
-            "缓震",
-            "高性价比",
-            "防滑",
-            "亲子"
-          ],
-          "image": "https://placehold.co/300x300/png?text=FILA",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "FILA凉鞋夏季系列6",
-          "category": "凉鞋",
-          "price": 1099,
-          "trend": "up",
-          "sales_heat": 62,
-          "tags": [
-            "高性价比",
-            "防滑",
-            "轻量",
-            "通勤"
-          ],
-          "image": "https://placehold.co/300x300/png?text=FILA",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         }
       ]
     },
@@ -2135,82 +508,48 @@
       "products": [
         {
           "rank": 1,
-          "name": "Nike健身服经典系列1",
-          "category": "健身服",
-          "price": 499,
-          "trend": "up",
-          "sales_heat": 64,
+          "name": "Nike Pegasus系列跑鞋",
+          "category": "跑鞋",
+          "price": 899,
+          "trend": "new",
+          "sales_heat": 96,
           "tags": [
-            "轻量",
-            "校园",
-            "防滑",
-            "专业运动"
+            "经典跑鞋",
+            "缓震",
+            "大众跑者"
           ],
-          "image": "https://placehold.co/300x300/png?text=Nike",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 2,
-          "name": "Nike训练鞋新品系列2",
-          "category": "训练鞋",
-          "price": 599,
-          "trend": "hot",
-          "sales_heat": 66,
+          "name": "Nike Vomero系列跑鞋",
+          "category": "跑鞋",
+          "price": 1099,
+          "trend": "new",
+          "sales_heat": 93,
           "tags": [
-            "凉感",
-            "功能面料",
+            "厚底缓震",
             "跑步",
-            "专业运动",
-            "户外"
+            "舒适"
           ],
-          "image": "https://placehold.co/300x300/png?text=Nike",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 3,
-          "name": "Nike户外鞋户外系列3",
-          "category": "户外鞋",
-          "price": 129,
-          "trend": "new",
-          "sales_heat": 92,
-          "tags": [
-            "爆款",
-            "大促",
-            "速干",
-            "训练"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Nike",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "Nike运动长裤新品系列4",
-          "category": "运动长裤",
-          "price": 129,
-          "trend": "flat",
-          "sales_heat": 96,
-          "tags": [
-            "高性价比",
-            "防滑",
-            "速干"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Nike",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "Nike篮球鞋篮球系列5",
-          "category": "篮球鞋",
-          "price": 399,
-          "trend": "flat",
-          "sales_heat": 76,
+          "name": "Nike Dunk休闲鞋",
+          "category": "板鞋",
+          "price": 799,
+          "trend": "hot",
+          "sales_heat": 94,
           "tags": [
             "潮流",
-            "高性价比",
-            "功能面料"
+            "校园",
+            "复古"
           ],
-          "image": "https://placehold.co/300x300/png?text=Nike",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         }
       ]
     },
@@ -2219,477 +558,48 @@
       "products": [
         {
           "rank": 1,
-          "name": "Adidas卫衣经典系列1",
-          "category": "卫衣",
-          "price": 1099,
-          "trend": "up",
+          "name": "Adidas Samba OG",
+          "category": "板鞋",
+          "price": 799,
+          "trend": "new",
           "sales_heat": 98,
           "tags": [
-            "通勤",
-            "跑步",
-            "训练",
-            "高性价比",
-            "青少年"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Adidas",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "Adidas速干T恤透气系列2",
-          "category": "速干T恤",
-          "price": 699,
-          "trend": "up",
-          "sales_heat": 60,
-          "tags": [
-            "速干",
-            "青少年",
-            "大促",
-            "缓震"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Adidas",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "Adidas凉鞋网球系列3",
-          "category": "凉鞋",
-          "price": 1099,
-          "trend": "new",
-          "sales_heat": 94,
-          "tags": [
-            "青少年",
-            "校园",
-            "高性价比"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Adidas",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "Adidas健身服网球系列4",
-          "category": "健身服",
-          "price": 499,
-          "trend": "flat",
-          "sales_heat": 76,
-          "tags": [
-            "高性价比",
-            "网面",
-            "缓震",
-            "专业运动"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Adidas",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "Puma",
-      "products": [
-        {
-          "rank": 1,
-          "name": "Puma防晒衣凉感系列1",
-          "category": "防晒衣",
-          "price": 259,
-          "trend": "up",
-          "sales_heat": 67,
-          "tags": [
-            "大促",
-            "功能面料",
-            "青少年",
-            "防滑"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Puma",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "Puma运动长裤户外系列2",
-          "category": "运动长裤",
-          "price": 359,
-          "trend": "up",
-          "sales_heat": 67,
-          "tags": [
-            "新品",
-            "潮流",
-            "防滑",
-            "缓震",
-            "篮球"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Puma",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "Puma通勤运动鞋专业系列3",
-          "category": "通勤运动鞋",
-          "price": 199,
-          "trend": "new",
-          "sales_heat": 66,
-          "tags": [
-            "凉感",
-            "缓震",
-            "青少年"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Puma",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "Puma户外鞋凉感系列4",
-          "category": "户外鞋",
-          "price": 399,
-          "trend": "hot",
-          "sales_heat": 78,
-          "tags": [
-            "速干",
-            "凉感",
-            "功能面料",
-            "训练"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Puma",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "Puma户外鞋成长系列5",
-          "category": "户外鞋",
-          "price": 99,
-          "trend": "new",
-          "sales_heat": 70,
-          "tags": [
-            "训练",
-            "防晒",
-            "舒适"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Puma",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "New Balance",
-      "products": [
-        {
-          "rank": 1,
-          "name": "New Balance凉鞋凉感系列1",
-          "category": "凉鞋",
-          "price": 599,
-          "trend": "flat",
-          "sales_heat": 90,
-          "tags": [
-            "通勤",
-            "专业运动",
-            "防晒",
-            "缓震",
-            "高性价比"
-          ],
-          "image": "https://placehold.co/300x300/png?text=New Balance",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "New Balance防晒衣轻量系列2",
-          "category": "防晒衣",
-          "price": 129,
-          "trend": "hot",
-          "sales_heat": 66,
-          "tags": [
-            "缓震",
-            "潮流",
-            "科技感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=New Balance",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "New Balance训练鞋专业系列3",
-          "category": "训练鞋",
-          "price": 499,
-          "trend": "new",
-          "sales_heat": 64,
-          "tags": [
-            "跑步",
-            "功能面料",
-            "凉感",
-            "轻量",
-            "网面"
-          ],
-          "image": "https://placehold.co/300x300/png?text=New Balance",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "New Balance户外鞋经典系列4",
-          "category": "户外鞋",
-          "price": 199,
-          "trend": "flat",
-          "sales_heat": 84,
-          "tags": [
-            "防滑",
-            "潮流",
-            "凉感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=New Balance",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "New Balance健身服校园系列5",
-          "category": "健身服",
-          "price": 1099,
-          "trend": "hot",
-          "sales_heat": 63,
-          "tags": [
-            "篮球",
-            "功能面料",
-            "跑步",
-            "缓震"
-          ],
-          "image": "https://placehold.co/300x300/png?text=New Balance",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "New Balance瑜伽服轻户外系列6",
-          "category": "瑜伽服",
-          "price": 99,
-          "trend": "hot",
-          "sales_heat": 64,
-          "tags": [
-            "大促",
-            "篮球",
-            "舒适",
-            "新品"
-          ],
-          "image": "https://placehold.co/300x300/png?text=New Balance",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 7,
-          "name": "New Balance健身服经典系列7",
-          "category": "健身服",
-          "price": 899,
-          "trend": "flat",
-          "sales_heat": 81,
-          "tags": [
-            "缓震",
-            "科技感",
-            "凉感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=New Balance",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "Asics",
-      "products": [
-        {
-          "rank": 1,
-          "name": "Asics瑜伽服校园系列1",
-          "category": "瑜伽服",
-          "price": 899,
-          "trend": "new",
-          "sales_heat": 76,
-          "tags": [
-            "高性价比",
-            "户外",
-            "大促",
-            "通勤",
-            "跑步"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Asics",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "Asics短裤成长系列2",
-          "category": "短裤",
-          "price": 259,
-          "trend": "up",
-          "sales_heat": 76,
-          "tags": [
-            "科技感",
-            "青少年",
-            "训练"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Asics",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "Asics休闲鞋新品系列3",
-          "category": "休闲鞋",
-          "price": 159,
-          "trend": "hot",
-          "sales_heat": 94,
-          "tags": [
-            "大促",
-            "速干",
-            "通勤",
-            "新品"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Asics",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "Asics户外鞋经典系列4",
-          "category": "户外鞋",
-          "price": 899,
-          "trend": "flat",
-          "sales_heat": 62,
-          "tags": [
-            "专业运动",
-            "科技感",
-            "高性价比"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Asics",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "Skechers",
-      "products": [
-        {
-          "rank": 1,
-          "name": "Skechers凉鞋训练系列1",
-          "category": "凉鞋",
-          "price": 129,
-          "trend": "up",
-          "sales_heat": 72,
-          "tags": [
-            "缓震",
-            "亲子",
-            "凉感",
-            "高性价比",
+            "Samba",
+            "复古",
             "潮流"
           ],
-          "image": "https://placehold.co/300x300/png?text=Skechers",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 2,
-          "name": "Skechers凉鞋校园系列2",
-          "category": "凉鞋",
-          "price": 259,
-          "trend": "hot",
-          "sales_heat": 80,
+          "name": "Adidas Adizero跑鞋",
+          "category": "跑鞋",
+          "price": 999,
+          "trend": "new",
+          "sales_heat": 94,
           "tags": [
-            "爆款",
-            "轻量",
-            "新品",
-            "缓震",
-            "专业运动"
+            "竞速",
+            "跑步",
+            "专业"
           ],
-          "image": "https://placehold.co/300x300/png?text=Skechers",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 3,
-          "name": "Skechers短裤轻户外系列3",
-          "category": "短裤",
-          "price": 499,
+          "name": "Adidas Ultraboost",
+          "category": "跑鞋",
+          "price": 1299,
           "trend": "flat",
-          "sales_heat": 66,
+          "sales_heat": 89,
           "tags": [
-            "科技感",
-            "户外",
-            "功能面料",
-            "爆款",
-            "舒适"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Skechers",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "Skechers速干T恤校园系列4",
-          "category": "速干T恤",
-          "price": 229,
-          "trend": "up",
-          "sales_heat": 88,
-          "tags": [
-            "篮球",
-            "功能面料",
-            "通勤",
-            "防滑"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Skechers",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "lululemon",
-      "products": [
-        {
-          "rank": 1,
-          "name": "lululemon卫衣凉感系列1",
-          "category": "卫衣",
-          "price": 399,
-          "trend": "hot",
-          "sales_heat": 80,
-          "tags": [
-            "凉感",
-            "成人化",
-            "网面",
-            "舒适",
-            "专业运动"
-          ],
-          "image": "https://placehold.co/300x300/png?text=lululemon",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "lululemon卫衣青少年系列2",
-          "category": "卫衣",
-          "price": 199,
-          "trend": "up",
-          "sales_heat": 92,
-          "tags": [
-            "户外",
-            "凉感",
-            "新品",
-            "缓震"
-          ],
-          "image": "https://placehold.co/300x300/png?text=lululemon",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "lululemon训练鞋网球系列3",
-          "category": "训练鞋",
-          "price": 599,
-          "trend": "flat",
-          "sales_heat": 64,
-          "tags": [
-            "高性价比",
             "缓震",
             "舒适",
-            "凉感"
+            "通勤"
           ],
-          "image": "https://placehold.co/300x300/png?text=lululemon",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "lululemon篮球鞋轻户外系列4",
-          "category": "篮球鞋",
-          "price": 599,
-          "trend": "up",
-          "sales_heat": 96,
-          "tags": [
-            "网面",
-            "科技感",
-            "爆款",
-            "户外"
-          ],
-          "image": "https://placehold.co/300x300/png?text=lululemon",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         }
       ]
     },
@@ -2698,111 +608,48 @@
       "products": [
         {
           "rank": 1,
-          "name": "On板鞋新品系列1",
-          "category": "板鞋",
-          "price": 359,
-          "trend": "hot",
-          "sales_heat": 74,
+          "name": "On Cloudsurfer跑鞋",
+          "category": "跑鞋",
+          "price": 1290,
+          "trend": "new",
+          "sales_heat": 97,
           "tags": [
-            "防滑",
-            "网面",
-            "户外"
+            "云感缓震",
+            "高端跑鞋",
+            "城市运动"
           ],
-          "image": "https://placehold.co/300x300/png?text=On",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 2,
-          "name": "On瑜伽服透气系列2",
-          "category": "瑜伽服",
-          "price": 159,
-          "trend": "flat",
-          "sales_heat": 80,
+          "name": "On Cloudmonster跑鞋",
+          "category": "跑鞋",
+          "price": 1390,
+          "trend": "new",
+          "sales_heat": 93,
           "tags": [
-            "潮流",
-            "新品",
-            "亲子"
+            "厚底",
+            "跑步",
+            "潮流"
           ],
-          "image": "https://placehold.co/300x300/png?text=On",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 3,
-          "name": "On短裤足球系列3",
-          "category": "短裤",
-          "price": 1099,
-          "trend": "hot",
-          "sales_heat": 82,
-          "tags": [
-            "校园",
-            "功能面料",
-            "成人化"
-          ],
-          "image": "https://placehold.co/300x300/png?text=On",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "On通勤运动鞋训练系列4",
+          "name": "On Cloud 6通勤运动鞋",
           "category": "通勤运动鞋",
-          "price": 99,
-          "trend": "new",
-          "sales_heat": 89,
-          "tags": [
-            "潮流",
-            "网面",
-            "防滑"
-          ],
-          "image": "https://placehold.co/300x300/png?text=On",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "On冲锋衣训练系列5",
-          "category": "冲锋衣",
-          "price": 229,
-          "trend": "up",
-          "sales_heat": 94,
-          "tags": [
-            "成人化",
-            "通勤",
-            "专业运动"
-          ],
-          "image": "https://placehold.co/300x300/png?text=On",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "On通勤运动鞋青少年系列6",
-          "category": "通勤运动鞋",
-          "price": 129,
-          "trend": "up",
-          "sales_heat": 61,
-          "tags": [
-            "防晒",
-            "训练",
-            "亲子",
-            "成人化",
-            "科技感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=On",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 7,
-          "name": "On短裤轻量系列7",
-          "category": "短裤",
-          "price": 129,
+          "price": 1190,
           "trend": "flat",
-          "sales_heat": 61,
+          "sales_heat": 90,
           "tags": [
-            "潮流",
-            "爆款",
-            "防晒",
-            "青少年"
+            "通勤",
+            "轻量",
+            "城市"
           ],
-          "image": "https://placehold.co/300x300/png?text=On",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         }
       ]
     },
@@ -2811,87 +658,48 @@
       "products": [
         {
           "rank": 1,
-          "name": "Hoka休闲鞋夏季系列1",
-          "category": "休闲鞋",
-          "price": 899,
-          "trend": "up",
-          "sales_heat": 61,
+          "name": "Hoka Clifton系列跑鞋",
+          "category": "跑鞋",
+          "price": 1199,
+          "trend": "new",
+          "sales_heat": 95,
           "tags": [
-            "凉感",
-            "轻量",
-            "速干",
-            "成人化",
-            "校园"
+            "厚底缓震",
+            "跑步",
+            "舒适"
           ],
-          "image": "https://placehold.co/300x300/png?text=Hoka",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 2,
-          "name": "Hoka短裤透气系列2",
-          "category": "短裤",
-          "price": 99,
+          "name": "Hoka Bondi系列跑鞋",
+          "category": "跑鞋",
+          "price": 1399,
           "trend": "up",
-          "sales_heat": 85,
+          "sales_heat": 92,
           "tags": [
-            "新品",
-            "潮流",
-            "大促",
-            "高性价比",
-            "网面"
+            "厚底",
+            "慢跑",
+            "缓震"
           ],
-          "image": "https://placehold.co/300x300/png?text=Hoka",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 3,
-          "name": "Hoka凉鞋篮球系列3",
-          "category": "凉鞋",
-          "price": 259,
+          "name": "Hoka Speedgoat越野跑鞋",
+          "category": "户外跑鞋",
+          "price": 1299,
           "trend": "up",
-          "sales_heat": 69,
+          "sales_heat": 90,
           "tags": [
+            "越野",
             "户外",
-            "网面",
-            "功能面料",
-            "亲子"
+            "抓地"
           ],
-          "image": "https://placehold.co/300x300/png?text=Hoka",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "Hoka篮球鞋轻量系列4",
-          "category": "篮球鞋",
-          "price": 199,
-          "trend": "new",
-          "sales_heat": 98,
-          "tags": [
-            "通勤",
-            "防滑",
-            "功能面料",
-            "速干",
-            "舒适"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Hoka",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "Hoka凉鞋校园系列5",
-          "category": "凉鞋",
-          "price": 199,
-          "trend": "flat",
-          "sales_heat": 70,
-          "tags": [
-            "速干",
-            "功能面料",
-            "专业运动",
-            "篮球",
-            "训练"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Hoka",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         }
       ]
     },
@@ -2900,84 +708,148 @@
       "products": [
         {
           "rank": 1,
-          "name": "Salomon健身服校园系列1",
-          "category": "健身服",
-          "price": 199,
-          "trend": "up",
-          "sales_heat": 79,
+          "name": "Salomon XT-6户外鞋",
+          "category": "户外鞋",
+          "price": 1499,
+          "trend": "flat",
+          "sales_heat": 95,
           "tags": [
-            "篮球",
-            "防滑",
-            "训练",
-            "防晒"
+            "山系穿搭",
+            "户外",
+            "潮流"
           ],
-          "image": "https://placehold.co/300x300/png?text=Salomon",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 2,
-          "name": "Salomon通勤运动鞋透气系列2",
-          "category": "通勤运动鞋",
-          "price": 229,
-          "trend": "new",
-          "sales_heat": 97,
+          "name": "Salomon ACS系列户外鞋",
+          "category": "户外鞋",
+          "price": 1299,
+          "trend": "up",
+          "sales_heat": 91,
           "tags": [
-            "大促",
-            "青少年",
-            "成人化",
-            "专业运动",
-            "防滑"
+            "轻户外",
+            "城市户外",
+            "功能"
           ],
-          "image": "https://placehold.co/300x300/png?text=Salomon",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 3,
-          "name": "Salomon冲锋衣透气系列3",
-          "category": "冲锋衣",
-          "price": 129,
-          "trend": "up",
-          "sales_heat": 68,
-          "tags": [
-            "舒适",
-            "校园",
-            "户外"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Salomon",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "Salomon休闲鞋新品系列4",
-          "category": "休闲鞋",
-          "price": 899,
-          "trend": "up",
-          "sales_heat": 76,
-          "tags": [
-            "新品",
-            "舒适",
-            "功能面料",
-            "缓震",
-            "青少年"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Salomon",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "Salomon健身服凉感系列5",
-          "category": "健身服",
-          "price": 99,
+          "name": "Salomon 越野跑鞋",
+          "category": "越野跑鞋",
+          "price": 1199,
           "trend": "new",
+          "sales_heat": 91,
+          "tags": [
+            "越野",
+            "抓地",
+            "专业运动"
+          ],
+          "image": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
+        }
+      ]
+    },
+    {
+      "brand": "lululemon",
+      "products": [
+        {
+          "rank": 1,
+          "name": "lululemon Align瑜伽裤",
+          "category": "瑜伽服",
+          "price": 850,
+          "trend": "hot",
+          "sales_heat": 94,
+          "tags": [
+            "瑜伽",
+            "女性运动",
+            "高端"
+          ],
+          "image": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
+        },
+        {
+          "rank": 2,
+          "name": "lululemon训练T恤",
+          "category": "训练服",
+          "price": 480,
+          "trend": "flat",
           "sales_heat": 90,
           "tags": [
-            "缓震",
-            "校园",
-            "青少年",
-            "通勤"
+            "训练",
+            "舒适",
+            "生活方式"
           ],
-          "image": "https://placehold.co/300x300/png?text=Salomon",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
+        },
+        {
+          "rank": 3,
+          "name": "lululemon轻量外套",
+          "category": "轻户外服装",
+          "price": 1180,
+          "trend": "up",
+          "sales_heat": 90,
+          "tags": [
+            "轻户外",
+            "通勤",
+            "高端"
+          ],
+          "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
+        }
+      ]
+    },
+    {
+      "brand": "The North Face",
+      "products": [
+        {
+          "rank": 1,
+          "name": "北面防晒皮肤衣",
+          "category": "防晒衣",
+          "price": 699,
+          "trend": "new",
+          "sales_heat": 95,
+          "tags": [
+            "防晒",
+            "户外",
+            "轻量"
+          ],
+          "image": "https://images.unsplash.com/photo-1523381294911-8d3cead13475?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
+        },
+        {
+          "rank": 2,
+          "name": "北面轻量冲锋衣",
+          "category": "冲锋衣",
+          "price": 1299,
+          "trend": "up",
+          "sales_heat": 89,
+          "tags": [
+            "户外",
+            "防护",
+            "功能"
+          ],
+          "image": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
+        },
+        {
+          "rank": 3,
+          "name": "北面徒步鞋",
+          "category": "户外鞋",
+          "price": 899,
+          "trend": "up",
+          "sales_heat": 86,
+          "tags": [
+            "徒步",
+            "户外",
+            "抓地"
+          ],
+          "image": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         }
       ]
     },
@@ -2986,1036 +858,48 @@
       "products": [
         {
           "rank": 1,
-          "name": "迪桑特瑜伽服青少年系列1",
-          "category": "瑜伽服",
-          "price": 159,
-          "trend": "new",
-          "sales_heat": 68,
-          "tags": [
-            "大促",
-            "户外",
-            "功能面料",
-            "新品",
-            "舒适"
-          ],
-          "image": "https://placehold.co/300x300/png?text=迪桑特",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "迪桑特短裤青少年系列2",
-          "category": "短裤",
-          "price": 399,
+          "name": "迪桑特训练外套",
+          "category": "训练服",
+          "price": 1290,
           "trend": "up",
-          "sales_heat": 71,
-          "tags": [
-            "凉感",
-            "校园",
-            "户外"
-          ],
-          "image": "https://placehold.co/300x300/png?text=迪桑特",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "迪桑特冲锋衣户外系列3",
-          "category": "冲锋衣",
-          "price": 299,
-          "trend": "up",
-          "sales_heat": 75,
-          "tags": [
-            "青少年",
-            "网面",
-            "潮流",
-            "防晒",
-            "篮球"
-          ],
-          "image": "https://placehold.co/300x300/png?text=迪桑特",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "迪桑特户外鞋夏季系列4",
-          "category": "户外鞋",
-          "price": 259,
-          "trend": "up",
-          "sales_heat": 75,
-          "tags": [
-            "专业运动",
-            "高性价比",
-            "凉感",
-            "跑步"
-          ],
-          "image": "https://placehold.co/300x300/png?text=迪桑特",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "迪桑特运动配件专业系列5",
-          "category": "运动配件",
-          "price": 229,
-          "trend": "up",
-          "sales_heat": 72,
-          "tags": [
-            "训练",
-            "专业运动",
-            "高性价比",
-            "防滑"
-          ],
-          "image": "https://placehold.co/300x300/png?text=迪桑特",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "迪桑特凉鞋校园系列6",
-          "category": "凉鞋",
-          "price": 499,
-          "trend": "up",
-          "sales_heat": 62,
-          "tags": [
-            "潮流",
-            "功能面料",
-            "青少年",
-            "篮球",
-            "亲子"
-          ],
-          "image": "https://placehold.co/300x300/png?text=迪桑特",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "可隆",
-      "products": [
-        {
-          "rank": 1,
-          "name": "可隆短裤轻户外系列1",
-          "category": "短裤",
-          "price": 299,
-          "trend": "new",
-          "sales_heat": 73,
-          "tags": [
-            "防滑",
-            "防晒",
-            "潮流"
-          ],
-          "image": "https://placehold.co/300x300/png?text=可隆",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "可隆短裤成人化系列2",
-          "category": "短裤",
-          "price": 599,
-          "trend": "new",
-          "sales_heat": 66,
-          "tags": [
-            "爆款",
-            "专业运动",
-            "网面",
-            "成人化"
-          ],
-          "image": "https://placehold.co/300x300/png?text=可隆",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "可隆卫衣专业系列3",
-          "category": "卫衣",
-          "price": 699,
-          "trend": "up",
-          "sales_heat": 74,
-          "tags": [
-            "户外",
-            "篮球",
-            "舒适",
-            "防晒",
-            "校园"
-          ],
-          "image": "https://placehold.co/300x300/png?text=可隆",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "可隆户外鞋新品系列4",
-          "category": "户外鞋",
-          "price": 259,
-          "trend": "up",
-          "sales_heat": 63,
-          "tags": [
-            "训练",
-            "成人化",
-            "爆款"
-          ],
-          "image": "https://placehold.co/300x300/png?text=可隆",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "可隆休闲鞋轻户外系列5",
-          "category": "休闲鞋",
-          "price": 699,
-          "trend": "flat",
-          "sales_heat": 63,
-          "tags": [
-            "凉感",
-            "户外",
-            "爆款",
-            "通勤"
-          ],
-          "image": "https://placehold.co/300x300/png?text=可隆",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "凯乐石",
-      "products": [
-        {
-          "rank": 1,
-          "name": "凯乐石通勤运动鞋成长系列1",
-          "category": "通勤运动鞋",
-          "price": 129,
-          "trend": "up",
-          "sales_heat": 98,
-          "tags": [
-            "透气",
-            "青少年",
-            "功能面料"
-          ],
-          "image": "https://placehold.co/300x300/png?text=凯乐石",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "凯乐石健身服网球系列2",
-          "category": "健身服",
-          "price": 699,
-          "trend": "flat",
-          "sales_heat": 93,
-          "tags": [
-            "速干",
-            "舒适",
-            "潮流",
-            "科技感",
-            "篮球"
-          ],
-          "image": "https://placehold.co/300x300/png?text=凯乐石",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "凯乐石速干T恤青少年系列3",
-          "category": "速干T恤",
-          "price": 199,
-          "trend": "up",
-          "sales_heat": 68,
-          "tags": [
-            "科技感",
-            "网面",
-            "新品",
-            "轻量",
-            "舒适"
-          ],
-          "image": "https://placehold.co/300x300/png?text=凯乐石",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "凯乐石凉鞋新品系列4",
-          "category": "凉鞋",
-          "price": 229,
-          "trend": "flat",
-          "sales_heat": 77,
-          "tags": [
-            "潮流",
-            "训练",
-            "舒适",
-            "轻量"
-          ],
-          "image": "https://placehold.co/300x300/png?text=凯乐石",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "凯乐石运动配件青少年系列5",
-          "category": "运动配件",
-          "price": 699,
-          "trend": "hot",
-          "sales_heat": 70,
-          "tags": [
-            "跑步",
-            "大促",
-            "缓震",
-            "防滑"
-          ],
-          "image": "https://placehold.co/300x300/png?text=凯乐石",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "始祖鸟",
-      "products": [
-        {
-          "rank": 1,
-          "name": "始祖鸟户外鞋经典系列1",
-          "category": "户外鞋",
-          "price": 259,
-          "trend": "hot",
-          "sales_heat": 69,
-          "tags": [
-            "爆款",
-            "功能面料",
-            "跑步",
-            "校园",
-            "防滑"
-          ],
-          "image": "https://placehold.co/300x300/png?text=始祖鸟",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "始祖鸟速干T恤网球系列2",
-          "category": "速干T恤",
-          "price": 159,
-          "trend": "new",
-          "sales_heat": 65,
-          "tags": [
-            "大促",
-            "科技感",
-            "防晒",
-            "青少年"
-          ],
-          "image": "https://placehold.co/300x300/png?text=始祖鸟",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "始祖鸟板鞋训练系列3",
-          "category": "板鞋",
-          "price": 899,
-          "trend": "up",
-          "sales_heat": 78,
-          "tags": [
-            "轻量",
-            "成人化",
-            "防滑",
-            "新品"
-          ],
-          "image": "https://placehold.co/300x300/png?text=始祖鸟",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "始祖鸟休闲鞋轻量系列4",
-          "category": "休闲鞋",
-          "price": 259,
-          "trend": "new",
-          "sales_heat": 87,
-          "tags": [
-            "跑步",
-            "网面",
-            "校园",
-            "青少年"
-          ],
-          "image": "https://placehold.co/300x300/png?text=始祖鸟",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "始祖鸟户外鞋青少年系列5",
-          "category": "户外鞋",
-          "price": 259,
-          "trend": "hot",
-          "sales_heat": 79,
-          "tags": [
-            "功能面料",
-            "潮流",
-            "速干",
-            "透气",
-            "通勤"
-          ],
-          "image": "https://placehold.co/300x300/png?text=始祖鸟",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "始祖鸟卫衣轻量系列6",
-          "category": "卫衣",
-          "price": 1099,
-          "trend": "flat",
-          "sales_heat": 88,
-          "tags": [
-            "专业运动",
-            "缓震",
-            "透气"
-          ],
-          "image": "https://placehold.co/300x300/png?text=始祖鸟",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 7,
-          "name": "始祖鸟户外鞋训练系列7",
-          "category": "户外鞋",
-          "price": 299,
-          "trend": "flat",
-          "sales_heat": 98,
-          "tags": [
-            "跑步",
-            "高性价比",
-            "透气",
-            "舒适",
-            "训练"
-          ],
-          "image": "https://placehold.co/300x300/png?text=始祖鸟",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "北面",
-      "products": [
-        {
-          "rank": 1,
-          "name": "北面通勤运动鞋专业系列1",
-          "category": "通勤运动鞋",
-          "price": 259,
-          "trend": "new",
-          "sales_heat": 63,
-          "tags": [
-            "户外",
-            "大促",
-            "网面",
-            "新品"
-          ],
-          "image": "https://placehold.co/300x300/png?text=北面",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "北面卫衣轻户外系列2",
-          "category": "卫衣",
-          "price": 1099,
-          "trend": "new",
-          "sales_heat": 61,
-          "tags": [
-            "凉感",
-            "爆款",
-            "科技感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=北面",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "北面户外鞋凉感系列3",
-          "category": "户外鞋",
-          "price": 259,
-          "trend": "hot",
-          "sales_heat": 83,
-          "tags": [
-            "户外",
-            "通勤",
-            "大促"
-          ],
-          "image": "https://placehold.co/300x300/png?text=北面",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "北面防晒衣专业系列4",
-          "category": "防晒衣",
-          "price": 399,
-          "trend": "hot",
-          "sales_heat": 84,
-          "tags": [
-            "防滑",
-            "功能面料",
-            "凉感",
-            "校园",
-            "跑步"
-          ],
-          "image": "https://placehold.co/300x300/png?text=北面",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "北面通勤运动鞋训练系列5",
-          "category": "通勤运动鞋",
-          "price": 699,
-          "trend": "hot",
-          "sales_heat": 61,
-          "tags": [
-            "通勤",
-            "户外",
-            "轻量",
-            "专业运动",
-            "成人化"
-          ],
-          "image": "https://placehold.co/300x300/png?text=北面",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "北面跑鞋凉感系列6",
-          "category": "跑鞋",
-          "price": 1099,
-          "trend": "flat",
-          "sales_heat": 73,
-          "tags": [
-            "青少年",
-            "爆款",
-            "速干"
-          ],
-          "image": "https://placehold.co/300x300/png?text=北面",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "Under Armour",
-      "products": [
-        {
-          "rank": 1,
-          "name": "Under Armour短裤透气系列1",
-          "category": "短裤",
-          "price": 199,
-          "trend": "up",
-          "sales_heat": 70,
-          "tags": [
-            "凉感",
-            "功能面料",
-            "速干",
-            "大促",
-            "亲子"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Under Armour",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "Under Armour冲锋衣夏季系列2",
-          "category": "冲锋衣",
-          "price": 299,
-          "trend": "flat",
-          "sales_heat": 97,
-          "tags": [
-            "速干",
-            "轻量",
-            "亲子",
-            "新品",
-            "凉感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Under Armour",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "Under Armour通勤运动鞋透气系列3",
-          "category": "通勤运动鞋",
-          "price": 359,
-          "trend": "up",
-          "sales_heat": 87,
-          "tags": [
-            "成人化",
-            "网面",
-            "功能面料",
-            "训练",
-            "专业运动"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Under Armour",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "Under Armour防晒衣成长系列4",
-          "category": "防晒衣",
-          "price": 199,
-          "trend": "new",
-          "sales_heat": 85,
-          "tags": [
-            "功能面料",
-            "户外",
-            "舒适"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Under Armour",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "Under Armour瑜伽服青少年系列5",
-          "category": "瑜伽服",
-          "price": 159,
-          "trend": "flat",
-          "sales_heat": 61,
-          "tags": [
-            "速干",
-            "专业运动",
-            "校园",
-            "亲子"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Under Armour",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "Under Armour板鞋成人化系列6",
-          "category": "板鞋",
-          "price": 99,
-          "trend": "hot",
-          "sales_heat": 67,
-          "tags": [
-            "通勤",
-            "大促",
-            "凉感",
-            "防滑"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Under Armour",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 7,
-          "name": "Under Armour户外鞋成长系列7",
-          "category": "户外鞋",
-          "price": 259,
-          "trend": "hot",
-          "sales_heat": 71,
-          "tags": [
-            "专业运动",
-            "篮球",
-            "凉感",
-            "防晒"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Under Armour",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "Crocs",
-      "products": [
-        {
-          "rank": 1,
-          "name": "Crocs健身服透气系列1",
-          "category": "健身服",
-          "price": 1099,
-          "trend": "up",
-          "sales_heat": 63,
-          "tags": [
-            "功能面料",
-            "新品",
-            "科技感",
-            "凉感",
-            "亲子"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Crocs",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "Crocs凉鞋青少年系列2",
-          "category": "凉鞋",
-          "price": 259,
-          "trend": "flat",
-          "sales_heat": 78,
-          "tags": [
-            "成人化",
-            "爆款",
-            "网面",
-            "透气"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Crocs",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "Crocs轻户外服装轻户外系列3",
-          "category": "轻户外服装",
-          "price": 899,
-          "trend": "up",
-          "sales_heat": 84,
-          "tags": [
-            "缓震",
-            "校园",
-            "速干"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Crocs",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "Crocs板鞋青少年系列4",
-          "category": "板鞋",
-          "price": 199,
-          "trend": "up",
-          "sales_heat": 96,
-          "tags": [
-            "速干",
-            "凉感",
-            "科技感",
-            "高性价比",
-            "功能面料"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Crocs",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "Crocs防晒衣透气系列5",
-          "category": "防晒衣",
-          "price": 899,
-          "trend": "flat",
-          "sales_heat": 88,
-          "tags": [
-            "透气",
-            "防滑",
-            "训练",
-            "户外"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Crocs",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "Vans",
-      "products": [
-        {
-          "rank": 1,
-          "name": "Vans通勤运动鞋青少年系列1",
-          "category": "通勤运动鞋",
-          "price": 499,
-          "trend": "hot",
-          "sales_heat": 81,
-          "tags": [
-            "功能面料",
-            "爆款",
-            "篮球",
-            "专业运动",
-            "舒适"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Vans",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "Vans瑜伽服轻户外系列2",
-          "category": "瑜伽服",
-          "price": 699,
-          "trend": "hot",
-          "sales_heat": 76,
-          "tags": [
-            "舒适",
-            "篮球",
-            "功能面料",
-            "轻量"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Vans",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "Vans跑鞋网球系列3",
-          "category": "跑鞋",
-          "price": 259,
-          "trend": "hot",
-          "sales_heat": 81,
-          "tags": [
-            "凉感",
-            "亲子",
-            "科技感",
-            "舒适",
-            "专业运动"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Vans",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "Vans休闲鞋轻户外系列4",
-          "category": "休闲鞋",
-          "price": 599,
-          "trend": "new",
-          "sales_heat": 83,
-          "tags": [
-            "校园",
-            "训练",
-            "篮球",
-            "潮流",
-            "轻量"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Vans",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "Vans运动长裤训练系列5",
-          "category": "运动长裤",
-          "price": 899,
-          "trend": "flat",
-          "sales_heat": 84,
-          "tags": [
-            "高性价比",
-            "凉感",
-            "训练",
-            "大促",
-            "缓震"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Vans",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "Vans防晒衣轻量系列6",
-          "category": "防晒衣",
-          "price": 129,
-          "trend": "hot",
-          "sales_heat": 98,
-          "tags": [
-            "舒适",
-            "科技感",
-            "潮流",
-            "成人化"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Vans",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 7,
-          "name": "Vans健身服专业系列7",
-          "category": "健身服",
-          "price": 399,
-          "trend": "up",
-          "sales_heat": 93,
-          "tags": [
-            "科技感",
-            "舒适",
-            "成人化",
-            "训练"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Vans",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "Converse",
-      "products": [
-        {
-          "rank": 1,
-          "name": "Converse休闲鞋足球系列1",
-          "category": "休闲鞋",
-          "price": 299,
-          "trend": "flat",
-          "sales_heat": 88,
-          "tags": [
-            "防滑",
-            "防晒",
-            "专业运动",
-            "科技感",
-            "亲子"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Converse",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 2,
-          "name": "Converse运动配件校园系列2",
-          "category": "运动配件",
-          "price": 599,
-          "trend": "up",
-          "sales_heat": 61,
-          "tags": [
-            "亲子",
-            "轻量",
-            "篮球"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Converse",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 3,
-          "name": "Converse凉鞋经典系列3",
-          "category": "凉鞋",
-          "price": 399,
-          "trend": "hot",
-          "sales_heat": 87,
-          "tags": [
-            "爆款",
-            "大促",
-            "户外",
-            "凉感"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Converse",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "Converse运动配件网球系列4",
-          "category": "运动配件",
-          "price": 499,
-          "trend": "up",
-          "sales_heat": 76,
-          "tags": [
-            "轻量",
-            "户外",
-            "成人化"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Converse",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "Converse冲锋衣轻量系列5",
-          "category": "冲锋衣",
-          "price": 229,
-          "trend": "up",
-          "sales_heat": 77,
-          "tags": [
-            "防晒",
-            "舒适",
-            "潮流"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Converse",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "Converse休闲鞋青少年系列6",
-          "category": "休闲鞋",
-          "price": 359,
-          "trend": "up",
-          "sales_heat": 93,
-          "tags": [
-            "网面",
-            "轻量",
-            "透气",
-            "跑步"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Converse",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        }
-      ]
-    },
-    {
-      "brand": "Jordan",
-      "products": [
-        {
-          "rank": 1,
-          "name": "Jordan训练鞋成长系列1",
-          "category": "训练鞋",
-          "price": 129,
-          "trend": "hot",
           "sales_heat": 91,
           "tags": [
-            "舒适",
-            "青少年",
-            "户外",
-            "防滑",
-            "凉感"
+            "高端运动",
+            "训练",
+            "科技感"
           ],
-          "image": "https://placehold.co/300x300/png?text=Jordan",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 2,
-          "name": "Jordan速干T恤足球系列2",
+          "name": "迪桑特轻量跑步T恤",
           "category": "速干T恤",
-          "price": 699,
-          "trend": "up",
-          "sales_heat": 73,
+          "price": 590,
+          "trend": "hot",
+          "sales_heat": 90,
           "tags": [
             "速干",
-            "网面",
-            "爆款",
-            "新品"
+            "跑步",
+            "高端"
           ],
-          "image": "https://placehold.co/300x300/png?text=Jordan",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         },
         {
           "rank": 3,
-          "name": "Jordan篮球鞋新品系列3",
-          "category": "篮球鞋",
-          "price": 229,
-          "trend": "flat",
-          "sales_heat": 83,
-          "tags": [
-            "轻量",
-            "青少年",
-            "潮流",
-            "舒适",
-            "功能面料"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Jordan",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 4,
-          "name": "Jordan凉鞋经典系列4",
-          "category": "凉鞋",
-          "price": 129,
-          "trend": "hot",
-          "sales_heat": 83,
-          "tags": [
-            "功能面料",
-            "跑步",
-            "凉感",
-            "爆款",
-            "网面"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Jordan",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 5,
-          "name": "Jordan休闲鞋青少年系列5",
-          "category": "休闲鞋",
-          "price": 699,
-          "trend": "new",
-          "sales_heat": 82,
-          "tags": [
-            "篮球",
-            "通勤",
-            "新品",
-            "速干"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Jordan",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 6,
-          "name": "Jordan篮球鞋透气系列6",
-          "category": "篮球鞋",
-          "price": 229,
+          "name": "迪桑特城市运动鞋",
+          "category": "通勤运动鞋",
+          "price": 990,
           "trend": "up",
-          "sales_heat": 87,
+          "sales_heat": 89,
           "tags": [
-            "校园",
-            "功能面料",
-            "专业运动",
-            "网面",
-            "大促"
+            "通勤",
+            "城市运动",
+            "舒适"
           ],
-          "image": "https://placehold.co/300x300/png?text=Jordan",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-        },
-        {
-          "rank": 7,
-          "name": "Jordan轻户外服装轻量系列7",
-          "category": "轻户外服装",
-          "price": 499,
-          "trend": "new",
-          "sales_heat": 63,
-          "tags": [
-            "功能面料",
-            "防晒",
-            "网面",
-            "青少年"
-          ],
-          "image": "https://placehold.co/300x300/png?text=Jordan",
-          "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+          "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800",
+          "reason": "结合品牌代表款、季节品类、平台热词与运动场景生成，用于周报商品观察。"
         }
       ]
     }
