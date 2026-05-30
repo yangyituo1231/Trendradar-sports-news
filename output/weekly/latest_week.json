@@ -1,8 +1,9 @@
 {
-  "generate_time": "2026-05-30 23:42",
+  "generate_time": "2026-05-31 00:10",
   "days": [
     "2026-05-29",
-    "2026-05-30"
+    "2026-05-30",
+    "2026-05-31"
   ],
   "top_news": [
     {
@@ -111,6 +112,61 @@
       "icon": "🏷️",
       "class": "logo-purple",
       "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBia2ROQXh3Mkc3N3IzT2JuLWY3bU5LdUFIbUkzVHhSZUh2azRmMTBUYks4VFc2dHIwOEowcVVIblRaZGZhLUs5SURZSzFtZw?oc=5"
+    },
+    {
+      "title": "美团研究院报告：户外运动“大众化”加速，消费人次超8亿，女性消费者占比54.6%",
+      "tag": "户外/运动场景",
+      "source": "新浪财经",
+      "desc": "户外运动大众化趋势明确，女性占比高，可指导儿童产品设计及营销策略",
+      "logo": "户外",
+      "icon": "🚴",
+      "class": "logo-green",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQLUlCdzVSUndVYTR6S3lxYW1qcHEtbWpwUUxldDQtRTBXTjYxOTNGbDhiaDdKZ0JrR1ptYmNrT2JaTDVqOHc1OGtxODFkYVpDLXJnRWtnSy15VFRNa2VjSFdEbGhDR0pvVTEyZXZ2eDZCRzRRYzJXSlZTTGI0aVV1eg?oc=5",
+      "published_at": "Fri, 29 May 2026 05:24:00 GMT"
+    },
+    {
+      "title": "乐享亲子运动，北京市第一届亲子运动会暨亲子体能挑战赛落地平谷渔阳滑雪场",
+      "tag": "童装/儿童运动",
+      "source": "中华网",
+      "desc": "亲子活动落地，提示儿童运动场景拓展，可借鉴活动形式提升品牌曝光",
+      "logo": "童装",
+      "icon": "🧒",
+      "class": "logo-sky",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBWTlNvZVRFQ19sOFdCaEYzMFFrU0N3c2Q5cjVJMlpJSm5uNG5kaDY5MFBndU1lSlpKaW1PSXM5Tk1EQnRreEpfOWdzSmUtOEFKb1k3S1ptQm1nYkpaUEE?oc=5",
+      "published_at": "Sat, 30 May 2026 13:50:09 GMT"
+    },
+    {
+      "title": "实测：20张商品图，约半数“AI生成”！当AI入侵电商，我们该怎么办？",
+      "tag": "AI科技",
+      "source": "新浪财经",
+      "desc": "AI生成内容泛滥，需关注电商合规风险，优化产品图审核流程",
+      "logo": "AI",
+      "icon": "🤖",
+      "class": "logo-blue",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeXhodWt4Vk1wZGtsUGR1SnBpRUp5dUtQY1pfY1diMHdrMkgwQ1I4cG1WZ1RaNTBYWDZ5bWlIX2oyclZma01nZGs2THM5blJxa1RKbmRfT0p4VUJCRTNpTENHSmUyTVNBMDl0NkhsT3c2TXBONHZBSGNLSkJTakc1RktlbnhYVXNIUy1JOWZOYl9rczdGdGZkRWhab3J2RklZdzg3bnlqeVFuRzlHNWNOSDRR?oc=5",
+      "published_at": "Sat, 30 May 2026 01:17:50 GMT"
+    },
+    {
+      "title": "“每月都有活动，‘618’的区别在哪？”年中大促降温背后——AI融入改写竞争规则即时...",
+      "tag": "大促/电商",
+      "source": "新浪财经",
+      "desc": "大促降温，即时零售崛起，需调整渠道策略，加强本地化配送合作",
+      "logo": "大促",
+      "icon": "🛒",
+      "class": "logo-blue",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5YUS03eHBSWHpZY1BJaER0Zlp0NU1hc09WUzNQQzh4NVhlaFMyMjFfaDFfZW51UjJwcG1PQmxhVFFFLUEyRG1iT3ZrX2xkM1hleWhvdzFpMks4bmxKWU1hUlhESUwzN0NwRl9lbWI3M1pDaXJ5Ykd1LQ?oc=5",
+      "published_at": "Sat, 30 May 2026 00:53:00 GMT"
+    },
+    {
+      "title": "实际工资缩水1.3%！德勤警告零售业遭双重夹击，非必需消费将迎来寒冬",
+      "tag": "宏观消费",
+      "source": "搜狐网",
+      "desc": "消费信心下滑，需关注性价比产品线，强化儿童刚需品类抗风险能力",
+      "logo": "宏观",
+      "icon": "📊",
+      "class": "logo-dark",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxORnlBLWd4OFBuMk9ReFRyVG5hX0RvV0ZjNXJydE9rZ3Q0NjF5Rk9uSXhtVHFySmRPOWpwcXRfYkwwcDBNc0JKQkZVX29VQTgyRXVaeHk0clhHMVU0RDVmWnVaMnVheEh2VGFNOFY5VVNzeTh3d3NhZXczX3EyTTFqRnZVLU9tNmtPN1pkXw?oc=5",
+      "published_at": "Sat, 30 May 2026 04:38:26 GMT"
     }
   ],
   "keywords": [
@@ -149,7 +205,25 @@
     "门店陈列",
     "防晒品类",
     "客流修复",
-    "速干T"
+    "速干T",
+    "消费趋势",
+    "商圈客流",
+    "年轻人",
+    "618",
+    "文旅客流",
+    "大促预售",
+    "AI",
+    "亲子运动",
+    "户外运动",
+    "儿童运动",
+    "智能机器人",
+    "运动科技",
+    "门店陈列",
+    "客流修复",
+    "防晒品类",
+    "运动T恤",
+    "校园体育",
+    "夜经济"
   ],
   "regions": [
     {
@@ -244,6 +318,53 @@
         "focus": "防晒童趣组合",
         "action": "主推防晒凉感T恤与短裤，在门店设置防晒童趣陈列专区，联合商圈举办亲子运动",
         "star": "★★★"
+      }
+    },
+    {
+      "east": {
+        "name": "华东",
+        "city": "上海/江苏/浙江",
+        "hot": "AI科技赋能电商，高温天气催生防晒轻薄童装需求。",
+        "flow": "AI生成商品图引发关注，高温持续推动防晒、短裤、轻薄T恤需求，亲子活动如南京抽奖带动客流。",
+        "focus": "AI科技+防晒品类",
+        "action": "设置AI科技主题陈列区，主推防晒凉感T恤与短裤组合，结合亲子抽奖活动进行",
+        "star": "★★★"
+      },
+      "central": {
+        "name": "华中",
+        "city": "湖北/湖南/江西",
+        "hot": "商圈客流活跃，亲子陪伴仪式感强，高温天气防晒需求旺。",
+        "flow": "郑州商圈商业化提速，南昌亲子活动仪式感强，高温持续提升防晒、轻薄品类需求，客流向商圈集中。",
+        "focus": "商圈亲子联动",
+        "action": "在商圈门店打造亲子运动体验区，主推防晒轻薄运动套装，结合南昌童趣活动开展",
+        "star": "★★"
+      },
+      "south": {
+        "name": "华南",
+        "city": "广东/广西",
+        "hot": "强降雨扰动客流，银发经济与室内运动场景值得关注。",
+        "flow": "广州银发经济活跃，深圳文旅消费热，但强降雨影响户外客流，防雨防滑与室内运动需求上升。",
+        "focus": "防雨防滑+室内运动",
+        "action": "主推防滑鞋底运动鞋与速干衣裤，在门店设置室内运动体验区，针对银发家庭推荐",
+        "star": "★★★"
+      },
+      "southwest": {
+        "name": "西南",
+        "city": "四川/重庆/贵州",
+        "hot": "直播电商引领消费，降雨天气催生室内运动与防雨需求。",
+        "flow": "成都潮流街区吸引年轻客流，抖音团购消费领先，降雨影响户外活动，室内运动与防雨品类需求提升。",
+        "focus": "直播同款+防雨品类",
+        "action": "联合抖音达人直播主推防雨运动鞋与速干衣，门店设置直播同款专区，结合成都公",
+        "star": "★★★"
+      },
+      "northwest": {
+        "name": "西北",
+        "city": "陕西/甘肃/宁夏",
+        "hot": "硬防晒热销，童趣经济与618促销带动商圈客流。",
+        "flow": "兰州防晒消费市场热销，童趣经济与618活动吸引家庭客群，高温持续推动防晒、轻薄品类需求。",
+        "focus": "硬防晒+童趣促销",
+        "action": "主推防晒衣、防晒帽与轻薄运动裤，门店设置童趣互动区与618促销专区，结合",
+        "star": "★★"
       }
     }
   ]

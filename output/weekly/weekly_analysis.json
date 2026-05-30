@@ -1,14 +1,22 @@
 {
-  "generate_time": "2026-05-30 23:42",
+  "generate_time": "2026-05-31 00:10",
   "summary": {
-    "date_range": "2026-05-29 至 2026-05-30",
-    "core_judgement": "本周行业关注集中在直播带货、618、儿童运动、门店陈列、运动科技、消费趋势，运动消费继续围绕平台流量、天气功能品类和户外场景展开。",
-    "product_direction": "商品方向建议重点关注轻户外服装、训练鞋、运动长裤、短裤、健身服，同时强化青少年成人化、功能科技和场景组合。",
+    "date_range": "2026-05-29 至 2026-05-31",
+    "core_judgement": "本周行业关注集中在618、儿童运动、门店陈列、运动科技、消费趋势、年轻人，运动消费继续围绕平台流量、天气功能品类和户外场景展开。",
+    "product_direction": "商品方向建议重点关注户外鞋、凉鞋、防晒衣、卫衣、健身服，同时强化青少年成人化、功能科技和场景组合。",
     "regional_direction": "区域经营需结合天气、商圈活动和平台热点，重点提升门店陈列、会员触达和导购转化。",
     "next_action": "下周建议围绕防晒凉感、直播电商、户外轻运动建立商品组合、内容种草和终端陈列联动。"
   },
   "news": {
     "top_titles": [
+      {
+        "title": "美团研究院报告：户外运动“大众化”加速，消费人次超8亿，女性消费者占比54.6%",
+        "count": 2
+      },
+      {
+        "title": "“每月都有活动，‘618’的区别在哪？”年中大促降温背后——AI融入改写竞争规则即时...",
+        "count": 2
+      },
       {
         "title": "运动品牌盯上儿童运动鞋",
         "count": 1
@@ -30,15 +38,7 @@
         "count": 1
       },
       {
-        "title": "美团研究院报告：户外运动“大众化”加速，消费人次超8亿，女性消费者占比54.6%",
-        "count": 1
-      },
-      {
         "title": "童趣经济火热出圈 兰州解锁“六一”多元消费新图景",
-        "count": 1
-      },
-      {
-        "title": "“每月都有活动，‘618’的区别在哪？”年中大促降温背后——AI融入改写竞争规则即时...",
         "count": 1
       },
       {
@@ -53,7 +53,15 @@
     "top_sources": [
       {
         "source": "新浪财经",
-        "count": 3
+        "count": 6
+      },
+      {
+        "source": "中华网",
+        "count": 2
+      },
+      {
+        "source": "搜狐网",
+        "count": 2
       },
       {
         "source": "Jiemian.com",
@@ -61,14 +69,6 @@
       },
       {
         "source": "thepaper.cn",
-        "count": 1
-      },
-      {
-        "source": "中华网",
-        "count": 1
-      },
-      {
-        "source": "搜狐网",
         "count": 1
       },
       {
@@ -164,48 +164,100 @@
         "source": "36氪",
         "desc": "品牌动作反映行业竞争重心，需关注价格带、产品心智与渠道打法变化。",
         "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBia2ROQXh3Mkc3N3IzT2JuLWY3bU5LdUFIbUkzVHhSZUh2azRmMTBUYks4VFc2dHIwOEowcVVIblRaZGZhLUs5SURZSzFtZw?oc=5"
+      },
+      {
+        "date": "2026-05-31",
+        "title": "美团研究院报告：户外运动“大众化”加速，消费人次超8亿，女性消费者占比54.6%",
+        "tag": "户外/运动场景",
+        "source": "新浪财经",
+        "desc": "户外运动大众化趋势明确，女性占比高，可指导儿童产品设计及营销策略",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQLUlCdzVSUndVYTR6S3lxYW1qcHEtbWpwUUxldDQtRTBXTjYxOTNGbDhiaDdKZ0JrR1ptYmNrT2JaTDVqOHc1OGtxODFkYVpDLXJnRWtnSy15VFRNa2VjSFdEbGhDR0pvVTEyZXZ2eDZCRzRRYzJXSlZTTGI0aVV1eg?oc=5"
+      },
+      {
+        "date": "2026-05-31",
+        "title": "乐享亲子运动，北京市第一届亲子运动会暨亲子体能挑战赛落地平谷渔阳滑雪场",
+        "tag": "童装/儿童运动",
+        "source": "中华网",
+        "desc": "亲子活动落地，提示儿童运动场景拓展，可借鉴活动形式提升品牌曝光",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBWTlNvZVRFQ19sOFdCaEYzMFFrU0N3c2Q5cjVJMlpJSm5uNG5kaDY5MFBndU1lSlpKaW1PSXM5Tk1EQnRreEpfOWdzSmUtOEFKb1k3S1ptQm1nYkpaUEE?oc=5"
+      },
+      {
+        "date": "2026-05-31",
+        "title": "实测：20张商品图，约半数“AI生成”！当AI入侵电商，我们该怎么办？",
+        "tag": "AI科技",
+        "source": "新浪财经",
+        "desc": "AI生成内容泛滥，需关注电商合规风险，优化产品图审核流程",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeXhodWt4Vk1wZGtsUGR1SnBpRUp5dUtQY1pfY1diMHdrMkgwQ1I4cG1WZ1RaNTBYWDZ5bWlIX2oyclZma01nZGs2THM5blJxa1RKbmRfT0p4VUJCRTNpTENHSmUyTVNBMDl0NkhsT3c2TXBONHZBSGNLSkJTakc1RktlbnhYVXNIUy1JOWZOYl9rczdGdGZkRWhab3J2RklZdzg3bnlqeVFuRzlHNWNOSDRR?oc=5"
+      },
+      {
+        "date": "2026-05-31",
+        "title": "“每月都有活动，‘618’的区别在哪？”年中大促降温背后——AI融入改写竞争规则即时...",
+        "tag": "大促/电商",
+        "source": "新浪财经",
+        "desc": "大促降温，即时零售崛起，需调整渠道策略，加强本地化配送合作",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5YUS03eHBSWHpZY1BJaER0Zlp0NU1hc09WUzNQQzh4NVhlaFMyMjFfaDFfZW51UjJwcG1PQmxhVFFFLUEyRG1iT3ZrX2xkM1hleWhvdzFpMks4bmxKWU1hUlhESUwzN0NwRl9lbWI3M1pDaXJ5Ykd1LQ?oc=5"
+      },
+      {
+        "date": "2026-05-31",
+        "title": "实际工资缩水1.3%！德勤警告零售业遭双重夹击，非必需消费将迎来寒冬",
+        "tag": "宏观消费",
+        "source": "搜狐网",
+        "desc": "消费信心下滑，需关注性价比产品线，强化儿童刚需品类抗风险能力",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxORnlBLWd4OFBuMk9ReFRyVG5hX0RvV0ZjNXJydE9rZ3Q0NjF5Rk9uSXhtVHFySmRPOWpwcXRfYkwwcDBNc0JKQkZVX29VQTgyRXVaeHk0clhHMVU0RDVmWnVaMnVheEh2VGFNOFY5VVNzeTh3d3NhZXczX3EyTTFqRnZVLU9tNmtPN1pkXw?oc=5"
       }
     ]
   },
   "keywords": [
     {
-      "word": "直播带货",
-      "count": 2
-    },
-    {
       "word": "618",
-      "count": 2
+      "count": 3
     },
     {
       "word": "儿童运动",
-      "count": 2
+      "count": 3
     },
     {
       "word": "门店陈列",
-      "count": 2
+      "count": 3
     },
     {
       "word": "运动科技",
-      "count": 2
+      "count": 3
     },
     {
       "word": "消费趋势",
-      "count": 2
+      "count": 3
     },
     {
       "word": "年轻人",
-      "count": 2
+      "count": 3
     },
     {
       "word": "户外运动",
-      "count": 2
+      "count": 3
     },
     {
       "word": "AI",
-      "count": 2
+      "count": 3
     },
     {
       "word": "文旅客流",
+      "count": 3
+    },
+    {
+      "word": "防晒品类",
+      "count": 3
+    },
+    {
+      "word": "商圈客流",
+      "count": 3
+    },
+    {
+      "word": "客流修复",
+      "count": 3
+    },
+    {
+      "word": "直播带货",
       "count": 2
     },
     {
@@ -213,15 +265,15 @@
       "count": 2
     },
     {
-      "word": "防晒品类",
+      "word": "智能机器人",
       "count": 2
     },
     {
-      "word": "商圈客流",
+      "word": "亲子运动",
       "count": 2
     },
     {
-      "word": "客流修复",
+      "word": "大促预售",
       "count": 2
     },
     {
@@ -241,25 +293,25 @@
       "count": 1
     },
     {
-      "word": "智能机器人",
-      "count": 1
-    },
-    {
-      "word": "亲子运动",
-      "count": 1
-    },
-    {
-      "word": "大促预售",
-      "count": 1
-    },
-    {
       "word": "速干T",
+      "count": 1
+    },
+    {
+      "word": "运动T恤",
+      "count": 1
+    },
+    {
+      "word": "校园体育",
+      "count": 1
+    },
+    {
+      "word": "夜经济",
       "count": 1
     }
   ],
   "regions": [],
   "products": {
-    "date": "2026-05-30",
+    "date": "2026-05-31",
     "brands": [
       "安踏儿童",
       "361儿童",
@@ -307,468 +359,477 @@
     ],
     "top_products": [
       {
-        "brand": "Adidas Kids",
-        "name": "Adidas Kids儿童凉鞋轻量系列4",
-        "category": "儿童凉鞋",
-        "price": 599,
-        "trend": "flat",
-        "sales_heat": 98,
-        "tags": [
-          "校园",
-          "青少年",
-          "通勤",
-          "凉感",
-          "防晒"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "匹克儿童",
-        "name": "匹克儿童羽绒服成长系列3",
-        "category": "羽绒服",
-        "price": 99,
-        "trend": "hot",
-        "sales_heat": 98,
-        "tags": [
-          "功能面料",
-          "爆款",
-          "透气",
-          "防滑"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "New Balance Kids",
-        "name": "New Balance Kids青少年篮球鞋篮球系列1",
-        "category": "青少年篮球鞋",
-        "price": 359,
-        "trend": "up",
-        "sales_heat": 98,
-        "tags": [
-          "网面",
-          "成人化",
-          "舒适"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "Nike",
-        "name": "Nike运动配件轻户外系列6",
-        "category": "运动配件",
-        "price": 159,
-        "trend": "flat",
-        "sales_heat": 98,
-        "tags": [
-          "凉感",
-          "专业运动",
-          "户外",
-          "轻量",
-          "科技感"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "New Balance",
-        "name": "New Balance板鞋训练系列2",
-        "category": "板鞋",
-        "price": 259,
-        "trend": "hot",
-        "sales_heat": 98,
-        "tags": [
-          "缓震",
-          "透气",
-          "防晒",
-          "舒适"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "Salomon",
-        "name": "Salomon户外鞋凉感系列2",
-        "category": "户外鞋",
+        "brand": "安踏儿童",
+        "name": "安踏儿童乒羽鞋专业系列3",
+        "category": "乒羽鞋",
         "price": 129,
-        "trend": "hot",
-        "sales_heat": 98,
-        "tags": [
-          "舒适",
-          "高性价比",
-          "透气",
-          "新品"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "凯乐石",
-        "name": "凯乐石轻户外服装网球系列5",
-        "category": "轻户外服装",
-        "price": 599,
-        "trend": "new",
-        "sales_heat": 98,
-        "tags": [
-          "跑步",
-          "舒适",
-          "透气"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "始祖鸟",
-        "name": "始祖鸟运动长裤户外系列1",
-        "category": "运动长裤",
-        "price": 699,
-        "trend": "up",
-        "sales_heat": 98,
-        "tags": [
-          "新品",
-          "速干",
-          "专业运动",
-          "通勤"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "FILA Kids",
-        "name": "FILA Kids乒羽鞋专业系列3",
-        "category": "乒羽鞋",
-        "price": 299,
-        "trend": "up",
-        "sales_heat": 97,
-        "tags": [
-          "通勤",
-          "跑步",
-          "科技感",
-          "新品",
-          "高性价比"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "Nike Kids",
-        "name": "Nike Kids乒羽鞋成长系列4",
-        "category": "乒羽鞋",
-        "price": 259,
-        "trend": "up",
-        "sales_heat": 97,
-        "tags": [
-          "新品",
-          "速干",
-          "训练",
-          "功能面料",
-          "潮流"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "Nike",
-        "name": "Nike训练鞋凉感系列5",
-        "category": "训练鞋",
-        "price": 699,
-        "trend": "up",
-        "sales_heat": 97,
-        "tags": [
-          "亲子",
-          "篮球",
-          "通勤"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "On",
-        "name": "On轻户外服装轻户外系列4",
-        "category": "轻户外服装",
-        "price": 359,
-        "trend": "new",
-        "sales_heat": 97,
-        "tags": [
-          "网面",
-          "成人化",
-          "篮球",
-          "青少年"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "Salomon",
-        "name": "Salomon速干T恤轻户外系列5",
-        "category": "速干T恤",
-        "price": 699,
-        "trend": "hot",
-        "sales_heat": 97,
-        "tags": [
-          "科技感",
-          "透气",
-          "大促"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "361儿童",
-        "name": "361儿童外套凉感系列5",
-        "category": "外套",
-        "price": 699,
         "trend": "flat",
-        "sales_heat": 96,
+        "sales_heat": 98,
         "tags": [
-          "防滑",
-          "潮流",
-          "户外",
-          "成人化"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "Skechers Kids",
-        "name": "Skechers Kids儿童篮球鞋专业系列3",
-        "category": "儿童篮球鞋",
-        "price": 499,
-        "trend": "hot",
-        "sales_heat": 96,
-        "tags": [
-          "亲子",
-          "透气",
           "训练",
-          "舒适"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "Asics Kids",
-        "name": "Asics Kids短裤网球系列4",
-        "category": "短裤",
-        "price": 699,
-        "trend": "up",
-        "sales_heat": 96,
-        "tags": [
-          "功能面料",
-          "校园",
-          "跑步",
-          "成人化"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "Converse",
-        "name": "Converse冲锋衣轻户外系列4",
-        "category": "冲锋衣",
-        "price": 159,
-        "trend": "up",
-        "sales_heat": 96,
-        "tags": [
-          "通勤",
-          "防滑",
-          "专业运动",
-          "速干"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "Jordan",
-        "name": "Jordan运动配件足球系列4",
-        "category": "运动配件",
-        "price": 199,
-        "trend": "new",
-        "sales_heat": 96,
-        "tags": [
-          "成人化",
-          "速干",
-          "爆款"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "李宁YOUNG",
-        "name": "李宁YOUNG亲子同款经典系列2",
-        "category": "亲子同款",
-        "price": 699,
-        "trend": "up",
-        "sales_heat": 95,
-        "tags": [
-          "成人化",
-          "训练",
-          "透气",
+          "网面",
           "凉感"
         ],
         "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
       },
       {
-        "brand": "特步儿童",
-        "name": "特步儿童成人化运动套装夏季系列2",
-        "category": "成人化运动套装",
-        "price": 699,
-        "trend": "up",
-        "sales_heat": 95,
-        "tags": [
-          "透气",
-          "轻量",
-          "高性价比"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "乔丹儿童",
-        "name": "乔丹儿童儿童板鞋经典系列1",
-        "category": "儿童板鞋",
-        "price": 1099,
-        "trend": "flat",
-        "sales_heat": 95,
-        "tags": [
-          "科技感",
-          "舒适",
-          "户外"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "Nike",
-        "name": "Nike健身服户外系列4",
-        "category": "健身服",
-        "price": 159,
-        "trend": "flat",
-        "sales_heat": 95,
-        "tags": [
-          "成人化",
-          "透气",
-          "轻量",
-          "速干",
-          "缓震"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "Puma",
-        "name": "Puma冲锋衣凉感系列4",
-        "category": "冲锋衣",
-        "price": 259,
-        "trend": "up",
-        "sales_heat": 95,
-        "tags": [
-          "防晒",
-          "舒适",
-          "跑步",
-          "专业运动"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "lululemon",
-        "name": "lululemon篮球鞋足球系列5",
-        "category": "篮球鞋",
+        "brand": "鸿星尔克",
+        "name": "鸿星尔克户外鞋成人化系列4",
+        "category": "户外鞋",
         "price": 299,
-        "trend": "hot",
-        "sales_heat": 95,
+        "trend": "flat",
+        "sales_heat": 98,
         "tags": [
-          "户外",
+          "篮球",
+          "新品",
+          "透气"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "鸿星尔克",
+        "name": "鸿星尔克轻户外服装轻户外系列6",
+        "category": "轻户外服装",
+        "price": 229,
+        "trend": "up",
+        "sales_heat": 98,
+        "tags": [
           "防晒",
-          "大促",
+          "潮流",
+          "训练",
+          "高性价比",
+          "校园"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "Adidas",
+        "name": "Adidas卫衣经典系列1",
+        "category": "卫衣",
+        "price": 1099,
+        "trend": "up",
+        "sales_heat": 98,
+        "tags": [
+          "通勤",
+          "跑步",
+          "训练",
+          "高性价比",
+          "青少年"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "Hoka",
+        "name": "Hoka篮球鞋轻量系列4",
+        "category": "篮球鞋",
+        "price": 199,
+        "trend": "new",
+        "sales_heat": 98,
+        "tags": [
+          "通勤",
           "防滑",
+          "功能面料",
+          "速干",
+          "舒适"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "凯乐石",
+        "name": "凯乐石通勤运动鞋成长系列1",
+        "category": "通勤运动鞋",
+        "price": 129,
+        "trend": "up",
+        "sales_heat": 98,
+        "tags": [
+          "透气",
+          "青少年",
           "功能面料"
         ],
         "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
       },
       {
-        "brand": "On",
-        "name": "On短裤网球系列2",
-        "category": "短裤",
+        "brand": "始祖鸟",
+        "name": "始祖鸟户外鞋训练系列7",
+        "category": "户外鞋",
+        "price": 299,
+        "trend": "flat",
+        "sales_heat": 98,
+        "tags": [
+          "跑步",
+          "高性价比",
+          "透气",
+          "舒适",
+          "训练"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "Vans",
+        "name": "Vans防晒衣轻量系列6",
+        "category": "防晒衣",
         "price": 129,
         "trend": "hot",
-        "sales_heat": 95,
+        "sales_heat": 98,
         "tags": [
-          "大促",
-          "跑步",
+          "舒适",
+          "科技感",
+          "潮流",
+          "成人化"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "Nike Kids",
+        "name": "Nike Kids跳绳鞋篮球系列4",
+        "category": "跳绳鞋",
+        "price": 159,
+        "trend": "flat",
+        "sales_heat": 97,
+        "tags": [
+          "成人化",
+          "科技感",
+          "篮球",
           "缓震",
-          "校园",
           "专业运动"
         ],
         "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
       },
       {
-        "brand": "迪桑特",
-        "name": "迪桑特健身服成长系列2",
-        "category": "健身服",
-        "price": 1099,
+        "brand": "匹克儿童",
+        "name": "匹克儿童长裤户外系列2",
+        "category": "长裤",
+        "price": 229,
+        "trend": "flat",
+        "sales_heat": 97,
+        "tags": [
+          "大促",
+          "凉感",
+          "校园"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "Puma Kids",
+        "name": "Puma Kids足球鞋校园系列6",
+        "category": "足球鞋",
+        "price": 129,
         "trend": "up",
+        "sales_heat": 97,
+        "tags": [
+          "爆款",
+          "潮流",
+          "科技感",
+          "透气"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "鸿星尔克",
+        "name": "鸿星尔克轻户外服装足球系列3",
+        "category": "轻户外服装",
+        "price": 259,
+        "trend": "new",
+        "sales_heat": 97,
+        "tags": [
+          "轻量",
+          "校园",
+          "训练",
+          "防滑"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "匹克",
+        "name": "匹克健身服凉感系列2",
+        "category": "健身服",
+        "price": 229,
+        "trend": "up",
+        "sales_heat": 97,
+        "tags": [
+          "缓震",
+          "爆款",
+          "轻量",
+          "舒适"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "Salomon",
+        "name": "Salomon通勤运动鞋透气系列2",
+        "category": "通勤运动鞋",
+        "price": 229,
+        "trend": "new",
+        "sales_heat": 97,
+        "tags": [
+          "大促",
+          "青少年",
+          "成人化",
+          "专业运动",
+          "防滑"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "Under Armour",
+        "name": "Under Armour冲锋衣夏季系列2",
+        "category": "冲锋衣",
+        "price": 299,
+        "trend": "flat",
+        "sales_heat": 97,
+        "tags": [
+          "速干",
+          "轻量",
+          "亲子",
+          "新品",
+          "凉感"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "Jordan Kids",
+        "name": "Jordan Kids卫衣户外系列3",
+        "category": "卫衣",
+        "price": 159,
+        "trend": "hot",
+        "sales_heat": 96,
+        "tags": [
+          "缓震",
+          "亲子",
+          "爆款",
+          "舒适"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "李宁",
+        "name": "李宁瑜伽服凉感系列4",
+        "category": "瑜伽服",
+        "price": 699,
+        "trend": "up",
+        "sales_heat": 96,
+        "tags": [
+          "功能面料",
+          "校园",
+          "轻量",
+          "专业运动",
+          "凉感"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "Nike",
+        "name": "Nike运动长裤新品系列4",
+        "category": "运动长裤",
+        "price": 129,
+        "trend": "flat",
+        "sales_heat": 96,
+        "tags": [
+          "高性价比",
+          "防滑",
+          "速干"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "lululemon",
+        "name": "lululemon篮球鞋轻户外系列4",
+        "category": "篮球鞋",
+        "price": 599,
+        "trend": "up",
+        "sales_heat": 96,
+        "tags": [
+          "网面",
+          "科技感",
+          "爆款",
+          "户外"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "Crocs",
+        "name": "Crocs板鞋青少年系列4",
+        "category": "板鞋",
+        "price": 199,
+        "trend": "up",
+        "sales_heat": 96,
+        "tags": [
+          "速干",
+          "凉感",
+          "科技感",
+          "高性价比",
+          "功能面料"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "李宁YOUNG",
+        "name": "李宁YOUNG儿童休闲鞋足球系列2",
+        "category": "儿童休闲鞋",
+        "price": 699,
+        "trend": "hot",
         "sales_heat": 95,
         "tags": [
-          "潮流",
+          "专业运动",
+          "透气",
+          "大促",
+          "潮流"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "李宁YOUNG",
+        "name": "李宁YOUNG亲子同款成人化系列3",
+        "category": "亲子同款",
+        "price": 1099,
+        "trend": "flat",
+        "sales_heat": 95,
+        "tags": [
+          "跑步",
+          "舒适",
+          "高性价比",
+          "亲子",
+          "凉感"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "Puma Kids",
+        "name": "Puma Kids篮球套校园系列5",
+        "category": "篮球套",
+        "price": 99,
+        "trend": "hot",
+        "sales_heat": 95,
+        "tags": [
+          "亲子",
+          "大促",
+          "新品"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "安踏儿童",
+        "name": "安踏儿童儿童休闲鞋户外系列1",
+        "category": "儿童休闲鞋",
+        "price": 599,
+        "trend": "up",
+        "sales_heat": 94,
+        "tags": [
+          "轻量",
+          "新品",
+          "凉感",
+          "防晒",
+          "训练"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "361儿童",
+        "name": "361儿童外套夏季系列3",
+        "category": "外套",
+        "price": 1099,
+        "trend": "up",
+        "sales_heat": 94,
+        "tags": [
+          "爆款",
+          "大促",
+          "新品"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "Jordan Kids",
+        "name": "Jordan Kids套装校园系列1",
+        "category": "套装",
+        "price": 259,
+        "trend": "up",
+        "sales_heat": 94,
+        "tags": [
+          "大促",
+          "缓震",
+          "新品"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "Adidas",
+        "name": "Adidas凉鞋网球系列3",
+        "category": "凉鞋",
+        "price": 1099,
+        "trend": "new",
+        "sales_heat": 94,
+        "tags": [
+          "青少年",
+          "校园",
+          "高性价比"
+        ],
+        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
+      },
+      {
+        "brand": "Asics",
+        "name": "Asics休闲鞋新品系列3",
+        "category": "休闲鞋",
+        "price": 159,
+        "trend": "hot",
+        "sales_heat": 94,
+        "tags": [
+          "大促",
+          "速干",
           "通勤",
           "新品"
         ],
         "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
       },
       {
-        "brand": "Under Armour",
-        "name": "Under Armour通勤运动鞋透气系列3",
-        "category": "通勤运动鞋",
-        "price": 299,
+        "brand": "On",
+        "name": "On冲锋衣训练系列5",
+        "category": "冲锋衣",
+        "price": 229,
         "trend": "up",
-        "sales_heat": 95,
-        "tags": [
-          "专业运动",
-          "防滑",
-          "爆款",
-          "网面",
-          "通勤"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "匹克",
-        "name": "匹克凉鞋户外系列4",
-        "category": "凉鞋",
-        "price": 99,
-        "trend": "flat",
         "sales_heat": 94,
         "tags": [
-          "网面",
-          "防晒",
-          "新品",
-          "潮流"
+          "成人化",
+          "通勤",
+          "专业运动"
         ],
         "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
       },
       {
-        "brand": "匹克",
-        "name": "匹克跑鞋新品系列6",
-        "category": "跑鞋",
-        "price": 259,
+        "brand": "361儿童",
+        "name": "361儿童套装青少年系列2",
+        "category": "套装",
+        "price": 199,
         "trend": "new",
-        "sales_heat": 94,
+        "sales_heat": 93,
         "tags": [
-          "潮流",
-          "网面",
-          "科技感",
-          "功能面料",
-          "篮球"
-        ],
-        "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
-      },
-      {
-        "brand": "Hoka",
-        "name": "Hoka跑鞋透气系列1",
-        "category": "跑鞋",
-        "price": 599,
-        "trend": "hot",
-        "sales_heat": 94,
-        "tags": [
-          "潮流",
+          "速干",
           "专业运动",
-          "轻量",
-          "防滑"
+          "缓震",
+          "功能面料",
+          "跑步"
         ],
         "reason": "覆盖儿童、青少年、成人运动及趋势品类，用于周报商品观察。"
       }
     ],
     "top_categories": [
       {
-        "category": "轻户外服装",
+        "category": "户外鞋",
+        "count": 18
+      },
+      {
+        "category": "凉鞋",
+        "count": 15
+      },
+      {
+        "category": "防晒衣",
+        "count": 14
+      },
+      {
+        "category": "卫衣",
         "count": 13
       },
       {
-        "category": "训练鞋",
-        "count": 13
-      },
-      {
-        "category": "运动长裤",
+        "category": "健身服",
         "count": 12
       },
       {
@@ -776,177 +837,169 @@
         "count": 11
       },
       {
-        "category": "健身服",
-        "count": 11
-      },
-      {
-        "category": "通勤运动鞋",
-        "count": 11
-      },
-      {
-        "category": "冲锋衣",
-        "count": 10
-      },
-      {
-        "category": "篮球鞋",
-        "count": 10
-      },
-      {
-        "category": "凉鞋",
-        "count": 10
-      },
-      {
-        "category": "乒羽鞋",
-        "count": 9
-      },
-      {
-        "category": "跑鞋",
-        "count": 9
-      },
-      {
-        "category": "板鞋",
-        "count": 9
-      },
-      {
         "category": "瑜伽服",
-        "count": 8
-      },
-      {
-        "category": "运动配件",
-        "count": 8
+        "count": 11
       },
       {
         "category": "休闲鞋",
-        "count": 8
+        "count": 10
       },
       {
-        "category": "卫衣",
-        "count": 7
+        "category": "通勤运动鞋",
+        "count": 9
       },
       {
         "category": "速干T恤",
+        "count": 8
+      },
+      {
+        "category": "冲锋衣",
+        "count": 8
+      },
+      {
+        "category": "轻户外服装",
         "count": 7
       },
       {
-        "category": "防晒衣",
+        "category": "训练鞋",
+        "count": 7
+      },
+      {
+        "category": "板鞋",
         "count": 6
       },
       {
-        "category": "户外鞋",
+        "category": "跑鞋",
         "count": 6
       },
       {
-        "category": "青少年训练鞋",
+        "category": "篮球鞋",
+        "count": 6
+      },
+      {
+        "category": "外套",
         "count": 5
+      },
+      {
+        "category": "儿童凉鞋",
+        "count": 4
+      },
+      {
+        "category": "书包",
+        "count": 4
+      },
+      {
+        "category": "两面穿外套",
+        "count": 4
       }
     ],
     "top_tags": [
       {
-        "tag": "专业运动",
-        "count": 48
+        "tag": "功能面料",
+        "count": 49
       },
       {
-        "tag": "校园",
-        "count": 47
-      },
-      {
-        "tag": "速干",
-        "count": 45
-      },
-      {
-        "tag": "新品",
-        "count": 44
-      },
-      {
-        "tag": "训练",
-        "count": 44
+        "tag": "防滑",
+        "count": 49
       },
       {
         "tag": "凉感",
-        "count": 43
+        "count": 45
       },
       {
-        "tag": "功能面料",
-        "count": 41
-      },
-      {
-        "tag": "成人化",
-        "count": 41
-      },
-      {
-        "tag": "防晒",
-        "count": 41
-      },
-      {
-        "tag": "爆款",
-        "count": 41
-      },
-      {
-        "tag": "透气",
-        "count": 41
-      },
-      {
-        "tag": "高性价比",
-        "count": 39
+        "tag": "专业运动",
+        "count": 42
       },
       {
         "tag": "舒适",
-        "count": 39
+        "count": 42
       },
       {
         "tag": "潮流",
-        "count": 37
+        "count": 41
+      },
+      {
+        "tag": "新品",
+        "count": 40
+      },
+      {
+        "tag": "缓震",
+        "count": 40
+      },
+      {
+        "tag": "训练",
+        "count": 39
+      },
+      {
+        "tag": "大促",
+        "count": 39
       },
       {
         "tag": "篮球",
+        "count": 38
+      },
+      {
+        "tag": "防晒",
         "count": 37
       },
       {
-        "tag": "轻量",
+        "tag": "青少年",
+        "count": 37
+      },
+      {
+        "tag": "爆款",
+        "count": 37
+      },
+      {
+        "tag": "科技感",
+        "count": 36
+      },
+      {
+        "tag": "跑步",
+        "count": 36
+      },
+      {
+        "tag": "高性价比",
+        "count": 35
+      },
+      {
+        "tag": "校园",
         "count": 35
       },
       {
         "tag": "网面",
-        "count": 35
-      },
-      {
-        "tag": "缓震",
-        "count": 35
+        "count": 34
       },
       {
         "tag": "户外",
-        "count": 35
-      },
-      {
-        "tag": "通勤",
-        "count": 34
+        "count": 33
       }
     ]
   },
   "opportunities": [
     {
       "theme": "防晒凉感",
-      "heat": 31,
+      "heat": 52,
       "suggestion": "防晒衣、凉感T、速干短裤、透气童鞋可作为夏季主推组合。"
     },
     {
       "theme": "直播电商",
-      "heat": 27,
+      "heat": 38,
       "suggestion": "直播同款、爆款价格带、平台热词款式应同步沉淀到周报商品观察。"
     },
     {
       "theme": "户外轻运动",
-      "heat": 25,
+      "heat": 35,
       "suggestion": "轻户外鞋服、防晒帽包、溯溪鞋和舒适出行鞋具备组合机会。"
     },
     {
       "theme": "儿童运动鞋",
-      "heat": 9,
+      "heat": 13,
       "suggestion": "儿童跑鞋、校园运动鞋、青少年训练鞋应强化成长型和成人化设计表达。"
     },
     {
       "theme": "运动成人化",
-      "heat": 8,
+      "heat": 11,
       "suggestion": "青少年产品可借鉴成人跑鞋、训练鞋、户外鞋的科技感和专业感。"
     }
   ],
