@@ -471,14 +471,14 @@ li{{
   padding:12px;
   min-height:132px;
 }}
-.product-img{
+.product-img{{
   width:100%;
   height:118px;
   object-fit:cover;
   border-radius:12px;
   background:#edf5ff;
   margin-bottom:8px;
-}
+}}
 .product-brand{{
   font-size:13px;
   color:#0b63d8;
