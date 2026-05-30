@@ -3,22 +3,17 @@ from datetime import datetime
 import json
 import re
 from collections import Counter
+from urllib.parse import quote
 
-# =========================================================
-# 文件路径
-# =========================================================
 WEEKLY_FILE = Path("output/weekly/latest_week.json")
 ANALYSIS_FILE = Path("output/weekly/weekly_analysis.json")
 PRODUCT_FILE = Path("output/products/latest_products.json")
 
 OUTPUT_DIR = Path("output/weekly")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
 OUTPUT_HTML = OUTPUT_DIR / "weekly_report.html"
 
-# =========================================================
-# 工具函数
-# =========================================================
+
 def load_json(path, default):
     if path.exists():
         try:
@@ -27,22 +22,59 @@ def load_json(path, default):
             print(f"load json error: {path} {repr(e)}")
     return default
 
+
 def clean(text):
     text = str(text or "").replace("\n", " ").strip()
     text = re.sub(r"\s+", " ", text)
     return text
 
-def short(text, n=38):
+
+def short(text, n=36):
     text = clean(text)
     return text if len(text) <= n else text[:n] + "..."
+
 
 def get_list(data, key):
     value = data.get(key, [])
     return value if isinstance(value, list) else []
 
-# =========================================================
-# 读取数据
-# =========================================================
+
+def dict_to_sentence(item):
+    if not isinstance(item, dict):
+        return clean(item)
+
+    theme = item.get("theme", "")
+    heat = item.get("heat", "")
+    suggestion = item.get("suggestion", "")
+    risk = item.get("risk", "")
+    action = item.get("action", "")
+    title = item.get("title", "")
+
+    parts = []
+    if theme:
+        parts.append(f"【{theme}】")
+    elif title:
+        parts.append(f"【{title}】")
+
+    if heat != "":
+        parts.append(f"热度{heat}。")
+    if suggestion:
+        parts.append(suggestion)
+    elif risk:
+        parts.append(risk)
+    elif action:
+        parts.append(action)
+
+    return "".join(parts) or clean(item)
+
+
+def render_list(items, limit=5):
+    html = ""
+    for item in items[:limit]:
+        html += f"<li>{dict_to_sentence(item)}</li>"
+    return html
+
+
 weekly = load_json(WEEKLY_FILE, {})
 analysis = load_json(ANALYSIS_FILE, {})
 products_data = load_json(PRODUCT_FILE, {})
@@ -54,11 +86,7 @@ top_news = get_list(weekly, "top_news")
 keywords = get_list(weekly, "keywords")
 regions = get_list(weekly, "regions")
 
-# =========================================================
-# 资讯统计
-# =========================================================
 news_titles = []
-
 for item in top_news:
     if isinstance(item, dict):
         title = item.get("title", "")
@@ -67,14 +95,9 @@ for item in top_news:
     elif isinstance(item, str):
         news_titles.append(clean(item))
 
-news_counter = Counter(news_titles)
-top_news_list = news_counter.most_common(10)
+top_news_list = Counter(news_titles).most_common(8)
 
-# =========================================================
-# 热词统计
-# =========================================================
 keyword_values = []
-
 for item in keywords:
     if isinstance(item, dict):
         for k in ["word", "keyword", "name", "title"]:
@@ -84,14 +107,9 @@ for item in keywords:
     elif isinstance(item, str):
         keyword_values.append(clean(item))
 
-keyword_counter = Counter(keyword_values)
-top_keywords = keyword_counter.most_common(20)
+top_keywords = Counter(keyword_values).most_common(22)
 
-# =========================================================
-# 区域统计
-# =========================================================
 region_values = []
-
 for item in regions:
     if isinstance(item, dict):
         name = item.get("region") or item.get("name") or item.get("area")
@@ -100,12 +118,8 @@ for item in regions:
     elif isinstance(item, str):
         region_values.append(clean(item))
 
-region_counter = Counter(region_values)
-top_regions = region_counter.most_common(8)
+top_regions = Counter(region_values).most_common(6)
 
-# =========================================================
-# 周报分析
-# =========================================================
 summary_raw = analysis.get("summary") or analysis.get("weekly_summary") or ""
 
 if isinstance(summary_raw, dict):
@@ -124,11 +138,10 @@ if isinstance(summary_raw, dict):
             next_action
         ] if x
     ])
-
 else:
     weekly_summary = clean(
         summary_raw
-        or "本周行业热点围绕运动消费、天气品类、平台流量、儿童运动和轻户外场景展开，后续需关注品类节奏、区域客流和爆款商品趋势。"
+        or "本周行业热点围绕运动消费、平台流量、天气品类、儿童运动和轻户外场景展开，后续需重点关注商品节奏、区域客流和热卖品类变化。"
     )
 
 opportunities = get_list(analysis, "opportunities")
@@ -164,12 +177,10 @@ if not product_suggestions:
         "补充轻户外鞋服、帽包配件、亲子同款和校园运动套装。"
     ]
 
-# =========================================================
-# 商品趋势
-# =========================================================
-product_cards = []
 
+product_cards = []
 brands = products_data.get("brands", [])
+
 if isinstance(brands, list):
     for brand_block in brands:
         brand = brand_block.get("brand", "")
@@ -192,9 +203,15 @@ if isinstance(brands, list):
 
 product_cards = sorted(product_cards, key=lambda x: int(x.get("heat") or 0), reverse=True)[:12]
 
-# =========================================================
-# HTML组件
-# =========================================================
+
+def image_url(p):
+    img = clean(p.get("image", ""))
+    if img:
+        return img
+    text = quote(f"{p.get('brand','')} {p.get('category','')}")
+    return f"https://placehold.co/420x300/eaf2ff/0b4db3?text={text}"
+
+
 def render_news():
     if not top_news_list:
         return "<div class='empty'>暂无本周重点资讯数据</div>"
@@ -203,91 +220,89 @@ def render_news():
     for i, (title, count) in enumerate(top_news_list, start=1):
         html += f"""
         <div class="news-row">
-          <div class="rank">{i}</div>
-          <div class="news-main">
-            <div class="news-title">{short(title, 46)}</div>
+          <div class="news-rank">{i}</div>
+          <div>
+            <div class="news-title">{short(title, 48)}</div>
             <div class="news-meta">本周出现 {count} 次</div>
           </div>
         </div>
         """
     return html
 
+
 def render_keywords():
     if not top_keywords:
-        fallback = ["防晒", "凉感", "速干", "轻户外", "儿童运动", "青少年", "情绪消费", "城市骑行", "AI电商", "会员复购"]
-        data = [(x, 1) for x in fallback]
+        data = [(x, 1) for x in ["防晒", "凉感", "速干", "轻户外", "儿童运动", "青少年", "情绪消费", "城市骑行", "AI电商", "会员复购"]]
     else:
         data = top_keywords
 
     html = ""
-    for i, (word, count) in enumerate(data[:20], start=1):
-        size = 18 if i <= 3 else 15 if i <= 8 else 13
-        html += f"<span class='word w{i}' style='font-size:{size}px'>{word}</span>"
+    for i, (word, count) in enumerate(data[:22], start=1):
+        cls = "hot-word big" if i <= 3 else "hot-word mid" if i <= 9 else "hot-word"
+        html += f"<span class='{cls}'>{word}</span>"
     return html
+
 
 def render_regions():
     if not top_regions:
-        return """
-        <div class="region-card">华东｜关注商圈活动、亲子运动与夏季功能品类</div>
-        <div class="region-card">华南｜关注降雨天气、防滑防雨与室内运动承接</div>
-        <div class="region-card">西南｜关注文旅出行、轻户外和直播承接</div>
-        <div class="region-card">西北｜关注防晒、户外和价格带机会</div>
-        """
+        rows = [
+            ("华东", "关注商圈活动、亲子运动与夏季功能品类。"),
+            ("华南", "关注降雨天气、防滑防雨与室内运动承接。"),
+            ("西南", "关注文旅出行、轻户外和直播承接。"),
+            ("西北", "关注防晒、户外和价格带机会。"),
+        ]
+    else:
+        rows = [(name, f"本周出现 {count} 次，建议跟踪区域客流、天气品类和主推商品。") for name, count in top_regions]
 
     html = ""
-    for name, count in top_regions:
-        html += f"<div class='region-card'><b>{name}</b><span>本周出现 {count} 次，建议跟踪区域客流、天气品类和主推商品。</span></div>"
+    for name, desc in rows[:6]:
+        html += f"""
+        <div class="region-card">
+          <div class="region-name">{name}</div>
+          <div class="region-desc">{desc}</div>
+        </div>
+        """
     return html
+
 
 def render_product_cards():
     if not product_cards:
         return "<div class='empty'>暂无商品趋势数据</div>"
 
     html = ""
-    for p in product_cards:
+    for idx, p in enumerate(product_cards, start=1):
         tags = p.get("tags", [])
         tag_text = " / ".join(tags[:3]) if isinstance(tags, list) else ""
+        trend = p.get("trend", "")
+        trend_text = {"up": "上升", "hot": "高热", "flat": "平稳", "new": "新品"}.get(trend, trend)
+
         html += f"""
         <div class="product-card">
-          <img class="product-img" src="{p.get("image", "")}" alt="">
+          <div class="product-img-wrap">
+            <img class="product-img" src="{image_url(p)}" alt="">
+            <div class="product-rank">TOP {idx}</div>
+          </div>
           <div class="product-brand">{p.get("brand", "")}</div>
-          <div class="product-name">{short(p.get("name", ""), 28)}</div>
+          <div class="product-name">{short(p.get("name", ""), 30)}</div>
           <div class="product-meta">
             <span>{p.get("category", "")}</span>
             <span>¥{p.get("price", "")}</span>
             <span>热度 {p.get("heat", "")}</span>
+            <span>{trend_text}</span>
           </div>
           <div class="product-tags">{tag_text}</div>
         </div>
         """
     return html
 
-def render_list(items):
+
+def render_product_suggestion_cards():
     html = ""
-    for item in items[:6]:
-        if isinstance(item, dict):
-            theme = item.get("theme", "")
-            heat = item.get("heat", "")
-            suggestion = item.get("suggestion", "")
-
-            text_parts = []
-            if theme:
-                text_parts.append(f"【{theme}】")
-            if heat != "":
-                text_parts.append(f"热度{heat}。")
-            if suggestion:
-                text_parts.append(suggestion)
-
-            text = "".join(text_parts) or clean(item)
-        else:
-            text = clean(item)
-
-        html += f"<li>{text}</li>"
+    for item in product_suggestions[:4]:
+        html += f"<div class='suggest-card'>{dict_to_sentence(item)}</div>"
     return html
 
-# =========================================================
-# 输出HTML
-# =========================================================
+
 html = f"""
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -297,107 +312,173 @@ html = f"""
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{
-  background:#edf3fb;
+  background:#eaf1fb;
   font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;
   color:#102a5c;
-  padding:20px;
+  padding:24px;
 }}
-.page{{
+.report{{
   width:1280px;
   margin:auto;
-  background:#fff;
-  border-radius:22px;
-  padding:24px;
-  box-shadow:0 18px 40px rgba(20,50,100,.14);
 }}
-.header{{
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
-  border-bottom:1px solid #dbe6f6;
-  padding-bottom:18px;
+.cover{{
+  position:relative;
+  height:260px;
+  border-radius:26px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(255,139,0,.32), transparent 28%),
+    radial-gradient(circle at 16% 88%, rgba(11,99,216,.24), transparent 30%),
+    linear-gradient(135deg,#052b78 0%,#0b63d8 52%,#1d8fff 100%);
+  color:#fff;
+  padding:34px 42px;
+  box-shadow:0 20px 46px rgba(9,55,128,.26);
   margin-bottom:18px;
 }}
-.title{{
-  font-size:48px;
+.cover::after{{
+  content:"";
+  position:absolute;
+  right:-80px;
+  bottom:-120px;
+  width:420px;
+  height:420px;
+  border-radius:50%;
+  border:42px solid rgba(255,255,255,.12);
+}}
+.cover-tag{{
+  display:inline-block;
+  padding:7px 14px;
+  border-radius:999px;
+  background:rgba(255,255,255,.16);
+  font-size:14px;
+  font-weight:900;
+  margin-bottom:18px;
+}}
+.cover-title{{
+  font-size:56px;
+  line-height:1.05;
   font-weight:950;
-  color:#06276a;
   letter-spacing:-1px;
 }}
-.subtitle{{
-  margin-top:8px;
-  font-size:18px;
-  color:#31527f;
+.cover-sub{{
+  margin-top:14px;
+  font-size:22px;
+  font-weight:850;
+  opacity:.95;
+}}
+.cover-footer{{
+  position:absolute;
+  left:42px;
+  bottom:28px;
+  font-size:15px;
   font-weight:800;
+  opacity:.9;
 }}
 .stats{{
+  position:absolute;
+  right:34px;
+  top:34px;
   display:grid;
-  grid-template-columns:repeat(3,120px);
+  grid-template-columns:repeat(3,112px);
   gap:10px;
 }}
 .stat{{
-  background:#f3f8ff;
-  border:1px solid #dbe6f6;
-  border-radius:14px;
-  padding:14px;
+  background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.24);
+  border-radius:18px;
+  padding:15px 12px;
   text-align:center;
+  backdrop-filter:blur(6px);
 }}
 .stat-num{{
-  font-size:30px;
-  color:#0b63d8;
+  font-size:32px;
   font-weight:950;
 }}
 .stat-label{{
   font-size:12px;
-  color:#526b95;
-  margin-top:5px;
+  margin-top:4px;
+  opacity:.9;
 }}
-.grid{{
+
+.page{{
+  background:#fff;
+  border-radius:24px;
+  padding:22px;
+  box-shadow:0 18px 38px rgba(20,50,100,.12);
+  margin-bottom:18px;
+}}
+.section-head{{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:15px;
+  border-bottom:2px solid #e1ebf8;
+  padding-bottom:10px;
+}}
+.section-title{{
+  font-size:25px;
+  font-weight:950;
+  color:#062b78;
+}}
+.section-kicker{{
+  color:#0b63d8;
+  font-weight:950;
+  font-size:13px;
+}}
+.summary-box{{
+  background:linear-gradient(135deg,#f4f8ff,#eef6ff);
+  border:1px solid #dbe6f6;
+  border-radius:20px;
+  padding:20px 22px;
+  font-size:20px;
+  line-height:1.7;
+  font-weight:850;
+  color:#0d2d68;
+}}
+.grid-2{{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:16px;
 }}
-.section{{
-  background:#fff;
-  border:1px solid #dbe6f6;
-  border-radius:16px;
-  overflow:hidden;
-  margin-bottom:16px;
+.grid-3{{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
 }}
-.section-title{{
-  background:linear-gradient(90deg,#062b78,#0968df);
-  color:#fff;
-  font-size:18px;
+.card{{
+  border:1px solid #dbe6f6;
+  border-radius:18px;
+  background:#fbfdff;
+  padding:16px;
+}}
+.card-title{{
+  font-size:17px;
   font-weight:950;
-  padding:10px 14px;
+  color:#0b4db3;
+  margin-bottom:10px;
 }}
-.section-body{{
-  padding:14px;
-}}
-.summary{{
-  font-size:18px;
-  line-height:1.7;
-  font-weight:800;
-  background:#f3f8ff;
-  border:1px solid #dbe6f6;
-  border-radius:16px;
-  padding:18px;
-  margin-bottom:16px;
+ul{{padding-left:20px}}
+li{{
+  margin-bottom:10px;
+  font-size:15px;
+  line-height:1.55;
+  font-weight:760;
+  color:#233e68;
 }}
 .news-row{{
   display:grid;
-  grid-template-columns:34px 1fr;
+  grid-template-columns:38px 1fr;
   gap:12px;
   align-items:center;
-  padding:9px 0;
+  padding:10px 0;
   border-bottom:1px solid #edf2fa;
 }}
 .news-row:last-child{{border-bottom:none}}
-.rank{{
-  width:30px;
-  height:30px;
-  border-radius:9px;
-  background:#0b63d8;
+.news-rank{{
+  width:32px;
+  height:32px;
+  border-radius:10px;
+  background:linear-gradient(135deg,#063b88,#0d7df2);
   color:#fff;
   display:flex;
   align-items:center;
@@ -405,8 +486,8 @@ body{{
   font-weight:950;
 }}
 .news-title{{
-  font-size:15px;
-  font-weight:900;
+  font-size:15.5px;
+  font-weight:950;
   color:#0d2d68;
 }}
 .news-meta{{
@@ -415,69 +496,93 @@ body{{
   margin-top:3px;
 }}
 .word-cloud{{
-  min-height:230px;
-  padding:20px;
+  min-height:250px;
+  padding:22px;
   display:flex;
   flex-wrap:wrap;
   align-content:center;
+  justify-content:center;
   gap:14px 18px;
-  background:#f8fbff;
-  border-radius:14px;
+  background:linear-gradient(135deg,#f8fbff,#eef6ff);
+  border-radius:18px;
+  border:1px solid #dbe6f6;
 }}
-.word{{
+.hot-word{{
   font-weight:950;
   color:#0b63d8;
-  background:#eef6ff;
-  border-radius:999px;
-  padding:6px 12px;
-}}
-.w1,.w2,.w3{{color:#063b88;background:#dcecff}}
-.w4,.w5,.w6{{color:#0f766e;background:#e7f8f2}}
-.w7,.w8,.w9{{color:#c2410c;background:#fff3e8}}
-.region-card{{
-  padding:12px;
-  border-radius:12px;
-  background:#f7fbff;
+  background:#fff;
   border:1px solid #dbe6f6;
-  margin-bottom:10px;
-  line-height:1.5;
+  border-radius:999px;
+  padding:7px 14px;
+  font-size:14px;
+  box-shadow:0 5px 14px rgba(20,60,110,.06);
 }}
-.region-card b{{
+.hot-word.mid{{
+  font-size:17px;
+  color:#0f766e;
+  background:#ecfdf5;
+}}
+.hot-word.big{{
+  font-size:24px;
+  color:#062b78;
+  background:#dcecff;
+}}
+.region-card{{
+  border-radius:18px;
+  background:linear-gradient(135deg,#f7fbff,#ffffff);
+  border:1px solid #dbe6f6;
+  padding:16px;
+  min-height:112px;
+}}
+.region-name{{
+  font-size:20px;
+  font-weight:950;
   color:#0b4db3;
-  margin-right:10px;
+  margin-bottom:8px;
 }}
-.region-card span{{
-  color:#355174;
-  font-weight:700;
-}}
-ul{{
-  padding-left:20px;
-}}
-li{{
-  margin-bottom:9px;
-  font-size:15px;
-  line-height:1.55;
+.region-desc{{
+  font-size:14.5px;
+  line-height:1.5;
+  color:#315174;
   font-weight:750;
 }}
 .products{{
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  gap:12px;
+  gap:16px;
 }}
 .product-card{{
   border:1px solid #dbe6f6;
-  border-radius:14px;
-  background:#f9fcff;
+  border-radius:18px;
+  background:#fbfdff;
   padding:12px;
-  min-height:132px;
+  box-shadow:0 8px 18px rgba(20,60,110,.06);
+}}
+.product-img-wrap{{
+  position:relative;
+  width:100%;
+  height:150px;
+  border-radius:15px;
+  overflow:hidden;
+  background:#edf5ff;
+  margin-bottom:10px;
 }}
 .product-img{{
   width:100%;
-  height:118px;
+  height:100%;
   object-fit:cover;
-  border-radius:12px;
-  background:#edf5ff;
-  margin-bottom:8px;
+  display:block;
+}}
+.product-rank{{
+  position:absolute;
+  top:8px;
+  left:8px;
+  padding:4px 8px;
+  border-radius:999px;
+  background:rgba(6,43,120,.88);
+  color:#fff;
+  font-size:11px;
+  font-weight:950;
 }}
 .product-brand{{
   font-size:13px;
@@ -485,11 +590,12 @@ li{{
   font-weight:950;
 }}
 .product-name{{
-  font-size:15px;
+  font-size:15.5px;
   line-height:1.35;
   font-weight:950;
   color:#0d2d68;
-  margin-top:6px;
+  margin-top:5px;
+  min-height:42px;
 }}
 .product-meta{{
   display:flex;
@@ -508,16 +614,29 @@ li{{
   margin-top:8px;
   font-size:12px;
   color:#1d8c54;
-  font-weight:800;
+  font-weight:850;
+}}
+.suggest-grid{{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+}}
+.suggest-card{{
+  border-radius:18px;
+  background:linear-gradient(135deg,#fff7ed,#ffffff);
+  border:1px solid #fed7aa;
+  padding:16px;
+  font-size:15px;
+  line-height:1.55;
+  font-weight:850;
+  color:#7c2d12;
+  min-height:130px;
 }}
 .footer{{
-  margin-top:18px;
-  padding-top:12px;
-  border-top:1px solid #dbe6f6;
-  display:flex;
-  justify-content:space-between;
-  color:#6b7f9f;
+  text-align:center;
+  color:#7184a3;
   font-size:12px;
+  margin:14px 0 4px;
 }}
 .empty{{
   color:#8a99ad;
@@ -529,91 +648,97 @@ li{{
 </head>
 
 <body>
-<div class="page">
+<div class="report">
 
-  <div class="header">
-    <div>
-      <div class="title">运动品牌行业周报</div>
-      <div class="subtitle">趋势复盘 · 商品机会 · 区域洞察 · 下季开发建议</div>
-    </div>
+  <section class="cover">
+    <div class="cover-tag">361°儿童 · 周度经营洞察</div>
+    <div class="cover-title">运动品牌行业周报</div>
+    <div class="cover-sub">宏观消费 × 平台流量 × 渠道变化 × 品牌动作 × 商品机会</div>
+    <div class="cover-footer">ONE DEGREE BEYOND｜经营管理部｜生成时间 {generated_time}</div>
     <div class="stats">
       <div class="stat"><div class="stat-num">{len(days)}</div><div class="stat-label">统计天数</div></div>
       <div class="stat"><div class="stat-num">{len(news_titles)}</div><div class="stat-label">资讯样本</div></div>
       <div class="stat"><div class="stat-num">{len(product_cards)}</div><div class="stat-label">商品观察</div></div>
     </div>
-  </div>
+  </section>
 
-  <div class="summary">
-    {weekly_summary}
-  </div>
+  <section class="page">
+    <div class="section-head">
+      <div class="section-title">一、本周核心判断</div>
+      <div class="section-kicker">WEEKLY JUDGEMENT</div>
+    </div>
+    <div class="summary-box">{weekly_summary}</div>
+  </section>
 
-  <div class="grid">
-    <div class="section">
-      <div class="section-title">一、本周TOP资讯</div>
-      <div class="section-body">
+  <section class="page">
+    <div class="section-head">
+      <div class="section-title">二、本周趋势总览</div>
+      <div class="section-kicker">TREND OVERVIEW</div>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title">机会方向</div>
+        <ul>{render_list(opportunities, 4)}</ul>
+      </div>
+      <div class="card">
+        <div class="card-title">风险提示</div>
+        <ul>{render_list(risks, 4)}</ul>
+      </div>
+      <div class="card">
+        <div class="card-title">经营动作</div>
+        <ul>{render_list(actions, 4)}</ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="section-head">
+      <div class="section-title">三、本周重点资讯与热词</div>
+      <div class="section-kicker">NEWS & KEYWORDS</div>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">本周 TOP 资讯</div>
         {render_news()}
       </div>
-    </div>
-
-    <div class="section">
-      <div class="section-title">二、本周热词雷达</div>
-      <div class="section-body">
-        <div class="word-cloud">
-          {render_keywords()}
-        </div>
+      <div>
+        <div class="word-cloud">{render_keywords()}</div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="grid">
-    <div class="section">
-      <div class="section-title">三、本周区域机会</div>
-      <div class="section-body">
-        {render_regions()}
-      </div>
+  <section class="page">
+    <div class="section-head">
+      <div class="section-title">四、区域机会与渠道观察</div>
+      <div class="section-kicker">REGIONAL INSIGHT</div>
     </div>
+    <div class="grid-3">
+      {render_regions()}
+    </div>
+  </section>
 
-    <div class="section">
-      <div class="section-title">四、本周机会与风险</div>
-      <div class="section-body">
-        <b>机会：</b>
-        <ul>{render_list(opportunities)}</ul>
-        <br>
-        <b>风险：</b>
-        <ul>{render_list(risks)}</ul>
-      </div>
+  <section class="page">
+    <div class="section-head">
+      <div class="section-title">五、热卖运动品牌鞋服商品观察</div>
+      <div class="section-kicker">HOT PRODUCTS</div>
     </div>
-  </div>
+    <div class="products">
+      {render_product_cards()}
+    </div>
+  </section>
 
-  <div class="section">
-    <div class="section-title">五、热卖运动品牌鞋服商品观察</div>
-    <div class="section-body">
-      <div class="products">
-        {render_product_cards()}
-      </div>
+  <section class="page">
+    <div class="section-head">
+      <div class="section-title">六、下季度商品开发建议</div>
+      <div class="section-kicker">PRODUCT PLANNING</div>
     </div>
-  </div>
-
-  <div class="grid">
-    <div class="section">
-      <div class="section-title">六、经营动作建议</div>
-      <div class="section-body">
-        <ul>{render_list(actions)}</ul>
-      </div>
+    <div class="suggest-grid">
+      {render_product_suggestion_cards()}
     </div>
-
-    <div class="section">
-      <div class="section-title">七、下季度开发建议</div>
-      <div class="section-body">
-        <ul>{render_list(product_suggestions)}</ul>
-      </div>
-    </div>
-  </div>
+  </section>
 
   <div class="footer">
-    <div>数据来源：TrendRadar 日报历史库 / 周报库 / 商品趋势库</div>
-    <div>生成时间：{generated_time}</div>
-    <div>制作：运动品牌行业周报自动化系统</div>
+    数据来源：TrendRadar 日报历史库 / 周报库 / 商品趋势库 ｜ 制作：运动品牌行业周报自动化系统
   </div>
 
 </div>
@@ -622,5 +747,4 @@ li{{
 """
 
 OUTPUT_HTML.write_text(html, encoding="utf-8")
-
 print(f"weekly html generated: {OUTPUT_HTML}")
