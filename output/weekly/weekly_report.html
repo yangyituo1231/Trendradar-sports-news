@@ -12,333 +12,89 @@ body{
   color:#102a5c;
   padding:24px;
 }
-.report{
-  width:1280px;
-  margin:auto;
-}
+.report{width:1280px;margin:auto}
 .cover{
-  position:relative;
-  height:260px;
-  border-radius:26px;
-  overflow:hidden;
-  background:
-    radial-gradient(circle at 85% 20%, rgba(255,139,0,.32), transparent 28%),
-    radial-gradient(circle at 16% 88%, rgba(11,99,216,.24), transparent 30%),
-    linear-gradient(135deg,#052b78 0%,#0b63d8 52%,#1d8fff 100%);
-  color:#fff;
-  padding:34px 42px;
-  box-shadow:0 20px 46px rgba(9,55,128,.26);
-  margin-bottom:18px;
+  position:relative;height:260px;border-radius:26px;overflow:hidden;
+  background:radial-gradient(circle at 85% 20%, rgba(255,139,0,.32), transparent 28%),
+  radial-gradient(circle at 16% 88%, rgba(11,99,216,.24), transparent 30%),
+  linear-gradient(135deg,#052b78 0%,#0b63d8 52%,#1d8fff 100%);
+  color:#fff;padding:34px 42px;box-shadow:0 20px 46px rgba(9,55,128,.26);margin-bottom:18px;
 }
-.cover::after{
-  content:"";
-  position:absolute;
-  right:-80px;
-  bottom:-120px;
-  width:420px;
-  height:420px;
-  border-radius:50%;
-  border:42px solid rgba(255,255,255,.12);
-}
-.cover-tag{
-  display:inline-block;
-  padding:7px 14px;
-  border-radius:999px;
-  background:rgba(255,255,255,.16);
-  font-size:14px;
-  font-weight:900;
-  margin-bottom:18px;
-}
-.cover-title{
-  font-size:56px;
-  line-height:1.05;
-  font-weight:950;
-  letter-spacing:-1px;
-}
-.cover-sub{
-  margin-top:14px;
-  font-size:22px;
-  font-weight:850;
-  opacity:.95;
-}
-.cover-footer{
-  position:absolute;
-  left:42px;
-  bottom:28px;
-  font-size:15px;
-  font-weight:800;
-  opacity:.9;
-}
-.stats{
-  position:absolute;
-  right:34px;
-  top:34px;
-  display:grid;
-  grid-template-columns:repeat(3,112px);
-  gap:10px;
-}
-.stat{
-  background:rgba(255,255,255,.16);
-  border:1px solid rgba(255,255,255,.24);
-  border-radius:18px;
-  padding:15px 12px;
-  text-align:center;
-  backdrop-filter:blur(6px);
-}
-.stat-num{
-  font-size:32px;
-  font-weight:950;
-}
-.stat-label{
-  font-size:12px;
-  margin-top:4px;
-  opacity:.9;
-}
+.cover::after{content:"";position:absolute;right:-80px;bottom:-120px;width:420px;height:420px;border-radius:50%;border:42px solid rgba(255,255,255,.12)}
+.cover-tag{display:inline-block;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.16);font-size:14px;font-weight:900;margin-bottom:18px}
+.cover-title{font-size:56px;line-height:1.05;font-weight:950;letter-spacing:-1px}
+.cover-sub{margin-top:14px;font-size:22px;font-weight:850;opacity:.95}
+.cover-footer{position:absolute;left:42px;bottom:28px;font-size:15px;font-weight:800;opacity:.9}
+.stats{position:absolute;right:34px;top:34px;display:grid;grid-template-columns:repeat(4,104px);gap:10px}
+.stat{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.24);border-radius:18px;padding:15px 12px;text-align:center;backdrop-filter:blur(6px)}
+.stat-num{font-size:30px;font-weight:950}
+.stat-label{font-size:12px;margin-top:4px;opacity:.9}
 
-.page{
-  background:#fff;
-  border-radius:24px;
-  padding:22px;
-  box-shadow:0 18px 38px rgba(20,50,100,.12);
-  margin-bottom:18px;
-}
-.section-head{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:15px;
-  border-bottom:2px solid #e1ebf8;
-  padding-bottom:10px;
-}
-.section-title{
-  font-size:25px;
-  font-weight:950;
-  color:#062b78;
-}
-.section-kicker{
-  color:#0b63d8;
-  font-weight:950;
-  font-size:13px;
-}
-.summary-box{
-  background:linear-gradient(135deg,#f4f8ff,#eef6ff);
-  border:1px solid #dbe6f6;
-  border-radius:20px;
-  padding:20px 22px;
-  font-size:20px;
-  line-height:1.7;
-  font-weight:850;
-  color:#0d2d68;
-}
-.grid-2{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:16px;
-}
-.grid-3{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:14px;
-}
-.card{
-  border:1px solid #dbe6f6;
-  border-radius:18px;
-  background:#fbfdff;
-  padding:16px;
-}
-.card-title{
-  font-size:17px;
-  font-weight:950;
-  color:#0b4db3;
-  margin-bottom:10px;
-}
+.page{background:#fff;border-radius:24px;padding:22px;box-shadow:0 18px 38px rgba(20,50,100,.12);margin-bottom:18px}
+.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;border-bottom:2px solid #e1ebf8;padding-bottom:10px}
+.section-title{font-size:25px;font-weight:950;color:#062b78}
+.section-kicker{color:#0b63d8;font-weight:950;font-size:13px}
+.summary-box{background:linear-gradient(135deg,#f4f8ff,#eef6ff);border:1px solid #dbe6f6;border-radius:20px;padding:20px 22px;font-size:20px;line-height:1.7;font-weight:850;color:#0d2d68}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{border:1px solid #dbe6f6;border-radius:18px;background:#fbfdff;padding:16px}
+.card-title{font-size:17px;font-weight:950;color:#0b4db3;margin-bottom:10px}
 ul{padding-left:20px}
-li{
-  margin-bottom:10px;
-  font-size:15px;
-  line-height:1.55;
-  font-weight:760;
-  color:#233e68;
-}
-.news-row{
-  display:grid;
-  grid-template-columns:38px 1fr;
-  gap:12px;
-  align-items:center;
-  padding:10px 0;
-  border-bottom:1px solid #edf2fa;
-}
+li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233e68}
+
+.news-row{display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid #edf2fa}
 .news-row:last-child{border-bottom:none}
-.news-rank{
-  width:32px;
-  height:32px;
-  border-radius:10px;
-  background:linear-gradient(135deg,#063b88,#0d7df2);
-  color:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:950;
-}
-.news-title{
-  font-size:15.5px;
-  font-weight:950;
-  color:#0d2d68;
-}
-.news-meta{
-  font-size:12px;
-  color:#6b7f9f;
-  margin-top:3px;
-}
-.word-cloud{
-  min-height:250px;
-  padding:22px;
-  display:flex;
-  flex-wrap:wrap;
-  align-content:center;
-  justify-content:center;
-  gap:14px 18px;
-  background:linear-gradient(135deg,#f8fbff,#eef6ff);
-  border-radius:18px;
-  border:1px solid #dbe6f6;
-}
-.hot-word{
-  font-weight:950;
-  color:#0b63d8;
-  background:#fff;
-  border:1px solid #dbe6f6;
-  border-radius:999px;
-  padding:7px 14px;
-  font-size:14px;
-  box-shadow:0 5px 14px rgba(20,60,110,.06);
-}
-.hot-word.mid{
-  font-size:17px;
-  color:#0f766e;
-  background:#ecfdf5;
-}
-.hot-word.big{
-  font-size:24px;
-  color:#062b78;
-  background:#dcecff;
-}
-.region-card{
-  border-radius:18px;
-  background:linear-gradient(135deg,#f7fbff,#ffffff);
-  border:1px solid #dbe6f6;
-  padding:16px;
-  min-height:112px;
-}
-.region-name{
-  font-size:20px;
-  font-weight:950;
-  color:#0b4db3;
-  margin-bottom:8px;
-}
-.region-desc{
-  font-size:14.5px;
-  line-height:1.5;
-  color:#315174;
-  font-weight:750;
-}
-.products{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:16px;
-}
-.product-card{
-  border:1px solid #dbe6f6;
-  border-radius:18px;
-  background:#fbfdff;
-  padding:12px;
-  box-shadow:0 8px 18px rgba(20,60,110,.06);
-}
-.product-img-wrap{
-  position:relative;
-  width:100%;
-  height:150px;
-  border-radius:15px;
-  overflow:hidden;
-  background:#edf5ff;
-  margin-bottom:10px;
-}
-.product-img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-.product-rank{
-  position:absolute;
-  top:8px;
-  left:8px;
-  padding:4px 8px;
-  border-radius:999px;
-  background:rgba(6,43,120,.88);
-  color:#fff;
-  font-size:11px;
-  font-weight:950;
-}
-.product-brand{
-  font-size:13px;
-  color:#0b63d8;
-  font-weight:950;
-}
-.product-name{
-  font-size:15.5px;
-  line-height:1.35;
-  font-weight:950;
-  color:#0d2d68;
-  margin-top:5px;
-  min-height:42px;
-}
-.product-meta{
-  display:flex;
-  flex-wrap:wrap;
-  gap:6px;
-  margin-top:8px;
-  font-size:11px;
-  color:#51698d;
-}
-.product-meta span{
-  background:#edf5ff;
-  padding:3px 6px;
-  border-radius:8px;
-}
-.product-tags{
-  margin-top:8px;
-  font-size:12px;
-  color:#1d8c54;
-  font-weight:850;
-}
-.suggest-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:14px;
-}
-.suggest-card{
-  border-radius:18px;
-  background:linear-gradient(135deg,#fff7ed,#ffffff);
-  border:1px solid #fed7aa;
-  padding:16px;
-  font-size:15px;
-  line-height:1.55;
-  font-weight:850;
-  color:#7c2d12;
-  min-height:130px;
-}
-.footer{
-  text-align:center;
-  color:#7184a3;
-  font-size:12px;
-  margin:14px 0 4px;
-}
-.empty{
-  color:#8a99ad;
-  font-size:14px;
-  padding:20px;
-  text-align:center;
-}
+.news-rank{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#063b88,#0d7df2);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:950}
+.news-title{font-size:15.5px;font-weight:950;color:#0d2d68}
+.news-meta{font-size:12px;color:#6b7f9f;margin-top:3px}
+
+.word-cloud{min-height:250px;padding:22px;display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:14px 18px;background:linear-gradient(135deg,#f8fbff,#eef6ff);border-radius:18px;border:1px solid #dbe6f6}
+.hot-word{font-weight:950;color:#0b63d8;background:#fff;border:1px solid #dbe6f6;border-radius:999px;padding:7px 14px;font-size:14px;box-shadow:0 5px 14px rgba(20,60,110,.06)}
+.hot-word.mid{font-size:17px;color:#0f766e;background:#ecfdf5}
+.hot-word.big{font-size:24px;color:#062b78;background:#dcecff}
+
+.region-card{border-radius:18px;background:linear-gradient(135deg,#f7fbff,#ffffff);border:1px solid #dbe6f6;padding:16px;min-height:112px}
+.region-name{font-size:20px;font-weight:950;color:#0b4db3;margin-bottom:8px}
+.region-desc{font-size:14.5px;line-height:1.5;color:#315174;font-weight:750}
+
+.signal-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.signal-card{border:1px solid #dbe6f6;border-radius:18px;background:#fbfdff;padding:16px}
+.signal-title{font-size:18px;font-weight:950;color:#0b4db3;margin-bottom:12px}
+.rank-bar-row{display:grid;grid-template-columns:132px 1fr 38px;gap:10px;align-items:center;margin-bottom:10px}
+.rank-label{font-size:13px;font-weight:900;color:#183a76;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rank-label span{display:inline-flex;width:22px;height:22px;align-items:center;justify-content:center;background:#0b63d8;color:#fff;border-radius:7px;margin-right:7px;font-size:11px}
+.rank-bar{height:9px;background:#edf5ff;border-radius:999px;overflow:hidden}
+.rank-bar i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#0b63d8,#19a3ff)}
+.rank-count{font-size:13px;font-weight:950;color:#0b63d8;text-align:right}
+.signal-tags{display:flex;flex-wrap:wrap;gap:10px}
+.signal-tags span{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;background:#f3f8ff;border:1px solid #dbe6f6;color:#0b4db3;font-size:13px;font-weight:900}
+.signal-tags span.tag-mid{font-size:15px;background:#ecfdf5;color:#0f766e}
+.signal-tags span.tag-large{font-size:18px;background:#dcecff;color:#062b78}
+.signal-tags em{font-style:normal;background:#fff;border-radius:999px;padding:2px 6px;color:#64748b;font-size:11px}
+
+.signal-news-row{display:grid;grid-template-columns:34px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid #edf2fa}
+.signal-news-row:last-child{border-bottom:none}
+.signal-news-rank{width:30px;height:30px;border-radius:9px;background:#0f766e;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:950}
+.signal-news-title{font-size:15px;font-weight:950;color:#0d2d68}
+.signal-news-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.signal-news-meta span{font-size:11px;background:#edf5ff;color:#365379;border-radius:8px;padding:3px 6px;font-weight:800}
+.signal-news-brand{font-size:12px;color:#0f766e;font-weight:850;margin-top:5px}
+
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.product-card{border:1px solid #dbe6f6;border-radius:18px;background:#fbfdff;padding:12px;box-shadow:0 8px 18px rgba(20,60,110,.06)}
+.product-img-wrap{position:relative;width:100%;height:150px;border-radius:15px;overflow:hidden;background:#edf5ff;margin-bottom:10px}
+.product-img{width:100%;height:100%;object-fit:cover;display:block}
+.product-rank{position:absolute;top:8px;left:8px;padding:4px 8px;border-radius:999px;background:rgba(6,43,120,.88);color:#fff;font-size:11px;font-weight:950}
+.product-brand{font-size:13px;color:#0b63d8;font-weight:950}
+.product-name{font-size:15.5px;line-height:1.35;font-weight:950;color:#0d2d68;margin-top:5px;min-height:42px}
+.product-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;font-size:11px;color:#51698d}
+.product-meta span{background:#edf5ff;padding:3px 6px;border-radius:8px}
+.product-tags{margin-top:8px;font-size:12px;color:#1d8c54;font-weight:850}
+
+.suggest-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.suggest-card{border-radius:18px;background:linear-gradient(135deg,#fff7ed,#ffffff);border:1px solid #fed7aa;padding:16px;font-size:15px;line-height:1.55;font-weight:850;color:#7c2d12;min-height:130px}
+.footer{text-align:center;color:#7184a3;font-size:12px;margin:14px 0 4px}
+.empty{color:#8a99ad;font-size:14px;padding:20px;text-align:center}
 </style>
 </head>
 
@@ -349,10 +105,11 @@ li{
     <div class="cover-tag">361°儿童 · 周度经营洞察</div>
     <div class="cover-title">运动品牌行业周报</div>
     <div class="cover-sub">宏观消费 × 平台流量 × 渠道变化 × 品牌动作 × 商品机会</div>
-    <div class="cover-footer">ONE DEGREE BEYOND｜经营管理部｜生成时间 2026-05-31 12:38</div>
+    <div class="cover-footer">ONE DEGREE BEYOND｜经营管理部｜生成时间 2026-05-31 13:21</div>
     <div class="stats">
       <div class="stat"><div class="stat-num">3</div><div class="stat-label">统计天数</div></div>
       <div class="stat"><div class="stat-num">15</div><div class="stat-label">资讯样本</div></div>
+      <div class="stat"><div class="stat-num">426</div><div class="stat-label">趋势信号</div></div>
       <div class="stat"><div class="stat-num">12</div><div class="stat-label">商品观察</div></div>
     </div>
   </section>
@@ -362,7 +119,7 @@ li{
       <div class="section-title">一、本周核心判断</div>
       <div class="section-kicker">WEEKLY JUDGEMENT</div>
     </div>
-    <div class="summary-box">统计周期：2026-05-29 至 2026-05-31｜本周行业关注集中在直播带货、618、儿童运动、门店陈列、消费趋势、年轻人；真实商品趋势信号显示，Nike、安踏、安踏儿童、巴拉巴拉、FILA等品牌出现频次较高，品牌新品、大促节点、儿童服装、跑步科技、户外轻运动是重点方向。｜商品方向建议重点关注跑鞋、儿童跑鞋、防晒衣、运动套装、户外鞋，并结合运动成人化、儿童趋势、防晒凉感强化青少年成人化、功能科技和场景组合。｜区域经营需结合天气、商圈活动和平台热点，重点提升门店陈列、会员触达和导购转化。｜下周建议围绕运动成人化、儿童趋势、防晒凉感建立商品组合、内容种草和终端陈列联动，并持续沉淀真实商品趋势信号。</div>
+    <div class="summary-box">统计周期：2026-05-29 至 2026-05-31｜本周行业关注集中在直播带货、618、儿童运动、门店陈列、消费趋势、年轻人；真实商品趋势信号显示，Nike、安踏、安踏儿童、FILA、Adidas等品牌出现频次较高，大促节点、儿童服装、品牌新品、跑步科技、户外轻运动是重点方向。｜商品方向建议重点关注跑鞋、儿童跑鞋、防晒衣、运动套装、户外鞋，并结合运动成人化、儿童趋势、防晒凉感强化青少年成人化、功能科技和场景组合。｜区域经营需结合天气、商圈活动和平台热点，重点提升门店陈列、会员触达和导购转化。｜下周建议围绕运动成人化、儿童趋势、防晒凉感建立商品组合、内容种草和终端陈列联动，并持续沉淀真实商品趋势信号。</div>
   </section>
 
   <section class="page">
@@ -371,18 +128,9 @@ li{
       <div class="section-kicker">TREND OVERVIEW</div>
     </div>
     <div class="grid-3">
-      <div class="card">
-        <div class="card-title">机会方向</div>
-        <ul><li>【运动成人化】热度669。青少年产品可借鉴成人跑鞋、训练鞋、户外鞋的科技感和专业感。</li><li>【儿童趋势】热度284。重点观察儿童运动鞋、童装运动化、校园体育和亲子同款的新品变化。</li><li>【防晒凉感】热度153。防晒衣、凉感T、速干短裤、透气童鞋可作为夏季主推组合。</li><li>【防晒凉感趋势】热度119。春夏季应持续关注防晒衣、凉感T、速干短裤、运动凉鞋和防晒帽包。</li></ul>
-      </div>
-      <div class="card">
-        <div class="card-title">风险提示</div>
-        <ul><li>降雨和强对流天气会影响户外客流，需关注商场内场承接和防滑防雨品类。</li><li>平台大促会强化价格心智，线下门店需防止只引流不成交。</li><li>理性消费和客单压力仍在，商品结构需兼顾功能刚需和价格带效率。</li><li>跑鞋科技信息密集，若终端卖点表达不足，容易出现产品有配置但消费者无感知的问题。</li></ul>
-      </div>
-      <div class="card">
-        <div class="card-title">经营动作</div>
-        <ul><li>建立儿童/青少年商品趋势清单，重点跟踪跑鞋、篮球鞋、校园运动鞋和成人化设计语言。</li><li>防晒凉感方向重点跟踪防晒衣、凉感T、速干短裤、遮阳帽和运动凉鞋。</li><li>轻户外方向重点跟踪冲锋衣、防水外套、户外鞋、溯溪鞋和山系穿搭。</li><li>每周复盘商品趋势信号中反复出现的品牌、品类和场景，形成开发输入清单。</li></ul>
-      </div>
+      <div class="card"><div class="card-title">机会方向</div><ul><li>【运动成人化】热度659。青少年产品可借鉴成人跑鞋、训练鞋、户外鞋的科技感和专业感。</li><li>【儿童趋势】热度286。重点观察儿童运动鞋、童装运动化、校园体育和亲子同款的新品变化。</li><li>【防晒凉感】热度143。防晒衣、凉感T、速干短裤、透气童鞋可作为夏季主推组合。</li><li>【儿童运动鞋】热度118。儿童跑鞋、校园运动鞋、青少年训练鞋应强化成长型和成人化设计表达。</li></ul></div>
+      <div class="card"><div class="card-title">风险提示</div><ul><li>降雨和强对流天气会影响户外客流，需关注商场内场承接和防滑防雨品类。</li><li>平台大促会强化价格心智，线下门店需防止只引流不成交。</li><li>理性消费和客单压力仍在，商品结构需兼顾功能刚需和价格带效率。</li><li>跑鞋科技信息密集，若终端卖点表达不足，容易出现产品有配置但消费者无感知的问题。</li></ul></div>
+      <div class="card"><div class="card-title">经营动作</div><ul><li>建立儿童/青少年商品趋势清单，重点跟踪跑鞋、篮球鞋、校园运动鞋和成人化设计语言。</li><li>防晒凉感方向重点跟踪防晒衣、凉感T、速干短裤、遮阳帽和运动凉鞋。</li><li>轻户外方向重点跟踪冲锋衣、防水外套、户外鞋、溯溪鞋和山系穿搭。</li><li>每周复盘商品趋势信号中反复出现的品牌、品类和场景，形成开发输入清单。</li></ul></div>
     </div>
   </section>
 
@@ -392,27 +140,9 @@ li{
       <div class="section-kicker">NEWS & KEYWORDS</div>
     </div>
     <div class="grid-2">
-      <div class="card">
-        <div class="card-title">本周 TOP 资讯</div>
-        
+      <div class="card"><div class="card-title">本周 TOP 资讯</div>
         <div class="news-row">
           <div class="news-rank">1</div>
-          <div>
-            <div class="news-title">从购物到“逛感”体验：年轻人线下消费新趋势，商场如何接招？</div>
-            <div class="news-meta">本周出现 2 次</div>
-          </div>
-        </div>
-        
-        <div class="news-row">
-          <div class="news-rank">2</div>
-          <div>
-            <div class="news-title">安踏李宁叫板耐克阿迪，特步361度全力向上</div>
-            <div class="news-meta">本周出现 2 次</div>
-          </div>
-        </div>
-        
-        <div class="news-row">
-          <div class="news-rank">3</div>
           <div>
             <div class="news-title">运动品牌盯上儿童运动鞋</div>
             <div class="news-meta">本周出现 1 次</div>
@@ -420,7 +150,7 @@ li{
         </div>
         
         <div class="news-row">
-          <div class="news-rank">4</div>
+          <div class="news-rank">2</div>
           <div>
             <div class="news-title">户外运动“大众化”加速，消费人次超8亿，女性消费者占比54.6%</div>
             <div class="news-meta">本周出现 1 次</div>
@@ -428,7 +158,7 @@ li{
         </div>
         
         <div class="news-row">
-          <div class="news-rank">5</div>
+          <div class="news-rank">3</div>
           <div>
             <div class="news-title">安踏儿童携手上海六院国家骨科医学中心，落成儿童足弓成长实验室</div>
             <div class="news-meta">本周出现 1 次</div>
@@ -436,7 +166,7 @@ li{
         </div>
         
         <div class="news-row">
-          <div class="news-rank">6</div>
+          <div class="news-rank">4</div>
           <div>
             <div class="news-title">萝卜塔智能体荣获2026“生意管家杯”电商AI挑战赛“最佳实战奖”</div>
             <div class="news-meta">本周出现 1 次</div>
@@ -444,7 +174,7 @@ li{
         </div>
         
         <div class="news-row">
-          <div class="news-rank">7</div>
+          <div class="news-rank">5</div>
           <div>
             <div class="news-title">5月29日中央商场（600280）涨停分析：新零售概念升温、主业转型预期驱动</div>
             <div class="news-meta">本周出现 1 次</div>
@@ -452,17 +182,30 @@ li{
         </div>
         
         <div class="news-row">
-          <div class="news-rank">8</div>
+          <div class="news-rank">6</div>
           <div>
             <div class="news-title">美团研究院报告：户外运动“大众化”加速，消费人次超8亿，女性消费者占比54.6%</div>
             <div class="news-meta">本周出现 1 次</div>
           </div>
         </div>
         
-      </div>
-      <div>
-        <div class="word-cloud"><span class='hot-word big'>直播带货</span><span class='hot-word big'>618</span><span class='hot-word big'>儿童运动</span><span class='hot-word mid'>门店陈列</span><span class='hot-word mid'>消费趋势</span><span class='hot-word mid'>年轻人</span><span class='hot-word mid'>户外运动</span><span class='hot-word mid'>AI</span><span class='hot-word mid'>文旅客流</span><span class='hot-word'>商场活动</span><span class='hot-word'>防晒品类</span><span class='hot-word'>商圈客流</span><span class='hot-word'>客流修复</span><span class='hot-word'>运动科技</span><span class='hot-word'>安踏</span><span class='hot-word'>品牌站位</span><span class='hot-word'>情绪消费</span><span class='hot-word'>防晒衣</span><span class='hot-word'>智能机器人</span><span class='hot-word'>亲子运动</span><span class='hot-word'>大促预售</span><span class='hot-word'>速干T</span></div>
-      </div>
+        <div class="news-row">
+          <div class="news-rank">7</div>
+          <div>
+            <div class="news-title">童趣经济火热出圈 兰州解锁“六一”多元消费新图景</div>
+            <div class="news-meta">本周出现 1 次</div>
+          </div>
+        </div>
+        
+        <div class="news-row">
+          <div class="news-rank">8</div>
+          <div>
+            <div class="news-title">“每月都有活动，‘618’的区别在哪？”年中大促降温背后——AI融入改写竞争规则即时...</div>
+            <div class="news-meta">本周出现 1 次</div>
+          </div>
+        </div>
+        </div>
+      <div><div class="word-cloud"><span class='hot-word big'>直播带货</span><span class='hot-word big'>618</span><span class='hot-word big'>儿童运动</span><span class='hot-word mid'>门店陈列</span><span class='hot-word mid'>消费趋势</span><span class='hot-word mid'>年轻人</span><span class='hot-word mid'>户外运动</span><span class='hot-word mid'>AI</span><span class='hot-word mid'>文旅客流</span><span class='hot-word'>商场活动</span><span class='hot-word'>商圈客流</span><span class='hot-word'>客流修复</span><span class='hot-word'>运动科技</span><span class='hot-word'>防晒品类</span><span class='hot-word'>亲子运动</span><span class='hot-word'>品牌站位</span><span class='hot-word'>安踏</span><span class='hot-word'>情绪消费</span><span class='hot-word'>防晒衣</span><span class='hot-word'>智能机器人</span><span class='hot-word'>大促预售</span><span class='hot-word'>速干T</span></div></div>
     </div>
   </section>
 
@@ -472,7 +215,6 @@ li{
       <div class="section-kicker">REGIONAL INSIGHT</div>
     </div>
     <div class="grid-3">
-      
         <div class="region-card">
           <div class="region-name">华东</div>
           <div class="region-desc">关注商圈活动、亲子运动与夏季功能品类。</div>
@@ -492,17 +234,287 @@ li{
           <div class="region-name">西北</div>
           <div class="region-desc">关注防晒、户外和价格带机会。</div>
         </div>
+        </div>
+  </section>
+
+  <section class="page">
+    <div class="section-head">
+      <div class="section-title">五、真实商品趋势信号看板</div>
+      <div class="section-kicker">PRODUCT SIGNALS</div>
+    </div>
+
+    <div class="signal-grid">
+      
+    <div class="signal-card">
+      <div class="signal-title">品牌热度 TOP10</div>
+    
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>1</span>Nike</div>
+          <div class="rank-bar"><i style="width:100%"></i></div>
+          <div class="rank-count">77</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>2</span>安踏</div>
+          <div class="rank-bar"><i style="width:61%"></i></div>
+          <div class="rank-count">47</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>3</span>安踏儿童</div>
+          <div class="rank-bar"><i style="width:54%"></i></div>
+          <div class="rank-count">42</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>4</span>FILA</div>
+          <div class="rank-bar"><i style="width:54%"></i></div>
+          <div class="rank-count">42</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>5</span>Adidas</div>
+          <div class="rank-bar"><i style="width:48%"></i></div>
+          <div class="rank-count">37</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>6</span>FILA Kids</div>
+          <div class="rank-bar"><i style="width:48%"></i></div>
+          <div class="rank-count">37</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>7</span>巴拉巴拉</div>
+          <div class="rank-bar"><i style="width:44%"></i></div>
+          <div class="rank-count">34</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>8</span>Adidas Kids</div>
+          <div class="rank-bar"><i style="width:42%"></i></div>
+          <div class="rank-count">33</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>9</span>Nike Kids</div>
+          <div class="rank-bar"><i style="width:37%"></i></div>
+          <div class="rank-count">29</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>10</span>361儿童</div>
+          <div class="rank-bar"><i style="width:31%"></i></div>
+          <div class="rank-count">24</div>
+        </div>
+        </div>
+      
+    <div class="signal-card">
+      <div class="signal-title">品类/场景热度 TOP10</div>
+    
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>1</span>大促节点</div>
+          <div class="rank-bar"><i style="width:100%"></i></div>
+          <div class="rank-count">63</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>2</span>儿童服装</div>
+          <div class="rank-bar"><i style="width:98%"></i></div>
+          <div class="rank-count">62</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>3</span>品牌新品</div>
+          <div class="rank-bar"><i style="width:98%"></i></div>
+          <div class="rank-count">62</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>4</span>跑步科技</div>
+          <div class="rank-bar"><i style="width:60%"></i></div>
+          <div class="rank-count">38</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>5</span>户外轻运动</div>
+          <div class="rank-bar"><i style="width:60%"></i></div>
+          <div class="rank-count">38</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>6</span>儿童鞋</div>
+          <div class="rank-bar"><i style="width:57%"></i></div>
+          <div class="rank-count">36</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>7</span>防晒凉感</div>
+          <div class="rank-bar"><i style="width:57%"></i></div>
+          <div class="rank-count">36</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>8</span>篮球足球</div>
+          <div class="rank-bar"><i style="width:53%"></i></div>
+          <div class="rank-count">34</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>9</span>秋冬保暖</div>
+          <div class="rank-bar"><i style="width:42%"></i></div>
+          <div class="rank-count">27</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>10</span>综合趋势</div>
+          <div class="rank-bar"><i style="width:26%"></i></div>
+          <div class="rank-count">17</div>
+        </div>
+        </div>
+    </div>
+
+    <div class="signal-grid">
+      <div class="signal-card">
+        <div class="signal-title">关键词信号</div>
+        <div class='signal-tags'><span class='tag-large'>儿童<em>149</em></span><span class='tag-large'>新品<em>110</em></span><span class='tag-large'>热卖<em>75</em></span><span class='tag-large'>防晒<em>49</em></span><span class='tag-large'>防晒衣<em>48</em></span><span class='tag-mid'>篮球<em>41</em></span><span class='tag-mid'>篮球鞋<em>40</em></span><span class='tag-mid'>羽绒服<em>40</em></span><span class='tag-mid'>开学季<em>28</em></span><span class='tag-mid'>冲锋衣<em>27</em></span><span class='tag-mid'>618<em>18</em></span><span class='tag-mid'>凉感<em>16</em></span><span class=''>双11<em>16</em></span><span class=''>凉感T恤<em>15</em></span><span class=''>碳板跑鞋<em>12</em></span><span class=''>科技<em>12</em></span><span class=''>青少年<em>11</em></span><span class=''>联名<em>11</em></span><span class=''>校园<em>8</em></span><span class=''>防水<em>8</em></span><span class=''>保暖<em>8</em></span><span class=''>瑜伽<em>8</em></span><span class=''>99大促<em>7</em></span><span class=''>年货节<em>7</em></span></div>
+      </div>
+      
+    <div class="signal-card">
+      <div class="signal-title">四季趋势分布</div>
+    
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>1</span>全年</div>
+          <div class="rank-bar"><i style="width:100%"></i></div>
+          <div class="rank-count">243</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>2</span>秋季</div>
+          <div class="rank-bar"><i style="width:27%"></i></div>
+          <div class="rank-count">68</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>3</span>夏季</div>
+          <div class="rank-bar"><i style="width:27%"></i></div>
+          <div class="rank-count">67</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>4</span>冬季</div>
+          <div class="rank-bar"><i style="width:16%"></i></div>
+          <div class="rank-count">41</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>5</span>春季</div>
+          <div class="rank-bar"><i style="width:8%"></i></div>
+          <div class="rank-count">7</div>
+        </div>
+        </div>
+    </div>
+
+    <div class="signal-card">
+      <div class="signal-title">高热商品/新品信号</div>
+      
+        <div class="signal-news-row">
+          <div class="signal-news-rank">1</div>
+          <div class="signal-news-main">
+            <div class="signal-news-title">安踏儿童足弓PRO 跑鞋获国际设计金奖以科技守护青少年足弓健康 - 美通社</div>
+            <div class="signal-news-meta">
+              <span>青少年成人化</span><span>全年</span><span>热度 71</span><span></span>
+            </div>
+            <div class="signal-news-brand">安踏儿童、安踏</div>
+          </div>
+        </div>
+        
+        <div class="signal-news-row">
+          <div class="signal-news-rank">2</div>
+          <div class="signal-news-main">
+            <div class="signal-news-title">京东服饰“春尚新”将于3月26日晚8点全面开启 新品数量超去年4.2倍 - cfbond.com</div>
+            <div class="signal-news-meta">
+              <span>防晒凉感</span><span>夏季</span><span>热度 71</span><span></span>
+            </div>
+            <div class="signal-news-brand">安踏儿童、安踏、On</div>
+          </div>
+        </div>
+        
+        <div class="signal-news-row">
+          <div class="signal-news-rank">3</div>
+          <div class="signal-news-main">
+            <div class="signal-news-title">潮讯| 索康尼发布新一代马拉松竞速碳板跑鞋，优衣库2026春夏新品演绎型色生活，FILA×10 CORSO CO...</div>
+            <div class="signal-news-meta">
+              <span>跑步科技</span><span>全年</span><span>热度 70</span><span></span>
+            </div>
+            <div class="signal-news-brand">FILA</div>
+          </div>
+        </div>
+        
+        <div class="signal-news-row">
+          <div class="signal-news-rank">4</div>
+          <div class="signal-news-main">
+            <div class="signal-news-title">安踏儿童运动鞋UFO7跑鞋男童鞋子2025新款潮酷大童专业跑步鞋纽扣 http://t.cn/AXAVvbYn ...</div>
+            <div class="signal-news-meta">
+              <span>儿童鞋</span><span>春季</span><span>热度 68</span><span></span>
+            </div>
+            <div class="signal-news-brand">安踏儿童、安踏</div>
+          </div>
+        </div>
+        
+        <div class="signal-news-row">
+          <div class="signal-news-rank">5</div>
+          <div class="signal-news-main">
+            <div class="signal-news-title">安踏儿童联名航天IP，儿童运动再添新科技 - 36氪</div>
+            <div class="signal-news-meta">
+              <span>秋冬保暖</span><span>冬季</span><span>热度 68</span><span></span>
+            </div>
+            <div class="signal-news-brand">安踏儿童、安踏</div>
+          </div>
+        </div>
+        
+        <div class="signal-news-row">
+          <div class="signal-news-rank">6</div>
+          <div class="signal-news-main">
+            <div class="signal-news-title">金顶奖设计师刘勇与361°联名亮相2022春夏深圳时装周 - content.foshanplus.com</div>
+            <div class="signal-news-meta">
+              <span>品牌新品</span><span>全年</span><span>热度 67</span><span></span>
+            </div>
+            <div class="signal-news-brand">361儿童、361°、On</div>
+          </div>
+        </div>
+        
+        <div class="signal-news-row">
+          <div class="signal-news-rank">7</div>
+          <div class="signal-news-main">
+            <div class="signal-news-title">人，你的开学搭子来了！[我来了]小度收到@得力的邀请👯‍♀加入「开学和快乐碰头」计划送上满分装备！💯成为@361...</div>
+            <div class="signal-news-meta">
+              <span>青少年成人化</span><span>秋季</span><span>热度 67</span><span></span>
+            </div>
+            <div class="signal-news-brand">361儿童</div>
+          </div>
+        </div>
+        
+        <div class="signal-news-row">
+          <div class="signal-news-rank">8</div>
+          <div class="signal-news-main">
+            <div class="signal-news-title">“聚焦低足弓科学支持与发展干预” 安踏儿童在厦门发布新品 - 人民网-福建频道</div>
+            <div class="signal-news-meta">
+              <span>品牌新品</span><span>全年</span><span>热度 67</span><span></span>
+            </div>
+            <div class="signal-news-brand">安踏儿童、安踏</div>
+          </div>
+        </div>
         
     </div>
   </section>
 
   <section class="page">
     <div class="section-head">
-      <div class="section-title">五、热卖运动品牌鞋服商品观察</div>
-      <div class="section-kicker">HOT PRODUCTS</div>
+      <div class="section-title">六、代表商品观察</div>
+      <div class="section-kicker">REPRESENTATIVE PRODUCTS</div>
     </div>
     <div class="products">
-      
         <div class="product-card">
           <div class="product-img-wrap">
             <img class="product-img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800" alt="">
@@ -694,22 +706,19 @@ li{
           </div>
           <div class="product-tags">跑步 / 经典系列 / 缓震</div>
         </div>
-        
-    </div>
+        </div>
   </section>
 
   <section class="page">
     <div class="section-head">
-      <div class="section-title">六、下季度商品开发建议</div>
+      <div class="section-title">七、下季度商品开发建议</div>
       <div class="section-kicker">PRODUCT PLANNING</div>
     </div>
-    <div class="suggest-grid">
-      <div class='suggest-card'>增加青少年跑鞋、篮球鞋、训练鞋的成人化设计表达，强化科技感和专业运动心智。</div><div class='suggest-card'>强化防晒衣、凉感T恤、速干短裤、运动凉鞋、防晒帽包的组合开发。</div><div class='suggest-card'>补充轻户外鞋服、冲锋衣、防水外套、溯溪鞋、户外鞋和亲子户外组合。</div><div class='suggest-card'>秋冬开发需前置羽绒服、棉服、抓绒、加绒裤、防滑鞋、防水防风外套。</div>
-    </div>
+    <div class="suggest-grid"><div class='suggest-card'>增加青少年跑鞋、篮球鞋、训练鞋的成人化设计表达，强化科技感和专业运动心智。</div><div class='suggest-card'>强化防晒衣、凉感T恤、速干短裤、运动凉鞋、防晒帽包的组合开发。</div><div class='suggest-card'>补充轻户外鞋服、冲锋衣、防水外套、溯溪鞋、户外鞋和亲子户外组合。</div><div class='suggest-card'>秋冬开发需前置羽绒服、棉服、抓绒、加绒裤、防滑鞋、防水防风外套。</div></div>
   </section>
 
   <div class="footer">
-    数据来源：TrendRadar 日报历史库 / 周报库 / 商品趋势库 ｜ 制作：运动品牌行业周报自动化系统
+    数据来源：TrendRadar 日报历史库 / 周报库 / 商品趋势信号库 ｜ 制作：运动品牌行业周报自动化系统
   </div>
 
 </div>
