@@ -75,6 +75,18 @@ def render_list(items, limit=5):
     return html
 
 
+def pair_to_rows(items, name_key):
+    rows = []
+    for item in items or []:
+        if isinstance(item, list) and len(item) >= 2:
+            rows.append({name_key: item[0], "count": item[1]})
+        elif isinstance(item, tuple) and len(item) >= 2:
+            rows.append({name_key: item[0], "count": item[1]})
+        elif isinstance(item, dict):
+            rows.append(item)
+    return rows
+
+
 weekly = load_json(WEEKLY_FILE, {})
 analysis = load_json(ANALYSIS_FILE, {})
 products_data = load_json(PRODUCT_FILE, {})
@@ -85,6 +97,15 @@ days = get_list(weekly, "days")
 top_news = get_list(weekly, "top_news")
 keywords = get_list(weekly, "keywords")
 regions = get_list(weekly, "regions")
+
+product_signals = analysis.get("product_signals", {}) if isinstance(analysis.get("product_signals", {}), dict) else {}
+signal_count = int(product_signals.get("signal_count") or 0)
+
+signal_brands = pair_to_rows(product_signals.get("top_brands", []), "brand")
+signal_keywords = pair_to_rows(product_signals.get("top_keywords", []), "keyword")
+signal_categories = pair_to_rows(product_signals.get("top_categories", []), "category")
+signal_seasons = pair_to_rows(product_signals.get("top_seasons", []), "season")
+signal_items = get_list(product_signals, "signals")
 
 news_titles = []
 for item in top_news:
@@ -265,6 +286,79 @@ def render_regions():
     return html
 
 
+def render_signal_rank(rows, name_key, title, limit=10):
+    if not rows:
+        return f"""
+        <div class="signal-card">
+          <div class="signal-title">{title}</div>
+          <div class="empty">暂无趋势信号</div>
+        </div>
+        """
+
+    max_count = max([int(x.get("count", 0) or 0) for x in rows[:limit]] + [1])
+    html = f"""
+    <div class="signal-card">
+      <div class="signal-title">{title}</div>
+    """
+
+    for idx, row in enumerate(rows[:limit], start=1):
+        name = clean(row.get(name_key, ""))
+        count = int(row.get("count", 0) or 0)
+        width = max(8, int(count / max_count * 100))
+        html += f"""
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>{idx}</span>{short(name, 18)}</div>
+          <div class="rank-bar"><i style="width:{width}%"></i></div>
+          <div class="rank-count">{count}</div>
+        </div>
+        """
+
+    html += "</div>"
+    return html
+
+
+def render_signal_tags(rows, name_key, limit=24):
+    if not rows:
+        return "<div class='empty'>暂无关键词信号</div>"
+
+    html = "<div class='signal-tags'>"
+    for idx, row in enumerate(rows[:limit], start=1):
+        name = clean(row.get(name_key, ""))
+        count = int(row.get("count", 0) or 0)
+        cls = "tag-large" if idx <= 5 else "tag-mid" if idx <= 12 else ""
+        html += f"<span class='{cls}'>{name}<em>{count}</em></span>"
+    html += "</div>"
+    return html
+
+
+def render_hot_signal_items():
+    if not signal_items:
+        return "<div class='empty'>暂无高热商品信号</div>"
+
+    html = ""
+    for idx, s in enumerate(signal_items[:8], start=1):
+        title = short(s.get("title", ""), 56)
+        category = clean(s.get("category", "综合趋势"))
+        season = clean(s.get("season_tag", "全年"))
+        heat = s.get("heat", "")
+        source = clean(s.get("source", "公开资讯"))
+        brands = "、".join(s.get("brand_hits", [])[:3]) if isinstance(s.get("brand_hits"), list) else ""
+
+        html += f"""
+        <div class="signal-news-row">
+          <div class="signal-news-rank">{idx}</div>
+          <div class="signal-news-main">
+            <div class="signal-news-title">{title}</div>
+            <div class="signal-news-meta">
+              <span>{category}</span><span>{season}</span><span>热度 {heat}</span><span>{source}</span>
+            </div>
+            <div class="signal-news-brand">{brands}</div>
+          </div>
+        </div>
+        """
+    return html
+
+
 def render_product_cards():
     if not product_cards:
         return "<div class='empty'>暂无商品趋势数据</div>"
@@ -317,333 +411,89 @@ body{{
   color:#102a5c;
   padding:24px;
 }}
-.report{{
-  width:1280px;
-  margin:auto;
-}}
+.report{{width:1280px;margin:auto}}
 .cover{{
-  position:relative;
-  height:260px;
-  border-radius:26px;
-  overflow:hidden;
-  background:
-    radial-gradient(circle at 85% 20%, rgba(255,139,0,.32), transparent 28%),
-    radial-gradient(circle at 16% 88%, rgba(11,99,216,.24), transparent 30%),
-    linear-gradient(135deg,#052b78 0%,#0b63d8 52%,#1d8fff 100%);
-  color:#fff;
-  padding:34px 42px;
-  box-shadow:0 20px 46px rgba(9,55,128,.26);
-  margin-bottom:18px;
+  position:relative;height:260px;border-radius:26px;overflow:hidden;
+  background:radial-gradient(circle at 85% 20%, rgba(255,139,0,.32), transparent 28%),
+  radial-gradient(circle at 16% 88%, rgba(11,99,216,.24), transparent 30%),
+  linear-gradient(135deg,#052b78 0%,#0b63d8 52%,#1d8fff 100%);
+  color:#fff;padding:34px 42px;box-shadow:0 20px 46px rgba(9,55,128,.26);margin-bottom:18px;
 }}
-.cover::after{{
-  content:"";
-  position:absolute;
-  right:-80px;
-  bottom:-120px;
-  width:420px;
-  height:420px;
-  border-radius:50%;
-  border:42px solid rgba(255,255,255,.12);
-}}
-.cover-tag{{
-  display:inline-block;
-  padding:7px 14px;
-  border-radius:999px;
-  background:rgba(255,255,255,.16);
-  font-size:14px;
-  font-weight:900;
-  margin-bottom:18px;
-}}
-.cover-title{{
-  font-size:56px;
-  line-height:1.05;
-  font-weight:950;
-  letter-spacing:-1px;
-}}
-.cover-sub{{
-  margin-top:14px;
-  font-size:22px;
-  font-weight:850;
-  opacity:.95;
-}}
-.cover-footer{{
-  position:absolute;
-  left:42px;
-  bottom:28px;
-  font-size:15px;
-  font-weight:800;
-  opacity:.9;
-}}
-.stats{{
-  position:absolute;
-  right:34px;
-  top:34px;
-  display:grid;
-  grid-template-columns:repeat(3,112px);
-  gap:10px;
-}}
-.stat{{
-  background:rgba(255,255,255,.16);
-  border:1px solid rgba(255,255,255,.24);
-  border-radius:18px;
-  padding:15px 12px;
-  text-align:center;
-  backdrop-filter:blur(6px);
-}}
-.stat-num{{
-  font-size:32px;
-  font-weight:950;
-}}
-.stat-label{{
-  font-size:12px;
-  margin-top:4px;
-  opacity:.9;
-}}
+.cover::after{{content:"";position:absolute;right:-80px;bottom:-120px;width:420px;height:420px;border-radius:50%;border:42px solid rgba(255,255,255,.12)}}
+.cover-tag{{display:inline-block;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.16);font-size:14px;font-weight:900;margin-bottom:18px}}
+.cover-title{{font-size:56px;line-height:1.05;font-weight:950;letter-spacing:-1px}}
+.cover-sub{{margin-top:14px;font-size:22px;font-weight:850;opacity:.95}}
+.cover-footer{{position:absolute;left:42px;bottom:28px;font-size:15px;font-weight:800;opacity:.9}}
+.stats{{position:absolute;right:34px;top:34px;display:grid;grid-template-columns:repeat(4,104px);gap:10px}}
+.stat{{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.24);border-radius:18px;padding:15px 12px;text-align:center;backdrop-filter:blur(6px)}}
+.stat-num{{font-size:30px;font-weight:950}}
+.stat-label{{font-size:12px;margin-top:4px;opacity:.9}}
 
-.page{{
-  background:#fff;
-  border-radius:24px;
-  padding:22px;
-  box-shadow:0 18px 38px rgba(20,50,100,.12);
-  margin-bottom:18px;
-}}
-.section-head{{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:15px;
-  border-bottom:2px solid #e1ebf8;
-  padding-bottom:10px;
-}}
-.section-title{{
-  font-size:25px;
-  font-weight:950;
-  color:#062b78;
-}}
-.section-kicker{{
-  color:#0b63d8;
-  font-weight:950;
-  font-size:13px;
-}}
-.summary-box{{
-  background:linear-gradient(135deg,#f4f8ff,#eef6ff);
-  border:1px solid #dbe6f6;
-  border-radius:20px;
-  padding:20px 22px;
-  font-size:20px;
-  line-height:1.7;
-  font-weight:850;
-  color:#0d2d68;
-}}
-.grid-2{{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:16px;
-}}
-.grid-3{{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:14px;
-}}
-.card{{
-  border:1px solid #dbe6f6;
-  border-radius:18px;
-  background:#fbfdff;
-  padding:16px;
-}}
-.card-title{{
-  font-size:17px;
-  font-weight:950;
-  color:#0b4db3;
-  margin-bottom:10px;
-}}
+.page{{background:#fff;border-radius:24px;padding:22px;box-shadow:0 18px 38px rgba(20,50,100,.12);margin-bottom:18px}}
+.section-head{{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;border-bottom:2px solid #e1ebf8;padding-bottom:10px}}
+.section-title{{font-size:25px;font-weight:950;color:#062b78}}
+.section-kicker{{color:#0b63d8;font-weight:950;font-size:13px}}
+.summary-box{{background:linear-gradient(135deg,#f4f8ff,#eef6ff);border:1px solid #dbe6f6;border-radius:20px;padding:20px 22px;font-size:20px;line-height:1.7;font-weight:850;color:#0d2d68}}
+.grid-2{{display:grid;grid-template-columns:1fr 1fr;gap:16px}}
+.grid-3{{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}}
+.card{{border:1px solid #dbe6f6;border-radius:18px;background:#fbfdff;padding:16px}}
+.card-title{{font-size:17px;font-weight:950;color:#0b4db3;margin-bottom:10px}}
 ul{{padding-left:20px}}
-li{{
-  margin-bottom:10px;
-  font-size:15px;
-  line-height:1.55;
-  font-weight:760;
-  color:#233e68;
-}}
-.news-row{{
-  display:grid;
-  grid-template-columns:38px 1fr;
-  gap:12px;
-  align-items:center;
-  padding:10px 0;
-  border-bottom:1px solid #edf2fa;
-}}
+li{{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233e68}}
+
+.news-row{{display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid #edf2fa}}
 .news-row:last-child{{border-bottom:none}}
-.news-rank{{
-  width:32px;
-  height:32px;
-  border-radius:10px;
-  background:linear-gradient(135deg,#063b88,#0d7df2);
-  color:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:950;
-}}
-.news-title{{
-  font-size:15.5px;
-  font-weight:950;
-  color:#0d2d68;
-}}
-.news-meta{{
-  font-size:12px;
-  color:#6b7f9f;
-  margin-top:3px;
-}}
-.word-cloud{{
-  min-height:250px;
-  padding:22px;
-  display:flex;
-  flex-wrap:wrap;
-  align-content:center;
-  justify-content:center;
-  gap:14px 18px;
-  background:linear-gradient(135deg,#f8fbff,#eef6ff);
-  border-radius:18px;
-  border:1px solid #dbe6f6;
-}}
-.hot-word{{
-  font-weight:950;
-  color:#0b63d8;
-  background:#fff;
-  border:1px solid #dbe6f6;
-  border-radius:999px;
-  padding:7px 14px;
-  font-size:14px;
-  box-shadow:0 5px 14px rgba(20,60,110,.06);
-}}
-.hot-word.mid{{
-  font-size:17px;
-  color:#0f766e;
-  background:#ecfdf5;
-}}
-.hot-word.big{{
-  font-size:24px;
-  color:#062b78;
-  background:#dcecff;
-}}
-.region-card{{
-  border-radius:18px;
-  background:linear-gradient(135deg,#f7fbff,#ffffff);
-  border:1px solid #dbe6f6;
-  padding:16px;
-  min-height:112px;
-}}
-.region-name{{
-  font-size:20px;
-  font-weight:950;
-  color:#0b4db3;
-  margin-bottom:8px;
-}}
-.region-desc{{
-  font-size:14.5px;
-  line-height:1.5;
-  color:#315174;
-  font-weight:750;
-}}
-.products{{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:16px;
-}}
-.product-card{{
-  border:1px solid #dbe6f6;
-  border-radius:18px;
-  background:#fbfdff;
-  padding:12px;
-  box-shadow:0 8px 18px rgba(20,60,110,.06);
-}}
-.product-img-wrap{{
-  position:relative;
-  width:100%;
-  height:150px;
-  border-radius:15px;
-  overflow:hidden;
-  background:#edf5ff;
-  margin-bottom:10px;
-}}
-.product-img{{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}}
-.product-rank{{
-  position:absolute;
-  top:8px;
-  left:8px;
-  padding:4px 8px;
-  border-radius:999px;
-  background:rgba(6,43,120,.88);
-  color:#fff;
-  font-size:11px;
-  font-weight:950;
-}}
-.product-brand{{
-  font-size:13px;
-  color:#0b63d8;
-  font-weight:950;
-}}
-.product-name{{
-  font-size:15.5px;
-  line-height:1.35;
-  font-weight:950;
-  color:#0d2d68;
-  margin-top:5px;
-  min-height:42px;
-}}
-.product-meta{{
-  display:flex;
-  flex-wrap:wrap;
-  gap:6px;
-  margin-top:8px;
-  font-size:11px;
-  color:#51698d;
-}}
-.product-meta span{{
-  background:#edf5ff;
-  padding:3px 6px;
-  border-radius:8px;
-}}
-.product-tags{{
-  margin-top:8px;
-  font-size:12px;
-  color:#1d8c54;
-  font-weight:850;
-}}
-.suggest-grid{{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:14px;
-}}
-.suggest-card{{
-  border-radius:18px;
-  background:linear-gradient(135deg,#fff7ed,#ffffff);
-  border:1px solid #fed7aa;
-  padding:16px;
-  font-size:15px;
-  line-height:1.55;
-  font-weight:850;
-  color:#7c2d12;
-  min-height:130px;
-}}
-.footer{{
-  text-align:center;
-  color:#7184a3;
-  font-size:12px;
-  margin:14px 0 4px;
-}}
-.empty{{
-  color:#8a99ad;
-  font-size:14px;
-  padding:20px;
-  text-align:center;
-}}
+.news-rank{{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#063b88,#0d7df2);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:950}}
+.news-title{{font-size:15.5px;font-weight:950;color:#0d2d68}}
+.news-meta{{font-size:12px;color:#6b7f9f;margin-top:3px}}
+
+.word-cloud{{min-height:250px;padding:22px;display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:14px 18px;background:linear-gradient(135deg,#f8fbff,#eef6ff);border-radius:18px;border:1px solid #dbe6f6}}
+.hot-word{{font-weight:950;color:#0b63d8;background:#fff;border:1px solid #dbe6f6;border-radius:999px;padding:7px 14px;font-size:14px;box-shadow:0 5px 14px rgba(20,60,110,.06)}}
+.hot-word.mid{{font-size:17px;color:#0f766e;background:#ecfdf5}}
+.hot-word.big{{font-size:24px;color:#062b78;background:#dcecff}}
+
+.region-card{{border-radius:18px;background:linear-gradient(135deg,#f7fbff,#ffffff);border:1px solid #dbe6f6;padding:16px;min-height:112px}}
+.region-name{{font-size:20px;font-weight:950;color:#0b4db3;margin-bottom:8px}}
+.region-desc{{font-size:14.5px;line-height:1.5;color:#315174;font-weight:750}}
+
+.signal-grid{{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}}
+.signal-card{{border:1px solid #dbe6f6;border-radius:18px;background:#fbfdff;padding:16px}}
+.signal-title{{font-size:18px;font-weight:950;color:#0b4db3;margin-bottom:12px}}
+.rank-bar-row{{display:grid;grid-template-columns:132px 1fr 38px;gap:10px;align-items:center;margin-bottom:10px}}
+.rank-label{{font-size:13px;font-weight:900;color:#183a76;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+.rank-label span{{display:inline-flex;width:22px;height:22px;align-items:center;justify-content:center;background:#0b63d8;color:#fff;border-radius:7px;margin-right:7px;font-size:11px}}
+.rank-bar{{height:9px;background:#edf5ff;border-radius:999px;overflow:hidden}}
+.rank-bar i{{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#0b63d8,#19a3ff)}}
+.rank-count{{font-size:13px;font-weight:950;color:#0b63d8;text-align:right}}
+.signal-tags{{display:flex;flex-wrap:wrap;gap:10px}}
+.signal-tags span{{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;background:#f3f8ff;border:1px solid #dbe6f6;color:#0b4db3;font-size:13px;font-weight:900}}
+.signal-tags span.tag-mid{{font-size:15px;background:#ecfdf5;color:#0f766e}}
+.signal-tags span.tag-large{{font-size:18px;background:#dcecff;color:#062b78}}
+.signal-tags em{{font-style:normal;background:#fff;border-radius:999px;padding:2px 6px;color:#64748b;font-size:11px}}
+
+.signal-news-row{{display:grid;grid-template-columns:34px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid #edf2fa}}
+.signal-news-row:last-child{{border-bottom:none}}
+.signal-news-rank{{width:30px;height:30px;border-radius:9px;background:#0f766e;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:950}}
+.signal-news-title{{font-size:15px;font-weight:950;color:#0d2d68}}
+.signal-news-meta{{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}}
+.signal-news-meta span{{font-size:11px;background:#edf5ff;color:#365379;border-radius:8px;padding:3px 6px;font-weight:800}}
+.signal-news-brand{{font-size:12px;color:#0f766e;font-weight:850;margin-top:5px}}
+
+.products{{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}}
+.product-card{{border:1px solid #dbe6f6;border-radius:18px;background:#fbfdff;padding:12px;box-shadow:0 8px 18px rgba(20,60,110,.06)}}
+.product-img-wrap{{position:relative;width:100%;height:150px;border-radius:15px;overflow:hidden;background:#edf5ff;margin-bottom:10px}}
+.product-img{{width:100%;height:100%;object-fit:cover;display:block}}
+.product-rank{{position:absolute;top:8px;left:8px;padding:4px 8px;border-radius:999px;background:rgba(6,43,120,.88);color:#fff;font-size:11px;font-weight:950}}
+.product-brand{{font-size:13px;color:#0b63d8;font-weight:950}}
+.product-name{{font-size:15.5px;line-height:1.35;font-weight:950;color:#0d2d68;margin-top:5px;min-height:42px}}
+.product-meta{{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;font-size:11px;color:#51698d}}
+.product-meta span{{background:#edf5ff;padding:3px 6px;border-radius:8px}}
+.product-tags{{margin-top:8px;font-size:12px;color:#1d8c54;font-weight:850}}
+
+.suggest-grid{{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}}
+.suggest-card{{border-radius:18px;background:linear-gradient(135deg,#fff7ed,#ffffff);border:1px solid #fed7aa;padding:16px;font-size:15px;line-height:1.55;font-weight:850;color:#7c2d12;min-height:130px}}
+.footer{{text-align:center;color:#7184a3;font-size:12px;margin:14px 0 4px}}
+.empty{{color:#8a99ad;font-size:14px;padding:20px;text-align:center}}
 </style>
 </head>
 
@@ -658,6 +508,7 @@ li{{
     <div class="stats">
       <div class="stat"><div class="stat-num">{len(days)}</div><div class="stat-label">统计天数</div></div>
       <div class="stat"><div class="stat-num">{len(news_titles)}</div><div class="stat-label">资讯样本</div></div>
+      <div class="stat"><div class="stat-num">{signal_count}</div><div class="stat-label">趋势信号</div></div>
       <div class="stat"><div class="stat-num">{len(product_cards)}</div><div class="stat-label">商品观察</div></div>
     </div>
   </section>
@@ -676,18 +527,9 @@ li{{
       <div class="section-kicker">TREND OVERVIEW</div>
     </div>
     <div class="grid-3">
-      <div class="card">
-        <div class="card-title">机会方向</div>
-        <ul>{render_list(opportunities, 4)}</ul>
-      </div>
-      <div class="card">
-        <div class="card-title">风险提示</div>
-        <ul>{render_list(risks, 4)}</ul>
-      </div>
-      <div class="card">
-        <div class="card-title">经营动作</div>
-        <ul>{render_list(actions, 4)}</ul>
-      </div>
+      <div class="card"><div class="card-title">机会方向</div><ul>{render_list(opportunities, 4)}</ul></div>
+      <div class="card"><div class="card-title">风险提示</div><ul>{render_list(risks, 4)}</ul></div>
+      <div class="card"><div class="card-title">经营动作</div><ul>{render_list(actions, 4)}</ul></div>
     </div>
   </section>
 
@@ -697,13 +539,8 @@ li{{
       <div class="section-kicker">NEWS & KEYWORDS</div>
     </div>
     <div class="grid-2">
-      <div class="card">
-        <div class="card-title">本周 TOP 资讯</div>
-        {render_news()}
-      </div>
-      <div>
-        <div class="word-cloud">{render_keywords()}</div>
-      </div>
+      <div class="card"><div class="card-title">本周 TOP 资讯</div>{render_news()}</div>
+      <div><div class="word-cloud">{render_keywords()}</div></div>
     </div>
   </section>
 
@@ -712,33 +549,52 @@ li{{
       <div class="section-title">四、区域机会与渠道观察</div>
       <div class="section-kicker">REGIONAL INSIGHT</div>
     </div>
-    <div class="grid-3">
-      {render_regions()}
+    <div class="grid-3">{render_regions()}</div>
+  </section>
+
+  <section class="page">
+    <div class="section-head">
+      <div class="section-title">五、真实商品趋势信号看板</div>
+      <div class="section-kicker">PRODUCT SIGNALS</div>
+    </div>
+
+    <div class="signal-grid">
+      {render_signal_rank(signal_brands, "brand", "品牌热度 TOP10", 10)}
+      {render_signal_rank(signal_categories, "category", "品类/场景热度 TOP10", 10)}
+    </div>
+
+    <div class="signal-grid">
+      <div class="signal-card">
+        <div class="signal-title">关键词信号</div>
+        {render_signal_tags(signal_keywords, "keyword", 24)}
+      </div>
+      {render_signal_rank(signal_seasons, "season", "四季趋势分布", 8)}
+    </div>
+
+    <div class="signal-card">
+      <div class="signal-title">高热商品/新品信号</div>
+      {render_hot_signal_items()}
     </div>
   </section>
 
   <section class="page">
     <div class="section-head">
-      <div class="section-title">五、热卖运动品牌鞋服商品观察</div>
-      <div class="section-kicker">HOT PRODUCTS</div>
+      <div class="section-title">六、代表商品观察</div>
+      <div class="section-kicker">REPRESENTATIVE PRODUCTS</div>
     </div>
-    <div class="products">
-      {render_product_cards()}
-    </div>
+    <div class="products">{render_product_cards()}</div>
   </section>
 
   <section class="page">
     <div class="section-head">
-      <div class="section-title">六、下季度商品开发建议</div>
+      <div class="section-title">七、下季度商品开发建议</div>
       <div class="section-kicker">PRODUCT PLANNING</div>
     </div>
-    <div class="suggest-grid">
-      {render_product_suggestion_cards()}
-    </div>
+    <div class="suggest-grid">{render_product_suggestion_cards()}</div>
   </section>
 
   <div class="footer">
-    数据来源：TrendRadar 日报历史库 / 周报库 / 商品趋势库 ｜ 制作：运动品牌行业周报自动化系统
+    数据来源：TrendRadar 日报历史库 / 周报库 / 商品趋势信号库 ｜ 制作：运动品牌行业周报自动化系统
   </div>
 
 </div>
