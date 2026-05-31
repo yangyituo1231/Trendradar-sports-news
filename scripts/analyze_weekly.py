@@ -760,14 +760,14 @@ def main():
 {risks}
 """
 
-ai_judgement = call_deepseek(ai_prompt)
+    ai_judgement = call_deepseek(ai_prompt)
 
-if ai_judgement:
-    summary["ai_judgement"] = ai_judgement
-else:
-    summary["ai_judgement"] = ""
+    if ai_judgement:
+        summary["ai_judgement"] = ai_judgement
+    else:
+        summary["ai_judgement"] = ""
 
-output = {
+    output = {
         "generate_time": datetime.now().strftime("%Y-%m-%d %H:%M"),
         "summary": summary,
         "ai_judgement": summary.get("ai_judgement", ""),
@@ -783,13 +783,13 @@ output = {
         "product_suggestions": product_suggestions
     }
 
-OUTPUT_FILE.write_text(
+    OUTPUT_FILE.write_text(
         json.dumps(output, ensure_ascii=False, indent=2),
         encoding="utf-8"
     )
 
-print(f"weekly analysis saved: {OUTPUT_FILE}")
-print(f"regions generated: {len(regions)}")
+    print(f"weekly analysis saved: {OUTPUT_FILE}")
+    print(f"regions generated: {len(regions)}")
 
 
 if __name__ == "__main__":
