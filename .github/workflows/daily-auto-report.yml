@@ -75,7 +75,7 @@ jobs:
       - name: Generate Products Data
         run: |
           python scripts/get_products.py
-          ‹
+          
       - name: Generate Product Signals
         run: |
           python scripts/get_product_signals.py
