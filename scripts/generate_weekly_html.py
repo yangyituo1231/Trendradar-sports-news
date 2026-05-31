@@ -7,7 +7,6 @@ from urllib.parse import quote
 
 WEEKLY_FILE = Path("output/weekly/latest_week.json")
 ANALYSIS_FILE = Path("output/weekly/weekly_analysis.json")
-PRODUCT_FILE = Path("output/products/latest_products.json")
 
 OUTPUT_DIR = Path("output/weekly")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -89,7 +88,6 @@ def pair_to_rows(items, name_key):
 
 weekly = load_json(WEEKLY_FILE, {})
 analysis = load_json(ANALYSIS_FILE, {})
-products_data = load_json(PRODUCT_FILE, {})
 
 generated_time = datetime.now().strftime("%Y-%m-%d %H:%M")
 
@@ -99,7 +97,7 @@ keywords = get_list(weekly, "keywords")
 regions = get_list(weekly, "regions")
 
 product_signals = analysis.get("product_signals", {}) if isinstance(analysis.get("product_signals", {}), dict) else {}
-signal_count = int(product_signals.get("signal_count") or 0)
+signal_count = int(product_signals.get("signal_count") or len(product_signals.get("signals", [])) or 0)
 
 signal_brands = pair_to_rows(product_signals.get("top_brands", []), "brand")
 signal_keywords = pair_to_rows(product_signals.get("top_keywords", []), "keyword")
@@ -199,28 +197,36 @@ if not product_suggestions:
     ]
 
 
+product_signal_data = load_json(
+    Path("output/products/latest_product_signals.json"),
+    {}
+)
+
 product_cards = []
-brands = products_data.get("brands", [])
 
-if isinstance(brands, list):
-    for brand_block in brands:
-        brand = brand_block.get("brand", "")
-        products = brand_block.get("products", [])
-        if not isinstance(products, list):
-            continue
+for s in product_signal_data.get("signals", [])[:12]:
+    brands = s.get("brand_hits", [])
+    keywords = s.get("keyword_hits", [])
 
-        for p in products:
-            product_cards.append({
-                "brand": brand,
-                "name": p.get("name", ""),
-                "category": p.get("category", ""),
-                "price": p.get("price", ""),
-                "heat": p.get("sales_heat", 0),
-                "trend": p.get("trend", ""),
-                "tags": p.get("tags", []),
-                "reason": p.get("reason", ""),
-                "image": p.get("image", "")
-            })
+    brand = "、".join(brands[:2]) if brands else "行业趋势"
+    name = s.get("short_title") or s.get("title", "")
+    category = s.get("category", "")
+    heat = s.get("heat", "")
+    season = s.get("season_tag", "")
+    source = s.get("source", "")
+    tags = keywords[:3]
+
+    product_cards.append({
+        "brand": brand,
+        "name": name,
+        "category": category,
+        "price": "",
+        "heat": heat,
+        "trend": season,
+        "tags": tags,
+        "reason": source,
+        "image": ""
+    })
 
 product_cards = sorted(product_cards, key=lambda x: int(x.get("heat") or 0), reverse=True)[:12]
 
@@ -364,29 +370,31 @@ def render_product_cards():
         return "<div class='empty'>暂无商品趋势数据</div>"
 
     html = ""
+
     for idx, p in enumerate(product_cards, start=1):
-        tags = p.get("tags", [])
-        tag_text = " / ".join(tags[:3]) if isinstance(tags, list) else ""
-        trend = p.get("trend", "")
-        trend_text = {"up": "上升", "hot": "高热", "flat": "平稳", "new": "新品"}.get(trend, trend)
+        tag_text = " / ".join(p.get("tags", [])[:3])
+        source = p.get("reason", "")
+        season = p.get("trend", "")
 
         html += f"""
         <div class="product-card">
-          <div class="product-img-wrap">
-            <img class="product-img" src="{image_url(p)}" alt="">
+          <div class="product-img-wrap product-signal-cover">
+            <div class="product-signal-category">{p.get("category", "")}</div>
+            <div class="product-signal-heat">热度 {p.get("heat", "")}</div>
             <div class="product-rank">TOP {idx}</div>
           </div>
           <div class="product-brand">{p.get("brand", "")}</div>
-          <div class="product-name">{short(p.get("name", ""), 30)}</div>
+          <div class="product-name">{short(p.get("name", ""), 42)}</div>
           <div class="product-meta">
             <span>{p.get("category", "")}</span>
-            <span>¥{p.get("price", "")}</span>
+            <span>{season}</span>
             <span>热度 {p.get("heat", "")}</span>
-            <span>{trend_text}</span>
+            <span>{source}</span>
           </div>
           <div class="product-tags">{tag_text}</div>
         </div>
         """
+
     return html
 
 
@@ -482,6 +490,29 @@ li{{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#23
 .products{{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}}
 .product-card{{border:1px solid #dbe6f6;border-radius:18px;background:#fbfdff;padding:12px;box-shadow:0 8px 18px rgba(20,60,110,.06)}}
 .product-img-wrap{{position:relative;width:100%;height:150px;border-radius:15px;overflow:hidden;background:#edf5ff;margin-bottom:10px}}
+.product-signal-cover{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(25,163,255,.22), transparent 30%),
+    linear-gradient(135deg,#edf5ff,#f8fbff);
+}
+.product-signal-category{
+  font-size:22px;
+  font-weight:950;
+  color:#0b4db3;
+}
+.product-signal-heat{
+  margin-top:10px;
+  font-size:14px;
+  font-weight:900;
+  color:#0f766e;
+  background:#ecfdf5;
+  padding:5px 12px;
+  border-radius:999px;
+}
 .product-img{{width:100%;height:100%;object-fit:cover;display:block}}
 .product-rank{{position:absolute;top:8px;left:8px;padding:4px 8px;border-radius:999px;background:rgba(6,43,120,.88);color:#fff;font-size:11px;font-weight:950}}
 .product-brand{{font-size:13px;color:#0b63d8;font-weight:950}}
