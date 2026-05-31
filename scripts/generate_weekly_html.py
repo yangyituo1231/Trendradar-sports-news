@@ -3,10 +3,10 @@ from datetime import datetime
 import json
 import re
 from collections import Counter
-from urllib.parse import quote
 
 WEEKLY_FILE = Path("output/weekly/latest_week.json")
 ANALYSIS_FILE = Path("output/weekly/weekly_analysis.json")
+PRODUCT_SIGNAL_FILE = Path("output/products/latest_product_signals.json")
 
 OUTPUT_DIR = Path("output/weekly")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -86,8 +86,28 @@ def pair_to_rows(items, name_key):
     return rows
 
 
+def make_product_insight(category, keywords, title):
+    text = " ".join(keywords) + " " + title
+
+    if "足弓" in text:
+        return "关注儿童足弓支撑、成长跑鞋、医学背书与专业科技表达。"
+    if "防晒" in text or "凉感" in text:
+        return "关注夏季防晒、凉感、速干和轻薄透气组合。"
+    if "碳板" in text or "竞速" in text:
+        return "关注青少年跑鞋成人化，但需控制专业科技使用边界。"
+    if "篮球" in text:
+        return "关注校园篮球、训练场景和中大童运动鞋升级。"
+    if "冲锋衣" in text or "户外" in text:
+        return "关注轻户外、防水防风、亲子户外和场景陈列。"
+    if "开学" in text or "校园" in text:
+        return "关注开学季、校园体育、书包鞋服组合销售。"
+
+    return "关注该信号背后的品牌动作、商品卖点和终端陈列表达。"
+
+
 weekly = load_json(WEEKLY_FILE, {})
 analysis = load_json(ANALYSIS_FILE, {})
+product_signal_data = load_json(PRODUCT_SIGNAL_FILE, {})
 
 generated_time = datetime.now().strftime("%Y-%m-%d %H:%M")
 
@@ -96,14 +116,10 @@ top_news = get_list(weekly, "top_news")
 keywords = get_list(weekly, "keywords")
 regions = get_list(weekly, "regions")
 
-product_signal_data = load_json(
-    Path("output/products/latest_product_signals.json"),
-    {}
-)
-
 product_signals = analysis.get("product_signals", {})
 if not isinstance(product_signals, dict) or not product_signals:
     product_signals = product_signal_data
+
 signal_count = int(product_signals.get("signal_count") or len(product_signals.get("signals", [])) or 0)
 
 signal_brands = pair_to_rows(product_signals.get("top_brands", []), "brand")
@@ -203,42 +219,41 @@ if not product_suggestions:
         "补充轻户外鞋服、帽包配件、亲子同款和校园运动套装。"
     ]
 
-
 product_cards = []
+brand_limit = Counter()
+category_limit = Counter()
 
-for s in product_signal_data.get("signals", [])[:12]:
+for s in product_signal_data.get("signals", []):
     brands = s.get("brand_hits", [])
-    keywords = s.get("keyword_hits", [])
+    keywords_hit = s.get("keyword_hits", [])
 
     brand = "、".join(brands[:2]) if brands else "行业趋势"
-    name = s.get("short_title") or s.get("title", "")
     category = s.get("category", "")
-    heat = s.get("heat", "")
-    season = s.get("season_tag", "")
-    source = s.get("source", "")
-    tags = keywords[:3]
+    title = s.get("short_title") or s.get("title", "")
+
+    if brand_limit[brand] >= 2:
+        continue
+    if category_limit[category] >= 3:
+        continue
+
+    brand_limit[brand] += 1
+    category_limit[category] += 1
 
     product_cards.append({
         "brand": brand,
-        "name": name,
+        "name": title,
         "category": category,
-        "price": "",
-        "heat": heat,
-        "trend": season,
-        "tags": tags,
-        "reason": source,
-        "image": ""
+        "heat": s.get("heat", ""),
+        "trend": s.get("season_tag", ""),
+        "tags": keywords_hit[:3],
+        "reason": s.get("source", ""),
+        "insight": make_product_insight(category, keywords_hit, title)
     })
 
+    if len(product_cards) >= 12:
+        break
+
 product_cards = sorted(product_cards, key=lambda x: int(x.get("heat") or 0), reverse=True)[:12]
-
-
-def image_url(p):
-    img = clean(p.get("image", ""))
-    if img:
-        return img
-    text = quote(f"{p.get('brand','')} {p.get('category','')}")
-    return f"https://placehold.co/420x300/eaf2ff/0b4db3?text={text}"
 
 
 def render_news():
@@ -377,6 +392,7 @@ def render_product_cards():
         tag_text = " / ".join(p.get("tags", [])[:3])
         source = p.get("reason", "")
         season = p.get("trend", "")
+        insight = p.get("insight", "")
 
         html += f"""
         <div class="product-card">
@@ -385,15 +401,18 @@ def render_product_cards():
             <div class="product-signal-heat">热度 {p.get("heat", "")}</div>
             <div class="product-rank">TOP {idx}</div>
           </div>
+
           <div class="product-brand">{p.get("brand", "")}</div>
-          <div class="product-name">{short(p.get("name", ""), 42)}</div>
+          <div class="product-name">{short(p.get("name", ""), 38)}</div>
+
           <div class="product-meta">
             <span>{p.get("category", "")}</span>
             <span>{season}</span>
-            <span>热度 {p.get("heat", "")}</span>
             <span>{source}</span>
           </div>
+
           <div class="product-tags">{tag_text}</div>
+          <div class="product-insight">{insight}</div>
         </div>
         """
 
@@ -501,13 +520,11 @@ li{{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#23
     radial-gradient(circle at 80% 20%, rgba(25,163,255,.22), transparent 30%),
     linear-gradient(135deg,#edf5ff,#f8fbff);
 }}
-
 .product-signal-category{{
   font-size:22px;
   font-weight:950;
   color:#0b4db3;
 }}
-
 .product-signal-heat{{
   margin-top:10px;
   font-size:14px;
@@ -517,13 +534,22 @@ li{{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#23
   padding:5px 12px;
   border-radius:999px;
 }}
-.product-img{{width:100%;height:100%;object-fit:cover;display:block}}
 .product-rank{{position:absolute;top:8px;left:8px;padding:4px 8px;border-radius:999px;background:rgba(6,43,120,.88);color:#fff;font-size:11px;font-weight:950}}
 .product-brand{{font-size:13px;color:#0b63d8;font-weight:950}}
 .product-name{{font-size:15.5px;line-height:1.35;font-weight:950;color:#0d2d68;margin-top:5px;min-height:42px}}
 .product-meta{{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;font-size:11px;color:#51698d}}
 .product-meta span{{background:#edf5ff;padding:3px 6px;border-radius:8px}}
 .product-tags{{margin-top:8px;font-size:12px;color:#1d8c54;font-weight:850}}
+.product-insight{{
+  margin-top:10px;
+  padding:10px;
+  border-radius:12px;
+  background:#f0fdf4;
+  color:#166534;
+  font-size:12.5px;
+  line-height:1.45;
+  font-weight:850;
+}}
 
 .suggest-grid{{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}}
 .suggest-card{{border-radius:18px;background:linear-gradient(135deg,#fff7ed,#ffffff);border:1px solid #fed7aa;padding:16px;font-size:15px;line-height:1.55;font-weight:850;color:#7c2d12;min-height:130px}}
