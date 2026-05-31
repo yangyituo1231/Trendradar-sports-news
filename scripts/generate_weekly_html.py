@@ -350,35 +350,46 @@ def render_keywords():
 
 
 def render_regions():
+    region_data = get_list(analysis, "regions")
 
-    if not regions:
+    if not region_data:
         return "<div class='empty'>暂无区域数据</div>"
 
     html = ""
 
-    for region in regions[:6]:
+    for region in region_data[:6]:
+        if not isinstance(region, dict):
+            continue
 
-        region_name = region.get("region","")
+        region_name = clean(region.get("region") or region.get("name") or "重点区域")
 
-        focuses = region.get("top_focus",[])
-        actions = region.get("top_actions",[])
+        focuses = region.get("top_focus", [])
+        actions = region.get("top_actions", [])
 
         focus_text = "、".join([
-            x.get("focus","")
+            clean(x.get("focus", ""))
             for x in focuses[:2]
+            if isinstance(x, dict) and x.get("focus")
         ])
 
         action_text = "、".join([
-            x.get("action","")
+            clean(x.get("action", ""))
             for x in actions[:2]
+            if isinstance(x, dict) and x.get("action")
         ])
 
-        desc = f"本周重点：{focus_text}。建议动作：{action_text}"
+        if not focus_text:
+            focus_text = "区域客流、天气品类、商圈活动"
+
+        if not action_text:
+            action_text = "优化陈列、强化会员触达、提升导购转化"
+
+        desc = f"本周重点：{focus_text}。建议动作：{action_text}。"
 
         html += f"""
         <div class="region-card">
-            <div class="region-name">{region_name}</div>
-            <div class="region-desc">{desc}</div>
+          <div class="region-name">{region_name}</div>
+          <div class="region-desc">{desc}</div>
         </div>
         """
 
