@@ -1,10 +1,10 @@
 {
   "date": "2026-05-31",
-  "generated_time": "2026-05-31 15:27:57",
+  "generated_time": "2026-05-31 16:05:40",
   "source": "Google News RSS product signal monitor",
   "desc": "全年运动鞋服商品趋势信号监测：覆盖儿童、成人、童装、四季商品、大促节点、鞋科技、运动场景。已过滤过旧新闻、财经财报、微博广告、弱新浪促销帖和弱相关信号。该数据代表公开资讯热度信号，不等同于平台真实销量。",
   "query_count": 140,
-  "signal_count": 76,
+  "signal_count": 75,
   "top_brands": [
     [
       "安踏",
@@ -74,7 +74,7 @@
     ],
     [
       "新品",
-      29
+      28
     ],
     [
       "热卖",
@@ -189,10 +189,6 @@
       1
     ],
     [
-      "上市",
-      1
-    ],
-    [
       "上新",
       1
     ],
@@ -231,11 +227,11 @@
       8
     ],
     [
-      "户外轻运动",
-      7
+      "青少年成人化",
+      6
     ],
     [
-      "青少年成人化",
+      "户外轻运动",
       6
     ],
     [
@@ -278,7 +274,7 @@
     ],
     [
       "春季",
-      3
+      2
     ]
   ],
   "signals": [
@@ -686,6 +682,25 @@
     },
     {
       "date": "2026-05-31",
+      "title": "2026路跑鞋趋势暨新品预展：14个品牌19款新鞋 - QQ News",
+      "short_title": "2026路跑鞋趋势暨新品预展：14个品牌19款新鞋 - QQ News",
+      "query": "碳板跑鞋 新品 热卖",
+      "brand_hits": [],
+      "keyword_hits": [
+        "碳板跑鞋",
+        "新品",
+        "热卖"
+      ],
+      "category": "跑步科技",
+      "season_tag": "全年",
+      "source": "QQ News",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5KY3VWaTVTTjBWXzA0WWRZQjRfLVFYQjdVQVBwQUIxRDlDT2x6cmRuNW5qZG9hZ2lJUUZZeDhwNlpYYlpiOFpQUF9HN1dPeDg1YXYzQldB?oc=5",
+      "pub_date": "Tue, 06 Jan 2026 08:00:00 GMT",
+      "heat": 53,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-05-31",
       "title": "2026柯桥时尚周启幕，安踏儿童领衔开篇大秀 - 中国纺织报",
       "short_title": "2026柯桥时尚周启幕，安踏儿童领衔开篇大秀 - 中国纺织报",
       "query": "安踏儿童 新品",
@@ -829,25 +844,6 @@
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBhVFp1S25SVlE1NGpmcmRud081d002Z3o1Rl81ZDBaTnBIR3drN01zWURhbHdNc0VaemEyUmMtS0htQl9VR2Niend1bWE0VU5pcUVucmNpNA?oc=5",
       "pub_date": "Sat, 09 May 2026 07:00:00 GMT",
       "heat": 50,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-05-31",
-      "title": "2026路跑鞋趋势暨新品预展：14个品牌19款新鞋 - news.qq.com",
-      "short_title": "2026路跑鞋趋势暨新品预展：14个品牌19款新鞋 - news.qq.com",
-      "query": "碳板跑鞋 新品 热卖",
-      "brand_hits": [],
-      "keyword_hits": [
-        "碳板跑鞋",
-        "新品",
-        "热卖"
-      ],
-      "category": "跑步科技",
-      "season_tag": "全年",
-      "source": "news.qq.com",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5KY3VWaTVTTjBWXzA0WWRZQjRfLVFYQjdVQVBwQUIxRDlDT2x6cmRuNW5qZG9hZ2lJUUZZeDhwNlpYYlpiOFpQUF9HN1dPeDg1YXYzQldB?oc=5",
-      "pub_date": "Tue, 06 Jan 2026 08:00:00 GMT",
-      "heat": 48,
       "type": "product_signal"
     },
     {
@@ -1750,24 +1746,6 @@
       "source": "品玩",
       "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAxUnpKRlYxd1RaSnVJSkwwQ21qOExhVDIybnpwRGh2TV81dEJUZ3pDdENiaVhfN1c2OWY4TU1IQ2ZYQ3NGYzZCdQ?oc=5",
       "pub_date": "Sun, 22 Jun 2025 07:00:00 GMT",
-      "heat": 32,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-05-31",
-      "title": "轻盈舒展 恣意生动 ECCO x NRL设计师合作系列春夏新品上市 - 时尚COSMO",
-      "short_title": "轻盈舒展 恣意生动 ECCO x NRL设计师合作系列春夏新品上市 - 时尚COSMO",
-      "query": "轻户外 运动品牌 新品",
-      "brand_hits": [],
-      "keyword_hits": [
-        "新品",
-        "上市"
-      ],
-      "category": "户外轻运动",
-      "season_tag": "春季",
-      "source": "时尚COSMO",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE93U0FWUS1vODJHQko1X1l2RW5TQlN3d0RkUFZhbjVzRjlwZUdqN1ZiZ1djOHJIb00tVEp5OEVxdm50eFc5aHZuZ0VwRTd3ek9JZDhneTlVTlZ6LUFzVlE?oc=5",
-      "pub_date": "Wed, 25 Mar 2026 07:00:00 GMT",
       "heat": 32,
       "type": "product_signal"
     },
