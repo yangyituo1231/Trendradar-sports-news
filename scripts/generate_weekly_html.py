@@ -86,25 +86,6 @@ def pair_to_rows(items, name_key):
     return rows
 
 
-def make_product_insight(category, keywords, title):
-    text = " ".join(keywords) + " " + title
-
-    if "足弓" in text:
-        return "关注儿童足弓支撑、成长跑鞋、医学背书与专业科技表达。"
-    if "防晒" in text or "凉感" in text:
-        return "关注夏季防晒、凉感、速干和轻薄透气组合。"
-    if "碳板" in text or "竞速" in text:
-        return "关注青少年跑鞋成人化，但需控制专业科技使用边界。"
-    if "篮球" in text:
-        return "关注校园篮球、训练场景和中大童运动鞋升级。"
-    if "冲锋衣" in text or "户外" in text:
-        return "关注轻户外、防水防风、亲子户外和场景陈列。"
-    if "开学" in text or "校园" in text:
-        return "关注开学季、校园体育、书包鞋服组合销售。"
-
-    return "关注该信号背后的品牌动作、商品卖点和终端陈列表达。"
-
-
 weekly = load_json(WEEKLY_FILE, {})
 analysis = load_json(ANALYSIS_FILE, {})
 product_signal_data = load_json(PRODUCT_SIGNAL_FILE, {})
@@ -219,13 +200,54 @@ if not product_suggestions:
         "补充轻户外鞋服、帽包配件、亲子同款和校园运动套装。"
     ]
 
+def make_product_insight(category, keywords, title):
+    text = " ".join(keywords) + " " + title
+
+    if "足弓" in text:
+        return "关注儿童足弓支撑、成长跑鞋、医学背书与专业科技表达。"
+    if "防晒" in text or "凉感" in text:
+        return "关注夏季防晒、凉感、速干和轻薄透气组合。"
+    if "碳板" in text or "竞速" in text:
+        return "关注青少年跑鞋成人化，但需控制专业科技使用边界。"
+    if "篮球" in text:
+        return "关注校园篮球、训练场景和中大童运动鞋升级。"
+    if "冲锋衣" in text or "户外" in text:
+        return "关注轻户外、防水防风、亲子户外和场景陈列。"
+    if "开学" in text or "校园" in text:
+        return "关注开学季、校园体育、书包鞋服组合销售。"
+
+    return "关注该信号背后的品牌动作、商品卖点和终端陈列表达。"
+
+
+def get_visual_icon(category, keywords, title):
+    text = " ".join(keywords) + " " + title + " " + category
+
+    if "足弓" in text or "跑鞋" in text:
+        return "👟"
+    if "防晒" in text or "凉感" in text:
+        return "☀️"
+    if "篮球" in text:
+        return "🏀"
+    if "冲锋衣" in text or "户外" in text:
+        return "⛰️"
+    if "羽绒服" in text or "保暖" in text:
+        return "❄️"
+    if "开学" in text or "校园" in text:
+        return "🎒"
+    if "童装" in text or "儿童服装" in text:
+        return "👕"
+
+    return "✨"
+
+
 product_cards = []
+
 brand_limit = Counter()
 category_limit = Counter()
 
 for s in product_signal_data.get("signals", []):
     brands = s.get("brand_hits", [])
-    keywords_hit = s.get("keyword_hits", [])
+    keywords = s.get("keyword_hits", [])
 
     brand = "、".join(brands[:2]) if brands else "行业趋势"
     category = s.get("category", "")
@@ -245,15 +267,55 @@ for s in product_signal_data.get("signals", []):
         "category": category,
         "heat": s.get("heat", ""),
         "trend": s.get("season_tag", ""),
-        "tags": keywords_hit[:3],
+        "tags": keywords[:3],
         "reason": s.get("source", ""),
-        "insight": make_product_insight(category, keywords_hit, title)
+        "icon": get_visual_icon(category, keywords, title),
+        "insight": make_product_insight(category, keywords, title)
     })
 
     if len(product_cards) >= 12:
         break
 
 product_cards = sorted(product_cards, key=lambda x: int(x.get("heat") or 0), reverse=True)[:12]
+
+
+def render_product_cards():
+    if not product_cards:
+        return "<div class='empty'>暂无商品趋势数据</div>"
+
+    html = ""
+
+    for idx, p in enumerate(product_cards, start=1):
+        tag_text = " / ".join(p.get("tags", [])[:3])
+        source = p.get("reason", "")
+        season = p.get("trend", "")
+        insight = p.get("insight", "")
+        icon = p.get("icon", "✨")
+
+        html += f"""
+        <div class="product-card">
+          <div class="product-img-wrap product-signal-cover">
+            <div class="product-rank">TOP {idx}</div>
+            <div class="product-icon">{icon}</div>
+            <div class="product-signal-category">{p.get("category", "")}</div>
+            <div class="product-signal-heat">热度 {p.get("heat", "")}</div>
+          </div>
+
+          <div class="product-brand">{p.get("brand", "")}</div>
+          <div class="product-name">{short(p.get("name", ""), 38)}</div>
+
+          <div class="product-meta">
+            <span>{p.get("category", "")}</span>
+            <span>{season}</span>
+            <span>{source}</span>
+          </div>
+
+          <div class="product-tags">{tag_text}</div>
+          <div class="product-insight">{insight}</div>
+        </div>
+        """
+
+    return html
 
 
 def render_news():
@@ -382,43 +444,6 @@ def render_hot_signal_items():
     return html
 
 
-def render_product_cards():
-    if not product_cards:
-        return "<div class='empty'>暂无商品趋势数据</div>"
-
-    html = ""
-
-    for idx, p in enumerate(product_cards, start=1):
-        tag_text = " / ".join(p.get("tags", [])[:3])
-        source = p.get("reason", "")
-        season = p.get("trend", "")
-        insight = p.get("insight", "")
-
-        html += f"""
-        <div class="product-card">
-          <div class="product-img-wrap product-signal-cover">
-            <div class="product-signal-category">{p.get("category", "")}</div>
-            <div class="product-signal-heat">热度 {p.get("heat", "")}</div>
-            <div class="product-rank">TOP {idx}</div>
-          </div>
-
-          <div class="product-brand">{p.get("brand", "")}</div>
-          <div class="product-name">{short(p.get("name", ""), 38)}</div>
-
-          <div class="product-meta">
-            <span>{p.get("category", "")}</span>
-            <span>{season}</span>
-            <span>{source}</span>
-          </div>
-
-          <div class="product-tags">{tag_text}</div>
-          <div class="product-insight">{insight}</div>
-        </div>
-        """
-
-    return html
-
-
 def render_product_suggestion_cards():
     html = ""
     for item in product_suggestions[:4]:
@@ -519,6 +544,11 @@ li{{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#23
   background:
     radial-gradient(circle at 80% 20%, rgba(25,163,255,.22), transparent 30%),
     linear-gradient(135deg,#edf5ff,#f8fbff);
+}}
+.product-icon{{
+  font-size:46px;
+  line-height:1;
+  margin-bottom:10px;
 }}
 .product-signal-category{{
   font-size:22px;
