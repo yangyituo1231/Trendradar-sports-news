@@ -724,9 +724,53 @@ def main():
         risks=risks
     )
 
-    output = {
+    ai_prompt = f"""
+请基于以下周报数据，生成“统计 + AI判断”的经营分析。
+
+要求：
+1. 必须结合数据，不要空泛。
+2. 口径适合361°儿童事业部经营管理部。
+3. 重点关注儿童运动、商品机会、区域经营、平台流量、天气影响和终端动作。
+4. 输出JSON，不要markdown。
+
+输出格式：
+{{
+  "core_judgement": "核心判断",
+  "opportunity": "机会判断",
+  "risk": "风险判断",
+  "action": "下周动作"
+}}
+
+关键词数据：
+{keywords[:15]}
+
+区域数据：
+{regions[:6]}
+
+商品品类信号：
+{product_signals.get("top_categories", [])[:10]}
+
+品牌信号：
+{product_signals.get("top_brands", [])[:10]}
+
+机会方向：
+{opportunities[:8]}
+
+风险：
+{risks}
+"""
+
+ai_judgement = call_deepseek(ai_prompt)
+
+if ai_judgement:
+    summary["ai_judgement"] = ai_judgement
+else:
+    summary["ai_judgement"] = ""
+
+output = {
         "generate_time": datetime.now().strftime("%Y-%m-%d %H:%M"),
         "summary": summary,
+        "ai_judgement": summary.get("ai_judgement", ""),
         "news": news,
         "keywords": keywords,
         "regions": regions,
@@ -739,13 +783,13 @@ def main():
         "product_suggestions": product_suggestions
     }
 
-    OUTPUT_FILE.write_text(
+OUTPUT_FILE.write_text(
         json.dumps(output, ensure_ascii=False, indent=2),
         encoding="utf-8"
     )
 
-    print(f"weekly analysis saved: {OUTPUT_FILE}")
-    print(f"regions generated: {len(regions)}")
+print(f"weekly analysis saved: {OUTPUT_FILE}")
+print(f"regions generated: {len(regions)}")
 
 
 if __name__ == "__main__":
