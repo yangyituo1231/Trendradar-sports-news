@@ -1,6 +1,6 @@
 {
   "date": "2026-06-01",
-  "generated_time": "2026-06-01 05:47:06",
+  "generated_time": "2026-06-01 06:20:21",
   "source": "Google News RSS product signal monitor",
   "desc": "全年运动鞋服商品趋势信号监测：覆盖儿童、成人、童装、四季商品、大促节点、鞋科技、运动场景。已过滤过旧新闻、财经财报、微博广告、弱新浪促销帖和弱相关信号。该数据代表公开资讯热度信号，不等同于平台真实销量。",
   "query_count": 140,
@@ -51,10 +51,6 @@
       1
     ],
     [
-      "Crocs",
-      1
-    ],
-    [
       "361°",
       1
     ],
@@ -74,7 +70,7 @@
     ],
     [
       "新品",
-      27
+      26
     ],
     [
       "热卖",
@@ -109,16 +105,8 @@
       6
     ],
     [
-      "篮球鞋",
-      4
-    ],
-    [
-      "篮球",
-      4
-    ],
-    [
       "羽绒服",
-      4
+      5
     ],
     [
       "缓震跑鞋",
@@ -130,6 +118,14 @@
     ],
     [
       "碳板跑鞋",
+      3
+    ],
+    [
+      "篮球鞋",
+      3
+    ],
+    [
+      "篮球",
       3
     ],
     [
@@ -157,6 +153,10 @@
       2
     ],
     [
+      "爆款",
+      2
+    ],
+    [
       "凉感T恤",
       2
     ],
@@ -177,6 +177,10 @@
       1
     ],
     [
+      "年货节",
+      1
+    ],
+    [
       "六一",
       1
     ],
@@ -186,10 +190,6 @@
     ],
     [
       "滑雪",
-      1
-    ],
-    [
-      "爆款",
       1
     ],
     [
@@ -220,7 +220,7 @@
     ],
     [
       "户外轻运动",
-      6
+      5
     ],
     [
       "防晒凉感",
@@ -228,7 +228,7 @@
     ],
     [
       "大促节点",
-      3
+      4
     ],
     [
       "秋冬保暖",
@@ -246,23 +246,23 @@
   "top_seasons": [
     [
       "全年",
-      45
+      46
     ],
     [
       "夏季",
       16
     ],
     [
-      "秋季",
+      "冬季",
       5
     ],
     [
-      "冬季",
+      "秋季",
       4
     ],
     [
       "春季",
-      2
+      1
     ]
   ],
   "signals": [
@@ -595,7 +595,7 @@
       "category": "秋冬保暖",
       "season_tag": "冬季",
       "source": "搜狐网",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9IM1pRLUVZUDBhdy02M0k1ZkRqZ0EzQ1ppdUx0a2Z1cU85bWRMWWpWaWhqVmlXa3JrVnBiR0ZmYTZRWVExdUZLLU8xQy1yQkww?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBQWnRWOE1pTld3RmNHaDJOOFZPRlJXSGpnTVRocTVVZ2N2WVJJQzBBcnBSeEFmN0hIVW5YOUFWMk90TGpsN1dEX1g3TFdtNnQtaEVieA?oc=5",
       "pub_date": "Mon, 30 Dec 2024 08:00:00 GMT",
       "heat": 55,
       "type": "product_signal"
@@ -786,27 +786,6 @@
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBhVFp1S25SVlE1NGpmcmRud081d002Z3o1Rl81ZDBaTnBIR3drN01zWURhbHdNc0VaemEyUmMtS0htQl9VR2Niend1bWE0VU5pcUVucmNpNA?oc=5",
       "pub_date": "Sat, 09 May 2026 07:00:00 GMT",
       "heat": 50,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-01",
-      "title": "泰兰尼斯“稳跑鞋”在京震撼发布明星父母助阵诠释为爱守护的新力量- 业界 - 亿邦动力网",
-      "short_title": "泰兰尼斯“稳跑鞋”在京震撼发布明星父母助阵诠释为爱守护的新力量- 业界 - 亿邦动力网",
-      "query": "泰兰尼斯 篮球鞋",
-      "brand_hits": [
-        "泰兰尼斯"
-      ],
-      "keyword_hits": [
-        "篮球鞋",
-        "篮球",
-        "发布"
-      ],
-      "category": "跑步科技",
-      "season_tag": "秋季",
-      "source": "亿邦动力网",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9jX0VxcTBlclpTYmFYLVJuZlg5cG9PbXFnVjN6bEZPYTVYVk9zLTR5WTBoT0xGT2tucXdOZGNhUGxVWEl0RGxfWXpVdFZGUG1wQmQyYlh3?oc=5",
-      "pub_date": "Mon, 18 Aug 2025 07:00:00 GMT",
-      "heat": 49,
       "type": "product_signal"
     },
     {
@@ -1033,6 +1012,26 @@
       "source": "Morketing",
       "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9pY1FtV2JaOXNocDVIa09ITThxQlNRb1pNdmRUdHA3dkJLSWtyTi1pZ1YtZUVnTXdYUnlwbV9QYUJhckRqZGlEX0FYWW5xeEE?oc=5",
       "pub_date": "Wed, 20 Aug 2025 07:00:00 GMT",
+      "heat": 45,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-01",
+      "title": "泰兰尼斯“稳跑鞋”在京震撼发布明星父母助阵诠释为爱守护的新力量- 业界 - 亿邦动力网",
+      "short_title": "泰兰尼斯“稳跑鞋”在京震撼发布明星父母助阵诠释为爱守护的新力量- 业界 - 亿邦动力网",
+      "query": "泰兰尼斯 羽绒服",
+      "brand_hits": [
+        "泰兰尼斯"
+      ],
+      "keyword_hits": [
+        "羽绒服",
+        "发布"
+      ],
+      "category": "跑步科技",
+      "season_tag": "冬季",
+      "source": "亿邦动力网",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9jX0VxcTBlclpTYmFYLVJuZlg5cG9PbXFnVjN6bEZPYTVYVk9zLTR5WTBoT0xGT2tucXdOZGNhUGxVWEl0RGxfWXpVdFZGUG1wQmQyYlh3?oc=5",
+      "pub_date": "Mon, 18 Aug 2025 07:00:00 GMT",
       "heat": 45,
       "type": "product_signal"
     },
@@ -1458,25 +1457,6 @@
     },
     {
       "date": "2026-06-01",
-      "title": "解锁户外灵感，Crocs卡骆驰携手全球品牌代言人檀健次推出夏日新品 - Supreme情报网",
-      "short_title": "解锁户外灵感，Crocs卡骆驰携手全球品牌代言人檀健次推出夏日新品 - Supreme情报网",
-      "query": "轻户外 运动品牌 新品",
-      "brand_hits": [
-        "Crocs"
-      ],
-      "keyword_hits": [
-        "新品"
-      ],
-      "category": "户外轻运动",
-      "season_tag": "春季",
-      "source": "Supreme情报网",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBYZ0c4NlFrYnEwNG5EWjdpY2N3NV95MkswZ1JyU1ctanJwNHJKTFQ4R0F2NzdMMnhzcGZUV0xnZTktRlFVTkVnQVBkNUpsaGRoaG5kTmd2MGJmSTZxb05DQw?oc=5",
-      "pub_date": "Tue, 26 May 2026 06:50:22 GMT",
-      "heat": 36,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-01",
       "title": "健康减重热潮带动二手运动品类热卖 运动相机交易单量飙升丨变革618 - 封面新闻",
       "short_title": "健康减重热潮带动二手运动品类热卖 运动相机交易单量飙升丨变革618 - 封面新闻",
       "query": "618 运动品牌 热卖 商品",
@@ -1568,6 +1548,24 @@
       "source": "新华网",
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPRkV5RjBtMTBMd3dralg3UERpQWdpSXRBYVExLVY5WVk5T29NYlFnZmQtdnVlT25jb18wTzN6Z0FyVmZKVFhFOE4xZFRaUlJDSFNrYTF6TFF2VWhUTmsyempDXy12SlNqMmJ4NlN5Qlk1bVlyaTNhOVkzX2N0LUhxRA?oc=5",
       "pub_date": "Mon, 28 Jul 2025 07:00:00 GMT",
+      "heat": 34,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-01",
+      "title": "唯品会4.19品牌特卖节今晚开启：“限时狂秒”栏目上线，春夏爆款服饰价格新低 - 新华网",
+      "short_title": "唯品会4.19品牌特卖节今晚开启：“限时狂秒”栏目上线，春夏爆款服饰价格新低 - 新华网",
+      "query": "年货节 运动品牌",
+      "brand_hits": [],
+      "keyword_hits": [
+        "年货节",
+        "爆款"
+      ],
+      "category": "大促节点",
+      "season_tag": "全年",
+      "source": "新华网",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5udENQUlR3UUVXS0YtQmtVME9ab0tfdDRFZU1qVXJ4OGJ2SThtenE1UmFYYkgtUk02RFNKbzkzZElwcUNtUk8yZkNGQWR6czB1ajI5MnRobXNFRzF5TFg1ZW5kbTZMR0JXOE1MN1hUc041S0RWak9WMUlZd0w?oc=5",
+      "pub_date": "Wed, 16 Apr 2025 07:00:00 GMT",
       "heat": 34,
       "type": "product_signal"
     },
