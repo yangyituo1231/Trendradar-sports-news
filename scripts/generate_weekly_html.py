@@ -144,6 +144,7 @@ for item in regions:
 top_regions = Counter(region_values).most_common(6)
 
 summary_raw = analysis.get("summary") or analysis.get("weekly_summary") or ""
+ai_judgement = analysis.get("ai_judgement") or analysis.get("summary", {}).get("ai_judgement", "")
 
 if isinstance(summary_raw, dict):
     date_range = summary_raw.get("date_range", "")
@@ -468,6 +469,16 @@ def render_hot_signal_items():
         """
     return html
 
+def render_ai_judgement():
+    if not ai_judgement:
+        return ""
+
+    return f"""
+    <div class="card ai-card">
+      <div class="card-title">AI经营判断</div>
+      <div class="ai-content">{ai_judgement}</div>
+    </div>
+    """
 
 def render_product_suggestion_cards():
     html = ""
@@ -609,6 +620,8 @@ li{{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#23
 .suggest-grid{{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}}
 .suggest-card{{border-radius:18px;background:linear-gradient(135deg,#fff7ed,#ffffff);border:1px solid #fed7aa;padding:16px;font-size:15px;line-height:1.55;font-weight:850;color:#7c2d12;min-height:130px}}
 .footer{{text-align:center;color:#7184a3;font-size:12px;margin:14px 0 4px}}
+.ai-card{{margin-top:16px;background:linear-gradient(135deg,#f8fbff,#ffffff)}}
+.ai-content{{font-size:16px;line-height:1.75;font-weight:800;color:#233e68;white-space:pre-wrap}}
 .empty{{color:#8a99ad;font-size:14px;padding:20px;text-align:center}}
 </style>
 </head>
@@ -635,6 +648,7 @@ li{{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#23
       <div class="section-kicker">WEEKLY JUDGEMENT</div>
     </div>
     <div class="summary-box">{weekly_summary}</div>
+    {render_ai_judgement()}
   </section>
 
   <section class="page">
