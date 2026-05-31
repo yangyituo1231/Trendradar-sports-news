@@ -23,10 +23,12 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install requests beautifulsoup4 pyyaml lxml
+          pip install requests beautifulsoup4 pyyaml lxml openai
 
       # 1. 抓新闻
       - name: Run News Fetcher
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
           python scripts/get_hot_news.py
 
@@ -37,10 +39,24 @@ jobs:
 
       # 3. 生成日报
       - name: Run Fill Report
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
           python scripts/fill_report.py
 
-      # 4. 自动提交
+      # 4. 生成周报分析
+      - name: Run Weekly Analysis
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          python scripts/weekly_analysis.py
+
+      # 5. 生成周报 HTML
+      - name: Run Weekly Report
+        run: |
+          python scripts/weekly_report_html.py
+
+      # 6. 自动提交
       - name: Commit Generated Files
         run: |
           git config user.name github-actions
