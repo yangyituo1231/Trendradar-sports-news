@@ -350,24 +350,38 @@ def render_keywords():
 
 
 def render_regions():
-    if not top_regions:
-        rows = [
-            ("华东", "关注商圈活动、亲子运动与夏季功能品类。"),
-            ("华南", "关注降雨天气、防滑防雨与室内运动承接。"),
-            ("西南", "关注文旅出行、轻户外和直播承接。"),
-            ("西北", "关注防晒、户外和价格带机会。"),
-        ]
-    else:
-        rows = [(name, f"本周出现 {count} 次，建议跟踪区域客流、天气品类和主推商品。") for name, count in top_regions]
+
+    if not regions:
+        return "<div class='empty'>暂无区域数据</div>"
 
     html = ""
-    for name, desc in rows[:6]:
+
+    for region in regions[:6]:
+
+        region_name = region.get("region","")
+
+        focuses = region.get("top_focus",[])
+        actions = region.get("top_actions",[])
+
+        focus_text = "、".join([
+            x.get("focus","")
+            for x in focuses[:2]
+        ])
+
+        action_text = "、".join([
+            x.get("action","")
+            for x in actions[:2]
+        ])
+
+        desc = f"本周重点：{focus_text}。建议动作：{action_text}"
+
         html += f"""
         <div class="region-card">
-          <div class="region-name">{name}</div>
-          <div class="region-desc">{desc}</div>
+            <div class="region-name">{region_name}</div>
+            <div class="region-desc">{desc}</div>
         </div>
         """
+
     return html
 
 
