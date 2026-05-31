@@ -1,153 +1,158 @@
 {
   "date": "2026-05-31",
   "weekday": "星期日",
-  "generate_time": "2026-05-31 10:00",
-  "today_insight": "宏观消费与平台流量共同影响零售节奏，价格带、客流与功能品类需同步跟踪。",
-  "ai_summary": "宏观消费与收入预期影响零售信心；大促与平台流量仍是短期主线；防晒、凉感、速干等夏季功能品类升温；儿童运动与亲子校园场景延续。",
+  "generate_time": "2026-05-31 18:08",
+  "today_insight": "AI重构内容生产，国潮与亲子运动升温，理性消费回归，银发经济崛起。",
+  "ai_summary": "**AI经营摘要：**宏观消费温和，社零增速承压，平台流量向AI与性价比倾斜。六一亲子运动与国潮消费升温，儿童运动鞋服迎窗口期，但强降雨天气将扰动线下客流，需强化防雨、室内运动场景产品布局。当前最应关注：借势亲子运动热点，加速儿童夏季功能品类（防晒、速干）及AI互动玩具的线上转化，同时警惕高退货率与",
   "top_news": [
     {
-      "title": "618前瞻：玩法相减，AI相加|抖音电商|淘宝|千问|Qwen|商家",
-      "tag": "大促/电商",
-      "source": "新浪财经",
-      "desc": "平台流量与大促节奏变化，重点观察夏季品类曝光、直播转化与终端承接。",
-      "logo": "大促",
-      "icon": "🛒",
-      "class": "logo-blue",
-      "link": "https://news.google.com/rss/articles/CBMizwNBVV95cUxNTnRMQU9UbDZrc0N4Y2lWNHhtdWFWX2dGa3VySGhWN3NrUmQzMUpVWUJkR3JneDFwMDRNLWtNUnNEOEV5QWhKbHR5cEdOMFVBVkxRZzJuQVptZWRYQk1JUFdZMlZGNE04SUFJQnNVbW1TVWxqQmQtZnF5OFR1V0tUT05oeDZtcWxfQ2dYTmh6UjV6elFfc0JpVGpGeVV0Y0lRR2x0UXFjbENRSy0yaXlmVFhWUTBCa094NndDVzVzZTdaY3BZdlhwVDE0TUVWMW94QVpnLXVyNDAwT3B3cm1vbnJOcTJsWU9teEtXS3BkbHVVVTRMb1lIdmt5bExCVjRTVUhCMFBVeThjTTlJM1F3bWxiOXRiT2NwUlE0WUZUWDh5dWw0aWFGNy1oV2NqbG5uQnM4cXdWOVVMUDNPVk03SHU1TklTNHh0OUVuck9EMkR2anNpTFM4MllXZUF5Rm5nd2VCZWZXN0k4eTM3Rk0xWFp0UTM4cXVNZG1pLTl1N2x5bFVwc1pUNUJjbmJqSXdQaEJNOUtqMzZZTjlrMkNwQ1JXT1BVQTJ1M0syb3pfWWhDOFhINzV3cXBhV0VMY1ltcW9QWWZrVXkzTTVSdGVr?oc=5"
-    },
-    {
-      "title": "安踏李宁叫板耐克阿迪，特步361度全力向上",
-      "tag": "品牌竞争",
-      "source": "36氪",
-      "desc": "品牌动作反映行业竞争重心，需关注价格带、产品心智与渠道打法变化。",
-      "logo": "品牌",
-      "icon": "🏷️",
-      "class": "logo-purple",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBia2ROQXh3Mkc3N3IzT2JuLWY3bU5LdUFIbUkzVHhSZUh2azRmMTBUYks4VFc2dHIwOEowcVVIblRaZGZhLUs5SURZSzFtZw?oc=5"
-    },
-    {
-      "title": "消费新图景丨银发经济解锁品质养老新生活",
-      "tag": "宏观消费",
-      "source": "央广网",
-      "desc": "宏观消费与收入预期影响零售信心，需关注客单、折扣和会员活跃变化。",
-      "logo": "宏观",
-      "icon": "📊",
-      "class": "logo-dark",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE51Nk9jSklGeE96elgzRC1ibW4wd09XVGhvN3JNRm1iWXIxNVZjRlRvZFAzVkMyUDlyWGVsa1k3a3laUXkwR2MtN2xiWTZaYkkzSDBiMFE0U2dFcGdDZzhOR3c1cUU0WG5uTEIyV1Z4dw?oc=5"
-    },
-    {
-      "title": "根本逛不完！南京商场集体上新",
-      "tag": "商圈/零售经营",
-      "source": "新浪财经",
-      "desc": "商圈活动、会员运营和折扣零售影响周末客流与终端转化效率。",
-      "logo": "商圈",
-      "icon": "🏬",
-      "class": "logo-dark",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNRkVpYk9VWkh1V2R2cWJuSUYzMXB0b1Q1U3RXWE9TMEkwMWp0MlJheFNZeGIyb20zdm5YQTFWYkQ4TXpRdU5MZEhSRHphaldKeGFrYzgtT2pGYk5sbzhkei1ZeFYxb1VVME5TRWEwV0JfVzA4MjhCZ1hGSjIzOUZJRFJzOWZPMXFYelFVSmpCdzhDM1VBYkM2VQ?oc=5"
-    },
-    {
-      "title": "厦门：AI互动玩具销量走俏",
+      "title": "美团发布首个即时零售商家专属AI解决方案“牵牛花Claw”",
       "tag": "AI科技",
-      "source": "东南网",
-      "desc": "AI与智能硬件热点提升科技心智，可观察运动科技、内容种草和人群触达机会。",
+      "source": "新浪财经",
+      "desc": "AI赋能门店管理，可提升运营效率，对零售经营有直接启示。",
       "logo": "AI",
       "icon": "🤖",
       "class": "logo-blue",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ldFN4dUl0NG9na2dIbVFtTFU2UXhhRUlSdmwwRXJXdlVXOGowZWVMS3RqUmNQMnd5U0NOQjhLYkVzWFFZUU8yX2ZLU3RzVVh3VmIzNG5aN3dRQnA3Sm1qVw?oc=5"
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdlFxbk9zN0VTSVZnMFVTUk5ycm1Ea1RWeFQyUjVzUEtKTVg0NWV2RXBRc0JPMVRIc0tDSGdEUlBOYWo1YldTeHBUVExjVFN4NGk2Z2FqUjhRU0xCbjNyNElKRnpzUHlOZ0l1Wi1VazBFOHJ0MGk5bU8tM1JIeG83ZHpTNWxmN3hkMjRFeE51VXNiSGY2eUpQN1lENWI5Y1N6UHpMYUxzQ0JqOWx4cHd0Rk5R?oc=5",
+      "published_at": "Fri, 29 May 2026 21:02:54 GMT"
+    },
+    {
+      "title": "户外运动“大众化”加速平台：文旅体商一体化释放新增量",
+      "tag": "户外/运动场景",
+      "source": "新浪财经",
+      "desc": "户外运动消费增长，可借鉴文旅体商融合模式，拓展儿童运动场景。",
+      "logo": "户外",
+      "icon": "🚴",
+      "class": "logo-green",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4xcC1zOHNTMnZwblhvSHEyd3VObV9ldHdkdFdWMThMdHFKUDRsZElSYU4wQXhtX3J2eWgwbWktRVFvVkotX2NBWThoVFBMN1c5S3JwNno0c3ZQYzZQckxJakJYVmZMYWUxUUFQbmNtUXZQdjdJbkozQ3A1OU1UUms?oc=5",
+      "published_at": "Fri, 29 May 2026 07:51:57 GMT"
+    },
+    {
+      "title": "“六一”到 南昌亲子游热度攀升",
+      "tag": "文旅出行",
+      "source": "新浪财经",
+      "desc": "亲子游带动消费，可结合节日营销，提升儿童产品销量。",
+      "logo": "文旅",
+      "icon": "🧳",
+      "class": "logo-green",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNdXFsM0ZjcFItZHNXRWVEMkdEcmZ4ZE1jQ3hTTnNNMEd4VE16TzAxTmxQN1dpdU4zVmxXWVRRMm1zTGRiNWFERFAyOUpsVjdtUG5GU203Um13SzNmNlhSUlZlQ1ZJWHdJR3d4cldNbzc1YU1ZV2FFY2JwbE1QdVM2RVJLNHN0dXFSUFZBT0pwYlBIRmdONUZmeEsyN2xJT3dwRGtKV3h4cWwtSDJybDBTbkN2SU5WeXRqenJjOUpZQmd6eUJSdV9mYnVWSU0?oc=5",
+      "published_at": "Sun, 31 May 2026 00:51:00 GMT"
+    },
+    {
+      "title": "运动装备成“社交货币”？直播间靠“懂年轻人”接住这波运动热",
+      "tag": "品牌竞争",
+      "source": "紫牛新闻",
+      "desc": "运动装备社交化趋势明显，可优化直播策略，吸引年轻家庭用户。",
+      "logo": "品牌",
+      "icon": "🏷️",
+      "class": "logo-purple",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE90aFdHQ2VhamlMMWVLNEhWcDQzTDVCNzdWTVdtYUY5Sl9oOURUYkFCajRtdG1sSmxyS0dtZHhVQnVoaVd6dGpXbEVnempzRjhlTTZMVC1yZllsNDNaaW5mRTFzUWhMQ1hV?oc=5",
+      "published_at": "Fri, 29 May 2026 11:37:00 GMT"
+    },
+    {
+      "title": "“挖化石”取代玩具成新宠，儿童消费刮起体验风",
+      "tag": "童装/儿童运动",
+      "source": "ccn.com.cn",
+      "desc": "儿童消费转向体验，可开发互动型产品，增强品牌吸引力。",
+      "logo": "童装",
+      "icon": "🧒",
+      "class": "logo-sky",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE12Um90eVFhRnVyUFVYMXkxQ1JBUVAtWFZQMF84X2tWTW9ZSDFIeG5YZkoyTVVFX211TjVBRk8xdFBpVUpyQVJDMzZ1cU1qWlZZQkZRVnRMbVlFeWgzX2toQ21rM2ZyMHQ1?oc=5",
+      "published_at": "Fri, 29 May 2026 11:18:00 GMT"
     }
   ],
   "warnings": [
-    "平台流量和促消费信息交织，需关注核心SKU库存、价格带和直播同款承接。",
-    "局地降雨影响到店节奏，室内客流承接能力将影响周末门店转化效率。",
-    "轻户外与亲子场景持续升温，帽包、防晒与运动凉鞋存在连带增长机会。"
+    "{'id': 1, 'type': '机会', 'content': '六一亲子游与童趣经济升温，建议门店联动商场开展亲子运动挑战赛，引流家庭客群，提升童鞋及亲子装连带销售。'}",
+    "{'id': 2, 'type': '风险', 'content': '强降雨天气扰动商圈客流，需加强线上直播与社群营销，主推防雨运动装备及室内运动鞋服，弥补线下客流损失。'}",
+    "{'id': 3, 'type': '机会', 'content': 'AI重构内容生产，建议利用AI工具优化直播话术与商品图生成，降低运营成本，同时强化真人主播互动，提升转化率。'}"
   ],
   "region_reports": {
     "east": {
       "name": "华东",
       "city": "上海/江苏/浙江",
-      "hot": "AI科技带动区域消费变化",
-      "flow": "上海/江苏/浙江客流与消费场景受新闻和天气共同影响",
-      "focus": "商品机会",
-      "action": "结合新闻与天气调整主推陈列",
+      "hot": "AI科技赋能零售，南京商场上新潮，防晒轻薄T恤需求旺",
+      "flow": "AI科技主题带动线上直播与线下体验，商场客流因上新潮保持活跃，但阴天可能影响户外客流。",
+      "focus": "AI科技+防晒商品",
+      "action": "打造AI科技主题陈列区，主推防晒凉感T恤与短裤，结合直播同款话术，会员触",
       "star": "★★★"
     },
     "central": {
       "name": "华中",
       "city": "湖北/湖南/江西",
-      "hot": "商圈客流带动区域消费变化",
-      "flow": "湖北/湖南/江西客流与消费场景受新闻和天气共同影响",
-      "focus": "商品机会",
-      "action": "结合新闻与天气调整主推陈列",
+      "hot": "六一亲子游南昌热度攀升，商圈客流火爆，防晒短裤需求提",
+      "flow": "六一节日效应带动亲子客流涌入商圈，武汉长沙等地文旅消费创新高，晴热天气促进户外活动。",
+      "focus": "亲子活动+防晒品类",
+      "action": "联合商圈开展亲子运动挑战赛，主推防晒短裤与轻薄T恤组合，设置儿童试穿专区",
       "star": "★★"
     },
     "south": {
       "name": "华南",
       "city": "广东/广西",
-      "hot": "商圈客流带动区域消费变化",
-      "flow": "广东/广西客流与消费场景受新闻和天气共同影响",
-      "focus": "商品机会",
-      "action": "结合新闻与天气调整主推陈列",
+      "hot": "强降雨扰动客流，AI互动玩具走俏，童趣经济激活六一市",
+      "flow": "降雨导致户外客流减少，但室内商圈因童趣经济与AI互动玩具吸引家庭客群，厦门文旅活动带动部分客流。",
+      "focus": "防雨防滑+室内运动",
+      "action": "主推防滑运动鞋与速干T恤，在室内商圈设置AI互动玩具体验区，结合亲子试穿",
       "star": "★★★"
     },
     "southwest": {
       "name": "西南",
       "city": "四川/重庆/贵州",
-      "hot": "直播电商带动区域消费变化",
-      "flow": "四川/重庆/贵州客流与消费场景受新闻和天气共同影响",
-      "focus": "商品机会",
-      "action": "结合新闻与天气调整主推陈列",
+      "hot": "降雨影响客流，成都潮流街区与直播电商带动消费，防晒需",
+      "flow": "小雨天气抑制户外客流，但成都公园街区与抖音直播团购吸引年轻客群，线上消费活跃。",
+      "focus": "直播电商+轻防护",
+      "action": "联合抖音生活服务发起直播专场，主推轻薄防晒衣与防雨运动鞋，导购话术强调“",
       "star": "★★★"
     },
     "northwest": {
       "name": "西北",
       "city": "陕西/甘肃/宁夏",
-      "hot": "防晒经济带动区域消费变化",
-      "flow": "陕西/甘肃/宁夏客流与消费场景受新闻和天气共同影响",
-      "focus": "商品机会",
-      "action": "结合新闻与天气调整主推陈列",
+      "hot": "硬防晒迭代升级，童趣经济出圈，兰州冷饮理性消费回归。",
+      "flow": "高温天气驱动防晒消费热，六一童趣活动带动家庭客流，但阴天可能影响户外运动客流。",
+      "focus": "硬防晒+童趣活动",
+      "action": "主推硬防晒装备如防晒衣与凉感T恤，联合商场开展儿童运动体验日，设置亲子试",
       "star": "★★"
     }
   },
   "trend_items": [
     {
-      "title": "宏观消费影响客单",
-      "desc": "消费与收入预期变化影响客单和折扣敏感度，门店需优化价格带与会员转化。",
-      "tag": "宏观趋势"
+      "title": "AI重构内容生产，好内容核心在人",
+      "desc": "AI工具提升效率，但创意与情感仍需人工把控，建议加强内容团队AI培训，保持品牌温度。",
+      "tag": "AI科技"
     },
     {
-      "title": "平台热度外溢门店",
-      "desc": "大促和内容种草带动比价与试穿需求，需承接直播同款和核心爆款。",
-      "tag": "平台趋势"
+      "title": "强降雨扰动客流，室内运动场景升温",
+      "desc": "今日多地强降雨，户外客流减少，建议主推室内运动鞋服，并强化防雨、防滑产品宣传。",
+      "tag": "天气变化"
     },
     {
-      "title": "天气驱动功能陈列",
-      "desc": "天气变化带动防晒、凉感、防雨与速干需求，门店陈列需随区域动态调整。",
-      "tag": "天气趋势"
+      "title": "拼多多Q1营收增长，AI电商成新引擎",
+      "desc": "拼多多营收1062亿元，AI技术驱动增长，建议优化电商平台AI推荐算法，提升转化率。",
+      "tag": "电商动态"
     },
     {
-      "title": "亲子校园带动连带",
-      "desc": "儿童运动、亲子和校园场景带动套装与童鞋组合，导购需强化搭配转化。",
-      "tag": "儿童趋势"
+      "title": "国潮消费升温，亲子运动激活六一市场",
+      "desc": "国潮与亲子运动热度攀升，建议推出国风亲子鞋服系列，结合六一活动引流商圈客流。",
+      "tag": "消费趋势"
     }
   ],
   "words": [
-    "亲子运动",
-    "儿童运动",
-    "商圈客流",
-    "直播带货",
-    "AI",
-    "618",
-    "文旅客流",
-    "消费趋势",
     "户外运动",
-    "商场活动",
-    "防晒品类",
     "客流修复",
-    "银发经济",
-    "运动科技",
+    "亲子运动",
+    "消费趋势",
+    "儿童运动",
+    "618",
+    "直播带货",
+    "文旅客流",
+    "商圈客流",
+    "AI",
     "年轻人",
-    "速干T",
-    "功能面料",
+    "夜经济",
+    "商场活动",
+    "运动科技",
+    "防晒品类",
+    "运动T恤",
+    "银发经济",
     "抖音直播"
   ],
   "weather": {
