@@ -210,7 +210,15 @@ def collect_regions(days):
     for day in days:
         date = day.get("date", "")
 
-        for region in safe_list(day.get("regions")):
+        region_items = []
+
+        if isinstance(day.get("regions"), list):
+            region_items.extend(day.get("regions"))
+
+        if isinstance(day.get("region_reports"), dict):
+            region_items.extend(day.get("region_reports").values())
+
+        for region in region_items:
             if not isinstance(region, dict):
                 continue
 
@@ -220,7 +228,7 @@ def collect_regions(days):
 
             parts = []
 
-            for key in ["hot", "flow", "focus"]:
+            for key in ["city", "hot", "flow", "focus"]:
                 value = str(region.get(key, "")).strip()
                 if value:
                     region_counter[name][value] += 1
@@ -250,20 +258,21 @@ def collect_regions(days):
             for k, v in action_counter[region].most_common(5)
         ]
 
-        evidence = raw_counter[region][-5:]
-        combined_text = " ".join([x["text"] for x in evidence])
+        combined_text = " ".join([x["text"] for x in raw_counter[region]])
 
         result.append({
             "region": region,
-            "signal_count": sum(i["count"] for i in top_focus),
             "top_focus": top_focus,
             "top_actions": top_actions,
-            "evidence": evidence,
             "summary": build_region_summary(region, combined_text, top_focus, top_actions),
             "suggestion": build_region_suggestion(region, combined_text, top_focus, top_actions)
         })
 
-    return sorted(result, key=lambda x: x["signal_count"], reverse=True)
+    return sorted(
+        result,
+        key=lambda x: sum(i["count"] for i in x.get("top_focus", [])),
+        reverse=True
+    )
 
 
 def load_products():
