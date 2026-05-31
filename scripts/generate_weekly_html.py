@@ -492,7 +492,7 @@ li{{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#23
 .products{{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}}
 .product-card{{border:1px solid #dbe6f6;border-radius:18px;background:#fbfdff;padding:12px;box-shadow:0 8px 18px rgba(20,60,110,.06)}}
 .product-img-wrap{{position:relative;width:100%;height:150px;border-radius:15px;overflow:hidden;background:#edf5ff;margin-bottom:10px}}
-.product-signal-cover{
+.product-signal-cover{{
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -500,13 +500,15 @@ li{{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#23
   background:
     radial-gradient(circle at 80% 20%, rgba(25,163,255,.22), transparent 30%),
     linear-gradient(135deg,#edf5ff,#f8fbff);
-}
-.product-signal-category{
+}}
+
+.product-signal-category{{
   font-size:22px;
   font-weight:950;
   color:#0b4db3;
-}
-.product-signal-heat{
+}}
+
+.product-signal-heat{{
   margin-top:10px;
   font-size:14px;
   font-weight:900;
@@ -514,7 +516,7 @@ li{{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#23
   background:#ecfdf5;
   padding:5px 12px;
   border-radius:999px;
-}
+}}
 .product-img{{width:100%;height:100%;object-fit:cover;display:block}}
 .product-rank{{position:absolute;top:8px;left:8px;padding:4px 8px;border-radius:999px;background:rgba(6,43,120,.88);color:#fff;font-size:11px;font-weight:950}}
 .product-brand{{font-size:13px;color:#0b63d8;font-weight:950}}
