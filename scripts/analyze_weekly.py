@@ -48,6 +48,26 @@ def text_has(text, keys):
     return any(k in text for k in keys)
 
 
+def pair_list_to_dict_list(items, key_name):
+    result = []
+
+    for item in safe_list(items):
+        if isinstance(item, list) and len(item) >= 2:
+            result.append({
+                key_name: item[0],
+                "count": item[1]
+            })
+        elif isinstance(item, tuple) and len(item) >= 2:
+            result.append({
+                key_name: item[0],
+                "count": item[1]
+            })
+        elif isinstance(item, dict):
+            result.append(item)
+
+    return result
+
+
 def collect_text_from_history(days):
     texts = []
 
@@ -73,12 +93,9 @@ def collect_text_from_history(days):
 
         for region in safe_list(day.get("regions")):
             if isinstance(region, dict):
-                texts.append(str(region.get("name", "")))
-                texts.append(str(region.get("region", "")))
-                texts.append(str(region.get("hot", "")))
-                texts.append(str(region.get("flow", "")))
-                texts.append(str(region.get("focus", "")))
-                texts.append(str(region.get("action", "")))
+                for key in ["name", "region", "hot", "flow", "focus", "action"]:
+                    if region.get(key):
+                        texts.append(str(region.get(key)))
 
         for word in safe_list(day.get("words")):
             texts.append(str(word))
@@ -146,6 +163,45 @@ def collect_keywords(days):
     ]
 
 
+def build_region_summary(region, text, top_focus, top_actions):
+    focus_words = "、".join([x["focus"] for x in top_focus[:2]]) or "区域客流、天气变化和商品承接"
+
+    if text_has(text, ["降雨", "暴雨", "强对流", "雷阵雨"]):
+        return f"{region}本周天气扰动较明显，重点关注雨天客流承接、防滑防雨和室内运动场景。"
+
+    if text_has(text, ["高温", "防晒", "凉感", "速干"]):
+        return f"{region}本周夏季功能需求较突出，防晒、凉感、速干和轻薄透气商品值得重点关注。"
+
+    if text_has(text, ["商圈", "客流", "活动", "购物节"]):
+        return f"{region}本周商圈活动和客流变化较活跃，建议结合门店陈列和会员触达提升转化。"
+
+    if text_has(text, ["文旅", "出行", "户外", "露营", "轻户外"]):
+        return f"{region}本周出行和轻户外场景信号较强，适合强化亲子出游、户外鞋服和舒适通勤组合。"
+
+    return f"{region}本周主要关注{focus_words}，建议结合区域门店实际客流和主推商品做承接。"
+
+
+def build_region_suggestion(region, text, top_focus, top_actions):
+    action_words = "、".join([x["action"] for x in top_actions[:2]])
+
+    if text_has(text, ["降雨", "暴雨", "强对流", "雷阵雨"]):
+        return "门店侧重点做防滑鞋、防水外套、室内运动鞋服陈列，并强化雨天到店转化。"
+
+    if text_has(text, ["高温", "防晒", "凉感", "速干"]):
+        return "门店侧重点推防晒衣、凉感T、速干短裤、运动凉鞋、遮阳帽包组合。"
+
+    if text_has(text, ["文旅", "出行", "户外", "露营", "轻户外"]):
+        return "门店侧重点推轻户外鞋服、亲子出行套装、舒适走路鞋和帽包配件。"
+
+    if text_has(text, ["商圈", "活动", "购物节", "客流"]):
+        return "门店侧需结合商圈活动做入口陈列、爆款主推、会员触达和导购话术统一。"
+
+    if action_words:
+        return action_words
+
+    return "建议结合区域天气、商圈活动、会员触达和门店主推款，形成一周一店一重点。"
+
+
 def collect_regions(days):
     region_counter = defaultdict(Counter)
     action_counter = defaultdict(Counter)
@@ -194,59 +250,20 @@ def collect_regions(days):
             for k, v in action_counter[region].most_common(5)
         ]
 
-        combined_text = " ".join([x["text"] for x in raw_counter[region]])
+        evidence = raw_counter[region][-5:]
+        combined_text = " ".join([x["text"] for x in evidence])
 
         result.append({
             "region": region,
+            "signal_count": sum(i["count"] for i in top_focus),
             "top_focus": top_focus,
             "top_actions": top_actions,
+            "evidence": evidence,
             "summary": build_region_summary(region, combined_text, top_focus, top_actions),
             "suggestion": build_region_suggestion(region, combined_text, top_focus, top_actions)
         })
 
-    return sorted(result, key=lambda x: sum(i["count"] for i in x["top_focus"]), reverse=True)
-
-
-def build_region_summary(region, text, top_focus, top_actions):
-    focus_words = "、".join([x["focus"] for x in top_focus[:2]])
-
-    if not focus_words:
-        focus_words = "区域客流、天气变化和商品承接"
-
-    if text_has(text, ["降雨", "暴雨", "强对流", "雷阵雨"]):
-        return f"{region}本周重点受天气扰动影响，需关注雨天客流承接、防滑防雨和室内运动场景。"
-
-    if text_has(text, ["高温", "防晒", "凉感", "速干"]):
-        return f"{region}本周夏季功能需求较突出，防晒、凉感、速干和轻薄透气商品值得重点关注。"
-
-    if text_has(text, ["商圈", "客流", "活动", "购物节"]):
-        return f"{region}本周商圈活动和客流变化较活跃，建议结合门店陈列和会员触达提升转化。"
-
-    if text_has(text, ["文旅", "出行", "户外", "露营", "轻户外"]):
-        return f"{region}本周出行和轻户外场景信号较强，适合强化亲子出游、户外鞋服和舒适通勤组合。"
-
-    return f"{region}本周主要关注{focus_words}，建议结合区域门店实际客流和主推商品做承接。"
-
-
-def build_region_suggestion(region, text, top_focus, top_actions):
-    action_words = "、".join([x["action"] for x in top_actions[:2]])
-
-    if text_has(text, ["降雨", "暴雨", "强对流", "雷阵雨"]):
-        return "门店侧重点做防滑鞋、防水外套、室内运动鞋服陈列，并强化雨天到店转化。"
-
-    if text_has(text, ["高温", "防晒", "凉感", "速干"]):
-        return "门店侧重点推防晒衣、凉感T、速干短裤、运动凉鞋、遮阳帽包组合。"
-
-    if text_has(text, ["文旅", "出行", "户外", "露营", "轻户外"]):
-        return "门店侧重点推轻户外鞋服、亲子出行套装、舒适走路鞋和帽包配件。"
-
-    if text_has(text, ["商圈", "活动", "购物节", "客流"]):
-        return "门店侧需结合商圈活动做入口陈列、爆款主推、会员触达和导购话术统一。"
-
-    if action_words:
-        return action_words
-
-    return "建议结合区域天气、商圈活动、会员触达和门店主推款，形成一周一店一重点。"
+    return sorted(result, key=lambda x: x["signal_count"], reverse=True)
 
 
 def load_products():
@@ -342,26 +359,6 @@ def load_product_signals():
         "top_seasons": data.get("top_seasons", []),
         "signals": data.get("signals", [])[:80]
     }
-
-
-def pair_list_to_dict_list(items, key_name):
-    result = []
-
-    for item in safe_list(items):
-        if isinstance(item, list) and len(item) >= 2:
-            result.append({
-                key_name: item[0],
-                "count": item[1]
-            })
-        elif isinstance(item, tuple) and len(item) >= 2:
-            result.append({
-                key_name: item[0],
-                "count": item[1]
-            })
-        elif isinstance(item, dict):
-            result.append(item)
-
-    return result
 
 
 def infer_signal_themes(product_signals):
@@ -542,7 +539,7 @@ def infer_risks(text, product_signals):
     return risks[:6]
 
 
-def build_actions(opportunities, product_signals):
+def build_actions(opportunities, product_signals, regions):
     actions = []
 
     for opp in opportunities[:6]:
@@ -560,6 +557,9 @@ def build_actions(opportunities, product_signals):
             actions.append("秋冬方向提前跟踪羽绒服、棉服、抓绒、加绒裤、防滑鞋和雪地靴。")
         elif "大促" in theme or "直播" in theme:
             actions.append("大促节点需建立商品价格带、直播同款、平台爆款和会员触达联动机制。")
+
+    if regions:
+        actions.append("区域经营需按华东、华南、西南、西北等区域每周动态更新重点动作，不再使用固定文案。")
 
     actions.append("每周复盘商品趋势信号中反复出现的品牌、品类和场景，形成开发输入清单。")
 
@@ -618,12 +618,16 @@ def build_summary(days, news, keywords, regions, products, product_signals, oppo
     top_signal_categories = "、".join([x.get("category", "") for x in signal_categories[:5]]) or "儿童鞋、跑步科技、户外轻运动"
 
     region_names = "、".join([x.get("region", "") for x in regions[:4]]) or "重点区域"
+    region_points = "；".join([x.get("summary", "") for x in regions[:3] if x.get("summary")])
+
+    if not region_points:
+        region_points = "区域经营需结合天气、商圈活动和平台热点，提升门店陈列、会员触达和导购转化。"
 
     summary = {
         "date_range": date_range,
         "core_judgement": f"本周行业关注集中在{top_words}；真实商品趋势信号显示，{top_signal_brands}等品牌出现频次较高，{top_signal_categories}是重点方向。",
         "product_direction": f"商品方向建议重点关注{top_product_cats}，并结合{top_opps}强化青少年成人化、功能科技和场景组合。",
-        "regional_direction": f"区域经营需重点关注{region_names}，结合天气、商圈活动和平台热点，提升门店陈列、会员触达和导购转化。",
+        "regional_direction": f"区域经营重点关注{region_names}。{region_points}",
         "next_action": f"下周建议围绕{top_opps}建立商品组合、内容种草和终端陈列联动，并持续沉淀真实商品趋势信号。"
     }
 
@@ -648,7 +652,7 @@ def main():
     )
 
     risks = infer_risks(text, product_signals)
-    actions = build_actions(opportunities, product_signals)
+    actions = build_actions(opportunities, product_signals, regions)
     product_suggestions = build_product_suggestions(opportunities, product_signals)
 
     summary = build_summary(
@@ -683,6 +687,7 @@ def main():
     )
 
     print(f"weekly analysis saved: {OUTPUT_FILE}")
+    print(f"regions generated: {len(regions)}")
 
 
 if __name__ == "__main__":
