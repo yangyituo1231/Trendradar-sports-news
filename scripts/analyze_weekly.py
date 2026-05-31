@@ -1,6 +1,8 @@
 from pathlib import Path
 from datetime import datetime
 import json
+import os
+import requests
 from collections import Counter, defaultdict
 
 HISTORY_DIR = Path("output/history")
@@ -9,6 +11,53 @@ WEEKLY_DIR = Path("output/weekly")
 WEEKLY_DIR.mkdir(parents=True, exist_ok=True)
 
 OUTPUT_FILE = WEEKLY_DIR / "weekly_analysis.json"
+
+
+def call_deepseek(prompt):
+    api_key = os.getenv("DEEPSEEK_API_KEY")
+
+    if not api_key:
+        print("DEEPSEEK_API_KEY not found")
+        return ""
+
+    url = "https://api.deepseek.com/chat/completions"
+
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json"
+    }
+
+    payload = {
+        "model": "deepseek-chat",
+        "messages": [
+            {
+                "role": "system",
+                "content": "你是361°儿童事业部经营管理部高级分析师，擅长行业趋势分析、区域经营分析、商品规划分析和零售经营判断。"
+            },
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ],
+        "temperature": 0.4,
+        "max_tokens": 1800
+    }
+
+    try:
+        r = requests.post(
+            url,
+            headers=headers,
+            json=payload,
+            timeout=60
+        )
+
+        r.raise_for_status()
+
+        return r.json()["choices"][0]["message"]["content"]
+
+    except Exception as e:
+        print("deepseek error:", e)
+        return ""
 
 
 def load_json_files(folder, limit=7):
