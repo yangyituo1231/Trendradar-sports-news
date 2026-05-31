@@ -96,7 +96,14 @@ top_news = get_list(weekly, "top_news")
 keywords = get_list(weekly, "keywords")
 regions = get_list(weekly, "regions")
 
-product_signals = analysis.get("product_signals", {}) if isinstance(analysis.get("product_signals", {}), dict) else {}
+product_signal_data = load_json(
+    Path("output/products/latest_product_signals.json"),
+    {}
+)
+
+product_signals = analysis.get("product_signals", {})
+if not isinstance(product_signals, dict) or not product_signals:
+    product_signals = product_signal_data
 signal_count = int(product_signals.get("signal_count") or len(product_signals.get("signals", [])) or 0)
 
 signal_brands = pair_to_rows(product_signals.get("top_brands", []), "brand")
@@ -196,11 +203,6 @@ if not product_suggestions:
         "补充轻户外鞋服、帽包配件、亲子同款和校园运动套装。"
     ]
 
-
-product_signal_data = load_json(
-    Path("output/products/latest_product_signals.json"),
-    {}
-)
 
 product_cards = []
 
