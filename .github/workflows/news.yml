@@ -54,7 +54,7 @@ jobs:
       # 5. 生成周报 HTML
       - name: Run Weekly Report
         run: |
-          python scripts/weekly_report_html.py
+          python scripts/generate_weekly_html.py
 
       # 6. 自动提交
       - name: Commit Generated Files
