@@ -32,7 +32,7 @@ jobs:
         run: |
           python scripts/get_hot_news.py
 
-      # 2. 抓实时天气
+      # 2. 抓天气
       - name: Run Weather Fetcher
         run: |
           python scripts/get_weather.py
@@ -44,19 +44,24 @@ jobs:
         run: |
           python scripts/fill_report.py
 
-      # 4. 生成周报分析
+      # 4. 生成周分析JSON
       - name: Run Weekly Analysis
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
           python scripts/analyze_weekly.py
 
-      # 5. 生成周报 HTML
-      - name: Run Weekly Report
+      # 5. 生成周报HTML
+      - name: Generate Weekly HTML
         run: |
           python scripts/generate_weekly_html.py
 
-      # 6. 自动提交
+      # 6. 生成周报PPT
+      - name: Generate Weekly PPT
+        run: |
+          python scripts/generate_weekly_ppt.py
+
+      # 7. 自动提交
       - name: Commit Generated Files
         run: |
           git config user.name github-actions
@@ -66,4 +71,6 @@ jobs:
 
           git commit -m "auto update report" || echo "nothing to commit"
 
-          git push
+          git pull --rebase origin master
+
+          git push origin master
