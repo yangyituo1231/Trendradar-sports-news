@@ -1,14 +1,14 @@
 {
   "date": "2026-06-03",
-  "generated_time": "2026-06-03 13:52:04",
+  "generated_time": "2026-06-03 14:53:53",
   "source": "Google News RSS product signal monitor",
   "desc": "全年运动鞋服商品趋势信号监测：覆盖儿童、成人、童装、四季商品、大促节点、鞋科技、运动场景。已过滤过旧新闻、财经财报、微博广告、弱新浪促销帖和弱相关信号。该数据代表公开资讯热度信号，不等同于平台真实销量。",
   "query_count": 140,
-  "signal_count": 73,
+  "signal_count": 72,
   "top_brands": [
     [
       "安踏",
-      15
+      16
     ],
     [
       "安踏儿童",
@@ -23,15 +23,15 @@
       5
     ],
     [
-      "巴拉巴拉",
-      5
-    ],
-    [
       "FILA Kids",
       4
     ],
     [
       "New Balance",
+      3
+    ],
+    [
+      "巴拉巴拉",
       3
     ],
     [
@@ -44,6 +44,10 @@
     ],
     [
       "Crocs",
+      1
+    ],
+    [
+      "特步",
       1
     ],
     [
@@ -66,26 +70,26 @@
   "top_keywords": [
     [
       "儿童",
-      48
+      46
     ],
     [
       "新品",
-      26
+      25
     ],
     [
       "热卖",
-      19
+      18
     ],
     [
       "发布",
-      13
-    ],
-    [
-      "防晒",
-      11
+      12
     ],
     [
       "防晒衣",
+      10
+    ],
+    [
+      "防晒",
       10
     ],
     [
@@ -105,11 +109,11 @@
       5
     ],
     [
-      "凉感",
+      "凉感T恤",
       5
     ],
     [
-      "618",
+      "凉感",
       5
     ],
     [
@@ -133,7 +137,7 @@
       4
     ],
     [
-      "凉感T恤",
+      "618",
       4
     ],
     [
@@ -153,11 +157,11 @@
       3
     ],
     [
-      "保暖",
+      "开学季",
       3
     ],
     [
-      "开学季",
+      "六一",
       3
     ],
     [
@@ -169,16 +173,8 @@
       2
     ],
     [
-      "六一",
+      "保暖",
       2
-    ],
-    [
-      "羽毛球",
-      1
-    ],
-    [
-      "专业运动",
-      1
     ],
     [
       "足球",
@@ -189,15 +185,11 @@
       1
     ],
     [
-      "棉服",
+      "滑雪",
       1
     ],
     [
       "爆款",
-      1
-    ],
-    [
-      "速干",
       1
     ],
     [
@@ -208,35 +200,35 @@
   "top_categories": [
     [
       "儿童服装",
-      20
+      22
     ],
     [
       "儿童鞋",
-      14
+      13
     ],
     [
       "跑步科技",
       9
     ],
     [
-      "品牌新品",
-      8
-    ],
-    [
       "青少年成人化",
-      5
+      6
     ],
     [
       "户外轻运动",
-      5
+      6
+    ],
+    [
+      "品牌新品",
+      6
     ],
     [
       "防晒凉感",
-      4
+      3
     ],
     [
       "大促节点",
-      3
+      2
     ],
     [
       "篮球足球",
@@ -254,7 +246,7 @@
   "top_seasons": [
     [
       "全年",
-      44
+      43
     ],
     [
       "夏季",
@@ -317,29 +309,6 @@
       "source": "thepaper.cn",
       "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE42X2Y0ODZSRHAwdkZRcWNuM00ydDJmZ040SGNid3RyanZJaGFpejhWdmhVRGliU3JiTVlwZVpYQXdNeEFEcUJab2h5bFpyMzRnVFZibnlzd1lMcUUtWGc?oc=5",
       "pub_date": "Thu, 28 May 2026 12:39:00 GMT",
-      "heat": 66,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-03",
-      "title": "安踏儿童携手上海医疗机构共建儿童足弓成长实验室 - 新华网上海",
-      "short_title": "安踏儿童携手上海医疗机构共建儿童足弓成长实验室 - 新华网上海",
-      "query": "青少年 成人化 运动鞋",
-      "brand_hits": [
-        "安踏儿童",
-        "安踏"
-      ],
-      "keyword_hits": [
-        "足弓",
-        "儿童",
-        "青少年",
-        "成人化"
-      ],
-      "category": "儿童鞋",
-      "season_tag": "全年",
-      "source": "新华网上海",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9ESFBWbDAwdVhqVklpYk41bHA1MFoydWo5eXoxcWRuRWtPWktPeURvcGo1MmJPaWpCUFNIUjR1c0l5NTMtMEVpdXRLRVprTU9MYUdlZk00N19UblY2TVVBWWxEWmt0cXBZUGg0YnNDMTZlSXpj?oc=5",
-      "pub_date": "Wed, 27 May 2026 01:00:25 GMT",
       "heat": 66,
       "type": "product_signal"
     },
@@ -429,6 +398,27 @@
       "source": "Jiemian.com",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9kSTNrWWtackpsOV92MjdfdFY5ektEMjJtV25aa1hoamx1NzFtMVAxTkRQTU9QRm1ZXzZqWmpMR0kzbU44YnBlN2dZOTd4b2lqbG9idmRQQ3c?oc=5",
       "pub_date": "Wed, 04 Mar 2026 08:00:00 GMT",
+      "heat": 58,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-03",
+      "title": "安踏儿童携手上海医疗机构共建儿童足弓成长实验室 - 新华网上海",
+      "short_title": "安踏儿童携手上海医疗机构共建儿童足弓成长实验室 - 新华网上海",
+      "query": "安踏儿童 运动鞋",
+      "brand_hits": [
+        "安踏儿童",
+        "安踏"
+      ],
+      "keyword_hits": [
+        "足弓",
+        "儿童"
+      ],
+      "category": "儿童鞋",
+      "season_tag": "全年",
+      "source": "新华网上海",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9ESFBWbDAwdVhqVklpYk41bHA1MFoydWo5eXoxcWRuRWtPWktPeURvcGo1MmJPaWpCUFNIUjR1c0l5NTMtMEVpdXRLRVprTU9MYUdlZk00N19UblY2TVVBWWxEWmt0cXBZUGg0YnNDMTZlSXpj?oc=5",
+      "pub_date": "Wed, 27 May 2026 01:00:25 GMT",
       "heat": 58,
       "type": "product_signal"
     },
@@ -652,16 +642,16 @@
       "date": "2026-06-03",
       "title": "让孩子穿出环保未来：安踏儿童ESG 产品矩阵再升级 - 美通社",
       "short_title": "让孩子穿出环保未来：安踏儿童ESG 产品矩阵再升级 - 美通社",
-      "query": "安踏儿童 新品",
+      "query": "安踏儿童 冲锋衣",
       "brand_hits": [
         "安踏儿童",
         "安踏"
       ],
       "keyword_hits": [
-        "儿童",
-        "新品"
+        "冲锋衣",
+        "儿童"
       ],
-      "category": "品牌新品",
+      "category": "户外轻运动",
       "season_tag": "全年",
       "source": "美通社",
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9mWGVnZjU4T3BVY0QyNURwaU5xVVdnNl9vc09iV3lncTltc0UybFVjVE53aTNqT1NmQjdDQWtDSzFCN09PamZlVWd2aUNYUUh1QkRELWdJTQ?oc=5",
@@ -711,6 +701,28 @@
     },
     {
       "date": "2026-06-03",
+      "title": "FILA KIDS青少年滑雪公开赛成功举办 - 新华网",
+      "short_title": "FILA KIDS青少年滑雪公开赛成功举办 - 新华网",
+      "query": "FILA Kids 新品",
+      "brand_hits": [
+        "FILA Kids",
+        "FILA"
+      ],
+      "keyword_hits": [
+        "滑雪",
+        "青少年",
+        "新品"
+      ],
+      "category": "青少年成人化",
+      "season_tag": "全年",
+      "source": "新华网",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYWFEWHd4V0xxM1ZsQ1dsbGVnU1ZUOXBrRHAyN21MeVU1cXZoVkh5dmZIQWJ4czhwYTM4OUFkemRyY1NSTExJeHN0SXBjTTJJZFZWTTBIM0lhQ3dYTlMtWG5QLV9RVFZmTm80TFdTTGNXX00zWVFzLUhUVXc4SWlKd2Vjd3A?oc=5",
+      "pub_date": "Fri, 27 Dec 2024 08:00:00 GMT",
+      "heat": 50,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-03",
       "title": "FILA KIDS从青少年高尔夫生态到专业赋能，助力中国高球少年“挥杆见未来” - 美通社",
       "short_title": "FILA KIDS从青少年高尔夫生态到专业赋能，助力中国高球少年“挥杆见未来” - 美通社",
       "query": "FILA Kids 凉感T恤",
@@ -729,27 +741,6 @@
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBhVFp1S25SVlE1NGpmcmRud081d002Z3o1Rl81ZDBaTnBIR3drN01zWURhbHdNc0VaemEyUmMtS0htQl9VR2Niend1bWE0VU5pcUVucmNpNA?oc=5",
       "pub_date": "Sat, 09 May 2026 07:00:00 GMT",
       "heat": 50,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-03",
-      "title": "ibaby凉感透气儿童防晒衣斗篷 - 新浪网",
-      "short_title": "ibaby凉感透气儿童防晒衣斗篷 - 新浪网",
-      "query": "儿童防晒衣 热卖",
-      "brand_hits": [],
-      "keyword_hits": [
-        "防晒衣",
-        "儿童",
-        "热卖",
-        "防晒",
-        "凉感"
-      ],
-      "category": "儿童服装",
-      "season_tag": "夏季",
-      "source": "新浪网",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5ZVjU2aVdwQVhWai1LN1dmZEZ4a3JOcmRydXJHTDhEeVNteXctZDhDanoxRkF0UnlPQmpsTEJqbS1qUVJRXzZFYmlxT1Z5SmxSZ0RsOWZmaDF2Um9WNDdmRGRDWQ?oc=5",
-      "pub_date": "Fri, 22 May 2026 07:00:00 GMT",
-      "heat": 48,
       "type": "product_signal"
     },
     {
@@ -818,49 +809,6 @@
     },
     {
       "date": "2026-06-03",
-      "title": "FILA KIDS儿童跑鞋发布会_新浪新闻 - 新浪网",
-      "short_title": "FILA KIDS儿童跑鞋发布会_新浪新闻 - 新浪网",
-      "query": "FILA Kids 跑鞋",
-      "brand_hits": [
-        "FILA Kids",
-        "FILA"
-      ],
-      "keyword_hits": [
-        "儿童",
-        "发布"
-      ],
-      "category": "儿童鞋",
-      "season_tag": "全年",
-      "source": "新浪网",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9HTzBoeWpxVFVTQi12elNjSERWcUc0eWtJbnI2MnhxUWptUkRGY0NiUjdDOGhfWmtBMHI3U3BKb3cwR1BBd1JyQWFhUzg1enJaVGZIb3FadlBjanZyejhoYXRfWQ?oc=5",
-      "pub_date": "Wed, 25 Mar 2026 07:00:00 GMT",
-      "heat": 47,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-03",
-      "title": "巴拉巴拉儿童长袖T恤速干透气防晒夏新品 - 新浪网",
-      "short_title": "巴拉巴拉儿童长袖T恤速干透气防晒夏新品 - 新浪网",
-      "query": "巴拉巴拉 新品",
-      "brand_hits": [
-        "巴拉巴拉"
-      ],
-      "keyword_hits": [
-        "儿童",
-        "新品",
-        "防晒",
-        "速干"
-      ],
-      "category": "防晒凉感",
-      "season_tag": "夏季",
-      "source": "新浪网",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1welNCWFVfVTQ3Z2h0YTNjczctVVkzSklyWlN1TlA5QTVJWUMwSDlCU0NvT1RoZFhOcVdiMzczM1dyOUVjRFBGT01mYjBkeFNhSVBHanRaVmFTVDFNdVFpR21Rcw?oc=5",
-      "pub_date": "Tue, 28 Apr 2026 07:00:00 GMT",
-      "heat": 47,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-03",
       "title": "安踏儿童，百亿之路，何以成就？ - 维科号",
       "short_title": "安踏儿童，百亿之路，何以成就？ - 维科号",
       "query": "安踏儿童 羽绒服",
@@ -882,9 +830,30 @@
     },
     {
       "date": "2026-06-03",
+      "title": "儿童运动鞋：安踏 vs 特步 - 风闻",
+      "short_title": "儿童运动鞋：安踏 vs 特步 - 风闻",
+      "query": "安踏儿童 羽绒服",
+      "brand_hits": [
+        "安踏",
+        "特步"
+      ],
+      "keyword_hits": [
+        "羽绒服",
+        "儿童"
+      ],
+      "category": "儿童鞋",
+      "season_tag": "冬季",
+      "source": "风闻",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9idlIxRHBOd3BQYWlOQm1QVGF5SElhVHFUNFpLMk5VUWR5UmJHak81SXdfenppTWwwckxLX09yR1ktVzNEamJtOGNDeFFhLWNFTkctNF9ZMDJBbkEyNC1wUW9hT2RmWTRLZVE?oc=5",
+      "pub_date": "Wed, 12 Feb 2025 08:00:00 GMT",
+      "heat": 46,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-03",
       "title": "2026北京半马亲子跑圆满结束 李宁YOUNG动³科技护航青少年运动成长，开启亲子陪伴新方式 - 中华网",
       "short_title": "2026北京半马亲子跑圆满结束 李宁YOUNG动³科技护航青少年运动成长，开启亲子陪伴新方式 - 中华网",
-      "query": "李宁YOUNG 运动鞋",
+      "query": "李宁YOUNG 跑鞋",
       "brand_hits": [
         "李宁YOUNG",
         "李宁"
@@ -899,26 +868,6 @@
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE45Yi1fUWhBdFFPME5CY0prNXhoX3ByZUlxMWNPamt1WnQybDdDOVlBWE9DXy1rbWhydVJFWGE2V2FVWm5MZlJ4NVREQmR4OExpMjZJNUhWUGlyRjJoaVhyVHpoY2NmXzlQWEdjTQ?oc=5",
       "pub_date": "Wed, 15 Apr 2026 07:00:00 GMT",
       "heat": 46,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-03",
-      "title": "买儿童防晒服怕踩坑？这份选购+保养指南请收好 - 光明网",
-      "short_title": "买儿童防晒服怕踩坑？这份选购+保养指南请收好 - 光明网",
-      "query": "儿童防晒衣 热卖",
-      "brand_hits": [],
-      "keyword_hits": [
-        "防晒衣",
-        "儿童",
-        "热卖",
-        "防晒"
-      ],
-      "category": "儿童服装",
-      "season_tag": "夏季",
-      "source": "光明网",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE45MEw1eXV6OVo2UFBMVEpUV0dTNjUycFB2VGRQWENMNm4wX0FUVk5zMVM5OW1DTFBadGxKMURMMHMyYldUenN1SFFwMHN2dmh4VFpOeU1sNVlMMnNq?oc=5",
-      "pub_date": "Wed, 03 Jun 2026 01:26:00 GMT",
-      "heat": 45,
       "type": "product_signal"
     },
     {
@@ -938,6 +887,26 @@
       "source": "chinanews.com.cn",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9RTzN2Nno2amd4Q2FUbFlwZzlDLUJubUVaQV9SdkJjcHpybEdWQnZLNXFsT3A2S050Xy1uVVRLbG11amJDbmZvcEVQbjM5UzRhOGlaUGVmU284RnFoclB0TTV5a2NQVlhL?oc=5",
       "pub_date": "Mon, 01 Jun 2026 06:59:02 GMT",
+      "heat": 45,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-03",
+      "title": "买儿童防晒服怕踩坑？这份选购+保养指南请收好 - 光明网",
+      "short_title": "买儿童防晒服怕踩坑？这份选购+保养指南请收好 - 光明网",
+      "query": "儿童防晒衣 热卖",
+      "brand_hits": [],
+      "keyword_hits": [
+        "防晒衣",
+        "儿童",
+        "热卖",
+        "防晒"
+      ],
+      "category": "儿童服装",
+      "season_tag": "夏季",
+      "source": "光明网",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE45MEw1eXV6OVo2UFBMVEpUV0dTNjUycFB2VGRQWENMNm4wX0FUVk5zMVM5OW1DTFBadGxKMURMMHMyYldUenN1SFFwMHN2dmh4VFpOeU1sNVlMMnNq?oc=5",
+      "pub_date": "Wed, 03 Jun 2026 01:26:00 GMT",
       "heat": 45,
       "type": "product_signal"
     },
@@ -1146,6 +1115,27 @@
     },
     {
       "date": "2026-06-03",
+      "title": "小猪大卫儿童T恤轻薄裤夏季新品 - 新浪网",
+      "short_title": "小猪大卫儿童T恤轻薄裤夏季新品 - 新浪网",
+      "query": "儿童凉感T恤 热卖",
+      "brand_hits": [],
+      "keyword_hits": [
+        "凉感T恤",
+        "儿童",
+        "新品",
+        "热卖",
+        "凉感"
+      ],
+      "category": "儿童服装",
+      "season_tag": "夏季",
+      "source": "新浪网",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8xOW5XM0lHMnVSdUFFSW5QWHdhOGk1RXhqc0s4ZWhYTXNwWU5JVklGUlduQ2dLdDVLeTN3XzEtUkw4RzBwakpCdXVCTFVTN1ZVbVhnY2p5RTRhRHNFZVVJRHJyTQ?oc=5",
+      "pub_date": "Sat, 02 May 2026 07:00:00 GMT",
+      "heat": 41,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-03",
       "title": "科学家研制出“扛造”防水布料，不用再怕冲锋衣一洗就废 - 科学网—新闻",
       "short_title": "科学家研制出“扛造”防水布料，不用再怕冲锋衣一洗就废 - 科学网—新闻",
       "query": "儿童冲锋衣 防水",
@@ -1160,6 +1150,25 @@
       "source": "科学网—新闻",
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1YdGRaVWFUMWg1N3ByUjBaakhNZ1RmR2dEYWtkcXJ5SE9MWktCaXNOeFJQRjl0QVM0eXBiTVpobkpmQVpma0NPQ3I5VWNrN1QwWW1QZ0dBWlBHSkR6ZmhqcV9wN0I?oc=5",
       "pub_date": "Tue, 24 Mar 2026 07:00:00 GMT",
+      "heat": 41,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-03",
+      "title": "可致不孕不育 多品牌防水冲锋衣涉“永久化学物”PFAS - Sina finance",
+      "short_title": "可致不孕不育 多品牌防水冲锋衣涉“永久化学物”PFAS - Sina finance",
+      "query": "儿童冲锋衣 防水",
+      "brand_hits": [],
+      "keyword_hits": [
+        "冲锋衣",
+        "儿童",
+        "防水"
+      ],
+      "category": "儿童服装",
+      "season_tag": "全年",
+      "source": "Sina finance",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA4Mm9PZlZxZkU1QkJmTk9QWHF5dXhaQURzZ0Rma0Vjb2VOZ0VUeWJUZHBwSXJ3QzUzTmFpbW5yRmg1czlhQ2gzc0VDTzRiNXVoWVdiS1hES0o1WmN0Yk43Rm9GSUYyTVFma2FwWk9lVFpmTUI5NkVQWkp1MFI4MFU?oc=5",
+      "pub_date": "Sat, 18 Apr 2026 07:00:00 GMT",
       "heat": 41,
       "type": "product_signal"
     },
@@ -1244,25 +1253,6 @@
     },
     {
       "date": "2026-06-03",
-      "title": "冲锋衣争议背后：影视飓风涉夸大宣传，小韩哥被质疑不当竞争 - 腾讯新闻",
-      "short_title": "冲锋衣争议背后：影视飓风涉夸大宣传，小韩哥被质疑不当竞争 - 腾讯新闻",
-      "query": "儿童冲锋衣 防水",
-      "brand_hits": [],
-      "keyword_hits": [
-        "冲锋衣",
-        "儿童",
-        "防水"
-      ],
-      "category": "儿童服装",
-      "season_tag": "全年",
-      "source": "腾讯新闻",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBTdTIzZlJaZk9SZzJTRE5fOGd6Zmc0VjREMGFlbHdsVElaaVNWc2Q3ck9nTWd4NGFZNzdqMVZMZkg0OHZobnZENHlwWjZfakxGNHhuM21qaw?oc=5",
-      "pub_date": "Wed, 03 Dec 2025 08:00:00 GMT",
-      "heat": 39,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-03",
       "title": "“中产跑鞋”，又多一员 - 新华网",
       "short_title": "“中产跑鞋”，又多一员 - 新华网",
       "query": "缓震跑鞋 新品",
@@ -1277,27 +1267,6 @@
       "source": "新华网",
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOR3F2a2VKLUloSjlDc20xM0FOMVFzNDg0TVBnYzZ5MXhBdlp5REdwV0lwX3ZIWExtaS1YYVh0aUpWaDdvSVlSb3FvbElmc2I3ekVZZUdBQm80SExnc2hKQjU3VmRHU2c5LTZwQmNsRkpHdzRsalp1aGN0QkN2VVdfaA?oc=5",
       "pub_date": "Mon, 04 Aug 2025 07:00:00 GMT",
-      "heat": 39,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-03",
-      "title": "安踏系集体卖童装，巴拉巴拉最受伤 - 风闻",
-      "short_title": "安踏系集体卖童装，巴拉巴拉最受伤 - 风闻",
-      "query": "安踏儿童 冲锋衣",
-      "brand_hits": [
-        "巴拉巴拉",
-        "安踏"
-      ],
-      "keyword_hits": [
-        "冲锋衣",
-        "儿童"
-      ],
-      "category": "儿童服装",
-      "season_tag": "全年",
-      "source": "风闻",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE55T1lZM1RDcEU4WDdqZUh6ZFp2OVR3aHBiMzRjb0stcnktdGpqc3VIQ1NyTWZzeGk0Q3E5TWI4d1FGajNKaVQ5MjhpY2hZaGdIX3B2bEdqNlhseW8?oc=5",
-      "pub_date": "Wed, 26 Nov 2025 08:00:00 GMT",
       "heat": 39,
       "type": "product_signal"
     },
@@ -1344,26 +1313,6 @@
     },
     {
       "date": "2026-06-03",
-      "title": "巴拉巴拉超级纤维材料IP重磅发布 - 赢商网",
-      "short_title": "巴拉巴拉超级纤维材料IP重磅发布 - 赢商网",
-      "query": "巴拉巴拉 新品",
-      "brand_hits": [
-        "巴拉巴拉"
-      ],
-      "keyword_hits": [
-        "新品",
-        "发布"
-      ],
-      "category": "品牌新品",
-      "season_tag": "全年",
-      "source": "赢商网",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9uTnl5ZHZpVldVY25ISFZFMUM0cnJXbkxEV1hsRDFlcjh5aUtvQW9qS3JfbHJDb1VDYVNhNWJ1LWZwVldGeVphT05xMC0wRjg?oc=5",
-      "pub_date": "Thu, 03 Jul 2025 07:00:00 GMT",
-      "heat": 38,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-03",
       "title": "贝肽斯凉盾UPF200+儿童防晒衣夏季男女款 - 新浪网",
       "short_title": "贝肽斯凉盾UPF200+儿童防晒衣夏季男女款 - 新浪网",
       "query": "儿童防晒衣 热卖",
@@ -1379,6 +1328,26 @@
       "source": "新浪网",
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE82Wk1WUFVuTTRiMnVHZi1VbnNZZ2FvV3VtSGdPa2ZlUEpfMHhYaHVhYVd4ZVFWWW9jVVZsS3Joakpkc2VmLWV1bVpSMENRdnZWek9SSVJRVmlJcFdXSlE1NmJoVQ?oc=5",
       "pub_date": "Mon, 18 May 2026 07:00:00 GMT",
+      "heat": 37,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-03",
+      "title": "贝肽斯儿童防晒衣轻薄外套UPF200+防晒服 - 新浪网",
+      "short_title": "贝肽斯儿童防晒衣轻薄外套UPF200+防晒服 - 新浪网",
+      "query": "儿童防晒衣 热卖",
+      "brand_hits": [],
+      "keyword_hits": [
+        "防晒衣",
+        "儿童",
+        "热卖",
+        "防晒"
+      ],
+      "category": "儿童服装",
+      "season_tag": "夏季",
+      "source": "新浪网",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1QUURuN01kOG94Q0djVlY2MVZzLW1ScEpRcXNSX1JLRF9fMWpwVFQzZkFxRUFrcUp0YTR1R3lDSXp5bUczaktpSHRpVzhGTWhVd1Z1ZncyR3RsQWRybjVRckZaYw?oc=5",
+      "pub_date": "Sat, 23 May 2026 07:00:00 GMT",
       "heat": 37,
       "type": "product_signal"
     },
@@ -1424,6 +1393,24 @@
     },
     {
       "date": "2026-06-03",
+      "title": "“校服之都”织里发布2000款新品，加速“铺”向全国 - 潮新闻",
+      "short_title": "“校服之都”织里发布2000款新品，加速“铺”向全国 - 潮新闻",
+      "query": "童装 运动 新品",
+      "brand_hits": [],
+      "keyword_hits": [
+        "新品",
+        "发布"
+      ],
+      "category": "儿童服装",
+      "season_tag": "全年",
+      "source": "潮新闻",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tQ09DdFlvNXAyM3lCWDhZYjRsR3VrMm1QQl83ajAtZjYtYmhQMko3MDFXT0Jrb1JWakpzd01zR2tsWEt4UDlWazJjTGNuQWJFUVJWNTVLQnBOOWoxOGVuNEVB?oc=5",
+      "pub_date": "Sun, 10 May 2026 07:00:00 GMT",
+      "heat": 37,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-03",
       "title": "解锁户外灵感，Crocs卡骆驰携手全球品牌代言人檀健次推出夏日新品 - Supreme情报网",
       "short_title": "解锁户外灵感，Crocs卡骆驰携手全球品牌代言人檀健次推出夏日新品 - Supreme情报网",
       "query": "轻户外 运动品牌 新品",
@@ -1438,24 +1425,6 @@
       "source": "Supreme情报网",
       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBYZ0c4NlFrYnEwNG5EWjdpY2N3NV95MkswZ1JyU1ctanJwNHJKTFQ4R0F2NzdMMnhzcGZUV0xnZTktRlFVTkVnQVBkNUpsaGRoaG5kTmd2MGJmSTZxb05DQw?oc=5",
       "pub_date": "Tue, 26 May 2026 06:50:22 GMT",
-      "heat": 36,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-03",
-      "title": "健康减重热潮带动二手运动品类热卖 运动相机交易单量飙升丨变革618 - thecover.cn",
-      "short_title": "健康减重热潮带动二手运动品类热卖 运动相机交易单量飙升丨变革618 - thecover.cn",
-      "query": "618 运动品牌 热卖 商品",
-      "brand_hits": [],
-      "keyword_hits": [
-        "618",
-        "热卖"
-      ],
-      "category": "大促节点",
-      "season_tag": "全年",
-      "source": "thecover.cn",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4zTTd0WFBRTjJwTF9GUTY5N0EyMy13MEZreFhXbm1DOEJqaGdoUTZMN2NWWkxJMlZMSElyQkNNLWs1Si1kZEJFM2VnTlZvYVZWd3JHLVNWcGxTR0x6LVhRVlJacXRGS2JtMEFWb0V3M1V5N3lfcXJv?oc=5",
-      "pub_date": "Thu, 19 Jun 2025 07:00:00 GMT",
       "heat": 36,
       "type": "product_signal"
     },
@@ -1480,23 +1449,22 @@
     },
     {
       "date": "2026-06-03",
-      "title": "薰风2025新款羽毛球鞋儿童款专业运动鞋 - 新浪网",
-      "short_title": "薰风2025新款羽毛球鞋儿童款专业运动鞋 - 新浪网",
-      "query": "儿童运动鞋 新品 热卖",
-      "brand_hits": [],
-      "keyword_hits": [
-        "羽毛球",
-        "儿童",
-        "新品",
-        "热卖",
-        "专业运动"
+      "title": "安踏系集体卖童装，巴拉巴拉最受伤 - 风闻",
+      "short_title": "安踏系集体卖童装，巴拉巴拉最受伤 - 风闻",
+      "query": "安踏儿童 跑鞋",
+      "brand_hits": [
+        "巴拉巴拉",
+        "安踏"
       ],
-      "category": "儿童鞋",
+      "keyword_hits": [
+        "儿童"
+      ],
+      "category": "儿童服装",
       "season_tag": "全年",
-      "source": "新浪网",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBPaFlOWFdFY3V1VnNvSFlHbU4zNDZ5RnJFT3ZLSGdyNlQyTUtQT0dGOVhCZlVkal9NU0ZwTElXR1p0aGl4dEQ1bmhFOGs5ekh4RVBvYnRvSU9nckxPTXlNWjNZdw?oc=5",
-      "pub_date": "Thu, 28 May 2026 11:33:00 GMT",
-      "heat": 34,
+      "source": "风闻",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE55T1lZM1RDcEU4WDdqZUh6ZFp2OVR3aHBiMzRjb0stcnktdGpqc3VIQ1NyTWZzeGk0Q3E5TWI4d1FGajNKaVQ5MjhpY2hZaGdIX3B2bEdqNlhseW8?oc=5",
+      "pub_date": "Wed, 26 Nov 2025 08:00:00 GMT",
+      "heat": 35,
       "type": "product_signal"
     },
     {
@@ -1579,9 +1547,27 @@
     },
     {
       "date": "2026-06-03",
-      "title": "2025，国产运动品牌在儿童鞋服市场杀疯了 - 电子工程专辑",
-      "short_title": "2025，国产运动品牌在儿童鞋服市场杀疯了 - 电子工程专辑",
-      "query": "安踏儿童 开学季",
+      "title": "六一暖心公益行|MOMOCO护航孤独症儿童社会融合之路 - news.tom.com",
+      "short_title": "六一暖心公益行|MOMOCO护航孤独症儿童社会融合之路 - news.tom.com",
+      "query": "六一 童装 儿童运动",
+      "brand_hits": [],
+      "keyword_hits": [
+        "儿童",
+        "六一"
+      ],
+      "category": "儿童服装",
+      "season_tag": "全年",
+      "source": "news.tom.com",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1WSENIWTBtMkFDUHpPSWZaNnZoOWVtLU9Za1RrdkJidmE4WS1VcTNYcU1rM3p1dk1PM2RSYVJNUVZ0N0stOUkwNHZ5Z2QyZS15Q3FMZDJn?oc=5",
+      "pub_date": "Wed, 03 Jun 2026 05:40:00 GMT",
+      "heat": 34,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-03",
+      "title": "2025，国产运动品牌在儿童鞋服市场杀疯了 - Sina finance",
+      "short_title": "2025，国产运动品牌在儿童鞋服市场杀疯了 - Sina finance",
+      "query": "361儿童 开学季",
       "brand_hits": [],
       "keyword_hits": [
         "儿童",
@@ -1589,9 +1575,9 @@
       ],
       "category": "儿童鞋",
       "season_tag": "秋季",
-      "source": "电子工程专辑",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE42SHh4RDJOcWdULS1kWndyWlFCUnBHTWFsYnRUQnNrOHRNOTNwQ3h6dzVpZDJrV2o1dFQ3a29vbkREcHFvZV9oVHk3cFhINHRxQlVF?oc=5",
-      "pub_date": "Sun, 01 Jun 2025 07:00:00 GMT",
+      "source": "Sina finance",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE53anZyX1duWEpzdzVPTG9MMjNPaFk5VXp3c2JBS203Zk1qc1lPNEJjV2NfUmlHVzNqSXVRQkhVdWVmNDRXN0xZTTdHTjFxRkhfTEdkcFJEbVJIaVBRTjJXLU5jTmhCZUREOFkyVnNJX2pFamJWZXc?oc=5",
+      "pub_date": "Mon, 02 Jun 2025 07:00:00 GMT",
       "heat": 34,
       "type": "product_signal"
     },
@@ -1599,7 +1585,7 @@
       "date": "2026-06-03",
       "title": "361儿童夏季透气跑鞋！码数到42码！ - 新浪网",
       "short_title": "361儿童夏季透气跑鞋！码数到42码！ - 新浪网",
-      "query": "361儿童 跑鞋",
+      "query": "361儿童 运动鞋",
       "brand_hits": [
         "361儿童"
       ],
@@ -1656,6 +1642,24 @@
     },
     {
       "date": "2026-06-03",
+      "title": "新华网财经观察丨青少年国产跑鞋市场调查 - 新华网",
+      "short_title": "新华网财经观察丨青少年国产跑鞋市场调查 - 新华网",
+      "query": "青少年 成人化 运动鞋",
+      "brand_hits": [],
+      "keyword_hits": [
+        "青少年",
+        "成人化"
+      ],
+      "category": "青少年成人化",
+      "season_tag": "全年",
+      "source": "新华网",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQRk90akZic3FyRkI4dG9RZUF3VFR0VHZnUklyX3lPY2lwNXBJdkx4MDhfS1RWZDhxTUtLWmY3WW10RlpIeGQ1Ui1JYzdBRHVsSlRIaVNnMjVyOTViWDRFLTRjMlBMR3RrWERYZ19ZRzk0dTJ2Qm1uRXB2UHZzcURZYnJ3?oc=5",
+      "pub_date": "Wed, 25 Jun 2025 07:00:00 GMT",
+      "heat": 32,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-03",
       "title": "谁是冠军单品：618 热卖金榜揭晓162个细分品类TOP1！ - 品玩",
       "short_title": "谁是冠军单品：618 热卖金榜揭晓162个细分品类TOP1！ - 品玩",
       "query": "户外鞋 热卖",
@@ -1688,44 +1692,6 @@
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdUdsSmJNZFRmeVNLQ3VDeDg1SWtwM1R4WEYwNUlhMkRFcmZMRDBOWUNyc1J4Rkwtcm8zalF2Q1VUOEdYdHZEQURrSVlzZ1JDbUk1bjdfeEpfb0k2Z0IxWUp2cnBxV0F5WXV4TGRKcmM3Q2EzeTZYNzdnWHduSkFCdA?oc=5",
       "pub_date": "Fri, 29 May 2026 03:19:16 GMT",
       "heat": 32,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-03",
-      "title": "新华网财经观察丨青少年国产跑鞋市场调查 - 新华网",
-      "short_title": "新华网财经观察丨青少年国产跑鞋市场调查 - 新华网",
-      "query": "361儿童 运动鞋",
-      "brand_hits": [],
-      "keyword_hits": [
-        "儿童",
-        "青少年"
-      ],
-      "category": "青少年成人化",
-      "season_tag": "全年",
-      "source": "新华网",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQRk90akZic3FyRkI4dG9RZUF3VFR0VHZnUklyX3lPY2lwNXBJdkx4MDhfS1RWZDhxTUtLWmY3WW10RlpIeGQ1Ui1JYzdBRHVsSlRIaVNnMjVyOTViWDRFLTRjMlBMR3RrWERYZ19ZRzk0dTJ2Qm1uRXB2UHZzcURZYnJ3?oc=5",
-      "pub_date": "Wed, 25 Jun 2025 07:00:00 GMT",
-      "heat": 32,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-03",
-      "title": "平价能不能买到羽绒服？记者调查：有“羽绒棉服”含绒量竟然为零 - chinanews.com.cn",
-      "short_title": "平价能不能买到羽绒服？记者调查：有“羽绒棉服”含绒量竟然为零 - chinanews.com.cn",
-      "query": "儿童羽绒服 保暖",
-      "brand_hits": [],
-      "keyword_hits": [
-        "羽绒服",
-        "棉服",
-        "儿童",
-        "保暖"
-      ],
-      "category": "儿童服装",
-      "season_tag": "冬季",
-      "source": "chinanews.com.cn",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5RTEYzbnNxaUoyN3MyWnFCdHFXUFZYSlBzcFYzOFl2bjJ0bXg5MEc3RWhZOFgtTVJUSGMzeDJuTE5CWTB5dVI5ZWxjWDZSME54dnJBX3BHOHR1Q0J5S3g5eURRQnFVTjZ5?oc=5",
-      "pub_date": "Fri, 12 Dec 2025 08:00:00 GMT",
-      "heat": 31,
       "type": "product_signal"
     },
     {
