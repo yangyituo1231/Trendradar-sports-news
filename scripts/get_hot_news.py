@@ -682,7 +682,7 @@ def relevance_score(item: dict) -> int:
         score += 50
 
     if has_any(title, ["李宁", "安踏", "361", "特步", "耐克", "阿迪达斯", "Nike", "Adidas"]):
-        if has_any(title, BIG_EVENT_WORDS)::
+        if has_any(title, BIG_EVENT_WORDS):
             score += 50
 
     if has_any(title, ["进城办事", "热梗", "出圈", "爆火", "刷屏"]):
@@ -776,14 +776,7 @@ def dedupe(items):
 def bucket_name(title: str, item: dict = None):
     item = item or {}
 
-    big_event_words = [
-        "签约", "代言", "战略合作", "长期合作", "合作伙伴",
-        "联名", "新品发布", "发布会", "旗舰店", "实验室",
-        "收购", "投资", "中国战略", "爆火", "出圈", "热梗",
-        "定制", "限定", "首发"
-    ]
-
-    if has_any(title, big_event_words):
+    if has_any(title, BIG_EVENT_WORDS):
         return "big_event"
 
     if item.get("weather_abnormal"):
