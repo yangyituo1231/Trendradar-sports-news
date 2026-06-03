@@ -1,48 +1,37 @@
 {
   "date": "2026-06-03",
   "weekday": "星期三",
-  "generate_time": "2026-06-03 14:53",
-  "today_insight": "消费理性化、AI电商工具加速渗透，银发经济与夜经济成新增长极。",
-  "ai_summary": "**经营摘要：**宏观消费理性化，银发经济崛起，但儿童运动与亲子消费仍是刚需。当前最应关注：**夏季多雨天气持续抑制户外客流，需强化防雨、防滑及室内运动场景的361°儿童产品组合与营销**，并借势AI工具优化电商转化与会员运营，避开低价内卷，聚焦功能价值与情绪价值。",
+  "generate_time": "2026-06-03 15:42",
+  "today_insight": "李宁签约库里抢占美国市场，银发经济与情绪消费成新增长点，AI重塑电商设计。",
+  "ai_summary": "**摘要：**宏观消费理性化，银发经济与情绪消费成新增长点，但当前最应关注李宁签约库里带来的儿童运动品牌格局重塑。夏季多雨抑制户外客流，防雨、防滑及室内运动场景需求提升，需强化儿童运动品类在商场亲子赛事等场景的渗透。AI电商工具（如微盟“电商AI增长引擎”）正加速降本增效，应警惕同质化竞争。",
   "top_news": [
     {
-      "title": "10年10亿授权费，安德玛儿童操盘手接下「锐步中国」",
+      "title": "李宁携手库里品牌：中国运动巨头全球化战略的里程碑跃迁",
       "tag": "品牌竞争",
-      "source": "36kr.com",
-      "desc": "关注竞品儿童业务操盘手动向，评估对361°儿童市场格局影响",
+      "source": "新浪财经",
+      "desc": "李宁签约库里，可能改变童装竞争格局，需关注其儿童产品线布局。",
       "logo": "品牌",
       "icon": "🏷️",
       "class": "logo-purple",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5UTXRVbGZtUUVUMllrMHFyRTFXNXJmYnJiUmxuT1gtRlJOZjNXckVVekZzaF9RMjBSdEhVenhpVjhOMkFLUzNWWE1kTDVsZnI2TjZVVUl2YmhVNFI0Vi13alJlYUstODlhWWhyU195RkRtMEpFcU1CMw?oc=5",
+      "published_at": "Tue, 02 Jun 2026 12:10:00 GMT"
+    },
+    {
+      "title": "10年10亿授权费，安德玛儿童操盘手接下「锐步中国」",
+      "tag": "童装/儿童运动",
+      "source": "36kr.com",
+      "desc": "锐步中国操盘手经验丰富，或影响361°儿童在童装市场的竞争策略。",
+      "logo": "童装",
+      "icon": "🧒",
+      "class": "logo-sky",
       "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1RSnpkM19IMjBtbXhDRVlaTVBQc1VaV1pvaE1KV1RocUhfQWVhYTY3U2M1N0I5d1oxSnhkYVoyMHRZLUY5cWFSenpqWXB1UQ?oc=5",
       "published_at": "Tue, 02 Jun 2026 22:22:56 GMT"
-    },
-    {
-      "title": "武汉商圈沉浸式体验“出圈”，童趣经济迈入“全员参与”时代",
-      "tag": "商圈/零售经营",
-      "source": "长江网",
-      "desc": "洞察商圈童趣经济趋势，为线下门店活动策划和引流提供参考",
-      "logo": "商圈",
-      "icon": "🏬",
-      "class": "logo-dark",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9qNTZjNEltOVlLV3l3dFBCQWZ6aW9WOTRsdjlzUThBY3R2cnctYm5wYmk3WVpkNG9ZMDVfUGpuc21NT0tvdXdudWZpX3N5V1FXNDZXdDRYSDVJSlVrUTJkWTgtaw?oc=5",
-      "published_at": "Tue, 02 Jun 2026 16:00:00 GMT"
-    },
-    {
-      "title": "AI比电商更需要618",
-      "tag": "AI科技",
-      "source": "thepaper.cn",
-      "desc": "了解AI在电商大促中的应用，探索儿童鞋服AI营销和运营新工具",
-      "logo": "AI",
-      "icon": "🤖",
-      "class": "logo-blue",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0wNHBXT0JNeHA5RkxuZXJRRWVwR05pbTNhQ1dTa2RROFc4RmlkWE1Ua2ltWjVOYnJtS1JmSjhVYjRIaEpWS3JBZ1VTdkxxNGVwV0xBMWNnWk5oTUZTS3c?oc=5",
-      "published_at": "Wed, 03 Jun 2026 04:53:00 GMT"
     },
     {
       "title": "实测十大户外防晒衣榜单：夏季防晒衣哪家防晒力持久？",
       "tag": "户外/运动场景",
       "source": "邢台网",
-      "desc": "关注夏季户外防晒产品趋势，为儿童防晒运动装备开发提供方向",
+      "desc": "防晒衣热销季，可参考评测优化儿童户外产品功能与营销。",
       "logo": "户外",
       "icon": "🚴",
       "class": "logo-green",
@@ -50,110 +39,121 @@
       "published_at": "Tue, 02 Jun 2026 13:09:34 GMT"
     },
     {
-      "title": "促销热潮迭起 理性消费渐盛",
-      "tag": "宏观消费",
+      "title": "今年618，迎来AI购物“大乱斗”",
+      "tag": "大促/电商",
+      "source": "CBNData-第一财经商业数据中心",
+      "desc": "AI购物趋势兴起，可探索AI工具提升儿童品类线上转化率。",
+      "logo": "大促",
+      "icon": "🛒",
+      "class": "logo-blue",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE14RUYxVGkxbFhTLW92dE5JVm8zX0V6cFpYdGVxdF9NckFuNGV6Mm5XX2pLYlBCYVdFRGVXREZTa0lFUE1WVkpodFN2OE8yOWJ1X2RxeQ?oc=5",
+      "published_at": "Tue, 02 Jun 2026 06:34:03 GMT"
+    },
+    {
+      "title": "青岛市南区：深耕夜经济 打造时尚消费新地标",
+      "tag": "商圈/零售经营",
       "source": "搜狐网",
-      "desc": "把握消费者理性趋势，调整儿童产品定价和促销策略以提升转化",
-      "logo": "宏观",
-      "icon": "📊",
+      "desc": "夜经济带动商圈客流，可策划儿童运动体验活动引流。",
+      "logo": "商圈",
+      "icon": "🏬",
       "class": "logo-dark",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNUtmUVNjbHVTeGpWR0pSU09vcFl2UHQ4VTRLUGF0UDlQOUQzMnRmQ29HVmYxWVRXcGREaEVZN01EaUhadUhfYjE3Rm1pQ1lWczBRWlpDZEdtNXd4NlNfZWpTb3hSNkF3WFN6TzZ1N25CZnBIWUswU2FhOXpkSmtZUWVFM0JGeGhrNUFtVg?oc=5",
-      "published_at": "Wed, 03 Jun 2026 04:04:38 GMT"
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRFgxZ2h5T21YNVpKVE93eWd6S0p2NG15NVBYcEpuZVdHWGw4LUEzVmdnTHlXQVJWbmN1eVZGa19kZTJVSFIyZ2NsMl9waU5PdmlRbHB2d3FLM2xHdHJHSElUZVZJNkNrUTNKTlJLU3gtbnVla19SaTM5OU9mT0NLa1l4YjVJeWZHZWJZZg?oc=5",
+      "published_at": "Wed, 03 Jun 2026 03:41:13 GMT"
     }
   ],
   "warnings": [
-    "{'预警': '六一公益与童趣经济热潮下，361°儿童需强化“运动+公益”品牌形象，借势商圈亲子活动提升客流，但注意强降雨天气可能影响户外活动参与度。'}",
-    "{'预警': 'AI电商工具（如微盟“电商AI增长引擎”）兴起，建议361°儿童加速直播与会员系统AI化，优化618大促转化，但需警惕低价内卷对价格带的冲击。'}",
-    "{'预警': '银发经济与夜经济崛起，但361°儿童核心客群为青少年，需聚焦“她经济”与情绪消费趋势，在西安、青岛等夜经济商圈布局亲子运动品类，避免客流分散。'}"
+    "{'预警': '李宁签约库里抢占篮球市场，361°儿童需警惕高端篮球品类客流分流，建议强化三四线城市亲子赛事IP，稳固区域会员忠诚度。'}",
+    "{'预警': '全国降雨频繁影响户外客流，361°儿童应加大防雨、防滑功能鞋服直播推广，并联动室内商圈童趣活动，提升雨天到店转化。'}",
+    "{'预警': '银发经济与情绪消费崛起，361°儿童可借势六一公益热点，推出亲子情绪价值产品线，吸引Z世代家长会员，拓展中低价位带增量。'}"
   ],
   "region_reports": {
     "east": {
       "name": "华东",
       "city": "上海/江苏/浙江",
-      "hot": "华东强降雨扰动客流，情绪消费与亲子运动成核心信号",
-      "flow": "强降雨或雷阵雨导致户外客流减少，室内运动及情绪消费场景需求上升",
-      "focus": "室内运动+情绪消费",
-      "action": "在门店设置防雨防滑专区，主推室内运动鞋服，结合情绪消费主题开展亲子互动活",
+      "hot": "亲子赛事与情绪消费激活华东，强降雨催生室内运动需求",
+      "flow": "强降雨或雷阵雨扰动客流，亲子赛事与情绪消费活动吸引家庭客群，室内运动场景需求提升",
+      "focus": "亲子运动+防雨品类",
+      "action": "在门店入口设置防雨防滑专区，主推凉感速干T恤与防滑运动鞋，结合亲子赛事主",
       "star": "★★★"
     },
     "central": {
       "name": "华中",
       "city": "湖北/湖南/江西",
-      "hot": "武汉商圈沉浸式体验出圈，童趣经济迈入全员参与时代",
-      "flow": "强降雨或雷阵雨影响户外客流，商圈沉浸式体验吸引家庭客群到店",
-      "focus": "商圈联动+童趣体验",
-      "action": "与商圈合作打造沉浸式童趣体验区，主推实用型童装，结合亲子互动活动提升转化",
+      "hot": "武汉长沙商圈童趣经济火爆，防晒实用风成童装主流",
+      "flow": "强降雨或雷阵雨影响户外客流，商圈沉浸式体验与童趣活动吸引家庭客群，实用防晒童装需求上升",
+      "focus": "防晒经济+商圈联动",
+      "action": "与武汉长沙核心商圈合作打造防晒主题陈列专区，主推防晒凉感外套与防雨运动鞋",
       "star": "★★★"
     },
     "south": {
       "name": "华南",
       "city": "广东/广西",
-      "hot": "深圳订单爆满至10月，奥运冠军进校园带动运动热潮",
-      "flow": "强降雨或雷阵雨影响户外客流，校园运动场景及室内活动需求增加",
-      "focus": "校园运动+防雨品类",
-      "action": "在门店设置奥运冠军同款推荐区，主推防雨防滑运动鞋，结合校园亲子活动进行会",
+      "hot": "广东龙船文旅组合拳拉动客流，阵雨天气需防雨防滑",
+      "flow": "强降雨或雷阵雨扰动客流，龙船文旅活动吸引游客与家庭客群，室内运动场景需求提升",
+      "focus": "文旅客流+防雨品类",
+      "action": "在文旅商圈门店设置龙船主题打卡点，主推防滑运动鞋与速干运动服，结合文旅活",
       "star": "★★★"
     },
     "southwest": {
       "name": "西南",
       "city": "四川/重庆/贵州",
-      "hot": "成都亲子微度假解锁新玩法，重庆国潮风端午预热",
-      "flow": "小雨影响户外客流，亲子微度假及国潮主题消费场景升温",
-      "focus": "亲子微度假+国潮元素",
-      "action": "在门店打造亲子微度假主题陈列，融入国潮设计元素，主推轻防护运动鞋服，开展",
+      "hot": "成都亲子微度假解锁全家消费，小雨天防雨轻防护需求旺",
+      "flow": "降雨影响户外客流，亲子微度假活动带动家庭客群，室内运动与轻防护场景需求提升",
+      "focus": "亲子运动+轻防护品类",
+      "action": "在成都亲子微度假热门商圈门店设置亲子运动体验区，主推防雨轻便外套与凉感运",
       "star": "★★"
     },
     "northwest": {
       "name": "西北",
       "city": "陕西/甘肃/宁夏",
-      "hot": "西安夜间经济激发新活力，兰州马拉松激活城市经济",
-      "flow": "小雨影响户外客流，夜间经济及马拉松赛事带动商圈客流回升",
-      "focus": "夜间经济+赛事联动",
-      "action": "与商圈合作推出夜间运动体验活动，主推马拉松同款跑步鞋服，结合赛事热点进行",
+      "hot": "西安夜经济与兰州硬防晒热销，阴雨天商圈客流稳中有升",
+      "flow": "降雨影响户外客流，夜经济与商圈活动吸引家庭客群，硬防晒与室内运动场景需求提升",
+      "focus": "商圈客流+硬防晒品类",
+      "action": "在西安兰州核心商圈门店设置硬防晒与夜经济主题陈列，主推防晒凉感外套与防滑",
       "star": "★★"
     }
   },
   "trend_items": [
     {
-      "title": "AI电商增长引擎内测，儿童鞋服借势",
-      "desc": "微盟内测国内首个电商AI增长引擎，结合降雨天气，建议361°儿童强化线上AI导购与防雨鞋服推荐。",
-      "tag": "AI电商"
+      "title": "库里签约李宁，儿童篮球鞋热",
+      "desc": "李宁与库里签10年4亿美元合同，儿童篮球鞋需求激增，需快速推出联名款抢占市场。",
+      "tag": "品牌合作"
     },
     {
-      "title": "夜经济与童趣经济融合，商圈客流提升",
-      "desc": "西安、青岛夜经济及武汉童趣体验激发消费，降雨影响户外客流，建议361°儿童在商圈设室内互动区引流。",
-      "tag": "夜经济"
+      "title": "降雨影响客流，推室内运动装",
+      "desc": "今日多地强降雨，户外客流下降，建议主推防雨防滑儿童运动鞋及室内运动服饰。",
+      "tag": "天气应对"
     },
     {
-      "title": "银发经济崛起，儿童市场需关注代际消费",
-      "desc": "12亿老年人口重塑消费，结合六一公益行动，建议361°儿童推出祖孙运动鞋服套装，拓展家庭场景。",
-      "tag": "银发经济"
+      "title": "618促销潮，理性消费主导",
+      "desc": "电商618促销中，消费者更理性，需强化性价比和品质宣传，避免过度营销。",
+      "tag": "电商动态"
     },
     {
-      "title": "618理性消费盛行，AI比价影响决策",
-      "desc": "促销热潮中理性消费渐盛，AI比价工具普及，建议361°儿童以透气跑鞋等刚需品为主，避免过度促销。",
-      "tag": "理性消费"
+      "title": "夜经济升温，亲子运动场景",
+      "desc": "青岛夜经济成消费新地标，结合亲子赛事活动，可推出夜间运动鞋服促销。",
+      "tag": "消费趋势"
     }
   ],
   "words": [
-    "情绪消费",
-    "商场活动",
-    "直播带货",
-    "618",
-    "理性消费",
-    "亲子运动",
-    "AI",
-    "商圈客流",
-    "儿童运动",
-    "消费趋势",
     "防雨装备",
+    "AI",
+    "618",
     "防晒衣",
-    "户外运动",
-    "客流修复",
+    "情绪消费",
+    "儿童运动",
     "品牌站位",
+    "李宁",
+    "亲子运动",
+    "消费趋势",
+    "户外运动",
+    "直播带货",
     "夜经济",
+    "理性消费",
+    "客流修复",
     "银发经济",
-    "抖音直播"
+    "商圈客流",
+    "大促预售"
   ],
   "weather": {
     "north": "降雨影响客流，防雨、轻防护与室内运动场景需求提升",
