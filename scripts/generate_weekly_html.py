@@ -470,8 +470,58 @@ def render_hot_signal_items():
     return html
 
 def render_ai_judgement():
+
     if not ai_judgement:
         return ""
+
+    import json
+
+    try:
+        if isinstance(ai_judgement, str):
+            data = json.loads(ai_judgement)
+        else:
+            data = ai_judgement
+
+        core = data.get("core_judgement", "")
+        opp = data.get("opportunity", "")
+        risk = data.get("risk", "")
+        action = data.get("action", "")
+
+        return f"""
+        <div class="card ai-card">
+
+          <div class="card-title">AI经营判断</div>
+
+          <div class="ai-section">
+            <div class="ai-subtitle">核心判断</div>
+            <div class="ai-text">{core}</div>
+          </div>
+
+          <div class="ai-section">
+            <div class="ai-subtitle">机会判断</div>
+            <div class="ai-text">{opp}</div>
+          </div>
+
+          <div class="ai-section">
+            <div class="ai-subtitle">风险判断</div>
+            <div class="ai-text">{risk}</div>
+          </div>
+
+          <div class="ai-section">
+            <div class="ai-subtitle">下周动作</div>
+            <div class="ai-text">{action}</div>
+          </div>
+
+        </div>
+        """
+
+    except Exception:
+        return f"""
+        <div class="card ai-card">
+          <div class="card-title">AI经营判断</div>
+          <div class="ai-content">{ai_judgement}</div>
+        </div>
+        """
 
     return f"""
     <div class="card ai-card">
@@ -621,6 +671,27 @@ li{{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#23
 .suggest-card{{border-radius:18px;background:linear-gradient(135deg,#fff7ed,#ffffff);border:1px solid #fed7aa;padding:16px;font-size:15px;line-height:1.55;font-weight:850;color:#7c2d12;min-height:130px}}
 .footer{{text-align:center;color:#7184a3;font-size:12px;margin:14px 0 4px}}
 .ai-card{{margin-top:16px;background:linear-gradient(135deg,#f8fbff,#ffffff)}}
+.ai-section{
+    margin-top:14px;
+    padding:14px;
+    border-radius:12px;
+    background:#f8fbff;
+    border:1px solid #dbe6f6;
+}
+
+.ai-subtitle{
+    font-size:15px;
+    font-weight:950;
+    color:#0b4db3;
+    margin-bottom:8px;
+}
+
+.ai-text{
+    font-size:14px;
+    line-height:1.8;
+    color:#233e68;
+    font-weight:700;
+}
 .ai-content{{font-size:16px;line-height:1.75;font-weight:800;color:#233e68;white-space:pre-wrap}}
 .empty{{color:#8a99ad;font-size:14px;padding:20px;text-align:center}}
 </style>
