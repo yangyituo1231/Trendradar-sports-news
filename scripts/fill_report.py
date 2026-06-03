@@ -1036,10 +1036,32 @@ def make_ai_warnings():
             '局地降雨影响到店节奏，室内客流承接能力将影响周末门店转化效率。',
             '轻户外与亲子场景持续升温，帽包、防晒与运动凉鞋存在连带增长机会。'
         ]
-    result = [
-        clean_title(str(x)).replace('【预警：','').replace('】','')
-        for x in arr if clean_title(str(x))
-    ]
+    result = []
+   
+    for x in arr:
+        if isinstance(x, dict):
+            text = (
+                x.get("risk")
+                or x.get("warning")
+                or x.get("content")
+                or x.get("text")
+                or x.get("desc")
+                or x.get("title")
+                or ""
+            )
+        else:
+            text = str(x)
+
+        text = clean_title(text)
+        text = text.replace("【预警：", "").replace("】", "")
+        text = text.replace("{", "").replace("}", "")
+        text = text.replace("'risk':", "").replace('"risk":', "")
+        text = text.replace("'warning':", "").replace('"warning":', "")
+        text = text.replace("'content':", "").replace('"content":', "")
+
+        if text:
+            result.append(text)
+            
     while len(result) < 3:
         result.append('区域消费与天气变化仍需动态关注。')
     return result[:3]
