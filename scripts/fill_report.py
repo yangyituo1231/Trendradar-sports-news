@@ -70,9 +70,14 @@ if news_file.exists():
     except Exception as e:
         print('load latest news error:', repr(e))
 
+def news_rank_score(item):
+    score = int(item.get("score") or 0)
+    pub_time = parse_news_time(item)
+    return score * 10000000000 + pub_time
+
 news_items = sorted(
     [x for x in news_items if isinstance(x, dict)],
-    key=parse_news_time,
+    key=news_rank_score,
     reverse=True
 )
 
@@ -373,7 +378,7 @@ def pick_top_news_rule():
 
 def pick_top_news_deepseek():
     if not titles: return pick_top_news_rule()
-    news_text = '\n'.join(f"{i+1}. {clean_title(item.get('title',''))}｜{item.get('source','')}" for i,item in enumerate(news_items[:55]) if isinstance(item,dict) and item.get('title'))
+    news_text = '\n'.join(f"{i+1}. {clean_title(item.get('title',''))}｜{item.get('source','')}" for i,item in enumerate(news_items[:80]) if isinstance(item,dict) and item.get('title'))
     allowed_categories = '、'.join(CATEGORY_RULES.keys())
     prompt = f"""
 你是运动鞋服行业资讯筛选助手。请从以下新闻中选出5条最适合361°儿童经营管理部每日阅读的重点资讯。
