@@ -319,6 +319,12 @@ BIG_EVENT_KEYWORDS = [
     "篮球鞋 代言",
     "户外品牌 联名",
 ]
+BIG_EVENT_WORDS = [
+    "签约", "代言", "战略合作", "长期合作", "合作伙伴",
+    "联名", "新品发布", "发布会", "旗舰店", "实验室",
+    "收购", "投资", "中国战略", "爆火", "出圈", "热梗",
+    "定制", "限定", "首发"
+]
 
 AI_AND_TREND_KEYWORDS = [
     "AI 消费 零售",
@@ -668,21 +674,15 @@ def relevance_score(item: dict) -> int:
     source = item.get("source", "")
 
     score = 0
-    big_event_words = [
-        "签约", "代言", "战略合作", "长期合作", "合作伙伴",
-        "联名", "新品发布", "发布会", "旗舰店", "实验室",
-        "收购", "投资", "中国战略", "爆火", "出圈", "热梗",
-        "定制", "限定", "首发"
-    ]
 
-    if has_any(title, big_event_words):
+    if has_any(title, BIG_EVENT_WORDS):
         score += 60
 
     if has_any(title, ["库里", "Curry", "詹姆斯", "东契奇", "谷爱凌", "苏炳添", "张伟丽"]):
         score += 50
 
     if has_any(title, ["李宁", "安踏", "361", "特步", "耐克", "阿迪达斯", "Nike", "Adidas"]):
-        if has_any(title, big_event_words):
+        if has_any(title, BIG_EVENT_WORDS)::
             score += 50
 
     if has_any(title, ["进城办事", "热梗", "出圈", "爆火", "刷屏"]):
