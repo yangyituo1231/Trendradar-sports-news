@@ -322,18 +322,18 @@ BIG_EVENT_KEYWORDS = [
 BIG_EVENT_WORDS = [
     "签约", "代言", "战略合作", "长期合作", "合作伙伴",
     "联名", "新品发布", "发布会", "旗舰店", "实验室",
-    "收购", "投资", "中国战略", "爆火", "出圈", "热梗",
+    "收购", "投资", "中国战略",
     "定制", "限定", "首发"
 ]
 TREND_SCORE_BONUS = {
-    "热梗": 100,
-    "爆火": 100,
-    "出圈": 90,
-    "刷屏": 90,
-    "小红书": 50,
-    "抖音": 50,
-    "社交媒体": 40,
-    "年轻人": 35,
+    "热梗": 20,
+    "爆火": 20,
+    "出圈": 20,
+    "刷屏": 20,
+    "小红书": 25,
+    "抖音": 25,
+    "社交媒体": 20,
+    "年轻人": 20,
 }
 
 AI_AND_TREND_KEYWORDS = [
@@ -704,8 +704,25 @@ def relevance_score(item: dict) -> int:
         if has_any(title, BIG_EVENT_WORDS):
             score += 50
 
-    if has_any(title, ["进城办事", "热梗", "出圈", "爆火", "刷屏"]):
-        score += 70
+    if (
+        has_any(title, ["热梗", "出圈", "爆火", "刷屏"])
+        and has_any(
+            title,
+            [
+                "运动",
+                "品牌",
+                "童装",
+                "儿童",
+                "消费",
+                "商场",
+                "零售",
+                "客流",
+                "抖音",
+               "小红书",
+            ],
+        )
+    ):
+        score += 40
     for word, weight in HOT_WORDS.items():
         if word in title:
             score += weight
@@ -822,7 +839,13 @@ def dedupe(items):
 def bucket_name(title: str, item: dict = None):
     item = item or {}
 
-    if has_any(title, BIG_EVENT_WORDS) or has_any(title, ["进城办事", "热梗", "出圈", "爆火", "刷屏"]):
+    if has_any(title, BIG_EVENT_WORDS):
+        return "big_event"
+
+    if (
+        has_any(title, ["热梗", "出圈", "爆火", "刷屏"])
+        and has_any(title, ["运动", "品牌", "童装", "儿童", "消费", "商场", "零售", "客流", "抖音", "小红书"])
+    ):
         return "big_event"
 
     if item.get("weather_abnormal"):
