@@ -325,6 +325,16 @@ BIG_EVENT_WORDS = [
     "收购", "投资", "中国战略", "爆火", "出圈", "热梗",
     "定制", "限定", "首发"
 ]
+TREND_SCORE_BONUS = {
+    "热梗": 100,
+    "爆火": 100,
+    "出圈": 90,
+    "刷屏": 90,
+    "小红书": 50,
+    "抖音": 50,
+    "社交媒体": 40,
+    "年轻人": 35,
+}
 
 AI_AND_TREND_KEYWORDS = [
     "AI 消费 零售",
@@ -675,6 +685,10 @@ def relevance_score(item: dict) -> int:
 
     score = 0
 
+    for word, bonus in TREND_SCORE_BONUS.items():
+        if word in title:
+            score += bonus
+
     if has_any(title, BIG_EVENT_WORDS):
         score += 60
 
@@ -754,15 +768,42 @@ def relevance_score(item: dict) -> int:
 
     score += freshness_bonus(item)
     return score
+def event_key(title: str) -> str:
+    title = normalize_title(title)
 
+    event_pairs = [
+        ["李宁", "库里"],
+        ["李宁", "Curry"],
+        ["安踏", "欧文"],
+        ["安踏", "凯里"],
+        ["安踏", "张雪峰"],
+        ["阿迪达斯", "进城办事"],
+        ["Adidas", "进城办事"],
+        ["耐克", "詹姆斯"],
+        ["Nike", "詹姆斯"],
+        ["361", "签约"],
+        ["特步", "签约"],
+    ]
+
+    for pair in event_pairs:
+        if all(k in title for k in pair):
+            return "_".join(pair)
+
+    return re.sub(r"\W+", "", title.lower())
 
 def dedupe(items):
     seen = set()
     result = []
 
-    for item in items:
+    sorted_items = sorted(
+        items,
+        key=lambda x: relevance_score(x),
+        reverse=True
+    )
+
+    for item in sorted_items:
         title = normalize_title(item.get("title", ""))
-        key = re.sub(r"\W+", "", title.lower())
+        key = event_key(title)
 
         if not key or key in seen:
             continue
@@ -776,8 +817,8 @@ def dedupe(items):
 def bucket_name(title: str, item: dict = None):
     item = item or {}
 
-    if has_any(title, BIG_EVENT_WORDS):
-        return "big_event"
+    if has_any(title, BIG_EVENT_WORDS) or has_any(title, ["进城办事", "热梗", "出圈", "爆火", "刷屏"]):
+    return "big_event"
 
     if item.get("weather_abnormal"):
         return "local_weather"
@@ -831,20 +872,20 @@ def diversify(items):
         buckets[bucket_name(item.get("title", ""), item)].append(item)
 
     limits = {
-        "big_event": 20,
-        "local_weather": 20,
-        "local_business": 24,
-        "campaign": 16,
-        "kids": 14,
-        "weather": 14,
-        "ai_tech": 10,
-        "macro": 10,
+        "big_event": 10,
+        "local_weather": 18,
+        "local_business": 22,
+        "campaign": 14,
+        "kids": 12,
+        "weather": 12,
+        "ai_tech": 8,
+        "macro": 8,
         "trend": 10,
-        "platform": 12,
-        "store": 12,
+        "platform": 10,
+        "store": 10,
         "outdoor": 10,
-        "brand": 10,
-        "other": 5,
+        "brand": 8,
+        "other": 4,
     }
 
     order = [
