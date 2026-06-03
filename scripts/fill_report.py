@@ -1063,8 +1063,12 @@ def make_ai_warnings():
             result.append(text)
             
     while len(result) < 3:
-        result.append('区域消费与天气变化仍需动态关注。')
-    return result[:3]
+        fallback = [
+            "大促与品牌新闻热度上升，需关注爆款库存、价格带和直播同款承接。", 
+            "降雨与高温交替影响客流，需提前调整防雨、防晒和室内运动场景陈列。",
+           "儿童运动与亲子场景升温，门店可强化会员触达和试穿体验转化。"
+        ]
+        result.append(fallback[len(result)])
 
 warnings = make_ai_warnings()
 
