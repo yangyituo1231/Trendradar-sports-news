@@ -211,7 +211,7 @@ def extract_json(text):
         return json.loads(text)
     except Exception:
         pass
-    for pattern in [r'$begin:math:display$\.\*$end:math:display$', r'\{.*\}']:
+    for pattern in [r'\[.*\]', r'\{.*\}']:
         m = re.search(pattern, text, re.S)
         if m:
             try:
@@ -1069,7 +1069,9 @@ def make_ai_warnings():
            "儿童运动与亲子场景升温，门店可强化会员触达和试穿体验转化。"
         ]
         result.append(fallback[len(result)])
+
     return result[:3]
+    
 
 warnings = make_ai_warnings()
 
