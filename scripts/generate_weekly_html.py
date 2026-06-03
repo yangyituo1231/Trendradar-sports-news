@@ -523,13 +523,6 @@ def render_ai_judgement():
         </div>
         """
 
-    return f"""
-    <div class="card ai-card">
-      <div class="card-title">AI经营判断</div>
-      <div class="ai-content">{ai_judgement}</div>
-    </div>
-    """
-
 def render_product_suggestion_cards():
     html = ""
     for item in product_suggestions[:4]:
@@ -671,27 +664,27 @@ li{{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#23
 .suggest-card{{border-radius:18px;background:linear-gradient(135deg,#fff7ed,#ffffff);border:1px solid #fed7aa;padding:16px;font-size:15px;line-height:1.55;font-weight:850;color:#7c2d12;min-height:130px}}
 .footer{{text-align:center;color:#7184a3;font-size:12px;margin:14px 0 4px}}
 .ai-card{{margin-top:16px;background:linear-gradient(135deg,#f8fbff,#ffffff)}}
-.ai-section{
+.ai-section{{
     margin-top:14px;
     padding:14px;
     border-radius:12px;
     background:#f8fbff;
     border:1px solid #dbe6f6;
-}
+}}
 
-.ai-subtitle{
+.ai-subtitle{{
     font-size:15px;
     font-weight:950;
     color:#0b4db3;
     margin-bottom:8px;
-}
+}}
 
-.ai-text{
+.ai-text{{
     font-size:14px;
     line-height:1.8;
     color:#233e68;
     font-weight:700;
-}
+}}
 .ai-content{{font-size:16px;line-height:1.75;font-weight:800;color:#233e68;white-space:pre-wrap}}
 .empty{{color:#8a99ad;font-size:14px;padding:20px;text-align:center}}
 </style>
