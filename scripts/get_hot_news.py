@@ -298,6 +298,27 @@ CITY_WEATHER_ABNORMAL_QUERIES = [
     "大风 防晒 户外 消费",
     "降雨 购物中心 客流 亲子",
 ]
+BIG_EVENT_KEYWORDS = [
+    "运动品牌 签约 代言",
+    "运动品牌 战略合作",
+    "运动品牌 联名 新品",
+    "运动品牌 发布会",
+    "运动品牌 旗舰店",
+    "运动品牌 实验室",
+    "运动品牌 收购 投资",
+    "运动品牌 中国战略",
+    "运动品牌 社交媒体 热梗",
+    "运动品牌 爆火 出圈",
+    "运动品牌 明星合作",
+    "运动品牌 运动员合作",
+    "童装品牌 新品发布",
+    "儿童运动 品牌合作",
+    "儿童运动 新品发布",
+    "运动童装 联名",
+    "跑鞋 品牌合作",
+    "篮球鞋 代言",
+    "户外品牌 联名",
+]
 
 AI_AND_TREND_KEYWORDS = [
     "AI 消费 零售",
@@ -358,7 +379,8 @@ AI_AND_TREND_KEYWORDS = [
 ]
 
 KEYWORDS = (
-    CAMPAIGN_KEYWORDS.get(CAMPAIGN, DEFAULT_CAMPAIGN_KEYWORDS)
+    BIG_EVENT_KEYWORDS
+    + CAMPAIGN_KEYWORDS.get(CAMPAIGN, DEFAULT_CAMPAIGN_KEYWORDS)
     + BASE_KEYWORDS
     + LOCAL_NEWS_QUERIES
     + CITY_WEATHER_ABNORMAL_QUERIES
@@ -646,7 +668,25 @@ def relevance_score(item: dict) -> int:
     source = item.get("source", "")
 
     score = 0
+    big_event_words = [
+        "签约", "代言", "战略合作", "长期合作", "合作伙伴",
+        "联名", "新品发布", "发布会", "旗舰店", "实验室",
+        "收购", "投资", "中国战略", "爆火", "出圈", "热梗",
+        "定制", "限定", "首发"
+    ]
 
+    if has_any(title, big_event_words):
+        score += 60
+
+    if has_any(title, ["库里", "Curry", "詹姆斯", "东契奇", "谷爱凌", "苏炳添", "张伟丽"]):
+        score += 50
+
+    if has_any(title, ["李宁", "安踏", "361", "特步", "耐克", "阿迪达斯", "Nike", "Adidas"]):
+        if has_any(title, big_event_words):
+            score += 50
+
+    if has_any(title, ["进城办事", "热梗", "出圈", "爆火", "刷屏"]):
+        score += 70
     for word, weight in HOT_WORDS.items():
         if word in title:
             score += weight
@@ -732,10 +772,19 @@ def dedupe(items):
         result.append(item)
 
     return result
-
-
+        
 def bucket_name(title: str, item: dict = None):
     item = item or {}
+
+    big_event_words = [
+        "签约", "代言", "战略合作", "长期合作", "合作伙伴",
+        "联名", "新品发布", "发布会", "旗舰店", "实验室",
+        "收购", "投资", "中国战略", "爆火", "出圈", "热梗",
+        "定制", "限定", "首发"
+    ]
+
+    if has_any(title, big_event_words):
+        return "big_event"
 
     if item.get("weather_abnormal"):
         return "local_weather"
@@ -763,11 +812,13 @@ def bucket_name(title: str, item: dict = None):
         return "outdoor"
     if has_any(title, list(BRAND_WORDS.keys())):
         return "brand"
+
     return "other"
 
 
 def diversify(items):
     buckets = {
+        "big_event": [],
         "local_weather": [],
         "local_business": [],
         "campaign": [],
@@ -787,6 +838,7 @@ def diversify(items):
         buckets[bucket_name(item.get("title", ""), item)].append(item)
 
     limits = {
+        "big_event": 20,
         "local_weather": 20,
         "local_business": 24,
         "campaign": 16,
@@ -803,6 +855,7 @@ def diversify(items):
     }
 
     order = [
+        "big_event",
         "local_weather",
         "local_business",
         "campaign",
@@ -823,12 +876,13 @@ def diversify(items):
         final.extend(buckets[key][:limits[key]])
 
     final.sort(
-    key=lambda x: (
-        x.get("score", 0),
-        parse_pub_time(x).timestamp() if parse_pub_time(x) else 0
-    ),
-    reverse=True
-)
+        key=lambda x: (
+            x.get("score", 0),
+            parse_pub_time(x).timestamp() if parse_pub_time(x) else 0
+        ),
+        reverse=True
+    )
+
     return final[:MAX_ITEMS]
 
 
