@@ -911,12 +911,12 @@ def main():
             filtered.append(item)
 
     filtered.sort(
-    key=lambda x: (
-        x.get("score", 0),
-        parse_pub_time(x).timestamp() if parse_pub_time(x) else 0
-    ),
-    reverse=True
-)
+        key=lambda x: (
+            x.get("score", 0),
+            parse_pub_time(x).timestamp() if parse_pub_time(x) else 0
+        ),
+        reverse=True
+    )
     filtered = diversify(filtered)
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
