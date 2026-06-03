@@ -81,8 +81,12 @@ jobs:
           python scripts/get_product_signals.py
           
       - name: Analyze Weekly Data
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
-          python scripts/analyze_weekly.py
+          echo "DEEPSEEK key exists? ${{ secrets.DEEPSEEK_API_KEY != '' }}"
+    python -c "import os; print('python env exists?', bool(os.getenv('DEEPSEEK_API_KEY')))"
+    python scripts/analyze_weekly.py
     
       - name: Generate Weekly HTML
         run: |
