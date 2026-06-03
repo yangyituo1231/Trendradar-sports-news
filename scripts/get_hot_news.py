@@ -818,7 +818,7 @@ def bucket_name(title: str, item: dict = None):
     item = item or {}
 
     if has_any(title, BIG_EVENT_WORDS) or has_any(title, ["进城办事", "热梗", "出圈", "爆火", "刷屏"]):
-    return "big_event"
+        return "big_event"
 
     if item.get("weather_abnormal"):
         return "local_weather"
