@@ -57,7 +57,6 @@ def parse_news_time(item):
     if not v:
         return 0
     try:
-        from email.utils import parsedate_to_datetime
         dt = parsedate_to_datetime(v)
         return dt.timestamp()
     except Exception:
@@ -94,6 +93,7 @@ if weather_file.exists():
         weather = json.loads(weather_file.read_text(encoding='utf-8'))
     except Exception as e:
         print('load weather error:', repr(e))
+
 weather_regions = weather.get('regions', {}) if isinstance(weather, dict) else {}
 
 def get_weather_region(key):
@@ -191,7 +191,8 @@ def weather_icon(key):
 # =========================================================
 def deepseek_client():
     api_key = os.getenv('DEEPSEEK_API_KEY')
-    if not api_key: return None
+    if not api_key:
+        return None
     try:
         from openai import OpenAI
         return OpenAI(api_key=api_key, base_url='https://api.deepseek.com')
@@ -200,7 +201,8 @@ def deepseek_client():
         return None
 
 def extract_json(text):
-    if not text: return None
+    if not text:
+        return None
     text = text.strip()
     text = re.sub(r'^```json\s*', '', text)
     text = re.sub(r'^```\s*', '', text)
@@ -209,17 +211,17 @@ def extract_json(text):
         return json.loads(text)
     except Exception:
         pass
-    for pattern in [r'\[.*\]', r'\{.*\}']:
+    for pattern in [r'$begin:math:display$\.\*$end:math:display$', r'\{.*\}']:
         m = re.search(pattern, text, re.S)
         if m:
-            try: return json.loads(m.group(0))
-            except Exception: pass
+            try:
+                return json.loads(m.group(0))
+            except Exception:
+                pass
     return None
 
 def ask_deepseek_json(prompt, max_tokens=900):
-
     client = deepseek_client()
-
     if client is None:
         return None
 
@@ -233,18 +235,16 @@ def ask_deepseek_json(prompt, max_tokens=900):
             temperature=0.22,
             max_tokens=max_tokens,
         )
-
         raw_text = resp.choices[0].message.content.strip()
-
         return extract_json(raw_text)
-
     except Exception as e:
         print('DeepSeek JSON error:', repr(e))
         return None
 
 def ask_deepseek_text(prompt, max_tokens=220):
     client = deepseek_client()
-    if client is None: return None
+    if client is None:
+        return None
     try:
         resp = client.chat.completions.create(
             model='deepseek-chat',
@@ -263,11 +263,88 @@ def ask_deepseek_text(prompt, max_tokens=220):
 # =========================================================
 # 第一部分：重点资讯精选
 # =========================================================
+
+MAJOR_EVENT_WORDS = [
+    '签约', '代言', '联名', '战略合作', '长期合作', '合作伙伴',
+    '新品发布', '发布会', '旗舰店', '实验室', '换帅', 'CEO',
+    '总裁', '董事长', '收购', '投资', '中国战略', '首发',
+    '限定', '定制', '入局', '合作'
+]
+
+MAJOR_BRAND_WORDS = [
+    '安踏', '李宁', '361', '361度', '361儿童', '特步',
+    '耐克', 'Nike', '阿迪达斯', 'Adidas', 'Puma', '彪马',
+    'FILA', 'FILA KIDS', '李宁YOUNG', '安踏儿童', '特步儿童',
+    'HOKA', '昂跑', 'On', '亚瑟士', 'ASICS', 'New Balance',
+    'lululemon', '萨洛蒙', 'Salomon', '始祖鸟'
+]
+
+TRAFFIC_EVENT_WORDS = [
+    '热梗', '爆火', '出圈', '刷屏', '小红书', '抖音', '社交媒体',
+    '种草', '年轻人', '顶流', '爆款', '出街', '破圈'
+]
+
+INDUSTRY_CONTEXT_WORDS = [
+    '运动', '鞋', '鞋服', '童装', '儿童', '品牌', '消费', '零售',
+    '商场', '门店', '户外', '跑步', '防晒', '凉感', '618', '大促'
+]
+
+def is_major_industry_event(title):
+    title = clean_title(title)
+
+    brand_event = (
+        any(b in title for b in MAJOR_BRAND_WORDS)
+        and any(w in title for w in MAJOR_EVENT_WORDS)
+    )
+
+    traffic_event = (
+        any(w in title for w in TRAFFIC_EVENT_WORDS)
+        and any(w in title for w in INDUSTRY_CONTEXT_WORDS)
+    )
+
+    management_event = (
+        any(b in title for b in MAJOR_BRAND_WORDS)
+        and any(w in title for w in ['换帅', 'CEO', '总裁', '董事长', '高管', '管理层'])
+    )
+
+    return brand_event or traffic_event or management_event
+
+def major_event_score(item):
+    title = clean_title(item.get('title',''))
+    score = 0
+
+    if is_major_industry_event(title):
+        score += 120
+
+    if any(b in title for b in MAJOR_BRAND_WORDS):
+        score += 35
+
+    if any(w in title for w in MAJOR_EVENT_WORDS):
+        score += 60
+
+    if any(w in title for w in TRAFFIC_EVENT_WORDS):
+        score += 40
+
+    if any(w in title for w in ['库里', 'Curry', '谷爱凌', '欧文', '詹姆斯', '东契奇', '苏炳添', '张伟丽']):
+        score += 45
+
+    return score
+
 def topic_key(title):
     title = clean_title(title)
-    title = re.sub(r'[，。！？、；：:,.!?（）()【】\[\]「」“”\"\'《》]', '', title)
+    pure = re.sub(r'[，。！？、；：:,.!?（）()【】$begin:math:display$$end:math:display$「」“”\"\'《》]', '', title)
+
+    if is_major_industry_event(pure):
+        brands = [b for b in MAJOR_BRAND_WORDS if b in pure]
+        events = [w for w in MAJOR_EVENT_WORDS + TRAFFIC_EVENT_WORDS if w in pure]
+        people = [p for p in ['库里','Curry','谷爱凌','欧文','詹姆斯','东契奇','苏炳添','张伟丽'] if p in pure]
+        key_parts = brands[:1] + people[:1] + events[:1]
+        if key_parts:
+            return '重大事件_' + '_'.join(key_parts)
+        return '重大事件_' + pure[:10]
+
     groups = {
-        '品牌PK':['安踏','李宁','特步','361','度','PK','对比','谁更','成绩单','克阿迪'],
+        '品牌PK':['PK','对比','谁更','成绩单','克阿迪'],
         '平台大促':['618','大促','预售','战报','抖音','天猫','京东','唯品','直播'],
         '防晒凉感':['防晒','凉感','速干','高温','夏天','防晒衣'],
         '户外跑步':['户外','跑步','跑鞋','骑行','露营','徒步','马拉松','越野跑'],
@@ -277,13 +354,16 @@ def topic_key(title):
         '文旅出行':['文旅','旅游','暑期','出行','景区','亲子游'],
         'AI科技':['AI','人工智能','机器人','智能','大模型','科技'],
     }
+
     for k, words in groups.items():
-        if any(w in title for w in words): return k
-    return title[:12]
+        if any(w in pure for w in words):
+            return k
+
+    return pure[:12]
 
 CATEGORY_RULES = {
     '电商平台': {'keywords':['618','双11','双十一','双12','大促','预售','电商','直播','抖音','小红书','种草','百亿补贴','战报','平台','店播'], 'tag':'大促/电商','logo':'大促','icon':'🛒','class':'logo-blue','desc':'平台流量与大促节奏变化，重点观察夏季品类曝光、直播转化与终端承接。'},
-    '品牌竞争': {'keywords':['品牌','Nike','耐克','阿迪','安踏','李宁','特步','361','Kappa','HOKA','昂跑','亚瑟士','C位','市场份额','PK'], 'tag':'品牌竞争','logo':'品牌','icon':'🏷️','class':'logo-purple','desc':'品牌动作反映行业竞争重心，需关注价格带、产品心智与渠道打法变化。'},
+    '品牌竞争': {'keywords':['品牌','Nike','耐克','阿迪','安踏','李宁','特步','361','Kappa','HOKA','昂跑','亚瑟士','C位','市场份额','PK','签约','代言','联名','战略合作','实验室','换帅'], 'tag':'品牌竞争','logo':'品牌','icon':'🏷️','class':'logo-purple','desc':'品牌重大动作反映竞争重心变化，需关注产品心智、代言资产、渠道声量与终端转化。'},
     '童装儿童': {'keywords':['童装','儿童','亲子','校园','儿童运动','运动童装','Kids','KIDS','童鞋','青少年'], 'tag':'童装/儿童运动','logo':'童装','icon':'🧒','class':'logo-sky','desc':'儿童消费从单品购买转向亲子、校园、户外和运动场景综合经营。'},
     '天气消费': {'keywords':['高温','防晒','凉感','速干','暴雨','强对流','降雨','天气','防雨','夏日','夏季','降雪','结冰','低温','防滑','保暖'], 'tag':'天气/功能消费','logo':'天气','icon':'☀️','class':'logo-sky','desc':'天气变化影响客流和主推节奏，防晒、凉感、防雨、防滑及保暖品类需动态前置。'},
     '户外运动': {'keywords':['户外','骑行','露营','文旅','出行','夜经济','跑步','轻户外','徒步','马拉松','越野跑','赛事','训练','跑鞋'], 'tag':'户外/运动场景','logo':'户外','icon':'🚴','class':'logo-green','desc':'户外、跑步、骑行、赛事和夜间消费延伸运动场景，带动装备与亲子需求。'},
@@ -310,18 +390,49 @@ fallback_by_category = {
 def category_score(title, cat):
     return sum(1 for kw in CATEGORY_RULES[cat]['keywords'] if kw in title)
 
+def infer_category(item):
+    title = clean_title(item.get('title',''))
+
+    if is_major_industry_event(title):
+        return '品牌竞争'
+    if any(k in title for k in CATEGORY_RULES['电商平台']['keywords']):
+        return '电商平台'
+    if any(k in title for k in CATEGORY_RULES['童装儿童']['keywords']):
+        return '童装儿童'
+    if any(k in title for k in CATEGORY_RULES['天气消费']['keywords']):
+        return '天气消费'
+    if any(k in title for k in CATEGORY_RULES['户外运动']['keywords']):
+        return '户外运动'
+    if any(k in title for k in CATEGORY_RULES['商圈零售']['keywords']):
+        return '商圈零售'
+    if any(k in title for k in CATEGORY_RULES['宏观消费']['keywords']):
+        return '宏观消费'
+    if any(k in title for k in CATEGORY_RULES['AI科技']['keywords']):
+        return 'AI科技'
+
+    return '品牌竞争' if any(b in title for b in MAJOR_BRAND_WORDS) else '商圈零售'
+
 def item_score(item, cat):
     title, source = clean_title(item.get('title','')), str(item.get('source',''))
+
     score = category_score(title, cat) * 12
+    score += major_event_score(item)
+
     value_words = ['618','大促','战报','防晒','凉感','速干','童装','儿童','亲子','跑鞋','户外','骑行','露营','商场','商圈','客流','会员','直播','小红书','抖音','Nike','耐克','阿迪','安踏','李宁','特步','HOKA','昂跑','亚瑟士','361','GDP','社零','消费','就业','政策','文旅','AI','出海']
     bad_words = ['比分','赛程','夺冠','冠军','主教练','球队','球员','转会','受伤']
-    reliable_sources = ['界面新闻','36氪','赢商网','联商网','亿邦动力','电商报','新华网','澎湃新闻','证券时报','新京报','新浪财经','国家统计局','央视新闻']
+    reliable_sources = ['界面新闻','36氪','赢商网','联商网','亿邦动力','电商报','新华网','澎湃新闻','证券时报','新京报','新浪财经','国家统计局','央视新闻','搜狐网','新浪新闻','观察者','每日经济新闻']
+
     for kw in value_words:
-        if kw in title: score += 4
+        if kw in title:
+            score += 4
+
     for kw in bad_words:
-        if kw in title: score -= 16
+        if kw in title:
+            score -= 18
+
     for src in reliable_sources:
-        if src in source: score += 2
+        if src in source:
+            score += 2
 
     try:
         pub = item.get("published_at") or item.get("pubDate") or item.get("date") or item.get("time") or ""
@@ -345,119 +456,278 @@ def item_score(item, cat):
 
     return score
 
+def build_top_news_item(item, cat=None, desc=None):
+    title = short(item.get('title',''), 42)
+    cat = cat or infer_category(item)
+    rule = CATEGORY_RULES.get(cat, CATEGORY_RULES['商圈零售'])
+
+    return {
+        'title': title,
+        'tag': rule['tag'],
+        'source': item.get('source','公开资讯'),
+        'desc': desc or rule['desc'],
+        'logo': rule['logo'],
+        'icon': rule['icon'],
+        'class': rule['class'],
+        'link': item.get('link') or item.get('url') or item.get('href') or '',
+        'published_at': item.get('published_at') or item.get('pubDate') or item.get('date') or item.get('time') or ''
+    }
+
+def pick_forced_major_news(limit=2):
+    candidates = []
+
+    for item in news_items[:80]:
+        if not isinstance(item, dict):
+            continue
+        title = clean_title(item.get('title',''))
+        if not title:
+            continue
+
+        score = major_event_score(item)
+        if score >= 100:
+            score += int(item.get('score') or 0)
+            candidates.append((score, item))
+
+    candidates.sort(key=lambda x: (x[0], parse_news_time(x[1])), reverse=True)
+
+    result = []
+    used_topics = set()
+
+    for _, item in candidates:
+        if len(result) >= limit:
+            break
+        tk = topic_key(item.get('title',''))
+        if tk in used_topics:
+            continue
+
+        result.append(build_top_news_item(
+            item,
+            cat='品牌竞争',
+            desc='品牌重大动作带来声量与产品心智变化，需关注终端转化和品类借势。'
+        ))
+        used_topics.add(tk)
+
+    return result
+
+def merge_top_news(forced, selected):
+    result = []
+    used_titles = set()
+    used_topics = set()
+    platform_count = 0
+
+    for item in forced + selected:
+        if len(result) >= 5:
+            break
+
+        title = clean_title(item.get('title',''))
+        if not title:
+            continue
+
+        tk = topic_key(title)
+        if title in used_titles or tk in used_topics:
+            continue
+
+        tag = item.get('tag','')
+        if '大促' in tag or '电商' in tag:
+            if platform_count >= 1:
+                continue
+            platform_count += 1
+
+        result.append(item)
+        used_titles.add(title)
+        used_topics.add(tk)
+
+    if len(result) < 5:
+        for item in pick_top_news_rule():
+            if len(result) >= 5:
+                break
+            title = clean_title(item.get('title',''))
+            tk = topic_key(title)
+            if title not in used_titles and tk not in used_topics:
+                result.append(item)
+                used_titles.add(title)
+                used_topics.add(tk)
+
+    return result[:5]
+
 def pick_top_news_rule():
     used_titles, used_topics, used_cats, result = set(), set(), set(), []
-    priority = ['电商平台','品牌竞争','童装儿童','天气消费','户外运动','商圈零售','宏观消费','文旅出行','AI科技','政策监管']
+    priority = ['品牌竞争','童装儿童','电商平台','天气消费','户外运动','商圈零售','宏观消费','文旅出行','AI科技','政策监管']
+
     candidates = []
     for item in news_items:
-        if not isinstance(item, dict): continue
+        if not isinstance(item, dict):
+            continue
         title = clean_title(item.get('title',''))
-        if not title: continue
+        if not title:
+            continue
+
         best_cat = max(priority, key=lambda c: item_score(item, c))
         score = item_score(item, best_cat)
-        if score > 0: candidates.append((score, best_cat, item))
+        if score > 0:
+            candidates.append((score, best_cat, item))
+
     candidates.sort(key=lambda x:x[0], reverse=True)
 
     for _, cat, item in candidates:
-        if len(result) >= 5: break
+        if len(result) >= 5:
+            break
+
         title, tk = short(item.get('title',''), 42), topic_key(item.get('title',''))
-        if not title or title in used_titles or tk in used_topics: continue
-        if cat == '电商平台' and cat in used_cats: continue
-        rule = CATEGORY_RULES[cat]
-        result.append({'title':title,'tag':rule['tag'],'source':item.get('source','公开资讯'),'desc':rule['desc'],'logo':rule['logo'],'icon':rule['icon'],'class':rule['class'],'link':item.get('link') or item.get('url') or item.get('href') or ''})
-        used_titles.add(title); used_topics.add(tk); used_cats.add(cat)
+        if not title or title in used_titles or tk in used_topics:
+            continue
+
+        if cat == '电商平台' and cat in used_cats:
+            continue
+
+        result.append(build_top_news_item(item, cat=cat))
+        used_titles.add(title)
+        used_topics.add(tk)
+        used_cats.add(cat)
 
     for cat in priority:
-        if len(result) >= 5: break
+        if len(result) >= 5:
+            break
         fb, rule = fallback_by_category[cat], CATEGORY_RULES[cat]
         tk = topic_key(fb['title'])
-        if fb['title'] in used_titles or tk in used_topics: continue
-        result.append({'title':fb['title'],'tag':rule['tag'],'source':fb['source'],'desc':rule['desc'],'logo':rule['logo'],'icon':rule['icon'],'class':rule['class'],'link':''})
-        used_titles.add(fb['title']); used_topics.add(tk); used_cats.add(cat)
+        if fb['title'] in used_titles or tk in used_topics:
+            continue
+
+        result.append({
+            'title':fb['title'],
+            'tag':rule['tag'],
+            'source':fb['source'],
+            'desc':rule['desc'],
+            'logo':rule['logo'],
+            'icon':rule['icon'],
+            'class':rule['class'],
+            'link':'',
+            'published_at':''
+        })
+
+        used_titles.add(fb['title'])
+        used_topics.add(tk)
+        used_cats.add(cat)
+
     return result[:5]
 
 def pick_top_news_deepseek():
-    if not titles: return pick_top_news_rule()
-    news_text = '\n'.join(f"{i+1}. {clean_title(item.get('title',''))}｜{item.get('source','')}" for i,item in enumerate(news_items[:80]) if isinstance(item,dict) and item.get('title'))
-    allowed_categories = '、'.join(CATEGORY_RULES.keys())
-    prompt = f"""
+    forced = pick_forced_major_news(limit=2)
+
+    if not titles:
+        result = merge_top_news(forced, pick_top_news_rule())
+    else:
+        news_text = '\n'.join(
+            f"{i+1}. {clean_title(item.get('title',''))}｜{item.get('source','')}"
+            for i,item in enumerate(news_items[:80])
+            if isinstance(item,dict) and item.get('title')
+        )
+
+        allowed_categories = '、'.join(CATEGORY_RULES.keys())
+
+        prompt = f"""
 你是运动鞋服行业资讯筛选助手。请从以下新闻中选出5条最适合361°儿童经营管理部每日阅读的重点资讯。
 要求：
 1. 必须基于今日新闻生成，不得使用历史模板和固定排序；
 2. 优先选择当天最新、信息增量最大、对经营最有参考价值的新闻；
-3. 不要让“618战报/抖音战报/大促战报”连续固定排第一，除非它确实是当天最重要新闻；
-4. 如果多条新闻主题相似，只保留1条，优先发布时间更新、信息更具体的一条；
-5. 覆盖范围要更广：电商平台、品牌竞争、童装儿童、天气消费、户外运动、商圈零售、宏观消费、GDP/社零、就业收入、文旅出行、AI科技、政策监管；
-6. GDP、社零、就业、消费信心、促消费政策、文旅客流等宏观新闻，如果对零售经营有启示，可以优先入选；
-7. 过滤纯体育比赛比分、球员转会、娱乐八卦；
-8. 输出严格JSON数组，长度5；
-9. 每项包含：title、category、reason；
-10. category只能从以下选择：{allowed_categories}；
-11. reason控制在28字以内，必须写经营启示，不要空话；
-12. 同一主题只能入选1条，例如“安踏/李宁/特步/361对比PK”只能保留最有信息量的一条；
-13. 5条应尽量分散在不同方向，不能4条都是品牌PK或618战报。
+3. 重大品牌事件必须优先：签约、代言、联名、战略合作、实验室、旗舰店、换帅、收购、投资、出圈、爆火；
+4. 如果出现李宁、安踏、361、特步、耐克、阿迪达斯等品牌的重大动作，至少保留1条；
+5. 不要让“618战报/抖音战报/大促战报”连续固定排第一，除非它确实是当天最重要新闻；
+6. 如果多条新闻主题相似，只保留1条，优先发布时间更新、信息更具体的一条；
+7. 覆盖范围要更广：品牌竞争、电商平台、童装儿童、天气消费、户外运动、商圈零售、宏观消费、文旅出行、AI科技、政策监管；
+8. GDP、社零、就业、消费信心、促消费政策、文旅客流等宏观新闻，如果对零售经营有启示，可以入选；
+9. 过滤纯体育比赛比分、球员转会、娱乐八卦；
+10. 输出严格JSON数组，长度5；
+11. 每项包含：title、category、reason；
+12. category只能从以下选择：{allowed_categories}；
+13. reason控制在28字以内，必须写经营启示，不要空话；
+14. 5条应尽量分散在不同方向，不能4条都是品牌PK或618战报。
+
 新闻：
 {news_text}
 """
-    arr = ask_deepseek_json(prompt, max_tokens=1100)
-    if not isinstance(arr, list) or len(arr) < 3:
-        result = pick_top_news_rule()
-    else:
-        source_lookup = {
-    clean_title(x.get('title','')): {
-        'source': x.get('source','公开资讯'),
-        'link': x.get('link') or x.get('url') or x.get('href') or '',
-        'published_at': x.get('published_at') or x.get('pubDate') or x.get('date') or x.get('time') or ''
-    }
-    for x in news_items if isinstance(x, dict)
-}
-        result, used_titles, used_topics, used_cats = [], set(), set(), set()
-        for row in arr:
-            if len(result) >= 5: break
-            if not isinstance(row, dict): continue
-            title = short(row.get('title',''), 42)
-            if not title: continue
-            tk = topic_key(title)
-            if title in used_titles or tk in used_topics: continue
-            cat = clean_title(row.get('category','商圈零售'))
-            rule = CATEGORY_RULES.get(cat, CATEGORY_RULES['商圈零售'])
-            if cat == '电商平台' and cat in used_cats: continue
-            source, link = '公开资讯', ''
-            for raw_title, info in source_lookup.items():
-                if title[:10] in raw_title or raw_title[:10] in title:
-                    source, link = info['source'], info['link']; break
-            desc = short_cn(row.get('reason',''), 32) or rule['desc']
-            published_at = ''
-            for raw_title, info in source_lookup.items():
-                if title[:10] in raw_title or raw_title[:10] in title:
-                    published_at = info.get('published_at', '')
-                    break
 
-            result.append({
-                'title': title,
-                'tag': rule['tag'],
-                'source': source,
-                'desc': desc,
-                'logo': rule['logo'],
-                'icon': rule['icon'],
-                'class': rule['class'],
-                'link': link,
-                'published_at': published_at
-            })
-            used_titles.add(title)
-            used_topics.add(tk)
-            used_cats.add(cat)
-        for item in pick_top_news_rule():
-            if len(result) >= 5: break
-            tk = topic_key(item['title'])
-            if item['title'] not in used_titles and tk not in used_topics:
-                result.append(item); used_titles.add(item['title']); used_topics.add(tk)
+        arr = ask_deepseek_json(prompt, max_tokens=1100)
+
+        if not isinstance(arr, list) or len(arr) < 3:
+            selected = pick_top_news_rule()
+        else:
+            source_lookup = {
+                clean_title(x.get('title','')): {
+                    'source': x.get('source','公开资讯'),
+                    'link': x.get('link') or x.get('url') or x.get('href') or '',
+                    'published_at': x.get('published_at') or x.get('pubDate') or x.get('date') or x.get('time') or ''
+                }
+                for x in news_items if isinstance(x, dict)
+            }
+
+            selected = []
+            used_titles, used_topics, used_cats = set(), set(), set()
+
+            for row in arr:
+                if len(selected) >= 5:
+                    break
+                if not isinstance(row, dict):
+                    continue
+
+                title = short(row.get('title',''), 42)
+                if not title:
+                    continue
+
+                tk = topic_key(title)
+                if title in used_titles or tk in used_topics:
+                    continue
+
+                cat = clean_title(row.get('category','商圈零售'))
+                rule = CATEGORY_RULES.get(cat, CATEGORY_RULES['商圈零售'])
+
+                if cat == '电商平台' and cat in used_cats:
+                    continue
+
+                source, link, published_at = '公开资讯', '', ''
+
+                for raw_title, info in source_lookup.items():
+                    if title[:10] in raw_title or raw_title[:10] in title:
+                        source = info['source']
+                        link = info['link']
+                        published_at = info.get('published_at', '')
+                        break
+
+                desc = short_cn(row.get('reason',''), 32) or rule['desc']
+
+                selected.append({
+                    'title': title,
+                    'tag': rule['tag'],
+                    'source': source,
+                    'desc': desc,
+                    'logo': rule['logo'],
+                    'icon': rule['icon'],
+                    'class': rule['class'],
+                    'link': link,
+                    'published_at': published_at
+                })
+
+                used_titles.add(title)
+                used_topics.add(tk)
+                used_cats.add(cat)
+
+            for item in pick_top_news_rule():
+                if len(selected) >= 5:
+                    break
+                tk = topic_key(item['title'])
+                if item['title'] not in used_titles and tk not in used_topics:
+                    selected.append(item)
+                    used_titles.add(item['title'])
+                    used_topics.add(tk)
+
+        result = merge_top_news(forced, selected)
 
     try:
         TOP_NEWS_FILE.parent.mkdir(parents=True, exist_ok=True)
         TOP_NEWS_FILE.write_text(json.dumps({'items': result}, ensure_ascii=False, indent=2), encoding='utf-8')
     except Exception as e:
         print('write top_news.json error:', repr(e))
+
     return result[:5]
 
 top_news = pick_top_news_deepseek()
@@ -641,14 +911,17 @@ reports, actions = build_region_reports_deepseek()
 def news_heat_score(keywords):
     score = 0
     for t in titles:
-        if any(k in t for k in keywords): score += 5
-        if any(k in t for k in ['618','大促','防晒','凉感','童装','儿童','亲子','商场','商圈','客流','户外','骑行','赛事','跑步','马拉松','GDP','社零','消费','就业','政策','文旅','AI']): score += 1
+        if any(k in t for k in keywords):
+            score += 5
+        if any(k in t for k in ['618','大促','防晒','凉感','童装','儿童','亲子','商场','商圈','客流','户外','骑行','赛事','跑步','马拉松','GDP','社零','消费','就业','政策','文旅','AI']):
+            score += 1
     return min(score, 25)
 
 def business_keyword_score():
     score = 0
     for k in ['防晒','凉感','童装','儿童','亲子','618','商场','商圈','客流','户外','骑行','小红书','抖音','保暖','防滑','赛事','跑步','马拉松','GDP','社零','消费','就业','政策','文旅','AI','出海']:
-        if k in joined: score += 2
+        if k in joined:
+            score += 2
     return min(score, 20)
 
 def seasonal_weather_score(weather_key):
@@ -662,15 +935,18 @@ def total_region_score(weather_key, region_keywords):
 scores = {r:total_region_score(c['weather_key'], c['keywords']) for r,c in region_map.items()}
 sorted_regions = sorted(scores.keys(), key=lambda r:scores[r], reverse=True)
 stars = {}
+
 for idx, r in enumerate(sorted_regions):
     s = scores[r]
-    if idx <= 2 and s >= 62: stars[r] = '★★★'
-    elif s >= 45: stars[r] = '★★'
-    else: stars[r] = '★'
+    if idx <= 2 and s >= 62:
+        stars[r] = '★★★'
+    elif s >= 45:
+        stars[r] = '★★'
+    else:
+        stars[r] = '★'
 
 def star_class(star):
     star = str(star)
-
     if star == "★★★":
         return "star-red"
     if star == "★★":
@@ -681,17 +957,24 @@ def star_class(star):
 # 今日一句、摘要、预警、第四部分、第五部分
 # =========================================================
 def make_today_insight_rule():
-    if any(k in joined for k in ['GDP','社零','消费','就业','收入','政策','内需']): return '宏观消费与平台流量共同影响零售节奏，价格带、客流与功能品类需同步跟踪。'
-    if any(k in joined for k in ['618','战报','大促','预售']): return '618战报持续释放，运动品牌线上增长与夏季品类竞争同步升温。'
-    if any(k in joined for k in ['防晒','凉感','速干','高温']): return '夏季功能消费升温，防晒、凉感与速干品类成为短期热点。'
-    if any(k in joined for k in ['户外','骑行','露营','跑步','马拉松']): return '泛运动场景继续扩张，户外、跑步与骑行热度延续。'
-    if any(k in joined for k in ['童装','儿童','亲子','校园']): return '儿童运动消费场景继续外扩，亲子与校园需求保持活跃。'
+    if any(k in joined for k in ['签约','代言','联名','战略合作','实验室','换帅']):
+        return '运动品牌重大动作增多，代言资产、产品科技与渠道声量成为竞争焦点。'
+    if any(k in joined for k in ['GDP','社零','消费','就业','收入','政策','内需']):
+        return '宏观消费与平台流量共同影响零售节奏，价格带、客流与功能品类需同步跟踪。'
+    if any(k in joined for k in ['618','战报','大促','预售']):
+        return '618战报持续释放，运动品牌线上增长与夏季品类竞争同步升温。'
+    if any(k in joined for k in ['防晒','凉感','速干','高温']):
+        return '夏季功能消费升温，防晒、凉感与速干品类成为短期热点。'
+    if any(k in joined for k in ['户外','骑行','露营','跑步','马拉松']):
+        return '泛运动场景继续扩张，户外、跑步与骑行热度延续。'
+    if any(k in joined for k in ['童装','儿童','亲子','校园']):
+        return '儿童运动消费场景继续外扩，亲子与校园需求保持活跃。'
     return '运动鞋服行业热点分化，平台、天气与场景消费共同影响短期趋势。'
 
 def make_today_insight_deepseek():
     prompt = f"""
 请基于以下新闻，写一句今日行业判断。
-要求：1. 可以覆盖运动鞋服、童装、宏观消费、社零/GDP、文旅出行、AI科技和平台流量；2. 只讲资讯趋势，不写门店执行动作；3. 45字以内；4. 不要口号，不要空话。
+要求：1. 可以覆盖运动鞋服、童装、重大品牌事件、宏观消费、社零/GDP、文旅出行、AI科技和平台流量；2. 只讲资讯趋势，不写门店执行动作；3. 45字以内；4. 不要口号，不要空话；5. 如果有签约、代言、联名、战略合作、实验室、换帅等重大品牌事件，要优先体现。
 新闻：
 {chr(10).join(titles[:30])}
 """
@@ -700,13 +983,22 @@ def make_today_insight_deepseek():
 
 def make_ai_summary_rule():
     parts = []
-    if any(k in joined for k in ['GDP','社零','消费','就业','收入','政策','内需']): parts.append('宏观消费与收入预期影响零售信心')
-    if any(k in joined for k in ['618','大促','预售','战报']): parts.append('大促与平台流量仍是短期主线')
-    if any(k in joined for k in ['防晒','凉感','速干','高温']): parts.append('防晒、凉感、速干等夏季功能品类升温')
-    if any(k in joined for k in ['童装','儿童','亲子','校园']): parts.append('儿童运动与亲子校园场景延续')
-    if any(k in joined for k in ['户外','骑行','露营','跑步','赛事','文旅']): parts.append('轻户外与文旅场景带动鞋服装备关注')
-    if any(weather_business_type(k) in ['rain','storm'] for k in ['north','east','south','southwest','northwest']): parts.append('降雨天气可能影响区域客流')
-    if not parts: parts.append('今日行业信息整体平稳，关注商圈客流、商品节奏和区域差异')
+    if any(k in joined for k in ['签约','代言','联名','战略合作','实验室','换帅']):
+        parts.append('品牌重大动作带动声量竞争和产品心智变化')
+    if any(k in joined for k in ['GDP','社零','消费','就业','收入','政策','内需']):
+        parts.append('宏观消费与收入预期影响零售信心')
+    if any(k in joined for k in ['618','大促','预售','战报']):
+        parts.append('大促与平台流量仍是短期主线')
+    if any(k in joined for k in ['防晒','凉感','速干','高温']):
+        parts.append('防晒、凉感、速干等夏季功能品类升温')
+    if any(k in joined for k in ['童装','儿童','亲子','校园']):
+        parts.append('儿童运动与亲子校园场景延续')
+    if any(k in joined for k in ['户外','骑行','露营','跑步','赛事','文旅']):
+        parts.append('轻户外与文旅场景带动鞋服装备关注')
+    if any(weather_business_type(k) in ['rain','storm'] for k in ['north','east','south','southwest','northwest']):
+        parts.append('降雨天气可能影响区域客流')
+    if not parts:
+        parts.append('今日行业信息整体平稳，关注商圈客流、商品节奏和区域差异')
     return '；'.join(parts[:4]) + '。'
 
 def make_ai_summary_deepseek():
@@ -714,7 +1006,7 @@ def make_ai_summary_deepseek():
     weather_text = '；'.join([weather_desc(k) for k in ['north','east','south','southwest','northwest']])
     prompt = f"""
 你是361°儿童经营管理部的行业情报分析师。请基于以下新闻和天气，生成一段90字以内的AI经营摘要。
-要求：1. 要有明确判断，不要只是罗列；2. 可覆盖宏观消费/GDP社零、平台流量、大促、夏季功能品类、儿童运动、文旅出行、AI科技、天气对客流影响；3. 要体现当前最应该关注什么；4. 不要分点，不要口号；5. 适合放在日报顶部。
+要求：1. 要有明确判断，不要只是罗列；2. 可覆盖重大品牌事件、宏观消费/GDP社零、平台流量、大促、夏季功能品类、儿童运动、文旅出行、AI科技、天气对客流影响；3. 如果有签约、代言、联名、战略合作、实验室、换帅等重大品牌事件，要优先体现；4. 不要分点，不要口号；5. 适合放在日报顶部。
 新闻：
 {news_text}
 天气：
@@ -730,8 +1022,8 @@ def make_ai_warnings():
     news_text = '\n'.join(titles[:30])
     weather_text = '；'.join([weather_desc(k) for k in ['north','east','south','southwest','northwest']])
     prompt = f"""
-你是361°儿童经营管理负责人。请基于今日行业新闻、全国天气、电商大促、区域消费趋势、宏观消费、政策、社零/GDP、文旅出行、AI科技热点，生成3条经营风险/机会预警。
-要求：输出严格JSON数组；每条25-50字；像总部经营预警；不要空话；必须具体到客流、品类、会员、直播、天气、商圈、区域、价格带或政策影响。必须是完整句子，不允许输出半句。
+你是361°儿童经营管理负责人。请基于今日行业新闻、全国天气、电商大促、区域消费趋势、重大品牌事件、宏观消费、政策、社零/GDP、文旅出行、AI科技热点，生成3条经营风险/机会预警。
+要求：输出严格JSON数组；每条25-50字；像总部经营预警；不要空话；必须具体到客流、品类、会员、直播、天气、商圈、区域、价格带、品牌声量或政策影响。必须是完整句子，不允许输出半句。
 新闻：
 {news_text}
 天气：
@@ -739,14 +1031,17 @@ def make_ai_warnings():
 """
     arr = ask_deepseek_json(prompt, max_tokens=400)
     if not isinstance(arr, list):
-        return ['平台流量和促消费信息交织，需关注核心SKU库存、价格带和直播同款承接。','局地降雨影响到店节奏，室内客流承接能力将影响周末门店转化效率。','轻户外与亲子场景持续升温，帽包、防晒与运动凉鞋存在连带增长机会。']
+        return [
+            '品牌重大动作和平台流量交织，需关注核心SKU库存、价格带和终端借势转化。',
+            '局地降雨影响到店节奏，室内客流承接能力将影响周末门店转化效率。',
+            '轻户外与亲子场景持续升温，帽包、防晒与运动凉鞋存在连带增长机会。'
+        ]
     result = [
-    clean_title(str(x))
-    .replace('【预警：','')
-    .replace('】','')
-    for x in arr if clean_title(str(x))
-]
-    while len(result) < 3: result.append('区域消费与天气变化仍需动态关注。')
+        clean_title(str(x)).replace('【预警：','').replace('】','')
+        for x in arr if clean_title(str(x))
+    ]
+    while len(result) < 3:
+        result.append('区域消费与天气变化仍需动态关注。')
     return result[:3]
 
 warnings = make_ai_warnings()
@@ -754,6 +1049,7 @@ warnings = make_ai_warnings()
 def build_ai_trends_rule():
     candidates = []
     checks = [
+        (['签约','代言','联名','战略合作','实验室','换帅'], {'title':'品牌事件带动声量','desc':'签约、合作和科技实验室等动作提升品牌关注，门店需承接产品心智与话题热度。','tag':'品牌竞争'}),
         (['GDP','社零','消费','就业','政策','收入'], {'title':'宏观消费影响客单','desc':'消费与收入预期变化影响客单和折扣敏感度，门店需优化价格带与会员转化。','tag':'宏观趋势'}),
         (['618','大促','预售','直播','抖音','小红书'], {'title':'平台热度外溢门店','desc':'大促和内容种草带动比价与试穿需求，需承接直播同款和核心爆款。','tag':'平台趋势'}),
         (['防晒','凉感','速干','高温','降雨','防雨'], {'title':'天气驱动功能陈列','desc':'天气变化带动防晒、凉感、防雨与速干需求，门店陈列需随区域动态调整。','tag':'天气趋势'}),
@@ -762,7 +1058,8 @@ def build_ai_trends_rule():
         (['AI','人工智能','机器人','智能','科技'], {'title':'AI热点带动科技心智','desc':'AI和智能硬件话题提升年轻家庭关注，运动科技和功能面料卖点需加强表达。','tag':'科技趋势'}),
     ]
     for keys,item in checks:
-        if any(k in joined for k in keys): candidates.append(item)
+        if any(k in joined for k in keys):
+            candidates.append(item)
     fallback = [
         {'title':'区域客流需要细分','desc':'天气、商圈活动与平台热点影响到店节奏，重点商圈需强化会员和试穿转化。','tag':'客流趋势'},
         {'title':'夏季商品节奏前置','desc':'夏季功能品类进入高频曝光阶段，防晒、凉感、速干和舒适鞋履需前置陈列。','tag':'季节趋势'},
@@ -771,40 +1068,71 @@ def build_ai_trends_rule():
     ]
     result = []
     for x in candidates + fallback:
-        if len(result) >= 4: break
-        if x['title'] not in [r['title'] for r in result]: result.append(x)
+        if len(result) >= 4:
+            break
+        if x['title'] not in [r['title'] for r in result]:
+            result.append(x)
     return result[:4]
 
 def build_ai_trends():
     news_text = '\n'.join(titles[:40])
     weather_text = '；'.join([weather_desc(k) for k in ['north','east','south','southwest','northwest']])
     prompt = f"""
-你是361°儿童总部经营管理部经营分析负责人。请基于今日行业新闻、天气变化、电商平台动态、运动与户外消费、商圈客流、宏观消费/GDP社零/就业收入/促消费政策、文旅出行、AI科技、品牌竞争，生成4条“经营观察与动作建议”。
-要求：必须基于今日新闻生成，不得使用通用模板；每条必须体现当天新闻、天气变化、平台变化、宏观消费或科技/文旅热点；输出严格JSON数组，长度4；每条包含title、desc、tag；title控制在10-18字；desc控制在30-48字；tag控制在4-6字；不要空话。
+你是361°儿童总部经营管理部经营分析负责人。请基于今日行业新闻、天气变化、电商平台动态、运动与户外消费、商圈客流、重大品牌事件、宏观消费/GDP社零/就业收入/促消费政策、文旅出行、AI科技、品牌竞争，生成4条“经营观察与动作建议”。
+要求：必须基于今日新闻生成，不得使用通用模板；每条必须体现当天新闻、天气变化、平台变化、品牌事件、宏观消费或科技/文旅热点；输出严格JSON数组，长度4；每条包含title、desc、tag；title控制在10-18字；desc控制在30-48字；tag控制在4-6字；不要空话。
 新闻：
 {news_text}
 天气：
 {weather_text}
 """
     arr = ask_deepseek_json(prompt, max_tokens=1200)
-    if not isinstance(arr, list) or len(arr) < 4: return build_ai_trends_rule()
+    if not isinstance(arr, list) or len(arr) < 4:
+        return build_ai_trends_rule()
+
     result, bad_titles = [], ['大促节点提前蓄水','儿童运动场景扩张','商圈客流恢复分化','夏季功能品类升温']
+
     for row in arr:
-        if len(result) >= 4: break
-        if not isinstance(row, dict): continue
-        title, desc, tag = short_cn(row.get('title',''),18), short_cn(row.get('desc',''),80), short_cn(row.get('tag',''),8)
-        if not title or title in bad_titles: continue
+        if len(result) >= 4:
+            break
+        if not isinstance(row, dict):
+            continue
+        title = short_cn(row.get('title',''),18)
+        desc = short_cn(row.get('desc',''),80)
+        tag = short_cn(row.get('tag',''),8)
+        if not title or title in bad_titles:
+            continue
         result.append({'title':title,'desc':desc,'tag':tag})
+
     if len(result) < 4:
         for item in build_ai_trends_rule():
-            if len(result) >= 4: break
-            if item['title'] not in [r['title'] for r in result]: result.append(item)
+            if len(result) >= 4:
+                break
+            if item['title'] not in [r['title'] for r in result]:
+                result.append(item)
+
     return result[:4]
 
 trend_items = build_ai_trends()
 
 # 热词雷达
-KEYWORD_MAP = {'抖音':'抖音直播','直播':'直播带货','店播':'店播','达人':'达人矩阵','小红书':'小红书种草','种草':'内容种草','618':'618','成绩单':'618战报','战报':'618战报','品牌':'品牌站位','C位':'品牌站位','大促':'大促预售','预售':'大促预售','防晒':'防晒品类','防晒衣':'防晒衣','凉感':'凉感科技','速干':'速干T','短裤':'短裤','短袖':'短袖T恤','T恤':'运动T恤','卫衣':'卫衣','冲锋衣':'冲锋衣','羽绒服':'羽绒服','运动凉鞋':'运动凉鞋','凉鞋':'运动凉鞋','跑鞋':'专业跑鞋','户外鞋':'户外鞋','童鞋':'儿童运动鞋','面料':'功能面料','科技':'运动科技','童装':'运动童装','儿童':'儿童运动','亲子':'亲子运动','校园':'校园体育','商场':'商场活动','商圈':'商圈客流','客流':'客流修复','门店':'门店陈列','会员':'会员运营','户外':'户外运动','骑行':'城市骑行','露营':'露营经济','文旅':'文旅客流','夜经济':'夜经济','赛事':'体育赛事','跑步':'跑步经济','马拉松':'马拉松','耐克':'Nike','Nike':'Nike','阿迪达斯':'阿迪达斯','Adidas':'阿迪达斯','亚瑟士':'亚瑟士','昂跑':'On昂跑','HOKA':'HOKA','安踏':'安踏','李宁':'李宁','特步':'特步','361':'361儿童','消费分层':'消费分层','理性消费':'理性消费','悦己':'悦己消费','情绪消费':'情绪消费','防雨':'防雨装备','低温':'保暖','保暖':'保暖','防滑':'防滑鞋','AI':'AI','人工智能':'人工智能','机器人':'智能机器人','国际化':'国际化','出海':'出海','00后':'00后','年轻人':'年轻人','体育精神':'体育精神','健康':'健康生活','消费':'消费趋势','政策':'政策信号','就业':'就业趋势','暑期':'暑期消费','旅游':'文旅消费','GDP':'GDP','社零':'社零','银发':'银发经济','下沉':'下沉市场'}
+KEYWORD_MAP = {
+    '签约':'品牌签约','代言':'品牌代言','联名':'联名合作','战略合作':'战略合作','实验室':'运动科技','换帅':'品牌换帅',
+    '库里':'库里','Curry':'库里','谷爱凌':'谷爱凌',
+    '抖音':'抖音直播','直播':'直播带货','店播':'店播','达人':'达人矩阵','小红书':'小红书种草','种草':'内容种草',
+    '618':'618','成绩单':'618战报','战报':'618战报','品牌':'品牌站位','C位':'品牌站位','大促':'大促预售','预售':'大促预售',
+    '防晒':'防晒品类','防晒衣':'防晒衣','凉感':'凉感科技','速干':'速干T','短裤':'短裤','短袖':'短袖T恤','T恤':'运动T恤',
+    '卫衣':'卫衣','冲锋衣':'冲锋衣','羽绒服':'羽绒服','运动凉鞋':'运动凉鞋','凉鞋':'运动凉鞋','跑鞋':'专业跑鞋','户外鞋':'户外鞋',
+    '童鞋':'儿童运动鞋','面料':'功能面料','科技':'运动科技','童装':'运动童装','儿童':'儿童运动','亲子':'亲子运动','校园':'校园体育',
+    '商场':'商场活动','商圈':'商圈客流','客流':'客流修复','门店':'门店陈列','会员':'会员运营','户外':'户外运动','骑行':'城市骑行',
+    '露营':'露营经济','文旅':'文旅客流','夜经济':'夜经济','赛事':'体育赛事','跑步':'跑步经济','马拉松':'马拉松',
+    '耐克':'Nike','Nike':'Nike','阿迪达斯':'阿迪达斯','Adidas':'阿迪达斯','亚瑟士':'亚瑟士','昂跑':'On昂跑','HOKA':'HOKA',
+    '安踏':'安踏','李宁':'李宁','特步':'特步','361':'361儿童',
+    '消费分层':'消费分层','理性消费':'理性消费','悦己':'悦己消费','情绪消费':'情绪消费',
+    '防雨':'防雨装备','低温':'保暖','保暖':'保暖','防滑':'防滑鞋',
+    'AI':'AI','人工智能':'人工智能','机器人':'智能机器人','国际化':'国际化','出海':'出海','00后':'00后','年轻人':'年轻人',
+    '体育精神':'体育精神','健康':'健康生活','消费':'消费趋势','政策':'政策信号','就业':'就业趋势','暑期':'暑期消费','旅游':'文旅消费',
+    'GDP':'GDP','社零':'社零','银发':'银发经济','下沉':'下沉市场'
+}
 
 def build_words_rule():
     counter = Counter()
@@ -813,18 +1141,16 @@ def build_words_rule():
 
     for raw, mapped in KEYWORD_MAP.items():
         if raw in top_joined:
-            counter[mapped] += 3
+            counter[mapped] += 5
 
     for idx, t in enumerate(titles[:80]):
         weight = 5 if idx < 10 else 3
-
         for raw, mapped in KEYWORD_MAP.items():
             if raw in t:
                 counter[mapped] += weight
 
     for key in ['north','east','south','southwest','northwest']:
         sig = weather_desc(key)
-
         for raw, mapped in KEYWORD_MAP.items():
             if raw in sig:
                 counter[mapped] += 2
@@ -880,26 +1206,23 @@ def build_words_deepseek():
     top_text = '\n'.join([f"{i+1}. {x['title']}｜{x['tag']}" for i,x in enumerate(top_news)])
     weather_text = '；'.join([weather_desc(k) for k in ['north','east','south','southwest','northwest']])
     prompt = f"""
-你是运动鞋服行业情报系统。请基于今日行业新闻、TOP重点资讯、全国天气、当前消费趋势、宏观消费、GDP/社零、就业收入、文旅出行、AI科技、社会热点，生成22个适合“行业热词雷达”的真实热词。
+你是运动鞋服行业情报系统。请基于今日行业新闻、TOP重点资讯、全国天气、当前消费趋势、宏观消费、GDP/社零、就业收入、文旅出行、AI科技、重大品牌事件、社会热点，生成22个适合“行业热词雷达”的真实热词。
 要求：
 1. 输出严格JSON数组
 2. 每个词2-8字
 3. 必须更像“当天行业热点”
 4. 不要大量重复：儿童运动、品牌站位、户外运动
 5. 必须覆盖：鞋服、童装、户外跑步、电商平台、品牌竞争、天气消费、AI科技、年轻人、体育精神、国际化、出海、城市消费、健康生活、社会热点、情绪消费、女性消费、校园体育、智能硬件、多品牌、功能面料、运动社交、健身生活、泛娱乐热点、宏观消费
-6. 至少包含：3个当天真实热点、3个运动行业词、3个社会趋势词、2个年轻人消费词、1个宏观/消费信号词
-7. 热词风格参考：商业媒体词云、微博热榜、36氪、晚点、虎嗅、抖音热点、消费趋势报告风格
-8. 不要只生成“鞋服品类词”，而是生成“运动行业 × 社会情绪 × 消费趋势 × 科技热点 × 宏观消费”的融合热词
-9. 优先选择能体现“经营趋势中台BI”感的词
-10. 尽量像：防晒衣、凉感科技、运动凉鞋、店播增长、618战报、城市骑行、速干T、山系穿搭、AI、出海、国际化、体育精神、年轻人、情绪消费、健康生活、多品牌、智能机器人、运动最解压、GDP、社零、下沉市场
-11. 不要让品牌名占据词云主体，品牌词最多2-3个
-12. 更多生成“趋势词、情绪词、消费词、经营词”，减少纯品牌词和纯品类词
-13. 词云需要更像消费行业BI中台、商业媒体和趋势报告里的热词风格
-14. 优先生成：情绪消费、松弛感、悦己、城市骑行、轻户外、店播增长、内容种草、会员复购、价格带、消费分层、暑期消费、夜经济、AI等趋势词
+6. 如果TOP资讯里有签约、代言、联名、战略合作、实验室、换帅，热词里要体现相关行业词
+7. 品牌词最多3个
+8. 更多生成“趋势词、情绪词、消费词、经营词”，减少纯品牌词和纯品类词
+
 TOP资讯：
 {top_text}
+
 新闻：
 {news_text}
+
 天气：
 {weather_text}
 """
@@ -910,9 +1233,13 @@ TOP资讯：
             w = clean_title(str(w))
             if 2 <= len(w) <= 8 and w not in ['儿童运动','品牌站位','户外运动','运动消费','消费趋势','行业趋势','运动品牌','运动行业'] and w not in words:
                 words.append(w)
+
     for w in build_words_rule():
-        if len(words) >= 18: break
-        if w not in words: words.append(w)
+        if len(words) >= 18:
+            break
+        if w not in words:
+            words.append(w)
+
     return words[:18]
 
 words = build_words_deepseek()
@@ -921,31 +1248,61 @@ words = build_words_deepseek()
 # 数据填充
 # =========================================================
 data = {
-    'title':'运动品牌行业资讯日报','subtitle':'每日精选 · 洞察趋势 · 辅助决策','today_insight':today_insight,'ai_summary':ai_summary,
-    'warning1':warnings[0],'warning2':warnings[1],'warning3':warnings[2],
-    'date':today.strftime('%Y-%m-%d'),'weekday':weekday_map[today.weekday()],'update_time':today.strftime('%H:%M'),
-    'monitor_count':str(max(len(news_items), random.randint(150,260))),'rss_count':str(max(min(len(news_items),99), random.randint(35,80))),'focus_count':'5',
+    'title':'运动品牌行业资讯日报',
+    'subtitle':'每日精选 · 洞察趋势 · 辅助决策',
+    'today_insight':today_insight,
+    'ai_summary':ai_summary,
+    'warning1':warnings[0],
+    'warning2':warnings[1],
+    'warning3':warnings[2],
+    'date':today.strftime('%Y-%m-%d'),
+    'weekday':weekday_map[today.weekday()],
+    'update_time':today.strftime('%H:%M'),
+    'monitor_count':str(max(len(news_items), random.randint(150,260))),
+    'rss_count':str(max(min(len(news_items),99), random.randint(35,80))),
+    'focus_count':'5',
     'weather_heat_class':map_heat_class(),
-    'east_icon':weather_icon('east'),'central_icon':weather_icon('east'),'south_icon':weather_icon('south'),'southwest_icon':weather_icon('southwest'),'northwest_icon':weather_icon('northwest'),
-    'north_heat':heat_class_by_weather('north'),'east_heat':heat_class_by_weather('east'),'south_heat':heat_class_by_weather('south'),'northwest_heat':heat_class_by_weather('northwest'),'central_heat':heat_class_by_weather('east'),
-    'weather_range':f'{md(today)} ~ {md(day3)}','day1':md(today),'day2':md(day2),'day3':md(day3),
-    'weather_north':weather_desc('north'),'weather_east':weather_desc('east'),'weather_south':weather_desc('south'),'weather_southwest':weather_desc('southwest'),'weather_northwest':weather_desc('northwest'),
-    'north_day1':weather_day_label('north',0),'north_day2':weather_day_label('north',1),'north_day3':weather_day_label('north',2),
-    'east_day1':weather_day_label('east',0),'east_day2':weather_day_label('east',1),'east_day3':weather_day_label('east',2),
-    'south_day1':weather_day_label('south',0),'south_day2':weather_day_label('south',1),'south_day3':weather_day_label('south',2),
-    'southwest_day1':weather_day_label('southwest',0),'southwest_day2':weather_day_label('southwest',1),'southwest_day3':weather_day_label('southwest',2),
-    'northwest_day1':weather_day_label('northwest',0),'northwest_day2':weather_day_label('northwest',1),'northwest_day3':weather_day_label('northwest',2),
+    'east_icon':weather_icon('east'),
+    'central_icon':weather_icon('east'),
+    'south_icon':weather_icon('south'),
+    'southwest_icon':weather_icon('southwest'),
+    'northwest_icon':weather_icon('northwest'),
+    'north_heat':heat_class_by_weather('north'),
+    'east_heat':heat_class_by_weather('east'),
+    'south_heat':heat_class_by_weather('south'),
+    'northwest_heat':heat_class_by_weather('northwest'),
+    'central_heat':heat_class_by_weather('east'),
+    'weather_range':f'{md(today)} ~ {md(day3)}',
+    'day1':md(today),
+    'day2':md(day2),
+    'day3':md(day3),
+    'weather_north':weather_desc('north'),
+    'weather_east':weather_desc('east'),
+    'weather_south':weather_desc('south'),
+    'weather_southwest':weather_desc('southwest'),
+    'weather_northwest':weather_desc('northwest'),
+    'north_day1':weather_day_label('north',0),
+    'north_day2':weather_day_label('north',1),
+    'north_day3':weather_day_label('north',2),
+    'east_day1':weather_day_label('east',0),
+    'east_day2':weather_day_label('east',1),
+    'east_day3':weather_day_label('east',2),
+    'south_day1':weather_day_label('south',0),
+    'south_day2':weather_day_label('south',1),
+    'south_day3':weather_day_label('south',2),
+    'southwest_day1':weather_day_label('southwest',0),
+    'southwest_day2':weather_day_label('southwest',1),
+    'southwest_day3':weather_day_label('southwest',2),
+    'northwest_day1':weather_day_label('northwest',0),
+    'northwest_day2':weather_day_label('northwest',1),
+    'northwest_day3':weather_day_label('northwest',2),
     'generate_time':today.strftime('%Y-%m-%d %H:%M'),
 }
 
 for region in ['east','central','south','southwest','northwest']:
-
     data[f'{region}_city'] = region_map[region]['city']
-
     data[f'{region}_hot'] = reports[region].get('change', '')
-
     data[f'{region}_flow'] = reports[region].get('impact', '')
-
     data[f'{region}_focus'] = reports[region].get('focus', '商品机会')
 
     action_text = actions.get(region, '')
@@ -956,7 +1313,6 @@ for region in ['east','central','south','southwest','northwest']:
         action_text = '结合新闻与天气调整主推陈列'
 
     data[f'{region}_action'] = action_text
-
     data[f'{region}_star'] = stars[region]
     data[f'{region}_star_class'] = star_class(stars[region])
 
@@ -989,6 +1345,7 @@ for i,word in enumerate(words, start=1):
 
 for key,value in data.items():
     template = template.replace('{{' + key + '}}', str(value))
+
 # =========================================================
 # 保存日报历史数据：供后续周报PPT使用
 # =========================================================
@@ -999,13 +1356,10 @@ history_data = {
     "date": today.strftime("%Y-%m-%d"),
     "weekday": weekday_map[today.weekday()],
     "generate_time": today.strftime("%Y-%m-%d %H:%M"),
-
     "today_insight": today_insight,
     "ai_summary": ai_summary,
-
     "top_news": top_news,
     "warnings": warnings,
-
     "region_reports": {
         region: {
             "name": region_map[region]["name"],
@@ -1018,10 +1372,8 @@ history_data = {
         }
         for region in ["east", "central", "south", "southwest", "northwest"]
     },
-
     "trend_items": trend_items,
     "words": words,
-
     "weather": {
         "north": weather_desc("north"),
         "east": weather_desc("east"),
