@@ -6,20 +6,9 @@
 <title>运动品牌行业周报</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{
-  background:#eaf1fb;
-  font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;
-  color:#102a5c;
-  padding:24px;
-}
+body{background:#eaf1fb;font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;color:#102a5c;padding:24px}
 .report{width:1280px;margin:auto}
-.cover{
-  position:relative;height:260px;border-radius:26px;overflow:hidden;
-  background:radial-gradient(circle at 85% 20%, rgba(255,139,0,.32), transparent 28%),
-  radial-gradient(circle at 16% 88%, rgba(11,99,216,.24), transparent 30%),
-  linear-gradient(135deg,#052b78 0%,#0b63d8 52%,#1d8fff 100%);
-  color:#fff;padding:34px 42px;box-shadow:0 20px 46px rgba(9,55,128,.26);margin-bottom:18px;
-}
+.cover{position:relative;height:260px;border-radius:26px;overflow:hidden;background:radial-gradient(circle at 85% 20%,rgba(255,139,0,.32),transparent 28%),radial-gradient(circle at 16% 88%,rgba(11,99,216,.24),transparent 30%),linear-gradient(135deg,#052b78 0%,#0b63d8 52%,#1d8fff 100%);color:#fff;padding:34px 42px;box-shadow:0 20px 46px rgba(9,55,128,.26);margin-bottom:18px}
 .cover::after{content:"";position:absolute;right:-80px;bottom:-120px;width:420px;height:420px;border-radius:50%;border:42px solid rgba(255,255,255,.12)}
 .cover-tag{display:inline-block;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.16);font-size:14px;font-weight:900;margin-bottom:18px}
 .cover-title{font-size:56px;line-height:1.05;font-weight:950;letter-spacing:-1px}
@@ -29,7 +18,6 @@ body{
 .stat{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.24);border-radius:18px;padding:15px 12px;text-align:center;backdrop-filter:blur(6px)}
 .stat-num{font-size:30px;font-weight:950}
 .stat-label{font-size:12px;margin-top:4px;opacity:.9}
-
 .page{background:#fff;border-radius:24px;padding:22px;box-shadow:0 18px 38px rgba(20,50,100,.12);margin-bottom:18px}
 .section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;border-bottom:2px solid #e1ebf8;padding-bottom:10px}
 .section-title{font-size:25px;font-weight:950;color:#062b78}
@@ -41,22 +29,17 @@ body{
 .card-title{font-size:17px;font-weight:950;color:#0b4db3;margin-bottom:10px}
 ul{padding-left:20px}
 li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233e68}
-
 .news-row{display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid #edf2fa}
-.news-row:last-child{border-bottom:none}
 .news-rank{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#063b88,#0d7df2);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:950}
 .news-title{font-size:15.5px;font-weight:950;color:#0d2d68}
 .news-meta{font-size:12px;color:#6b7f9f;margin-top:3px}
-
 .word-cloud{min-height:250px;padding:22px;display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:14px 18px;background:linear-gradient(135deg,#f8fbff,#eef6ff);border-radius:18px;border:1px solid #dbe6f6}
 .hot-word{font-weight:950;color:#0b63d8;background:#fff;border:1px solid #dbe6f6;border-radius:999px;padding:7px 14px;font-size:14px;box-shadow:0 5px 14px rgba(20,60,110,.06)}
 .hot-word.mid{font-size:17px;color:#0f766e;background:#ecfdf5}
 .hot-word.big{font-size:24px;color:#062b78;background:#dcecff}
-
 .region-card{border-radius:18px;background:linear-gradient(135deg,#f7fbff,#ffffff);border:1px solid #dbe6f6;padding:16px;min-height:112px}
 .region-name{font-size:20px;font-weight:950;color:#0b4db3;margin-bottom:8px}
 .region-desc{font-size:14.5px;line-height:1.5;color:#315174;font-weight:750}
-
 .signal-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 .signal-card{border:1px solid #dbe6f6;border-radius:18px;background:#fbfdff;padding:16px}
 .signal-title{font-size:18px;font-weight:950;color:#0b4db3;margin-bottom:12px}
@@ -71,163 +54,82 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
 .signal-tags span.tag-mid{font-size:15px;background:#ecfdf5;color:#0f766e}
 .signal-tags span.tag-large{font-size:18px;background:#dcecff;color:#062b78}
 .signal-tags em{font-style:normal;background:#fff;border-radius:999px;padding:2px 6px;color:#64748b;font-size:11px}
-
 .signal-news-row{display:grid;grid-template-columns:34px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid #edf2fa}
-.signal-news-row:last-child{border-bottom:none}
 .signal-news-rank{width:30px;height:30px;border-radius:9px;background:#0f766e;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:950}
 .signal-news-title{font-size:15px;font-weight:950;color:#0d2d68}
 .signal-news-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .signal-news-meta span{font-size:11px;background:#edf5ff;color:#365379;border-radius:8px;padding:3px 6px;font-weight:800}
 .signal-news-brand{font-size:12px;color:#0f766e;font-weight:850;margin-top:5px}
-
 .products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .product-card{border:1px solid #dbe6f6;border-radius:18px;background:#fbfdff;padding:12px;box-shadow:0 8px 18px rgba(20,60,110,.06)}
 .product-img-wrap{position:relative;width:100%;height:150px;border-radius:15px;overflow:hidden;background:#edf5ff;margin-bottom:10px}
-.product-signal-cover{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  background:
-    radial-gradient(circle at 80% 20%, rgba(25,163,255,.22), transparent 30%),
-    linear-gradient(135deg,#edf5ff,#f8fbff);
-}
-.product-icon{
-  font-size:46px;
-  line-height:1;
-  margin-bottom:10px;
-}
-.product-signal-category{
-  font-size:22px;
-  font-weight:950;
-  color:#0b4db3;
-}
-.product-signal-heat{
-  margin-top:10px;
-  font-size:14px;
-  font-weight:900;
-  color:#0f766e;
-  background:#ecfdf5;
-  padding:5px 12px;
-  border-radius:999px;
-}
+.product-signal-cover{display:flex;flex-direction:column;justify-content:center;align-items:center;background:radial-gradient(circle at 80% 20%,rgba(25,163,255,.22),transparent 30%),linear-gradient(135deg,#edf5ff,#f8fbff)}
+.product-icon{font-size:46px;line-height:1;margin-bottom:10px}
+.product-signal-category{font-size:22px;font-weight:950;color:#0b4db3}
+.product-signal-heat{margin-top:10px;font-size:14px;font-weight:900;color:#0f766e;background:#ecfdf5;padding:5px 12px;border-radius:999px}
 .product-rank{position:absolute;top:8px;left:8px;padding:4px 8px;border-radius:999px;background:rgba(6,43,120,.88);color:#fff;font-size:11px;font-weight:950}
 .product-brand{font-size:13px;color:#0b63d8;font-weight:950}
 .product-name{font-size:15.5px;line-height:1.35;font-weight:950;color:#0d2d68;margin-top:5px;min-height:42px}
 .product-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;font-size:11px;color:#51698d}
 .product-meta span{background:#edf5ff;padding:3px 6px;border-radius:8px}
 .product-tags{margin-top:8px;font-size:12px;color:#1d8c54;font-weight:850}
-.product-insight{
-  margin-top:10px;
-  padding:10px;
-  border-radius:12px;
-  background:#f0fdf4;
-  color:#166534;
-  font-size:12.5px;
-  line-height:1.45;
-  font-weight:850;
-}
-
+.product-insight{margin-top:10px;padding:10px;border-radius:12px;background:#f0fdf4;color:#166534;font-size:12.5px;line-height:1.45;font-weight:850}
 .suggest-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .suggest-card{border-radius:18px;background:linear-gradient(135deg,#fff7ed,#ffffff);border:1px solid #fed7aa;padding:16px;font-size:15px;line-height:1.55;font-weight:850;color:#7c2d12;min-height:130px}
-.footer{text-align:center;color:#7184a3;font-size:12px;margin:14px 0 4px}
 .ai-card{margin-top:16px;background:linear-gradient(135deg,#f8fbff,#ffffff)}
-.ai-section{
-    margin-top:14px;
-    padding:14px;
-    border-radius:12px;
-    background:#f8fbff;
-    border:1px solid #dbe6f6;
-}
-
-.ai-subtitle{
-    font-size:15px;
-    font-weight:950;
-    color:#0b4db3;
-    margin-bottom:8px;
-}
-
-.ai-text{
-    font-size:14px;
-    line-height:1.8;
-    color:#233e68;
-    font-weight:700;
-}
+.ai-section{margin-top:14px;padding:14px;border-radius:12px;background:#f8fbff;border:1px solid #dbe6f6}
+.ai-subtitle{font-size:15px;font-weight:950;color:#0b4db3;margin-bottom:8px}
+.ai-text{font-size:14px;line-height:1.8;color:#233e68;font-weight:700}
 .ai-content{font-size:16px;line-height:1.75;font-weight:800;color:#233e68;white-space:pre-wrap}
 .empty{color:#8a99ad;font-size:14px;padding:20px;text-align:center}
+.footer{text-align:center;color:#7184a3;font-size:12px;margin:14px 0 4px}
 </style>
 </head>
 
 <body>
 <div class="report">
 
-  <section class="cover">
-    <div class="cover-tag">361°儿童 · 周度经营洞察</div>
-    <div class="cover-title">运动品牌行业周报</div>
-    <div class="cover-sub">宏观消费 × 平台流量 × 渠道变化 × 品牌动作 × 商品机会</div>
-    <div class="cover-footer">ONE DEGREE BEYOND｜经营管理部｜生成时间 2026-06-05 14:33</div>
-    <div class="stats">
-      <div class="stat"><div class="stat-num">7</div><div class="stat-label">统计天数</div></div>
-      <div class="stat"><div class="stat-num">35</div><div class="stat-label">资讯样本</div></div>
-      <div class="stat"><div class="stat-num">61</div><div class="stat-label">趋势信号</div></div>
-      <div class="stat"><div class="stat-num">12</div><div class="stat-label">商品观察</div></div>
-    </div>
-  </section>
+<section class="cover">
+  <div class="cover-tag">361°儿童 · 周度经营洞察</div>
+  <div class="cover-title">运动品牌行业周报</div>
+  <div class="cover-sub">品牌动作 × 商品趋势 × 平台流量 × 区域机会 × 终端建议</div>
+  <div class="cover-footer">ONE DEGREE BEYOND｜经营管理部｜生成时间 2026-06-05 14:50</div>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">统计天数</div></div>
+    <div class="stat"><div class="stat-num">35</div><div class="stat-label">资讯样本</div></div>
+    <div class="stat"><div class="stat-num">59</div><div class="stat-label">趋势信号</div></div>
+    <div class="stat"><div class="stat-num">12</div><div class="stat-label">商品观察</div></div>
+  </div>
+</section>
 
-  <section class="page">
-    <div class="section-head">
-      <div class="section-title">一、本周核心判断</div>
-      <div class="section-kicker">WEEKLY JUDGEMENT</div>
-    </div>
-    <div class="summary-box">统计周期：2026-05-30 至 2026-06-05｜本周行业信息集中在品牌竞争、童装/儿童运动、户外/运动场景、大促/电商，高频热词为消费趋势、儿童运动、618、亲子运动、文旅客流、AI，竞品动态主要围绕李宁、安踏儿童、阿迪达斯展开。｜商品侧建议关注儿童运动、防晒凉感、直播电商，并结合商品信号判断儿童运动、夏季功能和轻户外方向。｜区域侧重点关注华东、华南、西南、华中，天气关键词集中在降雨、防雨、防滑、防晒，需结合区域客流变化理解机会。｜下周建议围绕儿童运动、防晒凉感、直播电商持续跟踪竞品事件、商品信号、天气变化和平台热词，形成汇报页输入。</div>
-    
-        <div class="card ai-card">
+<section class="page">
+  <div class="section-head">
+    <div class="section-title">一、本周核心判断</div>
+    <div class="section-kicker">WEEKLY JUDGEMENT</div>
+  </div>
+  <div class="summary-box">统计周期：2026-05-30 至 2026-06-05｜本周行业信息集中在品牌竞争、童装/儿童运动、商圈/零售经营、户外/运动场景，高频热词为消费趋势、儿童运动、618、亲子运动、文旅客流、AI，竞品动态主要围绕李宁、安踏儿童、阿迪达斯展开。｜商品侧建议关注儿童运动、防晒凉感、直播电商，并结合商品信号判断儿童运动、夏季功能和轻户外方向。｜区域侧重点关注华东、华南、西南、华中，天气关键词集中在降雨、防雨、防滑、防晒，需结合区域客流变化理解机会。｜下周建议围绕儿童运动、防晒凉感、直播电商持续跟踪竞品事件、商品信号、天气变化和平台热词，形成汇报页输入。</div>
+  
+</section>
 
-          <div class="card-title">AI经营判断</div>
+<section class="page">
+  <div class="section-head">
+    <div class="section-title">二、本周趋势总览</div>
+    <div class="section-kicker">TREND OVERVIEW</div>
+  </div>
+  <div class="grid-3">
+    <div class="card"><div class="card-title">机会方向</div><ul><li>【儿童运动】热度444。儿童运动鞋、校园运动鞋、青少年训练鞋需强化成长型和专业运动表达。</li><li>【防晒凉感】热度226。防晒衣、凉感T、速干短裤、透气童鞋可作为夏季主推组合。</li><li>【直播电商】热度124。直播同款、爆款价格带和平台热词款式应沉淀到商品观察。</li><li>【户外轻运动】热度117。轻户外鞋服、防晒帽包、溯溪鞋和舒适出行鞋具备组合机会。</li></ul></div>
+    <div class="card"><div class="card-title">风险提示</div><ul><li>天气扰动会影响户外客流，需关注商场内场承接和防滑防雨商品表现。</li><li>平台大促强化价格心智，线下需关注比价、折扣效率和核心SKU转化。</li><li>理性消费和客单压力仍在，商品结构需兼顾功能刚需和价格带效率。</li><li>跑鞋科技信息密集，终端若卖点表达不足，容易出现消费者无感知。</li></ul></div>
+    <div class="card"><div class="card-title">下周动作</div><ul><li>儿童运动方向重点沉淀校园运动、青少年训练、亲子运动和成长型科技卖点。</li><li>防晒凉感方向继续跟踪防晒衣、凉感T、速干短裤、运动凉鞋和帽包。</li><li>平台内容方向关注直播同款、达人种草、价格带和爆款货盘变化。</li><li>轻户外方向跟踪防晒、溯溪、户外鞋服、帽包配件和亲子出行组合。</li></ul></div>
+  </div>
+</section>
 
-          <div class="ai-section">
-            <div class="ai-subtitle">核心判断</div>
-            <div class="ai-text"></div>
-          </div>
-
-          <div class="ai-section">
-            <div class="ai-subtitle">机会判断</div>
-            <div class="ai-text"></div>
-          </div>
-
-          <div class="ai-section">
-            <div class="ai-subtitle">风险判断</div>
-            <div class="ai-text"></div>
-          </div>
-
-          <div class="ai-section">
-            <div class="ai-subtitle">下周动作</div>
-            <div class="ai-text"></div>
-          </div>
-
-        </div>
-        
-  </section>
-
-  <section class="page">
-    <div class="section-head">
-      <div class="section-title">二、本周趋势总览</div>
-      <div class="section-kicker">TREND OVERVIEW</div>
-    </div>
-    <div class="grid-3">
-      <div class="card"><div class="card-title">机会方向</div><ul><li>【儿童运动】热度457。儿童运动鞋、校园运动鞋、青少年训练鞋需强化成长型和专业运动表达。</li><li>【防晒凉感】热度231。防晒衣、凉感T、速干短裤、透气童鞋可作为夏季主推组合。</li><li>【直播电商】热度122。直播同款、爆款价格带和平台热词款式应沉淀到商品观察。</li><li>【户外轻运动】热度120。轻户外鞋服、防晒帽包、溯溪鞋和舒适出行鞋具备组合机会。</li></ul></div>
-      <div class="card"><div class="card-title">风险提示</div><ul><li>天气扰动会影响户外客流，需关注商场内场承接和防滑防雨商品表现。</li><li>平台大促强化价格心智，线下需关注比价、折扣效率和核心SKU转化。</li><li>理性消费和客单压力仍在，商品结构需兼顾功能刚需和价格带效率。</li><li>跑鞋科技信息密集，终端若卖点表达不足，容易出现消费者无感知。</li></ul></div>
-      <div class="card"><div class="card-title">经营动作</div><ul><li>儿童运动方向重点沉淀校园运动、青少年训练、亲子运动和成长型科技卖点。</li><li>防晒凉感方向继续跟踪防晒衣、凉感T、速干短裤、运动凉鞋和帽包。</li><li>平台内容方向关注直播同款、达人种草、价格带和爆款货盘变化。</li><li>轻户外方向跟踪防晒、溯溪、户外鞋服、帽包配件和亲子出行组合。</li></ul></div>
-    </div>
-  </section>
-
-  <section class="page">
-    <div class="section-head">
-      <div class="section-title">三、本周重点资讯与热词</div>
-      <div class="section-kicker">NEWS & KEYWORDS</div>
-    </div>
-    <div class="grid-2">
-      <div class="card"><div class="card-title">本周 TOP 资讯</div>
+<section class="page">
+  <div class="section-head">
+    <div class="section-title">三、本周重点资讯与热词</div>
+    <div class="section-kicker">NEWS & KEYWORDS</div>
+  </div>
+  <div class="grid-2">
+    <div class="card"><div class="card-title">本周 TOP 资讯</div>
         <div class="news-row">
           <div class="news-rank">1</div>
           <div>
@@ -239,21 +141,13 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
         <div class="news-row">
           <div class="news-rank">2</div>
           <div>
-            <div class="news-title">“小镇鞋王”盯上迪卡侬饭碗？361度找来耐克前高管，去年猛开逾120家千平大店</div>
-            <div class="news-meta">本周出现 3 次</div>
-          </div>
-        </div>
-        
-        <div class="news-row">
-          <div class="news-rank">3</div>
-          <div>
             <div class="news-title">安踏李宁叫板耐克阿迪，特步361度全力向上</div>
             <div class="news-meta">本周出现 2 次</div>
           </div>
         </div>
         
         <div class="news-row">
-          <div class="news-rank">4</div>
+          <div class="news-rank">3</div>
           <div>
             <div class="news-title">居利与李宁 签10年代言合约</div>
             <div class="news-meta">本周出现 2 次</div>
@@ -261,9 +155,17 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
         </div>
         
         <div class="news-row">
+          <div class="news-rank">4</div>
+          <div>
+            <div class="news-title">“小镇鞋王”盯上迪卡侬饭碗？361度找来耐克前高管，去年猛开逾120家千平大店</div>
+            <div class="news-meta">本周出现 2 次</div>
+          </div>
+        </div>
+        
+        <div class="news-row">
           <div class="news-rank">5</div>
           <div>
-            <div class="news-title">10年10亿授权费，安德玛儿童操盘手接下「锐步中国」</div>
+            <div class="news-title">库里签约李宁10年4亿美元代言揭秘，背后驱动力令人惊叹</div>
             <div class="news-meta">本周出现 2 次</div>
           </div>
         </div>
@@ -292,93 +194,93 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
           </div>
         </div>
         </div>
-      <div><div class="word-cloud"><span class='hot-word big'>消费趋势</span><span class='hot-word big'>儿童运动</span><span class='hot-word big'>618</span><span class='hot-word mid'>亲子运动</span><span class='hot-word mid'>文旅客流</span><span class='hot-word mid'>AI</span><span class='hot-word mid'>商圈客流</span><span class='hot-word mid'>商场活动</span><span class='hot-word mid'>直播带货</span><span class='hot-word'>客流修复</span><span class='hot-word'>情绪消费</span><span class='hot-word'>户外运动</span><span class='hot-word'>大促预售</span><span class='hot-word'>门店陈列</span><span class='hot-word'>夜经济</span><span class='hot-word'>智能机器人</span><span class='hot-word'>运动科技</span><span class='hot-word'>防晒品类</span><span class='hot-word'>速干T</span><span class='hot-word'>健康生活</span><span class='hot-word'>品牌站位</span><span class='hot-word'>防雨装备</span></div></div>
-    </div>
-  </section>
+    <div><div class="word-cloud"><span class='hot-word big'>消费趋势</span><span class='hot-word big'>儿童运动</span><span class='hot-word big'>618</span><span class='hot-word mid'>亲子运动</span><span class='hot-word mid'>文旅客流</span><span class='hot-word mid'>AI</span><span class='hot-word mid'>商圈客流</span><span class='hot-word mid'>商场活动</span><span class='hot-word mid'>直播带货</span><span class='hot-word'>客流修复</span><span class='hot-word'>情绪消费</span><span class='hot-word'>户外运动</span><span class='hot-word'>大促预售</span><span class='hot-word'>门店陈列</span><span class='hot-word'>AI直播带货</span><span class='hot-word'>智能机器人</span><span class='hot-word'>运动科技</span><span class='hot-word'>防晒品类</span><span class='hot-word'>速干T</span><span class='hot-word'>夜经济</span><span class='hot-word'>健康生活</span><span class='hot-word'>品牌站位</span></div></div>
+  </div>
+</section>
 
-  <section class="page">
-    <div class="section-head">
-      <div class="section-title">四、区域机会与渠道观察</div>
-      <div class="section-kicker">REGIONAL INSIGHT</div>
-    </div>
-    <div class="grid-3">
+<section class="page">
+  <div class="section-head">
+    <div class="section-title">四、区域机会与渠道观察</div>
+    <div class="section-kicker">REGIONAL INSIGHT</div>
+  </div>
+  <div class="grid-3">
         <div class="region-card">
           <div class="region-name">华东</div>
-          <div class="region-desc">本周重点：上海/江苏/浙江、AI科技赋能亲子运动，华东户外场景与轻外套需求增长。。建议动作：结合AI科技主题，在门店设置亲子运动互动体验区，主推轻外套与户外鞋服，搭、在门店设置AI互动玩具体验区，结合儿童友好场景推出亲子运动鞋服组合，通过。</div>
+          <div class="region-desc">华东本周天气扰动较明显，雨天客流、防滑防雨和室内运动场景是主要关注点。</div>
         </div>
         
         <div class="region-card">
           <div class="region-name">华南</div>
-          <div class="region-desc">本周重点：广东/广西、降雨影响客流，防雨轻防护与室内运动需求提升。。建议动作：主推防雨鞋服与室内运动装备，在门店设置防雨功能陈列专区，结合银发经济推出、强化防雨防滑鞋款陈列，结合AI互动玩具打造儿童体验区，推出亲子室内运动组。</div>
+          <div class="region-desc">华南本周天气扰动较明显，雨天客流、防滑防雨和室内运动场景是主要关注点。</div>
         </div>
         
         <div class="region-card">
           <div class="region-name">西南</div>
-          <div class="region-desc">本周重点：四川/重庆/贵州、直播电商引流。建议动作：在门店设置直播同款陈列专区，主推防雨轻防护与室内运动鞋服，联合抖音生活服、在公园商圈门店设置AI互动试穿屏，主推防晒凉感与潮流运动鞋服，结合亲子活。</div>
+          <div class="region-desc">西南本周天气扰动较明显，雨天客流、防滑防雨和室内运动场景是主要关注点。</div>
         </div>
         
         <div class="region-card">
           <div class="region-name">华中</div>
-          <div class="region-desc">本周重点：湖北/湖南/江西、商圈客流回暖，亲子活动与高铁枢纽带动消费。。建议动作：联合商圈举办亲子运动会或击剑体验活动，主推亲子运动套装，设置会员专属试穿、联合商圈举办亲子运动会，主推防晒轻薄T恤与运动短裤组合，设置直播同款专区。</div>
+          <div class="region-desc">华中本周天气扰动较明显，雨天客流、防滑防雨和室内运动场景是主要关注点。</div>
         </div>
         
         <div class="region-card">
           <div class="region-name">西北</div>
-          <div class="region-desc">本周重点：陕西/甘肃/宁夏、防晒热销与童趣经济叠加，商圈客流回暖。。建议动作：主推防晒凉感T恤与短裤，在门店设置防晒童趣陈列专区，联合商圈举办亲子运动、主推硬防晒与凉感面料鞋服，设置防晒陈列专区与童趣互动区，推出高性价比亲子。</div>
+          <div class="region-desc">西北本周天气扰动较明显，雨天客流、防滑防雨和室内运动场景是主要关注点。</div>
         </div>
         </div>
-  </section>
+</section>
 
-  <section class="page">
-    <div class="section-head">
-      <div class="section-title">五、真实商品趋势信号看板</div>
-      <div class="section-kicker">PRODUCT SIGNALS</div>
-    </div>
+<section class="page">
+  <div class="section-head">
+    <div class="section-title">五、真实商品趋势信号看板</div>
+    <div class="section-kicker">PRODUCT SIGNALS</div>
+  </div>
 
-    <div class="signal-grid">
-      
+  <div class="signal-grid">
+    
     <div class="signal-card">
       <div class="signal-title">品牌热度 TOP10</div>
     
         <div class="rank-bar-row">
           <div class="rank-label"><span>1</span>安踏</div>
           <div class="rank-bar"><i style="width:100%"></i></div>
-          <div class="rank-count">17</div>
+          <div class="rank-count">16</div>
         </div>
         
         <div class="rank-bar-row">
           <div class="rank-label"><span>2</span>安踏儿童</div>
-          <div class="rank-bar"><i style="width:82%"></i></div>
-          <div class="rank-count">14</div>
+          <div class="rank-bar"><i style="width:81%"></i></div>
+          <div class="rank-count">13</div>
         </div>
         
         <div class="rank-bar-row">
           <div class="rank-label"><span>3</span>泰兰尼斯</div>
-          <div class="rank-bar"><i style="width:35%"></i></div>
-          <div class="rank-count">6</div>
+          <div class="rank-bar"><i style="width:43%"></i></div>
+          <div class="rank-count">7</div>
         </div>
         
         <div class="rank-bar-row">
-          <div class="rank-label"><span>4</span>巴拉巴拉</div>
-          <div class="rank-bar"><i style="width:23%"></i></div>
+          <div class="rank-label"><span>4</span>FILA</div>
+          <div class="rank-bar"><i style="width:25%"></i></div>
           <div class="rank-count">4</div>
         </div>
         
         <div class="rank-bar-row">
-          <div class="rank-label"><span>5</span>FILA</div>
-          <div class="rank-bar"><i style="width:17%"></i></div>
+          <div class="rank-label"><span>5</span>巴拉巴拉</div>
+          <div class="rank-bar"><i style="width:18%"></i></div>
           <div class="rank-count">3</div>
         </div>
         
         <div class="rank-bar-row">
-          <div class="rank-label"><span>6</span>New Balance</div>
-          <div class="rank-bar"><i style="width:11%"></i></div>
-          <div class="rank-count">2</div>
+          <div class="rank-label"><span>6</span>FILA Kids</div>
+          <div class="rank-bar"><i style="width:18%"></i></div>
+          <div class="rank-count">3</div>
         </div>
         
         <div class="rank-bar-row">
-          <div class="rank-label"><span>7</span>FILA Kids</div>
-          <div class="rank-bar"><i style="width:11%"></i></div>
+          <div class="rank-label"><span>7</span>New Balance</div>
+          <div class="rank-bar"><i style="width:12%"></i></div>
           <div class="rank-count">2</div>
         </div>
         
@@ -400,85 +302,91 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
           <div class="rank-count">1</div>
         </div>
         </div>
-      
+    
     <div class="signal-card">
       <div class="signal-title">品类/场景热度 TOP10</div>
     
         <div class="rank-bar-row">
           <div class="rank-label"><span>1</span>儿童服装</div>
           <div class="rank-bar"><i style="width:100%"></i></div>
-          <div class="rank-count">15</div>
-        </div>
-        
-        <div class="rank-bar-row">
-          <div class="rank-label"><span>2</span>儿童鞋</div>
-          <div class="rank-bar"><i style="width:86%"></i></div>
           <div class="rank-count">13</div>
         </div>
         
         <div class="rank-bar-row">
+          <div class="rank-label"><span>2</span>儿童鞋</div>
+          <div class="rank-bar"><i style="width:92%"></i></div>
+          <div class="rank-count">12</div>
+        </div>
+        
+        <div class="rank-bar-row">
           <div class="rank-label"><span>3</span>品牌新品</div>
-          <div class="rank-bar"><i style="width:73%"></i></div>
-          <div class="rank-count">11</div>
+          <div class="rank-bar"><i style="width:76%"></i></div>
+          <div class="rank-count">10</div>
         </div>
         
         <div class="rank-bar-row">
           <div class="rank-label"><span>4</span>跑步科技</div>
           <div class="rank-bar"><i style="width:46%"></i></div>
-          <div class="rank-count">7</div>
+          <div class="rank-count">6</div>
         </div>
         
         <div class="rank-bar-row">
-          <div class="rank-label"><span>5</span>户外轻运动</div>
-          <div class="rank-bar"><i style="width:33%"></i></div>
+          <div class="rank-label"><span>5</span>青少年成人化</div>
+          <div class="rank-bar"><i style="width:38%"></i></div>
           <div class="rank-count">5</div>
         </div>
         
         <div class="rank-bar-row">
-          <div class="rank-label"><span>6</span>防晒凉感</div>
-          <div class="rank-bar"><i style="width:33%"></i></div>
+          <div class="rank-label"><span>6</span>户外轻运动</div>
+          <div class="rank-bar"><i style="width:38%"></i></div>
           <div class="rank-count">5</div>
         </div>
         
         <div class="rank-bar-row">
-          <div class="rank-label"><span>7</span>青少年成人化</div>
-          <div class="rank-bar"><i style="width:20%"></i></div>
-          <div class="rank-count">3</div>
+          <div class="rank-label"><span>7</span>防晒凉感</div>
+          <div class="rank-bar"><i style="width:38%"></i></div>
+          <div class="rank-count">5</div>
         </div>
         
         <div class="rank-bar-row">
-          <div class="rank-label"><span>8</span>秋冬保暖</div>
+          <div class="rank-label"><span>8</span>综合趋势</div>
           <div class="rank-bar"><i style="width:8%"></i></div>
           <div class="rank-count">1</div>
         </div>
         
         <div class="rank-bar-row">
-          <div class="rank-label"><span>9</span>大促节点</div>
+          <div class="rank-label"><span>9</span>秋冬保暖</div>
+          <div class="rank-bar"><i style="width:8%"></i></div>
+          <div class="rank-count">1</div>
+        </div>
+        
+        <div class="rank-bar-row">
+          <div class="rank-label"><span>10</span>大促节点</div>
           <div class="rank-bar"><i style="width:8%"></i></div>
           <div class="rank-count">1</div>
         </div>
         </div>
-    </div>
+  </div>
 
-    <div class="signal-grid">
-      <div class="signal-card">
-        <div class="signal-title">关键词信号</div>
-        <div class='signal-tags'><span class='tag-large'>儿童<em>40</em></span><span class='tag-large'>新品<em>25</em></span><span class='tag-large'>热卖<em>14</em></span><span class='tag-large'>发布<em>14</em></span><span class='tag-large'>防晒衣<em>8</em></span><span class='tag-mid'>防晒<em>8</em></span><span class='tag-mid'>冲锋衣<em>5</em></span><span class='tag-mid'>羽绒服<em>5</em></span><span class='tag-mid'>青少年<em>5</em></span><span class='tag-mid'>足弓<em>5</em></span><span class='tag-mid'>科技<em>4</em></span><span class='tag-mid'>碳板跑鞋<em>3</em></span><span class=''>凉感T恤<em>3</em></span><span class=''>凉感<em>3</em></span><span class=''>防水<em>3</em></span><span class=''>篮球鞋<em>2</em></span><span class=''>篮球<em>2</em></span><span class=''>保暖<em>2</em></span><span class=''>成人化<em>2</em></span><span class=''>缓震跑鞋<em>2</em></span><span class=''>缓震<em>2</em></span><span class=''>618<em>2</em></span><span class=''>六一<em>2</em></span><span class=''>开学季<em>2</em></span></div>
-      </div>
-      
+  <div class="signal-grid">
+    <div class="signal-card">
+      <div class="signal-title">关键词信号</div>
+      <div class='signal-tags'><span class='tag-large'>儿童<em>35</em></span><span class='tag-large'>新品<em>26</em></span><span class='tag-large'>发布<em>15</em></span><span class='tag-large'>热卖<em>13</em></span><span class='tag-large'>青少年<em>8</em></span><span class='tag-mid'>防晒衣<em>7</em></span><span class='tag-mid'>防晒<em>7</em></span><span class='tag-mid'>羽绒服<em>5</em></span><span class='tag-mid'>科技<em>4</em></span><span class='tag-mid'>冲锋衣<em>4</em></span><span class='tag-mid'>足弓<em>4</em></span><span class='tag-mid'>碳板跑鞋<em>3</em></span><span class=''>凉感T恤<em>3</em></span><span class=''>凉感<em>3</em></span><span class=''>成人化<em>3</em></span><span class=''>篮球鞋<em>2</em></span><span class=''>篮球<em>2</em></span><span class=''>防水<em>2</em></span><span class=''>保暖<em>2</em></span><span class=''>缓震跑鞋<em>2</em></span><span class=''>缓震<em>2</em></span><span class=''>618<em>2</em></span><span class=''>六一<em>2</em></span><span class=''>开学季<em>2</em></span></div>
+    </div>
+    
     <div class="signal-card">
       <div class="signal-title">四季趋势分布</div>
     
         <div class="rank-bar-row">
           <div class="rank-label"><span>1</span>全年</div>
           <div class="rank-bar"><i style="width:100%"></i></div>
-          <div class="rank-count">38</div>
+          <div class="rank-count">37</div>
         </div>
         
         <div class="rank-bar-row">
           <div class="rank-label"><span>2</span>夏季</div>
-          <div class="rank-bar"><i style="width:28%"></i></div>
-          <div class="rank-count">11</div>
+          <div class="rank-bar"><i style="width:27%"></i></div>
+          <div class="rank-count">10</div>
         </div>
         
         <div class="rank-bar-row">
@@ -499,17 +407,20 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
           <div class="rank-count">3</div>
         </div>
         </div>
-    </div>
+  </div>
 
-    <div class="signal-card">
-      <div class="signal-title">高热商品/新品信号</div>
-      
+  <div class="signal-card">
+    <div class="signal-title">高热商品/新品信号</div>
+    
         <div class="signal-news-row">
           <div class="signal-news-rank">1</div>
           <div class="signal-news-main">
             <div class="signal-news-title">“聚焦低足弓科学支持与发展干预” 安踏儿童在厦门发布新品 - 人民网-福建频道</div>
             <div class="signal-news-meta">
-              <span>儿童鞋</span><span>全年</span><span>热度 80</span><span>人民网-福建频道</span>
+              <span>儿童鞋</span>
+              <span>全年</span>
+              <span>热度 80</span>
+              <span>人民网-福建频道</span>
             </div>
             <div class="signal-news-brand">安踏儿童、安踏</div>
           </div>
@@ -520,7 +431,10 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
           <div class="signal-news-main">
             <div class="signal-news-title">安踏儿童携手广州亲子跑，足弓PRO跑鞋「萌芽」配色首发亮相 - 凤凰网</div>
             <div class="signal-news-meta">
-              <span>儿童鞋</span><span>全年</span><span>热度 76</span><span>凤凰网</span>
+              <span>儿童鞋</span>
+              <span>全年</span>
+              <span>热度 76</span>
+              <span>凤凰网</span>
             </div>
             <div class="signal-news-brand">安踏儿童、安踏</div>
           </div>
@@ -529,9 +443,12 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
         <div class="signal-news-row">
           <div class="signal-news-rank">3</div>
           <div class="signal-news-main">
-            <div class="signal-news-title">安踏儿童携手上海六院国家骨科医学中心，落成儿童足弓成长实验室 - 搜狐网</div>
+            <div class="signal-news-title">安踏儿童携手上海医疗机构共建儿童足弓成长实验室 - 新华网上海</div>
             <div class="signal-news-meta">
-              <span>儿童鞋</span><span>全年</span><span>热度 66</span><span>搜狐网</span>
+              <span>儿童鞋</span>
+              <span>全年</span>
+              <span>热度 66</span>
+              <span>新华网上海</span>
             </div>
             <div class="signal-news-brand">安踏儿童、安踏</div>
           </div>
@@ -540,31 +457,40 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
         <div class="signal-news-row">
           <div class="signal-news-rank">4</div>
           <div class="signal-news-main">
-            <div class="signal-news-title">安踏儿童破百亿，下一个FILA？ - 赢商网</div>
+            <div class="signal-news-title">安踏儿童携手上海六院国家骨科医学中心，落成儿童足弓成长实验室 - thepaper.cn</div>
             <div class="signal-news-meta">
-              <span>品牌新品</span><span>全年</span><span>热度 59</span><span>赢商网</span>
+              <span>儿童鞋</span>
+              <span>全年</span>
+              <span>热度 66</span>
+              <span>thepaper.cn</span>
             </div>
-            <div class="signal-news-brand">安踏儿童、安踏、FILA</div>
+            <div class="signal-news-brand">安踏儿童、安踏</div>
           </div>
         </div>
         
         <div class="signal-news-row">
           <div class="signal-news-rank">5</div>
           <div class="signal-news-main">
-            <div class="signal-news-title">起跑入心流 New Balance发布全新Ellipse跑鞋，定义舒适缓震新形态 - Jiemian.com</div>
+            <div class="signal-news-title">安踏儿童破百亿，下一个FILA？ - 赢商网</div>
             <div class="signal-news-meta">
-              <span>跑步科技</span><span>全年</span><span>热度 58</span><span>Jiemian.com</span>
+              <span>品牌新品</span>
+              <span>全年</span>
+              <span>热度 59</span>
+              <span>赢商网</span>
             </div>
-            <div class="signal-news-brand">New Balance</div>
+            <div class="signal-news-brand">安踏儿童、安踏、FILA</div>
           </div>
         </div>
         
         <div class="signal-news-row">
           <div class="signal-news-rank">6</div>
           <div class="signal-news-main">
-            <div class="signal-news-title">风随步起，轻踏入夏 New Balance 发布拂夏系列跑鞋焕新夏日跑感 - 凤凰网</div>
+            <div class="signal-news-title">起跑入心流 New Balance发布全新Ellipse跑鞋，定义舒适缓震新形态 - Jiemian.com</div>
             <div class="signal-news-meta">
-              <span>跑步科技</span><span>全年</span><span>热度 58</span><span>凤凰网</span>
+              <span>跑步科技</span>
+              <span>全年</span>
+              <span>热度 58</span>
+              <span>Jiemian.com</span>
             </div>
             <div class="signal-news-brand">New Balance</div>
           </div>
@@ -573,34 +499,40 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
         <div class="signal-news-row">
           <div class="signal-news-rank">7</div>
           <div class="signal-news-main">
-            <div class="signal-news-title">安踏儿童携手上海医疗机构共建儿童足弓成长实验室 - 新华网上海</div>
+            <div class="signal-news-title">风随步起，轻踏入夏 New Balance 发布拂夏系列跑鞋焕新夏日跑感 - 凤凰网</div>
             <div class="signal-news-meta">
-              <span>儿童鞋</span><span>全年</span><span>热度 58</span><span>新华网上海</span>
+              <span>跑步科技</span>
+              <span>全年</span>
+              <span>热度 58</span>
+              <span>凤凰网</span>
             </div>
-            <div class="signal-news-brand">安踏儿童、安踏</div>
+            <div class="signal-news-brand">New Balance</div>
           </div>
         </div>
         
         <div class="signal-news-row">
           <div class="signal-news-rank">8</div>
           <div class="signal-news-main">
-            <div class="signal-news-title">安踏儿童携手上海六院国家骨科医学中心，落成儿童足弓成长实验室 - thepaper.cn</div>
+            <div class="signal-news-title">FILA KIDS「蝶翼魔法学院」发布： 重新定义儿童护脊新标准 - 美通社</div>
             <div class="signal-news-meta">
-              <span>儿童鞋</span><span>全年</span><span>热度 58</span><span>thepaper.cn</span>
+              <span>品牌新品</span>
+              <span>全年</span>
+              <span>热度 57</span>
+              <span>美通社</span>
             </div>
-            <div class="signal-news-brand">安踏儿童、安踏</div>
+            <div class="signal-news-brand">FILA Kids、FILA</div>
           </div>
         </div>
         
-    </div>
-  </section>
+  </div>
+</section>
 
-  <section class="page">
-    <div class="section-head">
-      <div class="section-title">六、代表商品观察</div>
-      <div class="section-kicker">REPRESENTATIVE PRODUCTS</div>
-    </div>
-    <div class="products">
+<section class="page">
+  <div class="section-head">
+    <div class="section-title">六、代表商品观察</div>
+    <div class="section-kicker">REPRESENTATIVE PRODUCTS</div>
+  </div>
+  <div class="products">
         <div class="product-card">
           <div class="product-img-wrap product-signal-cover">
             <div class="product-rank">TOP 1</div>
@@ -608,16 +540,13 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
             <div class="product-signal-category">儿童鞋</div>
             <div class="product-signal-heat">热度 80</div>
           </div>
-
           <div class="product-brand">安踏儿童、安踏</div>
-          <div class="product-name">“聚焦低足弓科学支持与发展干预” 安踏儿童在厦门发布新品 - 人民网-福建频...</div>
-
+          <div class="product-name">“聚焦低足弓科学支持与发展干预” 安踏儿童在厦门发布新品 - 人民网-福建频道</div>
           <div class="product-meta">
             <span>儿童鞋</span>
             <span>全年</span>
             <span>人民网-福建频道</span>
           </div>
-
           <div class="product-tags">足弓 / 儿童 / 新品</div>
           <div class="product-insight">关注儿童足弓支撑、成长跑鞋、医学背书与专业科技表达。</div>
         </div>
@@ -629,16 +558,13 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
             <div class="product-signal-category">儿童鞋</div>
             <div class="product-signal-heat">热度 76</div>
           </div>
-
           <div class="product-brand">安踏儿童、安踏</div>
           <div class="product-name">安踏儿童携手广州亲子跑，足弓PRO跑鞋「萌芽」配色首发亮相 - 凤凰网</div>
-
           <div class="product-meta">
             <span>儿童鞋</span>
             <span>全年</span>
             <span>凤凰网</span>
           </div>
-
           <div class="product-tags">足弓 / 儿童 / 首发</div>
           <div class="product-insight">关注儿童足弓支撑、成长跑鞋、医学背书与专业科技表达。</div>
         </div>
@@ -650,16 +576,13 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
             <div class="product-signal-category">跑步科技</div>
             <div class="product-signal-heat">热度 58</div>
           </div>
-
           <div class="product-brand">New Balance</div>
-          <div class="product-name">起跑入心流 New Balance发布全新Ellipse跑鞋，定义舒适缓震新...</div>
-
+          <div class="product-name">起跑入心流 New Balance发布全新Ellipse跑鞋，定义舒适缓震新形态 -...</div>
           <div class="product-meta">
             <span>跑步科技</span>
             <span>全年</span>
             <span>Jiemian.com</span>
           </div>
-
           <div class="product-tags">缓震跑鞋 / 新品 / 发布</div>
           <div class="product-insight">关注该信号背后的品牌动作、商品卖点和终端陈列表达。</div>
         </div>
@@ -671,16 +594,13 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
             <div class="product-signal-category">跑步科技</div>
             <div class="product-signal-heat">热度 58</div>
           </div>
-
           <div class="product-brand">New Balance</div>
-          <div class="product-name">风随步起，轻踏入夏 New Balance 发布拂夏系列跑鞋焕新夏日跑感 -...</div>
-
+          <div class="product-name">风随步起，轻踏入夏 New Balance 发布拂夏系列跑鞋焕新夏日跑感 - 凤凰网</div>
           <div class="product-meta">
             <span>跑步科技</span>
             <span>全年</span>
             <span>凤凰网</span>
           </div>
-
           <div class="product-tags">缓震跑鞋 / 新品 / 发布</div>
           <div class="product-insight">关注该信号背后的品牌动作、商品卖点和终端陈列表达。</div>
         </div>
@@ -692,16 +612,13 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
             <div class="product-signal-category">品牌新品</div>
             <div class="product-signal-heat">热度 57</div>
           </div>
-
           <div class="product-brand">FILA Kids、FILA</div>
           <div class="product-name">FILA KIDS「蝶翼魔法学院」发布： 重新定义儿童护脊新标准 - 美通社</div>
-
           <div class="product-meta">
             <span>品牌新品</span>
             <span>全年</span>
             <span>美通社</span>
           </div>
-
           <div class="product-tags">儿童 / 新品 / 发布</div>
           <div class="product-insight">关注该信号背后的品牌动作、商品卖点和终端陈列表达。</div>
         </div>
@@ -713,16 +630,13 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
             <div class="product-signal-category">儿童鞋</div>
             <div class="product-signal-heat">热度 53</div>
           </div>
-
           <div class="product-brand">泰兰尼斯</div>
           <div class="product-name">泰兰尼斯要做儿童跑鞋中的SUV丨科技赋能新消费 - eeo.com.cn</div>
-
           <div class="product-meta">
             <span>儿童鞋</span>
             <span>全年</span>
             <span>eeo.com.cn</span>
           </div>
-
           <div class="product-tags">儿童 / 新品 / 热卖</div>
           <div class="product-insight">关注该信号背后的品牌动作、商品卖点和终端陈列表达。</div>
         </div>
@@ -734,16 +648,13 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
             <div class="product-signal-category">儿童服装</div>
             <div class="product-signal-heat">热度 53</div>
           </div>
-
           <div class="product-brand">行业趋势</div>
-          <div class="product-name">Bonpoint × HELLY HANSEN限定联名童装系列正式发布 - ...</div>
-
+          <div class="product-name">Bonpoint × HELLY HANSEN限定联名童装系列正式发布 - ELLE...</div>
           <div class="product-meta">
             <span>儿童服装</span>
             <span>夏季</span>
             <span>ELLE China</span>
           </div>
-
           <div class="product-tags">凉感T恤 / 儿童 / 热卖</div>
           <div class="product-insight">关注夏季防晒、凉感、速干和轻薄透气组合。</div>
         </div>
@@ -755,16 +666,13 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
             <div class="product-signal-category">跑步科技</div>
             <div class="product-signal-heat">热度 53</div>
           </div>
-
           <div class="product-brand">行业趋势</div>
           <div class="product-name">2026路跑鞋趋势暨新品预展：14个品牌19款新鞋 - QQ News</div>
-
           <div class="product-meta">
             <span>跑步科技</span>
             <span>全年</span>
             <span>QQ News</span>
           </div>
-
           <div class="product-tags">碳板跑鞋 / 新品 / 热卖</div>
           <div class="product-insight">关注青少年跑鞋成人化，但需控制专业科技使用边界。</div>
         </div>
@@ -772,22 +680,19 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
         <div class="product-card">
           <div class="product-img-wrap product-signal-cover">
             <div class="product-rank">TOP 9</div>
-            <div class="product-icon">☀️</div>
+            <div class="product-icon">✨</div>
             <div class="product-signal-category">青少年成人化</div>
             <div class="product-signal-heat">热度 50</div>
           </div>
-
           <div class="product-brand">FILA Kids、FILA</div>
-          <div class="product-name">FILA KIDS从青少年高尔夫生态到专业赋能，助力中国高球少年“挥杆见未来...</div>
-
+          <div class="product-name">FILA KIDS青少年滑雪公开赛成功举办 - 新华网</div>
           <div class="product-meta">
             <span>青少年成人化</span>
-            <span>夏季</span>
-            <span>美通社</span>
+            <span>全年</span>
+            <span>新华网</span>
           </div>
-
-          <div class="product-tags">凉感T恤 / 青少年 / 凉感</div>
-          <div class="product-insight">关注夏季防晒、凉感、速干和轻薄透气组合。</div>
+          <div class="product-tags">滑雪 / 青少年 / 新品</div>
+          <div class="product-insight">关注该信号背后的品牌动作、商品卖点和终端陈列表达。</div>
         </div>
         
         <div class="product-card">
@@ -797,16 +702,13 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
             <div class="product-signal-category">青少年成人化</div>
             <div class="product-signal-heat">热度 46</div>
           </div>
-
           <div class="product-brand">李宁YOUNG、李宁</div>
-          <div class="product-name">2026北京半马亲子跑圆满结束 李宁YOUNG动³科技护航青少年运动成长，开...</div>
-
+          <div class="product-name">2026北京半马亲子跑圆满结束 李宁YOUNG动³科技护航青少年运动成长，开启亲子陪...</div>
           <div class="product-meta">
             <span>青少年成人化</span>
             <span>全年</span>
             <span>中华网</span>
           </div>
-
           <div class="product-tags">青少年 / 科技</div>
           <div class="product-insight">关注该信号背后的品牌动作、商品卖点和终端陈列表达。</div>
         </div>
@@ -818,16 +720,13 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
             <div class="product-signal-category">儿童服装</div>
             <div class="product-signal-heat">热度 45</div>
           </div>
-
           <div class="product-brand">jnby by JNBY</div>
-          <div class="product-name">jnby by JNBY 2025秋冬新品秀暨KIDS WEAR上海时装周童...</div>
-
+          <div class="product-name">jnby by JNBY 2025秋冬新品秀暨KIDS WEAR上海时装周童装发布开...</div>
           <div class="product-meta">
             <span>儿童服装</span>
             <span>全年</span>
             <span>时尚商业网</span>
           </div>
-
           <div class="product-tags">新品 / 发布</div>
           <div class="product-insight">关注该信号背后的品牌动作、商品卖点和终端陈列表达。</div>
         </div>
@@ -839,33 +738,30 @@ li{margin-bottom:10px;font-size:15px;line-height:1.55;font-weight:760;color:#233
             <div class="product-signal-category">户外轻运动</div>
             <div class="product-signal-heat">热度 40</div>
           </div>
-
           <div class="product-brand">361°</div>
-          <div class="product-name">为热爱，护山海！孙杨携手361°轻野御屏冲锋衣赋能户外探索 - sports...</div>
-
+          <div class="product-name">为热爱，护山海！孙杨携手361°轻野御屏冲锋衣赋能户外探索 - sports.tom...</div>
           <div class="product-meta">
             <span>户外轻运动</span>
             <span>春季</span>
             <span>sports.tom.com</span>
           </div>
-
           <div class="product-tags">冲锋衣 / 新品</div>
           <div class="product-insight">关注轻户外、防水防风、亲子户外和场景陈列。</div>
         </div>
         </div>
-  </section>
+</section>
 
-  <section class="page">
-    <div class="section-head">
-      <div class="section-title">七、下季度商品开发建议</div>
-      <div class="section-kicker">PRODUCT PLANNING</div>
-    </div>
-    <div class="suggest-grid"><div class='suggest-card'>青少年跑鞋、篮球鞋、训练鞋可强化成人化设计表达和科技感。</div><div class='suggest-card'>防晒衣、凉感T恤、速干短裤、运动凉鞋、防晒帽包仍是夏季重点。</div><div class='suggest-card'>轻户外鞋服、冲锋衣、防水外套、溯溪鞋和户外鞋值得持续跟踪。</div><div class='suggest-card'>跑鞋矩阵需区分碳板竞速、厚底缓震、轻量训练和校园跑步。</div></div>
-  </section>
-
-  <div class="footer">
-    数据来源：TrendRadar 日报历史库 / 周报库 / 商品趋势信号库 ｜ 制作：运动品牌行业周报自动化系统
+<section class="page">
+  <div class="section-head">
+    <div class="section-title">七、下季度商品开发建议</div>
+    <div class="section-kicker">PRODUCT PLANNING</div>
   </div>
+  <div class="suggest-grid"><div class='suggest-card'>青少年跑鞋、篮球鞋、训练鞋可强化成人化设计表达和科技感。</div><div class='suggest-card'>防晒衣、凉感T恤、速干短裤、运动凉鞋、防晒帽包仍是夏季重点。</div><div class='suggest-card'>轻户外鞋服、冲锋衣、防水外套、溯溪鞋和户外鞋值得持续跟踪。</div><div class='suggest-card'>跑鞋矩阵需区分碳板竞速、厚底缓震、轻量训练和校园跑步。</div></div>
+</section>
+
+<div class="footer">
+  数据来源：TrendRadar 日报历史库 / 周报库 / 商品趋势信号库 ｜ 制作：运动品牌行业周报自动化系统
+</div>
 
 </div>
 </body>

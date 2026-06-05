@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05 14:31:05",
+  "generated_at": "2026-06-05 14:48:12",
   "source": "Open-Meteo",
   "regions": {
     "north": {
@@ -183,14 +183,14 @@
         },
         {
           "date": "2026-06-06",
-          "code": 63,
-          "weather": "中雨",
+          "code": 80,
+          "weather": "阵雨",
           "temp_max": 32.1,
           "temp_min": 22.2,
           "precipitation": 7.3,
           "wind": 16.8,
           "risk_score": 44,
-          "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
+          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         },
         {
           "date": "2026-06-07",
