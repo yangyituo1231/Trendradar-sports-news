@@ -1,10 +1,10 @@
 {
   "date": "2026-06-08",
-  "generated_time": "2026-06-08 06:21:53",
+  "generated_time": "2026-06-08 06:44:49",
   "source": "Google News RSS product signal monitor",
   "desc": "全年运动鞋服商品趋势信号监测：覆盖儿童、成人、童装、四季商品、大促节点、鞋科技、运动场景。已过滤过旧新闻、财经财报、微博广告、弱新浪促销帖和弱相关信号。该数据代表公开资讯热度信号，不等同于平台真实销量。",
   "query_count": 140,
-  "signal_count": 53,
+  "signal_count": 51,
   "top_brands": [
     [
       "安踏",
@@ -35,22 +35,22 @@
       2
     ],
     [
+      "Crocs",
+      1
+    ],
+    [
       "李宁YOUNG",
       1
     ],
     [
       "李宁",
       1
-    ],
-    [
-      "Asics",
-      1
     ]
   ],
   "top_keywords": [
     [
       "儿童",
-      33
+      32
     ],
     [
       "新品",
@@ -58,19 +58,15 @@
     ],
     [
       "热卖",
-      13
+      14
     ],
     [
       "发布",
-      12
+      11
     ],
     [
       "青少年",
-      8
-    ],
-    [
-      "科技",
-      6
+      7
     ],
     [
       "防晒衣",
@@ -81,31 +77,35 @@
       6
     ],
     [
-      "篮球鞋",
-      4
-    ],
-    [
-      "篮球",
-      4
-    ],
-    [
-      "凉感T恤",
-      4
-    ],
-    [
-      "凉感",
-      4
+      "科技",
+      5
     ],
     [
       "羽绒服",
       4
     ],
     [
-      "校园",
+      "篮球鞋",
+      3
+    ],
+    [
+      "篮球",
+      3
+    ],
+    [
+      "凉感T恤",
+      3
+    ],
+    [
+      "凉感",
       3
     ],
     [
       "足弓",
+      3
+    ],
+    [
+      "618",
       3
     ],
     [
@@ -114,6 +114,10 @@
     ],
     [
       "碳板跑鞋",
+      2
+    ],
+    [
+      "校园",
       2
     ],
     [
@@ -133,23 +137,11 @@
       2
     ],
     [
-      "棉服",
-      2
-    ],
-    [
       "缓震跑鞋",
       2
     ],
     [
       "缓震",
-      2
-    ],
-    [
-      "618",
-      2
-    ],
-    [
-      "上市",
       2
     ],
     [
@@ -161,11 +153,15 @@
       2
     ],
     [
-      "联名",
+      "儿童节",
       1
     ],
     [
       "通勤",
+      1
+    ],
+    [
+      "棉服",
       1
     ],
     [
@@ -192,22 +188,14 @@
   "top_categories": [
     [
       "儿童服装",
-      14
+      13
     ],
     [
       "儿童鞋",
       10
     ],
     [
-      "青少年成人化",
-      6
-    ],
-    [
       "跑步科技",
-      5
-    ],
-    [
-      "户外轻运动",
       5
     ],
     [
@@ -215,12 +203,20 @@
       5
     ],
     [
+      "青少年成人化",
+      5
+    ],
+    [
+      "户外轻运动",
+      4
+    ],
+    [
       "防晒凉感",
       4
     ],
     [
       "大促节点",
-      2
+      3
     ],
     [
       "篮球足球",
@@ -234,19 +230,19 @@
   "top_seasons": [
     [
       "全年",
-      29
+      30
     ],
     [
       "夏季",
-      10
+      9
     ],
     [
       "秋季",
-      7
+      6
     ],
     [
       "冬季",
-      5
+      4
     ],
     [
       "春季",
@@ -544,28 +540,6 @@
     },
     {
       "date": "2026-06-08",
-      "title": "Bonpoint × HELLY HANSEN限定联名童装系列正式发布 - ELLE China",
-      "short_title": "Bonpoint × HELLY HANSEN限定联名童装系列正式发布 - ELLE China",
-      "query": "儿童凉感T恤 热卖",
-      "brand_hits": [],
-      "keyword_hits": [
-        "凉感T恤",
-        "儿童",
-        "热卖",
-        "联名",
-        "发布",
-        "凉感"
-      ],
-      "category": "儿童服装",
-      "season_tag": "夏季",
-      "source": "ELLE China",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbjhMMHgzUVlXZlV4OHI2Wm9hYTJUYnBpUkJTamZNbVRPVjVxMjM0SVNwV1NHbTR4elRveUN2eU9CX3pGS0o4TXpxaW1xcHNPUFQtV0MyU2xyeUhyYWo5cW5OaElIcEN0N0NseGFnX3MwZEJzUjVyU25MXy1MdjVnMkU1WWpPY3FTTjhpUERnLU1YZzd3T3E3dXY4MkJ4OWM?oc=5",
-      "pub_date": "Thu, 09 Apr 2026 07:00:00 GMT",
-      "heat": 53,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-08",
       "title": "泰兰尼斯“稳跑鞋”重磅发布！明星父母助阵，诠释为爱守护新力量 - 36 Kr",
       "short_title": "泰兰尼斯“稳跑鞋”重磅发布！明星父母助阵，诠释为爱守护新力量 - 36 Kr",
       "query": "碳板跑鞋 新品 热卖",
@@ -737,7 +711,7 @@
       "date": "2026-06-08",
       "title": "2026北京半马亲子跑圆满结束 李宁YOUNG动³科技护航青少年运动成长，开启亲子陪伴新方式 - 中华网",
       "short_title": "2026北京半马亲子跑圆满结束 李宁YOUNG动³科技护航青少年运动成长，开启亲子陪伴新方式 - 中华网",
-      "query": "李宁YOUNG 运动鞋",
+      "query": "李宁YOUNG 跑鞋",
       "brand_hits": [
         "李宁YOUNG",
         "李宁"
@@ -776,22 +750,22 @@
     },
     {
       "date": "2026-06-08",
-      "title": "奔跑吧·少年！2025年北京市青少年趣味运动会燃动校园 - 光明网",
-      "short_title": "奔跑吧·少年！2025年北京市青少年趣味运动会燃动校园 - 光明网",
+      "title": "这个儿童节，想请你听听：大山里，篮球击打地面的回响 - 中国文明网",
+      "short_title": "这个儿童节，想请你听听：大山里，篮球击打地面的回响 - 中国文明网",
       "query": "儿童篮球鞋 校园 体育",
       "brand_hits": [],
       "keyword_hits": [
         "篮球鞋",
         "篮球",
         "儿童",
-        "青少年",
-        "校园"
+        "校园",
+        "儿童节"
       ],
       "category": "儿童鞋",
       "season_tag": "秋季",
-      "source": "光明网",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1DV253NXF4RThmRXdkS0M4RzRYVGRTWG1kMndWYVBYRDFVNVcxX3h5SXA0NmlrYXpfZGJmTkZUOHhISVhZdHM1RnU0ckF0dE9KZTgwUTNvVWk0bi1DcEJ5R3Nmbw?oc=5",
-      "pub_date": "Wed, 10 Dec 2025 08:00:00 GMT",
+      "source": "中国文明网",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWGQxWUhXZDZuLXVPb2RoWm9MTHlGeXRMUjlGMmg4dDR1R1ZqRlFqRFdLUFJtZkVnRkxZU1dfejZpNDlQaGgzSGlQNEFXX0w0MlBvMHh6UjB3Ty0zWFlRcDVkSHRsa1VsbnBSWThuZXJrOS02cUJQemQzX0RRemVOVmQ5WnE?oc=5",
+      "pub_date": "Tue, 02 Jun 2026 07:00:00 GMT",
       "heat": 42,
       "type": "product_signal"
     },
@@ -937,28 +911,6 @@
     },
     {
       "date": "2026-06-08",
-      "title": "1月波鞋新品速报｜ ASICS联乘三宅一生新鞋 + NIGO 美式校园风AF3 - 香港01",
-      "short_title": "1月波鞋新品速报｜ ASICS联乘三宅一生新鞋 + NIGO 美式校园风AF3 - 香港01",
-      "query": "Adidas Kids 篮球鞋",
-      "brand_hits": [
-        "Asics"
-      ],
-      "keyword_hits": [
-        "篮球鞋",
-        "篮球",
-        "校园",
-        "新品"
-      ],
-      "category": "青少年成人化",
-      "season_tag": "秋季",
-      "source": "香港01",
-      "link": "https://news.google.com/rss/articles/CBMi5wJBVV95cUxPWThmbmFCYXJTZHVwVWNZOGltMzhOVXNJNUE2N29sRlBFd2QzVHdGcVRhcGdIS1lQV0tFM0V6OEFweEdCcFRtSFdrR2JQOHo5LTQ1SVZqaWdIS0RDeHRXczdFQ3p5ZmlIODVkMkxZNWNTRzR1LWQtaVdQeVhOMDREby1GcVNsN1dHakp2bGRGLW1lNDIwemcwYmhMQVpXNExaOTN4ZUNIOFE3b1B4b0hYN0hBX1U1d3o5eTR0UTdZekJERjhHdWUyR0lGeGt0U2Vub2pTdFZXbDdGUkE4cXI0alJEa3FOX0JBd0x2WFQ1eFQwWjZRazRrWDZXZ1hKbVFDV0ZVS2poS1BFRVJFRnBTZ2RreGtPLWk1a3RtUk9kREhqUXM5Q3NiRjN5ZWVZWDFoOEdzR2xVajR6WWJ3bVNtbEhuSU1EdGU4bTk3djZTRWNGZWwzYzVMeW52VldBbUo0ZFJDS1Rkbw?oc=5",
-      "pub_date": "Thu, 01 Jan 2026 08:00:00 GMT",
-      "heat": 41,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-08",
       "title": "天猫超级品牌日成交破亿 泰兰尼斯进军高端童鞋市场 - 经济参考报",
       "short_title": "天猫超级品牌日成交破亿 泰兰尼斯进军高端童鞋市场 - 经济参考报",
       "query": "儿童运动鞋 新品 热卖",
@@ -980,6 +932,27 @@
     },
     {
       "date": "2026-06-08",
+      "title": "卖完童鞋又卖体测鞋，泰兰尼斯想变成学生版萨洛蒙 - Jiemian.com",
+      "short_title": "卖完童鞋又卖体测鞋，泰兰尼斯想变成学生版萨洛蒙 - Jiemian.com",
+      "query": "儿童运动鞋 新品 热卖",
+      "brand_hits": [
+        "泰兰尼斯"
+      ],
+      "keyword_hits": [
+        "儿童",
+        "新品",
+        "热卖"
+      ],
+      "category": "儿童鞋",
+      "season_tag": "全年",
+      "source": "Jiemian.com",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA3QmVBb3NWUWtaLWkyRVF5N3hnbk5WaWUxcWNlWmRhTTNzMXZ4RE1tdFpfZm5SOHdSRDd5czRzXzN6djFaY0M2eXlBZkVVSVRfZGw0amlR?oc=5",
+      "pub_date": "Tue, 31 Mar 2026 07:00:00 GMT",
+      "heat": 40,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-08",
       "title": "禾素时代举行新品发布会，并携禾素Pro®抗菌纱线亮相2025秋冬纱线展 - cfbond.com",
       "short_title": "禾素时代举行新品发布会，并携禾素Pro®抗菌纱线亮相2025秋冬纱线展 - cfbond.com",
       "query": "瑜伽服 新品 热卖",
@@ -995,6 +968,25 @@
       "source": "cfbond.com",
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1LX1ROMlhTVXZya0FWNWcwb2RSZmJvUVBMTU9BM2V5OXp2Z18tbFlfVTFxVkZfdmptMDlMbERXT2JsY3p2RmstbkU3X0VmNXpVdEE5Ty1LaWNkcEdHOVpSQVN3?oc=5",
       "pub_date": "Fri, 05 Sep 2025 07:00:00 GMT",
+      "heat": 40,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-08",
+      "title": "国货占C位，新品卖断货：李佳琦直播间晒618首日战报 - 紫牛新闻",
+      "short_title": "国货占C位，新品卖断货：李佳琦直播间晒618首日战报 - 紫牛新闻",
+      "query": "618 运动品牌 热卖 商品",
+      "brand_hits": [],
+      "keyword_hits": [
+        "618",
+        "新品",
+        "热卖"
+      ],
+      "category": "大促节点",
+      "season_tag": "全年",
+      "source": "紫牛新闻",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE04Z2ZmX2RaeVA5RTEzbEtHSmF5RHRtOUwyWXNLaEJ5QTZoU1ZCWGRGcjdMUmtrZTI0bThXVE5YTGJvYzhYQnBsTmt6b08zQnBJb3RocUVfRXM3cXBXZGFFTlNRRFNPQUpJ?oc=5",
+      "pub_date": "Fri, 22 May 2026 07:00:00 GMT",
       "heat": 40,
       "type": "product_signal"
     },
@@ -1036,26 +1028,6 @@
     },
     {
       "date": "2026-06-08",
-      "title": "Surpine松野湃新一代科技棉服重磅上市:凌云系列G-Loft®动态轻暖科技棉服 - 中华网",
-      "short_title": "Surpine松野湃新一代科技棉服重磅上市:凌云系列G-Loft®动态轻暖科技棉服 - 中华网",
-      "query": "轻户外 运动品牌 新品",
-      "brand_hits": [],
-      "keyword_hits": [
-        "棉服",
-        "新品",
-        "上市",
-        "科技"
-      ],
-      "category": "户外轻运动",
-      "season_tag": "冬季",
-      "source": "中华网",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBRMWZLWFpHT2xfdlpma2hDdHlrQ2ZrajB6QU9TTkRQdXNoUElWbkNDMXhfbzFtZ1YwVV9QY0kwak1ERXFDRDY1M3BFNEhvT0VOSW94cS0tRURxWTNvWm5Fd2NZVW40QVVlb2x6WTc0M0dHVU11Y2M0?oc=5",
-      "pub_date": "Thu, 07 Aug 2025 07:00:00 GMT",
-      "heat": 38,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-08",
       "title": "“校服之都”织里发布2000款新品，加速“铺”向全国 - 潮新闻",
       "short_title": "“校服之都”织里发布2000款新品，加速“铺”向全国 - 潮新闻",
       "query": "童装 运动 新品",
@@ -1070,6 +1042,25 @@
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tQ09DdFlvNXAyM3lCWDhZYjRsR3VrMm1QQl83ajAtZjYtYmhQMko3MDFXT0Jrb1JWakpzd01zR2tsWEt4UDlWazJjTGNuQWJFUVJWNTVLQnBOOWoxOGVuNEVB?oc=5",
       "pub_date": "Sun, 10 May 2026 07:00:00 GMT",
       "heat": 37,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-08",
+      "title": "解锁户外灵感，Crocs卡骆驰携手全球品牌代言人檀健次推出夏日新品 - Supreme情报网",
+      "short_title": "解锁户外灵感，Crocs卡骆驰携手全球品牌代言人檀健次推出夏日新品 - Supreme情报网",
+      "query": "轻户外 运动品牌 新品",
+      "brand_hits": [
+        "Crocs"
+      ],
+      "keyword_hits": [
+        "新品"
+      ],
+      "category": "户外轻运动",
+      "season_tag": "春季",
+      "source": "Supreme情报网",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBYZ0c4NlFrYnEwNG5EWjdpY2N3NV95MkswZ1JyU1ctanJwNHJKTFQ4R0F2NzdMMnhzcGZUV0xnZTktRlFVTkVnQVBkNUpsaGRoaG5kTmd2MGJmSTZxb05DQw?oc=5",
+      "pub_date": "Tue, 26 May 2026 07:00:00 GMT",
+      "heat": 36,
       "type": "product_signal"
     },
     {
@@ -1189,24 +1180,6 @@
     },
     {
       "date": "2026-06-08",
-      "title": "轻盈舒展 恣意生动 ECCO x NRL设计师合作系列春夏新品上市 - 时尚COSMO",
-      "short_title": "轻盈舒展 恣意生动 ECCO x NRL设计师合作系列春夏新品上市 - 时尚COSMO",
-      "query": "轻户外 运动品牌 新品",
-      "brand_hits": [],
-      "keyword_hits": [
-        "新品",
-        "上市"
-      ],
-      "category": "户外轻运动",
-      "season_tag": "春季",
-      "source": "时尚COSMO",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE93U0FWUS1vODJHQko1X1l2RW5TQlN3d0RkUFZhbjVzRjlwZUdqN1ZiZ1djOHJIb00tVEp5OEVxdm50eFc5aHZuZ0VwRTd3ek9JZDhneTlVTlZ6LUFzVlE?oc=5",
-      "pub_date": "Wed, 25 Mar 2026 07:00:00 GMT",
-      "heat": 32,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-08",
       "title": "从合规底线到品质高线——童装背后的五千亿市场 - 新华网",
       "short_title": "从合规底线到品质高线——童装背后的五千亿市场 - 新华网",
       "query": "六一 童装 儿童运动",
@@ -1220,25 +1193,6 @@
       "source": "新华网",
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdUdsSmJNZFRmeVNLQ3VDeDg1SWtwM1R4WEYwNUlhMkRFcmZMRDBOWUNyc1J4Rkwtcm8zalF2Q1VUOEdYdHZEQURrSVlzZ1JDbUk1bjdfeEpfb0k2Z0IxWUp2cnBxV0F5WXV4TGRKcmM3Q2EzeTZYNzdnWHduSkFCdA?oc=5",
       "pub_date": "Fri, 29 May 2026 03:19:16 GMT",
-      "heat": 32,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-08",
-      "title": "卖完童鞋又卖体测鞋，泰兰尼斯想变成学生版萨洛蒙 - Jiemian.com",
-      "short_title": "卖完童鞋又卖体测鞋，泰兰尼斯想变成学生版萨洛蒙 - Jiemian.com",
-      "query": "361儿童 运动鞋",
-      "brand_hits": [
-        "泰兰尼斯"
-      ],
-      "keyword_hits": [
-        "儿童"
-      ],
-      "category": "儿童鞋",
-      "season_tag": "全年",
-      "source": "Jiemian.com",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA3QmVBb3NWUWtaLWkyRVF5N3hnbk5WaWUxcWNlWmRhTTNzMXZ4RE1tdFpfZm5SOHdSRDd5czRzXzN6djFaY0M2eXlBZkVVSVRfZGw0amlR?oc=5",
-      "pub_date": "Tue, 31 Mar 2026 07:00:00 GMT",
       "heat": 32,
       "type": "product_signal"
     },
