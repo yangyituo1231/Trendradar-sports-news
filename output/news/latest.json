@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-13 07:04:29",
+  "generated_at": "2026-06-13 10:12:45",
   "campaign": "六一618端午",
   "count": 110,
   "region_counts": {
-    "全国": 84,
+    "全国": 83,
     "华中": 7,
     "华东": 9,
+    "西北": 3,
     "华南": 7,
-    "西北": 2,
     "西南": 1
   },
   "bucket_counts": {
@@ -16,9 +16,10 @@
     "tech_trend": 14,
     "local_business": 24,
     "brand": 10,
-    "kids": 11,
-    "store": 7,
-    "platform": 8
+    "kids": 12,
+    "store": 6,
+    "platform": 7,
+    "outdoor": 1
   },
   "items": [
     {
@@ -78,6 +79,34 @@
       "score": 83
     },
     {
+      "title": "京东MALL迎来首批实习机器人员工实体零售开启人机协作新场景|京东618|智能机器人|门店|消费者|数据",
+      "source": "新浪财经",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03Tk5RcDd4MjNkOG5ZVC1RbWtRLVZxNkxtekxFNi01MzdVYlNRbDA0MmN0TFZwa0NUYXE4ZTZCaENQOHRkcDkzUHBOOXNnNnlzc2VKa1puelNvbHlGYVRSZ3dDZHhZWnRwbFNRQ3FLdEVjcDdsb3I2Z2ZGSGdjV1E?oc=5",
+      "published_at": "Thu, 11 Jun 2026 07:25:56 GMT",
+      "keyword": "大模型 零售 消费",
+      "campaign": "六一618端午",
+      "city": "",
+      "region": "全国",
+      "weather_abnormal": false,
+      "local_business": false,
+      "tech_trend": true,
+      "score": 83
+    },
+    {
+      "title": "兰州防晒消费市场迎来热销季",
+      "source": "中国甘肃网",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE44N3N2MXo3anVjVFI2S2VYVXM4azJLeTliS3FQM21iU3E3amc5Mm5pM2VyaWI0WERJYXVuZ1FPaWh4ZVV5TG1LUjQ5T21NTzFGYkFGU0dueHJFSWl0aWszZ0ZPZkszUjRma2Nn?oc=5",
+      "published_at": "Fri, 29 May 2026 00:54:00 GMT",
+      "keyword": "兰州 商场 客流 消费",
+      "campaign": "六一618端午",
+      "city": "兰州",
+      "region": "西北",
+      "weather_abnormal": true,
+      "local_business": true,
+      "tech_trend": false,
+      "score": 82
+    },
+    {
       "title": "1⃣️凉感防晒衣限量加赠🎁防晒帽+口罩+冰袖，某蕉源头代工厂，UPF99+，紫外线阻隔率≥99%2⃣️💰29.9到手5条装，60支莫代尔，超软超弹力，适合各种身材~3⃣️ 山姆同款【黑松露火腿苏打饼干】 💰29.9得4盒，非油炸轻烘焙0蔗糖 0反式脂肪酸4⃣️ 💰19.9踩屎感软",
       "source": "手机新浪网",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA4RzRFV2p1U0xXUmVDTVdHSEZPcWphUTNiX012cG1zdEhMQk04aGljc3VsV2trM2pDMUY5OHFMaWNJXzg2NUJNTmlweEhaUktBeEdkSGhTTldja050MU1jUXdUcw?oc=5",
@@ -124,7 +153,7 @@
       "source": "财联社",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1JNVJKZ2Y4VGNVVU1xSnNvOGNsUzRnWnZPQVpzaV9CX3o4OVl6U2JRbng3YTdWanlIUEJtR0pxLXVZZWI4dElYTA?oc=5",
       "published_at": "Tue, 02 Jun 2026 12:03:01 GMT",
-      "keyword": "AI 运动品牌 消费",
+      "keyword": "京东 运动品牌 618",
       "campaign": "六一618端午",
       "city": "",
       "region": "全国",
@@ -157,6 +186,20 @@
       "city": "",
       "region": "全国",
       "weather_abnormal": true,
+      "local_business": false,
+      "tech_trend": false,
+      "score": 74
+    },
+    {
+      "title": "京东618开门红52小时:下单用户数创新高 线下门店客流量同比增长超70%",
+      "source": "亿邦动力网",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qdGdKalFnN0dGVHlNeHA2a09QdTlvOUxoTkExMjZES3g4R2NfalFZaVlsSm15OGROaTM1Zjc0MXhJeUN2V2ptUGJaSUJET3dLcFVkZWF3?oc=5",
+      "published_at": "Tue, 02 Jun 2026 02:32:13 GMT",
+      "keyword": "京东 运动品牌 618",
+      "campaign": "六一618端午",
+      "city": "",
+      "region": "全国",
+      "weather_abnormal": false,
       "local_business": false,
       "tech_trend": false,
       "score": 74
@@ -260,53 +303,25 @@
       "score": 71
     },
     {
-      "title": "蕉下失去年轻人，防晒头部网红，卖不动千元冲锋衣",
-      "source": "QQ News",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0zaUlIR1NKczdWT3MxQ2F2NTliSTFHNlVoTktLQlFVVTF0bERlX0dqbGpCa2tSRVgwdzRONHYzV2lUZXVieWZDYXM3eXBuN3FoTi03VGt3?oc=5",
-      "published_at": "Mon, 09 Sep 2024 07:00:00 GMT",
-      "keyword": "深圳 高温 防晒 户外 消费",
-      "campaign": "六一618端午",
-      "city": "",
-      "region": "全国",
-      "weather_abnormal": true,
-      "local_business": false,
-      "tech_trend": true,
-      "score": 71
-    },
-    {
-      "title": "从“刚需囤货”到“品质悦己”，618直播间见证“情绪消费”三大趋势",
+      "title": "天猫520开卖撞上高温天：颜值防晒、防护养肤、材质降温成购物车新宠",
       "source": "紫牛新闻",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1uRmFWeTNmRjhYbGI3TnNmUFF3NHRreHZvVGxCUzlEN3ItcmRjRnI4bnI2VU5ZZHZVZUZyMW9wU0dNNHZJZkxLZ2twQ05nTElaVjdVWlE2MEJkdFozdFFYbmFQY0xIcjlTNk5ySw?oc=5",
-      "published_at": "Fri, 20 Jun 2025 07:00:00 GMT",
-      "keyword": "情绪消费 运动品牌",
-      "campaign": "六一618端午",
-      "city": "",
-      "region": "全国",
-      "weather_abnormal": false,
-      "local_business": false,
-      "tech_trend": true,
-      "score": 71
-    },
-    {
-      "title": "防晒衣更火了，蕉下的烦恼更多了 | 消费巴士",
-      "source": "雪球",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5XY2JMcC0yUTZUN1RINXpXbURVcW43NmtIRXllNC12MEZQSHlPM1p2aWpLXzF5Q2piTEhTM1dfV1RHWklyUDBvbUl4VDJkVGpf?oc=5",
-      "published_at": "Mon, 13 May 2024 07:00:00 GMT",
-      "keyword": "蕉下 防晒 消费",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE05a2llWmcxeUVxbGRPdGlfa0xVRGFLb0tCVDZvSkRwVVFJY0djVmRURWhHdEs2b2VGcUNVVUNGYmhNaDQ2V0tXN1Q0eW9rajRDcmNQdHp3cU1KYmUxejJ4NDgwcGUwalB2?oc=5",
+      "published_at": "Thu, 14 May 2026 07:00:00 GMT",
+      "keyword": "高温 防晒衣 凉感 消费",
       "campaign": "六一618端午",
       "city": "",
       "region": "全国",
       "weather_abnormal": true,
       "local_business": false,
       "tech_trend": false,
-      "score": 70
+      "score": 69
     },
     {
-      "title": "天猫520开卖撞上高温天：颜值防晒、防护养肤、材质降温成购物车新宠",
-      "source": "紫牛新闻",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE05a2llWmcxeUVxbGRPdGlfa0xVRGFLb0tCVDZvSkRwVVFJY0djVmRURWhHdEs2b2VGcUNVVUNGYmhNaDQ2V0tXN1Q0eW9rajRDcmNQdHp3cU1KYmUxejJ4NDgwcGUwalB2?oc=5",
-      "published_at": "Thu, 14 May 2026 07:00:00 GMT",
-      "keyword": "高温 防晒衣 凉感 消费",
+      "title": "凑单才17！乔丹速干凉感儿童运动短袖T恤 ​",
+      "source": "手机新浪网",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5HMWxJZlhFcDRmVVJ5T2hNTm9YNzRnYmhNZjRoSkhUSEVvR3NmZ2NlbzBsYkZnNmg1YWlqTnFlVDdkcUxqWEZqaEtTd09PaGNVR0xoTGloWFlYaGlHMDB6UWpvZw?oc=5",
+      "published_at": "Wed, 20 May 2026 07:00:00 GMT",
+      "keyword": "特步儿童 运动",
       "campaign": "六一618端午",
       "city": "",
       "region": "全国",
@@ -348,7 +363,7 @@
       "source": "手机新浪网",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9oSmJSY3RJVDNoeDgyMUtmaU5EQnVmbVd6dUZEYVlsWnRBOXBWaDVPVkdGSjBpbjNCdXlnM080WDhBUXZkWlVfTjFYS0JWNlM3V2hEa2RjZGc4UjVvRWlGWGpjUQ?oc=5",
       "published_at": "Mon, 01 Jun 2026 07:00:00 GMT",
-      "keyword": "商圈 活动 亲子 运动",
+      "keyword": "宁波 商圈 消费 亲子",
       "campaign": "六一618端午",
       "city": "宁波",
       "region": "华东",
@@ -414,10 +429,24 @@
       "score": 66
     },
     {
-      "title": "别样儿童节 武汉百组家庭电影院里上了一堂“自然课”",
+      "title": "运动女孩夏日新穿搭：室内瑜伽裤，户外防晒衣",
+      "source": "36 Kr",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE50cWw3TmE3TlFGMEdxYjFMbGQyRE0tNUJnb19ZbzNCTW56LXAyNmV1N2MwYVNDOTV6dG1XQjN3cE1RekxqR0VFTWZxYTF6dw?oc=5",
+      "published_at": "Tue, 04 Jul 2023 07:00:00 GMT",
+      "keyword": "防晒 消费 运动品牌",
+      "campaign": "六一618端午",
+      "city": "",
+      "region": "全国",
+      "weather_abnormal": true,
+      "local_business": false,
+      "tech_trend": false,
+      "score": 66
+    },
+    {
+      "title": "武汉动物园儿童三天免票！六一来汉阳“宠娃”",
       "source": "湖北日报传媒集团",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0wbmdFV1dZc3BOY0xZaVlYVHdZQ2ZpQmtYNU1MdkQyNE9fSXBid2E1RkVwVXctTzRUQW0zcm94Wk1GVmg3RUo1VjVUM3Bfd0FwVUxKUnI5UHg?oc=5",
-      "published_at": "Mon, 01 Jun 2026 08:47:43 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE52cmtSVlNoejZHMG5BeUxtM0NobWppem5BSUJmdTR2ak9MQlNIaTZlNHJxX21JV095U0N5ZS1yT1MwQWpQSzVTVzlUSWlzaGduNzlzV1BOa1c?oc=5",
+      "published_at": "Tue, 27 May 2025 07:00:00 GMT",
       "keyword": "武汉 购物中心 儿童 活动",
       "campaign": "六一618端午",
       "city": "武汉",
@@ -440,20 +469,6 @@
       "local_business": false,
       "tech_trend": false,
       "score": 66
-    },
-    {
-      "title": "蕉下卖帐篷，波司登做防晒服，万亿户外市场品牌混战",
-      "source": "赢商网",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE81Z1FMdnlYLV93OHdPbFVzeWVLZkpYenphLWlWYnJHYmo5RFB0TFNzRzB3SnROUkFQYlV5RG82bXlBUlVUUFR3MVdjQW1vQQ?oc=5",
-      "published_at": "Thu, 11 Jul 2024 07:00:00 GMT",
-      "keyword": "防晒 消费 运动品牌",
-      "campaign": "六一618端午",
-      "city": "",
-      "region": "全国",
-      "weather_abnormal": true,
-      "local_business": false,
-      "tech_trend": false,
-      "score": 65
     },
     {
       "title": "京东618首4小时大品牌成交增逾5倍，宇树机器人增271%，iPhone成交额1分钟破亿",
@@ -513,7 +528,7 @@
     },
     {
       "title": "《2025年快手电商618消费趋势报告》：悦己消费引领潮流",
-      "source": "搜狐网",
+      "source": "Sohu",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE12dHphR25ZdnZ1RkFEZlBaUXFTb1pVYXpEUEN5X2hLelRJejJOQTdSck1wdFN4UzZTeGtnbHJ4SHh6WnV5ODlTOFBvdXd6ZE90YTJEcw?oc=5",
       "published_at": "Fri, 04 Jul 2025 07:00:00 GMT",
       "keyword": "悦己消费 运动品牌",
@@ -596,10 +611,10 @@
       "score": 62
     },
     {
-      "title": "阿里妈妈发布「行业100策」：AI万相重构618经营范式，精耕人货场",
-      "source": "品玩",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1fMGVuNW9rNGVtV184V3owMkxMYkZQUHdZalIyMkNQM2ZOdFNxZ2Z1R1F6eURlMm51eDBTTWs2dVBMUlpjV1oxaA?oc=5",
-      "published_at": "Thu, 14 May 2026 07:00:00 GMT",
+      "title": "AI营销专家灵狐研判618风向，七大趋势八大策略赋能品牌实战破局",
+      "source": "中华网",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9iZWZ5cVdPbUNWVWFNWDJ1S0tCdnR0MEtLT2xXcFZtdTltRFhIWjQ0YzV5alAyX05OTVF0Si1Oc3BXWFAtZGZFZFZYbUw0V2dJRHl6a0JkZXhabHBibWc?oc=5",
+      "published_at": "Thu, 04 Jun 2026 01:13:44 GMT",
       "keyword": "AI 内容种草 运动品牌",
       "campaign": "六一618端午",
       "city": "",
@@ -610,10 +625,10 @@
       "score": 62
     },
     {
-      "title": "AI营销专家灵狐研判618风向，七大趋势八大策略赋能品牌实战破局",
-      "source": "中华网",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9iZWZ5cVdPbUNWVWFNWDJ1S0tCdnR0MEtLT2xXcFZtdTltRFhIWjQ0YzV5alAyX05OTVF0Si1Oc3BXWFAtZGZFZFZYbUw0V2dJRHl6a0JkZXhabHBibWc?oc=5",
-      "published_at": "Thu, 04 Jun 2026 01:13:44 GMT",
+      "title": "阿里妈妈发布「行业100策」：AI万相重构618经营范式，精耕人货场",
+      "source": "品玩",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1fMGVuNW9rNGVtV184V3owMkxMYkZQUHdZalIyMkNQM2ZOdFNxZ2Z1R1F6eURlMm51eDBTTWs2dVBMUlpjV1oxaA?oc=5",
+      "published_at": "Thu, 14 May 2026 07:00:00 GMT",
       "keyword": "AI 内容种草 运动品牌",
       "campaign": "六一618端午",
       "city": "",
@@ -652,8 +667,36 @@
       "score": 61
     },
     {
+      "title": "北京实验二小开展“六一”儿童节特色游学活动",
+      "source": "新华网北京",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5PWUZTQnRISU15MlZTWUhIR0VWckpLYm9UZTF5QTFzVkpFR0RNU2dCSmtlM2F1RmFzeVBCa196Vk9BZFNndDRIRHRwOHNDd1BvRC04R3F6LUJvUjI4QzNadXk4VFF1T0hRTDBoLVN1X184UXNzOHlwb2JzTQ?oc=5",
+      "published_at": "Sat, 10 Jun 2023 07:00:00 GMT",
+      "keyword": "校园体育 运动童装",
+      "campaign": "六一618端午",
+      "city": "",
+      "region": "全国",
+      "weather_abnormal": false,
+      "local_business": false,
+      "tech_trend": false,
+      "score": 61
+    },
+    {
+      "title": "智能终端、智能家居、可穿戴设备……“AI消费”新品集中亮相|苏宁|上海市|人工智能|消费品|机器人",
+      "source": "新浪财经",
+      "url": "https://news.google.com/rss/articles/CBMiggVBVV95cUxPWUxYYXhKclUyaGNXVElPcmx3UjlKQ3RGajJIRy05cy04TlZoNzduMFE4MVZ6WFAybmtwYXp3Ry1rREVlaktQcnpuU3J2TUFHNUpqekR4Q29qS2gzZGd6QUtRU0xHYUVHQkFWYTRkNEJjLTh3X3dtUjBuV1lGWlVKbzUwUDk0NlA3a0tZQUZ6V3Raa3BXMFdzUjdjU2hEckdMZEF6MGE4YkNrcEN6V19hRmtZWmticXdKYmU5bjNONnBRMUJmbF9rMUFtc3R1djlJOENmbkFhSkhIbC1sekdwRy0wWVFybXFTOXRySW1NenNhQlV1T1B6R082TjNRaHp0bjkwUF9oMUszR09GQjhoM0FGZEJPS28xS3c3UUZRbFN4MGdjNkVqV2V4R3JZZzBzUnJZS2QtVFA4VUh2Tnpqa2E5M3NsamI1Um9jUFZ6VERQZDB5YWVYMi15Y1FGeW5lS1UyZG1WTTlxa05lRC1Id1ZUYnBFRTJKYkhjNGhlYWtjbEN6Wm5kT19FVU1od1JPazZMcENyWC1IcGlYYVA2ZnFhV0pmU0dRNmZtQWt5TFhfVENaU3dQWDJGUWs2Mlp2azVSQUR5OTA3WjZQVWlXemhraFR2WDA5VFlBRnBOd1pERmUxTXllOTRrWVYxRDdzWmpMcUxHUTNKMGVfRUM4THY0ay1IMEhzWXNITVlNVi1rUzY4aVJRaFhfMHZLQl9uMWNsZmh4UGt6amtaVnFvUURnRllXYkpZLWFSZENWUW56dG5OamZXVTVWem03SU1HUVJET2szNXIyYmZDOXp1d24zY3AxSDRnS2dGR0JvY2Q0OXBiWFpZQ1RlOHN5alF1cnc?oc=5",
+      "published_at": "Wed, 18 Jun 2025 07:00:00 GMT",
+      "keyword": "AI 运动品牌 消费",
+      "campaign": "六一618端午",
+      "city": "上海",
+      "region": "华东",
+      "weather_abnormal": false,
+      "local_business": true,
+      "tech_trend": true,
+      "score": 60
+    },
+    {
       "title": "抖音电商618战报公布，商城订单量同比增长94%",
-      "source": "搜狐网",
+      "source": "Sohu",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE03R241bDREWjFNWVhZVkRmUWNxZ1A1VVZuY09GSHFzN2ktZnJZT2dxMmNHbkNzTTRoOEhqQWJvc050UTJ1ODFUaG5hVk54cHdIU18tdA?oc=5",
       "published_at": "Sun, 23 Jun 2024 07:00:00 GMT",
       "keyword": "618 抖音电商 运动品牌",
@@ -722,38 +765,10 @@
       "score": 60
     },
     {
-      "title": "抖音电商推出“618好物节”，一件立减15%、限量五折“超值全家桶”等多重优惠齐聚",
-      "source": "news.tom.com",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBneUVpeU0xV0hncVZKOGtlMFJaR251Zms2Sy1sSUtaQnZKMmRhaUdMaGlJQS1GVmp4c0l3SXJaMmczY3NzUXREMVdBY3VPcUhDNkRwYW1B?oc=5",
-      "published_at": "Fri, 24 May 2024 07:00:00 GMT",
-      "keyword": "618 抖音电商 运动品牌",
-      "campaign": "六一618端午",
-      "city": "",
-      "region": "全国",
-      "weather_abnormal": false,
-      "local_business": false,
-      "tech_trend": false,
-      "score": 60
-    },
-    {
       "title": "既要肆意狂欢，又要追求健康。抖音电商“酒滋618好物节”完美收官",
       "source": "news.tom.com",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5DQ2VFZkYxcG9oS05qVUpyb29aLW96ZEpYZWhLWXF1LWVkcl9zOWxDaFJjNk5QaXprN3dZaENwZldzZWdWTVkyQUI1YkJJTFhkQ1Z0RTN3?oc=5",
       "published_at": "Tue, 28 Jun 2022 07:00:00 GMT",
-      "keyword": "618 抖音电商 运动品牌",
-      "campaign": "六一618端午",
-      "city": "",
-      "region": "全国",
-      "weather_abnormal": false,
-      "local_business": false,
-      "tech_trend": false,
-      "score": 60
-    },
-    {
-      "title": "经营资讯双周刊｜抖音618好物节，2023抖音电商生态大会回顾",
-      "source": "中华网",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE84dFotZ3dDeUxBZ3prVkVzbHI0bThyZThkWVk0SVN4TXYyRVVpVUNmV01UdUVlRHRlbGFfQUhKNVFINy11RXpRMzVpQzZSMVRVX25uWkY3ZHNocW9Fd0o5Y1dldnhnczlKaXRodEpCdDhBQQ?oc=5",
-      "published_at": "Tue, 30 May 2023 07:00:00 GMT",
       "keyword": "618 抖音电商 运动品牌",
       "campaign": "六一618端午",
       "city": "",
@@ -779,7 +794,7 @@
     },
     {
       "title": "荔枝文旅成亮点！广州将推上千场文旅活动打造端午暑期狂欢季",
-      "source": "搜狐网",
+      "source": "Sohu",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNakkxcUJPRDk1WEJYZjgwU2hHOGRVWjlPLWtOSmVwc1p5NmRKUl9SRldLdnNWaklIVkx3U0pNOVNnZUxTTlJrYU5zVkJOLXh0QjlLWFRtV2FqU1BSQTdCbzNzR0hscjJseWJPWmN4bV96ZUNxZ1dPYThiQ3dKMUZQdlBDS3dOeXFQ?oc=5",
       "published_at": "Thu, 11 Jun 2026 04:50:13 GMT",
       "keyword": "广州 商圈 文旅 亲子",
@@ -849,7 +864,7 @@
     },
     {
       "title": "端午露营订单增长超4倍，武汉热度排全国第三",
-      "source": "搜狐网",
+      "source": "Sohu",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0tanRWcXViZERKcFNua1hjYW1peTBkbWx1NTllUHA0UENuNFF5WjZscDNkTk83Rmgyak1GMlIyOVZCUGc5eHFkSEl5M2lOS1JRNktGVw?oc=5",
       "published_at": "Thu, 02 Jun 2022 07:00:00 GMT",
       "keyword": "露营 亲子 户外 消费",
@@ -975,7 +990,7 @@
     },
     {
       "title": "安踏、李宁、特步、361度业绩大PK！谁更胜一筹→",
-      "source": "搜狐网",
+      "source": "Sohu",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4xM1RpQzhNTU5pMVZIaDFVcU11N1pHQzdyaDladnNBb2pCSnVDWnRqSWlRZ0M4aEhqWlZrejNNZjdSbnJjS3BvNUdocWZGWW9TajNmOTJ3?oc=5",
       "published_at": "Tue, 31 Mar 2026 07:00:00 GMT",
       "keyword": "特步 运动 消费",
@@ -986,20 +1001,6 @@
       "local_business": false,
       "tech_trend": false,
       "score": 40
-    },
-    {
-      "title": "安踏儿童携手上海六院国家骨科医学中心启动\"足弓成长计划\"，守护青少年足弓健康成长",
-      "source": "union.china.com.cn",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE56MXVxdk5idWhTYjZuOUZ6cHM5U1JPTUZLcWk5eEFqWFotb2JiNXEycENaMzNvVUdwN05YOEpEZ3o0Rzg2VXBlYXJnd0ZPbUU0aDJTczdEa0tMbFpha2FxZUY5SDFvQmw3OW96T2pGWFkxRnM1ZXRqMFRETQ?oc=5",
-      "published_at": "Mon, 17 Nov 2025 08:00:00 GMT",
-      "keyword": "校园体育 运动童装",
-      "campaign": "六一618端午",
-      "city": "上海",
-      "region": "华东",
-      "weather_abnormal": false,
-      "local_business": true,
-      "tech_trend": false,
-      "score": 39
     },
     {
       "title": "年轻人逛街只去B1、B2？逛逛上海的商场，现实是……",
@@ -1020,6 +1021,20 @@
       "source": "thepaper.cn",
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE42X2Y0ODZSRHAwdkZRcWNuM00ydDJmZ040SGNid3RyanZJaGFpejhWdmhVRGliU3JiTVlwZVpYQXdNeEFEcUJab2h5bFpyMzRnVFZibnlzd1lMcUUtWGc?oc=5",
       "published_at": "Thu, 28 May 2026 07:00:00 GMT",
+      "keyword": "安踏 儿童 运动",
+      "campaign": "六一618端午",
+      "city": "上海",
+      "region": "华东",
+      "weather_abnormal": false,
+      "local_business": true,
+      "tech_trend": false,
+      "score": 39
+    },
+    {
+      "title": "安踏儿童携手上海六院国家骨科医学中心启动\"足弓成长计划\"，守护青少年足弓健康成长",
+      "source": "union.china.com.cn",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE56MXVxdk5idWhTYjZuOUZ6cHM5U1JPTUZLcWk5eEFqWFotb2JiNXEycENaMzNvVUdwN05YOEpEZ3o0Rzg2VXBlYXJnd0ZPbUU0aDJTczdEa0tMbFpha2FxZUY5SDFvQmw3OW96T2pGWFkxRnM1ZXRqMFRETQ?oc=5",
+      "published_at": "Mon, 17 Nov 2025 08:00:00 GMT",
       "keyword": "安踏 儿童 运动",
       "campaign": "六一618端午",
       "city": "上海",
@@ -1058,6 +1073,20 @@
       "score": 39
     },
     {
+      "title": "上海挖掘服务消费潜力，健康、银发经济、AI与入境消费都要发力",
+      "source": "Sina finance",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE45Qm4wQ0RENlQtcXhKVnpSLUFNeUo4TWRTNTdjRDB2TnphY0o0Rm5TUHJIaFlxRVhKX203Y25sS05jZWJJNlFGUUlnX245dFZGUUhfcGQ2RjdkeUR5UkRvbHBZcHR3QW1nUzhDQ3g0MzljYS1nZnRrTg?oc=5",
+      "published_at": "Mon, 01 Jun 2026 10:52:00 GMT",
+      "keyword": "上海 商场 会员 消费 运动",
+      "campaign": "六一618端午",
+      "city": "上海",
+      "region": "华东",
+      "weather_abnormal": false,
+      "local_business": true,
+      "tech_trend": true,
+      "score": 39
+    },
+    {
       "title": "天河路商圈遇上广州国际购物节：客流超两千万，一波首店亮相",
       "source": "奥一网",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4xRE9SRUJTOURPbm43c0c0Z2ItSEdFMjBuZTU5YjNZRGN2UGxJLVVFdXNWdjg0TGZEMkM1M0xBeTBpSlo0d0pEZm5FWHNtUENOVl9RLThsRTk1M00wbUpZckFTWmQ?oc=5",
@@ -1070,34 +1099,6 @@
       "local_business": true,
       "tech_trend": false,
       "score": 39
-    },
-    {
-      "title": "解码AI、赛事、消费融合新三角，第六届ECOTIME体育年会在杭州成功举办",
-      "source": "中国日报网",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE45YTBhd2lBTTBqUS1YOXYxdkdURVRHbzRvc2kxM0toaXFHOXU4a2xFbWVPRE9qMGhJdWxldnhrUUxOSGx6QWw0UlA0b1RpV0FKaWljTjFhYzFpZjlCelE4UExJem9wVlBIeDhVQnBkci1NUTNMY2RYbEwxVy0?oc=5",
-      "published_at": "Mon, 26 Jan 2026 08:00:00 GMT",
-      "keyword": "AI 运动品牌 消费",
-      "campaign": "六一618端午",
-      "city": "杭州",
-      "region": "华东",
-      "weather_abnormal": false,
-      "local_business": true,
-      "tech_trend": true,
-      "score": 39
-    },
-    {
-      "title": "特步儿童X上海体育大学 培养健康专家 赋能终端打造健康成长新生态",
-      "source": "中国日报网",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5aT05fZUpYa211R3BKNzRtSnZpWU1SUGp4RnRpdVJLWGpjalAzcmJSZTJRcHRCejNmRnBpbVN3N1FtLV95X2xpVnRJQjJKTUptYTJ0TXh0SVpSN016dHZBRHIxX1BRNDhuRlkxTzBycUl1TElJWklsel9HaWw?oc=5",
-      "published_at": "Fri, 21 Jun 2024 07:00:00 GMT",
-      "keyword": "特步儿童 运动",
-      "campaign": "六一618端午",
-      "city": "上海",
-      "region": "华东",
-      "weather_abnormal": false,
-      "local_business": true,
-      "tech_trend": false,
-      "score": 38
     },
     {
       "title": "户外运动童装成市场新宠，特步儿童未来3-5年加大科研合作力度",
@@ -1129,10 +1130,10 @@
     },
     {
       "title": "中国童装市场第一品牌：领先安踏儿童、FILA KIDS，年收入超93亿元",
-      "source": "搜狐网",
+      "source": "Sohu",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE05dDBrZVpweU1tSERhV0h1Q2tKMUZ6Tm5LQnFaWS1Ca3VKWlJGZlpYMDdOdnp4cXBqcEFzc0wySW9EejlORjMzQVQtd0gzMnh1dXlsaw?oc=5",
       "published_at": "Mon, 20 May 2024 07:00:00 GMT",
-      "keyword": "安踏儿童 童装",
+      "keyword": "Nike Kids 童装",
       "campaign": "六一618端午",
       "city": "",
       "region": "全国",
@@ -1147,6 +1148,20 @@
       "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE0tcEZPWndUQnY0TGRXSzZYY3JiNUZ2bW0tT2o2Y0dCUGVOTmI0WkZBZlpVa0NzR09SN2RSdVpIa1c?oc=5",
       "published_at": "Tue, 28 Oct 2025 07:00:00 GMT",
       "keyword": "萨洛蒙 户外 运动",
+      "campaign": "六一618端午",
+      "city": "",
+      "region": "全国",
+      "weather_abnormal": false,
+      "local_business": false,
+      "tech_trend": false,
+      "score": 34
+    },
+    {
+      "title": "五年最好客流成绩单这些商场遥遥领先……|城市|消费|性价比|商圈|商业",
+      "source": "新浪财经",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBDUWtLVXczcFI1T0ZiRmVXMHRSNGNvSVpERkN2c01aSU5BdFh2N19YVnczSE02SFFwOE9wNUZQb01obnZ3VENFajFVandseHowazdGdDE0RmR6Y25aNERPVG8zREVvakU4QW40VHNaZjJpSkp2OGNDSTFyZGpWa3M?oc=5",
+      "published_at": "Mon, 03 Jun 2024 07:00:00 GMT",
+      "keyword": "广州 购物中心 客流 消费",
       "campaign": "六一618端午",
       "city": "",
       "region": "全国",
@@ -1198,18 +1213,18 @@
       "score": 33
     },
     {
-      "title": "#kobekicks##发售提醒# Nike Kobe 8 Protro “Halo” 的成人版本将于8月24日在SNKRS中国，Nike耐克App，Nike天猫官方旗舰店及耐克指定零售店铺进行发售。儿童版本将于8月24日在SNKRS中国，Nike耐克App及天猫耐克Nike儿童官方旗舰店进行发售。 #kobekick",
-      "source": "手机新浪网",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAxTzQ2NE1QQUUzSFpDX00tcEY4WDh0emF6eFhQUHhadEFLb2FSaXh1ek1NdzFoNkZyeWVsWW14V0JMN0lVTDN0RzR5aFVqTXEwU01TNHgta1dxNnJLVDhhdVRnOA?oc=5",
-      "published_at": "Fri, 11 Aug 2023 07:00:00 GMT",
-      "keyword": "Nike Kids 童装",
+      "title": "阿迪、耐克过去式，李宁、安踏、特步现在时",
+      "source": "Forbes China",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9PM3dXNWpiOTNFR1RwRVFJSVVoZXJxWU9NT1dDNFczTktJYkNQeko4TEZTVUhkcnhkTGdIYUhabUJQSnJGMHJsSkVSNElXcmx1R3A2MzBpOEU3UQ?oc=5",
+      "published_at": "Fri, 24 Sep 2021 07:00:00 GMT",
+      "keyword": "特步 运动 消费",
       "campaign": "六一618端午",
       "city": "",
       "region": "全国",
       "weather_abnormal": false,
       "local_business": false,
       "tech_trend": false,
-      "score": 31
+      "score": 33
     },
     {
       "title": "耐克退潮，安踏李宁上位，市场和消费者都变了",
@@ -1310,20 +1325,6 @@
       "score": 29
     },
     {
-      "title": "一半门店开在高端商场，lululemon们的开店逻辑是什么？",
-      "source": "CBNData-第一财经商业数据中心",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB5Q05YQlBmVXBKZW1xd29hOTJuUjRIMUxwci1OQkpHR09HV3I3cVlYdC1mTHE0UWZaRU5UMGxyWG1sZ2VWRHRXaGxoOHpwRGtyS0dFeQ?oc=5",
-      "published_at": "Mon, 02 Aug 2021 07:00:00 GMT",
-      "keyword": "上海 商场 会员 消费 运动",
-      "campaign": "六一618端午",
-      "city": "",
-      "region": "全国",
-      "weather_abnormal": false,
-      "local_business": false,
-      "tech_trend": false,
-      "score": 29
-    },
-    {
       "title": "抖音电商超品日x FILA KIDS 自由海岛大秀：童心海海，自在浪潮",
       "source": "QQ News",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1RUW5WTE9OY1BtMS1LZ0Q5eHVPTktLMTNMdVBzNnJsQXROSHJmWTVsLUVZSHdkcWhGU0QyX3RQZWREWlFvSmhNMWZIcGE0a2RmTDVDRWR3?oc=5",
@@ -1339,7 +1340,7 @@
     },
     {
       "title": "营收首破百亿！361度去年创下品牌历史新高，2023年增速已超安踏、李宁",
-      "source": "搜狐网",
+      "source": "Sohu",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE01WDFlVHhVMTgzVkEySVBBbHdYekpjSXZsczJmQUNpakRxMGZFUGhOWjRqbmY2MWdsOUZ0cjJCaTVobGZwRS0wZGh0Y0pLUTZxTmR0QQ?oc=5",
       "published_at": "Mon, 17 Mar 2025 07:00:00 GMT",
       "keyword": "361度 儿童 运动",
@@ -1352,11 +1353,11 @@
       "score": 28
     },
     {
-      "title": "“双节”氛围感拉满，松江各商圈拉动客流促消费",
-      "source": "上观新闻",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1UUmZodDFrZ2hRVXBFa2RuVm9zWDJ3UnNpMVZ3MkVQLWFHOC1XdDM4b3RoUWtNZHJSZFREckY4Vnc5ZkkxRTBxeFJ4Z2w2UVNjUHp6RDVqcG0?oc=5",
-      "published_at": "Sat, 31 May 2025 07:00:00 GMT",
-      "keyword": "商圈 活动 亲子 运动",
+      "title": "抖音电商“开跑了春天”：跑者们在直播间里的年销售额突破330万!",
+      "source": "Sohu",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1vekl1YldoLVU0dDhkMlJteGZnYmVreUxCQjhNVDJzdGZKclhrT2JIaFdab1ZGZ3V4V05ZOXRhSU81N0JSMkNDc1FBN2RvdFdZRUFCMQ?oc=5",
+      "published_at": "Wed, 23 Apr 2025 07:00:00 GMT",
+      "keyword": "抖音电商 运动品牌",
       "campaign": "六一618端午",
       "city": "",
       "region": "全国",
@@ -1366,11 +1367,11 @@
       "score": 27
     },
     {
-      "title": "抖音电商“开跑了春天”：跑者们在直播间里的年销售额突破330万!",
-      "source": "搜狐网",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1vekl1YldoLVU0dDhkMlJteGZnYmVreUxCQjhNVDJzdGZKclhrT2JIaFdab1ZGZ3V4V05ZOXRhSU81N0JSMkNDc1FBN2RvdFdZRUFCMQ?oc=5",
-      "published_at": "Wed, 23 Apr 2025 07:00:00 GMT",
-      "keyword": "抖音电商 运动品牌",
+      "title": "京东奥莱将在宿迁开业全国已布局47家门店- 零售",
+      "source": "亿邦动力网",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9nbG84QWVNd3BhRnVVQWlNTHYyUjUwVGlJc2QzbmFPTDcyaDFfeVYwcGV3LTdfdGVTUkpvM1pqRGVOQ2Q4czNxTzNOUXVELVJmMDRqakJn?oc=5",
+      "published_at": "Tue, 02 Dec 2025 08:00:00 GMT",
+      "keyword": "京东 运动品牌 童装",
       "campaign": "六一618端午",
       "city": "",
       "region": "全国",
@@ -1392,34 +1393,6 @@
       "local_business": false,
       "tech_trend": false,
       "score": 27
-    },
-    {
-      "title": "从抖音销量来看，2月李宁&安踏卖的好吗？",
-      "source": "雪球",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFAtbGYxWVZlSVpHQUxFa09mcVhlRlJVajQwUHVNa3BqbnZCY0kxMmUxc2VuV1djVXpnLXRqYS1WUTZhbHRYSGg4SGhUelNoQWFV?oc=5",
-      "published_at": "Sat, 06 Mar 2021 08:00:00 GMT",
-      "keyword": "抖音电商 运动品牌",
-      "campaign": "六一618端午",
-      "city": "",
-      "region": "全国",
-      "weather_abnormal": false,
-      "local_business": false,
-      "tech_trend": false,
-      "score": 26
-    },
-    {
-      "title": "安踏、特步们正在受到巴拉巴拉们的挑战",
-      "source": "Jiemian.com",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5aVFlNd08ydXlkVTJ2U2JUaFh6THJoRkNQY045c2gyME5YUGJkSldXeDZuVEdzcVpxcWFfb2ZWRGlFdk1LeVRYTVhVNEktejZKM0EzNFA4Rk0?oc=5",
-      "published_at": "Thu, 21 Mar 2024 07:00:00 GMT",
-      "keyword": "运动童装 儿童运动 消费",
-      "campaign": "六一618端午",
-      "city": "",
-      "region": "全国",
-      "weather_abnormal": false,
-      "local_business": false,
-      "tech_trend": false,
-      "score": 26
     },
     {
       "title": "安踏儿童“冰溶纱”荣获2025年度中国纺织工业联合会科学技术进步奖",
@@ -1508,7 +1481,7 @@
     {
       "title": "单日最高客流105万人次，这个老商圈为何能这么火？",
       "source": "新华网",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5jX3pYdVBSbjVIb1YyRmhod1Rrekdmdnk5bVFwNUhpNnQwQkNPUUxRR1RIMWJzclpnWklXUTNJOU1EU3FnaWFDeFpVaDVHZmJEVktZNFlVUmZEc3BiSHN3cVBsT3Jpa0l4QmdPMWk3QWVrSlRuSGc?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVnc3NmtFb29WMFFnN3BVUGtFNm9TRGVPaEhiWEcxcEIzWWhieUgybkhvV1Y1cGluclQ1ZlFiMmUwRlNRWnRta01aZXFJNy00LWZhVXV2VTd0YWNVY2dWX0kzX1pRNDdWZnY4VWJ0MmM4SnFhUHItQWQxbG5NbXlXVQ?oc=5",
       "published_at": "Sat, 25 Jan 2025 08:00:00 GMT",
       "keyword": "重庆 文旅 商场 消费",
       "campaign": "六一618端午",
@@ -1534,6 +1507,20 @@
       "score": 24
     },
     {
+      "title": "户外骑行运动掀起消费热新消费业态助推夏日经济新活力-腾讯新闻",
+      "source": "QQ News",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBUT3JzV2lXNElaVVEyc28zbUsxRkZOZnhwQ2hPUXdnb0JuS3RCWkFYb0hCbE1jVHE1Y1lwQ3IzZEE3NTU0QmJ0TklRLTVJRTBWbDdzSVVmVQ?oc=5",
+      "published_at": "Sun, 12 May 2024 07:00:00 GMT",
+      "keyword": "城市骑行 运动消费",
+      "campaign": "六一618端午",
+      "city": "",
+      "region": "全国",
+      "weather_abnormal": false,
+      "local_business": false,
+      "tech_trend": false,
+      "score": 24
+    },
+    {
       "title": "百万少年齐问天，书写大国太空梦！特步儿童引领大国少年与中国航天同行，向星辰起航",
       "source": "新华网",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMHgyTVhBOWxDUThLYkRkb1JDc24tRHFJT1dsZHVaMlFQMC0yTFMxRlZKYWk4T3pJWkFRNE1UMGpNZVFQUkZOS0RraUtmWDVSN3lDd2NTMWFuY0tfSHo4MVFPaUNvNG9JNUJOdUVzb1RTY09VVlk1MTFZRXBPSnVhY2pzYlpESk1f?oc=5",
@@ -1548,18 +1535,32 @@
       "score": 23
     },
     {
-      "title": "抖音电商更新流量机制：强调垂类内容将打造100个标杆- 零售",
-      "source": "亿邦动力网",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBTVTRKRXhqN1lQS2tFbVhWTGduaXVySUVjTldSWl82VEIwczQ1OEFHYXZuR3lOeEM2UUF3MVZLaDU0NEFRaUJOdUg5V0did0V5WDlvcG1n?oc=5",
-      "published_at": "Tue, 10 Sep 2024 07:00:00 GMT",
-      "keyword": "抖音电商 运动品牌",
+      "title": "今夏最适合带娃的打卡圣地不是迪士尼，是安踏儿童顽运会！",
+      "source": "news.tom.com",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5JZnJEaGxMVkd4Wks3TVZ1VzdWNWlrVkFBWnREUTZfd2xGNmdGWFNFSVZFR3ZFbFd0dzBJcnZqY1BfTXBzS0R3OThCMGRNT0RXSGpMNThR?oc=5",
+      "published_at": "Mon, 10 Jun 2019 07:00:00 GMT",
+      "keyword": "儿童节 运动童装",
       "campaign": "六一618端午",
       "city": "",
       "region": "全国",
       "weather_abnormal": false,
       "local_business": false,
       "tech_trend": false,
-      "score": 23
+      "score": 22
+    },
+    {
+      "title": "安踏儿童携手洱海生态廊道开启追风开跑活动 引领新生代爱上跑步",
+      "source": "中国日报网",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1uTmhia0U4NTdScnBOalZQQjdxZXBRVnZlb2sxTXgzYzVHWXZHOFZUOEl6TnRyME5Jb3lsaENTT1RSdzhYbGRIcWhlWE5ROVd6eDF3UWlMNmtPUk1EcUhnX0hvMm5kcThMNEJsZmNFWjJNTmlmNVoyd3EzQQ?oc=5",
+      "published_at": "Mon, 03 Apr 2023 07:00:00 GMT",
+      "keyword": "儿童运动 校园 体育 消费",
+      "campaign": "六一618端午",
+      "city": "",
+      "region": "全国",
+      "weather_abnormal": false,
+      "local_business": false,
+      "tech_trend": false,
+      "score": 22
     }
   ]
 }
