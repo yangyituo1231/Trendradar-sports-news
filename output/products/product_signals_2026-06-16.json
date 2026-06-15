@@ -1,10 +1,10 @@
 {
   "date": "2026-06-16",
-  "generated_time": "2026-06-16 05:32:01",
+  "generated_time": "2026-06-16 05:39:05",
   "source": "Google News RSS product signal monitor",
   "desc": "全年运动鞋服商品趋势信号监测：覆盖儿童、成人、童装、四季商品、大促节点、鞋科技、运动场景。已过滤过旧新闻、财经财报、微博广告、弱新浪促销帖和弱相关信号。该数据代表公开资讯热度信号，不等同于平台真实销量。",
   "query_count": 140,
-  "signal_count": 73,
+  "signal_count": 72,
   "top_brands": [
     [
       "安踏",
@@ -20,7 +20,7 @@
     ],
     [
       "泰兰尼斯",
-      8
+      7
     ],
     [
       "FILA Kids",
@@ -74,7 +74,7 @@
   "top_keywords": [
     [
       "儿童",
-      43
+      42
     ],
     [
       "新品",
@@ -82,19 +82,19 @@
     ],
     [
       "发布",
-      20
+      21
     ],
     [
       "热卖",
-      15
+      14
     ],
     [
       "防晒衣",
-      10
+      9
     ],
     [
       "防晒",
-      10
+      9
     ],
     [
       "开学季",
@@ -117,19 +117,19 @@
       6
     ],
     [
+      "羽绒服",
+      5
+    ],
+    [
       "凉感T恤",
-      5
-    ],
-    [
-      "凉感",
-      5
-    ],
-    [
-      "冲锋衣",
       4
     ],
     [
-      "羽绒服",
+      "凉感",
+      4
+    ],
+    [
+      "冲锋衣",
       4
     ],
     [
@@ -248,7 +248,7 @@
   "top_categories": [
     [
       "儿童服装",
-      19
+      18
     ],
     [
       "跑步科技",
@@ -256,11 +256,11 @@
     ],
     [
       "儿童鞋",
-      10
+      9
     ],
     [
       "品牌新品",
-      7
+      8
     ],
     [
       "防晒凉感",
@@ -297,16 +297,16 @@
       36
     ],
     [
-      "夏季",
-      16
-    ],
-    [
       "秋季",
       15
     ],
     [
+      "夏季",
+      14
+    ],
+    [
       "冬季",
-      4
+      5
     ],
     [
       "春季",
@@ -1103,27 +1103,6 @@
     },
     {
       "date": "2026-06-16",
-      "title": "小猪大卫儿童T恤轻薄裤夏季新品 - 新浪网",
-      "short_title": "小猪大卫儿童T恤轻薄裤夏季新品 - 新浪网",
-      "query": "儿童凉感T恤 热卖",
-      "brand_hits": [],
-      "keyword_hits": [
-        "凉感T恤",
-        "儿童",
-        "新品",
-        "热卖",
-        "凉感"
-      ],
-      "category": "儿童服装",
-      "season_tag": "夏季",
-      "source": "新浪网",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBORmNDZnJ4ZExxbXMxYjJfTHpESmpNbkFIQ2NnYzJySWhNdjZBT0d1WjN6Y3NaMkhJbkFISXlBdzAtT2RfVWEwcVVnZHVoV2RGNTBiRWV4WW5pZGdYU1pjcVQwTQ?oc=5",
-      "pub_date": "Sun, 24 May 2026 07:00:00 GMT",
-      "heat": 41,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-16",
       "title": "科学家研制出“扛造”防水布料，不用再怕冲锋衣一洗就废 - 科学网—新闻",
       "short_title": "科学家研制出“扛造”防水布料，不用再怕冲锋衣一洗就废 - 科学网—新闻",
       "query": "儿童冲锋衣 防水",
@@ -1361,6 +1340,25 @@
     },
     {
       "date": "2026-06-16",
+      "title": "母婴日报| 两项婴童用品新国标发布；抖音12月母婴品牌热榜出炉；伟易达扩建马来西亚工厂2027完工；去年我国跨境电商进出口2.75万亿元 - 母婴行业观察",
+      "short_title": "母婴日报| 两项婴童用品新国标发布；抖音12月母婴品牌热榜出炉；伟易达扩建马来西亚工厂2027完工；去年我国跨境电商进出口2.75万...",
+      "query": "安踏儿童 新品",
+      "brand_hits": [],
+      "keyword_hits": [
+        "儿童",
+        "新品",
+        "发布"
+      ],
+      "category": "品牌新品",
+      "season_tag": "全年",
+      "source": "母婴行业观察",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5qQ1ZnWWZUR2RFNkxjMXVjaDlVM0FXMm0tR0o1aGdOcW9XenRleC1JNmoxOTk0VjNLTXFObzNCNEsxQVRULXo1d21lZU8?oc=5",
+      "pub_date": "Fri, 16 Jan 2026 08:00:00 GMT",
+      "heat": 39,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-16",
       "title": "安踏系集体卖童装，巴拉巴拉最受伤 - 风闻",
       "short_title": "安踏系集体卖童装，巴拉巴拉最受伤 - 风闻",
       "query": "安踏儿童 冲锋衣",
@@ -1544,27 +1542,6 @@
     },
     {
       "date": "2026-06-16",
-      "title": "五千亿童装市场，安踏能占几何？ - 36 Kr",
-      "short_title": "五千亿童装市场，安踏能占几何？ - 36 Kr",
-      "query": "安踏儿童 防晒衣",
-      "brand_hits": [
-        "安踏"
-      ],
-      "keyword_hits": [
-        "防晒衣",
-        "儿童",
-        "防晒"
-      ],
-      "category": "儿童服装",
-      "season_tag": "夏季",
-      "source": "36 Kr",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE16U0tLTkVIOHlHVXJtcHo5U3pwQ09POTI4MzZIMjdsUll2Rk5PZUtpYkQxZC1ZRzZPQ0lUU1NYR0ZidTNyYmsxUWthU3g1Zw?oc=5",
-      "pub_date": "Thu, 23 Jan 2025 08:00:00 GMT",
-      "heat": 35,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-16",
       "title": "安德玛VELOCITI跑鞋系列焕新登场，VELOCITI DISTANCE – 耐力500亮相 - smarthey.com",
       "short_title": "安德玛VELOCITI跑鞋系列焕新登场，VELOCITI DISTANCE – 耐力500亮相 - smarthey.com",
       "query": "缓震跑鞋 新品",
@@ -1642,7 +1619,7 @@
       "date": "2026-06-16",
       "title": "361儿童夏季透气跑鞋！码数到42码！ ​ - 新浪网",
       "short_title": "361儿童夏季透气跑鞋！码数到42码！ ​ - 新浪网",
-      "query": "361儿童 运动鞋",
+      "query": "361儿童 跑鞋",
       "brand_hits": [
         "361儿童"
       ],
@@ -1672,25 +1649,6 @@
       "source": "品玩",
       "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAxUnpKRlYxd1RaSnVJSkwwQ21qOExhVDIybnpwRGh2TV81dEJUZ3pDdENiaVhfN1c2OWY4TU1IQ2ZYQ3NGYzZCdQ?oc=5",
       "pub_date": "Sun, 22 Jun 2025 07:00:00 GMT",
-      "heat": 32,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-16",
-      "title": "卖完童鞋又卖体测鞋，泰兰尼斯想变成学生版萨洛蒙 - Jiemian.com",
-      "short_title": "卖完童鞋又卖体测鞋，泰兰尼斯想变成学生版萨洛蒙 - Jiemian.com",
-      "query": "361儿童 跑鞋",
-      "brand_hits": [
-        "泰兰尼斯"
-      ],
-      "keyword_hits": [
-        "儿童"
-      ],
-      "category": "儿童鞋",
-      "season_tag": "全年",
-      "source": "Jiemian.com",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA3QmVBb3NWUWtaLWkyRVF5N3hnbk5WaWUxcWNlWmRhTTNzMXZ4RE1tdFpfZm5SOHdSRDd5czRzXzN6djFaY0M2eXlBZkVVSVRfZGw0amlR?oc=5",
-      "pub_date": "Tue, 31 Mar 2026 07:00:00 GMT",
       "heat": 32,
       "type": "product_signal"
     },
@@ -1785,6 +1743,26 @@
       "source": "亿邦动力网",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE00OE5XRHRjekMwVUwzSnNpSlJPeTdEeFFnZUhMWVpoWG9hT25adEhSbjBlNjNUZG95bVExODFfenpZN0ZLYmh4SHlJNWxRZ1Rha1hhMGln?oc=5",
       "pub_date": "Mon, 01 Jun 2026 07:00:00 GMT",
+      "heat": 31,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-16",
+      "title": "五千亿童装市场，安踏能占几何？ - 36 Kr",
+      "short_title": "五千亿童装市场，安踏能占几何？ - 36 Kr",
+      "query": "安踏儿童 羽绒服",
+      "brand_hits": [
+        "安踏"
+      ],
+      "keyword_hits": [
+        "羽绒服",
+        "儿童"
+      ],
+      "category": "儿童服装",
+      "season_tag": "冬季",
+      "source": "36 Kr",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE16U0tLTkVIOHlHVXJtcHo5U3pwQ09POTI4MzZIMjdsUll2Rk5PZUtpYkQxZC1ZRzZPQ0lUU1NYR0ZidTNyYmsxUWthU3g1Zw?oc=5",
+      "pub_date": "Thu, 23 Jan 2025 08:00:00 GMT",
       "heat": 31,
       "type": "product_signal"
     },
