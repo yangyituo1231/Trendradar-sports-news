@@ -1,16 +1,12 @@
 {
   "date": "2026-06-17",
-  "generated_time": "2026-06-17 00:16:12",
+  "generated_time": "2026-06-17 05:24:48",
   "source": "Google News RSS product signal monitor",
   "desc": "运动鞋服商品趋势信号监测：覆盖国内外运动品牌、户外品牌、成人与儿童品牌；重点监测近8天新品、尖货、功能科技、夏季功能、跑步科技、户外轻运动与大促热卖。已过滤财经财报、广告促销、测评导购、AI白皮书、ESG报告和非鞋服商品。",
   "recent_days": 8,
   "query_count": 260,
-  "signal_count": 5,
+  "signal_count": 6,
   "top_brands": [
-    [
-      "Asics",
-      1
-    ],
     [
       "Saucony",
       1
@@ -18,23 +14,27 @@
     [
       "Adidas",
       1
+    ],
+    [
+      "Nike",
+      1
     ]
   ],
   "top_keywords": [
+    [
+      "新品",
+      4
+    ],
     [
       "跑鞋",
       3
     ],
     [
-      "新品",
+      "系列",
       2
     ],
     [
       "联名",
-      2
-    ],
-    [
-      "发布",
       1
     ],
     [
@@ -42,11 +42,19 @@
       1
     ],
     [
+      "篮球",
+      1
+    ],
+    [
       "上市",
       1
     ],
     [
-      "系列",
+      "越野跑",
+      1
+    ],
+    [
+      "亮相",
       1
     ],
     [
@@ -72,6 +80,10 @@
       3
     ],
     [
+      "篮球足球",
+      1
+    ],
+    [
       "青少年成人化",
       1
     ],
@@ -86,34 +98,15 @@
       4
     ],
     [
+      "秋季",
+      1
+    ],
+    [
       "夏季",
       1
     ]
   ],
   "signals": [
-    {
-      "date": "2026-06-17",
-      "title": "ASICS Sportstyle 携手 Griff 发布全新联名 GEL-CUMULUS 16 球鞋 - Hypebeast CN",
-      "short_title": "ASICS Sportstyle 携手 Griff 发布全新联名 GEL-CUMULUS 16 球鞋 - Hypebeast CN",
-      "query": "跑鞋 新品",
-      "brand_hits": [
-        "Asics"
-      ],
-      "keyword_hits": [
-        "跑鞋",
-        "新品",
-        "发布",
-        "联名"
-      ],
-      "category": "跑步科技",
-      "season_tag": "全年",
-      "source": "Hypebeast CN",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORDNRckpuSVJwQUhfbHhvNTV4eXhKLVRrTl8zRXFodFlod1F1VENZMlhWdTVueEhXR0NzTjFzUlFRQW1LckhWQlNlcXM0emhPSDlJOTNITkFqMzJyQ0tQb3ZDNjZUcHdnQXN2dmhueWNib2F0MG1NTFJDS1hOeDlZUDFFcGU2RlV5b3hrbXFtUmxyaXJQVjVMYWxTbHNyZ2JWcmc?oc=5",
-      "pub_date": "Tue, 16 Jun 2026 03:16:01 GMT",
-      "age_hours": 13.0,
-      "heat": 96,
-      "type": "product_signal"
-    },
     {
       "date": "2026-06-17",
       "title": "Westside Gunn 抢先曝光 Saucony Grid Jazz 9「Awesome Gods」联名跑鞋 - Hypebeast CN",
@@ -132,7 +125,7 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMDUxX0tuWHpRTXRVaGhETWV4OEtCUmlZQjNuUzdmWjE2cXlEclBqcGtkZEYxYWpFVGRJd1FpNHZyLTZ1U2pxbVpyMXNpbVJ5b2szajRJQUl2cDFqREIzVDZvU05NbEhPMWFWMGladnpIODNBekdFVnRIeklFUDV6Z1VTODZaaWU4a2c?oc=5",
       "pub_date": "Thu, 11 Jun 2026 08:10:14 GMT",
-      "age_hours": 128.1,
+      "age_hours": 133.2,
       "heat": 81,
       "type": "product_signal"
     },
@@ -140,12 +133,13 @@
       "date": "2026-06-17",
       "title": "BAPE 攜手 adidas 推出不對稱 Adizero EVO SL 性能跑鞋 - Hypebeast CN",
       "short_title": "BAPE 攜手 adidas 推出不對稱 Adizero EVO SL 性能跑鞋 - Hypebeast CN",
-      "query": "Adidas Kids 推出",
+      "query": "跑鞋 新品",
       "brand_hits": [
         "Adidas"
       ],
       "keyword_hits": [
         "跑鞋",
+        "新品",
         "推出"
       ],
       "category": "跑步科技",
@@ -153,8 +147,30 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSjlUNmFDcjJPQ2QxY3RpdlkwdTczUHBQMS1uRkNmdDA1QVh3SlRjNmNlOGc3UEkzTTM1UW8zV2JsaGFtb1cyR053MWVIckVfZ3Q0bUs1ZXVsTlo2RC1DeUJLSW41ckM5RHdjOHFhX3hHdmFwWGRibWp6cWpzVWZrWlVNWWJ1YXJfOVNDVGNhOHp3RkVVODdWY09ndmVROGFybXR6d01uVE9Xc2JVVy1sQXFCd2M4WGdJaUREWkJzOERNRHB6QVUtZkdn?oc=5",
       "pub_date": "Wed, 10 Jun 2026 10:40:17 GMT",
-      "age_hours": 149.6,
-      "heat": 78,
+      "age_hours": 154.7,
+      "heat": 81,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-17",
+      "title": "周杰伦 x 林俊杰同框合唱！杰伦率先上脚Palace x Nike X2系列球鞋！ - Sohu",
+      "short_title": "周杰伦 x 林俊杰同框合唱！杰伦率先上脚Palace x Nike X2系列球鞋！ - Sohu",
+      "query": "篮球鞋 新品",
+      "brand_hits": [
+        "Nike"
+      ],
+      "keyword_hits": [
+        "篮球",
+        "新品",
+        "系列"
+      ],
+      "category": "篮球足球",
+      "season_tag": "秋季",
+      "source": "Sohu",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNanJWRGdNNkM2TVg2Q1huYVNaUWJFTi0taENNUmdCVVNCTHdlcThNTXd1MGdDQ0JPaHdpZ0RrMDBMSUpZcnAtR3hPY2NpM085YXV6eFlOVHk0cFNQaFZlM0dCaVZjb1BucUc2Ri1LclpCdDVIOUh1V3BRakZIeG5MdmYzdHBhY0cydkR6Vw?oc=5",
+      "pub_date": "Thu, 11 Jun 2026 03:41:48 GMT",
+      "age_hours": 137.7,
+      "heat": 69,
       "type": "product_signal"
     },
     {
@@ -172,8 +188,29 @@
       "source": "美通社",
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xVFR6Ym9oSUZVaW1Zb0ktTk8wLVNiV3ZCd3Z2ejRfMnBRSks4M2JncldERzVOd3VVczA1NExFSFJqeVpLaURkU2ZldERIRmVQenFFaS02OA?oc=5",
       "pub_date": "Mon, 15 Jun 2026 07:14:00 GMT",
-      "age_hours": 33.0,
+      "age_hours": 38.2,
       "heat": 66,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-17",
+      "title": "回归雄关330、新鞋款X03亮相，X-BIONIC在中国越野跑市场提速 - QQ News",
+      "short_title": "回归雄关330、新鞋款X03亮相，X-BIONIC在中国越野跑市场提速 - QQ News",
+      "query": "跑鞋 新品",
+      "brand_hits": [],
+      "keyword_hits": [
+        "跑鞋",
+        "越野跑",
+        "新品",
+        "亮相"
+      ],
+      "category": "跑步科技",
+      "season_tag": "全年",
+      "source": "QQ News",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5yMklIZ3lPRVRnQTFZRHZoRmlSME1QXzJLRVcwdGFmbkREQUlRMlpfNEZWWThHa1pUMTNHN0tkNDZkOXQybzRHekJwN1NSY1ZRdnBaTlVB?oc=5",
+      "pub_date": "Tue, 16 Jun 2026 13:16:00 GMT",
+      "age_hours": 8.1,
+      "heat": 64,
       "type": "product_signal"
     },
     {
@@ -193,7 +230,7 @@
       "source": "亿邦动力网",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1nTXZoWlBiLWdsLWxjUjVZQkkzTFlQQXJEdUJYWjJrUmVBa05janNsZGhZa21FV0NUZGJ6el84cno1WE1ESF9pYk80cDZkSXl3R3pLZEZB?oc=5",
       "pub_date": "Thu, 11 Jun 2026 03:40:35 GMT",
-      "age_hours": 132.6,
+      "age_hours": 137.7,
       "heat": 64,
       "type": "product_signal"
     }
