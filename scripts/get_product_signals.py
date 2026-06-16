@@ -161,7 +161,7 @@ BAD_TITLE_WORDS = [
     "消费指南", "白皮书", "ESG", "可持续", "市场规模", "指南", "测评",
     "推荐", "排行榜", "怎么买", "哪款好", "人工智能", "出海", "跨境电商",
     "直降", "红包", "最低", "入手", "元入手", "叠加", "优惠", "特价",
-    "实测", "记者实测", "财经"
+    "实测", "记者实测", "财经","被盗", "盗窃", "小偷", "观察", "世界杯观察", "市场群雄争霸", "乌克兰新闻", "争议"
 ]
 
 BAD_SOURCES = [
@@ -532,7 +532,7 @@ def main():
             season_tag = detect_season_tag(full_text)
             heat = score_signal(title, query, brands, keywords, source, pub_date)
 
-            if heat < 45:
+            if heat < 40:
                 continue
 
             seen.add(key)
