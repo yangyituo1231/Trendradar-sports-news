@@ -115,18 +115,20 @@ jobs:
           git push
 
       - name: Send WeCom Text
+        continue-on-error: true
         run: |
-          curl '${{ secrets.REPORT_WEBHOOK }}' \
+          curl --max-time 20 --connect-timeout 10 "${{ secrets.REPORT_WEBHOOK }}" \
             -H 'Content-Type: application/json' \
             -d '{
               "msgtype": "markdown",
               "markdown": {
                 "content": "# 运动品牌行业资讯日报如下"
               }
-            }'
+            }' || echo "WeCom text send failed, skip."
 
       - name: Send WeCom Image
+        continue-on-error: true
         env:
           REPORT_WEBHOOK: ${{ secrets.REPORT_WEBHOOK }}
         run: |
-          python scripts/send_wecom_image.py
+          python scripts/send_wecom_image.py || echo "WeCom image send failed, skip."
