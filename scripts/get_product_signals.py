@@ -19,34 +19,38 @@ TODAY = datetime.now().strftime("%Y-%m-%d")
 NOW_TIME = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 NOW_UTC = datetime.now(timezone.utc)
 
-# 商品周报建议看近8天，既能抓新品，也避免一年多以前的旧内容反复进榜
 RECENT_DAYS = 8
 CUTOFF_DATE = NOW_UTC - timedelta(days=RECENT_DAYS)
 
-MAX_QUERIES = 220
+MAX_QUERIES = 260
 RSS_PER_QUERY = 8
 MAX_SIGNALS = 100
 
 # =========================================================
-# 1. 品牌与商品词库
+# 1. 品牌词库：国内外 / 成人儿童 / 运动户外
 # =========================================================
 KIDS_BRANDS = [
     "361儿童", "361°儿童", "361度儿童", "361°KIDS", "361 Kids",
     "安踏儿童", "李宁YOUNG", "特步儿童", "FILA Kids", "FILA KIDS",
-    "Nike Kids", "Adidas Kids", "Puma Kids", "New Balance Kids", "Skechers Kids",
-    "Asics Kids", "Jordan Kids", "巴拉巴拉", "Balabala", "Mini Peace",
-    "modytiger", "moodytiger", "MQD童装", "安奈儿", "Annil", "小猪班纳",
-    "pawin paw", "马骑顿", "M.Latin Kids", "jnby by JNBY", "戴维贝拉",
-    "davebella", "英氏", "YeeHoO", "暇步士童装", "Hush Puppies Kids", "泰兰尼斯"
+    "Nike Kids", "Adidas Kids", "Puma Kids", "New Balance Kids",
+    "Skechers Kids", "Asics Kids", "Jordan Kids",
+    "巴拉巴拉", "Balabala", "Mini Peace", "modytiger", "moodytiger",
+    "MQD童装", "安奈儿", "Annil", "小猪班纳", "pawin paw",
+    "马骑顿", "M.Latin Kids", "jnby by JNBY", "戴维贝拉", "davebella",
+    "英氏", "YeeHoO", "暇步士童装", "Hush Puppies Kids", "泰兰尼斯"
 ]
 
 ADULT_BRANDS = [
     "安踏", "李宁", "361°", "361度", "特步", "鸿星尔克", "匹克", "乔丹体育",
-    "FILA", "Nike", "Adidas", "Puma", "New Balance", "Asics", "ASICS",
-    "Skechers", "Under Armour", "Jordan", "Converse", "Vans", "Crocs",
-    "On", "ON Running", "Hoka", "HOKA", "Salomon", "lululemon",
-    "Arc'teryx", "始祖鸟", "The North Face", "北面", "迪桑特", "Descente",
-    "可隆", "KOLON SPORT", "凯乐石", "KAILAS", "伯希和", "PELLIOT", "蕉下", "Beneunder"
+    "FILA", "Nike", "耐克", "Adidas", "阿迪达斯", "Puma", "彪马",
+    "New Balance", "NB", "Asics", "ASICS", "亚瑟士", "Skechers", "斯凯奇",
+    "Under Armour", "Jordan", "Converse", "Vans", "Crocs",
+    "On", "ON Running", "昂跑", "Hoka", "HOKA", "Salomon", "萨洛蒙",
+    "lululemon", "Arc'teryx", "始祖鸟", "The North Face", "北面",
+    "迪桑特", "Descente", "可隆", "KOLON SPORT", "凯乐石", "KAILAS",
+    "伯希和", "PELLIOT", "蕉下", "Beneunder", "Mammut", "猛犸象",
+    "Saucony", "索康尼", "Brooks", "Merrell", "Columbia", "哥伦比亚",
+    "Helly Hansen", "Patagonia", "Montbell", "Snow Peak"
 ]
 
 BRANDS = list(dict.fromkeys(KIDS_BRANDS + ADULT_BRANDS))
@@ -58,32 +62,29 @@ EVENT_KEYWORDS = [
 ]
 
 PRODUCT_WORDS = [
-    # 儿童/鞋
-    "儿童运动鞋", "儿童跑鞋", "儿童篮球鞋", "儿童足球鞋", "青少年跑鞋", "校园运动鞋",
-    "跳绳鞋", "训练鞋", "开学鞋", "童鞋", "大童鞋", "足弓", "足弓支撑",
-    # 服装
-    "儿童防晒衣", "防晒衣", "凉感T恤", "速干T恤", "短袖", "短裤", "运动套装",
-    "卫衣", "长裤", "轻外套", "棒球服", "冲锋衣", "软壳外套", "羽绒服", "棉服",
-    "抓绒衣", "防风外套", "防水外套", "防晒帽", "遮阳帽",
-    # 成人运动参考
-    "跑鞋", "碳板跑鞋", "厚底跑鞋", "缓震跑鞋", "竞速跑鞋", "慢跑鞋", "户外鞋",
-    "溯溪鞋", "运动凉鞋", "恢复拖鞋", "洞洞鞋", "瑜伽服", "运动内衣",
-    # 科技/功能
+    "儿童运动鞋", "儿童跑鞋", "儿童篮球鞋", "儿童足球鞋", "青少年跑鞋",
+    "校园运动鞋", "跳绳鞋", "训练鞋", "开学鞋", "童鞋", "大童鞋",
+    "足弓", "足弓支撑",
+
+    "儿童防晒衣", "防晒衣", "防晒服", "凉感T恤", "速干T恤", "短袖",
+    "短裤", "运动套装", "卫衣", "长裤", "轻外套", "棒球服", "冲锋衣",
+    "软壳外套", "羽绒服", "棉服", "抓绒衣", "防风外套", "防水外套",
+    "防晒帽", "遮阳帽",
+
+    "跑鞋", "碳板跑鞋", "厚底跑鞋", "缓震跑鞋", "竞速跑鞋", "慢跑鞋",
+    "户外鞋", "越野跑鞋", "徒步鞋", "溯溪鞋", "运动凉鞋", "恢复拖鞋",
+    "洞洞鞋", "瑜伽服", "运动内衣",
+
     "碳板", "全掌碳板", "半掌碳板", "厚底", "缓震", "回弹", "超临界发泡",
     "氮科技", "EVA中底", "TPU支撑", "BOA旋钮", "防滑大底", "耐磨大底",
     "防晒", "凉感", "速干", "冰感", "防水", "防风", "保暖", "加绒", "功能面料",
-    # 场景
-    "篮球", "足球", "跑步", "马拉松", "网球", "羽毛球", "校园体育", "中考体育",
-    "亲子运动", "轻户外", "户外徒步", "露营", "骑行", "滑雪", "训练", "城市轻户外",
-    # 商品事件
-    "新品", "上新", "热卖", "爆款", "发布", "首发", "上市", "联名", "系列"
-]
 
-CORE_PRODUCT_WORDS = [
-    "鞋", "服", "童装", "童鞋", "跑鞋", "篮球鞋", "足球鞋", "运动鞋", "防晒衣",
-    "T恤", "冲锋衣", "羽绒服", "棉服", "卫衣", "短裤", "长裤", "外套",
-    "帽", "书包", "拖鞋", "凉鞋", "户外", "跑步", "篮球", "足球", "新品",
-    "上新", "发布", "首发", "联名", "热卖", "爆款", "儿童", "青少年", "足弓"
+    "篮球", "足球", "跑步", "马拉松", "网球", "羽毛球", "校园体育",
+    "中考体育", "亲子运动", "轻户外", "户外徒步", "露营", "骑行",
+    "滑雪", "训练", "城市轻户外", "山系", "越野跑",
+
+    "新品", "新款", "上新", "热卖", "爆款", "发布", "推出", "亮相",
+    "登场", "开售", "首发", "上市", "联名", "系列"
 ]
 
 PRODUCT_KEYWORDS = list(dict.fromkeys(PRODUCT_WORDS + EVENT_KEYWORDS))
@@ -92,40 +93,50 @@ PRODUCT_KEYWORDS = list(dict.fromkeys(PRODUCT_WORDS + EVENT_KEYWORDS))
 # 2. 查询词
 # =========================================================
 FOCUS_QUERIES = [
-    "儿童运动鞋 新品", "儿童跑鞋 新品", "儿童篮球鞋 校园体育", "儿童防晒衣 热卖",
-    "儿童凉感T恤 热卖", "儿童冲锋衣 防水", "儿童羽绒服 保暖", "童装 运动 新品",
-    "青少年 足弓 跑鞋", "青少年 成人化 运动鞋", "碳板跑鞋 新品", "厚底跑鞋 热卖",
-    "缓震跑鞋 新品", "户外鞋 热卖", "防晒衣 运动品牌", "轻户外 运动品牌 新品",
-    "恢复拖鞋 运动品牌", "618 运动户外 热卖", "618 儿童运动鞋", "618 防晒衣",
-    "开学季 儿童运动鞋", "六一 童装 儿童运动", "暑期 亲子户外 运动"
+    "儿童运动鞋 新品",
+    "儿童跑鞋 新品",
+    "儿童篮球鞋 校园体育",
+    "儿童防晒衣 热卖",
+    "儿童凉感T恤 热卖",
+    "童装 运动 新品",
+    "青少年 足弓 跑鞋",
+    "青少年 成人化 运动鞋",
+
+    "跑鞋 新品",
+    "碳板跑鞋 新品",
+    "厚底跑鞋 热卖",
+    "缓震跑鞋 新品",
+    "篮球鞋 新品",
+    "足球鞋 新品",
+    "训练鞋 新品",
+
+    "户外鞋 新品",
+    "冲锋衣 新品",
+    "轻户外 运动品牌 新品",
+    "恢复拖鞋 运动品牌",
+    "运动凉鞋 新品",
+    "防晒衣 运动品牌",
+    "凉感 速干 运动品牌",
+
+    "618 运动户外 热卖",
+    "618 儿童运动鞋",
+    "618 防晒衣",
+    "暑期 亲子户外 运动",
 ]
 
 queries = []
 queries.extend(FOCUS_QUERIES)
 
 for brand in KIDS_BRANDS:
-    for kw in ["新品", "新款", "发布", "推出", "上市", "联名", "儿童运动","夏季","春季","秋季","冬季","校园运动"]:
+    for kw in ["新品", "新款", "发布", "推出", "上市", "联名", "跑鞋", "篮球鞋", "防晒衣", "儿童运动", "校园运动"]:
         queries.append(f"{brand} {kw}")
 
-BRAND_NEWS_QUERIES = []
-
-for brand in BRANDS:
-    BRAND_NEWS_QUERIES.extend([
-        f"{brand} 新品",
-        f"{brand} 发布",
-        f"{brand} 推出",
-        f"{brand} 上市",
-        f"{brand} 联名"
-    ])
-
-queries.extend(BRAND_NEWS_QUERIES)
-
 for brand in ADULT_BRANDS:
-    for kw in ["新品", "跑鞋", "碳板跑鞋", "防晒衣", "冲锋衣", "户外鞋", "恢复拖鞋"]:
+    for kw in ["新品", "新款", "发布", "推出", "上市", "联名", "跑鞋", "碳板跑鞋", "篮球鞋", "户外鞋", "冲锋衣", "防晒衣", "恢复拖鞋"]:
         queries.append(f"{brand} {kw}")
 
 for event in ["618", "双11", "双12", "99大促", "开学季", "六一", "暑期"]:
-    for kw in ["儿童运动鞋", "童装", "跑鞋", "防晒衣", "冲锋衣", "户外鞋"]:
+    for kw in ["儿童运动鞋", "童装", "跑鞋", "篮球鞋", "防晒衣", "冲锋衣", "户外鞋", "轻户外"]:
         queries.append(f"{event} {kw} 热卖")
 
 QUERIES = list(dict.fromkeys(queries))[:MAX_QUERIES]
@@ -134,28 +145,28 @@ QUERIES = list(dict.fromkeys(queries))[:MAX_QUERIES]
 # 3. 过滤词库
 # =========================================================
 BAD_TITLE_WORDS = [
-    # 财经/资本市场
     "股票", "涨停", "跌停", "股价", "财报", "年报", "中报", "季报", "业绩发布",
     "营收", "毛利率", "净利润", "市值", "港股", "A股", "美股", "IPO", "融资",
     "券商", "研报", "目标价", "评级", "东方财富", "雪球", "财富号",
-    # 非鞋服商品
-    "电视", "手机", "汽车", "房产", "床品", "枕芯", "被芯", "床垫", "饮品", "冷饮",
-    "相机", "音频", "数码", "保健品", "普拉达", "资生堂", "桑蚕丝",
-    # 体育赛事新闻，不是运动消费/商品
-    "比分", "赛程", "转会", "主教练", "球员", "伤病", "冠军", "夺冠", "决赛", "世界杯版权",
-    # 低质/广告
+
+    "电视", "手机", "汽车", "房产", "床品", "枕芯", "被芯", "床垫", "饮品",
+    "冷饮", "相机", "音频", "数码", "保健品", "普拉达", "资生堂", "桑蚕丝",
+
+    "比分", "赛程", "转会", "主教练", "球员", "伤病", "冠军", "夺冠", "决赛",
+    "世界杯版权", "博彩", "官网入口", "赛果",
+
     "超值好货", "省钱快报", "加拿大省钱快报", "北美省钱快报", "t.cn", "http://t.cn",
     "超话", "抽奖", "转发本条", "我来了", "偶遇", "哈哈", "打call", "送花花",
-    "365BET", "博彩", "官网入口", "赛果",
-    "消费指南", "白皮书", "ESG", "可持续", "榜单", "市场规模", "指南", "测评",
-    "推荐", "排行榜", "怎么买", "哪款好","人工智能","出海","跨境电商",
+
+    "消费指南", "白皮书", "ESG", "可持续", "市场规模", "指南", "测评",
+    "推荐", "排行榜", "怎么买", "哪款好", "人工智能", "出海", "跨境电商",
     "直降", "红包", "最低", "入手", "元入手", "叠加", "优惠", "特价",
     "实测", "记者实测", "财经"
 ]
 
 BAD_SOURCES = [
-    "雪球", "东方财富", "证券时报", "财联社", "华尔街见闻", "中华网财经", "21财经",
-    "财富号", "加拿大省钱快报", "北美省钱快报", "格隆汇", "AASTOCKS"
+    "雪球", "东方财富", "证券时报", "财联社", "华尔街见闻", "中华网财经",
+    "21财经", "财富号", "加拿大省钱快报", "北美省钱快报", "格隆汇", "AASTOCKS"
 ]
 
 WEAK_AD_WORDS = [
@@ -166,8 +177,9 @@ WEAK_AD_WORDS = [
 TRUSTED_SOURCES = [
     "美通社", "36氪", "新华网", "人民网", "澎湃", "thepaper", "界面", "Jiemian",
     "中国日报", "新京报", "凤凰网", "腾讯", "QQ News", "中华网生活", "赢商网",
-    "亿邦动力", "母婴行业观察", "中国纺织报", "Hypebeast", "CBNData", "经济观察报",
-    "Morketing", "品牌星球", "联商网", "电商报", "钛媒体", "虎嗅"
+    "亿邦动力", "母婴行业观察", "中国纺织报", "Hypebeast", "Hypebae",
+    "CBNData", "经济观察报", "Morketing", "品牌星球", "联商网", "电商报",
+    "钛媒体", "虎嗅", "时尚商业", "NOWRE", "Supreme情报网"
 ]
 
 # =========================================================
@@ -226,13 +238,19 @@ def google_news_rss(query):
 def fetch_rss(query, timeout=15):
     url = google_news_rss(query)
     try:
-        resp = requests.get(url, timeout=timeout, headers={"User-Agent": "Mozilla/5.0 TrendRadar Product Monitor"})
+        resp = requests.get(
+            url,
+            timeout=timeout,
+            headers={"User-Agent": "Mozilla/5.0 TrendRadar Product Monitor"}
+        )
         resp.raise_for_status()
         root = ET.fromstring(resp.content)
+
         items = []
         for idx, item in enumerate(root.findall(".//item")):
             if idx >= RSS_PER_QUERY:
                 break
+
             source_node = item.find("source")
             items.append({
                 "title": clean_text(item.findtext("title")),
@@ -242,6 +260,7 @@ def fetch_rss(query, timeout=15):
                 "query": query
             })
         return items
+
     except Exception as e:
         print(f"fetch rss error: {query} {repr(e)}")
         return []
@@ -252,91 +271,6 @@ def is_trusted_source(source, title):
     return has_any(text, TRUSTED_SOURCES)
 
 
-def has_core_product_signal(title):
-
-    must_have_product = [
-        "鞋","跑鞋","篮球鞋","足球鞋",
-        "童鞋","运动鞋","户外鞋",
-        "防晒衣","防晒服","凉感T恤","速干T恤",
-        "冲锋衣","羽绒服","棉服",
-        "外套","短裤","长裤",
-        "帽","书包","拖鞋","凉鞋"
-    ]
-
-    product_scene = [
-        "儿童","青少年","校园","足弓",
-        "篮球","足球","跑步","户外",
-        "防晒","凉感","速干","缓震","碳板",
-        "运动品牌","童装","亲子"
-    ]
-
-    must_have_action = [
-    "新品","上新","发布","首发",
-    "上市","联名","热卖","爆款",
-    "推出","亮相","登场","开售"
-    ]
-
-    return (
-        has_any(title, must_have_product)
-        and
-        (has_any(title, must_have_action) or has_any(title, product_scene))
-    )
-
-
-def has_strong_product_signal(title):
-    strong = [
-        "新品", "上新", "发布", "首发", "上市", "联名", "热卖", "爆款",
-        "跑鞋", "运动鞋", "篮球鞋", "足球鞋", "户外鞋", "童鞋", "防晒衣", "凉感T恤",
-        "速干T恤", "冲锋衣", "羽绒服", "棉服", "足弓", "碳板", "缓震", "防水", "保暖"
-    ]
-    return has_any(title, strong)
-    
-def is_adult_trend_relevant(title):
-    trend_words = [
-        "跑鞋", "碳板", "缓震", "厚底", "轻量", "回弹",
-        "篮球鞋", "足球鞋", "训练鞋",
-        "防晒衣", "凉感", "速干",
-        "冲锋衣", "户外鞋", "轻户外",
-        "恢复拖鞋", "运动凉鞋",
-        "联名", "新品", "发布", "首发", "上市"
-    ]
-    return has_any(title, trend_words)
-
-
-def should_drop_item(title, source, pub_date):
-    title = clean_text(title)
-    source = clean_text(source)
-    full = f"{title} {source}"
-
-    if not title or len(title) < 8:
-        return True
-    if not is_recent(pub_date):
-        return True
-    if has_any(full, BAD_TITLE_WORDS):
-        return True
-    if has_any(source, BAD_SOURCES):
-        return True
-
-    # 商品信号区必须有鞋服/运动/儿童/新品等硬信号，纯营销、纯财报、纯生活方式不要进
-    if not has_core_product_signal(title):
-        return True
-
-    # 弱广告测评类，只保留同时有品牌 + 明确产品词的内容
-    if has_any(title, WEAK_AD_WORDS):
-        if not (detect_brand(title) and has_strong_product_signal(title)):
-            return True
-
-    # 新浪类内容噪音高，严格保留新品/产品/品牌硬信号
-    if "新浪" in source or "新浪" in title or "Sina" in source:
-        return True
-
-    # 没品牌也没强商品词，过滤
-    if not detect_brand(title) and not has_strong_product_signal(title):
-        return True
-
-    return False
-
-
 def detect_brand(title):
     text = clean_text(title)
     lower_text = text.lower()
@@ -344,19 +278,39 @@ def detect_brand(title):
 
     for brand in BRANDS:
         b_lower = brand.lower()
+
         if brand == "On":
-            patterns = [r"\bOn Running\b", r"On昂跑", r"昂跑", r"Cloudsurfer", r"Cloudmonster", r"Cloud 6", r"Cloudflow"]
+            patterns = [
+                r"\bOn Running\b", r"On昂跑", r"昂跑",
+                r"Cloudsurfer", r"Cloudmonster", r"Cloud 6", r"Cloudflow"
+            ]
             if any(re.search(p, text, flags=re.IGNORECASE) for p in patterns):
                 hits.append("On")
             continue
+
         if brand in text or b_lower in lower_text:
             hits.append(brand)
 
     normalize = {
-        "361度儿童": "361儿童", "361°儿童": "361儿童", "361°KIDS": "361儿童", "361 Kids": "361儿童",
-        "361度": "361°", "FILA KIDS": "FILA Kids", "ON Running": "On", "HOKA": "Hoka",
-        "ASICS": "Asics", "moodytiger": "modytiger"
+        "361度儿童": "361儿童",
+        "361°儿童": "361儿童",
+        "361°KIDS": "361儿童",
+        "361 Kids": "361儿童",
+        "361度": "361°",
+        "耐克": "Nike",
+        "阿迪达斯": "Adidas",
+        "彪马": "Puma",
+        "FILA KIDS": "FILA Kids",
+        "ON Running": "On",
+        "昂跑": "On",
+        "HOKA": "Hoka",
+        "ASICS": "Asics",
+        "亚瑟士": "Asics",
+        "萨洛蒙": "Salomon",
+        "斯凯奇": "Skechers",
+        "moodytiger": "modytiger"
     }
+
     return list(dict.fromkeys([normalize.get(h, h) for h in hits]))
 
 
@@ -370,24 +324,108 @@ def detect_keywords(text):
     return list(dict.fromkeys(hits))
 
 
+def has_core_product_signal(title):
+    product_words = [
+        "鞋", "跑鞋", "篮球鞋", "足球鞋", "训练鞋", "童鞋", "运动鞋", "户外鞋",
+        "越野跑鞋", "徒步鞋", "防晒衣", "防晒服", "凉感T恤", "速干T恤",
+        "冲锋衣", "羽绒服", "棉服", "外套", "短裤", "长裤", "帽", "书包",
+        "拖鞋", "凉鞋", "瑜伽服", "运动内衣"
+    ]
+
+    scene_words = [
+        "儿童", "青少年", "校园", "足弓", "篮球", "足球", "跑步", "户外",
+        "轻户外", "防晒", "凉感", "速干", "缓震", "碳板", "运动品牌",
+        "童装", "亲子", "马拉松", "训练"
+    ]
+
+    action_words = [
+        "新品", "新款", "上新", "发布", "首发", "上市", "联名", "热卖",
+        "爆款", "推出", "亮相", "登场", "开售", "系列"
+    ]
+
+    return has_any(title, product_words) and (has_any(title, scene_words) or has_any(title, action_words))
+
+
+def has_strong_product_signal(title):
+    strong = [
+        "新品", "新款", "上新", "发布", "首发", "上市", "联名", "热卖", "爆款",
+        "推出", "亮相", "登场", "开售", "系列",
+        "跑鞋", "运动鞋", "篮球鞋", "足球鞋", "训练鞋", "户外鞋", "童鞋",
+        "防晒衣", "防晒服", "凉感T恤", "速干T恤", "冲锋衣", "羽绒服",
+        "棉服", "足弓", "碳板", "缓震", "防水", "保暖", "恢复拖鞋"
+    ]
+    return has_any(title, strong)
+
+
+def is_adult_trend_relevant(title):
+    trend_words = [
+        "跑鞋", "碳板", "缓震", "厚底", "轻量", "回弹", "竞速",
+        "篮球鞋", "足球鞋", "训练鞋", "户外鞋", "越野跑鞋", "徒步鞋",
+        "防晒衣", "防晒服", "凉感", "速干", "冲锋衣", "轻户外",
+        "恢复拖鞋", "运动凉鞋", "洞洞鞋", "联名", "新品", "新款",
+        "发布", "推出", "首发", "上市", "开售", "系列"
+    ]
+    return has_any(title, trend_words)
+
+
+def should_drop_item(title, source, pub_date):
+    title = clean_text(title)
+    source = clean_text(source)
+    full = f"{title} {source}"
+
+    if not title or len(title) < 8:
+        return True
+
+    if not is_recent(pub_date):
+        return True
+
+    if has_any(full, BAD_TITLE_WORDS):
+        return True
+
+    if has_any(source, BAD_SOURCES):
+        return True
+
+    if "新浪" in source or "新浪" in title or "Sina" in source:
+        return True
+
+    if has_any(title, WEAK_AD_WORDS):
+        return True
+
+    if not has_core_product_signal(title):
+        return True
+
+    brands = detect_brand(title)
+
+    if brands:
+        is_kids_brand = any(b in KIDS_BRANDS or b in ["361儿童", "FILA Kids"] for b in brands)
+        if not is_kids_brand and not is_adult_trend_relevant(title):
+            return True
+
+    if not brands and not has_strong_product_signal(title):
+        return True
+
+    return False
+
+
 def classify_category(text):
     rules = [
         ("儿童鞋", ["儿童跑鞋", "儿童篮球鞋", "儿童运动鞋", "青少年跑鞋", "校园运动鞋", "跳绳鞋", "童鞋", "足弓"]),
         ("儿童服装", ["儿童防晒衣", "儿童凉感T恤", "儿童速干T恤", "儿童运动套装", "童装", "儿童外套", "儿童羽绒服", "儿童冲锋衣"]),
-        ("防晒凉感", ["防晒", "凉感", "速干", "冰感"]),
         ("跑步科技", ["碳板", "厚底", "竞速", "缓震", "跑鞋", "马拉松", "超临界"]),
         ("篮球足球", ["篮球", "足球", "篮球鞋", "足球鞋"]),
-        ("户外轻运动", ["户外", "轻户外", "冲锋衣", "户外鞋", "山系", "越野", "露营", "徒步", "溯溪"]),
+        ("户外轻运动", ["户外", "轻户外", "冲锋衣", "户外鞋", "越野跑", "山系", "露营", "徒步", "溯溪"]),
+        ("防晒凉感", ["防晒", "凉感", "速干", "冰感"]),
         ("运动恢复", ["恢复拖鞋", "拖鞋", "运动凉鞋", "洞洞鞋", "凉鞋"]),
         ("秋冬保暖", ["羽绒服", "棉服", "加绒", "保暖", "抓绒", "雪地靴", "防滑"]),
-        ("防水防护", ["防水", "防风", "软壳", "防滑"]),
         ("青少年成人化", ["青少年", "成人化", "大童", "中大童", "校园"]),
-        ("品牌新品", ["新品", "上新", "发布", "首发", "上市", "联名"]),
+        ("品牌新品", ["新品", "新款", "上新", "发布", "推出", "首发", "上市", "联名", "系列"]),
         ("大促热卖", EVENT_KEYWORDS + ["热卖", "爆款", "大促"]),
     ]
+
     for cat, words in rules:
         if has_any(text, words):
             return cat
+
     return "商品趋势"
 
 
@@ -411,8 +449,6 @@ def freshness_bonus(pub_date):
         return 14
     if h <= 168:
         return 8
-    if h <= 336:
-        return 3
     return 0
 
 
@@ -421,34 +457,37 @@ def score_signal(title, query, brands, keywords, source, pub_date):
     score += freshness_bonus(pub_date)
 
     value_words = [
-        "新品", "热卖", "爆款", "上新", "发布", "首发", "上市", "联名", "儿童", "青少年",
-        "防晒", "凉感", "速干", "跑鞋", "户外", "碳板", "足弓", "保暖", "防水", "冲锋衣",
+        "新品", "新款", "热卖", "爆款", "上新", "发布", "推出", "亮相", "登场",
+        "首发", "上市", "联名", "系列", "儿童", "青少年", "防晒", "凉感",
+        "速干", "跑鞋", "户外", "碳板", "足弓", "保暖", "防水", "冲锋衣",
         "开学季", "双11", "618", "六一", "暑期"
     ]
+
     for w in value_words:
         if w in title:
             score += 6
 
-    # 儿童品牌优先于成人品牌
-    if any(b in KIDS_BRANDS or b in ["361儿童", "FILA Kids"] for b in brands):
+    is_kids_brand = any(b in KIDS_BRANDS or b in ["361儿童", "FILA Kids"] for b in brands)
+
+    if is_kids_brand:
         score += 18
     elif brands:
-        score += 14
+        score += 18
 
     score += min(len(keywords) * 3, 24)
 
     if has_any(query, ["儿童", "青少年", "童装", "童鞋"]):
         score += 8
+
     if has_any(query, EVENT_KEYWORDS):
         score += 4
+
     if is_trusted_source(source, title):
         score += 6
 
-    # 强商品词加分
-    if has_strong_product_signal(title):
-        score += 10
+    if is_adult_trend_relevant(title):
+        score += 8
 
-    # 处罚泛内容
     weak_words = ["ESG", "白皮书", "趋势报告", "消费洞察", "财报", "营收", "市值", "融资", "收购"]
     for w in weak_words:
         if w in title:
@@ -456,10 +495,9 @@ def score_signal(title, query, brands, keywords, source, pub_date):
 
     if not brands and len(keywords) < 2:
         score -= 18
-    if "新浪" in source or "新浪" in title:
-        score -= 8
 
     return max(0, min(score, 100))
+
 
 # =========================================================
 # 5. 主程序
@@ -483,15 +521,11 @@ def main():
 
             if not title or key in seen:
                 continue
+
             if should_drop_item(title, source, pub_date):
                 continue
 
             brands = detect_brand(title)
-            is_kids_brand = any(b in KIDS_BRANDS or b in ["361儿童", "FILA Kids"] for b in brands)
-
-            if brands and not is_kids_brand:
-                if not is_adult_trend_relevant(title):
-                    return True
             full_text = f"{title} {query}"
             keywords = detect_keywords(full_text)
             category = classify_category(full_text)
@@ -502,6 +536,7 @@ def main():
                 continue
 
             seen.add(key)
+
             signals.append({
                 "date": TODAY,
                 "title": title,
@@ -519,7 +554,12 @@ def main():
                 "type": "product_signal"
             })
 
-    signals = sorted(signals, key=lambda x: (x.get("heat", 0), -x.get("age_hours", 999999)), reverse=True)
+    signals = sorted(
+        signals,
+        key=lambda x: (x.get("heat", 0), -x.get("age_hours", 999999)),
+        reverse=True
+    )
+
     top_signals = signals[:MAX_SIGNALS]
 
     brand_counter = Counter()
@@ -539,7 +579,7 @@ def main():
         "date": TODAY,
         "generated_time": NOW_TIME,
         "source": "Google News RSS product signal monitor",
-        "desc": "运动鞋服商品趋势信号监测：重点覆盖儿童运动、鞋服新品、夏季功能、跑步科技、户外轻运动、大促热卖。已强化过滤财经财报、纯营销、弱广告、测评导购和非鞋服商品。",
+        "desc": "运动鞋服商品趋势信号监测：覆盖国内外运动品牌、户外品牌、成人与儿童品牌；重点监测近8天新品、尖货、功能科技、夏季功能、跑步科技、户外轻运动与大促热卖。已过滤财经财报、广告促销、测评导购、AI白皮书、ESG报告和非鞋服商品。",
         "recent_days": RECENT_DAYS,
         "query_count": len(QUERIES),
         "signal_count": len(top_signals),
