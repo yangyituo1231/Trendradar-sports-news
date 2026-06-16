@@ -1,22 +1,22 @@
 {
   "date": "2026-06-16",
-  "generated_time": "2026-06-16 15:51:40",
+  "generated_time": "2026-06-16 17:29:45",
   "source": "Google News RSS product signal monitor",
   "desc": "全年运动鞋服商品趋势信号监测：覆盖儿童、成人、童装、四季商品、大促节点、鞋科技、运动场景。已过滤过旧新闻、财经财报、微博广告、弱新浪促销帖和弱相关信号。该数据代表公开资讯热度信号，不等同于平台真实销量。",
   "query_count": 140,
-  "signal_count": 86,
+  "signal_count": 81,
   "top_brands": [
     [
       "安踏",
-      18
+      16
     ],
     [
       "安踏儿童",
-      15
+      13
     ],
     [
       "FILA",
-      12
+      11
     ],
     [
       "泰兰尼斯",
@@ -27,11 +27,11 @@
       6
     ],
     [
-      "巴拉巴拉",
+      "Nike",
       4
     ],
     [
-      "Adidas",
+      "巴拉巴拉",
       3
     ],
     [
@@ -67,14 +67,14 @@
       1
     ],
     [
-      "Nike",
+      "Adidas",
       1
     ]
   ],
   "top_keywords": [
     [
       "儿童",
-      52
+      47
     ],
     [
       "新品",
@@ -82,18 +82,18 @@
     ],
     [
       "发布",
-      23
+      21
     ],
     [
       "热卖",
-      17
-    ],
-    [
-      "防晒",
-      12
+      20
     ],
     [
       "防晒衣",
+      11
+    ],
+    [
+      "防晒",
       11
     ],
     [
@@ -109,23 +109,11 @@
       6
     ],
     [
-      "冲锋衣",
-      6
-    ],
-    [
-      "羽绒服",
-      6
-    ],
-    [
       "缓震跑鞋",
       6
     ],
     [
       "缓震",
-      6
-    ],
-    [
-      "开学季",
       6
     ],
     [
@@ -137,16 +125,28 @@
       5
     ],
     [
+      "羽绒服",
+      5
+    ],
+    [
       "青少年",
       5
     ],
     [
-      "防水",
+      "开学季",
+      5
+    ],
+    [
+      "冲锋衣",
       4
     ],
     [
       "足弓",
-      4
+      3
+    ],
+    [
+      "618",
+      3
     ],
     [
       "校园",
@@ -154,6 +154,10 @@
     ],
     [
       "联名",
+      2
+    ],
+    [
+      "防水",
       2
     ],
     [
@@ -165,19 +169,7 @@
       2
     ],
     [
-      "跑步",
-      2
-    ],
-    [
       "训练",
-      2
-    ],
-    [
-      "上市",
-      2
-    ],
-    [
-      "618",
       2
     ],
     [
@@ -185,11 +177,11 @@
       2
     ],
     [
-      "爆款",
+      "六一",
       2
     ],
     [
-      "网球",
+      "爆款",
       2
     ],
     [
@@ -209,7 +201,15 @@
       1
     ],
     [
+      "跑步",
+      1
+    ],
+    [
       "越野跑",
+      1
+    ],
+    [
+      "上市",
       1
     ],
     [
@@ -221,15 +221,7 @@
       1
     ],
     [
-      "跳绳",
-      1
-    ],
-    [
-      "专业运动",
-      1
-    ],
-    [
-      "六一",
+      "儿童节",
       1
     ],
     [
@@ -241,7 +233,19 @@
       1
     ],
     [
+      "网球",
+      1
+    ],
+    [
       "暑期",
+      1
+    ],
+    [
+      "上新",
+      1
+    ],
+    [
+      "足球",
       1
     ],
     [
@@ -252,7 +256,7 @@
   "top_categories": [
     [
       "儿童服装",
-      22
+      20
     ],
     [
       "跑步科技",
@@ -260,26 +264,26 @@
     ],
     [
       "儿童鞋",
-      13
+      11
     ],
     [
       "品牌新品",
-      10
+      9
     ],
     [
       "防晒凉感",
-      7
-    ],
-    [
-      "户外轻运动",
-      5
+      6
     ],
     [
       "大促节点",
-      4
+      6
     ],
     [
       "篮球足球",
+      5
+    ],
+    [
+      "户外轻运动",
       4
     ],
     [
@@ -287,34 +291,34 @@
       3
     ],
     [
-      "秋冬保暖",
-      2
+      "综合趋势",
+      1
     ],
     [
-      "综合趋势",
+      "秋冬保暖",
       1
     ]
   ],
   "top_seasons": [
     [
       "全年",
-      45
+      44
     ],
     [
       "夏季",
-      17
+      16
     ],
     [
       "秋季",
-      15
+      14
     ],
     [
       "冬季",
-      6
+      5
     ],
     [
       "春季",
-      3
+      2
     ]
   ],
   "signals": [
@@ -362,29 +366,6 @@
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBWclZwTS04UlBKRkRqUU9lYkJfUkRCcTM2LV9wMHlEMTZ3Qk5pNjNEd3dNR2Fjd2kwbzJmVHJVcWpDRGJtWHFTVWttWnZENkhmTHppMFVqcw?oc=5",
       "pub_date": "Mon, 20 Oct 2025 07:00:00 GMT",
       "heat": 80,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-16",
-      "title": "首创动态足桥科技打造足弓PRO跑鞋 安踏儿童开创儿童足弓鞋“舒适与支撑”新时代 - 赢商网",
-      "short_title": "首创动态足桥科技打造足弓PRO跑鞋 安踏儿童开创儿童足弓鞋“舒适与支撑”新时代 - 赢商网",
-      "query": "安踏儿童 新品",
-      "brand_hits": [
-        "安踏儿童",
-        "安踏"
-      ],
-      "keyword_hits": [
-        "足弓",
-        "儿童",
-        "新品",
-        "科技"
-      ],
-      "category": "儿童鞋",
-      "season_tag": "全年",
-      "source": "赢商网",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5oZkl0OGc1NXhXd3JETlMtV0JMckxDNjkwNjEzRndCNjVJTTdIdFVlWWs2RDZsM0ozRUV5WGhyOFk0YkstR05QQ1ptT09nSGs?oc=5",
-      "pub_date": "Sat, 31 May 2025 07:00:00 GMT",
-      "heat": 73,
       "type": "product_signal"
     },
     {
@@ -479,6 +460,28 @@
     },
     {
       "date": "2026-06-16",
+      "title": "泰兰尼斯“稳跑鞋”在京震撼发布，明星父母助阵，诠释为爱守护的新力量 - Morketing",
+      "short_title": "泰兰尼斯“稳跑鞋”在京震撼发布，明星父母助阵，诠释为爱守护的新力量 - Morketing",
+      "query": "儿童运动鞋 新品 热卖",
+      "brand_hits": [
+        "泰兰尼斯"
+      ],
+      "keyword_hits": [
+        "儿童",
+        "新品",
+        "热卖",
+        "发布"
+      ],
+      "category": "儿童鞋",
+      "season_tag": "全年",
+      "source": "Morketing",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9pY1FtV2JaOXNocDVIa09ITThxQlNRb1pNdmRUdHA3dkJLSWtyTi1pZ1YtZUVnTXdYUnlwbV9QYUJhckRqZGlEX0FYWW5xeEE?oc=5",
+      "pub_date": "Wed, 20 Aug 2025 07:00:00 GMT",
+      "heat": 58,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-16",
       "title": "起跑入心流 New Balance发布全新Ellipse跑鞋，定义舒适缓震新形态 - Jiemian.com",
       "short_title": "起跑入心流 New Balance发布全新Ellipse跑鞋，定义舒适缓震新形态 - Jiemian.com",
       "query": "缓震跑鞋 新品",
@@ -496,27 +499,6 @@
       "source": "Jiemian.com",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9kSTNrWWtackpsOV92MjdfdFY5ektEMjJtV25aa1hoamx1NzFtMVAxTkRQTU9QRm1ZXzZqWmpMR0kzbU44YnBlN2dZOTd4b2lqbG9idmRQQ3c?oc=5",
       "pub_date": "Fri, 27 Feb 2026 08:00:00 GMT",
-      "heat": 58,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-16",
-      "title": "泰兰尼斯“稳跑鞋”在京震撼发布，明星父母助阵，诠释为爱守护的新力量 - Morketing",
-      "short_title": "泰兰尼斯“稳跑鞋”在京震撼发布，明星父母助阵，诠释为爱守护的新力量 - Morketing",
-      "query": "开学季 儿童运动鞋",
-      "brand_hits": [
-        "泰兰尼斯"
-      ],
-      "keyword_hits": [
-        "儿童",
-        "开学季",
-        "发布"
-      ],
-      "category": "儿童鞋",
-      "season_tag": "秋季",
-      "source": "Morketing",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9pY1FtV2JaOXNocDVIa09ITThxQlNRb1pNdmRUdHA3dkJLSWtyTi1pZ1YtZUVnTXdYUnlwbV9QYUJhckRqZGlEX0FYWW5xeEE?oc=5",
-      "pub_date": "Wed, 20 Aug 2025 07:00:00 GMT",
       "heat": 58,
       "type": "product_signal"
     },
@@ -632,8 +614,8 @@
     },
     {
       "date": "2026-06-16",
-      "title": "泰兰尼斯“稳跑鞋”重磅发布！明星父母助阵，诠释为爱守护新力量 - 36Kr",
-      "short_title": "泰兰尼斯“稳跑鞋”重磅发布！明星父母助阵，诠释为爱守护新力量 - 36Kr",
+      "title": "泰兰尼斯“稳跑鞋”重磅发布！明星父母助阵，诠释为爱守护新力量 - 36 Kr",
+      "short_title": "泰兰尼斯“稳跑鞋”重磅发布！明星父母助阵，诠释为爱守护新力量 - 36 Kr",
       "query": "碳板跑鞋 新品 热卖",
       "brand_hits": [
         "泰兰尼斯"
@@ -646,7 +628,7 @@
       ],
       "category": "跑步科技",
       "season_tag": "全年",
-      "source": "36Kr",
+      "source": "36 Kr",
       "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE03VmthWDdqd0VEeFZXdzN1bEhGLVFEeXhLbTdHS1lrWE1uQ3hpZ3NDMjVYcHVXWmc3LUFNUHA4SzdmVVVGdVJGLUkwRWo0WXh4RXhB?oc=5",
       "pub_date": "Mon, 18 Aug 2025 07:00:00 GMT",
       "heat": 53,
@@ -778,27 +760,6 @@
     },
     {
       "date": "2026-06-16",
-      "title": "FILA发布2025Q3网球全系列新品， 场上场下打造网球老钱风美学 - 美通社",
-      "short_title": "FILA发布2025Q3网球全系列新品， 场上场下打造网球老钱风美学 - 美通社",
-      "query": "FILA Kids 新品",
-      "brand_hits": [
-        "FILA"
-      ],
-      "keyword_hits": [
-        "网球",
-        "新品",
-        "发布"
-      ],
-      "category": "品牌新品",
-      "season_tag": "全年",
-      "source": "美通社",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1wNktzc1JMT0RRXzdnUTgwZkltX0ZmS0REdDBiQTViWDM1QmlwNGQ1NjlINlUwMVVwRFlnV2NacVVZQ3JKeS1CbURWeVB3Y1czdEhGLXFXWQ?oc=5",
-      "pub_date": "Mon, 07 Jul 2025 07:00:00 GMT",
-      "heat": 49,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-16",
       "title": "上千元碳板鞋引争议，泰兰尼斯“半掌碳板”真的可以护足？医生：儿童不建议穿 - 华龙网",
       "short_title": "上千元碳板鞋引争议，泰兰尼斯“半掌碳板”真的可以护足？医生：儿童不建议穿 - 华龙网",
       "query": "泰兰尼斯 篮球鞋",
@@ -862,22 +823,24 @@
     },
     {
       "date": "2026-06-16",
-      "title": "安踏儿童，百亿之路，何以成就？ - 维科号",
-      "short_title": "安踏儿童，百亿之路，何以成就？ - 维科号",
-      "query": "安踏儿童 羽绒服",
-      "brand_hits": [
-        "安踏儿童",
-        "安踏"
-      ],
+      "title": "人手一件的防晒衣，哪来那么多“黑科技”？10倍价差背后，这些参数才是关键！ - hwyst.hangzhou.com.cn",
+      "short_title": "人手一件的防晒衣，哪来那么多“黑科技”？10倍价差背后，这些参数才是关键！ - hwyst.hangzhou.com.cn",
+      "query": "儿童凉感T恤 热卖",
+      "brand_hits": [],
       "keyword_hits": [
-        "羽绒服",
-        "儿童"
+        "防晒衣",
+        "凉感T恤",
+        "儿童",
+        "热卖",
+        "科技",
+        "防晒",
+        "凉感"
       ],
-      "category": "秋冬保暖",
-      "season_tag": "冬季",
-      "source": "维科号",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9VeHhsYlBIY0dTV2FSMXVjMFBDZ1RiNndYbzJhSXV1Q2p2UjV3cnFCakxTNnJMWWNDOWp0WkVFNXFWdnlQOGVPWm1xcndaSFNGYm9TLTZBOA?oc=5",
-      "pub_date": "Tue, 31 Dec 2024 08:00:00 GMT",
+      "category": "儿童服装",
+      "season_tag": "夏季",
+      "source": "hwyst.hangzhou.com.cn",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5Ta19kTnMtVWt2SlpJOUNHdGVjcWdtd0V5WEM5UXEtaEIxYjhGa2pYVTNEc2RYbWZRZVhtem9ZLVFBNjVxdENOMnRVMEx6UzhZNVlRRGJFSU5CTi1HUGVnTHdzMFpKbTZLV3NyZEt1M0x1Mnh2OXlZTnVwak9JQQ?oc=5",
+      "pub_date": "Tue, 08 Apr 2025 07:00:00 GMT",
       "heat": 46,
       "type": "product_signal"
     },
@@ -986,22 +949,20 @@
     },
     {
       "date": "2026-06-16",
-      "title": "#开学季##全能运动鞋# 这是一双尤其适合跳绳攀爬跳落打球的鞋弹跳越多越合适！！！跑步也OK 很轻🔻后跟放入非牛顿流体（成人专业运动鞋才有的/儿童只有smibu有 ） 会迅速分散瞬间冲击力会把力保留在脚底不传到脚踝/膝盖/腿部图10🔻底部看似很高（假象） 防崴 - 新浪网",
-      "short_title": "#开学季##全能运动鞋# 这是一双尤其适合跳绳攀爬跳落打球的鞋弹跳越多越合适！！！跑步也OK 很轻🔻后跟放入非牛顿流体（成人专业运动...",
-      "query": "开学季 儿童运动鞋",
+      "title": "国货占C位，新品卖断货：李佳琦直播间晒618首日战报 - 搜狐网",
+      "short_title": "国货占C位，新品卖断货：李佳琦直播间晒618首日战报 - 搜狐网",
+      "query": "618 运动品牌 热卖 商品",
       "brand_hits": [],
       "keyword_hits": [
-        "跑步",
-        "跳绳",
-        "儿童",
-        "开学季",
-        "专业运动"
+        "618",
+        "新品",
+        "热卖"
       ],
-      "category": "儿童鞋",
-      "season_tag": "秋季",
-      "source": "新浪网",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8xVlNwMXJhamlmVWlFcU8tRmIwUkFNTDY3dU50SVRsSXdXUkltYzk4TzlQb3Z3YkhHSFZOY0tYb0JqUlA5T1Rub3ZtUkRQUEw5ZEZvd2U2dEhSb2g2QU5kQUFWOA?oc=5",
-      "pub_date": "Sun, 24 Aug 2025 07:00:00 GMT",
+      "category": "大促节点",
+      "season_tag": "全年",
+      "source": "搜狐网",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQm1NN0pxQzFoSTZQbi1EcEVLQUZVTGNpcmJqclhFMVBqSXlEMFdrSDZNT3BjM0dpaV96ME1SS1FzQ0NrbENtR0NaNUNncVV6d3RYVnNSc3prREwweTVNa2Z4d0FtY3lid0QyaWhrZnd1WC1fS0xzUUl1bElXekx1bUlMYmtVaVB3cmlwVQ?oc=5",
+      "pub_date": "Fri, 22 May 2026 07:54:12 GMT",
       "heat": 45,
       "type": "product_signal"
     },
@@ -1259,27 +1220,6 @@
     },
     {
       "date": "2026-06-16",
-      "title": "Babycare儿童防晒短袖T恤 ​ - 新浪网",
-      "short_title": "Babycare儿童防晒短袖T恤 ​ - 新浪网",
-      "query": "儿童凉感T恤 热卖",
-      "brand_hits": [],
-      "keyword_hits": [
-        "凉感T恤",
-        "儿童",
-        "热卖",
-        "防晒",
-        "凉感"
-      ],
-      "category": "儿童服装",
-      "season_tag": "夏季",
-      "source": "新浪网",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8tdFZObzA0eWFRVWl0d054UlVEVHBCWXlzNzg1TmMtYjBjRkl2b19IVVdXRXdKRlVXbHo3aElwS2NlNVV6d21oZUNldHhsdGFmU1ZFYndKcnJDMGFTV2VHRnVwYw?oc=5",
-      "pub_date": "Sat, 16 May 2026 07:00:00 GMT",
-      "heat": 41,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-16",
       "title": "科学家研制出“扛造”防水布料，不用再怕冲锋衣一洗就废 - 科学网—新闻",
       "short_title": "科学家研制出“扛造”防水布料，不用再怕冲锋衣一洗就废 - 科学网—新闻",
       "query": "儿童冲锋衣 防水",
@@ -1315,6 +1255,26 @@
       "source": "新浪网",
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1nSHpDRU4xcXl6aXFIMXVQcVZFaEI4cFVINlA2VVVJZ2dtRzRFQnRTRkdvUTNSY0ZEOEdOaDUtNTAzT3lrWjROSk1GWHNHVE1YRmV4S05iVjREMGt1Sm15M1Fwdw?oc=5",
       "pub_date": "Wed, 25 Feb 2026 08:00:00 GMT",
+      "heat": 41,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-16",
+      "title": "来看看top六一儿童节限定头像[开学季][开学季][开学季] ​ - 新浪网",
+      "short_title": "来看看top六一儿童节限定头像[开学季][开学季][开学季] ​ - 新浪网",
+      "query": "361儿童 开学季",
+      "brand_hits": [],
+      "keyword_hits": [
+        "儿童",
+        "六一",
+        "儿童节",
+        "开学季"
+      ],
+      "category": "大促节点",
+      "season_tag": "秋季",
+      "source": "新浪网",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5JNnVVcjBGak5RYUVSZXNNN3VoaGFOSkxoQm9adlJCZXVWRGN3cFlHbGd6bGQ5Z3UyQzJzMjkyZkNOTHI2S3hEM01Kc3NxdFlab01EWFA3X1UtbjByS0NocTl5dw?oc=5",
+      "pub_date": "Mon, 01 Jun 2026 07:00:00 GMT",
       "heat": 41,
       "type": "product_signal"
     },
@@ -1439,6 +1399,27 @@
     },
     {
       "date": "2026-06-16",
+      "title": "卖完童鞋又卖体测鞋，泰兰尼斯想变成学生版萨洛蒙 - Jiemian.com",
+      "short_title": "卖完童鞋又卖体测鞋，泰兰尼斯想变成学生版萨洛蒙 - Jiemian.com",
+      "query": "儿童运动鞋 新品 热卖",
+      "brand_hits": [
+        "泰兰尼斯"
+      ],
+      "keyword_hits": [
+        "儿童",
+        "新品",
+        "热卖"
+      ],
+      "category": "儿童鞋",
+      "season_tag": "全年",
+      "source": "Jiemian.com",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA3QmVBb3NWUWtaLWkyRVF5N3hnbk5WaWUxcWNlWmRhTTNzMXZ4RE1tdFpfZm5SOHdSRDd5czRzXzN6djFaY0M2eXlBZkVVSVRfZGw0amlR?oc=5",
+      "pub_date": "Tue, 31 Mar 2026 07:00:00 GMT",
+      "heat": 40,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-16",
       "title": "FILA KIDS新品首发_新浪新闻 - 新浪网",
       "short_title": "FILA KIDS新品首发_新浪新闻 - 新浪网",
       "query": "FILA Kids 新品",
@@ -1456,25 +1437,6 @@
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE41M0pvaHFodExFa3Q4TlE4T2JHUmMtSk9oM1czQlc1dm1ldjNNTF82WE9TM2h3VktuQ2ZJWWIzbjZ4M0RHemlOS0JTYkQ1NjVLSTBFQm5aQlhiZF9MMTl4YzhPZw?oc=5",
       "pub_date": "Sun, 19 Apr 2026 07:00:00 GMT",
       "heat": 40,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-16",
-      "title": "冲锋衣争议背后：影视飓风涉夸大宣传，小韩哥被质疑不当竞争 - 腾讯新闻",
-      "short_title": "冲锋衣争议背后：影视飓风涉夸大宣传，小韩哥被质疑不当竞争 - 腾讯新闻",
-      "query": "儿童冲锋衣 防水",
-      "brand_hits": [],
-      "keyword_hits": [
-        "冲锋衣",
-        "儿童",
-        "防水"
-      ],
-      "category": "儿童服装",
-      "season_tag": "全年",
-      "source": "腾讯新闻",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBTdTIzZlJaZk9SZzJTRE5fOGd6Zmc0VjREMGFlbHdsVElaaVNWc2Q3ck9nTWd4NGFZNzdqMVZMZkg0OHZobnZENHlwWjZfakxGNHhuM21qaw?oc=5",
-      "pub_date": "Wed, 03 Dec 2025 08:00:00 GMT",
-      "heat": 39,
       "type": "product_signal"
     },
     {
@@ -1516,6 +1478,25 @@
     },
     {
       "date": "2026-06-16",
+      "title": "母婴日报| 两项婴童用品新国标发布；抖音12月母婴品牌热榜出炉；伟易达扩建马来西亚工厂2027完工；去年我国跨境电商进出口2.75万亿元 - 母婴行业观察",
+      "short_title": "母婴日报| 两项婴童用品新国标发布；抖音12月母婴品牌热榜出炉；伟易达扩建马来西亚工厂2027完工；去年我国跨境电商进出口2.75万...",
+      "query": "安踏儿童 新品",
+      "brand_hits": [],
+      "keyword_hits": [
+        "儿童",
+        "新品",
+        "发布"
+      ],
+      "category": "品牌新品",
+      "season_tag": "全年",
+      "source": "母婴行业观察",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5qQ1ZnWWZUR2RFNkxjMXVjaDlVM0FXMm0tR0o1aGdOcW9XenRleC1JNmoxOTk0VjNLTXFObzNCNEsxQVRULXo1d21lZU8?oc=5",
+      "pub_date": "Fri, 16 Jan 2026 08:00:00 GMT",
+      "heat": 39,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-16",
       "title": "安踏系集体卖童装，巴拉巴拉最受伤 - 风闻",
       "short_title": "安踏系集体卖童装，巴拉巴拉最受伤 - 风闻",
       "query": "安踏儿童 冲锋衣",
@@ -1533,46 +1514,6 @@
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE55T1lZM1RDcEU4WDdqZUh6ZFp2OVR3aHBiMzRjb0stcnktdGpqc3VIQ1NyTWZzeGk0Q3E5TWI4d1FGajNKaVQ5MjhpY2hZaGdIX3B2bEdqNlhseW8?oc=5",
       "pub_date": "Wed, 26 Nov 2025 08:00:00 GMT",
       "heat": 39,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-16",
-      "title": "adidas Football 发布全新 PREDATOR EQT 战靴 - Hypebeast CN",
-      "short_title": "adidas Football 发布全新 PREDATOR EQT 战靴 - Hypebeast CN",
-      "query": "Adidas Kids 新品",
-      "brand_hits": [
-        "Adidas"
-      ],
-      "keyword_hits": [
-        "新品",
-        "发布"
-      ],
-      "category": "品牌新品",
-      "season_tag": "全年",
-      "source": "Hypebeast CN",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5ZTld6UWJfTVozeTlJTF8wTTBkUXZFU0MzTFpMUE1fS1Y5MWZhVnFVVDhiXzh5VU8yVDNwM0QtU1hJd1Qwd3RDWHVFc0FBUWJWOVNHZGR2WUt3cUNMY0xnWlp5MFEyaDA?oc=5",
-      "pub_date": "Fri, 06 Mar 2026 08:00:00 GMT",
-      "heat": 38,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-16",
-      "title": "生而呼吸，全面透气，全新adidas CLIMACOOL 风巢正式发布 - 美通社",
-      "short_title": "生而呼吸，全面透气，全新adidas CLIMACOOL 风巢正式发布 - 美通社",
-      "query": "Adidas Kids 新品",
-      "brand_hits": [
-        "Adidas"
-      ],
-      "keyword_hits": [
-        "新品",
-        "发布"
-      ],
-      "category": "品牌新品",
-      "season_tag": "全年",
-      "source": "美通社",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE90YXRqaHdDcUtjS1dlOTdlbWprZDJkdlRfS3VqX0o4Wnd4Wm1yXzdvOVdhLUl2bUZDQzJxZi1jZUpHN3YtVlNKb1RuZXJ3cEE4YzFEbXNXNA?oc=5",
-      "pub_date": "Mon, 23 Mar 2026 07:00:00 GMT",
-      "heat": 38,
       "type": "product_signal"
     },
     {
@@ -1632,26 +1573,6 @@
       "source": "新浪网",
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5xdzBxcDhObERKdTFGSWVCVVVIYjlJbzJfeXM0eGZaa2RZdkNKSUVWSHp6VzQ1QVlCOTFhWmYyZ1F1UUlHbURmUzlJY0pwYk9VbUEtYmdPQXpKeHNaSS1MZmV1Yw?oc=5",
       "pub_date": "Sun, 17 May 2026 07:00:00 GMT",
-      "heat": 37,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-16",
-      "title": "小猪大卫儿童T恤轻薄裤夏季新品 - 新浪网",
-      "short_title": "小猪大卫儿童T恤轻薄裤夏季新品 - 新浪网",
-      "query": "安踏儿童 防晒衣",
-      "brand_hits": [],
-      "keyword_hits": [
-        "防晒衣",
-        "儿童",
-        "新品",
-        "防晒"
-      ],
-      "category": "防晒凉感",
-      "season_tag": "夏季",
-      "source": "新浪网",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBORmNDZnJ4ZExxbXMxYjJfTHpESmpNbkFIQ2NnYzJySWhNdjZBT0d1WjN6Y3NaMkhJbkFISXlBdzAtT2RfVWEwcVVnZHVoV2RGNTBiRWV4WW5pZGdYU1pjcVQwTQ?oc=5",
-      "pub_date": "Sun, 24 May 2026 07:00:00 GMT",
       "heat": 37,
       "type": "product_signal"
     },
@@ -1738,25 +1659,6 @@
     },
     {
       "date": "2026-06-16",
-      "title": "调查｜新国标实施一年多，线上线下仍有不少“假冲锋衣”，怎么识别？ - 京报网",
-      "short_title": "调查｜新国标实施一年多，线上线下仍有不少“假冲锋衣”，怎么识别？ - 京报网",
-      "query": "儿童冲锋衣 防水",
-      "brand_hits": [],
-      "keyword_hits": [
-        "冲锋衣",
-        "儿童",
-        "防水"
-      ],
-      "category": "儿童服装",
-      "season_tag": "全年",
-      "source": "京报网",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBqU3Utd2FNenhZb2cwUkEzZzRLRlpzWXVCc21CWC1GbnNnNmozNUQ4TjRRa1otOTU4QlBKQ1FuZlV2ZDhwTk52dWpqa2Y0Ym5vTnNfcHBkOXJBSzRZOUNqLVNENmVVS3NmMXo5ZS1TSnE1QQ?oc=5",
-      "pub_date": "Thu, 30 Oct 2025 07:00:00 GMT",
-      "heat": 34,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-16",
       "title": "安德玛VELOCITI跑鞋系列焕新登场，VELOCITI DISTANCE – 耐力500亮相 - smarthey.com",
       "short_title": "安德玛VELOCITI跑鞋系列焕新登场，VELOCITI DISTANCE – 耐力500亮相 - smarthey.com",
       "query": "缓震跑鞋 新品",
@@ -1832,6 +1734,25 @@
     },
     {
       "date": "2026-06-16",
+      "title": "Nike x BTS 推出「ARIRANG」世界巡迴周邊新品 - Hypebeast CN",
+      "short_title": "Nike x BTS 推出「ARIRANG」世界巡迴周邊新品 - Hypebeast CN",
+      "query": "Nike Kids 新品",
+      "brand_hits": [
+        "Nike"
+      ],
+      "keyword_hits": [
+        "新品"
+      ],
+      "category": "品牌新品",
+      "season_tag": "全年",
+      "source": "Hypebeast CN",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQWdFRDdySnhwX1RaeDRfb3k5TDNJNHplakFZbjJLdVpYVm9tNU1ua2k2Tzc2dmk5OGlwT1FYWm1pVks3OFM3OW1vczdXdWV1U1VVaU5kVV9BcDNBWFJEX3BqUUw2T0xNZVZIQU81UGdtYXdEd1hvbVI5eHdRcldhWmI1QjB4QVU1?oc=5",
+      "pub_date": "Fri, 29 May 2026 04:13:47 GMT",
+      "heat": 34,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-16",
       "title": "361儿童夏季透气跑鞋！码数到42码！ ​ - 新浪网",
       "short_title": "361儿童夏季透气跑鞋！码数到42码！ ​ - 新浪网",
       "query": "361儿童 运动鞋",
@@ -1851,21 +1772,21 @@
     },
     {
       "date": "2026-06-16",
-      "title": "巴拉巴拉「热爱社区」，助力儿童友好城市建设 - ellechina.com",
-      "short_title": "巴拉巴拉「热爱社区」，助力儿童友好城市建设 - ellechina.com",
-      "query": "巴拉巴拉 新品",
+      "title": "Martine Rose突袭上新未公开发售的Nike Shox MR4全新配色 - Hypebae",
+      "short_title": "Martine Rose突袭上新未公开发售的Nike Shox MR4全新配色 - Hypebae",
+      "query": "Nike Kids 新品",
       "brand_hits": [
-        "巴拉巴拉"
+        "Nike"
       ],
       "keyword_hits": [
-        "儿童",
-        "新品"
+        "新品",
+        "上新"
       ],
       "category": "品牌新品",
       "season_tag": "全年",
-      "source": "ellechina.com",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE92SEdZVlVJT2pKUVpmZnN1TW44VGtOTmNCRzBDYjhVUXNncGtZaXF3Qk5jRE1DZ0JKd0Z1TGJqcVFMMTZpVFBCUGh3a0kzSzJDSlJUR1ltdWpoZWFwYU9Jbzc4cHRESlZ2c21fN2tzakx1emlUM1NPY1NiQlFYdw?oc=5",
-      "pub_date": "Thu, 07 May 2026 07:00:00 GMT",
+      "source": "Hypebae",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdGN0RHZHMlVIWlVlZ1RTNkFkdWo2R3drdnBDSXB3QjhoUElmTzk1bjE3SEZ3NnlJaVhlUURsZ3hUYm1PN2VwcEpkV3Y3Tnplclp1VmJBX3lEUkRnLUVHRGpvN2g0TTNha0JNaWtCak4zRkhGNW1INFpkN1dWZy1pc0ItMXE1aElLbVNxYml6djBkLVBMVnVOeHhYdUtaVjJsZGVKRGZ2QW9RRDFSTVVF?oc=5",
+      "pub_date": "Fri, 29 May 2026 18:27:49 GMT",
       "heat": 33,
       "type": "product_signal"
     },
@@ -1889,46 +1810,9 @@
     },
     {
       "date": "2026-06-16",
-      "title": "轻盈舒展 恣意生动 ECCO x NRL设计师合作系列春夏新品上市 - 时尚COSMO",
-      "short_title": "轻盈舒展 恣意生动 ECCO x NRL设计师合作系列春夏新品上市 - 时尚COSMO",
-      "query": "轻户外 运动品牌 新品",
-      "brand_hits": [],
-      "keyword_hits": [
-        "新品",
-        "上市"
-      ],
-      "category": "户外轻运动",
-      "season_tag": "春季",
-      "source": "时尚COSMO",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE93U0FWUS1vODJHQko1X1l2RW5TQlN3d0RkUFZhbjVzRjlwZUdqN1ZiZ1djOHJIb00tVEp5OEVxdm50eFc5aHZuZ0VwRTd3ek9JZDhneTlVTlZ6LUFzVlE?oc=5",
-      "pub_date": "Wed, 25 Mar 2026 07:00:00 GMT",
-      "heat": 32,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-16",
-      "title": "卖完童鞋又卖体测鞋，泰兰尼斯想变成学生版萨洛蒙 - Jiemian.com",
-      "short_title": "卖完童鞋又卖体测鞋，泰兰尼斯想变成学生版萨洛蒙 - Jiemian.com",
-      "query": "361儿童 运动鞋",
-      "brand_hits": [
-        "泰兰尼斯"
-      ],
-      "keyword_hits": [
-        "儿童"
-      ],
-      "category": "儿童鞋",
-      "season_tag": "全年",
-      "source": "Jiemian.com",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA3QmVBb3NWUWtaLWkyRVF5N3hnbk5WaWUxcWNlWmRhTTNzMXZ4RE1tdFpfZm5SOHdSRDd5czRzXzN6djFaY0M2eXlBZkVVSVRfZGw0amlR?oc=5",
-      "pub_date": "Tue, 31 Mar 2026 07:00:00 GMT",
-      "heat": 32,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-16",
       "title": "卖完童鞋又卖体测鞋，泰兰尼斯想变成学生版萨洛蒙 - QQ News",
       "short_title": "卖完童鞋又卖体测鞋，泰兰尼斯想变成学生版萨洛蒙 - QQ News",
-      "query": "361儿童 跑鞋",
+      "query": "安踏儿童 运动鞋",
       "brand_hits": [
         "泰兰尼斯"
       ],
@@ -2054,6 +1938,26 @@
       "source": "36 Kr",
       "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE16U0tLTkVIOHlHVXJtcHo5U3pwQ09POTI4MzZIMjdsUll2Rk5PZUtpYkQxZC1ZRzZPQ0lUU1NYR0ZidTNyYmsxUWthU3g1Zw?oc=5",
       "pub_date": "Thu, 23 Jan 2025 08:00:00 GMT",
+      "heat": 31,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-16",
+      "title": "Kids of Immigrants 把 2004 Nike 足球战靴改造成 T90 夏日穆勒拖 - Hypebeast CN",
+      "short_title": "Kids of Immigrants 把 2004 Nike 足球战靴改造成 T90 夏日穆勒拖 - Hypebeast CN",
+      "query": "Nike Kids 新品",
+      "brand_hits": [
+        "Nike"
+      ],
+      "keyword_hits": [
+        "足球",
+        "新品"
+      ],
+      "category": "篮球足球",
+      "season_tag": "全年",
+      "source": "Hypebeast CN",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPeE1rWmcwUWM5QU9oNmVQMHRZQkdQeUYwSHJuai1TVlprNkZqY2wzMzN6Njg3LUdxVUFlVnFqaXd0QjBfazg1LWRzWGZZU0lFVWZQWEZadDVkX3BzZ2UtelIzbmhudDBJN3FpZVdUX3BSaDdkQlRDaGF2dHJIcnl0V2tYVW8wMHpTSkx1S2J0RlJ0THNMZDNvSG9XVlpxZ3E4LWNmRTJHZkdITGNpdGo0aWlkMG00ODhDTEE?oc=5",
+      "pub_date": "Fri, 15 May 2026 10:54:56 GMT",
       "heat": 31,
       "type": "product_signal"
     },
