@@ -7,17 +7,17 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+from collections import Counter
 
 # =========================
 # 0. 基础配置
 # =========================
-MAX_ITEMS = 110
-RSS_PER_QUERY_LIMIT = 8
+MAX_ITEMS = 160
+RSS_PER_QUERY_LIMIT = 10
 RECENT_DAYS = 7
-PREFERRED_HOURS = 72
 
-OUT_DIR = Path("output/news")
-OUT_FILE = OUT_DIR / "latest.json"
+OUT_DIR = Path("output/weekly")
+OUT_FILE = OUT_DIR / "weekly_news.json"
 
 NOW = datetime.now()
 NOW_UTC = datetime.now(timezone.utc)
@@ -44,274 +44,126 @@ def current_campaign():
 
 CAMPAIGN = current_campaign()
 
-CAMPAIGN_GROUPS = {
-    "元旦年货": ["元旦", "年货", "春节", "冬季", "保暖", "防滑", "羽绒", "棉服"],
-    "春节开春": ["春节", "开春", "春季上新", "轻外套", "亲子", "童装"],
-    "38大促春季上新": ["38大促", "三八", "女神节", "春季上新", "春装", "轻外套"],
-    "清明春游": ["清明", "春游", "踏青", "轻户外", "亲子出行", "露营"],
-    "五一六一618预热": ["五一", "劳动节", "六一", "儿童节", "618", "预售", "防晒", "凉感"],
-    "六一618端午": ["六一", "儿童节", "618", "端午", "防晒", "凉感", "速干"],
-    "暑期消费": ["暑期", "夏季", "防晒", "凉感", "速干", "亲子户外"],
-    "开学季99大促": ["开学季", "99大促", "秋季上新", "校园", "儿童运动"],
-    "国庆双11预热": ["国庆", "中秋", "双11预热", "秋冬", "轻外套", "出行"],
-    "双11": ["双11", "双十一", "秋冬", "保暖", "防滑", "棉服"],
-    "双12年货预热": ["双12", "年货", "冬季", "保暖", "防滑", "羽绒"],
-    "日常经营": ["运动童装", "运动品牌", "商场客流", "轻户外", "小红书"],
-}
-
-CAMPAIGN_KEYWORDS = {
-    "五一六一618预热": [
-        "五一 运动品牌 消费",
-        "五一 亲子户外 运动",
-        "六一 儿童运动 童装",
-        "儿童节 运动童装",
-        "618 运动品牌 防晒 凉感",
-        "618 童装 运动品牌",
-    ],
-    "六一618端午": [
-        "六一 儿童运动 童装",
-        "儿童节 运动童装",
-        "端午 亲子户外 运动",
-        "618 运动品牌 防晒 凉感",
-        "618 童装 运动品牌",
-        "618 抖音电商 运动品牌",
-        "天猫 运动童装 618",
-        "京东 运动品牌 618",
-        "唯品会 运动童装 618",
-    ],
-    "暑期消费": [
-        "暑期消费 儿童运动",
-        "暑期 童装 防晒 凉感",
-        "夏季 运动品牌 防晒 速干",
-        "亲子户外 暑期 运动",
-    ],
-    "开学季99大促": [
-        "开学季 运动童装",
-        "校园体育 儿童运动",
-        "儿童运动鞋 开学季",
-        "秋季 童装 运动品牌",
-        "99大促 运动品牌",
-        "99大促 童装",
-    ],
-    "国庆双11预热": [
-        "国庆 运动品牌 消费",
-        "国庆 亲子户外 运动",
-        "中秋 运动品牌 消费",
-        "双11预热 运动品牌",
-        "秋冬 童装 运动品牌",
-    ],
-    "双11": [
-        "双11 运动品牌 童装",
-        "双十一 运动品牌 防滑 保暖",
-        "双11 抖音电商 运动品牌",
-        "双11 小红书 童装",
-        "天猫 运动品牌 双11",
-        "京东 运动品牌 双11",
-    ],
-}
-DEFAULT_CAMPAIGN_KEYWORDS = [
-    "运动童装 儿童运动 消费",
-    "运动品牌 消费 零售",
-    "商场 客流 运动品牌",
-    "小红书 种草 运动品牌",
-]
-
 
 # =========================
-# 2. 城市 / 区域配置
+# 2. 查询词
 # =========================
-REGION_CITY_MAP = {
-    "华东": ["上海", "南京", "苏州", "杭州", "宁波", "无锡", "合肥"],
-    "华中": ["武汉", "长沙", "南昌", "郑州"],
-    "华南": ["广州", "深圳", "佛山", "东莞", "南宁", "厦门", "福州"],
-    "西南": ["成都", "重庆", "贵阳", "昆明"],
-    "西北": ["西安", "兰州", "银川", "乌鲁木齐"],
-}
-CITY_TO_REGION = {
-    city: region
-    for region, cities in REGION_CITY_MAP.items()
-    for city in cities
-}
-
-LOCAL_NEWS_QUERIES = [
-    "上海 商圈 客流 购物中心 亲子",
-    "上海 商场 会员 消费 运动",
-    "南京 购物中心 亲子 活动",
-    "苏州 奥莱 商场 客流",
-    "杭州 商场 客流 亲子 消费",
-    "宁波 商圈 消费 亲子",
-    "无锡 商场 客流 儿童",
-    "合肥 商圈 消费 亲子",
-    "武汉 商圈 客流 亲子",
-    "武汉 购物中心 儿童 活动",
-    "长沙 商场 亲子 消费",
-    "南昌 购物中心 儿童 活动",
-    "郑州 商圈 客流 消费",
-    "广州 商圈 文旅 亲子",
-    "广州 购物中心 客流 消费",
-    "深圳 商场 客流 户外",
-    "佛山 商圈 亲子 消费",
-    "东莞 商场 客流 儿童",
-    "厦门 文旅 亲子 户外",
-    "福州 商圈 消费 亲子",
-    "南宁 商场 客流 童装",
-    "成都 商圈 客流 亲子",
-    "成都 文旅 户外 消费",
-    "重庆 文旅 商场 消费",
-    "贵阳 商圈 消费 亲子",
-    "昆明 文旅 户外 亲子",
-    "西安 商圈 文旅 亲子",
-    "西安 购物中心 客流",
-    "兰州 商场 客流 消费",
-    "银川 商场 客流 亲子",
-    "乌鲁木齐 商圈 消费 户外",
-]
-
-CITY_WEATHER_ABNORMAL_QUERIES = [
-    "上海 高温 防晒 消费 商场",
-    "杭州 高温 防晒 凉感 童装",
-    "南京 高温 防晒 商场 客流",
-    "广州 高温 防晒 凉感 消费",
-    "深圳 高温 防晒 户外 消费",
-    "厦门 高温 防晒 亲子 户外",
-    "福州 高温 防晒 消费",
-    "南宁 高温 防晒 凉感",
-    "武汉 暴雨 商场 客流 亲子",
-    "长沙 暴雨 商场 客流",
-    "南昌 暴雨 购物中心 客流",
-    "郑州 强对流 商场 客流",
-    "成都 暴雨 商圈 客流",
-    "重庆 暴雨 文旅 商场",
-    "贵阳 降雨 商场 客流",
-    "昆明 降雨 户外 文旅",
-    "西安 高温 防晒 商场 客流",
-    "兰州 高温 防晒 防风 消费",
-    "银川 大风 防晒 户外 消费",
-    "乌鲁木齐 大风 防晒 户外 消费",
-    "城市 高温 商场 客流 防晒",
-    "暴雨 强对流 商场 客流 消费",
-    "大风 防晒 户外 消费",
-    "降雨 购物中心 客流 亲子",
-]
-
-AI_TREND_QUERIES = [
-    "AI 运动品牌 消费",
-    "人工智能 运动品牌 零售",
-    "AI 童装 儿童消费",
-    "AI 智能穿戴 运动",
-    "智能穿戴 儿童运动",
-    "智能手表 儿童运动",
-    "智能硬件 运动消费",
-    "机器人 运动消费",
-    "大模型 零售 消费",
-    "AI 小红书 种草 消费",
-    "AI 电商 直播 零售",
-    "AI 内容种草 运动品牌",
+A_LEVEL_QUERIES = [
+    "运动品牌 消费趋势 零售",
+    "运动户外 消费趋势",
+    "童装 儿童运动 消费趋势",
+    "运动鞋服 行业趋势",
+    "运动品牌 618 战报",
+    "抖音电商 运动户外 618",
+    "天猫 运动户外 618",
+    "京东 运动户外 618",
+    "小红书 运动户外 种草",
     "年轻人 运动消费",
-    "00后 运动消费",
-    "情绪消费 运动品牌",
-    "松弛感 运动消费",
-    "悦己消费 运动品牌",
-    "健康生活 运动消费",
-    "运动解压 年轻人 消费",
-    "社交运动 年轻人 消费",
-    "女性运动 消费 趋势",
+    "亲子消费 儿童运动",
+    "暑期 亲子户外 消费",
+    "防晒衣 凉感 速干 消费趋势",
+    "商场 客流 消费 运动品牌",
+    "奥莱 折扣 运动品牌",
 ]
 
-BASE_KEYWORDS = [
-    "运动童装 儿童运动 消费",
-    "童装 亲子 户外 运动",
-    "儿童运动 校园 体育 消费",
-    "亲子运动 童装 户外",
-    "校园体育 运动童装",
-    "防晒衣 凉感 速干 运动",
-    "高温 防晒衣 凉感 消费",
-    "暴雨 天气 商场 客流",
-    "夏季 运动品牌 防晒 凉感",
-    "防晒 消费 运动品牌",
-    "速干 短裤 运动童装",
-    "低温 保暖 防滑 童装",
-    "降雪 防滑 运动鞋",
-    "抖音电商 运动品牌",
-    "抖音直播 童装 运动",
-    "小红书 种草 运动品牌",
-    "小红书 童装 防晒",
-    "天猫 运动品牌 童装",
-    "京东 运动品牌 童装",
-    "唯品会 运动童装",
-    "商场 客流 消费 运动品牌",
-    "购物中心 儿童运动 亲子",
-    "奥莱 折扣 运动品牌",
-    "门店 客流 会员 运动品牌",
-    "商圈 活动 亲子 运动",
-    "本地生活 商场 客流 消费",
-    "户外 露营 骑行 亲子消费",
-    "城市骑行 运动消费",
-    "露营 亲子 户外 消费",
-    "夜经济 运动消费",
-    "城市徒步 轻户外 消费",
-    "Nike 儿童 运动",
-    "耐克 儿童 运动",
-    "Nike Kids 童装",
-    "Adidas 儿童 运动",
-    "阿迪达斯 儿童 运动",
-    "Adidas Kids 童装",
-    "ASICS 亚瑟士 跑步 消费",
-    "亚瑟士 跑步 消费",
-    "On昂跑 中国消费",
-    "On 昂跑 跑步 消费",
-    "HOKA 跑步 消费",
-    "lululemon 中国消费",
-    "Puma 彪马 运动消费",
-    "New Balance 新百伦 运动消费",
+B_LEVEL_QUERIES = [
+    "Nike 运动品牌 中国 消费",
+    "耐克 中国 运动消费",
+    "Adidas 阿迪达斯 中国 运动",
     "安踏 儿童 运动",
     "安踏儿童 童装",
-    "FILA KIDS 儿童",
-    "李宁YOUNG 儿童",
     "李宁 童装 儿童",
+    "李宁YOUNG 儿童",
     "特步儿童 运动",
-    "特步 运动 消费",
     "361度 儿童 运动",
-    "361儿童 运动",
+    "FILA KIDS 儿童",
     "巴拉巴拉 运动童装",
-    "Balabala 运动童装",
-    "安奈儿 童装 消费",
-    "始祖鸟 户外 消费",
-    "萨洛蒙 户外 运动",
-    "北面 户外 消费",
-    "哥伦比亚 户外 消费",
-    "凯乐石 户外 消费",
-    "探路者 户外 消费",
-    "骆驼 户外 消费",
-    "蕉下 防晒 消费",
-    "蕉内 运动 消费",
-    "伯希和 户外 消费",
+    "On 昂跑 中国 消费",
+    "HOKA 跑步 消费",
+    "亚瑟士 跑步 消费",
+    "Salomon 萨洛蒙 户外",
+    "lululemon 中国 消费",
+]
+
+C_LEVEL_QUERIES = [
+    "AI 电商 运动品牌",
+    "AI 营销 618",
+    "智能穿戴 儿童运动",
+    "儿童智能手表 运动",
+    "文旅 亲子 户外 消费",
+    "城市骑行 运动消费",
+    "露营 亲子 户外 消费",
+    "防晒 消费 高温",
+    "凉感 面料 运动",
+    "户外生活方式 中国消费",
+    "商圈 活动 亲子 运动",
+]
+
+HOT_PRODUCT_QUERIES = [
+    "运动品牌 新品 跑鞋",
+    "儿童运动鞋 新品",
+    "安踏儿童 新品",
+    "Nike Kids 新品",
+    "Adidas Kids 新品",
+    "FILA KIDS 新品",
+    "李宁YOUNG 新品",
+    "特步儿童 新品",
+    "361儿童 新品",
+    "防晒衣 新品 运动品牌",
+    "凉感 速干 新品 童装",
+    "运动户外 尖货 新品",
 ]
 
 KEYWORDS = list(dict.fromkeys(
-    CAMPAIGN_KEYWORDS.get(CAMPAIGN, DEFAULT_CAMPAIGN_KEYWORDS)
-    + BASE_KEYWORDS
-    + LOCAL_NEWS_QUERIES
-    + CITY_WEATHER_ABNORMAL_QUERIES
-    + AI_TREND_QUERIES
+    A_LEVEL_QUERIES
+    + B_LEVEL_QUERIES
+    + C_LEVEL_QUERIES
+    + HOT_PRODUCT_QUERIES
 ))
 
 
 # =========================
-# 3. 过滤/权重
+# 3. 词库
 # =========================
+BRAND_WORDS = [
+    "Nike", "耐克", "Adidas", "阿迪达斯", "Puma", "彪马",
+    "安踏", "安踏儿童", "FILA", "FILA KIDS", "李宁", "李宁YOUNG",
+    "特步", "特步儿童", "361", "361度", "361儿童",
+    "巴拉巴拉", "On", "昂跑", "HOKA", "亚瑟士", "ASICS",
+    "Salomon", "萨洛蒙", "lululemon", "始祖鸟", "北面",
+]
+
+A_WORDS = [
+    "消费", "趋势", "行业", "社零", "客流", "增长", "下滑",
+    "618", "双11", "暑期", "开学", "防晒", "凉感", "速干",
+    "户外", "运动户外", "亲子", "童装", "儿童运动",
+    "商场", "商圈", "奥莱", "折扣", "平台", "抖音", "天猫", "京东",
+]
+
+B_WORDS = [
+    "发布", "新品", "联名", "代言", "签约", "合作", "门店",
+    "旗舰店", "战略", "实验室", "开业", "增长", "榜单",
+]
+
+C_WORDS = [
+    "AI", "人工智能", "大模型", "智能穿戴", "机器人",
+    "文旅", "城市骑行", "露营", "活动", "生活方式",
+    "防晒", "凉感", "高温", "情绪消费", "松弛感",
+]
+
+HOT_PRODUCT_WORDS = [
+    "新品", "尖货", "跑鞋", "童鞋", "防晒衣", "凉感", "速干",
+    "短袖", "短裤", "运动鞋", "户外鞋", "联名", "首发",
+    "上市", "发布", "鞋款", "系列",
+]
+
 NEGATIVE_KEYWORDS = [
     "中超", "英超", "欧冠", "NBA", "CBA", "世界杯", "世锦赛",
     "冠军", "夺冠", "决赛", "半决赛", "比分", "赛程", "联赛",
-    "主教练", "球员", "转会", "马拉松成绩", "破纪录", "彩票",
-    "电竞比赛", "游戏赛事", "博彩", "央行", "利率", "财政",
-    "货币政策", "地产", "楼市", "基金", "证券", "港股", "A股",
-    "美股", "IPO", "融资融券", "龙虎榜", "涨停", "跌停",
-]
-
-SOFT_NEGATIVE_KEYWORDS = [
-    "股价", "财报", "营收", "净利润", "股东", "市值",
-    "评级", "研报", "管理层", "董事会", "资本市场",
+    "主教练", "球员", "转会", "彩票", "电竞比赛", "游戏赛事",
+    "博彩", "央行", "利率", "财政", "货币政策", "地产", "楼市",
+    "基金", "证券", "港股", "A股", "美股", "IPO", "龙虎榜",
+    "涨停", "跌停",
 ]
 
 LOW_QUALITY_SOURCE_WORDS = [
@@ -319,93 +171,16 @@ LOW_QUALITY_SOURCE_WORDS = [
 ]
 
 AD_TITLE_WORDS = [
-    "凑单", "拍3件", "券后", "包邮", "同款", "get@", "UPF100",
-    "满减套路", "大冤种", "快来", "种草好物", "值得买",
+    "凑单", "拍3件", "券后", "包邮", "get@", "UPF100",
+    "大冤种", "快来", "值得买",
 ]
-
-WEATHER_ABNORMAL_WORDS = [
-    "高温", "暴雨", "强对流", "雷暴", "大风", "降雨", "降温",
-    "升温", "冰雹", "台风", "寒潮", "低温", "降雪", "结冰",
-    "沙尘", "防晒", "防风", "防雨", "防滑", "凉感", "速干",
-]
-
-LOCAL_BUSINESS_WORDS = [
-    "商场", "商圈", "购物中心", "客流", "门店", "奥莱", "会员",
-    "亲子", "儿童", "童装", "文旅", "旅游", "暑期", "夜经济",
-    "户外", "骑行", "露营", "消费", "活动",
-]
-
-TECH_TREND_WORDS = [
-    "AI", "人工智能", "大模型", "智能穿戴", "智能硬件",
-    "智能手表", "机器人", "算法", "数字化", "AIGC",
-    "内容种草", "年轻人", "00后", "情绪消费", "松弛感",
-    "悦己消费", "健康生活", "运动解压", "社交运动",
-    "女性运动", "她经济",
-]
-
-BRAND_WORDS = {
-    "Nike": 7, "耐克": 7, "Nike Kids": 8,
-    "Adidas": 7, "阿迪达斯": 7, "Adidas Kids": 8,
-    "Puma": 6, "彪马": 6,
-    "New Balance": 6, "新百伦": 6,
-    "ASICS": 7, "亚瑟士": 7,
-    "On": 5, "On昂跑": 8, "昂跑": 8,
-    "HOKA": 8,
-    "Salomon": 6, "萨洛蒙": 6,
-    "lululemon": 6,
-    "安踏": 7, "安踏儿童": 9,
-    "FILA": 6, "FILA KIDS": 8,
-    "李宁": 7, "李宁YOUNG": 8,
-    "特步": 7, "特步儿童": 8,
-    "361": 7, "361度": 7, "361儿童": 9,
-    "巴拉巴拉": 7, "Balabala": 7,
-    "始祖鸟": 7, "北面": 6, "哥伦比亚": 5,
-    "凯乐石": 5, "探路者": 5, "骆驼": 5,
-    "蕉下": 6, "蕉内": 5, "伯希和": 5,
-}
-
-HOT_WORDS = {
-    "运动童装": 10, "童装": 8, "儿童运动": 10, "儿童": 6,
-    "亲子": 7, "校园": 6, "校园体育": 8,
-    "防晒衣": 9, "防晒": 7, "凉感": 7, "速干": 6,
-    "短裤": 5, "运动凉鞋": 5, "轻外套": 5, "功能面料": 5,
-    "保暖": 6, "防滑": 6, "羽绒": 5, "棉服": 5,
-    "高温": 7, "暴雨": 7, "强对流": 7, "降雨": 6,
-    "天气": 4, "低温": 5, "降雪": 5, "结冰": 5,
-    "大风": 5, "沙尘": 5,
-    "618": 12 if CAMPAIGN in ["五一六一618预热", "六一618端午"] else 2,
-    "双11": 12 if CAMPAIGN in ["国庆双11预热", "双11"] else -10,
-    "双十一": 12 if CAMPAIGN in ["国庆双11预热", "双11"] else -10,
-    "双12": 10 if CAMPAIGN == "双12年货预热" else -5,
-    "99大促": 10 if CAMPAIGN == "开学季99大促" else -3,
-    "六一": 10 if CAMPAIGN in ["五一六一618预热", "六一618端午"] else -2,
-    "儿童节": 10 if CAMPAIGN in ["五一六一618预热", "六一618端午"] else -2,
-    "端午": 8 if CAMPAIGN == "六一618端午" else -2,
-    "大促": 6, "预售": 5, "抖音": 7, "抖音电商": 8,
-    "直播": 6, "小红书": 7, "种草": 6,
-    "天猫": 5, "京东": 5, "唯品会": 5,
-    "商场": 7, "商圈": 7, "购物中心": 7, "客流": 8,
-    "门店": 7, "奥莱": 7, "折扣": 5, "会员": 5,
-    "零售": 6, "消费": 5, "本地生活": 6,
-    "户外": 7, "轻户外": 8, "露营": 6, "骑行": 6,
-    "城市骑行": 8, "城市徒步": 7, "夜经济": 6,
-    "文旅": 6, "出行": 5,
-    "AI": 8, "人工智能": 8, "大模型": 7, "AIGC": 7,
-    "智能穿戴": 7, "智能硬件": 7, "智能手表": 6,
-    "机器人": 6, "数字化": 5, "算法": 5,
-    "年轻人": 6, "00后": 6, "情绪消费": 6,
-    "松弛感": 5, "悦己消费": 5, "健康生活": 5,
-    "运动解压": 5, "社交运动": 5, "女性运动": 5, "她经济": 5,
-}
-HOT_WORDS.update(BRAND_WORDS)
 
 SOURCE_PREFERENCE = [
-    "界面新闻", "36氪", "赢商网", "联商网", "亿邦动力", "电商报",
-    "中国商报", "北京商报", "第一财经", "证券时报", "新华网",
+    "界面新闻", "36氪", "赢商网", "联商网", "亿邦动力",
+    "电商报", "中国商报", "北京商报", "第一财经", "新华网",
     "澎湃新闻", "每日经济新闻", "南方都市报", "腾讯新闻",
     "新京报", "中国经济网", "财联社", "虎嗅", "品牌星球",
-    "本地宝", "文旅", "气象", "天气网", "中国天气", "晚点",
-    "量子位", "机器之心", "钛媒体", "国家统计局", "央视新闻",
+    "晚点", "钛媒体", "国家统计局", "央视新闻",
 ]
 
 
@@ -448,106 +223,49 @@ def item_age_hours(item: dict) -> float:
     return (NOW_UTC - dt).total_seconds() / 3600
 
 
-def is_recent_item(item: dict, max_days: int = RECENT_DAYS) -> bool:
-    dt = parse_pub_datetime(item.get("published_at", ""))
-    if not dt:
-        return False
-    age_hours = (NOW_UTC - dt).total_seconds() / 3600
-    return 0 <= age_hours <= max_days * 24
-
-
-def freshness_bonus(item: dict) -> int:
+def is_recent_item(item: dict) -> bool:
     h = item_age_hours(item)
-    if h <= 12:
-        return 45
+    return 0 <= h <= RECENT_DAYS * 24
+
+
+def freshness_score(item: dict) -> int:
+    h = item_age_hours(item)
     if h <= 24:
         return 35
     if h <= 48:
-        return 25
+        return 28
     if h <= 72:
-        return 12
+        return 20
+    if h <= 120:
+        return 8
     if h <= 168:
-        return -10
+        return 0
     return -999
 
 
 def compact_key(title: str) -> str:
     text = normalize_title(title).lower()
     text = re.sub(r"[，。！？、；：:,.!?（）()【】\[\]《》“”\"'\s\-_/|]+", "", text)
-    return text[:50]
+    return text[:52]
 
 
-def detect_city(title: str) -> str:
-    for city in CITY_TO_REGION.keys():
-        if city in title:
-            return city
-    return ""
+def is_bad_item(title: str, source: str) -> bool:
+    if has_any(title, NEGATIVE_KEYWORDS):
+        business_exempt = has_any(title, [
+            "运动品牌", "童装", "儿童", "鞋服", "消费", "零售",
+            "商场", "商圈", "门店", "户外", "跑鞋", "防晒",
+            "凉感", "品牌", "签约", "代言", "联名", "新品",
+        ])
+        if not business_exempt:
+            return True
 
+    if has_any(title, AD_TITLE_WORDS):
+        return True
 
-def detect_region(title: str) -> str:
-    city = detect_city(title)
-    if city:
-        return CITY_TO_REGION.get(city, "全国")
-    for region, cities in REGION_CITY_MAP.items():
-        if region in title or any(city in title for city in cities):
-            return region
-    return "全国"
+    if len(title) < 8:
+        return True
 
-
-def is_weather_abnormal(title: str) -> bool:
-    return has_any(title, WEATHER_ABNORMAL_WORDS)
-
-
-def is_local_business(title: str) -> bool:
-    return detect_city(title) != "" and has_any(title, LOCAL_BUSINESS_WORDS)
-
-
-def is_tech_trend(title: str) -> bool:
-    return has_any(title, TECH_TREND_WORDS)
-
-
-def is_ad_or_low_value(title: str) -> bool:
-    return has_any(title, AD_TITLE_WORDS)
-
-
-def is_hard_negative(title: str) -> bool:
-    sport_business_exempt = has_any(title, [
-        "运动品牌", "童装", "儿童", "鞋服", "消费", "零售",
-        "商场", "商圈", "门店", "户外", "跑鞋", "防晒", "凉感",
-        "品牌", "签约", "代言", "联名", "新品",
-    ])
-    if sport_business_exempt:
-        return False
-    return has_any(title, NEGATIVE_KEYWORDS)
-
-
-def wrong_campaign_terms():
-    all_terms = set()
-    for terms in CAMPAIGN_GROUPS.values():
-        all_terms.update(terms)
-    return list(all_terms - set(CAMPAIGN_GROUPS.get(CAMPAIGN, [])))
-
-
-def campaign_bonus(title: str) -> int:
-    score = 0
-    if has_any(title, CAMPAIGN_GROUPS.get(CAMPAIGN, [])):
-        score += 18
-    if has_any(title, wrong_campaign_terms()):
-        score -= 18
-
-    if CAMPAIGN in ["五一六一618预热", "六一618端午", "暑期消费"]:
-        if has_any(title, ["双11", "双十一", "双12", "年货节", "春节"]):
-            score -= 35
-        if has_any(title, ["618", "六一", "儿童节", "端午", "防晒", "凉感", "速干", "暑期"]):
-            score += 15
-
-    if CAMPAIGN in ["国庆双11预热", "双11", "双12年货预热"]:
-        if has_any(title, ["618", "暑期", "夏季大促", "六一"]):
-            score -= 30
-        if has_any(title, ["双11", "双十一", "国庆", "中秋", "秋冬", "保暖", "防滑"]):
-            score += 14
-
-    return score
+    return False
 
 
 def fetch_google_news_rss(keyword: str):
@@ -574,24 +292,18 @@ def fetch_google_news_rss(keyword: str):
         if source_node is not None and source_node.text:
             source = clean_text(source_node.text)
 
-        if not title:
-            continue
-
         row = {
             "title": title,
             "source": source,
             "url": link,
             "published_at": pub_date,
             "keyword": keyword,
-            "campaign": CAMPAIGN,
-            "city": detect_city(title),
-            "region": detect_region(title),
-            "weather_abnormal": is_weather_abnormal(title),
-            "local_business": is_local_business(title),
-            "tech_trend": is_tech_trend(title),
         }
 
-        if not is_recent_item(row):
+        if not title or not is_recent_item(row):
+            continue
+
+        if is_bad_item(title, source):
             continue
 
         items.append(row)
@@ -599,126 +311,107 @@ def fetch_google_news_rss(keyword: str):
     return items
 
 
-def relevance_score(item: dict) -> int:
+# =========================
+# 5. 分级评分
+# =========================
+def base_score(item: dict) -> int:
     title = item.get("title", "")
     source = item.get("source", "")
 
-    if not is_recent_item(item):
-        return -999
-
-    if is_hard_negative(title):
-        return -999
-
-    if is_ad_or_low_value(title):
-        return -120
-
-    score = 0
-
-    for word, weight in HOT_WORDS.items():
-        if word in title:
-            score += weight
-
-    score += campaign_bonus(title)
-    score += freshness_bonus(item)
+    score = freshness_score(item)
 
     for s in SOURCE_PREFERENCE:
         if s in source:
-            score += 2
+            score += 5
 
     for s in LOW_QUALITY_SOURCE_WORDS:
         if s in source:
             score -= 25
 
-    combos = [
-        (["童装", "儿童", "亲子"], 8),
-        (["防晒", "凉感", "速干", "高温"], 7),
-        (["商场", "商圈", "客流", "门店"], 7),
-        (["抖音", "小红书", "直播", "种草"], 6),
-        (["户外", "骑行", "露营", "文旅"], 6),
-        (["Nike", "Adidas", "安踏", "李宁", "特步", "361"], 5),
-        (["On", "HOKA", "亚瑟士", "跑步"], 5),
-        (["AI", "人工智能", "大模型", "智能穿戴", "智能硬件"], 7),
-        (["年轻人", "00后", "情绪消费", "松弛感", "悦己消费"], 7),
-    ]
-
-    if CAMPAIGN in ["五一六一618预热", "六一618端午"]:
-        combos.append((["618", "防晒", "凉感", "速干"], 8))
-    elif CAMPAIGN in ["国庆双11预热", "双11"]:
-        combos.append((["双11", "双十一", "保暖", "防滑"], 8))
-    elif CAMPAIGN == "开学季99大促":
-        combos.append((["开学", "校园", "儿童运动", "99大促"], 8))
-    else:
-        combos.append((["大促", "预售", "消费"], 5))
-
-    for words, bonus in combos:
-        if sum(1 for w in words if w in title) >= 2:
-            score += bonus
-
-    if item.get("local_business"):
-        score += 12
-    if item.get("weather_abnormal"):
+    if has_any(title, BRAND_WORDS):
         score += 10
-    if item.get("city") and item.get("weather_abnormal"):
-        score += 10
-    if item.get("tech_trend"):
-        score += 9
-    if item.get("region") and item.get("region") != "全国":
-        score += 5
 
-    for w in SOFT_NEGATIVE_KEYWORDS:
-        if w in title:
-            score -= 5
+    if has_any(title, ["618", "双11", "暑期", "开学", "防晒", "凉感", "速干"]):
+        score += 8
 
-    if "财报" in title and not has_any(title, ["童装", "儿童", "品牌", "零售", "消费", "渠道", "361", "安踏", "李宁", "特步"]):
-        score -= 12
+    if has_any(title, ["消费", "趋势", "增长", "客流", "商场", "门店", "零售"]):
+        score += 8
 
     return score
 
 
-def topic_key(title: str) -> str:
-    title = normalize_title(title)
-    groups = {
-        "平台大促": ["618", "大促", "预售", "战报", "抖音", "天猫", "京东", "唯品", "直播"],
-        "防晒凉感": ["防晒", "凉感", "速干", "高温", "防晒衣"],
-        "户外运动": ["户外", "跑步", "跑鞋", "骑行", "露营", "徒步"],
-        "童装儿童": ["童装", "儿童", "亲子", "校园", "童鞋", "青少年"],
-        "商圈客流": ["商场", "商圈", "门店", "客流", "会员", "奥莱", "购物中心"],
-        "宏观消费": ["GDP", "社零", "消费", "就业", "收入", "政策", "补贴", "内需"],
-        "文旅出行": ["文旅", "旅游", "暑期", "出行", "景区", "亲子游"],
-        "AI科技": ["AI", "人工智能", "机器人", "智能", "大模型", "科技"],
-        "品牌竞争": list(BRAND_WORDS.keys()),
+def score_a(item: dict) -> int:
+    title = item.get("title", "")
+    score = base_score(item)
+    score += sum(8 for w in A_WORDS if w in title)
+
+    if has_any(title, ["趋势", "增长", "消费", "客流", "行业", "平台", "大促"]):
+        score += 25
+
+    if has_any(title, ["财报", "营收", "净利润"]):
+        score += 10
+
+    if has_any(title, ["某明星", "明星", "代言"]):
+        score -= 15
+
+    return score
+
+
+def score_b(item: dict) -> int:
+    title = item.get("title", "")
+    score = base_score(item)
+    score += sum(8 for w in B_WORDS if w in title)
+
+    if has_any(title, BRAND_WORDS):
+        score += 28
+
+    if has_any(title, ["新品", "联名", "代言", "签约", "旗舰店", "实验室", "战略合作"]):
+        score += 25
+
+    return score
+
+
+def score_c(item: dict) -> int:
+    title = item.get("title", "")
+    score = base_score(item)
+    score += sum(7 for w in C_WORDS if w in title)
+
+    if has_any(title, ["AI", "文旅", "露营", "骑行", "智能", "生活方式"]):
+        score += 20
+
+    return score
+
+
+def score_hot_product(item: dict) -> int:
+    title = item.get("title", "")
+    score = base_score(item)
+    score += sum(9 for w in HOT_PRODUCT_WORDS if w in title)
+
+    if has_any(title, BRAND_WORDS):
+        score += 18
+
+    if has_any(title, ["新品", "发布", "首发", "上市", "联名", "系列"]):
+        score += 25
+
+    return score
+
+
+def classify_item(item: dict) -> dict:
+    scores = {
+        "A": score_a(item),
+        "B": score_b(item),
+        "C": score_c(item),
     }
-    for key, words in groups.items():
-        if has_any(title, words):
-            return key + "_" + compact_key(title)[:20]
-    return "其他_" + compact_key(title)[:24]
 
+    level = max(scores, key=scores.get)
+    level_score = scores[level]
 
-def bucket_name(title: str, item: dict = None):
-    item = item or {}
+    item["level"] = level
+    item["level_score"] = level_score
+    item["age_hours"] = round(item_age_hours(item), 1)
+    item["compact_key"] = compact_key(item.get("title", ""))
 
-    if item.get("local_business"):
-        return "local_business"
-    if item.get("weather_abnormal"):
-        return "local_weather"
-    if item.get("tech_trend"):
-        return "tech_trend"
-    if has_any(title, CAMPAIGN_GROUPS.get(CAMPAIGN, [])):
-        return "campaign"
-    if has_any(title, ["童装", "儿童", "亲子", "校园"]):
-        return "kids"
-    if has_any(title, ["高温", "防晒", "凉感", "速干", "暴雨", "天气", "低温", "降雪", "结冰", "保暖", "防滑"]):
-        return "weather"
-    if has_any(title, ["抖音", "小红书", "直播", "种草", "天猫", "京东", "唯品会"]):
-        return "platform"
-    if has_any(title, ["商场", "商圈", "客流", "门店", "奥莱", "会员"]):
-        return "store"
-    if has_any(title, ["户外", "骑行", "露营", "文旅", "夜经济", "出行"]):
-        return "outdoor"
-    if has_any(title, list(BRAND_WORDS.keys())):
-        return "brand"
-
-    return "other"
+    return item
 
 
 def dedupe(items):
@@ -730,168 +423,174 @@ def dedupe(items):
             continue
 
         item["title"] = title
-        item["topic_key"] = topic_key(title)
-        item["compact_key"] = compact_key(title)
-        item["age_hours"] = round(item_age_hours(item), 1)
-        item["bucket"] = bucket_name(title, item)
-        item["score"] = relevance_score(item)
+        item = classify_item(item)
 
-        if item["score"] <= 0:
-            continue
-
-        key = item["topic_key"]
+        key = item["compact_key"]
         old = best.get(key)
 
         if old is None:
             best[key] = item
         else:
-            old_score = old.get("score", 0)
-            new_score = item.get("score", 0)
-            old_age = old.get("age_hours", 999999)
-            new_age = item.get("age_hours", 999999)
-
-            if new_score > old_score or (new_score == old_score and new_age < old_age):
+            if item.get("level_score", 0) > old.get("level_score", 0):
                 best[key] = item
 
-    return sorted(best.values(), key=lambda x: (x.get("score", 0), -x.get("age_hours", 999999)), reverse=True)
+    return list(best.values())
 
 
-def diversify(items):
-    buckets = {
-        "local_business": [],
-        "local_weather": [],
-        "tech_trend": [],
-        "campaign": [],
-        "kids": [],
-        "weather": [],
-        "platform": [],
-        "store": [],
-        "outdoor": [],
-        "brand": [],
-        "other": [],
-    }
+def pick_by_level(items, level, limit):
+    rows = [x for x in items if x.get("level") == level]
+    rows = sorted(
+        rows,
+        key=lambda x: (x.get("level_score", 0), -x.get("age_hours", 999999)),
+        reverse=True
+    )
+    return rows[:limit]
+
+
+def pick_hot_products(items, limit=5):
+    rows = []
 
     for item in items:
-        buckets.setdefault(item.get("bucket", "other"), []).append(item)
+        title = item.get("title", "")
+        if has_any(title, HOT_PRODUCT_WORDS):
+            item = dict(item)
+            item["hot_product_score"] = score_hot_product(item)
+            rows.append(item)
 
-    limits = {
-        "local_business": 18,
-        "local_weather": 14,
-        "tech_trend": 12,
-        "campaign": 16,
-        "kids": 12,
-        "weather": 10,
-        "platform": 12,
-        "store": 10,
-        "outdoor": 10,
-        "brand": 10,
-        "other": 4,
-    }
+    rows = sorted(
+        rows,
+        key=lambda x: (x.get("hot_product_score", 0), -x.get("age_hours", 999999)),
+        reverse=True
+    )
 
-    order = [
-        "campaign",
-        "platform",
-        "brand",
-        "kids",
-        "local_business",
-        "local_weather",
-        "tech_trend",
-        "store",
-        "weather",
-        "outdoor",
-        "other",
+    return rows[:limit]
+
+
+def build_keywords(items):
+    words = []
+    text = " ".join([x.get("title", "") for x in items[:80]])
+
+    keyword_pool = [
+        "618", "防晒衣", "凉感", "速干", "运动户外", "儿童运动",
+        "亲子消费", "AI营销", "平台大促", "品牌竞争", "商场客流",
+        "新品发布", "联名合作", "户外生活", "暑期消费", "小红书种草",
+        "抖音电商", "奥莱折扣", "运动童装", "跑鞋",
     ]
 
-    final = []
-    for key in order:
-        rows = sorted(
-            buckets.get(key, []),
-            key=lambda x: (x.get("score", 0), -x.get("age_hours", 999999)),
-            reverse=True
-        )
-        final.extend(rows[:limits.get(key, 5)])
+    for w in keyword_pool:
+        if w in text and w not in words:
+            words.append(w)
 
-    seen = set()
-    result = []
+    if len(words) < 12:
+        counter = Counter()
+        for title in [x.get("title", "") for x in items]:
+            for w in keyword_pool:
+                if w in title:
+                    counter[w] += 1
+        for w, _ in counter.most_common():
+            if w not in words:
+                words.append(w)
 
-    for item in sorted(final, key=lambda x: (x.get("score", 0), -x.get("age_hours", 999999)), reverse=True):
-        ck = item.get("compact_key")
-        if ck in seen:
-            continue
-        seen.add(ck)
-        result.append(item)
+    return words[:18]
 
-    return result[:MAX_ITEMS]
+
+def build_weekly_view(items):
+    a_items = pick_by_level(items, "A", 8)
+    b_items = pick_by_level(items, "B", 8)
+    c_items = pick_by_level(items, "C", 8)
+    hot_products = pick_hot_products(items, 5)
+
+    all_selected = a_items + b_items + c_items
+
+    return {
+        "generated_at": NOW.strftime("%Y-%m-%d %H:%M:%S"),
+        "campaign": CAMPAIGN,
+        "recent_days": RECENT_DAYS,
+        "summary": {
+            "total": len(items),
+            "a_count": len(a_items),
+            "b_count": len(b_items),
+            "c_count": len(c_items),
+            "hot_product_count": len(hot_products),
+        },
+        "levels": {
+            "A": {
+                "name": "A级｜核心经营趋势",
+                "weight": "60%",
+                "items": a_items,
+            },
+            "B": {
+                "name": "B级｜品牌案例",
+                "weight": "25%",
+                "items": b_items,
+            },
+            "C": {
+                "name": "C级｜热点补充",
+                "weight": "10%",
+                "items": c_items,
+            },
+        },
+        "hot_products": hot_products,
+        "keywords": build_keywords(all_selected),
+        "items": items[:MAX_ITEMS],
+    }
 
 
 # =========================
-# 5. 主程序
+# 6. 主程序
 # =========================
 def main():
     all_items = []
 
-    print(f"Current campaign: {CAMPAIGN}")
+    print(f"Weekly campaign: {CAMPAIGN}")
     print(f"Total keywords: {len(KEYWORDS)}")
-    print(f"Strict recent filter: last {RECENT_DAYS} days")
+    print(f"Recent window: last {RECENT_DAYS} days")
 
     for idx, keyword in enumerate(KEYWORDS, start=1):
         try:
             rows = fetch_google_news_rss(keyword)
             all_items.extend(rows)
-            print(f"[{idx}/{len(KEYWORDS)}] Fetched {len(rows)} recent items for: {keyword}")
+            print(f"[{idx}/{len(KEYWORDS)}] fetched {len(rows)} items: {keyword}")
             time.sleep(0.35)
         except Exception as e:
             print(f"Fetch failed: {keyword} | {e}")
 
-    print(f"Raw recent items: {len(all_items)}")
+    print(f"Raw items: {len(all_items)}")
 
-    filtered = dedupe(all_items)
-    print(f"After dedupe/filter: {len(filtered)}")
+    items = dedupe(all_items)
+    items = sorted(
+        items,
+        key=lambda x: (x.get("level_score", 0), -x.get("age_hours", 999999)),
+        reverse=True
+    )
 
-    filtered = diversify(filtered)
-    print(f"After diversify: {len(filtered)}")
+    print(f"After dedupe/classify: {len(items)}")
+
+    payload = build_weekly_view(items)
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-
-    region_counts = {}
-    bucket_counts = {}
-
-    for item in filtered:
-        region = item.get("region", "全国")
-        bucket = item.get("bucket", "other")
-
-        region_counts[region] = region_counts.get(region, 0) + 1
-        bucket_counts[bucket] = bucket_counts.get(bucket, 0) + 1
-
-    payload = {
-        "generated_at": NOW.strftime("%Y-%m-%d %H:%M:%S"),
-        "campaign": CAMPAIGN,
-        "strict_recent_days": RECENT_DAYS,
-        "preferred_hours": PREFERRED_HOURS,
-        "count": len(filtered),
-        "region_counts": region_counts,
-        "bucket_counts": bucket_counts,
-        "items": filtered,
-    }
-
     OUT_FILE.write_text(
         json.dumps(payload, ensure_ascii=False, indent=2),
         encoding="utf-8"
     )
 
-    print(f"Saved {len(filtered)} filtered news items to {OUT_FILE}")
-    print("Region counts:", region_counts)
-    print("Bucket counts:", bucket_counts)
+    print(f"Saved weekly news to {OUT_FILE}")
 
-    print("\nTop 25:")
-    for i, item in enumerate(filtered[:25], start=1):
-        print(
-            f"{i}. [{item.get('score')}] "
-            f"[{item.get('bucket')}] "
-            f"[{item.get('region')}/{item.get('city') or '-'}] "
-            f"[{item.get('age_hours')}h] "
-            f"{item.get('title')} | {item.get('source')} | {item.get('published_at')}"
-        )
+    print("\nA Level:")
+    for i, x in enumerate(payload["levels"]["A"]["items"], start=1):
+        print(f"A{i}. [{x.get('level_score')}] {x.get('title')} | {x.get('source')}")
+
+    print("\nB Level:")
+    for i, x in enumerate(payload["levels"]["B"]["items"], start=1):
+        print(f"B{i}. [{x.get('level_score')}] {x.get('title')} | {x.get('source')}")
+
+    print("\nC Level:")
+    for i, x in enumerate(payload["levels"]["C"]["items"], start=1):
+        print(f"C{i}. [{x.get('level_score')}] {x.get('title')} | {x.get('source')}")
+
+    print("\nHot Products:")
+    for i, x in enumerate(payload["hot_products"], start=1):
+        print(f"P{i}. [{x.get('hot_product_score')}] {x.get('title')} | {x.get('source')}")
 
 
 if __name__ == "__main__":
