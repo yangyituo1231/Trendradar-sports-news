@@ -1,72 +1,17 @@
 {
-  "generate_time": "2026-06-16 23:36",
-  "start_date": "2026-06-10",
-  "end_date": "2026-06-16",
+  "generate_time": "2026-06-17 00:16",
+  "start_date": "2026-06-11",
+  "end_date": "2026-06-17",
   "days": [
-    "2026-06-10",
     "2026-06-11",
     "2026-06-12",
     "2026-06-13",
     "2026-06-14",
     "2026-06-15",
-    "2026-06-16"
+    "2026-06-16",
+    "2026-06-17"
   ],
   "top_news": [
-    {
-      "title": "豆包加速打通抖音电商；李宁与库里品牌达成长期合作丨零售电商周报- 零售",
-      "tag": "品牌竞争",
-      "source": "亿邦动力网",
-      "desc": "品牌重大动作带来声量与产品心智变化，需关注终端转化和品类借势。",
-      "logo": "品牌",
-      "icon": "🏷️",
-      "class": "logo-purple",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBBcHRheDlLR0Q2ZlozREVucVhIYnpjeTV3NnRkNldMalZpZWJ6dE81MDFpVGNEdDdsX01CNmVoTUhBeTlJNUhKUjY4X2NjVzFCU295b21B?oc=5",
-      "published_at": "Sun, 07 Jun 2026 08:13:46 GMT"
-    },
-    {
-      "title": "安踏儿童携手上海六院国家骨科医学中心，落成儿童足弓成长实验室",
-      "tag": "品牌竞争",
-      "source": "thepaper.cn",
-      "desc": "品牌重大动作带来声量与产品心智变化，需关注终端转化和品类借势。",
-      "logo": "品牌",
-      "icon": "🏷️",
-      "class": "logo-purple",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE42X2Y0ODZSRHAwdkZRcWNuM00ydDJmZ040SGNid3RyanZJaGFpejhWdmhVRGliU3JiTVlwZVpYQXdNeEFEcUJab2h5bFpyMzRnVFZibnlzd1lMcUUtWGc?oc=5",
-      "published_at": "Thu, 28 May 2026 07:00:00 GMT"
-    },
-    {
-      "title": "抖音618榜单：阿迪排名运动户外第一 美妆国货占比30%",
-      "tag": "大促/电商",
-      "source": "亿邦动力网",
-      "desc": "抖音运动户外排名反映竞品策略，可优化儿童品类渠道投放与内容",
-      "logo": "大促",
-      "icon": "🛒",
-      "class": "logo-blue",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1sTWRkSkVmVVh4ZXMzdkFHdUlqaXJXVWE2eDNfd0N3dC1aYXlkaUhXUVhEVkI3a3IxR2FVUEk5bmRnWWJfWXZyS05aX0JLcEk0TkNvOHV3?oc=5",
-      "published_at": "Mon, 25 May 2026 07:00:00 GMT"
-    },
-    {
-      "title": "蓬蓬裙让出C位 这个“六一”武汉童装市场刮起“实用风”",
-      "tag": "童装/儿童运动",
-      "source": "湖北日报传媒集团",
-      "desc": "童装消费转向实用，提示产品设计需平衡功能与时尚，避免过度装饰",
-      "logo": "童装",
-      "icon": "🧒",
-      "class": "logo-sky",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0ybkpuN1FYV2xNOVN5a1pTRkZMbjhJZmtfTHAxN3Y0cmhOUlFjSkdmbDcxNGVSWHAxdzg2U3JNTndrRGJYb2Nvc1luSVo0YWVXbDZmWDNuOWI?oc=5",
-      "published_at": "Mon, 01 Jun 2026 00:47:26 GMT"
-    },
-    {
-      "title": "天猫520开卖撞上高温天：颜值防晒、防护养肤、材质降温成购物车新宠",
-      "tag": "天气/功能消费",
-      "source": "紫牛新闻",
-      "desc": "高温催生防晒降温需求，可开发儿童凉感面料或防晒运动装备",
-      "logo": "天气",
-      "icon": "☀️",
-      "class": "logo-sky",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE05a2llWmcxeUVxbGRPdGlfa0xVRGFLb0tCVDZvSkRwVVFJY0djVmRURWhHdEs2b2VGcUNVVUNGYmhNaDQ2V0tXN1Q0eW9rajRDcmNQdHp3cU1KYmUxejJ4NDgwcGUwalB2?oc=5",
-      "published_at": "Thu, 14 May 2026 07:00:00 GMT"
-    },
     {
       "title": "豆包加速打通抖音电商；李宁与库里品牌达成长期合作丨零售电商周报- 零售",
       "tag": "品牌竞争",
@@ -396,33 +341,64 @@
       "class": "logo-green",
       "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1lMjlLU0x5UDRHNi1Jd1BaLTZzdGNTMmtaWE5JRGthc2lES2VRc3FIUmVVc0Z5Vlo5RXFwNmRuQk5jcTJlV1RFR1Mwd3dGX2NWcEZyT0JpNFBESVFHQ19UWVdLdzNzV3kyYVJnOTQ0VTFOdXlzRmRTYg?oc=5",
       "published_at": "Mon, 15 Jun 2026 22:48:35 GMT"
+    },
+    {
+      "title": "火蝠电商：抖音全域运营效果强劲，助力国民雪糕品牌销量爆发",
+      "tag": "品牌竞争",
+      "source": "新华报业网",
+      "desc": "品牌重大动作带来声量与产品心智变化，需关注终端转化和品类借势。",
+      "logo": "品牌",
+      "icon": "🏷️",
+      "class": "logo-purple",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE04WjRlUWpvV3VrMnFmRWtMOF8ybk1pUmtyQXZsamxudGhqUXQ1blhhb2JmTkxNenB3UjI3LWRPczVJSkdtOWZqTk5zMzVSWkJzZThCZU52QlppV3VENnA4NVVQc3Vid01uVW9B?oc=5",
+      "published_at": "Tue, 16 Jun 2026 02:25:00 GMT"
+    },
+    {
+      "title": "合作“顶流”,低价骆驼火了之后",
+      "tag": "品牌竞争",
+      "source": "新浪网",
+      "desc": "品牌重大动作带来声量与产品心智变化，需关注终端转化和品类借势。",
+      "logo": "品牌",
+      "icon": "🏷️",
+      "class": "logo-purple",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObTF2VThQcURQM0tFY0t2dmJSQW9hajNqbnhqY1FreWd3azFEWEQ2ZVd5dU10Yi1VZE1rd1dtd3I0aW5qZ1JiU3haNG50YTZvb3ZWYnJoZzJiYUdiTXN4R1RMU2Q0RVFuZ21xMGVtdmN6bTM3b1RiN3FRTUpfVkpENkJRampuRkh6bG5XLUxlaW5sZWNUOE1CM0dLdzhJaEM4LXZn?oc=5",
+      "published_at": "Mon, 15 Jun 2026 16:46:21 GMT"
+    },
+    {
+      "title": "10年10亿授权费，安德玛儿童操盘手接下「锐步中国」",
+      "tag": "品牌竞争",
+      "source": "36 Kr",
+      "desc": "锐步中国易主，儿童业务操盘手接手，可能影响童装竞争格局。",
+      "logo": "品牌",
+      "icon": "🏷️",
+      "class": "logo-purple",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1RSnpkM19IMjBtbXhDRVlaTVBQc1VaV1pvaE1KV1RocUhfQWVhYTY3U2M1N0I5d1oxSnhkYVoyMHRZLUY5cWFSenpqWXB1UQ?oc=5",
+      "published_at": "Sun, 14 Jun 2026 21:56:53 GMT"
+    },
+    {
+      "title": "从远方到日常 户外运动正在影响中国人的生活方式",
+      "tag": "户外/运动场景",
+      "source": "央视网",
+      "desc": "户外运动日常化趋势明显，可推动儿童户外鞋服产品线布局。",
+      "logo": "户外",
+      "icon": "🚴",
+      "class": "logo-green",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1lMjlLU0x5UDRHNi1Jd1BaLTZzdGNTMmtaWE5JRGthc2lES2VRc3FIUmVVc0Z5Vlo5RXFwNmRuQk5jcTJlV1RFR1Mwd3dGX2NWcEZyT0JpNFBESVFHQ19UWVdLdzNzV3kyYVJnOTQ0VTFOdXlzRmRTYg?oc=5",
+      "published_at": "Mon, 15 Jun 2026 22:48:35 GMT"
+    },
+    {
+      "title": "艾瑞618消费洞察：京东珠宝首饰、运动户外品类领跑行业 增速双第一",
+      "tag": "大促/电商",
+      "source": "新浪财经",
+      "desc": "运动户外品类618增速领先，可加大电商渠道儿童产品推广。",
+      "logo": "大促",
+      "icon": "🛒",
+      "class": "logo-blue",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5OTHk1UzVlM2tiZEVINmRwaVcwOVBnZ1ZvV1ZuOWFURW1JeFNDOG5oUTNHc2NjUHFKRVRobmNOTUpadVlUWS1RSUd2T2tRX3U4d0lsYjc1YVZtb0JRVEhtOEloLUxYUjBfTzBhRVk3OV9zczRCYVRNSQ?oc=5",
+      "published_at": "Mon, 15 Jun 2026 12:09:00 GMT"
     }
   ],
   "competitor_news": [
-    {
-      "brand": "李宁",
-      "title": "豆包加速打通抖音电商；李宁与库里品牌达成长期合作丨零售电商周",
-      "source": "亿邦动力网",
-      "score": 410,
-      "published_at": "Sun, 07 Jun 2026 08:13:46 GMT",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBBcHRheDlLR0Q2ZlozREVucVhIYnpjeTV3NnRkNldMalZpZWJ6dE81MDFpVGNEdDdsX01CNmVoTUhBeTlJNUhKUjY4X2NjVzFCU295b21B?oc=5"
-    },
-    {
-      "brand": "安踏儿童",
-      "title": "安踏儿童携手上海六院国家骨科医学中心，落成儿童足弓成长实验室",
-      "source": "thepaper.cn",
-      "score": 334,
-      "published_at": "Thu, 28 May 2026 07:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE42X2Y0ODZSRHAwdkZRcWNuM00ydDJmZ040SGNid3RyanZJaGFpejhWdmhVRGliU3JiTVlwZVpYQXdNeEFEcUJab2h5bFpyMzRnVFZibnlzd1lMcUUtWGc?oc=5"
-    },
-    {
-      "brand": "Nike",
-      "title": "耐克退潮，安踏李宁上位，市场和消费者都变了",
-      "source": "360娱乐",
-      "score": 66,
-      "published_at": "Fri, 05 Jun 2026 10:19:32 GMT",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9JcHgzVDVKNjczRUlGMXdSMlFHYjUycjFvdVBtVWF2VWZfMk5qTDhpR1dUVEt6Nm14c1hDUTI4ckE5SFRtcnFqZEhvUFRyWFk?oc=5"
-    },
     {
       "brand": "李宁",
       "title": "豆包加速打通抖音电商；李宁与库里品牌达成长期合作丨零售电商周",
@@ -590,27 +566,49 @@
       "score": 38,
       "published_at": "Sat, 13 Jun 2026 02:39:00 GMT",
       "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9fV0JURzdCR2p2V2g1SDZ4OTRVU0xBRmYya1R0RWMtNDY0aE5LZXhJaXdCRVlWMkZRY2FxUUZ5Nkc1MjFYaGlXWDl1OTZ6amcwNXFRR2lHUHVpLUhqbnppVDBxYXBKRXdSMUd6S0JLVHl4Tk5zbWs3cQ?oc=5"
+    },
+    {
+      "brand": "On昂跑",
+      "title": "喜茶茶坊海外首店纽约开业；亚瑟士集团拆分Onitsuka T",
+      "source": "搜狐网",
+      "score": 302,
+      "published_at": "Fri, 12 Jun 2026 11:42:11 GMT",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWG9weDBTc05OTEhvMWk1ZDNrWUNmRGRVMko0ckhDZVVfdlN6VGlMamU1blRTQUZPaWV6dWlUa3daV0VnU0hkTDRqZ3d5RDZqM2FYUDNueVdaUG9abjJhQ1hLSWVadDFXTURsNFp5bmtqa3Bab3RYOHpFMk9OVzVqbUgxZ3VDYXRYVlhUQ2JVME80dXNuNDVoRnlORWo2ZEtR?oc=5"
+    },
+    {
+      "brand": "Nike",
+      "title": "从产品创新到街头文化，耐克如何拓宽足球生意边界",
+      "source": "thepaper.cn",
+      "score": 77,
+      "published_at": "Mon, 15 Jun 2026 07:18:00 GMT",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlNl95WUsyLTFDaW1zQjRpRjc1N2p2M081dUR3dlg0ZlFTVzlUU045Yl9keW1HTV9UYV9FNzlreXhMbnJxZVN5SkpucVZfTS1nZ29mY0Zlc0tFV3lwaWNEeQ?oc=5"
+    },
+    {
+      "brand": "Nike",
+      "title": "世界杯运动品牌争霸战：耐克的统治、阿迪达斯的阵地与安踏的进击",
+      "source": "新浪财经",
+      "score": 63,
+      "published_at": "Mon, 15 Jun 2026 04:00:04 GMT",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMWxyNVFyYUlwN05iMUdwSUxHaFp6SU41eGk2TUZUemoxUjVhQmZubk1zYjJtd2FvUXRVUk1vWEtMYWJwdVJfWXpSNnVNYTlPdDctNUh4dG1HenNBTHBhdGE5R1lPbkU3dDQzVUNjQjgwTEdCZFBaTWwwZS01QUsyOEZrMzBfLXhWRjNFX2FTYUdTODNPWnZN?oc=5"
+    },
+    {
+      "brand": "安踏",
+      "title": "鬼塚虎要单飞，亚瑟士想做“日本版安踏”？",
+      "source": "36 Kr",
+      "score": 39,
+      "published_at": "Wed, 10 Jun 2026 16:26:00 GMT",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9EVWJVRnRGUjZfTjhZaGl2amdFN2pQRnlEZEpEX2pHN2Y5TVBnNnIzMVFqblV2ZlBwcUJSc3RIb0pRamtudEtORTRDZEJsQQ?oc=5"
+    },
+    {
+      "brand": "安踏",
+      "title": "安踏集团发布2025 ESG报告：FILA建造国内首个可持续",
+      "source": "ebusinessreview.cn",
+      "score": 38,
+      "published_at": "Sat, 13 Jun 2026 02:39:00 GMT",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9fV0JURzdCR2p2V2g1SDZ4OTRVU0xBRmYya1R0RWMtNDY0aE5LZXhJaXdCRVlWMkZRY2FxUUZ5Nkc1MjFYaGlXWDl1OTZ6amcwNXFRR2lHUHVpLUhqbnppVDBxYXBKRXdSMUd6S0JLVHl4Tk5zbWs3cQ?oc=5"
     }
   ],
   "keywords": [
-    "AI消费落地",
-    "实用风童装",
-    "颜值防晒",
-    "材质降温",
-    "儿童足弓",
-    "室内运动",
-    "防雨防滑",
-    "轻薄T恤",
-    "品牌竞争",
-    "国货掘金",
-    "大促增长",
-    "运动户外",
-    "跨境出海",
-    "银发经济",
-    "健康消费",
-    "情绪价值",
-    "功能消费",
-    "李宁库里",
     "高温防晒",
     "凉感速干",
     "儿童足弓",
@@ -718,56 +716,27 @@
     "文旅出行",
     "首店经济",
     "可持续",
-    "跑马盛宴"
+    "跑马盛宴",
+    "户外日常化",
+    "全域运营",
+    "低价骆驼",
+    "锐步中国",
+    "运动户外领跑",
+    "防晒衣实测",
+    "情绪消费",
+    "AI辅助购物",
+    "智能手表",
+    "儿童乐园",
+    "亲子品牌",
+    "服务消费",
+    "防雨运动",
+    "室内运动",
+    "足球生意",
+    "世界杯争霸",
+    "可持续ESG",
+    "首店效应"
   ],
   "regions": [
-    {
-      "east": {
-        "name": "华东",
-        "city": "上海/江苏/浙江",
-        "hot": "华东高温，六一活动与足弓实验室带动儿童运动热",
-        "flow": "高温推防晒轻薄需求，六一活动与安踏儿童实验室吸引亲子客流，需强化足球主题陈列",
-        "focus": "足球运动+防晒",
-        "action": "联合商场举办足球主题六一活动，主推轻薄防晒儿童运动装，引流至足弓实验室体",
-        "star": "★★★"
-      },
-      "central": {
-        "name": "华中",
-        "city": "湖北/湖南/江西",
-        "hot": "武汉六一实用风盛行，亲子运动场景升温",
-        "flow": "高温下实用童装需求旺，公交课堂与六一活动提升亲子客流，需突出实用运动装备",
-        "focus": "亲子实用运动",
-        "action": "在武汉门店推出亲子运动套装组合，结合公交课堂活动做社区推广，强化实用功能",
-        "star": "★★"
-      },
-      "south": {
-        "name": "华南",
-        "city": "广东/广西",
-        "hot": "华南强降雨，防雨防滑室内运动需求增",
-        "flow": "雷阵雨扰动客流，防雨防滑装备与室内运动场景成焦点，需调整陈列至室内运动品类",
-        "focus": "防雨室内运动",
-        "action": "主推防滑运动鞋和室内运动服，联合商场打造室内运动体验区，雨天促销引流",
-        "star": "★★★"
-      },
-      "southwest": {
-        "name": "西南",
-        "city": "四川/重庆/贵州",
-        "hot": "西南降雨，防雨轻防护室内运动场景升",
-        "flow": "降雨影响客流，防雨轻防护装备与室内运动需求提升，需强化防雨品类陈列",
-        "focus": "防雨轻防护",
-        "action": "门店增设防雨装备专区，推出室内运动课程联动，雨天满减促防雨鞋服销售",
-        "star": "★★"
-      },
-      "northwest": {
-        "name": "西北",
-        "city": "陕西/甘肃/宁夏",
-        "hot": "西北降雨，防雨轻防护室内运动场景升",
-        "flow": "降雨影响客流，防雨轻防护装备与室内运动需求提升，需强化防雨品类陈列",
-        "focus": "防雨轻防护",
-        "action": "防雨轻防护差异化陈列与会员触达",
-        "star": "★★★"
-      }
-    },
     {
       "east": {
         "name": "华东",
@@ -1049,6 +1018,53 @@
         "action": "在西安旅游商圈门店主推亲子防雨运动鞋服，结合端午旅游热点开展促销活动。",
         "star": "★★★"
       }
+    },
+    {
+      "east": {
+        "name": "华东",
+        "city": "上海/江苏/浙江",
+        "hot": "华东强降雨雷阵雨，商圈客流受扰，需强化室内运动场景",
+        "flow": "宁波体育消费券发放，上海环球美食汇助力，商圈客流受降雨影响，需引导室内消费",
+        "focus": "室内运动引流",
+        "action": "在商场内设置儿童运动体验区，结合消费券推出室内运动装备满减活动",
+        "star": "★★★"
+      },
+      "central": {
+        "name": "华中",
+        "city": "湖北/湖南/江西",
+        "hot": "武汉新儿童乐园开业，亲子品牌扎堆，华中商圈客流升温",
+        "flow": "武汉1.3万平米儿童乐园亮相，长沙慢体验消费升温，亲子客群集中，需抢占室内运动场景",
+        "focus": "亲子运动体验",
+        "action": "在武汉儿童乐园周边门店推出亲子运动鞋服试用装，联合乐园开展运动挑战赛",
+        "star": "★★★"
+      },
+      "south": {
+        "name": "华南",
+        "city": "广东/广西",
+        "hot": "华南强雷阵雨持续，文旅客流受抑，需借赛事和防晒需求破",
+        "flow": "厦门国际赛事落地，广州端午文旅大餐上线，但强降雨影响户外客流，需聚焦室内运动与防晒装备",
+        "focus": "赛事联动防晒",
+        "action": "与厦门马拉松合作推出联名款防晒运动服，在门店设置赛事主题陈列区",
+        "star": "★★★"
+      },
+      "southwest": {
+        "name": "西南",
+        "city": "四川/重庆/贵州",
+        "hot": "西南小雨不断，贵阳马拉松与亲子运动活动带来客流机会",
+        "flow": "京东赞助贵阳马拉松，成都亲子运动公益行和街头音乐活动，重庆文旅惠民季启动，需结合亲子运动主题",
+        "focus": "亲子运动营销",
+        "action": "在贵阳马拉松起点附近设儿童运动鞋体验站，联合成都妇幼开展运动护眼快闪活动",
+        "star": "★★"
+      },
+      "northwest": {
+        "name": "西北",
+        "city": "陕西/甘肃/宁夏",
+        "hot": "西北端午旅游热，亲子学生客群过半，文旅客流带动运动消",
+        "flow": "西安跻身端午热门旅游城市，兰州水上休闲火爆，西北环线亲子游成爆款，需抓住户外运动场景",
+        "focus": "户外运动装备",
+        "action": "在西安奥莱门店推出亲子户外运动套装折扣，联合兰州水上乐园开展运动鞋防水体",
+        "star": "★★"
+      }
     }
   ],
   "warnings": [
@@ -1075,26 +1091,6 @@
     "天气变化影响到店节奏，需关注防晒、防雨、防滑和室内运动场景。"
   ],
   "trend_items": [
-    {
-      "title": "安踏儿童足弓实验室启示",
-      "desc": "竞品安踏儿童与上海六院共建足弓实验室，建议361°儿童跟进专业运动健康合作，强化产品科技背书。",
-      "tag": "竞品动态"
-    },
-    {
-      "title": "高温天防晒童装需求爆发",
-      "desc": "天猫520高温防晒热销，建议361°儿童推出防晒降温面料童装，结合618大促主推轻薄T恤和短裤。",
-      "tag": "天气影响"
-    },
-    {
-      "title": "AI购物大年618策略调整",
-      "desc": "618成AI消费落地大年，建议361°儿童利用AI工具优化电商投放，精准触达亲子家庭用户提升转化。",
-      "tag": "AI科技"
-    },
-    {
-      "title": "降雨影响客流转室内运动",
-      "desc": "多地降雨扰动商圈客流，建议361°儿童加强线上室内运动场景营销，推广防雨装备和轻防护产品。",
-      "tag": "客流变化"
-    },
     {
       "title": "高温催生凉感防晒品类热销",
       "desc": "天猫520高温天带动防晒、凉感服饰需求激增，建议主推凉感T恤、防晒外套，强化材质降温卖点。",
@@ -1214,16 +1210,29 @@
       "title": "AI辅助购物决策，优化线上体验",
       "desc": "618电商AI深度介入，辅助消费决策。建议接入AI导购推荐儿童运动装备，结合抖音全域运营，提升转化与复购。",
       "tag": "技术应用"
+    },
+    {
+      "title": "618户外品类领跑，强化儿童防晒",
+      "desc": "京东运动户外增速第一，千元防晒衣热销。建议主推百元级高性价比儿童防晒衣，结合AI营销精准触达家长群体。",
+      "tag": "竞品动态"
+    },
+    {
+      "title": "降雨影响客流，布局室内运动场景",
+      "desc": "强降雨扰动商圈客流，防雨防滑需求上升。建议在电商平台主推室内运动鞋服，如跳绳鞋、瑜伽服，并加强线下门店防滑提示。",
+      "tag": "天气应对"
+    },
+    {
+      "title": "儿童乐园开业，亲子品牌扎堆入局",
+      "desc": "武汉1.3万平米儿童乐园亮相，亲子消费升温。建议与乐园合作快闪店或赞助活动，推出联名款运动装备，吸引家庭客流。",
+      "tag": "品牌事件"
+    },
+    {
+      "title": "AI辅助购物决策，优化线上体验",
+      "desc": "AI深度介入618消费，辅助选品。建议在官方小程序嵌入AI导购，推荐儿童运动鞋服搭配，提升转化率和客单价。",
+      "tag": "AI科技"
     }
   ],
   "weather": [
-    {
-      "north": "降雨影响客流，防雨、轻防护与室内运动场景需求提升",
-      "east": "气温偏高，防晒、短裤、轻薄T恤需求提升",
-      "south": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
-      "southwest": "降雨影响客流，防雨、轻防护与室内运动场景需求提升",
-      "northwest": "降雨影响客流，防雨、轻防护与室内运动场景需求提升"
-    },
     {
       "north": "降雨影响客流，防雨、轻防护与室内运动场景需求提升",
       "east": "气温偏高，防晒、短裤、轻薄T恤需求提升",
@@ -1262,6 +1271,13 @@
     {
       "north": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
       "east": "降雨影响客流，防雨、轻防护与室内运动场景需求提升",
+      "south": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
+      "southwest": "降雨影响客流，防雨、轻防护与室内运动场景需求提升",
+      "northwest": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注"
+    },
+    {
+      "north": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
+      "east": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
       "south": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
       "southwest": "降雨影响客流，防雨、轻防护与室内运动场景需求提升",
       "northwest": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注"
