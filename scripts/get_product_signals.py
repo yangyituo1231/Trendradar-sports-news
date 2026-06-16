@@ -19,8 +19,8 @@ TODAY = datetime.now().strftime("%Y-%m-%d")
 NOW_TIME = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 NOW_UTC = datetime.now(timezone.utc)
 
-# 商品周报建议看近45天，既能抓新品，也避免一年多以前的旧内容反复进榜
-RECENT_DAYS = 45
+# 商品周报建议看近8天，既能抓新品，也避免一年多以前的旧内容反复进榜
+RECENT_DAYS = 8
 CUTOFF_DATE = NOW_UTC - timedelta(days=RECENT_DAYS)
 
 MAX_QUERIES = 120
@@ -133,7 +133,9 @@ BAD_TITLE_WORDS = [
     # 低质/广告
     "超值好货", "省钱快报", "加拿大省钱快报", "北美省钱快报", "t.cn", "http://t.cn",
     "超话", "抽奖", "转发本条", "我来了", "偶遇", "哈哈", "打call", "送花花",
-    "365BET", "博彩", "官网入口", "赛果"
+    "365BET", "博彩", "官网入口", "赛果",
+    "消费指南", "白皮书", "报告", "ESG", "可持续", "榜单", "市场规模", "指南", "测评",
+    "推荐", "排行榜", "怎么买", "哪款好","人工智能",
 ]
 
 BAD_SOURCES = [
@@ -272,9 +274,8 @@ def should_drop_item(title, source, pub_date):
             return True
 
     # 新浪类内容噪音高，严格保留新品/产品/品牌硬信号
-    if "新浪" in source or "新浪" in title:
-        if not (detect_brand(title) and has_strong_product_signal(title)):
-            return True
+    if "新浪" in source or "新浪" in title or "Sina" in source:
+        return True
 
     # 没品牌也没强商品词，过滤
     if not detect_brand(title) and not has_strong_product_signal(title):
