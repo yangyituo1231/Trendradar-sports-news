@@ -23,7 +23,7 @@ NOW_UTC = datetime.now(timezone.utc)
 RECENT_DAYS = 8
 CUTOFF_DATE = NOW_UTC - timedelta(days=RECENT_DAYS)
 
-MAX_QUERIES = 120
+MAX_QUERIES = 220
 RSS_PER_QUERY = 8
 MAX_SIGNALS = 100
 
@@ -104,8 +104,21 @@ queries = []
 queries.extend(FOCUS_QUERIES)
 
 for brand in KIDS_BRANDS:
-    for kw in ["新品", "运动鞋", "跑鞋", "篮球鞋", "防晒衣", "凉感T恤", "冲锋衣", "开学季"]:
+    for kw in ["新品", "新款", "发布", "推出", "上市", "联名", "儿童运动","夏季","春季","秋季","冬季","校园运动"]:
         queries.append(f"{brand} {kw}")
+
+BRAND_NEWS_QUERIES = []
+
+for brand in BRANDS:
+    BRAND_NEWS_QUERIES.extend([
+        f"{brand} 新品",
+        f"{brand} 发布",
+        f"{brand} 推出",
+        f"{brand} 上市",
+        f"{brand} 联名"
+    ])
+
+queries.extend(BRAND_NEWS_QUERIES)
 
 for brand in ADULT_BRANDS:
     for kw in ["新品", "跑鞋", "碳板跑鞋", "防晒衣", "冲锋衣", "户外鞋", "恢复拖鞋"]:
@@ -277,6 +290,17 @@ def has_strong_product_signal(title):
         "速干T恤", "冲锋衣", "羽绒服", "棉服", "足弓", "碳板", "缓震", "防水", "保暖"
     ]
     return has_any(title, strong)
+    
+def is_adult_trend_relevant(title):
+    trend_words = [
+        "跑鞋", "碳板", "缓震", "厚底", "轻量", "回弹",
+        "篮球鞋", "足球鞋", "训练鞋",
+        "防晒衣", "凉感", "速干",
+        "冲锋衣", "户外鞋", "轻户外",
+        "恢复拖鞋", "运动凉鞋",
+        "联名", "新品", "发布", "首发", "上市"
+    ]
+    return has_any(title, trend_words)
 
 
 def should_drop_item(title, source, pub_date):
@@ -409,7 +433,7 @@ def score_signal(title, query, brands, keywords, source, pub_date):
     if any(b in KIDS_BRANDS or b in ["361儿童", "FILA Kids"] for b in brands):
         score += 18
     elif brands:
-        score += 8
+        score += 14
 
     score += min(len(keywords) * 3, 24)
 
@@ -463,6 +487,11 @@ def main():
                 continue
 
             brands = detect_brand(title)
+            is_kids_brand = any(b in KIDS_BRANDS or b in ["361儿童", "FILA Kids"] for b in brands)
+
+            if brands and not is_kids_brand:
+                if not is_adult_trend_relevant(title):
+                    return True
             full_text = f"{title} {query}"
             keywords = detect_keywords(full_text)
             category = classify_category(full_text)
