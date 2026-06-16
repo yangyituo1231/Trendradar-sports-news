@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17 05:24:14",
+  "generated_at": "2026-06-17 05:36:44",
   "source": "Open-Meteo",
   "regions": {
     "north": {
@@ -19,13 +19,13 @@
         },
         {
           "date": "2026-06-18",
-          "code": 95,
-          "weather": "雷阵雨",
+          "code": 81,
+          "weather": "阵雨",
           "temp_max": 32.2,
           "temp_min": 21.9,
           "precipitation": 3.3,
           "wind": 8.5,
-          "risk_score": 57,
+          "risk_score": 44,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         },
         {
