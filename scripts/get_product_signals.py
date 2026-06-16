@@ -135,7 +135,7 @@ BAD_TITLE_WORDS = [
     "超话", "抽奖", "转发本条", "我来了", "偶遇", "哈哈", "打call", "送花花",
     "365BET", "博彩", "官网入口", "赛果",
     "消费指南", "白皮书", "报告", "ESG", "可持续", "榜单", "市场规模", "指南", "测评",
-    "推荐", "排行榜", "怎么买", "哪款好","人工智能",
+    "推荐", "排行榜", "怎么买", "哪款好","人工智能","AI","出海","跨境电商"
 ]
 
 BAD_SOURCES = [
@@ -238,7 +238,26 @@ def is_trusted_source(source, title):
 
 
 def has_core_product_signal(title):
-    return has_any(title, CORE_PRODUCT_WORDS)
+
+    must_have_product = [
+        "鞋","跑鞋","篮球鞋","足球鞋",
+        "童鞋","运动鞋",
+        "防晒衣","凉感T恤","速干T恤",
+        "冲锋衣","羽绒服","棉服",
+        "外套","短裤","长裤",
+        "帽","书包","拖鞋","凉鞋"
+    ]
+
+    must_have_action = [
+        "新品","上新","发布","首发",
+        "上市","联名","热卖","爆款"
+    ]
+
+    return (
+        has_any(title, must_have_product)
+        and
+        has_any(title, must_have_action)
+    )
 
 
 def has_strong_product_signal(title):
@@ -266,6 +285,9 @@ def should_drop_item(title, source, pub_date):
 
     # 商品信号区必须有鞋服/运动/儿童/新品等硬信号，纯营销、纯财报、纯生活方式不要进
     if not has_core_product_signal(title):
+        return True
+    # 必须是真商品
+    if not has_strong_product_signal(title):
         return True
 
     # 弱广告测评类，只保留同时有品牌 + 明确产品词的内容
