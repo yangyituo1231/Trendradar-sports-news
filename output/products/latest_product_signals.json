@@ -1,13 +1,54 @@
 {
   "date": "2026-06-16",
-  "generated_time": "2026-06-16 22:53:41",
+  "generated_time": "2026-06-16 23:36:45",
   "source": "Google News RSS product signal monitor",
-  "desc": "运动鞋服商品趋势信号监测：重点覆盖儿童运动、鞋服新品、夏季功能、跑步科技、户外轻运动、大促热卖。已强化过滤财经财报、纯营销、弱广告、测评导购和非鞋服商品。",
+  "desc": "运动鞋服商品趋势信号监测：覆盖国内外运动品牌、户外品牌、成人与儿童品牌；重点监测近8天新品、尖货、功能科技、夏季功能、跑步科技、户外轻运动与大促热卖。已过滤财经财报、广告促销、测评导购、AI白皮书、ESG报告和非鞋服商品。",
   "recent_days": 8,
-  "query_count": 220,
-  "signal_count": 1,
-  "top_brands": [],
+  "query_count": 260,
+  "signal_count": 8,
+  "top_brands": [
+    [
+      "Asics",
+      1
+    ],
+    [
+      "Saucony",
+      1
+    ],
+    [
+      "Adidas",
+      1
+    ],
+    [
+      "Nike",
+      1
+    ]
+  ],
   "top_keywords": [
+    [
+      "新品",
+      5
+    ],
+    [
+      "跑鞋",
+      3
+    ],
+    [
+      "联名",
+      3
+    ],
+    [
+      "推出",
+      2
+    ],
+    [
+      "足球",
+      2
+    ],
+    [
+      "发布",
+      1
+    ],
     [
       "上市",
       1
@@ -15,21 +56,132 @@
     [
       "系列",
       1
+    ],
+    [
+      "防晒衣",
+      1
+    ],
+    [
+      "防晒服",
+      1
+    ],
+    [
+      "防晒",
+      1
+    ],
+    [
+      "618",
+      1
+    ],
+    [
+      "训练",
+      1
     ]
   ],
   "top_categories": [
     [
+      "跑步科技",
+      3
+    ],
+    [
+      "篮球足球",
+      2
+    ],
+    [
       "青少年成人化",
+      1
+    ],
+    [
+      "防晒凉感",
+      1
+    ],
+    [
+      "品牌新品",
       1
     ]
   ],
   "top_seasons": [
     [
       "全年",
+      6
+    ],
+    [
+      "夏季",
+      1
+    ],
+    [
+      "秋季",
       1
     ]
   ],
   "signals": [
+    {
+      "date": "2026-06-16",
+      "title": "ASICS Sportstyle 携手 Griff 发布全新联名 GEL-CUMULUS 16 球鞋 - Hypebeast CN",
+      "short_title": "ASICS Sportstyle 携手 Griff 发布全新联名 GEL-CUMULUS 16 球鞋 - Hypebeast CN",
+      "query": "跑鞋 新品",
+      "brand_hits": [
+        "Asics"
+      ],
+      "keyword_hits": [
+        "跑鞋",
+        "新品",
+        "发布",
+        "联名"
+      ],
+      "category": "跑步科技",
+      "season_tag": "全年",
+      "source": "Hypebeast CN",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORDNRckpuSVJwQUhfbHhvNTV4eXhKLVRrTl8zRXFodFlod1F1VENZMlhWdTVueEhXR0NzTjFzUlFRQW1LckhWQlNlcXM0emhPSDlJOTNITkFqMzJyQ0tQb3ZDNjZUcHdnQXN2dmhueWNib2F0MG1NTFJDS1hOeDlZUDFFcGU2RlV5b3hrbXFtUmxyaXJQVjVMYWxTbHNyZ2JWcmc?oc=5",
+      "pub_date": "Tue, 16 Jun 2026 03:16:01 GMT",
+      "age_hours": 12.3,
+      "heat": 96,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-16",
+      "title": "Westside Gunn 抢先曝光 Saucony Grid Jazz 9「Awesome Gods」联名跑鞋 - Hypebeast CN",
+      "short_title": "Westside Gunn 抢先曝光 Saucony Grid Jazz 9「Awesome Gods」联名跑鞋 - Hypebea...",
+      "query": "跑鞋 新品",
+      "brand_hits": [
+        "Saucony"
+      ],
+      "keyword_hits": [
+        "跑鞋",
+        "新品",
+        "联名"
+      ],
+      "category": "跑步科技",
+      "season_tag": "全年",
+      "source": "Hypebeast CN",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMDUxX0tuWHpRTXRVaGhETWV4OEtCUmlZQjNuUzdmWjE2cXlEclBqcGtkZEYxYWpFVGRJd1FpNHZyLTZ1U2pxbVpyMXNpbVJ5b2szajRJQUl2cDFqREIzVDZvU05NbEhPMWFWMGladnpIODNBekdFVnRIeklFUDV6Z1VTODZaaWU4a2c?oc=5",
+      "pub_date": "Thu, 11 Jun 2026 08:10:14 GMT",
+      "age_hours": 127.4,
+      "heat": 81,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-16",
+      "title": "BAPE 攜手 adidas 推出不對稱 Adizero EVO SL 性能跑鞋 - Hypebeast CN",
+      "short_title": "BAPE 攜手 adidas 推出不對稱 Adizero EVO SL 性能跑鞋 - Hypebeast CN",
+      "query": "跑鞋 新品",
+      "brand_hits": [
+        "Adidas"
+      ],
+      "keyword_hits": [
+        "跑鞋",
+        "新品",
+        "推出"
+      ],
+      "category": "跑步科技",
+      "season_tag": "全年",
+      "source": "Hypebeast CN",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSjlUNmFDcjJPQ2QxY3RpdlkwdTczUHBQMS1uRkNmdDA1QVh3SlRjNmNlOGc3UEkzTTM1UW8zV2JsaGFtb1cyR053MWVIckVfZ3Q0bUs1ZXVsTlo2RC1DeUJLSW41ckM5RHdjOHFhX3hHdmFwWGRibWp6cWpzVWZrWlVNWWJ1YXJfOVNDVGNhOHp3RkVVODdWY09ndmVROGFybXR6d01uVE9Xc2JVVy1sQXFCd2M4WGdJaUREWkJzOERNRHB6QVUtZkdn?oc=5",
+      "pub_date": "Wed, 10 Jun 2026 10:40:17 GMT",
+      "age_hours": 148.9,
+      "heat": 81,
+      "type": "product_signal"
+    },
     {
       "date": "2026-06-16",
       "title": "GMT for Kids的成长扩容：FLOW系列36L护脊书包上市， 延伸大童市场版图 - 美通社",
@@ -45,8 +197,89 @@
       "source": "美通社",
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xVFR6Ym9oSUZVaW1Zb0ktTk8wLVNiV3ZCd3Z2ejRfMnBRSks4M2JncldERzVOd3VVczA1NExFSFJqeVpLaURkU2ZldERIRmVQenFFaS02OA?oc=5",
       "pub_date": "Mon, 15 Jun 2026 07:14:00 GMT",
-      "age_hours": 31.7,
-      "heat": 62,
+      "age_hours": 32.4,
+      "heat": 66,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-16",
+      "title": "“防晒服UPF50+”是真的吗？拼多多严查服饰虚假宣传- 零售 - 亿邦动力网",
+      "short_title": "“防晒服UPF50+”是真的吗？拼多多严查服饰虚假宣传- 零售 - 亿邦动力网",
+      "query": "618 防晒衣",
+      "brand_hits": [],
+      "keyword_hits": [
+        "防晒衣",
+        "防晒服",
+        "防晒",
+        "618"
+      ],
+      "category": "防晒凉感",
+      "season_tag": "夏季",
+      "source": "亿邦动力网",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1nTXZoWlBiLWdsLWxjUjVZQkkzTFlQQXJEdUJYWjJrUmVBa05janNsZGhZa21FV0NUZGJ6el84cno1WE1ESF9pYk80cDZkSXl3R3pLZEZB?oc=5",
+      "pub_date": "Thu, 11 Jun 2026 03:40:35 GMT",
+      "age_hours": 131.9,
+      "heat": 64,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-16",
+      "title": "耐克推出Rassvet联名滑板鞋引发争议，设计与背景同时引关注| 乌克兰新闻 - mezha.net",
+      "short_title": "耐克推出Rassvet联名滑板鞋引发争议，设计与背景同时引关注| 乌克兰新闻 - mezha.net",
+      "query": "Nike Kids 推出",
+      "brand_hits": [
+        "Nike"
+      ],
+      "keyword_hits": [
+        "推出",
+        "联名"
+      ],
+      "category": "品牌新品",
+      "season_tag": "全年",
+      "source": "mezha.net",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5aZHFGQlNiTEJobXdwcmNQb05OWEhHWDhQblMwbGcwVldYcHFVVk9Lb2VkcUZ1OWtLQXhoUGhtNEw5Y0dPRElINk40MGpLTWpoV3VoblB3WVhZZEozb1NOY3BvLU83ai12RHY3QmQwQ3BtNlktOEdxXw?oc=5",
+      "pub_date": "Tue, 09 Jun 2026 14:52:00 GMT",
+      "age_hours": 168.7,
+      "heat": 64,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-16",
+      "title": "\"量身定做的足球鞋+Two-heel战术板也被盗了...\" 英格兰克服盗窃风波，首次实施训练，\"小偷也阻挡不了我们\" - starnewskorea.com",
+      "short_title": "\"量身定做的足球鞋+Two-heel战术板也被盗了...\" 英格兰克服盗窃风波，首次实施训练，\"小偷也阻挡不了我们\" - starn...",
+      "query": "足球鞋 新品",
+      "brand_hits": [],
+      "keyword_hits": [
+        "足球",
+        "训练",
+        "新品"
+      ],
+      "category": "篮球足球",
+      "season_tag": "秋季",
+      "source": "starnewskorea.com",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE14WmdTNVpWeFhVZThTbjljOWJoa1hKQzJPRUR5VXRUZ0ZDZmVqOHM0UXRITExlNjJuTlJ4Z2FFa0JVSEVxVnY3eUVmeGpCTGIxdmNBemxkWEM3eHhfN2Yyb3l6MTQxOGxicVdVbVBYMXlsaElfNG95THlR?oc=5",
+      "pub_date": "Sun, 14 Jun 2026 07:58:02 GMT",
+      "age_hours": 55.6,
+      "heat": 51,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-16",
+      "title": "2026世界杯观察：足球鞋市场群雄争霸 - Sohu",
+      "short_title": "2026世界杯观察：足球鞋市场群雄争霸 - Sohu",
+      "query": "足球鞋 新品",
+      "brand_hits": [],
+      "keyword_hits": [
+        "足球",
+        "新品"
+      ],
+      "category": "篮球足球",
+      "season_tag": "全年",
+      "source": "Sohu",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSjAteVI1U180NXVzc0liMGhCZnFjQVVPR05pME5sN3p6ZFBoSkpSUGpza01fTUN2eHBVdWlMLTZGQlk2TmRocGg1UlhBZnR0eHQwbHNKSmVKYzRmRjlNWjNWZm9TY3dqUGd4TUxkdVFNQVAzS3ExWmRMZ3hDalROTm12U0ZiR2cwMExkWA?oc=5",
+      "pub_date": "Mon, 15 Jun 2026 15:27:57 GMT",
+      "age_hours": 24.1,
+      "heat": 48,
       "type": "product_signal"
     }
   ]
