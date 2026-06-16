@@ -1,114 +1,14 @@
 {
   "date": "2026-06-16",
-  "generated_time": "2026-06-16 18:22:30",
+  "generated_time": "2026-06-16 22:18:11",
   "source": "Google News RSS product signal monitor",
   "desc": "运动鞋服商品趋势信号监测：重点覆盖儿童运动、鞋服新品、夏季功能、跑步科技、户外轻运动、大促热卖。已强化过滤财经财报、纯营销、弱广告、测评导购和非鞋服商品。",
   "recent_days": 8,
   "query_count": 120,
-  "signal_count": 3,
-  "top_brands": [
-    [
-      "Adidas",
-      1
-    ]
-  ],
-  "top_keywords": [
-    [
-      "防晒衣",
-      2
-    ],
-    [
-      "防晒",
-      2
-    ],
-    [
-      "618",
-      1
-    ],
-    [
-      "跑鞋",
-      1
-    ]
-  ],
-  "top_categories": [
-    [
-      "防晒凉感",
-      2
-    ],
-    [
-      "跑步科技",
-      1
-    ]
-  ],
-  "top_seasons": [
-    [
-      "夏季",
-      2
-    ],
-    [
-      "全年",
-      1
-    ]
-  ],
-  "signals": [
-    {
-      "date": "2026-06-16",
-      "title": "雪中飞男士防晒衣直降40元，叠加红包最低29.39元入手 - Sohu",
-      "short_title": "雪中飞男士防晒衣直降40元，叠加红包最低29.39元入手 - Sohu",
-      "query": "618 防晒衣",
-      "brand_hits": [],
-      "keyword_hits": [
-        "防晒衣",
-        "防晒",
-        "618"
-      ],
-      "category": "防晒凉感",
-      "season_tag": "夏季",
-      "source": "Sohu",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVHFWb2YyaHdKVFZkRC1ROWQ2Ukpaa2lnR2tDS1JFRkpfTkxZdllIa1dtSGVYckN5QUFoa1B1RG5JVWVYa19HYU9qNDYyTTlmcGk3S3BIa0YyUWhSM3ZzaHBiSVVUOGh6Sk9yTk9KOUxJTlctOEktcUxVMmQ1ajBCZGx2cnZTZXhw?oc=5",
-      "pub_date": "Mon, 15 Jun 2026 23:42:27 GMT",
-      "age_hours": 10.7,
-      "heat": 69,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-16",
-      "title": "BAPE 攜手 adidas 推出不對稱 Adizero EVO SL 性能跑鞋 - Hypebeast CN",
-      "short_title": "BAPE 攜手 adidas 推出不對稱 Adizero EVO SL 性能跑鞋 - Hypebeast CN",
-      "query": "Adidas Kids 运动鞋",
-      "brand_hits": [
-        "Adidas"
-      ],
-      "keyword_hits": [
-        "跑鞋"
-      ],
-      "category": "跑步科技",
-      "season_tag": "全年",
-      "source": "Hypebeast CN",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSjlUNmFDcjJPQ2QxY3RpdlkwdTczUHBQMS1uRkNmdDA1QVh3SlRjNmNlOGc3UEkzTTM1UW8zV2JsaGFtb1cyR053MWVIckVfZ3Q0bUs1ZXVsTlo2RC1DeUJLSW41ckM5RHdjOHFhX3hHdmFwWGRibWp6cWpzVWZrWlVNWWJ1YXJfOVNDVGNhOHp3RkVVODdWY09ndmVROGFybXR6d01uVE9Xc2JVVy1sQXFCd2M4WGdJaUREWkJzOERNRHB6QVUtZkdn?oc=5",
-      "pub_date": "Wed, 10 Jun 2026 10:40:17 GMT",
-      "age_hours": 143.7,
-      "heat": 61,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-16",
-      "title": "千元防晒衣效果和百元款相近？记者实测6款热门防晒衣 - 泰山财经",
-      "short_title": "千元防晒衣效果和百元款相近？记者实测6款热门防晒衣 - 泰山财经",
-      "query": "防晒衣 运动品牌",
-      "brand_hits": [],
-      "keyword_hits": [
-        "防晒衣",
-        "防晒"
-      ],
-      "category": "防晒凉感",
-      "season_tag": "夏季",
-      "source": "泰山财经",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5iVFJwVlpLRG5uMlFRMGFXV0NGWFFCRmVSdHlDZGxLWW1KSFAyMFFBYWU1a2dHMEdlQkQwbUdBWDZtZnN5OGxoVlpGNjc1WUpKTDdDemphVENkaXBMVFlWcDBNR29RY1hI?oc=5",
-      "pub_date": "Fri, 12 Jun 2026 02:21:50 GMT",
-      "age_hours": 104.0,
-      "heat": 50,
-      "type": "product_signal"
-    }
-  ]
+  "signal_count": 0,
+  "top_brands": [],
+  "top_keywords": [],
+  "top_categories": [],
+  "top_seasons": [],
+  "signals": []
 }
