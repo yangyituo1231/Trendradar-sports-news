@@ -12,7 +12,6 @@ WEEKLY_DIR = Path("output/weekly")
 PRODUCT_DIR = Path("output/products")
 
 WEEKLY_NEWS_FILE = WEEKLY_DIR / "weekly_news.json"
-ANALYSIS_FILE = WEEKLY_DIR / "weekly_analysis.json"
 PRODUCT_SIGNAL_FILE = PRODUCT_DIR / "latest_product_signals.json"
 OUTPUT_HTML = WEEKLY_DIR / "weekly_report.html"
 
@@ -42,20 +41,19 @@ def raw(v):
     return re.sub(r"\s+", " ", str(v or "").replace("\n", " ").strip())
 
 
-def short(v, n=42):
+def short(v, n=46):
     t = raw(v)
     return esc(t if len(t) <= n else t[:n] + "...")
 
 
-def source_name(item):
-    return raw(item.get("source") or "公开资讯")
+def has_any(text, words):
+    return any(w in text for w in words)
 
 
 # =========================================================
 # 读取数据
 # =========================================================
 weekly = load_json(WEEKLY_NEWS_FILE, {})
-analysis = load_json(ANALYSIS_FILE, {})
 product_signals = load_json(PRODUCT_SIGNAL_FILE, {})
 
 generated_time = datetime.now().strftime("%Y-%m-%d %H:%M")
@@ -64,50 +62,75 @@ levels = weekly.get("levels", {}) if isinstance(weekly.get("levels"), dict) else
 a_items = safe_list(levels.get("A", {}).get("items"))
 b_items = safe_list(levels.get("B", {}).get("items"))
 c_items = safe_list(levels.get("C", {}).get("items"))
-hot_products = safe_list(weekly.get("hot_products"))
 all_items = safe_list(weekly.get("items"))
 
 weekly_summary = weekly.get("summary", {}) if isinstance(weekly.get("summary"), dict) else {}
 campaign = weekly.get("campaign", "日常经营")
-recent_days = weekly.get("recent_days", 7)
+
+# 优先使用商品信号自己的 recent_days
+recent_days = product_signals.get("recent_days") or weekly.get("recent_days") or 8
+product_items = safe_list(product_signals.get("signals"))
+product_signal_count = product_signals.get("signal_count") or len(product_items)
 
 # =========================================================
-# 判断与提炼
+# 词库与规则
 # =========================================================
 BRAND_WORDS = [
     "Nike", "耐克", "Adidas", "阿迪达斯", "Puma", "彪马",
-    "安踏", "安踏儿童", "FILA", "FILA KIDS", "李宁", "李宁YOUNG",
-    "特步", "特步儿童", "361", "361度", "361儿童",
-    "巴拉巴拉", "On", "昂跑", "HOKA", "亚瑟士", "ASICS",
-    "Salomon", "萨洛蒙", "lululemon", "始祖鸟", "北面",
-    "优衣库", "泰兰尼斯", "New Balance", "鬼塚虎", "Onitsuka",
+    "安踏", "安踏儿童", "FILA", "FILA KIDS", "FILA Kids",
+    "李宁", "李宁YOUNG", "特步", "特步儿童",
+    "361", "361度", "361°", "361儿童",
+    "巴拉巴拉", "On", "昂跑", "HOKA", "Hoka",
+    "亚瑟士", "ASICS", "Asics", "Saucony", "索康尼",
+    "Salomon", "萨洛蒙", "lululemon",
+    "始祖鸟", "Arc'teryx", "北面", "The North Face",
+    "迪桑特", "Descente", "凯乐石", "KAILAS",
+    "伯希和", "PELLIOT", "蕉下", "Beneunder",
+    "New Balance", "Skechers", "Crocs", "Vans", "Converse",
+    "泰兰尼斯", "moodytiger", "modytiger", "GMT",
 ]
 
 CATEGORY_RULES = {
     "平台大促": ["618", "大促", "预售", "战报", "直播", "抖音", "天猫", "京东", "唯品"],
-    "防晒凉感": ["防晒", "凉感", "速干", "清凉", "高温", "防晒衣"],
-    "儿童运动": ["儿童", "童装", "童鞋", "青少年", "亲子", "校园"],
-    "跑步科技": ["跑鞋", "跑步", "缓震", "碳板", "竞速"],
-    "篮球专业": ["篮球", "库里", "Curry"],
-    "户外生活": ["户外", "露营", "骑行", "徒步", "文旅", "出行"],
+    "防晒凉感": ["防晒", "防晒衣", "防晒服", "凉感", "速干", "清凉", "冰感"],
+    "儿童运动": ["儿童", "童装", "童鞋", "青少年", "亲子", "校园", "足弓"],
+    "跑步科技": ["跑鞋", "跑步", "缓震", "碳板", "竞速", "厚底", "回弹"],
+    "篮球足球": ["篮球", "足球", "篮球鞋", "足球鞋", "库里", "Curry"],
+    "户外轻运动": ["户外", "露营", "骑行", "徒步", "冲锋衣", "户外鞋", "轻户外", "溯溪"],
+    "运动恢复": ["恢复拖鞋", "拖鞋", "运动凉鞋", "洞洞鞋", "凉鞋"],
+    "品牌新品": ["新品", "上新", "发布", "首发", "上市", "联名", "推出", "登场"],
     "AI营销": ["AI", "人工智能", "大模型", "智能", "算法"],
     "商圈渠道": ["商场", "商圈", "门店", "奥莱", "客流", "旗舰店"],
 }
 
+BAD_PRODUCT_WORDS = [
+    "AI", "人工智能", "白皮书", "报告", "ESG", "可持续", "财报", "营收", "净利润",
+    "市值", "股票", "股价", "融资", "财经", "消费洞察", "市场规模", "指南",
+    "测评", "实测", "推荐", "排行榜", "怎么买", "哪款好",
+    "直降", "红包", "最低", "入手", "优惠", "特价", "券后", "凑单",
+    "世界杯观察", "比分", "赛程", "转会", "主教练", "球员",
+]
 
-def has_any(text, words):
-    return any(w in text for w in words)
+# =========================================================
+# 推断函数
+# =========================================================
+def source_name(item):
+    return raw(item.get("source") or "公开资讯")
 
 
 def infer_brand(title):
     for b in BRAND_WORDS:
         if b in title:
-            if b in ["耐克"]:
+            if b == "耐克":
                 return "Nike"
-            if b in ["阿迪达斯"]:
+            if b == "阿迪达斯":
                 return "Adidas"
             if b in ["昂跑", "On"]:
                 return "On昂跑"
+            if b in ["亚瑟士", "ASICS"]:
+                return "Asics"
+            if b == "索康尼":
+                return "Saucony"
             return b
     return "行业"
 
@@ -124,19 +147,20 @@ def infer_impact(title):
         return "平台流量与价格心智仍在强化，需关注线上热词向线下陈列和会员触达外溢。"
     if has_any(title, ["防晒", "凉感", "速干", "清凉"]):
         return "夏季功能品类进入主推窗口，防晒、凉感、速干组合仍是确定性机会。"
-    if has_any(title, ["儿童", "童装", "童鞋", "青少年", "亲子"]):
+    if has_any(title, ["儿童", "童装", "童鞋", "青少年", "亲子", "足弓"]):
         return "儿童运动消费持续被细分场景驱动，专业功能和亲子体验是核心抓手。"
-    if has_any(title, ["跑鞋", "缓震", "碳板", "足弓"]):
-        return "跑鞋科技与足部健康表达升温，终端需要更清晰的科技卖点和场景说明。"
-    if has_any(title, ["篮球", "库里"]):
-        return "篮球专业化和青少年运动心智升温，赛事、明星资产和训练装备值得跟踪。"
-    if has_any(title, ["户外", "露营", "骑行", "文旅", "出行"]):
+    if has_any(title, ["跑鞋", "缓震", "碳板", "厚底", "回弹"]):
+        return "跑鞋科技与专业功能表达升温，可迁移到青少年成人化产品卖点。"
+    if has_any(title, ["篮球", "足球", "库里"]):
+        return "专业运动心智升温，赛事、明星资产和训练装备值得持续跟踪。"
+    if has_any(title, ["户外", "露营", "骑行", "文旅", "出行", "冲锋衣"]):
         return "户外生活方式继续扩散，可联动轻户外、防晒、防雨和亲子出行产品。"
-    if has_any(title, ["AI", "人工智能", "大模型"]):
-        return "AI正在改变内容种草和投放效率，品牌营销从流量采买转向内容生产效率竞争。"
     return "品牌声量、品类认知和终端转化均需持续跟踪。"
 
 
+# =========================================================
+# 数据构建
+# =========================================================
 def build_core_points():
     text = " ".join([raw(x.get("title")) for x in a_items + b_items + c_items])
     points = []
@@ -144,7 +168,7 @@ def build_core_points():
     if has_any(text, ["618", "大促", "抖音", "天猫", "京东"]):
         points.append("618与平台内容仍是本周最强经营变量，运动户外、防晒凉感和品牌尖货是主要增量线索。")
     if has_any(text, ["防晒", "凉感", "速干", "清凉"]):
-        points.append("夏季功能品类继续升温，防晒衣、凉感T、速干短裤、防雨防滑等卖点需要前置表达。")
+        points.append("夏季功能品类继续升温，防晒衣、凉感T、速干短裤等卖点需要前置表达。")
     if has_any(text, ["儿童", "童装", "童鞋", "青少年", "亲子"]):
         points.append("儿童运动消费从单一服饰购买转向场景化需求，亲子、校园、户外和专业训练共同驱动。")
     if has_any(text, ["Nike", "耐克", "安踏", "李宁", "Adidas", "lululemon", "FILA", "亚瑟士", "On"]):
@@ -159,45 +183,56 @@ def build_core_points():
 
 
 def build_summary_text():
-    points = build_core_points()
-    return " ".join(points[:3])
+    return " ".join(build_core_points()[:3])
 
 
 def build_brand_heat():
     c = Counter()
-    for x in a_items + b_items + c_items + hot_products:
+    for x in a_items + b_items + c_items:
         title = raw(x.get("title"))
         b = infer_brand(title)
         if b != "行业":
-            c[b] += int(x.get("level_score") or x.get("hot_product_score") or 1)
+            c[b] += int(x.get("level_score") or 1)
+
+    for x in product_items:
+        for b in safe_list(x.get("brand_hits")):
+            c[raw(b)] += int(x.get("heat") or 1)
+
     return c.most_common(8)
 
 
 def build_category_heat():
     c = Counter()
-    for x in a_items + b_items + c_items + hot_products:
+    for x in a_items + b_items + c_items:
         title = raw(x.get("title"))
-        cat = infer_category(title)
-        c[cat] += int(x.get("level_score") or x.get("hot_product_score") or 1)
+        c[infer_category(title)] += int(x.get("level_score") or 1)
+
+    for x in product_items:
+        cat = raw(x.get("category")) or infer_category(raw(x.get("title")))
+        c[cat] += int(x.get("heat") or 1)
+
     return c.most_common(8)
 
 
 def build_keywords():
-    base = safe_list(weekly.get("keywords"))
     c = Counter()
-    for w in base:
+    for w in safe_list(weekly.get("keywords")):
         if raw(w):
             c[raw(w)] += 5
 
+    for row in safe_list(product_signals.get("top_keywords")):
+        if isinstance(row, list) and len(row) >= 2:
+            c[raw(row[0])] += int(row[1] or 1)
+
     pool = [
         "618", "防晒衣", "凉感", "速干", "运动户外", "儿童运动",
-        "亲子消费", "AI营销", "平台大促", "品牌竞争", "商场客流",
-        "新品发布", "联名合作", "户外生活", "暑期消费", "小红书种草",
+        "亲子消费", "平台大促", "品牌竞争", "商场客流",
+        "新品发布", "联名合作", "户外生活", "暑期消费",
         "抖音电商", "奥莱折扣", "运动童装", "跑鞋", "篮球专业",
-        "足弓健康", "室内运动", "防雨防滑",
+        "足弓健康", "防雨防滑", "碳板跑鞋", "轻户外",
     ]
 
-    text = " ".join([raw(x.get("title")) for x in all_items[:120]])
+    text = " ".join([raw(x.get("title")) for x in all_items[:120] + product_items[:80]])
     for w in pool:
         if w in text:
             c[w] += text.count(w) + 1
@@ -205,28 +240,39 @@ def build_keywords():
     return c.most_common(24)
 
 
+def is_good_product_card(item):
+    title = raw(item.get("title"))
+    if not title:
+        return False
+    if has_any(title, BAD_PRODUCT_WORDS):
+        return False
+    if raw(item.get("category")) in ["AI营销", "行业动态"]:
+        return False
+    return True
+
+
 def build_product_cards():
     cards = []
-
-    for x in hot_products:
-        title = raw(x.get("title"))
-        if not title:
+    for x in product_items:
+        if not is_good_product_card(x):
             continue
 
-        brand = infer_brand(title)
-        category = infer_category(title)
-        score = x.get("hot_product_score") or x.get("level_score") or ""
+        title = raw(x.get("title"))
+        category = raw(x.get("category")) or infer_category(title)
+        brands = safe_list(x.get("brand_hits"))
+        brand = "、".join([raw(b) for b in brands]) if brands else infer_brand(title)
+        score = x.get("heat") or ""
 
         icon = "👟"
         if has_any(title, ["防晒", "凉感", "速干", "清凉"]):
             icon = "☀️"
-        elif has_any(title, ["篮球", "库里"]):
+        elif has_any(title, ["篮球", "足球", "库里"]):
             icon = "🏀"
-        elif has_any(title, ["户外", "露营", "徒步", "冲锋"]):
+        elif has_any(title, ["户外", "露营", "徒步", "冲锋", "溯溪"]):
             icon = "⛰️"
-        elif has_any(title, ["智能", "AI", "手表"]):
-            icon = "⌚"
-        elif has_any(title, ["亲子", "儿童", "童鞋"]):
+        elif has_any(title, ["拖鞋", "凉鞋", "恢复"]):
+            icon = "🩴"
+        elif has_any(title, ["儿童", "童鞋", "青少年", "足弓"]):
             icon = "🧒"
 
         cards.append({
@@ -239,32 +285,31 @@ def build_product_cards():
             "insight": infer_impact(title),
         })
 
-    return cards[:6]
+    return cards[:9]
 
 
 def build_361_actions():
-    text = " ".join([raw(x.get("title")) for x in a_items + b_items + c_items + hot_products])
+    text = " ".join([raw(x.get("title")) for x in a_items + b_items + c_items + product_items])
     actions = []
 
     if has_any(text, ["防晒", "凉感", "速干", "清凉"]):
         actions.append("商品：继续强化防晒衣、凉感T、速干短裤、防晒帽包组合，突出夏季功能闭环。")
     if has_any(text, ["儿童", "童鞋", "足弓", "青少年", "亲子"]):
         actions.append("商品：围绕儿童足弓健康、校园运动、亲子户外建立更清晰的专业卖点表达。")
-    if has_any(text, ["篮球", "库里", "跑鞋", "缓震"]):
-        actions.append("品类：关注青少年篮球鞋、跑鞋缓震科技和训练装备，提升专业运动心智。")
+    if has_any(text, ["篮球", "足球", "跑鞋", "缓震", "碳板"]):
+        actions.append("品类：关注青少年篮球鞋、足球鞋、跑鞋缓震科技和训练装备，提升专业运动心智。")
     if has_any(text, ["618", "大促", "直播", "抖音", "天猫", "京东"]):
         actions.append("渠道：618后关注价格带修复与爆款延续，线上热词同步给线下陈列和会员触达。")
-    if has_any(text, ["AI", "人工智能", "大模型"]):
-        actions.append("营销：用AI提升内容种草、短视频脚本和门店素材生产效率，强化新品传播密度。")
-    if has_any(text, ["户外", "露营", "文旅", "骑行", "出行"]):
+    if has_any(text, ["户外", "露营", "文旅", "骑行", "出行", "冲锋衣"]):
         actions.append("场景：围绕暑期亲子出行、轻户外、防雨防滑建立区域化主题陈列。")
+    if has_any(text, ["新品", "联名", "发布", "上市"]):
+        actions.append("营销：借鉴成人运动与户外品牌新品表达方式，强化青少年产品成人化设计和科技感。")
 
     if not actions:
         actions = [
             "商品：聚焦当季核心品类，强化功能卖点和场景表达。",
             "渠道：把线上热点同步到线下陈列、会员触达和导购话术。",
             "营销：结合品牌案例优化内容种草和新品表达。",
-            "零售：持续跟踪商圈客流、竞品活动和区域机会。",
         ]
 
     return actions[:6]
@@ -274,11 +319,11 @@ def build_361_actions():
 # HTML渲染
 # =========================================================
 def render_core_cards():
-    html_text = ""
     icons = ["①", "②", "③", "④", "⑤"]
-    for i, p in enumerate(build_core_points()):
-        html_text += f"<div class='core-card'><b>{icons[i]}</b><span>{esc(p)}</span></div>"
-    return html_text
+    return "".join(
+        f"<div class='core-card'><b>{icons[i]}</b><span>{esc(p)}</span></div>"
+        for i, p in enumerate(build_core_points())
+    )
 
 
 def render_level_section(title, items, label):
@@ -306,27 +351,15 @@ def render_level_section(title, items, label):
     """
 
 
-def render_brand_bars():
-    data = build_brand_heat()
+def render_bars(data, green=False):
     if not data:
-        return "<div class='empty'>暂无品牌热度</div>"
+        return "<div class='empty'>暂无数据</div>"
     max_v = max(v for _, v in data) or 1
+    cls = "bar green" if green else "bar"
     html_text = ""
     for i, (name, v) in enumerate(data, start=1):
         w = max(8, int(v / max_v * 100))
-        html_text += f"<div class='bar-row'><label>{i}. {esc(name)}</label><div class='bar'><i style='width:{w}%'></i></div><b>{v}</b></div>"
-    return html_text
-
-
-def render_category_bars():
-    data = build_category_heat()
-    if not data:
-        return "<div class='empty'>暂无品类热度</div>"
-    max_v = max(v for _, v in data) or 1
-    html_text = ""
-    for i, (name, v) in enumerate(data, start=1):
-        w = max(8, int(v / max_v * 100))
-        html_text += f"<div class='bar-row'><label>{i}. {esc(name)}</label><div class='bar green'><i style='width:{w}%'></i></div><b>{v}</b></div>"
+        html_text += f"<div class='bar-row'><label>{i}. {esc(name)}</label><div class='{cls}'><i style='width:{w}%'></i></div><b>{v}</b></div>"
     return html_text
 
 
@@ -365,19 +398,18 @@ def render_product_cards():
 
 
 def render_361_actions():
-    html_text = ""
-    for x in build_361_actions():
-        html_text += f"<div class='plan-card'>{esc(x)}</div>"
-    return html_text
+    return "".join(f"<div class='plan-card'>{esc(x)}</div>" for x in build_361_actions())
 
 
 date_range = f"最近{recent_days}天"
 total_count = weekly_summary.get("total") or len(all_items)
 a_count = weekly_summary.get("a_count") or len(a_items)
 b_count = weekly_summary.get("b_count") or len(b_items)
-c_count = weekly_summary.get("c_count") or len(c_items)
-hot_count = weekly_summary.get("hot_product_count") or len(hot_products)
+hot_count = product_signal_count
 
+# =========================================================
+# 输出HTML
+# =========================================================
 html_text = f"""
 <!DOCTYPE html>
 <html lang='zh-CN'>
@@ -446,8 +478,8 @@ body{{background:#eef4fb;font-family:'Microsoft YaHei','PingFang SC',Arial,sans-
   <section class='page'>
     <div class='head'><h2>P6｜竞品热度与趋势地图</h2><span>BRAND / CATEGORY / KEYWORDS</span></div>
     <div class='grid-2'>
-      <div class='panel'><h3>品牌热度排行</h3>{render_brand_bars()}</div>
-      <div class='panel'><h3>品类/场景热度排行</h3>{render_category_bars()}</div>
+      <div class='panel'><h3>品牌热度排行</h3>{render_bars(build_brand_heat())}</div>
+      <div class='panel'><h3>品类/场景热度排行</h3>{render_bars(build_category_heat(), green=True)}</div>
     </div>
     <div style='height:16px'></div>
     <div class='word-cloud'>{render_keyword_cloud()}</div>
@@ -463,7 +495,7 @@ body{{background:#eef4fb;font-family:'Microsoft YaHei','PingFang SC',Arial,sans-
     <div class='plan-grid'>{render_361_actions()}</div>
   </section>
 
-  <div class='footer'>数据来源：TrendRadar weekly_news.json / Google News RSS / 商品趋势信号库 ｜ 内容随每周新闻事实自动变化</div>
+  <div class='footer'>数据来源：TrendRadar weekly_news.json / Google News RSS / latest_product_signals.json ｜ 内容随每周新闻事实自动变化</div>
 </div>
 </body>
 </html>
@@ -472,4 +504,4 @@ body{{background:#eef4fb;font-family:'Microsoft YaHei','PingFang SC',Arial,sans-
 OUTPUT_HTML.write_text(html_text, encoding="utf-8")
 
 print(f"weekly html generated: {OUTPUT_HTML}")
-print(f"A: {len(a_items)} | B: {len(b_items)} | C: {len(c_items)} | hot products: {len(hot_products)}")
+print(f"A: {len(a_items)} | B: {len(b_items)} | C: {len(c_items)} | product signals: {product_signal_count} | product cards: {len(build_product_cards())}")
