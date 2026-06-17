@@ -78,36 +78,14 @@ jobs:
           git add .
           git commit -m "weekly report" || echo "nothing to commit"
           git push
+   
 
-      - name: Send Weekly Link
-        continue-on-error: true
-        run: |
-          curl --max-time 20 --connect-timeout 10 "${{ secrets.REPORT_WEBHOOK }}" \
-            -H 'Content-Type: application/json' \
-            -d '{
-              "msgtype": "markdown",
-              "markdown": {
-                "content": "# 361°儿童行业周报\n\n本周行业周报已生成：\n\n[点击查看完整周报](https://yangyituo1231.github.io/Trendradar-sports-news/output/weekly/weekly_report.html)\n\n下方同步推送周报长图。"
-              }
-            }'
-
-      - name: Send Weekly Link
-        continue-on-error: true
-        run: |
-          curl --max-time 20 --connect-timeout 10 "${{ secrets.REPORT_WEBHOOK }}" \
-            -H "Content-Type: application/json" \
-            -d '{
-              "msgtype": "markdown",
-              "markdown": {
-                "content": "# 361°儿童行业周报\n\n本周周报已生成\n\n点击查看完整报告\n\n👇 图片同步推送"
-              }
-            }'
-
-      - name: Send Weekly Image
+      - name: Send Weekly WeCom
         continue-on-error: true
         env:
           REPORT_WEBHOOK: ${{ secrets.REPORT_WEBHOOK }}
+          WEEKLY_URL: https://yangyituo1231.github.io/Trendradar-sports-news/output/weekly/weekly_report.html
           SOURCE_FILE: weekly-report.png
           SEND_FILE: weekly-report-send.jpg
         run: |
-          python scripts/send_wecom_image.py || echo "weekly send failed"
+          python scripts/send_weekly_wecom.py
