@@ -497,6 +497,7 @@ def build_product_cards():
             "source": raw(s.get("source")),
             "icon": icon,
             "insight": insight,
+            "link": raw(s.get("link", "")),
         })
         if len(cards) >= 12:
             break
@@ -560,21 +561,19 @@ def render_level_table(title, items, subtitle):
     for i, x in enumerate(items[:5], start=1):
         link = raw(x.get("link", ""))
         title_html = short(x["title"], 42)
+
         if link:
             title_html = f"<a href='{esc(link)}' target='_blank'>{title_html}</a>"
 
         rows += f"""
         <tr>
           <td><span class='rank'>{i}</span></td>
-          <td class='event-title'>
-            {title_html}
-            <em>{esc(x.get('source',''))}</em>
-          </td>
+          <td class='event-title'>{short(x['title'], 42)}...</td>
           <td>{esc(x.get('brand'))}</td>
           <td>{esc(x.get('event'))}</td>
           <td>{esc(x.get('impact'))}</td>
         </tr>
-        """
+     c   """
     
           link = raw(x.get("link"))
           link = raw(x.get("link", ""))
@@ -669,11 +668,17 @@ def render_product_cards():
     html_text = ""
     for i, p in enumerate(product_cards[:12], start=1):
         tags = " / ".join(p.get("tags", []))
+        
+        title_html = short(p.get("title"), 36)
+        link = raw(p.get("link", "")) 
+        if link:
+            title_html = f"<a href='{esc(link)}' target='_blank'>{title_html}</a>"
+
         html_text += f"""
         <div class='product-card'>
-          <div class='product-cover'><span>TOP {i}</span><i>{p.get('icon')}</i><strong>{esc(p.get('category'))}</strong><em>热度 {esc(p.get('heat'))}</em></div>
-          <h4>{short(p.get('title'), 36)}</h4>
-          <p class='brand'>{esc(p.get('brand'))}｜{esc(p.get('source'))}</p>
+          <div class='product-cover'><span>TOP {i}</span><i>{p.get('icon')}</i><strong>{esc(p.get('category'))}</strong></div>
+          <h4>{title_html}</h4>
+          <p class='brand'>{esc(p.get('brand'))} | {esc(p.get('source'))}</p>
           <p class='tags'>{esc(tags)}</p>
           <p class='insight'>{esc(p.get('insight'))}</p>
         </div>
@@ -753,6 +758,16 @@ body{{background:#eef4fb;font-family:'Microsoft YaHei','PingFang SC',Arial,sans-
 .products{{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}}.product-card{{border:1px solid #dbe6f6;border-radius:20px;background:#fbfdff;padding:13px;box-shadow:0 8px 18px rgba(20,60,110,.06)}}.product-cover{{height:150px;border-radius:16px;background:radial-gradient(circle at 80% 20%,rgba(25,163,255,.22),transparent 30%),linear-gradient(135deg,#edf5ff,#f8fbff);display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;margin-bottom:11px}}.product-cover span{{position:absolute;top:8px;left:8px;background:#062b78;color:#fff;border-radius:999px;padding:4px 8px;font-size:11px;font-weight:950}}.product-cover i{{font-style:normal;font-size:46px}}.product-cover strong{{font-size:21px;color:#0b4db3;margin-top:8px}}.product-cover em{{font-style:normal;color:#0f766e;background:#ecfdf5;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:900;margin-top:8px}}.product-card h4{{font-size:15.5px;line-height:1.35;color:#0d2d68;min-height:42px}}.brand{{font-size:12px;color:#0b63d8;font-weight:900;margin-top:6px}}.tags{{font-size:12px;color:#1d8c54;font-weight:850;margin-top:7px}}.insight{{margin-top:9px;background:#f0fdf4;color:#166534;border-radius:12px;padding:9px;font-size:12.5px;line-height:1.45;font-weight:850}}
 .plan-grid{{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}}.plan-card{{border-radius:18px;background:linear-gradient(135deg,#fff7ed,#fff);border:1px solid #fed7aa;color:#7c2d12;font-size:15px;line-height:1.6;font-weight:850;padding:17px;min-height:132px}}
 .empty{{color:#8a99ad;font-size:14px;text-align:center;padding:24px}}.footer{{text-align:center;color:#7184a3;font-size:12px;margin:16px 0 4px}}
+.event-title a,
+.product-card h4 a {
+  color:#0b63d8;
+  text-decoration:none;
+}
+
+.event-title a:hover,
+.product-card h4 a:hover {
+  text-decoration:underline;
+}
 </style>
 </head>
 <body>
