@@ -24,18 +24,27 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install \
-            requests \
-            beautifulsoup4 \
-            pyyaml \
-            lxml \
-            pillow \
-            playwright \
-            openai \
+          pip install 
+            requests 
+            beautifulsoup4 
+            pyyaml 
+            lxml 
+            pillow 
+            playwright 
+            openai 
             pandas
 
-      - name: Install browser
+      - name: Install browser and fonts
         run: |
+          sudo apt-get update
+
+          sudo apt-get install -y 
+            fonts-noto-cjk 
+            fonts-wqy-zenhei 
+            fontconfig
+
+          sudo fc-cache -fv
+
           playwright install --with-deps chromium
 
       - name: Generate Weekly Data
@@ -60,11 +69,38 @@ jobs:
         run: |
           python scripts/generate_weekly_html.py
 
+      - name: Render Weekly Image
+        run: |
+          python scripts/render_weekly_report.py
+
+      - name: Upload Weekly HTML
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-report-html
+          path: output/weekly/weekly_report.html
+
+      - name: Upload Weekly Image
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-report-image
+          path: weekly-report.png
+
       - name: Commit Weekly Report
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
 
           git add .
+
           git commit -m "weekly report" || echo "nothing to commit"
+
           git push
+
+      - name: Send Weekly Image
+        continue-on-error: true
+        env:
+          REPORT_WEBHOOK: ${{ secrets.REPORT_WEBHOOK }}
+          SOURCE_FILE: weekly-report.png
+          SEND_FILE: weekly-report-send.jpg
+        run: |
+          python scripts/send_wecom_image.py || echo "weekly send failed"
