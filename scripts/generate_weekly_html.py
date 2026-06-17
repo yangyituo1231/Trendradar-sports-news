@@ -763,15 +763,15 @@ body{{background:#eef4fb;font-family:'Microsoft YaHei','PingFang SC',Arial,sans-
 .plan-grid{{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}}.plan-card{{border-radius:18px;background:linear-gradient(135deg,#fff7ed,#fff);border:1px solid #fed7aa;color:#7c2d12;font-size:15px;line-height:1.6;font-weight:850;padding:17px;min-height:132px}}
 .empty{{color:#8a99ad;font-size:14px;text-align:center;padding:24px}}.footer{{text-align:center;color:#7184a3;font-size:12px;margin:16px 0 4px}}
 .event-title a,
-.product-card h4 a {
+.product-card h4 a {{
   color:#0b63d8;
   text-decoration:none;
-}
+}}
 
 .event-title a:hover,
-.product-card h4 a:hover {
+.product-card h4 a:hover {{
   text-decoration:underline;
-}
+}}
 </style>
 </head>
 <body>
