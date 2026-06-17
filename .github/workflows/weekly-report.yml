@@ -2,7 +2,7 @@ name: Weekly Industry Report
 
 on:
   schedule:
-    - cron: '30 0 * * 1'
+    - cron: '30 18 * * 1'
   workflow_dispatch:
 
 env:
