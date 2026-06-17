@@ -121,7 +121,7 @@ BRAND_ALIASES = {
     "361儿童": "361儿童", "361°儿童": "361儿童", "361度儿童": "361儿童", "361度": "361°", "361°": "361°", "361": "361°",
     "巴拉巴拉": "巴拉巴拉", "Balabala": "巴拉巴拉",
     "HOKA": "HOKA", "Hoka": "HOKA",
-    "On Running": "On昂跑", "昂跑": "On昂跑", "On": "On昂跑",
+    "On Running": "On昂跑", "昂跑": "On昂跑",
     "亚瑟士": "Asics", "ASICS": "Asics", "Asics": "Asics",
     "Saucony": "Saucony", "索康尼": "Saucony",
     "Salomon": "Salomon", "萨洛蒙": "Salomon",
