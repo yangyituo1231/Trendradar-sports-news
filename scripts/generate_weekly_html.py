@@ -307,7 +307,6 @@ def collect_news_events():
                     "source": raw(item.get("source")),
                     "impact": event_impact(title, brand, event),
                     "score": base + int(item.get("score") or 0) // 10,
-                    "link": raw(item.get("link")),
                 })
 
     merged = {}
@@ -549,6 +548,7 @@ def render_core_cards():
 
 
 def render_level_table(title, items, subtitle):
+
     if not items:
         return f"""
         <div class='level-block'>
@@ -556,9 +556,11 @@ def render_level_table(title, items, subtitle):
           <div class='empty'>暂无数据</div>
         </div>
         """
+
     rows = ""
 
     for i, x in enumerate(items[:5], start=1):
+
         link = raw(x.get("link", ""))
         title_html = short(x["title"], 42)
 
@@ -568,35 +570,37 @@ def render_level_table(title, items, subtitle):
         rows += f"""
         <tr>
           <td><span class='rank'>{i}</span></td>
-          <td class='event-title'>{short(x['title'], 42)}...</td>
-          <td>{esc(x.get('brand'))}</td>
-          <td>{esc(x.get('event'))}</td>
-          <td>{esc(x.get('impact'))}</td>
-        </tr>
-     c   """
-    
-          link = raw(x.get("link"))
-          link = raw(x.get("link", ""))
-          title_html = short(x["title"], 42)
-          if link:
-              title_html = f"<a href='{esc(link)}' target='_blank'>{title_html}</a>"
-         
+
           <td class='event-title'>
-              {title_html}
-              <em>{esc(x.get('source',''))}</em>
+            {title_html}
+            <em>{esc(x.get('source',''))}</em>
           </td>
-          
+
           <td>{esc(x.get('brand'))}</td>
           <td>{esc(x.get('event'))}</td>
           <td>{esc(x.get('impact'))}</td>
         </tr>
         """
+
     return f"""
     <div class='level-block'>
       <div class='level-title'>{esc(title)}<span>{esc(subtitle)}</span></div>
+
       <table class='event-table'>
-        <thead><tr><th>#</th><th>事件</th><th>品牌</th><th>类型</th><th>影响判断</th></tr></thead>
-        <tbody>{rows}</tbody>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>事件</th>
+            <th>品牌</th>
+            <th>类型</th>
+            <th>影响判断</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {rows}
+        </tbody>
+
       </table>
     </div>
     """
