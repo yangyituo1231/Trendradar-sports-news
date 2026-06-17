@@ -8,8 +8,8 @@ from PIL import Image
 
 WEBHOOK = os.getenv("REPORT_WEBHOOK")
 
-SOURCE_FILE = "daily-report.png"
-SEND_FILE = "daily-report-send.jpg"
+SOURCE_FILE = os.getenv("SOURCE_FILE", "daily-report.png")
+SEND_FILE = os.getenv("SEND_FILE", "daily-report-send.jpg")
 NEWS_FILE = Path("output/news/top_news.json")
 
 
