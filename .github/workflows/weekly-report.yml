@@ -83,6 +83,18 @@ jobs:
         continue-on-error: true
         run: |
           curl --max-time 20 --connect-timeout 10 "${{ secrets.REPORT_WEBHOOK }}" \
+            -H 'Content-Type: application/json' \
+            -d '{
+              "msgtype": "markdown",
+              "markdown": {
+                "content": "# 361°儿童行业周报\n\n本周行业周报已生成：\n\n[点击查看完整周报](https://yangyituo1231.github.io/Trendradar-sports-news/output/weekly/weekly_report.html)\n\n下方同步推送周报长图。"
+              }
+            }'
+
+      - name: Send Weekly Link
+        continue-on-error: true
+        run: |
+          curl --max-time 20 --connect-timeout 10 "${{ secrets.REPORT_WEBHOOK }}" \
             -H "Content-Type: application/json" \
             -d '{
               "msgtype": "markdown",
