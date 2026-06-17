@@ -29,14 +29,8 @@ jobs:
       - name: Install browser and fonts
         run: |
           sudo apt-get update
-
-          sudo apt-get install -y 
-            fonts-noto-cjk 
-            fonts-wqy-zenhei 
-            fontconfig
-
+          sudo apt-get install -y fonts-noto-cjk fonts-wqy-zenhei fontconfig
           sudo fc-cache -fv
-
           playwright install --with-deps chromium
 
       - name: Generate Weekly Data
@@ -81,22 +75,19 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-
           git add .
-
           git commit -m "weekly report" || echo "nothing to commit"
-
           git push
 
       - name: Send Weekly Link
         continue-on-error: true
         run: |
-          curl --max-time 20 --connect-timeout 10 "${{ secrets.REPORT_WEBHOOK }}" 
-            -H 'Content-Type: application/json' 
+          curl --max-time 20 --connect-timeout 10 "${{ secrets.REPORT_WEBHOOK }}" \
+            -H "Content-Type: application/json" \
             -d '{
               "msgtype": "markdown",
               "markdown": {
-                "content": "# 361°儿童行业周报\n\n本周周报已生成：\n\n点击查看完整周报\n\n👇 下方同步推送周报长图"
+                "content": "# 361°儿童行业周报\n\n本周周报已生成\n\n点击查看完整报告\n\n👇 图片同步推送"
               }
             }'
 
