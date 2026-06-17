@@ -20,29 +20,12 @@ SEND_FILE = os.getenv("SEND_FILE", "weekly-report-send.jpg")
 
 def send_markdown():
 
-    content = f"""# 📊 361°儿童行业周报
+    content = f""" 
+    📊 361°儿童行业周报已生成。
 
-本周行业周报已生成。
+    {WEEKLY_URL} 
 
-👉 点击查看完整网页版：
-
-{WEEKLY_URL}
-
-支持查看：
-
-• 行业事件分级
-
-• 竞品动态
-
-• 商品机会信号
-
-• 热门赛道
-
-• 原文链接跳转
-
-👇 周报长图同步推送
-
-"""
+    """
 
     data = {
 
