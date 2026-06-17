@@ -26,11 +26,14 @@ def check_env():
 
 
 def post_wecom(payload, name):
+
     resp = requests.post(
         WEBHOOK,
-        headers={"Content-Type": "application/json"},
-        data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
-        timeout=20,
+        headers={
+            "Content-Type": "application/json; charset=utf-8"
+        },
+        json=payload,
+        timeout=20
     )
 
     print(f"{name} http status: {resp.status_code}")
@@ -46,11 +49,15 @@ def post_wecom(payload, name):
 
 
 def send_markdown():
-    content = f"""ð 361Â°å¿ç«¥è¡ä¸å¨æ¥
 
-[ç¹å»æ¥çå®æ´ç½é¡µç]({WEEKLY_URL})
+    content = f"""
+📊 361°儿童行业周报
 
-ð å¨æ¥é¿å¾åæ­¥æ¨é
+点击查看完整网页版：
+
+{WEEKLY_URL}
+
+👇 周报长图同步推送
 """
 
     payload = {
@@ -103,7 +110,13 @@ def send_image():
 
 if __name__ == "__main__":
     check_env()
+    import time
+
     send_markdown()
+
+    time.sleep(2)
+
     compress_image()
+
     send_image()
     print("weekly report sent")
