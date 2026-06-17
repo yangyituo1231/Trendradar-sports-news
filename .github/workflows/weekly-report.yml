@@ -24,15 +24,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install 
-            requests 
-            beautifulsoup4 
-            pyyaml 
-            lxml 
-            pillow 
-            playwright 
-            openai 
-            pandas
+          pip install requests beautifulsoup4 pyyaml lxml pillow playwright openai pandas
 
       - name: Install browser and fonts
         run: |
