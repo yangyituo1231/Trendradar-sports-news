@@ -569,4 +569,4 @@ body{{background:#eef4fb;font-family:'Microsoft YaHei','PingFang SC',Arial,sans-
 
 OUTPUT_HTML.write_text(html_text, encoding="utf-8")
 print(f"weekly html generated: {OUTPUT_HTML}")
-print(f"news events: {len(news_events)} | keywords: {len(keywords)} | product signals: {signal_count}"）
+print(f"news events: {len(news_events)} | keywords: {len(keywords)} | product signals: {signal_count}")
