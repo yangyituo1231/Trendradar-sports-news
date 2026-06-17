@@ -556,11 +556,28 @@ def render_level_table(title, items, subtitle):
         </div>
         """
     rows = ""
+
     for i, x in enumerate(items[:5], start=1):
+        link = raw(x.get("link", ""))
+        title_html = short(x["title"], 42)
+        if link:
+            title_html = f"<a href='{esc(link)}' target='_blank'>{title_html}</a>"
+
         rows += f"""
         <tr>
           <td><span class='rank'>{i}</span></td>
+          <td class='event-title'>
+            {title_html}
+            <em>{esc(x.get('source',''))}</em>
+          </td>
+          <td>{esc(x.get('brand'))}</td>
+          <td>{esc(x.get('event'))}</td>
+          <td>{esc(x.get('impact'))}</td>
+        </tr>
+        """
+    
           link = raw(x.get("link"))
+          link = raw(x.get("link", ""))
           title_html = short(x["title"], 42)
           if link:
               title_html = f"<a href='{esc(link)}' target='_blank'>{title_html}</a>"
