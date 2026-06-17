@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17 10:34:56",
+  "generated_at": "2026-06-17 10:55:30",
   "source": "Open-Meteo",
   "regions": {
     "north": {
@@ -13,7 +13,7 @@
           "temp_max": 30.1,
           "temp_min": 20.1,
           "precipitation": 1.7,
-          "wind": 7.9,
+          "wind": 7.6,
           "risk_score": 20,
           "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         },
@@ -24,7 +24,7 @@
           "temp_max": 31.7,
           "temp_min": 21.5,
           "precipitation": 0.0,
-          "wind": 9.1,
+          "wind": 9.6,
           "risk_score": 45,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         },
@@ -35,7 +35,7 @@
           "temp_max": 32.3,
           "temp_min": 22.7,
           "precipitation": 6.0,
-          "wind": 7.7,
+          "wind": 8.0,
           "risk_score": 57,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         }
@@ -54,7 +54,7 @@
           "temp_max": 30.0,
           "temp_min": 21.5,
           "precipitation": 0.5,
-          "wind": 9.2,
+          "wind": 9.9,
           "risk_score": 20,
           "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         },
@@ -65,7 +65,7 @@
           "temp_max": 30.2,
           "temp_min": 23.0,
           "precipitation": 0.8,
-          "wind": 9.7,
+          "wind": 10.7,
           "risk_score": 20,
           "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         },
@@ -76,7 +76,7 @@
           "temp_max": 28.4,
           "temp_min": 23.8,
           "precipitation": 40.9,
-          "wind": 16.0,
+          "wind": 15.7,
           "risk_score": 60,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         }
@@ -95,7 +95,7 @@
           "temp_max": 29.5,
           "temp_min": 24.8,
           "precipitation": 47.5,
-          "wind": 14.3,
+          "wind": 14.5,
           "risk_score": 60,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         },
@@ -106,7 +106,7 @@
           "temp_max": 30.5,
           "temp_min": 24.2,
           "precipitation": 17.5,
-          "wind": 16.1,
+          "wind": 16.6,
           "risk_score": 67,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         },
@@ -136,7 +136,7 @@
           "temp_max": 27.2,
           "temp_min": 21.1,
           "precipitation": 4.4,
-          "wind": 8.8,
+          "wind": 8.9,
           "risk_score": 12,
           "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
         },
@@ -147,7 +147,7 @@
           "temp_max": 31.9,
           "temp_min": 21.5,
           "precipitation": 0.1,
-          "wind": 15.0,
+          "wind": 12.4,
           "risk_score": 20,
           "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         },
@@ -158,7 +158,7 @@
           "temp_max": 34.4,
           "temp_min": 22.3,
           "precipitation": 1.6,
-          "wind": 14.0,
+          "wind": 11.5,
           "risk_score": 45,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         }
@@ -188,7 +188,7 @@
           "temp_max": 30.9,
           "temp_min": 24.3,
           "precipitation": 0.6,
-          "wind": 14.0,
+          "wind": 14.6,
           "risk_score": 20,
           "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         },
