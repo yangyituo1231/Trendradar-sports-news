@@ -18,6 +18,7 @@ OUTPUT_HTML = WEEKLY_DIR / "weekly_report.html"
 
 WEEKLY_DIR.mkdir(parents=True, exist_ok=True)
 
+
 # =========================================================
 # 基础工具
 # =========================================================
@@ -34,17 +35,32 @@ def safe_list(v):
     return v if isinstance(v, list) else []
 
 
-def esc(v):
-    return html.escape(str(v or "").replace("\n", " ").strip())
-
-
 def raw(v):
     return re.sub(r"\s+", " ", str(v or "").replace("\n", " ").strip())
+
+
+def esc(v):
+    return html.escape(raw(v), quote=True)
+
+
+def clean_url(v):
+    url = raw(v)
+    if url.startswith("http://") or url.startswith("https://"):
+        return url
+    return ""
 
 
 def short(v, n=42):
     t = raw(v)
     return esc(t if len(t) <= n else t[:n] + "...")
+
+
+def link_text(title, link, n=42):
+    title_html = short(title, n)
+    link = clean_url(link)
+    if link:
+        return f"<a href='{esc(link)}' target='_blank' rel='noopener noreferrer'>{title_html}</a>"
+    return title_html
 
 
 def parse_ai_json(v):
@@ -80,10 +96,18 @@ def count_row_name(row, keys):
             return raw(row.get(k))
     return ""
 
+
+def norm_key(v):
+    text = raw(v).lower()
+    text = re.sub(r"[，。！？、；：:,.!?（）()【】$begin:math:display$$end:math:display$《》“”\"'\s\-_/|]+", "", text)
+    return text[:50]
+
+
 # =========================================================
 # 读取数据
 # =========================================================
 analysis = load_json(ANALYSIS_FILE, {})
+
 product_signals = analysis.get("product_signals") if isinstance(analysis.get("product_signals"), dict) else {}
 if not product_signals:
     product_signals = load_json(PRODUCT_SIGNAL_FILE, {})
@@ -99,21 +123,42 @@ generated_time = datetime.now().strftime("%Y-%m-%d %H:%M")
 summary = analysis.get("summary", {}) if isinstance(analysis.get("summary"), dict) else {}
 ai_judgement = parse_ai_json(analysis.get("ai_judgement") or summary.get("ai_judgement"))
 
+
 # =========================================================
-# 新闻动态提取：日报变，周报变
+# 品牌 / 事件推断
 # =========================================================
 BRAND_ALIASES = {
-    "安踏儿童": "安踏儿童", "安踏": "安踏", "FILA KIDS": "FILA KIDS", "FILA": "FILA",
-    "李宁YOUNG": "李宁YOUNG", "李宁": "李宁", "特步儿童": "特步儿童", "特步": "特步",
-    "Nike": "Nike", "耐克": "Nike", "Adidas": "Adidas", "阿迪": "Adidas", "阿迪达斯": "Adidas",
-    "Puma": "Puma", "彪马": "Puma", "361儿童": "361儿童", "361度": "361", "361": "361",
-    "巴拉巴拉": "巴拉巴拉", "HOKA": "HOKA", "昂跑": "On昂跑", "On": "On昂跑", "亚瑟士": "亚瑟士",
+    "安踏儿童": "安踏儿童",
+    "安踏": "安踏",
+    "FILA KIDS": "FILA KIDS",
+    "FILA": "FILA",
+    "李宁YOUNG": "李宁YOUNG",
+    "李宁": "李宁",
+    "特步儿童": "特步儿童",
+    "特步": "特步",
+    "Nike": "Nike",
+    "耐克": "Nike",
+    "Adidas": "Adidas",
+    "阿迪": "Adidas",
+    "阿迪达斯": "Adidas",
+    "Puma": "Puma",
+    "彪马": "Puma",
+    "361儿童": "361儿童",
+    "361度": "361",
+    "361": "361",
+    "巴拉巴拉": "巴拉巴拉",
+    "HOKA": "HOKA",
+    "昂跑": "On昂跑",
+    "On": "On昂跑",
+    "亚瑟士": "亚瑟士",
 }
+
 EVENT_WORDS = [
     "签约", "代言", "联名", "战略合作", "合作", "新品", "发布", "开店", "开业", "旗舰店",
     "实验室", "创新中心", "研发", "换帅", "总裁", "CEO", "收购", "投资", "出圈", "爆火",
     "防晒", "凉感", "拖鞋", "篮球", "跑鞋", "户外", "618", "大促", "战报", "直播",
 ]
+
 BAD_WORDS = ["涨停", "跌停", "龙虎榜", "股价", "市值", "证券", "A股", "港股", "比分", "赛程", "转会", "主教练"]
 
 
@@ -152,7 +197,50 @@ def event_impact(title, brand, event):
     return "品牌声量、品类认知和终端转化均需跟踪"
 
 
+# =========================================================
+# 新闻事件：优先用 weekly_analysis.json
+# =========================================================
 def collect_news_events():
+    output = []
+
+    source_lists = [
+        analysis.get("major_events"),
+        analysis.get("competitor_actions"),
+    ]
+
+    for source_list in source_lists:
+        for item in safe_list(source_list):
+            if not isinstance(item, dict):
+                continue
+
+            title = raw(item.get("title"))
+            if not title or any(w in title for w in BAD_WORDS):
+                continue
+
+            output.append({
+                "date": raw(item.get("date")),
+                "title": title,
+                "brand": raw(item.get("brand")) or infer_brand(title),
+                "event": raw(item.get("event_type") or item.get("action_type")) or infer_event(title),
+                "source": raw(item.get("source")),
+                "impact": raw(item.get("impact") or item.get("insight")) or event_impact(title, raw(item.get("brand")), raw(item.get("event_type"))),
+                "score": int(item.get("heat") or 50),
+                "link": clean_url(item.get("link")),
+                "count": 1,
+            })
+
+    if output:
+        used = set()
+        deduped = []
+        for x in sorted(output, key=lambda v: v.get("score", 0), reverse=True):
+            key = norm_key(x.get("title"))
+            if key in used:
+                continue
+            used.add(key)
+            deduped.append(x)
+        return deduped
+
+    # 兜底：从日报 history 里取
     pool = []
     for day in history_days:
         date = day.get("date", "")
@@ -163,6 +251,7 @@ def collect_news_events():
                 title = raw(item.get("title"))
                 if not title or any(w in title for w in BAD_WORDS):
                     continue
+
                 brand = raw(item.get("brand")) or infer_brand(title)
                 event = infer_event(title)
                 base = 1
@@ -172,6 +261,7 @@ def collect_news_events():
                     base += 3
                 if brand != "行业":
                     base += 2
+
                 pool.append({
                     "date": date,
                     "title": title,
@@ -180,31 +270,44 @@ def collect_news_events():
                     "source": raw(item.get("source")),
                     "impact": event_impact(title, brand, event),
                     "score": base + int(item.get("score") or 0) // 10,
-                    "link": raw(item.get("link")),
+                    "link": clean_url(item.get("link")),
+                    "count": 1,
                 })
-    # 去重并累计热度
+
     merged = {}
     for x in pool:
-        key = re.sub(r"[，。！？、；：:,.!?（）()【】\[\]《》\s]", "", x["title"])[:36]
+        key = norm_key(x["title"])
         if key not in merged:
             merged[key] = x
             merged[key]["count"] = 0
         merged[key]["count"] += 1
         merged[key]["score"] += x.get("score", 0)
+
     return sorted(merged.values(), key=lambda x: (x.get("score", 0), x.get("count", 0)), reverse=True)
 
 
 news_events = collect_news_events()
+
 
 # =========================================================
 # 热词 / 品牌 / 商品 / 区域
 # =========================================================
 def collect_keywords():
     c = Counter()
+
+    for row in safe_list(analysis.get("keywords")):
+        if isinstance(row, dict):
+            name = raw(row.get("word") or row.get("keyword") or row.get("name"))
+            if name:
+                c[name] += int(row.get("count") or 1)
+        elif isinstance(row, str):
+            c[raw(row)] += 1
+
     for day in history_days:
         for w in safe_list(day.get("words")):
             if raw(w):
                 c[raw(w)] += 1
+
         for n in safe_list(day.get("top_news")) + safe_list(day.get("competitor_news")):
             if isinstance(n, dict):
                 title = raw(n.get("title"))
@@ -214,10 +317,12 @@ def collect_keywords():
                 b = infer_brand(title)
                 if b != "行业":
                     c[b] += 1
+
     for row in pair_rows(product_signals.get("top_keywords", []), "keyword"):
         name = count_row_name(row, ["keyword", "word", "name"])
         if name:
             c[name] += int(row.get("count") or 1)
+
     return c.most_common(28)
 
 
@@ -226,10 +331,12 @@ def collect_brand_heat():
     for x in news_events:
         if x["brand"]:
             c[x["brand"]] += x.get("count", 1) + x.get("score", 0)
+
     for row in pair_rows(product_signals.get("top_brands", []), "brand"):
         name = count_row_name(row, ["brand", "name"])
         if name:
             c[name] += int(row.get("count") or 1)
+
     return c.most_common(10)
 
 
@@ -237,19 +344,27 @@ def collect_category_heat():
     rows = pair_rows(product_signals.get("top_categories", []), "category")
     if rows:
         return sorted(rows, key=lambda x: int(x.get("count") or 0), reverse=True)[:10]
+
     c = Counter()
     text = " ".join([x["title"] for x in news_events]) + " " + " ".join(w for w, _ in collect_keywords())
     rules = {
-        "篮球专业": ["篮球", "库里"], "防晒凉感": ["防晒", "凉感", "速干"], "运动恢复": ["拖鞋", "恢复", "凉鞋"],
-        "跑鞋科技": ["跑鞋", "碳板", "缓震"], "儿童户外": ["户外", "露营", "文旅"], "平台大促": ["618", "直播", "大促"],
+        "篮球专业": ["篮球", "库里"],
+        "防晒凉感": ["防晒", "凉感", "速干"],
+        "运动恢复": ["拖鞋", "恢复", "凉鞋"],
+        "跑鞋科技": ["跑鞋", "碳板", "缓震"],
+        "儿童户外": ["户外", "露营", "文旅"],
+        "平台大促": ["618", "直播", "大促"],
     }
+
     for name, keys in rules.items():
         c[name] = sum(text.count(k) for k in keys)
+
     return [{"category": k, "count": v} for k, v in c.most_common(10) if v > 0]
 
 
 def collect_regions():
     out = []
+
     analysis_regions = analysis.get("regions") or analysis.get("region_analysis") or []
     if isinstance(analysis_regions, list) and analysis_regions:
         for r in analysis_regions[:6]:
@@ -259,8 +374,10 @@ def collect_regions():
                     "summary": raw(r.get("summary") or ""),
                     "suggestion": raw(r.get("suggestion") or ""),
                 })
+
     if out:
         return out
+
     region_counter = defaultdict(list)
     for day in history_days:
         rr = day.get("region_reports")
@@ -270,38 +387,72 @@ def collect_regions():
                     name = raw(r.get("name") or r.get("region"))
                     if name:
                         region_counter[name].append("；".join([raw(r.get(k)) for k in ["hot", "flow", "focus", "action"] if raw(r.get(k))]))
+
     for name, texts in region_counter.items():
-        out.append({"name": name, "summary": "；".join(texts[:2]), "suggestion": "结合天气、商圈和主推品类做区域差异化承接"})
+        out.append({
+            "name": name,
+            "summary": "；".join(texts[:2]),
+            "suggestion": "结合天气、商圈和主推品类做区域差异化承接"
+        })
+
     return out[:6]
 
 
 def build_product_cards():
     signals = safe_list(product_signals.get("signals"))
     cards = []
+    seen = set()
+
     for s in sorted([x for x in signals if isinstance(x, dict)], key=lambda x: int(x.get("heat") or 0), reverse=True):
         title = raw(s.get("short_title") or s.get("title"))
         if not title:
             continue
+
+        key = norm_key(title)
+        if key in seen:
+            continue
+        seen.add(key)
+
         keys = safe_list(s.get("keyword_hits"))[:3]
         brands = safe_list(s.get("brand_hits"))[:2]
         category = raw(s.get("category") or "商品趋势")
         text = title + " ".join(keys) + category
+
         icon = "👟"
-        if any(k in text for k in ["防晒", "凉感", "速干"]): icon = "☀️"
-        elif any(k in text for k in ["篮球", "库里"]): icon = "🏀"
-        elif any(k in text for k in ["户外", "冲锋衣", "露营"]): icon = "⛰️"
-        elif any(k in text for k in ["拖鞋", "凉鞋", "恢复"]): icon = "🩴"
-        elif any(k in text for k in ["校园", "开学"]): icon = "🎒"
+        if any(k in text for k in ["防晒", "凉感", "速干"]):
+            icon = "☀️"
+        elif any(k in text for k in ["篮球", "库里"]):
+            icon = "🏀"
+        elif any(k in text for k in ["户外", "冲锋衣", "露营"]):
+            icon = "⛰️"
+        elif any(k in text for k in ["拖鞋", "凉鞋", "恢复"]):
+            icon = "🩴"
+        elif any(k in text for k in ["校园", "开学"]):
+            icon = "🎒"
+
         insight = "关注商品卖点、竞品表达和终端陈列承接。"
-        if "篮球" in text or "库里" in text: insight = "篮球专业化升温，可跟踪青少年篮球鞋与训练装备。"
-        if "防晒" in text or "凉感" in text: insight = "夏季功能品类升温，建议关注防晒凉感组合。"
-        if "拖鞋" in text or "恢复" in text: insight = "运动恢复与舒适出行场景值得重点跟踪。"
+        if "篮球" in text or "库里" in text:
+            insight = "篮球专业化升温，可跟踪青少年篮球鞋与训练装备。"
+        if "防晒" in text or "凉感" in text:
+            insight = "夏季功能品类升温，建议关注防晒凉感组合。"
+        if "拖鞋" in text or "恢复" in text:
+            insight = "运动恢复与舒适出行场景值得重点跟踪。"
+
         cards.append({
-            "title": title, "brand": "、".join(brands) or infer_brand(title), "category": category,
-            "heat": s.get("heat", ""), "tags": keys, "source": raw(s.get("source")), "icon": icon, "insight": insight,
+            "title": title,
+            "brand": "、".join([raw(b) for b in brands]) or infer_brand(title),
+            "category": category,
+            "heat": s.get("heat", ""),
+            "tags": keys,
+            "source": raw(s.get("source")),
+            "icon": icon,
+            "insight": insight,
+            "link": clean_url(s.get("link")),
         })
+
         if len(cards) >= 12:
             break
+
     return cards
 
 
@@ -312,31 +463,38 @@ regions = collect_regions()
 product_cards = build_product_cards()
 signal_count = int(product_signals.get("signal_count") or len(safe_list(product_signals.get("signals"))) or 0)
 
+
 # =========================================================
 # 周报判断
 # =========================================================
 def auto_core_points():
     points = []
     titles = " ".join([x["title"] for x in news_events])
+
     if "库里" in titles or "篮球" in titles:
         points.append("篮球专业化成为本周最明确的品牌竞争线索，明星资产与青少年运动心智同步升温。")
     if "拖鞋" in titles or "恢复" in titles:
         points.append("运动恢复与舒适出行场景热度提升，夏季鞋类机会不只集中在跑鞋和凉鞋。")
     if "创新中心" in titles or "实验室" in titles:
-        points.append("国际品牌继续加码本土研发和专业科技表达，产品背书竞争进一步前置。")
+        points.append("品牌继续加码研发和专业科技表达，产品背书竞争进一步前置。")
     if any(k in titles for k in ["防晒", "凉感", "速干"]):
         points.append("防晒、凉感、速干仍是夏季最大确定性品类，需关注功能表达和组合销售。")
     if any(k in titles for k in ["618", "大促", "直播"]):
         points.append("618与直播内容持续影响消费者价格心智，线上爆款与线下陈列需联动观察。")
+
     if not points:
         points = ["本周行业热点主要围绕品牌动作、商品功能、平台流量和区域客流展开，需持续跟踪新闻事实变化。"]
+
     return points[:5]
 
 
 def summary_text():
     if summary.get("core_judgement"):
         return raw(summary.get("core_judgement"))
+    if ai_judgement.get("weekly_core_view"):
+        return raw(ai_judgement.get("weekly_core_view"))
     return " ".join(auto_core_points()[:3])
+
 
 # =========================================================
 # HTML渲染
@@ -352,60 +510,86 @@ def render_core_cards():
 def render_event_table():
     if not news_events:
         return "<div class='empty'>暂无本周重大事件</div>"
+
     rows = ""
     for i, x in enumerate(news_events[:10], start=1):
+        title_html = link_text(x.get("title"), x.get("link"), 42)
         rows += f"""
         <tr>
           <td><span class='rank'>{i}</span></td>
-          <td class='event-title'>{short(x['title'], 42)}<em>{esc(x.get('source',''))}</em></td>
-          <td>{esc(x['brand'])}</td>
-          <td>{esc(x['event'])}</td>
-          <td>{esc(x['impact'])}</td>
+          <td class='event-title'>{title_html}<em>{esc(x.get('source',''))}</em></td>
+          <td>{esc(x.get('brand'))}</td>
+          <td>{esc(x.get('event'))}</td>
+          <td>{esc(x.get('impact'))}</td>
         </tr>
         """
-    return f"<table class='event-table'><thead><tr><th>#</th><th>事件</th><th>品牌</th><th>类型</th><th>影响判断</th></tr></thead><tbody>{rows}</tbody></table>"
+
+    return f"""
+    <table class='event-table'>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>事件</th>
+          <th>品牌</th>
+          <th>类型</th>
+          <th>影响判断</th>
+        </tr>
+      </thead>
+      <tbody>{rows}</tbody>
+    </table>
+    """
 
 
 def render_brand_bars():
     if not brand_heat:
         return "<div class='empty'>暂无品牌热度</div>"
+
     max_v = max(v for _, v in brand_heat[:8]) or 1
     html_text = ""
+
     for i, (name, v) in enumerate(brand_heat[:8], start=1):
         w = max(8, int(v / max_v * 100))
         html_text += f"<div class='bar-row'><label>{i}. {esc(name)}</label><div class='bar'><i style='width:{w}%'></i></div><b>{v}</b></div>"
+
     return html_text
 
 
 def render_category_bars():
     if not category_heat:
         return "<div class='empty'>暂无品类热度</div>"
+
     rows = []
     for x in category_heat[:8]:
         name = raw(x.get("category") or x.get("name") or "")
         cnt = int(x.get("count") or 0)
         rows.append((name, cnt))
+
     max_v = max([v for _, v in rows] + [1])
     html_text = ""
+
     for i, (name, v) in enumerate(rows, start=1):
         w = max(8, int(v / max_v * 100))
         html_text += f"<div class='bar-row'><label>{i}. {esc(name)}</label><div class='bar green'><i style='width:{w}%'></i></div><b>{v}</b></div>"
+
     return html_text
 
 
 def render_keyword_cloud():
     if not keywords:
         return "<div class='empty'>暂无热词</div>"
+
     html_text = ""
     for i, (w, c) in enumerate(keywords[:24], start=1):
         cls = "kw big" if i <= 4 else "kw mid" if i <= 10 else "kw"
         html_text += f"<span class='{cls}'>{esc(w)}</span>"
+
     return html_text
 
 
 def render_regions():
     if not regions:
         return "<div class='empty'>暂无区域机会</div>"
+
     html_text = ""
     for r in regions[:6]:
         html_text += f"""
@@ -415,42 +599,59 @@ def render_regions():
           <b>{esc(r.get('suggestion') or '建议结合门店主推、会员触达和陈列策略做承接。')}</b>
         </div>
         """
+
     return html_text
 
 
 def render_product_cards():
     if not product_cards:
         return "<div class='empty'>暂无商品趋势信号</div>"
+
     html_text = ""
     for i, p in enumerate(product_cards[:12], start=1):
         tags = " / ".join(p.get("tags", []))
+        title_html = link_text(p.get("title"), p.get("link"), 36)
+
         html_text += f"""
         <div class='product-card'>
           <div class='product-cover'><span>TOP {i}</span><i>{p.get('icon')}</i><strong>{esc(p.get('category'))}</strong><em>热度 {esc(p.get('heat'))}</em></div>
-          <h4>{short(p.get('title'), 36)}</h4>
+          <h4>{title_html}</h4>
           <p class='brand'>{esc(p.get('brand'))}｜{esc(p.get('source'))}</p>
           <p class='tags'>{esc(tags)}</p>
           <p class='insight'>{esc(p.get('insight'))}</p>
         </div>
         """
+
     return html_text
 
 
 def render_ai():
     if not ai_judgement:
         return ""
+
     if ai_judgement.get("raw"):
         return f"<div class='ai-box'><h3>AI经营判断</h3><p>{esc(ai_judgement.get('raw'))}</p></div>"
-    blocks = [("核心判断", "core_judgement"), ("机会判断", "opportunity"), ("风险判断", "risk"), ("下周动作", "action")]
+
+    blocks = [
+        ("核心判断", "weekly_core_view"),
+        ("新闻变化", "news_summary"),
+        ("竞品动作", "competitor_summary"),
+        ("商品趋势", "product_summary"),
+        ("区域天气", "region_weather_summary"),
+        ("下周重点", "next_week_focus"),
+    ]
+
     inner = ""
     for title, key in blocks:
         if ai_judgement.get(key):
             inner += f"<div><b>{title}</b><p>{esc(ai_judgement.get(key))}</p></div>"
+
     return f"<div class='ai-box'><h3>AI经营判断</h3>{inner}</div>" if inner else ""
 
 
 def render_planning():
     suggestions = analysis.get("product_suggestions") if isinstance(analysis.get("product_suggestions"), list) else []
+
     if not suggestions:
         suggestions = [
             "围绕篮球专业化，跟踪青少年篮球鞋、训练服和校园运动装备。",
@@ -458,6 +659,7 @@ def render_planning():
             "围绕运动恢复，关注恢复拖鞋、舒适脚感和夏季出行鞋类机会。",
             "围绕科技研发，强化中底科技、足弓支撑和专业功能表达。",
         ]
+
     html_text = ""
     for s in suggestions[:4]:
         if isinstance(s, dict):
@@ -465,10 +667,13 @@ def render_planning():
         else:
             text = s
         html_text += f"<div class='plan-card'>{esc(text)}</div>"
+
     return html_text
 
 
-date_range = summary.get("date_range") or (f"{history_days[0].get('date')} 至 {history_days[-1].get('date')}" if history_days else "最近7天")
+date_range = summary.get("date_range") or (
+    f"{history_days[0].get('date')} 至 {history_days[-1].get('date')}" if history_days else "最近7天"
+)
 
 html_text = f"""
 <!DOCTYPE html>
@@ -488,25 +693,63 @@ body{{background:#eef4fb;font-family:'Microsoft YaHei','PingFang SC',Arial,sans-
 .cover-foot{{position:absolute;left:44px;bottom:30px;font-size:14px;font-weight:800;opacity:.9}}
 .stats{{position:absolute;right:38px;top:38px;display:grid;grid-template-columns:repeat(4,104px);gap:10px}}
 .stat{{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.25);border-radius:18px;padding:14px 8px;text-align:center;backdrop-filter:blur(6px)}}
-.stat b{{font-size:31px;display:block}}.stat span{{font-size:12px;font-weight:800;opacity:.9}}
+.stat b{{font-size:31px;display:block}}
+.stat span{{font-size:12px;font-weight:800;opacity:.9}}
 .page{{background:#fff;border-radius:26px;padding:24px;box-shadow:0 16px 36px rgba(25,56,105,.12);margin-bottom:18px}}
 .head{{display:flex;align-items:end;justify-content:space-between;border-bottom:2px solid #e3edf9;padding-bottom:12px;margin-bottom:18px}}
-.head h2{{font-size:27px;color:#062b78;font-weight:950}}.head span{{font-size:12px;color:#0b63d8;font-weight:950;letter-spacing:.8px}}
+.head h2{{font-size:27px;color:#062b78;font-weight:950}}
+.head span{{font-size:12px;color:#0b63d8;font-weight:950;letter-spacing:.8px}}
 .summary{{font-size:20px;line-height:1.75;font-weight:850;color:#0d2d68;background:linear-gradient(135deg,#f6f9ff,#eef6ff);border:1px solid #dce8f8;border-radius:20px;padding:20px}}
 .core-grid{{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:16px}}
 .core-card{{background:#fbfdff;border:1px solid #dbe6f6;border-radius:18px;padding:16px;min-height:135px}}
-.core-card b{{display:block;color:#ff7a00;font-size:24px;margin-bottom:8px}}.core-card span{{font-size:15px;line-height:1.55;font-weight:850;color:#244268}}
-.ai-box{{margin-top:16px;border:1px solid #dbe6f6;border-radius:20px;background:#fbfdff;padding:18px}}.ai-box h3{{color:#0b4db3;margin-bottom:12px}}.ai-box div{{background:#f5f9ff;border-radius:14px;padding:12px;margin-top:10px}}.ai-box b{{color:#0b4db3}}.ai-box p{{font-size:14px;line-height:1.7;font-weight:760;margin-top:5px}}
-.event-table{{width:100%;border-collapse:collapse}}.event-table th{{text-align:left;background:#f3f8ff;color:#0b4db3;font-size:13px;padding:12px;border-bottom:1px solid #dbe6f6}}.event-table td{{font-size:14px;line-height:1.45;font-weight:760;color:#233e68;padding:12px;border-bottom:1px solid #edf2fa;vertical-align:top}}
-.rank{{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;background:#0b63d8;color:#fff;border-radius:9px;font-weight:950}}.event-title{{font-weight:950;color:#0d2d68}}.event-title em{{display:block;font-size:11px;color:#7b8ca8;font-style:normal;margin-top:4px}}
-.grid-2{{display:grid;grid-template-columns:1fr 1fr;gap:16px}}.grid-3{{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}}
-.panel{{border:1px solid #dbe6f6;border-radius:20px;background:#fbfdff;padding:18px}}.panel h3{{font-size:18px;color:#0b4db3;margin-bottom:14px}}
-.bar-row{{display:grid;grid-template-columns:118px 1fr 42px;gap:10px;align-items:center;margin-bottom:12px}}.bar-row label{{font-size:13px;font-weight:900;color:#183a76;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}.bar-row b{{font-size:13px;color:#0b63d8;text-align:right}}.bar{{height:10px;background:#edf5ff;border-radius:999px;overflow:hidden}}.bar i{{display:block;height:100%;background:linear-gradient(90deg,#0b63d8,#18a2ff);border-radius:999px}}.bar.green i{{background:linear-gradient(90deg,#0f766e,#34d399)}}
-.word-cloud{{min-height:260px;border:1px solid #dbe6f6;border-radius:20px;background:linear-gradient(135deg,#f8fbff,#eef6ff);display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:14px 18px;padding:22px}}.kw{{background:#fff;border:1px solid #dbe6f6;border-radius:999px;padding:7px 14px;font-size:14px;font-weight:950;color:#0b63d8;box-shadow:0 6px 14px rgba(20,60,110,.06)}}.kw.mid{{font-size:17px;background:#ecfdf5;color:#0f766e}}.kw.big{{font-size:25px;background:#dcecff;color:#062b78}}
-.region-card{{border:1px solid #dbe6f6;border-radius:20px;background:linear-gradient(135deg,#f7fbff,#fff);padding:17px;min-height:170px}}.region-card h3{{font-size:21px;color:#0b4db3;margin-bottom:10px}}.region-card p{{font-size:14px;line-height:1.55;font-weight:760;color:#315174}}.region-card b{{display:block;margin-top:10px;font-size:13px;line-height:1.5;color:#0f766e}}
-.products{{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}}.product-card{{border:1px solid #dbe6f6;border-radius:20px;background:#fbfdff;padding:13px;box-shadow:0 8px 18px rgba(20,60,110,.06)}}.product-cover{{height:150px;border-radius:16px;background:radial-gradient(circle at 80% 20%,rgba(25,163,255,.22),transparent 30%),linear-gradient(135deg,#edf5ff,#f8fbff);display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;margin-bottom:11px}}.product-cover span{{position:absolute;top:8px;left:8px;background:#062b78;color:#fff;border-radius:999px;padding:4px 8px;font-size:11px;font-weight:950}}.product-cover i{{font-style:normal;font-size:46px}}.product-cover strong{{font-size:21px;color:#0b4db3;margin-top:8px}}.product-cover em{{font-style:normal;color:#0f766e;background:#ecfdf5;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:900;margin-top:8px}}.product-card h4{{font-size:15.5px;line-height:1.35;color:#0d2d68;min-height:42px}}.brand{{font-size:12px;color:#0b63d8;font-weight:900;margin-top:6px}}.tags{{font-size:12px;color:#1d8c54;font-weight:850;margin-top:7px}}.insight{{margin-top:9px;background:#f0fdf4;color:#166534;border-radius:12px;padding:9px;font-size:12.5px;line-height:1.45;font-weight:850}}
-.plan-grid{{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}}.plan-card{{border-radius:18px;background:linear-gradient(135deg,#fff7ed,#fff);border:1px solid #fed7aa;color:#7c2d12;font-size:15px;line-height:1.6;font-weight:850;padding:17px;min-height:132px}}
-.empty{{color:#8a99ad;font-size:14px;text-align:center;padding:24px}}.footer{{text-align:center;color:#7184a3;font-size:12px;margin:16px 0 4px}}
+.core-card b{{display:block;color:#ff7a00;font-size:24px;margin-bottom:8px}}
+.core-card span{{font-size:15px;line-height:1.55;font-weight:850;color:#244268}}
+.ai-box{{margin-top:16px;border:1px solid #dbe6f6;border-radius:20px;background:#fbfdff;padding:18px}}
+.ai-box h3{{color:#0b4db3;margin-bottom:12px}}
+.ai-box div{{background:#f5f9ff;border-radius:14px;padding:12px;margin-top:10px}}
+.ai-box b{{color:#0b4db3}}
+.ai-box p{{font-size:14px;line-height:1.7;font-weight:760;margin-top:5px}}
+.event-table{{width:100%;border-collapse:collapse}}
+.event-table th{{text-align:left;background:#f3f8ff;color:#0b4db3;font-size:13px;padding:12px;border-bottom:1px solid #dbe6f6}}
+.event-table td{{font-size:14px;line-height:1.45;font-weight:760;color:#233e68;padding:12px;border-bottom:1px solid #edf2fa;vertical-align:top}}
+.rank{{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;background:#0b63d8;color:#fff;border-radius:9px;font-weight:950}}
+.event-title{{font-weight:950;color:#0d2d68}}
+.event-title em{{display:block;font-size:11px;color:#7b8ca8;font-style:normal;margin-top:4px}}
+.event-title a,.product-card h4 a{{color:#0b63d8;text-decoration:none}}
+.event-title a:hover,.product-card h4 a:hover{{text-decoration:underline}}
+.grid-2{{display:grid;grid-template-columns:1fr 1fr;gap:16px}}
+.grid-3{{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}}
+.panel{{border:1px solid #dbe6f6;border-radius:20px;background:#fbfdff;padding:18px}}
+.panel h3{{font-size:18px;color:#0b4db3;margin-bottom:14px}}
+.bar-row{{display:grid;grid-template-columns:118px 1fr 42px;gap:10px;align-items:center;margin-bottom:12px}}
+.bar-row label{{font-size:13px;font-weight:900;color:#183a76;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+.bar-row b{{font-size:13px;color:#0b63d8;text-align:right}}
+.bar{{height:10px;background:#edf5ff;border-radius:999px;overflow:hidden}}
+.bar i{{display:block;height:100%;background:linear-gradient(90deg,#0b63d8,#18a2ff);border-radius:999px}}
+.bar.green i{{background:linear-gradient(90deg,#0f766e,#34d399)}}
+.word-cloud{{min-height:260px;border:1px solid #dbe6f6;border-radius:20px;background:linear-gradient(135deg,#f8fbff,#eef6ff);display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:14px 18px;padding:22px}}
+.kw{{background:#fff;border:1px solid #dbe6f6;border-radius:999px;padding:7px 14px;font-size:14px;font-weight:950;color:#0b63d8;box-shadow:0 6px 14px rgba(20,60,110,.06)}}
+.kw.mid{{font-size:17px;background:#ecfdf5;color:#0f766e}}
+.kw.big{{font-size:25px;background:#dcecff;color:#062b78}}
+.region-card{{border:1px solid #dbe6f6;border-radius:20px;background:linear-gradient(135deg,#f7fbff,#fff);padding:17px;min-height:170px}}
+.region-card h3{{font-size:21px;color:#0b4db3;margin-bottom:10px}}
+.region-card p{{font-size:14px;line-height:1.55;font-weight:760;color:#315174}}
+.region-card b{{display:block;margin-top:10px;font-size:13px;line-height:1.5;color:#0f766e}}
+.products{{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}}
+.product-card{{border:1px solid #dbe6f6;border-radius:20px;background:#fbfdff;padding:13px;box-shadow:0 8px 18px rgba(20,60,110,.06)}}
+.product-cover{{height:150px;border-radius:16px;background:radial-gradient(circle at 80% 20%,rgba(25,163,255,.22),transparent 30%),linear-gradient(135deg,#edf5ff,#f8fbff);display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;margin-bottom:11px}}
+.product-cover span{{position:absolute;top:8px;left:8px;background:#062b78;color:#fff;border-radius:999px;padding:4px 8px;font-size:11px;font-weight:950}}
+.product-cover i{{font-style:normal;font-size:46px}}
+.product-cover strong{{font-size:21px;color:#0b4db3;margin-top:8px}}
+.product-cover em{{font-style:normal;color:#0f766e;background:#ecfdf5;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:900;margin-top:8px}}
+.product-card h4{{font-size:15.5px;line-height:1.35;color:#0d2d68;min-height:42px}}
+.brand{{font-size:12px;color:#0b63d8;font-weight:900;margin-top:6px}}
+.tags{{font-size:12px;color:#1d8c54;font-weight:850;margin-top:7px}}
+.insight{{margin-top:9px;background:#f0fdf4;color:#166534;border-radius:12px;padding:9px;font-size:12.5px;line-height:1.45;font-weight:850}}
+.plan-grid{{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}}
+.plan-card{{border-radius:18px;background:linear-gradient(135deg,#fff7ed,#fff);border:1px solid #fed7aa;color:#7c2d12;font-size:15px;line-height:1.6;font-weight:850;padding:17px;min-height:132px}}
+.empty{{color:#8a99ad;font-size:14px;text-align:center;padding:24px}}
+.footer{{text-align:center;color:#7184a3;font-size:12px;margin:16px 0 4px}}
 </style>
 </head>
 <body>
@@ -568,5 +811,8 @@ body{{background:#eef4fb;font-family:'Microsoft YaHei','PingFang SC',Arial,sans-
 """
 
 OUTPUT_HTML.write_text(html_text, encoding="utf-8")
+
 print(f"weekly html generated: {OUTPUT_HTML}")
 print(f"news events: {len(news_events)} | keywords: {len(keywords)} | product signals: {signal_count}")
+print(f"event link count: {sum(1 for x in news_events if x.get('link'))}")
+print(f"product link count: {sum(1 for x in product_cards if x.get('link'))}")
