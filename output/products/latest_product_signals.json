@@ -1,11 +1,11 @@
 {
   "date": "2026-06-18",
-  "generated_time": "2026-06-18 17:27:51",
+  "generated_time": "2026-06-18 18:12:00",
   "source": "Google News RSS product signal monitor",
   "desc": "运动鞋服商品趋势信号监测：覆盖国内外运动品牌、户外品牌、成人与儿童品牌；重点监测近8天新品、尖货、功能科技、夏季功能、跑步科技、户外轻运动与大促热卖。已过滤财经财报、广告促销、测评导购、AI白皮书、ESG报告和非鞋服商品。",
   "recent_days": 8,
   "query_count": 260,
-  "signal_count": 3,
+  "signal_count": 4,
   "top_brands": [
     [
       "Asics",
@@ -34,6 +34,14 @@
       1
     ],
     [
+      "上市",
+      1
+    ],
+    [
+      "系列",
+      1
+    ],
+    [
       "越野跑",
       1
     ],
@@ -46,12 +54,16 @@
     [
       "跑步科技",
       3
+    ],
+    [
+      "青少年成人化",
+      1
     ]
   ],
   "top_seasons": [
     [
       "全年",
-      3
+      4
     ]
   ],
   "signals": [
@@ -74,7 +86,7 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORDNRckpuSVJwQUhfbHhvNTV4eXhKLVRrTl8zRXFodFlod1F1VENZMlhWdTVueEhXR0NzTjFzUlFRQW1LckhWQlNlcXM0emhPSDlJOTNITkFqMzJyQ0tQb3ZDNjZUcHdnQXN2dmhueWNib2F0MG1NTFJDS1hOeDlZUDFFcGU2RlV5b3hrbXFtUmxyaXJQVjVMYWxTbHNyZ2JWcmc?oc=5",
       "pub_date": "Tue, 16 Jun 2026 03:16:01 GMT",
-      "age_hours": 54.2,
+      "age_hours": 54.9,
       "heat": 90,
       "type": "product_signal"
     },
@@ -96,8 +108,27 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMDUxX0tuWHpRTXRVaGhETWV4OEtCUmlZQjNuUzdmWjE2cXlEclBqcGtkZEYxYWpFVGRJd1FpNHZyLTZ1U2pxbVpyMXNpbVJ5b2szajRJQUl2cDFqREIzVDZvU05NbEhPMWFWMGladnpIODNBekdFVnRIeklFUDV6Z1VTODZaaWU4a2c?oc=5",
       "pub_date": "Thu, 11 Jun 2026 08:10:14 GMT",
-      "age_hours": 169.3,
+      "age_hours": 170.0,
       "heat": 73,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-18",
+      "title": "GMT for Kids的成长扩容：FLOW系列36L护脊书包上市， 延伸大童市场版图 - 美通社",
+      "short_title": "GMT for Kids的成长扩容：FLOW系列36L护脊书包上市， 延伸大童市场版图 - 美通社",
+      "query": "New Balance Kids 上市",
+      "brand_hits": [],
+      "keyword_hits": [
+        "上市",
+        "系列"
+      ],
+      "category": "青少年成人化",
+      "season_tag": "全年",
+      "source": "美通社",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xVFR6Ym9oSUZVaW1Zb0ktTk8wLVNiV3ZCd3Z2ejRfMnBRSks4M2JncldERzVOd3VVczA1NExFSFJqeVpLaURkU2ZldERIRmVQenFFaS02OA?oc=5",
+      "pub_date": "Mon, 15 Jun 2026 07:14:00 GMT",
+      "age_hours": 75.0,
+      "heat": 60,
       "type": "product_signal"
     },
     {
@@ -117,7 +148,7 @@
       "source": "QQ News",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5yMklIZ3lPRVRnQTFZRHZoRmlSME1QXzJLRVcwdGFmbkREQUlRMlpfNEZWWThHa1pUMTNHN0tkNDZkOXQybzRHekJwN1NSY1ZRdnBaTlVB?oc=5",
       "pub_date": "Tue, 16 Jun 2026 13:16:00 GMT",
-      "age_hours": 44.2,
+      "age_hours": 44.9,
       "heat": 58,
       "type": "product_signal"
     }
