@@ -39,6 +39,12 @@ def clean_url(value):
     return ""
 
 
+def get_link(item):
+    if not isinstance(item, dict):
+        return ""
+    return clean_url(item.get("link") or item.get("url") or item.get("href") or "")
+
+
 def to_int(value, default=0):
     try:
         return int(float(value))
@@ -81,6 +87,12 @@ def load_json_files(folder, limit=7):
 def text_has(text, keys):
     text = clean_text(text)
     return any(k in text for k in keys)
+
+
+def norm_key(value):
+    text = clean_text(value).lower()
+    text = re.sub(r"[，。！？、；：:,.!?（）()【】\[\]《》“”\"'\s\-_/|]+", "", text)
+    return text[:60]
 
 
 def pair_list_to_dict_list(items, key_name):
@@ -211,7 +223,7 @@ def collect_text_from_history(days):
                     str(item.get("desc", "")),
                     str(item.get("tag", "")),
                     str(item.get("source", "")),
-                    str(item.get("link", ""))
+                    str(get_link(item))
                 ])
 
         for item in safe_list(day.get("competitor_news")):
@@ -220,7 +232,7 @@ def collect_text_from_history(days):
                     str(item.get("brand", "")),
                     str(item.get("title", "")),
                     str(item.get("source", "")),
-                    str(item.get("link", ""))
+                    str(get_link(item))
                 ])
 
         for item in safe_list(day.get("trend_items")):
@@ -258,7 +270,7 @@ def collect_top_news(days):
     news_pool = []
 
     for day in days:
-        date = day.get("date", "")
+        date = day.get("date", "") or day.get("end_date", "") or ""
 
         for item in safe_list(day.get("top_news")):
             if not isinstance(item, dict):
@@ -270,7 +282,7 @@ def collect_top_news(days):
 
             tag = clean_text(item.get("tag", ""))
             source = clean_text(item.get("source", ""))
-            link = clean_url(item.get("link", ""))
+            link = get_link(item)
 
             counter[title] += 1
             if tag:
@@ -285,6 +297,7 @@ def collect_top_news(days):
                 "source": source,
                 "desc": clean_text(item.get("desc", "")),
                 "link": link,
+                "url": link,
                 "published_at": clean_text(
                     item.get("published_at")
                     or item.get("pubDate")
@@ -308,7 +321,7 @@ def collect_competitor_news(days):
     pool = []
 
     for day in days:
-        date = day.get("date", "")
+        date = day.get("date", "") or day.get("end_date", "") or ""
 
         for item in safe_list(day.get("competitor_news")):
             if not isinstance(item, dict):
@@ -326,13 +339,15 @@ def collect_competitor_news(days):
             if brand:
                 brand_counter[brand] += 1
 
+            link = get_link(item)
             pool.append({
                 "date": date,
                 "brand": brand,
                 "title": title,
                 "source": clean_text(item.get("source", "")),
                 "time": clean_text(item.get("published_at") or item.get("time") or ""),
-                "link": clean_url(item.get("link", ""))
+                "link": link,
+                "url": link
             })
 
     top_items = []
@@ -347,7 +362,8 @@ def collect_competitor_news(days):
             "source": matched.get("source", ""),
             "date": matched.get("date", ""),
             "time": matched.get("time", ""),
-            "link": matched.get("link", "")
+            "link": matched.get("link", ""),
+            "url": matched.get("link", "")
         })
 
     return {
@@ -361,7 +377,9 @@ def collect_keywords(days):
     counter = Counter()
 
     for day in days:
-        for word in safe_list(day.get("words")):
+        for word in safe_list(day.get("words")) + safe_list(day.get("keywords")):
+            if isinstance(word, dict):
+                word = word.get("word") or word.get("keyword") or word.get("name") or ""
             word = clean_text(word)
             if word:
                 counter[word] += 1
@@ -374,13 +392,20 @@ def collect_weather(days):
     pool = []
 
     for day in days:
-        date = day.get("date", "")
+        date = day.get("date", "") or day.get("end_date", "") or ""
         weather = day.get("weather", {})
 
-        if not isinstance(weather, dict):
-            continue
+        if isinstance(weather, list):
+            weather_items = []
+            for w in weather:
+                if isinstance(w, dict):
+                    weather_items.extend(list(w.items()))
+        elif isinstance(weather, dict):
+            weather_items = list(weather.items())
+        else:
+            weather_items = []
 
-        for region, desc in weather.items():
+        for region, desc in weather_items:
             desc = clean_text(desc)
             pool.append({
                 "date": date,
@@ -426,15 +451,24 @@ def collect_regions(days):
     raw_counter = defaultdict(list)
 
     for day in days:
-        date = day.get("date", "")
+        date = day.get("date", "") or day.get("end_date", "") or ""
+        region_reports = day.get("region_reports") or day.get("regions") or {}
 
-        if not isinstance(day.get("region_reports"), dict):
-            continue
+        region_values = []
+        if isinstance(region_reports, dict):
+            for value in region_reports.values():
+                if isinstance(value, dict) and any(isinstance(v, dict) for v in value.values()):
+                    region_values.extend([v for v in value.values() if isinstance(v, dict)])
+                elif isinstance(value, dict):
+                    region_values.append(value)
+        elif isinstance(region_reports, list):
+            for value in region_reports:
+                if isinstance(value, dict) and any(isinstance(v, dict) for v in value.values()):
+                    region_values.extend([v for v in value.values() if isinstance(v, dict)])
+                elif isinstance(value, dict):
+                    region_values.append(value)
 
-        for region in day.get("region_reports", {}).values():
-            if not isinstance(region, dict):
-                continue
-
+        for region in region_values:
             name = clean_text(region.get("name") or region.get("region") or "")
             if not name:
                 continue
@@ -527,7 +561,8 @@ def load_products():
                 "tags": p.get("tags", []),
                 "image": p.get("image", ""),
                 "reason": p.get("reason", ""),
-                "link": clean_url(p.get("link", ""))
+                "link": get_link(p),
+                "url": get_link(p)
             }
 
             products.append(item)
@@ -570,7 +605,9 @@ def load_product_signals():
     for s in safe_list(data.get("signals", []))[:120]:
         if isinstance(s, dict):
             copied = dict(s)
-            copied["link"] = clean_url(copied.get("link", ""))
+            link = get_link(copied)
+            copied["link"] = link
+            copied["url"] = link
             signals.append(copied)
 
     return {
@@ -702,6 +739,7 @@ def build_major_events_rule(news, competitor, product_signals, keywords):
         heat += 10 if track != "综合趋势" else 0
         heat += sum(title.count(k) * 6 for keys in EVENT_TYPE_RULES.values() for k in keys if k in title)
 
+        link = clean_url(link)
         candidates.append({
             "title": title,
             "brand": inferred_brand or "行业",
@@ -710,7 +748,8 @@ def build_major_events_rule(news, competitor, product_signals, keywords):
             "heat": clamp(heat, 1, 100),
             "source": source,
             "date": date,
-            "link": clean_url(link),
+            "link": link,
+            "url": link,
             "impact": desc or build_dynamic_impact(title, event_type, track)
         })
 
@@ -725,7 +764,7 @@ def build_major_events_rule(news, competitor, product_signals, keywords):
                 date=item.get("date", ""),
                 base_heat=45,
                 desc=item.get("desc", ""),
-                link=item.get("link", "")
+                link=get_link(item)
             )
 
     for item in safe_list(competitor.get("pool")):
@@ -739,7 +778,7 @@ def build_major_events_rule(news, competitor, product_signals, keywords):
                 source=item.get("source", ""),
                 date=item.get("date", ""),
                 base_heat=55,
-                link=item.get("link", "")
+                link=get_link(item)
             )
 
     for sig in safe_list(product_signals.get("signals")):
@@ -754,7 +793,7 @@ def build_major_events_rule(news, competitor, product_signals, keywords):
                 source=sig.get("source", ""),
                 date=product_signals.get("date", ""),
                 base_heat=to_int(sig.get("heat"), 0),
-                link=sig.get("link", "")
+                link=get_link(sig)
             )
 
     candidates = sorted(candidates, key=lambda x: x["heat"], reverse=True)
@@ -842,6 +881,7 @@ def build_competitor_actions_rule(competitor, news):
         brand = clean_text(item.get("brand", "")) or ""
         heat = 35 + (15 if brand else 0) + (20 if action_type != "综合动作" else 0)
         heat += sum(title.count(k) * 5 for keys in ACTION_TYPE_RULES.values() for k in keys if k in title)
+        link = get_link(item)
 
         items.append({
             "brand": brand or "行业",
@@ -851,7 +891,8 @@ def build_competitor_actions_rule(competitor, news):
             "heat": clamp(heat, 1, 100),
             "source": item.get("source", ""),
             "date": item.get("date", ""),
-            "link": clean_url(item.get("link", "")),
+            "link": link,
+            "url": link,
             "insight": build_competitor_action_insight(action_type, infer_track_from_text(title))
         })
 
@@ -1018,7 +1059,7 @@ def merge_ai_and_rule_lists(ai_list, rule_list, key_name, limit):
     rule_map = {}
     for item in safe_list(rule_list):
         if isinstance(item, dict):
-            key = clean_text(item.get(key_name, ""))
+            key = norm_key(item.get(key_name, ""))
             if key:
                 rule_map[key] = item
 
@@ -1027,18 +1068,21 @@ def merge_ai_and_rule_lists(ai_list, rule_list, key_name, limit):
             if not isinstance(item, dict):
                 continue
 
-            key = clean_text(item.get(key_name, ""))
+            raw_key = clean_text(item.get(key_name, ""))
+            key = norm_key(raw_key)
             if not key or key in used:
                 continue
 
             enriched = dict(item)
             rule_item = rule_map.get(key, {})
 
-            for field in ["link", "source", "date", "brand", "event_type", "action_type", "track"]:
+            for field in ["link", "url", "source", "date", "brand", "event_type", "action_type", "track"]:
                 if not clean_text(enriched.get(field, "")) and clean_text(rule_item.get(field, "")):
                     enriched[field] = rule_item.get(field, "")
 
-            enriched["link"] = clean_url(enriched.get("link", ""))
+            link = get_link(enriched) or get_link(rule_item)
+            enriched["link"] = link
+            enriched["url"] = link
             enriched["heat"] = clamp(to_int(enriched.get("heat", enriched.get("raw_score", 50)), 50), 1, 100)
 
             merged.append(enriched)
@@ -1419,6 +1463,8 @@ def main():
     print(f"competitor actions: {len(competitor_actions)}")
     print(f"major events link count: {sum(1 for x in major_events if x.get('link'))}")
     print(f"competitor actions link count: {sum(1 for x in competitor_actions if x.get('link'))}")
+    print(f"news pool link count: {sum(1 for x in news.get('news_pool', []) if x.get('link'))}")
+    print(f"competitor pool link count: {sum(1 for x in competitor.get('pool', []) if x.get('link'))}")
     print(f"ai dynamic used: {bool(ai_dynamic)}")
 
 
