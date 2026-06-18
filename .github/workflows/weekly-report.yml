@@ -51,6 +51,9 @@ jobs:
         run: |
           python scripts/analyze_weekly.py
 
+      - name: Fetch News Images
+        run: python scripts/fetch_news_images.py
+
       - name: Generate Weekly HTML
         run: |
           python scripts/generate_weekly_html.py
