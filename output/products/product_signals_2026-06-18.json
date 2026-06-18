@@ -1,11 +1,11 @@
 {
   "date": "2026-06-18",
-  "generated_time": "2026-06-18 04:57:36",
+  "generated_time": "2026-06-18 14:22:27",
   "source": "Google News RSS product signal monitor",
   "desc": "运动鞋服商品趋势信号监测：覆盖国内外运动品牌、户外品牌、成人与儿童品牌；重点监测近8天新品、尖货、功能科技、夏季功能、跑步科技、户外轻运动与大促热卖。已过滤财经财报、广告促销、测评导购、AI白皮书、ESG报告和非鞋服商品。",
   "recent_days": 8,
   "query_count": 260,
-  "signal_count": 6,
+  "signal_count": 5,
   "top_brands": [
     [
       "Asics",
@@ -42,27 +42,11 @@
       1
     ],
     [
-      "篮球",
-      1
-    ],
-    [
       "上市",
       1
     ],
     [
-      "防晒衣",
-      1
-    ],
-    [
-      "防晒服",
-      1
-    ],
-    [
-      "防晒",
-      1
-    ],
-    [
-      "618",
+      "篮球",
       1
     ],
     [
@@ -80,15 +64,11 @@
       3
     ],
     [
-      "篮球足球",
-      1
-    ],
-    [
       "青少年成人化",
       1
     ],
     [
-      "防晒凉感",
+      "篮球足球",
       1
     ]
   ],
@@ -99,10 +79,6 @@
     ],
     [
       "秋季",
-      1
-    ],
-    [
-      "夏季",
       1
     ]
   ],
@@ -126,7 +102,7 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORDNRckpuSVJwQUhfbHhvNTV4eXhKLVRrTl8zRXFodFlod1F1VENZMlhWdTVueEhXR0NzTjFzUlFRQW1LckhWQlNlcXM0emhPSDlJOTNITkFqMzJyQ0tQb3ZDNjZUcHdnQXN2dmhueWNib2F0MG1NTFJDS1hOeDlZUDFFcGU2RlV5b3hrbXFtUmxyaXJQVjVMYWxTbHNyZ2JWcmc?oc=5",
       "pub_date": "Tue, 16 Jun 2026 03:16:01 GMT",
-      "age_hours": 41.7,
+      "age_hours": 51.1,
       "heat": 90,
       "type": "product_signal"
     },
@@ -148,8 +124,27 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMDUxX0tuWHpRTXRVaGhETWV4OEtCUmlZQjNuUzdmWjE2cXlEclBqcGtkZEYxYWpFVGRJd1FpNHZyLTZ1U2pxbVpyMXNpbVJ5b2szajRJQUl2cDFqREIzVDZvU05NbEhPMWFWMGladnpIODNBekdFVnRIeklFUDV6Z1VTODZaaWU4a2c?oc=5",
       "pub_date": "Thu, 11 Jun 2026 08:10:14 GMT",
-      "age_hours": 156.8,
+      "age_hours": 166.2,
       "heat": 81,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-06-18",
+      "title": "GMT for Kids的成长扩容：FLOW系列36L护脊书包上市， 延伸大童市场版图 - 美通社",
+      "short_title": "GMT for Kids的成长扩容：FLOW系列36L护脊书包上市， 延伸大童市场版图 - 美通社",
+      "query": "New Balance Kids 上市",
+      "brand_hits": [],
+      "keyword_hits": [
+        "上市",
+        "系列"
+      ],
+      "category": "青少年成人化",
+      "season_tag": "全年",
+      "source": "美通社",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xVFR6Ym9oSUZVaW1Zb0ktTk8wLVNiV3ZCd3Z2ejRfMnBRSks4M2JncldERzVOd3VVczA1NExFSFJqeVpLaURkU2ZldERIRmVQenFFaS02OA?oc=5",
+      "pub_date": "Mon, 15 Jun 2026 07:14:00 GMT",
+      "age_hours": 71.1,
+      "heat": 66,
       "type": "product_signal"
     },
     {
@@ -170,54 +165,14 @@
       "source": "Sohu",
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNanJWRGdNNkM2TVg2Q1huYVNaUWJFTi0taENNUmdCVVNCTHdlcThNTXd1MGdDQ0JPaHdpZ0RrMDBMSUpZcnAtR3hPY2NpM085YXV6eFlOVHk0cFNQaFZlM0dCaVZjb1BucUc2Ri1LclpCdDVIOUh1V3BRakZIeG5MdmYzdHBhY0cydkR6Vw?oc=5",
       "pub_date": "Thu, 11 Jun 2026 03:41:48 GMT",
-      "age_hours": 161.3,
-      "heat": 69,
+      "age_hours": 170.7,
+      "heat": 61,
       "type": "product_signal"
     },
     {
       "date": "2026-06-18",
-      "title": "GMT for Kids的成长扩容：FLOW系列36L护脊书包上市， 延伸大童市场版图 - 美通社",
-      "short_title": "GMT for Kids的成长扩容：FLOW系列36L护脊书包上市， 延伸大童市场版图 - 美通社",
-      "query": "New Balance Kids 上市",
-      "brand_hits": [],
-      "keyword_hits": [
-        "上市",
-        "系列"
-      ],
-      "category": "青少年成人化",
-      "season_tag": "全年",
-      "source": "美通社",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xVFR6Ym9oSUZVaW1Zb0ktTk8wLVNiV3ZCd3Z2ejRfMnBRSks4M2JncldERzVOd3VVczA1NExFSFJqeVpLaURkU2ZldERIRmVQenFFaS02OA?oc=5",
-      "pub_date": "Mon, 15 Jun 2026 07:14:00 GMT",
-      "age_hours": 61.7,
-      "heat": 66,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-18",
-      "title": "“防晒服UPF50+”是真的吗？拼多多严查服饰虚假宣传- 零售 - 亿邦动力网",
-      "short_title": "“防晒服UPF50+”是真的吗？拼多多严查服饰虚假宣传- 零售 - 亿邦动力网",
-      "query": "618 防晒衣",
-      "brand_hits": [],
-      "keyword_hits": [
-        "防晒衣",
-        "防晒服",
-        "防晒",
-        "618"
-      ],
-      "category": "防晒凉感",
-      "season_tag": "夏季",
-      "source": "亿邦动力网",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1nTXZoWlBiLWdsLWxjUjVZQkkzTFlQQXJEdUJYWjJrUmVBa05janNsZGhZa21FV0NUZGJ6el84cno1WE1ESF9pYk80cDZkSXl3R3pLZEZB?oc=5",
-      "pub_date": "Thu, 11 Jun 2026 03:40:35 GMT",
-      "age_hours": 161.3,
-      "heat": 64,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-18",
-      "title": "回归雄关330、新鞋款X03亮相，X-BIONIC在中国越野跑市场提速 - QQ News",
-      "short_title": "回归雄关330、新鞋款X03亮相，X-BIONIC在中国越野跑市场提速 - QQ News",
+      "title": "回归雄关330、新鞋款X03亮相，X-BIONIC在中国越野跑市场提速 - 腾讯新闻",
+      "short_title": "回归雄关330、新鞋款X03亮相，X-BIONIC在中国越野跑市场提速 - 腾讯新闻",
       "query": "跑鞋 新品",
       "brand_hits": [],
       "keyword_hits": [
@@ -228,10 +183,10 @@
       ],
       "category": "跑步科技",
       "season_tag": "全年",
-      "source": "QQ News",
+      "source": "腾讯新闻",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5yMklIZ3lPRVRnQTFZRHZoRmlSME1QXzJLRVcwdGFmbkREQUlRMlpfNEZWWThHa1pUMTNHN0tkNDZkOXQybzRHekJwN1NSY1ZRdnBaTlVB?oc=5",
       "pub_date": "Tue, 16 Jun 2026 13:16:00 GMT",
-      "age_hours": 31.7,
+      "age_hours": 41.1,
       "heat": 58,
       "type": "product_signal"
     }
