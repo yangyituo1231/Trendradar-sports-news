@@ -47,28 +47,16 @@ def post_wecom(payload, name):
     if result.get("errcode") not in (0, None):
         raise RuntimeError(f"{name} failed: {result}")
 
-
-def send_markdown():
-
-    content = f"""
-📊 361°儿童行业周报
-
-点击查看完整网页版：
-
-{WEEKLY_URL}
-
-👇 周报长图同步推送
-"""
+def send_url():
 
     payload = {
-        "msgtype": "markdown",
-        "markdown": {
-            "content": content
+        "msgtype": "text",
+        "text": {
+            "content": WEEKLY_URL
         }
     }
 
-    post_wecom(payload, "weekly markdown")
-
+    post_wecom(payload, "weekly url")
 
 def compress_image():
     img = Image.open(SOURCE_FILE).convert("RGB")
@@ -80,7 +68,6 @@ def compress_image():
     quality = 85
     img.save(SEND_FILE, format="JPEG", quality=quality, optimize=True)
 
-    # ä¼ä¸å¾®ä¿¡ç¾¤æºå¨äººå¾çéå¶éå¸¸ä¸º 2MBï¼è¿éèªå¨åå° 1.9MB ä»¥ä¸
     while Path(SEND_FILE).stat().st_size > 1900 * 1024 and quality > 45:
         quality -= 8
         img.save(SEND_FILE, format="JPEG", quality=quality, optimize=True)
@@ -109,14 +96,13 @@ def send_image():
 
 
 if __name__ == "__main__":
+
     check_env()
-    import time
 
-    send_markdown()
-
-    time.sleep(2)
+    send_url()
 
     compress_image()
 
     send_image()
+
     print("weekly report sent")
