@@ -5,23 +5,18 @@ import json
 import re
 import html
 
-# =========================================================
-# 文件路径
-# =========================================================
 HISTORY_DIR = Path("output/history")
 WEEKLY_DIR = Path("output/weekly")
 PRODUCT_DIR = Path("output/products")
 
 ANALYSIS_FILE = WEEKLY_DIR / "weekly_analysis.json"
 PRODUCT_SIGNAL_FILE = PRODUCT_DIR / "latest_product_signals.json"
+IMAGE_CACHE_FILE = WEEKLY_DIR / "news_image_cache.json"
 OUTPUT_HTML = WEEKLY_DIR / "weekly_report.html"
 
 WEEKLY_DIR.mkdir(parents=True, exist_ok=True)
 
 
-# =========================================================
-# 基础工具
-# =========================================================
 def load_json(path, default):
     try:
         if path.exists():
@@ -55,12 +50,40 @@ def short(v, n=42):
     return esc(t if len(t) <= n else t[:n] + "...")
 
 
+def title_key(title):
+    t = raw(title).lower()
+    t = re.sub(r"[，。！？、；：:,.!?（）()【】\[\]《》“”\"'\s\-_/|]+", "", t)
+    return t[:60]
+
+
+def norm_key(v):
+    return title_key(v)[:50]
+
+
 def link_text(title, link, n=42):
     title_html = short(title, n)
     link = clean_url(link)
     if link:
         return f"<a href='{esc(link)}' target='_blank' rel='noopener noreferrer'>{title_html}</a>"
     return title_html
+
+
+analysis = load_json(ANALYSIS_FILE, {})
+image_cache = load_json(IMAGE_CACHE_FILE, {})
+
+product_signals = analysis.get("product_signals") if isinstance(analysis.get("product_signals"), dict) else {}
+if not product_signals:
+    product_signals = load_json(PRODUCT_SIGNAL_FILE, {})
+
+history_files = sorted(HISTORY_DIR.glob("*.json"))[-7:]
+history_days = []
+for f in history_files:
+    d = load_json(f, {})
+    if isinstance(d, dict) and d:
+        history_days.append(d)
+
+generated_time = datetime.now().strftime("%Y-%m-%d %H:%M")
+summary = analysis.get("summary", {}) if isinstance(analysis.get("summary"), dict) else {}
 
 
 def parse_ai_json(v):
@@ -76,6 +99,58 @@ def parse_ai_json(v):
         return json.loads(text)
     except Exception:
         return {"raw": text}
+
+
+ai_judgement = parse_ai_json(analysis.get("ai_judgement") or summary.get("ai_judgement"))
+
+
+def normalize_image_src(src):
+    src = raw(src)
+    if not src:
+        return ""
+
+    if src.startswith("http://") or src.startswith("https://"):
+        return src
+
+    src = src.replace("\\", "/")
+
+    if src.startswith("output/weekly/"):
+        return src.replace("output/weekly/", "")
+
+    if src.startswith("output/"):
+        return "../" + src.replace("output/", "")
+
+    return src
+
+
+def find_image(title):
+    key = title_key(title)
+
+    if isinstance(image_cache, dict):
+        if key in image_cache:
+            row = image_cache.get(key)
+            if isinstance(row, dict):
+                return normalize_image_src(
+                    row.get("image")
+                    or row.get("image_url")
+                    or row.get("local_path")
+                    or row.get("path")
+                )
+            return normalize_image_src(row)
+
+        raw_title = raw(title)
+        if raw_title in image_cache:
+            row = image_cache.get(raw_title)
+            if isinstance(row, dict):
+                return normalize_image_src(
+                    row.get("image")
+                    or row.get("image_url")
+                    or row.get("local_path")
+                    or row.get("path")
+                )
+            return normalize_image_src(row)
+
+    return ""
 
 
 def pair_rows(items, key_name):
@@ -97,36 +172,6 @@ def count_row_name(row, keys):
     return ""
 
 
-def norm_key(v):
-    text = raw(v).lower()
-    text = re.sub(r"[，。！？、；：:,.!?（）()【】$begin:math:display$$end:math:display$《》“”\"'\s\-_/|]+", "", text)
-    return text[:50]
-
-
-# =========================================================
-# 读取数据
-# =========================================================
-analysis = load_json(ANALYSIS_FILE, {})
-
-product_signals = analysis.get("product_signals") if isinstance(analysis.get("product_signals"), dict) else {}
-if not product_signals:
-    product_signals = load_json(PRODUCT_SIGNAL_FILE, {})
-
-history_files = sorted(HISTORY_DIR.glob("*.json"))[-7:]
-history_days = []
-for f in history_files:
-    d = load_json(f, {})
-    if isinstance(d, dict) and d:
-        history_days.append(d)
-
-generated_time = datetime.now().strftime("%Y-%m-%d %H:%M")
-summary = analysis.get("summary", {}) if isinstance(analysis.get("summary"), dict) else {}
-ai_judgement = parse_ai_json(analysis.get("ai_judgement") or summary.get("ai_judgement"))
-
-
-# =========================================================
-# 品牌 / 事件推断
-# =========================================================
 BRAND_ALIASES = {
     "安踏儿童": "安踏儿童",
     "安踏": "安踏",
@@ -197,18 +242,10 @@ def event_impact(title, brand, event):
     return "品牌声量、品类认知和终端转化均需跟踪"
 
 
-# =========================================================
-# 新闻事件：优先用 weekly_analysis.json
-# =========================================================
 def collect_news_events():
     output = []
 
-    source_lists = [
-        analysis.get("major_events"),
-        analysis.get("competitor_actions"),
-    ]
-
-    for source_list in source_lists:
+    for source_list in [analysis.get("major_events"), analysis.get("competitor_actions")]:
         for item in safe_list(source_list):
             if not isinstance(item, dict):
                 continue
@@ -240,7 +277,6 @@ def collect_news_events():
             deduped.append(x)
         return deduped
 
-    # 兜底：从日报 history 里取
     pool = []
     for day in history_days:
         date = day.get("date", "")
@@ -248,12 +284,14 @@ def collect_news_events():
             for item in safe_list(day.get(source_key)):
                 if not isinstance(item, dict):
                     continue
+
                 title = raw(item.get("title"))
                 if not title or any(w in title for w in BAD_WORDS):
                     continue
 
                 brand = raw(item.get("brand")) or infer_brand(title)
                 event = infer_event(title)
+
                 base = 1
                 if source_key == "competitor_news":
                     base += 2
@@ -289,9 +327,6 @@ def collect_news_events():
 news_events = collect_news_events()
 
 
-# =========================================================
-# 热词 / 品牌 / 商品 / 区域
-# =========================================================
 def collect_keywords():
     c = Counter()
 
@@ -347,6 +382,7 @@ def collect_category_heat():
 
     c = Counter()
     text = " ".join([x["title"] for x in news_events]) + " " + " ".join(w for w, _ in collect_keywords())
+
     rules = {
         "篮球专业": ["篮球", "库里"],
         "防晒凉感": ["防晒", "凉感", "速干"],
@@ -364,8 +400,8 @@ def collect_category_heat():
 
 def collect_regions():
     out = []
-
     analysis_regions = analysis.get("regions") or analysis.get("region_analysis") or []
+
     if isinstance(analysis_regions, list) and analysis_regions:
         for r in analysis_regions[:6]:
             if isinstance(r, dict):
@@ -379,6 +415,7 @@ def collect_regions():
         return out
 
     region_counter = defaultdict(list)
+
     for day in history_days:
         rr = day.get("region_reports")
         if isinstance(rr, dict):
@@ -386,7 +423,9 @@ def collect_regions():
                 if isinstance(r, dict):
                     name = raw(r.get("name") or r.get("region"))
                     if name:
-                        region_counter[name].append("；".join([raw(r.get(k)) for k in ["hot", "flow", "focus", "action"] if raw(r.get(k))]))
+                        region_counter[name].append(
+                            "；".join([raw(r.get(k)) for k in ["hot", "flow", "focus", "action"] if raw(r.get(k))])
+                        )
 
     for name, texts in region_counter.items():
         out.append({
@@ -448,6 +487,7 @@ def build_product_cards():
             "icon": icon,
             "insight": insight,
             "link": clean_url(s.get("link")),
+            "image": normalize_image_src(s.get("image") or s.get("image_url") or find_image(title)),
         })
 
         if len(cards) >= 12:
@@ -464,9 +504,6 @@ product_cards = build_product_cards()
 signal_count = int(product_signals.get("signal_count") or len(safe_list(product_signals.get("signals"))) or 0)
 
 
-# =========================================================
-# 周报判断
-# =========================================================
 def auto_core_points():
     points = []
     titles = " ".join([x["title"] for x in news_events])
@@ -496,14 +533,13 @@ def summary_text():
     return " ".join(auto_core_points()[:3])
 
 
-# =========================================================
-# HTML渲染
-# =========================================================
 def render_core_cards():
     html_text = ""
     icons = ["①", "②", "③", "④", "⑤"]
+
     for i, p in enumerate(auto_core_points()):
         html_text += f"<div class='core-card'><b>{icons[i]}</b><span>{esc(p)}</span></div>"
+
     return html_text
 
 
@@ -512,12 +548,25 @@ def render_event_table():
         return "<div class='empty'>暂无本周重大事件</div>"
 
     rows = ""
+
     for i, x in enumerate(news_events[:10], start=1):
+        img = find_image(x.get("title"))
         title_html = link_text(x.get("title"), x.get("link"), 42)
+
+        if img:
+            event_main = f"""
+            <div class='event-news'>
+              <img src='{esc(img)}' loading='lazy'>
+              <div>{title_html}<em>{esc(x.get('source',''))}</em></div>
+            </div>
+            """
+        else:
+            event_main = f"{title_html}<em>{esc(x.get('source',''))}</em>"
+
         rows += f"""
         <tr>
           <td><span class='rank'>{i}</span></td>
-          <td class='event-title'>{title_html}<em>{esc(x.get('source',''))}</em></td>
+          <td class='event-title'>{event_main}</td>
           <td>{esc(x.get('brand'))}</td>
           <td>{esc(x.get('event'))}</td>
           <td>{esc(x.get('impact'))}</td>
@@ -559,6 +608,7 @@ def render_category_bars():
         return "<div class='empty'>暂无品类热度</div>"
 
     rows = []
+
     for x in category_heat[:8]:
         name = raw(x.get("category") or x.get("name") or "")
         cnt = int(x.get("count") or 0)
@@ -579,6 +629,7 @@ def render_keyword_cloud():
         return "<div class='empty'>暂无热词</div>"
 
     html_text = ""
+
     for i, (w, c) in enumerate(keywords[:24], start=1):
         cls = "kw big" if i <= 4 else "kw mid" if i <= 10 else "kw"
         html_text += f"<span class='{cls}'>{esc(w)}</span>"
@@ -591,6 +642,7 @@ def render_regions():
         return "<div class='empty'>暂无区域机会</div>"
 
     html_text = ""
+
     for r in regions[:6]:
         html_text += f"""
         <div class='region-card'>
@@ -608,13 +660,33 @@ def render_product_cards():
         return "<div class='empty'>暂无商品趋势信号</div>"
 
     html_text = ""
+
     for i, p in enumerate(product_cards[:12], start=1):
         tags = " / ".join(p.get("tags", []))
         title_html = link_text(p.get("title"), p.get("link"), 36)
+        img = p.get("image") or find_image(p.get("title"))
+
+        if img:
+            cover = f"""
+            <div class='product-cover has-img'>
+              <span>TOP {i}</span>
+              <img src='{esc(img)}' loading='lazy'>
+              <strong>{esc(p.get('category'))}</strong>
+            </div>
+            """
+        else:
+            cover = f"""
+            <div class='product-cover'>
+              <span>TOP {i}</span>
+              <i>{p.get('icon')}</i>
+              <strong>{esc(p.get('category'))}</strong>
+              <em>热度 {esc(p.get('heat'))}</em>
+            </div>
+            """
 
         html_text += f"""
         <div class='product-card'>
-          <div class='product-cover'><span>TOP {i}</span><i>{p.get('icon')}</i><strong>{esc(p.get('category'))}</strong><em>热度 {esc(p.get('heat'))}</em></div>
+          {cover}
           <h4>{title_html}</h4>
           <p class='brand'>{esc(p.get('brand'))}｜{esc(p.get('source'))}</p>
           <p class='tags'>{esc(tags)}</p>
@@ -642,6 +714,7 @@ def render_ai():
     ]
 
     inner = ""
+
     for title, key in blocks:
         if ai_judgement.get(key):
             inner += f"<div><b>{title}</b><p>{esc(ai_judgement.get(key))}</p></div>"
@@ -661,11 +734,13 @@ def render_planning():
         ]
 
     html_text = ""
+
     for s in suggestions[:4]:
         if isinstance(s, dict):
             text = s.get("suggestion") or s.get("desc") or s.get("title") or ""
         else:
             text = s
+
         html_text += f"<div class='plan-card'>{esc(text)}</div>"
 
     return html_text
@@ -715,6 +790,8 @@ body{{background:#eef4fb;font-family:'Microsoft YaHei','PingFang SC',Arial,sans-
 .rank{{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;background:#0b63d8;color:#fff;border-radius:9px;font-weight:950}}
 .event-title{{font-weight:950;color:#0d2d68}}
 .event-title em{{display:block;font-size:11px;color:#7b8ca8;font-style:normal;margin-top:4px}}
+.event-news{{display:flex;gap:12px;align-items:center;min-width:360px}}
+.event-news img{{width:92px;height:62px;border-radius:12px;object-fit:cover;background:#edf5ff;border:1px solid #dbe6f6}}
 .event-title a,.product-card h4 a{{color:#0b63d8;text-decoration:none}}
 .event-title a:hover,.product-card h4 a:hover{{text-decoration:underline}}
 .grid-2{{display:grid;grid-template-columns:1fr 1fr;gap:16px}}
@@ -737,11 +814,14 @@ body{{background:#eef4fb;font-family:'Microsoft YaHei','PingFang SC',Arial,sans-
 .region-card b{{display:block;margin-top:10px;font-size:13px;line-height:1.5;color:#0f766e}}
 .products{{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}}
 .product-card{{border:1px solid #dbe6f6;border-radius:20px;background:#fbfdff;padding:13px;box-shadow:0 8px 18px rgba(20,60,110,.06)}}
-.product-cover{{height:150px;border-radius:16px;background:radial-gradient(circle at 80% 20%,rgba(25,163,255,.22),transparent 30%),linear-gradient(135deg,#edf5ff,#f8fbff);display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;margin-bottom:11px}}
-.product-cover span{{position:absolute;top:8px;left:8px;background:#062b78;color:#fff;border-radius:999px;padding:4px 8px;font-size:11px;font-weight:950}}
+.product-cover{{height:150px;border-radius:16px;background:radial-gradient(circle at 80% 20%,rgba(25,163,255,.22),transparent 30%),linear-gradient(135deg,#edf5ff,#f8fbff);display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;margin-bottom:11px;overflow:hidden}}
+.product-cover span{{position:absolute;top:8px;left:8px;background:#062b78;color:#fff;border-radius:999px;padding:4px 8px;font-size:11px;font-weight:950;z-index:2}}
 .product-cover i{{font-style:normal;font-size:46px}}
-.product-cover strong{{font-size:21px;color:#0b4db3;margin-top:8px}}
+.product-cover strong{{font-size:21px;color:#0b4db3;margin-top:8px;z-index:2}}
 .product-cover em{{font-style:normal;color:#0f766e;background:#ecfdf5;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:900;margin-top:8px}}
+.product-cover.has-img img{{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}}
+.product-cover.has-img:after{{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(6,35,95,.55))}}
+.product-cover.has-img strong{{position:absolute;left:12px;bottom:12px;color:#fff;font-size:18px;text-shadow:0 2px 8px rgba(0,0,0,.35)}}
 .product-card h4{{font-size:15.5px;line-height:1.35;color:#0d2d68;min-height:42px}}
 .brand{{font-size:12px;color:#0b63d8;font-weight:900;margin-top:6px}}
 .tags{{font-size:12px;color:#1d8c54;font-weight:850;margin-top:7px}}
@@ -816,3 +896,5 @@ print(f"weekly html generated: {OUTPUT_HTML}")
 print(f"news events: {len(news_events)} | keywords: {len(keywords)} | product signals: {signal_count}")
 print(f"event link count: {sum(1 for x in news_events if x.get('link'))}")
 print(f"product link count: {sum(1 for x in product_cards if x.get('link'))}")
+print(f"event image count: {sum(1 for x in news_events if find_image(x.get('title')))}")
+print(f"product image count: {sum(1 for x in product_cards if x.get('image') or find_image(x.get('title')))}")
