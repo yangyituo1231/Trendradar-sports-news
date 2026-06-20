@@ -1,6 +1,6 @@
 {
   "date": "2026-06-21",
-  "generated_time": "2026-06-21 04:01:56",
+  "generated_time": "2026-06-21 04:08:28",
   "source": "Google News RSS product signal monitor",
   "desc": "运动鞋服商品趋势信号监测：覆盖国内外运动品牌、户外品牌、成人与儿童品牌；重点监测近8天新品、尖货、功能科技、夏季功能、跑步科技、户外轻运动与大促热卖。已过滤财经财报、广告促销、测评导购、AI白皮书、ESG报告和非鞋服商品。",
   "recent_days": 8,
@@ -9,7 +9,7 @@
   "top_brands": [
     [
       "安踏",
-      1
+      2
     ],
     [
       "Asics",
@@ -23,14 +23,18 @@
     ],
     [
       "跑鞋",
-      3
+      4
     ],
     [
       "发布",
-      2
+      3
     ],
     [
       "缓震",
+      2
+    ],
+    [
+      "缓震跑鞋",
       1
     ],
     [
@@ -46,14 +50,6 @@
       1
     ],
     [
-      "篮球",
-      1
-    ],
-    [
-      "新款",
-      1
-    ],
-    [
       "越野跑",
       1
     ],
@@ -65,28 +61,44 @@
   "top_categories": [
     [
       "跑步科技",
-      3
+      4
     ],
     [
       "户外轻运动",
-      1
-    ],
-    [
-      "篮球足球",
       1
     ]
   ],
   "top_seasons": [
     [
       "全年",
-      4
-    ],
-    [
-      "秋季",
-      1
+      5
     ]
   ],
   "signals": [
+    {
+      "date": "2026-06-21",
+      "title": "安踏发布“折纸科技”：从结构设计探寻跑鞋缓震新方向 - 36 Kr",
+      "short_title": "安踏发布“折纸科技”：从结构设计探寻跑鞋缓震新方向 - 36 Kr",
+      "query": "缓震跑鞋 新品",
+      "brand_hits": [
+        "安踏"
+      ],
+      "keyword_hits": [
+        "跑鞋",
+        "缓震跑鞋",
+        "缓震",
+        "新品",
+        "发布"
+      ],
+      "category": "跑步科技",
+      "season_tag": "全年",
+      "source": "36 Kr",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE93d2J5VXBPNEg4d3duajhGT1d0N2x2OVgwRTNLUnNwLWFZdW9VN0Z4Tk9kNXJGZmc0N2syVTdOWDd1THhiVll4U0Mxb0ROZDJYRXBZ?oc=5",
+      "pub_date": "Thu, 18 Jun 2026 11:16:00 GMT",
+      "age_hours": 56.9,
+      "heat": 87,
+      "type": "product_signal"
+    },
     {
       "date": "2026-06-21",
       "title": "安踏发布“折纸科技”，试图从结构设计寻找跑鞋缓震新方向 - 36 Kr",
@@ -106,7 +118,7 @@
       "source": "36 Kr",
       "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4yQWRzUTBvdUYxTUtyQVZHUUVKZVpMX2Q3NUtyUVNLem5reHRxclhRWDJDSzhHU3pyZlY5VGt6alZDRlZTTHBKenBtN3dlZw?oc=5",
       "pub_date": "Thu, 18 Jun 2026 11:16:00 GMT",
-      "age_hours": 56.8,
+      "age_hours": 56.9,
       "heat": 84,
       "type": "product_signal"
     },
@@ -129,7 +141,7 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORDNRckpuSVJwQUhfbHhvNTV4eXhKLVRrTl8zRXFodFlod1F1VENZMlhWdTVueEhXR0NzTjFzUlFRQW1LckhWQlNlcXM0emhPSDlJOTNITkFqMzJyQ0tQb3ZDNjZUcHdnQXN2dmhueWNib2F0MG1NTFJDS1hOeDlZUDFFcGU2RlV5b3hrbXFtUmxyaXJQVjVMYWxTbHNyZ2JWcmc?oc=5",
       "pub_date": "Tue, 16 Jun 2026 03:16:01 GMT",
-      "age_hours": 112.8,
+      "age_hours": 112.9,
       "heat": 84,
       "type": "product_signal"
     },
@@ -149,27 +161,7 @@
       "source": "haveagood-holiday.com",
       "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcW16OFNpM05xTzdRb0RrWEhydE5vV2pVTGRWWG1yZHBuLU1BMWNrNGhpS0VoS0ZPTE9ZUXFVaG9mOG4wLVJjeTNMODFIMnRvbFJIZjVjY2lSN3NiaG9ta2FVMGVsMkpuM1huaUwwM3R2VFJpTnJKeHlaaWZvMmdmRmV1Ui1JZ1k?oc=5",
       "pub_date": "Fri, 19 Jun 2026 14:43:21 GMT",
-      "age_hours": 29.3,
-      "heat": 57,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-06-21",
-      "title": "\"gucci新款运动服[微信１００８６０８２]-高仿篮球鞋\" - Results on X | Live Posts & Updates - x.com",
-      "short_title": "\"gucci新款运动服[微信１００８６０８２]-高仿篮球鞋\" - Results on X | Live Posts & Updat...",
-      "query": "篮球鞋 新品",
-      "brand_hits": [],
-      "keyword_hits": [
-        "篮球",
-        "新品",
-        "新款"
-      ],
-      "category": "篮球足球",
-      "season_tag": "秋季",
-      "source": "x.com",
-      "link": "https://news.google.com/rss/articles/CBMizANBVV95cUxOSzFzRlRPM2kxcVJyS3JHcFAxVUpqR2JUQnFIdm9wRDJ0QUhERnZ2NmZpYXpYc0JjX1pKcmRuakt0ejkxQzBQblRKVG5xV1NkT3V2cDRXdWhyU0hwU2djWkI4SUlBUVRsLWF5Z3prSGIwa2QxT1ZRZWk4d0NfYXROcTNnaDdHR3A1SHNwamF4WEItS1VUTEFGbzZqYnRFM2pMTGlra3NVZUVqUlNwZ0o5QzR3RGdOM3NGRGtTRlpldGpzdnlmNnpBLUVkSFhYR1IwS2dRazBBX1ZzZ3M5bUdqVTRqTy12UEFOcXZub1MtTTN4UThUSnlLWXFuN3Bib3ZLTXdZUXJqX2t1U2RBb1RLVlhFd0kxbVlQenRGM1JhcmxxSmxJajQyclZmZ2VqMmpnR2lXSDRkSTA0SDFwZ1ZfNDhqdWF5U3hUV000SXpBZGxCWlRzRGluTnI0SzZfZVNxRmZURGN3RDdZWDZYajlTQ205c2NFWEtuTEt5bmRLV2lqWXRBOU9WMmQwN21KV20tQlFldGtyTkpXeXlXRTlIN0ZuMmcweTM1R28zNFJ4Z25mLWJZT25hMGNKTjRmU3NNR1BfdC1jWEtab1I3?oc=5",
-      "pub_date": "Fri, 19 Jun 2026 01:24:12 GMT",
-      "age_hours": 42.6,
+      "age_hours": 29.4,
       "heat": 57,
       "type": "product_signal"
     },
@@ -190,7 +182,7 @@
       "source": "QQ News",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5yMklIZ3lPRVRnQTFZRHZoRmlSME1QXzJLRVcwdGFmbkREQUlRMlpfNEZWWThHa1pUMTNHN0tkNDZkOXQybzRHekJwN1NSY1ZRdnBaTlVB?oc=5",
       "pub_date": "Tue, 16 Jun 2026 13:16:00 GMT",
-      "age_hours": 102.8,
+      "age_hours": 102.9,
       "heat": 52,
       "type": "product_signal"
     }
