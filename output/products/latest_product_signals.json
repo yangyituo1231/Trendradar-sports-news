@@ -1,6 +1,6 @@
 {
   "date": "2026-06-22",
-  "generated_time": "2026-06-22 04:10:29",
+  "generated_time": "2026-06-22 04:18:22",
   "source": "Google News RSS product signal monitor",
   "desc": "运动鞋服商品趋势信号监测：覆盖国内外运动品牌、户外品牌、成人与儿童品牌；重点监测近8天新品、尖货、功能科技、夏季功能、跑步科技、户外轻运动与大促热卖。已过滤财经财报、广告促销、测评导购、AI白皮书、ESG报告和非鞋服商品。",
   "recent_days": 8,
@@ -18,11 +18,11 @@
   ],
   "top_keywords": [
     [
-      "新品",
-      4
+      "跑鞋",
+      3
     ],
     [
-      "跑鞋",
+      "新品",
       3
     ],
     [
@@ -38,11 +38,11 @@
       1
     ],
     [
-      "篮球",
+      "上市",
       1
     ],
     [
-      "新款",
+      "系列",
       1
     ],
     [
@@ -60,18 +60,14 @@
       3
     ],
     [
-      "篮球足球",
+      "青少年成人化",
       1
     ]
   ],
   "top_seasons": [
     [
       "全年",
-      3
-    ],
-    [
-      "秋季",
-      1
+      4
     ]
   ],
   "signals": [
@@ -94,7 +90,7 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORDNRckpuSVJwQUhfbHhvNTV4eXhKLVRrTl8zRXFodFlod1F1VENZMlhWdTVueEhXR0NzTjFzUlFRQW1LckhWQlNlcXM0emhPSDlJOTNITkFqMzJyQ0tQb3ZDNjZUcHdnQXN2dmhueWNib2F0MG1NTFJDS1hOeDlZUDFFcGU2RlV5b3hrbXFtUmxyaXJQVjVMYWxTbHNyZ2JWcmc?oc=5",
       "pub_date": "Tue, 16 Jun 2026 03:16:01 GMT",
-      "age_hours": 136.9,
+      "age_hours": 137.0,
       "heat": 84,
       "type": "product_signal"
     },
@@ -117,28 +113,27 @@
       "source": "36 Kr",
       "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4yQWRzUTBvdUYxTUtyQVZHUUVKZVpMX2Q3NUtyUVNLem5reHRxclhRWDJDSzhHU3pyZlY5VGt6alZDRlZTTHBKenBtN3dlZw?oc=5",
       "pub_date": "Thu, 18 Jun 2026 11:16:00 GMT",
-      "age_hours": 80.9,
+      "age_hours": 81.0,
       "heat": 78,
       "type": "product_signal"
     },
     {
       "date": "2026-06-22",
-      "title": "\"gucci新款运动服[微信１００８６０８２]-高仿篮球鞋\" - Results on X | Live Posts & Updates - x.com",
-      "short_title": "\"gucci新款运动服[微信１００８６０８２]-高仿篮球鞋\" - Results on X | Live Posts & Updat...",
-      "query": "篮球鞋 新品",
+      "title": "GMT for Kids的成长扩容：FLOW系列36L护脊书包上市， 延伸大童市场版图 - 美通社",
+      "short_title": "GMT for Kids的成长扩容：FLOW系列36L护脊书包上市， 延伸大童市场版图 - 美通社",
+      "query": "New Balance Kids 上市",
       "brand_hits": [],
       "keyword_hits": [
-        "篮球",
-        "新品",
-        "新款"
+        "上市",
+        "系列"
       ],
-      "category": "篮球足球",
-      "season_tag": "秋季",
-      "source": "x.com",
-      "link": "https://news.google.com/rss/articles/CBMizgNBVV95cUxOYklxZ0RlRE9kUU9YTkNOZE5HQ3FwMFEwLWxSNk1HNHRoWEVBN3N4RnMxVmc5RDUwYXEyUFVxYWcxeWtNNmNMRW9OWHZSY29rT2dOZ3dEa2tyNlBEaWhvbl9ranZ2NnJLVkNNejJXREF2Ulh6NlRTZ3pKY1FKeDBXeUNva3gxY3pIOGlKNF9raWIzV0xHTEVnQnMxdklLM1RLdVR4cF8xVTJ4ZWZTVkhseHZyaUdydEl5ZnVFS3JReEVnQ3NEaVpfeFJkd2FBbXVfR2ZId3ZaZ0NyYk9BZTJOeTdHTnQyRHlHcHd5ZGctbnllN0k4ZFMtZ2M4b0w3SnQxaHJEcG5kcF9kZmpoWElUdER6U1BueEtkcTdWZHFqdVF2ZjBVbTdNRU5RZm83S0VCWW82RWFFbUkwemNOSjZ2TUFVZnpqTkdBRHB3aU5lSXp3Ul93ckgtU1YzWFdEQUJBZ1lwOHhJdEUzNnUyQjJ4ZWRzS1VuNjFkcmJ5QXhyc3hDU0dnMEdZWWRlRW42LXVCWDJ5LXhtNVVEM3dWTmotTFpOcTczZXJBc1JiWWtPdGVBb05pekZCVmlIWmtfbXBJTTM1bVVfYTliT3JDeWc?oc=5",
-      "pub_date": "Fri, 19 Jun 2026 12:52:11 GMT",
-      "age_hours": 55.3,
-      "heat": 57,
+      "category": "青少年成人化",
+      "season_tag": "全年",
+      "source": "美通社",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xVFR6Ym9oSUZVaW1Zb0ktTk8wLVNiV3ZCd3Z2ejRfMnBRSks4M2JncldERzVOd3VVczA1NExFSFJqeVpLaURkU2ZldERIRmVQenFFaS02OA?oc=5",
+      "pub_date": "Mon, 15 Jun 2026 07:14:00 GMT",
+      "age_hours": 157.1,
+      "heat": 60,
       "type": "product_signal"
     },
     {
@@ -158,7 +153,7 @@
       "source": "QQ News",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5yMklIZ3lPRVRnQTFZRHZoRmlSME1QXzJLRVcwdGFmbkREQUlRMlpfNEZWWThHa1pUMTNHN0tkNDZkOXQybzRHekJwN1NSY1ZRdnBaTlVB?oc=5",
       "pub_date": "Tue, 16 Jun 2026 13:16:00 GMT",
-      "age_hours": 126.9,
+      "age_hours": 127.0,
       "heat": 52,
       "type": "product_signal"
     }
