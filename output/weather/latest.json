@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26 04:26:47",
+  "generated_at": "2026-06-26 04:36:40",
   "source": "Open-Meteo",
   "regions": {
     "north": {
@@ -30,17 +30,17 @@
         },
         {
           "date": "2026-06-28",
-          "code": 95,
-          "weather": "雷阵雨",
+          "code": 51,
+          "weather": "小雨",
           "temp_max": 33.4,
           "temp_min": 24.3,
           "precipitation": 0.6,
           "wind": 16.5,
-          "risk_score": 45,
-          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+          "risk_score": 20,
+          "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         }
       ],
-      "risk_score": 45,
+      "risk_score": 35,
       "signal": "高温天气明显，防晒、凉感、速干品类进入主推窗口"
     },
     "east": {
@@ -90,8 +90,8 @@
       "days": [
         {
           "date": "2026-06-26",
-          "code": 96,
-          "weather": "雷阵雨",
+          "code": 99,
+          "weather": "强雷阵雨",
           "temp_max": 32.3,
           "temp_min": 25.2,
           "precipitation": 13.4,
