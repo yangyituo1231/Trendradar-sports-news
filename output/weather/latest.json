@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29 03:59:55",
+  "generated_at": "2026-06-29 02:07:38",
   "source": "Open-Meteo",
   "regions": {
     "north": {
@@ -30,7 +30,7 @@
         },
         {
           "date": "2026-07-01",
-          "code": 95,
+          "code": 96,
           "weather": "雷阵雨",
           "temp_max": 28.9,
           "temp_min": 20.4,
@@ -60,8 +60,8 @@
         },
         {
           "date": "2026-06-30",
-          "code": 99,
-          "weather": "强雷阵雨",
+          "code": 96,
+          "weather": "雷阵雨",
           "temp_max": 25.7,
           "temp_min": 23.8,
           "precipitation": 58.0,
@@ -71,8 +71,8 @@
         },
         {
           "date": "2026-07-01",
-          "code": 96,
-          "weather": "雷阵雨",
+          "code": 99,
+          "weather": "强雷阵雨",
           "temp_max": 25.6,
           "temp_min": 24.2,
           "precipitation": 36.2,
@@ -90,8 +90,8 @@
       "days": [
         {
           "date": "2026-06-29",
-          "code": 99,
-          "weather": "强雷阵雨",
+          "code": 96,
+          "weather": "雷阵雨",
           "temp_max": 30.7,
           "temp_min": 24.6,
           "precipitation": 11.4,
@@ -112,7 +112,7 @@
         },
         {
           "date": "2026-07-01",
-          "code": 95,
+          "code": 96,
           "weather": "雷阵雨",
           "temp_max": 31.9,
           "temp_min": 24.7,
@@ -194,14 +194,14 @@
         },
         {
           "date": "2026-07-01",
-          "code": 95,
-          "weather": "雷阵雨",
+          "code": 51,
+          "weather": "小雨",
           "temp_max": 36.1,
           "temp_min": 24.3,
           "precipitation": 0.1,
           "wind": 9.0,
-          "risk_score": 60,
-          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+          "risk_score": 35,
+          "signal": "高温天气明显，防晒、凉感、速干品类进入主推窗口"
         }
       ],
       "risk_score": 72,
