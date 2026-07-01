@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02 04:21:00",
+  "generated_at": "2026-07-02 04:30:43",
   "source": "Open-Meteo",
   "regions": {
     "north": {
@@ -49,13 +49,13 @@
       "days": [
         {
           "date": "2026-07-02",
-          "code": 80,
-          "weather": "阵雨",
+          "code": 95,
+          "weather": "雷阵雨",
           "temp_max": 27.6,
           "temp_min": 22.5,
           "precipitation": 6.1,
           "wind": 10.0,
-          "risk_score": 24,
+          "risk_score": 37,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         },
         {
@@ -90,14 +90,14 @@
       "days": [
         {
           "date": "2026-07-02",
-          "code": 95,
-          "weather": "雷阵雨",
+          "code": 55,
+          "weather": "中雨",
           "temp_max": 33.5,
           "temp_min": 26.1,
           "precipitation": 2.4,
           "wind": 14.0,
-          "risk_score": 45,
-          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+          "risk_score": 20,
+          "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         },
         {
           "date": "2026-07-03",
@@ -123,7 +123,7 @@
         }
       ],
       "risk_score": 57,
-      "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+      "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
     },
     "southwest": {
       "name": "西南",
@@ -194,8 +194,8 @@
         },
         {
           "date": "2026-07-04",
-          "code": 1,
-          "weather": "晴到多云",
+          "code": 2,
+          "weather": "多云",
           "temp_max": 38.2,
           "temp_min": 24.3,
           "precipitation": 0.0,
