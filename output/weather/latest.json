@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15 01:11:05",
+  "generated_at": "2026-07-16 03:43:47",
   "source": "Open-Meteo",
   "regions": {
     "north": {
@@ -7,35 +7,35 @@
       "city": "Beijing",
       "days": [
         {
-          "date": "2026-07-15",
-          "code": 3,
-          "weather": "阴",
-          "temp_max": 34.5,
-          "temp_min": 25.0,
-          "precipitation": 0.0,
-          "wind": 12.6,
-          "risk_score": 20,
-          "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
-        },
-        {
           "date": "2026-07-16",
           "code": 3,
           "weather": "阴",
-          "temp_max": 31.5,
-          "temp_min": 25.3,
+          "temp_max": 33.7,
+          "temp_min": 25.2,
           "precipitation": 0.0,
-          "wind": 7.6,
+          "wind": 7.7,
           "risk_score": 20,
           "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         },
         {
           "date": "2026-07-17",
-          "code": 2,
-          "weather": "多云",
-          "temp_max": 32.1,
-          "temp_min": 24.0,
+          "code": 3,
+          "weather": "阴",
+          "temp_max": 32.9,
+          "temp_min": 24.2,
           "precipitation": 0.0,
-          "wind": 15.2,
+          "wind": 14.5,
+          "risk_score": 20,
+          "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
+        },
+        {
+          "date": "2026-07-18",
+          "code": 53,
+          "weather": "小雨",
+          "temp_max": 31.6,
+          "temp_min": 24.2,
+          "precipitation": 2.7,
+          "wind": 12.7,
           "risk_score": 20,
           "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         }
@@ -48,117 +48,35 @@
       "city": "Shanghai",
       "days": [
         {
-          "date": "2026-07-15",
-          "code": 51,
+          "date": "2026-07-16",
+          "code": 53,
           "weather": "小雨",
-          "temp_max": 38.2,
-          "temp_min": 29.4,
-          "precipitation": 0.9,
-          "wind": 11.1,
+          "temp_max": 38.1,
+          "temp_min": 30.1,
+          "precipitation": 2.2,
+          "wind": 10.5,
           "risk_score": 35,
           "signal": "高温天气明显，防晒、凉感、速干品类进入主推窗口"
         },
         {
-          "date": "2026-07-16",
+          "date": "2026-07-17",
           "code": 95,
           "weather": "雷阵雨",
-          "temp_max": 38.0,
-          "temp_min": 29.5,
-          "precipitation": 2.4,
+          "temp_max": 39.4,
+          "temp_min": 30.2,
+          "precipitation": 2.3,
           "wind": 10.6,
           "risk_score": 60,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         },
         {
-          "date": "2026-07-17",
-          "code": 95,
-          "weather": "雷阵雨",
-          "temp_max": 38.9,
-          "temp_min": 29.7,
-          "precipitation": 2.8,
-          "wind": 11.3,
-          "risk_score": 60,
-          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
-        }
-      ],
-      "risk_score": 60,
-      "signal": "高温天气明显，防晒、凉感、速干品类进入主推窗口"
-    },
-    "south": {
-      "name": "华南",
-      "city": "Guangzhou",
-      "days": [
-        {
-          "date": "2026-07-15",
-          "code": 95,
-          "weather": "雷阵雨",
-          "temp_max": 29.8,
-          "temp_min": 25.2,
-          "precipitation": 16.8,
-          "wind": 16.6,
-          "risk_score": 47,
-          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
-        },
-        {
-          "date": "2026-07-16",
-          "code": 95,
-          "weather": "雷阵雨",
-          "temp_max": 30.6,
-          "temp_min": 23.9,
-          "precipitation": 12.5,
-          "wind": 14.9,
-          "risk_score": 67,
-          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
-        },
-        {
-          "date": "2026-07-17",
-          "code": 95,
-          "weather": "雷阵雨",
-          "temp_max": 32.0,
-          "temp_min": 24.5,
-          "precipitation": 5.3,
-          "wind": 12.5,
-          "risk_score": 57,
-          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
-        }
-      ],
-      "risk_score": 67,
-      "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
-    },
-    "southwest": {
-      "name": "西南",
-      "city": "Chengdu",
-      "days": [
-        {
-          "date": "2026-07-15",
-          "code": 55,
-          "weather": "中雨",
-          "temp_max": 39.2,
-          "temp_min": 26.3,
-          "precipitation": 3.3,
-          "wind": 16.6,
-          "risk_score": 47,
-          "signal": "高温天气明显，防晒、凉感、速干品类进入主推窗口"
-        },
-        {
-          "date": "2026-07-16",
+          "date": "2026-07-18",
           "code": 96,
           "weather": "雷阵雨",
-          "temp_max": 39.4,
-          "temp_min": 28.1,
-          "precipitation": 9.1,
-          "wind": 14.2,
-          "risk_score": 72,
-          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
-        },
-        {
-          "date": "2026-07-17",
-          "code": 96,
-          "weather": "雷阵雨",
-          "temp_max": 35.1,
-          "temp_min": 25.4,
-          "precipitation": 4.4,
-          "wind": 15.3,
+          "temp_max": 36.0,
+          "temp_min": 28.2,
+          "precipitation": 6.4,
+          "wind": 13.7,
           "risk_score": 72,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         }
@@ -166,46 +84,128 @@
       "risk_score": 72,
       "signal": "高温天气明显，防晒、凉感、速干品类进入主推窗口"
     },
+    "south": {
+      "name": "华南",
+      "city": "Guangzhou",
+      "days": [
+        {
+          "date": "2026-07-16",
+          "code": 95,
+          "weather": "雷阵雨",
+          "temp_max": 31.2,
+          "temp_min": 24.6,
+          "precipitation": 9.4,
+          "wind": 13.4,
+          "risk_score": 57,
+          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+        },
+        {
+          "date": "2026-07-17",
+          "code": 95,
+          "weather": "雷阵雨",
+          "temp_max": 32.1,
+          "temp_min": 24.0,
+          "precipitation": 8.1,
+          "wind": 14.4,
+          "risk_score": 57,
+          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+        },
+        {
+          "date": "2026-07-18",
+          "code": 95,
+          "weather": "雷阵雨",
+          "temp_max": 32.1,
+          "temp_min": 25.2,
+          "precipitation": 9.0,
+          "wind": 12.6,
+          "risk_score": 57,
+          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+        }
+      ],
+      "risk_score": 57,
+      "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+    },
+    "southwest": {
+      "name": "西南",
+      "city": "Chengdu",
+      "days": [
+        {
+          "date": "2026-07-16",
+          "code": 96,
+          "weather": "雷阵雨",
+          "temp_max": 37.0,
+          "temp_min": 26.5,
+          "precipitation": 7.4,
+          "wind": 17.9,
+          "risk_score": 72,
+          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+        },
+        {
+          "date": "2026-07-17",
+          "code": 81,
+          "weather": "阵雨",
+          "temp_max": 34.5,
+          "temp_min": 25.2,
+          "precipitation": 3.7,
+          "wind": 14.2,
+          "risk_score": 44,
+          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+        },
+        {
+          "date": "2026-07-18",
+          "code": 3,
+          "weather": "阴",
+          "temp_max": 34.5,
+          "temp_min": 25.9,
+          "precipitation": 0.0,
+          "wind": 17.5,
+          "risk_score": 20,
+          "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
+        }
+      ],
+      "risk_score": 72,
+      "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+    },
     "northwest": {
       "name": "西北",
       "city": "Xi'an",
       "days": [
         {
-          "date": "2026-07-15",
-          "code": 51,
-          "weather": "小雨",
-          "temp_max": 33.0,
-          "temp_min": 24.2,
-          "precipitation": 0.5,
-          "wind": 11.7,
-          "risk_score": 20,
-          "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
-        },
-        {
           "date": "2026-07-16",
           "code": 96,
           "weather": "雷阵雨",
-          "temp_max": 35.8,
-          "temp_min": 25.3,
-          "precipitation": 32.5,
-          "wind": 10.5,
-          "risk_score": 95,
+          "temp_max": 34.6,
+          "temp_min": 25.0,
+          "precipitation": 18.1,
+          "wind": 14.3,
+          "risk_score": 67,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         },
         {
           "date": "2026-07-17",
-          "code": 51,
-          "weather": "小雨",
-          "temp_max": 30.0,
+          "code": 80,
+          "weather": "阵雨",
+          "temp_max": 30.8,
           "temp_min": 24.6,
-          "precipitation": 0.7,
-          "wind": 12.8,
+          "precipitation": 6.0,
+          "wind": 9.6,
+          "risk_score": 44,
+          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+        },
+        {
+          "date": "2026-07-18",
+          "code": 3,
+          "weather": "阴",
+          "temp_max": 30.0,
+          "temp_min": 24.1,
+          "precipitation": 0.0,
+          "wind": 14.1,
           "risk_score": 20,
           "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         }
       ],
-      "risk_score": 95,
-      "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
+      "risk_score": 67,
+      "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
     }
   }
 }
