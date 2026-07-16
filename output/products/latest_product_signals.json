@@ -1,6 +1,6 @@
 {
   "date": "2026-07-17",
-  "generated_time": "2026-07-17 03:38:45",
+  "generated_time": "2026-07-17 03:46:41",
   "source": "Google News RSS product signal monitor",
   "desc": "运动鞋服商品趋势信号监测：覆盖国内外运动品牌、户外品牌、成人与儿童品牌；重点监测近8天新品、尖货、功能科技、夏季功能、跑步科技、户外轻运动与大促热卖。已过滤财经财报、广告促销、测评导购、AI白皮书、ESG报告和非鞋服商品。",
   "recent_days": 8,
@@ -54,7 +54,7 @@
       1
     ],
     [
-      "跑鞋",
+      "户外鞋",
       1
     ],
     [
@@ -80,7 +80,7 @@
       1
     ],
     [
-      "跑步科技",
+      "户外轻运动",
       1
     ]
   ],
@@ -113,7 +113,7 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNT2N2aGlyZGRsV1pHaDk5NEJ3ZUh6d29GQmtsZHNMUy04Z3BSWVdBNHYyLVI3eWgxSE4zUWxueEk0SVVPZndfMXljM1VteTJMLVdCOS1nQ3lvMXhUMXNFMUJTbEttMFZsd3g1bkJtRmdXcGU2NkNOVE5IeEZYNUdIbXlHV2dubHl5?oc=5",
       "pub_date": "Thu, 16 Jul 2026 04:05:56 GMT",
-      "age_hours": 15.5,
+      "age_hours": 15.7,
       "heat": 87,
       "type": "product_signal"
     },
@@ -134,7 +134,7 @@
       "source": "Hypebae",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOVh1cDd3Q2pqVWxnZXJWc3N3aXpTTEtJQ2FFS0NLQ3laU3BLQ2dYZEdGaWc3alluSFpwcGZHY1haZGhwUFM2YzdESTNiRWNCRDFNZUVLTWxUWnJpNXFMbzZOYkNTQzZGY2IwU3RvNmR0ZUZhLWZHVnhvLXZ3SUozNkFxQmhJSDIySVBXQVdORmxRQQ?oc=5",
       "pub_date": "Tue, 14 Jul 2026 14:09:40 GMT",
-      "age_hours": 53.5,
+      "age_hours": 53.6,
       "heat": 78,
       "type": "product_signal"
     },
@@ -154,7 +154,7 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWlVvcl9pbUk0dGtRa04yb3VEcVI5eUpaazhkOVMtMXhSaXBNM0RNVlk0Mi03Z2pRVk4zcHc0alVndS1nWmF5ZU1Ra201bk1HMlNVU2JjU1dobWdsNzZ4dHp0Uzk4STg4T0p5QmEzVDYtZk5BVzlRZWRIc0pycVdVNzdYR2lUR1o3OEEw?oc=5",
       "pub_date": "Thu, 16 Jul 2026 03:58:46 GMT",
-      "age_hours": 15.7,
+      "age_hours": 15.8,
       "heat": 69,
       "type": "product_signal"
     },
@@ -175,7 +175,7 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPYUkwdkNRUmdHOWFCUmQ5Zld2RThKeHhMMHExT0hKT0NUSmM3ZGNOLVdKZ0ZTRm1FWk9VY19GQ0dxdWxDVm80R2pzdGNLS1FicWNydms4MWNrTlB5SlFBaWFzaHNhNG85QVp3NHpLYnpicHM3cE5ycXA0S1p5dnNSQXJ1ZnJUdmFQNTRQR2l5MkE?oc=5",
       "pub_date": "Thu, 16 Jul 2026 10:20:36 GMT",
-      "age_hours": 9.3,
+      "age_hours": 9.4,
       "heat": 66,
       "type": "product_signal"
     },
@@ -183,20 +183,20 @@
       "date": "2026-07-17",
       "title": "arcteryx｜新品速递 Konseal 徒步鞋上新色 1.5L 腰包 $50 - dealmoon.ca",
       "short_title": "arcteryx｜新品速递 Konseal 徒步鞋上新色 1.5L 腰包 $50 - dealmoon.ca",
-      "query": "跑鞋 新品",
+      "query": "户外鞋 新品",
       "brand_hits": [],
       "keyword_hits": [
-        "跑鞋",
+        "户外鞋",
         "徒步鞋",
         "新品",
         "上新"
       ],
-      "category": "跑步科技",
+      "category": "户外轻运动",
       "season_tag": "全年",
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOeERPbkNKU2RXb2JrcXRBQWFoY2NaZno3aEZ5M3pnd0VaTlVoVDhrdTRCbEUtd0R6V0RKRWpkQ3dLR2tZUVBjaUZac1VqNXRvYjg1WkNTNlo0RFV0dmw3Rkc2SXl3LTM1dHFaMTV1TGgxOS1ZQUl5dUdjZWtwNVVBeW1YbnlKMjd3bGU4dzZGSXI?oc=5",
       "pub_date": "Wed, 15 Jul 2026 16:06:52 GMT",
-      "age_hours": 27.5,
+      "age_hours": 27.7,
       "heat": 66,
       "type": "product_signal"
     },
@@ -217,7 +217,7 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVDh5RkdUUDctS2NoSFQ0eEt2ZmhiY0lLUDhjY28xd0RGblZ1alZEOHFGVUJIQnZvZm1UaXVqRi1qdVFkRW5DclZZcG1nU1BMT3o4OXN3b21yRGV6aDY3bW0zM2N4ZDJxbTdnaWozQUxpNS01TnlGbmhKLUczTERraUpuaUJxZE4yRG15cW55WVhLSWdVSVVFeE9zclVILTU1VjdMUXl0ZjVnOGZCUUZkOVdhU3ZEZkNxX0M2SXFn?oc=5",
       "pub_date": "Tue, 14 Jul 2026 22:22:03 GMT",
-      "age_hours": 45.3,
+      "age_hours": 45.4,
       "heat": 66,
       "type": "product_signal"
     },
@@ -238,7 +238,7 @@
       "source": "QQ News",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5rTDNXYzNiZEhfV0thY081TUEzTEMzT0FVaXM4MXJVcS02ZEZYaVhrRDk3TVhRbzhXODdSUjZ6SGRtdnNVZ0lVaUVLaENiZ05KNGpoZ0hB?oc=5",
       "pub_date": "Wed, 08 Jul 2026 23:56:00 GMT",
-      "age_hours": 187.7,
+      "age_hours": 187.8,
       "heat": 58,
       "type": "product_signal"
     }
