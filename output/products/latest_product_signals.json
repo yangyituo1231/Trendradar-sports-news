@@ -1,15 +1,15 @@
 {
   "date": "2026-07-20",
-  "generated_time": "2026-07-20 03:38:52",
+  "generated_time": "2026-07-20 03:53:05",
   "source": "Google News RSS product signal monitor",
   "desc": "运动鞋服商品趋势信号监测：覆盖国内外运动品牌、户外品牌、成人与儿童品牌；重点监测近8天新品、尖货、功能科技、夏季功能、跑步科技、户外轻运动与大促热卖。已过滤财经财报、广告促销、测评导购、AI白皮书、ESG报告和非鞋服商品。",
   "recent_days": 8,
   "query_count": 260,
-  "signal_count": 11,
+  "signal_count": 13,
   "top_brands": [
     [
       "Nike",
-      2
+      3
     ],
     [
       "Hoka",
@@ -35,7 +35,7 @@
   "top_keywords": [
     [
       "新品",
-      6
+      7
     ],
     [
       "篮球",
@@ -54,12 +54,20 @@
       2
     ],
     [
+      "跑鞋",
+      2
+    ],
+    [
       "防晒",
       2
     ],
     [
-      "跑鞋",
-      1
+      "运动凉鞋",
+      2
+    ],
+    [
+      "热卖",
+      2
     ],
     [
       "速干",
@@ -67,10 +75,6 @@
     ],
     [
       "618",
-      1
-    ],
-    [
-      "运动凉鞋",
       1
     ],
     [
@@ -82,11 +86,11 @@
       1
     ],
     [
-      "儿童防晒衣",
+      "童鞋",
       1
     ],
     [
-      "热卖",
+      "儿童防晒衣",
       1
     ],
     [
@@ -121,10 +125,14 @@
     ],
     [
       "跑步科技",
-      1
+      2
     ],
     [
       "运动恢复",
+      1
+    ],
+    [
+      "儿童鞋",
       1
     ],
     [
@@ -138,16 +146,16 @@
   ],
   "top_seasons": [
     [
-      "秋季",
-      4
-    ],
-    [
       "全年",
-      4
+      5
     ],
     [
       "夏季",
-      3
+      4
+    ],
+    [
+      "秋季",
+      4
     ]
   ],
   "signals": [
@@ -172,7 +180,7 @@
       "source": "news.tom.com",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkd0ZNTTlSTEM1Qk1VeElXY0VsZExqdk5BWGlFRzFUVEItelZTbGEwZndOWXBwVmwwX0p3aGFVOGZxdjlkTVE3Wjh0djNUUUlzbEdKVWFR?oc=5",
       "pub_date": "Fri, 17 Jul 2026 06:13:00 GMT",
-      "age_hours": 61.4,
+      "age_hours": 61.7,
       "heat": 100,
       "type": "product_signal"
     },
@@ -194,7 +202,7 @@
       "source": "搜狐网",
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPYkJlUnI5djJmeVo5c1doSHcyajdOel9kejhXeTgyc2FYYnktUHBMaUNDbTF5YkhWeGNId2xENlg2MTBwTk4zM3FWcGZ2M3lMNEtsZzdHRWJlOGRpOFdUdXVsT0tsRHFWUnJPTk91VVUtamVRbk9lazFMcDZVUHB0TzBZTmYzS29fdmlzVA?oc=5",
       "pub_date": "Sun, 19 Jul 2026 03:45:00 GMT",
-      "age_hours": 15.9,
+      "age_hours": 16.1,
       "heat": 81,
       "type": "product_signal"
     },
@@ -215,7 +223,7 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1JY0UxMkxvU1NvVnM5SFFQOUdlZjFDRG5VU0dZVDhUUHFXa1l0YkU0dGc0RVJKckxWNno2cnNZMUMzS2lmcFFpUWpiUzN5OEpzM0Nhbi1BWUc5SDdtaGtEeW9JZWlDaXhCTnFuWXZKT21NbTc1MFQ0?oc=5",
       "pub_date": "Fri, 17 Jul 2026 03:32:54 GMT",
-      "age_hours": 64.1,
+      "age_hours": 64.3,
       "heat": 78,
       "type": "product_signal"
     },
@@ -235,7 +243,7 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaDZad1FqQW9uWkhYTEtudHp1cmM3cXRXM0JnQ0V5OTJxQTlkZVZmZll4V2NvTTE3ajJLRFJaR2s4a2dobkpWenBXVEUwV005c0FfTFV0YXNxY3BwNHQtT0ZTcXBVdEJTc19MRl9hX0d0Nk1OVlRCS2h1YmhjcVlMbUJqY0dsZ3ZXMzFhZnpEQ01YUzJlSHhoRGhERDRQc00?oc=5",
       "pub_date": "Fri, 17 Jul 2026 10:49:50 GMT",
-      "age_hours": 56.8,
+      "age_hours": 57.1,
       "heat": 75,
       "type": "product_signal"
     },
@@ -257,8 +265,30 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNT2N2aGlyZGRsV1pHaDk5NEJ3ZUh6d29GQmtsZHNMUy04Z3BSWVdBNHYyLVI3eWgxSE4zUWxueEk0SVVPZndfMXljM1VteTJMLVdCOS1nQ3lvMXhUMXNFMUJTbEttMFZsd3g1bkJtRmdXcGU2NkNOVE5IeEZYNUdIbXlHV2dubHl5?oc=5",
       "pub_date": "Thu, 16 Jul 2026 04:05:56 GMT",
-      "age_hours": 87.5,
+      "age_hours": 87.8,
       "heat": 75,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-07-20",
+      "title": "跑鞋热卖，户外升温，耐克为什么没接住？ - 风闻",
+      "short_title": "跑鞋热卖，户外升温，耐克为什么没接住？ - 风闻",
+      "query": "跑鞋 新品",
+      "brand_hits": [
+        "Nike"
+      ],
+      "keyword_hits": [
+        "跑鞋",
+        "新品",
+        "热卖"
+      ],
+      "category": "跑步科技",
+      "season_tag": "全年",
+      "source": "风闻",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5qY3otN3VBeTJvQUl1MGtQWHdQR04tSEZaZlF1SEdJWno4VjNxYTBVR2taWjY3MUZQS2hjWFdKOFBsOEozU2VDaFBJM0s1aEcyWGZMRGpPdzlVMmM?oc=5",
+      "pub_date": "Sat, 11 Jul 2026 19:59:59 GMT",
+      "age_hours": 191.9,
+      "heat": 73,
       "type": "product_signal"
     },
     {
@@ -278,7 +308,7 @@
       "source": "Hypebae",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOVh1cDd3Q2pqVWxnZXJWc3N3aXpTTEtJQ2FFS0NLQ3laU3BLQ2dYZEdGaWc3alluSFpwcGZHY1haZGhwUFM2YzdESTNiRWNCRDFNZUVLTWxUWnJpNXFMbzZOYkNTQzZGY2IwU3RvNmR0ZUZhLWZHVnhvLXZ3SUozNkFxQmhJSDIySVBXQVdORmxRQQ?oc=5",
       "pub_date": "Tue, 14 Jul 2026 14:13:37 GMT",
-      "age_hours": 125.4,
+      "age_hours": 125.7,
       "heat": 72,
       "type": "product_signal"
     },
@@ -298,8 +328,27 @@
       "source": "Hypebae",
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQclFILVhPN2lsV0dyZEVJRDRHRUYyalJtQ0x3V1M0VTZEUDNIRkhkNWJFdk84ZHppVjVSWi1Bc1pVWmYyRWljcDBtVUV6NmFRaVBpcThseER4QjNITXB4REh1Smh1NkRCdS0wczlxWTFFb3ZlMVRWX1RmRXJ5dlk1dXNENnVFNkNVOXA0dXY2dFlBSUFSTHVORGgtOEhoNEhfZzVvbnNXcEt5MlRzZ0RVN3FvQjNQUF9ONGdtVTl4TQ?oc=5",
       "pub_date": "Thu, 16 Jul 2026 14:30:14 GMT",
-      "age_hours": 77.1,
+      "age_hours": 77.4,
       "heat": 69,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-07-20",
+      "title": "DREAM PAIRS 儿童多色运动凉鞋 童鞋 - dealmoon.ca",
+      "short_title": "DREAM PAIRS 儿童多色运动凉鞋 童鞋 - dealmoon.ca",
+      "query": "Nike Kids 儿童运动",
+      "brand_hits": [],
+      "keyword_hits": [
+        "童鞋",
+        "运动凉鞋"
+      ],
+      "category": "儿童鞋",
+      "season_tag": "夏季",
+      "source": "dealmoon.ca",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOUpRSlJsTGJsWkZMbUVkeUc5cnQ4QWVESk9GU0VtLVg0d2pjNFFzWVV6X0lpWDk1dzNCd19IdTYyYXlETXFuRHAtdzU3NjdLM3JELWlJVm5vU3BSRV8xbDhsZzlvMG1rTWZGQ3MzRnA2bzRRVWptRHViaWhXMEwwa0w0VkRuTTZrUFZudmhKeEk1a0xOSW5xcw?oc=5",
+      "pub_date": "Sat, 18 Jul 2026 22:34:04 GMT",
+      "age_hours": 21.3,
+      "heat": 68,
       "type": "product_signal"
     },
     {
@@ -319,7 +368,7 @@
       "source": "news.tom.com",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Pdm1LZWp5UV8xYjgzYW9FNTJVMGI0QkxFWDc5b3pfMWdsX0VPdFc2c3EtcEJDNEhncXRBOUVwOGRlRGM1bTVEZUFta0FRRC04TDh3ajVR?oc=5",
       "pub_date": "Fri, 17 Jul 2026 06:12:00 GMT",
-      "age_hours": 61.4,
+      "age_hours": 61.7,
       "heat": 68,
       "type": "product_signal"
     },
@@ -340,7 +389,7 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOeERPbkNKU2RXb2JrcXRBQWFoY2NaZno3aEZ5M3pnd0VaTlVoVDhrdTRCbEUtd0R6V0RKRWpkQ3dLR2tZUVBjaUZac1VqNXRvYjg1WkNTNlo0RFV0dmw3Rkc2SXl3LTM1dHFaMTV1TGgxOS1ZQUl5dUdjZWtwNVVBeW1YbnlKMjd3bGU4dzZGSXI?oc=5",
       "pub_date": "Wed, 15 Jul 2026 16:06:52 GMT",
-      "age_hours": 99.5,
+      "age_hours": 99.8,
       "heat": 60,
       "type": "product_signal"
     },
@@ -360,7 +409,7 @@
       "source": "Jiemian.com",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE03RzN4a3ZxTHFPd0gwYTd0SUlGNzc4VjVXTnhsMU5fMG01YWtDU2k5YWxhd0hueXZnQUtGcW9qOFpVRzFHZXR5aTZyN2pGRVA1aGMxYjVGMzg?oc=5",
       "pub_date": "Fri, 17 Jul 2026 17:23:14 GMT",
-      "age_hours": 50.3,
+      "age_hours": 50.5,
       "heat": 57,
       "type": "product_signal"
     },
@@ -380,7 +429,7 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWlVvcl9pbUk0dGtRa04yb3VEcVI5eUpaazhkOVMtMXhSaXBNM0RNVlk0Mi03Z2pRVk4zcHc0alVndS1nWmF5ZU1Ra201bk1HMlNVU2JjU1dobWdsNzZ4dHp0Uzk4STg4T0p5QmEzVDYtZk5BVzlRZWRIc0pycVdVNzdYR2lUR1o3OEEw?oc=5",
       "pub_date": "Thu, 16 Jul 2026 03:58:46 GMT",
-      "age_hours": 87.7,
+      "age_hours": 87.9,
       "heat": 57,
       "type": "product_signal"
     }
