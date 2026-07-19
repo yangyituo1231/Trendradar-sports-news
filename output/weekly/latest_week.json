@@ -1,72 +1,17 @@
 {
-  "generate_time": "2026-07-19 03:51",
-  "start_date": "2026-07-13",
-  "end_date": "2026-07-19",
+  "generate_time": "2026-07-20 03:38",
+  "start_date": "2026-07-14",
+  "end_date": "2026-07-20",
   "days": [
-    "2026-07-13",
     "2026-07-14",
     "2026-07-15",
     "2026-07-16",
     "2026-07-17",
     "2026-07-18",
-    "2026-07-19"
+    "2026-07-19",
+    "2026-07-20"
   ],
   "top_news": [
-    {
-      "title": "喜茶茶坊海外首店纽约开业；亚瑟士集团拆分Onitsuka Tiger业务；星巴克中国...",
-      "tag": "品牌竞争",
-      "source": "搜狐网",
-      "desc": "品牌重大动作带来声量与产品心智变化，需关注终端转化和品类借势。",
-      "logo": "品牌",
-      "icon": "🏷️",
-      "class": "logo-purple",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWG9weDBTc05OTEhvMWk1ZDNrWUNmRGRVMko0ckhDZVVfdlN6VGlMamU1blRTQUZPaWV6dWlUa3daV0VnU0hkTDRqZ3d5RDZqM2FYUDNueVdaUG9abjJhQ1hLSWVadDFXTURsNFp5bmtqa3Bab3RYOHpFMk9OVzVqbUgxZ3VDYXRYVlhUQ2JVME80dXNuNDVoRnlORWo2ZEtR?oc=5",
-      "published_at": "Fri, 12 Jun 2026 11:42:11 GMT"
-    },
-    {
-      "title": "火蝠电商：抖音全域运营效果强劲，助力国民雪糕品牌销量爆发",
-      "tag": "品牌竞争",
-      "source": "新华报业网",
-      "desc": "品牌重大动作带来声量与产品心智变化，需关注终端转化和品类借势。",
-      "logo": "品牌",
-      "icon": "🏷️",
-      "class": "logo-purple",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE04WjRlUWpvV3VrMnFmRWtMOF8ybk1pUmtyQXZsamxudGhqUXQ1blhhb2JmTkxNenB3UjI3LWRPczVJSkdtOWZqTk5zMzVSWkJzZThCZU52QlppV3VENnA4NVVQc3Vid01uVW9B?oc=5",
-      "published_at": "Tue, 16 Jun 2026 02:25:00 GMT"
-    },
-    {
-      "title": "10年10亿授权费，安德玛儿童操盘手接下「锐步中国」",
-      "tag": "品牌竞争",
-      "source": "36 Kr",
-      "desc": "关注儿童运动品牌格局变化，评估对361°儿童的市场影响。",
-      "logo": "品牌",
-      "icon": "🏷️",
-      "class": "logo-purple",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1RSnpkM19IMjBtbXhDRVlaTVBQc1VaV1pvaE1KV1RocUhfQWVhYTY3U2M1N0I5d1oxSnhkYVoyMHRZLUY5cWFSenpqWXB1UQ?oc=5",
-      "published_at": "Sun, 14 Jun 2026 21:56:53 GMT"
-    },
-    {
-      "title": "从远方到日常 户外运动正在影响中国人的生活方式",
-      "tag": "户外/运动场景",
-      "source": "央视网",
-      "desc": "户外运动日常化趋势明显，儿童户外品类可加大产品布局。",
-      "logo": "户外",
-      "icon": "🚴",
-      "class": "logo-green",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1lMjlLU0x5UDRHNi1Jd1BaLTZzdGNTMmtaWE5JRGthc2lES2VRc3FIUmVVc0Z5Vlo5RXFwNmRuQk5jcTJlV1RFR1Mwd3dGX2NWcEZyT0JpNFBESVFHQ19UWVdLdzNzV3kyYVJnOTQ0VTFOdXlzRmRTYg?oc=5",
-      "published_at": "Mon, 15 Jun 2026 22:48:35 GMT"
-    },
-    {
-      "title": "618大促首阶段分析｜数据｜风闻",
-      "tag": "大促/电商",
-      "source": "风闻",
-      "desc": "了解大促首阶段数据，优化儿童品类电商策略与库存调配。",
-      "logo": "大促",
-      "icon": "🛒",
-      "class": "logo-blue",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ldXRPX21SSXNtbjNXeW5aUi1tU3poRFFGS1ctb3I3MUg4M0Z5bmhYcDVfVzZkdHAyY1Zsc004aUtBc3oyb2pLZDFyT3Y4Y0hOeXREX1M4a0VyZUU?oc=5",
-      "published_at": "Fri, 12 Jun 2026 01:33:41 GMT"
-    },
     {
       "title": "火蝠电商：抖音全域运营效果强劲，助力国民雪糕品牌销量爆发",
       "tag": "品牌竞争",
@@ -396,41 +341,64 @@
       "class": "logo-green",
       "link": "",
       "published_at": ""
+    },
+    {
+      "title": "运动品牌竞争加剧，产品心智与渠道效率成为关键",
+      "tag": "品牌竞争",
+      "source": "行业观察",
+      "desc": "品牌重大动作反映竞争重心变化，需关注产品心智、代言资产、渠道声量与终端转化。",
+      "logo": "品牌",
+      "icon": "🏷️",
+      "class": "logo-purple",
+      "link": "",
+      "published_at": ""
+    },
+    {
+      "title": "儿童运动消费场景外扩，亲子与校园需求继续升温",
+      "tag": "童装/儿童运动",
+      "source": "消费观察",
+      "desc": "儿童消费从单品购买转向亲子、校园、户外和运动场景综合经营。",
+      "logo": "童装",
+      "icon": "🧒",
+      "class": "logo-sky",
+      "link": "",
+      "published_at": ""
+    },
+    {
+      "title": "平台大促进入预热期，夏季功能品类承接需前置",
+      "tag": "大促/电商",
+      "source": "平台资讯",
+      "desc": "平台流量与大促节奏变化，重点观察夏季品类曝光、直播转化与终端承接。",
+      "logo": "大促",
+      "icon": "🛒",
+      "class": "logo-blue",
+      "link": "",
+      "published_at": ""
+    },
+    {
+      "title": "天气变化影响客流节奏，功能品类进入动态调整窗口",
+      "tag": "天气/功能消费",
+      "source": "公开气象信息",
+      "desc": "天气变化影响客流和主推节奏，防晒、凉感、防雨、防滑及保暖品类需动态前置。",
+      "logo": "天气",
+      "icon": "☀️",
+      "class": "logo-sky",
+      "link": "",
+      "published_at": ""
+    },
+    {
+      "title": "跑步、骑行与轻户外场景延续，运动装备需求扩张",
+      "tag": "户外/运动场景",
+      "source": "消费观察",
+      "desc": "户外、跑步、骑行、赛事和夜间消费延伸运动场景，带动装备与亲子需求。",
+      "logo": "户外",
+      "icon": "🚴",
+      "class": "logo-green",
+      "link": "",
+      "published_at": ""
     }
   ],
   "competitor_news": [
-    {
-      "brand": "On昂跑",
-      "title": "喜茶茶坊海外首店纽约开业；亚瑟士集团拆分Onitsuka T",
-      "source": "搜狐网",
-      "score": 302,
-      "published_at": "Fri, 12 Jun 2026 11:42:11 GMT",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWG9weDBTc05OTEhvMWk1ZDNrWUNmRGRVMko0ckhDZVVfdlN6VGlMamU1blRTQUZPaWV6dWlUa3daV0VnU0hkTDRqZ3d5RDZqM2FYUDNueVdaUG9abjJhQ1hLSWVadDFXTURsNFp5bmtqa3Bab3RYOHpFMk9OVzVqbUgxZ3VDYXRYVlhUQ2JVME80dXNuNDVoRnlORWo2ZEtR?oc=5"
-    },
-    {
-      "brand": "Nike",
-      "title": "从产品创新到街头文化，耐克如何拓宽足球生意边界",
-      "source": "thepaper.cn",
-      "score": 77,
-      "published_at": "Mon, 15 Jun 2026 07:18:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlNl95WUsyLTFDaW1zQjRpRjc1N2p2M081dUR3dlg0ZlFTVzlUU045Yl9keW1HTV9UYV9FNzlreXhMbnJxZVN5SkpucVZfTS1nZ29mY0Zlc0tFV3lwaWNEeQ?oc=5"
-    },
-    {
-      "brand": "Nike",
-      "title": "世界杯运动品牌争霸战：耐克的统治、阿迪达斯的阵地与安踏的进击",
-      "source": "新浪财经",
-      "score": 63,
-      "published_at": "Mon, 15 Jun 2026 04:00:04 GMT",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMWxyNVFyYUlwN05iMUdwSUxHaFp6SU41eGk2TUZUemoxUjVhQmZubk1zYjJtd2FvUXRVUk1vWEtMYWJwdVJfWXpSNnVNYTlPdDctNUh4dG1HenNBTHBhdGE5R1lPbkU3dDQzVUNjQjgwTEdCZFBaTWwwZS01QUsyOEZrMzBfLXhWRjNFX2FTYUdTODNPWnZN?oc=5"
-    },
-    {
-      "brand": "安踏",
-      "title": "安踏集团发布2025 ESG报告：FILA建造国内首个可持续",
-      "source": "ebusinessreview.cn",
-      "score": 38,
-      "published_at": "Sat, 13 Jun 2026 02:39:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9fV0JURzdCR2p2V2g1SDZ4OTRVU0xBRmYya1R0RWMtNDY0aE5LZXhJaXdCRVlWMkZRY2FxUUZ5Nkc1MjFYaGlXWDl1OTZ6amcwNXFRR2lHUHVpLUhqbnppVDBxYXBKRXdSMUd6S0JLVHl4Tk5zbWs3cQ?oc=5"
-    },
     {
       "brand": "Nike",
       "title": "从产品创新到街头文化，耐克如何拓宽足球生意边界",
@@ -489,24 +457,6 @@
     }
   ],
   "keywords": [
-    "户外日常化",
-    "情绪消费",
-    "AI购物助手",
-    "运动防晒",
-    "亲子运动",
-    "防雨装备",
-    "室内运动",
-    "品牌分化",
-    "全域运营",
-    "消费降级",
-    "赛事经济",
-    "可持续时尚",
-    "智能穿戴",
-    "首店经济",
-    "618价值战",
-    "文旅融合",
-    "儿童乐园",
-    "3D打印鞋",
     "防晒经济",
     "情绪消费",
     "AI辅助购物",
@@ -597,8 +547,25 @@
     "动态调整",
     "情绪消费",
     "经营优化",
-    "品牌竞争加剧",
+    "品牌竞争",
+    "渠道效率",
+    "亲子消费",
+    "校园需求",
+    "大促预热",
+    "功能品类",
+    "天气扰动",
+    "防雨防滑",
+    "室内运动",
+    "高温防晒",
+    "凉感速干",
+    "跑步骑行",
+    "轻户外",
+    "运动装备",
+    "客流节奏",
+    "动态调整",
     "产品心智",
+    "场景外扩",
+    "品牌竞争",
     "渠道效率",
     "亲子消费",
     "校园需求",
@@ -606,64 +573,18 @@
     "夏季功能",
     "品类前置",
     "天气扰动",
-    "功能调整",
+    "防雨防滑",
+    "室内运动",
     "跑步场景",
     "骑行装备",
     "轻户外",
-    "防雨防滑",
-    "室内运动",
-    "高温防晒",
-    "凉感速干",
-    "客流节奏"
+    "功能消费",
+    "客流节奏",
+    "动态调整",
+    "情绪升温",
+    "经营提效"
   ],
   "regions": [
-    {
-      "east": {
-        "name": "华东",
-        "city": "上海/江苏/浙江",
-        "hot": "华东强降雨雷阵雨，商圈客流受扰动，室内运动场景需关注",
-        "flow": "宁波体育消费券发放，上海环球美食汇助力经济，商圈客流受降雨影响需防雨防滑。",
-        "focus": "室内运动场景",
-        "action": "在华东门店推广室内运动装备，结合消费券活动推出防雨防滑鞋服促销。",
-        "star": "★★★"
-      },
-      "central": {
-        "name": "华中",
-        "city": "湖北/湖南/江西",
-        "hot": "华中强降雨雷阵雨，儿童乐园亮相武汉，亲子品牌扎堆入局",
-        "flow": "武汉1.3万平米儿童乐园开业，亲子品牌集中，客流受降雨影响需关注室内场景。",
-        "focus": "亲子运动场景",
-        "action": "在华中门店主推亲子运动鞋服，与儿童乐园合作开展体验活动吸引客流。",
-        "star": "★★★"
-      },
-      "south": {
-        "name": "华南",
-        "city": "广东/广西",
-        "hot": "华南强降雨雷阵雨，国际赛事落地厦门，体育名城建设推进",
-        "flow": "厦门国际赛事接连落地，体育名城趋势明显，降雨影响客流需防雨防滑。",
-        "focus": "赛事经济",
-        "action": "在华南门店结合赛事热点推广运动装备，推出防雨系列产品促销。",
-        "star": "★★★"
-      },
-      "southwest": {
-        "name": "西南",
-        "city": "四川/重庆/贵州",
-        "hot": "西南强降雨雷阵雨，贵阳马拉松赞助，亲子运动活动丰富。",
-        "flow": "京东赞助贵阳马拉松，成都亲子运动公益行，重庆文旅惠民季，降雨需室内场景。",
-        "focus": "亲子运动",
-        "action": "在西南门店推广亲子运动鞋服，结合马拉松和公益行活动开展促销。",
-        "star": "★★"
-      },
-      "northwest": {
-        "name": "西北",
-        "city": "陕西/甘肃/宁夏",
-        "hot": "西北降雨影响客流，砂之船奥莱数据拆解，亲子出游毕业旅",
-        "flow": "西安奥莱消费趋势，西北环线亲子游火爆，降雨需防雨轻防护室内场景。",
-        "focus": "商圈客流",
-        "action": "在西北门店推广防雨防晒运动装备，结合奥莱和毕业旅行推出促销活动。",
-        "star": "★★"
-      }
-    },
     {
       "east": {
         "name": "华东",
@@ -903,46 +824,93 @@
       "east": {
         "name": "华东",
         "city": "上海/江苏/浙江",
-        "hot": "华东强降雨持续，防雨防滑品类与室内运动场景需求上升",
-        "flow": "雷阵雨影响客流，需强化线上渠道引流，结合亲子与校园场景推广防雨装备",
+        "hot": "华东强降雨持续，防雨防滑品类需求上升，室内运动场景受",
+        "flow": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注，建议调整陈列与主推策略。",
         "focus": "防雨防滑品类",
-        "action": "主推防雨鞋服，联动线上平台预热大促，布局校园亲子场景",
+        "action": "门店陈列主推防雨防滑鞋服，同步强化室内运动装备展示，并调整线上推广素材。",
         "star": "★★★"
       },
       "central": {
         "name": "华中",
         "city": "湖北/湖南/江西",
-        "hot": "华中雷阵雨频繁，室内运动与防雨装备成为消费热点",
-        "flow": "天气扰动客流，需加速线上渠道承接，聚焦亲子运动场景推广防滑产品",
-        "focus": "室内运动品类",
-        "action": "强化线上引流，主推防滑鞋服，结合校园需求提前布局大促",
+        "hot": "华中雷阵雨频繁，客流波动大，防雨品类与室内运动场景成",
+        "flow": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注，需动态调整库存与陈列。",
+        "focus": "防雨防滑品类",
+        "action": "门店增加防雨鞋服陈列，配合室内运动装备促销，并利用线上渠道推送防滑功能内",
         "star": "★★★"
       },
       "south": {
         "name": "华南",
         "city": "广东/广西",
-        "hot": "华南强降雨持续，防雨防滑品类与室内运动场景需求提升",
-        "flow": "雷阵雨影响客流，需加强线上渠道运营，聚焦亲子与校园场景推广防雨装备",
-        "focus": "防雨功能品类",
-        "action": "主推防雨鞋服，联动电商预热大促，布局室内运动场景",
+        "hot": "华南强降雨持续，防雨防滑品类需求旺盛，室内运动场景升",
+        "flow": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注，建议提前备货并调整营销。",
+        "focus": "防雨防滑品类",
+        "action": "门店主推防雨防滑产品，强化室内运动场景陈列，并针对雷阵雨时段调整促销节奏",
         "star": "★★★"
       },
       "southwest": {
         "name": "西南",
         "city": "四川/重庆/贵州",
-        "hot": "西南高温明显，防晒凉感速干品类进入主推窗口期",
-        "flow": "高温天气驱动防晒与速干需求，需强化线上推广，结合户外场景提升品类曝光",
+        "hot": "西南高温明显，防晒凉感品类进入主推窗口，速干装备需求",
+        "flow": "高温天气明显，防晒、凉感、速干品类进入主推窗口，需加强户外运动场景联动。",
         "focus": "防晒凉感品类",
-        "action": "主推防晒凉感鞋服，联动户外运动场景，加速线上渠道预热大促",
+        "action": "门店重点陈列防晒凉感鞋服，配合户外运动场景推广，并启动夏季功能品类促销预",
         "star": "★★"
       },
       "northwest": {
         "name": "西北",
         "city": "陕西/甘肃/宁夏",
-        "hot": "西北降雨影响客流，防雨轻防护与室内运动需求上升",
-        "flow": "降雨天气扰动客流，需加强线上引流，聚焦亲子与校园场景推广防雨装备",
+        "hot": "西北晴雨交替，防雨品类与户外运动场景需兼顾，客流节奏",
+        "flow": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注，同时晴好天气可推户外装备。",
+        "focus": "防雨与户外品类",
+        "action": "门店动态调整陈列，雷阵雨日主推防雨品类，晴好日强化户外运动装备展示与促销",
+        "star": "★★"
+      }
+    },
+    {
+      "east": {
+        "name": "华东",
+        "city": "上海/江苏/浙江",
+        "hot": "华东强降雨持续，防雨防滑品类需求上升，室内运动场景受",
+        "flow": "强降雨扰动客流，防雨防滑品类需求上升，室内运动场景受关注，需调整陈列与库存。",
+        "focus": "防雨防滑品类",
+        "action": "加强防雨防滑鞋服陈列，主推室内运动装备，调整库存结构应对客流波动。",
+        "star": "★★★"
+      },
+      "central": {
+        "name": "华中",
+        "city": "湖北/湖南/江西",
+        "hot": "华中雷阵雨频繁，防雨防滑品类需求上升，室内运动场景受",
+        "flow": "雷阵雨扰动客流，防雨防滑品类需求上升，室内运动场景受关注，需调整陈列与库存。",
+        "focus": "防雨防滑品类",
+        "action": "防雨防滑品类差异化陈列与会员触达",
+        "star": "★★★"
+      },
+      "south": {
+        "name": "华南",
+        "city": "广东/广西",
+        "hot": "华南强降雨持续，防雨防滑品类需求上升，室内运动场景受",
+        "flow": "强降雨扰动客流，防雨防滑品类需求上升，室内运动场景受关注，需调整陈列与库存。",
+        "focus": "防雨防滑品类",
+        "action": "防雨防滑品类差异化陈列与会员触达",
+        "star": "★★★"
+      },
+      "southwest": {
+        "name": "西南",
+        "city": "四川/重庆/贵州",
+        "hot": "西南降雨影响客流，防雨轻防护品类需求提升，室内运动场",
+        "flow": "降雨影响客流，防雨轻防护品类需求提升，室内运动场景受关注，需调整陈列与库存。",
         "focus": "防雨轻防护品类",
-        "action": "主推防雨鞋服，结合室内运动场景，提前布局线上大促预热",
+        "action": "加强防雨轻防护鞋服陈列，主推室内运动装备，调整库存结构应对客流波动。",
+        "star": "★"
+      },
+      "northwest": {
+        "name": "西北",
+        "city": "陕西/甘肃/宁夏",
+        "hot": "西北降雨影响客流，防雨轻防护品类需求提升，室内运动场",
+        "flow": "降雨影响客流，防雨轻防护品类需求提升，室内运动场景受关注，需调整陈列与库存。",
+        "focus": "防雨轻防护品类",
+        "action": "防雨轻防护品类差异化陈列与会员触达",
         "star": "★"
       }
     }
@@ -971,26 +939,6 @@
     "天气变化影响到店节奏，需关注防晒、防雨、防滑和室内运动场景。"
   ],
   "trend_items": [
-    {
-      "title": "618户外装热销，借势推儿童防晒",
-      "desc": "天猫父亲节户外装热销，京东运动户外增速第一。建议主推儿童防晒衣、速干裤，强化“耐洗防晒”卖点，结合AI营销精准触达家长。",
-      "tag": "电商趋势"
-    },
-    {
-      "title": "降雨扰动客流，强化室内运动场景",
-      "desc": "强降雨影响户外客流，防雨需求提升。建议线上主推室内运动鞋服，线下门店增加防滑、速干产品陈列，并联动商圈室内活动引流。",
-      "tag": "天气应对"
-    },
-    {
-      "title": "竞品布局世界杯，需差异化儿童市场",
-      "desc": "Nike、安踏等聚焦足球赛事，On昂跑拓展海外。建议361°儿童借势运动热潮，推出亲子户外装备，突出性价比与安全监护功能。",
-      "tag": "竞品动态"
-    },
-    {
-      "title": "AI辅助购物决策，优化线上体验",
-      "desc": "AI深度介入618消费决策，京东服饰美妆直播互动。建议利用AI推荐儿童运动鞋服，结合旧物故事活动，提升用户粘性与转化。",
-      "tag": "AI科技"
-    },
     {
       "title": "借618户外热推防晒童装",
       "desc": "618运动户外品类领跑，结合气温偏高，建议主推防晒衣、速干短裤，强化“千元品质百元价”卖点。",
@@ -1092,34 +1040,47 @@
       "tag": "电商动态"
     },
     {
-      "title": "强降雨致客流下滑，强化防雨品类",
-      "desc": "多地强降雨影响线下客流，建议门店主推防雨鞋服及室内运动装备，并加强线上防滑、速干产品推广。",
+      "title": "强降雨致客流波动，主推室内运动装备",
+      "desc": "强降雨天气影响户外客流，建议加强室内运动鞋服陈列，突出防滑、速干功能，提升门店转化率。",
       "tag": "天气应对"
     },
     {
-      "title": "高温催热防晒凉感，主推速干系列",
-      "desc": "高温天气持续，防晒、凉感、速干品类需求激增，建议加大儿童防晒衣、透气跑鞋等产品陈列与促销。",
+      "title": "高温防晒品类热销，速干凉感产品主推",
+      "desc": "高温天气持续，防晒衣、凉感T恤需求上升，建议线上加大推广，线下设置专属陈列区。",
       "tag": "品类策略"
     },
     {
-      "title": "竞品推新儿童运动鞋，需加速差异化",
-      "desc": "竞品发布新款儿童运动鞋，主打轻量缓震，建议361°强化科技卖点（如QU!KFLAME）并突出性价比。",
+      "title": "竞品推新科技跑鞋，需强化361°儿童",
+      "desc": "竞品发布轻量跑鞋，建议361°儿童突出“防滑+透气”卖点，结合天气场景做差异化营销。",
+      "tag": "竞品应对"
+    },
+    {
+      "title": "电商平台运动户外增长，加大儿童运动套",
+      "desc": "平台数据显示运动户外品类热度高，建议针对儿童运动套装推出限时折扣，配合天气热点引流。",
+      "tag": "电商运营"
+    },
+    {
+      "title": "强降雨致客流下滑，推室内运动装备",
+      "desc": "多地强降雨影响商圈客流，建议加强线上推广防雨鞋服，并主推室内运动鞋款以应对需求转移。",
+      "tag": "天气应对"
+    },
+    {
+      "title": "竞品推儿童户外系列，需强化差异化",
+      "desc": "竞品近期发布儿童户外运动新品，建议361°儿童突出科技防滑与透气功能，抢占细分市场。",
       "tag": "竞品动态"
     },
     {
-      "title": "电商平台运动户外热，加码直播引流",
-      "desc": "电商平台运动户外品类搜索量上升，建议联合KOL开展儿童运动穿搭直播，并推出限时折扣提升转化。",
-      "tag": "电商运营"
+      "title": "电商平台促销季，聚焦亲子运动场景",
+      "desc": "电商平台618预热启动，建议推出亲子运动套装组合，结合直播互动提升转化率。",
+      "tag": "电商策略"
+    },
+    {
+      "title": "消费政策利好，布局下沉市场门店",
+      "desc": "国家促消费政策推动县域经济，建议加速三四线城市门店扩张，主打性价比产品。",
+      "tag": "宏观趋势"
     }
   ],
   "weather": [
-    {
-      "north": "降雨影响客流，防雨、轻防护与室内运动场景需求提升",
-      "east": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
-      "south": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
-      "southwest": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
-      "northwest": "降雨影响客流，防雨、轻防护与室内运动场景需求提升"
-    },
     {
       "north": "气温偏高，防晒、短裤、轻薄T恤需求提升",
       "east": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
@@ -1160,6 +1121,13 @@
       "east": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
       "south": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
       "southwest": "高温天气明显，防晒、凉感、速干品类进入主推窗口",
+      "northwest": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注"
+    },
+    {
+      "north": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
+      "east": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
+      "south": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
+      "southwest": "降雨影响客流，防雨、轻防护与室内运动场景需求提升",
       "northwest": "降雨影响客流，防雨、轻防护与室内运动场景需求提升"
     }
   ]
