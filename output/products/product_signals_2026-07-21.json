@@ -1,19 +1,15 @@
 {
   "date": "2026-07-21",
-  "generated_time": "2026-07-21 04:07:33",
+  "generated_time": "2026-07-21 04:13:35",
   "source": "Google News RSS product signal monitor",
   "desc": "运动鞋服商品趋势信号监测：覆盖国内外运动品牌、户外品牌、成人与儿童品牌；重点监测近8天新品、尖货、功能科技、夏季功能、跑步科技、户外轻运动与大促热卖。已过滤财经财报、广告促销、测评导购、AI白皮书、ESG报告和非鞋服商品。",
   "recent_days": 8,
   "query_count": 260,
-  "signal_count": 12,
+  "signal_count": 11,
   "top_brands": [
     [
       "Puma",
       2
-    ],
-    [
-      "迪桑特",
-      1
     ],
     [
       "Hoka",
@@ -35,23 +31,11 @@
   "top_keywords": [
     [
       "新品",
-      8
+      7
     ],
     [
       "篮球",
       4
-    ],
-    [
-      "推出",
-      3
-    ],
-    [
-      "户外鞋",
-      2
-    ],
-    [
-      "联名",
-      2
     ],
     [
       "防晒衣",
@@ -70,12 +54,12 @@
       2
     ],
     [
-      "系列",
+      "推出",
       2
     ],
     [
-      "骑行",
-      1
+      "系列",
+      2
     ],
     [
       "跑鞋",
@@ -102,6 +86,10 @@
       1
     ],
     [
+      "联名",
+      1
+    ],
+    [
       "童鞋",
       1
     ],
@@ -111,6 +99,10 @@
     ],
     [
       "热卖",
+      1
+    ],
+    [
+      "户外鞋",
       1
     ],
     [
@@ -132,10 +124,6 @@
       3
     ],
     [
-      "户外轻运动",
-      2
-    ],
-    [
       "儿童鞋",
       2
     ],
@@ -154,13 +142,13 @@
     [
       "儿童服装",
       1
+    ],
+    [
+      "户外轻运动",
+      1
     ]
   ],
   "top_seasons": [
-    [
-      "全年",
-      4
-    ],
     [
       "夏季",
       4
@@ -168,33 +156,13 @@
     [
       "秋季",
       4
+    ],
+    [
+      "全年",
+      3
     ]
   ],
   "signals": [
-    {
-      "date": "2026-07-21",
-      "title": "户外 | 迪桑特推出Fizik联名骑行锁鞋 - 腾讯新闻",
-      "short_title": "户外 | 迪桑特推出Fizik联名骑行锁鞋 - 腾讯新闻",
-      "query": "户外鞋 新品",
-      "brand_hits": [
-        "迪桑特"
-      ],
-      "keyword_hits": [
-        "户外鞋",
-        "骑行",
-        "新品",
-        "推出",
-        "联名"
-      ],
-      "category": "户外轻运动",
-      "season_tag": "全年",
-      "source": "腾讯新闻",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAxMUctcnhPLWVQZzRuX1RBamdSVGU4dC1vaU9MMGlQMXJsYmhxY1dvQmVfeVJiazFzZS1GR1RXc0RwNmxaYUhSYkRYc0FGS01taXJGU1NpZw?oc=5",
-      "pub_date": "Sat, 18 Jul 2026 06:49:00 GMT",
-      "age_hours": 61.3,
-      "heat": 99,
-      "type": "product_signal"
-    },
     {
       "date": "2026-07-21",
       "title": "速干T、户外防晒、跑鞋等热销 拉动Hoka、萨洛蒙等超190个品牌京东618期间成交翻倍 - news.tom.com",
@@ -216,7 +184,7 @@
       "source": "news.tom.com",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkd0ZNTTlSTEM1Qk1VeElXY0VsZExqdk5BWGlFRzFUVEItelZTbGEwZndOWXBwVmwwX0p3aGFVOGZxdjlkTVE3Wjh0djNUUUlzbEdKVWFR?oc=5",
       "pub_date": "Fri, 17 Jul 2026 06:13:00 GMT",
-      "age_hours": 85.9,
+      "age_hours": 86.0,
       "heat": 99,
       "type": "product_signal"
     },
@@ -240,7 +208,7 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQYUxKUmNIcWcwYjdWUUtCdGFwdlk3NE4wNkN3UHBxdkNTU0Z1NE4tY2VWYmpURi1mYW5GNWxINzdnOUczaDlGbXFxYmh0MVFrZml2NFk2WVJuT3MyRXNGaXBNTkdNYm9fMjh4VC00Q3RMbE9qZHR5aTFtQkZldXNWbDY0UVEwUQ?oc=5",
       "pub_date": "Mon, 20 Jul 2026 03:47:04 GMT",
-      "age_hours": 16.3,
+      "age_hours": 16.4,
       "heat": 95,
       "type": "product_signal"
     },
@@ -262,7 +230,7 @@
       "source": "搜狐网",
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPYkJlUnI5djJmeVo5c1doSHcyajdOel9kejhXeTgyc2FYYnktUHBMaUNDbTF5YkhWeGNId2xENlg2MTBwTk4zM3FWcGZ2M3lMNEtsZzdHRWJlOGRpOFdUdXVsT0tsRHFWUnJPTk91VVUtamVRbk9lazFMcDZVUHB0TzBZTmYzS29fdmlzVA?oc=5",
       "pub_date": "Sun, 19 Jul 2026 03:45:00 GMT",
-      "age_hours": 40.4,
+      "age_hours": 40.5,
       "heat": 75,
       "type": "product_signal"
     },
@@ -284,7 +252,7 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNT2N2aGlyZGRsV1pHaDk5NEJ3ZUh6d29GQmtsZHNMUy04Z3BSWVdBNHYyLVI3eWgxSE4zUWxueEk0SVVPZndfMXljM1VteTJMLVdCOS1nQ3lvMXhUMXNFMUJTbEttMFZsd3g1bkJtRmdXcGU2NkNOVE5IeEZYNUdIbXlHV2dubHl5?oc=5",
       "pub_date": "Thu, 16 Jul 2026 04:05:56 GMT",
-      "age_hours": 112.0,
+      "age_hours": 112.1,
       "heat": 75,
       "type": "product_signal"
     },
@@ -305,7 +273,7 @@
       "source": "Hypebae",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOVh1cDd3Q2pqVWxnZXJWc3N3aXpTTEtJQ2FFS0NLQ3laU3BLQ2dYZEdGaWc3alluSFpwcGZHY1haZGhwUFM2YzdESTNiRWNCRDFNZUVLTWxUWnJpNXFMbzZOYkNTQzZGY2IwU3RvNmR0ZUZhLWZHVnhvLXZ3SUozNkFxQmhJSDIySVBXQVdORmxRQQ?oc=5",
       "pub_date": "Tue, 14 Jul 2026 14:13:37 GMT",
-      "age_hours": 149.9,
+      "age_hours": 150.0,
       "heat": 72,
       "type": "product_signal"
     },
@@ -325,7 +293,7 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaDZad1FqQW9uWkhYTEtudHp1cmM3cXRXM0JnQ0V5OTJxQTlkZVZmZll4V2NvTTE3ajJLRFJaR2s4a2dobkpWenBXVEUwV005c0FfTFV0YXNxY3BwNHQtT0ZTcXBVdEJTc19MRl9hX0d0Nk1OVlRCS2h1YmhjcVlMbUJqY0dsZ3ZXMzFhZnpEQ01YUzJlSHhoRGhERDRQc00?oc=5",
       "pub_date": "Fri, 17 Jul 2026 10:49:50 GMT",
-      "age_hours": 81.3,
+      "age_hours": 81.4,
       "heat": 69,
       "type": "product_signal"
     },
@@ -344,7 +312,7 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOUpRSlJsTGJsWkZMbUVkeUc5cnQ4QWVESk9GU0VtLVg0d2pjNFFzWVV6X0lpWDk1dzNCd19IdTYyYXlETXFuRHAtdzU3NjdLM3JELWlJVm5vU3BSRV8xbDhsZzlvMG1rTWZGQ3MzRnA2bzRRVWptRHViaWhXMEwwa0w0VkRuTTZrUFZudmhKeEk1a0xOSW5xcw?oc=5",
       "pub_date": "Sat, 18 Jul 2026 22:34:04 GMT",
-      "age_hours": 45.6,
+      "age_hours": 45.7,
       "heat": 62,
       "type": "product_signal"
     },
@@ -365,7 +333,7 @@
       "source": "news.tom.com",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Pdm1LZWp5UV8xYjgzYW9FNTJVMGI0QkxFWDc5b3pfMWdsX0VPdFc2c3EtcEJDNEhncXRBOUVwOGRlRGM1bTVEZUFta0FRRC04TDh3ajVR?oc=5",
       "pub_date": "Fri, 17 Jul 2026 06:12:00 GMT",
-      "age_hours": 85.9,
+      "age_hours": 86.0,
       "heat": 62,
       "type": "product_signal"
     },
@@ -386,7 +354,7 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOeERPbkNKU2RXb2JrcXRBQWFoY2NaZno3aEZ5M3pnd0VaTlVoVDhrdTRCbEUtd0R6V0RKRWpkQ3dLR2tZUVBjaUZac1VqNXRvYjg1WkNTNlo0RFV0dmw3Rkc2SXl3LTM1dHFaMTV1TGgxOS1ZQUl5dUdjZWtwNVVBeW1YbnlKMjd3bGU4dzZGSXI?oc=5",
       "pub_date": "Wed, 15 Jul 2026 16:06:52 GMT",
-      "age_hours": 124.0,
+      "age_hours": 124.1,
       "heat": 60,
       "type": "product_signal"
     },
@@ -406,7 +374,7 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWlVvcl9pbUk0dGtRa04yb3VEcVI5eUpaazhkOVMtMXhSaXBNM0RNVlk0Mi03Z2pRVk4zcHc0alVndS1nWmF5ZU1Ra201bk1HMlNVU2JjU1dobWdsNzZ4dHp0Uzk4STg4T0p5QmEzVDYtZk5BVzlRZWRIc0pycVdVNzdYR2lUR1o3OEEw?oc=5",
       "pub_date": "Thu, 16 Jul 2026 03:59:36 GMT",
-      "age_hours": 112.1,
+      "age_hours": 112.2,
       "heat": 57,
       "type": "product_signal"
     },
@@ -426,7 +394,7 @@
       "source": "Jiemian.com",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE03RzN4a3ZxTHFPd0gwYTd0SUlGNzc4VjVXTnhsMU5fMG01YWtDU2k5YWxhd0hueXZnQUtGcW9qOFpVRzFHZXR5aTZyN2pGRVA1aGMxYjVGMzg?oc=5",
       "pub_date": "Fri, 17 Jul 2026 17:23:14 GMT",
-      "age_hours": 74.7,
+      "age_hours": 74.8,
       "heat": 51,
       "type": "product_signal"
     }
