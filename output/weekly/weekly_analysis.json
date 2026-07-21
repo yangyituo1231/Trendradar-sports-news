@@ -1,21 +1,21 @@
 {
-  "generate_time": "2026-07-21 04:16",
+  "generate_time": "2026-07-21 01:22",
   "summary": {
     "date_range": "2026-07-15 至 2026-07-21",
     "core_judgement": "本周行业信息集中在品牌竞争、大促/电商、户外/运动场景、童装/儿童运动，高频热词为室内运动、防雨防滑、品牌竞争、情绪消费、渠道效率、亲子消费，动态赛道主要为亲子出行、轻户外、防晒凉感。",
     "news_direction": "本周重点事件包括世界杯运动品牌争霸战：耐克的统治、阿迪达斯的阵地与安踏的进击、1.3万平米儿童乐园今日亮相武汉，亲子品牌扎堆入局、从远方到日常 户外运动正在影响中国人的生活方式，新闻侧需关注其对品牌心智、商品卖点和内容声量的影响。",
     "competitor_direction": "竞品动态主要围绕Nike展开，需关注品牌营销、商品上新、研发科技和平台流量动作。",
-    "product_direction": "商品侧建议关注亲子出行、平台大促、轻户外，并结合商品信号判断儿童运动、季节功能和场景化方向。",
+    "product_direction": "商品侧建议关注亲子出行、品牌竞争、平台大促，并结合商品信号判断儿童运动、季节功能和场景化方向。",
     "regional_direction": "区域侧重点关注华东、华中、华南、西南，天气关键词集中在降雨、防雨、雷阵雨、防滑，需结合区域客流变化理解机会。",
     "next_action": "下周建议围绕亲子出行、轻户外、防晒凉感持续跟踪竞品事件、商品信号、天气变化和平台热词，形成汇报页输入。"
   },
   "ai_judgement": {
-    "weekly_core_view": "本周运动品牌竞争加剧，安踏进击世界杯、Nike拓宽足球边界，儿童运动消费场景外扩至亲子与校园。全国多雨天气扰动客流，防雨防滑品类需求上升，同时618大促预热启动，夏季功能品类需前置承接。",
-    "news_summary": "本周新闻聚焦运动品牌世界杯争霸、儿童乐园开业、户外运动日常化趋势及618大促预热。安踏进击世界杯，Nike拓宽足球生意，武汉1.3万平米儿童乐园亮相，户外运动影响生活方式，平台大促进入预热期。",
-    "competitor_summary": "竞品方面，Nike通过产品创新和街头文化拓宽足球生意，安踏进击世界杯，Puma推出清仓和新品，New Balance推出果冻凉鞋，Hoka和Salomon在京东618期间成交翻倍。",
-    "product_summary": "商品趋势上，速干T、户外防晒、跑鞋热销，Hoka、Salomon等品牌在京东618成交翻倍。Puma上新篮球鞋，New Balance推出果冻凉鞋，儿童运动凉鞋和防晒衣需求上升，3D打印鞋技术受关注。",
-    "region_weather_summary": "本周全国多雨，华东、华中、华南、西南、西北均有强降雨或雷阵雨，防雨防滑品类需求上升，室内运动场景受关注。西北高温，防晒凉感品类进入主推窗口。",
-    "next_week_focus": "下周重点关注618大促期间夏季功能品类（防晒、凉感、速干）的终端转化，以及多雨天气下防雨防滑产品的动态调整。同时关注安踏世界杯策略对儿童运动品牌定位的启示。"
+    "weekly_core_view": "本周运动品牌竞争加剧，安踏进击世界杯，耐克阿迪守阵地；儿童运动消费场景外扩，亲子与校园需求升温；平台大促预热，夏季功能品类需前置；华东华中华南持续降雨，防雨防滑品类需求上升。",
+    "news_summary": "本周新闻聚焦运动品牌世界杯争霸、儿童乐园开业、户外运动日常化、天猫618户外装热销、3D打印鞋创新、校园亲子运动菜单等，消费市场平稳，服务消费增势良好。",
+    "competitor_summary": "耐克拓宽足球生意边界，安踏进击世界杯，阿迪达斯守阵地；PUMA官网清仓篮球鞋，New Balance推出果冻凉鞋；Hoka、Salomon等品牌京东618成交翻倍。",
+    "product_summary": "速干T、户外防晒、跑鞋热销，运动凉鞋成新潮流，3D打印鞋探索定制化，儿童多色运动凉鞋受关注，防晒衣虚标问题被央视曝光，品质标成消费安心点。",
+    "region_weather_summary": "华东、华中、华南、西南持续强降雨或雷阵雨，防雨防滑品类需求上升，室内运动场景受关注；西北高温，防晒凉感速干品类进入主推窗口。",
+    "next_week_focus": "关注平台大促预热期夏季功能品类承接，华东华中降雨对客流影响，亲子与校园运动场景营销落地，以及世界杯品牌争霸对儿童运动品类的启示。"
   },
   "news": {
     "top_titles": [
@@ -647,15 +647,7 @@
       "count": 3
     },
     {
-      "word": "跑步骑行",
-      "count": 3
-    },
-    {
       "word": "运动装备",
-      "count": 3
-    },
-    {
-      "word": "产品心智",
       "count": 3
     },
     {
@@ -687,11 +679,27 @@
       "count": 2
     },
     {
-      "word": "经营优化",
+      "word": "跑步骑行",
       "count": 2
     },
     {
-      "word": "夏季品类",
+      "word": "产品心智",
+      "count": 2
+    },
+    {
+      "word": "功能消费",
+      "count": 2
+    },
+    {
+      "word": "跑步场景",
+      "count": 2
+    },
+    {
+      "word": "骑行装备",
+      "count": 2
+    },
+    {
+      "word": "情绪回暖",
       "count": 2
     },
     {
@@ -776,14 +784,6 @@
     },
     {
       "word": "防雨运动",
-      "count": 1
-    },
-    {
-      "word": "价值深水区",
-      "count": 1
-    },
-    {
-      "word": "旧物故事",
       "count": 1
     }
   ],
@@ -960,10 +960,6 @@
           "count": 3
         },
         {
-          "focus": "西南降雨影响客流，防雨轻防护品类需求提升，室内运动场",
-          "count": 2
-        },
-        {
           "focus": "贵阳马拉松获京东赞助，西南亲子运动与户外音乐场景活跃",
           "count": 1
         },
@@ -973,6 +969,10 @@
         },
         {
           "focus": "亲子运动场景",
+          "count": 1
+        },
+        {
+          "focus": "贵阳马拉松赞助，成都亲子运动活动，重庆文旅惠民季",
           "count": 1
         }
       ],
@@ -2377,14 +2377,14 @@
   "major_events": [
     {
       "title": "世界杯运动品牌争霸战：耐克的统治、阿迪达斯的阵地与安踏的进击",
-      "brand": "安踏",
-      "event_type": "品牌营销",
-      "track": "综合趋势",
+      "brand": "Nike、Adidas、安踏",
+      "event_type": "行业事件",
+      "track": "品牌竞争",
       "heat": 100,
       "source": "新浪财经",
       "date": "2026-07-15",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMWxyNVFyYUlwN05iMUdwSUxHaFp6SU41eGk2TUZUemoxUjVhQmZubk1zYjJtd2FvUXRVUk1vWEtMYWJwdVJfWXpSNnVNYTlPdDctNUh4dG1HenNBTHBhdGE5R1lPbkU3dDQzVUNjQjgwTEdCZFBaTWwwZS01QUsyOEZrMzBfLXhWRjNFX2FTYUdTODNPWnZN?oc=5",
-      "impact": "安踏进击世界杯，提升品牌国际影响力，对儿童运动品牌定位有启示，需关注其策略。",
+      "impact": "安踏进击世界杯，需关注其策略对361°儿童品牌定位的启示。",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMWxyNVFyYUlwN05iMUdwSUxHaFp6SU41eGk2TUZUemoxUjVhQmZubk1zYjJtd2FvUXRVUk1vWEtMYWJwdVJfWXpSNnVNYTlPdDctNUh4dG1HenNBTHBhdGE5R1lPbkU3dDQzVUNjQjgwTEdCZFBaTWwwZS01QUsyOEZrMzBfLXhWRjNFX2FTYUdTODNPWnZN?oc=5"
     },
     {
@@ -2410,6 +2410,18 @@
       "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1lMjlLU0x5UDRHNi1Jd1BaLTZzdGNTMmtaWE5JRGthc2lES2VRc3FIUmVVc0Z5Vlo5RXFwNmRuQk5jcTJlV1RFR1Mwd3dGX2NWcEZyT0JpNFBESVFHQ19UWVdLdzNzV3kyYVJnOTQ0VTFOdXlzRmRTYg?oc=5",
       "impact": "户外运动日常化趋势，推动儿童户外鞋服产品线开发。",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1lMjlLU0x5UDRHNi1Jd1BaLTZzdGNTMmtaWE5JRGthc2lES2VRc3FIUmVVc0Z5Vlo5RXFwNmRuQk5jcTJlV1RFR1Mwd3dGX2NWcEZyT0JpNFBESVFHQ19UWVdLdzNzV3kyYVJnOTQ0VTFOdXlzRmRTYg?oc=5"
+    },
+    {
+      "title": "天猫618：告别保健品，今年父亲节最热礼物是桑蚕丝和户外装",
+      "brand": "行业",
+      "event_type": "平台大促",
+      "track": "轻户外",
+      "heat": 100,
+      "source": "电商派",
+      "date": "2026-07-17",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QOTIyS01EQWRSdXFXTER2Y0lRWVlwQjdTbFYwdU9ybEN3X080eDNJWVRSajhJTnZvbXAzQmVLUklZMG9ob2lvQkxSOFNxR1hKS1o0UTRYMVhpSUFkQjJiUQ?oc=5",
+      "impact": "户外装热销提示儿童运动品类可借势父亲节营销。",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QOTIyS01EQWRSdXFXTER2Y0lRWVlwQjdTbFYwdU9ybEN3X080eDNJWVRSajhJTnZvbXAzQmVLUklZMG9ob2lvQkxSOFNxR1hKS1o0UTRYMVhpSUFkQjJiUQ?oc=5"
     },
     {
       "title": "速干T、户外防晒、跑鞋等热销 拉动Hoka、萨洛蒙等超190个品牌京东618期间成交翻倍",
@@ -2506,60 +2518,48 @@
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Pdm1LZWp5UV8xYjgzYW9FNTJVMGI0QkxFWDc5b3pfMWdsX0VPdFc2c3EtcEJDNEhncXRBOUVwOGRlRGM1bTVEZUFta0FRRC04TDh3ajVR?oc=5",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Pdm1LZWp5UV8xYjgzYW9FNTJVMGI0QkxFWDc5b3pfMWdsX0VPdFc2c3EtcEJDNEhncXRBOUVwOGRlRGM1bTVEZUFta0FRRC04TDh3ajVR?oc=5",
       "impact": "影响平台流量、价格心智和爆款货盘节奏。"
-    },
-    {
-      "title": "arcteryx｜新品速递 Konseal 徒步鞋上新色 1.5L 腰包 $50 - dealmoon.ca",
-      "brand": "行业",
-      "event_type": "新品发布",
-      "track": "轻户外",
-      "heat": 100,
-      "source": "dealmoon.ca",
-      "date": "2026-07-21",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOeERPbkNKU2RXb2JrcXRBQWFoY2NaZno3aEZ5M3pnd0VaTlVoVDhrdTRCbEUtd0R6V0RKRWpkQ3dLR2tZUVBjaUZac1VqNXRvYjg1WkNTNlo0RFV0dmw3Rkc2SXl3LTM1dHFaMTV1TGgxOS1ZQUl5dUdjZWtwNVVBeW1YbnlKMjd3bGU4dzZGSXI?oc=5",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOeERPbkNKU2RXb2JrcXRBQWFoY2NaZno3aEZ5M3pnd0VaTlVoVDhrdTRCbEUtd0R6V0RKRWpkQ3dLR2tZUVBjaUZac1VqNXRvYjg1WkNTNlo0RFV0dmw3Rkc2SXl3LTM1dHFaMTV1TGgxOS1ZQUl5dUdjZWtwNVVBeW1YbnlKMjd3bGU4dzZGSXI?oc=5",
-      "impact": "反映轻户外方向商品更新和价格带竞争。"
     }
   ],
   "weekly_tracks": [
     {
       "track": "亲子出行",
       "heat": 100,
-      "summary": "本周武汉1.3万平米儿童乐园开业，亲子品牌扎堆入局，校园微改造和亲子运动菜单推出，亲子消费场景扩张，需关注商品和终端表达联动。",
+      "summary": "武汉1.3万平米儿童乐园开业，亲子品牌扎堆入局，校园亲子运动菜单推出，儿童运动消费场景外扩。",
       "link": "",
       "url": ""
     },
     {
       "track": "轻户外",
       "heat": 95,
-      "summary": "户外运动日常化趋势明显，京东618运动户外品类领跑，父亲节户外装热销，跑步、骑行与轻户外场景延续，带动儿童户外装备需求。",
+      "summary": "户外运动日常化，京东618运动户外品类领跑，父亲节户外装热销，跑步骑行场景延续。",
       "link": "",
       "url": ""
     },
     {
       "track": "防晒凉感",
       "heat": 91,
-      "summary": "速干T、户外防晒、跑鞋热销，Hoka、Salomon等品牌618成交翻倍，但央视曝光防晒衣虚标问题，需关注品质和合规。",
+      "summary": "速干T、户外防晒、跑鞋热销，央视曝光防晒衣虚标，品质标成消费安心点。",
       "link": "",
       "url": ""
     },
     {
       "track": "儿童篮球",
       "heat": 75,
-      "summary": "Puma清仓篮球鞋并上新，Nike推出联名系列，Stephen Curry携手李宁首发高尔夫球鞋，儿童篮球方向商品更新活跃。",
+      "summary": "PUMA篮球鞋清仓，Nike联名系列重温球鞋历史，Curry品牌首发高尔夫球鞋，世界杯后足球鞋潮流。",
       "link": "",
       "url": ""
     },
     {
       "track": "运动凉鞋",
       "heat": 45,
-      "summary": "New Balance推出果冻凉鞋，DREAM PAIRS儿童多色运动凉鞋热销，运动凉鞋成为夏季新潮流。",
+      "summary": "New Balance推出果冻凉鞋，DREAM PAIRS儿童多色运动凉鞋受关注。",
       "link": "",
       "url": ""
     },
     {
       "track": "儿童跑步",
-      "heat": 39,
-      "raw_score": 89,
+      "heat": 41,
+      "raw_score": 94,
       "signals": [
         "跑步、骑行与轻户外场景延续，运动装备需求扩张",
         "跑步、骑行与轻户外场景延续，运动装备需求扩张",
@@ -2630,30 +2630,6 @@
   ],
   "competitor_actions": [
     {
-      "brand": "Nike",
-      "title": "从产品创新到街头文化，耐克如何拓宽足球生意边界",
-      "action_type": "综合动作",
-      "track": "综合趋势",
-      "heat": 50,
-      "source": "thepaper.cn",
-      "date": "2026-07-15",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlNl95WUsyLTFDaW1zQjRpRjc1N2p2M081dUR3dlg0ZlFTVzlUU045Yl9keW1HTV9UYV9FNzlreXhMbnJxZVN5SkpucVZfTS1nZ29mY0Zlc0tFV3lwaWNEeQ?oc=5",
-      "insight": "关注其对品牌声量、商品趋势和渠道节奏的影响。",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlNl95WUsyLTFDaW1zQjRpRjc1N2p2M081dUR3dlg0ZlFTVzlUU045Yl9keW1HTV9UYV9FNzlreXhMbnJxZVN5SkpucVZfTS1nZ29mY0Zlc0tFV3lwaWNEeQ?oc=5"
-    },
-    {
-      "brand": "Nike",
-      "title": "世界杯运动品牌争霸战：耐克的统治、阿迪达斯的阵地与安踏的进击",
-      "action_type": "综合动作",
-      "track": "综合趋势",
-      "heat": 50,
-      "source": "新浪财经",
-      "date": "2026-07-15",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMWxyNVFyYUlwN05iMUdwSUxHaFp6SU41eGk2TUZUemoxUjVhQmZubk1zYjJtd2FvUXRVUk1vWEtMYWJwdVJfWXpSNnVNYTlPdDctNUh4dG1HenNBTHBhdGE5R1lPbkU3dDQzVUNjQjgwTEdCZFBaTWwwZS01QUsyOEZrMzBfLXhWRjNFX2FTYUdTODNPWnZN?oc=5",
-      "insight": "关注其对品牌声量、商品趋势和渠道节奏的影响。",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMWxyNVFyYUlwN05iMUdwSUxHaFp6SU41eGk2TUZUemoxUjVhQmZubk1zYjJtd2FvUXRVUk1vWEtMYWJwdVJfWXpSNnVNYTlPdDctNUh4dG1HenNBTHBhdGE5R1lPbkU3dDQzVUNjQjgwTEdCZFBaTWwwZS01QUsyOEZrMzBfLXhWRjNFX2FTYUdTODNPWnZN?oc=5"
-    },
-    {
       "brand": "行业",
       "title": "艾瑞618消费洞察：京东珠宝首饰、运动户外品类领跑行业 增速双第一",
       "action_type": "平台流量",
@@ -2676,6 +2652,30 @@
       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QOTIyS01EQWRSdXFXTER2Y0lRWVlwQjdTbFYwdU9ybEN3X080eDNJWVRSajhJTnZvbXAzQmVLUklZMG9ob2lvQkxSOFNxR1hKS1o0UTRYMVhpSUFkQjJiUQ?oc=5",
       "insight": "关注其直播货盘、平台流量和内容种草打法。",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QOTIyS01EQWRSdXFXTER2Y0lRWVlwQjdTbFYwdU9ybEN3X080eDNJWVRSajhJTnZvbXAzQmVLUklZMG9ob2lvQkxSOFNxR1hKS1o0UTRYMVhpSUFkQjJiUQ?oc=5"
+    },
+    {
+      "brand": "Nike",
+      "title": "从产品创新到街头文化，耐克如何拓宽足球生意边界",
+      "action_type": "综合动作",
+      "track": "综合趋势",
+      "heat": 50,
+      "source": "thepaper.cn",
+      "date": "2026-07-15",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlNl95WUsyLTFDaW1zQjRpRjc1N2p2M081dUR3dlg0ZlFTVzlUU045Yl9keW1HTV9UYV9FNzlreXhMbnJxZVN5SkpucVZfTS1nZ29mY0Zlc0tFV3lwaWNEeQ?oc=5",
+      "insight": "关注其对品牌声量、商品趋势和渠道节奏的影响。",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlNl95WUsyLTFDaW1zQjRpRjc1N2p2M081dUR3dlg0ZlFTVzlUU045Yl9keW1HTV9UYV9FNzlreXhMbnJxZVN5SkpucVZfTS1nZ29mY0Zlc0tFV3lwaWNEeQ?oc=5"
+    },
+    {
+      "brand": "Nike",
+      "title": "世界杯运动品牌争霸战：耐克的统治、阿迪达斯的阵地与安踏的进击",
+      "action_type": "综合动作",
+      "track": "综合趋势",
+      "heat": 50,
+      "source": "新浪财经",
+      "date": "2026-07-15",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMWxyNVFyYUlwN05iMUdwSUxHaFp6SU41eGk2TUZUemoxUjVhQmZubk1zYjJtd2FvUXRVUk1vWEtMYWJwdVJfWXpSNnVNYTlPdDctNUh4dG1HenNBTHBhdGE5R1lPbkU3dDQzVUNjQjgwTEdCZFBaTWwwZS01QUsyOEZrMzBfLXhWRjNFX2FTYUdTODNPWnZN?oc=5",
+      "insight": "关注其对品牌声量、商品趋势和渠道节奏的影响。",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMWxyNVFyYUlwN05iMUdwSUxHaFp6SU41eGk2TUZUemoxUjVhQmZubk1zYjJtd2FvUXRVUk1vWEtMYWJwdVJfWXpSNnVNYTlPdDctNUh4dG1HenNBTHBhdGE5R1lPbkU3dDQzVUNjQjgwTEdCZFBaTWwwZS01QUsyOEZrMzBfLXhWRjNFX2FTYUdTODNPWnZN?oc=5"
     },
     {
       "brand": "行业",
@@ -2706,35 +2706,35 @@
     {
       "focus": "平台大促",
       "heat": 100,
-      "summary": "本周618大促预热启动，运动户外品类领跑，需关注夏季功能品类曝光、直播转化与终端承接。",
+      "summary": "本周平台大促进入预热期，京东618运动户外领跑，天猫户外装热销，需关注夏季品类曝光与转化。",
       "link": "",
       "url": ""
     },
     {
       "focus": "新品发布",
       "heat": 91,
-      "summary": "Puma、Nike、New Balance等品牌推出新品，儿童篮球鞋、运动凉鞋等品类更新活跃。",
+      "summary": "PUMA、Nike、New Balance等品牌发布新品，运动凉鞋、篮球鞋、徒步鞋等品类更新，需关注商品趋势。",
       "link": "",
       "url": ""
     },
     {
       "focus": "降雨",
       "heat": 34,
-      "summary": "全国多雨，防雨防滑品类需求上升，室内运动场景受关注，需动态调整主推品类。",
+      "summary": "华东、华中、华南、西南持续强降雨或雷阵雨，防雨防滑品类需求上升，室内运动场景受关注。",
       "link": "",
       "url": ""
     },
     {
       "focus": "轻户外",
       "heat": 20,
-      "summary": "户外运动日常化趋势推动儿童户外鞋服需求，可参考京东618数据优化产品线。",
+      "summary": "户外运动日常化趋势延续，跑步、骑行场景带动装备需求，可开发儿童户外鞋服产品线。",
       "link": "",
       "url": ""
     },
     {
       "focus": "亲子出行",
       "heat": 18,
-      "summary": "武汉儿童乐园开业和校园亲子运动菜单推出，亲子消费场景扩张，可探索联名活动。",
+      "summary": "武汉儿童乐园开业，校园亲子运动菜单推出，亲子消费场景扩张，可探索联名活动或体验店。",
       "link": "",
       "url": ""
     },
@@ -2778,32 +2778,37 @@
     {
       "theme": "亲子出行",
       "heat": 100,
-      "suggestion": "本周武汉1.3万平米儿童乐园开业，亲子品牌扎堆入局，校园微改造和亲子运动菜单推出，亲子消费场景扩张，需关注商品和终端表达联动。"
+      "suggestion": "武汉1.3万平米儿童乐园开业，亲子品牌扎堆入局，校园亲子运动菜单推出，儿童运动消费场景外扩。"
+    },
+    {
+      "theme": "品牌竞争",
+      "heat": 100,
+      "suggestion": "安踏进击世界杯，需关注其策略对361°儿童品牌定位的启示。"
     },
     {
       "theme": "平台大促",
       "heat": 100,
-      "suggestion": "本周618大促预热启动，运动户外品类领跑，需关注夏季功能品类曝光、直播转化与终端承接。"
+      "suggestion": "本周平台大促进入预热期，京东618运动户外领跑，天猫户外装热销，需关注夏季品类曝光与转化。"
     },
     {
       "theme": "轻户外",
       "heat": 95,
-      "suggestion": "户外运动日常化趋势明显，京东618运动户外品类领跑，父亲节户外装热销，跑步、骑行与轻户外场景延续，带动儿童户外装备需求。"
+      "suggestion": "户外运动日常化，京东618运动户外品类领跑，父亲节户外装热销，跑步骑行场景延续。"
     },
     {
       "theme": "防晒凉感",
       "heat": 91,
-      "suggestion": "速干T、户外防晒、跑鞋热销，Hoka、Salomon等品牌618成交翻倍，但央视曝光防晒衣虚标问题，需关注品质和合规。"
+      "suggestion": "速干T、户外防晒、跑鞋热销，央视曝光防晒衣虚标，品质标成消费安心点。"
     },
     {
       "theme": "新品发布",
       "heat": 91,
-      "suggestion": "Puma、Nike、New Balance等品牌推出新品，儿童篮球鞋、运动凉鞋等品类更新活跃。"
+      "suggestion": "PUMA、Nike、New Balance等品牌发布新品，运动凉鞋、篮球鞋、徒步鞋等品类更新，需关注商品趋势。"
     },
     {
       "theme": "儿童篮球",
       "heat": 75,
-      "suggestion": "Puma清仓篮球鞋并上新，Nike推出联名系列，Stephen Curry携手李宁首发高尔夫球鞋，儿童篮球方向商品更新活跃。"
+      "suggestion": "PUMA篮球鞋清仓，Nike联名系列重温球鞋历史，Curry品牌首发高尔夫球鞋，世界杯后足球鞋潮流。"
     },
     {
       "theme": "平台流量",
@@ -2813,17 +2818,12 @@
     {
       "theme": "运动凉鞋",
       "heat": 45,
-      "suggestion": "New Balance推出果冻凉鞋，DREAM PAIRS儿童多色运动凉鞋热销，运动凉鞋成为夏季新潮流。"
+      "suggestion": "New Balance推出果冻凉鞋，DREAM PAIRS儿童多色运动凉鞋受关注。"
     },
     {
       "theme": "儿童跑步",
-      "heat": 39,
+      "heat": 41,
       "suggestion": "儿童跑步受到跑步、骑行与轻户外场景延续，运动装备需求扩张、跑步、骑行与轻户外场景延续，运动装备需求扩张等信号推动，需关注商品、内容和终端表达联动。"
-    },
-    {
-      "theme": "直播电商",
-      "heat": 37,
-      "suggestion": "直播电商受到火蝠电商：抖音全域运营效果强劲，助力国民雪糕品牌销量爆发、火蝠电商：抖音全域运营效果强劲，助力国民雪糕品牌销量爆发等信号推动，需关注商品、内容和终端表达联动。"
     }
   ],
   "risks": [
@@ -2836,10 +2836,10 @@
   ],
   "actions": [
     "轻户外方向跟踪防晒、溯溪、户外鞋服、帽包配件和亲子出行组合。",
+    "竞品重大事件需沉淀品牌、产品、代言人、渠道动作和可借鉴打法。",
     "平台内容方向关注直播同款、达人种草、价格带和爆款货盘变化。",
     "防晒凉感方向继续跟踪防晒衣、凉感T、速干短裤、运动凉鞋和帽包。",
     "新品发布方向需继续跟踪新闻事实、竞品动作和商品信号，沉淀周报输入。",
-    "儿童运动方向重点沉淀校园运动、青少年训练、亲子运动和成长型科技卖点。",
     "区域部分按周更新，不使用固定区域结论，重点看天气、客流和区域机会变化。",
     "每周复盘高频新闻、竞品动作、商品信号和热词，形成下周汇报输入。"
   ],
