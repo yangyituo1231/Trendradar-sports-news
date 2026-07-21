@@ -1,5 +1,5 @@
 {
-  "generate_time": "2026-07-22 04:02",
+  "generate_time": "2026-07-22 04:09",
   "summary": {
     "date_range": "2026-07-16 至 2026-07-22",
     "core_judgement": "本周行业信息集中在品牌竞争、童装/儿童运动、户外/运动场景、大促/电商，高频热词为品牌竞争、防雨防滑、室内运动、渠道效率、亲子消费、校园需求，动态赛道主要为亲子出行、儿童跑步、轻户外。",
@@ -10,12 +10,12 @@
     "next_action": "下周建议围绕亲子出行、儿童跑步、轻户外持续跟踪竞品事件、商品信号、天气变化和平台热词，形成汇报页输入。"
   },
   "ai_judgement": {
-    "weekly_core_view": "本周运动品牌竞争加剧，产品心智与渠道效率成关键。儿童运动消费场景外扩，亲子与校园需求升温。全国多地强降雨扰动客流，防雨防滑及室内运动品类需求上升。平台大促进入预热期，夏季功能品类承接需前置。",
-    "news_summary": "本周新闻聚焦运动品牌竞争加剧、儿童运动消费场景外扩、平台大促预热及天气扰动。天猫618父亲节户外装热销，抖音全域运营助力品牌爆发。校园微改造推动亲子运动菜单，3D打印鞋技术受关注。",
-    "competitor_summary": "Nike通过产品创新与街头文化拓宽足球生意边界，世界杯品牌争霸战中耐克、阿迪达斯与安踏竞争激烈。Adidas推出HYPERBOOST全系列跑鞋，Puma清仓上新并发布复古球鞋，Nike与乐高新联名曝光。",
-    "product_summary": "商品趋势聚焦跑步科技、儿童鞋及篮球足球品类。Adidas HYPERBOOST跑鞋、Puma篮球鞋及New Balance果冻凉鞋为本周新品亮点。运动凉鞋与儿童运动鞋需求上升，3D打印鞋技术探索鞋履未来。",
-    "region_weather_summary": "全国多地强降雨或雷阵雨，华东、华中、华南、西南及西北均受影响，防雨防滑及室内运动场景需求提升。西北高温明显，防晒凉感速干品类进入主推窗口。",
-    "next_week_focus": "重点关注平台大促预热期夏季功能品类承接，全国降雨天气对客流及品类需求的影响，以及亲子与校园运动场景的终端转化。"
+    "weekly_core_view": "本周运动品牌竞争加剧，产品心智与渠道效率成为关键。儿童运动消费场景外扩，亲子与校园需求升温。平台大促进入预热期，夏季功能品类承接需前置。天气扰动明显，防雨防滑与室内运动场景需求提升。",
+    "news_summary": "本周新闻显示，运动品牌竞争加剧，产品心智与渠道效率成为关键。儿童运动消费场景外扩，亲子与校园需求继续升温。平台大促进入预热期，夏季功能品类承接需前置。天气变化影响客流节奏，功能品类进入动态调整窗口。跑步、骑行与轻户外场景延续，运动装备需求扩张。",
+    "competitor_summary": "Nike通过产品创新与街头文化拓宽足球生意边界，并在世界杯品牌争霸中保持统治地位。Adidas推出HYPERBOOST全系列跑鞋。Puma清仓上新篮球鞋及复古球鞋。New Balance推出果冻凉鞋。乐高与Nike联名曝光。",
+    "product_summary": "商品趋势方面，跑步科技、儿童鞋、篮球足球品类活跃。Adidas HYPERBOOST跑鞋、Puma篮球鞋、New Balance果冻凉鞋等新品亮相。运动凉鞋、儿童运动鞋成为夏季热点。3D打印鞋技术受关注，或影响童鞋定制化生产。",
+    "region_weather_summary": "本周华东、华中、华南、西南、西北多地区出现强降雨或雷阵雨，防雨、防滑与室内运动场景需求提升。西北地区高温明显，防晒、凉感、速干品类进入主推窗口。天气扰动影响客流节奏，功能品类需动态调整。",
+    "next_week_focus": "下周重点关注：平台大促预热期夏季功能品类承接效果；防雨防滑品类在降雨区域的终端转化；亲子与校园运动场景的装备需求；Nike、Adidas等竞品新品上市后的市场反应。"
   },
   "news": {
     "top_titles": [
@@ -598,15 +598,15 @@
     },
     {
       "word": "客流节奏",
-      "count": 4
+      "count": 5
     },
     {
       "word": "动态调整",
-      "count": 4
+      "count": 5
     },
     {
       "word": "情绪消费",
-      "count": 3
+      "count": 4
     },
     {
       "word": "凉感速干",
@@ -658,6 +658,10 @@
     },
     {
       "word": "情绪回暖",
+      "count": 2
+    },
+    {
+      "word": "经营韧性",
       "count": 2
     },
     {
@@ -755,10 +759,6 @@
     {
       "word": "消费新场景",
       "count": 1
-    },
-    {
-      "word": "内容平台",
-      "count": 1
     }
   ],
   "regions": [
@@ -779,15 +779,15 @@
           "count": 4
         },
         {
+          "focus": "华东强降雨雷阵雨，防雨防滑室内运动场景需关注",
+          "count": 2
+        },
+        {
           "focus": "华东强降雨雷阵雨，防雨防滑室内运动场景需重点关注",
           "count": 1
         },
         {
           "focus": "区域消费主题下，结合618大促和户外运动热潮，建议加强线上引流和室内运动装备推广",
-          "count": 1
-        },
-        {
-          "focus": "室内运动与防雨装备",
           "count": 1
         }
       ],
@@ -828,6 +828,10 @@
           "count": 5
         },
         {
+          "focus": "华中强降雨雷阵雨，防雨防滑室内运动场景需关注",
+          "count": 2
+        },
+        {
           "focus": "武汉1.3万平米儿童乐园开业，亲子品牌扎堆入局",
           "count": 1
         },
@@ -837,10 +841,6 @@
         },
         {
           "focus": "亲子运动与室内活动",
-          "count": 1
-        },
-        {
-          "focus": "华中强降雨雷阵雨，防雨防滑室内运动场景需关注",
           "count": 1
         }
       ],
@@ -881,6 +881,10 @@
           "count": 5
         },
         {
+          "focus": "华南强降雨雷阵雨，防雨防滑室内运动场景需关注",
+          "count": 2
+        },
+        {
           "focus": "国际赛事落地厦门，体育名城建设推动赛事经济",
           "count": 1
         },
@@ -890,10 +894,6 @@
         },
         {
           "focus": "赛事经济与跑步装备",
-          "count": 1
-        },
-        {
-          "focus": "华南强降雨雷阵雨，防雨防滑室内运动场景需关注",
           "count": 1
         }
       ],
@@ -2083,7 +2083,7 @@
         "source": "Hypebeast CN",
         "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE83M2NhRHRkVHdkX19XamZ3YkVNNVJLc2NLRDY2WTNDU0JWTktNc0p1V3Fvc1JmMVMtTkVIY2tMUnVqa1BfeG0yb2ZtU1Y2RVN6dV9fd29fX1oweUthTnRqeE50VVR5a2NhNVJCT24tZmlwSE9CTGVKdg?oc=5",
         "pub_date": "Tue, 21 Jul 2026 07:54:20 GMT",
-        "age_hours": 12.1,
+        "age_hours": 12.2,
         "heat": 100,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE83M2NhRHRkVHdkX19XamZ3YkVNNVJLc2NLRDY2WTNDU0JWTktNc0p1V3Fvc1JmMVMtTkVIY2tMUnVqa1BfeG0yb2ZtU1Y2RVN6dV9fd29fX1oweUthTnRqeE50VVR5a2NhNVJCT24tZmlwSE9CTGVKdg?oc=5"
@@ -2108,7 +2108,7 @@
         "source": "dealmoon.ca",
         "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQYUxKUmNIcWcwYjdWUUtCdGFwdlk3NE4wNkN3UHBxdkNTU0Z1NE4tY2VWYmpURi1mYW5GNWxINzdnOUczaDlGbXFxYmh0MVFrZml2NFk2WVJuT3MyRXNGaXBNTkdNYm9fMjh4VC00Q3RMbE9qZHR5aTFtQkZldXNWbDY0UVEwUQ?oc=5",
         "pub_date": "Mon, 20 Jul 2026 03:47:04 GMT",
-        "age_hours": 40.2,
+        "age_hours": 40.3,
         "heat": 89,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQYUxKUmNIcWcwYjdWUUtCdGFwdlk3NE4wNkN3UHBxdkNTU0Z1NE4tY2VWYmpURi1mYW5GNWxINzdnOUczaDlGbXFxYmh0MVFrZml2NFk2WVJuT3MyRXNGaXBNTkdNYm9fMjh4VC00Q3RMbE9qZHR5aTFtQkZldXNWbDY0UVEwUQ?oc=5"
@@ -2129,7 +2129,7 @@
         "source": "Supreme情报网",
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE94clBNdWNBY0hVdEx5TVRXQzczb2FsbERQeUpEc1BGZy11cWN0MW04eEdsQUY1NGRQdFVXS29xbzNXQVNOOFNOSEVoSFcydkpERUVTQlRES045T0xhY1dHb3JkZlcyUWYwdTBkWGVR?oc=5",
         "pub_date": "Mon, 20 Jul 2026 16:08:38 GMT",
-        "age_hours": 27.8,
+        "age_hours": 28.0,
         "heat": 75,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE94clBNdWNBY0hVdEx5TVRXQzczb2FsbERQeUpEc1BGZy11cWN0MW04eEdsQUY1NGRQdFVXS29xbzNXQVNOOFNOSEVoSFcydkpERUVTQlRES045T0xhY1dHb3JkZlcyUWYwdTBkWGVR?oc=5"
@@ -2152,7 +2152,7 @@
         "source": "搜狐网",
         "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPYkJlUnI5djJmeVo5c1doSHcyajdOel9kejhXeTgyc2FYYnktUHBMaUNDbTF5YkhWeGNId2xENlg2MTBwTk4zM3FWcGZ2M3lMNEtsZzdHRWJlOGRpOFdUdXVsT0tsRHFWUnJPTk91VVUtamVRbk9lazFMcDZVUHB0TzBZTmYzS29fdmlzVA?oc=5",
         "pub_date": "Sun, 19 Jul 2026 03:45:00 GMT",
-        "age_hours": 64.2,
+        "age_hours": 64.4,
         "heat": 75,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPYkJlUnI5djJmeVo5c1doSHcyajdOel9kejhXeTgyc2FYYnktUHBMaUNDbTF5YkhWeGNId2xENlg2MTBwTk4zM3FWcGZ2M3lMNEtsZzdHRWJlOGRpOFdUdXVsT0tsRHFWUnJPTk91VVUtamVRbk9lazFMcDZVUHB0TzBZTmYzS29fdmlzVA?oc=5"
@@ -2173,7 +2173,7 @@
         "source": "Hypebeast CN",
         "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaDZad1FqQW9uWkhYTEtudHp1cmM3cXRXM0JnQ0V5OTJxQTlkZVZmZll4V2NvTTE3ajJLRFJaR2s4a2dobkpWenBXVEUwV005c0FfTFV0YXNxY3BwNHQtT0ZTcXBVdEJTc19MRl9hX0d0Nk1OVlRCS2h1YmhjcVlMbUJqY0dsZ3ZXMzFhZnpEQ01YUzJlSHhoRGhERDRQc00?oc=5",
         "pub_date": "Fri, 17 Jul 2026 10:50:39 GMT",
-        "age_hours": 105.1,
+        "age_hours": 105.3,
         "heat": 69,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaDZad1FqQW9uWkhYTEtudHp1cmM3cXRXM0JnQ0V5OTJxQTlkZVZmZll4V2NvTTE3ajJLRFJaR2s4a2dobkpWenBXVEUwV005c0FfTFV0YXNxY3BwNHQtT0ZTcXBVdEJTc19MRl9hX0d0Nk1OVlRCS2h1YmhjcVlMbUJqY0dsZ3ZXMzFhZnpEQ01YUzJlSHhoRGhERDRQc00?oc=5"
@@ -2195,7 +2195,7 @@
         "source": "Hypebae",
         "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOVh1cDd3Q2pqVWxnZXJWc3N3aXpTTEtJQ2FFS0NLQ3laU3BLQ2dYZEdGaWc3alluSFpwcGZHY1haZGhwUFM2YzdESTNiRWNCRDFNZUVLTWxUWnJpNXFMbzZOYkNTQzZGY2IwU3RvNmR0ZUZhLWZHVnhvLXZ3SUozNkFxQmhJSDIySVBXQVdORmxRQQ?oc=5",
         "pub_date": "Tue, 14 Jul 2026 14:13:37 GMT",
-        "age_hours": 173.8,
+        "age_hours": 173.9,
         "heat": 64,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOVh1cDd3Q2pqVWxnZXJWc3N3aXpTTEtJQ2FFS0NLQ3laU3BLQ2dYZEdGaWc3alluSFpwcGZHY1haZGhwUFM2YzdESTNiRWNCRDFNZUVLTWxUWnJpNXFMbzZOYkNTQzZGY2IwU3RvNmR0ZUZhLWZHVnhvLXZ3SUozNkFxQmhJSDIySVBXQVdORmxRQQ?oc=5"
@@ -2215,7 +2215,7 @@
         "source": "dealmoon.ca",
         "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOUpRSlJsTGJsWkZMbUVkeUc5cnQ4QWVESk9GU0VtLVg0d2pjNFFzWVV6X0lpWDk1dzNCd19IdTYyYXlETXFuRHAtdzU3NjdLM3JELWlJVm5vU3BSRV8xbDhsZzlvMG1rTWZGQ3MzRnA2bzRRVWptRHViaWhXMEwwa0w0VkRuTTZrUFZudmhKeEk1a0xOSW5xcw?oc=5",
         "pub_date": "Sat, 18 Jul 2026 22:34:04 GMT",
-        "age_hours": 69.4,
+        "age_hours": 69.5,
         "heat": 62,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOUpRSlJsTGJsWkZMbUVkeUc5cnQ4QWVESk9GU0VtLVg0d2pjNFFzWVV6X0lpWDk1dzNCd19IdTYyYXlETXFuRHAtdzU3NjdLM3JELWlJVm5vU3BSRV8xbDhsZzlvMG1rTWZGQ3MzRnA2bzRRVWptRHViaWhXMEwwa0w0VkRuTTZrUFZudmhKeEk1a0xOSW5xcw?oc=5"
@@ -2235,7 +2235,7 @@
         "source": "星島頭條",
         "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPNEVVdzJfV1JrVFpSazVMWHBHTDlZOUhqUUxzLXVDLUNEVmVYVXUyVk5sTWhqV05ONTFHaC1yUXprQnk5d2ZvNk9aRU9ZQnRyVHcxOXR6anA0YUpvOUVqaTZ6Tmk1MWVvLVpQbE9WdDQ4bWN1T0xpdkp6UkhQVEpLWUltX1l3NzJDeGN3LTI5dEg1RGhVWkFxN2VGRGlTTHJWTmM3c0pzcUN3OWIxM0N3Um55aWNvZFRSVmJzOFZyekpRUVozUVlwOFZ4SkIzNTBfOXNldHhQa0V5ajBsc090NlFpUUxzeDc5SVl2TmxBSERRMVVESWhfYjNB?oc=5",
         "pub_date": "Tue, 21 Jul 2026 12:16:13 GMT",
-        "age_hours": 7.7,
+        "age_hours": 7.8,
         "heat": 60,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPNEVVdzJfV1JrVFpSazVMWHBHTDlZOUhqUUxzLXVDLUNEVmVYVXUyVk5sTWhqV05ONTFHaC1yUXprQnk5d2ZvNk9aRU9ZQnRyVHcxOXR6anA0YUpvOUVqaTZ6Tmk1MWVvLVpQbE9WdDQ4bWN1T0xpdkp6UkhQVEpLWUltX1l3NzJDeGN3LTI5dEg1RGhVWkFxN2VGRGlTTHJWTmM3c0pzcUN3OWIxM0N3Um55aWNvZFRSVmJzOFZyekpRUVozUVlwOFZ4SkIzNTBfOXNldHhQa0V5ajBsc090NlFpUUxzeDc5SVl2TmxBSERRMVVESWhfYjNB?oc=5"
@@ -2257,7 +2257,7 @@
         "source": "dealmoon.ca",
         "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVDh5RkdUUDctS2NoSFQ0eEt2ZmhiY0lLUDhjY28xd0RGblZ1alZEOHFGVUJIQnZvZm1UaXVqRi1qdVFkRW5DclZZcG1nU1BMT3o4OXN3b21yRGV6aDY3bW0zM2N4ZDJxbTdnaWozQUxpNS01TnlGbmhKLUczTERraUpuaUJxZE4yRG15cW55WVhLSWdVSVVFeE9zclVILTU1VjdMUXl0ZjVnOGZCUUZkOVdhU3ZEZkNxX0M2SXFn?oc=5",
         "pub_date": "Wed, 15 Jul 2026 11:21:48 GMT",
-        "age_hours": 152.6,
+        "age_hours": 152.8,
         "heat": 60,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVDh5RkdUUDctS2NoSFQ0eEt2ZmhiY0lLUDhjY28xd0RGblZ1alZEOHFGVUJIQnZvZm1UaXVqRi1qdVFkRW5DclZZcG1nU1BMT3o4OXN3b21yRGV6aDY3bW0zM2N4ZDJxbTdnaWozQUxpNS01TnlGbmhKLUczTERraUpuaUJxZE4yRG15cW55WVhLSWdVSVVFeE9zclVILTU1VjdMUXl0ZjVnOGZCUUZkOVdhU3ZEZkNxX0M2SXFn?oc=5"
@@ -2278,7 +2278,7 @@
         "source": "Hypebeast CN",
         "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWlVvcl9pbUk0dGtRa04yb3VEcVI5eUpaazhkOVMtMXhSaXBNM0RNVlk0Mi03Z2pRVk4zcHc0alVndS1nWmF5ZU1Ra201bk1HMlNVU2JjU1dobWdsNzZ4dHp0Uzk4STg4T0p5QmEzVDYtZk5BVzlRZWRIc0pycVdVNzdYR2lUR1o3OEEw?oc=5",
         "pub_date": "Thu, 16 Jul 2026 03:59:36 GMT",
-        "age_hours": 136.0,
+        "age_hours": 136.1,
         "heat": 57,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWlVvcl9pbUk0dGtRa04yb3VEcVI5eUpaazhkOVMtMXhSaXBNM0RNVlk0Mi03Z2pRVk4zcHc0alVndS1nWmF5ZU1Ra201bk1HMlNVU2JjU1dobWdsNzZ4dHp0Uzk4STg4T0p5QmEzVDYtZk5BVzlRZWRIc0pycVdVNzdYR2lUR1o3OEEw?oc=5"
@@ -2423,35 +2423,35 @@
     {
       "track": "亲子出行",
       "heat": 100,
-      "summary": "亲子出行受武汉1.3万平米儿童乐园开业及校园亲子运动菜单推动，需关注商品、内容和终端表达联动。",
+      "summary": "亲子出行受到1.3万平米儿童乐园亮相武汉、校园微改造开亲子运动菜单等信号推动，需关注商品、内容和终端表达联动。",
       "link": "",
       "url": ""
     },
     {
       "track": "儿童跑步",
       "heat": 77,
-      "summary": "儿童跑步受跑步、骑行与轻户外场景延续推动，运动装备需求扩张，需关注商品和内容联动。",
+      "summary": "儿童跑步受到跑步、骑行与轻户外场景延续，运动装备需求扩张等信号推动，需关注商品、内容和终端表达联动。",
       "link": "",
       "url": ""
     },
     {
       "track": "轻户外",
       "heat": 66,
-      "summary": "轻户外受户外运动日常化及父亲节户外装热销推动，需关注商品和终端表达联动。",
+      "summary": "轻户外受到户外运动影响生活方式、父亲节户外装热销等信号推动，需关注商品、内容和终端表达联动。",
       "link": "",
       "url": ""
     },
     {
       "track": "儿童篮球",
       "heat": 65,
-      "summary": "儿童篮球受Puma清仓上新及Adidas足球鞋推动，需关注商品更新和价格带竞争。",
+      "summary": "儿童篮球受到Puma清仓篮球鞋、Adidas足球鞋等信号推动，需关注商品、内容和终端表达联动。",
       "link": "",
       "url": ""
     },
     {
       "track": "运动凉鞋",
       "heat": 54,
-      "summary": "运动凉鞋受New Balance果冻凉鞋及DREAM PAIRS儿童运动凉鞋推动，需关注商品趋势。",
+      "summary": "运动凉鞋受到New Balance果冻凉鞋、DREAM PAIRS儿童运动凉鞋等信号推动，需关注商品、内容和终端表达联动。",
       "link": "",
       "url": ""
     },
@@ -2550,6 +2550,18 @@
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE04WjRlUWpvV3VrMnFmRWtMOF8ybk1pUmtyQXZsamxudGhqUXQ1blhhb2JmTkxNenB3UjI3LWRPczVJSkdtOWZqTk5zMzVSWkJzZThCZU52QlppV3VENnA4NVVQc3Vid01uVW9B?oc=5"
     },
     {
+      "brand": "行业",
+      "title": "平台大促进入预热期，夏季功能品类承接需前置",
+      "action_type": "平台流量",
+      "track": "直播电商",
+      "heat": 60,
+      "source": "平台资讯",
+      "date": "2026-07-18",
+      "link": "",
+      "insight": "关注其直播货盘、平台流量和内容种草打法。",
+      "url": ""
+    },
+    {
       "brand": "Nike",
       "title": "从产品创新到街头文化，耐克如何拓宽足球生意边界",
       "action_type": "综合动作",
@@ -2572,18 +2584,6 @@
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMWxyNVFyYUlwN05iMUdwSUxHaFp6SU41eGk2TUZUemoxUjVhQmZubk1zYjJtd2FvUXRVUk1vWEtMYWJwdVJfWXpSNnVNYTlPdDctNUh4dG1HenNBTHBhdGE5R1lPbkU3dDQzVUNjQjgwTEdCZFBaTWwwZS01QUsyOEZrMzBfLXhWRjNFX2FTYUdTODNPWnZN?oc=5",
       "insight": "关注其对品牌声量、商品趋势和渠道节奏的影响。",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMWxyNVFyYUlwN05iMUdwSUxHaFp6SU41eGk2TUZUemoxUjVhQmZubk1zYjJtd2FvUXRVUk1vWEtMYWJwdVJfWXpSNnVNYTlPdDctNUh4dG1HenNBTHBhdGE5R1lPbkU3dDQzVUNjQjgwTEdCZFBaTWwwZS01QUsyOEZrMzBfLXhWRjNFX2FTYUdTODNPWnZN?oc=5"
-    },
-    {
-      "brand": "行业",
-      "title": "平台大促进入预热期，夏季功能品类承接需前置",
-      "action_type": "平台流量",
-      "track": "直播电商",
-      "heat": 60,
-      "source": "平台资讯",
-      "date": "2026-07-18",
-      "link": "",
-      "url": "",
-      "insight": "关注其直播货盘、平台流量和内容种草打法。"
     }
   ],
   "industry_focus": [
@@ -2662,7 +2662,7 @@
     {
       "theme": "亲子出行",
       "heat": 100,
-      "suggestion": "亲子出行受武汉1.3万平米儿童乐园开业及校园亲子运动菜单推动，需关注商品、内容和终端表达联动。"
+      "suggestion": "亲子出行受到1.3万平米儿童乐园亮相武汉、校园微改造开亲子运动菜单等信号推动，需关注商品、内容和终端表达联动。"
     },
     {
       "theme": "新品发布",
@@ -2672,7 +2672,7 @@
     {
       "theme": "儿童跑步",
       "heat": 77,
-      "suggestion": "儿童跑步受跑步、骑行与轻户外场景延续推动，运动装备需求扩张，需关注商品和内容联动。"
+      "suggestion": "儿童跑步受到跑步、骑行与轻户外场景延续，运动装备需求扩张等信号推动，需关注商品、内容和终端表达联动。"
     },
     {
       "theme": "联名合作",
@@ -2682,12 +2682,12 @@
     {
       "theme": "轻户外",
       "heat": 66,
-      "suggestion": "轻户外受户外运动日常化及父亲节户外装热销推动，需关注商品和终端表达联动。"
+      "suggestion": "轻户外受到户外运动影响生活方式、父亲节户外装热销等信号推动，需关注商品、内容和终端表达联动。"
     },
     {
       "theme": "儿童篮球",
       "heat": 65,
-      "suggestion": "儿童篮球受Puma清仓上新及Adidas足球鞋推动，需关注商品更新和价格带竞争。"
+      "suggestion": "儿童篮球受到Puma清仓篮球鞋、Adidas足球鞋等信号推动，需关注商品、内容和终端表达联动。"
     },
     {
       "theme": "平台大促",
@@ -2697,7 +2697,7 @@
     {
       "theme": "运动凉鞋",
       "heat": 54,
-      "suggestion": "运动凉鞋受New Balance果冻凉鞋及DREAM PAIRS儿童运动凉鞋推动，需关注商品趋势。"
+      "suggestion": "运动凉鞋受到New Balance果冻凉鞋、DREAM PAIRS儿童运动凉鞋等信号推动，需关注商品、内容和终端表达联动。"
     },
     {
       "theme": "降雨",
