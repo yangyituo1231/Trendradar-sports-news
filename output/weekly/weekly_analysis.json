@@ -1,5 +1,5 @@
 {
-  "generate_time": "2026-07-24 03:56",
+  "generate_time": "2026-07-24 04:04",
   "summary": {
     "date_range": "2026-07-18 至 2026-07-24",
     "core_judgement": "本周行业信息集中在品牌竞争、童装/儿童运动、大促/电商、天气/功能消费，高频热词为品牌竞争、渠道效率、亲子消费、校园需求、大促预热、室内运动，动态赛道主要为儿童跑步、轻户外、亲子出行。",
@@ -10,12 +10,12 @@
     "next_action": "下周建议围绕儿童跑步、轻户外、亲子出行持续跟踪竞品事件、商品信号、天气变化和平台热词，形成汇报页输入。"
   },
   "ai_judgement": {
-    "weekly_core_view": "本周行业竞争加剧，产品心智与渠道效率成为关键。儿童运动消费场景外扩，亲子与校园需求升温。平台大促进入预热期，夏季功能品类需前置。天气扰动客流，防雨防滑及室内运动场景需求提升。",
-    "news_summary": "本周TOP新闻持续聚焦品牌竞争、儿童运动场景外扩、平台大促预热、天气影响及户外运动场景扩张。热词显示品牌竞争、渠道效率、亲子消费、校园需求、大促预热、轻户外等为高频关注点。",
-    "competitor_summary": "本周竞品动态较少，主要关注平台大促预热期，夏季功能品类承接需前置。行业整体竞争重心向产品心智、代言资产、渠道声量与终端转化倾斜。",
-    "product_summary": "商品信号显示跑步科技、篮球足球、品牌新品为热门品类。Adidas、Hoka、Salomon、Puma等品牌活跃。速干T、户外防晒、跑鞋热销，运动凉鞋、联名系列受关注。安踏儿童推出UFO8跑鞋。",
-    "region_weather_summary": "华东、华中、华南、西北、西南均受降雨或雷阵雨天气扰动，防雨防滑品类及室内运动场景需求提升。西北高温明显，防晒凉感速干品类进入主推窗口。需动态调整陈列与库存。",
-    "next_week_focus": "重点关注平台大促预热期夏季功能品类承接，天气变化对客流及品类需求的影响，以及儿童跑步、轻户外、亲子出行等动态赛道的商品与内容联动。"
+    "weekly_core_view": "本周行业竞争加剧，产品心智与渠道效率成为关键；儿童运动消费场景外扩，亲子与校园需求升温；平台大促进入预热期，夏季功能品类需前置承接；全国多区域降雨扰动客流，防雨防滑及室内运动场景需求突出。",
+    "news_summary": "本周行业持续关注品牌竞争、儿童运动场景外扩、平台大促预热、天气扰动及户外运动场景扩张五大主题，无单一品牌重大事件，整体趋势信号明确。",
+    "competitor_summary": "本周竞品动态较少，主要关注平台大促预热期，夏季功能品类承接需前置，需观察直播货盘、平台流量和内容种草打法。",
+    "product_summary": "跑步科技、篮球足球品类热度高，Adidas、Nike、Puma等品牌发布新品；防晒凉感、运动凉鞋等夏季品类需求上升，安踏儿童推出UFO8跑鞋。",
+    "region_weather_summary": "华东、华中、华南强降雨持续，防雨防滑品类需求旺盛，室内运动场景升温；西北、西南降雨影响客流，需动态调整功能品类陈列与库存。",
+    "next_week_focus": "重点关注平台大促预热期的夏季品类曝光与转化，动态调整防雨防滑及室内运动品类库存，跟踪跑步、轻户外场景的装备需求变化。"
   },
   "news": {
     "top_titles": [
@@ -504,6 +504,10 @@
       "count": 3
     },
     {
+      "word": "运动扩张",
+      "count": 3
+    },
+    {
       "word": "高温防晒",
       "count": 2
     },
@@ -513,10 +517,6 @@
     },
     {
       "word": "跑步骑行",
-      "count": 2
-    },
-    {
-      "word": "情绪消费",
       "count": 2
     },
     {
@@ -532,16 +532,16 @@
       "count": 2
     },
     {
-      "word": "经营韧性",
-      "count": 2
-    },
-    {
-      "word": "运动扩张",
-      "count": 2
-    },
-    {
       "word": "客流调整",
       "count": 2
+    },
+    {
+      "word": "情绪升温",
+      "count": 2
+    },
+    {
+      "word": "情绪消费",
+      "count": 1
     },
     {
       "word": "经营优化",
@@ -557,6 +557,10 @@
     },
     {
       "word": "品类前置",
+      "count": 1
+    },
+    {
+      "word": "经营韧性",
       "count": 1
     },
     {
@@ -580,10 +584,6 @@
       "count": 1
     },
     {
-      "word": "情绪升温",
-      "count": 1
-    },
-    {
       "word": "经营前置",
       "count": 1
     },
@@ -600,7 +600,7 @@
       "count": 1
     },
     {
-      "word": "AI科技",
+      "word": "轻防护",
       "count": 1
     }
   ],
@@ -724,10 +724,6 @@
           "count": 6
         },
         {
-          "focus": "强降雨扰动客流，防雨防滑品类与室内运动场景需求提升，需动态调整陈列与库存",
-          "count": 2
-        },
-        {
           "focus": "华南强降雨持续，防雨防滑品类及室内运动场景需求突出。",
           "count": 1
         },
@@ -737,6 +733,10 @@
         },
         {
           "focus": "华南强降雨持续，防雨防滑品类需求旺盛，室内运动场景升",
+          "count": 1
+        },
+        {
+          "focus": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注，建议提前备货并调整营销。",
           "count": 1
         }
       ],
@@ -830,10 +830,6 @@
           "count": 6
         },
         {
-          "focus": "西南降雨影响客流，防雨轻防护与室内运动场景需求提升",
-          "count": 2
-        },
-        {
           "focus": "降雨影响客流，防雨轻防护品类与室内运动场景需求提升，需动态调整陈列与库存",
           "count": 2
         },
@@ -843,6 +839,10 @@
         },
         {
           "focus": "小雨天气需关注防雨轻防护品类，结合跑步骑行场景扩张，推广轻户外运动装备，提升客流转化。",
+          "count": 1
+        },
+        {
+          "focus": "西南高温明显，防晒凉感品类进入主推窗口，速干装备需求",
           "count": 1
         }
       ],
@@ -1785,10 +1785,14 @@
   },
   "product_signals": {
     "date": "2026-07-24",
-    "signal_count": 12,
+    "signal_count": 13,
     "top_brands": [
       [
         "Adidas",
+        2
+      ],
+      [
+        "Nike",
         2
       ],
       [
@@ -1809,10 +1813,6 @@
       ],
       [
         "凯乐石",
-        1
-      ],
-      [
-        "Nike",
         1
       ],
       [
@@ -1838,19 +1838,19 @@
         4
       ],
       [
+        "系列",
+        3
+      ],
+      [
+        "篮球",
+        3
+      ],
+      [
         "防晒衣",
         2
       ],
       [
         "防晒",
-        2
-      ],
-      [
-        "系列",
-        2
-      ],
-      [
-        "篮球",
         2
       ],
       [
@@ -1917,7 +1917,7 @@
       ],
       [
         "篮球足球",
-        3
+        4
       ],
       [
         "品牌新品",
@@ -1947,7 +1947,7 @@
       ],
       [
         "秋季",
-        2
+        3
       ]
     ],
     "signals": [
@@ -1972,7 +1972,7 @@
         "source": "news.tom.com",
         "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkd0ZNTTlSTEM1Qk1VeElXY0VsZExqdk5BWGlFRzFUVEItelZTbGEwZndOWXBwVmwwX0p3aGFVOGZxdjlkTVE3Wjh0djNUUUlzbEdKVWFR?oc=5",
         "pub_date": "Fri, 17 Jul 2026 06:13:00 GMT",
-        "age_hours": 157.7,
+        "age_hours": 157.8,
         "heat": 100,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkd0ZNTTlSTEM1Qk1VeElXY0VsZExqdk5BWGlFRzFUVEItelZTbGEwZndOWXBwVmwwX0p3aGFVOGZxdjlkTVE3Wjh0djNUUUlzbEdKVWFR?oc=5"
@@ -1996,7 +1996,7 @@
         "source": "Hypebeast CN",
         "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE83M2NhRHRkVHdkX19XamZ3YkVNNVJLc2NLRDY2WTNDU0JWTktNc0p1V3Fvc1JmMVMtTkVIY2tMUnVqa1BfeG0yb2ZtU1Y2RVN6dV9fd29fX1oweUthTnRqeE50VVR5a2NhNVJCT24tZmlwSE9CTGVKdg?oc=5",
         "pub_date": "Tue, 21 Jul 2026 07:54:20 GMT",
-        "age_hours": 60.0,
+        "age_hours": 60.1,
         "heat": 96,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE83M2NhRHRkVHdkX19XamZ3YkVNNVJLc2NLRDY2WTNDU0JWTktNc0p1V3Fvc1JmMVMtTkVIY2tMUnVqa1BfeG0yb2ZtU1Y2RVN6dV9fd29fX1oweUthTnRqeE50VVR5a2NhNVJCT24tZmlwSE9CTGVKdg?oc=5"
@@ -2020,7 +2020,7 @@
         "source": "haveagood-holiday.com",
         "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNXNFcmlFSGlLOWdBc2lZdzE1VEowQWFzZkdLNnI4TkRuOG83N0dKeUd3MkgtZHp3S2ZlSzBtQXVkbmlUWjJKbHlnOERXWTQzTkxPU1g2dGtWMmNHdTI5TGIxeXF0OVJHZG9wb2lSOFpPZXVJai1TQUVNN0xtcXA3eW80QW9JYXlKNzEtYmgtTjl6emxmSUhVdA?oc=5",
         "pub_date": "Wed, 22 Jul 2026 20:37:00 GMT",
-        "age_hours": 23.3,
+        "age_hours": 23.4,
         "heat": 84,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNXNFcmlFSGlLOWdBc2lZdzE1VEowQWFzZkdLNnI4TkRuOG83N0dKeUd3MkgtZHp3S2ZlSzBtQXVkbmlUWjJKbHlnOERXWTQzTkxPU1g2dGtWMmNHdTI5TGIxeXF0OVJHZG9wb2lSOFpPZXVJai1TQUVNN0xtcXA3eW80QW9JYXlKNzEtYmgtTjl6emxmSUhVdA?oc=5"
@@ -2044,7 +2044,7 @@
         "source": "中金在线",
         "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE85bzhPVDZFOEJ2dGx1cm1iMDN5SDQ1UlJyRnBhNk1ja1pHN1FSeHdVZXlKRDEwbFZEQWlaQkRSaVgyY1Vfd1NKblBsSnVsOGl1MW4zRmc1OTF4X3N1MmlzVHJjd0o5QWxZMDBhVTlmQ3A?oc=5",
         "pub_date": "Tue, 21 Jul 2026 05:05:03 GMT",
-        "age_hours": 62.8,
+        "age_hours": 62.9,
         "heat": 81,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE85bzhPVDZFOEJ2dGx1cm1iMDN5SDQ1UlJyRnBhNk1ja1pHN1FSeHdVZXlKRDEwbFZEQWlaQkRSaVgyY1Vfd1NKblBsSnVsOGl1MW4zRmc1OTF4X3N1MmlzVHJjd0o5QWxZMDBhVTlmQ3A?oc=5"
@@ -2067,10 +2067,32 @@
         "source": "haveagood-holiday.com",
         "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9YMDF4Yi1fYlFUbmJkMXRUbTIzV19mN0p6LUZIWnM1eXdYS3FWUDVDeHlYdXcwUUlVLXBZWEpTdU40MEs4eXhEdU9GbWJTYzEyM3FZZzkxWU5EWHlTSDR4RHV5X25idng0MXVrTWhkMUtlMjZJam9uX2JGVQ?oc=5",
         "pub_date": "Wed, 22 Jul 2026 20:46:09 GMT",
-        "age_hours": 23.1,
+        "age_hours": 23.3,
         "heat": 75,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9YMDF4Yi1fYlFUbmJkMXRUbTIzV19mN0p6LUZIWnM1eXdYS3FWUDVDeHlYdXcwUUlVLXBZWEpTdU40MEs4eXhEdU9GbWJTYzEyM3FZZzkxWU5EWHlTSDR4RHV5X25idng0MXVrTWhkMUtlMjZJam9uX2JGVQ?oc=5"
+      },
+      {
+        "date": "2026-07-24",
+        "title": "Nike Ja 3「Garden」为 Ja Morant 签名鞋系列注入清新植物美学 - Hypebeast CN",
+        "short_title": "Nike Ja 3「Garden」为 Ja Morant 签名鞋系列注入清新植物美学 - Hypebeast CN",
+        "query": "Nike Kids 篮球鞋",
+        "brand_hits": [
+          "Nike"
+        ],
+        "keyword_hits": [
+          "篮球",
+          "系列"
+        ],
+        "category": "篮球足球",
+        "season_tag": "秋季",
+        "source": "Hypebeast CN",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1JY0UxMkxvU1NvVnM5SFFQOUdlZjFDRG5VU0dZVDhUUHFXa1l0YkU0dGc0RVJKckxWNno2cnNZMUMzS2lmcFFpUWpiUzN5OEpzM0Nhbi1BWUc5SDdtaGtEeW9JZWlDaXhCTnFuWXZKT21NbTc1MFQ0?oc=5",
+        "pub_date": "Fri, 17 Jul 2026 03:35:30 GMT",
+        "age_hours": 160.4,
+        "heat": 72,
+        "type": "product_signal",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1JY0UxMkxvU1NvVnM5SFFQOUdlZjFDRG5VU0dZVDhUUHFXa1l0YkU0dGc0RVJKckxWNno2cnNZMUMzS2lmcFFpUWpiUzN5OEpzM0Nhbi1BWUc5SDdtaGtEeW9JZWlDaXhCTnFuWXZKT21NbTc1MFQ0?oc=5"
       },
       {
         "date": "2026-07-24",
@@ -2088,7 +2110,7 @@
         "source": "Supreme情报网",
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE94clBNdWNBY0hVdEx5TVRXQzczb2FsbERQeUpEc1BGZy11cWN0MW04eEdsQUY1NGRQdFVXS29xbzNXQVNOOFNOSEVoSFcydkpERUVTQlRES045T0xhY1dHb3JkZlcyUWYwdTBkWGVR?oc=5",
         "pub_date": "Mon, 20 Jul 2026 16:08:38 GMT",
-        "age_hours": 75.7,
+        "age_hours": 75.9,
         "heat": 69,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE94clBNdWNBY0hVdEx5TVRXQzczb2FsbERQeUpEc1BGZy11cWN0MW04eEdsQUY1NGRQdFVXS29xbzNXQVNOOFNOSEVoSFcydkpERUVTQlRES045T0xhY1dHb3JkZlcyUWYwdTBkWGVR?oc=5"
@@ -2111,7 +2133,7 @@
         "source": "Sohu",
         "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPYkJlUnI5djJmeVo5c1doSHcyajdOel9kejhXeTgyc2FYYnktUHBMaUNDbTF5YkhWeGNId2xENlg2MTBwTk4zM3FWcGZ2M3lMNEtsZzdHRWJlOGRpOFdUdXVsT0tsRHFWUnJPTk91VVUtamVRbk9lazFMcDZVUHB0TzBZTmYzS29fdmlzVA?oc=5",
         "pub_date": "Sun, 19 Jul 2026 03:45:00 GMT",
-        "age_hours": 112.1,
+        "age_hours": 112.3,
         "heat": 69,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPYkJlUnI5djJmeVo5c1doSHcyajdOel9kejhXeTgyc2FYYnktUHBMaUNDbTF5YkhWeGNId2xENlg2MTBwTk4zM3FWcGZ2M3lMNEtsZzdHRWJlOGRpOFdUdXVsT0tsRHFWUnJPTk91VVUtamVRbk9lazFMcDZVUHB0TzBZTmYzS29fdmlzVA?oc=5"
@@ -2132,7 +2154,7 @@
         "source": "Hypebeast CN",
         "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaDZad1FqQW9uWkhYTEtudHp1cmM3cXRXM0JnQ0V5OTJxQTlkZVZmZll4V2NvTTE3ajJLRFJaR2s4a2dobkpWenBXVEUwV005c0FfTFV0YXNxY3BwNHQtT0ZTcXBVdEJTc19MRl9hX0d0Nk1OVlRCS2h1YmhjcVlMbUJqY0dsZ3ZXMzFhZnpEQ01YUzJlSHhoRGhERDRQc00?oc=5",
         "pub_date": "Fri, 17 Jul 2026 10:50:39 GMT",
-        "age_hours": 153.0,
+        "age_hours": 153.2,
         "heat": 69,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaDZad1FqQW9uWkhYTEtudHp1cmM3cXRXM0JnQ0V5OTJxQTlkZVZmZll4V2NvTTE3ajJLRFJaR2s4a2dobkpWenBXVEUwV005c0FfTFV0YXNxY3BwNHQtT0ZTcXBVdEJTc19MRl9hX0d0Nk1OVlRCS2h1YmhjcVlMbUJqY0dsZ3ZXMzFhZnpEQ01YUzJlSHhoRGhERDRQc00?oc=5"
@@ -2154,7 +2176,7 @@
         "source": "dealmoon.ca",
         "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRm04c3VkOVI5V2xITUZkak93VVFCNXl1Z3BoU0dBazRiMUJMcUVDdnBmTjc5Y3Vfdkd4ZWdLTmJKU2IydEZfMWNEdEFJQ1J2MVpEVDhUcjc1dXVzRGFjX1V4TmF1WFA5QjRXTUthVVM0eXd6Ml9KWXBHSVFGV1FuRjY2dW1hejlHN1R6azczb2pZcm1PRWFkWGpTVVlfd3E4VWhFXw?oc=5",
         "pub_date": "Wed, 22 Jul 2026 08:29:10 GMT",
-        "age_hours": 35.4,
+        "age_hours": 35.5,
         "heat": 66,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRm04c3VkOVI5V2xITUZkak93VVFCNXl1Z3BoU0dBazRiMUJMcUVDdnBmTjc5Y3Vfdkd4ZWdLTmJKU2IydEZfMWNEdEFJQ1J2MVpEVDhUcjc1dXVzRGFjX1V4TmF1WFA5QjRXTUthVVM0eXd6Ml9KWXBHSVFGV1FuRjY2dW1hejlHN1R6azczb2pZcm1PRWFkWGpTVVlfd3E4VWhFXw?oc=5"
@@ -2177,7 +2199,7 @@
         "source": "Foshanplus",
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFB3SHFxNVFIS0RHM3QtX3pmWjdrQnVnc1RQbVNCTEZZSHNsV3dVOG9nN29BT190MThpd1VGcXZzYkFka1AwTmU0dGVtTGRPY25ZNkxROGNtX1FwaS1nWm4xQTJaVEgyLTZiS25qRDlWOHc4dw?oc=5",
         "pub_date": "Thu, 16 Jul 2026 01:36:00 GMT",
-        "age_hours": 186.3,
+        "age_hours": 186.4,
         "heat": 64,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB3SHFxNVFIS0RHM3QtX3pmWjdrQnVnc1RQbVNCTEZZSHNsV3dVOG9nN29BT190MThpd1VGcXZzYkFka1AwTmU0dGVtTGRPY25ZNkxROGNtX1FwaS1nWm4xQTJaVEgyLTZiS25qRDlWOHc4dw?oc=5"
@@ -2197,7 +2219,7 @@
         "source": "dealmoon.ca",
         "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOUpRSlJsTGJsWkZMbUVkeUc5cnQ4QWVESk9GU0VtLVg0d2pjNFFzWVV6X0lpWDk1dzNCd19IdTYyYXlETXFuRHAtdzU3NjdLM3JELWlJVm5vU3BSRV8xbDhsZzlvMG1rTWZGQ3MzRnA2bzRRVWptRHViaWhXMEwwa0w0VkRuTTZrUFZudmhKeEk1a0xOSW5xcw?oc=5",
         "pub_date": "Sat, 18 Jul 2026 22:34:04 GMT",
-        "age_hours": 117.3,
+        "age_hours": 117.5,
         "heat": 56,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOUpRSlJsTGJsWkZMbUVkeUc5cnQ4QWVESk9GU0VtLVg0d2pjNFFzWVV6X0lpWDk1dzNCd19IdTYyYXlETXFuRHAtdzU3NjdLM3JELWlJVm5vU3BSRV8xbDhsZzlvMG1rTWZGQ3MzRnA2bzRRVWptRHViaWhXMEwwa0w0VkRuTTZrUFZudmhKeEk1a0xOSW5xcw?oc=5"
@@ -2218,7 +2240,7 @@
         "source": "Hypebeast CN",
         "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWlVvcl9pbUk0dGtRa04yb3VEcVI5eUpaazhkOVMtMXhSaXBNM0RNVlk0Mi03Z2pRVk4zcHc0alVndS1nWmF5ZU1Ra201bk1HMlNVU2JjU1dobWdsNzZ4dHp0Uzk4STg4T0p5QmEzVDYtZk5BVzlRZWRIc0pycVdVNzdYR2lUR1o3OEEw?oc=5",
         "pub_date": "Thu, 16 Jul 2026 03:59:36 GMT",
-        "age_hours": 183.9,
+        "age_hours": 184.0,
         "heat": 49,
         "type": "product_signal",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWlVvcl9pbUk0dGtRa04yb3VEcVI5eUpaazhkOVMtMXhSaXBNM0RNVlk0Mi03Z2pRVk4zcHc0alVndS1nWmF5ZU1Ra201bk1HMlNVU2JjU1dobWdsNzZ4dHp0Uzk4STg4T0p5QmEzVDYtZk5BVzlRZWRIc0pycVdVNzdYR2lUR1o3OEEw?oc=5"
@@ -2275,6 +2297,30 @@
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE85bzhPVDZFOEJ2dGx1cm1iMDN5SDQ1UlJyRnBhNk1ja1pHN1FSeHdVZXlKRDEwbFZEQWlaQkRSaVgyY1Vfd1NKblBsSnVsOGl1MW4zRmc1OTF4X3N1MmlzVHJjd0o5QWxZMDBhVTlmQ3A?oc=5"
     },
     {
+      "title": "Altra 发布 Olympus 275 HiLo，一款采用全新中底和 Vibram Megagrip 外底的越野跑鞋 - haveagood-holiday.com",
+      "brand": "行业",
+      "event_type": "新品发布",
+      "track": "儿童跑步",
+      "heat": 100,
+      "source": "haveagood-holiday.com",
+      "date": "2026-07-24",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9YMDF4Yi1fYlFUbmJkMXRUbTIzV19mN0p6LUZIWnM1eXdYS3FWUDVDeHlYdXcwUUlVLXBZWEpTdU40MEs4eXhEdU9GbWJTYzEyM3FZZzkxWU5EWHlTSDR4RHV5X25idng0MXVrTWhkMUtlMjZJam9uX2JGVQ?oc=5",
+      "impact": "反映儿童跑步方向商品更新和价格带竞争。",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9YMDF4Yi1fYlFUbmJkMXRUbTIzV19mN0p6LUZIWnM1eXdYS3FWUDVDeHlYdXcwUUlVLXBZWEpTdU40MEs4eXhEdU9GbWJTYzEyM3FZZzkxWU5EWHlTSDR4RHV5X25idng0MXVrTWhkMUtlMjZJam9uX2JGVQ?oc=5"
+    },
+    {
+      "title": "Nike Ja 3「Garden」为 Ja Morant 签名鞋系列注入清新植物美学 - Hypebeast CN",
+      "brand": "Nike",
+      "event_type": "新品发布",
+      "track": "综合趋势",
+      "heat": 100,
+      "source": "Hypebeast CN",
+      "date": "2026-07-24",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1JY0UxMkxvU1NvVnM5SFFQOUdlZjFDRG5VU0dZVDhUUHFXa1l0YkU0dGc0RVJKckxWNno2cnNZMUMzS2lmcFFpUWpiUzN5OEpzM0Nhbi1BWUc5SDdtaGtEeW9JZWlDaXhCTnFuWXZKT21NbTc1MFQ0?oc=5",
+      "impact": "反映综合趋势方向商品更新和价格带竞争。",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1JY0UxMkxvU1NvVnM5SFFQOUdlZjFDRG5VU0dZVDhUUHFXa1l0YkU0dGc0RVJKckxWNno2cnNZMUMzS2lmcFFpUWpiUzN5OEpzM0Nhbi1BWUc5SDdtaGtEeW9JZWlDaXhCTnFuWXZKT21NbTc1MFQ0?oc=5"
+    },
+    {
       "title": "「乐高 x Nike」新联名又又曝光了，特殊鞋盒~ - Supreme情报网",
       "brand": "Nike",
       "event_type": "联名合作",
@@ -2287,18 +2333,6 @@
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE94clBNdWNBY0hVdEx5TVRXQzczb2FsbERQeUpEc1BGZy11cWN0MW04eEdsQUY1NGRQdFVXS29xbzNXQVNOOFNOSEVoSFcydkpERUVTQlRES045T0xhY1dHb3JkZlcyUWYwdTBkWGVR?oc=5"
     },
     {
-      "title": "Altra 发布 Olympus 275 HiLo，一款采用全新中底和 Vibram Megagrip 外底的越野跑鞋 - haveagood-holiday.com",
-      "brand": "行业",
-      "event_type": "新品发布",
-      "track": "儿童跑步",
-      "heat": 100,
-      "source": "haveagood-holiday.com",
-      "date": "2026-07-24",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9YMDF4Yi1fYlFUbmJkMXRUbTIzV19mN0p6LUZIWnM1eXdYS3FWUDVDeHlYdXcwUUlVLXBZWEpTdU40MEs4eXhEdU9GbWJTYzEyM3FZZzkxWU5EWHlTSDR4RHV5X25idng0MXVrTWhkMUtlMjZJam9uX2JGVQ?oc=5",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9YMDF4Yi1fYlFUbmJkMXRUbTIzV19mN0p6LUZIWnM1eXdYS3FWUDVDeHlYdXcwUUlVLXBZWEpTdU40MEs4eXhEdU9GbWJTYzEyM3FZZzkxWU5EWHlTSDR4RHV5X25idng0MXVrTWhkMUtlMjZJam9uX2JGVQ?oc=5",
-      "impact": "反映儿童跑步方向商品更新和价格带竞争。"
-    },
-    {
       "title": "Dr. Martens 联手 VERDY 旗下 Wasted Youth 推出 Penton 乐福鞋联名系列 - Hypebeast CN",
       "brand": "行业",
       "event_type": "联名合作",
@@ -2307,8 +2341,8 @@
       "source": "Hypebeast CN",
       "date": "2026-07-24",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaDZad1FqQW9uWkhYTEtudHp1cmM3cXRXM0JnQ0V5OTJxQTlkZVZmZll4V2NvTTE3ajJLRFJaR2s4a2dobkpWenBXVEUwV005c0FfTFV0YXNxY3BwNHQtT0ZTcXBVdEJTc19MRl9hX0d0Nk1OVlRCS2h1YmhjcVlMbUJqY0dsZ3ZXMzFhZnpEQ01YUzJlSHhoRGhERDRQc00?oc=5",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaDZad1FqQW9uWkhYTEtudHp1cmM3cXRXM0JnQ0V5OTJxQTlkZVZmZll4V2NvTTE3ajJLRFJaR2s4a2dobkpWenBXVEUwV005c0FfTFV0YXNxY3BwNHQtT0ZTcXBVdEJTc19MRl9hX0d0Nk1OVlRCS2h1YmhjcVlMbUJqY0dsZ3ZXMzFhZnpEQ01YUzJlSHhoRGhERDRQc00?oc=5",
-      "impact": "强化话题传播和年轻家庭内容种草。"
+      "impact": "强化话题传播和年轻家庭内容种草。",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaDZad1FqQW9uWkhYTEtudHp1cmM3cXRXM0JnQ0V5OTJxQTlkZVZmZll4V2NvTTE3ajJLRFJaR2s4a2dobkpWenBXVEUwV005c0FfTFV0YXNxY3BwNHQtT0ZTcXBVdEJTc19MRl9hX0d0Nk1OVlRCS2h1YmhjcVlMbUJqY0dsZ3ZXMzFhZnpEQ01YUzJlSHhoRGhERDRQc00?oc=5"
     },
     {
       "title": "Stephen Curry 携手 Li-Ning 首发 Curry Brand 签名高尔夫球鞋 - Hypebeast CN",
@@ -2319,8 +2353,8 @@
       "source": "Hypebeast CN",
       "date": "2026-07-24",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWlVvcl9pbUk0dGtRa04yb3VEcVI5eUpaazhkOVMtMXhSaXBNM0RNVlk0Mi03Z2pRVk4zcHc0alVndS1nWmF5ZU1Ra201bk1HMlNVU2JjU1dobWdsNzZ4dHp0Uzk4STg4T0p5QmEzVDYtZk5BVzlRZWRIc0pycVdVNzdYR2lUR1o3OEEw?oc=5",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWlVvcl9pbUk0dGtRa04yb3VEcVI5eUpaazhkOVMtMXhSaXBNM0RNVlk0Mi03Z2pRVk4zcHc0alVndS1nWmF5ZU1Ra201bk1HMlNVU2JjU1dobWdsNzZ4dHp0Uzk4STg4T0p5QmEzVDYtZk5BVzlRZWRIc0pycVdVNzdYR2lUR1o3OEEw?oc=5",
-      "impact": "反映儿童篮球方向商品更新和价格带竞争。"
+      "impact": "反映儿童篮球方向商品更新和价格带竞争。",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWlVvcl9pbUk0dGtRa04yb3VEcVI5eUpaazhkOVMtMXhSaXBNM0RNVlk0Mi03Z2pRVk4zcHc0alVndS1nWmF5ZU1Ra201bk1HMlNVU2JjU1dobWdsNzZ4dHp0Uzk4STg4T0p5QmEzVDYtZk5BVzlRZWRIc0pycVdVNzdYR2lUR1o3OEEw?oc=5"
     },
     {
       "title": "平台大促进入预热期，夏季功能品类承接需前置",
@@ -2331,43 +2365,43 @@
       "source": "平台资讯",
       "date": "2026-07-18",
       "link": "",
-      "url": "",
-      "impact": "平台流量与大促节奏变化，重点观察夏季品类曝光、直播转化与终端承接。"
+      "impact": "平台流量与大促节奏变化，重点观察夏季品类曝光、直播转化与终端承接。",
+      "url": ""
     }
   ],
   "weekly_tracks": [
     {
       "track": "儿童跑步",
       "heat": 100,
-      "summary": "跑步、骑行与轻户外场景延续，运动装备需求扩张，Adidas、安踏儿童等品牌新品发布，赛道热度高。",
+      "summary": "本周跑步、骑行与轻户外场景延续，运动装备需求扩张，Adidas、Altra等品牌发布跑鞋新品，安踏儿童推出UFO8跑鞋，赛道热度高。",
       "link": "",
       "url": ""
     },
     {
       "track": "轻户外",
       "heat": 79,
-      "summary": "户外、跑步、骑行、赛事和夜间消费延伸运动场景，带动装备与亲子需求，京东运动户外超级品类日开启。",
+      "summary": "跑步、骑行与轻户外场景延续，京东运动户外超级品类日开启，凯乐石、李宁等品牌冲锋衣品质之选，带动轻户外装备需求。",
       "link": "",
       "url": ""
     },
     {
       "track": "亲子出行",
       "heat": 67,
-      "summary": "儿童消费从单品购买转向亲子、校园、户外和运动场景综合经营，需求持续升温。",
+      "summary": "儿童运动消费场景外扩，亲子与校园需求继续升温，消费从单品购买转向亲子、校园、户外和运动场景综合经营。",
+      "link": "",
+      "url": ""
+    },
+    {
+      "track": "儿童篮球",
+      "heat": 66,
+      "summary": "PUMA发布全新篮球鞋并赞助学生训练营，Nike Ja 3签名鞋系列推出，adidas推出足球鞋，篮球足球品类活跃。",
       "link": "",
       "url": ""
     },
     {
       "track": "防晒凉感",
       "heat": 56,
-      "summary": "速干T、户外防晒、跑鞋等热销，Hoka、Salomon等品牌618成交翻倍，西北高温驱动品类需求。",
-      "link": "",
-      "url": ""
-    },
-    {
-      "track": "儿童篮球",
-      "heat": 54,
-      "summary": "PUMA发布全新篮球鞋并赞助学生训练营，Adidas推出足球鞋，篮球足球品类活跃。",
+      "summary": "速干T、户外防晒、跑鞋等热销拉动Hoka、Salomon等品牌成交翻倍，京东运动户外超级品类日开启，防晒凉感品类需求上升。",
       "link": "",
       "url": ""
     },
@@ -2415,13 +2449,12 @@
     },
     {
       "track": "AI科技消费",
-      "heat": 9,
-      "raw_score": 25,
+      "heat": 7,
+      "raw_score": 20,
       "signals": [
-        "DREAM PAIRS 儿童多色运动凉鞋 童鞋 - dealmoon.ca",
-        "AI科技"
+        "DREAM PAIRS 儿童多色运动凉鞋 童鞋 - dealmoon.ca"
       ],
-      "summary": "AI科技消费受到DREAM PAIRS 儿童多色运动凉鞋 童鞋 - dealmoon.ca、AI科技等信号推动，需关注商品、内容和终端表达联动。",
+      "summary": "AI科技消费受到DREAM PAIRS 儿童多色运动凉鞋 童鞋 - dealmoon.ca等信号推动，需关注商品、内容和终端表达联动。",
       "link": "",
       "url": ""
     },
@@ -2456,69 +2489,69 @@
     {
       "focus": "新品发布",
       "heat": 100,
-      "summary": "本周Adidas、Puma、安踏儿童等品牌发布新品，跑步、篮球品类竞争加剧。",
+      "summary": "本周Adidas、Puma、Nike、Altra等品牌密集发布跑鞋、篮球鞋等新品，反映儿童运动商品更新和价格带竞争加剧。",
       "link": "",
       "url": ""
     },
     {
       "focus": "平台大促",
-      "heat": 73,
-      "summary": "京东618及运动户外超级品类日拉动Hoka、Salomon等品牌成交，夏季功能品类需前置承接。",
+      "heat": 58,
+      "summary": "京东618成交翻倍、运动户外超级品类日开启，平台大促进入预热期，夏季功能品类承接需前置。",
       "link": "",
       "url": ""
     },
     {
       "focus": "降雨",
-      "heat": 51,
-      "summary": "多区域强降雨或雷阵雨扰动客流，防雨防滑品类及室内运动场景需求提升。",
+      "heat": 41,
+      "summary": "全国多区域强降雨或雷阵雨扰动客流，防雨防滑品类与室内运动场景需求提升，需动态调整陈列与库存。",
       "link": "",
       "url": ""
     },
     {
       "focus": "防雨",
-      "heat": 51,
-      "summary": "防雨防滑品类成为本周天气驱动的主要功能需求，需动态调整陈列与库存。",
+      "heat": 41,
+      "summary": "降雨天气驱动防雨防滑品类需求，华东、华中、华南等区域需重点强化防雨鞋服陈列与推广。",
       "link": "",
       "url": ""
     },
     {
       "focus": "联名合作",
-      "heat": 52,
-      "summary": "联名合作是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
+      "heat": 41,
+      "summary": "Nike与乐高新联名曝光、Dr. Martens与Wasted Youth联名，强化话题传播和年轻家庭内容种草。",
       "link": "",
       "url": ""
     },
     {
       "focus": "雷阵雨",
-      "heat": 34,
+      "heat": 27,
       "summary": "雷阵雨是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
       "link": "",
       "url": ""
     },
     {
       "focus": "防滑",
-      "heat": 34,
+      "heat": 27,
       "summary": "防滑是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
       "link": "",
       "url": ""
     },
     {
       "focus": "儿童跑步",
-      "heat": 26,
+      "heat": 21,
       "summary": "儿童跑步是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
       "link": "",
       "url": ""
     },
     {
       "focus": "轻户外",
-      "heat": 26,
+      "heat": 21,
       "summary": "轻户外是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
       "link": "",
       "url": ""
     },
     {
       "focus": "亲子出行",
-      "heat": 17,
+      "heat": 14,
       "summary": "亲子出行是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
       "link": "",
       "url": ""
@@ -2528,52 +2561,52 @@
     {
       "theme": "儿童跑步",
       "heat": 100,
-      "suggestion": "跑步、骑行与轻户外场景延续，运动装备需求扩张，Adidas、安踏儿童等品牌新品发布，赛道热度高。"
+      "suggestion": "本周跑步、骑行与轻户外场景延续，运动装备需求扩张，Adidas、Altra等品牌发布跑鞋新品，安踏儿童推出UFO8跑鞋，赛道热度高。"
     },
     {
       "theme": "新品发布",
       "heat": 100,
-      "suggestion": "本周Adidas、Puma、安踏儿童等品牌发布新品，跑步、篮球品类竞争加剧。"
+      "suggestion": "本周Adidas、Puma、Nike、Altra等品牌密集发布跑鞋、篮球鞋等新品，反映儿童运动商品更新和价格带竞争加剧。"
     },
     {
       "theme": "轻户外",
       "heat": 79,
-      "suggestion": "户外、跑步、骑行、赛事和夜间消费延伸运动场景，带动装备与亲子需求，京东运动户外超级品类日开启。"
-    },
-    {
-      "theme": "平台大促",
-      "heat": 73,
-      "suggestion": "京东618及运动户外超级品类日拉动Hoka、Salomon等品牌成交，夏季功能品类需前置承接。"
+      "suggestion": "跑步、骑行与轻户外场景延续，京东运动户外超级品类日开启，凯乐石、李宁等品牌冲锋衣品质之选，带动轻户外装备需求。"
     },
     {
       "theme": "亲子出行",
       "heat": 67,
-      "suggestion": "儿童消费从单品购买转向亲子、校园、户外和运动场景综合经营，需求持续升温。"
+      "suggestion": "儿童运动消费场景外扩，亲子与校园需求继续升温，消费从单品购买转向亲子、校园、户外和运动场景综合经营。"
+    },
+    {
+      "theme": "儿童篮球",
+      "heat": 66,
+      "suggestion": "PUMA发布全新篮球鞋并赞助学生训练营，Nike Ja 3签名鞋系列推出，adidas推出足球鞋，篮球足球品类活跃。"
+    },
+    {
+      "theme": "平台大促",
+      "heat": 58,
+      "suggestion": "京东618成交翻倍、运动户外超级品类日开启，平台大促进入预热期，夏季功能品类承接需前置。"
     },
     {
       "theme": "防晒凉感",
       "heat": 56,
-      "suggestion": "速干T、户外防晒、跑鞋等热销，Hoka、Salomon等品牌618成交翻倍，西北高温驱动品类需求。"
-    },
-    {
-      "theme": "儿童篮球",
-      "heat": 54,
-      "suggestion": "PUMA发布全新篮球鞋并赞助学生训练营，Adidas推出足球鞋，篮球足球品类活跃。"
-    },
-    {
-      "theme": "联名合作",
-      "heat": 52,
-      "suggestion": "联名合作是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。"
+      "suggestion": "速干T、户外防晒、跑鞋等热销拉动Hoka、Salomon等品牌成交翻倍，京东运动户外超级品类日开启，防晒凉感品类需求上升。"
     },
     {
       "theme": "降雨",
-      "heat": 51,
-      "suggestion": "多区域强降雨或雷阵雨扰动客流，防雨防滑品类及室内运动场景需求提升。"
+      "heat": 41,
+      "suggestion": "全国多区域强降雨或雷阵雨扰动客流，防雨防滑品类与室内运动场景需求提升，需动态调整陈列与库存。"
     },
     {
       "theme": "防雨",
-      "heat": 51,
-      "suggestion": "防雨防滑品类成为本周天气驱动的主要功能需求，需动态调整陈列与库存。"
+      "heat": 41,
+      "suggestion": "降雨天气驱动防雨防滑品类需求，华东、华中、华南等区域需重点强化防雨鞋服陈列与推广。"
+    },
+    {
+      "theme": "联名合作",
+      "heat": 41,
+      "suggestion": "Nike与乐高新联名曝光、Dr. Martens与Wasted Youth联名，强化话题传播和年轻家庭内容种草。"
     }
   ],
   "risks": [
@@ -2588,7 +2621,6 @@
     "新品发布方向需继续跟踪新闻事实、竞品动作和商品信号，沉淀周报输入。",
     "轻户外方向跟踪防晒、溯溪、户外鞋服、帽包配件和亲子出行组合。",
     "平台内容方向关注直播同款、达人种草、价格带和爆款货盘变化。",
-    "防晒凉感方向继续跟踪防晒衣、凉感T、速干短裤、运动凉鞋和帽包。",
     "区域部分按周更新，不使用固定区域结论，重点看天气、客流和区域机会变化。",
     "每周复盘高频新闻、竞品动作、商品信号和热词，形成下周汇报输入。"
   ],
@@ -2604,14 +2636,14 @@
     "days_loaded": 7,
     "news_count": 35,
     "competitor_count": 0,
-    "major_events_rule_count": 9,
+    "major_events_rule_count": 10,
     "weekly_tracks_rule_count": 10,
     "competitor_actions_rule_count": 1,
-    "major_events_link_count": 8,
+    "major_events_link_count": 9,
     "competitor_actions_link_count": 0,
     "news_pool_link_count": 0,
     "competitor_pool_link_count": 0,
-    "product_signal_link_count": 12,
+    "product_signal_link_count": 13,
     "ai_dynamic_used": true
   }
 }
