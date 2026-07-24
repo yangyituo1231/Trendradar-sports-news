@@ -1,8 +1,8 @@
 {
-  "generate_time": "2026-07-24 04:04",
+  "generate_time": "2026-07-24 01:24",
   "summary": {
     "date_range": "2026-07-18 至 2026-07-24",
-    "core_judgement": "本周行业信息集中在品牌竞争、童装/儿童运动、大促/电商、天气/功能消费，高频热词为品牌竞争、渠道效率、亲子消费、校园需求、大促预热、室内运动，动态赛道主要为儿童跑步、轻户外、亲子出行。",
+    "core_judgement": "本周行业信息集中在品牌竞争、童装/儿童运动、大促/电商、天气/功能消费，高频热词为品牌竞争、渠道效率、亲子消费、校园需求、大促预热、天气扰动，动态赛道主要为儿童跑步、轻户外、亲子出行。",
     "news_direction": "本周重点事件包括速干T、户外防晒、跑鞋等热销 拉动Hoka、萨洛蒙等超190个品牌京东618期间成交翻倍 - news.tom.com、adidas HYPERBOOST 全系列跑鞋亮相 - Hypebeast CN、PUMA于2026年7月发布全新ALL-PRO NITRO 2和SKYBREAK 2篮球鞋，8月赞助学生篮球训练营 - haveagood-holiday.com，新闻侧需关注其对品牌心智、商品卖点和内容声量的影响。",
     "competitor_direction": "竞品动态主要围绕重点品牌展开，需关注品牌营销、商品上新、研发科技和平台流量动作。",
     "product_direction": "商品侧建议关注儿童跑步、新品发布、轻户外，并结合商品信号判断儿童运动、季节功能和场景化方向。",
@@ -10,12 +10,12 @@
     "next_action": "下周建议围绕儿童跑步、轻户外、亲子出行持续跟踪竞品事件、商品信号、天气变化和平台热词，形成汇报页输入。"
   },
   "ai_judgement": {
-    "weekly_core_view": "本周行业竞争加剧，产品心智与渠道效率成为关键；儿童运动消费场景外扩，亲子与校园需求升温；平台大促进入预热期，夏季功能品类需前置承接；全国多区域降雨扰动客流，防雨防滑及室内运动场景需求突出。",
-    "news_summary": "本周行业持续关注品牌竞争、儿童运动场景外扩、平台大促预热、天气扰动及户外运动场景扩张五大主题，无单一品牌重大事件，整体趋势信号明确。",
-    "competitor_summary": "本周竞品动态较少，主要关注平台大促预热期，夏季功能品类承接需前置，需观察直播货盘、平台流量和内容种草打法。",
-    "product_summary": "跑步科技、篮球足球品类热度高，Adidas、Nike、Puma等品牌发布新品；防晒凉感、运动凉鞋等夏季品类需求上升，安踏儿童推出UFO8跑鞋。",
-    "region_weather_summary": "华东、华中、华南强降雨持续，防雨防滑品类需求旺盛，室内运动场景升温；西北、西南降雨影响客流，需动态调整功能品类陈列与库存。",
-    "next_week_focus": "重点关注平台大促预热期的夏季品类曝光与转化，动态调整防雨防滑及室内运动品类库存，跟踪跑步、轻户外场景的装备需求变化。"
+    "weekly_core_view": "本周运动品牌竞争加剧，产品心智与渠道效率成为关键。儿童消费场景外扩，亲子与校园需求升温。平台大促进入预热期，夏季功能品类需前置。天气扰动客流，防雨防滑及室内运动场景需求突出。",
+    "news_summary": "本周行业新闻聚焦品牌竞争、儿童消费场景外扩、平台大促预热、天气影响及户外运动场景延续。无重大品牌事件，但商品信号显示跑步、篮球、防晒凉感等品类活跃。",
+    "competitor_summary": "本周竞品动态较少，主要关注平台大促预热期，夏季功能品类承接需前置。Adidas、Nike、Puma等品牌有新品发布，安踏儿童推出UFO8跑鞋，但无重大战略动作。",
+    "product_summary": "商品趋势上，跑步科技、篮球足球、防晒凉感品类热度高。Adidas HYPERBOOST全系列跑鞋、Puma篮球鞋、Nike Ja 3等新品发布，运动凉鞋和儿童跑鞋也有新品推出。",
+    "region_weather_summary": "华东、华中、华南强降雨持续，防雨防滑品类需求上升，室内运动场景受关注。西北、西南高温明显，防晒凉感速干品类进入主推窗口。天气扰动客流，需动态调整功能品类。",
+    "next_week_focus": "重点关注平台大促预热期夏季功能品类承接，华东、华南强降雨区域防雨防滑品类陈列与营销，以及跑步、轻户外场景延续下的商品上新节奏。"
   },
   "news": {
     "top_titles": [
@@ -460,20 +460,20 @@
       "count": 7
     },
     {
+      "word": "天气扰动",
+      "count": 7
+    },
+    {
+      "word": "防雨防滑",
+      "count": 7
+    },
+    {
       "word": "室内运动",
       "count": 7
     },
     {
       "word": "轻户外",
       "count": 7
-    },
-    {
-      "word": "天气扰动",
-      "count": 6
-    },
-    {
-      "word": "防雨防滑",
-      "count": 6
     },
     {
       "word": "客流节奏",
@@ -497,14 +497,14 @@
     },
     {
       "word": "运动装备",
-      "count": 3
+      "count": 4
     },
     {
       "word": "产品心智",
-      "count": 3
+      "count": 4
     },
     {
-      "word": "运动扩张",
+      "word": "功能消费",
       "count": 3
     },
     {
@@ -524,19 +524,15 @@
       "count": 2
     },
     {
-      "word": "功能消费",
-      "count": 2
-    },
-    {
       "word": "情绪回暖",
       "count": 2
     },
     {
-      "word": "客流调整",
+      "word": "运动扩张",
       "count": 2
     },
     {
-      "word": "情绪升温",
+      "word": "客流调整",
       "count": 2
     },
     {
@@ -584,23 +580,15 @@
       "count": 1
     },
     {
+      "word": "情绪升温",
+      "count": 1
+    },
+    {
       "word": "经营前置",
       "count": 1
     },
     {
-      "word": "天气影响",
-      "count": 1
-    },
-    {
-      "word": "防雨需求",
-      "count": 1
-    },
-    {
-      "word": "防滑功能",
-      "count": 1
-    },
-    {
-      "word": "轻防护",
+      "word": "电商前置",
       "count": 1
     }
   ],
@@ -623,14 +611,14 @@
         },
         {
           "focus": "华东强降雨雷阵雨，防雨防滑室内运动场景需关注",
-          "count": 2
-        },
-        {
-          "focus": "强降雨扰动客流，防雨防滑品类与室内运动场景需求提升，需动态调整陈列与库存",
-          "count": 2
+          "count": 3
         },
         {
           "focus": "强降雨扰动客流，需关注防雨防滑品类及室内运动场景，同时结合平台大促预热期，前置夏季功能品类承接。",
+          "count": 1
+        },
+        {
+          "focus": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注，建议调整陈列与主推策略。",
           "count": 1
         }
       ],
@@ -672,11 +660,7 @@
         },
         {
           "focus": "华中强降雨雷阵雨，防雨防滑室内运动场景需关注",
-          "count": 2
-        },
-        {
-          "focus": "强降雨扰动客流，防雨防滑品类与室内运动场景需求提升，需动态调整陈列与库存",
-          "count": 2
+          "count": 3
         },
         {
           "focus": "华中雷阵雨频繁，客流波动，防雨防滑与室内运动场景需求",
@@ -685,12 +669,16 @@
         {
           "focus": "雷阵雨影响客流节奏，需动态调整功能品类，结合亲子与校园需求升温，强化防雨防滑产品推广。",
           "count": 1
+        },
+        {
+          "focus": "华中雷阵雨频繁，客流波动大，防雨品类与室内运动场景成",
+          "count": 1
         }
       ],
       "top_actions": [
         {
           "action": "防雨防滑品类差异化陈列与会员触达",
-          "count": 3
+          "count": 2
         },
         {
           "action": "调整门店陈列至防雨防滑专区，联合校园活动推广亲子运动装备，优化库存周转。",
@@ -742,10 +730,6 @@
       ],
       "top_actions": [
         {
-          "action": "防雨防滑品类差异化陈列与会员触达",
-          "count": 2
-        },
-        {
           "action": "强化防雨防滑产品主推，优化线上渠道引流，结合大促预热期推出室内运动组合促",
           "count": 1
         },
@@ -759,6 +743,10 @@
         },
         {
           "action": "强化防雨防滑产品主推，利用线上渠道引流，提前备货夏季功能品类。",
+          "count": 1
+        },
+        {
+          "action": "防雨防滑品类差异化陈列与会员触达",
           "count": 1
         }
       ],
@@ -777,10 +765,6 @@
           "count": 3
         },
         {
-          "focus": "强降雨扰动客流，防雨防滑品类与室内运动场景需求提升，需动态调整陈列与库存",
-          "count": 2
-        },
-        {
           "focus": "防雨防滑品类",
           "count": 2
         },
@@ -791,13 +775,13 @@
         {
           "focus": "高温天气驱动防晒凉感品类需求，结合跑步骑行场景延续，需前置夏季功能品类，提升渠道效率。",
           "count": 1
+        },
+        {
+          "focus": "防晒凉感品类",
+          "count": 1
         }
       ],
       "top_actions": [
-        {
-          "action": "防雨防滑品类差异化陈列与会员触达",
-          "count": 2
-        },
         {
           "action": "加大防晒凉感速干产品陈列，联合户外运动社群推广，优化线上大促预热活动，提",
           "count": 1
@@ -813,6 +797,10 @@
         {
           "action": "加强防雨轻防护产品推广，联动校园运动场景，提前布局夏季功能品类。",
           "count": 1
+        },
+        {
+          "action": "防雨防滑品类差异化陈列与会员触达",
+          "count": 1
         }
       ],
       "summary": "西北本周天气扰动较明显，雨天客流、防滑防雨和室内运动场景是主要关注点。"
@@ -827,11 +815,7 @@
         },
         {
           "focus": "防雨轻防护品类",
-          "count": 6
-        },
-        {
-          "focus": "降雨影响客流，防雨轻防护品类与室内运动场景需求提升，需动态调整陈列与库存",
-          "count": 2
+          "count": 5
         },
         {
           "focus": "西南降雨影响客流，防雨轻防护品类与室内运动场景需求提",
@@ -843,6 +827,10 @@
         },
         {
           "focus": "西南高温明显，防晒凉感品类进入主推窗口，速干装备需求",
+          "count": 1
+        },
+        {
+          "focus": "高温天气明显，防晒、凉感、速干品类进入主推窗口，需加强户外运动场景联动。",
           "count": 1
         }
       ],
@@ -883,11 +871,11 @@
       },
       {
         "word": "雷阵雨",
-        "count": 22
+        "count": 24
       },
       {
         "word": "防滑",
-        "count": 22
+        "count": 24
       },
       {
         "word": "高温",
@@ -1060,7 +1048,7 @@
       {
         "date": "2026-07-24",
         "region": "north",
-        "desc": "降雨影响客流，防雨、轻防护与室内运动场景需求提升"
+        "desc": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注"
       },
       {
         "date": "2026-07-24",
@@ -1075,7 +1063,7 @@
       {
         "date": "2026-07-24",
         "region": "southwest",
-        "desc": "降雨影响客流，防雨、轻防护与室内运动场景需求提升"
+        "desc": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注"
       },
       {
         "date": "2026-07-24",
@@ -2297,18 +2285,6 @@
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE85bzhPVDZFOEJ2dGx1cm1iMDN5SDQ1UlJyRnBhNk1ja1pHN1FSeHdVZXlKRDEwbFZEQWlaQkRSaVgyY1Vfd1NKblBsSnVsOGl1MW4zRmc1OTF4X3N1MmlzVHJjd0o5QWxZMDBhVTlmQ3A?oc=5"
     },
     {
-      "title": "Altra 发布 Olympus 275 HiLo，一款采用全新中底和 Vibram Megagrip 外底的越野跑鞋 - haveagood-holiday.com",
-      "brand": "行业",
-      "event_type": "新品发布",
-      "track": "儿童跑步",
-      "heat": 100,
-      "source": "haveagood-holiday.com",
-      "date": "2026-07-24",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9YMDF4Yi1fYlFUbmJkMXRUbTIzV19mN0p6LUZIWnM1eXdYS3FWUDVDeHlYdXcwUUlVLXBZWEpTdU40MEs4eXhEdU9GbWJTYzEyM3FZZzkxWU5EWHlTSDR4RHV5X25idng0MXVrTWhkMUtlMjZJam9uX2JGVQ?oc=5",
-      "impact": "反映儿童跑步方向商品更新和价格带竞争。",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9YMDF4Yi1fYlFUbmJkMXRUbTIzV19mN0p6LUZIWnM1eXdYS3FWUDVDeHlYdXcwUUlVLXBZWEpTdU40MEs4eXhEdU9GbWJTYzEyM3FZZzkxWU5EWHlTSDR4RHV5X25idng0MXVrTWhkMUtlMjZJam9uX2JGVQ?oc=5"
-    },
-    {
       "title": "Nike Ja 3「Garden」为 Ja Morant 签名鞋系列注入清新植物美学 - Hypebeast CN",
       "brand": "Nike",
       "event_type": "新品发布",
@@ -2333,6 +2309,30 @@
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE94clBNdWNBY0hVdEx5TVRXQzczb2FsbERQeUpEc1BGZy11cWN0MW04eEdsQUY1NGRQdFVXS29xbzNXQVNOOFNOSEVoSFcydkpERUVTQlRES045T0xhY1dHb3JkZlcyUWYwdTBkWGVR?oc=5"
     },
     {
+      "title": "安踏儿童 | 小天文学家请进！和全新UFO8跑鞋一起轻弹起飞 - Foshanplus",
+      "brand": "安踏儿童",
+      "event_type": "新品发布",
+      "track": "儿童跑步",
+      "heat": 64,
+      "source": "Foshanplus",
+      "date": "2026-07-24",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFB3SHFxNVFIS0RHM3QtX3pmWjdrQnVnc1RQbVNCTEZZSHNsV3dVOG9nN29BT190MThpd1VGcXZzYkFka1AwTmU0dGVtTGRPY25ZNkxROGNtX1FwaS1nWm4xQTJaVEgyLTZiS25qRDlWOHc4dw?oc=5",
+      "impact": "反映儿童跑步方向商品更新和价格带竞争。",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB3SHFxNVFIS0RHM3QtX3pmWjdrQnVnc1RQbVNCTEZZSHNsV3dVOG9nN29BT190MThpd1VGcXZzYkFka1AwTmU0dGVtTGRPY25ZNkxROGNtX1FwaS1nWm4xQTJaVEgyLTZiS25qRDlWOHc4dw?oc=5"
+    },
+    {
+      "title": "Altra 发布 Olympus 275 HiLo，一款采用全新中底和 Vibram Megagrip 外底的越野跑鞋 - haveagood-holiday.com",
+      "brand": "行业",
+      "event_type": "新品发布",
+      "track": "儿童跑步",
+      "heat": 100,
+      "source": "haveagood-holiday.com",
+      "date": "2026-07-24",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9YMDF4Yi1fYlFUbmJkMXRUbTIzV19mN0p6LUZIWnM1eXdYS3FWUDVDeHlYdXcwUUlVLXBZWEpTdU40MEs4eXhEdU9GbWJTYzEyM3FZZzkxWU5EWHlTSDR4RHV5X25idng0MXVrTWhkMUtlMjZJam9uX2JGVQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9YMDF4Yi1fYlFUbmJkMXRUbTIzV19mN0p6LUZIWnM1eXdYS3FWUDVDeHlYdXcwUUlVLXBZWEpTdU40MEs4eXhEdU9GbWJTYzEyM3FZZzkxWU5EWHlTSDR4RHV5X25idng0MXVrTWhkMUtlMjZJam9uX2JGVQ?oc=5",
+      "impact": "反映儿童跑步方向商品更新和价格带竞争。"
+    },
+    {
       "title": "Dr. Martens 联手 VERDY 旗下 Wasted Youth 推出 Penton 乐福鞋联名系列 - Hypebeast CN",
       "brand": "行业",
       "event_type": "联名合作",
@@ -2341,8 +2341,8 @@
       "source": "Hypebeast CN",
       "date": "2026-07-24",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaDZad1FqQW9uWkhYTEtudHp1cmM3cXRXM0JnQ0V5OTJxQTlkZVZmZll4V2NvTTE3ajJLRFJaR2s4a2dobkpWenBXVEUwV005c0FfTFV0YXNxY3BwNHQtT0ZTcXBVdEJTc19MRl9hX0d0Nk1OVlRCS2h1YmhjcVlMbUJqY0dsZ3ZXMzFhZnpEQ01YUzJlSHhoRGhERDRQc00?oc=5",
-      "impact": "强化话题传播和年轻家庭内容种草。",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaDZad1FqQW9uWkhYTEtudHp1cmM3cXRXM0JnQ0V5OTJxQTlkZVZmZll4V2NvTTE3ajJLRFJaR2s4a2dobkpWenBXVEUwV005c0FfTFV0YXNxY3BwNHQtT0ZTcXBVdEJTc19MRl9hX0d0Nk1OVlRCS2h1YmhjcVlMbUJqY0dsZ3ZXMzFhZnpEQ01YUzJlSHhoRGhERDRQc00?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaDZad1FqQW9uWkhYTEtudHp1cmM3cXRXM0JnQ0V5OTJxQTlkZVZmZll4V2NvTTE3ajJLRFJaR2s4a2dobkpWenBXVEUwV005c0FfTFV0YXNxY3BwNHQtT0ZTcXBVdEJTc19MRl9hX0d0Nk1OVlRCS2h1YmhjcVlMbUJqY0dsZ3ZXMzFhZnpEQ01YUzJlSHhoRGhERDRQc00?oc=5",
+      "impact": "强化话题传播和年轻家庭内容种草。"
     },
     {
       "title": "Stephen Curry 携手 Li-Ning 首发 Curry Brand 签名高尔夫球鞋 - Hypebeast CN",
@@ -2353,8 +2353,8 @@
       "source": "Hypebeast CN",
       "date": "2026-07-24",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWlVvcl9pbUk0dGtRa04yb3VEcVI5eUpaazhkOVMtMXhSaXBNM0RNVlk0Mi03Z2pRVk4zcHc0alVndS1nWmF5ZU1Ra201bk1HMlNVU2JjU1dobWdsNzZ4dHp0Uzk4STg4T0p5QmEzVDYtZk5BVzlRZWRIc0pycVdVNzdYR2lUR1o3OEEw?oc=5",
-      "impact": "反映儿童篮球方向商品更新和价格带竞争。",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWlVvcl9pbUk0dGtRa04yb3VEcVI5eUpaazhkOVMtMXhSaXBNM0RNVlk0Mi03Z2pRVk4zcHc0alVndS1nWmF5ZU1Ra201bk1HMlNVU2JjU1dobWdsNzZ4dHp0Uzk4STg4T0p5QmEzVDYtZk5BVzlRZWRIc0pycVdVNzdYR2lUR1o3OEEw?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWlVvcl9pbUk0dGtRa04yb3VEcVI5eUpaazhkOVMtMXhSaXBNM0RNVlk0Mi03Z2pRVk4zcHc0alVndS1nWmF5ZU1Ra201bk1HMlNVU2JjU1dobWdsNzZ4dHp0Uzk4STg4T0p5QmEzVDYtZk5BVzlRZWRIc0pycVdVNzdYR2lUR1o3OEEw?oc=5",
+      "impact": "反映儿童篮球方向商品更新和价格带竞争。"
     },
     {
       "title": "平台大促进入预热期，夏季功能品类承接需前置",
@@ -2365,43 +2365,43 @@
       "source": "平台资讯",
       "date": "2026-07-18",
       "link": "",
-      "impact": "平台流量与大促节奏变化，重点观察夏季品类曝光、直播转化与终端承接。",
-      "url": ""
+      "url": "",
+      "impact": "平台流量与大促节奏变化，重点观察夏季品类曝光、直播转化与终端承接。"
     }
   ],
   "weekly_tracks": [
     {
       "track": "儿童跑步",
       "heat": 100,
-      "summary": "本周跑步、骑行与轻户外场景延续，运动装备需求扩张，Adidas、Altra等品牌发布跑鞋新品，安踏儿童推出UFO8跑鞋，赛道热度高。",
+      "summary": "本周儿童跑步赛道热度最高，受跑步、骑行与轻户外场景延续驱动，Adidas、安踏儿童等品牌有新品发布，需关注商品、内容和终端表达联动。",
       "link": "",
       "url": ""
     },
     {
       "track": "轻户外",
       "heat": 79,
-      "summary": "跑步、骑行与轻户外场景延续，京东运动户外超级品类日开启，凯乐石、李宁等品牌冲锋衣品质之选，带动轻户外装备需求。",
+      "summary": "轻户外赛道延续热度，京东运动户外超级品类日开启，凯乐石、李宁等品牌参与，带动冲锋衣等品类，需关注平台流量和爆款货盘。",
       "link": "",
       "url": ""
     },
     {
       "track": "亲子出行",
       "heat": 67,
-      "summary": "儿童运动消费场景外扩，亲子与校园需求继续升温，消费从单品购买转向亲子、校园、户外和运动场景综合经营。",
+      "summary": "亲子出行赛道升温，儿童消费场景外扩，亲子与校园需求继续升温，需关注商品和终端表达联动。",
       "link": "",
       "url": ""
     },
     {
       "track": "儿童篮球",
       "heat": 66,
-      "summary": "PUMA发布全新篮球鞋并赞助学生训练营，Nike Ja 3签名鞋系列推出，adidas推出足球鞋，篮球足球品类活跃。",
+      "summary": "儿童篮球赛道活跃，Puma发布篮球鞋并赞助训练营，Nike推出Ja 3签名鞋，需关注商品更新和价格带竞争。",
       "link": "",
       "url": ""
     },
     {
       "track": "防晒凉感",
       "heat": 56,
-      "summary": "速干T、户外防晒、跑鞋等热销拉动Hoka、Salomon等品牌成交翻倍，京东运动户外超级品类日开启，防晒凉感品类需求上升。",
+      "summary": "防晒凉感赛道受高温天气和平台大促推动，速干T、户外防晒等热销，需关注夏季品类曝光和直播转化。",
       "link": "",
       "url": ""
     },
@@ -2459,14 +2459,13 @@
       "url": ""
     },
     {
-      "track": "秋冬保暖",
-      "heat": 5,
-      "raw_score": 15,
+      "track": "跑步科技",
+      "heat": 4,
+      "raw_score": 12,
       "signals": [
-        "防雨防滑",
-        "防滑功能"
+        "跑步科技"
       ],
-      "summary": "秋冬保暖受到防雨防滑、防滑功能等信号推动，需关注商品、内容和终端表达联动。",
+      "summary": "跑步科技受到跑步科技等信号推动，需关注商品、内容和终端表达联动。",
       "link": "",
       "url": ""
     }
@@ -2489,48 +2488,48 @@
     {
       "focus": "新品发布",
       "heat": 100,
-      "summary": "本周Adidas、Puma、Nike、Altra等品牌密集发布跑鞋、篮球鞋等新品，反映儿童运动商品更新和价格带竞争加剧。",
+      "summary": "本周新品发布频繁，Adidas、Nike、Puma、安踏儿童等均有动作，需关注商品趋势和竞争格局。",
       "link": "",
       "url": ""
     },
     {
       "focus": "平台大促",
       "heat": 58,
-      "summary": "京东618成交翻倍、运动户外超级品类日开启，平台大促进入预热期，夏季功能品类承接需前置。",
+      "summary": "平台大促进入预热期，京东运动户外超级品类日开启，需关注夏季品类曝光和终端承接。",
       "link": "",
       "url": ""
     },
     {
       "focus": "降雨",
       "heat": 41,
-      "summary": "全国多区域强降雨或雷阵雨扰动客流，防雨防滑品类与室内运动场景需求提升，需动态调整陈列与库存。",
+      "summary": "降雨天气影响客流，防雨防滑品类需求上升，需动态调整陈列和主推策略。",
       "link": "",
       "url": ""
     },
     {
       "focus": "防雨",
       "heat": 41,
-      "summary": "降雨天气驱动防雨防滑品类需求，华东、华中、华南等区域需重点强化防雨鞋服陈列与推广。",
+      "summary": "防雨品类受降雨天气驱动，需加强陈列和营销，结合室内运动场景提升转化。",
       "link": "",
       "url": ""
     },
     {
       "focus": "联名合作",
       "heat": 41,
-      "summary": "Nike与乐高新联名曝光、Dr. Martens与Wasted Youth联名，强化话题传播和年轻家庭内容种草。",
+      "summary": "联名合作是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
       "link": "",
       "url": ""
     },
     {
       "focus": "雷阵雨",
-      "heat": 27,
+      "heat": 30,
       "summary": "雷阵雨是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
       "link": "",
       "url": ""
     },
     {
       "focus": "防滑",
-      "heat": 27,
+      "heat": 30,
       "summary": "防滑是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
       "link": "",
       "url": ""
@@ -2561,52 +2560,52 @@
     {
       "theme": "儿童跑步",
       "heat": 100,
-      "suggestion": "本周跑步、骑行与轻户外场景延续，运动装备需求扩张，Adidas、Altra等品牌发布跑鞋新品，安踏儿童推出UFO8跑鞋，赛道热度高。"
+      "suggestion": "本周儿童跑步赛道热度最高，受跑步、骑行与轻户外场景延续驱动，Adidas、安踏儿童等品牌有新品发布，需关注商品、内容和终端表达联动。"
     },
     {
       "theme": "新品发布",
       "heat": 100,
-      "suggestion": "本周Adidas、Puma、Nike、Altra等品牌密集发布跑鞋、篮球鞋等新品，反映儿童运动商品更新和价格带竞争加剧。"
+      "suggestion": "本周新品发布频繁，Adidas、Nike、Puma、安踏儿童等均有动作，需关注商品趋势和竞争格局。"
     },
     {
       "theme": "轻户外",
       "heat": 79,
-      "suggestion": "跑步、骑行与轻户外场景延续，京东运动户外超级品类日开启，凯乐石、李宁等品牌冲锋衣品质之选，带动轻户外装备需求。"
+      "suggestion": "轻户外赛道延续热度，京东运动户外超级品类日开启，凯乐石、李宁等品牌参与，带动冲锋衣等品类，需关注平台流量和爆款货盘。"
     },
     {
       "theme": "亲子出行",
       "heat": 67,
-      "suggestion": "儿童运动消费场景外扩，亲子与校园需求继续升温，消费从单品购买转向亲子、校园、户外和运动场景综合经营。"
+      "suggestion": "亲子出行赛道升温，儿童消费场景外扩，亲子与校园需求继续升温，需关注商品和终端表达联动。"
     },
     {
       "theme": "儿童篮球",
       "heat": 66,
-      "suggestion": "PUMA发布全新篮球鞋并赞助学生训练营，Nike Ja 3签名鞋系列推出，adidas推出足球鞋，篮球足球品类活跃。"
+      "suggestion": "儿童篮球赛道活跃，Puma发布篮球鞋并赞助训练营，Nike推出Ja 3签名鞋，需关注商品更新和价格带竞争。"
     },
     {
       "theme": "平台大促",
       "heat": 58,
-      "suggestion": "京东618成交翻倍、运动户外超级品类日开启，平台大促进入预热期，夏季功能品类承接需前置。"
+      "suggestion": "平台大促进入预热期，京东运动户外超级品类日开启，需关注夏季品类曝光和终端承接。"
     },
     {
       "theme": "防晒凉感",
       "heat": 56,
-      "suggestion": "速干T、户外防晒、跑鞋等热销拉动Hoka、Salomon等品牌成交翻倍，京东运动户外超级品类日开启，防晒凉感品类需求上升。"
+      "suggestion": "防晒凉感赛道受高温天气和平台大促推动，速干T、户外防晒等热销，需关注夏季品类曝光和直播转化。"
     },
     {
       "theme": "降雨",
       "heat": 41,
-      "suggestion": "全国多区域强降雨或雷阵雨扰动客流，防雨防滑品类与室内运动场景需求提升，需动态调整陈列与库存。"
+      "suggestion": "降雨天气影响客流，防雨防滑品类需求上升，需动态调整陈列和主推策略。"
     },
     {
       "theme": "防雨",
       "heat": 41,
-      "suggestion": "降雨天气驱动防雨防滑品类需求，华东、华中、华南等区域需重点强化防雨鞋服陈列与推广。"
+      "suggestion": "防雨品类受降雨天气驱动，需加强陈列和营销，结合室内运动场景提升转化。"
     },
     {
       "theme": "联名合作",
       "heat": 41,
-      "suggestion": "Nike与乐高新联名曝光、Dr. Martens与Wasted Youth联名，强化话题传播和年轻家庭内容种草。"
+      "suggestion": "联名合作是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。"
     }
   ],
   "risks": [
@@ -2639,7 +2638,7 @@
     "major_events_rule_count": 10,
     "weekly_tracks_rule_count": 10,
     "competitor_actions_rule_count": 1,
-    "major_events_link_count": 9,
+    "major_events_link_count": 10,
     "competitor_actions_link_count": 0,
     "news_pool_link_count": 0,
     "competitor_pool_link_count": 0,
