@@ -1,6 +1,6 @@
 {
   "date": "2026-07-28",
-  "generated_time": "2026-07-28 04:01:33",
+  "generated_time": "2026-07-28 04:05:53",
   "source": "Google News RSS product signal monitor",
   "desc": "运动鞋服商品趋势信号监测：覆盖国内外运动品牌、户外品牌、成人与儿童品牌；重点监测近8天新品、尖货、功能科技、夏季功能、跑步科技、户外轻运动与大促热卖。已过滤财经财报、广告促销、测评导购、AI白皮书、ESG报告和非鞋服商品。",
   "recent_days": 8,
@@ -20,11 +20,11 @@
       1
     ],
     [
-      "New Balance",
+      "Puma",
       1
     ],
     [
-      "Puma",
+      "New Balance",
       1
     ],
     [
@@ -35,7 +35,7 @@
   "top_keywords": [
     [
       "新品",
-      4
+      5
     ],
     [
       "足球",
@@ -66,10 +66,6 @@
       1
     ],
     [
-      "推出",
-      1
-    ],
-    [
       "篮球",
       1
     ],
@@ -79,6 +75,10 @@
     ],
     [
       "发布",
+      1
+    ],
+    [
+      "推出",
       1
     ],
     [
@@ -161,8 +161,31 @@
       "source": "中金在线",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE85bzhPVDZFOEJ2dGx1cm1iMDN5SDQ1UlJyRnBhNk1ja1pHN1FSeHdVZXlKRDEwbFZEQWlaQkRSaVgyY1Vfd1NKblBsSnVsOGl1MW4zRmc1OTF4X3N1MmlzVHJjd0o5QWxZMDBhVTlmQ3A?oc=5",
       "pub_date": "Tue, 21 Jul 2026 05:05:03 GMT",
-      "age_hours": 158.9,
+      "age_hours": 159.0,
       "heat": 75,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-07-28",
+      "title": "PUMA于2026年7月发布全新ALL-PRO NITRO 2和SKYBREAK 2篮球鞋，8月赞助学生篮球训练营 - haveagood-holiday.com",
+      "short_title": "PUMA于2026年7月发布全新ALL-PRO NITRO 2和SKYBREAK 2篮球鞋，8月赞助学生篮球训练营 - haveag...",
+      "query": "Puma Kids 新品",
+      "brand_hits": [
+        "Puma"
+      ],
+      "keyword_hits": [
+        "篮球",
+        "训练",
+        "新品",
+        "发布"
+      ],
+      "category": "篮球足球",
+      "season_tag": "秋季",
+      "source": "haveagood-holiday.com",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNXNFcmlFSGlLOWdBc2lZdzE1VEowQWFzZkdLNnI4TkRuOG83N0dKeUd3MkgtZHp3S2ZlSzBtQXVkbmlUWjJKbHlnOERXWTQzTkxPU1g2dGtWMmNHdTI5TGIxeXF0OVJHZG9wb2lSOFpPZXVJai1TQUVNN0xtcXA3eW80QW9JYXlKNzEtYmgtTjl6emxmSUhVdA?oc=5",
+      "pub_date": "Wed, 22 Jul 2026 20:37:00 GMT",
+      "age_hours": 119.5,
+      "heat": 72,
       "type": "product_signal"
     },
     {
@@ -183,29 +206,7 @@
       "source": "直播吧",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5PTXd0S2hFaXVxLWNoT1dTRU9RRm1YUUd3Tjh3aXR3a2Zmc09TTEJ4TG4tVXBzMmhISnRlUmdxdjVxVndDQ2dSaXBhMWdwSmZDd3JVcTJ6b2ZweG1vMTJ6TDZKanFOTEt2Z0RVdU16NA?oc=5",
       "pub_date": "Fri, 24 Jul 2026 15:35:58 GMT",
-      "age_hours": 76.4,
-      "heat": 69,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-07-28",
-      "title": "PUMA于2026年7月发布全新ALL-PRO NITRO 2和SKYBREAK 2篮球鞋，8月赞助学生篮球训练营 - haveagood-holiday.com",
-      "short_title": "PUMA于2026年7月发布全新ALL-PRO NITRO 2和SKYBREAK 2篮球鞋，8月赞助学生篮球训练营 - haveag...",
-      "query": "Puma Kids 发布",
-      "brand_hits": [
-        "Puma"
-      ],
-      "keyword_hits": [
-        "篮球",
-        "训练",
-        "发布"
-      ],
-      "category": "篮球足球",
-      "season_tag": "秋季",
-      "source": "haveagood-holiday.com",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNXNFcmlFSGlLOWdBc2lZdzE1VEowQWFzZkdLNnI4TkRuOG83N0dKeUd3MkgtZHp3S2ZlSzBtQXVkbmlUWjJKbHlnOERXWTQzTkxPU1g2dGtWMmNHdTI5TGIxeXF0OVJHZG9wb2lSOFpPZXVJai1TQUVNN0xtcXA3eW80QW9JYXlKNzEtYmgtTjl6emxmSUhVdA?oc=5",
-      "pub_date": "Wed, 22 Jul 2026 20:37:00 GMT",
-      "age_hours": 119.4,
+      "age_hours": 76.5,
       "heat": 69,
       "type": "product_signal"
     },
@@ -226,7 +227,7 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQLVJERkgwYWVwUy1oMjNHZ3RSa2k0QkFNdXJCZERRdmd1aG15YzJEcTg5cHNQd2NJdTFqWHJaaHJ5T0JJdmc1MGd6TkV3WjlVYzZLeVBYa0VuUXpaNG1ka1ZKb1ltRk9SYndlUXliNXZQOTFNYnZpV3dQdTBEV2R0YkpFWUJ2MkRFN0x4LVZVRkR4dmhpQlN3TjVFakZfTGR2QU9Kd2dlQzc?oc=5",
       "pub_date": "Sun, 26 Jul 2026 06:38:30 GMT",
-      "age_hours": 37.4,
+      "age_hours": 37.5,
       "heat": 66,
       "type": "product_signal"
     },
@@ -246,7 +247,7 @@
       "source": "Supreme情报网",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE94clBNdWNBY0hVdEx5TVRXQzczb2FsbERQeUpEc1BGZy11cWN0MW04eEdsQUY1NGRQdFVXS29xbzNXQVNOOFNOSEVoSFcydkpERUVTQlRES045T0xhY1dHb3JkZlcyUWYwdTBkWGVR?oc=5",
       "pub_date": "Mon, 20 Jul 2026 16:08:38 GMT",
-      "age_hours": 171.9,
+      "age_hours": 172.0,
       "heat": 61,
       "type": "product_signal"
     },
@@ -267,7 +268,7 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdS14YzUtRTBLNll0YU13MnlKZHl5TnBqMVRMWUpONFZueTE4Um5rX1dxaE9HUnJickIxNWdUd19VMDRxWmdzV1lPYTNDZmxMUzd4dUhqdzcwSlRHbUstMzdpNWQydU94NFpKeGZRQU9sQTRWSURVWTQ4RzBYX3pLd0wyOVlNT3FuRWpIbkwtUkFoZWVJdHAw?oc=5",
       "pub_date": "Wed, 22 Jul 2026 18:13:41 GMT",
-      "age_hours": 121.8,
+      "age_hours": 121.9,
       "heat": 60,
       "type": "product_signal"
     }
