@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27 03:53:25",
+  "generated_at": "2026-07-27 01:31:03",
   "source": "Open-Meteo",
   "regions": {
     "north": {
@@ -8,39 +8,39 @@
       "days": [
         {
           "date": "2026-07-27",
-          "code": 53,
+          "code": 51,
           "weather": "小雨",
-          "temp_max": 33.0,
-          "temp_min": 24.3,
-          "precipitation": 1.6,
-          "wind": 9.9,
+          "temp_max": 33.3,
+          "temp_min": 24.9,
+          "precipitation": 0.5,
+          "wind": 10.3,
           "risk_score": 20,
           "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         },
         {
           "date": "2026-07-28",
-          "code": 1,
-          "weather": "晴到多云",
-          "temp_max": 34.8,
-          "temp_min": 24.9,
-          "precipitation": 0.0,
-          "wind": 12.5,
+          "code": 51,
+          "weather": "小雨",
+          "temp_max": 33.8,
+          "temp_min": 25.2,
+          "precipitation": 1.1,
+          "wind": 11.2,
           "risk_score": 20,
           "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         },
         {
           "date": "2026-07-29",
-          "code": 95,
-          "weather": "雷阵雨",
-          "temp_max": 35.6,
-          "temp_min": 26.8,
-          "precipitation": 2.0,
-          "wind": 17.1,
-          "risk_score": 60,
-          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+          "code": 51,
+          "weather": "小雨",
+          "temp_max": 35.3,
+          "temp_min": 26.2,
+          "precipitation": 0.2,
+          "wind": 15.1,
+          "risk_score": 35,
+          "signal": "高温天气明显，防晒、凉感、速干品类进入主推窗口"
         }
       ],
-      "risk_score": 60,
+      "risk_score": 35,
       "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
     },
     "east": {
@@ -51,38 +51,38 @@
           "date": "2026-07-27",
           "code": 3,
           "weather": "阴",
-          "temp_max": 35.5,
-          "temp_min": 28.5,
+          "temp_max": 33.8,
+          "temp_min": 28.7,
           "precipitation": 0.0,
-          "wind": 15.7,
-          "risk_score": 35,
-          "signal": "高温天气明显，防晒、凉感、速干品类进入主推窗口"
+          "wind": 15.5,
+          "risk_score": 20,
+          "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         },
         {
           "date": "2026-07-28",
-          "code": 51,
-          "weather": "小雨",
-          "temp_max": 35.4,
-          "temp_min": 27.9,
-          "precipitation": 0.2,
-          "wind": 14.7,
-          "risk_score": 35,
-          "signal": "高温天气明显，防晒、凉感、速干品类进入主推窗口"
+          "code": 3,
+          "weather": "阴",
+          "temp_max": 34.4,
+          "temp_min": 28.0,
+          "precipitation": 0.0,
+          "wind": 14.0,
+          "risk_score": 20,
+          "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
         },
         {
           "date": "2026-07-29",
-          "code": 3,
-          "weather": "阴",
-          "temp_max": 37.0,
-          "temp_min": 27.8,
-          "precipitation": 0.0,
-          "wind": 12.6,
+          "code": 51,
+          "weather": "小雨",
+          "temp_max": 36.4,
+          "temp_min": 28.1,
+          "precipitation": 0.1,
+          "wind": 12.3,
           "risk_score": 35,
           "signal": "高温天气明显，防晒、凉感、速干品类进入主推窗口"
         }
       ],
       "risk_score": 35,
-      "signal": "高温天气明显，防晒、凉感、速干品类进入主推窗口"
+      "signal": "气温偏高，防晒、短裤、轻薄T恤需求提升"
     },
     "south": {
       "name": "华南",
@@ -90,40 +90,40 @@
       "days": [
         {
           "date": "2026-07-27",
-          "code": 51,
-          "weather": "小雨",
+          "code": 95,
+          "weather": "雷阵雨",
           "temp_max": 29.6,
-          "temp_min": 25.0,
-          "precipitation": 0.2,
-          "wind": 15.4,
-          "risk_score": 0,
-          "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
+          "temp_min": 23.3,
+          "precipitation": 46.1,
+          "wind": 15.8,
+          "risk_score": 60,
+          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         },
         {
           "date": "2026-07-28",
           "code": 95,
           "weather": "雷阵雨",
-          "temp_max": 31.7,
-          "temp_min": 25.0,
-          "precipitation": 3.6,
-          "wind": 12.6,
+          "temp_max": 31.9,
+          "temp_min": 24.6,
+          "precipitation": 5.3,
+          "wind": 10.8,
           "risk_score": 57,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         },
         {
           "date": "2026-07-29",
-          "code": 80,
-          "weather": "阵雨",
-          "temp_max": 28.6,
-          "temp_min": 24.9,
-          "precipitation": 12.8,
-          "wind": 14.4,
-          "risk_score": 34,
+          "code": 96,
+          "weather": "雷阵雨",
+          "temp_max": 29.0,
+          "temp_min": 24.8,
+          "precipitation": 23.3,
+          "wind": 16.2,
+          "risk_score": 47,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         }
       ],
-      "risk_score": 57,
-      "signal": "天气整体平稳，户外与亲子活动具备恢复基础"
+      "risk_score": 60,
+      "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
     },
     "southwest": {
       "name": "西南",
@@ -131,34 +131,34 @@
       "days": [
         {
           "date": "2026-07-27",
-          "code": 95,
+          "code": 96,
           "weather": "雷阵雨",
-          "temp_max": 31.2,
-          "temp_min": 23.6,
-          "precipitation": 16.8,
-          "wind": 13.4,
+          "temp_max": 30.7,
+          "temp_min": 23.5,
+          "precipitation": 24.5,
+          "wind": 15.0,
           "risk_score": 67,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         },
         {
           "date": "2026-07-28",
-          "code": 96,
+          "code": 95,
           "weather": "雷阵雨",
-          "temp_max": 30.2,
-          "temp_min": 23.1,
-          "precipitation": 13.3,
-          "wind": 9.4,
-          "risk_score": 67,
+          "temp_max": 30.3,
+          "temp_min": 22.8,
+          "precipitation": 9.6,
+          "wind": 8.9,
+          "risk_score": 57,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         },
         {
           "date": "2026-07-29",
           "code": 96,
           "weather": "雷阵雨",
-          "temp_max": 30.4,
-          "temp_min": 24.1,
-          "precipitation": 5.4,
-          "wind": 8.7,
+          "temp_max": 30.1,
+          "temp_min": 23.3,
+          "precipitation": 7.9,
+          "wind": 11.2,
           "risk_score": 57,
           "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         }
@@ -172,40 +172,40 @@
       "days": [
         {
           "date": "2026-07-27",
-          "code": 51,
-          "weather": "小雨",
-          "temp_max": 36.3,
-          "temp_min": 26.4,
-          "precipitation": 0.3,
-          "wind": 18.8,
-          "risk_score": 35,
-          "signal": "高温天气明显，防晒、凉感、速干品类进入主推窗口"
+          "code": 95,
+          "weather": "雷阵雨",
+          "temp_max": 33.6,
+          "temp_min": 25.0,
+          "precipitation": 0.8,
+          "wind": 16.1,
+          "risk_score": 45,
+          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
         },
         {
           "date": "2026-07-28",
-          "code": 95,
-          "weather": "雷阵雨",
-          "temp_max": 37.3,
-          "temp_min": 25.8,
-          "precipitation": 2.2,
+          "code": 51,
+          "weather": "小雨",
+          "temp_max": 37.6,
+          "temp_min": 25.5,
+          "precipitation": 0.1,
           "wind": 19.3,
-          "risk_score": 60,
-          "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
+          "risk_score": 35,
+          "signal": "高温天气明显，防晒、凉感、速干品类进入主推窗口"
         },
         {
           "date": "2026-07-29",
           "code": 51,
           "weather": "小雨",
-          "temp_max": 36.2,
-          "temp_min": 25.5,
-          "precipitation": 0.2,
-          "wind": 17.9,
+          "temp_max": 36.5,
+          "temp_min": 25.9,
+          "precipitation": 0.3,
+          "wind": 16.0,
           "risk_score": 35,
           "signal": "高温天气明显，防晒、凉感、速干品类进入主推窗口"
         }
       ],
-      "risk_score": 60,
-      "signal": "高温天气明显，防晒、凉感、速干品类进入主推窗口"
+      "risk_score": 45,
+      "signal": "降雨影响客流，防雨、防滑与轻防护品类需关注"
     }
   }
 }
