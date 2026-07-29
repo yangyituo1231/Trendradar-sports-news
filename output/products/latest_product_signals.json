@@ -1,11 +1,11 @@
 {
   "date": "2026-07-30",
-  "generated_time": "2026-07-30 03:50:59",
+  "generated_time": "2026-07-30 04:01:13",
   "source": "Google News RSS product signal monitor",
   "desc": "运动鞋服商品趋势信号监测：覆盖国内外运动品牌、户外品牌、成人与儿童品牌；重点监测近8天新品、尖货、功能科技、夏季功能、跑步科技、户外轻运动与大促热卖。已过滤财经财报、广告促销、测评导购、AI白皮书、ESG报告和非鞋服商品。",
   "recent_days": 8,
   "query_count": 260,
-  "signal_count": 7,
+  "signal_count": 8,
   "top_brands": [
     [
       "Adidas",
@@ -23,19 +23,19 @@
   "top_keywords": [
     [
       "新品",
-      5
+      6
+    ],
+    [
+      "防晒衣",
+      3
+    ],
+    [
+      "防晒",
+      3
     ],
     [
       "足球",
       3
-    ],
-    [
-      "防晒衣",
-      2
-    ],
-    [
-      "防晒",
-      2
     ],
     [
       "训练鞋",
@@ -68,6 +68,14 @@
     [
       "发布",
       1
+    ],
+    [
+      "轻户外",
+      1
+    ],
+    [
+      "山系",
+      1
     ]
   ],
   "top_categories": [
@@ -76,11 +84,11 @@
       3
     ],
     [
-      "跑步科技",
-      1
+      "户外轻运动",
+      2
     ],
     [
-      "户外轻运动",
+      "跑步科技",
       1
     ],
     [
@@ -99,7 +107,7 @@
     ],
     [
       "夏季",
-      2
+      3
     ],
     [
       "秋季",
@@ -127,7 +135,7 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1USFhRMDVQTHNUR2ZidVA3bTB3aHdsYVVzRnZGREh5Sk50aGQxNVhDbnFfVXdyOGUxWEUxUHd3NlFvcVdHMjlINWptemVTbG96bEs5cWpjbXhZNzI3aVRKbVVKclFYMml4aXlvblUtYjc1RmcxVW5RV2hkNWVKSEk?oc=5",
       "pub_date": "Mon, 27 Jul 2026 22:14:19 GMT",
-      "age_hours": 45.6,
+      "age_hours": 45.8,
       "heat": 81,
       "type": "product_signal"
     },
@@ -148,7 +156,7 @@
       "source": "驱动之家",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5HQWQzWENDZG1CYjhKZ1FUWFQ2R0ZERTMza3pCdzRVOUJDdkowTjZGcmNGeXJOdzBzUnVULUZXcF9ZRS1DcWtUeU95aVNISmotd3VXUWpyaVY?oc=5",
       "pub_date": "Wed, 29 Jul 2026 03:03:00 GMT",
-      "age_hours": 16.8,
+      "age_hours": 17.0,
       "heat": 78,
       "type": "product_signal"
     },
@@ -170,7 +178,7 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQ1BjRG9USXFVSjEzMU02NE5wdTR1a0tyX2F1RV93NFlWY0oyNFhabFRHT0ZFUjF4d25CRFZDRGJ2RVc0OVhPZzJSQXRYMVVFNGhOaEZfUDludXltN0dFcFZ2VHBPd0FCMy0yd1BTcVJpYVZTZzdqNFowdl9UMnF0LWZreFhtUkszMk1wRk1iakVIZmlWMzQzWFNRd2h5ajFCRGkzVDh3SXp1NzkwLUFn?oc=5",
       "pub_date": "Tue, 28 Jul 2026 06:01:36 GMT",
-      "age_hours": 37.8,
+      "age_hours": 38.0,
       "heat": 75,
       "type": "product_signal"
     },
@@ -191,8 +199,30 @@
       "source": "디지털투데이",
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOU01YYUZuVUZJME5iZ0ZkdXR5c09SYnVPbmxmRHdFUzZBT1lCNjB2MHlpaUwtd191bjg4YmFmM3FtOTRVWEtvc1hmblQ1enA2Wi1MVTZGMkVGSmFySmZkUkpNVkt6ZEFFMFZpWHp3MTBXX3dZQlJGdl9OZGc4Uk1jTU81cnVqNmx3VExwVnMzZHE0Yy1tWU84R09oNFZiRzYzeUhOT0hQOElILVVlbWZTdnN4ZGdieU44WllzalZiSlI?oc=5",
       "pub_date": "Tue, 28 Jul 2026 05:03:36 GMT",
-      "age_hours": 38.8,
+      "age_hours": 39.0,
       "heat": 72,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-07-30",
+      "title": "搜索热度涨超22倍，“山系防晒衣”火爆出圈 - finance.sina.com.cn",
+      "short_title": "搜索热度涨超22倍，“山系防晒衣”火爆出圈 - finance.sina.com.cn",
+      "query": "轻户外 运动品牌 新品",
+      "brand_hits": [],
+      "keyword_hits": [
+        "防晒衣",
+        "防晒",
+        "轻户外",
+        "山系",
+        "新品"
+      ],
+      "category": "户外轻运动",
+      "season_tag": "夏季",
+      "source": "finance.sina.com.cn",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBBUjZaUXVnZ1ZnWkJZSHNjRjdXekNvSlNaTmEwN050aGdNb2JkczE0bUFVUWVwVHYxSngyN0tTY3otb0t5QlpUbldkdDA0SFlPbEhUYnFnb2tnVWc2S0c0ZXh6UGJ4MGsyd1dES21uME41X1ZnTXhQdQ?oc=5",
+      "pub_date": "Wed, 29 Jul 2026 19:23:09 GMT",
+      "age_hours": 0.6,
+      "heat": 69,
       "type": "product_signal"
     },
     {
@@ -210,7 +240,7 @@
       "source": "凤凰网",
       "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE00d0tXTW5uVUFqRlM4cUxMUHhiQ1hhWjR5YXl3T29ZT3lLcGRUOXF0MTBxRk4tVUh3MzM1emtKdTZyY001ejNraA?oc=5",
       "pub_date": "Tue, 28 Jul 2026 16:19:27 GMT",
-      "age_hours": 27.5,
+      "age_hours": 27.7,
       "heat": 60,
       "type": "product_signal"
     },
@@ -231,7 +261,7 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQLVJERkgwYWVwUy1oMjNHZ3RSa2k0QkFNdXJCZERRdmd1aG15YzJEcTg5cHNQd2NJdTFqWHJaaHJ5T0JJdmc1MGd6TkV3WjlVYzZLeVBYa0VuUXpaNG1ka1ZKb1ltRk9SYndlUXliNXZQOTFNYnZpV3dQdTBEV2R0YkpFWUJ2MkRFN0x4LVZVRkR4dmhpQlN3TjVFakZfTGR2QU9Kd2dlQzc?oc=5",
       "pub_date": "Sun, 26 Jul 2026 06:38:30 GMT",
-      "age_hours": 85.2,
+      "age_hours": 85.4,
       "heat": 60,
       "type": "product_signal"
     },
@@ -252,7 +282,7 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdS14YzUtRTBLNll0YU13MnlKZHl5TnBqMVRMWUpONFZueTE4Um5rX1dxaE9HUnJickIxNWdUd19VMDRxWmdzV1lPYTNDZmxMUzd4dUhqdzcwSlRHbUstMzdpNWQydU94NFpKeGZRQU9sQTRWSURVWTQ4RzBYX3pLd0wyOVlNT3FuRWpIbkwtUkFoZWVJdHAw?oc=5",
       "pub_date": "Wed, 22 Jul 2026 18:13:41 GMT",
-      "age_hours": 169.6,
+      "age_hours": 169.8,
       "heat": 52,
       "type": "product_signal"
     }
