@@ -1,5 +1,5 @@
 {
-  "generate_time": "2026-08-03 03:55",
+  "generate_time": "2026-08-03 01:27",
   "summary": {
     "date_range": "2026-07-28 至 2026-08-03",
     "core_judgement": "本周行业信息集中在品牌竞争、童装/儿童运动、大促/电商、天气/功能消费，高频热词为客流修复、防滑鞋、校园体育、跑步经济、防雨装备、品牌站位，动态赛道主要为儿童跑步、亲子出行、儿童篮球。",
@@ -10,12 +10,12 @@
     "next_action": "下周建议围绕儿童跑步、亲子出行、儿童篮球持续跟踪竞品事件、商品信号、天气变化和平台热词，形成汇报页输入。"
   },
   "ai_judgement": {
-    "weekly_core_view": "本周全国强降雨持续，防雨防滑与室内运动场景需求突出；儿童运动消费向亲子、校园、户外场景外扩；平台大促预热开启，夏季功能品类需前置承接；竞品聚焦跑步科技与儿童足球鞋新品。",
-    "news_summary": "本周行业新闻聚焦品牌竞争加剧，产品心智与渠道效率成关键；儿童运动消费场景外扩，亲子与校园需求升温；平台大促进入预热期；天气变化影响客流节奏；跑步、骑行与轻户外场景延续，运动装备需求扩张。",
-    "competitor_summary": "本周竞品动作集中在跑步科技与儿童足球鞋领域：New Balance发布旗舰碳板跑鞋SC Elite v6，Nike与Hyperice合作推出智能恢复拖鞋，Adidas、Puma推出儿童足球鞋新品，行业出现智能篮球鞋AI缓震系统。",
-    "product_summary": "商品趋势聚焦跑步科技与儿童运动鞋：碳板跑鞋、训练鞋、儿童足球鞋、篮球鞋新品密集；Nike智能恢复拖鞋引领运动恢复品类创新；户外防晒衣定价逻辑重构；儿童冬季保暖品类提前升温。",
-    "region_weather_summary": "全国多区域（华东、华中、华南、西南、西北）受强降雨或雷阵雨影响，客流波动，防雨防滑品类与室内运动场景需求上升，各区域需动态调整陈列与库存，强化防雨防滑产品主推。",
-    "next_week_focus": "重点关注平台大促预热期的流量与转化承接，防雨防滑及室内运动品类备货与陈列；跟踪New Balance、Nike等竞品新品市场反馈；关注儿童足球鞋、跑步鞋等细分赛道机会；动态应对天气变化。"
+    "weekly_core_view": "本周全国强降雨持续，防雨防滑与室内运动场景成为终端焦点；儿童消费向亲子、校园、户外场景外扩；平台大促预热开启，夏季功能品类需前置承接。竞品密集发布跑步、篮球及恢复类新品，科技与IP联名成热点。",
+    "news_summary": "本周新闻聚焦品牌竞争加剧，产品心智与渠道效率成关键；儿童运动消费场景外扩，亲子与校园需求升温；平台大促进入预热期，夏季功能品类需前置；天气变化影响客流，功能品类动态调整；跑步、骑行与轻户外场景延续，装备需求扩张。",
+    "competitor_summary": "本周竞品动作集中在跑步科技与儿童鞋领域：New Balance发布旗舰碳板跑鞋，Nike推出智能恢复拖鞋，Adidas/Puma上新儿童足球鞋及篮球鞋，IP联名款增多，科技功能与IP联名成为竞争焦点。",
+    "product_summary": "商品趋势显示跑步科技热度最高，碳板跑鞋、训练鞋、儿童足球鞋/篮球鞋新品密集；运动恢复类产品（如Nike热疗拖鞋）兴起；儿童鞋方面，防滑、防雨功能需求因天气上升，秋冬保暖品类开始预热。",
+    "region_weather_summary": "全国多区域（华东、华中、华南、西南、西北）持续强降雨或雷阵雨，客流受扰动，防雨防滑品类与室内运动场景需求显著提升，各区域需动态调整陈列与库存，强化室内运动产品组合。",
+    "next_week_focus": "重点关注平台大促预售期的流量转化与夏季功能品类承接；持续跟踪降雨天气对客流的影响，动态调整防雨防滑及室内运动品类；关注竞品跑步、篮球新品及IP联名动态，评估儿童市场应对策略。"
   },
   "news": {
     "top_titles": [
@@ -552,7 +552,7 @@
       "count": 2
     },
     {
-      "word": "防晒衣",
+      "word": "速干T",
       "count": 2
     },
     {
@@ -565,10 +565,6 @@
     },
     {
       "word": "会员裂变",
-      "count": 2
-    },
-    {
-      "word": "体育精神",
       "count": 2
     },
     {
@@ -624,7 +620,7 @@
       "count": 1
     },
     {
-      "word": "速干T",
+      "word": "防晒衣",
       "count": 1
     },
     {
@@ -637,6 +633,10 @@
     },
     {
       "word": "山系穿搭",
+      "count": 1
+    },
+    {
+      "word": "体育精神",
       "count": 1
     }
   ],
@@ -760,6 +760,10 @@
           "count": 3
         },
         {
+          "focus": "防雨防滑与室内运动",
+          "count": 2
+        },
+        {
           "focus": "防雨防滑+室内运动",
           "count": 2
         },
@@ -769,10 +773,6 @@
         },
         {
           "focus": "强降雨或雷阵雨天气扰动客流，需重点推广防雨防滑品类，强化室内运动场景，结合户外轻户外趋势调整陈列",
-          "count": 1
-        },
-        {
-          "focus": "防雨防滑与室内运动",
           "count": 1
         }
       ],
@@ -813,15 +813,15 @@
           "count": 3
         },
         {
+          "focus": "防雨防滑与室内运动",
+          "count": 2
+        },
+        {
           "focus": "西南强降雨扰动客流，防雨防滑与室内运动场景需关注",
           "count": 1
         },
         {
           "focus": "强降雨或雷阵雨天气扰动客流，需重点推广防雨防滑品类，强化室内运动场景，结合户外轻户外趋势调整陈列",
-          "count": 1
-        },
-        {
-          "focus": "防雨防滑与室内运动",
           "count": 1
         },
         {
@@ -919,11 +919,11 @@
       },
       {
         "word": "雷阵雨",
-        "count": 32
+        "count": 31
       },
       {
         "word": "防滑",
-        "count": 32
+        "count": 31
       }
     ],
     "pool": [
@@ -1100,7 +1100,7 @@
       {
         "date": "2026-08-03",
         "region": "northwest",
-        "desc": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注"
+        "desc": "降雨影响客流，防雨、轻防护与室内运动场景需求提升"
       }
     ]
   },
@@ -2387,7 +2387,7 @@
       "source": "时尚COSMO",
       "date": "2026-08-03",
       "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5nd09TeVlYRXdMbU5TWVJuRjZRZ3NudWl6bWp2c2g0RUlybDNZLTRQMEZxTGtoaUllbEpJNE51cnFvNmY0WGZoOHhyaFpyeGtDVkJGbjVhaWFfYUFhV2c?oc=5",
-      "impact": "反映儿童跑步方向商品更新和价格带竞争。",
+      "impact": "强化跑步科技赛道竞争，碳板跑鞋技术下探，或影响儿童跑步产品价格带与功能升级。",
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5nd09TeVlYRXdMbU5TWVJuRjZRZ3NudWl6bWp2c2g0RUlybDNZLTRQMEZxTGtoaUllbEpJNE51cnFvNmY0WGZoOHhyaFpyeGtDVkJGbjVhaWFfYUFhV2c?oc=5"
     },
     {
@@ -2399,7 +2399,7 @@
       "source": "电玩巴士",
       "date": "2026-08-03",
       "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5uWm1LcTN3SWhvcFNuSVJrREJsa1UxWE1RNzRmWHdBbWxIeTJfQ0R6YU1WM0p6OWdUUnQySkRMdEQ4R2w2d3VhVmtsTk1XaGpaeWgxRDFqVlJUdw?oc=5",
-      "impact": "反映儿童篮球方向商品更新和价格带竞争。",
+      "impact": "智能科技与篮球鞋结合，预示儿童篮球品类可能引入AI缓震等科技卖点，提升产品差异化。",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5uWm1LcTN3SWhvcFNuSVJrREJsa1UxWE1RNzRmWHdBbWxIeTJfQ0R6YU1WM0p6OWdUUnQySkRMdEQ4R2w2d3VhVmtsTk1XaGpaeWgxRDFqVlJUdw?oc=5"
     },
     {
@@ -2411,19 +2411,19 @@
       "source": "dealmoon.ca",
       "date": "2026-08-03",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1USFhRMDVQTHNUR2ZidVA3bTB3aHdsYVVzRnZGREh5Sk50aGQxNVhDbnFfVXdyOGUxWEUxUHd3NlFvcVdHMjlINWptemVTbG96bEs5cWpjbXhZNzI3aVRKbVVKclFYMml4aXlvblUtYjc1RmcxVW5RV2hkNWVKSEk?oc=5",
-      "impact": "反映校园运动方向商品更新和价格带竞争。",
+      "impact": "训练鞋折扣促销，反映校园运动市场竞争加剧，价格策略或影响儿童训练鞋市场。",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1USFhRMDVQTHNUR2ZidVA3bTB3aHdsYVVzRnZGREh5Sk50aGQxNVhDbnFfVXdyOGUxWEUxUHd3NlFvcVdHMjlINWptemVTbG96bEs5cWpjbXhZNzI3aVRKbVVKclFYMml4aXlvblUtYjc1RmcxVW5RV2hkNWVKSEk?oc=5"
     },
     {
       "title": "耐克与Hyperice合作推出Air Zoom Hyperslide热疗按摩拖鞋- 科技与体育 - cnBeta.COM",
-      "brand": "Nike、NB",
+      "brand": "Nike",
       "event_type": "联名合作",
       "track": "运动凉鞋",
       "heat": 100,
       "source": "cnBeta.COM",
       "date": "2026-08-03",
       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE53ODZUS1Z3V3gzVThvdUZaTDgwMEl0azE5VjJMMkZWenNpRnFobGplaVJnMUg2WmpOVW1PLU5sVjQzaHZ5eXREbU5RcGVST0FiNkNGbmlsRVZPWmhLM1dWSQ?oc=5",
-      "impact": "强化话题传播和年轻家庭内容种草。",
+      "impact": "运动恢复品类创新，科技联名提升品牌专业形象，可能带动儿童运动后恢复产品需求。",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE53ODZUS1Z3V3gzVThvdUZaTDgwMEl0azE5VjJMMkZWenNpRnFobGplaVJnMUg2WmpOVW1PLU5sVjQzaHZ5eXREbU5RcGVST0FiNkNGbmlsRVZPWmhLM1dWSQ?oc=5"
     },
     {
@@ -2435,7 +2435,7 @@
       "source": "디지털투데이",
       "date": "2026-08-03",
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOU01YYUZuVUZJME5iZ0ZkdXR5c09SYnVPbmxmRHdFUzZBT1lCNjB2MHlpaUwtd191bjg4YmFmM3FtOTRVWEtvc1hmblQ1enA2Wi1MVTZGMkVGSmFySmZkUkpNVkt6ZEFFMFZpWHp3MTBXX3dZQlJGdl9OZGc4Uk1jTU81cnVqNmx3VExwVnMzZHE0Yy1tWU84R09oNFZiRzYzeUhOT0hQOElILVVlbWZTdnN4ZGdieU44WllzalZiSlI?oc=5",
-      "impact": "反映运动凉鞋方向商品更新和价格带竞争。",
+      "impact": "智能恢复拖鞋创新功能，强化运动后恢复场景，或启发儿童运动装备功能延伸。",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOU01YYUZuVUZJME5iZ0ZkdXR5c09SYnVPbmxmRHdFUzZBT1lCNjB2MHlpaUwtd191bjg4YmFmM3FtOTRVWEtvc1hmblQ1enA2Wi1MVTZGMkVGSmFySmZkUkpNVkt6ZEFFMFZpWHp3MTBXX3dZQlJGdl9OZGc4Uk1jTU81cnVqNmx3VExwVnMzZHE0Yy1tWU84R09oNFZiRzYzeUhOT0hQOElILVVlbWZTdnN4ZGdieU44WllzalZiSlI?oc=5"
     },
     {
@@ -2447,7 +2447,7 @@
       "source": "About Nike",
       "date": "2026-08-03",
       "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNQkJzQVI3Q1hNeDB0ZldvbUFsbjRWY0lfX0psbEZCUnBHOTBLMFcxczg5Wld4aTdYZWNoUmI0bHRHal9fbmxhTUhuQ1NINEdKNmRNbkN0YldBZE52WjFpVWo1MEU1eWkxajlFNFo1bFRyaEFLMzcxVWxBQkt5cVhBSnc1b25WLTZwbE9FQ1IwcGJfbFl4Tjc5bWplOUJwbUlrRWE4SS1faktTcDNJRUxuQWtFQmdwcnl1aDA2akZzeFRvUmt2ZXpDaUFJY2l2ZVJVcnBPV3VQSGZvdks3OUNIcQ?oc=5",
-      "impact": "提升运动凉鞋方向品牌声量与专业心智。",
+      "impact": "Nike与Hyperice合作提升专业运动恢复心智，或影响儿童运动后恢复产品布局。",
       "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNQkJzQVI3Q1hNeDB0ZldvbUFsbjRWY0lfX0psbEZCUnBHOTBLMFcxczg5Wld4aTdYZWNoUmI0bHRHal9fbmxhTUhuQ1NINEdKNmRNbkN0YldBZE52WjFpVWo1MEU1eWkxajlFNFo1bFRyaEFLMzcxVWxBQkt5cVhBSnc1b25WLTZwbE9FQ1IwcGJfbFl4Tjc5bWplOUJwbUlrRWE4SS1faktTcDNJRUxuQWtFQmdwcnl1aDA2akZzeFRvUmt2ZXpDaUFJY2l2ZVJVcnBPV3VQSGZvdks3OUNIcQ?oc=5"
     },
     {
@@ -2459,7 +2459,7 @@
       "source": "xiaofei.tom.com",
       "date": "2026-08-03",
       "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CaktqUXViYWE3SHoxdlNrUDhWNWwxbjVtNm9yOUR4RWRmLUhoMV93MnBWNmllRVYxTmNvcWJKYVRTTURFY3VESnB4cnYyRUo4VW8wNnktdVk5dw?oc=5",
-      "impact": "影响平台流量、价格心智和爆款货盘节奏。",
+      "impact": "京东11.11儿童保暖品类爆发，提示秋冬儿童鞋服需提前备货，抓住大促流量。",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CaktqUXViYWE3SHoxdlNrUDhWNWwxbjVtNm9yOUR4RWRmLUhoMV93MnBWNmllRVYxTmNvcWJKYVRTTURFY3VESnB4cnYyRUo4VW8wNnktdVk5dw?oc=5"
     },
     {
@@ -2471,7 +2471,7 @@
       "source": "平台资讯",
       "date": "2026-07-28",
       "link": "",
-      "impact": "平台流量与大促节奏变化，重点观察夏季品类曝光、直播转化与终端承接。",
+      "impact": "平台大促预热，夏季功能品类需前置曝光与直播转化，影响终端承接策略。",
       "url": ""
     }
   ],
@@ -2479,70 +2479,70 @@
     {
       "track": "儿童跑步",
       "heat": 100,
-      "summary": "跑步、骑行与轻户外场景延续，运动装备需求扩张，New Balance等品牌发布碳板跑鞋，儿童跑步赛道热度高。",
+      "summary": "跑步、骑行与轻户外场景延续，运动装备需求扩张，New Balance等品牌发布碳板跑鞋，推动儿童跑步产品升级。",
       "link": "",
       "url": ""
     },
     {
       "track": "亲子出行",
       "heat": 68,
-      "summary": "儿童运动消费场景外扩，亲子与校园需求继续升温，冬季保暖品类提前预热，亲子出行成为重要消费场景。",
+      "summary": "儿童运动消费场景外扩，亲子与校园需求升温，带动亲子出行相关装备和场景营销。",
       "link": "",
       "url": ""
     },
     {
       "track": "儿童篮球",
       "heat": 47,
-      "summary": "Adidas、Puma等品牌推出儿童足球鞋、篮球鞋新品，行业出现智能篮球鞋AI缓震系统，儿童篮球赛道活跃。",
+      "summary": "adidas、Puma等品牌推出儿童足球鞋、篮球鞋，智能篮球鞋AI缓震系统上市，儿童球类装备竞争加剧。",
       "link": "",
       "url": ""
     },
     {
       "track": "轻户外",
       "heat": 43,
-      "summary": "户外、跑步、骑行等轻户外场景延续，带动装备与亲子需求，防晒衣等户外品类定价逻辑重构。",
+      "summary": "跑步、骑行与轻户外场景延续，运动装备需求扩张，户外功能品类受关注。",
       "link": "",
       "url": ""
     },
     {
       "track": "校园运动",
       "heat": 34,
-      "summary": "儿童消费从单品购买转向校园场景综合经营，校园运动需求升温，训练鞋等品类受关注。",
+      "summary": "儿童消费转向亲子、校园、户外场景，校园运动需求升温，训练鞋等品类受关注。",
       "link": "",
       "url": ""
     },
     {
       "track": "运动凉鞋",
       "heat": 33,
-      "summary": "Nike推出智能恢复拖鞋，运动凉鞋品类创新，带动话题传播与年轻家庭种草。",
+      "summary": "Nike推出智能恢复拖鞋，运动后恢复场景受关注，运动凉鞋品类创新。",
       "link": "",
       "url": ""
     },
     {
       "track": "防晒凉感",
       "heat": 17,
-      "summary": "防晒衣等户外装备定价逻辑重构，夏季功能品类需前置承接。",
+      "summary": "夏季功能品类如防晒衣、速干T恤受关注，品牌特卖重构户外装备定价逻辑。",
       "link": "",
       "url": ""
     },
     {
       "track": "直播电商",
       "heat": 15,
-      "summary": "平台大促进入预热期，夏季功能品类曝光与直播转化需重点关注。",
+      "summary": "平台大促预热，直播转化与夏季品类曝光成为关键。",
       "link": "",
       "url": ""
     },
     {
       "track": "AI科技消费",
       "heat": 13,
-      "summary": "智能篮球鞋AI缓震系统、智能恢复拖鞋等AI科技产品涌现，科技消费趋势显现。",
+      "summary": "智能篮球鞋AI缓震系统、智能恢复拖鞋等产品出现，AI科技在运动装备中应用增加。",
       "link": "",
       "url": ""
     },
     {
       "track": "秋冬保暖",
       "heat": 10,
-      "summary": "京东11.11儿童羽绒服、棉鞋消费升温，秋冬保暖品类提前布局。",
+      "summary": "京东11.11儿童羽绒服、棉鞋消费升温，秋冬保暖品类开始预热。",
       "link": "",
       "url": ""
     }
@@ -2557,7 +2557,7 @@
       "source": "平台资讯",
       "date": "2026-07-28",
       "link": "",
-      "insight": "关注其直播货盘、平台流量和内容种草打法。",
+      "insight": "关注大促预售节奏，提前布局夏季功能品类曝光与直播转化。",
       "url": ""
     }
   ],
@@ -2565,70 +2565,70 @@
     {
       "focus": "新品发布",
       "heat": 100,
-      "summary": "新品发布是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
+      "summary": "本周多个品牌发布跑步、篮球、恢复类新品，科技功能与IP联名成焦点。",
       "link": "",
       "url": ""
     },
     {
       "focus": "降雨",
       "heat": 52,
-      "summary": "降雨是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
+      "summary": "全国多区域强降雨，影响客流与品类需求，防雨防滑产品受关注。",
       "link": "",
       "url": ""
     },
     {
       "focus": "防雨",
       "heat": 52,
-      "summary": "防雨是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
+      "summary": "降雨天气推动防雨装备需求，需动态调整陈列与库存。",
       "link": "",
       "url": ""
     },
     {
       "focus": "雷阵雨",
-      "heat": 48,
-      "summary": "雷阵雨是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
+      "heat": 46,
+      "summary": "雷阵雨天气扰动客流，室内运动场景需求提升。",
       "link": "",
       "url": ""
     },
     {
       "focus": "防滑",
-      "heat": 48,
-      "summary": "防滑是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
+      "heat": 46,
+      "summary": "雨天防滑需求上升，防滑鞋等品类受关注。",
       "link": "",
       "url": ""
     },
     {
       "focus": "平台大促",
       "heat": 44,
-      "summary": "平台大促是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
+      "summary": "平台大促预热，夏季功能品类需前置承接，直播转化关键。",
       "link": "",
       "url": ""
     },
     {
       "focus": "联名合作",
       "heat": 25,
-      "summary": "联名合作是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
+      "summary": "Nike与Hyperice联名推出恢复拖鞋，IP联名提升品牌声量。",
       "link": "",
       "url": ""
     },
     {
       "focus": "代言签约",
       "heat": 25,
-      "summary": "代言签约是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
+      "summary": "Nike与Hyperice合作，强化专业运动恢复心智。",
       "link": "",
       "url": ""
     },
     {
       "focus": "儿童跑步",
       "heat": 25,
-      "summary": "儿童跑步是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
+      "summary": "跑步场景延续，儿童跑步产品升级，碳板跑鞋技术下探。",
       "link": "",
       "url": ""
     },
     {
       "focus": "亲子出行",
       "heat": 18,
-      "summary": "亲子出行是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。",
+      "summary": "亲子消费场景外扩，带动亲子出行装备需求。",
       "link": "",
       "url": ""
     }
@@ -2637,52 +2637,52 @@
     {
       "theme": "儿童跑步",
       "heat": 100,
-      "suggestion": "跑步、骑行与轻户外场景延续，运动装备需求扩张，New Balance等品牌发布碳板跑鞋，儿童跑步赛道热度高。"
+      "suggestion": "跑步、骑行与轻户外场景延续，运动装备需求扩张，New Balance等品牌发布碳板跑鞋，推动儿童跑步产品升级。"
     },
     {
       "theme": "新品发布",
       "heat": 100,
-      "suggestion": "新品发布是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。"
+      "suggestion": "本周多个品牌发布跑步、篮球、恢复类新品，科技功能与IP联名成焦点。"
     },
     {
       "theme": "亲子出行",
       "heat": 68,
-      "suggestion": "儿童运动消费场景外扩，亲子与校园需求继续升温，冬季保暖品类提前预热，亲子出行成为重要消费场景。"
+      "suggestion": "儿童运动消费场景外扩，亲子与校园需求升温，带动亲子出行相关装备和场景营销。"
     },
     {
       "theme": "降雨",
       "heat": 52,
-      "suggestion": "降雨是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。"
+      "suggestion": "全国多区域强降雨，影响客流与品类需求，防雨防滑产品受关注。"
     },
     {
       "theme": "防雨",
       "heat": 52,
-      "suggestion": "防雨是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。"
-    },
-    {
-      "theme": "雷阵雨",
-      "heat": 48,
-      "suggestion": "雷阵雨是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。"
-    },
-    {
-      "theme": "防滑",
-      "heat": 48,
-      "suggestion": "防滑是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。"
+      "suggestion": "降雨天气推动防雨装备需求，需动态调整陈列与库存。"
     },
     {
       "theme": "儿童篮球",
       "heat": 47,
-      "suggestion": "Adidas、Puma等品牌推出儿童足球鞋、篮球鞋新品，行业出现智能篮球鞋AI缓震系统，儿童篮球赛道活跃。"
+      "suggestion": "adidas、Puma等品牌推出儿童足球鞋、篮球鞋，智能篮球鞋AI缓震系统上市，儿童球类装备竞争加剧。"
+    },
+    {
+      "theme": "雷阵雨",
+      "heat": 46,
+      "suggestion": "雷阵雨天气扰动客流，室内运动场景需求提升。"
+    },
+    {
+      "theme": "防滑",
+      "heat": 46,
+      "suggestion": "雨天防滑需求上升，防滑鞋等品类受关注。"
     },
     {
       "theme": "平台大促",
       "heat": 44,
-      "suggestion": "平台大促是本周较高频关注方向，需结合新闻事实、商品信号和区域变化持续观察。"
+      "suggestion": "平台大促预热，夏季功能品类需前置承接，直播转化关键。"
     },
     {
       "theme": "轻户外",
       "heat": 43,
-      "suggestion": "户外、跑步、骑行等轻户外场景延续，带动装备与亲子需求，防晒衣等户外品类定价逻辑重构。"
+      "suggestion": "跑步、骑行与轻户外场景延续，运动装备需求扩张，户外功能品类受关注。"
     }
   ],
   "risks": [
@@ -2698,8 +2698,8 @@
     "轻户外方向跟踪防晒、溯溪、户外鞋服、帽包配件和亲子出行组合。",
     "降雨方向需继续跟踪新闻事实、竞品动作和商品信号，沉淀周报输入。",
     "防雨方向需继续跟踪新闻事实、竞品动作和商品信号，沉淀周报输入。",
-    "雷阵雨方向需继续跟踪新闻事实、竞品动作和商品信号，沉淀周报输入。",
-    "科技研发类事件需同步拆解竞品卖点话术，转化为儿童商品可表达的功能语言。"
+    "科技研发类事件需同步拆解竞品卖点话术，转化为儿童商品可表达的功能语言。",
+    "区域部分按周更新，不使用固定区域结论，重点看天气、客流和区域机会变化。"
   ],
   "product_suggestions": [
     "青少年跑鞋、篮球鞋、训练鞋可强化成人化设计表达和科技感。",
