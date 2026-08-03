@@ -1,12 +1,16 @@
 {
   "date": "2026-08-04",
-  "generated_time": "2026-08-04 04:05:36",
+  "generated_time": "2026-08-04 04:12:57",
   "source": "Google News RSS product signal monitor",
   "desc": "运动鞋服商品趋势信号监测：覆盖国内外运动品牌、户外品牌、成人与儿童品牌；重点监测近8天新品、尖货、功能科技、夏季功能、跑步科技、户外轻运动与大促热卖。已过滤财经财报、广告促销、测评导购、AI白皮书、ESG报告和非鞋服商品。",
   "recent_days": 8,
   "query_count": 260,
-  "signal_count": 22,
+  "signal_count": 25,
   "top_brands": [
+    [
+      "Adidas",
+      3
+    ],
     [
       "New Balance",
       3
@@ -16,7 +20,11 @@
       3
     ],
     [
-      "Adidas",
+      "Asics",
+      2
+    ],
+    [
+      "NB",
       2
     ],
     [
@@ -26,39 +34,47 @@
     [
       "Salomon",
       1
-    ],
-    [
-      "NB",
-      1
-    ],
-    [
-      "Asics",
-      1
     ]
   ],
   "top_keywords": [
     [
       "新品",
-      17
+      19
     ],
     [
       "跑鞋",
-      8
+      10
+    ],
+    [
+      "发布",
+      4
     ],
     [
       "训练",
       4
     ],
     [
-      "篮球",
-      4
+      "碳板跑鞋",
+      3
+    ],
+    [
+      "碳板",
+      3
     ],
     [
       "上市",
       3
     ],
     [
+      "新款",
+      3
+    ],
+    [
       "训练鞋",
+      3
+    ],
+    [
+      "篮球",
       3
     ],
     [
@@ -70,23 +86,11 @@
       3
     ],
     [
+      "系列",
+      2
+    ],
+    [
       "儿童运动鞋",
-      2
-    ],
-    [
-      "新款",
-      2
-    ],
-    [
-      "碳板跑鞋",
-      2
-    ],
-    [
-      "碳板",
-      2
-    ],
-    [
-      "发布",
       2
     ],
     [
@@ -102,6 +106,10 @@
       2
     ],
     [
+      "开售",
+      1
+    ],
+    [
       "儿童跑鞋",
       1
     ],
@@ -110,11 +118,11 @@
       1
     ],
     [
-      "上新",
+      "亮相",
       1
     ],
     [
-      "亮相",
+      "上新",
       1
     ],
     [
@@ -153,18 +161,18 @@
   "top_categories": [
     [
       "跑步科技",
-      7
+      9
     ],
     [
       "篮球足球",
       5
     ],
     [
-      "运动恢复",
-      3
+      "品牌新品",
+      4
     ],
     [
-      "品牌新品",
+      "运动恢复",
       3
     ],
     [
@@ -179,7 +187,7 @@
   "top_seasons": [
     [
       "全年",
-      13
+      16
     ],
     [
       "秋季",
@@ -195,6 +203,54 @@
     ]
   ],
   "signals": [
+    {
+      "date": "2026-08-04",
+      "title": "ky体育(中国)登录入口网址（ASICS）2026年新品发布：数字驱动下的跑鞋革命与市场表现-TGBUS - 电玩巴士",
+      "short_title": "ky体育(中国)登录入口网址（ASICS）2026年新品发布：数字驱动下的跑鞋革命与市场表现-TGBUS - 电玩巴士",
+      "query": "跑鞋 新品",
+      "brand_hits": [
+        "Asics"
+      ],
+      "keyword_hits": [
+        "跑鞋",
+        "新品",
+        "发布"
+      ],
+      "category": "跑步科技",
+      "season_tag": "全年",
+      "source": "电玩巴士",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBkcVh1dFUwaXFCM0lOcTNtQVJqMWJHVUk0VmZFdXRwdE1PSUtOZl9tajhfdEhVdFNSX0dWU2JXMDdrMGVlck83WUh5ckhqZXU2Y0k2MjhFMFlma0xjcGc?oc=5",
+      "pub_date": "Mon, 03 Aug 2026 06:28:06 GMT",
+      "age_hours": 13.7,
+      "heat": 93,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-08-04",
+      "title": "万博·manbetX体彩登录入口全新智能运动鞋系列正式上市，多版本同步开售-TGBUS - 电玩巴士",
+      "short_title": "万博·manbetX体彩登录入口全新智能运动鞋系列正式上市，多版本同步开售-TGBUS - 电玩巴士",
+      "query": "碳板跑鞋 新品",
+      "brand_hits": [
+        "NB"
+      ],
+      "keyword_hits": [
+        "跑鞋",
+        "碳板跑鞋",
+        "碳板",
+        "新品",
+        "开售",
+        "上市",
+        "系列"
+      ],
+      "category": "跑步科技",
+      "season_tag": "全年",
+      "source": "电玩巴士",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5MN3h3b2I2LUpuUFBnMU9aNlBNVmFDTmVaZHBZUFBCR1VLRnFzS0t6eExyMW9hTTg5cnBkaHJxWW9raUNqLWI4RVlSNUlqZDd2R1NiR04tTWtFYjhI?oc=5",
+      "pub_date": "Sun, 02 Aug 2026 19:08:04 GMT",
+      "age_hours": 25.1,
+      "heat": 93,
+      "type": "product_signal"
+    },
     {
       "date": "2026-08-04",
       "title": "adidas MARVEL SPIDER-MAN 儿童跑鞋 RUNFALCON 6 - dealmoon.ca",
@@ -214,7 +270,7 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNb3p5U25HX2FXb01zQ3JHSExNSWxTdGJGcXBrWmZDVXAwYU1VVEs4UnZQdWhnS3ZrTXdCSC15Z0ZiSERjQzZfVjNWX2Z5TnFuY3BuOEJLSXBmSjFYTW9IcEotT3ZMMVpZbFg1TGN2Vlc5RVZXM1M4ZExRUDdmekQ1LUs0Z2VEeERmWVoyel9LWWE?oc=5",
       "pub_date": "Sat, 01 Aug 2026 11:25:10 GMT",
-      "age_hours": 56.7,
+      "age_hours": 56.8,
       "heat": 92,
       "type": "product_signal"
     },
@@ -236,7 +292,7 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUG5nMDdEanBNd25xRkJqajNaOVI3amM4OFhhS2ZsdW90a0NvQUY4VHlMOE1tNUNtQ3lmcmhyc2xlZGVBYUlLRldpUDhPUFhQTTVRbFk2ejAzVk0yc2gzTEZ5cEdsa0F2R3lNTDYzNWtDT2ttRkVCbGtKOGdIb1FjZXFtQmt1STczZnR5ZFB3bjd1UkktTkg2REVlVVoxNHNTT013UWNuOUhHSUxxbWFvTUJncGowWHZyaFRyN1JJUW5CTWdIYUtxUTJ0dE15UQ?oc=5",
       "pub_date": "Mon, 03 Aug 2026 00:02:19 GMT",
-      "age_hours": 20.1,
+      "age_hours": 20.2,
       "heat": 87,
       "type": "product_signal"
     },
@@ -260,14 +316,14 @@
       "source": "时尚COSMO",
       "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5nd09TeVlYRXdMbU5TWVJuRjZRZ3NudWl6bWp2c2g0RUlybDNZLTRQMEZxTGtoaUllbEpJNE51cnFvNmY0WGZoOHhyaFpyeGtDVkJGbjVhaWFfYUFhV2c?oc=5",
       "pub_date": "Thu, 30 Jul 2026 16:58:04 GMT",
-      "age_hours": 99.1,
+      "age_hours": 99.2,
       "heat": 87,
       "type": "product_signal"
     },
     {
       "date": "2026-08-04",
-      "title": "行业首创！风动体育app下载官网自适应缓震智能运动鞋新品上市-TGBUS - 电玩巴士",
-      "short_title": "行业首创！风动体育app下载官网自适应缓震智能运动鞋新品上市-TGBUS - 电玩巴士",
+      "title": "赢点体育app登录入口跑鞋亮相：从参数到体验，重塑运动装备行业标准-TGBUS - 电玩巴士",
+      "short_title": "赢点体育app登录入口跑鞋亮相：从参数到体验，重塑运动装备行业标准-TGBUS - 电玩巴士",
       "query": "缓震跑鞋 新品",
       "brand_hits": [],
       "keyword_hits": [
@@ -275,14 +331,14 @@
         "缓震跑鞋",
         "缓震",
         "新品",
-        "上市"
+        "亮相"
       ],
       "category": "跑步科技",
       "season_tag": "全年",
       "source": "电玩巴士",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1zbTFXbVIwVG80RTB5OXhPSEM5eldoQ0t0MlMxTzZLcVFyZTV4Z0RIZkRiSnJ3NWZpdURjQWNyS0xZck5uWXZfeFExSzhRMFJjRGd6Y3VwUFV5QQ?oc=5",
-      "pub_date": "Sun, 02 Aug 2026 22:09:10 GMT",
-      "age_hours": 21.9,
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zY09kVjRQT0hDTFpPeUVGMTVNOUhMVjFxdlhROFVBN2xta2Itczc2bkNxaGtEb1J2YXFvb2lwUDdNMnJmNU1VcmRfMFJWOHdVOFQ1UEpoVkpRU0pRcndB?oc=5",
+      "pub_date": "Sun, 02 Aug 2026 21:20:30 GMT",
+      "age_hours": 22.9,
       "heat": 75,
       "type": "product_signal"
     },
@@ -306,8 +362,29 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1USFhRMDVQTHNUR2ZidVA3bTB3aHdsYVVzRnZGREh5Sk50aGQxNVhDbnFfVXdyOGUxWEUxUHd3NlFvcVdHMjlINWptemVTbG96bEs5cWpjbXhZNzI3aVRKbVVKclFYMml4aXlvblUtYjc1RmcxVW5RV2hkNWVKSEk?oc=5",
       "pub_date": "Mon, 27 Jul 2026 21:19:50 GMT",
-      "age_hours": 166.8,
+      "age_hours": 166.9,
       "heat": 75,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-08-04",
+      "title": "youmi体育app网页入口发布全新「极速」跑鞋系列：六大核心技术重塑运动体验- TGBUS - 电玩巴士",
+      "short_title": "youmi体育app网页入口发布全新「极速」跑鞋系列：六大核心技术重塑运动体验- TGBUS - 电玩巴士",
+      "query": "跑鞋 新品",
+      "brand_hits": [],
+      "keyword_hits": [
+        "跑鞋",
+        "新品",
+        "发布",
+        "系列"
+      ],
+      "category": "跑步科技",
+      "season_tag": "全年",
+      "source": "电玩巴士",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ZYUtwMV91ZmExLTZzNUFEbHdtV0ZsMDkwRVNHWnJueFJsUEdROHotNG1yRTNEelBCRTQtejYtTm84c0did05yamg1R2RHWVpUR2VURE1MSDFfZFZ4WVE?oc=5",
+      "pub_date": "Sun, 02 Aug 2026 19:18:23 GMT",
+      "age_hours": 24.9,
+      "heat": 72,
       "type": "product_signal"
     },
     {
@@ -329,7 +406,7 @@
       "source": "电玩巴士",
       "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5uWm1LcTN3SWhvcFNuSVJrREJsa1UxWE1RNzRmWHdBbWxIeTJfQ0R6YU1WM0p6OWdUUnQySkRMdEQ4R2w2d3VhVmtsTk1XaGpaeWgxRDFqVlJUdw?oc=5",
       "pub_date": "Sun, 02 Aug 2026 04:19:35 GMT",
-      "age_hours": 39.8,
+      "age_hours": 39.9,
       "heat": 72,
       "type": "product_signal"
     },
@@ -351,50 +428,8 @@
       "source": "cnBeta.COM",
       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE53ODZUS1Z3V3gzVThvdUZaTDgwMEl0azE5VjJMMkZWenNpRnFobGplaVJnMUg2WmpOVW1PLU5sVjQzaHZ5eXREbU5RcGVST0FiNkNGbmlsRVZPWmhLM1dWSQ?oc=5",
       "pub_date": "Fri, 31 Jul 2026 23:46:00 GMT",
-      "age_hours": 68.3,
+      "age_hours": 68.4,
       "heat": 72,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-08-04",
-      "title": "赢点体育app登录入口跑鞋亮相：从参数到体验，重塑运动装备行业标准-TGBUS - 电玩巴士",
-      "short_title": "赢点体育app登录入口跑鞋亮相：从参数到体验，重塑运动装备行业标准-TGBUS - 电玩巴士",
-      "query": "跑鞋 新品",
-      "brand_hits": [],
-      "keyword_hits": [
-        "跑鞋",
-        "新品",
-        "亮相"
-      ],
-      "category": "跑步科技",
-      "season_tag": "全年",
-      "source": "电玩巴士",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zY09kVjRQT0hDTFpPeUVGMTVNOUhMVjFxdlhROFVBN2xta2Itczc2bkNxaGtEb1J2YXFvb2lwUDdNMnJmNU1VcmRfMFJWOHdVOFQ1UEpoVkpRU0pRcndB?oc=5",
-      "pub_date": "Sun, 02 Aug 2026 21:20:30 GMT",
-      "age_hours": 22.8,
-      "heat": 69,
-      "type": "product_signal"
-    },
-    {
-      "date": "2026-08-04",
-      "title": "足球直播生态进化：智能足球、球鞋与训练系统多款新品同步上市-TGBUS - 电玩巴士",
-      "short_title": "足球直播生态进化：智能足球、球鞋与训练系统多款新品同步上市-TGBUS - 电玩巴士",
-      "query": "篮球鞋 新品",
-      "brand_hits": [],
-      "keyword_hits": [
-        "篮球",
-        "足球",
-        "训练",
-        "新品",
-        "上市"
-      ],
-      "category": "篮球足球",
-      "season_tag": "秋季",
-      "source": "电玩巴士",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBDUVNJZzl3RktQLUl4VTQ1Uk5KQS15MldnVVUyeEdLQnlNZVNITWl1N0FfaGlWcW9uMTFXRUpNcFYxSnlzSU5JMVR1N1dFaUY4ck0wdFJaaVJiSTMw?oc=5",
-      "pub_date": "Sun, 02 Aug 2026 19:42:14 GMT",
-      "age_hours": 24.4,
-      "heat": 69,
       "type": "product_signal"
     },
     {
@@ -413,7 +448,7 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9VTDF4bHpfTWdqc1FhTVQ0TE56LVVhTGJtNlpDdVlkdTFUWUhQTXpsZVRDN2lCSTRoQUY2bjRHY0RKT0Z1NTctQk1jR1o?oc=5",
       "pub_date": "Sun, 02 Aug 2026 03:54:01 GMT",
-      "age_hours": 40.2,
+      "age_hours": 40.3,
       "heat": 69,
       "type": "product_signal"
     },
@@ -435,7 +470,7 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOdmdRZXRsRzZJYjl6YjlsUTVnQXY3N3ZkWk9jZkJ5NldjRkRqb1dnR3pMM041VHZ3ZWxPV09VWjJ3V1V2SmNMeVZaczFmdTlKeFBoTElEWGFhQ0gzVGNYS3RvT2xubUpEc0MtUGZYOTdRSTZJYlNyWXlfc3g5MlNlZjlYR3h5YmgxV0E?oc=5",
       "pub_date": "Fri, 31 Jul 2026 22:48:11 GMT",
-      "age_hours": 69.3,
+      "age_hours": 69.4,
       "heat": 69,
       "type": "product_signal"
     },
@@ -457,15 +492,36 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQenVWTGxwWk9wMlktRV9nSzRmci1UNmZmTDZLWHZQN0l6aDNrbmgwR0sxaGlfUWhuOTFMOU9aR3RncTRhVTY5c0kwcjBSbzg0ZmFZMkltakxRWm11OWU3YVRjZFBweWltU3NpZm5wUG9DNGlaMTJEN05SdUtQdlMtdDl3TjlXVnc2?oc=5",
       "pub_date": "Wed, 29 Jul 2026 21:59:37 GMT",
-      "age_hours": 118.1,
+      "age_hours": 118.2,
       "heat": 69,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-08-04",
+      "title": "足球直播生态进化：智能足球、球鞋与训练系统多款新品同步上市-TGBUS - 电玩巴士",
+      "short_title": "足球直播生态进化：智能足球、球鞋与训练系统多款新品同步上市-TGBUS - 电玩巴士",
+      "query": "足球鞋 新品",
+      "brand_hits": [],
+      "keyword_hits": [
+        "足球",
+        "训练",
+        "新品",
+        "上市"
+      ],
+      "category": "篮球足球",
+      "season_tag": "秋季",
+      "source": "电玩巴士",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBDUVNJZzl3RktQLUl4VTQ1Uk5KQS15MldnVVUyeEdLQnlNZVNITWl1N0FfaGlWcW9uMTFXRUpNcFYxSnlzSU5JMVR1N1dFaUY4ck0wdFJaaVJiSTMw?oc=5",
+      "pub_date": "Sun, 02 Aug 2026 19:42:14 GMT",
+      "age_hours": 24.5,
+      "heat": 66,
       "type": "product_signal"
     },
     {
       "date": "2026-08-04",
       "title": "行业首款千元碳板跑鞋来袭？2026年欧博官网ABG新低-TGBUS - 电玩巴士",
       "short_title": "行业首款千元碳板跑鞋来袭？2026年欧博官网ABG新低-TGBUS - 电玩巴士",
-      "query": "跑鞋 新品",
+      "query": "碳板跑鞋 新品",
       "brand_hits": [],
       "keyword_hits": [
         "跑鞋",
@@ -478,7 +534,7 @@
       "source": "电玩巴士",
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE83d2ZJSnhTWjZTUWZYeVFMT0M5RTdua2VyZE9QZ05lNFpJRHZ1czVlWTdhOWJzVzhYY25VQmRycU1uZWU4OEg5cUJhaEVFY0VvWWt6c1ZHZXdtSjBCS3dWd1l5Yw?oc=5",
       "pub_date": "Sat, 01 Aug 2026 19:06:15 GMT",
-      "age_hours": 49.0,
+      "age_hours": 49.1,
       "heat": 66,
       "type": "product_signal"
     },
@@ -499,7 +555,7 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdllXSVdkOTF3VGVwajhLUE5wZktsMEVUVDdOdlpJa0pMRnV1Z1U3ZXA5MWYwekdxWXpfUm1JTUt1dXpCejJEOXBGWWRIN2YtVnF4UFpyS2otZ2ZWXzJpU1RNMmh4UTZ1bGNxUWl6emNRYWNibTJSZ1plSXZYMFFpdGVyYkViUWU4bzhTZTdPNW1CRUM1NTgtdA?oc=5",
       "pub_date": "Sat, 01 Aug 2026 03:19:07 GMT",
-      "age_hours": 64.8,
+      "age_hours": 64.9,
       "heat": 66,
       "type": "product_signal"
     },
@@ -520,7 +576,7 @@
       "source": "驱动之家",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5HQWQzWENDZG1CYjhKZ1FUWFQ2R0ZERTMza3pCdzRVOUJDdkowTjZGcmNGeXJOdzBzUnVULUZXcF9ZRS1DcWtUeU95aVNISmotd3VXUWpyaVY?oc=5",
       "pub_date": "Wed, 29 Jul 2026 03:03:00 GMT",
-      "age_hours": 137.0,
+      "age_hours": 137.2,
       "heat": 66,
       "type": "product_signal"
     },
@@ -541,7 +597,7 @@
       "source": "디지털투데이",
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOU01YYUZuVUZJME5iZ0ZkdXR5c09SYnVPbmxmRHdFUzZBT1lCNjB2MHlpaUwtd191bjg4YmFmM3FtOTRVWEtvc1hmblQ1enA2Wi1MVTZGMkVGSmFySmZkUkpNVkt6ZEFFMFZpWHp3MTBXX3dZQlJGdl9OZGc4Uk1jTU81cnVqNmx3VExwVnMzZHE0Yy1tWU84R09oNFZiRzYzeUhOT0hQOElILVVlbWZTdnN4ZGdieU44WllzalZiSlI?oc=5",
       "pub_date": "Tue, 28 Jul 2026 05:03:36 GMT",
-      "age_hours": 159.0,
+      "age_hours": 159.2,
       "heat": 66,
       "type": "product_signal"
     },
@@ -561,7 +617,27 @@
       "source": "Hypebeast CN",
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBvbHVKampZalJRNXFmZDduQUd1d1JvY0pBLTF3M3VRWkhzXzFxVjdwenFMTTlKRWwxWDFGQTdZZWNEWHNWaGxnNmFwNlBNN2oyMk85MUdOcVhfbk03Z2lFMi1Qcw?oc=5",
       "pub_date": "Fri, 31 Jul 2026 11:46:21 GMT",
-      "age_hours": 80.3,
+      "age_hours": 80.4,
+      "heat": 63,
+      "type": "product_signal"
+    },
+    {
+      "date": "2026-08-04",
+      "title": "adidas 盛夏新款 运动鞋 $130 - dealmoon.ca",
+      "short_title": "adidas 盛夏新款 运动鞋 $130 - dealmoon.ca",
+      "query": "Adidas Kids 新款",
+      "brand_hits": [
+        "Adidas"
+      ],
+      "keyword_hits": [
+        "新款"
+      ],
+      "category": "品牌新品",
+      "season_tag": "全年",
+      "source": "dealmoon.ca",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdUVBdW5iSHNxTEVITHhRR3hMZ05La1JSbXlwT2MxY1kxSjRJT0QzcnB5ZUtCWWc4ZGpEX05DYVViNHFZOElFZHpwMDhwTnRRWUx1R3F4Zmx1QnE0WkltbS1FQWFQR1gya2NCRlR3LVBpVndPQ1Z2dS1UTkI3NXFSaFRqSVd2SEt1c0VhWjhKeHhTNzl6QWthYXl3?oc=5",
+      "pub_date": "Tue, 28 Jul 2026 06:04:21 GMT",
+      "age_hours": 158.1,
       "heat": 63,
       "type": "product_signal"
     },
@@ -582,7 +658,7 @@
       "source": "About Nike",
       "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNQkJzQVI3Q1hNeDB0ZldvbUFsbjRWY0lfX0psbEZCUnBHOTBLMFcxczg5Wld4aTdYZWNoUmI0bHRHal9fbmxhTUhuQ1NINEdKNmRNbkN0YldBZE52WjFpVWo1MEU1eWkxajlFNFo1bFRyaEFLMzcxVWxBQkt5cVhBSnc1b25WLTZwbE9FQ1IwcGJfbFl4Tjc5bWplOUJwbUlrRWE4SS1faktTcDNJRUxuQWtFQmdwcnl1aDA2akZzeFRvUmt2ZXpDaUFJY2l2ZVJVcnBPV3VQSGZvdks3OUNIcQ?oc=5",
       "pub_date": "Mon, 27 Jul 2026 14:00:00 GMT",
-      "age_hours": 174.1,
+      "age_hours": 174.2,
       "heat": 58,
       "type": "product_signal"
     },
@@ -602,7 +678,7 @@
       "source": "电玩巴士",
       "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1OWEZjMExzckVtd0hMQXh4ZTZ3THdoaW5WdF9MdWwtUXZXcDI3U3VRV2xpRG0wbjJXa3RRdmdocnRlbjJ5YlkzSWRrOHp1WGJYM3p0cU1LcG5nVmZH?oc=5",
       "pub_date": "Sun, 02 Aug 2026 17:44:54 GMT",
-      "age_hours": 26.3,
+      "age_hours": 26.5,
       "heat": 57,
       "type": "product_signal"
     },
@@ -622,14 +698,14 @@
       "source": "dealmoon.ca",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPZldmVWZKY29NbnBTeHFEWnRkbTlUb1lFb2NOMTF1Tjl6NE1SN2puanZjdW9SNFJNZFhjcm02MDRQMTJ0QnRIckVLU0RzeFFLNHhTS2wzQTQwTGZGUEJWclRVVTQtZWttQno4OVVlS1RqM0REZGpwVTJ0ZUluc0UyME9DQ042QTJyamNjVFJjYlFOZw?oc=5",
       "pub_date": "Wed, 29 Jul 2026 09:26:50 GMT",
-      "age_hours": 130.6,
+      "age_hours": 130.8,
       "heat": 57,
       "type": "product_signal"
     },
     {
       "date": "2026-08-04",
-      "title": "2024运动鞋爆款品类前瞻 头部品牌官宣发力 这一赛道将成新风口 - eu.36kr.com",
-      "short_title": "2024运动鞋爆款品类前瞻 头部品牌官宣发力 这一赛道将成新风口 - eu.36kr.com",
+      "title": "2024运动鞋爆款品类前瞻 头部品牌官宣发力 这一赛道将成新风口 - 36 Kr",
+      "short_title": "2024运动鞋爆款品类前瞻 头部品牌官宣发力 这一赛道将成新风口 - 36 Kr",
       "query": "训练鞋 新品",
       "brand_hits": [],
       "keyword_hits": [
@@ -640,10 +716,10 @@
       ],
       "category": "品牌新品",
       "season_tag": "秋季",
-      "source": "eu.36kr.com",
+      "source": "36 Kr",
       "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9LNWlxMl9WODFvUm5xaGs3NGxBVlh1Ujg4bHlHSzBYWGhDY19tSnZYZEhLdkxJTV9jNXZRRkVLTFo4ZzJodVhCbFdsd0NsNTI1Mmw4?oc=5",
       "pub_date": "Sun, 02 Aug 2026 13:23:00 GMT",
-      "age_hours": 30.7,
+      "age_hours": 30.8,
       "heat": 52,
       "type": "product_signal"
     },
@@ -663,7 +739,7 @@
       "source": "xiaofei.tom.com",
       "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CaktqUXViYWE3SHoxdlNrUDhWNWwxbjVtNm9yOUR4RWRmLUhoMV93MnBWNmllRVYxTmNvcWJKYVRTTURFY3VESnB4cnYyRUo4VW8wNnktdVk5dw?oc=5",
       "pub_date": "Fri, 31 Jul 2026 06:44:00 GMT",
-      "age_hours": 85.4,
+      "age_hours": 85.5,
       "heat": 51,
       "type": "product_signal"
     }
