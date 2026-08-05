@@ -507,7 +507,6 @@ Puma、On、HOKA、lululemon等
 "url":"",
 "category":"",
 "source":"",
-"time":"",
 "summary":"",
 "summary":"",
 "level":"★★★★★"
@@ -549,12 +548,22 @@ category只能使用：
     final=[]
 
 
-    for row in result[:8]:
+   for row in result[:8]:
+
+        original = next(
+            (
+                x for x in news_items
+                if row.get("title","")[:15]
+                in x.get("title","")
+            ),
+            {}
+        )
 
 
         if not isinstance(row,dict):
 
             continue
+    
 
 
         final.append({
@@ -563,7 +572,7 @@ category只能使用：
             short(row.get("title",""),60),
 
             "url":
-            row.get(
+            original.get(
                 "url",
                 ""
            ),
@@ -575,14 +584,14 @@ category只能使用：
             ),
 
             "source":
-            row.get(
+            original.get(
                 "source",
                 "公开资讯"
             ),
 
             "time":
-            row.get(
-                "time",
+            original.get(
+                "published_at",
                 ""
             ),
 
