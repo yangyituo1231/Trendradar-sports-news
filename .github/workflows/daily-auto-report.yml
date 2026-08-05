@@ -5,9 +5,9 @@ on:
 
   schedule:
 
-    # 北京时间每天8:00运行
-    # UTC 0:00
-    - cron: '27 19 * * *'
+    # 北京时间每天8点
+    # UTC 0点
+    - cron: '0 0 * * *'
 
 
   workflow_dispatch:
@@ -23,6 +23,8 @@ env:
 permissions:
 
   contents: write
+  pages: write
+  id-token: write
 
 
 
@@ -39,9 +41,8 @@ jobs:
     steps:
 
 
-
       # =========================
-      # 拉取代码
+      # Checkout
       # =========================
 
       - name: Checkout repository
@@ -51,7 +52,7 @@ jobs:
 
 
       # =========================
-      # Python环境
+      # Python
       # =========================
 
       - name: Setup Python
@@ -64,9 +65,8 @@ jobs:
 
 
 
-
       # =========================
-      # 安装依赖
+      # Dependencies
       # =========================
 
       - name: Install dependencies
@@ -86,17 +86,16 @@ jobs:
 
 
 
-
       # =========================
-      # 周报图片环境
+      # 浏览器环境
+      # 周报图片需要
       # =========================
 
-      - name: Install browser and fonts
+      - name: Install browser
 
         run: |
 
           sudo apt-get update
-
 
           sudo apt-get install -y \
             fonts-noto-cjk \
@@ -112,18 +111,15 @@ jobs:
 
 
 
-
       # =========================
-      # 抓取数据
+      # 数据抓取
       # =========================
-
 
       - name: Fetch News
 
         run: |
 
           python scripts/get_hot_news.py
-
 
 
 
@@ -141,7 +137,6 @@ jobs:
       # 日报生成
       # =========================
 
-
       - name: Generate Daily Report
 
         env:
@@ -156,19 +151,15 @@ jobs:
 
 
 
-
       # =========================
       # 周报数据
       # =========================
-
 
       - name: Generate Weekly Data
 
         run: |
 
           python scripts/generate_weekly.py
-
-
 
 
 
@@ -180,16 +171,11 @@ jobs:
 
 
 
-
-
       - name: Generate Product Signals
 
         run: |
 
           python scripts/get_product_signals.py
-
-
-
 
 
 
@@ -207,18 +193,15 @@ jobs:
 
 
 
-
       # =========================
       # 周报HTML
       # =========================
-
 
       - name: Generate Weekly HTML
 
         run: |
 
-          python scripts/generate_weekly.py
-
+          python scripts/generate_weekly_html.py
 
 
 
@@ -226,7 +209,6 @@ jobs:
       # =========================
       # 周报图片
       # =========================
-
 
       - name: Render Weekly Image
 
@@ -239,9 +221,125 @@ jobs:
 
 
       # =========================
-      # 保存文件
+      # 准备Pages网页
       # =========================
 
+      - name: Prepare Pages
+
+        run: |
+
+          mkdir -p docs
+
+
+
+          # 日报
+
+          cp daily-report-filled.html docs/daily-report.html || true
+
+          cp output/daily-report-filled.html docs/daily-report.html || true
+
+
+
+          # 周报
+
+          cp output/weekly/weekly_report.html docs/weekly-report.html || true
+
+
+
+          # 图片
+
+          cp weekly-report.png docs/weekly-report.png || true
+
+
+
+          # 首页
+
+          cat > docs/index.html <<EOF
+
+          <html>
+
+          <head>
+
+          <meta charset="utf-8">
+
+          <title>运动鞋服行业资讯</title>
+
+          </head>
+
+
+          <body>
+
+
+          <h1>运动鞋服行业资讯</h1>
+
+
+          <h2>
+
+          <a href="./daily-report.html">
+
+          日报
+
+          </a>
+
+          </h2>
+
+
+          <h2>
+
+          <a href="./weekly-report.html">
+
+          周报
+
+          </a>
+
+          </h2>
+
+
+          <img src="./weekly-report.png" width="500">
+
+
+          </body>
+
+
+          </html>
+
+          EOF
+
+
+
+
+
+      # =========================
+      # 上传Pages
+      # =========================
+
+      - name: Upload Pages Artifact
+
+        uses: actions/upload-pages-artifact@v3
+
+        with:
+
+          path: docs
+
+
+
+
+
+      # =========================
+      # 发布Pages
+      # =========================
+
+      - name: Deploy Pages
+
+        uses: actions/deploy-pages@v4
+
+
+
+
+
+      # =========================
+      # 保存代码
+      # =========================
 
       - name: Commit files
 
@@ -250,17 +348,13 @@ jobs:
 
           git config user.name github-actions
 
-
           git config user.email github-actions@github.com
-
 
 
           git add .
 
 
-
-          git commit -m "auto update daily weekly report" || echo "nothing to commit"
-
+          git commit -m "auto update report" || echo "nothing"
 
 
           git push
@@ -269,16 +363,13 @@ jobs:
 
 
 
-
       # =========================
-      # 微信推送文字
+      # 微信推送链接
       # =========================
-
 
       - name: Send WeCom Text
 
         continue-on-error: true
-
 
         run: |
 
@@ -289,13 +380,19 @@ jobs:
           -H 'Content-Type: application/json' \
           -d '{
 
-            "msgtype":"markdown",
+          "msgtype":"markdown",
 
-            "markdown":{
+          "markdown":{
 
-              "content":"# 运动鞋服行业资讯日报\n\n日报已自动更新。"
+          "content":
 
-            }
+          "# 运动鞋服行业资讯日报\n\n\
+          📌 日报：\n\
+          https://yangyituo1231.github.io/Trendradar-sports-news/daily-report.html\n\n\
+          📌 周报：\n\
+          https://yangyituo1231.github.io/Trendradar-sports-news/weekly-report.html"
+
+          }
 
           }'
 
@@ -304,14 +401,12 @@ jobs:
 
 
       # =========================
-      # 微信推送周报图片
+      # 推送周报图片
       # =========================
-
 
       - name: Send WeCom Image
 
         continue-on-error: true
-
 
         env:
 
@@ -319,6 +414,5 @@ jobs:
 
 
         run: |
-
 
           python scripts/send_wecom_image.py
