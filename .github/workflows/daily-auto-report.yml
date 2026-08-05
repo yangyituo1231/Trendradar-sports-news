@@ -217,7 +217,7 @@ jobs:
 
         run: |
 
-          python scripts/generate_weekly_html.py
+          python scripts/generate_weekly.py
 
 
 
