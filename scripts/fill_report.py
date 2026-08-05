@@ -548,7 +548,7 @@ category只能使用：
     final=[]
 
 
-   for row in result[:8]:
+    for row in result[:8]:
 
         original = next(
             (
