@@ -19,7 +19,7 @@ MAX_ITEMS = 200
 
 RSS_PER_QUERY_LIMIT = 10
 
-RECENT_DAYS = 7
+RECENT_DAYS = 3
 
 
 OUT_DIR = Path("output/weekly")
@@ -646,6 +646,29 @@ def is_bad_news(title):
         return True
 
 
+    LOW_VALUE_WORDS=[
+
+        "加盟代理",
+        "招商加盟",
+        "优惠券",
+        "怎么买",
+        "推荐",
+        "测评",
+        "排行榜",
+        "哪个好",
+        "值得买"
+
+    ]
+
+
+    if contain_any(
+        title,
+        LOW_VALUE_WORDS
+    ):
+
+        return True
+
+
 
     if contain_any(
         title,
@@ -653,20 +676,6 @@ def is_bad_news(title):
     ):
 
         return True
-
-
-
-    # 体育比赛新闻过滤
-
-    if contain_any(
-        title,
-        SPORT_EVENT_WORDS
-    ):
-
-        if not contain_any(
-            title,
-            BRANDS
-        ):
 
             return True
 
@@ -1001,7 +1010,15 @@ def score_news(item):
 
     if category=="kids":
 
-        score += 25
+        score += 15
+    if category=="macro":
+
+    score +=35
+
+
+    if category=="report":
+
+    score +=35
 
 
 
@@ -1019,6 +1036,21 @@ def score_news(item):
     ):
 
         score += 20
+    if contain_any(
+        title,
+        [
+            "财报",
+            "营收",
+            "增长",
+            "战略",
+            "渠道",
+            "门店",
+            "供应链",
+            "管理层"
+        ]
+    ):
+
+        score +=25
 
 
 
@@ -1158,7 +1190,87 @@ def deduplicate(items):
 # 13. 输出结构
 # =========================================================
 
+# =========================================================
+# TOP新闻筛选
+# 防止单一品牌/单一事件霸屏
+# =========================================================
 
+def select_top_news(items, limit=10):
+
+
+    result=[]
+
+    brand_count=defaultdict(int)
+
+    category_count=defaultdict(int)
+
+
+    for item in items:
+
+
+        title=item.get(
+            "title",
+            ""
+        )
+
+
+        category=item.get(
+            "category",
+            "industry"
+        )
+
+
+        brand=""
+
+        for b in BRANDS:
+
+            if b in title:
+
+                brand=b
+
+                break
+
+
+
+        # 同品牌最多3条
+
+        if brand:
+
+            if brand_count[brand]>=3:
+
+                continue
+
+
+
+        # 同类别最多4条
+
+        if category_count[category]>=4:
+
+            continue
+
+
+
+        result.append(item)
+
+
+
+        if brand:
+
+            brand_count[brand]+=1
+
+
+        category_count[category]+=1
+
+
+
+        if len(result)>=limit:
+
+            break
+
+
+
+    return result
+    
 def build_output(items):
 
 
@@ -1175,6 +1287,12 @@ def build_output(items):
 
         reverse=True
 
+    )
+
+
+    top_news = select_top_news(
+        items,
+        10
     )
 
 
@@ -1250,7 +1368,7 @@ def build_output(items):
     # TOP资讯
     # -------------------------
 
-    result["top_news"]=items[:10]
+    result["top_news"]=top_news
 
 
 
