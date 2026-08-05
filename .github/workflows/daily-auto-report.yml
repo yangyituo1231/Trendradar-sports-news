@@ -437,22 +437,15 @@ jobs:
           git push
 
 
-
-
-
-
       # =========================
-      # 微信日报链接
+      # 推送日报链接
       # =========================
 
-
-      - name: Send WeCom Text
+      - name: Send Daily Link
 
         continue-on-error: true
 
-
         run: |
-
 
           curl --max-time 20 \
           --connect-timeout 10 \
@@ -466,9 +459,7 @@ jobs:
 
           "content":
 
-          "# 运动鞋服行业资讯日报\n\n\
-          📌 日报链接：\n\
-          https://yangyituo1231.github.io/Trendradar-sports-news/daily-report.html"
+          "<https://yangyituo1231.github.io/Trendradar-sports-news/daily-report.html>"
 
           }
 
@@ -478,14 +469,48 @@ jobs:
 
 
 
-
       # =========================
-      # 微信周报图片
+      # 推送周报链接
       # 仅周一
       # =========================
 
+      - name: Send Weekly Link
 
-      - name: Send WeCom Image
+        if: steps.weekly.outputs.run_weekly == 'true'
+
+        continue-on-error: true
+
+
+        run: |
+
+          curl --max-time 20 \
+          --connect-timeout 10 \
+          "${{ secrets.REPORT_WEBHOOK }}" \
+          -H 'Content-Type: application/json' \
+          -d '{
+
+          "msgtype":"markdown",
+
+          "markdown":{
+
+          "content":
+
+          "<https://yangyituo1231.github.io/Trendradar-sports-news/weekly-report.html>"
+
+          }
+
+          }'
+
+
+
+
+
+      # =========================
+      # 推送周报图片
+      # 仅周一
+      # =========================
+
+      - name: Send Weekly Image
 
         if: steps.weekly.outputs.run_weekly == 'true'
 
@@ -497,7 +522,8 @@ jobs:
           REPORT_WEBHOOK: ${{ secrets.REPORT_WEBHOOK }}
 
 
-
         run: |
 
           python scripts/send_wecom_image.py
+
+
