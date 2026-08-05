@@ -19,7 +19,7 @@ MAX_ITEMS = 200
 
 RSS_PER_QUERY_LIMIT = 10
 
-RECENT_DAYS = 3
+RECENT_DAYS = 7
 
 
 OUT_DIR = Path("output/weekly")
@@ -677,8 +677,6 @@ def is_bad_news(title):
 
         return True
 
-            return True
-
 
 
     return False
@@ -1011,14 +1009,6 @@ def score_news(item):
     if category=="kids":
 
         score += 15
-    if category=="macro":
-
-    score +=35
-
-
-    if category=="report":
-
-    score +=35
 
 
 
