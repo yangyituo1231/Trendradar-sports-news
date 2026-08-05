@@ -1,0 +1,107 @@
+rss:
+
+  # ==========================
+  # 国际运动品牌
+  # ==========================
+
+  - name: Nike News
+    url: https://news.nike.com/news/feed
+
+  - name: Adidas News
+    url: https://news.adidas.com/rss
+
+  - name: Puma News
+    url: https://about.puma.com/en/rss.xml
+
+  - name: On Running
+    url: https://www.on.com/en-us/stories/rss.xml
+
+  - name: Hoka
+    url: https://www.hoka.com/blog/feed/
+
+  - name: ASICS
+    url: https://corp.asics.com/en/rss
+
+
+  # ==========================
+  # 全球鞋服行业媒体
+  # ==========================
+
+  - name: Footwear News
+    url: https://footwearnews.com/feed/
+
+  - name: Fashion Network
+    url: https://ww.fashionnetwork.com/rss
+
+  - name: Retail Dive
+    url: https://www.retaildive.com/feeds/news/
+
+  - name: WWD
+    url: https://wwd.com/feed/
+
+
+  # ==========================
+  # 中国运动品牌
+  # ==========================
+
+  - name: 安踏集团
+    url: https://www.anta.com/rss
+
+  - name: 李宁
+    url: https://ir.lining.com/rss
+
+  - name: 特步国际
+    url: https://www.xtep.com/rss
+
+
+  # ==========================
+  # 中国商业零售
+  # ==========================
+
+  - name: 赢商网
+    url: https://news.winshang.com/rss/
+
+  - name: 联商网
+    url: https://www.linkshop.com.cn/rss
+
+  - name: 亿邦动力
+    url: https://www.ebrun.com/rss
+
+
+  # ==========================
+  # 电商平台
+  # ==========================
+
+  - name: 淘宝天猫
+    url: https://www.alibabagroup.com/rss
+
+  - name: 京东
+    url: https://ir.jd.com/rss
+
+  - name: 抖音电商
+    url: https://www.douyinec.com/rss
+
+
+  # ==========================
+  # 消费与宏观
+  # ==========================
+
+  - name: 国家统计局
+    url: https://www.stats.gov.cn/rss.xml
+
+  - name: 商务部
+    url: http://www.mofcom.gov.cn/rss/index.xml
+
+  - name: 新华财经
+    url: https://www.news.cn/fortune/rss.xml
+
+
+  # ==========================
+  # 体育产业
+  # ==========================
+
+  - name: Sportico
+    url: https://www.sportico.com/feed/
+
+  - name: SportsPro
+    url: https://www.sportspro.com/feed/
