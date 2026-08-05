@@ -1,26 +1,21 @@
-cc<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 
 <head>
 
 <meta charset="UTF-8">
 
-<meta name="viewport"
-content="width=device-width,initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>
-361°儿童行业情报日报
+361°儿童行业情报简报
 </title>
 
 
 <style>
 
-
 *{
-
 box-sizing:border-box;
-
 }
 
 
@@ -28,7 +23,7 @@ body{
 
 margin:0;
 
-background:#f5f6f8;
+background:#f3f5f7;
 
 font-family:
 "Microsoft YaHei",
@@ -48,13 +43,14 @@ width:1280px;
 
 margin:20px auto;
 
-background:white;
+background:#ffffff;
 
-padding:36px 42px;
+padding:36px 45px;
 
 }
 
 
+/* 顶部 */
 
 .header{
 
@@ -64,16 +60,14 @@ justify-content:space-between;
 
 align-items:center;
 
-border-bottom:
-3px solid #f58220;
-
 padding-bottom:22px;
+
+border-bottom:3px solid #f58220;
 
 }
 
 
-
-.logo-title{
+.title{
 
 font-size:34px;
 
@@ -84,34 +78,27 @@ color:#111827;
 }
 
 
-
 .subtitle{
-
-font-size:15px;
-
-color:#687386;
 
 margin-top:8px;
 
-}
+font-size:15px;
 
+color:#667085;
+
+}
 
 
 .date-box{
 
 text-align:right;
 
-color:#555;
-
-font-size:14px;
-
 }
 
 
+.date{
 
-.date-main{
-
-font-size:24px;
+font-size:25px;
 
 font-weight:bold;
 
@@ -120,10 +107,23 @@ color:#f58220;
 }
 
 
+.time{
+
+font-size:13px;
+
+color:#667085;
+
+margin-top:6px;
+
+}
+
+
+
+/* 通用模块 */
 
 .section{
 
-margin-top:26px;
+margin-top:30px;
 
 }
 
@@ -131,18 +131,17 @@ margin-top:26px;
 
 .section-title{
 
-display:flex;
-
-align-items:center;
-
 font-size:22px;
 
 font-weight:bold;
 
+display:flex;
+
+align-items:center;
+
 margin-bottom:16px;
 
 }
-
 
 
 .section-title:before{
@@ -155,189 +154,35 @@ height:22px;
 
 background:#f58220;
 
-margin-right:10px;
-
 border-radius:3px;
+
+margin-right:10px;
 
 }
 
 
 
-.summary-box{
+/* 今日判断 */
 
-background:
-linear-gradient(
-135deg,
-#fff7ef,
-#ffffff
-);
+.summary{
 
-border-left:
-5px solid #f58220;
+background:#fff7ed;
 
-padding:18px 22px;
+border-left:5px solid #f58220;
+
+padding:20px 24px;
 
 font-size:18px;
 
-line-height:1.7;
+line-height:1.8;
 
 }
 
 
 
-.card-grid{
+/* TOP新闻 */
 
-display:grid;
-
-grid-template-columns:
-repeat(4,1fr);
-
-gap:16px;
-
-}
-
-
-
-.news-card{
-
-border:
-
-1px solid #e5e7eb;
-
-border-radius:10px;
-
-padding:16px;
-
-background:white;
-
-min-height:145px;
-
-}
-
-
-
-.news-tag{
-
-display:inline-block;
-
-font-size:12px;
-
-background:#eef5ff;
-
-color:#2563eb;
-
-padding:
-4px 10px;
-
-border-radius:20px;
-
-margin-bottom:10px;
-
-}
-
-
-
-.news-title{
-
-font-size:16px;
-
-font-weight:bold;
-
-line-height:1.5;
-
-}
-
-
-
-.news-reason{
-
-margin-top:10px;
-
-font-size:13px;
-
-color:#667085;
-
-line-height:1.5;
-
-}
-
-
-
-.importance{
-
-color:#f58220;
-
-font-size:12px;
-
-margin-top:8px;
-
-}
-
-
-
-.competitor-list{
-
-border:
-1px solid #e5e7eb;
-
-border-radius:10px;
-
-overflow:hidden;
-
-}
-
-
-
-.competitor-item{
-
-display:flex;
-
-align-items:center;
-
-padding:12px 18px;
-
-border-bottom:
-1px solid #f0f0f0;
-
-font-size:15px;
-
-}
-
-
-
-.competitor-item:last-child{
-
-border-bottom:none;
-
-}
-
-
-
-.brand{
-
-width:120px;
-
-font-weight:bold;
-
-color:#f58220;
-
-}
-
-
-
-.source{
-
-margin-left:auto;
-
-font-size:12px;
-
-color:#98a2b3;
-
-}
-
-
-
-.trend-grid{
+.news-grid{
 
 display:grid;
 
@@ -349,92 +194,51 @@ gap:16px;
 }
 
 
+.news-card{
 
-.trend-card{
-
-background:#fafafa;
+border:1px solid #e5e7eb;
 
 border-radius:10px;
 
 padding:18px;
 
-border-left:
-4px solid #1d4ed8;
+background:white;
+
+}
+
+
+.news-head{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:12px;
 
 }
 
 
 
-.trend-title{
+.category{
 
-font-weight:bold;
+font-size:12px;
 
-font-size:17px;
+background:#eff6ff;
 
-margin-bottom:8px;
+color:#2563eb;
 
-}
+padding:4px 10px;
 
-
-
-.trend-desc{
-
-font-size:14px;
-
-line-height:1.6;
-
-color:#667085;
-
-}
-
-/* =====================
-   经营预警
-   ===================== */
-
-
-.warning-box{
-
-border-radius:10px;
-
-background:#fff8f1;
-
-border:
-1px solid #fed7aa;
-
-padding:8px 20px;
+border-radius:20px;
 
 }
 
 
+.level{
 
-.warning-item{
-
-padding:12px 0;
-
-font-size:15px;
-
-line-height:1.6;
-
-border-bottom:
-1px solid #fde7cf;
-
-}
-
-
-
-.warning-item:last-child{
-
-border-bottom:none;
-
-}
-
-
-
-.warning-icon{
-
-display:inline-block;
-
-margin-right:10px;
+font-size:12px;
 
 color:#f97316;
 
@@ -444,55 +248,42 @@ font-weight:bold;
 
 
 
+.news-title{
 
-/* =====================
-   天气提醒
-   ===================== */
+font-size:17px;
 
+font-weight:bold;
 
-.weather-box{
-
-background:#f8fafc;
-
-border-radius:10px;
-
-padding:16px 20px;
-
-font-size:14px;
-
-color:#475569;
-
-min-height:40px;
+line-height:1.5;
 
 }
 
 
+.news-info{
 
-
-/* =====================
-   页脚
-   ===================== */
-
-
-.footer{
-
-margin-top:30px;
-
-padding-top:15px;
-
-border-top:
-1px solid #e5e7eb;
-
-text-align:center;
+margin-top:8px;
 
 font-size:12px;
 
 color:#98a2b3;
 
-line-height:1.8;
+}
+
+
+
+.news-summary{
+
+margin-top:12px;
+
+font-size:14px;
+
+line-height:1.7;
+
+color:#475467;
 
 }
-  
+
+
 </style>
 
 
@@ -505,42 +296,36 @@ line-height:1.8;
 <div class="container">
 
 
-<!-- 顶部 -->
-
+<!-- HEADER -->
 
 <div class="header">
 
 
 <div>
 
+<div class="title">
 
-<div class="logo-title">
-
-361°儿童行业情报日报
+361°儿童行业情报简报
 
 </div>
 
 
 <div class="subtitle">
 
-每日精选 · 行业洞察 · 辅助经营决策
+运动鞋服 · 消费趋势 · 电商动态 · 宏观观察
 
 </div>
 
-
 </div>
-
 
 
 <div class="date-box">
 
-
-<div class="date-main">
+<div class="date">
 
 {{date}}
 
 </div>
-
 
 <div>
 
@@ -549,13 +334,12 @@ line-height:1.8;
 </div>
 
 
-<div>
+<div class="time">
 
 更新时间 {{update_time}}
 
 </div>
 
-
 </div>
 
 
@@ -563,7 +347,7 @@ line-height:1.8;
 
 
 
-<!-- 今日判断 -->
+<!-- 今日观察 -->
 
 
 <div class="section">
@@ -571,13 +355,12 @@ line-height:1.8;
 
 <div class="section-title">
 
-今日行业判断
+今日一句话观察
 
 </div>
 
 
-
-<div class="summary-box">
+<div class="summary">
 
 {{today_summary}}
 
@@ -585,6 +368,7 @@ line-height:1.8;
 
 
 </div>
+
 
 
 
@@ -596,21 +380,33 @@ line-height:1.8;
 
 <div class="section-title">
 
-重点资讯 TOP8
+今日重点资讯 TOP8
 
 </div>
 
 
-<div class="card-grid">
+<div class="news-grid">
 
 
 
 <div class="news-card">
 
 
-<div class="news-tag">
+<div class="news-head">
+
+<div class="category">
 
 {{top1_category}}
+
+</div>
+
+
+<div class="level">
+
+{{top1_level}}
+
+</div>
+
 
 </div>
 
@@ -622,16 +418,16 @@ line-height:1.8;
 </div>
 
 
-<div class="news-reason">
+<div class="news-info">
 
-{{top1_reason}}
+{{top1_source}} ｜ {{top1_time}}
 
 </div>
 
 
-<div class="importance">
+<div class="news-summary">
 
-重要度：{{top1_importance}}
+{{top1_summary}}
 
 </div>
 
@@ -645,9 +441,21 @@ line-height:1.8;
 <div class="news-card">
 
 
-<div class="news-tag">
+<div class="news-head">
+
+<div class="category">
 
 {{top2_category}}
+
+</div>
+
+
+<div class="level">
+
+{{top2_level}}
+
+</div>
+
 
 </div>
 
@@ -659,30 +467,43 @@ line-height:1.8;
 </div>
 
 
-<div class="news-reason">
+<div class="news-info">
 
-{{top2_reason}}
-
-</div>
-
-
-<div class="importance">
-
-重要度：{{top2_importance}}
+{{top2_source}} ｜ {{top2_time}}
 
 </div>
 
 
+<div class="news-summary">
+
+{{top2_summary}}
+
 </div>
+
+
+</div>
+
 
 
 
 <div class="news-card">
 
 
-<div class="news-tag">
+<div class="news-head">
+
+<div class="category">
 
 {{top3_category}}
+
+</div>
+
+
+<div class="level">
+
+{{top3_level}}
+
+</div>
+
 
 </div>
 
@@ -694,16 +515,16 @@ line-height:1.8;
 </div>
 
 
-<div class="news-reason">
+<div class="news-info">
 
-{{top3_reason}}
+{{top3_source}} ｜ {{top3_time}}
 
 </div>
 
 
-<div class="importance">
+<div class="news-summary">
 
-重要度：{{top3_importance}}
+{{top3_summary}}
 
 </div>
 
@@ -715,9 +536,21 @@ line-height:1.8;
 <div class="news-card">
 
 
-<div class="news-tag">
+<div class="news-head">
+
+<div class="category">
 
 {{top4_category}}
+
+</div>
+
+
+<div class="level">
+
+{{top4_level}}
+
+</div>
+
 
 </div>
 
@@ -729,22 +562,21 @@ line-height:1.8;
 </div>
 
 
-<div class="news-reason">
+<div class="news-info">
 
-{{top4_reason}}
-
-</div>
-
-
-<div class="importance">
-
-重要度：{{top4_importance}}
+{{top4_source}} ｜ {{top4_time}}
 
 </div>
 
 
+<div class="news-summary">
+
+{{top4_summary}}
+
 </div>
 
+
+</div>
 
 
 </div>
@@ -754,18 +586,31 @@ line-height:1.8;
 
 <!-- TOP资讯 5-8 -->
 
+
 <div class="section">
 
 
-<div class="card-grid">
+<div class="news-grid">
+
 
 
 <div class="news-card">
 
 
-<div class="news-tag">
+<div class="news-head">
+
+<div class="category">
 
 {{top5_category}}
+
+</div>
+
+
+<div class="level">
+
+{{top5_level}}
+
+</div>
 
 </div>
 
@@ -777,16 +622,16 @@ line-height:1.8;
 </div>
 
 
-<div class="news-reason">
+<div class="news-info">
 
-{{top5_reason}}
+{{top5_source}} ｜ {{top5_time}}
 
 </div>
 
 
-<div class="importance">
+<div class="news-summary">
 
-重要度：{{top5_importance}}
+{{top5_summary}}
 
 </div>
 
@@ -799,9 +644,20 @@ line-height:1.8;
 <div class="news-card">
 
 
-<div class="news-tag">
+<div class="news-head">
+
+<div class="category">
 
 {{top6_category}}
+
+</div>
+
+
+<div class="level">
+
+{{top6_level}}
+
+</div>
 
 </div>
 
@@ -813,16 +669,16 @@ line-height:1.8;
 </div>
 
 
-<div class="news-reason">
+<div class="news-info">
 
-{{top6_reason}}
+{{top6_source}} ｜ {{top6_time}}
 
 </div>
 
 
-<div class="importance">
+<div class="news-summary">
 
-重要度：{{top6_importance}}
+{{top6_summary}}
 
 </div>
 
@@ -835,9 +691,20 @@ line-height:1.8;
 <div class="news-card">
 
 
-<div class="news-tag">
+<div class="news-head">
+
+<div class="category">
 
 {{top7_category}}
+
+</div>
+
+
+<div class="level">
+
+{{top7_level}}
+
+</div>
 
 </div>
 
@@ -849,16 +716,16 @@ line-height:1.8;
 </div>
 
 
-<div class="news-reason">
+<div class="news-info">
 
-{{top7_reason}}
+{{top7_source}} ｜ {{top7_time}}
 
 </div>
 
 
-<div class="importance">
+<div class="news-summary">
 
-重要度：{{top7_importance}}
+{{top7_summary}}
 
 </div>
 
@@ -871,9 +738,20 @@ line-height:1.8;
 <div class="news-card">
 
 
-<div class="news-tag">
+<div class="news-head">
+
+<div class="category">
 
 {{top8_category}}
+
+</div>
+
+
+<div class="level">
+
+{{top8_level}}
+
+</div>
 
 </div>
 
@@ -885,27 +763,172 @@ line-height:1.8;
 </div>
 
 
-<div class="news-reason">
+<div class="news-info">
 
-{{top8_reason}}
-
-</div>
-
-
-<div class="importance">
-
-重要度：{{top8_importance}}
+{{top8_source}} ｜ {{top8_time}}
 
 </div>
 
 
-</div>
+<div class="news-summary">
 
+{{top8_summary}}
 
 </div>
 
 
 </div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- 电商平台动态 -->
+
+
+<div class="section">
+
+
+<div class="section-title">
+
+电商平台动态
+
+</div>
+
+
+
+<div class="list-box">
+
+
+
+<div class="list-item">
+
+<div class="list-tag">
+
+{{ec1_platform}}
+
+</div>
+
+<div class="list-content">
+
+<strong>{{ec1_title}}</strong>
+
+<br>
+
+{{ec1_summary}}
+
+</div>
+
+
+</div>
+
+
+
+<div class="list-item">
+
+<div class="list-tag">
+
+{{ec2_platform}}
+
+</div>
+
+<div class="list-content">
+
+<strong>{{ec2_title}}</strong>
+
+<br>
+
+{{ec2_summary}}
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="list-item">
+
+<div class="list-tag">
+
+{{ec3_platform}}
+
+</div>
+
+<div class="list-content">
+
+<strong>{{ec3_title}}</strong>
+
+<br>
+
+{{ec3_summary}}
+
+</div>
+
+
+</div>
+
+
+
+<div class="list-item">
+
+<div class="list-tag">
+
+{{ec4_platform}}
+
+</div>
+
+<div class="list-content">
+
+<strong>{{ec4_title}}</strong>
+
+<br>
+
+{{ec4_summary}}
+
+</div>
+
+
+</div>
+
+
+
+<div class="list-item">
+
+<div class="list-tag">
+
+{{ec5_platform}}
+
+</div>
+
+<div class="list-content">
+
+<strong>{{ec5_title}}</strong>
+
+<br>
+
+{{ec5_summary}}
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
 
 
 
@@ -924,34 +947,29 @@ line-height:1.8;
 
 
 
-<div class="competitor-list">
+<div class="competitor-grid">
 
 
-<div class="competitor-item">
 
-<span class="brand">
+<div class="competitor-card">
+
+<div class="brand">
 
 {{comp1_brand}}
 
-</span>
+</div>
 
-
-<span>
+<div class="comp-title">
 
 {{comp1_title}}
 
-</span>
+</div>
 
+<div class="comp-summary">
 
-<span class="source">
+{{comp1_summary}}
 
-{{comp1_source}}
-
-</span>
-
-<span class="time">
-{{comp1_time}}
-</span>
+</div>
 
 
 </div>
@@ -959,27 +977,25 @@ line-height:1.8;
 
 
 
-<div class="competitor-item">
+<div class="competitor-card">
 
-<span class="brand">
+<div class="brand">
 
 {{comp2_brand}}
 
-</span>
+</div>
 
-
-<span>
+<div class="comp-title">
 
 {{comp2_title}}
 
-</span>
+</div>
 
+<div class="comp-summary">
 
-<span class="source">
+{{comp2_summary}}
 
-{{comp2_source}}
-
-</span>
+</div>
 
 
 </div>
@@ -987,27 +1003,25 @@ line-height:1.8;
 
 
 
-<div class="competitor-item">
+<div class="competitor-card">
 
-<span class="brand">
+<div class="brand">
 
 {{comp3_brand}}
 
-</span>
+</div>
 
-
-<span>
+<div class="comp-title">
 
 {{comp3_title}}
 
-</span>
+</div>
 
+<div class="comp-summary">
 
-<span class="source">
+{{comp3_summary}}
 
-{{comp3_source}}
-
-</span>
+</div>
 
 
 </div>
@@ -1015,27 +1029,25 @@ line-height:1.8;
 
 
 
-<div class="competitor-item">
+<div class="competitor-card">
 
-<span class="brand">
+<div class="brand">
 
 {{comp4_brand}}
 
-</span>
+</div>
 
-
-<span>
+<div class="comp-title">
 
 {{comp4_title}}
 
-</span>
+</div>
 
+<div class="comp-summary">
 
-<span class="source">
+{{comp4_summary}}
 
-{{comp4_source}}
-
-</span>
+</div>
 
 
 </div>
@@ -1043,27 +1055,50 @@ line-height:1.8;
 
 
 
-<div class="competitor-item">
+<div class="competitor-card">
 
-<span class="brand">
+<div class="brand">
 
 {{comp5_brand}}
 
-</span>
+</div>
 
-
-<span>
+<div class="comp-title">
 
 {{comp5_title}}
 
-</span>
+</div>
+
+<div class="comp-summary">
+
+{{comp5_summary}}
+
+</div>
 
 
-<span class="source">
+</div>
 
-{{comp5_source}}
 
-</span>
+
+<div class="competitor-card">
+
+<div class="brand">
+
+{{comp6_brand}}
+
+</div>
+
+<div class="comp-title">
+
+{{comp6_title}}
+
+</div>
+
+<div class="comp-summary">
+
+{{comp6_summary}}
+
+</div>
 
 
 </div>
@@ -1074,12 +1109,7 @@ line-height:1.8;
 
 
 </div>
-
-
-
-
-
-<!-- 行业趋势 -->
+<!-- 行业研究与趋势 -->
 
 
 <div class="section">
@@ -1087,49 +1117,36 @@ line-height:1.8;
 
 <div class="section-title">
 
-行业趋势与机会
+行业研究与趋势
 
 </div>
 
 
 
-<div class="trend-grid">
+<div class="report-grid">
 
 
-<div class="trend-card">
+
+<div class="report-card">
 
 
-<div class="trend-title">
+<div class="report-tag">
 
-{{trend1_title}}
-
-</div>
-
-
-<div class="trend-desc">
-
-{{trend1_desc}}
+{{report1_category}}
 
 </div>
 
 
-</div>
+<div class="report-title">
 
-
-
-<div class="trend-card">
-
-
-<div class="trend-title">
-
-{{trend2_title}}
+{{report1_title}}
 
 </div>
 
 
-<div class="trend-desc">
+<div class="report-summary">
 
-{{trend2_desc}}
+{{report1_summary}}
 
 </div>
 
@@ -1138,42 +1155,26 @@ line-height:1.8;
 
 
 
-
-<div class="trend-card">
-
-
-<div class="trend-title">
-
-{{trend3_title}}
-
-</div>
+<div class="report-card">
 
 
-<div class="trend-desc">
+<div class="report-tag">
 
-{{trend3_desc}}
+{{report2_category}}
 
 </div>
 
 
-</div>
+<div class="report-title">
 
-
-
-
-<div class="trend-card">
-
-
-<div class="trend-title">
-
-{{trend4_title}}
+{{report2_title}}
 
 </div>
 
 
-<div class="trend-desc">
+<div class="report-summary">
 
-{{trend4_desc}}
+{{report2_summary}}
 
 </div>
 
@@ -1182,32 +1183,65 @@ line-height:1.8;
 
 
 
+<div class="report-card">
+
+
+<div class="report-tag">
+
+{{report3_category}}
+
+</div>
+
+
+<div class="report-title">
+
+{{report3_title}}
+
+</div>
+
+
+<div class="report-summary">
+
+{{report3_summary}}
+
 </div>
 
 
 </div>
 
 
-<!-- 经营关注 -->
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- 今日关注 -->
+
 
 <div class="section">
 
 
 <div class="section-title">
 
-经营关注
+今日关注
 
 </div>
 
 
 
-<div class="warning-box">
+<div class="attention-box">
 
 
-<div class="warning-item">
+<div class="attention-item">
 
-<span class="warning-icon">
-⚠
+<span>
+①
 </span>
 
 {{warning1}}
@@ -1216,10 +1250,10 @@ line-height:1.8;
 
 
 
-<div class="warning-item">
+<div class="attention-item">
 
-<span class="warning-icon">
-⚠
+<span>
+②
 </span>
 
 {{warning2}}
@@ -1228,10 +1262,10 @@ line-height:1.8;
 
 
 
-<div class="warning-item">
+<div class="attention-item">
 
-<span class="warning-icon">
-⚠
+<span>
+③
 </span>
 
 {{warning3}}
@@ -1247,37 +1281,40 @@ line-height:1.8;
 
 
 
-<!-- 异常天气提醒 -->
 
 
-<div class="section"
-id="weather-section">
+<!-- 异常提醒 -->
+
+
+<div class="section">
 
 
 <div class="section-title">
 
-异常天气提醒
+异常提醒
 
 </div>
 
 
 
-<div class="weather-box">
+<div class="alert-box">
 
 
-{{weather_warning}}
-
-
-
-</div>
+{{alert_content}}
 
 
 </div>
 
 
+</div>
 
 
-<!-- 页脚 -->
+
+
+
+
+
+<!-- FOOTER -->
 
 
 <div class="footer">
@@ -1287,14 +1324,19 @@ id="weather-section">
 
 &nbsp;&nbsp; | &nbsp;&nbsp;
 
-行业信息自动生成系统
+行业情报自动生成系统
+
 
 <br>
 
-数据来源：公开资讯 / 行业媒体 / 平台信息
+
+数据来源：
+
+行业媒体 / 电商平台 / 企业公告 / 公开研究报告 / 宏观数据
 
 
 </div>
+
 
 
 
