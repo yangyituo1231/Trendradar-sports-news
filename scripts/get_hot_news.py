@@ -22,9 +22,12 @@ RSS_PER_QUERY_LIMIT = 10
 RECENT_DAYS = 7
 
 
-OUT_DIR = Path("output/weekly")
+WEEKLY_DIR = Path("output/weekly")
+WEEKLY_FILE = WEEKLY_DIR / "weekly_news.json"
 
-OUT_FILE = OUT_DIR / "weekly_news.json"
+
+DAILY_DIR = Path("output/news")
+DAILY_FILE = DAILY_DIR / "latest.json"
 
 
 NOW = datetime.now()
@@ -191,6 +194,14 @@ QUERY_GROUPS = {
     "明星代言 运动品牌",
 
     "IP合作 运动品牌"
+    "运动品牌 财报",
+    "运动品牌 毛利率",
+    "运动品牌 渠道",
+    "运动品牌 门店",
+    "运动品牌 库存",
+    "运动品牌 出海",
+    "运动品牌 中国市场"
+    
 
 ],
 
@@ -1624,26 +1635,34 @@ def main():
 
 
 
-    OUT_DIR.mkdir(
+
+    WEEKLY_DIR.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+    DAILY_DIR.mkdir(
         parents=True,
         exist_ok=True
     )
 
 
-    OUT_FILE.write_text(
+    content = json.dumps(
+        payload,
+        ensure_ascii=False,
+        indent=2
+    )
 
-        json.dumps(
 
-            payload,
+    WEEKLY_FILE.write_text(
+        content,
+        encoding="utf-8" 
+    )
 
-            ensure_ascii=False,
 
-            indent=2
-
-        ),
-
+    DAILY_FILE.write_text(
+        content,
         encoding="utf-8"
-
     )
 
 
