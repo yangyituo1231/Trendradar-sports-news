@@ -504,9 +504,11 @@ Puma、On、HOKA、lululemon等
 [
 {{
 "title":"",
+"url":"",
 "category":"",
 "source":"",
 "time":"",
+"summary":"",
 "summary":"",
 "level":"★★★★★"
 }}
@@ -559,6 +561,12 @@ category只能使用：
 
             "title":
             short(row.get("title",""),60),
+
+            "url":
+            row.get(
+                "url",
+                ""
+           ),
 
             "category":
             row.get(
@@ -719,6 +727,7 @@ def build_ec_news():
 {{
 "platform":"",
 "title":"",
+"url":"",
 "summary":""
 }}
 ]
@@ -804,7 +813,7 @@ def build_competitor_news():
         "昂跑",
         "On",
         "lululemon",
-        "始祖鸟"
+        "始祖鸟",
         "New Balance",
         "锐步",
         "Under Armour",
@@ -844,6 +853,7 @@ def build_competitor_news():
         {
         "brand":"",
         "title":"",
+        "url":"",
         "summary":""
         }
 
