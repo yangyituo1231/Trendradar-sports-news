@@ -193,7 +193,7 @@ QUERY_GROUPS = {
 
     "明星代言 运动品牌",
 
-    "IP合作 运动品牌"
+    "IP合作 运动品牌",
     "运动品牌 财报",
     "运动品牌 毛利率",
     "运动品牌 渠道",
@@ -1666,9 +1666,15 @@ def main():
     )
 
 
+
     print(
         "saved:",
-        OUT_FILE
+        WEEKLY_FILE
+    )
+
+    print(
+        "saved:",
+        DAILY_FILE
     )
 
 
