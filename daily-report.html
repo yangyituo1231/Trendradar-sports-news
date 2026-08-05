@@ -50,7 +50,10 @@ padding:36px 45px;
 }
 
 
-/* 顶部 */
+/* ======================
+顶部
+====================== */
+
 
 .header{
 
@@ -119,14 +122,18 @@ margin-top:6px;
 
 
 
-/* 通用模块 */
+/* ======================
+模块
+====================== */
+
 
 .section{
 
-margin-top:30px;
+margin-top:45px;
+
+padding-bottom:20px;
 
 }
-
 
 
 .section-title{
@@ -139,7 +146,7 @@ display:flex;
 
 align-items:center;
 
-margin-bottom:16px;
+margin-bottom:22px;
 
 }
 
@@ -162,7 +169,11 @@ margin-right:10px;
 
 
 
-/* 今日判断 */
+
+/* ======================
+一句话观察
+====================== */
+
 
 .summary{
 
@@ -176,11 +187,17 @@ font-size:18px;
 
 line-height:1.8;
 
+border-radius:8px;
+
 }
 
 
 
-/* TOP新闻 */
+
+/* ======================
+TOP新闻
+====================== */
+
 
 .news-grid{
 
@@ -189,22 +206,37 @@ display:grid;
 grid-template-columns:
 repeat(2,1fr);
 
-gap:16px;
+gap:18px;
 
 }
+
 
 
 .news-card{
 
 border:1px solid #e5e7eb;
 
-border-radius:10px;
+border-radius:12px;
 
-padding:18px;
+padding:20px;
 
-background:white;
+min-height:220px;
+
+background:#ffffff;
+
+transition:.2s;
 
 }
+
+
+
+.news-card:hover{
+
+box-shadow:0 5px 15px rgba(0,0,0,.06);
+
+}
+
+
 
 
 .news-head{
@@ -236,6 +268,7 @@ border-radius:20px;
 }
 
 
+
 .level{
 
 font-size:12px;
@@ -248,6 +281,7 @@ font-weight:bold;
 
 
 
+
 .news-title{
 
 font-size:17px;
@@ -256,12 +290,42 @@ font-weight:bold;
 
 line-height:1.5;
 
+min-height:52px;
+
+display:-webkit-box;
+
+-webkit-line-clamp:2;
+
+-webkit-box-orient:vertical;
+
+overflow:hidden;
+
 }
+
+
+
+.news-title a{
+
+text-decoration:none;
+
+color:#312e81;
+
+}
+
+
+
+.news-title a:hover{
+
+color:#f58220;
+
+}
+
+
 
 
 .news-info{
 
-margin-top:8px;
+margin-top:10px;
 
 font-size:12px;
 
@@ -282,6 +346,328 @@ line-height:1.7;
 color:#475467;
 
 }
+
+
+
+
+/* ======================
+链接统一
+====================== */
+
+
+.list-content a,
+.comp-title a,
+.report-title a{
+
+color:#172033;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+.list-content a:hover,
+.comp-title a:hover,
+.report-title a:hover{
+
+color:#f58220;
+
+}
+
+
+
+
+
+/* ======================
+电商动态
+====================== */
+
+
+.list-box{
+
+display:flex;
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+
+
+.list-item{
+
+display:flex;
+
+align-items:flex-start;
+
+gap:15px;
+
+padding:14px 18px;
+
+border:1px solid #e5e7eb;
+
+border-radius:10px;
+
+background:#ffffff;
+
+}
+
+
+
+.list-tag{
+
+min-width:80px;
+
+height:28px;
+
+line-height:28px;
+
+text-align:center;
+
+background:#fff7ed;
+
+color:#f58220;
+
+border-radius:15px;
+
+font-size:13px;
+
+font-weight:bold;
+
+}
+
+
+
+.list-content{
+
+font-size:14px;
+
+line-height:1.7;
+
+}
+
+
+
+
+
+/* ======================
+竞品动态
+====================== */
+
+
+.competitor-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:16px;
+
+}
+
+
+
+.competitor-card{
+
+border:1px solid #e5e7eb;
+
+border-radius:10px;
+
+padding:16px;
+
+background:white;
+
+}
+
+
+
+.brand{
+
+font-size:14px;
+
+font-weight:bold;
+
+color:#f58220;
+
+margin-bottom:8px;
+
+}
+
+
+
+.comp-title{
+
+font-size:15px;
+
+line-height:1.5;
+
+}
+
+
+
+.comp-summary{
+
+margin-top:8px;
+
+font-size:13px;
+
+line-height:1.6;
+
+color:#667085;
+
+}
+
+
+
+
+
+/* ======================
+行业研究
+====================== */
+
+
+.report-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:16px;
+
+}
+
+
+
+.report-card{
+
+border:1px solid #e5e7eb;
+
+border-radius:10px;
+
+padding:16px;
+
+}
+
+
+
+.report-tag{
+
+font-size:12px;
+
+color:#2563eb;
+
+}
+
+
+
+.report-title{
+
+margin-top:8px;
+
+font-size:15px;
+
+line-height:1.5;
+
+}
+
+
+
+.report-summary{
+
+margin-top:8px;
+
+font-size:13px;
+
+line-height:1.6;
+
+color:#667085;
+
+}
+
+
+
+
+
+/* ======================
+关注
+====================== */
+
+
+.attention-box{
+
+background:#f8fafc;
+
+padding:18px;
+
+border-radius:10px;
+
+}
+
+
+
+.attention-item{
+
+font-size:15px;
+
+line-height:2;
+
+}
+
+
+
+
+/* ======================
+异常提醒
+====================== */
+
+
+.alert-box{
+
+background:#fff1f2;
+
+border-left:5px solid #ef4444;
+
+padding:18px;
+
+font-size:15px;
+
+line-height:1.7;
+
+border-radius:8px;
+
+}
+
+
+
+
+/* ======================
+底部
+====================== */
+
+
+.footer{
+
+margin-top:40px;
+
+padding-top:20px;
+
+border-top:1px solid #e5e7eb;
+
+font-size:12px;
+
+color:#98a2b3;
+
+line-height:1.8;
+
+text-align:center;
+
+}
+
 
 
 </style>
@@ -818,7 +1204,9 @@ color:#475467;
 
 <div class="list-content">
 
+<a href="{{ec1_url}}" target="_blank">
 <strong>{{ec1_title}}</strong>
+</a>
 
 <br>
 
@@ -841,7 +1229,9 @@ color:#475467;
 
 <div class="list-content">
 
+<a href="{{ec2_url}}" target="_blank">
 <strong>{{ec2_title}}</strong>
+</a>
 
 <br>
 
@@ -865,7 +1255,9 @@ color:#475467;
 
 <div class="list-content">
 
+<a href="{{ec3_url}}" target="_blank">
 <strong>{{ec3_title}}</strong>
+</a>
 
 <br>
 
@@ -888,7 +1280,9 @@ color:#475467;
 
 <div class="list-content">
 
+<a href="{{ec4_url}}" target="_blank">
 <strong>{{ec4_title}}</strong>
+</a>
 
 <br>
 
@@ -911,7 +1305,9 @@ color:#475467;
 
 <div class="list-content">
 
+<a href="{{ec5_url}}" target="_blank">
 <strong>{{ec5_title}}</strong>
+</a>
 
 <br>
 
@@ -961,7 +1357,11 @@ color:#475467;
 
 <div class="comp-title">
 
+<a href="{{comp1_url}}" target="_blank">
+
 {{comp1_title}}
+
+</a>
 
 </div>
 
@@ -987,7 +1387,11 @@ color:#475467;
 
 <div class="comp-title">
 
+<a href="{{comp2_url}}" target="_blank">
+
 {{comp2_title}}
+
+</a>
 
 </div>
 
@@ -1013,7 +1417,11 @@ color:#475467;
 
 <div class="comp-title">
 
+<a href="{{comp3_url}}" target="_blank">
+
 {{comp3_title}}
+
+</a>
 
 </div>
 
@@ -1039,7 +1447,11 @@ color:#475467;
 
 <div class="comp-title">
 
+<a href="{{comp4_url}}" target="_blank">
+
 {{comp4_title}}
+
+</a>
 
 </div>
 
@@ -1065,7 +1477,11 @@ color:#475467;
 
 <div class="comp-title">
 
+<a href="{{comp5_url}}" target="_blank">
+
 {{comp5_title}}
+
+</a>
 
 </div>
 
@@ -1090,7 +1506,11 @@ color:#475467;
 
 <div class="comp-title">
 
+<a href="{{comp6_url}}" target="_blank">
+
 {{comp6_title}}
+
+</a>
 
 </div>
 
@@ -1139,7 +1559,11 @@ color:#475467;
 
 <div class="report-title">
 
+<a href="{{report1_url}}" target="_blank">
+
 {{report1_title}}
+
+</a>
 
 </div>
 
@@ -1167,7 +1591,11 @@ color:#475467;
 
 <div class="report-title">
 
+<a href="{{report2_url}}" target="_blank">
+
 {{report2_title}}
+
+</a>
 
 </div>
 
@@ -1195,7 +1623,11 @@ color:#475467;
 
 <div class="report-title">
 
+<a href="{{report3_url}}" target="_blank">
+
 {{report3_title}}
+
+</a>
 
 </div>
 
