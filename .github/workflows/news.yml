@@ -51,13 +51,10 @@ jobs:
           python -c "import os; print('python env exists?', bool(os.getenv('DEEPSEEK_API_KEY')))"
           python scripts/analyze_weekly.py
 
-      - name: Generate Weekly HTML
-        run: |
-          python scripts/generate_weekly_html.py
+      # - name: Generate Weekly HTML
+      #   run: |
+      #     python scripts/generate_weekly_html.py
 
-      - name: Generate Weekly PPT
-        run: |
-          python scripts/generate_weekly_ppt.py
 
       - name: Commit Generated Files
         run: |
