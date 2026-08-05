@@ -1,458 +1,1349 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+361°儿童行业情报简报
+</title>
+
+
 <style>
 
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#edf3fb;font-family:"Microsoft YaHei","PingFang SC",sans-serif;color:#1b3566;padding:12px}
-.page{width:1240px;margin:auto;background:linear-gradient(180deg,#fff 0%,#fbfdff 100%);border-radius:18px;border:1px solid #d8e3f2;box-shadow:0 14px 34px rgba(28,61,119,.12);padding:14px 18px 12px}
-
-.header{display:grid;grid-template-columns:1fr 540px;gap:12px;align-items:center;margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid #dde7f4}
-.main-title{font-size:50px;font-weight:950;line-height:1;letter-spacing:-2px;color:#06276a}
-.sub-title{margin-top:10px;font-size:17px;font-weight:700;color:#304d82}
-.stats{display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr;border-left:1px solid #dde7f4}
-.stat{text-align:center;border-right:1px solid #dde7f4;height:78px;display:flex;flex-direction:column;justify-content:center}
-.stat-title{font-size:13px;color:#183a76;font-weight:900}
-.stat-num{font-size:38px;font-weight:950;color:#085fde;line-height:1;margin-top:5px}
-.stat-small{margin-top:4px;font-size:11px;color:#7083a6}
-
-.insight-panel{display:grid;grid-template-columns:.9fr 2.1fr;gap:12px;margin-bottom:13px}
-.insight-card{border-radius:14px;border:1px solid #d8e3f2;background:linear-gradient(135deg,#f7fbff 0%,#eef6ff 100%);box-shadow:0 6px 16px rgba(20,60,110,.06);padding:12px 15px;min-height:82px}
-.insight-label{font-size:12px;font-weight:950;color:#0b5cd3;margin-bottom:6px;letter-spacing:.5px}
-.today-insight{font-size:20px;line-height:1.38;font-weight:950;color:#092c6d}
-.ai-summary{font-size:14px;line-height:1.55;font-weight:700;color:#28466f}
-
-.section{background:#fff;border:1px solid #d8e3f2;border-radius:14px;overflow:hidden;box-shadow:0 8px 22px rgba(20,60,110,.06)}
-.section-title{height:36px;padding:0 14px;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(90deg,#052b78 0%,#0a4cb5 65%,#0d6fe9 100%);color:#fff;font-size:17px;font-weight:950}
-.more{font-size:12px;color:#dcecff}
-.section-body{padding:12px 14px}
-
-.top-grid{display:grid;grid-template-columns:.98fr 1.02fr;gap:13px;margin-bottom:13px}
-
-.news-list{display:flex;flex-direction:column;gap:9px}
-.news-item{display:grid;grid-template-columns:30px 58px 1fr;gap:12px;align-items:center;min-height:78px;border-bottom:1px solid #edf2fa;padding-bottom:10px}
-.news-item:last-child{border-bottom:none;padding-bottom:0}
-.rank{width:28px;height:28px;border-radius:8px;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:950}
-.r1{background:#0d6fe9}.r2{background:#10a565}.r3{background:#ff9500}.r4{background:#7a4ae0}.r5{background:#1697df}
-.logo-box{width:58px;height:58px;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.18),0 6px 16px rgba(20,50,100,.18)}
-.logo-icon{font-size:20px;line-height:1}
-.logo-text{font-size:12px;font-weight:900;margin-top:3px}
-.logo-blue{background:linear-gradient(145deg,#0a3c96,#0d73ea)}
-.logo-green{background:linear-gradient(145deg,#0b7b59,#18c17f)}
-.logo-orange{background:linear-gradient(145deg,#ff8a00,#ffb100)}
-.logo-purple{background:linear-gradient(145deg,#6c2bd8,#9058ff)}
-.logo-red{background:linear-gradient(145deg,#d62839,#ff6174)}
-.logo-dark{background:linear-gradient(145deg,#101826,#324154)}
-.logo-sky{background:linear-gradient(145deg,#0284c7,#38bdf8)}
-.news-title{font-size:16px;line-height:1.3;font-weight:950;color:#0d2d68;letter-spacing:.15px}
-.news-meta{margin:4px 0;font-size:11px;color:#7a8ba7}
-.news-desc{font-size:12.2px;line-height:1.38;color:#30486f}
-.tag{float:right;padding:3px 8px;border-radius:12px;background:#edf5ff;color:#0b5cd3;font-size:10px;font-weight:900}
-
-.weather-legend{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:8px}
-.legend-item{height:26px;border-radius:8px;border:1px solid #dbe6f6;background:#f7fbff;display:flex;align-items:center;justify-content:center;gap:4px;font-size:11px;font-weight:850}
-
-.weather-map{position:relative;height:250px;border-radius:12px;border:1px solid #dbe6f6;overflow:hidden;background:linear-gradient(180deg,#fbfdff 0%,#eef5ff 100%)}
-.weather-map.heat-hot{background:linear-gradient(180deg,#fff7ed 0%,#ffe8cc 100%)}
-.weather-map.heat-rain{background:linear-gradient(180deg,#eff6ff 0%,#dbeafe 100%)}
-.weather-map.heat-cold{background:linear-gradient(180deg,#f0f9ff 0%,#dff4ff 100%)}
-.weather-map.heat-normal{background:linear-gradient(180deg,#fbfdff 0%,#eef5ff 100%)}
-
-.heat-dot-hot{background:#ef4444!important}
-.heat-dot-rain{background:#2563eb!important}
-.heat-dot-cold{background:#38bdf8!important}
-.heat-dot-normal{background:#16a34a!important}
-
-.china-map{
-  position:absolute;
-  left:78px;
-  top:4px;
-  width:405px;
-  height:218px;
-  background:
-    radial-gradient(circle at 62% 42%, rgba(255,205,86,.16) 0%, rgba(255,205,86,0) 33%),
-    radial-gradient(circle at 72% 58%, rgba(96,165,250,.15) 0%, rgba(96,165,250,0) 34%),
-    radial-gradient(circle at 55% 78%, rgba(248,113,113,.13) 0%, rgba(248,113,113,0) 32%),
-    radial-gradient(circle at 35% 70%, rgba(74,222,128,.13) 0%, rgba(74,222,128,0) 34%),
-    radial-gradient(circle at 28% 45%, rgba(203,213,225,.18) 0%, rgba(203,213,225,0) 36%);
-  border-radius:16px;
-}
-
-.china-map-img{
-  position:absolute;
-  left:12px;
-  top:3px;
-  width:94%;
-  max-height:212px;
-  object-fit:contain;
-  opacity:.96;
-  filter:drop-shadow(0 8px 18px rgba(25,70,130,.10));
-  z-index:2;
-}
-
-.map-dot{position:absolute;width:11px;height:11px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 5px rgba(13,111,233,.08),0 6px 18px rgba(20,60,120,.20);animation:heatPulse 2.4s infinite ease-in-out;z-index:5}
-.dot-north{top:63px;right:168px}
-.dot-east{top:120px;right:103px}
-.dot-south{bottom:49px;right:162px}
-.dot-west{top:115px;left:123px}
-.dot-center{top:140px;left:187px}
-
-@keyframes heatPulse{0%{transform:scale(1);opacity:.82}50%{transform:scale(1.25);opacity:1}100%{transform:scale(1);opacity:.82}}
-
-.map-label{position:absolute;background:rgba(255,255,255,.96);border:1px solid #dbe6f6;border-radius:10px;padding:7px 10px;font-size:11px;line-height:1.4;box-shadow:0 5px 14px rgba(20,60,110,.08)}
-.l1{top:24px;right:12px;width:150px}
-.l2{top:105px;right:12px;width:160px}
-.l3{left:18px;top:42px;width:148px}
-.l4{left:18px;top:130px;width:158px}
-.l5{left:188px;bottom:12px;width:240px}
-
-.weather-table{width:100%;border-collapse:collapse;margin-top:8px;font-size:11.5px}
-.weather-table th{background:#f0f5ff;color:#173d7e;padding:5px;border:1px solid #dbe6f6;font-weight:950}
-.weather-table td{text-align:center;padding:5px;border:1px solid #dbe6f6}
-
-.region-radar{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:6px;
-}
-
-.radar-row{
-  display:grid;
-  grid-template-columns:145px 190px 250px 120px 1fr 78px;
-  gap:0;
-  border:1px solid #e1eaf7;
-  border-radius:12px;
-  overflow:hidden;
-  background:linear-gradient(180deg,#ffffff 0%,#fbfdff 100%);
-}
-
-.radar-head{
-  display:grid;
-  grid-template-columns:145px 190px 250px 120px 1fr 78px;
-  background:#f1f6ff;
-  border:1px solid #e1eaf7;
-  border-radius:12px;
-  overflow:hidden;
-  color:#133d7d;
-  font-size:13px;
-  font-weight:950;
-}
-
-.radar-head div{
-  padding:7px 8px;
-  text-align:center;
-  border-right:1px solid #e1eaf7;
-}
-
-.radar-head div:last-child{
-  border-right:none;
-}
-
-.radar-cell{
-  padding:6px 8px;
-  border-right:1px solid #e1eaf7;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  min-height:78px;
-}
-
-.radar-cell:last-child{
-  border-right:none;
-}
-
-.region-card{
-  display:flex;
-  align-items:center;
-  justify-content:flex-start;
-  gap:8px;
-  text-align:left;
-  width:100%;
-}
-
-.region-icon{
-  font-size:18px;
-  width:20px;
-  text-align:center;
-}
-
-.region-name{
-  font-size:14px;
-  line-height:1.2;
-  font-weight:950;
-  color:#0d3777;
-}
-
-.region-city{
-  font-size:11px;
-  line-height:1.35;
-  color:#4a638f;
-  margin-top:3px;
-  font-weight:800;
-}
-
-.signal-pill{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:4px 10px;
-  border-radius:999px;
-  background:#eef6ff;
-  color:#0b4db3;
-  font-weight:950;
-  font-size:12px;
-  line-height:1.25;
-}
-  .focus-pill{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:5px 10px;
-  border-radius:999px;
-  background:#f0f7ff;
-  color:#0b4db3;
-  font-size:12px;
-  font-weight:950;
-  line-height:1.25;
-  white-space:nowrap;
-}
-
-.action-text{
-  width:100%;
-  text-align:center;
-  font-size:11px;
-  line-height:1.3;
-  color:#0d2d68;
-  font-weight:900;
-  padding:0 6px;
-}
-
-.flow-text{
-  font-size:11px;
-  line-height:1.3;
-  color:#28466f;
-  font-weight:800;
-}
-
-.ai-judge{
-  text-align:left;
-  width:100%;
-}
-
-.ai-main{
-  font-size:12px;
-  line-height:1.5;
-  color:#0d2d68;
-  font-weight:950;
-  margin-bottom:5px;
-  text-align:left;
-}
-
-.ai-action{
-  font-size:11px;
-  line-height:1.45;
-  color:#365379;
-  font-weight:750;
-  text-align:left;
+*{
+box-sizing:border-box;
 }
 
 
-.star-red{
-  color:#e11d48;
-  font-size:25px;
-  font-weight:950;
+body{
+
+margin:0;
+
+background:#f3f5f7;
+
+font-family:
+"Microsoft YaHei",
+"PingFang SC",
+Arial,
+sans-serif;
+
+color:#172033;
+
 }
 
-.star-orange{
-  color:#ff8c1a;
-  font-size:25px;
-  font-weight:950;
+
+
+.container{
+
+width:1280px;
+
+margin:20px auto;
+
+background:#ffffff;
+
+padding:36px 45px;
+
 }
 
-.star-blue{
-  color:#0d6fe9;
-  font-size:25px;
-  font-weight:950;
+
+/* 顶部 */
+
+.header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding-bottom:22px;
+
+border-bottom:3px solid #f58220;
+
 }
 
-.bottom-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:14px;margin-top:8px;width:100%}
-.bottom-grid .section{width:100%}
-.trend-item{display:grid;grid-template-columns:40px 1fr 80px;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid #edf2fa}
-.trend-item:last-child{border-bottom:none}
-.trend-icon{width:38px;height:38px;border-radius:12px;background:#f0f6ff;display:flex;align-items:center;justify-content:center;font-size:22px}
-.trend-title{font-size:15px;font-weight:950;color:#0b3779}
-.trend-desc{margin-top:2px;font-size:12px;line-height:1.35;color:#3c4f73}
-.trend-tag{background:#eef8ef;color:#1d8c54;border-radius:12px;text-align:center;padding:4px 7px;font-size:10px;font-weight:850}
 
-.word-cloud{height:210px;position:relative;border-radius:12px;border:1px solid #edf2fa;background:linear-gradient(180deg,#fbfdff 0%,#f4f8ff 100%);overflow:hidden}
-.word{position:absolute;font-weight:950;white-space:nowrap;line-height:1;padding:0;border-radius:0;background:none!important;box-shadow:none}
-.w1{font-size:44px;color:#063b88;left:235px;top:82px}.w2{font-size:34px;color:#0b64d8;left:245px;top:132px}.w3{font-size:28px;color:#0f9f6e;left:285px;top:180px}.w4{font-size:24px;color:#dc2626;left:455px;top:112px}.w5{font-size:23px;color:#f97316;left:65px;top:98px}.w6{font-size:22px;color:#16a34a;left:88px;top:158px}.w7{font-size:20px;color:#7c3aed;left:145px;top:42px}.w8{font-size:19px;color:#0b55c8;left:500px;top:160px}.w9{font-size:18px;color:#dc2626;left:80px;top:205px}.w10{font-size:17px;color:#0f766e;left:430px;top:42px}.w11{font-size:16px;color:#2563eb;left:545px;top:70px}.w12{font-size:15px;color:#9333ea;left:420px;top:215px}.w13{font-size:15px;color:#ea580c;left:35px;top:35px}.w14{font-size:15px;color:#0f766e;left:560px;top:32px}.w15{font-size:14px;color:#1d4ed8;left:25px;top:225px}.w16{font-size:14px;color:#be123c;left:550px;top:215px}.w17{font-size:14px;color:#7c3aed;left:340px;top:22px}.w18{font-size:14px;color:#15803d;left:170px;top:222px}
+.title{
 
-.note{margin-top:6px;font-size:10px;color:#7384a2}
-.footer{margin-top:10px;display:flex;justify-content:space-between;font-size:10px;color:#7384a2}
+font-size:34px;
+
+font-weight:700;
+
+color:#111827;
+
+}
+
+
+.subtitle{
+
+margin-top:8px;
+
+font-size:15px;
+
+color:#667085;
+
+}
+
+
+.date-box{
+
+text-align:right;
+
+}
+
+
+.date{
+
+font-size:25px;
+
+font-weight:bold;
+
+color:#f58220;
+
+}
+
+
+.time{
+
+font-size:13px;
+
+color:#667085;
+
+margin-top:6px;
+
+}
+
+
+
+/* 通用模块 */
+
+.section{
+
+margin-top:30px;
+
+}
+
+
+
+.section-title{
+
+font-size:22px;
+
+font-weight:bold;
+
+display:flex;
+
+align-items:center;
+
+margin-bottom:16px;
+
+}
+
+
+.section-title:before{
+
+content:"";
+
+width:6px;
+
+height:22px;
+
+background:#f58220;
+
+border-radius:3px;
+
+margin-right:10px;
+
+}
+
+
+
+/* 今日判断 */
+
+.summary{
+
+background:#fff7ed;
+
+border-left:5px solid #f58220;
+
+padding:20px 24px;
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+
+
+/* TOP新闻 */
+
+.news-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:16px;
+
+}
+
+
+.news-card{
+
+border:1px solid #e5e7eb;
+
+border-radius:10px;
+
+padding:18px;
+
+background:white;
+
+}
+
+
+.news-head{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:12px;
+
+}
+
+
+
+.category{
+
+font-size:12px;
+
+background:#eff6ff;
+
+color:#2563eb;
+
+padding:4px 10px;
+
+border-radius:20px;
+
+}
+
+
+.level{
+
+font-size:12px;
+
+color:#f97316;
+
+font-weight:bold;
+
+}
+
+
+
+.news-title{
+
+font-size:17px;
+
+font-weight:bold;
+
+line-height:1.5;
+
+}
+
+
+.news-info{
+
+margin-top:8px;
+
+font-size:12px;
+
+color:#98a2b3;
+
+}
+
+
+
+.news-summary{
+
+margin-top:12px;
+
+font-size:14px;
+
+line-height:1.7;
+
+color:#475467;
+
+}
+
+
 </style>
+
+
 </head>
 
+
 <body>
-<div class="page">
+
+
+<div class="container">
+
+
+<!-- HEADER -->
+
 <div class="header">
-  <div><div class="main-title">运动品牌行业资讯日报</div><div class="sub-title">每日精选 · 洞察趋势 · 辅助决策</div></div>
-  <div class="stats">
-    <div class="stat"><div class="stat-title">📅 2026-08-05</div><div class="stat-small">星期三</div><div class="stat-small">更新于 02:29</div></div>
-    <div class="stat"><div class="stat-title">今日监测</div><div class="stat-num">246</div><div class="stat-small">条资讯</div></div>
-    <div class="stat"><div class="stat-title">RSS资讯</div><div class="stat-num">36</div><div class="stat-small">条</div></div>
-    <div class="stat"><div class="stat-title">重点摘要</div><div class="stat-num">5</div><div class="stat-small">条</div></div>
-  </div>
+
+
+<div>
+
+<div class="title">
+
+361°儿童行业情报简报
+
 </div>
 
-<div class="insight-panel">
-  <div class="insight-card"><div class="insight-label">今日一句</div><div class="today-insight">安踏签约NBA球星欧文，品牌资产再添重磅筹码，行业竞争格局生变。</div></div>
-  <div class="insight-card"><div class="insight-label">AI经营摘要（由DeepSeek生成）</div><div class="ai-summary">强降雨持续扰动客流，防雨防滑及室内运动场景成短期刚需。竞品暂无重大动作，建议借机强化361°儿童防滑鞋与室内综训品类露出，抢占雨天换购窗口。警惕库存周转放缓，优先在核心门店做防滑卖点话术落地。</div></div>
+
+<div class="subtitle">
+
+运动鞋服 · 消费趋势 · 电商动态 · 宏观观察
+
 </div>
 
-<div class="top-grid">
-  <div class="section">
-    <div class="section-title"><span>一、重点资讯精选（TOP 5）</span><span class="more">查看更多 ›</span></div>
-    <div class="section-body">
-      <div class="news-list">
-        <div class="news-item"><div class="rank r1">1</div><div class="logo-box logo-purple"><div class="logo-icon">🏷️</div><div class="logo-text">品牌</div></div><div><div class="news-title">运动品牌竞争加剧，产品心智与渠道效率成为关键 <span class="tag">品牌竞争</span></div><div class="news-meta">08-05 02:29 ｜ 行业观察</div><div class="news-desc">品牌重大动作反映竞争重心变化，需关注产品心智、代言资产、渠道声量与终端转化。</div></div></div>
-        <div class="news-item"><div class="rank r2">2</div><div class="logo-box logo-sky"><div class="logo-icon">🧒</div><div class="logo-text">童装</div></div><div><div class="news-title">儿童运动消费场景外扩，亲子与校园需求继续升温 <span class="tag">童装/儿童运动</span></div><div class="news-meta">08-05 02:29 ｜ 消费观察</div><div class="news-desc">儿童消费从单品购买转向亲子、校园、户外和运动场景综合经营。</div></div></div>
-        <div class="news-item"><div class="rank r3">3</div><div class="logo-box logo-blue"><div class="logo-icon">🛒</div><div class="logo-text">大促</div></div><div><div class="news-title">平台大促进入预热期，夏季功能品类承接需前置 <span class="tag">大促/电商</span></div><div class="news-meta">08-05 02:29 ｜ 平台资讯</div><div class="news-desc">平台流量与大促节奏变化，重点观察夏季品类曝光、直播转化与终端承接。</div></div></div>
-        <div class="news-item"><div class="rank r4">4</div><div class="logo-box logo-sky"><div class="logo-icon">☀️</div><div class="logo-text">天气</div></div><div><div class="news-title">天气变化影响客流节奏，功能品类进入动态调整窗口 <span class="tag">天气/功能消费</span></div><div class="news-meta">08-05 02:29 ｜ 公开气象信息</div><div class="news-desc">天气变化影响客流和主推节奏，防晒、凉感、防雨、防滑及保暖品类需动态前置。</div></div></div>
-        <div class="news-item"><div class="rank r5">5</div><div class="logo-box logo-green"><div class="logo-icon">🚴</div><div class="logo-text">户外</div></div><div><div class="news-title">跑步、骑行与轻户外场景延续，运动装备需求扩张 <span class="tag">户外/运动场景</span></div><div class="news-meta">08-05 02:29 ｜ 消费观察</div><div class="news-desc">户外、跑步、骑行、赛事和夜间消费延伸运动场景，带动装备与亲子需求。</div></div></div>
-      </div>
-      <div class="note">注：以上资讯来自公开媒体及平台，仅供经营观察参考。</div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-title"><span>二、全国天气预报概览（08-05 ~ 08-07）</span></div>
-    <div class="section-body">
-      <div class="weather-legend">
-        <div class="legend-item">☔ 暴雨/强对流</div><div class="legend-item">🌡️ 高温/升温</div><div class="legend-item">☀️ 户外出行</div><div class="legend-item">🌧️ 局地冰雹</div><div class="legend-item">🌬️ 阵风影响</div>
-      </div>
-      <div class="weather-map heat-rain">
-        <div class="china-map">
-          <img src="_image/china-map.png" class="china-map-img">
-          <div class="map-dot dot-north heat-dot-rain"></div>
-          <div class="map-dot dot-east heat-dot-rain"></div>
-          <div class="map-dot dot-south heat-dot-rain"></div>
-          <div class="map-dot dot-west heat-dot-rain"></div>
-          <div class="map-dot dot-center heat-dot-rain"></div>
-        </div>
-        <div class="map-label l1"><b>华北/东北</b><br>强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注</div>
-        <div class="map-label l2"><b>华东地区</b><br>强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注</div>
-        <div class="map-label l3"><b>西北地区</b><br>强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注</div>
-        <div class="map-label l4"><b>西南地区</b><br>强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注</div>
-        <div class="map-label l5"><b>华南地区</b><br>强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注</div>
-      </div>
-      <table class="weather-table">
-        <tr><th>区域</th><th>08-05</th><th>08-06</th><th>08-07</th></tr>
-        <tr><td>华北/东北</td><td>中雨</td><td>阴</td><td>雷阵雨</td></tr>
-        <tr><td>华中/华东</td><td>雷阵雨</td><td>雷阵雨</td><td>雷阵雨</td></tr>
-        <tr><td>华南</td><td>阴</td><td>小雨</td><td>雷阵雨</td></tr>
-        <tr><td>西南</td><td>雷阵雨</td><td>雷阵雨</td><td>雷阵雨</td></tr>
-        <tr><td>西北</td><td>强阵雨</td><td>雷阵雨</td><td>雷阵雨</td></tr>
-      </table>
-      <div class="note">数据来源：公开气象信息整理，重点用于客流及商品节奏判断。</div>
-    </div>
-  </div>
 </div>
+
+
+<div class="date-box">
+
+<div class="date">
+
+2026-08-05
+
+</div>
+
+<div>
+
+星期三
+
+</div>
+
+
+<div class="time">
+
+更新时间 05:45
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<!-- 今日观察 -->
 
 
 <div class="section">
-  <div class="section-title"><span>三、区域经营雷达（AI精选）</span><span class="more">查看更多 ›</span></div>
-  <div class="section-body">
-    <div class="region-radar">
-      <div class="radar-head">
-        <div>区域</div>
-        <div>核心信号</div>
-        <div>客流影响</div>
-        <div>经营抓手</div>
-        <div>动作建议</div>
-        <div>关注等级</div>
-      </div>
 
-      <div class="radar-row">
-        <div class="radar-cell"><div class="region-card"><div class="region-icon">☔</div><div><div class="region-name">华东</div><div class="region-city">上海/江苏/浙江</div></div></div></div>
-        <div class="radar-cell"><div class="signal-pill">华东强降雨雷阵雨，防雨防滑与室内运动场景需重点关注</div></div>
-        <div class="radar-cell"><div class="flow-text">强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注，亲子与校园需求升温，夏季功能品类承接需前置</div></div>
-        <div class="radar-cell"><div class="focus-pill">防雨防滑功能品类</div></div>
-        <div class="radar-cell"><div class="action-text">加强防雨防滑鞋服陈列，联动商场室内运动体验区，推出雨天亲子运动促销</div></div>
-        <div class="radar-cell star-red">★★★</div>
-      </div>
 
-      <div class="radar-row">
-        <div class="radar-cell"><div class="region-card"><div class="region-icon">☔</div><div><div class="region-name">华中</div><div class="region-city">湖北/湖南/江西</div></div></div></div>
-        <div class="radar-cell"><div class="signal-pill">华中强降雨雷阵雨，防雨防滑与室内运动场景需重点关注</div></div>
-        <div class="radar-cell"><div class="flow-text">强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注，亲子与校园需求升温，夏季功能品类承接需前置</div></div>
-        <div class="radar-cell"><div class="focus-pill">防雨防滑功能品类</div></div>
-        <div class="radar-cell"><div class="action-text">强化防雨防滑产品主推，联合社区室内场馆开展亲子运动活动，提升雨天到店转化</div></div>
-        <div class="radar-cell star-red">★★★</div>
-      </div>
+<div class="section-title">
 
-      <div class="radar-row">
-        <div class="radar-cell"><div class="region-card"><div class="region-icon">☔</div><div><div class="region-name">华南</div><div class="region-city">广东/广西</div></div></div></div>
-        <div class="radar-cell"><div class="signal-pill">华南阴雨转雷阵雨，防雨防滑与室内运动场景需重点关注</div></div>
-        <div class="radar-cell"><div class="flow-text">强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注，亲子与校园需求升温，夏季功能品类承接需前置</div></div>
-        <div class="radar-cell"><div class="focus-pill">防雨防滑功能品类</div></div>
-        <div class="radar-cell"><div class="action-text">针对阴雨天气调整陈列，主推防雨防滑鞋服，结合校园需求开展亲子运动促销</div></div>
-        <div class="radar-cell star-orange">★★</div>
-      </div>
+今日一句话观察
 
-      <div class="radar-row">
-        <div class="radar-cell"><div class="region-card"><div class="region-icon">☔</div><div><div class="region-name">西南</div><div class="region-city">四川/重庆/贵州</div></div></div></div>
-        <div class="radar-cell"><div class="signal-pill">西南强降雨雷阵雨，防雨防滑与室内运动场景需重点关注</div></div>
-        <div class="radar-cell"><div class="flow-text">强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注，亲子与校园需求升温，夏季功能品类承接需前置</div></div>
-        <div class="radar-cell"><div class="focus-pill">防雨防滑功能品类</div></div>
-        <div class="radar-cell"><div class="action-text">加强防雨防滑品类推广，与室内运动场馆合作引流，推出雨天亲子运动套餐</div></div>
-        <div class="radar-cell star-orange">★★</div>
-      </div>
-
-      <div class="radar-row">
-        <div class="radar-cell"><div class="region-card"><div class="region-icon">☔</div><div><div class="region-name">西北</div><div class="region-city">陕西/甘肃/宁夏</div></div></div></div>
-        <div class="radar-cell"><div class="signal-pill">西北强阵雨雷阵雨，防雨防滑与室内运动场景需重点关注</div></div>
-        <div class="radar-cell"><div class="flow-text">强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注，亲子与校园需求升温，夏季功能品类承接需前置</div></div>
-        <div class="radar-cell"><div class="focus-pill">防雨防滑功能品类</div></div>
-        <div class="radar-cell"><div class="action-text">强化防雨防滑产品主推，结合校园渠道开展室内运动活动，提升雨天客流转化</div></div>
-        <div class="radar-cell star-orange">★★</div>
-      </div>
-    </div>
-
-    <div class="note">关注等级说明：<span class="star-red">★★★</span>重点关注　<span class="star-orange">★★</span>持续跟踪　<span class="star-blue">★</span>一般观察</div>
-  </div>
 </div>
 
-<div class="bottom-grid">
-  <div class="section">
-    <div class="section-title"><span>四、经营观察与动作建议</span><span class="more">查看更多 ›</span></div>
-    <div class="section-body">
-      <div class="trend-item"><div class="trend-icon">📈</div><div><div class="trend-title">雨天场景主推防滑童鞋</div><div class="trend-desc">强降雨致户外客流波动，建议门店强化防滑鞋陈列，线上主推雨天穿搭内容，提升转化。</div></div><div class="trend-tag">天气营销</div></div>
-      <div class="trend-item"><div class="trend-icon">🧒</div><div><div class="trend-title">室内运动装备组合促销</div><div class="trend-desc">雷雨天气带动室内运动需求，可推出跳绳、瑜伽等轻运动装备组合，联动线上课程引流。</div></div><div class="trend-tag">场景运营</div></div>
-      <div class="trend-item"><div class="trend-icon">🛍️</div><div><div class="trend-title">竞品动态监测与快速响应</div><div class="trend-desc">关注竞品近期新品及促销动作，建议每周复盘价格带与卖点，及时调整主推款策略。</div></div><div class="trend-tag">竞品分析</div></div>
-      <div class="trend-item"><div class="trend-icon">🚴</div><div><div class="trend-title">商圈客流下滑转线上蓄水</div><div class="trend-desc">降雨致商圈客流减少，建议加大线上会员日及社群秒杀活动，蓄水待晴后到店转化。</div></div><div class="trend-tag">渠道联动</div></div>
-    </div>
-  </div>
 
-  <div class="section">
-    <div class="section-title"><span>五、行业热词雷达（近3天）</span></div>
-    <div class="section-body">
-      <div class="word-cloud">
-        <div class="word w1">校园体育</div><div class="word w2">跑步经济</div><div class="word w3">城市骑行</div><div class="word w4">防雨装备</div><div class="word w5">亲子运动</div><div class="word w6">品牌站位</div><div class="word w7">防滑鞋</div><div class="word w8">客流修复</div><div class="word w9">大促预售</div><div class="word w10">户外运动</div><div class="word w11">儿童运动</div><div class="word w12">消费趋势</div><div class="word w13">店播增长</div><div class="word w14">功能面料</div><div class="word w15">多品牌</div><div class="word w16">GDP</div><div class="word w17">出海</div><div class="word w18">松弛感</div>
-      </div>
-      <div class="note">注：热词综合新闻、天气、平台、鞋服品类与泛运动热点生成，用于识别短期行业情绪。</div>
-    </div>
-  </div>
+<div class="summary">
+
+运动鞋服行业信息持续变化，品牌竞争、电商渠道与消费趋势值得关注。
+
 </div>
+
+
+</div>
+
+
+
+
+<!-- TOP资讯 -->
+
+
+<div class="section">
+
+
+<div class="section-title">
+
+今日重点资讯 TOP8
+
+</div>
+
+
+<div class="news-grid">
+
+
+
+<div class="news-card">
+
+
+<div class="news-head">
+
+<div class="category">
+
+品牌竞争
+
+</div>
+
+
+<div class="level">
+
+★★★★★
+
+</div>
+
+
+</div>
+
+
+<div class="news-title">
+
+耐克市值几个月跌掉了一个阿迪达斯，中国消费者抛弃耐克的速度为什么这么快？
+
+</div>
+
+
+<div class="news-info">
+
+风闻 ｜ 2026-06-18
+
+</div>
+
+
+<div class="news-summary">
+
+报道指出耐克市值在数月内大幅缩水，相当于跌掉一个阿迪达斯，并分析中国消费者正在加速转向其他品牌，对耐克在华业务构成重大挑战。
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="news-card">
+
+
+<div class="news-head">
+
+<div class="category">
+
+品牌竞争
+
+</div>
+
+
+<div class="level">
+
+★★★★★
+
+</div>
+
+
+</div>
+
+
+<div class="news-title">
+
+世界杯运动品牌争霸战：耐克的统治、阿迪达斯的阵地与安踏的进击
+
+</div>
+
+
+<div class="news-info">
+
+新浪财经 ｜ 2026-06-18
+
+</div>
+
+
+<div class="news-summary">
+
+分析在世界杯背景下，耐克、阿迪达斯与安踏三大运动品牌的竞争格局，探讨安踏如何通过赛事营销和产品布局加速追赶国际巨头。
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="news-card">
+
+
+<div class="news-head">
+
+<div class="category">
+
+品牌竞争
+
+</div>
+
+
+<div class="level">
+
+★★★★★
+
+</div>
+
+
+</div>
+
+
+<div class="news-title">
+
+10年10亿授权费，安德玛儿童操盘手接下「锐步中国」
+
+</div>
+
+
+<div class="news-info">
+
+36Kr ｜ 2026-06-18
+
+</div>
+
+
+<div class="news-summary">
+
+报道称锐步中国业务被安德玛儿童业务操盘手以10年10亿授权费接手，标志着锐步在中国市场的品牌运营策略发生重大转变。
+
+</div>
+
+
+</div>
+
+
+
+<div class="news-card">
+
+
+<div class="news-head">
+
+<div class="category">
+
+品牌竞争
+
+</div>
+
+
+<div class="level">
+
+★★★★★
+
+</div>
+
+
+</div>
+
+
+<div class="news-title">
+
+亚瑟士集团拆分Onitsuka Tiger业务；星巴克中国推出袋装咖啡
+
+</div>
+
+
+<div class="news-info">
+
+消研所周报 ｜ 2026-06-18
+
+</div>
+
+
+<div class="news-summary">
+
+亚瑟士宣布计划分拆旗下鬼塚虎（Onitsuka Tiger）业务，旨在独立运营以提升品牌价值，被解读为打造“日本版安踏”的战略举措。
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+<!-- TOP资讯 5-8 -->
+
+
+<div class="section">
+
+
+<div class="news-grid">
+
+
+
+<div class="news-card">
+
+
+<div class="news-head">
+
+<div class="category">
+
+品牌竞争
+
+</div>
+
+
+<div class="level">
+
+★★★★☆
+
+</div>
+
+</div>
+
+
+<div class="news-title">
+
+安踏集团发布2025 ESG报告：FILA建造国内首个可持续网球场
+
+</div>
+
+
+<div class="news-info">
+
+ebusinessreview.cn ｜ 2026-06-18
+
+</div>
+
+
+<div class="news-summary">
+
+安踏集团发布ESG报告，旗下FILA品牌建造国内首个可持续网球场，展示其在运动时尚领域的全场景可持续闭环实践。
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="news-card">
+
+
+<div class="news-head">
+
+<div class="category">
+
+电商平台
+
+</div>
+
+
+<div class="level">
+
+★★★★☆
+
+</div>
+
+</div>
+
+
+<div class="news-title">
+
+艾瑞618消费洞察：京东珠宝首饰、运动户外品类领跑行业 增速双第一
+
+</div>
+
+
+<div class="news-info">
+
+新浪财经 ｜ 2026-06-18
+
+</div>
+
+
+<div class="news-summary">
+
+艾瑞咨询发布618消费洞察，显示京东在珠宝首饰和运动户外品类增速均位列行业第一，反映出电商平台在重点品类上的竞争态势。
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="news-card">
+
+
+<div class="news-head">
+
+<div class="category">
+
+消费趋势
+
+</div>
+
+
+<div class="level">
+
+★★★★☆
+
+</div>
+
+</div>
+
+
+<div class="news-title">
+
+618里的世界杯：赛事热度叠加消费红利，运动穿搭消费潮起
+
+</div>
+
+
+<div class="news-info">
+
+eeo.com.cn ｜ 2026-06-18
+
+</div>
+
+
+<div class="news-summary">
+
+报道指出在618大促与世界杯赛事热度的双重叠加下，运动穿搭消费迎来显著增长，成为本次消费季的重要亮点。
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="news-card">
+
+
+<div class="news-head">
+
+<div class="category">
+
+儿童市场
+
+</div>
+
+
+<div class="level">
+
+★★★★☆
+
+</div>
+
+</div>
+
+
+<div class="news-title">
+
+儿童消费市场“长高”了
+
+</div>
+
+
+<div class="news-info">
+
+中国新闻网 ｜ 2026-06-18
+
+</div>
+
+
+<div class="news-summary">
+
+报道分析儿童消费市场呈现升级趋势，产品迭代与场景创新推动市场向更高品质、更多元化方向发展，亲子消费成为新增长点。
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- 电商平台动态 -->
+
+
+<div class="section">
+
+
+<div class="section-title">
+
+电商平台动态
+
+</div>
+
+
+
+<div class="list-box">
+
+
+
+<div class="list-item">
+
+<div class="list-tag">
+
+天猫
+
+</div>
+
+<div class="list-content">
+
+<strong>天猫618父亲节热卖：桑蚕丝与户外装成送礼首选</strong>
+
+<br>
+
+天猫618数据显示，今年父亲节最热礼物不再是保健品，桑蚕丝服饰和户外装备成为消费新宠，反映送礼趋势向品质生活和健康户外活动转变。
+
+</div>
+
+
+</div>
+
+
+
+<div class="list-item">
+
+<div class="list-tag">
+
+京东
+
+</div>
+
+<div class="list-content">
+
+<strong>京东服饰美妆推出父亲节直播活动，以旧物故事互动促消费</strong>
+
+<br>
+
+京东服饰美妆发起“听100个旧物故事 送100份父亲节好礼”活动，通过直播连麦和礼物免单机制，增强用户情感互动，驱动内容营销和销售转化。
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="list-item">
+
+<div class="list-tag">
+
+抖音电商
+
+</div>
+
+<div class="list-content">
+
+<strong>火蝠电商：抖音全域运营助力国民雪糕品牌销量爆发</strong>
+
+<br>
+
+火蝠电商案例显示，抖音全域运营策略有效推动国民雪糕品牌销量增长，凸显平台在内容驱动和全域流量整合上的营销效果。
+
+</div>
+
+
+</div>
+
+
+
+<div class="list-item">
+
+<div class="list-tag">
+
+京东
+
+</div>
+
+<div class="list-content">
+
+<strong>京东赞助2026贵阳马拉松，融合参赛体验与运动消费</strong>
+
+<br>
+
+京东通过赞助2026贵阳马拉松，打造“参赛体验+运动消费”场景，强化运动户外品类与赛事营销的联动，促进相关商品销售。
+
+</div>
+
+
+</div>
+
+
+
+<div class="list-item">
+
+<div class="list-tag">
+
+京东
+
+</div>
+
+<div class="list-content">
+
+<strong>艾瑞618消费洞察：京东珠宝首饰、运动户外品类增速领跑</strong>
+
+<br>
+
+艾瑞618消费洞察显示，京东珠宝首饰和运动户外品类增速双第一，反映平台在品质消费和运动健康领域的品类优势，引领行业增长。
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- 竞品动态 -->
+
+
+<div class="section">
+
+
+<div class="section-title">
+
+竞品动态
+
+</div>
+
+
+
+<div class="competitor-grid">
+
+
+
+<div class="competitor-card">
+
+<div class="brand">
+
+Nike
+
+</div>
+
+<div class="comp-title">
+
+Jacquemus携手Nike为法国国家队推出胶囊系列
+
+</div>
+
+<div class="comp-summary">
+
+Nike与法国设计师品牌Jacquemus合作，为法国国家男子足球队推出联名胶囊系列，融合时尚与运动元素，拓展品牌在足球文化中的影响力。
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="competitor-card">
+
+<div class="brand">
+
+Nike
+
+</div>
+
+<div class="comp-title">
+
+耐克市值大幅缩水，中国市场份额下滑引发关注
+
+</div>
+
+<div class="comp-summary">
+
+耐克市值在数月内蒸发相当于一个阿迪达斯的规模，中国消费者购买意愿下降，反映出品牌在中国市场竞争加剧及本土替代品牌崛起的压力。
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="competitor-card">
+
+<div class="brand">
+
+Nike
+
+</div>
+
+<div class="comp-title">
+
+耐克拓宽足球生意边界，从产品创新到街头文化
+
+</div>
+
+<div class="comp-summary">
+
+耐克通过产品技术创新与街头文化结合，深化足球业务布局，探索足球市场之外的消费场景，以提升品牌在足球领域的商业价值。
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="competitor-card">
+
+<div class="brand">
+
+Adidas
+
+</div>
+
+<div class="comp-title">
+
+世界杯品牌争霸：阿迪达斯稳固阵地，耐克占优
+
+</div>
+
+<div class="comp-summary">
+
+在世界杯营销竞争中，耐克保持统治地位，阿迪达斯维持核心阵地，而安踏等中国品牌加速进击，全球足球鞋服市场格局呈现多元化趋势。
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="competitor-card">
+
+<div class="brand">
+
+Anta
+
+</div>
+
+<div class="comp-title">
+
+安踏集团发布2025 ESG报告，FILA建造国内首个可持续网球场
+
+</div>
+
+<div class="comp-summary">
+
+安踏集团发布2025年ESG报告，旗下FILA品牌建造国内首个可持续网球场，推动运动时尚领域全场景闭环的可持续发展进程。
+
+</div>
+
+
+</div>
+
+
+
+<div class="competitor-card">
+
+<div class="brand">
+
+Asics
+
+</div>
+
+<div class="comp-title">
+
+亚瑟士集团拆分Onitsuka Tiger业务，鬼塚虎将独立运营
+
+</div>
+
+<div class="comp-summary">
+
+亚瑟士集团宣布拆分旗下Onitsuka Tiger（鬼塚虎）业务，使其独立运营，此举被解读为亚瑟士向“日本版安踏”模式转型，强化多品牌战略布局。
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+<!-- 行业研究与趋势 -->
+
+
+<div class="section">
+
+
+<div class="section-title">
+
+行业研究与趋势
+
+</div>
+
+
+
+<div class="report-grid">
+
+
+
+<div class="report-card">
+
+
+<div class="report-tag">
+
+运动鞋服
+
+</div>
+
+
+<div class="report-title">
+
+安踏集团发布2025 ESG报告：FILA建造国内首个可持续网球场，以全场景闭环推动运动时尚可持续进程
+
+</div>
+
+
+<div class="report-summary">
+
+安踏集团发布2025年ESG报告，旗下FILA品牌建造国内首个可持续网球场，通过全场景闭环推动运动时尚领域的可持续发展，反映头部运动品牌在环保与可持续方向的持续投入。
+
+</div>
+
+
+</div>
+
+
+
+<div class="report-card">
+
+
+<div class="report-tag">
+
+零售
+
+</div>
+
+
+<div class="report-title">
+
+从消费趋势到投资价值：砂之船（西安）奥莱的九年数据拆解
+
+</div>
+
+
+<div class="report-summary">
+
+报告对砂之船（西安）奥莱过去九年的运营数据进行拆解，分析其消费趋势演变与投资价值，为零售行业尤其是奥特莱斯业态提供参考案例。
+
+</div>
+
+
+</div>
+
+
+
+<div class="report-card">
+
+
+<div class="report-tag">
+
+电商
+
+</div>
+
+
+<div class="report-title">
+
+艾瑞618消费洞察：京东珠宝首饰、运动户外品类领跑行业 增速双第一
+
+</div>
+
+
+<div class="report-summary">
+
+艾瑞咨询发布618消费洞察，显示京东在珠宝首饰和运动户外两大品类增速均位居行业第一，反映电商大促期间运动户外品类的强劲消费需求。
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- 今日关注 -->
+
+
+<div class="section">
+
+
+<div class="section-title">
+
+今日关注
+
+</div>
+
+
+
+<div class="attention-box">
+
+
+<div class="attention-item">
+
+<span>
+①
+</span>
+
+关注运动鞋服品牌竞争变化及渠道策略调整。
+
+</div>
+
+
+
+<div class="attention-item">
+
+<span>
+②
+</span>
+
+关注消费趋势、电商流量和消费者需求变化。
+
+</div>
+
+
+
+<div class="attention-item">
+
+<span>
+③
+</span>
+
+关注宏观环境及政策对零售行业的影响。
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- 异常提醒 -->
+
+
+<div class="section">
+
+
+<div class="section-title">
+
+异常提醒
+
+</div>
+
+
+
+<div class="alert-box">
+
+
+暂无重大异常事件
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
 
 <div class="footer">
-  <div>数据来源：TrendRadar RSS日报 · Google News · 公开气象信息</div>
-  <div>生成时间：2026-08-05 02:29</div>
-  <div>制作：运动品牌资讯日报自动化系统</div>
+
+
+361°儿童事业部经营管理部
+
+&nbsp;&nbsp; | &nbsp;&nbsp;
+
+行业情报自动生成系统
+
+
+<br>
+
+
+数据来源：
+
+行业媒体 / 电商平台 / 企业公告 / 公开研究报告 / 宏观数据
+
+
 </div>
+
+
+
+
 </div>
+
+
 </body>
+
+
 </html>
