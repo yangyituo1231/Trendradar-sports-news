@@ -1128,31 +1128,31 @@ def topic_key(title):
 
 def deduplicate(items):
 
-
-    result={}
-
+    best={}
 
     for item in items:
 
+        key=item.get("title","")
 
-        key=topic_key(
-            item["title"]
-        )
-
-
-        old=result.get(key)
+        if not key:
+            continue
 
 
-        if (
-            old is None
-            or item["score"] > old["score"]
-        ):
-
-            result[key]=item
+        old=best.get(key)
 
 
+        if old is None:
 
-    return list(result.values())
+            best[key]=item
+
+        else:
+
+            if item.get("score",0) > old.get("score",0):
+
+                best[key]=item
+
+
+    return list(best.values())
 
 # =========================================================
 # 13. 输出结构
