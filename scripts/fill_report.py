@@ -94,6 +94,36 @@ def parse_time(item):
 
 
 
+# 注意这里已经退回到最左边
+def format_time(value):
+
+    if not value:
+        return ""
+
+    try:
+
+        dt = parsedate_to_datetime(value)
+
+        return dt.strftime(
+            "%Y-%m-%d %H:%M"
+        )
+
+    except:
+
+        return ""
+    
+    try:
+
+        dt = parsedate_to_datetime(value)
+
+        return dt.timestamp()
+
+    except:
+
+        return 0
+
+
+
 
 # =========================================================
 # 读取新闻
@@ -590,9 +620,11 @@ category只能使用：
             ),
 
             "time":
-            original.get(
-                "published_at",
-                ""
+            format_time(
+                original.get(
+                    "published_at",
+                    ""
+                )
             ),
 
             "summary":
@@ -767,7 +799,33 @@ for x in candidates[:50]
 
 
 
-    return result[:5]
+    final=[]
+
+
+    for row in result[:5]:
+
+        original = next(
+            (
+                x for x in candidates
+                if row.get("title","")[:15]
+                in x.get("title","")
+            ),
+            {}
+        )
+
+
+        row["url"] = original.get(
+            "link",
+            ""
+        )
+
+
+        final.append(row)
+
+
+
+    return final
+
 
 
 
@@ -929,7 +987,32 @@ for x in candidates[:60]
 
 
 
-    return result[:6]
+    final=[]
+
+
+    for row in result[:6]:
+
+        original = next(
+            (
+                x for x in candidates
+                if row.get("title","")[:15]
+                in x.get("title","")
+            ),
+            {}
+        )
+
+
+        row["url"] = original.get(
+            "link",
+            ""
+        )
+
+
+        final.append(row)
+
+
+
+    return final
 
 
 
@@ -1051,7 +1134,32 @@ for x in candidates[:50]
 
 
 
-    return result[:3]
+    final=[]
+
+
+    for row in result[:3]:
+
+        original = next(
+            (
+                x for x in candidates
+                if row.get("title","")[:15]
+                in x.get("title","")
+            ),
+            {} 
+        )
+
+
+        row["url"] = original.get(
+            "link",
+            ""
+        )
+
+
+        final.append(row)
+
+
+
+    return final
 
 
 
