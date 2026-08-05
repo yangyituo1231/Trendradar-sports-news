@@ -538,7 +538,6 @@ Puma、On、HOKA、lululemon等
 "category":"",
 "source":"",
 "summary":"",
-"summary":"",
 "level":"★★★★★"
 }}
 ]
@@ -580,6 +579,10 @@ category只能使用：
 
     for row in result[:8]:
 
+        if not isinstance(row,dict):
+
+            continue
+
         original = next(
             (
                 x for x in news_items
@@ -588,11 +591,7 @@ category只能使用：
             ),
             {}
         )
-
-
-        if not isinstance(row,dict):
-
-            continue
+        
     
 
 
@@ -622,10 +621,19 @@ category只能使用：
             "time":
             format_time(
                 original.get(
-                    "published_at",
-                    ""
+                  "published_at"
                 )
-            ),
+                or original.get(
+                    "pubDate"
+                )
+               or original.get(
+                   "date"
+                )
+               or original.get(
+                   "time"
+               )
+               or ""
+          ),
 
             "summary":
             short(
@@ -815,7 +823,7 @@ for x in candidates[:50]
 
 
         row["url"] = original.get(
-            "link",
+            "url",
             ""
         )
 
@@ -1003,7 +1011,7 @@ for x in candidates[:60]
 
 
         row["url"] = original.get(
-            "link",
+            "url",
             ""
         )
 
@@ -1150,7 +1158,7 @@ for x in candidates[:50]
 
 
         row["url"] = original.get(
-            "link",
+            "url",
             ""
         )
 
