@@ -5,9 +5,9 @@ on:
 
   schedule:
 
-    # 北京时间每天8点
-    # UTC 0点
-    - cron: '0 0 * * *'
+    # 北京时间每天
+    # UTC 0:00
+    - cron: '27 20 * * *'
 
 
   workflow_dispatch:
@@ -65,8 +65,9 @@ jobs:
 
 
 
+
       # =========================
-      # Dependencies
+      # 安装依赖
       # =========================
 
       - name: Install dependencies
@@ -86,16 +87,19 @@ jobs:
 
 
 
+
+
       # =========================
       # 浏览器环境
       # 周报图片需要
       # =========================
 
-      - name: Install browser
+      - name: Install browser and fonts
 
         run: |
 
           sudo apt-get update
+
 
           sudo apt-get install -y \
             fonts-noto-cjk \
@@ -111,15 +115,18 @@ jobs:
 
 
 
+
       # =========================
-      # 数据抓取
+      # 抓取数据
       # =========================
+
 
       - name: Fetch News
 
         run: |
 
           python scripts/get_hot_news.py
+
 
 
 
@@ -134,14 +141,45 @@ jobs:
 
 
       # =========================
+      # 判断是否周一
+      # =========================
+
+      - name: Check Weekly Run
+
+        id: weekly
+
+        run: |
+
+          DAY=$(date +%u)
+
+          echo "today=$DAY"
+
+
+          if [ "$DAY" = "1" ]; then
+
+            echo "run_weekly=true" >> $GITHUB_OUTPUT
+
+          else
+
+            echo "run_weekly=false" >> $GITHUB_OUTPUT
+
+          fi
+
+
+
+
+
+      # =========================
       # 日报生成
       # =========================
+
 
       - name: Generate Daily Report
 
         env:
 
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+
 
         run: |
 
@@ -151,11 +189,16 @@ jobs:
 
 
 
+
       # =========================
-      # 周报数据
+      # 周报部分
+      # 仅周一运行
       # =========================
 
+
       - name: Generate Weekly Data
+
+        if: steps.weekly.outputs.run_weekly == 'true'
 
         run: |
 
@@ -163,7 +206,11 @@ jobs:
 
 
 
+
+
       - name: Generate Products Data
+
+        if: steps.weekly.outputs.run_weekly == 'true'
 
         run: |
 
@@ -171,7 +218,11 @@ jobs:
 
 
 
+
+
       - name: Generate Product Signals
+
+        if: steps.weekly.outputs.run_weekly == 'true'
 
         run: |
 
@@ -179,11 +230,18 @@ jobs:
 
 
 
+
+
+
       - name: Analyze Weekly Data
+
+        if: steps.weekly.outputs.run_weekly == 'true'
+
 
         env:
 
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+
 
         run: |
 
@@ -193,11 +251,15 @@ jobs:
 
 
 
+
       # =========================
       # 周报HTML
       # =========================
 
+
       - name: Generate Weekly HTML
+
+        if: steps.weekly.outputs.run_weekly == 'true'
 
         run: |
 
@@ -206,11 +268,16 @@ jobs:
 
 
 
+
+
       # =========================
       # 周报图片
       # =========================
 
+
       - name: Render Weekly Image
+
+        if: steps.weekly.outputs.run_weekly == 'true'
 
         run: |
 
@@ -221,8 +288,9 @@ jobs:
 
 
       # =========================
-      # 准备Pages网页
+      # 准备 Pages
       # =========================
+
 
       - name: Prepare Pages
 
@@ -240,15 +308,20 @@ jobs:
 
 
 
-          # 周报
 
-          cp output/weekly/weekly_report.html docs/weekly-report.html || true
+          # 周报（仅周一更新）
+
+          if [ "${{ steps.weekly.outputs.run_weekly }}" = "true" ]; then
 
 
+            cp output/weekly/weekly_report.html docs/weekly-report.html || true
 
-          # 图片
 
-          cp weekly-report.png docs/weekly-report.png || true
+            cp weekly-report.png docs/weekly-report.png || true
+
+
+          fi
+
 
 
 
@@ -264,13 +337,16 @@ jobs:
 
           <title>运动鞋服行业资讯</title>
 
+
           </head>
 
 
           <body>
 
 
-          <h1>运动鞋服行业资讯</h1>
+          <h1>
+          运动鞋服行业资讯
+          </h1>
 
 
           <h2>
@@ -284,6 +360,7 @@ jobs:
           </h2>
 
 
+
           <h2>
 
           <a href="./weekly-report.html">
@@ -293,9 +370,6 @@ jobs:
           </a>
 
           </h2>
-
-
-          <img src="./weekly-report.png" width="500">
 
 
           </body>
@@ -309,9 +383,11 @@ jobs:
 
 
 
+
       # =========================
-      # 上传Pages
+      # 发布 Pages
       # =========================
+
 
       - name: Upload Pages Artifact
 
@@ -325,10 +401,6 @@ jobs:
 
 
 
-      # =========================
-      # 发布Pages
-      # =========================
-
       - name: Deploy Pages
 
         uses: actions/deploy-pages@v4
@@ -338,8 +410,9 @@ jobs:
 
 
       # =========================
-      # 保存代码
+      # 保存
       # =========================
+
 
       - name: Commit files
 
@@ -348,13 +421,17 @@ jobs:
 
           git config user.name github-actions
 
+
           git config user.email github-actions@github.com
+
 
 
           git add .
 
 
+
           git commit -m "auto update report" || echo "nothing"
+
 
 
           git push
@@ -363,13 +440,16 @@ jobs:
 
 
 
+
       # =========================
-      # 微信推送链接
+      # 微信日报链接
       # =========================
+
 
       - name: Send WeCom Text
 
         continue-on-error: true
+
 
         run: |
 
@@ -387,10 +467,8 @@ jobs:
           "content":
 
           "# 运动鞋服行业资讯日报\n\n\
-          📌 日报：\n\
-          https://yangyituo1231.github.io/Trendradar-sports-news/daily-report.html\n\n\
-          📌 周报：\n\
-          https://yangyituo1231.github.io/Trendradar-sports-news/weekly-report.html"
+          📌 日报链接：\n\
+          https://yangyituo1231.github.io/Trendradar-sports-news/daily-report.html"
 
           }
 
@@ -400,17 +478,24 @@ jobs:
 
 
 
+
       # =========================
-      # 推送周报图片
+      # 微信周报图片
+      # 仅周一
       # =========================
+
 
       - name: Send WeCom Image
 
+        if: steps.weekly.outputs.run_weekly == 'true'
+
         continue-on-error: true
+
 
         env:
 
           REPORT_WEBHOOK: ${{ secrets.REPORT_WEBHOOK }}
+
 
 
         run: |
