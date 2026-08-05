@@ -1,37 +1,21 @@
 from pathlib import Path
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
-from collections import Counter
 import json
 import os
 import re
 
 
-# ======================================================
-# 文件路径
-# ======================================================
+# =========================================================
+# 基础配置
+# =========================================================
 
 TEMPLATE_FILE = Path("daily-report.html")
+OUTPUT_HTML = Path("daily-report-filled.html")
 
-OUTPUT_HTML = Path(
-    "daily-report-filled.html"
-)
+NEWS_FILE = Path("output/news/latest.json")
 
-NEWS_FILE = Path(
-    "output/news/latest.json"
-)
-
-WEEKLY_NEWS_FILE = Path(
-    "output/weekly/weekly_news.json"
-)
-
-TOP_NEWS_FILE = Path(
-    "output/news/top_news.json"
-)
-
-COMPETITOR_FILE = Path(
-    "output/news/competitor_news.json"
-)
+HISTORY_DIR = Path("output/history")
 
 
 today = datetime.now()
@@ -47,14 +31,17 @@ weekday_map = {
 }
 
 
-# ======================================================
+
+# =========================================================
 # 基础函数
-# ======================================================
+# =========================================================
 
+def clean_text(text):
 
-def clean_title(text):
+    if not text:
+        return ""
 
-    text = str(text or "")
+    text = str(text)
 
     text = text.replace("\n"," ")
 
@@ -64,24 +51,19 @@ def clean_title(text):
         text
     )
 
-    text = re.sub(
-        r"[-|].*$",
-        "",
-        text
-    )
-
     return text.strip()
 
 
 
-def short(text, length=45):
+def short(text, length=60):
 
-    text = clean_title(text)
+    text = clean_text(text)
 
-    if len(text) > length:
-        return text[:length]+"..."
+    if len(text)<=length:
+        return text
 
-    return text
+    return text[:length]+"..."
+
 
 
 
@@ -95,13 +77,16 @@ def parse_time(item):
         or ""
     )
 
+
     if not value:
         return 0
 
+
     try:
-        return parsedate_to_datetime(
-            value
-        ).timestamp()
+
+        dt = parsedate_to_datetime(value)
+
+        return dt.timestamp()
 
     except:
 
@@ -109,82 +94,57 @@ def parse_time(item):
 
 
 
-# ======================================================
-# 新闻读取
-# ======================================================
 
+# =========================================================
+# 读取新闻
+# =========================================================
 
 def load_news():
 
-    file = (
-        WEEKLY_NEWS_FILE
-        if WEEKLY_NEWS_FILE.exists()
-        else NEWS_FILE
-    )
+    if not NEWS_FILE.exists():
 
-
-    if not file.exists():
+        print(
+            "news file not found"
+        )
 
         return []
 
 
     try:
 
-        raw = json.loads(
-            file.read_text(
+        data = json.loads(
+            NEWS_FILE.read_text(
                 encoding="utf-8"
             )
         )
 
 
+        if isinstance(data,dict):
+
+            if "items" in data:
+
+                return data["items"]
+
+            if "news" in data:
+
+                return data["news"]
+
+
+        if isinstance(data,list):
+
+            return data
+
+
     except Exception as e:
 
         print(
-            "load news error",
+            "load news error:",
             e
         )
 
-        return []
 
+    return []
 
-
-    if isinstance(raw,dict):
-
-        if "levels" in raw:
-
-            result=[]
-
-            for level in [
-                "A",
-                "B",
-                "C"
-            ]:
-
-                result.extend(
-                    raw.get(
-                        "levels",
-                        {}
-                    )
-                    .get(
-                        level,
-                        {}
-                    )
-                    .get(
-                        "items",
-                        []
-                    )
-                )
-
-            return result
-
-
-        return raw.get(
-            "items",
-            []
-        )
-
-
-    return raw
 
 
 
@@ -192,57 +152,68 @@ news_items = load_news()
 
 
 
-# 去除过旧新闻
+# =========================================================
+# 新闻基础清洗
+# =========================================================
 
-filtered=[]
+def clean_news(items):
 
+    result=[]
 
-for item in news_items:
-
-
-    if not isinstance(item,dict):
-
-        continue
+    seen=set()
 
 
-    ts=parse_time(item)
+    for item in items:
 
 
-    if ts:
+        if not isinstance(item,dict):
 
-        days=(
-            today.timestamp()
-            -
-            ts
-        )/86400
+            continue
 
 
-        if days>45:
+        title = clean_text(
+            item.get("title","")
+        )
+
+
+        if not title:
 
             continue
 
 
 
-    filtered.append(item)
+        if title in seen:
+
+            continue
 
 
 
-news_items=filtered
+        item["title"]=title
+
+
+        result.append(item)
+
+
+        seen.add(title)
 
 
 
-titles=[
-    clean_title(
-        x.get("title","")
-    )
-
-    for x in news_items
-    if x.get("title")
-]
+    return result
 
 
-joined_news=" ".join(
-    titles
+
+
+news_items = clean_news(news_items)
+
+
+
+# =========================================================
+# 时间排序
+# =========================================================
+
+news_items.sort(
+    key=parse_time,
+    reverse=True
 )
 
 
@@ -252,36 +223,40 @@ print(
     len(news_items)
 )
 
-
-
-# ======================================================
+# =========================================================
 # DeepSeek
-# ======================================================
+# =========================================================
 
+def deepseek_client():
 
-def get_client():
-
-    key=os.getenv(
+    api_key = os.getenv(
         "DEEPSEEK_API_KEY"
     )
 
 
-    if not key:
+    if not api_key:
 
         return None
+
 
 
     try:
 
         from openai import OpenAI
 
+
         return OpenAI(
-            api_key=key,
-            base_url=
-            "https://api.deepseek.com"
+            api_key=api_key,
+            base_url="https://api.deepseek.com"
         )
 
-    except:
+
+    except Exception as e:
+
+        print(
+            "DeepSeek init error:",
+            e
+        )
 
         return None
 
@@ -298,14 +273,17 @@ def extract_json(text):
     text=text.strip()
 
 
-    text=text.replace(
-        "```json",
-        ""
+    text=re.sub(
+        r"^```json",
+        "",
+        text
     )
 
-    text=text.replace(
-        "```",
-        ""
+
+    text=re.sub(
+        r"```$",
+        "",
+        text
     )
 
 
@@ -313,24 +291,26 @@ def extract_json(text):
 
         return json.loads(text)
 
+
     except:
+
 
         pass
 
 
-    m=re.search(
-        r"(\[.*\]|\{.*\})",
+    match=re.search(
+        r"\[.*\]",
         text,
         re.S
     )
 
 
-    if m:
+    if match:
 
         try:
 
             return json.loads(
-                m.group(1)
+                match.group()
             )
 
         except:
@@ -343,410 +323,176 @@ def extract_json(text):
 
 
 
-def ask_json(prompt):
 
-    client=get_client()
+def ask_deepseek(prompt,max_tokens=2000):
+
+    client=deepseek_client()
 
 
-    if not client:
+    if client is None:
 
         return None
 
 
     try:
 
-        res=client.chat.completions.create(
+
+        response=client.chat.completions.create(
 
             model="deepseek-chat",
 
             messages=[
 
                 {
-                "role":"system",
-                "content":
-                """
-                你是运动鞋服行业研究分析师。
-                输出严格JSON。
-                不解释。
-                """
+                    "role":"system",
+                    "content":
+                    """
+你是一名运动鞋服行业资讯编辑。
+你的任务不是写分析报告，
+而是帮助企业管理层快速了解行业发生了什么。
+
+要求：
+- 保留事实
+- 不夸大
+- 不编造
+- 新闻优先
+- 分析只做辅助
+"""
                 },
 
+
                 {
-                "role":"user",
-                "content":prompt
+                    "role":"user",
+                    "content":prompt
                 }
 
             ],
 
-            temperature=0.2,
 
-            max_tokens=2000
+            temperature=0.25,
+
+
+            max_tokens=max_tokens
 
         )
 
 
         return extract_json(
-            res.choices[0]
-            .message
-            .content
+            response.choices[0].message.content
         )
 
 
     except Exception as e:
 
         print(
-            "deepseek error",
+            "DeepSeek error:",
             e
         )
 
         return None
 
-# ======================================================
-# 新闻分类体系
-# ======================================================
 
 
-CATEGORY_RULES = {
 
-    "品牌竞争":
-    [
-        "安踏",
-        "李宁",
-        "特步",
-        "361",
-        "耐克",
-        "Nike",
-        "阿迪",
-        "Adidas",
-        "Puma",
-        "HOKA",
-        "昂跑",
-        "亚瑟士",
-        "On",
-        "lululemon",
-        "始祖鸟",
-        "联名",
-        "代言",
-        "签约",
-        "战略合作",
-        "新品",
-        "旗舰店",
-        "换帅",
-        "收购"
-    ],
 
 
-    "电商平台":
-    [
-        "618",
-        "双11",
-        "双十一",
-        "天猫",
-        "淘宝",
-        "京东",
-        "抖音",
-        "直播",
-        "店播",
-        "小红书",
-        "唯品会",
-        "拼多多",
-        "GMV",
-        "销售额",
-        "战报"
-    ],
-
-
-    "行业报告":
-    [
-        "报告",
-        "调查",
-        "白皮书",
-        "研究",
-        "数据",
-        "市场规模",
-        "增长率",
-        "趋势"
-    ],
-
-
-    "宏观消费":
-
-    [
-        "GDP",
-        "社零",
-        "消费",
-        "就业",
-        "收入",
-        "政策",
-        "补贴",
-        "内需",
-        "经济",
-        "统计局"
-    ],
-
-
-    "儿童运动":
-
-    [
-        "儿童",
-        "童装",
-        "童鞋",
-        "亲子",
-        "校园",
-        "青少年",
-        "Kids"
-    ],
-
-
-    "户外趋势":
-
-    [
-        "户外",
-        "露营",
-        "骑行",
-        "徒步",
-        "跑步",
-        "马拉松",
-        "越野",
-        "文旅"
-    ],
-
-
-    "科技创新":
-
-    [
-        "AI",
-        "人工智能",
-        "机器人",
-        "智能",
-        "科技",
-        "实验室",
-        "材料"
-    ]
-
-}
-
-
-
-def classify_news(title):
-
-    result=[]
-
-
-    for cat,words in CATEGORY_RULES.items():
-
-        for w in words:
-
-            if w in title:
-
-                result.append(cat)
-
-                break
-
-
-
-    if not result:
-
-        result.append(
-            "行业动态"
-        )
-
-
-    return result
-
-
-
-# ======================================================
-# 新闻基础评分
-# ======================================================
-
-
-def news_score(item):
-
-    title=clean_title(
-        item.get("title","")
-    )
-
-
-    score=0
-
-
-    # 时间权重
-
-    ts=parse_time(item)
-
-
-    if ts:
-
-        hours=(
-            today.timestamp()
-            -
-            ts
-        )/3600
-
-
-        if hours<12:
-
-            score+=30
-
-        elif hours<24:
-
-            score+=20
-
-        elif hours<72:
-
-            score+=10
-
-
-
-    # 重大事件
-
-    important_words=[
-
-        "战略合作",
-        "收购",
-        "联名",
-        "代言",
-        "签约",
-        "新品发布",
-        "财报",
-        "市场份额",
-        "中国战略",
-        "换帅"
-
-    ]
-
-
-    for w in important_words:
-
-        if w in title:
-
-            score+=15
-
-
-
-    # 经营关键词
-
-    business_words=[
-
-        "销售",
-        "增长",
-        "渠道",
-        "门店",
-        "会员",
-        "消费者",
-        "消费",
-        "品牌",
-        "电商",
-        "直播"
-
-    ]
-
-
-    for w in business_words:
-
-        if w in title:
-
-            score+=5
-
-
-
-    # 体育新闻降权
-
-    bad=[
-
-        "比赛",
-        "比分",
-        "赛程",
-        "球员",
-        "转会",
-        "夺冠"
-
-    ]
-
-
-    for w in bad:
-
-        if w in title:
-
-            score-=20
-
-
-
-    return score
-
-
-
-# ======================================================
-# TOP资讯选择
-# ======================================================
-
+# =========================================================
+# TOP8新闻编辑
+# =========================================================
 
 def build_top_news():
 
 
-    # 先排序
 
-    ranked=sorted(
-
-        news_items,
-
-        key=news_score,
-
-        reverse=True
-
-    )
+    news_text=""
 
 
-    news_text="\n".join(
+    for i,item in enumerate(news_items[:100]):
 
-        [
+        news_text += (
 
-            f"{i+1}.{clean_title(x.get('title',''))}"
+            f"{i+1}."
+            + clean_text(item.get("title",""))
+            + "｜"
+            + clean_text(item.get("source",""))
+            + "\n"
 
-            for i,x in enumerate(ranked[:80])
+        )
 
-        ]
 
-    )
 
 
     prompt=f"""
 
-你是361度儿童事业部经营分析负责人。
-
-请从以下行业新闻中筛选8条每日重点资讯。
-
-
-选择原则：
-
-1. 优先重大行业事件
-
-2. 品牌动作优先
-
-3. 电商平台变化优先
-
-4. 行业调查报告、消费数据优先
-
-5. 国家宏观政策、经济数据如果影响消费必须关注
-
-6. 儿童运动、户外趋势、消费者变化可入选
-
-7. 不要选择体育比赛新闻
-
-8. 不要为了覆盖分类强行选择低价值新闻
+请从以下运动鞋服、消费、电商、宏观新闻中，
+筛选今日最值得企业管理层阅读的8条资讯。
 
 
-输出JSON数组：
+筛选原则：
+
+1. 优先重大行业变化：
+- 品牌战略
+- 财报
+- 管理层变化
+- 新品发布
+- 渠道调整
+- 平台规则变化
+- 行业研究报告
+- 消费趋势变化
+
+
+2. 保留范围：
+
+运动鞋服：
+安踏、李宁、特步、361、Nike、Adidas、
+Puma、On、HOKA、lululemon等
+
+
+消费：
+社零、消费趋势、居民收入、
+年轻消费、儿童消费
+
+
+电商：
+天猫、京东、抖音、
+小红书、唯品会
+
+
+3. 不需要每天出现618，
+除非当天确实有重要信息。
+
+
+4. 过滤：
+
+- 体育比赛结果
+- 娱乐新闻
+- 无商业价值热点
+
+
+5. 输出JSON数组：
 
 [
 {{
 "title":"",
 "category":"",
-"reason":"",
-"importance":"高/中"
+"source":"",
+"time":"",
+"summary":"",
+"level":"★★★★★"
 }}
 ]
+
+
+category只能使用：
+
+品牌竞争
+电商平台
+行业报告
+宏观消费
+儿童市场
+户外运动
+消费趋势
+科技趋势
 
 
 新闻：
@@ -756,169 +502,292 @@ def build_top_news():
 """
 
 
-    result=ask_json(
-        prompt
+    result=ask_deepseek(
+        prompt,
+        max_tokens=2500
     )
+
+
+
+    if not isinstance(result,list):
+
+        return fallback_top_news()
+
 
 
     final=[]
 
 
-    if isinstance(result,list):
+    for row in result[:8]:
 
 
-        for row in result[:8]:
+        if not isinstance(row,dict):
+
+            continue
 
 
-            if not isinstance(row,dict):
+        final.append({
 
-                continue
+            "title":
+            short(row.get("title",""),60),
 
+            "category":
+            row.get(
+                "category",
+                "行业观察"
+            ),
 
-            title=short(
-                row.get("title",""),
-                50
-            )
+            "source":
+            row.get(
+                "source",
+                "公开资讯"
+            ),
 
+            "time":
+            row.get(
+                "time",
+                ""
+            ),
 
-            if not title:
-
-                continue
-
-
-
-            final.append({
-
-                "title":title,
-
-                "category":
+            "summary":
+            short(
                 row.get(
-                    "category",
-                    "行业动态"
-                ),
-
-                "reason":
-                row.get(
-                    "reason",
+                    "summary",
                     ""
                 ),
+                100
+            ),
 
-                "importance":
-                row.get(
-                    "importance",
-                    "中"
-                )
+            "level":
+            row.get(
+                "level",
+                "★★★"
+            )
 
-            })
-
-
-
-    # DeepSeek失败备用
-
-    if len(final)<5:
+        })
 
 
-        for item in ranked[:8]:
-
-            final.append({
-
-                "title":
-                short(
-                    item.get("title","")
-                ),
-
-                "category":
-                ",".join(
-                    classify_news(
-                        item.get(
-                            "title",
-                            ""
-                        )
-                    )
-                ),
-
-                "reason":
-                "行业信息跟踪",
-
-                "importance":
-                "中"
-
-            })
+    return final
 
 
 
-    TOP_NEWS_FILE.parent.mkdir(
-        parents=True,
-        exist_ok=True
-    )
 
 
-    TOP_NEWS_FILE.write_text(
 
-        json.dumps(
+def fallback_top_news():
 
-            {
-                "items":final
-            },
-
-            ensure_ascii=False,
-
-            indent=2
-
-        ),
-
-        encoding="utf-8"
-
-    )
+    result=[]
 
 
-    return final[:8]
+    for item in news_items[:8]:
+
+        result.append({
+
+            "title":
+            short(
+                item.get("title",""),
+                60
+            ),
+
+            "category":
+            "行业资讯",
+
+            "source":
+            item.get(
+                "source",
+                "公开资讯"
+            ),
+
+            "time":
+            "",
+
+            "summary":
+            "",
+
+            "level":
+            "★★★"
+
+        })
+
+
+    return result
+
 
 
 
 top_news=build_top_news()
 
+# =========================================================
+# 电商平台动态
+# =========================================================
+
+def build_ec_news():
 
 
-# ======================================================
-# 竞品动态
-# ======================================================
+    platform_words = [
+        "天猫",
+        "淘宝",
+        "京东",
+        "抖音",
+        "快手",
+        "小红书",
+        "唯品会",
+        "得物",
+        "拼多多"
+    ]
 
 
-COMPETITOR_BRANDS=[
-
-    "安踏",
-    "FILA",
-    "李宁",
-    "特步",
-    "361",
-    "耐克",
-    "Nike",
-    "阿迪达斯",
-    "Adidas",
-    "Puma",
-    "HOKA",
-    "昂跑",
-    "On",
-    "亚瑟士",
-    "lululemon",
-    "始祖鸟",
-    "巴拉巴拉"
-
-]
-
-
-
-def build_competitor_news():
-
-
-    result=[]
+    candidates=[]
 
 
     for item in news_items:
 
 
-        title=clean_title(
+        title=clean_text(
+            item.get("title","")
+        )
+
+
+        if any(
+            p in title
+            for p in platform_words
+        ):
+
+            candidates.append(item)
+
+
+
+    if not candidates:
+
+        return fallback_ec()
+
+
+
+    prompt=f"""
+
+你是运动鞋服行业电商观察编辑。
+
+请从以下新闻中筛选5条电商平台相关动态。
+
+
+关注：
+
+- 平台规则变化
+- 流量变化
+- 内容营销趋势
+- 直播生态
+- 品类销售趋势
+- 平台活动
+
+
+不要强行输出618，
+除非新闻确实涉及。
+
+
+输出JSON：
+
+[
+{{
+"platform":"",
+"title":"",
+"summary":""
+}}
+]
+
+
+新闻：
+
+{
+chr(10).join(
+x.get("title","")
+for x in candidates[:50]
+)
+
+}
+
+"""
+
+
+    result=ask_deepseek(
+        prompt,
+        max_tokens=1200
+    )
+
+
+    if not isinstance(result,list):
+
+        return fallback_ec()
+
+
+
+    return result[:5]
+
+
+
+
+
+def fallback_ec():
+
+    return [
+
+        {
+        "platform":"",
+        "title":"",
+        "summary":""
+        }
+
+        for _ in range(5)
+
+    ]
+
+
+
+
+
+
+ec_news=build_ec_news()
+
+
+
+
+
+
+# =========================================================
+# 竞品动态
+# =========================================================
+
+
+def build_competitor_news():
+
+
+    brands=[
+
+        "安踏",
+        "李宁",
+        "特步",
+        "361",
+        "耐克",
+        "Nike",
+        "阿迪达斯",
+        "Adidas",
+        "Puma",
+        "HOKA",
+        "昂跑",
+        "On",
+        "lululemon",
+        "始祖鸟"
+
+    ]
+
+
+    candidates=[]
+
+
+
+    for item in news_items:
+
+
+        title=clean_text(
             item.get(
                 "title",
                 ""
@@ -926,89 +795,92 @@ def build_competitor_news():
         )
 
 
-        brand=None
-
-
-        for b in COMPETITOR_BRANDS:
-
-            if b in title:
-
-                brand=b
-
-                break
-
-
-
-        if not brand:
-
-            continue
-
-
-
         if any(
-            x in title
-            for x in [
-                "比分",
-                "比赛",
-                "球员",
-                "转会"
-            ]
+            b in title
+            for b in brands
         ):
 
-            continue
+            candidates.append(item)
 
 
 
-        result.append({
+    if not candidates:
 
-            "brand":brand,
+        return [
 
-            "title":
-            short(
-                title,
-                35
-            ),
+        {
+        "brand":"",
+        "title":"",
+        "summary":""
+        }
 
-            "source":
-            item.get(
-                "source",
-                ""
-            )
+        for _ in range(6)
 
-        })
+        ]
 
 
 
-    result=result[:10]
+    prompt=f"""
+
+你是运动鞋服竞争情报分析编辑。
+
+请整理以下品牌新闻。
+
+关注：
+
+- 战略变化
+- 新品发布
+- 营销动作
+- 渠道变化
+- 财报变化
+- 管理层调整
 
 
+输出：
 
-    COMPETITOR_FILE.parent.mkdir(
-        parents=True,
-        exist_ok=True
+[
+{{
+"brand":"",
+"title":"",
+"summary":""
+}}
+]
+
+
+不要输出：
+
+- 体育比赛
+- 球员新闻
+- 娱乐内容
+
+
+新闻：
+
+{
+chr(10).join(
+x.get("title","")
+for x in candidates[:60]
+)
+
+}
+
+"""
+
+
+    result=ask_deepseek(
+        prompt,
+        max_tokens=1500
     )
 
 
-    COMPETITOR_FILE.write_text(
+    if not isinstance(result,list):
 
-        json.dumps(
-
-            {
-                "items":result
-            },
-
-            ensure_ascii=False,
-
-            indent=2
-
-        ),
-
-        encoding="utf-8"
-
-    )
+        return []
 
 
-    return result
+
+    return result[:6]
+
 
 
 
@@ -1016,511 +888,566 @@ competitor_news=build_competitor_news()
 
 
 
-# ======================================================
-# 行业趋势观察
-# ======================================================
-
-
-def build_trends():
-
-
-    prompt=f"""
-
-你是运动鞋服行业研究员。
-
-根据以下资讯，生成4条行业趋势观察。
-
-
-要求：
-
-- 关注未来1-3个月经营影响
-- 不写新闻复述
-- 要有判断
-- 每条30-50字
-
-
-输出JSON：
-
-[
-{{
-"title":"",
-"desc":""
-}}
-]
-
-
-资讯：
-
-{chr(10).join(titles[:60])}
-
-"""
-
-
-    result=ask_json(
-        prompt
-    )
-
-
-    if isinstance(result,list):
-
-        return result[:4]
 
 
 
-    return [
 
-        {
-
-        "title":
-        "品牌竞争持续升级",
-
-        "desc":
-        "头部品牌围绕产品科技、渠道效率和用户心智展开竞争。"
-
-        },
+# =========================================================
+# 行业研究报告
+# =========================================================
 
 
-        {
+def build_reports():
 
-        "title":
-        "运动消费场景扩展",
 
-        "desc":
-        "户外、亲子、跑步等细分场景继续带动新品机会。"
 
-        }
+    report_words=[
 
+        "报告",
+        "白皮书",
+        "研究",
+        "趋势",
+        "调查",
+        "数据",
+        "市场规模",
+        "消费洞察"
 
     ]
 
 
-
-trend_items=build_trends()
-
-# ======================================================
-# 今日行业摘要
-# ======================================================
+    candidates=[]
 
 
-def build_summary():
-
-    prompt=f"""
-
-你是361°儿童事业部经营管理部负责人。
-
-请根据今天行业资讯生成一句日报摘要。
+    for item in news_items:
 
 
-要求：
-
-- 50字以内
-- 高管阅读口径
-- 有判断，不罗列
-- 体现最重要行业变化
-
-
-资讯：
-
-{chr(10).join(titles[:40])}
-
-"""
-
-
-    result=ask_json(prompt)
-
-
-    if isinstance(result,dict):
-
-        return result.get(
-            "summary",
-            ""
+        title=clean_text(
+            item.get(
+                "title",
+                ""
+            )
         )
 
 
-    return (
-        "运动鞋服行业信息持续变化，"
-        "品牌竞争、电商渠道、消费趋势和宏观环境"
-        "共同影响经营节奏。"
-    )
+        if any(
+            w in title
+            for w in report_words
+        ):
+
+            candidates.append(item)
 
 
 
-today_summary=build_summary()
 
+    if not candidates:
 
+        return [
 
-# ======================================================
-# 经营预警
-# ======================================================
+        {
+        "category":"",
+        "title":"",
+        "summary":""
+        }
 
+        for _ in range(3)
 
-def build_warning():
+        ]
+
 
 
     prompt=f"""
 
-你是运动鞋服行业经营负责人。
-
-请根据以下新闻生成3条经营关注提醒。
+你是消费行业研究编辑。
 
 
-要求：
-
-1. 必须是当天信息触发
-2. 不写空泛观点
-3. 关注：
-   - 品牌竞争
-   - 电商平台
-   - 宏观消费
-   - 儿童消费
-   - 渠道变化
-   - 商品机会
+请筛选与运动鞋服、儿童消费、
+零售、电商相关的研究报告。
 
 
 输出：
 
-JSON数组
-
 [
-"xxx",
-"xxx",
-"xxx"
+{{
+"category":"",
+"title":"",
+"summary":""
+}}
 ]
 
 
 新闻：
 
-{chr(10).join(titles[:50])}
+{
+chr(10).join(
+x.get("title","")
+for x in candidates[:50]
+)
+
+}
 
 """
 
 
-    result=ask_json(prompt)
-
-
-    if isinstance(result,list):
-
-        return [
-            str(x)
-            for x in result[:3]
-        ]
-
-
-    return [
-
-        "关注头部运动品牌动作变化及产品心智竞争。",
-
-        "关注平台流量变化和线上消费趋势。",
-
-        "关注消费环境变化对终端销售节奏影响。"
-
-    ]
-
-
-
-warnings=build_warning()
-
-
-
-# ======================================================
-# 天气异常提醒
-# ======================================================
-
-
-def load_weather_warning():
-
-
-    file=Path(
-        "output/weather/latest.json"
-    )
-
-
-    if not file.exists():
-
-        return ""
-
-
-    try:
-
-        data=json.loads(
-            file.read_text(
-                encoding="utf-8"
-            )
-        )
-
-
-    except:
-
-        return ""
-
-
-
-    warnings=[]
-
-
-    regions=data.get(
-        "regions",
-        {}
-    )
-
-
-    for name,value in regions.items():
-
-
-        days=value.get(
-            "days",
-            []
-        )
-
-
-        for day in days:
-
-
-            weather=str(
-                day.get(
-                    "weather",
-                    ""
-                )
-            )
-
-
-            temp=float(
-                day.get(
-                    "temp_min",
-                    20
-                )
-            )
-
-
-            rain=float(
-                day.get(
-                    "precipitation",
-                    0
-                )
-            )
-
-
-            if (
-                "暴雨" in weather
-                or
-                "台风" in weather
-                or
-                "强降雨" in weather
-            ):
-
-                warnings.append(
-                    f"{name}出现强降雨天气，关注区域客流影响"
-                )
-
-
-
-            if temp<=5:
-
-                warnings.append(
-                    f"{name}气温明显下降，关注保暖品类需求"
-                )
-
-
-
-    return (
-        "；".join(
-            warnings[:2]
-        )
+    result=ask_deepseek(
+        prompt,
+        max_tokens=1000
     )
 
 
 
-weather_warning=load_weather_warning()
+    if not isinstance(result,list):
+
+        return []
 
 
 
-# ======================================================
-# HTML替换
-# ======================================================
+    return result[:3]
 
 
-template=TEMPLATE_FILE.read_text(
-    encoding="utf-8"
+
+report_news=build_reports()
+
+
+
+
+
+
+
+
+# =========================================================
+# 异常提醒
+# =========================================================
+
+
+def build_alert():
+
+
+    prompt=f"""
+
+你是企业行业风险提醒助手。
+
+
+请判断以下新闻是否存在：
+
+1. 极端天气
+2. 区域重大事件
+3. 消费政策变化
+4. 品牌重大风险事件
+5. 行业突发事件
+
+
+如果没有重要事件，
+输出：
+
+暂无重大异常事件
+
+
+如果有：
+
+输出一段50字以内提醒。
+
+
+新闻：
+
+{
+chr(10).join(
+x.get("title","")
+for x in news_items[:80]
 )
+
+}
+
+"""
+
+
+    result=ask_deepseek(
+        prompt,
+        max_tokens=200
+    )
+
+
+    if result:
+
+        return str(result)
+
+
+    return "暂无重大异常事件"
+
+
+
+
+alert_content=build_alert()
+
+# =========================================================
+# 今日一句话观察
+# =========================================================
+
+
+def build_today_summary():
+
+
+    prompt=f"""
+
+你是运动鞋服行业研究编辑。
+
+
+请根据今日重点资讯，
+总结一句行业观察。
+
+
+要求：
+
+- 40字以内
+- 不写空泛判断
+- 不写经营动作
+- 体现当天行业变化
+
+
+新闻：
+
+{
+chr(10).join(
+x.get("title","")
+for x in top_news[:8]
+)
+
+}
+
+"""
+
+
+    result=ask_deepseek(
+        prompt,
+        max_tokens=200
+    )
+
+
+    if result:
+
+        return str(result)
+
+
+
+    return "运动鞋服行业信息持续变化，品牌竞争、电商渠道与消费趋势值得关注。"
+
+
+
+
+today_summary=build_today_summary()
+
+
+
+
+
+# =========================================================
+# HTML变量填充
+# =========================================================
+
+
+def set_default(value):
+
+    if value is None:
+
+        return ""
+
+    return str(value)
+
+
 
 
 
 data={
 
-    "date":
-    today.strftime(
-        "%Y-%m-%d"
-    ),
+"date":
+today.strftime("%Y-%m-%d"),
 
 
-    "weekday":
-    weekday_map[
-        today.weekday()
-    ],
+"weekday":
+weekday_map[today.weekday()],
 
 
-    "update_time":
-    today.strftime(
-        "%H:%M"
-    ),
+"update_time":
+today.strftime("%H:%M"),
 
 
-    "today_summary":
-    today_summary,
+"today_summary":
+today_summary,
 
 
-    "warning1":
-    warnings[0],
-
-
-    "warning2":
-    warnings[1],
-
-
-    "warning3":
-    warnings[2],
-
-
-    "weather_warning":
-    weather_warning,
-
-
-    "news_count":
-    len(news_items)
+"alert_content":
+alert_content
 
 }
 
 
 
-# TOP资讯
 
-for i,item in enumerate(
-    top_news,
-    start=1
-):
 
-    data[
-        f"top{i}_title"
-    ] = item.get(
+# =========================================================
+# TOP新闻变量
+# =========================================================
+
+
+for i in range(1,9):
+
+
+    item = (
+        top_news[i-1]
+        if i<=len(top_news)
+        else {}
+    )
+
+
+    data[f"top{i}_title"] = item.get(
         "title",
         ""
     )
 
 
-    data[
-        f"top{i}_category"
-    ] = item.get(
+    data[f"top{i}_category"] = item.get(
         "category",
         ""
     )
 
 
-    data[
-        f"top{i}_reason"
-    ] = item.get(
-        "reason",
-        ""
-    )
-
-
-    data[
-        f"top{i}_importance"
-    ] = item.get(
-        "importance",
-        ""
-    )
-
-
-
-# 竞品
-
-for i,item in enumerate(
-    competitor_news,
-    start=1
-):
-
-    data[
-        f"comp{i}_brand"
-    ] = item.get(
-        "brand",
-        ""
-    )
-
-
-    data[
-        f"comp{i}_title"
-    ] = item.get(
-        "title",
-        ""
-    )
-
-
-    data[
-        f"comp{i}_source"
-    ] = item.get(
+    data[f"top{i}_source"] = item.get(
         "source",
         ""
     )
 
 
+    data[f"top{i}_time"] = item.get(
+        "time",
+        ""
+    )
 
-# 趋势
 
-for i,item in enumerate(
-    trend_items,
-    start=1
-):
+    data[f"top{i}_summary"] = item.get(
+        "summary",
+        ""
+    )
 
-    data[
-        f"trend{i}_title"
-    ] = item.get(
+
+    data[f"top{i}_level"] = item.get(
+        "level",
+        ""
+    )
+
+
+
+
+
+
+
+# =========================================================
+# 电商动态变量
+# =========================================================
+
+
+for i in range(1,6):
+
+
+    item=(
+
+        ec_news[i-1]
+        if i<=len(ec_news)
+        else {}
+
+    )
+
+
+    data[f"ec{i}_platform"]=item.get(
+        "platform",
+        ""
+    )
+
+
+    data[f"ec{i}_title"]=item.get(
         "title",
         ""
     )
 
 
-    data[
-        f"trend{i}_desc"
-    ] = item.get(
-        "desc",
+    data[f"ec{i}_summary"]=item.get(
+        "summary",
         ""
     )
 
 
 
-for key,value in data.items():
 
-    template=template.replace(
 
-        "{{"+key+"}}",
 
-        str(value)
+
+
+# =========================================================
+# 竞品变量
+# =========================================================
+
+
+for i in range(1,7):
+
+
+    item=(
+
+        competitor_news[i-1]
+        if i<=len(competitor_news)
+        else {}
 
     )
 
 
+    data[f"comp{i}_brand"]=item.get(
+        "brand",
+        ""
+    )
+
+
+    data[f"comp{i}_title"]=item.get(
+        "title",
+        ""
+    )
+
+
+    data[f"comp{i}_summary"]=item.get(
+        "summary",
+        ""
+    )
+
+
+
+
+
+
+
+# =========================================================
+# 行业报告变量
+# =========================================================
+
+
+for i in range(1,4):
+
+
+    item=(
+
+        report_news[i-1]
+        if i<=len(report_news)
+        else {}
+
+    )
+
+
+    data[f"report{i}_category"]=item.get(
+        "category",
+        ""
+    )
+
+
+    data[f"report{i}_title"]=item.get(
+        "title",
+        ""
+    )
+
+
+    data[f"report{i}_summary"]=item.get(
+        "summary",
+        ""
+    )
+
+
+
+
+
+
+
+# =========================================================
+# 今日关注
+# =========================================================
+
+
+warnings=[
+
+"关注运动鞋服品牌竞争变化及渠道策略调整。",
+
+"关注消费趋势、电商流量和消费者需求变化。",
+
+"关注宏观环境及政策对零售行业的影响。"
+
+]
+
+
+
+for i in range(1,4):
+
+    data[f"warning{i}"]=warnings[i-1]
+
+
+
+
+
+
+
+
+# =========================================================
+# 读取HTML模板
+# =========================================================
+
+
+if not TEMPLATE_FILE.exists():
+
+    raise FileNotFoundError(
+        "daily-report.html不存在"
+    )
+
+
+
+html=TEMPLATE_FILE.read_text(
+    encoding="utf-8"
+)
+
+
+
+
+for key,value in data.items():
+
+    html=html.replace(
+        "{{"+key+"}}",
+        set_default(value)
+    )
+
+
+
+
+
+
+# =========================================================
+# 输出HTML
+# =========================================================
+
 
 OUTPUT_HTML.write_text(
-
-    template,
-
+    html,
     encoding="utf-8"
-
 )
 
 
 
-# ======================================================
-# 历史保存
-# ======================================================
-
-
-history_dir=Path(
-    "output/history"
+print(
+    "daily-report-filled.html generated"
 )
 
 
-history_dir.mkdir(
+
+
+
+
+
+# =========================================================
+# 保存历史
+# =========================================================
+
+
+HISTORY_DIR.mkdir(
     parents=True,
     exist_ok=True
 )
@@ -1529,43 +1456,41 @@ history_dir.mkdir(
 
 history={
 
-    "date":
-    today.strftime(
-        "%Y-%m-%d"
-    ),
+"date":
+today.strftime("%Y-%m-%d"),
 
 
-    "summary":
-    today_summary,
+"summary":
+today_summary,
 
 
-    "top_news":
-    top_news,
+"top_news":
+top_news,
 
 
-    "competitor_news":
-    competitor_news,
+"competitor":
+competitor_news,
 
 
-    "warnings":
-    warnings,
+"ecommerce":
+ec_news,
 
 
-    "trends":
-    trend_items
+"reports":
+report_news,
+
+
+"alert":
+alert_content
 
 }
 
 
 
-history_file=history_dir / (
-
-    today.strftime(
-        "%Y-%m-%d"
-    )
-    +
-    ".json"
-
+history_file = (
+    HISTORY_DIR
+    /
+    f"{today.strftime('%Y-%m-%d')}.json"
 )
 
 
@@ -1573,13 +1498,9 @@ history_file=history_dir / (
 history_file.write_text(
 
     json.dumps(
-
         history,
-
         ensure_ascii=False,
-
         indent=2
-
     ),
 
     encoding="utf-8"
@@ -1588,30 +1509,7 @@ history_file.write_text(
 
 
 
-print("======================")
-
 print(
-    "日报生成完成"
+    "history saved:",
+    history_file
 )
-
-print(
-    "新闻数量:",
-    len(news_items)
-)
-
-print(
-    "TOP资讯:",
-    len(top_news)
-)
-
-print(
-    "竞品:",
-    len(competitor_news)
-)
-
-print(
-    "输出:",
-    OUTPUT_HTML
-)
-
-print("======================")
