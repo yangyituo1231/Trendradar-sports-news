@@ -1239,7 +1239,7 @@ for i in range(1,9):
     
     data[f"top{i}_url"] = item.get(
         "url",
-        ""
+        "#"
      )
 
 
@@ -1306,6 +1306,11 @@ for i in range(1,6):
         ""
     )
 
+    data[f"ec{i}_url"] = item.get(
+        "url",
+        "#"
+    )
+
 
     data[f"ec{i}_summary"]=item.get(
         "summary",
@@ -1347,6 +1352,11 @@ for i in range(1,7):
         ""
     )
 
+    data[f"comp{i}_url"] = item.get(
+        "url",
+        "#"
+    )
+
 
     data[f"comp{i}_summary"]=item.get(
         "summary",
@@ -1385,6 +1395,11 @@ for i in range(1,4):
     data[f"report{i}_title"]=item.get(
         "title",
         ""
+    )
+
+    data[f"report{i}_url"] = item.get(
+        "url",
+        "#"
     )
 
 
