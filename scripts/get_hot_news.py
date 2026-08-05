@@ -5,7 +5,7 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from collections import defaultdict, Counter
@@ -19,7 +19,7 @@ MAX_ITEMS = 200
 
 RSS_PER_QUERY_LIMIT = 10
 
-RECENT_DAYS = 7
+RECENT_DAYS = 2
 
 
 WEEKLY_DIR = Path("output/weekly")
@@ -577,6 +577,7 @@ def parse_time(value):
     if not value:
         return None
 
+
     try:
 
         dt = parsedate_to_datetime(value)
@@ -587,11 +588,19 @@ def parse_time(value):
                 tzinfo=timezone.utc
             )
 
+
         return dt.astimezone(
             timezone.utc
         )
 
-    except:
+
+    except Exception as e:
+
+        print(
+            "time parse error:",
+            value,
+            e
+        )
 
         return None
 
@@ -696,9 +705,14 @@ def is_bad_news(title):
 def fetch_news(keyword):
 
 
+    start_date = (
+        NOW - timedelta(days=RECENT_DAYS)
+    ).strftime("%Y-%m-%d")
+
+
     query = urllib.parse.quote(
 
-        f"{keyword} when:{RECENT_DAYS}d"
+        f"{keyword} after:{start_date}"
 
     )
 
