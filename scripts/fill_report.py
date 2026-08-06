@@ -141,29 +141,6 @@ def load_news():
         return []
 
 
-def load_weather():
-
-    if not WEATHER_FILE.exists():
-        return {}
-
-    try:
-
-        return json.loads(
-            WEATHER_FILE.read_text(
-                encoding="utf-8"
-            )
-        )
-
-    except Exception as e:
-
-        print(
-            "load weather error:",
-            e
-        )
-
-        return {}
-
-
     try:
 
         data = json.loads(
@@ -198,6 +175,33 @@ def load_weather():
 
 
     return []
+
+
+
+def load_weather():
+
+    if not WEATHER_FILE.exists():
+
+        return {}
+
+
+    try:
+
+        return json.loads(
+            WEATHER_FILE.read_text(
+                encoding="utf-8"
+            )
+        )
+
+
+    except Exception as e:
+
+        print(
+            "load weather error:",
+            e
+        )
+
+        return {}
 
 
 
@@ -1328,6 +1332,11 @@ for x in top_news[:8]
 
 
 today_summary=build_today_summary()
+
+
+# =========================================================
+# 天气
+# =========================================================
 
 def build_weather_summary():
 
