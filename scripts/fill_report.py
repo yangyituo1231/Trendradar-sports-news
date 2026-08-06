@@ -14,6 +14,7 @@ TEMPLATE_FILE = Path("daily-report.html")
 OUTPUT_HTML = Path("daily-report-filled.html")
 
 NEWS_FILE = Path("output/news/latest.json")
+WEATHER_FILE = Path("output/weather/latest.json")
 
 HISTORY_DIR = Path("output/history")
 
@@ -140,6 +141,29 @@ def load_news():
         return []
 
 
+def load_weather():
+
+    if not WEATHER_FILE.exists():
+        return {}
+
+    try:
+
+        return json.loads(
+            WEATHER_FILE.read_text(
+                encoding="utf-8"
+            )
+        )
+
+    except Exception as e:
+
+        print(
+            "load weather error:",
+            e
+        )
+
+        return {}
+
+
     try:
 
         data = json.loads(
@@ -179,6 +203,7 @@ def load_news():
 
 
 news_items = load_news()
+weather_data = load_weather()
 
 
 
@@ -1304,6 +1329,43 @@ for x in top_news[:8]
 
 today_summary=build_today_summary()
 
+def build_weather_summary():
+
+    if not weather_data:
+        return "暂无天气数据"
+
+
+    result=[]
+
+
+    for key,value in weather_data.get("regions",{}).items():
+
+        name=value.get(
+            "name",
+            ""
+        )
+
+        days=value.get(
+            "days",
+            []
+        )
+
+
+        if days:
+
+            today=days[0]
+
+
+            result.append(
+                f"{name}：{today.get('weather','')} "
+                f"{today.get('temp_min','')}℃-{today.get('temp_max','')}℃"
+            )
+
+
+    return "；".join(result)
+
+weather_summary = build_weather_summary()
+
 
 
 
@@ -1338,7 +1400,9 @@ weekday_map[today.weekday()],
 "update_time":
 today.strftime("%H:%M"),
 
-
+"weather_summary":
+weather_summary,
+    
 "today_summary":
 today_summary,
 
