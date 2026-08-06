@@ -1338,23 +1338,32 @@ today_summary=build_today_summary()
 # 天气
 # =========================================================
 
-def build_weather_summary():
 
-    if not weather_data:
-        return "暂无天气数据"
+def build_weather_cards():
+
+    cards={}
+
+    region_map={
+        "north":"华北东北",
+        "east":"华东华中",
+        "south":"华南",
+        "southwest":"西南",
+        "northwest":"西北"
+    }
 
 
-    result=[]
+    for key,name in region_map.items():
 
-
-    for key,value in weather_data.get("regions",{}).items():
-
-        name=value.get(
-            "name",
-            ""
+        region = weather_data.get(
+            "regions",
+            {}
+        ).get(
+            key,
+            {}
         )
 
-        days=value.get(
+
+        days = region.get(
             "days",
             []
         )
@@ -1364,17 +1373,25 @@ def build_weather_summary():
 
             today=days[0]
 
+            cards[key]={
+                "name":name,
+                "weather":today.get("weather",""),
+                "temp":
+                f"{today.get('temp_min')}℃-{today.get('temp_max')}℃"
+            }
 
-            result.append(
-                f"{name}：{today.get('weather','')} "
-                f"{today.get('temp_min','')}℃-{today.get('temp_max','')}℃"
-            )
+        else:
+
+            cards[key]={
+                "name":name,
+                "weather":"",
+                "temp":""
+            }
 
 
-    return "；".join(result)
+    return cards
 
-weather_summary = build_weather_summary()
-
+weather_cards = build_weather_cards()
 
 
 
@@ -1409,8 +1426,30 @@ weekday_map[today.weekday()],
 "update_time":
 today.strftime("%H:%M"),
 
-"weather_summary":
-weather_summary,
+
+"weather1_name":weather_cards["north"]["name"],
+"weather1_weather":weather_cards["north"]["weather"],
+"weather1_temp":weather_cards["north"]["temp"],
+
+
+"weather2_name":weather_cards["east"]["name"],
+"weather2_weather":weather_cards["east"]["weather"],
+"weather2_temp":weather_cards["east"]["temp"],
+
+
+"weather3_name":weather_cards["south"]["name"],
+"weather3_weather":weather_cards["south"]["weather"],
+"weather3_temp":weather_cards["south"]["temp"],
+
+
+"weather4_name":weather_cards["southwest"]["name"],
+"weather4_weather":weather_cards["southwest"]["weather"],
+"weather4_temp":weather_cards["southwest"]["temp"],
+
+
+"weather5_name":weather_cards["northwest"]["name"],
+"weather5_weather":weather_cards["northwest"]["weather"],
+"weather5_temp":weather_cards["northwest"]["temp"],
     
 "today_summary":
 today_summary,
