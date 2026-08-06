@@ -1699,17 +1699,7 @@ html=TEMPLATE_FILE.read_text(
 )
 
 
-# 删除空电商模块
-for i in range(1,6):
 
-    if data.get(f"ec{i}_title","") == "":
-
-        html = re.sub(
-            rf'<div class="list-item">.*?{{{{ec{i}_summary}}}}.*?</div>',
-            '',
-            html,
-            flags=re.S
-        )
 
 
 for key,value in data.items():
