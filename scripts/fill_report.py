@@ -870,17 +870,10 @@ for x in candidates[:50]
 
 def fallback_ec():
 
-    return [
+    return []
 
-        {
-        "platform":"",
-        "title":"",
-        "summary":""
-        }
+for i in range(1,6):
 
-        for _ in range(5)
-
-    ]
 
 
 
@@ -1530,7 +1523,7 @@ for i in range(1,9):
 # =========================================================
 
 
-for i in range(1,6):
+for i in range(1,4):
 
 
     item=(
