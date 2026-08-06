@@ -167,7 +167,80 @@ margin-right:10px;
 
 }
 
+/* ======================
+天气模块
+====================== */
 
+
+.weather-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(5,1fr);
+
+gap:14px;
+
+}
+
+
+
+.weather-card{
+
+background:linear-gradient(
+135deg,
+#f8fafc,
+#ffffff
+);
+
+border:1px solid #e6e8ec;
+
+border-radius:14px;
+
+padding:20px 10px;
+
+text-align:center;
+
+}
+
+
+
+.weather-region{
+
+font-size:14px;
+
+font-weight:700;
+
+color:#344054;
+
+}
+
+
+
+.weather-status{
+
+margin-top:14px;
+
+font-size:17px;
+
+font-weight:700;
+
+color:#172033;
+
+}
+
+
+
+.weather-temp{
+
+margin-top:8px;
+
+font-size:14px;
+
+color:#667085;
+
+}
+  
 
 
 /* ======================
@@ -731,7 +804,153 @@ text-align:center;
 
 </div>
 
+<!-- 全国天气概览 -->
 
+
+<div class="section">
+
+
+<div class="section-title">
+
+全国天气概览
+
+</div>
+
+
+
+<div class="weather-grid">
+
+
+
+<div class="weather-card">
+
+<div class="weather-region">
+
+{{weather1_name}}
+
+</div>
+
+<div class="weather-status">
+
+{{weather1_weather}}
+
+</div>
+
+<div class="weather-temp">
+
+{{weather1_temp}}
+
+</div>
+
+</div>
+
+
+
+
+<div class="weather-card">
+
+<div class="weather-region">
+
+{{weather2_name}}
+
+</div>
+
+<div class="weather-status">
+
+{{weather2_weather}}
+
+</div>
+
+<div class="weather-temp">
+
+{{weather2_temp}}
+
+</div>
+
+</div>
+
+
+
+
+<div class="weather-card">
+
+<div class="weather-region">
+
+{{weather3_name}}
+
+</div>
+
+<div class="weather-status">
+
+{{weather3_weather}}
+
+</div>
+
+<div class="weather-temp">
+
+{{weather3_temp}}
+
+</div>
+
+</div>
+
+
+
+
+<div class="weather-card">
+
+<div class="weather-region">
+
+{{weather4_name}}
+
+</div>
+
+<div class="weather-status">
+
+{{weather4_weather}}
+
+</div>
+
+<div class="weather-temp">
+
+{{weather4_temp}}
+
+</div>
+
+</div>
+
+
+
+
+<div class="weather-card">
+
+<div class="weather-region">
+
+{{weather5_name}}
+
+</div>
+
+<div class="weather-status">
+
+{{weather5_weather}}
+
+</div>
+
+<div class="weather-temp">
+
+{{weather5_temp}}
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+  
 
 <!-- 今日观察 -->
 
