@@ -1377,7 +1377,7 @@ def build_weather_cards():
                 "name":name,
                 "weather":today.get("weather",""),
                 "temp":
-                f"{today.get('temp_min')}℃-{today.get('temp_max')}℃"
+                f"{int(today.get('temp_min'))}° — {int(today.get('temp_max'))}°"
             }
 
         else:
