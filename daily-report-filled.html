@@ -167,7 +167,80 @@ margin-right:10px;
 
 }
 
+/* ======================
+天气模块
+====================== */
 
+
+.weather-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(5,1fr);
+
+gap:14px;
+
+}
+
+
+
+.weather-card{
+
+background:linear-gradient(
+135deg,
+#f8fafc,
+#ffffff
+);
+
+border:1px solid #e6e8ec;
+
+border-radius:14px;
+
+padding:20px 10px;
+
+text-align:center;
+
+}
+
+
+
+.weather-region{
+
+font-size:14px;
+
+font-weight:700;
+
+color:#344054;
+
+}
+
+
+
+.weather-status{
+
+margin-top:14px;
+
+font-size:17px;
+
+font-weight:700;
+
+color:#172033;
+
+}
+
+
+
+.weather-temp{
+
+margin-top:8px;
+
+font-size:14px;
+
+color:#667085;
+
+}
+  
 
 
 /* ======================
@@ -722,7 +795,7 @@ text-align:center;
 
 <div class="time">
 
-更新时间 09:41
+更新时间 15:35
 
 </div>
 
@@ -731,7 +804,153 @@ text-align:center;
 
 </div>
 
+<!-- 全国天气概览 -->
 
+
+<div class="section">
+
+
+<div class="section-title">
+
+全国天气概览
+
+</div>
+
+
+
+<div class="weather-grid">
+
+
+
+<div class="weather-card">
+
+<div class="weather-region">
+
+华北东北
+
+</div>
+
+<div class="weather-status">
+
+雷阵雨
+
+</div>
+
+<div class="weather-temp">
+
+28.0℃-37.9℃
+
+</div>
+
+</div>
+
+
+
+
+<div class="weather-card">
+
+<div class="weather-region">
+
+华东华中
+
+</div>
+
+<div class="weather-status">
+
+小雨
+
+</div>
+
+<div class="weather-temp">
+
+28.9℃-34.4℃
+
+</div>
+
+</div>
+
+
+
+
+<div class="weather-card">
+
+<div class="weather-region">
+
+华南
+
+</div>
+
+<div class="weather-status">
+
+小雨
+
+</div>
+
+<div class="weather-temp">
+
+26.1℃-33.5℃
+
+</div>
+
+</div>
+
+
+
+
+<div class="weather-card">
+
+<div class="weather-region">
+
+西南
+
+</div>
+
+<div class="weather-status">
+
+小雨
+
+</div>
+
+<div class="weather-temp">
+
+22.9℃-30.4℃
+
+</div>
+
+</div>
+
+
+
+
+<div class="weather-card">
+
+<div class="weather-region">
+
+西北
+
+</div>
+
+<div class="weather-status">
+
+雷阵雨
+
+</div>
+
+<div class="weather-temp">
+
+21.7℃-27.9℃
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+  
 
 <!-- 今日观察 -->
 
@@ -798,22 +1017,22 @@ text-align:center;
 
 
 <div class="news-title">
-<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5VNjVJS0JvTnFyUmhUVlZ3ZmFDZGhxMHdMREpkWTlVeDhFbU4wTEtTR1FpZEt6eWRfX1JraDlIak91NkF2dFN3MEFjenBHTlNz?oc=5" target="_blank">
-阿迪达斯赢回中国消费者，下一个问题是靠什么留住
+<a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE41dzNuMzJGS3JTU0h3aGNzZ3JkeVI0Q1VWc18zUi1kOUV2WE9GVl80U3h5OVJHSUc1X3ZPLTI4OGttMHNVVVJVMEMwOGdwdw?oc=5" target="_blank">
+200亿始祖鸟最大的对手，被中国人买了：年入20亿
 </a>
 </div>
 
 
 <div class="news-info">
 
-凤凰网财经 ｜ 2026-08-05 03:28
+雷达财经 ｜ 2026-08-06 04:44
 
 </div>
 
 
 <div class="news-summary">
 
-阿迪达斯在中国市场实现复苏，重新赢得消费者青睐。报道分析其复苏原因及面临的挑战，核心问题在于如何将短期热度转化为长期忠诚度，以应对安踏、李宁等本土品牌的持续竞争。
+中国资本收购了年收入20亿的户外品牌，该品牌被视为始祖鸟（安踏旗下）在高端户外领域的主要竞争对手，交易将重塑户外运动品牌竞争格局。
 
 </div>
 
@@ -831,7 +1050,7 @@ text-align:center;
 
 <div class="category">
 
-电商平台
+品牌竞争
 
 </div>
 
@@ -847,22 +1066,22 @@ text-align:center;
 
 
 <div class="news-title">
-<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE5NX0VFOUIyT3hOQVhOMVZtV09TcVprcUFyZUNQYk9KS3RJWlE3Y3VZSkNFRHVQUHR1WmxuQjNxV3I5NUtwcHdRdzNnVko0dWJWa21FTTg3WGc?oc=5" target="_blank">
-Nike收紧中国线上渠道，应对“渠道混乱”局面
+<a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE55Q1A4NTRfT0xndTFFWl9obmU1XzZTdVBCYi1lS2xEdmJmT0ZkazQtSnM4bGl2ZVV6WGpLRWRtRDlleExWQXg1OFMwenNkSmtteVBtcEtwbGw3TTY2aE9GUg?oc=5" target="_blank">
+“小李宁”必迈体育冲刺上市：均价不到300元、全国仅1家门店，美津浓贡献六成营收
 </a>
 </div>
 
 
 <div class="news-info">
 
-时尚商业网 ｜ 2026-08-04 16:16
+东方财富 ｜ 2026-08-05 15:52
 
 </div>
 
 
 <div class="news-summary">
 
-Nike正在收紧其在中国市场的线上渠道管理，旨在解决渠道混乱、价格体系不稳等问题。此举表明Nike正积极调整其在中国市场的零售策略，以维护品牌形象和价格体系，对经销商和电商平台格局将产生直接影响。
+跑步品牌必迈体育冲击深交所主板，主打高性价比（均价低于300元）且线下仅1家门店，但高度依赖美津浓代工（贡献六成营收），其商业模式和上市前景引发关注。
 
 </div>
 
@@ -910,7 +1129,7 @@ Nike正在收紧其在中国市场的线上渠道管理，旨在解决渠道混�
 
 <div class="news-summary">
 
-李宁正式发布2026年亚运会中国体育代表团领奖装备，设计上复刻了1990年北京亚运会的经典场景。此举旨在通过情怀营销强化品牌历史底蕴，提升民族品牌形象，并带动相关产品系列的销售。
+李宁正式发布2026年亚运会中国体育代表团领奖装备，设计复刻1990年北京亚运经典元素，旨在通过体育营销强化品牌历史底蕴与国民情感连接。
 
 </div>
 
@@ -926,7 +1145,7 @@ Nike正在收紧其在中国市场的线上渠道管理，旨在解决渠道混�
 
 <div class="category">
 
-品牌竞争
+消费趋势
 
 </div>
 
@@ -942,22 +1161,22 @@ Nike正在收紧其在中国市场的线上渠道管理，旨在解决渠道混�
 
 
 <div class="news-title">
-<a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE55Q1A4NTRfT0xndTFFWl9obmU1XzZTdVBCYi1lS2xEdmJmT0ZkazQtSnM4bGl2ZVV6WGpLRWRtRDlleExWQXg1OFMwenNkSmtteVBtcEtwbGw3TTY2aE9GUg?oc=5" target="_blank">
-“小李宁”必迈体育冲刺上市：均价不到300元、全国仅1家门店，美津浓贡献六成营收
+<a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9pWTFEU2tRQkF6aDhlLUUybGY3TUpTTEEyTlBVeDdkeXdpYlh1b1E5enJPVTFaRzU4ODZIV1NieUQzLVRHWmZLYkJ3NjRjWElWanVPSXZCX1lFWk5ELVhCbVN5MVZnaFZYV2QxZWNLRV8?oc=5" target="_blank">
+饮料旺季不旺 可乐、冰红茶为啥不火了 健康消费趋势转变
 </a>
 </div>
 
 
 <div class="news-info">
 
-eastmoney.com ｜ 2026-08-05 15:52
+中华网 ｜ 2026-08-06 06:42
 
 </div>
 
 
 <div class="news-summary">
 
-跑步品牌必迈体育正冲刺深交所主板上市。其模式独特：产品均价低于300元，线下仅1家直营门店，深度绑定美津浓代工业务贡献六成营收。其上市进展及模式可持续性引发市场关注。
+传统含糖碳酸饮料和冰红茶在旺季销售遇冷，而无糖饮料逆势增长，反映出消费者对健康饮食的偏好持续深化，对运动鞋服行业的健康消费趋势亦有参考意义。
 
 </div>
 
@@ -987,6 +1206,100 @@ eastmoney.com ｜ 2026-08-05 15:52
 
 <div class="category">
 
+科技趋势
+
+</div>
+
+
+<div class="level">
+
+★★★★☆
+
+</div>
+
+</div>
+
+
+<div class="news-title">
+<a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTFBPeDI4VUxlejM0UnJ3M004X29oYkg1b1dsaHBBZGZGakVkNGJld0lESnhNWHNRRVFCdFhNVjJHNmNDNDN6N01udmRQNkxwU1E?oc=5" target="_blank">
+瑞幸AI Lucky的背后，消费零售迈入智能体竞争时代
+</a>
+</div>
+
+
+<div class="news-info">
+
+Morketing ｜ 2026-08-06 04:01
+
+</div>
+
+
+<div class="news-summary">
+
+瑞幸咖啡推出AI智能体“AI Lucky”，标志着消费零售企业正从数字化营销转向AI驱动的智能体竞争，预示行业运营效率和用户交互模式将迎来变革。
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="news-card">
+
+
+<div class="news-head">
+
+<div class="category">
+
+科技趋势
+
+</div>
+
+
+<div class="level">
+
+★★★★☆
+
+</div>
+
+</div>
+
+
+<div class="news-title">
+<a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQRTFqdXVUUGQtV19WeU5iTWhYSkNmOFZtVEFsSWVyQUZWcmZDc3FMS01Db2pLWlIxRjJxb00xNHFMUUc2WE83bEZHLS1TajdTQ0dQTFdkaVlJTUc1VTE0aTZweW9UeXhCQ0dodURUeExXNzJQTU9hQmw2M0t1cHpiZ3pZUF8?oc=5" target="_blank">
+80%消费者决策靠 AI 辅助、客户续约率 100%：AI搜索时代，品牌的钱该怎么花。
+</a>
+</div>
+
+
+<div class="news-info">
+
+新浪网 ｜ 2026-08-06 00:39
+
+</div>
+
+
+<div class="news-summary">
+
+报告指出80%的消费者决策已受AI辅助影响，品牌需重新评估在AI搜索时代的营销预算分配，以应对消费者信息获取和购买决策路径的结构性变化。
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="news-card">
+
+
+<div class="news-head">
+
+<div class="category">
+
 电商平台
 
 </div>
@@ -1002,22 +1315,22 @@ eastmoney.com ｜ 2026-08-05 15:52
 
 
 <div class="news-title">
-<a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE96MXZwcXluX0Y0bFJDS2tpUE42X0RnOE15eldYM1A0aktQN3lFN1gtcmV1VTFoWlQyaTRqMVlwaGlVSW5xLXlMcl9IMmN2bC1LWi03Zlp3?oc=5" target="_blank">
-小红书新增电影票健身卡券等类目本地生活商品体系再扩充
+<a href="" target="_blank">
+涉对标价「动手脚」 网购Lululemon、希音Shein须留意
 </a>
 </div>
 
 
 <div class="news-info">
 
-亿邦动力网 ｜ 2026-08-05 06:25
+公开资讯 ｜ 
 
 </div>
 
 
 <div class="news-summary">
 
-小红书本地生活业务再次扩容，新增电影票、健身卡券等类目。此举标志着小红书在本地生活领域的布局持续深化，从内容种草向交易闭环迈进，对传统本地生活服务平台及运动健身行业的内容营销渠道构成新变量。
+报道提示消费者在网购Lululemon和Shein等品牌时需留意价格标注问题，反映出电商渠道价格透明度及合规风险，对品牌线上渠道管理提出警示。
 
 </div>
 
@@ -1034,7 +1347,7 @@ eastmoney.com ｜ 2026-08-05 15:52
 
 <div class="category">
 
-消费趋势
+电商平台
 
 </div>
 
@@ -1049,116 +1362,22 @@ eastmoney.com ｜ 2026-08-05 15:52
 
 
 <div class="news-title">
-<a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1lVmFlWnBkZ1R6ajVFY2VVRjZ3Wm0xSTI5by1ZUi1ad2M0Y09KUDRneG9WOTBtOXBHS0N6T0QxYmU4RHpNdGdGLUZ3XzJCOWxVMzhWTndB?oc=5" target="_blank">
-安永：2026年全球消费者健康调查
+<a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9vVExZbU9LWk5BU0lzX1Y0QUhZbTRDT3JFRkZYYllmcHl1N0hPOVlaU2FCOWYxZzZORTB5UTYtUXJhMF92RnlXbzE1QXZHdnFnVzRtenF3?oc=5" target="_blank">
+Temu加入欧洲跨境电商研究平台CBCommerce会员网络
 </a>
 </div>
 
 
 <div class="news-info">
 
-199IT ｜ 2026-08-05 18:00
+亿邦动力网 ｜ 2026-08-05 07:23
 
 </div>
 
 
 <div class="news-summary">
 
-安永发布2026年全球消费者健康调查报告，揭示了消费者在健康消费方面的最新态度和行为变化。报告指出健康消费正从被动治疗转向主动预防和管理，为运动鞋服及健康消费品企业提供了重要的战略参考。
-
-</div>
-
-
-</div>
-
-
-
-
-<div class="news-card">
-
-
-<div class="news-head">
-
-<div class="category">
-
-品牌竞争
-
-</div>
-
-
-<div class="level">
-
-★★★★☆
-
-</div>
-
-</div>
-
-
-<div class="news-title">
-<a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxNWTRkSjR1S1JDekpoR0x5UmNnb2J0SGJRVXNYd1ZvSTRZdW9xbkVrVVVZdjF0NDFTdV9sS1dwUmlMMzVLQzFhSkRTSkdob2JwZkdidzhUTDdpXzRneDJwSGRDYlE3OC05Mzhwbi04cU5PRTNxYXp6OC10TDZuRmdEZnhVOTQxOU12VkRzaDNaVHN0cVBjZ1pBWUlCcDVyYkptY1JSdDFCckxrc3lYY3h5cV8yM3dITmdHTDEwTXg1SC1vYkhIaVlOSUlHdkU1Zm5wVWptb0prcGNWZGJZ?oc=5" target="_blank">
-第20届亚运会中国体育代表团领奖装备发布
-</a>
-</div>
-
-
-<div class="news-info">
-
-手机新浪网 ｜ 2026-08-05 05:53
-
-</div>
-
-
-<div class="news-summary">
-
-第20届亚运会中国体育代表团领奖装备正式发布。作为官方合作品牌，安踏再次承担设计任务。领奖装备的发布是品牌奥运营销的重要节点，有助于提升品牌形象和国民关注度，带动相关产品销售。
-
-</div>
-
-
-</div>
-
-
-
-
-<div class="news-card">
-
-
-<div class="news-head">
-
-<div class="category">
-
-消费趋势
-
-</div>
-
-
-<div class="level">
-
-★★★☆☆
-
-</div>
-
-</div>
-
-
-<div class="news-title">
-<a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE1vOXZ4dndILWZmMVFmYUFSeXFLRUtndVBsXzBSQXpMYklCaDBWTTVCWUYwclZMekQxdlRuYVpjbXBnb0VXN3k1UVV2N2wwUWVzd3ByYWxkTXpNR0szQV9zamFBM29yRnFHSGhR?oc=5" target="_blank">
-含糖碳酸今夏遇冷，无糖饮料逆势增长领跑大盘
-</a>
-</div>
-
-
-<div class="news-info">
-
-food.china.com.cn ｜ 2026-08-05 07:55
-
-</div>
-
-
-<div class="news-summary">
-
-今年夏季饮料市场呈现分化趋势，含糖碳酸饮料销售遇冷，而无糖饮料则实现逆势增长。这一消费趋势变化反映了消费者对健康关注度的持续提升，对运动鞋服行业的健康化、功能化产品研发具有参考意义。
+拼多多旗下Temu正式加入欧洲跨境电商研究平台CBCommerce会员网络，此举有助于其深入了解欧洲市场规则，或加速其在欧洲市场的合规化布局与扩张。
 
 </div>
 
@@ -1204,13 +1423,13 @@ food.china.com.cn ｜ 2026-08-05 07:55
 
 <div class="list-content">
 
-<a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9yX0pkeUdfZTVJT3VyaEZtcHFGcWN6eUhqeDFPR0lRVGo4YWhIZTRpMGthakJvakNOTFFpaUNCbkJDem9iX1JISjgwRHBJN2RTUERLdHIyM2ZwTzBtb05MQ1c0UUxMOFpRUGhNRVJkNHZCOUE?oc=5" target="_blank">
-<strong>甘青宁首家京东电器自营城市旗舰店入驻兰州 十一前开业</strong>
+<a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbFIzaHlLRHdjV1dVaUJkUGM4RDJTUk9yR3pjNWRsRDFweGhXc1pxcWRrdWQwOW9ySlFJa2NqZVdOLW9IUy1yYTlET1g0aWd6NGo3OHowYkhmS1QycEZDZDg1VkRDeTU4ckhJWE51TlFKclliUzgxZnpnaGJ6enJSdmJRb3kyamZS?oc=5" target="_blank">
+<strong>家用电器品类采购额环比增长300%，京东内购“清凉节”助力企业应对高温大考</strong>
 </a>
 
 <br>
 
-京东电器自营城市旗舰店首次进入甘青宁地区，选址兰州并于十一前开业。此举标志京东线下自营零售网络向西北核心城市下沉，强化家电、3C及关联品类在区域市场的体验与服务闭环。
+京东内购推出“清凉节”活动，带动家用电器品类采购额环比增长300%，反映企业端夏季采购需求集中释放，平台B端场景化营销对品类增长的拉动效应显著。
 
 </div>
 
@@ -1223,50 +1442,25 @@ food.china.com.cn ｜ 2026-08-05 07:55
 
 <div class="list-tag">
 
-淘宝天猫
+京东
 
 </div>
 
 <div class="list-content">
 
-<a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9wdUJ6eWZiSnhBTDBETUxpV2t6eXlmWDVDR0JCMkVhdmVJSkd5Yjh0eXpFeWoxcG9BNnJJRUtFSTdDbWxZM2xPT1BncGZfOHNXQ3ExTTQ1YXJnSjVPNEZGNVNUaWdJME5p?oc=5" target="_blank">
-<strong>2026淘宝天猫潮玩CJ现场直击，以五大圈层重构潮玩宇宙，定义情绪消费新范式</strong>
+<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvWEwyamxEdC05eXJQcWdiNHVyN3RIZGNTRFBwX25OazNkdXJLZlBhRGVONE9YLVRUcEFvUVpJYXl1SlRFdVpNVmpwNkxUS25oUWRZekwzN1VhZw?oc=5" target="_blank">
+<strong>IDC、信通院、京东等机构联合发布玩球体育app入口：128GB版本均价跌破1500元</strong>
 </a>
 
 <br>
 
-淘宝天猫在潮玩展会现场提出以五大圈层重构潮玩品类运营逻辑，聚焦情绪消费趋势。平台正从单一货架向圈层化内容与人群运营转型，为商家提供更精细化的品类增长路径。
+京东联合多家机构发布行业数据报告，指出手机128GB版本均价已跌破1500元，显示平台通过数据洞察与报告发布强化其在消费电子领域的行业话语权，同时反映入门级产品价格下探趋势。
 
 </div>
 
 
 </div>
 
-
-
-
-<div class="list-item">
-
-<div class="list-tag">
-
-小红书
-
-</div>
-
-<div class="list-content">
-
-<a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE96MXZwcXluX0Y0bFJDS2tpUE42X0RnOE15eldYM1A0aktQN3lFN1gtcmV1VTFoWlQyaTRqMVlwaGlVSW5xLXlMcl9IMmN2bC1LWi03Zlp3?oc=5" target="_blank">
-<strong>小红书新增电影票健身卡券等类目本地生活商品体系再扩充</strong>
-</a>
-
-<br>
-
-小红书本地生活商品体系进一步扩容，新增电影票、健身卡券等虚拟服务类目。平台从内容种草向交易闭环延伸，拓宽商家运营场景，或影响运动健身、休闲娱乐类目商家的投放与转化模式。
-
-</div>
-
-
-</div>
 
 
 
@@ -1286,7 +1480,32 @@ food.china.com.cn ｜ 2026-08-05 07:55
 
 <br>
 
-京东居家针对电子游戏及麻将胡了类目推出专项商家扶持计划，聚焦夏季增长节点。平台通过资源倾斜与运营支持，帮助商家在细分品类中提升流量获取与转化效率，反映京东在居家场景下对新兴品类的拓展意图。
+京东居家针对夏季品类推出专项商家扶持计划，通过资源倾斜和运营支持帮助商家提升夏季销售表现，体现平台在品类运营上对商家的精细化赋能趋势。
+
+</div>
+
+
+</div>
+
+
+
+<div class="list-item">
+
+<div class="list-tag">
+
+
+
+</div>
+
+<div class="list-content">
+
+<a href="#" target="_blank">
+<strong></strong>
+</a>
+
+<br>
+
+
 
 </div>
 
@@ -1351,45 +1570,45 @@ food.china.com.cn ｜ 2026-08-05 07:55
 
 <div class="brand">
 
+亚玛芬体育（Arc'teryx母公司）
+
+</div>
+
+<div class="comp-title">
+
+<a href="" target="_blank">
+
+亚玛芬体育收购户外品牌（始祖鸟最大对手）
+
+</a>
+
+</div>
+
+<div class="comp-summary">
+
+亚玛芬体育收购一家年收入20亿元、被视为始祖鸟最大竞争对手的户外品牌，该品牌年营收约20亿元。此举进一步扩大亚玛芬在高端户外领域的品牌矩阵与市场份额。
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="competitor-card">
+
+<div class="brand">
+
 必迈体育
 
 </div>
 
 <div class="comp-title">
 
-<a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE55Q1A4NTRfT0xndTFFWl9obmU1XzZTdVBCYi1lS2xEdmJmT0ZkazQtSnM4bGl2ZVV6WGpLRWRtRDlleExWQXg1OFMwenNkSmtteVBtcEtwbGw3TTY2aE9GUg?oc=5" target="_blank">
+<a href="" target="_blank">
 
-“小李宁”必迈体育冲刺上市：均价不到300元、全国仅1家门店，美津浓贡献六成营收
-
-</a>
-
-</div>
-
-<div class="comp-summary">
-
-必迈体育启动上市进程，定位大众市场，产品均价低于300元，线下渠道极简（全国仅1家门店），营收高度依赖为美津浓代工业务（占六成）。
-
-</div>
-
-
-</div>
-
-
-
-
-<div class="competitor-card">
-
-<div class="brand">
-
-Onitsuka Tiger鬼塚虎
-
-</div>
-
-<div class="comp-title">
-
-<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE42dzIwQmpRYzFYNGQ5bEVUTW92bzIxQUZ6a2k3alRGN2k1ZWs2Q3ZVVFczZ1lRRmZmVTNjTWtaMk5uZWg0N3FFUTNpZ09qZGk4ai1RcVdyLV8?oc=5" target="_blank">
-
-Onitsuka Tiger鬼塚虎上海环贸iapm概念店盛大开幕
+必迈体育冲刺上市，均价不足300元
 
 </a>
 
@@ -1397,37 +1616,7 @@ Onitsuka Tiger鬼塚虎上海环贸iapm概念店盛大开幕
 
 <div class="comp-summary">
 
-鬼塚虎在上海环贸iapm开设全新概念店，强化高端零售布局与品牌体验，进一步拓展中国市场线下渠道。
-
-</div>
-
-
-</div>
-
-
-
-
-<div class="competitor-card">
-
-<div class="brand">
-
-Adidas
-
-</div>
-
-<div class="comp-title">
-
-<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5VNjVJS0JvTnFyUmhUVlZ3ZmFDZGhxMHdMREpkWTlVeDhFbU4wTEtTR1FpZEt6eWRfX1JraDlIak91NkF2dFN3MEFjenBHTlNz?oc=5" target="_blank">
-
-阿迪达斯赢回中国消费者，下一个问题是靠什么留住
-
-</a>
-
-</div>
-
-<div class="comp-summary">
-
-阿迪达斯在中国市场实现消费者回归，但面临持续留存挑战，需在产品、渠道或品牌策略上进一步巩固竞争力。
+必迈体育启动IPO进程，其产品均价不到300元，全国仅1家直营门店，美津浓代工业务贡献六成营收。公司以高性价比跑步鞋服切入大众市场，渠道以线上为主。
 
 </div>
 
@@ -1449,7 +1638,7 @@ Adidas
 
 <a href="" target="_blank">
 
-李宁发布2026亚运领奖装备，复刻1990亚运经典场景
+李宁发布2026年亚运会中国代表团领奖装备
 
 </a>
 
@@ -1457,7 +1646,7 @@ Adidas
 
 <div class="comp-summary">
 
-李宁与中国奥委会联合发布第20届亚运会中国代表团领奖装备，设计复刻1990年亚运经典元素，并引入中国航天技术支持。
+李宁与中国奥委会联合发布第20届亚运会中国体育代表团领奖装备，设计复刻1990年北京亚运经典场景，并引入中国航天技术支持的面料科技。
 
 </div>
 
@@ -1477,9 +1666,9 @@ Nike
 
 <div class="comp-title">
 
-<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE5NX0VFOUIyT3hOQVhOMVZtV09TcVprcUFyZUNQYk9KS3RJWlE3Y3VZSkNFRHVQUHR1WmxuQjNxV3I5NUtwcHdRdzNnVko0dWJWa21FTTg3WGc?oc=5" target="_blank">
+<a href="" target="_blank">
 
-Nike收紧中国线上渠道，应对“渠道混乱”局面
+Nike收紧中国线上渠道管理
 
 </a>
 
@@ -1487,7 +1676,37 @@ Nike收紧中国线上渠道，应对“渠道混乱”局面
 
 <div class="comp-summary">
 
-Nike对中国线上渠道进行收紧管理，以应对渠道混乱问题，旨在优化价格体系与品牌管控。
+Nike正在对中国线上渠道进行收紧调整，以应对渠道混乱局面，旨在规范折扣体系与经销商管理，维护品牌价格体系与渠道秩序。
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="competitor-card">
+
+<div class="brand">
+
+优衣库
+
+</div>
+
+<div class="comp-title">
+
+<a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPb3BhajFPbmNmUU1sbDdjRG52WlplZEhELVJ1NTZxZjFOSWRSUWZUU2J5S0N5WVh3NkRscUhDMUVjVGhHbklvanBjb0FuSUpTTFVuSllTMXJmWmladG02OU9ucTNDejdiaEhIVG10YmpFd0ZaVVZ0ek95NEhSQ2lWbDRmbzRCcC16?oc=5" target="_blank">
+
+优衣库发布2026秋冬新品系列
+
+</a>
+
+</div>
+
+<div class="comp-summary">
+
+优衣库发布2026秋冬新品系列，延续基础款与功能性面料策略，进一步强化大众服饰市场的产品布局。
 
 </div>
 
@@ -1552,16 +1771,16 @@ Nike对中国线上渠道进行收紧管理，以应对渠道混乱问题，旨�
 
 <div class="report-tag">
 
-消费趋势
+行业报告
 
 </div>
 
 
 <div class="report-title">
 
-<a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1lVmFlWnBkZ1R6ajVFY2VVRjZ3Wm0xSTI5by1ZUi1ad2M0Y09KUDRneG9WOTBtOXBHS0N6T0QxYmU4RHpNdGdGLUZ3XzJCOWxVMzhWTndB?oc=5" target="_blank">
+<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE5aTl9uNERfTnFPdDk0UzF6R3M3dEx1eEVCWE04V3ZNQ2Y4WFo0V3pmcmRHYTBZYTJhSXgwek80QTNXNTZqZWRnZHJYZmFWVUxabTI0MFcyXzY?oc=5" target="_blank">
 
-安永：2026年全球消费者健康调查
+《2026中国体育产业数字化转型白皮书》发布
 
 </a>
 
@@ -1570,7 +1789,7 @@ Nike对中国线上渠道进行收紧管理，以应对渠道混乱问题，旨�
 
 <div class="report-summary">
 
-安永发布2026年全球消费者健康调查，覆盖多国消费者健康消费行为与偏好变化，反映健康消费在运动鞋服等品类中的需求趋势。
+白皮书聚焦体育产业数字化转型，提出以场景适配与技术整合为核心路径，反映体育互联网赛道在技术应用层面的最新方向。
 
 </div>
 
@@ -1584,16 +1803,16 @@ Nike对中国线上渠道进行收紧管理，以应对渠道混乱问题，旨�
 
 <div class="report-tag">
 
-电商
+行业报告
 
 </div>
 
 
 <div class="report-title">
 
-<a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9vVExZbU9LWk5BU0lzX1Y0QUhZbTRDT3JFRkZYYllmcHl1N0hPOVlaU2FCOWYxZzZORTB5UTYtUXJhMF92RnlXbzE1QXZHdnFnVzRtenF3?oc=5" target="_blank">
+<a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9LU2E0eEpOMHVudWxXZE1jdkJxREdSS0NsNjNSYzljbGQ5Uk9KblotYm5uMVY4RzF0OG8zMnN5NGdHUXVKQVhtT3VMa1lvOTAtTmQ0SkRyZkxpUXNicDlIdklvbktsUWdY?oc=5" target="_blank">
 
-Temu加入欧洲跨境电商研究平台CBCommerce会员网络
+QuestMobile发布《中国移动互联网2026年上半年大报告》
 
 </a>
 
@@ -1602,7 +1821,7 @@ Temu加入欧洲跨境电商研究平台CBCommerce会员网络
 
 <div class="report-summary">
 
-Temu成为欧洲跨境电商研究平台CBCommerce会员，显示其深化欧洲市场布局，或影响跨境鞋服品类竞争格局。
+报告覆盖移动互联网整体用户规模、使用时长及细分行业流量变化，是观察线上消费与品牌数字渠道表现的基础数据来源。
 
 </div>
 
@@ -1616,16 +1835,16 @@ Temu成为欧洲跨境电商研究平台CBCommerce会员，显示其深化欧洲
 
 <div class="report-tag">
 
-消费趋势
+行业报告
 
 </div>
 
 
 <div class="report-title">
 
-<a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQeGREeGJvTFM1ekxILXJnS2FPN05KSWhBbHRsa2tIT0p3WEhvOGNuYVJsTkJCSVgwZC0ybVozNWttU2pnb2EzRHp0LVc5WEZSc043aEg0MDV0NGl5RzkxVHB0cHA5U0w3RlprN0VVc3pyNkVoTlhnNGhKczRpaU1UWnJKbm0zM3BWaXVDdA?oc=5" target="_blank">
+<a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE1xeFdhNWhiRmtWWDJuRGlHREVzNFRRWUNTV0VNc1FJS05pYVM5ZTBIM1A2NlQxRm1KdXl1YkVLWXhYLVZ4YUJHWGpHZlJISUd0ZjR5MG1KWlNkOW1ha2phMTFn?oc=5" target="_blank">
 
-暑期文旅市场稳中有进 沉浸式体验成消费新趋势
+2026上半年中国商铺租金指数研究报告
 
 </a>
 
@@ -1634,7 +1853,7 @@ Temu成为欧洲跨境电商研究平台CBCommerce会员，显示其深化欧洲
 
 <div class="report-summary">
 
-暑期文旅市场数据发布，沉浸式体验成为消费新趋势，反映大众消费偏好向体验型、场景化方向转变，对运动鞋服零售场景有参考意义。
+报告跟踪重点城市商铺租金走势，反映线下零售渠道景气度，对运动鞋服品牌线下门店扩张策略具有参考意义。
 
 </div>
 
