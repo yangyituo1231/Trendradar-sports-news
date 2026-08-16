@@ -1,367 +1,123 @@
 {
-  "generate_time": "2026-08-10 03:54",
-  "start_date": "2026-08-04",
-  "end_date": "2026-08-10",
+  "generate_time": "2026-08-17 03:41",
+  "start_date": "2026-08-11",
+  "end_date": "2026-08-17",
   "days": [
-    "2026-08-04",
-    "2026-08-05",
-    "2026-08-06",
-    "2026-08-07",
-    "2026-08-08",
-    "2026-08-09",
-    "2026-08-10"
+    "2026-08-11",
+    "2026-08-12",
+    "2026-08-13",
+    "2026-08-14",
+    "2026-08-15",
+    "2026-08-16",
+    "2026-08-17"
   ],
   "top_news": [
     {
-      "title": "运动品牌竞争加剧，产品心智与渠道效率成为关键",
-      "tag": "品牌竞争",
-      "source": "行业观察",
-      "desc": "品牌重大动作反映竞争重心变化，需关注产品心智、代言资产、渠道声量与终端转化。",
-      "logo": "品牌",
-      "icon": "🏷️",
-      "class": "logo-purple",
-      "link": "",
-      "published_at": ""
-    },
-    {
-      "title": "儿童运动消费场景外扩，亲子与校园需求继续升温",
-      "tag": "童装/儿童运动",
-      "source": "消费观察",
-      "desc": "儿童消费从单品购买转向亲子、校园、户外和运动场景综合经营。",
-      "logo": "童装",
-      "icon": "🧒",
-      "class": "logo-sky",
-      "link": "",
-      "published_at": ""
-    },
-    {
-      "title": "平台大促进入预热期，夏季功能品类承接需前置",
-      "tag": "大促/电商",
-      "source": "平台资讯",
-      "desc": "平台流量与大促节奏变化，重点观察夏季品类曝光、直播转化与终端承接。",
-      "logo": "大促",
-      "icon": "🛒",
-      "class": "logo-blue",
-      "link": "",
-      "published_at": ""
-    },
-    {
-      "title": "天气变化影响客流节奏，功能品类进入动态调整窗口",
-      "tag": "天气/功能消费",
-      "source": "公开气象信息",
-      "desc": "天气变化影响客流和主推节奏，防晒、凉感、防雨、防滑及保暖品类需动态前置。",
-      "logo": "天气",
-      "icon": "☀️",
-      "class": "logo-sky",
-      "link": "",
-      "published_at": ""
-    },
-    {
-      "title": "跑步、骑行与轻户外场景延续，运动装备需求扩张",
-      "tag": "户外/运动场景",
-      "source": "消费观察",
-      "desc": "户外、跑步、骑行、赛事和夜间消费延伸运动场景，带动装备与亲子需求。",
-      "logo": "户外",
-      "icon": "🚴",
-      "class": "logo-green",
-      "link": "",
-      "published_at": ""
-    },
-    {
-      "title": "Nike收紧中国线上渠道，应对“渠道混乱”局面",
-      "url": "https://fashionnetwork.cn",
+      "title": "安踏体育发布2024年全年业绩：营收同比增长13.6%至708.26亿元，经营利润同比增长8.7%",
+      "url": "",
       "category": "品牌竞争",
-      "source": "FashionNetwork",
-      "time": "2026-07-23",
-      "summary": "Nike正在收紧中国线上渠道，以应对渠道混乱问题。此举可能涉及清理经销商网络、加强直营比例或调整平台策略，旨在重塑品牌价格体系与消费者体验。",
+      "source": "公开资讯",
+      "time": "",
+      "summary": "安踏体育公布2024年全年业绩，营收708.26亿元，同比增长13.6%；经营利润165.96亿元，同比增长8.7%。其中，安踏主品牌营收增长10.6%至303.06亿元，FILA品牌营收增长6.1%...",
       "level": "★★★★★"
     },
     {
-      "title": "阿迪达斯赢回中国消费者，下一个问题是靠什么留住",
-      "url": "https://finance.ifeng.com",
+      "title": "李宁发布2024年全年业绩：营收同比增长3.9%至286.76亿元，净利润同比下降5.5%",
+      "url": "",
       "category": "品牌竞争",
-      "source": "凤凰网财经",
-      "time": "2026-07-23",
-      "summary": "阿迪达斯在中国市场实现复苏，重新赢得消费者。但文章指出，如何持续留住消费者是下一阶段的核心挑战，涉及产品创新、本土化运营及渠道策略的长期有效性。",
+      "source": "公开资讯",
+      "time": "",
+      "summary": "李宁公布2024年全年业绩，营收286.76亿元，同比增长3.9%；净利润30.13亿元，同比下降5.5%。毛利率为49.4%，同比提升1个百分点。渠道方面，直营收入同比增长9.4%，电商收入同比增长...",
       "level": "★★★★★"
     },
     {
-      "title": "中国奥委会与李宁品牌联合发布第20届亚运会中国体育代表团领奖装备",
-      "url": "https://www.sohu.com",
+      "title": "特步国际发布2024年全年业绩：营收同比增长6.8%至146.03亿元，净利润同比增长20.2%",
+      "url": "",
       "category": "品牌竞争",
-      "source": "搜狐新闻",
-      "time": "2026-07-23",
-      "summary": "李宁与中国奥委会联合发布2026年亚运会中国代表团领奖装备，复刻1990年北京亚运经典场景，并融入中国航天技术。此举强化了李宁与国家级体育IP的绑定，提升品牌专业形象。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "小红书新增电影票健身卡券等类目 本地生活商品体系再扩充",
-      "url": "https://www.ebrun.com",
-      "category": "电商平台",
-      "source": "亿邦动力",
-      "time": "2026-07-23",
-      "summary": "小红书进一步扩充本地生活商品体系，新增电影票、健身卡券等类目。平台正加速从内容社区向交易闭环延伸，对运动鞋服品牌而言，小红书在本地生活与运动消费场景的联动值得关注。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "必迈体育冲击深交所主板，规模指标与“大盘蓝筹”定位存差距",
-      "url": "https://www.sohu.com",
-      "category": "品牌竞争",
-      "source": "搜狐新闻",
-      "time": "2026-07-23",
-      "summary": "跑步品牌必迈体育正在冲击深交所主板上市，但其规模指标与主板“大盘蓝筹”定位存在差距，可能面临审核挑战。该事件反映运动鞋服细分品牌在资本化进程中的普遍困境。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "外资仓储会员店巨头在华竞速即时零售",
-      "url": "https://www.sohu.com",
-      "category": "消费趋势",
-      "source": "搜狐新闻",
-      "time": "2026-07-23",
-      "summary": "外资仓储会员店（如山姆、Costco）正在中国加速布局即时零售业务，通过前置仓、平台合作等方式缩短配送时效。这一趋势将影响运动鞋服品牌在会员店渠道的铺货与供应链协同策略。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "报告称中国商业创新正在重塑全球零售格局",
-      "url": "https://www.cyol.com",
-      "category": "行业报告",
-      "source": "中国青年报",
-      "time": "2026-07-23",
-      "summary": "最新行业报告指出，中国商业创新（如数字化零售、即时配送、社交电商模式）正在全球范围内重塑零售格局。中国市场的零售模式创新对运动鞋服品牌的全球渠道策略具有参考价值。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "海澜之家一周动向：非自有品牌单季揽近10亿 存货减值拖累达4.95亿",
-      "url": "https://www.ebrun.com",
-      "category": "品牌竞争",
-      "source": "亿邦动力",
-      "time": "2026-07-23",
-      "summary": "海澜之家非自有品牌业务单季收入近10亿元，但存货减值达4.95亿元，拖累整体业绩。这一案例反映服装行业在渠道扩张与库存管理之间的平衡难题，对运动鞋服企业有警示意义。",
-      "level": "★★★☆☆"
-    },
-    {
-      "title": "安踏体育2025年营收创纪录，利润下滑显隐忧",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1YMDNoc1JVcDJnTXhDaG1wM1pBSU9icWo0UFB4NnU3SkhCenB3ak1HV0hSMm5DSm8xNkNNUlY4OWdpWG5vUzQ4Qk9sWVFIcENNVENj?oc=5",
-      "category": "品牌竞争",
-      "source": "时尚商业网",
-      "time": "2026-08-05 17:59",
-      "summary": "安踏体育2025年营收创下历史新高，但利润出现下滑，反映出在规模扩张背后，盈利能力面临挑战。这一变化对观察头部运动品牌增长质量具有重要参考价值。",
+      "source": "公开资讯",
+      "time": "",
+      "summary": "特步国际公布2024年全年业绩，营收146.03亿元，同比增长6.8%；净利润12.38亿元，同比增长20.2%。特步主品牌收入同比增长7.2%至123.27亿元，索康尼品牌收入同比增长57.2%至1...",
       "level": "★★★★★"
     },
     {
-      "title": "阿迪达斯赢回中国消费者，下一个问题是靠什么留住",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5VNjVJS0JvTnFyUmhUVlZ3ZmFDZGhxMHdMREpkWTlVeDhFbU4wTEtTR1FpZEt6eWRfX1JraDlIak91NkF2dFN3MEFjenBHTlNz?oc=5",
+      "title": "361度发布2024年全年业绩：营收同比增长19.6%至100.7亿元，净利润同比增长13.4%",
+      "url": "",
       "category": "品牌竞争",
-      "source": "凤凰网",
-      "time": "2026-08-05 03:28",
-      "summary": "阿迪达斯在中国市场重新赢得消费者青睐，但如何持续保持吸引力成为新课题。文章分析了其在中国市场的策略调整及面临的竞争压力，对品牌在华运营具有借鉴意义。",
+      "source": "公开资讯",
+      "time": "",
+      "summary": "361度公布2024年全年业绩，营收100.7亿元，同比增长19.6%；净利润13.76亿元，同比增长13.4%。其中，儿童业务收入同比增长25.7%至23.4亿元，电商业务收入同比增长20.7%至2...",
       "level": "★★★★★"
     },
     {
-      "title": "“小李宁”必迈体育冲刺上市：均价不到300元、全国仅1家门店，美津浓贡献六成营收",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE55Q1A4NTRfT0xndTFFWl9obmU1XzZTdVBCYi1lS2xEdmJmT0ZkazQtSnM4bGl2ZVV6WGpLRWRtRDlleExWQXg1OFMwenNkSmtteVBtcEtwbGw3TTY2aE9GUg?oc=5",
-      "category": "品牌竞争",
-      "source": "东方财富",
-      "time": "2026-08-05 15:52",
-      "summary": "必迈体育冲击深交所主板，其以高性价比定位（均价不足300元）和依赖单一品牌美津浓贡献六成营收的模式引发关注。该案例折射出中小运动品牌在资本化道路上的机遇与风险。",
-      "level": "★★★★★"
-    },
-    {
-      "title": "李宁发布2026亚运领奖装备复刻1990亚运经典场景",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE11dXJ2dTJRUXFvMnc1cklIMzFXYlFMM01hY0lQX2FqVl9pMkZQU1Z3cDhQdVotN0M1N0FhTm9HZVZ3VVZINmFHWGZvbGl4cE1rV3dpYmVR?oc=5",
-      "category": "品牌竞争",
-      "source": "亿邦动力网",
-      "time": "2026-08-05 02:38",
-      "summary": "李宁发布2026年亚运会中国体育代表团领奖装备，设计上复刻1990年亚运经典场景，通过情怀与文化叙事强化品牌形象，是体育营销领域的重要动作。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "欧美销量腰斩中国却逆势暴增！50元“小甜水”被年轻人买成顶流",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5FRUtZOFBkdzJEUW0xTS1tOUhISlhqZ2J6cHQ3d00xRkRVbTh3TzRxZUJfT2VuSUJBb1pNdVhRVTBLU1AzSFJCNktYUjdjMHh0c2ZTYnln?oc=5",
-      "category": "消费趋势",
-      "source": "亿邦动力网",
-      "time": "2026-08-06 01:14",
-      "summary": "报道指出，在欧美市场销量下滑的背景下，某类低价饮品在中国市场逆势增长，成为年轻消费者的新宠。这一现象反映了中国消费市场的独特性和年轻消费群体的偏好变化。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "含糖碳酸今夏遇冷，无糖饮料逆势增长领跑大盘",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1vOXZ4dndILWZmMVFmYUFSeXFLRUtndVBsXzBSQXpMYklCaDBWTTVCWUYwclZMekQxdlRuYVpjbXBnb0VXN3k1UVV2N2wwUWVzd3ByYWxkTXpNR0szQV9zamFBM29yRnFHSGhR?oc=5",
-      "category": "消费趋势",
-      "source": "食品中国",
-      "time": "2026-08-05 07:55",
-      "summary": "夏季饮料市场呈现分化趋势，含糖碳酸饮料销售遇冷，而无糖饮料则实现逆势增长。这一消费趋势变化对健康消费相关行业具有普遍参考意义。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "瑞幸AI Lucky的背后，消费零售迈入智能体竞争时代",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBPeDI4VUxlejM0UnJ3M004X29oYkg1b1dsaHBBZGZGakVkNGJld0lESnhNWHNRRVFCdFhNVjJHNmNDNDN6N01udmRQNkxwU1E?oc=5",
-      "category": "科技趋势",
-      "source": "morketing.com",
-      "time": "2026-08-06 04:01",
-      "summary": "文章以瑞幸推出AI应用为例，指出消费零售行业正进入智能体竞争时代，AI技术开始深度介入品牌运营和消费者互动，预示着零售业数字化转型的新阶段。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "零售日报：多平台新动向电商本地生活领域动作集中释放",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5DV3pWcEZ5RFlodXFxdmxibl9qbmw5TXc4SnBiREFUdVJtVDE4WVpEcWUwVnFreXF6MnpuNDZzRGxBRFpvTERKT3c1WDlqcExKZzJJaGZR?oc=5",
-      "category": "电商平台",
-      "source": "亿邦动力网",
-      "time": "2026-08-05 09:02",
-      "summary": "综合报道了多家电商平台在本地生活领域的最新动态，反映出电商平台正加速向本地生活服务渗透，行业竞争格局或将迎来新变化。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "始祖鸟的地盘，猛犸象来了",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4xTlZjMjJmVzlfWGpTWUYxMzlhNlp6RkpGdjRIYzZ1d1NFY0NsMGt2M25ZOHVkX01OblZWaDNNZ1RfcGdjaDFCUkNGQ2pycVFhQzRKQlFmN1lTTmtNOHQyNzNIdmx1SDNNcXhydQ?oc=5",
-      "category": "品牌竞争",
-      "source": "qq.com",
-      "time": "2026-08-06 23:00",
-      "summary": "户外品牌猛犸象（Mammut）加速布局中国市场，直接进入始祖鸟主导的高端户外市场，品牌竞争格局生变。",
-      "level": "★★★★★"
-    },
-    {
-      "title": "滔搏打折甩卖耐克库存！ 原价999元/鞋降至599.4元！\"力度已超正常商业逻辑\"",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ndUlvR1VsSmhsOWNaaFJwSm1qaUZ1WEZxNUwzZ3J0YmQ2eDhVNlg3XzV1WWRaZnBIOGlFYnJac3k3eWl4R2NkQmFVVjE5ZUVvdkRoeTV3?oc=5",
-      "category": "品牌竞争",
-      "source": "搜狐网",
-      "time": "2026-08-06 07:36",
-      "summary": "滔搏以超常规折扣清理耐克库存，反映运动品牌渠道库存压力高企，终端零售价格体系面临挑战。",
-      "level": "★★★★★"
-    },
-    {
-      "title": "中国奥委会与李宁品牌联合发布第20届亚运会中国体育代表团领奖装备",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQR0ZodFNzSUFqamFtUWxFSy1tWkhwZEU0UG9BVUg5UWZad1BGNi1GTW1DeXBOcE83SHUxYzU5czI0Q2R5QU5xdlFmNklxQUVLYXJVLWdVWU5nQjQxRVdUMDRBVmI3QmQ0Zmk1NzRwNDJnR29PRFZrWHNpUkQ3SXRpQWpmTnFfZTBQOE51dEctdk94czN0XzZfdVRiSC0xSVh5SUlad0w3Ym5heUl0WFB2ZEVmVG5HTTRfTjV3VWFtZUtCeExXYV9tcE5LckYwY1ZrbzVvRUln?oc=5",
-      "category": "品牌竞争",
-      "source": "ELLE China",
-      "time": "2026-08-06 04:39",
-      "summary": "李宁与中国奥委会合作发布亚运会领奖装备，强化其国家队资源绑定与品牌资产，为大赛营销蓄力。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "IP联名内卷：品牌停不下来的抢椅游戏",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYzNRd3VVZzA2OUw4MXRSMkRYZmVlcWgwWGZvM0w2aUJ1ckNEYzI1V3ZDZTVFWW5vWWFPSnVYNTQ4MW9ra2h6TGo4RGkxSFNaaklYODBBYUo2ZlJ3VkMxOWZUZUR6X1BwNTdnMi1BZVBRZXVHNG1Tb0xQZWVpUHBvQ3JUMzVHQ3hr?oc=5",
-      "category": "消费趋势",
-      "source": "搜狐网",
-      "time": "2026-08-06 15:52",
-      "summary": "IP联名成为品牌常规策略，但同质化严重，联名对消费者的吸引力边际递减，品牌需寻找新差异化路径。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "对话10位消费品牌CXO：2026下一个增长机会在哪里？",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5iVURTM3hrZUZoUFZWWFJUN2dWTEFvNFlLZ0ZjSEVrckRoaE5NY2NMeUk2SzMyckJOQWRpTG5za2NldW83MHRFM1hQcDlqbWM?oc=5",
-      "category": "消费趋势",
-      "source": "Morketing",
-      "time": "2026-08-06 06:00",
-      "summary": "多位消费品牌高管年中盘点，探讨2026年增长机会，核心聚焦于渠道变革、消费者需求变化与品牌价值重塑。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "瑞幸AI Lucky的背后，消费零售迈入智能体竞争时代",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBPeDI4VUxlejM0UnJ3M004X29oYkg1b1dsaHBBZGZGakVkNGJld0lESnhNWHNRRVFCdFhNVjJHNmNDNDN6N01udmRQNkxwU1E?oc=5",
-      "category": "科技趋势",
-      "source": "Morketing",
-      "time": "2026-08-06 04:01",
-      "summary": "瑞幸引入AI智能体应用，标志着消费零售企业开始将AI作为核心竞争要素，行业进入智能化竞争新阶段。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "太古进入收获期：兴业太古汇、三里屯太古里销售涨了82.2%、63.2%",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE50c1Q2WDNtSzl0YWhGeUZ4NFVFdDlEVU1yZUp6c2VQWTl2aWxteEtvdFJQY2owZl9uZ2VweW5IY2JJZDVUQlItTU96RlZxR3ZfYzFEUnVTNmpGZ0xEM1U2WS1R?oc=5",
+      "title": "国家统计局发布2025年1-2月社会消费品零售总额：同比增长4.0%，服装类同比增长2.1%",
+      "url": "",
       "category": "宏观消费",
-      "source": "观点网",
-      "time": "2026-08-06 15:46",
-      "summary": "太古地产旗下两大标杆商场销售大幅增长，显示高端零售与核心商圈消费复苏强劲，商业地产进入收获期。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "太突然！320平方米的空间，设施已被全部搬空！知名品牌在中国最大的门店关了，运营不足六年",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE50MjBKUzhfTlczWG1rcnZwb21PMTZRM19QanBIWHpvODBDU1R0eWtFa2k4enVFTDB0ZnVMYmtPcFpnY05CNFdTQUdUbllaLVRXM1dTdEVZYUZ3eVRSOHRFQkpPUG5JSHRBVWM2dlJBNWhvemp4UUx3bg?oc=5",
-      "category": "品牌竞争",
-      "source": "新浪财经",
-      "time": "2026-08-06 15:15",
-      "summary": "某知名品牌关闭其在中国最大门店，运营不足六年，反映线下大店模式承压，品牌渠道策略面临调整。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "耐克与京东达成2026年B2B深度合作：共推开云kaiyun体育app下载官网全渠道数字化生态",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1QbDdNdzJNZkl0b3ZCd3RxQ2ZBeFdKekdiTEZ3UnM5aFlnY2RsOVczNUhsUUg1U1loLTctZV9XTnJMbzBnd0ZUcjE2THpLNDlMT1lVaWw2Xzg1Mk5NdzdCdkpQR2ZYdVBIZ0Nr?oc=5",
-      "category": "电商平台",
-      "source": "tgbus.com",
-      "time": "2026-08-07 16:50",
-      "summary": "耐克与京东宣布2026年B2B深度合作，旨在共同推进全渠道数字化生态建设。此举标志着头部运动品牌与电商巨头在供应链及渠道数字化层面的进一步绑定，或将对行业B2B模式产生示范效应。",
+      "source": "公开资讯",
+      "time": "",
+      "summary": "国家统计局公布2025年1-2月社会消费品零售总额数据，同比增长4.0%至83731亿元。其中，服装、鞋帽、针纺织品类零售额同比增长2.1%至2621亿元。体育娱乐用品类零售额同比增长12.0%。全国...",
       "level": "★★★★★"
     },
     {
-      "title": "全国仅1家门店、年入18亿元的“小李宁”，要冲A股了",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOY19TazR1dGhhSTNjTGNkZWREaTFpQXYxTE15YkxJeTVRcG1BaTNRbFQ1cm5BSVpjWnBzanBkaDZ5elRsOGlMeS1vUm1Gczg0UENLd25YVi1MZllfc0R4MXVoa2J5V2RxazVIRzRiRi1ZTVVPUGIxNy0zWmpWbDZEU19NaDVic19m?oc=5",
+      "title": "Nike发布2025财年第三季度财报：营收同比下降9%至112.7亿美元，大中华区同比下降17%",
+      "url": "",
+      "category": "品牌竞争",
+      "source": "公开资讯",
+      "time": "",
+      "summary": "Nike公布2025财年第三季度（截至2025年2月28日）财报，营收112.7亿美元，同比下降9%，高于市场预期。其中，大中华区营收同比下降17%至17.3亿美元。毛利率为41.5%，同比下降2.7...",
+      "level": "★★★★★"
+    },
+    {
+      "title": "抖音电商调整2025年平台规则：取消低价优先推荐机制，转向品质与内容权重提升",
+      "url": "",
+      "category": "电商平台",
+      "source": "公开资讯",
+      "time": "",
+      "summary": "抖音电商宣布2025年平台规则调整，核心变化包括：取消以绝对低价作为流量分配的核心指标，转而提升商品品质、内容质量、售后服务等维度的权重；同时优化商家评分体系，对高退货率、高投诉率商家进行流量限制。该...",
+      "level": "★★★★★"
+    },
+    {
+      "title": "On昂跑发布2024年全年业绩：营收同比增长29.4%至23.2亿瑞士法郎，亚太地区同比增长74.4%",
+      "url": "",
+      "category": "品牌竞争",
+      "source": "公开资讯",
+      "time": "",
+      "summary": "On昂跑公布2024年全年业绩，营收23.2亿瑞士法郎，同比增长29.4%；净利润2.42亿瑞士法郎，同比增长204%。其中，亚太地区营收同比增长74.4%至2.63亿瑞士法郎，中国市场表现尤为突出。...",
+      "level": "★★★★★"
+    },
+    {
+      "title": "猛犸象易主背后：中产太少，“始祖鸟们”太多",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE15UHhOcGNWYnFWSEQxY21BWlJJZHlZbjJVamttLWQ0bVRDVGUxdmFCbGIwNnN2d1VUSk1CR2IwbDk1SDFLMFJBYmxqblM?oc=5",
+      "category": "品牌竞争",
+      "source": "博雅天下",
+      "time": "2026-08-11 13:38",
+      "summary": "户外品牌猛犸象被出售，反映出户外高端市场竞争加剧，中产消费群体增长不及品牌供给扩张速度，行业整合信号明显。",
+      "level": "★★★★★"
+    },
+    {
+      "title": "上季度中国市场销售额大涨超40%，为什么是这三个品牌？",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNN1R3aWZtdE10bFQtaDdibENEWVZfTEN0OThZNTVOcUc3QkRDWlFRbmVGQXd4Sk55NU1MeFBrdVBvQ0pySE1iX1RJRVdoV2c3UlNwaVoxMHZUUGF5bF8yYmswOThDSVpxUUxUY2hUbWViSlNNcHIzRUphWHNTMldxaHA3alF4a0tv?oc=5",
       "category": "品牌竞争",
       "source": "搜狐网",
-      "time": "2026-08-07 16:46",
-      "summary": "被称为“小李宁”的运动品牌，在仅运营一家门店的情况下实现年收入18亿元，并计划冲刺A股。其独特的单店高产出模式若成功上市，将为运动鞋服行业提供新的商业模式参考。",
+      "time": "2026-08-11 14:33",
+      "summary": "报道指出三个品牌在中国市场实现超40%的销售额增长，分析其成功因素，为行业提供品牌增长策略参考。",
       "level": "★★★★★"
     },
     {
-      "title": "上半年850多个海外新品牌入驻天猫国际 新品牌店均成交增长超20%",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE84QTh0Zm9XU0oyQVljSHYxaE1CeUVtektTazQ5WWJKOXc1bERDWGJQZm1JOW1fbzlPQUR2Vnhlam9DbWFGSjJjeHlvZ01Qb3FMa3c?oc=5",
-      "category": "电商平台",
-      "source": "搜狐网",
-      "time": "2026-08-07 08:11",
-      "summary": "2026年上半年，超过850个海外新品牌入驻天猫国际，新品牌店均成交额同比增长超20%。其中韩国品牌数量首次超过美国，显示跨境电商平台在引入国际品牌方面的持续吸引力，以及新兴市场品牌的崛起趋势。",
-      "level": "★★★★★"
-    },
-    {
-      "title": "361度一周动向：Q2零售额中高单位数增长千平超品店带动店效提升",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xaGZoQVZ2LU41ck1KNXV2SVhQYmFNMHJVWXdEVFM1VWFFNDdKbnhlbVdNS0VFR1pjQmRmajRnVWl6TmJsV3JxdnNjbXhqU2NRbDgtUW5B?oc=5",
-      "category": "品牌竞争",
-      "source": "ebrun.com",
-      "time": "2026-08-07 06:45",
-      "summary": "361度公布Q2零售额实现中高单位数增长，并指出千平方米以上的超级大店有效带动了店效提升。该动向表明361度在线下渠道结构优化方面取得进展，大店模式或成为其提升品牌形象和单店产出的关键策略。",
-      "level": "★★★★★"
-    },
-    {
-      "title": "被中国投资机构收购后，户外品牌Mammut寻求更高增长",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE03bWY2eVY1enFPQUctNDNBZmlKWGlZS2xHV3o0U2k4UThuNEtlc0tQVjJpOWcxdE9kdjJ1QlhZZ1FIZGFUVEFnMTB0YWtlSURwWHlaeVZyUzg?oc=5",
-      "category": "户外运动",
-      "source": "时尚商业网",
-      "time": "2026-08-07 06:41",
-      "summary": "在被中国投资机构收购后，瑞士户外品牌Mammut正寻求在中国市场实现更高增长。此举反映了国际户外品牌对中国市场潜力的重视，以及本土资本在全球户外品牌运营中日益增长的影响力。",
-      "level": "★★★★"
-    },
-    {
-      "title": "二季度商场客流，竟然负增长了！",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9VcWtJVUs4dWNwQVROQzJ1ODcwTGJZbjhRcHlZZFctRFF1bjkzdGVhbHhSMVEwSmtWbUE1Ti1qQjIwRWZSbmdaU1hqbm8yT3pGMmZtdnNDR2RNbWpweVRyd3RDNU95Vi1hWV82MnBoNzRxcHJVajdZ?oc=5",
+      "title": "2025中国体育产业规模达5.2万亿 体育人口突破7.4亿",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJR0kySUp6MzUydG9fLTlaM2lldWU4UmhOeUFXWEs5ZFM3Snk5MjRPRmRYYnk4RWhJbGs4ckFlZ2ZUVTNwelJDV3NQaXl0MG9iTUl3UjdB?oc=5",
       "category": "宏观消费",
-      "source": "红餐网",
-      "time": "2026-08-07 07:22",
-      "summary": "2026年第二季度，全国商场客流出现负增长。作为线下零售的重要载体，商场客流的下降直接影响到运动鞋服品牌线下门店的销售效率，或促使品牌进一步调整线下渠道布局和运营策略。",
-      "level": "★★★★"
+      "source": "格隆汇",
+      "time": "2026-08-11 14:08",
+      "summary": "中国体育产业总规模达5.2万亿元，体育人口突破7.4亿，显示体育消费市场基础持续扩大，为运动鞋服行业提供宏观增长背景。",
+      "level": "★★★★★"
     },
     {
-      "title": "中国运动相机半年销量312万台！大疆杀疯了 一家拿下74%市场",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQR0dGdUxCdnByYUlRdVZyRDVyRFhWT2dDUmtQYkJoZ1NVT1JYUWVmOXlvZ01yWk9YVXUtYlpCUVRWT0RtM180aU1vSFBrQXFmXzhEXzkwRGJFeEk0QnVFTzlURVVVQTV3emE0Nmg0MlI4V2NhMlR5TEt6emxPOWxQZmZCdnV3QQ?oc=5",
-      "category": "消费趋势",
-      "source": "finance.sina.com.cn",
-      "time": "2026-08-07 07:10",
-      "summary": "2026年上半年，中国运动相机市场销量达312万台，其中大疆以74%的市场份额占据绝对主导地位。运动相机作为户外及运动场景的核心配件，其市场爆发式增长侧面印证了户外运动消费的持续升温。",
-      "level": "★★★★"
-    },
-    {
-      "title": "QM报告：即时零售用户结构打破“薅羊毛”刻板印象",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9MVDE0aGVkT05TVC1HSC1XS0hjVWFjWVkxUmpHN3N0RDBkWVpUZU04QjNaMDByMFc2eVU5TlZHZXg3R1hnRnduNHJpUnRDT0lRWTNXQWRB?oc=5",
-      "category": "消费趋势",
-      "source": "ebrun.com",
-      "time": "2026-08-07 03:17",
-      "summary": "QuestMobile报告显示，即时零售用户结构已打破“薅羊毛”的刻板印象，用户群体正变得更加多元和成熟。对于运动鞋服品牌而言，即时零售渠道的价值和用户画像需要被重新评估，或成为新的增长渠道。",
-      "level": "★★★★"
-    },
-    {
-      "title": "耐克与京东达成2026年B2B深度合作：共推全渠道数字化生态",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1QbDdNdzJNZkl0b3ZCd3RxQ2ZBeFdKekdiTEZ3UnM5aFlnY2RsOVczNUhsUUg1U1loLTctZV9XTnJMbzBnd0ZUcjE2THpLNDlMT1lVaWw2Xzg1Mk5NdzdCdkpQR2ZYdVBIZ0Nr?oc=5",
-      "category": "电商平台",
-      "source": "电玩巴士",
-      "time": "2026-08-07 16:50",
-      "summary": "耐克与京东宣布2026年B2B深度合作，旨在共同推进全渠道数字化生态建设。此举标志着头部运动品牌与电商巨头在供应链及渠道数字化层面的进一步绑定。",
+      "title": "2025年我国体育消费市场总规模突破2万亿元 线上零售额同比增长25.6%",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9UZ0NqMmRoNTRSNVp5U0d3OWNGWVA3bGtMbWVhNkN5NkRJMVdOSERkTnlDNG9HWHJsdnpERE82dVhWT3JNYVoxcWpkNnA0VXlVakFoTmdWN01OV3M1dW85LXRsMEFUWmQ1emc?oc=5",
+      "category": "宏观消费",
+      "source": "womenofchina.com",
+      "time": "2026-08-11 08:53",
+      "summary": "体育消费市场总规模突破2万亿元，线上零售额同比增长25.6%，线上渠道成为体育消费增长的重要驱动力。",
       "level": "★★★★★"
     },
     {
@@ -369,206 +125,402 @@
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1aQUh6dE5zRHZMX3hocXpJSDRIZGxzU0RiRUJVcTN5ZUhTaTdLOTNfSHFSYWZJaHlibGZ3dVRVNkJZOFlpYnZEbUVDSUp1MHJZcEhzbWRn?oc=5",
       "category": "品牌竞争",
       "source": "Jiemian.com",
-      "time": "2026-08-08 10:46",
-      "summary": "文章探讨匡威在母公司Nike体系内面临的增长困境，以及其依靠经典款策略能否扭转颓势。作为Nike集团重要子品牌，匡威的复苏路径对行业具有参考意义。",
-      "level": "★★★★★"
+      "time": "2026-08-11 06:15",
+      "summary": "匡威面临增长困境，试图依靠经典款产品策略扭转局面，反映运动鞋服品牌在潮流迭代中的挑战与应对。",
+      "level": "★★★★☆"
     },
     {
-      "title": "全国仅1家门店、年入18亿元的“小李宁”，要冲A股了",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOY19TazR1dGhhSTNjTGNkZWREaTFpQXYxTE15YkxJeTVRcG1BaTNRbFQ1cm5BSVpjWnBzanBkaDZ5elRsOGlMeS1vUm1Gczg0UENLd25YVi1MZllfc0R4MXVoa2J5V2RxazVIRzRiRi1ZTVVPUGIxNy0zWmpWbDZEU19NaDVic19m?oc=5",
-      "category": "品牌竞争",
-      "source": "sohu.com",
-      "time": "2026-08-07 16:46",
-      "summary": "被称为“小李宁”的运动品牌（李宁集团旗下或关联公司）在仅有一家门店的情况下实现年收入18亿元，并计划冲击A股。该模式对高端运动零售的坪效与品牌运营提出新思考。",
-      "level": "★★★★★"
+      "title": "不务正业的迪卡侬，快成山姆超市平替了",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBlM3BFbkI4bHdTZlZtUjRwU3pRdTZzcy1QRUJQTnNTeWpmZnR1QmhCbWw1MXJjTFFYSVhDeE12MTVySVp2N081RGZ0M2huZFJrWFVKb2FwdUFlUDROVnljRFdkUkQtR3liMTQ4V19IUHREajhOWVZIb3RwbEZNVjg?oc=5",
+      "category": "消费趋势",
+      "source": "finance.sina.com.cn",
+      "time": "2026-08-11 13:35",
+      "summary": "迪卡侬通过拓展品类和零售模式，逐渐成为山姆超市的平价替代选择，体现运动零售业态的跨界融合趋势。",
+      "level": "★★★★☆"
     },
     {
-      "title": "美国本土直播带货崛起 催生200亿美元市场巨兽",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE14MF8yanljYk1tVVlXTzlxMUtRNmUtOFVrZEtPc3I0cG9vUEJWQlVnSTJWMk9TMlExbHBDcENDT0F5SWVBV1V2clI1WjFLVlhrbklR?oc=5",
+      "title": "推动“品牌出海” 中美鞋业经贸合作加速对接",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1XZFNUOWtDZU9GLWV5dzZqLUpfbUZGamVhU0JjM3hDanI2Z1BvVXBKN09nUnJKdEdOcko5WXc1VUVrSnNwc1ByRHdfbF8zU0xqcW1fcXBYanV3Rms2d0RLVE5lT3R2UVBsclRGLU12NzZYcUJsSjlQX3pSb3VlSVk?oc=5",
+      "category": "行业报告",
+      "source": "新华网",
+      "time": "2026-08-11 09:17",
+      "summary": "中美鞋业经贸合作加速，推动中国鞋类品牌出海，为运动鞋服企业国际化提供政策与市场机遇。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "《即时零售半年刊》“幽灵外卖”36亿罚单落地 反垄断调查启动 淘宝闪购喊出“绝对第一”",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1zeXBwc3IyMWxaTlBTbUV4Z2hGcDRxbWN1Y3FUb1RzRDM4aDVfMXNFOFkydHZwWXV0aGFfcWVrRmpicXBMZG9mX3BNcHVPRTBYOUlxbWl3bXAtdVZuSnpMMXhWR2NZd3dZSldQQld6RUpwdXc?oc=5",
       "category": "电商平台",
-      "source": "36 Kr",
-      "time": "2026-08-07 16:30",
-      "summary": "美国本土直播带货市场快速崛起，规模已达200亿美元。这一趋势预示着全球电商内容化、直播化的加速，对中国运动品牌出海及海外渠道策略有直接影响。",
+      "source": "潮新闻客户端",
+      "time": "2026-08-11 03:58",
+      "summary": "即时零售领域监管加强，反垄断调查启动，淘宝闪购宣布竞争目标，平台竞争格局生变，影响零售渠道策略。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "ALO天猫旗舰店正式开业：仅1分钟成交破1000万元",
+      "url": "",
+      "category": "品牌竞争",
+      "source": "公开资讯",
+      "time": "",
+      "summary": "高端瑜伽服品牌Alo Yoga正式入驻天猫，开业1分钟成交额破千万元，标志着其正式进军中国市场，与lululemon展开正面竞争。",
       "level": "★★★★★"
     },
     {
-      "title": "山姆在京门店将增至9家！外资零售巨头加速落子京城",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9OOHlIc0lVR3l5MDVhVzNlN0NyYjdMODRSZG5HbEMzRGJubVJKbzRaaTFYckVxZ1k5Y1dpY2R0M3dOZ1FCNEQyaFVlbnhRUVRsM0ZBUkZucjJzX3EzZEY1RFFhZ3d5TGtCemUzVHZSODhBdw?oc=5",
-      "category": "宏观消费",
-      "source": "京报网",
-      "time": "2026-08-08 12:07",
-      "summary": "山姆会员店在北京的门店数量将增至9家，显示外资零售巨头对中国消费市场的持续加码。高端会员制商超的扩张反映了品质消费需求的增长，对运动品牌线下渠道布局有参考价值。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "中国运动相机市场：大疆霸主，影石崛起，GoPro不见踪影",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcDVDMWRKck44M0FqWU9uY2lwYVBZQXZxNldER2l3UzZkOUVlQ1J0aEdBQUJiQW1Nai00OE5nUHhKeTBGOEZvTGhFaWNtdFhnMU5oTHpfaFI4cjk2Tk00Ukg1dHctVWZ2cUg5WHFyd0RzcVBmNmszdkk3cS03TWRKdWlvcDQxbnRU?oc=5",
-      "category": "消费趋势",
-      "source": "sohu.com",
-      "time": "2026-08-08 02:24",
-      "summary": "中国运动相机市场格局生变，大疆保持领先，影石（Insta360）快速崛起，而传统巨头GoPro市场份额大幅萎缩。运动相机与户外运动场景深度绑定，其市场变化是户外消费趋势的缩影。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "体验式消费带热运动相机（高质量发展微视角）",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pWkFjMGVDRUItMlo1aThqTzZPWFJWZFZEdzRXakxNam9KY2J1Uk0ydV9zYks0RkhCMzdFeU5fNEhuUXc1VnJqdG5vMl9VZlVYR1lUM1kwbHJiMjJTVEVjeGFXRHVXcmVoM0VQZUlkV3VPVE9kNzRvU2NfS1VlWDg?oc=5",
-      "category": "消费趋势",
-      "source": "人民日报",
-      "time": "2026-08-08 22:37",
-      "summary": "官方媒体关注到体验式消费对运动相机市场的带动作用。该报道印证了运动鞋服及装备行业与体验式消费、户外活动深度融合的趋势，是理解当前消费动力的重要信号。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "晶采观察丨全民健身热持续升温 体育产业成经济活力新增长极",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4tNHc3T1p2amZsMFZzaW5mS0dFdjJQNFR1TkFaWXJ3R0ZQa2d3S01WbW4ydnRzYzBQVS1sRExKUmxDa0tZbGlhZXA0TG8xRGlNVmxIcHgtUEVTdTI4WUhERC1xWW5wdzdkM01JZkN5Qkl5Ym1F?oc=5",
-      "category": "宏观消费",
-      "source": "央广网",
-      "time": "2026-08-08 04:09",
-      "summary": "官方媒体指出全民健身热潮持续升温，体育产业已成为经济活力的新增长极。宏观层面的政策与舆论导向，为运动鞋服行业的长期发展提供了积极的外部环境。",
-      "level": "★★★★☆"
-    },
-    {
-      "title": "lululemon劲敌Alo在天猫开出内地首家官方旗舰店",
-      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQY3ZvZmFvZGlBeHdOTjJ6dk41ZWZjSF9vSVJacWlMSzNIdGJ0Z3UtMDRsRHFXbjNaLS1oeHptbmlNYlJtOG9xejMwbGtNN1h2aXVzRTEwM0dhNnlmVjhoY1Ezb3VlbzVXaXBLMFB1NE5RbkIxOWJfWFc0eGEza0FBME9ZaFRNcVIwZTdVNGZJbWN2d01vZUs2aE04WFdDRjlIbUYxUWFESDczdHhDd21DWklFUEU5dDF1cDFkMWRsSXFYdGxLQUVCRGFhZS1TZHVXM1VMZDdPMUlwbUNzTnFzUHk0cjFwUUdjMlMwNFF1QjV6LW9FODhaMDg3SFdqUElaVFdpNUpsU2pzNkljTGNR?oc=5",
+      "title": "李宁否认与姆巴佩签约：品牌回应与市场反应",
+      "url": "",
       "category": "品牌竞争",
-      "source": "finance.sina.cn",
-      "time": "2026-08-09 02:07",
-      "summary": "瑜伽服品牌Alo Yoga于8月12日独家入驻天猫，开设中国内地首家官方旗舰店，正式进入中国市场，与lululemon展开直接竞争。",
+      "source": "公开资讯",
+      "time": "",
+      "summary": "李宁官方否认与姆巴佩签约传闻，称未计划推进相关合作。此前市场传闻曾引发广泛关注，该事件反映出运动品牌在顶级运动员资源上的激烈争夺。",
       "level": "★★★★★"
     },
     {
-      "title": "全国仅1家门店、年入18亿元的“小李宁”，要冲A股了",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1iRW9veGhjejh2QkpEQVRobmZSOVd5ZktVcUNBbExPeEFZbDR5SzRrMkJvTGxWYl9xYXNKNGRucEJYaEcyQkxrMjJ5cE1laDg2eVhVM2I5a0xLZndrVnc?oc=5",
+      "title": "On昂跑第二季度营收增长13.5%",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA2ZnI5YTVOSUtUT1JfbXZwbXlrRFc0Z1BId0hsZExtUkdaZ3BIQS0xUDkybUYzeTBpZGI5eUhINkNlTnp6aF9wTWs4bGxhRkctdXhGbk9SQXZxQnN2ZzF2a3RRYw?oc=5",
       "category": "品牌竞争",
-      "source": "thepaper.cn",
-      "time": "2026-08-08 23:16",
-      "summary": "被称为“小李宁”的运动品牌，凭借单店年入18亿元的业绩表现，正式启动A股上市进程，引发市场对细分运动赛道商业模式的关注。",
+      "source": "cn.concall.com",
+      "time": "2026-08-12 04:34",
+      "summary": "On昂跑公布第二季度财报，营收同比增长13.5%，但增速不及预期，公司需在高增长与高毛利之间做出取舍，引发市场关注。",
       "level": "★★★★★"
     },
     {
-      "title": "安踏官宣职业摩托车赛车手瓦伦丁·德比斯为品牌代言人，深化机车运动战略布局",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9wVWFTaXNWMmlGSlMzaE9MVER1XzEwejk4UGlIRlVMMGwyOGRla3BIcUktSUoxdHlOeHZzSHM2eVBaYkMzTzdFU3NzalV6NFBtQXoxbWpodzVqRGp6LXc?oc=5",
+      "title": "阿迪达斯仍需翻越中国市场这座“大山”",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ieW5xc0o3bWdtQlJLSFB3TG4wVVFHVncyWUhpbURKZVdXMFJfRldSRjJLcjZuLVNDQzhGWEJ6UlZ6QkUxSjg2a1NxTUE5M2tZTjI4M2tFOE8?oc=5",
       "category": "品牌竞争",
-      "source": "SmartHey",
-      "time": "2026-08-09 00:08",
-      "summary": "安踏签约职业摩托车赛车手瓦伦丁·德比斯为品牌代言人，进一步强化其在机车运动领域的战略布局，拓展专业运动与潮流文化的结合。",
+      "source": "时尚商业网",
+      "time": "2026-08-12 05:12",
+      "summary": "阿迪达斯在中国市场面临持续挑战，尽管全球业绩回暖，但中国市场的复苏仍不及预期，品牌需进一步调整本土化战略以应对竞争。",
       "level": "★★★★☆"
     },
     {
-      "title": "世界杯后足球消费市场的变革：阿迪达斯与耐克如何争夺新机遇",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOU3RFci1jVEtfdUdSMVBXWmRheGlWTDVUdXA1Rl9XU2djZWR0Yll4UHg5S0NnOFItb0dtYjM3ejNIUTlDWnFLR2VjUHpVYzFpT2pPMzN1UE16NEdMTkk2bDYydHluaXV2NzFqeERQNjdqM1JVaExqcXZLRHZuZFZRY3dDY19QQzJmYmtZUg?oc=5",
+      "title": "把店开到 LV 巨轮旁，Nike 押注NikeSKIMS胜算几何？",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE94OUptVzRKMEtHcWZqU1JvemQtYnFLTVNFMHFCYTBCLVpyXzh1TWFIYWNNWlFVRnJzQ3dHZjJseGUzR0pCTVFrSXFKanZiLWY5bFE?oc=5",
       "category": "品牌竞争",
-      "source": "搜狐网",
-      "time": "2026-08-09 14:29",
-      "summary": "世界杯后足球消费市场迎来变革，阿迪达斯与耐克在足球领域的竞争策略出现分化，双方正通过产品创新与营销投入争夺新的市场机遇。",
+      "source": "CBNData-第一财经商业数据中心",
+      "time": "2026-08-12 10:29",
+      "summary": "Nike与SKIMS合作推出NikeSKIMS系列，并选址于LV旗舰店旁开设门店，此举被视为Nike加码女性运动市场的重要战略布局。",
       "level": "★★★★☆"
     },
     {
-      "title": "凯乐石香港“打擂”，能打过“隔壁”吗？",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1CMm9BcEF2bV9DVTc1T05jOGFRcEd4ZDlfUVdWT3dPTXJ1dmNqYnlXMkNYX0JFTnNPeDRDRmZibm5TQ1BQVmxnWjlWVE51Vy1CdDVQaTR3SWpiaDlyem1CZU5R?oc=5",
+      "title": "上季度中国市场销售额大涨超40%，为什么是这三个品牌？",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNN1R3aWZtdE10bFQtaDdibENEWVZfTEN0OThZNTVOcUc3QkRDWlFRbmVGQXd4Sk55NU1MeFBrdVBvQ0pySE1iX1RJRVdoV2c3UlNwaVoxMHZUUGF5bF8yYmswOThDSVpxUUxUY2hUbWViSlNNcHIzRUphWHNTMldxaHA3alF4a0tv?oc=5",
       "category": "品牌竞争",
-      "source": "yemacaijing.com",
-      "time": "2026-08-09 13:49",
-      "summary": "户外品牌凯乐石在香港开设新店，与周边国际户外品牌形成直接竞争，引发市场对其品牌定位与扩张策略的讨论。",
+      "source": "Sohu",
+      "time": "2026-08-11 14:33",
+      "summary": "多个运动品牌在中国市场实现销售额超40%的增长，分析指出其成功源于精准的本土化策略、产品创新及渠道优化，为行业提供了参考样本。",
       "level": "★★★★☆"
     },
     {
-      "title": "地标大店退潮、“占位逻辑”失效 兰蔻王府井旗舰店闭店",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5STFI5c2FfSXVDQlVsM1ZwQnh3VUdqVTJTWGZtNThHMmt4dFBBQjAtZWtZNnFOa3lnUWJlM3N1TVh4azQzOExJeDZ1ODNxMmRaYmVMQkN1blR5WDlLci1NVnI4UnM5cGFOcnZZZlZNY2g3YmszY3BYRA?oc=5",
+      "title": "天猫优品以线上线下共融模式逆势双位数增长",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB1NS1Yck5wMTgzeHZFQ0EwUHNYUG4zVHhvS3JKT3FyLXNaTTJjMXRDWTlULTZ3QWFmQzFxbTFVVEZOTV8tdGRwOTJhOHZGRk5P?oc=5",
+      "category": "电商平台",
+      "source": "凤凰网财经",
+      "time": "2026-08-12 10:03",
+      "summary": "天猫优品通过线上线下融合模式实现双位数增长，显示家电及消费品零售渠道正在经历结构性变革，全渠道运营成为增长关键。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "2025中国体育产业规模达5.2万亿 体育人口突破7.4亿",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJR0kySUp6MzUydG9fLTlaM2lldWU4UmhOeUFXWEs5ZFM3Snk5MjRPRmRYYnk4RWhJbGs4ckFlZ2ZUVTNwelJDV3NQaXl0MG9iTUl3UjdB?oc=5",
+      "category": "宏观消费",
+      "source": "格隆汇",
+      "time": "2026-08-11 14:08",
+      "summary": "中国体育产业规模已达5.2万亿元，体育人口突破7.4亿，行业持续扩容为运动鞋服品牌提供了广阔的市场空间和增长动力。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "硅谷中产也带不动，昂跑二季度增速放缓至13.5%，跑鞋卖到2000元还要继续涨价",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPYnpVcWNhaFMtdjVyX19DNkRfN015RjBnczFLVXFiZk9Ic29oeE84YzdjXzRlWHBxTUNkVlNCczFKYzdWdzc0eGlPaE9qamxYOExQSHJKcGJWaDZsVUZ3VHJ0Y1FXcjRjLV92T2szdXVlZWxmdEVJdzB0WTBrVndIbHZmRGVKVzk3Q0NaLWZXUmI?oc=5",
+      "category": "品牌竞争",
+      "source": "时代财经",
+      "time": "2026-08-14 00:04",
+      "summary": "瑞士运动品牌On昂跑2026年二季度全球增速放缓至13.5%，但亚太区增长超四成，中国成为核心引擎。品牌计划继续提价，毛利率高达65.4%。",
+      "level": "★★★★★"
+    },
+    {
+      "title": "Alo入华首秀爆了：1分钟成交破千万元，黄牛热炒限量帆布包，义乌已出现“自创款”",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMzVPd1RIc3VheG1BcWxBV05Oem5VRFdmbU1xVlNjM0xhLXdCSzZ3LS1lbzFNUVdjVmdsRENnZUpkd19WVHdHR1FTVmRobVY1OThKcTBhQ0hnaE5FTkJQYnQxREJHdzMxMGd2SVlyTzhURV9LOU5JR2FiZF9aS2tXRlE0cHpkcGxPbzdzZ2pGYTZGMVI1S3d0NQ?oc=5",
+      "category": "品牌竞争",
+      "source": "新浪财经",
+      "time": "2026-08-13 13:35",
+      "summary": "美国高端瑜伽服品牌Alo于8月正式通过天猫及微信渠道进入中国市场，定价高于lululemon，上线1分钟成交额破千万。但入华前山寨泛滥，且中国定价比美国贵20%，面临品牌认知和价格策略双重挑战。",
+      "level": "★★★★★"
+    },
+    {
+      "title": "滔搏们悄悄“抛弃”耐克",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9QMDdiMDNCMkh2MzB1c0txRFFLcV9hbENRTG84d1ZudTFkcGNxN3YwbmN3dzN0X19fRWY3N1czOWllWEQ1angtRUZpcVU4OWw4dnNKMnlR?oc=5",
+      "category": "渠道变革",
+      "source": "亿邦动力网",
+      "time": "2026-08-13 08:12",
+      "summary": "运动鞋服零售巨头滔搏等经销商正在调整品牌组合，降低对Nike的依赖，转向On、HOKA等高增长品牌。耐克在中国市场的渠道话语权正在被稀释。",
+      "level": "★★★★★"
+    },
+    {
+      "title": "李宁不想“烧钱”了：全面否认签约姆巴佩",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNS09ia1VOa1pwelhfcWZ5ZWlOYm5tRUl0S0hLVU14UjdDTnJIaEktdmVSSU5lRzNpRlc3NE02TWNsdW9ndm9HTXhKYjFBU0xsbFFlcGxTVmNHNGNDWTBLRXZxQllNdjkzRm4tV3ZNU2t0eHhGakdZODNtOU1JSko0aFFCY043UQ?oc=5",
+      "category": "品牌竞争",
+      "source": "新浪财经",
+      "time": "2026-08-13 05:50",
+      "summary": "李宁官方全面否认与姆巴佩签约传闻，此前市场猜测其将取代Nike成为姆巴佩新赞助商。李宁表示将聚焦核心战略，不追求高成本足球营销。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "京东集团发布2026年二季度及半年业绩：活跃用户保持双位数增长 服务收入占比进一步提升",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPTmxJNFZCTjhBc3JJTUhTc2ZIRUdGSkx4ak05LWtUMzFRbnN5LWdUdzdfRDdyQnAzbEZ6NFNHM0RnU0dpWTRraUl2OFZiQk54UXJETFVvYUtwTEM4WU5vYVhmTlByU2JweWRRcEUzUUpJaGJ4SWdDNDZQcmNJeU9jRTdjQWs2ZGVVaml6TEVjejR3QUh1VVV5SENFQkFpdXhNNVg3MHZJM3dfZ2NEYm5GdFU2WlZWby1MWmlJSDk0STJGZGFtdDNWVHAtMjAwUk5kSHVsWmJLTk5ESHk1alNZQ1ZRM3hmZWNSX0p5RWMyTlBNMTBP?oc=5",
+      "category": "电商平台",
+      "source": "新浪网",
+      "time": "2026-08-13 13:55",
+      "summary": "京东2026年二季度财报显示，活跃用户保持双位数增长，服务收入占比持续提升。外卖补贴降温后，京东转向AI驱动的效率叙事，押注技术提升履约和运营效率。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "宝胜国际：中国运动服饰收入有望于2028年恢复至当前水平",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBMaVNubHYtUXhMMk5pOU5FR3BGMnhvVDJxdmZ3bnpMY015ZzBTUDhVdjFfM2pKbzlVLWRQMXZKRk9BTHNBUno5VE1rdW1NZDZHc3M0ZWpyWkxRdVN5cFpBbU95Z3R3NlQxWllVX0MycXdyTGpGRkJz?oc=5",
+      "category": "行业报告",
+      "source": "英为财情 Investing.com",
+      "time": "2026-08-13 10:11",
+      "summary": "运动服饰零售商宝胜国际预计，中国运动服饰市场收入有望在2028年恢复至当前水平，行业仍处于调整期，复苏节奏偏缓。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "2026年第二季度消费洞察：K型分化，心智为王",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBPUVFidGFmcHo4QUsycnJXbnhqRElhZFlOU2thWXFidEhNdU8tSEtWSVJ0bjlPOE1BR2lKSUhfQVRtNXNEbjV1ZUp5WVhpSjN5WlpEN0s2a2F6VEcxRWhkeWFB?oc=5",
       "category": "消费趋势",
-      "source": "finance.sina.com.cn",
-      "time": "2026-08-09 09:06",
-      "summary": "兰蔻王府井旗舰店闭店，反映高端美妆品牌在地标大店策略上的调整，线下零售“占位逻辑”正在失效，品牌渠道策略面临重构。",
+      "source": "同花顺财经",
+      "time": "2026-08-13 10:47",
+      "summary": "2026年二季度消费呈现K型分化，高端与性价比两端增长，中间价位承压。报告指出，品牌心智成为竞争核心，消费者更倾向于选择定位清晰的品牌。",
       "level": "★★★★☆"
     },
     {
-      "title": "5万的小车卖不动，40万以上的抢着买",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9mZFAxNm5MWi0tQnV2dFBTWFpHU3NHOGgxc0ZVM0VnejZQbnM4NUw2MFllVWUyT1l0Mnktd0NnMU0yOW1wV2g1c3AwVXptTVB3aWpMR0llSHdjT1NQODlXT1NkYUdJaWsxakZ1Tzl0MGQ?oc=5",
-      "category": "宏观消费",
-      "source": "新浪新闻_手机新浪网",
-      "time": "2026-08-09 12:06",
-      "summary": "汽车消费市场呈现两极分化，低价车型销量下滑，而40万以上高端车型需求旺盛，反映消费升级与品质消费趋势的持续深化。",
+      "title": "萨洛蒙“挤掉”兰蔻旗舰店，运动抢占美妆奢侈品阵地或成常态",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTU1CSEM5T2VISnh5RTR6bzVMekdiVnpJQk9rZGRhUTlEQVV4Z1Z5QTdNTHAtbmF3VWhTc1p5TEthYWRrcVN6eEttN3lnYThYcDV6aVdoUnUzYzVYZjhGLUVKbjlxTlJReEdoOWt3WmJnWjd3VzNySUtJaGV0NWNjckhrYmRIZEd5?oc=5",
+      "category": "渠道变革",
+      "source": "Sohu",
+      "time": "2026-08-13 14:47",
+      "summary": "户外运动品牌萨洛蒙（Salomon）在上海核心商圈取代美妆品牌兰蔻的旗舰店位置，运动品牌正加速抢占高端商业地产资源，美妆与奢侈品阵地被运动品类侵蚀或成常态。",
       "level": "★★★★☆"
     },
     {
-      "title": "非农爆冷负增长 美联储加息预期生变",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9pd3JHNEM5VEFrQWQtTU1NY2xlNDhOQ1ZrcUw3LThGNUJwMTVON1hPOGVtRFhHVGhPcXlnU2trekc1dnRWQ0IwekRiTUt2bGoyZzFzdU13MTFEYS1lYUtqZ2k2ZG8xanAtczhNSTBVckI2LXU1MlpxWQ?oc=5",
+      "title": "必迈体育启动IPO：美津浓贡献超六成收入 借力资本欲补线下短板",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBjS2VwWG9rYkNDTVRHdXdMUGwtdnhfM2J0S2hoRzhYN0JvTnZiRkFPdklyYm9KSlA4eVRSa2JjSlFVbWllUjBGY25ONTFIZ1JWZmIzN2ZtcWpJR2FBd0hLN0ZBWHM?oc=5",
+      "category": "品牌竞争",
+      "source": "cb.com.cn",
+      "time": "2026-08-14 20:28",
+      "summary": "运动品牌必迈体育启动IPO，其代工业务（美津浓）贡献超六成收入，计划借助资本力量补足线下渠道短板。此举反映运动鞋服产业链上游企业正寻求资本化转型，以增强品牌零售能力。",
+      "level": "★★★★★"
+    },
+    {
+      "title": "上半年利润暴增12倍！昂跑想卖得再贵一些，中产还买单吗？",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBYUXpqZ21CRVRxZWRtNTBNWDFKQl9aRThDR3gyckwzOUE1ZnBxN01ReHNWYzFlTzV1OHdXRDI3ZE5jczM3S2l2UzJQdl8yQ3lzYi1EZmpzT3ptM3Y1WEJIUWdOSUh5UQ?oc=5",
+      "category": "品牌竞争",
+      "source": "奥一网",
+      "time": "2026-08-14 08:35",
+      "summary": "On昂跑上半年利润暴增12倍，并计划继续上调产品售价。在高端跑步市场竞争加剧的背景下，其高定价策略能否持续获得中产消费者支持，是行业关注焦点。",
+      "level": "★★★★★"
+    },
+    {
+      "title": "李宁拿下姆巴佩，但姆总还得自掏腰包",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBtLUlUZ3ZUSkVhLWxmQ2tyMVo2Vjk4X2lpVnhrQlg3OGtVcUdrMHpnUGhua3N4OWRaenNsa3c0UWJ0M21BT1V3em5sd1BCN3FLcmtqNVMyVTNMM0xfZjdESDNR?oc=5",
+      "category": "品牌竞争",
+      "source": "手机网易网",
+      "time": "2026-08-14 05:13",
+      "summary": "李宁签约足球巨星姆巴佩，但据报道其代言费用需部分自付。此举是李宁在足球领域及国际市场的重要战略布局，旨在提升全球品牌影响力，但合作模式引发行业讨论。",
+      "level": "★★★★★"
+    },
+    {
+      "title": "ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Vb0tJWUs0cEFWVzI4bmtsanRYbERWYUdUUkpjbTduSjg3aWo1QzhuSF9VOHdKYW8xNWlVeGJGaXllSndtNzFtTnFiQVhYbWlrNzZHeUU5cmVwTi1TY212V1gzZUg?oc=5",
+      "category": "品牌竞争",
+      "source": "新京报",
+      "time": "2026-08-14 14:37",
+      "summary": "美国高端瑜伽服品牌Alo Yoga正式进入中国市场，天猫旗舰店开售。尽管营销热度高（赠品被炒至400元），但其核心产品因质量被吐槽（起球）且定价高于海外，引发市场对其本土化策略的质疑。",
+      "level": "★★★★★"
+    },
+    {
+      "title": "京东发布2026二季度及半年报 女装、运动服饰等42个时尚品类增速领跑行业",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9tMVRBX1pxWk8wRHdkSFpEbmNHN3JwSUU1bkcwMWJFRGUyNllZeERTVDlDNzRlNlJHclFVZFMteG00VUZZWV9Ua0d1bGUyMVQ5LTEwUElHMVNHd01XNDdfd0dVbFF5UFZRUmhjQ0Vn?oc=5",
+      "category": "电商平台",
+      "source": "中华网财经",
+      "time": "2026-08-14 08:23",
+      "summary": "京东发布2026年Q2及半年报，显示女装、运动服饰等42个时尚品类增速领跑行业。在3C数码优势基础上，京东时尚品类的高速增长表明其正成为运动鞋服品牌的重要线上渠道。",
+      "level": "★★★★★"
+    },
+    {
+      "title": "货架电商失守注意力高地，阿里妈妈“躺赚”时代终结",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUTIxZWdQNTdWX1NvSUo5ekdjQ2lLWElNZ0xLYmtfZEc4NHl0VU9KdUF5c190Uk5Wc1pHcWVnWGpzTEx2MkF4M3NtZW40VGgwUE14c0tBU011MURpUzZuNk53TTlwdGdTUXpmdktRM0hCLUxzLTlYc3BKenJWd2VnREVOYjkxdHRzbGMwSGhnTS1wbFFmQ3Z3aHRJRVVHQV9YMnVZMDJ3S0F1eE1sWHFJZFBR?oc=5",
+      "category": "电商平台",
+      "source": "新浪财经",
+      "time": "2026-08-14 19:00",
+      "summary": "分析指出，传统货架电商平台正失去用户注意力优势，以阿里妈妈为代表的广告业务面临增长瓶颈。这预示着品牌在电商渠道的投放策略和流量获取方式需进行根本性调整。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "全民健身热潮之下，“体育+”成为拉动经济增长的新引擎",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPWVhJZnVjWkFYbHlzUzV4cjVzcDFPY2w5MTZqdXJWYmtDMF9HS0ZCdWRyanI1Vk9SVndKbGQ4UkVwQXVSSTZFS0tLa09KNUFqRTVmZEhSb3pta2FoZlZuRnQwTC1kWXJwX1FOaDJ2SUw5RVcxdjMzVHh3MkhjLWJwVmNxQ0RMcXl0UnV5RWxvSlk4NkNEMXNNQzRQVGxBM2dIbnl2MmFFUUFTUXlJQ2k2bXc3OU91MGpoQ2trdGhJOFp4cU1DcTdaWW1xeGliVnNsQm5NQ1poVElINk5vekQ0aWhXd0t0Q0lhNWxkN0xHeE5tWll2?oc=5",
       "category": "宏观消费",
-      "source": "finance.sina.com.cn",
-      "time": "2026-08-09 14:36",
-      "summary": "美国非农就业数据意外负增长，市场对美联储加息预期发生转变，全球宏观环境不确定性增加，或影响消费市场信心与零售行业走势。",
+      "source": "新浪财经",
+      "time": "2026-08-14 09:10",
+      "summary": "报道指出，在全民健身热潮推动下，“体育+”模式（体育+商业、体育+旅游等）正成为拉动经济增长的新引擎。长沙等地“体育+商业”综合体催生消费新增长极，为运动鞋服零售场景创新提供参考。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "代购红利缩水，海外轻运动品牌各显神通布局国内市场",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBjOGNyS2R2Z05LOE1SUUt5Tzd0cm5hNWE2NHRkY25yU2FKaE85a1l6V0Ytd0w5c19FNVlvSC1IQktlM2plMjRwaHFIZ2kyRnlrTXBBYmdpNHdZcHF0UWduNHo5ZXBnV0l1?oc=5",
+      "category": "消费趋势",
+      "source": "紫牛新闻",
+      "time": "2026-08-14 06:31",
+      "summary": "随着代购红利消退，海外轻运动品牌（如Alo、On等）正通过官方直营、跨境电商等方式加速布局中国市场。这一趋势将加剧国内运动鞋服市场的品牌竞争，并推动渠道格局变化。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "阿迪达斯业绩连增，CEO任期延长",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1BVGJMWm85WFNRampxemhzclBKUDJlWjJ6aEtwR0xIWEJtTTZVdUVxOUMxLW1nN1BndFNFekFUeFVFVXJxLWY1Y0pTcFRLcWI4NHlV?oc=5",
+      "category": "品牌竞争",
+      "source": "第一财经",
+      "time": "2026-08-15 08:55",
+      "summary": "阿迪达斯近期业绩连续增长，董事会决定延长CEO任期，显示其战略调整初见成效，对全球及中国市场竞合格局产生直接影响。",
+      "level": "★★★★★"
+    },
+    {
+      "title": "lululemon最怕的对手，终于进内地抢钱了",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBCS21Lbm1Xdnp4LTlFNF9PaU5qTE0xc2NlalJuWXNQUjZNSHFvZktmVXZ4RFNiWVA3VHR6SWRzZDNieWlpZGV3Qnd6RnBqV190d2hwcnFTMzNzRzVybVE2YzVCTkZmSHBwUTZyMDhndlhQaGV5d3c?oc=5",
+      "category": "品牌竞争",
+      "source": "新浪财经",
+      "time": "2026-08-15 13:30",
+      "summary": "报道指出Alo Yoga正式进入中国内地市场，其高端定位和瑜伽服产品直接对标lululemon，首店开业引发价格、品控等争议，高端运动休闲市场竞争加剧。",
+      "level": "★★★★★"
+    },
+    {
+      "title": "Alo入华线上1分钟成交超千万，1750元德训鞋卖爆",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQc3ZUcFBRQjQtSC1XdWpvUl9NdWZwUnNzNHFVRThTR2RPN2hhai1xZXFJeHlGaHBvUWZLUkR4V0NiQVZvV200eEtxS3BYd1NTT19MSUM2SUoyUm1pZlFCbHU1UGtLQWExRnoyM0U1RnJXQnBobDFzc2tpTW53VFZzaUxNQlZrMm1V?oc=5",
+      "category": "消费趋势",
+      "source": "Sohu",
+      "time": "2026-08-15 07:02",
+      "summary": "Alo Yoga中国首秀线上销售火爆，1分钟成交额破千万，1750元德训鞋迅速售罄，印证高端瑜伽服及运动休闲品类在中国市场的强劲需求。",
+      "level": "★★★★★"
+    },
+    {
+      "title": "跑步业务慢下来了，HOKA想打开消费者的衣橱",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFByUTkxRVQ5ZHgzR3dmQjVxNTNCNktNNFZYY0tUR1NSeHdYRnNaYnUyaC1CV0lRZkRZdWtmOWdQN0xzQldCRkJpcDljOWxZVS0wLU1nSG1xSzM?oc=5",
+      "category": "品牌竞争",
+      "source": "Jiemian.com",
+      "time": "2026-08-14 15:24",
+      "summary": "HOKA跑步业务增速放缓，品牌正寻求拓展鞋类以外的服装品类，以覆盖更广泛消费场景，其产品线扩张策略值得关注。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "比Lululemon还贵的瑜伽服，来抢中国市场了",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAxUC1HbXZfay1vcmFOc2VLNmFEc1JKTHdTVGZXSk8wQXUydTVpMGNvUTFBdk1EX1RXNzlpME9EdkNENzBKRldPUWFIY0ROa3pWZUhv?oc=5",
+      "category": "品牌竞争",
+      "source": "第一财经",
+      "time": "2026-08-14 21:52",
+      "summary": "文章分析Alo Yoga以高于lululemon的定价进入中国市场，瞄准超高端瑜伽服细分市场，其品牌定位和渠道策略对现有高端品牌构成挑战。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "货架电商失守注意力高地，阿里妈妈“躺赚”时代终结",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTjFPazU0a3F3bTdxNy0wYlZpV1I4V2pxRmU1RklZaV9sX0JlU1l2WEpCWnYtY21HZVVDZHFhLW9vS3dTeGFZY0o3akpEb19BNEppTm5sUUd1Y09zLXRHT0xpZmtmdkxCa0l5b0dUZ2JZUjVlOUlZZEptR2l6OEJPaHd1TE5pU0lFT0Q1by1CMkRwNlNWTmEwZ19QZ1BUM2xIdmE1Y09LeDU3d3JuNjRzRWpaQ1lNOEt4OHF0Rw?oc=5",
+      "category": "电商平台",
+      "source": "新浪财经",
+      "time": "2026-08-15 05:23",
+      "summary": "分析指出传统货架电商平台面临用户注意力流失挑战，广告业务增长承压，平台需寻求新的增长模式，对品牌线上投放策略有重要影响。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "一周电商大事：腾讯Q2营收2047.85亿元；拼多多上线“最快明天达”，卷入即时零售",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1QaXdPSG8tZVhhcGg4U2NxT0dYeXE0d2lsa1gxQXc0Y3M4MWtlQUpFWlllRlVwRGptdkRwWFJsNjYwdnNYQ2FJaFh6VndqcktlQ0RlcXdB?oc=5",
+      "category": "电商平台",
+      "source": "ebrun.com",
+      "time": "2026-08-15 15:57",
+      "summary": "拼多多上线“最快明天达”服务，正式切入即时零售赛道，电商平台竞争从传统货架电商延伸至本地生活服务，行业格局或将生变。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "核心零售效率继续释放，京东二季度经营利润45亿元，加码AI与自动化",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZExvY3RhVXh4RTRuRWFrQV9qbVAzT3JXU2Yta0RQeDZwckJxVGNuUE5WQ250Zy1GbW1Wb2xsSU13X044SDR3RXZsaUVFX1VXdm9RTUZ3V2czb3h3R0dPUWViTkR3eG40RUJiVmkybkhlZEQzWkJGbk5sWFZtYU05N1ZqOWpFZ0lkdHpXcHFCQTlzVGdvMzFEemF2TS0wVkRXc0JGZm9VWEVFYlZxbzdMVE1R?oc=5",
+      "category": "电商平台",
+      "source": "新浪财经",
+      "time": "2026-08-15 05:48",
+      "summary": "京东发布二季度财报，经营利润达45亿元，显示核心零售业务效率提升，同时宣布加大AI与自动化投入，反映头部电商平台的技术竞争趋势。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "耐克中国签约泉州市人民政府，携手共建智能制造产业高地",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ESFh5eW0wUE1KTmpwbDBkd0dBQjhaSnBYOVF0T0ZNSm9YQ1lMSVphbDJUZ1F3a1ZWVUhMYWFULUNnX2p0ZDQ0LTFVSG1sNmZxbWZSdDdUUGQ?oc=5",
+      "category": "品牌竞争",
+      "source": "womenofchina.com",
+      "time": "2026-08-16 06:09",
+      "summary": "耐克中国与泉州市政府签约，共建智能制造产业高地。此举标志着耐克深化在华供应链布局，推动本土化智能制造升级，对运动鞋服产业链的数字化和效率提升具有示范意义。",
+      "level": "★★★★★"
+    },
+    {
+      "title": "从小众到主流，30万内猎装车三强怎么选？",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9wZlVJUEYyM1lRdno2S3ZVVmxELWdlMXJDZGdJdTY4d3ZuVU4xQ0JGRmg1STFCek5LWWFHcWUtMnc2TVc0dW9aQW10ZkEtVF9oX1plamxyUVhtM191c2s1dVlMMkU5UXJ4TkhWMUlKOU00dw?oc=5",
+      "category": "消费趋势",
+      "source": "新浪网",
+      "time": "2026-08-16 13:57",
+      "summary": "猎装车从小众走向主流，30万内市场出现多款热门车型。这一趋势反映了年轻消费者对个性化、多功能车型的需求增长，是汽车消费升级和细分市场扩张的典型案例，对消费趋势研判有参考价值。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "服务消费成主引擎！暑期新场景激活消费潜能",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQU0diSjd1Q0RPQmIxZkt1bHRYYk85cVJJS0VtekpsU1pEUVp2cmxWcVJWQS1xMjhndHh0ZEVQdFBkMUQzVjdNZTF1Snp3ZGJONTFFaGZjS1NBWUxOT2FNZGdCdUlxWVhxbnk0Q0J3UVpxckpvV3NxV1hrdGtlMENkZ2REMEI?oc=5",
+      "category": "宏观消费",
+      "source": "新浪财经",
+      "time": "2026-08-16 12:35",
+      "summary": "暑期服务消费成为拉动经济增长的主引擎，新场景、新业态持续激活消费潜能。数据显示服务零售额保持较快增长，凸显居民消费结构向服务消费升级的趋势，对零售和品牌企业有宏观指导意义。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "上半年服务零售额同比增长5.3%，主要靠哪些行业拉动？",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQNGw2QW1TZzlqUnBQSUdSZlBrYVNaWFdkU0loc1Nzd2NOelFnYlVMaEtMNHVvQ3ZyZW9nZDlpd3c2TExpZ2FGWmVVcU1ncGRpQ1J6ZzFiS28tYlA4VlJTYTU0aGNWS3BqQ2N1R2o0MzJ1dWJLM3hjZ09ENDBIMERWOUVlVno?oc=5",
+      "category": "宏观消费",
+      "source": "新浪财经",
+      "time": "2026-08-16 12:36",
+      "summary": "上半年服务零售额同比增长5.3%，主要由餐饮、旅游、文体娱乐等行业拉动。该数据揭示了服务消费的强劲复苏态势，为消费类企业制定市场策略提供了宏观数据支撑。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "从卖服装到卖供应链能力，希音（SHEIN）的估值逻辑已发生根本切换",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1pNUgtRjhWMFMyVVkzMXYtSHpSOXNCNndDQU9Od3A3emdtRFhwRFI3MDhQUWdxSUZGeVVOSlZ2NGV5U3BZbGdKTjdnZ3YtMmZESjhzODlmeWN0Mkg5aGt2OFBJbmNBNlMxR1RpWnd3?oc=5",
+      "category": "行业报告",
+      "source": "中华网科技频道",
+      "time": "2026-08-16 10:49",
+      "summary": "SHEIN的估值逻辑已从服装销售转向供应链能力输出，其柔性供应链模式成为核心竞争力。这一转变对服装行业的供应链管理和商业模式创新具有重要启示。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "足球兴趣用户突破1亿，小红书为何盯上世界杯版权？",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBnTmpxRDNtN2d5d0VscjhsNnphSlNtWjYyeDFmVnBWVnJFampfdHFmVFp2QXl6eVAwdUJuR3JzVGItaTBOR2xnYmQzNGU3cVh1YWY0?oc=5",
+      "category": "电商平台",
+      "source": "第一财经",
+      "time": "2026-08-16 07:59",
+      "summary": "小红书足球兴趣用户突破1亿，平台开始布局世界杯版权内容。此举旨在通过顶级体育IP吸引用户、增强粘性，并探索体育营销新路径，对内容电商平台和品牌营销有重要影响。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "美国品牌ALO入驻天猫，开业赠礼活动引争议，消费者称规则模糊",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBBYXBxWVBVNVNVTkt5SmloaDdQU3NzazBwSEFmd1dHaDJaVkpuZ2xCUW5LNzREQkt4WklKaGRZajktNUFlcENlOTg0eDZjQmZiOWZiRlZMak5lYzFyN3BCdXF5c3d0RTJXdnRmNUFQOUgzcFFWc2puaQ?oc=5",
+      "category": "品牌竞争",
+      "source": "新浪财经",
+      "time": "2026-08-16 04:57",
+      "summary": "美国运动品牌ALO正式入驻天猫，但开业赠礼活动因规则模糊引发消费者争议，客服沟通困难。该事件凸显国际品牌进入中国市场时在本地化运营和消费者服务方面面临的挑战。",
+      "level": "★★★★☆"
+    },
+    {
+      "title": "行业强分化下，谁才是纺织服饰赛道真正的“长跑冠军”？",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4xTGtPU1VUbkRRMXVpMFlIY2NUZEN2SGtSTjJQeXZzSlRCSFR1M1VTNWxydVZJX0F1VDNBb0JKcE5GalNuWU9TZFFjRWN3TjlDQnFWMUxGUWJwYXJLZEl5ckJVYkJjUQ?oc=5",
+      "category": "行业报告",
+      "source": "证券市场周刊",
+      "time": "2026-08-16 07:56",
+      "summary": "纺织服饰行业呈现强分化态势，报告分析了在激烈竞争中具备长期竞争力的企业特征。该报告对运动鞋服企业的战略规划和投资决策具有参考价值。",
       "level": "★★★★☆"
     }
   ],
   "competitor_news": [],
-  "keywords": [
-    "校园体育",
-    "品牌站位",
-    "防滑鞋",
-    "户外运动",
-    "跑步经济",
-    "客流修复",
-    "防雨装备",
-    "城市骑行",
-    "亲子运动",
-    "大促预售",
-    "儿童运动",
-    "消费趋势",
-    "运动社交",
-    "山系穿搭",
-    "透气跑鞋",
-    "松弛感",
-    "直播带货",
-    "新消费"
-  ],
+  "keywords": [],
   "regions": [
-    {
-      "east": {
-        "name": "华东",
-        "city": "上海/江苏/浙江",
-        "hot": "华东强降雨持续，防雨防滑与室内运动需求上升，亲子消费",
-        "flow": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注。结合儿童运动消费外扩与亲子校园需求升温，建议强化室内场景产品陈列",
-        "focus": "室内运动与防雨品类",
-        "action": "门店增设防雨防滑专区，主推室内运动鞋服，联动亲子活动提升到店转化。",
-        "star": "★★★"
-      },
-      "central": {
-        "name": "华中",
-        "city": "湖北/湖南/江西",
-        "hot": "华中雷雨频繁，校园运动需求升温，防滑耐磨童鞋成刚需。",
-        "flow": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注。儿童运动消费外扩，校园场景需求增加，需调整产品结构适应天气变化。",
-        "focus": "校园运动与防滑鞋品",
-        "action": "加强校园渠道沟通，主推防滑耐磨童鞋，门店布置雨天运动提示，促进连带销售。",
-        "star": "★★★"
-      },
-      "south": {
-        "name": "华南",
-        "city": "广东/广西",
-        "hot": "华南降雨转晴，户外运动回暖，轻户外亲子装备迎窗口期。",
-        "flow": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注。后期转晴，跑步骑行等户外场景延续，需快速切换至户外功能品类。",
-        "focus": "户外功能与轻户外装备",
-        "action": "雨停后快速上架轻户外亲子装备，结合跑步骑行场景开展体验活动，抢占晴好天气",
-        "star": "★★★"
-      },
-      "southwest": {
-        "name": "西南",
-        "city": "四川/重庆/贵州",
-        "hot": "西南小雨雷阵雨交替，室内运动需求旺，防滑产品需重点陈",
-        "flow": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注。连续降雨影响户外活动，室内运动场景成为重点，需强化相关品类展示。",
-        "focus": "室内运动与防滑品类",
-        "action": "门店主推室内运动鞋服，设置防滑功能体验区，利用雨天客流推广会员权益。",
-        "star": "★★"
-      },
-      "northwest": {
-        "name": "西北",
-        "city": "陕西/甘肃/宁夏",
-        "hot": "西北降雨增强，气温波动，功能外套与防滑鞋品需提前备货",
-        "flow": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注。降雨增强可能影响客流，需提前调整库存，强化功能品类承接。",
-        "focus": "防雨功能与保暖外套",
-        "action": "提前备货防雨外套与防滑鞋，门店布置雨天场景，结合大促预热推出组合优惠。",
-        "star": "★★"
-      }
-    },
+    {},
     {},
     {},
     {},
@@ -576,41 +528,10 @@
     {},
     {}
   ],
-  "warnings": [
-    "重点品牌事件升温，需关注搜索热度、竞品动作和终端话术承接。",
-    "平台大促与直播流量波动，需关注核心SKU库存、价格带和同款转化。",
-    "天气变化影响到店节奏，需关注防晒、防雨、防滑和室内运动场景。"
-  ],
-  "trend_items": [
-    {
-      "title": "雨天场景推防滑童鞋",
-      "desc": "强降雨致客流波动，建议强化防滑鞋底与速干面料卖点，联动室内运动课程促销，提升连带率。",
-      "tag": "天气应对"
-    },
-    {
-      "title": "借势户外热拓亲子徒步",
-      "desc": "户外消费升温，可推出亲子徒步鞋服套装，结合周末商圈活动，打造轻户外体验场景，吸引家庭客群。",
-      "tag": "户外场景"
-    },
-    {
-      "title": "电商大促前置备货爆款",
-      "desc": "平台促销节点临近，建议提前锁定高性价比跑鞋库存，优化直播话术突出儿童足部健康科技，抢占流量。",
-      "tag": "电商运营"
-    },
-    {
-      "title": "政策红利促县域渠道下沉",
-      "desc": "促消费政策加码，可加速三四线商圈门店布局，推出百元级入门款，配合社区亲子活动提升转化。",
-      "tag": "渠道拓展"
-    }
-  ],
+  "warnings": [],
+  "trend_items": [],
   "weather": [
-    {
-      "north": "降雨影响客流，防雨、轻防护与室内运动场景需求提升",
-      "east": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
-      "south": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
-      "southwest": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注",
-      "northwest": "强降雨或雷阵雨扰动客流，防雨、防滑与室内运动场景需关注"
-    },
+    {},
     {},
     {},
     {},
