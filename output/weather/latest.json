@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16 03:42:01",
+  "generated_at": "2026-08-16 00:32:44",
   "source": "Open-Meteo",
   "regions": {
     "north": {
@@ -35,10 +35,10 @@
       "days": [
         {
           "date": "2026-08-16",
-          "weather": "小雨",
+          "weather": "雷阵雨",
           "temp_max": 28.8,
           "temp_min": 25.0,
-          "alert": ""
+          "alert": "雷雨"
         },
         {
           "date": "2026-08-17",
@@ -89,10 +89,10 @@
       "days": [
         {
           "date": "2026-08-16",
-          "weather": "强阵雨",
+          "weather": "雷阵雨",
           "temp_max": 34.3,
           "temp_min": 24.2,
-          "alert": "阵雨"
+          "alert": "雷雨"
         },
         {
           "date": "2026-08-17",
