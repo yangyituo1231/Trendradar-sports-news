@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19 03:46:53",
+  "generated_at": "2026-08-19 00:31:09",
   "source": "Open-Meteo",
   "regions": {
     "north": {
@@ -69,10 +69,10 @@
         },
         {
           "date": "2026-08-20",
-          "weather": "小雨",
+          "weather": "雷阵雨",
           "temp_max": 33.2,
           "temp_min": 25.8,
-          "alert": ""
+          "alert": "雷雨"
         },
         {
           "date": "2026-08-21",
