@@ -1,411 +1,1103 @@
-
 <!DOCTYPE html>
-<html lang='zh-CN'>
+<html lang="zh-CN">
 <head>
-<meta charset='UTF-8'>
-<title>运动品牌行业周报</title>
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:#eef4fb;font-family:'Microsoft YaHei','PingFang SC',Arial,sans-serif;color:#122b54;padding:24px}
-.report{width:1280px;margin:0 auto}
-.cover{height:300px;border-radius:30px;padding:38px 44px;position:relative;overflow:hidden;color:#fff;background:radial-gradient(circle at 84% 18%,rgba(255,142,31,.42),transparent 25%),radial-gradient(circle at 12% 90%,rgba(255,255,255,.18),transparent 30%),linear-gradient(135deg,#06235f,#075bd2 58%,#18a2ff);box-shadow:0 24px 50px rgba(6,42,111,.26);margin-bottom:20px}
-.cover:after{content:'';position:absolute;right:-120px;bottom:-160px;width:480px;height:480px;border-radius:50%;border:48px solid rgba(255,255,255,.13)}
-.cover-tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);padding:8px 15px;border-radius:999px;font-size:14px;font-weight:900;margin-bottom:20px}
-.cover h1{font-size:60px;letter-spacing:-1px;line-height:1;font-weight:950}
-.cover h2{font-size:23px;margin-top:16px;font-weight:850;opacity:.95}
-.cover-foot{position:absolute;left:44px;bottom:30px;font-size:14px;font-weight:800;opacity:.9}
-.stats{position:absolute;right:38px;top:38px;display:grid;grid-template-columns:repeat(4,104px);gap:10px}
-.stat{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.25);border-radius:18px;padding:14px 8px;text-align:center;backdrop-filter:blur(6px)}
-.stat b{font-size:31px;display:block}
-.stat span{font-size:12px;font-weight:800;opacity:.9}
-.page{background:#fff;border-radius:26px;padding:24px;box-shadow:0 16px 36px rgba(25,56,105,.12);margin-bottom:18px}
-.head{display:flex;align-items:end;justify-content:space-between;border-bottom:2px solid #e3edf9;padding-bottom:12px;margin-bottom:18px}
-.head h2{font-size:27px;color:#062b78;font-weight:950}
-.head span{font-size:12px;color:#0b63d8;font-weight:950;letter-spacing:.8px}
-.summary{font-size:20px;line-height:1.75;font-weight:850;color:#0d2d68;background:linear-gradient(135deg,#f6f9ff,#eef6ff);border:1px solid #dce8f8;border-radius:20px;padding:20px}
-.core-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:16px}
-.core-card{background:#fbfdff;border:1px solid #dbe6f6;border-radius:18px;padding:16px;min-height:135px}
-.core-card b{display:block;color:#ff7a00;font-size:24px;margin-bottom:8px}
-.core-card span{font-size:15px;line-height:1.55;font-weight:850;color:#244268}
-.ai-box{margin-top:16px;border:1px solid #dbe6f6;border-radius:20px;background:#fbfdff;padding:18px}
-.ai-box h3{color:#0b4db3;margin-bottom:12px}
-.ai-box div{background:#f5f9ff;border-radius:14px;padding:12px;margin-top:10px}
-.ai-box b{color:#0b4db3}
-.ai-box p{font-size:14px;line-height:1.7;font-weight:760;margin-top:5px}
-.event-table{width:100%;border-collapse:collapse}
-.event-table th{text-align:left;background:#f3f8ff;color:#0b4db3;font-size:13px;padding:12px;border-bottom:1px solid #dbe6f6}
-.event-table td{font-size:14px;line-height:1.45;font-weight:760;color:#233e68;padding:12px;border-bottom:1px solid #edf2fa;vertical-align:top}
-.rank{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;background:#0b63d8;color:#fff;border-radius:9px;font-weight:950}
-.event-title{font-weight:950;color:#0d2d68}
-.event-title em{display:block;font-size:11px;color:#7b8ca8;font-style:normal;margin-top:4px}
-.event-news{display:flex;gap:12px;align-items:center;min-width:360px}
-.event-news img{width:92px;height:62px;border-radius:12px;object-fit:cover;background:#edf5ff;border:1px solid #dbe6f6}
-.event-title a,.product-card h4 a{color:#0b63d8;text-decoration:none}
-.event-title a:hover,.product-card h4 a:hover{text-decoration:underline}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.panel{border:1px solid #dbe6f6;border-radius:20px;background:#fbfdff;padding:18px}
-.panel h3{font-size:18px;color:#0b4db3;margin-bottom:14px}
-.bar-row{display:grid;grid-template-columns:118px 1fr 42px;gap:10px;align-items:center;margin-bottom:12px}
-.bar-row label{font-size:13px;font-weight:900;color:#183a76;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.bar-row b{font-size:13px;color:#0b63d8;text-align:right}
-.bar{height:10px;background:#edf5ff;border-radius:999px;overflow:hidden}
-.bar i{display:block;height:100%;background:linear-gradient(90deg,#0b63d8,#18a2ff);border-radius:999px}
-.bar.green i{background:linear-gradient(90deg,#0f766e,#34d399)}
-.word-cloud{min-height:260px;border:1px solid #dbe6f6;border-radius:20px;background:linear-gradient(135deg,#f8fbff,#eef6ff);display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:14px 18px;padding:22px}
-.kw{background:#fff;border:1px solid #dbe6f6;border-radius:999px;padding:7px 14px;font-size:14px;font-weight:950;color:#0b63d8;box-shadow:0 6px 14px rgba(20,60,110,.06)}
-.kw.mid{font-size:17px;background:#ecfdf5;color:#0f766e}
-.kw.big{font-size:25px;background:#dcecff;color:#062b78}
-.region-card{border:1px solid #dbe6f6;border-radius:20px;background:linear-gradient(135deg,#f7fbff,#fff);padding:17px;min-height:170px}
-.region-card h3{font-size:21px;color:#0b4db3;margin-bottom:10px}
-.region-card p{font-size:14px;line-height:1.55;font-weight:760;color:#315174}
-.region-card b{display:block;margin-top:10px;font-size:13px;line-height:1.5;color:#0f766e}
-.products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.product-card{border:1px solid #dbe6f6;border-radius:20px;background:#fbfdff;padding:13px;box-shadow:0 8px 18px rgba(20,60,110,.06)}
-.product-cover{height:150px;border-radius:16px;background:radial-gradient(circle at 80% 20%,rgba(25,163,255,.22),transparent 30%),linear-gradient(135deg,#edf5ff,#f8fbff);display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;margin-bottom:11px;overflow:hidden}
-.product-cover span{position:absolute;top:8px;left:8px;background:#062b78;color:#fff;border-radius:999px;padding:4px 8px;font-size:11px;font-weight:950;z-index:2}
-.product-cover i{font-style:normal;font-size:46px}
-.product-cover strong{font-size:21px;color:#0b4db3;margin-top:8px;z-index:2}
-.product-cover em{font-style:normal;color:#0f766e;background:#ecfdf5;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:900;margin-top:8px}
-.product-cover.has-img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
-.product-cover.has-img:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(6,35,95,.55))}
-.product-cover.has-img strong{position:absolute;left:12px;bottom:12px;color:#fff;font-size:18px;text-shadow:0 2px 8px rgba(0,0,0,.35)}
-.product-card h4{font-size:15.5px;line-height:1.35;color:#0d2d68;min-height:42px}
-.brand{font-size:12px;color:#0b63d8;font-weight:900;margin-top:6px}
-.tags{font-size:12px;color:#1d8c54;font-weight:850;margin-top:7px}
-.insight{margin-top:9px;background:#f0fdf4;color:#166534;border-radius:12px;padding:9px;font-size:12.5px;line-height:1.45;font-weight:850}
-.plan-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.plan-card{border-radius:18px;background:linear-gradient(135deg,#fff7ed,#fff);border:1px solid #fed7aa;color:#7c2d12;font-size:15px;line-height:1.6;font-weight:850;padding:17px;min-height:132px}
-.empty{color:#8a99ad;font-size:14px;text-align:center;padding:24px}
-.footer{text-align:center;color:#7184a3;font-size:12px;margin:16px 0 4px}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="361°儿童运动产业周度情报：基于可核验来源整理本周品牌、产品、渠道与消费变化。">
+  <title>361°儿童｜运动产业周度情报｜2026-08-13—2026-08-19</title>
+  <style>
+    :root {
+      --orange: #f36c21;
+      --orange-dark: #c94b0b;
+      --orange-soft: #fff1e8;
+      --ink: #17201d;
+      --ink-soft: #35413c;
+      --muted: #68736e;
+      --line: #d9dfdb;
+      --line-dark: #aeb8b2;
+      --wash: #f5f7f4;
+      --paper: #ffffff;
+      --link: #245e7c;
+      --danger: #a62b24;
+      --danger-soft: #fff2f0;
+      --serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", STSong, serif;
+      --sans: "Noto Sans SC", "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+    a:hover { color: var(--orange-dark); }
+    a:focus-visible, button:focus-visible, summary:focus-visible {
+      outline: 3px solid rgba(243,108,33,.38);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+
+    .skip-link {
+      position: fixed;
+      left: 16px;
+      top: -80px;
+      z-index: 100;
+      background: var(--ink);
+      color: #fff;
+      padding: 10px 14px;
+      transition: top .2s ease;
+    }
+    .skip-link:focus { top: 16px; }
+
+    .shell { width: min(1180px, calc(100% - 64px)); margin: 0 auto; }
+
+    .masthead {
+      border-top: 8px solid var(--orange);
+      padding: 50px 0 46px;
+    }
+    .masthead-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 24px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line-dark);
+    }
+    .brand-line {
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      color: var(--orange-dark);
+    }
+    .edition {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+      text-align: right;
+    }
+    .masthead-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr);
+      gap: clamp(36px, 7vw, 94px);
+      padding-top: 44px;
+      align-items: end;
+    }
+    h1 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(48px, 6.4vw, 82px);
+      font-weight: 700;
+      letter-spacing: -.055em;
+      line-height: 1.03;
+    }
+    .deck {
+      margin: 18px 0 0;
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 15px;
+      letter-spacing: .02em;
+    }
+    .week-stamp { border-left: 4px solid var(--orange); padding-left: 22px; }
+    .week-stamp p { margin: 0; }
+    .week-stamp .week {
+      font-family: var(--serif);
+      font-size: clamp(21px, 2.3vw, 31px);
+      font-weight: 700;
+      line-height: 1.35;
+    }
+    .week-stamp .generated { margin-top: 10px; color: var(--muted); font-size: 12px; }
+
+    .thesis {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      gap: 42px;
+      margin-top: 62px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line-dark);
+    }
+    .thesis-label {
+      font-family: var(--mono);
+      color: var(--orange-dark);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .thesis blockquote {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(25px, 3.2vw, 40px);
+      font-weight: 650;
+      line-height: 1.42;
+      letter-spacing: -.025em;
+    }
+    .thesis-summary { margin: 22px 0 0; color: var(--ink-soft); max-width: 820px; }
+    .evidence-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 24px;
+      margin-top: 24px;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 12px;
+    }
+    .evidence-line strong { color: var(--ink); }
+
+    .section-nav {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255,255,255,.94);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+    .nav-inner { display: flex; align-items: center; gap: 28px; min-height: 52px; overflow-x: auto; scrollbar-width: none; }
+    .nav-inner::-webkit-scrollbar { display: none; }
+    .nav-inner a {
+      flex: 0 0 auto;
+      color: var(--ink-soft);
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .nav-inner a:hover { color: var(--orange-dark); }
+    .nav-spacer { flex: 1 1 auto; }
+    .print-button {
+      flex: 0 0 auto;
+      appearance: none;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: 12px;
+      cursor: pointer;
+      padding: 8px 0;
+    }
+    .print-button:hover { color: var(--orange-dark); }
+
+    main { display: block; }
+    .report-section { padding: 78px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 70px; }
+    .section-heading {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      gap: 42px;
+      margin-bottom: 44px;
+      align-items: start;
+    }
+    .section-kicker {
+      margin: 0;
+      color: var(--orange-dark);
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-heading h2 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(32px, 4vw, 49px);
+      letter-spacing: -.035em;
+      line-height: 1.16;
+    }
+    .section-heading .section-intro { margin: 12px 0 0; max-width: 760px; color: var(--muted); }
+
+    .quality-notice {
+      margin-bottom: 28px;
+      border-left: 4px solid var(--orange);
+      background: var(--orange-soft);
+      padding: 14px 18px;
+      color: var(--orange-dark);
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    .change-list { position: relative; border-left: 2px solid var(--orange); }
+    .change-row {
+      display: grid;
+      grid-template-columns: 64px minmax(0, 1fr);
+      gap: 24px;
+      position: relative;
+      padding: 0 0 38px 30px;
+      margin-left: -2px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 34px;
+    }
+    .change-row:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+    .change-row::before {
+      content: "";
+      position: absolute;
+      left: -6px;
+      top: 8px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--paper);
+      border: 2px solid var(--orange);
+    }
+    .change-index {
+      font-family: var(--mono);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--orange-dark);
+      padding-top: 4px;
+    }
+    .change-meta { display: flex; flex-wrap: wrap; gap: 7px 9px; margin-bottom: 12px; }
+    .status, .meta-label {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 2px 8px;
+      border: 1px solid var(--line);
+      font-size: 11px;
+      line-height: 1.2;
+      color: var(--muted);
+    }
+    .status { border-color: var(--orange); color: var(--orange-dark); font-weight: 800; }
+    .status-follow_up { border-color: var(--line-dark); color: var(--ink-soft); }
+    .change-main h3 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(22px, 2.6vw, 31px);
+      line-height: 1.4;
+      letter-spacing: -.018em;
+    }
+    .change-main h3 a { color: var(--ink); text-decoration: none; }
+    .change-main h3 a:hover { color: var(--orange-dark); text-decoration: underline; }
+    .source-line { margin: 9px 0 0; color: var(--muted); font-size: 12px; }
+    .event-summary { margin: 17px 0 0; color: var(--ink-soft); max-width: 820px; }
+    .editor-note {
+      margin: 17px 0 0;
+      color: var(--ink-soft);
+      font-size: 14px;
+    }
+    .editor-note span {
+      margin-right: 10px;
+      color: var(--orange-dark);
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .06em;
+    }
+
+    .deep-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 54px; row-gap: 54px; }
+    .deep-article { padding-top: 18px; border-top: 3px solid var(--ink); }
+    .deep-number { color: var(--orange-dark); font-family: var(--mono); font-size: 11px; font-weight: 800; letter-spacing: .08em; }
+    .deep-article h3 { margin: 13px 0 0; font-family: var(--serif); font-size: 28px; line-height: 1.35; letter-spacing: -.02em; }
+    .deep-analysis { margin: 18px 0 0; color: var(--ink-soft); }
+    .evidence { margin-top: 24px; padding-top: 15px; border-top: 1px solid var(--line); }
+    .evidence > p { margin: 0 0 8px; color: var(--muted); font-family: var(--mono); font-size: 11px; font-weight: 800; }
+    .evidence ul { margin: 0; padding: 0; list-style: none; }
+    .evidence li { margin-top: 8px; font-size: 13px; line-height: 1.5; }
+    .evidence li small { display: block; color: var(--muted); font-size: 11px; }
+
+    .product-list { border-top: 1px solid var(--line-dark); }
+    .product-row {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 38px;
+      padding: 34px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .product-row.no-media { grid-template-columns: minmax(0, 1fr); }
+    .product-media { margin: 0; align-self: start; aspect-ratio: 4 / 3; overflow: hidden; background: var(--wash); }
+    .product-media img { width: 100%; height: 100%; display: block; object-fit: cover; }
+    .product-kicker { display: flex; flex-wrap: wrap; gap: 8px 14px; color: var(--orange-dark); font-family: var(--mono); font-size: 11px; font-weight: 800; }
+    .product-copy h3 { margin: 10px 0 0; font-family: var(--serif); font-size: 29px; line-height: 1.35; }
+    .product-copy h3 a { color: var(--ink); text-decoration: none; }
+    .product-copy h3 a:hover { color: var(--orange-dark); text-decoration: underline; }
+    .product-facts { display: flex; flex-wrap: wrap; gap: 12px 30px; margin: 20px 0 0; }
+    .product-facts div { min-width: 100px; }
+    .product-facts dt { color: var(--muted); font-size: 11px; }
+    .product-facts dd { margin: 1px 0 0; color: var(--ink); font-size: 14px; font-weight: 700; }
+    .term-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 18px; }
+    .term-list span { border-bottom: 1px solid var(--line-dark); color: var(--ink-soft); font-size: 12px; padding: 2px 0; margin-right: 12px; }
+
+    .split-view { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; }
+    .split-column + .split-column { border-left: 1px solid var(--line); padding-left: 64px; }
+    .split-column h3.column-title { margin: 0 0 24px; color: var(--orange-dark); font-family: var(--mono); font-size: 12px; letter-spacing: .09em; }
+    .compact-event { padding: 20px 0; border-top: 1px solid var(--line); }
+    .compact-event:first-of-type { border-top-color: var(--line-dark); }
+    .compact-event h3 { margin: 9px 0 0; font-family: var(--serif); font-size: 21px; line-height: 1.45; }
+    .compact-event h3 a { color: var(--ink); text-decoration: none; }
+    .compact-event h3 a:hover { color: var(--orange-dark); text-decoration: underline; }
+    .compact-event p { margin: 7px 0 0; color: var(--muted); font-size: 11px; }
+
+    .tracking-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 34px 64px; }
+    .tracking-block { border-top: 2px solid var(--ink); padding-top: 15px; }
+    .tracking-block h3 { margin: 0; font-size: 16px; }
+    .tracking-count { color: var(--orange-dark); font-family: var(--mono); font-size: 12px; }
+    .tracking-list { margin: 12px 0 0; padding: 0; list-style: none; }
+    .tracking-list li { padding: 10px 0; border-top: 1px solid var(--line); font-size: 13px; line-height: 1.5; }
+    .tracking-list li small { display: block; color: var(--muted); font-size: 10px; margin-top: 3px; }
+    .tracking-empty { margin: 13px 0 0; color: var(--muted); font-size: 13px; }
+
+    .verification-alert { margin-top: 44px; background: var(--danger-soft); border-left: 4px solid var(--danger); padding: 24px 26px; }
+    .alert-title { color: var(--danger); font-family: var(--mono); font-size: 12px; font-weight: 800; letter-spacing: .08em; }
+    .alert-intro { margin: 7px 0 0; color: #73302c; }
+    .conflict-item { margin-top: 20px; padding-top: 17px; border-top: 1px solid #edc8c4; }
+    .conflict-reason { margin: 0; font-weight: 700; color: #672720; }
+    .conflict-item ul { margin: 10px 0 0; padding-left: 20px; }
+    .conflict-item li { margin-top: 6px; font-size: 13px; }
+    .conflict-item small { display: block; color: #8c5a56; font-size: 10px; }
+
+    .watch-list { border-top: 1px solid var(--line-dark); }
+    .watch-row { display: grid; grid-template-columns: 58px minmax(0, 1fr); gap: 22px; padding: 25px 0; border-bottom: 1px solid var(--line); }
+    .watch-index { color: var(--orange-dark); font-family: var(--mono); font-size: 13px; font-weight: 800; }
+    .watch-row h3 { margin: 0; font-family: var(--serif); font-size: 22px; }
+    .watch-row p { margin: 8px 0 0; color: var(--ink-soft); }
+    .watch-row small { display: block; margin-top: 8px; color: var(--muted); font-size: 11px; }
+
+    .table-wrap { overflow-x: auto; border-top: 1px solid var(--line-dark); }
+    .source-table { width: 100%; border-collapse: collapse; min-width: 760px; }
+    .source-table th, .source-table td { padding: 14px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    .source-table th { color: var(--muted); font-family: var(--mono); font-size: 10px; letter-spacing: .07em; }
+    .source-table td { font-size: 13px; }
+    .source-table td:first-child { color: var(--orange-dark); font-family: var(--mono); }
+    .source-type { color: var(--muted); font-size: 11px; }
+
+    .methodology { margin-top: 34px; border-top: 1px solid var(--line); }
+    .methodology summary { cursor: pointer; padding: 17px 0; color: var(--muted); font-size: 13px; font-weight: 700; }
+    .method-body { padding: 10px 0 24px; }
+    .method-status { color: var(--orange-dark); font-weight: 700; }
+    .quality-metrics { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); margin: 18px 0 0; }
+    .quality-metrics div { background: var(--paper); padding: 13px; }
+    .quality-metrics dt { color: var(--muted); font-size: 10px; }
+    .quality-metrics dd { margin: 3px 0 0; font-family: var(--serif); font-size: 24px; }
+    .method-body ul { margin: 20px 0 0; padding-left: 20px; color: var(--muted); font-size: 12px; }
+
+    .empty-state { border-top: 1px solid var(--line-dark); padding: 28px 0; max-width: 760px; }
+    .empty-state p { margin: 0; color: var(--muted); }
+    .empty-state .empty-title { color: var(--ink); font-family: var(--serif); font-size: 22px; font-weight: 700; margin-bottom: 6px; }
+
+    footer { padding: 36px 0 52px; color: var(--muted); font-size: 11px; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 24px; padding-top: 18px; border-top: 1px solid var(--line); }
+
+    @media (max-width: 900px) {
+      .shell { width: min(100% - 40px, 760px); }
+      .masthead-grid, .thesis, .section-heading { grid-template-columns: 1fr; gap: 24px; }
+      .masthead-grid { align-items: start; }
+      .week-stamp { margin-top: 10px; }
+      .thesis { margin-top: 44px; }
+      .deep-grid, .split-view, .tracking-grid { grid-template-columns: 1fr; }
+      .split-column + .split-column { border-left: 0; border-top: 1px solid var(--line); padding: 34px 0 0; }
+      .quality-metrics { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 640px) {
+      body { font-size: 15px; }
+      .shell { width: min(100% - 28px, 560px); }
+      .masthead { padding: 30px 0 34px; border-top-width: 6px; }
+      .masthead-top { align-items: flex-start; flex-direction: column; gap: 9px; padding-bottom: 20px; }
+      .edition { text-align: left; }
+      .masthead-grid { padding-top: 28px; }
+      h1 { font-size: 44px; }
+      .thesis blockquote { font-size: 25px; }
+      .evidence-line { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px 16px; }
+      .nav-inner { gap: 20px; }
+      .nav-spacer, .print-button { display: none; }
+      .report-section { padding: 54px 0; }
+      .section-heading { margin-bottom: 30px; }
+      .change-row { grid-template-columns: 38px minmax(0, 1fr); gap: 12px; padding-left: 18px; padding-bottom: 28px; margin-bottom: 26px; }
+      .change-main h3 { font-size: 22px; }
+      .product-row { grid-template-columns: 1fr; gap: 20px; }
+      .product-media { max-width: 340px; }
+      .product-copy h3 { font-size: 24px; }
+      .quality-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .footer-inner { flex-direction: column; gap: 8px; }
+    }
+
+    @media print {
+      .section-nav, .print-button, .skip-link { display: none !important; }
+      .shell { width: 100%; }
+      body { color: #000; }
+      a { color: inherit; text-decoration: none; }
+      .masthead, .report-section { break-inside: avoid; }
+      .change-row, .deep-article, .product-row, .watch-row { break-inside: avoid; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
 </head>
 <body>
-<div class='report'>
-  <section class='cover'>
-    <div class='cover-tag'>361°儿童 · 周度行业情报</div>
-    <h1>运动品牌行业周报</h1>
-    <h2>新闻事实驱动｜品牌动作 × 商品趋势 × 平台流量 × 区域机会</h2>
-    <div class='cover-foot'>统计周期：2026-08-11 至 2026-08-17 ｜ 生成时间：2026-08-17 03:44</div>
-    <div class='stats'>
-      <div class='stat'><b>7</b><span>日报样本</span></div>
-      <div class='stat'><b>27</b><span>事件样本</span></div>
-      <div class='stat'><b>28</b><span>行业热词</span></div>
-      <div class='stat'><b>12</b><span>商品信号</span></div>
+  <a class="skip-link" href="#main-content">跳到正文</a>
+
+  <header class="masthead">
+    <div class="shell">
+      <div class="masthead-top">
+        <div class="brand-line">361° KIDS / WEEKLY INTELLIGENCE</div>
+        <div class="edition">基于可核验来源整理 · 第 2026 年度周度档案</div>
+      </div>
+
+      <div class="masthead-grid">
+        <div>
+          <h1>运动产业<br>周度情报</h1>
+          <p class="deck">品牌动作、产品变化、渠道与儿童消费信息的管理层阅读版。</p>
+        </div>
+        <div class="week-stamp">
+          <p class="week">2026年08月13日 — 2026年08月19日</p>
+          <p class="generated">生成时间 2026-08-20 14:45+08:00</p>
+        </div>
+      </div>
+
+      <div class="thesis">
+        <div class="thesis-label">The week in one line</div>
+        <div>
+          <blockquote>本周行业焦点集中于头部品牌中期业绩分化、海外扩张与高端瑜伽服入华，儿童消费场景与开学季成本成为关注点。</blockquote>
+          <p class="thesis-summary">361度、森马、亚玛芬等发布中期业绩，显示增长与渠道调整并存；Alo入华引发高端瑜伽服市场讨论；亲子活动与开学季消费受关注。</p>
+          <div class="evidence-line" aria-label="本周证据摘要">
+            <span><strong>8</strong> 项重点变化</span>
+            <span><strong>8</strong> 项本周新增</span>
+            <span><strong>0</strong> 项持续跟踪</span>
+            <span><strong>4</strong> 项具名产品</span>
+            <span><strong>18</strong> 条来源链接</span>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
+  </header>
 
-  <section class='page'>
-    <div class='head'><h2>P2｜本周核心结论</h2><span>WEEKLY JUDGEMENT</span></div>
-    <div class='summary'>本周行业信息集中在品牌竞争、平台流量、天气消费，高频热词为品牌事件、平台流量、商品趋势，动态赛道主要为儿童跑步、儿童篮球、校园运动。</div>
-    <div class='core-grid'><div class='core-card'><b>①</b><span>篮球专业化成为本周最明确的品牌竞争线索，明星资产与青少年运动心智同步升温。</span></div><div class='core-card'><b>②</b><span>618与直播内容持续影响消费者价格心智，线上爆款与线下陈列需联动观察。</span></div></div>
-    <div class='ai-box'><h3>AI经营判断</h3><div><b>核心判断</b><p>本周行业信息集中在品牌竞争、平台流量、天气消费，高频热词为品牌事件、平台流量、商品趋势，动态赛道主要为儿童跑步、儿童篮球、校园运动。</p></div><div><b>新闻变化</b><p>本周重点事件包括On昂跑发布 Cloud X 系列鞋履赋能混合训练 - Supreme情报网、德州斗牛下载苹果（ASICS）2026年新品发布：数字驱动下的跑鞋革命与市场表现 - womenofchina.com、三款新鞋齐发！On 全新训练鞋系列登场 - FLIGHTCLUB中文站，新闻侧需关注其对品牌心智、商品卖点和内容声量的影响。</p></div><div><b>竞品动作</b><p>竞品动态主要围绕重点品牌展开，需关注品牌营销、商品上新、研发科技和平台流量动作。</p></div><div><b>商品趋势</b><p>商品侧建议关注儿童跑步、商品上新、新品发布，并结合商品信号判断儿童运动、季节功能和场景化方向。</p></div><div><b>区域天气</b><p>区域侧重点关注重点区域，天气关键词集中在天气扰动，需结合区域客流变化理解机会。</p></div><div><b>下周重点</b><p>下周建议围绕儿童跑步、儿童篮球、校园运动持续跟踪竞品事件、商品信号、天气变化和平台热词，形成汇报页输入。</p></div></div>
-  </section>
+  <nav class="section-nav" aria-label="周报目录">
+    <div class="shell nav-inner">
+      <a href="#changes">本周变化</a>
+      <a href="#deep-dives">深读</a>
+      <a href="#products">产品雷达</a>
+      <a href="#landscape">竞品与儿童消费</a>
+      <a href="#tracking">跟踪台账</a>
+      <a href="#watchlist">下周观察</a>
+      <a href="#sources">来源</a>
+      <span class="nav-spacer"></span>
+      <button class="print-button" type="button" onclick="window.print()">打印 / 导出PDF</button>
+    </div>
+  </nav>
 
-  <section class='page'>
-    <div class='head'><h2>P3-P4｜本周行业重大事件 TOP10</h2><span>NEWS CHANGES DRIVE CONTENT</span></div>
-    
-    <table class='event-table'>
-      <thead>
+  <main id="main-content">
+    <section class="report-section" id="changes">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-kicker">01 / Change ledger</p>
+          <div>
+            <h2>本周真正发生了什么</h2>
+            <p class="section-intro">只呈现时间、来源和链接通过质量门槛的变化；序号代表本期编辑优先级，不代表市场热度。</p>
+          </div>
+        </div>
+        
+        <div class="change-list">
+        <article class="change-row" id="event-evt_dd45446d1303c3">
+          <div class="change-index" aria-label="编辑序号 1">01</div>
+          <div class="change-main">
+            <div class="change-meta"><span class="status status-new">本周新增</span><span class="meta-label">电商与平台</span><span class="meta-label">多源交叉</span></div>
+            <h3><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFB3eExfcUV0Z29VR2N6c01wQV85TkNvcEw2NEt1eDBocEVUcDJBQW9ieTJnc2tfMnFOamtyUFNKWTBwcUJRU0xEU0t6b0dHbzNINmhWclpn?oc=5" target="_blank" rel="noopener noreferrer">361度上半年营收61.6亿元 跨境电商业务同比增长140%<span aria-hidden="true"> ↗</span></a></h3>
+            <p class="source-line">361° · 亿邦动力网 · 08月18日</p>
+            <p class="event-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
+            <p class="editor-note"><span>入选理由</span>361度中期业绩显示营收61.6亿元，跨境电商增长140%，反映海外扩张成效。</p>
+          </div>
+        </article>
+        
+        <article class="change-row" id="event-evt_7fa9cec695484e">
+          <div class="change-index" aria-label="编辑序号 2">02</div>
+          <div class="change-main">
+            <div class="change-meta"><span class="status status-new">本周新增</span><span class="meta-label">品牌与公司</span><span class="meta-label">单一来源</span></div>
+            <h3><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE1sVWV6V3ZUOGxVYjRDeF8yR0lSRC1rUWdNcXZPWGY2NUxVWkQwZjRKWFY5MEYtR0JjUEtybmVYcDhlVTNGM1Nfc2VVaHRRZXdaanZhT2paS3d3M2JnV0E?oc=5" target="_blank" rel="noopener noreferrer">361度上半年营收净利均增8%：海外销售流水增超八成，加速拓展海外新兴市场<span aria-hidden="true"> ↗</span></a></h3>
+            <p class="source-line">361° · thepaper.cn · 08月18日</p>
+            <p class="event-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
+            <p class="editor-note"><span>入选理由</span>361度海外销售流水增超八成，加速拓展新兴市场，对儿童业务有参考价值。</p>
+          </div>
+        </article>
+        
+        <article class="change-row" id="event-evt_a357e43549c47b">
+          <div class="change-index" aria-label="编辑序号 3">03</div>
+          <div class="change-main">
+            <div class="change-meta"><span class="status status-new">本周新增</span><span class="meta-label">儿童与青少年</span><span class="meta-label">单一来源</span></div>
+            <h3><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNZjAzanBEQXVGalU0QnlyY1BLTFpQem5vSzVNaDdmMHBFR0dZVC1nZzBqMDdQeDJDRkExQnJxb2NxMndZMmcxajhndjNoWTNCeUp2UkpsLXJjY0c3NHNuR2szTGZ1RzVyakRQUHFGYThlR2xnSi1OUnAxSnJ1d2FWZA?oc=5" target="_blank" rel="noopener noreferrer">“巴拉巴拉”有魔法，童装救森马？<span aria-hidden="true"> ↗</span></a></h3>
+            <p class="source-line">巴拉巴拉 · 新华网 · 08月19日</p>
+            <p class="event-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
+            <p class="editor-note"><span>入选理由</span>巴拉巴拉童装对森马业绩的贡献，体现童装业务在集团中的战略地位。</p>
+          </div>
+        </article>
+        
+        <article class="change-row" id="event-evt_8670b602888068">
+          <div class="change-index" aria-label="编辑序号 4">04</div>
+          <div class="change-main">
+            <div class="change-meta"><span class="status status-new">本周新增</span><span class="meta-label">品牌与公司</span><span class="meta-label">单一来源</span></div>
+            <h3><a href="https://news.google.com/rss/articles/CBMickFVX3lxTE9LUzc4NkduV0otM1RMWkNUVjhRMkk3cHlRSjFzU1RqN1VHSjRSdzNHbERHaFdVb2dJZzlIZDdmdnhwWlRTWWlWdGoyNTB3NVpVVE5ub1lqNS04ajhkRVJOWE5oY2pENUh0X2J1ZGpLR0hNZw?oc=5" target="_blank" rel="noopener noreferrer">亚玛芬上半年净利2.72亿美元增78%：中国市场始祖鸟恢复净开店，再次上调年度业绩指引<span aria-hidden="true"> ↗</span></a></h3>
+            <p class="source-line">始祖鸟 · thepaper.cn · 08月19日</p>
+            <p class="event-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
+            <p class="editor-note"><span>入选理由</span>亚玛芬上调业绩指引，始祖鸟恢复净开店，显示高端户外品牌增长韧性。</p>
+          </div>
+        </article>
+        
+        <article class="change-row" id="event-evt_e4b0a87b2370af">
+          <div class="change-index" aria-label="编辑序号 5">05</div>
+          <div class="change-main">
+            <div class="change-meta"><span class="status status-new">本周新增</span><span class="meta-label">产品与科技</span><span class="meta-label">单一来源</span></div>
+            <h3><a href="https://news.google.com/rss/articles/CBMilwJBVV95cUxQd1RGNF9DLTBJWTVTUEZyLVJyYVI3Vmh4Znd0Rm1xSWtwWGEzV2pmTVIzUUY5ekwxbDVQRGRCU2R0Qmw4Wjktd3VzdFdCOW1vTzBGUjU4amk1c1ZYRUw2YUl6c2hCbDEydVZMcGpHcl9Ja1FfT29nUUotOEhoUkowV3p1TGZUQzZqZi1VMkNPMUxYYl9iU19wLTZnRTVfOXdpX3dBSHBKclNJZ0FORmZsVk9DWVByZGJ2ZlpWU0FnQ0RlOG96a3VicmJ5QW1LdVhOdGZpQVJqQ2l2UWY5blFGbTlIbnE1WWdkZUZVc3VLZTlVQk1nbFNLNE1OajgtRHlhX2hsRXN2S1BYcmRrb0ZGczlvN2s3aE0?oc=5" target="_blank" rel="noopener noreferrer">一条裤子1150元、开售秒空 Alo入华背后的“中产消费K型分化”<span aria-hidden="true"> ↗</span></a></h3>
+            <p class="source-line">Alo · 新浪网 · 08月19日</p>
+            <p class="event-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
+            <p class="editor-note"><span>入选理由</span>Alo入华高价策略与市场反应，揭示中产消费K型分化趋势。</p>
+          </div>
+        </article>
+        
+        <article class="change-row" id="event-evt_68a2d1207fae61">
+          <div class="change-index" aria-label="编辑序号 6">06</div>
+          <div class="change-main">
+            <div class="change-meta"><span class="status status-new">本周新增</span><span class="meta-label">儿童与青少年</span><span class="meta-label">官方来源</span></div>
+            <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBhRDgtZ3hrVkJJVkZDNnJkZjROT0ExWFVOR1BiZVd0M2o2ZGI2bGxtcVV5MEhxYmRnblpkeVlpR1BZUTNlSXFmSzdHN3c1Y3JkSUhzSU1oSk1sUllzUGFTQ2VybnNvbkdrLTdnZw?oc=5" target="_blank" rel="noopener noreferrer">300组亲子家庭“暴走”杨浦 “一日打卡”如何撬动家庭文商旅体长效消费<span aria-hidden="true"> ↗</span></a></h3>
+            <p class="source-line">shyp.gov.cn · 08月18日</p>
+            <p class="event-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
+            <p class="editor-note"><span>入选理由</span>亲子家庭活动撬动文商旅体消费，为儿童品牌场景营销提供案例。</p>
+          </div>
+        </article>
+        
+        <article class="change-row" id="event-evt_d474236e347b51">
+          <div class="change-index" aria-label="编辑序号 7">07</div>
+          <div class="change-main">
+            <div class="change-meta"><span class="status status-new">本周新增</span><span class="meta-label">儿童与青少年</span><span class="meta-label">单一来源</span></div>
+            <h3><a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxQR2tTU2x0aDBBTW1UNGFFczB6X3VyeExBX3dWV05UX0w2TTJfOXhibk9TT1Utb1d4cUdsOUVEX2ZBdkRvRXlMT19uaS1KMmxuZXdpT1RVbXdLZThtRmVSaks4Qnl0Z0NVM0V0c190UVBKbUdTdFZKMFFPa2xhaEV1YVd2VWxkZTZkeE5HV1Y2OEpyZ2RZT0dRWU02STNwaE9WWkdHUUhoZUlua3VQMTNLdTVsd1FGeGNnczh0Qm9CbEFPc3BUcWNwVG9CNi1RcWJhY1RfY2ZoNGVWVVM0QWc?oc=5" target="_blank" rel="noopener noreferrer">西班牙开学季临近：每名学生平均开销已达505欧元，四年上涨19%<span aria-hidden="true"> ↗</span></a></h3>
+            <p class="source-line">欧洲头条 · 08月17日</p>
+            <p class="event-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
+            <p class="editor-note"><span>入选理由</span>西班牙开学季成本上涨，提示儿童用品市场成本压力与消费变化。</p>
+          </div>
+        </article>
+        
+        <article class="change-row" id="event-evt_a59845d6c39e48">
+          <div class="change-index" aria-label="编辑序号 8">08</div>
+          <div class="change-main">
+            <div class="change-meta"><span class="status status-new">本周新增</span><span class="meta-label">行业动态</span><span class="meta-label">官方来源</span></div>
+            <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBNbUQzLTNCWWtxb0hQeWRzN1FhX0diXzZCSS1WRkZXbXZYVlJMei1WRGRzMU9VTHB3LTh4WEtZVTJJYi1KZU5JQVRCcUZsMlVNeEZ0WHBsdEFtNWkweXNib19WV1NNaUwzLUN5TVVSVQ?oc=5" target="_blank" rel="noopener noreferrer">2026年1—7月份社会消费品零售总额增长1.2%<span aria-hidden="true"> ↗</span></a></h3>
+            <p class="source-line">stats.gov.cn · 08月17日</p>
+            <p class="event-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
+            <p class="editor-note"><span>入选理由</span>属于行业动态的重要本周新事件且有官方来源。</p>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="report-section" id="deep-dives">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-kicker">02 / Editorial reads</p>
+          <div>
+            <h2>从事件到趋势</h2>
+            <p class="section-intro">把同一方向的多条证据放在一起阅读，区分单条新闻与值得持续跟踪的行业变化。</p>
+          </div>
+        </div>
+        <div class="deep-grid">
+        <article class="deep-article">
+          <div class="deep-number">深读 1</div>
+          <h3>361度中期业绩与海外扩张策略</h3>
+          <p class="deep-analysis">361度上半年营收61.6亿元，跨境电商增长140%，海外销售流水增超八成，但国内门店减少超300家。显示品牌在海外市场发力，同时国内渠道调整。儿童业务作为重要板块，海外扩张可能带来新增长点，但需关注国内渠道优化效果。</p>
+          <div class="evidence"><p>依据</p><ul>
+              <li>
+                <span><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFB3eExfcUV0Z29VR2N6c01wQV85TkNvcEw2NEt1eDBocEVUcDJBQW9ieTJnc2tfMnFOamtyUFNKWTBwcUJRU0xEU0t6b0dHbzNINmhWclpn?oc=5" target="_blank" rel="noopener noreferrer">361度上半年营收61.6亿元 跨境电商业务同比增长140%<span aria-hidden="true"> ↗</span></a></span>
+                <small>亿邦动力网 · 08月18日</small>
+              </li>
+            
+              <li>
+                <span><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE1sVWV6V3ZUOGxVYjRDeF8yR0lSRC1rUWdNcXZPWGY2NUxVWkQwZjRKWFY5MEYtR0JjUEtybmVYcDhlVTNGM1Nfc2VVaHRRZXdaanZhT2paS3d3M2JnV0E?oc=5" target="_blank" rel="noopener noreferrer">361度上半年营收净利均增8%：海外销售流水增超八成，加速拓展海外新兴市场<span aria-hidden="true"> ↗</span></a></span>
+                <small>thepaper.cn · 08月18日</small>
+              </li>
+            
+              <li>
+                <span><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNanZQdVI5QndTcy1lY3k4a2tKeFpoTTJKRGtidE13MmxpYkVqQzBfRGcwdDJSSWRpSWV1UUlVVDFqVGxSZTZmYWs1RXlEYWtTSmtRMHNwbmZmeWpwVWFqLVVGYnQzdksySnFHZjJvcUJNWjZuX2lYM3dLN2xnb1RYbWRhdDdfZzFE?oc=5" target="_blank" rel="noopener noreferrer">增速放缓，半年关店超300家！361度如何稳大众运动盘？<span aria-hidden="true"> ↗</span></a></span>
+                <small>搜狐网 · 08月19日</small>
+              </li>
+            </ul></div>
+        </article>
+        
+        <article class="deep-article">
+          <div class="deep-number">深读 2</div>
+          <h3>高端瑜伽服入华与消费分化</h3>
+          <p class="deep-analysis">Alo入华首秀，产品定价高（裤子1150元），赠品包被炒至400元，但核心产品被吐槽起球。反映高端运动品牌在中国市场的机遇与挑战，中产消费K型分化明显，品质与品牌溢价需平衡。</p>
+          <div class="evidence"><p>依据</p><ul>
+              <li>
+                <span><a href="https://news.google.com/rss/articles/CBMilwJBVV95cUxQd1RGNF9DLTBJWTVTUEZyLVJyYVI3Vmh4Znd0Rm1xSWtwWGEzV2pmTVIzUUY5ekwxbDVQRGRCU2R0Qmw4Wjktd3VzdFdCOW1vTzBGUjU4amk1c1ZYRUw2YUl6c2hCbDEydVZMcGpHcl9Ja1FfT29nUUotOEhoUkowV3p1TGZUQzZqZi1VMkNPMUxYYl9iU19wLTZnRTVfOXdpX3dBSHBKclNJZ0FORmZsVk9DWVByZGJ2ZlpWU0FnQ0RlOG96a3VicmJ5QW1LdVhOdGZpQVJqQ2l2UWY5blFGbTlIbnE1WWdkZUZVc3VLZTlVQk1nbFNLNE1OajgtRHlhX2hsRXN2S1BYcmRrb0ZGczlvN2s3aE0?oc=5" target="_blank" rel="noopener noreferrer">一条裤子1150元、开售秒空 Alo入华背后的“中产消费K型分化”<span aria-hidden="true"> ↗</span></a></span>
+                <small>新浪网 · 08月19日</small>
+              </li>
+            
+              <li>
+                <span><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Vb0tJWUs0cEFWVzI4bmtsanRYbERWYUdUUkpjbTduSjg3aWo1QzhuSF9VOHdKYW8xNWlVeGJGaXllSndtNzFtTnFiQVhYbWlrNzZHeUU5cmVwTi1TY212V1gzZUg?oc=5" target="_blank" rel="noopener noreferrer">ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球<span aria-hidden="true"> ↗</span></a></span>
+                <small>新京报 · 08月14日</small>
+              </li>
+            </ul></div>
+        </article>
+        
+        <article class="deep-article">
+          <div class="deep-number">深读 3</div>
+          <h3>童装业务在集团中的战略价值</h3>
+          <p class="deep-analysis">森马上半年营收增长9.3%，巴拉巴拉童装被指“有魔法”，显示童装业务对集团增长的关键作用。儿童消费市场潜力大，但竞争激烈，品牌需持续创新。</p>
+          <div class="evidence"><p>依据</p><ul>
+              <li>
+                <span><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNZjAzanBEQXVGalU0QnlyY1BLTFpQem5vSzVNaDdmMHBFR0dZVC1nZzBqMDdQeDJDRkExQnJxb2NxMndZMmcxajhndjNoWTNCeUp2UkpsLXJjY0c3NHNuR2szTGZ1RzVyakRQUHFGYThlR2xnSi1OUnAxSnJ1d2FWZA?oc=5" target="_blank" rel="noopener noreferrer">“巴拉巴拉”有魔法，童装救森马？<span aria-hidden="true"> ↗</span></a></span>
+                <small>新华网 · 08月19日</small>
+              </li>
+            
+              <li>
+                <span><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFBjbHBEa1NlZlluT0hRSHkxTG1VSEJPaWI4NEtuakNBeHhodUZ0dHhFcjRXbGhCUTBqNWI5UlV3NDZKc3A4QzBhVHJ5dlFZcVNRa2VCd0tscHVkSlNpZTZUdWFZbw?oc=5" target="_blank" rel="noopener noreferrer">森马服饰上半年营收增长9.3%<span aria-hidden="true"> ↗</span></a></span>
+                <small>cn.concall.com · 08月19日</small>
+              </li>
+            </ul></div>
+        </article>
+        
+        <article class="deep-article">
+          <div class="deep-number">深读 4</div>
+          <h3>亲子消费场景与开学季经济</h3>
+          <p class="deep-analysis">上海杨浦亲子活动吸引300组家庭，撬动文商旅体消费；西班牙开学季学生平均开销505欧元，四年上涨19%。显示亲子消费场景化、体验化趋势，开学季成本上升可能影响家庭消费决策。</p>
+          <div class="evidence"><p>依据</p><ul>
+              <li>
+                <span><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBhRDgtZ3hrVkJJVkZDNnJkZjROT0ExWFVOR1BiZVd0M2o2ZGI2bGxtcVV5MEhxYmRnblpkeVlpR1BZUTNlSXFmSzdHN3c1Y3JkSUhzSU1oSk1sUllzUGFTQ2VybnNvbkdrLTdnZw?oc=5" target="_blank" rel="noopener noreferrer">300组亲子家庭“暴走”杨浦 “一日打卡”如何撬动家庭文商旅体长效消费<span aria-hidden="true"> ↗</span></a></span>
+                <small>shyp.gov.cn · 08月18日</small>
+              </li>
+            
+              <li>
+                <span><a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxQR2tTU2x0aDBBTW1UNGFFczB6X3VyeExBX3dWV05UX0w2TTJfOXhibk9TT1Utb1d4cUdsOUVEX2ZBdkRvRXlMT19uaS1KMmxuZXdpT1RVbXdLZThtRmVSaks4Qnl0Z0NVM0V0c190UVBKbUdTdFZKMFFPa2xhaEV1YVd2VWxkZTZkeE5HV1Y2OEpyZ2RZT0dRWU02STNwaE9WWkdHUUhoZUlua3VQMTNLdTVsd1FGeGNnczh0Qm9CbEFPc3BUcWNwVG9CNi1RcWJhY1RfY2ZoNGVWVVM0QWc?oc=5" target="_blank" rel="noopener noreferrer">西班牙开学季临近：每名学生平均开销已达505欧元，四年上涨19%<span aria-hidden="true"> ↗</span></a></span>
+                <small>欧洲头条 · 08月17日</small>
+              </li>
+            </ul></div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="report-section" id="products">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-kicker">03 / Verified products</p>
+          <div>
+            <h2>具名产品雷达</h2>
+            <p class="section-intro">仅收录能够确认品牌、具体产品名、报道日期和原文来源的商品。价格、发售日和技术未披露时保持空缺。</p>
+          </div>
+        </div>
+        <div class="product-list">
+        <article class="product-row has-media" id="product-prd_074bbf9f2017a8">
+          
+            <figure class="product-media">
+              <img src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw" alt="Alo Yoga 核心产品瑜伽服" loading="lazy" referrerpolicy="no-referrer">
+            </figure>
+            
+          <div class="product-copy">
+            <div class="product-kicker">
+              <span>本周新增</span>
+              <span>瑜伽与训练服</span>
+            </div>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Vb0tJWUs0cEFWVzI4bmtsanRYbERWYUdUUkpjbTduSjg3aWo1QzhuSF9VOHdKYW8xNWlVeGJGaXllSndtNzFtTnFiQVhYbWlrNzZHeUU5cmVwTi1TY212V1gzZUg?oc=5" target="_blank" rel="noopener noreferrer">Alo Yoga 核心产品瑜伽服<span aria-hidden="true"> ↗</span></a></h3>
+            <p class="source-line">新京报 · 08月14日 · 可信媒体</p>
+            <dl class="product-facts"><div><dt>品类</dt><dd>瑜伽与训练服</dd></div><div><dt>人群</dt><dd>女性</dd></div><div><dt>发售日</dt><dd>未披露</dd></div><div><dt>官方价格</dt><dd>未披露</dd></div></dl>
+            <div class="term-list"><span>瑜伽</span></div>
+            <p class="editor-note"><span>信息价值</span>Alo Yoga核心产品瑜伽服入华后质量争议，反映高端品牌品质把控问题。</p>
+          </div>
+        </article>
+        
+        <article class="product-row has-media" id="product-prd_e27a7bd50222e3">
+          
+            <figure class="product-media">
+              <img src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw" alt="安踏儿童 骇浪5体测跑鞋" loading="lazy" referrerpolicy="no-referrer">
+            </figure>
+            
+          <div class="product-copy">
+            <div class="product-kicker">
+              <span>本周新增</span>
+              <span>跑鞋</span>
+            </div>
+            <h3><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBxLVhZT0JzRWxFcktDUloxOW5PYmdxX3NMWEU1S0tldTNIbDRCTW5sR3hpWkx6NkJCbEt5aGJJeVZuejVob3VHMW1ZQ0NDZ3dpbnFIVTFVUXJaZw?oc=5" target="_blank" rel="noopener noreferrer">安踏儿童 骇浪5体测跑鞋<span aria-hidden="true"> ↗</span></a></h3>
+            <p class="source-line">womenofchina.com · 08月16日 · 媒体报道</p>
+            <dl class="product-facts"><div><dt>品类</dt><dd>跑鞋</dd></div><div><dt>人群</dt><dd>儿童/青少年</dd></div><div><dt>发售日</dt><dd>未披露</dd></div><div><dt>官方价格</dt><dd>未披露</dd></div></dl>
+            <div class="term-list"><span>跑步</span><span>校园运动</span></div>
+            <p class="editor-note"><span>信息价值</span>安踏儿童骇浪5体测跑鞋在青少年赛事首秀，体现儿童专业运动产品趋势。</p>
+          </div>
+        </article>
+        
+        <article class="product-row has-media" id="product-prd_16697b6e409bfa">
+          
+            <figure class="product-media">
+              <img src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw" alt="Salomon XT-6" loading="lazy" referrerpolicy="no-referrer">
+            </figure>
+            
+          <div class="product-copy">
+            <div class="product-kicker">
+              <span>本周新增</span>
+              <span>户外鞋</span>
+            </div>
+            <h3><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPdUVROENfN0YwY3BTeEQxcHFjcFkwaWo3ZFk4T0lRbGF3SXljLWRxNFVUV2F5cEdVbHI5X2RJWHdYam1QcXpJYnlPZGM2U29WWlUwYTd2a1ItT05pS3ZFX2tMc0FhbGM1VnhhOFRYSXhyZ1JMUjFieWVUckFLWHdPUExObkZYODJyTGpKNVZJbGZYTmJuU05iYjVDOHZteV9YY0ZmeFhkSQ?oc=5" target="_blank" rel="noopener noreferrer">Salomon XT-6<span aria-hidden="true"> ↗</span></a></h3>
+            <p class="source-line">dealmoon.ca · 08月19日 · 媒体报道</p>
+            <dl class="product-facts"><div><dt>品类</dt><dd>户外鞋</dd></div><div><dt>人群</dt><dd>成人/通用</dd></div><div><dt>发售日</dt><dd>未披露</dd></div><div><dt>官方价格</dt><dd>未披露</dd></div></dl>
+            
+            <p class="editor-note"><span>信息价值</span>Salomon XT-6新色发布，户外鞋款持续受关注，可作为儿童户外产品参考。</p>
+          </div>
+        </article>
+        
+        <article class="product-row has-media" id="product-prd_9cff465ccc80e9">
+          
+            <figure class="product-media">
+              <img src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw" alt="Nike Kobe 3" loading="lazy" referrerpolicy="no-referrer">
+            </figure>
+            
+          <div class="product-copy">
+            <div class="product-kicker">
+              <span>本周新增</span>
+              <span>商品趋势</span>
+            </div>
+            <h3><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQWTZTOHhabzVrSGhWamJaanlFbmhaYzJqZHF0VWNQSWVfMDBVa1doNVoxbWZsTXBLdS1XdGJDdDVENnd4VHk3SzVqSndNLWo4M25fZ1RIZ000NlpQcmJadUt3ZTMwdG9ESzNqTTJDejNBRkk2TTZuMkdWUjBxbDF4czZEcWo0eUo5SDlScQ?oc=5" target="_blank" rel="noopener noreferrer">Nike Kobe 3<span aria-hidden="true"> ↗</span></a></h3>
+            <p class="source-line">搜狐网 · 08月19日 · 媒体报道</p>
+            <dl class="product-facts"><div><dt>品类</dt><dd>商品趋势</dd></div><div><dt>人群</dt><dd>成人/通用</dd></div><div><dt>发售日</dt><dd>未披露</dd></div><div><dt>官方价格</dt><dd>未披露</dd></div></dl>
+            
+            <p class="editor-note"><span>信息价值</span>Nike Kobe 3联名鞋款，运动品牌联名策略，对儿童产品联名有借鉴意义。</p>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="report-section" id="landscape">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-kicker">04 / Market landscape</p>
+          <div>
+            <h2>竞品、渠道与儿童消费</h2>
+            <p class="section-intro">对已进入“本周变化”的内容不做重复堆叠，这里只保留额外线索。</p>
+          </div>
+        </div>
+        <div class="split-view">
+          <div class="split-column">
+            <h3 class="column-title">竞品与渠道</h3>
+            
+        <article class="compact-event">
+          <div><span class="meta-label">品牌与公司</span><span class="meta-label">单一来源</span></div>
+          <h3><a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE1mVGQwc2VsY0RjdE8yMkJVR1NiVGVRcFMzQVF4WWFHVVBhUVVUY1FuN0RQQkJBTVBocVY4OGZ0TUppSkwwQzJwTkNsLUo5VG9PcnE3TG4wbUpLTzly?oc=5" target="_blank" rel="noopener noreferrer">彪马发布2026年Q2业绩：全球营收16.906亿捕鱼游戏玩现金的，大中华区延续增长<span aria-hidden="true"> ↗</span></a></h3>
+          <p>womenofchina.com · 08月15日</p>
+        </article>
+        
+        <article class="compact-event">
+          <div><span class="meta-label">品牌与公司</span><span class="meta-label">单一来源</span></div>
+          <h3><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JVmZMeTNXdnU3Tkw0NVVMdTdWTS10T3dRTEhNRC1sREw1c2ExQ0FiM0hzdkVIUGtBczFQQXlWMzFBZUdRN3FPQzAxTVpjOFhfNldBLVdGQjEzWE96NnZ6c2UtQmI?oc=5" target="_blank" rel="noopener noreferrer">昂跑狂奔的B面：亚太撑起的利润，遮不住北美的收缩<span aria-hidden="true"> ↗</span></a></h3>
+          <p>新京报 · 08月18日</p>
+        </article>
+        
+          </div>
+          <div class="split-column">
+            <h3 class="column-title">儿童与消费</h3>
+            
+        <article class="compact-event">
+          <div><span class="meta-label">儿童与青少年</span><span class="meta-label">单一来源</span></div>
+          <h3><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQWnZWLUxHSV9vd1VNNkNQU0FkbElYME1ISG83eElNV3NFb3NNTjY2d0dCTk40bUJmQWJmeEJTTGd0RWs1UlNqcnNhQU5Id1N3SFRZeXkyNVVlRllpQ0RVOG9OcEVva3lSVWdXUUR0S1RWOUt4aXQyVUlqWkFFU1M2Tm5LUlR1aFl0eEhsTA?oc=5" target="_blank" rel="noopener noreferrer">诺特兰德联名JOYMARK落地全国百家门店 深耕儿童“泛运动营养”场景<span aria-hidden="true"> ↗</span></a></h3>
+          <p>搜狐网 · 08月18日</p>
+        </article>
+        
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="report-section" id="tracking">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-kicker">05 / Tracking desk</p>
+          <div>
+            <h2>事件跟踪台账</h2>
+            <p class="section-intro">区分本周新增、持续跟踪、待核验和本周未出现后续，避免同一事件每周被当作新消息。</p>
+          </div>
+        </div>
+        <div class="tracking-grid">
+          <div class="tracking-block">
+            <h3>本周新增 <span class="tracking-count">8</span></h3>
+            <ul class="tracking-list">
+        <li>
+          <span><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFB3eExfcUV0Z29VR2N6c01wQV85TkNvcEw2NEt1eDBocEVUcDJBQW9ieTJnc2tfMnFOamtyUFNKWTBwcUJRU0xEU0t6b0dHbzNINmhWclpn?oc=5" target="_blank" rel="noopener noreferrer">361度上半年营收61.6亿元 跨境电商业务同比增长140%<span aria-hidden="true"> ↗</span></a></span>
+          <small>亿邦动力网 · 08月18日</small>
+        </li>
+        
+        <li>
+          <span><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE1sVWV6V3ZUOGxVYjRDeF8yR0lSRC1rUWdNcXZPWGY2NUxVWkQwZjRKWFY5MEYtR0JjUEtybmVYcDhlVTNGM1Nfc2VVaHRRZXdaanZhT2paS3d3M2JnV0E?oc=5" target="_blank" rel="noopener noreferrer">361度上半年营收净利均增8%：海外销售流水增超八成，加速拓展海外新兴市场<span aria-hidden="true"> ↗</span></a></span>
+          <small>thepaper.cn · 08月18日</small>
+        </li>
+        
+        <li>
+          <span><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNZjAzanBEQXVGalU0QnlyY1BLTFpQem5vSzVNaDdmMHBFR0dZVC1nZzBqMDdQeDJDRkExQnJxb2NxMndZMmcxajhndjNoWTNCeUp2UkpsLXJjY0c3NHNuR2szTGZ1RzVyakRQUHFGYThlR2xnSi1OUnAxSnJ1d2FWZA?oc=5" target="_blank" rel="noopener noreferrer">“巴拉巴拉”有魔法，童装救森马？<span aria-hidden="true"> ↗</span></a></span>
+          <small>新华网 · 08月19日</small>
+        </li>
+        
+        <li>
+          <span><a href="https://news.google.com/rss/articles/CBMickFVX3lxTE9LUzc4NkduV0otM1RMWkNUVjhRMkk3cHlRSjFzU1RqN1VHSjRSdzNHbERHaFdVb2dJZzlIZDdmdnhwWlRTWWlWdGoyNTB3NVpVVE5ub1lqNS04ajhkRVJOWE5oY2pENUh0X2J1ZGpLR0hNZw?oc=5" target="_blank" rel="noopener noreferrer">亚玛芬上半年净利2.72亿美元增78%：中国市场始祖鸟恢复净开店，再次上调年度业绩指引<span aria-hidden="true"> ↗</span></a></span>
+          <small>thepaper.cn · 08月19日</small>
+        </li>
+        
+        <li>
+          <span><a href="https://news.google.com/rss/articles/CBMilwJBVV95cUxQd1RGNF9DLTBJWTVTUEZyLVJyYVI3Vmh4Znd0Rm1xSWtwWGEzV2pmTVIzUUY5ekwxbDVQRGRCU2R0Qmw4Wjktd3VzdFdCOW1vTzBGUjU4amk1c1ZYRUw2YUl6c2hCbDEydVZMcGpHcl9Ja1FfT29nUUotOEhoUkowV3p1TGZUQzZqZi1VMkNPMUxYYl9iU19wLTZnRTVfOXdpX3dBSHBKclNJZ0FORmZsVk9DWVByZGJ2ZlpWU0FnQ0RlOG96a3VicmJ5QW1LdVhOdGZpQVJqQ2l2UWY5blFGbTlIbnE1WWdkZUZVc3VLZTlVQk1nbFNLNE1OajgtRHlhX2hsRXN2S1BYcmRrb0ZGczlvN2s3aE0?oc=5" target="_blank" rel="noopener noreferrer">一条裤子1150元、开售秒空 Alo入华背后的“中产消费K型分化”<span aria-hidden="true"> ↗</span></a></span>
+          <small>新浪网 · 08月19日</small>
+        </li>
+        
+        <li>
+          <span><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBhRDgtZ3hrVkJJVkZDNnJkZjROT0ExWFVOR1BiZVd0M2o2ZGI2bGxtcVV5MEhxYmRnblpkeVlpR1BZUTNlSXFmSzdHN3c1Y3JkSUhzSU1oSk1sUllzUGFTQ2VybnNvbkdrLTdnZw?oc=5" target="_blank" rel="noopener noreferrer">300组亲子家庭“暴走”杨浦 “一日打卡”如何撬动家庭文商旅体长效消费<span aria-hidden="true"> ↗</span></a></span>
+          <small>shyp.gov.cn · 08月18日</small>
+        </li>
+        
+        <li>
+          <span><a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxQR2tTU2x0aDBBTW1UNGFFczB6X3VyeExBX3dWV05UX0w2TTJfOXhibk9TT1Utb1d4cUdsOUVEX2ZBdkRvRXlMT19uaS1KMmxuZXdpT1RVbXdLZThtRmVSaks4Qnl0Z0NVM0V0c190UVBKbUdTdFZKMFFPa2xhaEV1YVd2VWxkZTZkeE5HV1Y2OEpyZ2RZT0dRWU02STNwaE9WWkdHUUhoZUlua3VQMTNLdTVsd1FGeGNnczh0Qm9CbEFPc3BUcWNwVG9CNi1RcWJhY1RfY2ZoNGVWVVM0QWc?oc=5" target="_blank" rel="noopener noreferrer">西班牙开学季临近：每名学生平均开销已达505欧元，四年上涨19%<span aria-hidden="true"> ↗</span></a></span>
+          <small>欧洲头条 · 08月17日</small>
+        </li>
+        
+        <li>
+          <span><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBNbUQzLTNCWWtxb0hQeWRzN1FhX0diXzZCSS1WRkZXbXZYVlJMei1WRGRzMU9VTHB3LTh4WEtZVTJJYi1KZU5JQVRCcUZsMlVNeEZ0WHBsdEFtNWkweXNib19WV1NNaUwzLUN5TVVSVQ?oc=5" target="_blank" rel="noopener noreferrer">2026年1—7月份社会消费品零售总额增长1.2%<span aria-hidden="true"> ↗</span></a></span>
+          <small>stats.gov.cn · 08月17日</small>
+        </li>
+        </ul>
+          </div>
+          <div class="tracking-block">
+            <h3>持续跟踪 <span class="tracking-count">0</span></h3>
+            <p class="tracking-empty">本期没有从上周延续的重点事件。</p>
+          </div>
+          <div class="tracking-block">
+            <h3>本周未出现后续 <span class="tracking-count">0</span></h3>
+            <p class="tracking-empty">暂无需要标记为“本周未出现后续”的上期重点。</p>
+          </div>
+          <div class="tracking-block">
+            <h3>核验状态</h3>
+            <p class="tracking-empty">0 组矛盾信息进入核验队列，未混入已确认重点。</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="report-section" id="watchlist">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-kicker">06 / Next watch</p>
+          <div>
+            <h2>下周继续看什么</h2>
+            <p class="section-intro">观察项必须与本周事件或产品证据关联，不使用固定经营口号。</p>
+          </div>
+        </div>
+        <div class="watch-list">
+        <article class="watch-row">
+          <span class="watch-index">01</span>
+          <div>
+            <h3>361度海外扩张对儿童业务的影响</h3>
+            <p>关注海外市场增长是否带动儿童产品线，以及新兴市场儿童消费需求。</p>
+            <small>关联本周证据 2 项</small>
+          </div>
+        </article>
+        
+        <article class="watch-row">
+          <span class="watch-index">02</span>
+          <div>
+            <h3>高端瑜伽服品牌入华后续表现</h3>
+            <p>观察Alo等品牌如何应对质量争议，以及定价策略是否调整。</p>
+            <small>关联本周证据 3 项</small>
+          </div>
+        </article>
+        
+        <article class="watch-row">
+          <span class="watch-index">03</span>
+          <div>
+            <h3>开学季儿童消费动态</h3>
+            <p>关注开学季儿童用品消费趋势，特别是成本上涨对购买行为的影响。</p>
+            <small>关联本周证据 1 项</small>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="report-section" id="sources">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-kicker">07 / Source book</p>
+          <div>
+            <h2>来源与核验口径</h2>
+            <p class="section-intro">每项重点均保留原文入口。Google News中转链接将在打开后跳转至原媒体。</p>
+          </div>
+        </div>
+        
+    <div class="table-wrap">
+      <table class="source-table">
+        <thead>
+          <tr><th>#</th><th>类型</th><th>原文</th><th>来源</th><th>日期</th></tr>
+        </thead>
+        <tbody>
         <tr>
-          <th>#</th>
-          <th>事件</th>
-          <th>品牌</th>
-          <th>类型</th>
-          <th>影响判断</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><span class='rank'>1</span></td>
-          <td class='event-title'><a href='https://news.google.com/rss/articles/CBMiY0FVX3lxTFBKdFlKUGp1cEdzNFZCbTY3S1lMelpMaGJzOWlvazdnZHV6NmxCU0xXSlo3MUdzcF9CZFpzT1gzd2hMUDRFczUtY2VKU0VZVWNjQWJLNzMtdTZpYjVOTG5jSjFWNA?oc=5' target='_blank' rel='noopener noreferrer'>On昂跑发布 Cloud X 系列鞋履赋能混合训练 - Supreme情报网</a><em>Supreme情报网</em></td>
-          <td>On</td>
-          <td>新品发布</td>
-          <td>反映校园运动方向商品更新和价格带竞争。</td>
+          <td>01</td>
+          <td><span class="source-type">事件</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFB3eExfcUV0Z29VR2N6c01wQV85TkNvcEw2NEt1eDBocEVUcDJBQW9ieTJnc2tfMnFOamtyUFNKWTBwcUJRU0xEU0t6b0dHbzNINmhWclpn?oc=5" target="_blank" rel="noopener noreferrer">361度上半年营收61.6亿元 跨境电商业务同比增长140%<span aria-hidden="true"> ↗</span></a></td>
+          <td>亿邦动力网</td>
+          <td>08月18日</td>
         </tr>
         
         <tr>
-          <td><span class='rank'>2</span></td>
-          <td class='event-title'><a href='https://news.google.com/rss/articles/CBMiY0FVX3lxTE5vZUVHbGVxdlpqY1RYYXhhSUpUbHdYODlJTXpmRFZOVk11cE8zX0FHMU1oVmVKdmJ2R045NF9La1hWRWo0MjJTRlJ5UHNrUGE4VHZIN0RBMkJEMzRSOENjUGxkYw?oc=5' target='_blank' rel='noopener noreferrer'>德州斗牛下载苹果（ASICS）2026年新品发布：数字驱动下的跑鞋革命与市场表现 -...</a><em>womenofchina.com</em></td>
-          <td>Asics</td>
-          <td>新品发布</td>
-          <td>反映儿童跑步方向商品更新和价格带竞争。</td>
+          <td>02</td>
+          <td><span class="source-type">事件</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE1sVWV6V3ZUOGxVYjRDeF8yR0lSRC1rUWdNcXZPWGY2NUxVWkQwZjRKWFY5MEYtR0JjUEtybmVYcDhlVTNGM1Nfc2VVaHRRZXdaanZhT2paS3d3M2JnV0E?oc=5" target="_blank" rel="noopener noreferrer">361度上半年营收净利均增8%：海外销售流水增超八成，加速拓展海外新兴市场<span aria-hidden="true"> ↗</span></a></td>
+          <td>thepaper.cn</td>
+          <td>08月18日</td>
         </tr>
         
         <tr>
-          <td><span class='rank'>3</span></td>
-          <td class='event-title'><a href='https://news.google.com/rss/articles/CBMiTEFVX3lxTE13c2ZvMWpEbXRBSzR4V0xxd1h4UXZlVm5zRl9ndzNJUUNQaFN4ZkVfYjNybjVQNFo2OE9lLTJjajJLRTBSRDR6SE51M2U?oc=5' target='_blank' rel='noopener noreferrer'>三款新鞋齐发！On 全新训练鞋系列登场 - FLIGHTCLUB中文站</a><em>FLIGHTCLUB中文站</em></td>
-          <td>On</td>
-          <td>新品发布</td>
-          <td>反映校园运动方向商品更新和价格带竞争。</td>
+          <td>03</td>
+          <td><span class="source-type">事件</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNZjAzanBEQXVGalU0QnlyY1BLTFpQem5vSzVNaDdmMHBFR0dZVC1nZzBqMDdQeDJDRkExQnJxb2NxMndZMmcxajhndjNoWTNCeUp2UkpsLXJjY0c3NHNuR2szTGZ1RzVyakRQUHFGYThlR2xnSi1OUnAxSnJ1d2FWZA?oc=5" target="_blank" rel="noopener noreferrer">“巴拉巴拉”有魔法，童装救森马？<span aria-hidden="true"> ↗</span></a></td>
+          <td>新华网</td>
+          <td>08月19日</td>
         </tr>
         
         <tr>
-          <td><span class='rank'>4</span></td>
-          <td class='event-title'><a href='https://news.google.com/rss/articles/CBMingFBVV95cUxNOGRUQUlpS1JmUGQ3eTJaMGZ3RjBBdFk0QkJYaGk4akdxTk1JSjM2aHF0a3EweFMzaU56M21pRERhMk1CbGdMN2UwdDFLUGJyYjU0WXdrYk5hRVQzVGlLYU9FamRjVTN2ZEpBU2F3YTM5cDljSS1CSFduY2R4TXRtZnBNaElfaHF1NlRDQmI5WkZkZkxZbllaOWFBQTJ1Zw?oc=5' target='_blank' rel='noopener noreferrer'>adidas 男装男鞋新品抢先看 Samba$130 经典双肩包 $35 - dea...</a><em>dealmoon.ca</em></td>
-          <td>Adidas</td>
-          <td>新品发布</td>
-          <td>反映综合趋势方向商品更新和价格带竞争。</td>
+          <td>04</td>
+          <td><span class="source-type">事件</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMickFVX3lxTE9LUzc4NkduV0otM1RMWkNUVjhRMkk3cHlRSjFzU1RqN1VHSjRSdzNHbERHaFdVb2dJZzlIZDdmdnhwWlRTWWlWdGoyNTB3NVpVVE5ub1lqNS04ajhkRVJOWE5oY2pENUh0X2J1ZGpLR0hNZw?oc=5" target="_blank" rel="noopener noreferrer">亚玛芬上半年净利2.72亿美元增78%：中国市场始祖鸟恢复净开店，再次上调年度业绩指引<span aria-hidden="true"> ↗</span></a></td>
+          <td>thepaper.cn</td>
+          <td>08月19日</td>
         </tr>
         
         <tr>
-          <td><span class='rank'>5</span></td>
-          <td class='event-title'><a href='https://news.google.com/rss/articles/CBMiYEFVX3lxTE50ZGJEUGJZQktGcmpsTWttVWR5bVFkZFdOM2ZHWFhScjV1RHFFQ05aSWhVb01vWk41ZUVJZGxxQnpTXzd3YUhpeWViSzFJaTJ0cU0wU0lQeXJQVVhoMng4VQ?oc=5' target='_blank' rel='noopener noreferrer'>行业首创！kkty体育网页版入口联名智能缓震篮球鞋新品上市 - 电玩巴士</a><em>电玩巴士</em></td>
-          <td>行业</td>
-          <td>联名合作</td>
-          <td>强化话题传播和年轻家庭内容种草。</td>
+          <td>05</td>
+          <td><span class="source-type">事件</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMilwJBVV95cUxQd1RGNF9DLTBJWTVTUEZyLVJyYVI3Vmh4Znd0Rm1xSWtwWGEzV2pmTVIzUUY5ekwxbDVQRGRCU2R0Qmw4Wjktd3VzdFdCOW1vTzBGUjU4amk1c1ZYRUw2YUl6c2hCbDEydVZMcGpHcl9Ja1FfT29nUUotOEhoUkowV3p1TGZUQzZqZi1VMkNPMUxYYl9iU19wLTZnRTVfOXdpX3dBSHBKclNJZ0FORmZsVk9DWVByZGJ2ZlpWU0FnQ0RlOG96a3VicmJ5QW1LdVhOdGZpQVJqQ2l2UWY5blFGbTlIbnE1WWdkZUZVc3VLZTlVQk1nbFNLNE1OajgtRHlhX2hsRXN2S1BYcmRrb0ZGczlvN2s3aE0?oc=5" target="_blank" rel="noopener noreferrer">一条裤子1150元、开售秒空 Alo入华背后的“中产消费K型分化”<span aria-hidden="true"> ↗</span></a></td>
+          <td>新浪网</td>
+          <td>08月19日</td>
         </tr>
         
         <tr>
-          <td><span class='rank'>6</span></td>
-          <td class='event-title'>On昂跑发布2024年全年业绩：营收同比增长29.4%至23.2亿瑞士法郎，亚太地区...<em>公开资讯</em></td>
-          <td>On</td>
-          <td>新品发布</td>
-          <td>反映综合趋势方向商品更新和价格带竞争。</td>
+          <td>06</td>
+          <td><span class="source-type">事件</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBhRDgtZ3hrVkJJVkZDNnJkZjROT0ExWFVOR1BiZVd0M2o2ZGI2bGxtcVV5MEhxYmRnblpkeVlpR1BZUTNlSXFmSzdHN3c1Y3JkSUhzSU1oSk1sUllzUGFTQ2VybnNvbkdrLTdnZw?oc=5" target="_blank" rel="noopener noreferrer">300组亲子家庭“暴走”杨浦 “一日打卡”如何撬动家庭文商旅体长效消费<span aria-hidden="true"> ↗</span></a></td>
+          <td>shyp.gov.cn</td>
+          <td>08月18日</td>
         </tr>
         
         <tr>
-          <td><span class='rank'>7</span></td>
-          <td class='event-title'>ALO天猫旗舰店正式开业：仅1分钟成交破1000万元<em>公开资讯</em></td>
-          <td>行业</td>
-          <td>渠道门店</td>
-          <td>体现线下体验和商圈触达继续被品牌重视。</td>
+          <td>07</td>
+          <td><span class="source-type">事件</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxQR2tTU2x0aDBBTW1UNGFFczB6X3VyeExBX3dWV05UX0w2TTJfOXhibk9TT1Utb1d4cUdsOUVEX2ZBdkRvRXlMT19uaS1KMmxuZXdpT1RVbXdLZThtRmVSaks4Qnl0Z0NVM0V0c190UVBKbUdTdFZKMFFPa2xhaEV1YVd2VWxkZTZkeE5HV1Y2OEpyZ2RZT0dRWU02STNwaE9WWkdHUUhoZUlua3VQMTNLdTVsd1FGeGNnczh0Qm9CbEFPc3BUcWNwVG9CNi1RcWJhY1RfY2ZoNGVWVVM0QWc?oc=5" target="_blank" rel="noopener noreferrer">西班牙开学季临近：每名学生平均开销已达505欧元，四年上涨19%<span aria-hidden="true"> ↗</span></a></td>
+          <td>欧洲头条</td>
+          <td>08月17日</td>
         </tr>
         
         <tr>
-          <td><span class='rank'>8</span></td>
-          <td class='event-title'>抖音电商调整2025年平台规则：取消低价优先推荐机制，转向品质与内容权重提升<em>公开资讯</em></td>
-          <td>行业</td>
-          <td>平台大促</td>
-          <td>影响平台流量、价格心智和爆款货盘节奏。</td>
+          <td>08</td>
+          <td><span class="source-type">事件</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBNbUQzLTNCWWtxb0hQeWRzN1FhX0diXzZCSS1WRkZXbXZYVlJMei1WRGRzMU9VTHB3LTh4WEtZVTJJYi1KZU5JQVRCcUZsMlVNeEZ0WHBsdEFtNWkweXNib19WV1NNaUwzLUN5TVVSVQ?oc=5" target="_blank" rel="noopener noreferrer">2026年1—7月份社会消费品零售总额增长1.2%<span aria-hidden="true"> ↗</span></a></td>
+          <td>stats.gov.cn</td>
+          <td>08月17日</td>
         </tr>
         
         <tr>
-          <td><span class='rank'>9</span></td>
-          <td class='event-title'><a href='https://news.google.com/rss/articles/CBMisgFBVV95cUxOZExvY3RhVXh4RTRuRWFrQV9qbVAzT3JXU2Yta0RQeDZwckJxVGNuUE5WQ250Zy1GbW1Wb2xsSU13X044SDR3RXZsaUVFX1VXdm9RTUZ3V2czb3h3R0dPUWViTkR3eG40RUJiVmkybkhlZEQzWkJGbk5sWFZtYU05N1ZqOWpFZ0lkdHpXcHFCQTlzVGdvMzFEemF2TS0wVkRXc0JGZm9VWEVFYlZxbzdMVE1R?oc=5' target='_blank' rel='noopener noreferrer'>核心零售效率继续释放，京东二季度经营利润45亿元，加码AI与自动化</a><em>新浪财经</em></td>
-          <td>行业</td>
-          <td>平台大促</td>
-          <td>影响平台流量、价格心智和爆款货盘节奏。</td>
+          <td>09</td>
+          <td><span class="source-type">事件</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE1mVGQwc2VsY0RjdE8yMkJVR1NiVGVRcFMzQVF4WWFHVVBhUVVUY1FuN0RQQkJBTVBocVY4OGZ0TUppSkwwQzJwTkNsLUo5VG9PcnE3TG4wbUpLTzly?oc=5" target="_blank" rel="noopener noreferrer">彪马发布2026年Q2业绩：全球营收16.906亿捕鱼游戏玩现金的，大中华区延续增长<span aria-hidden="true"> ↗</span></a></td>
+          <td>womenofchina.com</td>
+          <td>08月15日</td>
         </tr>
         
         <tr>
-          <td><span class='rank'>10</span></td>
-          <td class='event-title'><a href='https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ESFh5eW0wUE1KTmpwbDBkd0dBQjhaSnBYOVF0T0ZNSm9YQ1lMSVphbDJUZ1F3a1ZWVUhMYWFULUNnX2p0ZDQ0LTFVSG1sNmZxbWZSdDdUUGQ?oc=5' target='_blank' rel='noopener noreferrer'>耐克中国签约泉州市人民政府，携手共建智能制造产业高地</a><em>womenofchina.com</em></td>
-          <td>行业</td>
-          <td>代言签约</td>
-          <td>提升AI科技消费方向品牌声量与专业心智。</td>
+          <td>10</td>
+          <td><span class="source-type">事件</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JVmZMeTNXdnU3Tkw0NVVMdTdWTS10T3dRTEhNRC1sREw1c2ExQ0FiM0hzdkVIUGtBczFQQXlWMzFBZUdRN3FPQzAxTVpjOFhfNldBLVdGQjEzWE96NnZ6c2UtQmI?oc=5" target="_blank" rel="noopener noreferrer">昂跑狂奔的B面：亚太撑起的利润，遮不住北美的收缩<span aria-hidden="true"> ↗</span></a></td>
+          <td>新京报</td>
+          <td>08月18日</td>
+        </tr>
+        
+        <tr>
+          <td>11</td>
+          <td><span class="source-type">事件</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQWnZWLUxHSV9vd1VNNkNQU0FkbElYME1ISG83eElNV3NFb3NNTjY2d0dCTk40bUJmQWJmeEJTTGd0RWs1UlNqcnNhQU5Id1N3SFRZeXkyNVVlRllpQ0RVOG9OcEVva3lSVWdXUUR0S1RWOUt4aXQyVUlqWkFFU1M2Tm5LUlR1aFl0eEhsTA?oc=5" target="_blank" rel="noopener noreferrer">诺特兰德联名JOYMARK落地全国百家门店 深耕儿童“泛运动营养”场景<span aria-hidden="true"> ↗</span></a></td>
+          <td>搜狐网</td>
+          <td>08月18日</td>
+        </tr>
+        
+        <tr>
+          <td>12</td>
+          <td><span class="source-type">事件</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNanZQdVI5QndTcy1lY3k4a2tKeFpoTTJKRGtidE13MmxpYkVqQzBfRGcwdDJSSWRpSWV1UUlVVDFqVGxSZTZmYWs1RXlEYWtTSmtRMHNwbmZmeWpwVWFqLVVGYnQzdksySnFHZjJvcUJNWjZuX2lYM3dLN2xnb1RYbWRhdDdfZzFE?oc=5" target="_blank" rel="noopener noreferrer">增速放缓，半年关店超300家！361度如何稳大众运动盘？<span aria-hidden="true"> ↗</span></a></td>
+          <td>搜狐网</td>
+          <td>08月19日</td>
+        </tr>
+        
+        <tr>
+          <td>13</td>
+          <td><span class="source-type">事件</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Vb0tJWUs0cEFWVzI4bmtsanRYbERWYUdUUkpjbTduSjg3aWo1QzhuSF9VOHdKYW8xNWlVeGJGaXllSndtNzFtTnFiQVhYbWlrNzZHeUU5cmVwTi1TY212V1gzZUg?oc=5" target="_blank" rel="noopener noreferrer">ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球<span aria-hidden="true"> ↗</span></a></td>
+          <td>新京报</td>
+          <td>08月14日</td>
+        </tr>
+        
+        <tr>
+          <td>14</td>
+          <td><span class="source-type">事件</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFBjbHBEa1NlZlluT0hRSHkxTG1VSEJPaWI4NEtuakNBeHhodUZ0dHhFcjRXbGhCUTBqNWI5UlV3NDZKc3A4QzBhVHJ5dlFZcVNRa2VCd0tscHVkSlNpZTZUdWFZbw?oc=5" target="_blank" rel="noopener noreferrer">森马服饰上半年营收增长9.3%<span aria-hidden="true"> ↗</span></a></td>
+          <td>cn.concall.com</td>
+          <td>08月19日</td>
+        </tr>
+        
+        <tr>
+          <td>15</td>
+          <td><span class="source-type">产品</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Vb0tJWUs0cEFWVzI4bmtsanRYbERWYUdUUkpjbTduSjg3aWo1QzhuSF9VOHdKYW8xNWlVeGJGaXllSndtNzFtTnFiQVhYbWlrNzZHeUU5cmVwTi1TY212V1gzZUg?oc=5" target="_blank" rel="noopener noreferrer">Alo Yoga 核心产品瑜伽服<span aria-hidden="true"> ↗</span></a></td>
+          <td>新京报</td>
+          <td>08月14日</td>
+        </tr>
+        
+        <tr>
+          <td>16</td>
+          <td><span class="source-type">产品</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBxLVhZT0JzRWxFcktDUloxOW5PYmdxX3NMWEU1S0tldTNIbDRCTW5sR3hpWkx6NkJCbEt5aGJJeVZuejVob3VHMW1ZQ0NDZ3dpbnFIVTFVUXJaZw?oc=5" target="_blank" rel="noopener noreferrer">安踏儿童 骇浪5体测跑鞋<span aria-hidden="true"> ↗</span></a></td>
+          <td>womenofchina.com</td>
+          <td>08月16日</td>
+        </tr>
+        
+        <tr>
+          <td>17</td>
+          <td><span class="source-type">产品</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPdUVROENfN0YwY3BTeEQxcHFjcFkwaWo3ZFk4T0lRbGF3SXljLWRxNFVUV2F5cEdVbHI5X2RJWHdYam1QcXpJYnlPZGM2U29WWlUwYTd2a1ItT05pS3ZFX2tMc0FhbGM1VnhhOFRYSXhyZ1JMUjFieWVUckFLWHdPUExObkZYODJyTGpKNVZJbGZYTmJuU05iYjVDOHZteV9YY0ZmeFhkSQ?oc=5" target="_blank" rel="noopener noreferrer">Salomon XT-6<span aria-hidden="true"> ↗</span></a></td>
+          <td>dealmoon.ca</td>
+          <td>08月19日</td>
+        </tr>
+        
+        <tr>
+          <td>18</td>
+          <td><span class="source-type">产品</span></td>
+          <td><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQWTZTOHhabzVrSGhWamJaanlFbmhaYzJqZHF0VWNQSWVfMDBVa1doNVoxbWZsTXBLdS1XdGJDdDVENnd4VHk3SzVqSndNLWo4M25fZ1RIZ000NlpQcmJadUt3ZTMwdG9ESzNqTTJDejNBRkk2TTZuMkdWUjBxbDF4czZEcWo0eUo5SDlScQ?oc=5" target="_blank" rel="noopener noreferrer">Nike Kobe 3<span aria-hidden="true"> ↗</span></a></td>
+          <td>搜狐网</td>
+          <td>08月19日</td>
         </tr>
         </tbody>
-    </table>
-    
-  </section>
-
-  <section class='page'>
-    <div class='head'><h2>P5-P7｜竞品热度与趋势地图</h2><span>BRAND / CATEGORY / KEYWORDS</span></div>
-    <div class='grid-2'>
-      <div class='panel'><h3>品牌热度排行</h3><div class='bar-row'><label>1. 行业</label><div class='bar'><i style='width:100%'></i></div><b>1532</b></div><div class='bar-row'><label>2. On</label><div class='bar'><i style='width:18%'></i></div><b>291</b></div><div class='bar-row'><label>3. Adidas</label><div class='bar'><i style='width:8%'></i></div><b>103</b></div><div class='bar-row'><label>4. Asics</label><div class='bar'><i style='width:8%'></i></div><b>102</b></div><div class='bar-row'><label>5. New Balance</label><div class='bar'><i style='width:8%'></i></div><b>1</b></div></div>
-      <div class='panel'><h3>品类/场景热度排行</h3><div class='bar-row'><label>1. 跑步科技</label><div class='bar green'><i style='width:100%'></i></div><b>5</b></div><div class='bar-row'><label>2. 篮球足球</label><div class='bar green'><i style='width:80%'></i></div><b>4</b></div><div class='bar-row'><label>3. 品牌新品</label><div class='bar green'><i style='width:40%'></i></div><b>2</b></div><div class='bar-row'><label>4. 防晒凉感</label><div class='bar green'><i style='width:20%'></i></div><b>1</b></div></div>
+      </table>
     </div>
-    <div style='height:16px'></div>
-    <div class='word-cloud'><span class='kw big'>发布</span><span class='kw big'>新品</span><span class='kw big'>李宁</span><span class='kw big'>Nike</span><span class='kw mid'>On昂跑</span><span class='kw mid'>跑鞋</span><span class='kw mid'>签约</span><span class='kw mid'>训练</span><span class='kw mid'>足球</span><span class='kw mid'>篮球</span><span class='kw'>开业</span><span class='kw'>旗舰店</span><span class='kw'>Adidas</span><span class='kw'>训练鞋</span><span class='kw'>系列</span><span class='kw'>安踏</span><span class='kw'>特步</span><span class='kw'>361</span><span class='kw'>合作</span><span class='kw'>CEO</span><span class='kw'>HOKA</span><span class='kw'>推出</span><span class='kw'>登场</span><span class='kw'>缓震</span></div>
-  </section>
+    
+        
+    <details class="methodology">
+      <summary>查看数据口径与质量说明</summary>
+      <div class="method-body">
+        <p class="method-status">AI辅助编辑已启用</p>
+        <dl class="quality-metrics"><div><dt>原始事件</dt><dd>215</dd></div><div><dt>通过核验</dt><dd>164</dd></div><div><dt>本期入选</dt><dd>8</dd></div><div><dt>具名产品</dt><dd>4</dd></div><div><dt>待核验</dt><dd>0</dd></div><div><dt>来源链接</dt><dd>18</dd></div></dl>
+        <ul><li>AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。</li><li>冲突事件不会进入已确认重点，而是进入核验队列。</li><li>产品资料不足时允许产品雷达为空，不使用随机商品补位。</li><li>所有分数仅用于编辑和资料完整度判断，不代表销量或市场热度。</li></ul>
+      </div>
+    </details>
+    
+      </div>
+    </section>
+  </main>
 
-  <section class='page'>
-    <div class='head'><h2>P8｜儿童行业专题 / 商品趋势信号</h2><span>PRODUCT SIGNALS</span></div>
-    <div class='products'>
-        <div class='product-card'>
-          
-            <div class='product-cover'>
-              <span>TOP 1</span>
-              <i>👟</i>
-              <strong>品牌新品</strong>
-              <em>热度 93</em>
-            </div>
-            
-          <h4><a href='https://news.google.com/rss/articles/CBMiY0FVX3lxTFBKdFlKUGp1cEdzNFZCbTY3S1lMelpMaGJzOWlvazdnZHV6NmxCU0xXSlo3MUdzcF9CZFpzT1gzd2hMUDRFczUtY2VKU0VZVWNjQWJLNzMtdTZpYjVOTG5jSjFWNA?oc=5' target='_blank' rel='noopener noreferrer'>On昂跑发布 Cloud X 系列鞋履赋能混合训练 - Supreme情...</a></h4>
-          <p class='brand'>On｜Supreme情报网</p>
-          <p class='tags'>训练鞋 / 训练 / 新品</p>
-          <p class='insight'>关注商品卖点、竞品表达和终端陈列承接。</p>
-        </div>
-        
-        <div class='product-card'>
-          
-            <div class='product-cover'>
-              <span>TOP 2</span>
-              <i>👟</i>
-              <strong>跑步科技</strong>
-              <em>热度 81</em>
-            </div>
-            
-          <h4><a href='https://news.google.com/rss/articles/CBMiWkFVX3lxTFA0R0pBcmdvbFZfZVZXcGtOSnFpVlJtT0habndtcy14SWZ3NnlkN3c0ZFA1OGVPQThmd2hURG1Ec3JxWTRKUWxqRnByeEpNM2t2UkVKMVVpeXJIdw?oc=5' target='_blank' rel='noopener noreferrer'>「不等了，跑就现在」 New Balance 推出全新 SC Rebel...</a></h4>
-          <p class='brand'>New Balance｜womenofchina.com</p>
-          <p class='tags'>跑鞋 / 新品 / 推出</p>
-          <p class='insight'>关注商品卖点、竞品表达和终端陈列承接。</p>
-        </div>
-        
-        <div class='product-card'>
-          
-            <div class='product-cover'>
-              <span>TOP 3</span>
-              <i>👟</i>
-              <strong>跑步科技</strong>
-              <em>热度 81</em>
-            </div>
-            
-          <h4><a href='https://news.google.com/rss/articles/CBMiY0FVX3lxTE5vZUVHbGVxdlpqY1RYYXhhSUpUbHdYODlJTXpmRFZOVk11cE8zX0FHMU1oVmVKdmJ2R045NF9La1hWRWo0MjJTRlJ5UHNrUGE4VHZIN0RBMkJEMzRSOENjUGxkYw?oc=5' target='_blank' rel='noopener noreferrer'>德州斗牛下载苹果（ASICS）2026年新品发布：数字驱动下的跑鞋革命与...</a></h4>
-          <p class='brand'>Asics｜womenofchina.com</p>
-          <p class='tags'>跑鞋 / 新品 / 发布</p>
-          <p class='insight'>关注商品卖点、竞品表达和终端陈列承接。</p>
-        </div>
-        
-        <div class='product-card'>
-          
-            <div class='product-cover'>
-              <span>TOP 4</span>
-              <i>👟</i>
-              <strong>跑步科技</strong>
-              <em>热度 75</em>
-            </div>
-            
-          <h4><a href='https://news.google.com/rss/articles/CBMiZkFVX3lxTE9XelFsbnBiUEZIQnRMNkFJYXR4LW1qZHhiS2F2MGtHUUJvQ3NPUEZ1NkU5d1p4Y2tCQWdneGw4UkpBdm1XY00zdkhTXzloN3Q1ZGppNFZyMnFXc1BhQkcyemxuX0Q0QQ?oc=5' target='_blank' rel='noopener noreferrer'>adidas HYPERBOOST EDGE 荣获《跑者世界》2026 ...</a></h4>
-          <p class='brand'>Adidas｜Hypebeast CN</p>
-          <p class='tags'>跑鞋 / 训练 / 新品</p>
-          <p class='insight'>关注商品卖点、竞品表达和终端陈列承接。</p>
-        </div>
-        
-        <div class='product-card'>
-          
-            <div class='product-cover'>
-              <span>TOP 5</span>
-              <i>👟</i>
-              <strong>品牌新品</strong>
-              <em>热度 69</em>
-            </div>
-            
-          <h4><a href='https://news.google.com/rss/articles/CBMiTEFVX3lxTE13c2ZvMWpEbXRBSzR4V0xxd1h4UXZlVm5zRl9ndzNJUUNQaFN4ZkVfYjNybjVQNFo2OE9lLTJjajJLRTBSRDR6SE51M2U?oc=5' target='_blank' rel='noopener noreferrer'>三款新鞋齐发！On 全新训练鞋系列登场 - FLIGHTCLUB中文站</a></h4>
-          <p class='brand'>On昂跑｜FLIGHTCLUB中文站</p>
-          <p class='tags'>训练鞋 / 训练 / 新品</p>
-          <p class='insight'>关注商品卖点、竞品表达和终端陈列承接。</p>
-        </div>
-        
-        <div class='product-card'>
-          
-            <div class='product-cover'>
-              <span>TOP 6</span>
-              <i>🏀</i>
-              <strong>篮球足球</strong>
-              <em>热度 66</em>
-            </div>
-            
-          <h4><a href='https://news.google.com/rss/articles/CBMingFBVV95cUxNOGRUQUlpS1JmUGQ3eTJaMGZ3RjBBdFk0QkJYaGk4akdxTk1JSjM2aHF0a3EweFMzaU56M21pRERhMk1CbGdMN2UwdDFLUGJyYjU0WXdrYk5hRVQzVGlLYU9FamRjVTN2ZEpBU2F3YTM5cDljSS1CSFduY2R4TXRtZnBNaElfaHF1NlRDQmI5WkZkZkxZbllaOWFBQTJ1Zw?oc=5' target='_blank' rel='noopener noreferrer'>adidas 男装男鞋新品抢先看 Samba$130 经典双肩包 $35...</a></h4>
-          <p class='brand'>Adidas｜dealmoon.ca</p>
-          <p class='tags'>足球 / 新品</p>
-          <p class='insight'>篮球专业化升温，可跟踪青少年篮球鞋与训练装备。</p>
-        </div>
-        
-        <div class='product-card'>
-          
-            <div class='product-cover'>
-              <span>TOP 7</span>
-              <i>🏀</i>
-              <strong>跑步科技</strong>
-              <em>热度 61</em>
-            </div>
-            
-          <h4><a href='https://news.google.com/rss/articles/CBMiYEFVX3lxTE50ZGJEUGJZQktGcmpsTWttVWR5bVFkZFdOM2ZHWFhScjV1RHFFQ05aSWhVb01vWk41ZUVJZGxxQnpTXzd3YUhpeWViSzFJaTJ0cU0wU0lQeXJQVVhoMng4VQ?oc=5' target='_blank' rel='noopener noreferrer'>行业首创！kkty体育网页版入口联名智能缓震篮球鞋新品上市 - 电玩巴士</a></h4>
-          <p class='brand'>行业｜电玩巴士</p>
-          <p class='tags'>缓震 / 篮球 / 新品</p>
-          <p class='insight'>篮球专业化升温，可跟踪青少年篮球鞋与训练装备。</p>
-        </div>
-        
-        <div class='product-card'>
-          
-            <div class='product-cover'>
-              <span>TOP 8</span>
-              <i>🏀</i>
-              <strong>篮球足球</strong>
-              <em>热度 51</em>
-            </div>
-            
-          <h4><a href='https://news.google.com/rss/articles/CBMiZ0FVX3lxTE00YWtYSi1LTERxUy1wY1M4VnFXaExfUUV3dDZ6THJnVWdqWlRWS2MzSmVHMEltdmVISS0zV2FPNHVVNGxyLUZyazgtTWxYZ0IyRlUtdDM0ellYVm1JQkNBeUZFZnpTQzg?oc=5' target='_blank' rel='noopener noreferrer'>2026年重磅发布：彩宝网app下载传奇足球鞋，轻量化控球新标杆-TGB...</a></h4>
-          <p class='brand'>行业｜电玩巴士</p>
-          <p class='tags'>足球 / 新品 / 发布</p>
-          <p class='insight'>篮球专业化升温，可跟踪青少年篮球鞋与训练装备。</p>
-        </div>
-        
-        <div class='product-card'>
-          
-            <div class='product-cover'>
-              <span>TOP 9</span>
-              <i>☀️</i>
-              <strong>防晒凉感</strong>
-              <em>热度 48</em>
-            </div>
-            
-          <h4><a href='https://news.google.com/rss/articles/CBMiigFBVV95cUxONjJUTm9YcnZNaXNpY29SY1NlLXFRUll3YWNsYzFESk0wMGpWYVFLUXc2MzRacjZwanB0OGNjRWlyV2J5dFE5UU5VaktHYm1sWG0zRHhscGxVZk53cmp6eW5rMFlUZ2pRUTlpYzF5RDFpY01uRHA3b2hzRTNXQUk2WVVXTzhQWGlGR0E?oc=5' target='_blank' rel='noopener noreferrer'>防晒衣告别流量爆品时代，千亿赛道竞争转向技术、品控与用户体验 - 广州日...</a></h4>
-          <p class='brand'>行业｜广州日报新花城</p>
-          <p class='tags'>防晒衣 / 防晒</p>
-          <p class='insight'>夏季功能品类升温，建议关注防晒凉感组合。</p>
-        </div>
-        
-        <div class='product-card'>
-          
-            <div class='product-cover'>
-              <span>TOP 10</span>
-              <i>🏀</i>
-              <strong>跑步科技</strong>
-              <em>热度 43</em>
-            </div>
-            
-          <h4><a href='https://news.google.com/rss/articles/CBMid0FVX3lxTE9paGdsV2tJUWNVYkRUbXFDUG5seWhBRXFMaV8waUNhOEVxQjNCQTNrTVRKNF8tVU9GY0RJZl9EcGFDQ2dJQnN2TnlNWEVueTZSVmR0YVItNmxVYmNnZk1SYWx4QTVoRHB0ZGJxTVJuXzRrd2JTMDVr?oc=5' target='_blank' rel='noopener noreferrer'>双极竞速：问彩官方网站入口智能篮球鞋正式发布，颠覆赛场感知 - 电玩巴士</a></h4>
-          <p class='brand'>行业｜电玩巴士</p>
-          <p class='tags'>篮球 / 新品 / 发布</p>
-          <p class='insight'>篮球专业化升温，可跟踪青少年篮球鞋与训练装备。</p>
-        </div>
-        
-        <div class='product-card'>
-          
-            <div class='product-cover'>
-              <span>TOP 11</span>
-              <i>🏀</i>
-              <strong>篮球足球</strong>
-              <em>热度 42</em>
-            </div>
-            
-          <h4><a href='https://news.google.com/rss/articles/CBMickFVX3lxTE9pU1p3SHZHSFJMYjhEdXpiQ2JxelgxOVV5Vnc3TDQ3eUNnRDlmMzVYcWdNUGdrUTYyWU9NSVc3NnhkeGxlNllXWlF2WUdEQzNqb1hPYzItaEtkNHR0QTllMDV1SWNxcTFmS1VTbWdxYUQ3dw?oc=5' target='_blank' rel='noopener noreferrer'>西媒：迪奥曼德加盟皇马的首个赛季，将穿着新百伦Furon v9足球鞋 -...</a></h4>
-          <p class='brand'>行业｜直播吧</p>
-          <p class='tags'>足球 / 新品</p>
-          <p class='insight'>篮球专业化升温，可跟踪青少年篮球鞋与训练装备。</p>
-        </div>
-        
-        <div class='product-card'>
-          
-            <div class='product-cover'>
-              <span>TOP 12</span>
-              <i>🏀</i>
-              <strong>篮球足球</strong>
-              <em>热度 40</em>
-            </div>
-            
-          <h4><a href='https://news.google.com/rss/articles/CBMiZEFVX3lxTE91MXYzazFTOGNDM2E3WE9jc1AwNEhPOXFrQjFQSTFfQW16Qmkya0ZJWmYwQzQ4Wm90d055ZnB0TkpBbGNvNkp3YjhuT0RySkkybGNmZkQtWnMwWE5TREtGbDFnYjA?oc=5' target='_blank' rel='noopener noreferrer'>雷竞技raybetapp官网下载app2026年夏季促销：新品球鞋低至5...</a></h4>
-          <p class='brand'>行业｜电玩巴士</p>
-          <p class='tags'>篮球 / 新品</p>
-          <p class='insight'>篮球专业化升温，可跟踪青少年篮球鞋与训练装备。</p>
-        </div>
-        </div>
-  </section>
-
-  <section class='page'>
-    <div class='head'><h2>P9｜本周机会赛道</h2><span>OPPORTUNITY LANES</span></div>
-    <div class='grid-3'><div class='empty'>暂无区域机会</div></div>
-  </section>
-
-  <section class='page'>
-    <div class='head'><h2>P10｜对361°儿童启示</h2><span>NEXT ACTION</span></div>
-    <div class='plan-grid'><div class='plan-card'>青少年跑鞋、篮球鞋、训练鞋可强化成人化设计表达和科技感。</div><div class='plan-card'>防晒衣、凉感T恤、速干短裤、运动凉鞋、防晒帽包仍是夏季重点。</div><div class='plan-card'>跑鞋矩阵需区分碳板竞速、厚底缓震、轻量训练和校园跑步。</div><div class='plan-card'>篮球方向需关注校园篮球、中大童训练和专业篮球鞋科技表达。</div></div>
-  </section>
-
-  <div class='footer'>数据来源：TrendRadar 日报历史库 / 周报分析库 / 商品趋势信号库 ｜ 内容随每周新闻事实自动变化</div>
-</div>
+  <footer>
+    <div class="shell footer-inner">
+      <span>361°儿童 · 运动产业周度情报</span>
+      <span>统计周期 2026-08-13—2026-08-19 · 内容随本周可核验事实变化</span>
+    </div>
+  </footer>
 </body>
 </html>

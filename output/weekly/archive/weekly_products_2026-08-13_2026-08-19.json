@@ -1,0 +1,4170 @@
+{
+  "schema_version": "2.0",
+  "generated_at": "2026-08-20T14:44+08:00",
+  "report_window": {
+    "start_date": "2026-08-13",
+    "end_date": "2026-08-19",
+    "timezone": "Asia/Shanghai"
+  },
+  "methodology": {
+    "purpose": "发现并核验周内出现的具体运动鞋服产品，不生成销量排名",
+    "sources": "周度资讯池 + Google News RSS + 可访问网页元数据/正文",
+    "active_campaigns": [
+      "暑期",
+      "开学季"
+    ],
+    "quality_gate": "进入products必须具备具体产品名、品牌、日期和可点击来源",
+    "missing_value_policy": "价格、货号、发售日、技术或图片未披露时保持为空，不进行猜测",
+    "image_policy": "仅保留原网页Open Graph图片，不使用通用图库占位",
+    "score_note": "confidence_score只代表资料完整度与来源可靠性，不代表销量或市场热度"
+  },
+  "stats": {
+    "query_count": 47,
+    "fetch_error_count": 0,
+    "candidate_count": 120,
+    "verified_product_count": 14,
+    "official_product_count": 0,
+    "new_product_count": 14,
+    "follow_up_product_count": 0,
+    "media_signal_count": 80,
+    "product_with_price_count": 0,
+    "product_with_release_date_count": 0,
+    "product_with_image_count": 13,
+    "verification": {
+      "trusted_media": 1,
+      "media": 13
+    },
+    "rejected": {
+      "no_product_signal": 90,
+      "bad_or_non_product_topic": 15,
+      "outside_window": 23,
+      "missing_or_short_title": 2
+    }
+  },
+  "queries": [
+    {
+      "group": "product",
+      "query": "儿童运动鞋 新品 发布"
+    },
+    {
+      "group": "product",
+      "query": "青少年跑鞋 新品"
+    },
+    {
+      "group": "product",
+      "query": "儿童篮球鞋 新品"
+    },
+    {
+      "group": "product",
+      "query": "校园运动鞋 上新"
+    },
+    {
+      "group": "product",
+      "query": "跑鞋 新品 科技 发布"
+    },
+    {
+      "group": "product",
+      "query": "篮球鞋 新品 发布"
+    },
+    {
+      "group": "product",
+      "query": "运动品牌 防晒衣 新品"
+    },
+    {
+      "group": "product",
+      "query": "户外鞋服 新品 发布"
+    },
+    {
+      "group": "product",
+      "query": "恢复拖鞋 运动品牌 新品"
+    },
+    {
+      "group": "product",
+      "query": "运动凉鞋 新品"
+    },
+    {
+      "group": "product",
+      "query": "运动服饰 功能面料 新品"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"361儿童\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"安踏儿童\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"安踏\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"李宁YOUNG\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"李宁\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"特步儿童\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"特步\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"Nike\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"Adidas\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"Puma\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"New Balance\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"ASICS\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"On昂跑\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"HOKA\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"Salomon\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"lululemon\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"Alo Yoga\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"始祖鸟\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"The North Face\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"迪桑特\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"凯乐石\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"迪卡侬\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "brand_product",
+      "query": "\"巴拉巴拉\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+    },
+    {
+      "group": "official_site",
+      "query": "site:about.nike.com 鞋 发布"
+    },
+    {
+      "group": "official_site",
+      "query": "site:news.adidas.com 鞋 发布"
+    },
+    {
+      "group": "official_site",
+      "query": "site:anta.com 新品 跑鞋"
+    },
+    {
+      "group": "official_site",
+      "query": "site:lining.com 新品 跑鞋"
+    },
+    {
+      "group": "official_site",
+      "query": "site:361sport.com 新品"
+    },
+    {
+      "group": "official_site",
+      "query": "site:on.com 新品 跑鞋"
+    },
+    {
+      "group": "official_site",
+      "query": "site:hoka.com 新品 跑鞋"
+    },
+    {
+      "group": "official_site",
+      "query": "site:salomon.com 新品"
+    },
+    {
+      "group": "seasonal",
+      "query": "暑期 儿童运动 新品"
+    },
+    {
+      "group": "seasonal",
+      "query": "夏季 防晒衣 运动品牌"
+    },
+    {
+      "group": "seasonal",
+      "query": "夏季 运动凉鞋 新品"
+    },
+    {
+      "group": "seasonal",
+      "query": "开学季 儿童运动鞋 新品"
+    },
+    {
+      "group": "seasonal",
+      "query": "开学季 青少年训练鞋"
+    }
+  ],
+  "fetch_errors": [],
+  "products": [
+    {
+      "headline": "ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球",
+      "brand": "Alo Yoga",
+      "category": "瑜伽与训练服",
+      "audience": "女性",
+      "scenarios": [
+        "瑜伽"
+      ],
+      "source": "新京报",
+      "source_homepage": "https://www.bjnews.com.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Vb0tJWUs0cEFWVzI4bmtsanRYbERWYUdUUkpjbTduSjg3aWo1QzhuSF9VOHdKYW8xNWlVeGJGaXllSndtNzFtTnFiQVhYbWlrNzZHeUU5cmVwTi1TY212V1gzZUg?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Vb0tJWUs0cEFWVzI4bmtsanRYbERWYUdUUkpjbTduSjg3aWo1QzhuSF9VOHdKYW8xNWlVeGJGaXllSndtNzFtTnFiQVhYbWlrNzZHeUU5cmVwTi1TY212V1gzZUg?oc=5",
+      "published_at": "2026-08-14T20:57+08:00",
+      "published_date": "2026-08-14",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "trusted_media",
+      "is_official": false,
+      "query_groups": [
+        "channel",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "天猫 运动户外 平台"
+      ],
+      "product_name": "核心产品瑜伽服",
+      "product_name_basis": "product_phrase_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "",
+        "price_or_release": "ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 56,
+      "product_id": "prd_074bbf9f2017a8",
+      "coverage": [
+        {
+          "headline": "ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球",
+          "source": "新京报",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Vb0tJWUs0cEFWVzI4bmtsanRYbERWYUdUUkpjbTduSjg3aWo1QzhuSF9VOHdKYW8xNWlVeGJGaXllSndtNzFtTnFiQVhYbWlrNzZHeUU5cmVwTi1TY212V1gzZUg?oc=5",
+          "published_at": "2026-08-14T20:57+08:00"
+        }
+      ]
+    },
+    {
+      "headline": "史低价：The North Face 北面 Antora 防水冲锋衣 L码 $62.99",
+      "brand": "The North Face",
+      "category": "户外服饰",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "dealmoon.ca",
+      "source_homepage": "https://www.dealmoon.ca",
+      "article_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTS1mWmp5aFh6R0VoWDdYYUYzblJvX3d5R0E3Tl93cGhkZHdlWnZFTjFxb1FMRDZZNl9TYWU4SWs0SDdXMFlLeHRzc2xGQTQyc1F0ZFM4RzNSOFBvbVlXTkpfQW1TZ25RWWhqZGZyNTVrcDVOVGFDNGkxQndQUVJhcENnV0ltd0N5aG5vaVZR?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTS1mWmp5aFh6R0VoWDdYYUYzblJvX3d5R0E3Tl93cGhkZHdlWnZFTjFxb1FMRDZZNl9TYWU4SWs0SDdXMFlLeHRzc2xGQTQyc1F0ZFM4RzNSOFBvbVlXTkpfQW1TZ25RWWhqZGZyNTVrcDVOVGFDNGkxQndQUVJhcENnV0ltd0N5aG5vaVZR?oc=5",
+      "published_at": "2026-08-18T15:29+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "",
+      "image_source": "",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"The North Face\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "product_name": "防水冲锋衣",
+      "product_name_basis": "product_phrase_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [
+        "防水"
+      ],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "史低价：The North Face 北面 Antora 防水冲锋衣 L码 $62.99",
+        "technology": "史低价：The North Face 北面 Antora 防水冲锋衣 L码 $62.99",
+        "price_or_release": "史低价：The North Face 北面 Antora 防水冲锋衣 L码 $62.99"
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 48,
+      "product_id": "prd_6b27ca2059fc57",
+      "coverage": [
+        {
+          "headline": "史低价：The North Face 北面 Antora 防水冲锋衣 L码 $62.99",
+          "source": "dealmoon.ca",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTS1mWmp5aFh6R0VoWDdYYUYzblJvX3d5R0E3Tl93cGhkZHdlWnZFTjFxb1FMRDZZNl9TYWU4SWs0SDdXMFlLeHRzc2xGQTQyc1F0ZFM4RzNSOFBvbVlXTkpfQW1TZ25RWWhqZGZyNTVrcDVOVGFDNGkxQndQUVJhcENnV0ltd0N5aG5vaVZR?oc=5",
+          "published_at": "2026-08-18T15:29+08:00"
+        }
+      ]
+    },
+    {
+      "headline": "耐克与巴萨将携手推出Nike Kobe 3 Low Protro联名鞋款",
+      "brand": "Nike",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "搜狐网",
+      "source_homepage": "https://m.sohu.com",
+      "article_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQWTZTOHhabzVrSGhWamJaanlFbmhaYzJqZHF0VWNQSWVfMDBVa1doNVoxbWZsTXBLdS1XdGJDdDVENnd4VHk3SzVqSndNLWo4M25fZ1RIZ000NlpQcmJadUt3ZTMwdG9ESzNqTTJDejNBRkk2TTZuMkdWUjBxbDF4czZEcWo0eUo5SDlScQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQWTZTOHhabzVrSGhWamJaanlFbmhaYzJqZHF0VWNQSWVfMDBVa1doNVoxbWZsTXBLdS1XdGJDdDVENnd4VHk3SzVqSndNLWo4M25fZ1RIZ000NlpQcmJadUt3ZTMwdG9ESzNqTTJDejNBRkk2TTZuMkdWUjBxbDF4czZEcWo0eUo5SDlScQ?oc=5",
+      "published_at": "2026-08-19T23:13+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"Nike\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"Nike\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "product_name": "Kobe 3",
+      "product_name_basis": "model_code_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "耐克与巴萨将携手推出Nike Kobe 3 Low Protro联名鞋款 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "",
+        "price_or_release": "耐克与巴萨将携手推出Nike Kobe 3 Low Protro联名鞋款 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 46,
+      "product_id": "prd_9cff465ccc80e9",
+      "coverage": [
+        {
+          "headline": "耐克与巴萨将携手推出Nike Kobe 3 Low Protro联名鞋款",
+          "source": "搜狐网",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQWTZTOHhabzVrSGhWamJaanlFbmhaYzJqZHF0VWNQSWVfMDBVa1doNVoxbWZsTXBLdS1XdGJDdDVENnd4VHk3SzVqSndNLWo4M25fZ1RIZ000NlpQcmJadUt3ZTMwdG9ESzNqTTJDejNBRkk2TTZuMkdWUjBxbDF4czZEcWo0eUo5SDlScQ?oc=5",
+          "published_at": "2026-08-19T23:13+08:00"
+        }
+      ]
+    },
+    {
+      "headline": "INVINCIBLE®、MADNESS 与 ASICS 联名 GEL-KAYANO 12.1 官图释出",
+      "brand": "ASICS",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "hypebeast.cn",
+      "source_homepage": "https://hypebeast.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbXdBYzc5cE95WkpfQUczcHVLdlNWU1B2eWlJQWswN21YTkl6YWVBYkt1T2d1cXB3bGEtLS1PN1FTa0hEcXMwWDNLTnA1eXdVM205X180RXFIMTRpMkp5WlQ2V2dqS2dYUnlwMjlMYmoxOXpUR1VRemlIa1JrMmtRRldJSjk2RWtlT1hlMWV5M1NPcjhhY01RN3JB?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbXdBYzc5cE95WkpfQUczcHVLdlNWU1B2eWlJQWswN21YTkl6YWVBYkt1T2d1cXB3bGEtLS1PN1FTa0hEcXMwWDNLTnA1eXdVM205X180RXFIMTRpMkp5WlQ2V2dqS2dYUnlwMjlMYmoxOXpUR1VRemlIa1JrMmtRRldJSjk2RWtlT1hlMWV5M1NPcjhhY01RN3JB?oc=5",
+      "published_at": "2026-08-19T18:24+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"ASICS\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"ASICS\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "product_name": "GEL-KAYANO 12.1",
+      "product_name_basis": "model_name_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "INVINCIBLE®、MADNESS 与 ASICS 联名 GEL-KAYANO 12.1 官图释出 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "",
+        "price_or_release": "INVINCIBLE®、MADNESS 与 ASICS 联名 GEL-KAYANO 12.1 官图释出 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 46,
+      "product_id": "prd_6b83b3026d1438",
+      "coverage": [
+        {
+          "headline": "INVINCIBLE®、MADNESS 与 ASICS 联名 GEL-KAYANO 12.1 官图释出",
+          "source": "hypebeast.cn",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbXdBYzc5cE95WkpfQUczcHVLdlNWU1B2eWlJQWswN21YTkl6YWVBYkt1T2d1cXB3bGEtLS1PN1FTa0hEcXMwWDNLTnA1eXdVM205X180RXFIMTRpMkp5WlQ2V2dqS2dYUnlwMjlMYmoxOXpUR1VRemlIa1JrMmtRRldJSjk2RWtlT1hlMWV5M1NPcjhhY01RN3JB?oc=5",
+          "published_at": "2026-08-19T18:24+08:00"
+        },
+        {
+          "headline": "INVINCIBLE x MADNESS x ASICS 即将推出GEL-KAYANO 12.1联名鞋款",
+          "source": "香港01",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNaEVES1NUeXRsbHBDWGRMUkNBcXV0Y05ncTlCdlFJMVFkNW1oakh5WHI0d1VkN1F1cDZ4UExncWJ5QXFmQ1MtR010SnQ1OG9KaUdSYTh5d2xBM25VMXBleVA0enZ1RHRabG1wNTVuc0V0UkdjdVZnb2p5NXBWbVc2VXBmczR0Qm9COWFlaWR1VjEyWnVleDdUbVBLQXczdmMxd2hVWGl2WnlsT1JMaTdyYlp3X012cWNDcXg1V1RQaVN6MDVkQkNQRlV4RTFWQ3BTaThfNGV5OENIenJIUFFraGxRNWh1eHRYNVNLMTJpNXhncnZmTXE0WjJjTjg?oc=5",
+          "published_at": "2026-08-14T18:40+08:00"
+        },
+        {
+          "headline": "国区官宣！ASICS 与 VANDYTHEPINK 联手推出GEL-KAYANO 12.1 两款特别配色",
+          "source": "手机网易网",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBIMW95aVFRaDdrRjZQNUFNS1g3SkI2UktlRjFBUkpfR2UxRUZyZm1zekRNeHd4akZMVDgwVmJadldoalJCTS1STHFfOFFKenJUTTJidUN4NmRPX3NoYm0zaG1R?oc=5",
+          "published_at": "2026-08-14T01:30+08:00"
+        }
+      ]
+    },
+    {
+      "headline": "Simons 潮鞋上新 | 封面Hoka bondi9 $99，3色选！ 3折起 Nike厚底拖$29",
+      "brand": "Nike",
+      "category": "跑鞋",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "dealmoon.ca",
+      "source_homepage": "https://www.dealmoon.ca",
+      "article_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5iNmdSajBtNVJoWFlhOFhuUU1vcHdHLWpIT3hDdXJhS3lBeWhyOTJub01LRWM0WnNmYlBKY2dsYVVvemhLMktrbFJqVWxyX3h1UVVTR1ZhN2ZTN05QcGN3NGZoVGVPZw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5iNmdSajBtNVJoWFlhOFhuUU1vcHdHLWpIT3hDdXJhS3lBeWhyOTJub01LRWM0WnNmYlBKY2dsYVVvemhLMktrbFJqVWxyX3h1UVVTR1ZhN2ZTN05QcGN3NGZoVGVPZw?oc=5",
+      "published_at": "2026-08-19T16:03+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"New Balance\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)",
+        "\"HOKA\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "product_name": "bondi9",
+      "product_name_basis": "model_name_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "Simons 潮鞋上新 | 封面Hoka bondi9 $99，3色选！ 3折起 Nike厚底拖$29 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "",
+        "price_or_release": "Simons 潮鞋上新 | 封面Hoka bondi9 $99，3色选！ 3折起 Nike厚底拖$29 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 46,
+      "product_id": "prd_5c96dcf2d734b3",
+      "coverage": [
+        {
+          "headline": "Simons 潮鞋上新 | 封面Hoka bondi9 $99，3色选！ 3折起 Nike厚底拖$29",
+          "source": "dealmoon.ca",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5iNmdSajBtNVJoWFlhOFhuUU1vcHdHLWpIT3hDdXJhS3lBeWhyOTJub01LRWM0WnNmYlBKY2dsYVVvemhLMktrbFJqVWxyX3h1UVVTR1ZhN2ZTN05QcGN3NGZoVGVPZw?oc=5",
+          "published_at": "2026-08-19T16:03+08:00"
+        }
+      ]
+    },
+    {
+      "headline": "Carnan 与 ASICS 再度联手，推出紫色包覆的 GEL-CUMULUS 16",
+      "brand": "ASICS",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "hypebeast.cn",
+      "source_homepage": "https://hypebeast.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSFVfbUxVRkV6U2dYMGpEWWtYQ3NGQzE0MlFTYkNsd0hIVlEtbnJ5Um1JVDJnNFlfUzVheS0yR2JtWF9VRDlEWmdFcTBlMkNiR1JfXzRtSlNYZDdjU1MydTQ5d25tcTktbW93ZnJoWkdJSHhSVXJOcXB5NmVFRVIyT2ZB?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSFVfbUxVRkV6U2dYMGpEWWtYQ3NGQzE0MlFTYkNsd0hIVlEtbnJ5Um1JVDJnNFlfUzVheS0yR2JtWF9VRDlEWmdFcTBlMkNiR1JfXzRtSlNYZDdjU1MydTQ5d25tcTktbW93ZnJoWkdJSHhSVXJOcXB5NmVFRVIyT2ZB?oc=5",
+      "published_at": "2026-08-19T12:02+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"ASICS\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"ASICS\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "product_name": "CUMULUS 16",
+      "product_name_basis": "model_code_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "Carnan 与 ASICS 再度联手，推出紫色包覆的 GEL-CUMULUS 16 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "",
+        "price_or_release": "Carnan 与 ASICS 再度联手，推出紫色包覆的 GEL-CUMULUS 16 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 46,
+      "product_id": "prd_1c9e78f9bc14b5",
+      "coverage": [
+        {
+          "headline": "Carnan 与 ASICS 再度联手，推出紫色包覆的 GEL-CUMULUS 16",
+          "source": "hypebeast.cn",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSFVfbUxVRkV6U2dYMGpEWWtYQ3NGQzE0MlFTYkNsd0hIVlEtbnJ5Um1JVDJnNFlfUzVheS0yR2JtWF9VRDlEWmdFcTBlMkNiR1JfXzRtSlNYZDdjU1MydTQ5d25tcTktbW93ZnJoWkdJSHhSVXJOcXB5NmVFRVIyT2ZB?oc=5",
+          "published_at": "2026-08-19T12:02+08:00"
+        }
+      ]
+    },
+    {
+      "headline": "Salomon 官网新品 封面XT-6新色$230",
+      "brand": "Salomon",
+      "category": "户外鞋",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "dealmoon.ca",
+      "source_homepage": "https://www.dealmoon.ca",
+      "article_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdUVROENfN0YwY3BTeEQxcHFjcFkwaWo3ZFk4T0lRbGF3SXljLWRxNFVUV2F5cEdVbHI5X2RJWHdYam1QcXpJYnlPZGM2U29WWlUwYTd2a1ItT05pS3ZFX2tMc0FhbGM1VnhhOFRYSXhyZ1JMUjFieWVUckFLWHdPUExObkZYODJyTGpKNVZJbGZYTmJuU05iYjVDOHZteV9YY0ZmeFhkSQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdUVROENfN0YwY3BTeEQxcHFjcFkwaWo3ZFk4T0lRbGF3SXljLWRxNFVUV2F5cEdVbHI5X2RJWHdYam1QcXpJYnlPZGM2U29WWlUwYTd2a1ItT05pS3ZFX2tMc0FhbGM1VnhhOFRYSXhyZ1JMUjFieWVUckFLWHdPUExObkZYODJyTGpKNVZJbGZYTmJuU05iYjVDOHZteV9YY0ZmeFhkSQ?oc=5",
+      "published_at": "2026-08-19T02:37+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"Salomon\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"Salomon\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "product_name": "XT-6",
+      "product_name_basis": "model_name_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "Salomon 官网新品 封面XT-6新色$230 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "",
+        "price_or_release": "Salomon 官网新品 封面XT-6新色$230 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 46,
+      "product_id": "prd_16697b6e409bfa",
+      "coverage": [
+        {
+          "headline": "Salomon 官网新品 封面XT-6新色$230",
+          "source": "dealmoon.ca",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdUVROENfN0YwY3BTeEQxcHFjcFkwaWo3ZFk4T0lRbGF3SXljLWRxNFVUV2F5cEdVbHI5X2RJWHdYam1QcXpJYnlPZGM2U29WWlUwYTd2a1ItT05pS3ZFX2tMc0FhbGM1VnhhOFRYSXhyZ1JMUjFieWVUckFLWHdPUExObkZYODJyTGpKNVZJbGZYTmJuU05iYjVDOHZteV9YY0ZmeFhkSQ?oc=5",
+          "published_at": "2026-08-19T02:37+08:00"
+        }
+      ]
+    },
+    {
+      "headline": "西媒：迪奥曼德加盟巴黎人网赌注册的首个赛季，将穿着新百伦Furon v9足球鞋",
+      "brand": "New Balance",
+      "category": "足球鞋",
+      "audience": "成人/通用",
+      "scenarios": [
+        "足球"
+      ],
+      "source": "womenofchina.com",
+      "source_homepage": "https://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE14RHh4eFl3NnpJd1BLWlJyVGFGTWxFRHBGZnlwNFZiNUpBajlrMDNLajB0bHlnUlBoTlowa29FcmRfYzdHb3NjWHVpUTlVYW8tUFg2UjdUZmNuWTYzdk94TzhR?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE14RHh4eFl3NnpJd1BLWlJyVGFGTWxFRHBGZnlwNFZiNUpBajlrMDNLajB0bHlnUlBoTlowa29FcmRfYzdHb3NjWHVpUTlVYW8tUFg2UjdUZmNuWTYzdk94TzhR?oc=5",
+      "published_at": "2026-08-19T00:10+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"New Balance\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "product_name": "v9足球鞋",
+      "product_name_basis": "product_phrase_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "西媒：迪奥曼德加盟巴黎人网赌注册的首个赛季，将穿着新百伦Furon v9足球鞋 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "",
+        "price_or_release": "西媒：迪奥曼德加盟巴黎人网赌注册的首个赛季，将穿着新百伦Furon v9足球鞋 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 46,
+      "product_id": "prd_fd24438e5c3f0f",
+      "coverage": [
+        {
+          "headline": "西媒：迪奥曼德加盟巴黎人网赌注册的首个赛季，将穿着新百伦Furon v9足球鞋",
+          "source": "womenofchina.com",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE14RHh4eFl3NnpJd1BLWlJyVGFGTWxFRHBGZnlwNFZiNUpBajlrMDNLajB0bHlnUlBoTlowa29FcmRfYzdHb3NjWHVpUTlVYW8tUFg2UjdUZmNuWTYzdk94TzhR?oc=5",
+          "published_at": "2026-08-19T00:10+08:00"
+        },
+        {
+          "headline": "西媒：迪奥曼德加盟BET356体育娱乐网址多少的首个赛季，将穿着新百伦Furon v9足球鞋",
+          "source": "womenofchina.com",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9WM0JGQ3pYWmx2SFViblNaYldXY2NMR3dSaDg2V0Y0QnRwMGxuNTNxRms3WjQzQlRNaHZDeEdpaUtiWjV2WkI3ZHZpMEZOcHFMU212NFcyTk4?oc=5",
+          "published_at": "2026-08-18T00:07+08:00"
+        }
+      ]
+    },
+    {
+      "headline": "065COM开元棋牌公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔",
+      "brand": "Nike",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "womenofchina.com",
+      "source_homepage": "https://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1BU3dhblp6T3ZlUGZRb3VmblFBLXE1bFJYQ1ctdWVUNF9Lb0t3aU5OQXAxc0tYT05ha29TNE9Za3M1M1NzQm5JbFY2NjBQSC10N2g2M2JVSW9OTDhqZmJrSw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1BU3dhblp6T3ZlUGZRb3VmblFBLXE1bFJYQ1ctdWVUNF9Lb0t3aU5OQXAxc0tYT05ha29TNE9Za3M1M1NzQm5JbFY2NjBQSC10N2g2M2JVSW9OTDhqZmJrSw?oc=5",
+      "published_at": "2026-08-19T00:06+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"Nike\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"Nike\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "product_name": "Force 1",
+      "product_name_basis": "model_code_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "065COM开元棋牌公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "",
+        "price_or_release": "065COM开元棋牌公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 46,
+      "product_id": "prd_9ba6c7f41caacb",
+      "coverage": [
+        {
+          "headline": "065COM开元棋牌公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔",
+          "source": "womenofchina.com",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1BU3dhblp6T3ZlUGZRb3VmblFBLXE1bFJYQ1ctdWVUNF9Lb0t3aU5OQXAxc0tYT05ha29TNE9Za3M1M1NzQm5JbFY2NjBQSC10N2g2M2JVSW9OTDhqZmJrSw?oc=5",
+          "published_at": "2026-08-19T00:06+08:00"
+        },
+        {
+          "headline": "神仙道电竞公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔",
+          "source": "womenofchina.com",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9pVG5uTHI5T2tfejNQWXVZdW1tSXQwdU5wYXZ0U2xqekRRVVc3OXpBVWw0eDBQT1RVNHBJaENvcUhDV0NaV3ZveXM4V2ZJY0xlZERsbg?oc=5",
+          "published_at": "2026-08-17T05:34+08:00"
+        }
+      ]
+    },
+    {
+      "headline": "Chevy x Nike Book 2 布克在底特律的活动上揭晓了和雪佛兰的全部 Book 2 联名款 - © DB #潮流inbox# #鞋控的日常#",
+      "brand": "Nike",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [
+        "城市通勤"
+      ],
+      "source": "新浪网",
+      "source_homepage": "https://www.sina.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0xMFhJdnk0Ti1mQWpzODY4OXRka3hOaG9Qcm91X3E3bFZnaGE4a3o4Smc0Y0JmQ0VqZVAzajAxV3lxY1RMd1MtelFqS3ZlY0VZRkNRUVFIZ3g5TktwcWVBa3BtQQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0xMFhJdnk0Ti1mQWpzODY4OXRka3hOaG9Qcm91X3E3bFZnaGE4a3o4Smc0Y0JmQ0VqZVAzajAxV3lxY1RMd1MtelFqS3ZlY0VZRkNRUVFIZ3g5TktwcWVBa3BtQQ?oc=5",
+      "published_at": "2026-08-18T12:23+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "\"Nike\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+      ],
+      "product_name": "Book 2",
+      "product_name_basis": "model_code_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "Chevy x Nike Book 2 布克在底特律的活动上揭晓了和雪佛兰的全部 Book 2 联名款 - © DB #潮流inbox# #鞋控的日常# Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Googl",
+        "technology": "",
+        "price_or_release": "Chevy x Nike Book 2 布克在底特律的活动上揭晓了和雪佛兰的全部 Book 2 联名款 - © DB #潮流inbox# #鞋控的日常# Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Googl"
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 46,
+      "product_id": "prd_312dbb963a89a6",
+      "coverage": [
+        {
+          "headline": "Chevy x Nike Book 2 布克在底特律的活动上揭晓了和雪佛兰的全部 Book 2 联名款 - © DB #潮流inbox# #鞋控的日常#",
+          "source": "新浪网",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0xMFhJdnk0Ti1mQWpzODY4OXRka3hOaG9Qcm91X3E3bFZnaGE4a3o4Smc0Y0JmQ0VqZVAzajAxV3lxY1RMd1MtelFqS3ZlY0VZRkNRUVFIZ3g5TktwcWVBa3BtQQ?oc=5",
+          "published_at": "2026-08-18T12:23+08:00"
+        }
+      ]
+    },
+    {
+      "headline": "“中产跑鞋”亚瑟士上半年跑赢，HOKA刹车，昂跑也掉队？",
+      "brand": "HOKA",
+      "category": "跑鞋",
+      "audience": "成人/通用",
+      "scenarios": [
+        "跑步"
+      ],
+      "source": "搜狐网",
+      "source_homepage": "https://m.sohu.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS1FZc2kzakc1SFBhaG54c1Z1ZWszV3ZybVg0TmxoU0ZHTDUxNlZrMFJzS2RKdEVTVE8wSGdqcW9NM0VfQmlsZTlBY2JjSC04ZGw5a3RqLWcyejlqZXJyQW40ZkozY1paZzNzOE9YUGR6cHdHdnh4UnVjUTJZQU9QcTVqZ0N3UHVz?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS1FZc2kzakc1SFBhaG54c1Z1ZWszV3ZybVg0TmxoU0ZHTDUxNlZrMFJzS2RKdEVTVE8wSGdqcW9NM0VfQmlsZTlBY2JjSC04ZGw5a3RqLWcyejlqZXJyQW40ZkozY1paZzNzOE9YUGR6cHdHdnh4UnVjUTJZQU9QcTVqZ0N3UHVz?oc=5",
+      "published_at": "2026-08-18T11:31+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"On昂跑\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"HOKA\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"ASICS\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)",
+        "\"On昂跑\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)",
+        "\"HOKA\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "product_name": "中产跑鞋",
+      "product_name_basis": "quoted_product_name",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "“中产跑鞋”亚瑟士上半年跑赢，HOKA刹车，昂跑也掉队？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "",
+        "price_or_release": "“中产跑鞋”亚瑟士上半年跑赢，HOKA刹车，昂跑也掉队？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 46,
+      "product_id": "prd_9935003bc8ab24",
+      "coverage": [
+        {
+          "headline": "“中产跑鞋”亚瑟士上半年跑赢，HOKA刹车，昂跑也掉队？",
+          "source": "搜狐网",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS1FZc2kzakc1SFBhaG54c1Z1ZWszV3ZybVg0TmxoU0ZHTDUxNlZrMFJzS2RKdEVTVE8wSGdqcW9NM0VfQmlsZTlBY2JjSC04ZGw5a3RqLWcyejlqZXJyQW40ZkozY1paZzNzOE9YUGR6cHdHdnh4UnVjUTJZQU9QcTVqZ0N3UHVz?oc=5",
+          "published_at": "2026-08-18T11:31+08:00"
+        }
+      ]
+    },
+    {
+      "headline": "「不等了，跑就现在」 New Balance 推出全新 SC Rebel 多大豪庭娱乐下载APP竞训跑鞋",
+      "brand": "New Balance",
+      "category": "跑鞋",
+      "audience": "成人/通用",
+      "scenarios": [
+        "跑步"
+      ],
+      "source": "womenofchina.com",
+      "source_homepage": "https://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA0R0pBcmdvbFZfZVZXcGtOSnFpVlJtT0habndtcy14SWZ3NnlkN3c0ZFA1OGVPQThmd2hURG1Ec3JxWTRKUWxqRnByeEpNM2t2UkVKMVVpeXJIdw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA0R0pBcmdvbFZfZVZXcGtOSnFpVlJtT0habndtcy14SWZ3NnlkN3c0ZFA1OGVPQThmd2hURG1Ec3JxWTRKUWxqRnByeEpNM2t2UkVKMVVpeXJIdw?oc=5",
+      "published_at": "2026-08-16T00:50+08:00",
+      "published_date": "2026-08-16",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product",
+        "brand",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "跑鞋 科技 新品",
+        "\"New Balance\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"New Balance\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "product_name": "多大豪庭娱乐下载APP竞训跑鞋",
+      "product_name_basis": "product_phrase_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "「不等了，跑就现在」 New Balance 推出全新 SC Rebel 多大豪庭娱乐下载APP竞训跑鞋 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "",
+        "price_or_release": "「不等了，跑就现在」 New Balance 推出全新 SC Rebel 多大豪庭娱乐下载APP竞训跑鞋 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 46,
+      "product_id": "prd_77c99148cdc3e7",
+      "coverage": [
+        {
+          "headline": "「不等了，跑就现在」 New Balance 推出全新 SC Rebel 多大豪庭娱乐下载APP竞训跑鞋",
+          "source": "womenofchina.com",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA0R0pBcmdvbFZfZVZXcGtOSnFpVlJtT0habndtcy14SWZ3NnlkN3c0ZFA1OGVPQThmd2hURG1Ec3JxWTRKUWxqRnByeEpNM2t2UkVKMVVpeXJIdw?oc=5",
+          "published_at": "2026-08-16T00:50+08:00"
+        }
+      ]
+    },
+    {
+      "headline": "安踏儿童WSE亚太区青少年冠军赛圆满收官，骇浪5体测跑鞋龙8娱乐国际免费试玩首秀",
+      "brand": "安踏儿童",
+      "category": "跑鞋",
+      "audience": "儿童/青少年",
+      "scenarios": [
+        "跑步",
+        "校园运动"
+      ],
+      "source": "womenofchina.com",
+      "source_homepage": "https://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBxLVhZT0JzRWxFcktDUloxOW5PYmdxX3NMWEU1S0tldTNIbDRCTW5sR3hpWkx6NkJCbEt5aGJJeVZuejVob3VHMW1ZQ0NDZ3dpbnFIVTFVUXJaZw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBxLVhZT0JzRWxFcktDUloxOW5PYmdxX3NMWEU1S0tldTNIbDRCTW5sR3hpWkx6NkJCbEt5aGJJeVZuejVob3VHMW1ZQ0NDZ3dpbnFIVTFVUXJaZw?oc=5",
+      "published_at": "2026-08-16T00:06+08:00",
+      "published_date": "2026-08-16",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"安踏儿童\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)",
+        "\"安踏\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "product_name": "骇浪5体测跑鞋",
+      "product_name_basis": "product_phrase_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "安踏儿童WSE亚太区青少年冠军赛圆满收官，骇浪5体测跑鞋龙8娱乐国际免费试玩首秀 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "",
+        "price_or_release": "安踏儿童WSE亚太区青少年冠军赛圆满收官，骇浪5体测跑鞋龙8娱乐国际免费试玩首秀 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 46,
+      "product_id": "prd_e27a7bd50222e3",
+      "coverage": [
+        {
+          "headline": "安踏儿童WSE亚太区青少年冠军赛圆满收官，骇浪5体测跑鞋龙8娱乐国际免费试玩首秀",
+          "source": "womenofchina.com",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBxLVhZT0JzRWxFcktDUloxOW5PYmdxX3NMWEU1S0tldTNIbDRCTW5sR3hpWkx6NkJCbEt5aGJJeVZuejVob3VHMW1ZQ0NDZ3dpbnFIVTFVUXJaZw?oc=5",
+          "published_at": "2026-08-16T00:06+08:00"
+        }
+      ]
+    },
+    {
+      "headline": "比Lululemon还贵的瑜伽服来抢中国市场了：赵露思同款1150元西裤、1750元德训鞋，累计销售额已超千万；有人吐槽其上千元的衣服各种起球",
+      "brand": "lululemon",
+      "category": "瑜伽与训练服",
+      "audience": "女性",
+      "scenarios": [
+        "瑜伽"
+      ],
+      "source": "极目新闻",
+      "source_homepage": "https://www.ctdsb.net",
+      "article_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFByUXRWQ2VCNmxxTkV5czBSVjBjaVJWV2x0NU53OFZZQnFJc0VxWEZCaUUxazRMMS1ZNUdKektuZmlRMXl0VXB5b1k5cHdwbUpPaEVCdE42c0NjOTQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFByUXRWQ2VCNmxxTkV5czBSVjBjaVJWV2x0NU53OFZZQnFJc0VxWEZCaUUxazRMMS1ZNUdKektuZmlRMXl0VXB5b1k5cHdwbUpPaEVCdE42c0NjOTQ?oc=5",
+      "published_at": "2026-08-13T07:41+08:00",
+      "published_date": "2026-08-13",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"lululemon\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"lululemon\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "product_name": "比还贵的瑜伽服",
+      "product_name_basis": "product_phrase_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "比Lululemon还贵的瑜伽服来抢中国市场了：赵露思同款1150元西裤、1750元德训鞋，累计销售额已超千万；有人吐槽其上千元的衣服各种起球 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google New",
+        "technology": "",
+        "price_or_release": "比Lululemon还贵的瑜伽服来抢中国市场了：赵露思同款1150元西裤、1750元德训鞋，累计销售额已超千万；有人吐槽其上千元的衣服各种起球 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google New"
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 46,
+      "product_id": "prd_21d2fd18b4f7f0",
+      "coverage": [
+        {
+          "headline": "比Lululemon还贵的瑜伽服来抢中国市场了：赵露思同款1150元西裤、1750元德训鞋，累计销售额已超千万；有人吐槽其上千元的衣服各种起球",
+          "source": "极目新闻",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFByUXRWQ2VCNmxxTkV5czBSVjBjaVJWV2x0NU53OFZZQnFJc0VxWEZCaUUxazRMMS1ZNUdKektuZmlRMXl0VXB5b1k5cHdwbUpPaEVCdE42c0NjOTQ?oc=5",
+          "published_at": "2026-08-13T07:41+08:00"
+        }
+      ]
+    }
+  ],
+  "category_signals": [
+    {
+      "category": "商品趋势",
+      "evidence_count": 75,
+      "brands": [
+        "未识别品牌",
+        "Adidas",
+        "Nike",
+        "FILA",
+        "ASICS",
+        "安踏"
+      ],
+      "evidence": [
+        {
+          "title": "耐克与巴萨将携手推出Nike Kobe 3 Low Protro联名鞋款",
+          "source": "搜狐网",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQWTZTOHhabzVrSGhWamJaanlFbmhaYzJqZHF0VWNQSWVfMDBVa1doNVoxbWZsTXBLdS1XdGJDdDVENnd4VHk3SzVqSndNLWo4M25fZ1RIZ000NlpQcmJadUt3ZTMwdG9ESzNqTTJDejNBRkk2TTZuMkdWUjBxbDF4czZEcWo0eUo5SDlScQ?oc=5"
+        },
+        {
+          "title": "INVINCIBLE®、MADNESS 与 ASICS 联名 GEL-KAYANO 12.1 官图释出",
+          "source": "hypebeast.cn",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbXdBYzc5cE95WkpfQUczcHVLdlNWU1B2eWlJQWswN21YTkl6YWVBYkt1T2d1cXB3bGEtLS1PN1FTa0hEcXMwWDNLTnA1eXdVM205X180RXFIMTRpMkp5WlQ2V2dqS2dYUnlwMjlMYmoxOXpUR1VRemlIa1JrMmtRRldJSjk2RWtlT1hlMWV5M1NPcjhhY01RN3JB?oc=5"
+        },
+        {
+          "title": "Carnan 与 ASICS 再度联手，推出紫色包覆的 GEL-CUMULUS 16",
+          "source": "hypebeast.cn",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSFVfbUxVRkV6U2dYMGpEWWtYQ3NGQzE0MlFTYkNsd0hIVlEtbnJ5Um1JVDJnNFlfUzVheS0yR2JtWF9VRDlEWmdFcTBlMkNiR1JfXzRtSlNYZDdjU1MydTQ5d25tcTktbW93ZnJoWkdJSHhSVXJOcXB5NmVFRVIyT2ZB?oc=5"
+        },
+        {
+          "title": "065COM开元棋牌公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔",
+          "source": "womenofchina.com",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1BU3dhblp6T3ZlUGZRb3VmblFBLXE1bFJYQ1ctdWVUNF9Lb0t3aU5OQXAxc0tYT05ha29TNE9Za3M1M1NzQm5JbFY2NjBQSC10N2g2M2JVSW9OTDhqZmJrSw?oc=5"
+        },
+        {
+          "title": "Chevy x Nike Book 2 布克在底特律的活动上揭晓了和雪佛兰的全部 Book 2 联名款 - © DB #潮流inbox# #鞋控的日常#",
+          "source": "新浪网",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0xMFhJdnk0Ti1mQWpzODY4OXRka3hOaG9Qcm91X3E3bFZnaGE4a3o4Smc0Y0JmQ0VqZVAzajAxV3lxY1RMd1MtelFqS3ZlY0VZRkNRUVFIZ3g5TktwcWVBa3BtQQ?oc=5"
+        },
+        {
+          "title": "Nike 携手 NFL 发布 2025 赛季实战队服，以全新方式联结运动员与球迷",
+          "source": "About Nike",
+          "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxNX2U0eE5oOHIyNmVRUC10WWNacFhtRVMyYm9YdXVlUjA4dUcxd3pkNlNEWEo0QXN4bGJXYkpvdnpVeE9jRjFKdnVmMmZoRmRhTzM4WE5JaDRoeXdIQ1E2dGxLeEY1cTZQNzFJOEhOZXBoaWlkTXNtOGsyNU1XblJwbHY1aEFkVVR1SWZ5QVpBMWF2dGlVNTJQN19SWDhJMWxiVkhBTmNFcnR3NkJiWTFjd0MtU1Fwb1dFWEdWX0YwS195ZjRlbm9VcTl5a29GTjZMT3NGeTFBQmVMSGozbjlpeXZzQm1EYU01R1hHSUowVDFGSHRKS3NtbGliTUxQYmMtNGhwS0lEcEJXNEl5SmlqaTlMUFc5aHpXQzNmd2wxMF9TcDVrbU42dFZ6ek9iSVloMjQxT2JneW15SHJnRE1NeTF2Z0I3UXRMNzRlMmQ0UTE?oc=5"
+        }
+      ],
+      "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+    },
+    {
+      "category": "跑鞋",
+      "evidence_count": 10,
+      "brands": [
+        "Nike",
+        "HOKA",
+        "New Balance",
+        "安踏儿童",
+        "未识别品牌",
+        "On昂跑"
+      ],
+      "evidence": [
+        {
+          "title": "Simons 潮鞋上新 | 封面Hoka bondi9 $99，3色选！ 3折起 Nike厚底拖$29",
+          "source": "dealmoon.ca",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5iNmdSajBtNVJoWFlhOFhuUU1vcHdHLWpIT3hDdXJhS3lBeWhyOTJub01LRWM0WnNmYlBKY2dsYVVvemhLMktrbFJqVWxyX3h1UVVTR1ZhN2ZTN05QcGN3NGZoVGVPZw?oc=5"
+        },
+        {
+          "title": "“中产跑鞋”亚瑟士上半年跑赢，HOKA刹车，昂跑也掉队？",
+          "source": "搜狐网",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS1FZc2kzakc1SFBhaG54c1Z1ZWszV3ZybVg0TmxoU0ZHTDUxNlZrMFJzS2RKdEVTVE8wSGdqcW9NM0VfQmlsZTlBY2JjSC04ZGw5a3RqLWcyejlqZXJyQW40ZkozY1paZzNzOE9YUGR6cHdHdnh4UnVjUTJZQU9QcTVqZ0N3UHVz?oc=5"
+        },
+        {
+          "title": "「不等了，跑就现在」 New Balance 推出全新 SC Rebel 多大豪庭娱乐下载APP竞训跑鞋",
+          "source": "womenofchina.com",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA0R0pBcmdvbFZfZVZXcGtOSnFpVlJtT0habndtcy14SWZ3NnlkN3c0ZFA1OGVPQThmd2hURG1Ec3JxWTRKUWxqRnByeEpNM2t2UkVKMVVpeXJIdw?oc=5"
+        },
+        {
+          "title": "安踏儿童WSE亚太区青少年冠军赛圆满收官，骇浪5体测跑鞋龙8娱乐国际免费试玩首秀",
+          "source": "womenofchina.com",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBxLVhZT0JzRWxFcktDUloxOW5PYmdxX3NMWEU1S0tldTNIbDRCTW5sR3hpWkx6NkJCbEt5aGJJeVZuejVob3VHMW1ZQ0NDZ3dpbnFIVTFVUXJaZw?oc=5"
+        },
+        {
+          "title": "针对 On 品牌跑鞋“异响”的集体诉讼被美国法院驳回",
+          "source": "华丽志",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFA0Zmg5MDZCRkpua3F2UUc4VnpMRDBHQ2NyQ1JNb2FNMVFuMTBTRWl4MFVJR3BIVmFHbzFHemlrdnc?oc=5"
+        },
+        {
+          "title": "新澳门开奖记录_产业_On昂跑新一代Cloudboom系列马拉松竞速跑鞋正式发布",
+          "source": "womenofchina.com",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE45dUMzVFdGYlFFLWNUNV8xaG11RnJ2STFrVGQ0WC1VOU9QemhuRXZDRWtRZ09kRmUwNktBSElQNEIzUmxTTGZJS1dWLWJVTmhuZHBpaEI4MDljdw?oc=5"
+        }
+      ],
+      "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+    },
+    {
+      "category": "瑜伽与训练服",
+      "evidence_count": 7,
+      "brands": [
+        "lululemon",
+        "未识别品牌",
+        "Alo Yoga"
+      ],
+      "evidence": [
+        {
+          "title": "ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球",
+          "source": "新京报",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Vb0tJWUs0cEFWVzI4bmtsanRYbERWYUdUUkpjbTduSjg3aWo1QzhuSF9VOHdKYW8xNWlVeGJGaXllSndtNzFtTnFiQVhYbWlrNzZHeUU5cmVwTi1TY212V1gzZUg?oc=5"
+        },
+        {
+          "title": "比Lululemon还贵的瑜伽服来抢中国市场了：赵露思同款1150元西裤、1750元德训鞋，累计销售额已超千万；有人吐槽其上千元的衣服各种起球",
+          "source": "极目新闻",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFByUXRWQ2VCNmxxTkV5czBSVjBjaVJWV2x0NU53OFZZQnFJc0VxWEZCaUUxazRMMS1ZNUdKektuZmlRMXl0VXB5b1k5cHdwbUpPaEVCdE42c0NjOTQ?oc=5"
+        },
+        {
+          "title": "一分钟狂卖1000万，一条瑜伽裤来中国“抢钱”：年入67亿-yeeyi",
+          "source": "yeeyi.com",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9kTEI2YUJMVTl2aWs1UjJ2RE1sNTB5WUhqdERDNjJ1VDhHMlJNVEljeG9ULUxaeHd5dmZWSklqdThzODhDbkNaekFEdERrRHdwbmZ5UDF3?oc=5"
+        },
+        {
+          "title": "一分钟狂卖1000万，一条瑜伽裤来中国“抢钱”：年入67亿",
+          "source": "搜狐网",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNR0FuRDl5RG1QV1JrMG1SNkhBT1NtQzlGTFRlY0k0azFWX3JBbmthNWp3cUpNLV9sWFZkR2pYd01iMzBnY1lIdC1WVTVMSXl5eHlNNmY2S3BJNVcta3RwVmFuSXZURHh6emsyOXlpbUFoOVJtLWk4QXcwVmxLekpUNTdUdFpJbEg3?oc=5"
+        },
+        {
+          "title": "lululemon劲敌ALO正式入华 瑜伽服赛道双雄对决虽迟但到",
+          "source": "36 Kr",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vOXIwMVlURlV5dmpQMks3SlVFSkZZYk1xT2xnQldGLVdWY2NqSXZmeFI4S2R6cHpManNHNFVVaHdrSnRES0tPMG1xc3RacTdZOEtj?oc=5"
+        }
+      ],
+      "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+    },
+    {
+      "category": "夏季功能服饰",
+      "evidence_count": 6,
+      "brands": [
+        "未识别品牌"
+      ],
+      "evidence": [
+        {
+          "title": "刘亦菲素颜穿平价防晒衣，同款在哪里能买到？",
+          "source": "新浪网",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9IT0FRWVkwampRR0NPMGMyQ2lZay1aWUNSaGwwcVRnY3lRTE1tX2prZXpUamR1QlVLLXJVYW9ndlh0bjJFcW9ubDJxakFjZW8xVWVSeEIzVkI3SGhsTW5Bb2NrUmh0NFZicHJsbTFLUlhOUQ?oc=5"
+        },
+        {
+          "title": "刘亦菲同款防晒衣在哪些渠道可以买到？",
+          "source": "新浪网",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAzc3lfS3lleEtzVkhiSjFXVDg1RW1VR09qZkpFbUlLVWtlYjFOX0FDMXhNcGdsTEZKSHd1WXE2SkdLS3FZLXo1VnN6LUF3VmRSemR5Z056Ukt3TURjZXl2R2xmRHVwa1F2R3l0T3ViaXdMUQ?oc=5"
+        },
+        {
+          "title": "刘亦菲同款79.8元防晒衣是哪个品牌？",
+          "source": "新浪网",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1URkZSTmdQdWRORjdoMnNsYTFDbkxERVEtZWZNM0VLZU1fSGd5ZGpURGk1Wm9Ca1dmSGgyZXNuWjVmZER3UzhDeVhKenJtS1JWZXZtNlEzTkVYeE45bXhyYkdxQ2RTbWsyZURQdHU3NGxmZw?oc=5"
+        },
+        {
+          "title": "防晒衣十款十大榜单梳理，男女款参考，哪个牌子防晒效果最好",
+          "source": "搜狐网",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNlk4cXpIRDY5eDZBLUJ0ZVRSUXV3UEFVZWtQM0h6WmlxTnRuMnEzby1WbEx2VXdLY21TRVI3ODROUURsR1pJaGRwZnFobzJ2U3hQRHc3U2JNSHBJUkp6TWd6SWx6Qm5QZWoxT2Z3V2E3V2RHZDRQaVZ5SWRBT05lSDVLWlpINlNjZ1JQQw?oc=5"
+        },
+        {
+          "title": "刘亦菲穿的79.8元防晒衣是哪个品牌？",
+          "source": "新浪网",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBPelc3TGtQUENEUjJpbmZNbGljRmg1R0RmcXI5SE1lRzdHekZpb293bGRYWHNoMWgyVGs1c0JzNVo3S0ZKZGFmLXNkOVBFUzd5bjlKSno1RGJJVDBIcGVaNnlqZHh5SlduVXY4LXRlbnM1QQ?oc=5"
+        },
+        {
+          "title": "刘亦菲穿的79.8元防晒衣是什么品牌？",
+          "source": "新浪网",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9DS0xzWW9PY0VLY01fTmYzQmUzcjNBV1c5SndJOXpDRkp2bEpSN0RtcmpBMFpYOEJiNmx6YnI3V2J0b0JxOGJ2Q25wN1pDaUM4RzVYSkRTeWstVTdMbWlEb2sxOWVybWk0dWRENUVUaTVBZw?oc=5"
+        }
+      ],
+      "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+    },
+    {
+      "category": "户外服饰",
+      "evidence_count": 4,
+      "brands": [
+        "凯乐石",
+        "The North Face"
+      ],
+      "evidence": [
+        {
+          "title": "史低价：The North Face 北面 Antora 防水冲锋衣 L码 $62.99",
+          "source": "dealmoon.ca",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTS1mWmp5aFh6R0VoWDdYYUYzblJvX3d5R0E3Tl93cGhkZHdlWnZFTjFxb1FMRDZZNl9TYWU4SWs0SDdXMFlLeHRzc2xGQTQyc1F0ZFM4RzNSOFBvbVlXTkpfQW1TZ25RWWhqZGZyNTVrcDVOVGFDNGkxQndQUVJhcENnV0ltd0N5aG5vaVZR?oc=5"
+        },
+        {
+          "title": "全新Q60硬壳冲锋衣| 未登峰20周年主题款发售2006年，凯乐石发起未登峰计划未登峰之上，不仅刻下攀登者的精神传承也见证硬壳装备技术标准的持续突破成为持续挑战极限的革新坐标#KAILAS凯乐石##凯乐石未登峰计划##凯乐石未登峰计划20年##只为攀登##凯",
+          "source": "新浪网",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9GaVRJTlc1MkRLMXdUY3FYQ3YtSzhYeUo0TXZHLWROSjZwSm12dTJ2SElWbjVhMkVnLTNESnd6enBMMHc4ai1EaE9XX2NxaXgyV0tMWHJwVTFCSGVyTkRMbU9WVQ?oc=5"
+        },
+        {
+          "title": "全新一代Q60硬壳冲锋衣秉承对极致性能最严苛的追求历经专业攀登者高海拔实测与反复验证专为长周期高强度的远征式技术攀登设计#KAILAS凯乐石##凯乐石未登峰计划##凯乐石未登峰计划20年##只为攀登##凯乐石冲锋衣",
+          "source": "新浪网",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1rbUI4dVE2YldZS3ZsU3BGSmVrQnpnVEx4UUJtWHYyUkIxRWczZVVYRFlpUHlnTERqZkcxV043dEJ0aEVBd0FfUUxpTW1OV3J6QmpEU0x6ZFBoLTBodFVRLUdjVQ?oc=5"
+        }
+      ],
+      "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+    },
+    {
+      "category": "户外鞋",
+      "evidence_count": 2,
+      "brands": [
+        "Salomon"
+      ],
+      "evidence": [
+        {
+          "title": "Salomon 官网新品 封面XT-6新色$230",
+          "source": "dealmoon.ca",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdUVROENfN0YwY3BTeEQxcHFjcFkwaWo3ZFk4T0lRbGF3SXljLWRxNFVUV2F5cEdVbHI5X2RJWHdYam1QcXpJYnlPZGM2U29WWlUwYTd2a1ItT05pS3ZFX2tMc0FhbGM1VnhhOFRYSXhyZ1JMUjFieWVUckFLWHdPUExObkZYODJyTGpKNVZJbGZYTmJuU05iYjVDOHZteV9YY0ZmeFhkSQ?oc=5"
+        }
+      ],
+      "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+    },
+    {
+      "category": "足球鞋",
+      "evidence_count": 2,
+      "brands": [
+        "New Balance"
+      ],
+      "evidence": [
+        {
+          "title": "西媒：迪奥曼德加盟巴黎人网赌注册的首个赛季，将穿着新百伦Furon v9足球鞋",
+          "source": "womenofchina.com",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE14RHh4eFl3NnpJd1BLWlJyVGFGTWxFRHBGZnlwNFZiNUpBajlrMDNLajB0bHlnUlBoTlowa29FcmRfYzdHb3NjWHVpUTlVYW8tUFg2UjdUZmNuWTYzdk94TzhR?oc=5"
+        }
+      ],
+      "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+    },
+    {
+      "category": "篮球鞋",
+      "evidence_count": 2,
+      "brands": [
+        "李宁"
+      ],
+      "evidence": [
+        {
+          "title": "李宁利刃7 篮球鞋“我该被看见”主题推广|利刃7|李宁_新浪新闻",
+          "source": "新浪网",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBFa0xzNFVjZm1LcXlkbXpibjZ3blpHRDBXTEhIVWV6dmZtUDhlSEJCbTQ2a3hQbHJ3cHhpS09aU0dQXzFnMy0zSzZmOFo1RVg2Mk16RDl1c2F0cnlWdXE0TXdCQQ?oc=5"
+        },
+        {
+          "title": "李宁利刃7 篮球鞋线下发布活动|利刃7|对抗赛|防侧翻|推进反馈_新浪新闻",
+          "source": "新浪网",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9lNHI4X3B2YzBEV25VVUFlQXF2LW1mNzZocmRNN0V3d1ZJckpseGRvUlpIazBGcmFBSjBKWkR0SkdqTFNrcHlQTl9ZZFVLSFVlVWZlbDdCblo4bVhVZWF2OUM5Yw?oc=5"
+        }
+      ],
+      "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+    }
+  ],
+  "media_signals": [
+    {
+      "headline": "Nike 携手 NFL 发布 2025 赛季实战队服，以全新方式联结运动员与球迷",
+      "brand": "Nike",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "About Nike",
+      "source_homepage": "https://about.nike.com",
+      "article_url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxNX2U0eE5oOHIyNmVRUC10WWNacFhtRVMyYm9YdXVlUjA4dUcxd3pkNlNEWEo0QXN4bGJXYkpvdnpVeE9jRjFKdnVmMmZoRmRhTzM4WE5JaDRoeXdIQ1E2dGxLeEY1cTZQNzFJOEhOZXBoaWlkTXNtOGsyNU1XblJwbHY1aEFkVVR1SWZ5QVpBMWF2dGlVNTJQN19SWDhJMWxiVkhBTmNFcnR3NkJiWTFjd0MtU1Fwb1dFWEdWX0YwS195ZjRlbm9VcTl5a29GTjZMT3NGeTFBQmVMSGozbjlpeXZzQm1EYU01R1hHSUowVDFGSHRKS3NtbGliTUxQYmMtNGhwS0lEcEJXNEl5SmlqaTlMUFc5aHpXQzNmd2wxMF9TcDVrbU42dFZ6ek9iSVloMjQxT2JneW15SHJnRE1NeTF2Z0I3UXRMNzRlMmQ0UTE?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxNX2U0eE5oOHIyNmVRUC10WWNacFhtRVMyYm9YdXVlUjA4dUcxd3pkNlNEWEo0QXN4bGJXYkpvdnpVeE9jRjFKdnVmMmZoRmRhTzM4WE5JaDRoeXdIQ1E2dGxLeEY1cTZQNzFJOEhOZXBoaWlkTXNtOGsyNU1XblJwbHY1aEFkVVR1SWZ5QVpBMWF2dGlVNTJQN19SWDhJMWxiVkhBTmNFcnR3NkJiWTFjd0MtU1Fwb1dFWEdWX0YwS195ZjRlbm9VcTl5a29GTjZMT3NGeTFBQmVMSGozbjlpeXZzQm1EYU01R1hHSUowVDFGSHRKS3NtbGliTUxQYmMtNGhwS0lEcEJXNEl5SmlqaTlMUFc5aHpXQzNmd2wxMF9TcDVrbU42dFZ6ek9iSVloMjQxT2JneW15SHJnRE1NeTF2Z0I3UXRMNzRlMmQ0UTE?oc=5",
+      "published_at": "2026-08-18T03:50+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "",
+      "image_source": "",
+      "verification": "official",
+      "is_official": true,
+      "query_groups": [
+        "official_site"
+      ],
+      "discovered_by": [
+        "site:about.nike.com 鞋 发布"
+      ],
+      "signal_id": "psg_e56b7cfbc1fc5f",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发布"
+      ],
+      "evidence": "Nike 携手 NFL 发布 2025 赛季实战队服，以全新方式联结运动员与球迷",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "解压运动场搬进商场中庭 南昌商圈青年休闲玩法又升级了",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [
+        "城市通勤"
+      ],
+      "source": "凤凰网江西",
+      "source_homepage": "https://jx.ifeng.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5BTmEzbGpqQUplMEQ5YV93cl92cm44RTNtcXlCdWd2SUhZaG1Fd0tCOXlMdVRRMlA2RXhwemtJTXl1Z3NMekJzTzVn?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5BTmEzbGpqQUplMEQ5YV93cl92cm44RTNtcXlCdWd2SUhZaG1Fd0tCOXlMdVRRMlA2RXhwemtJTXl1Z3NMekJzTzVn?oc=5",
+      "published_at": "2026-08-19T23:04+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "channel",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "购物中心 运动品牌"
+      ],
+      "signal_id": "psg_31e24295f4804e",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "升级"
+      ],
+      "evidence": "解压运动场搬进商场中庭 南昌商圈青年休闲玩法又升级了 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "刘亦菲素颜穿平价防晒衣，同款在哪里能买到？",
+      "brand": "",
+      "category": "夏季功能服饰",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "新浪网",
+      "source_homepage": "https://k.sina.com.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9IT0FRWVkwampRR0NPMGMyQ2lZay1aWUNSaGwwcVRnY3lRTE1tX2prZXpUamR1QlVLLXJVYW9ndlh0bjJFcW9ubDJxakFjZW8xVWVSeEIzVkI3SGhsTW5Bb2NrUmh0NFZicHJsbTFLUlhOUQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9IT0FRWVkwampRR0NPMGMyQ2lZay1aWUNSaGwwcVRnY3lRTE1tX2prZXpUamR1QlVLLXJVYW9ndlh0bjJFcW9ubDJxakFjZW8xVWVSeEIzVkI3SGhsTW5Bb2NrUmh0NFZicHJsbTFLUlhOUQ?oc=5",
+      "published_at": "2026-08-19T21:59+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "防晒衣 运动品牌"
+      ],
+      "product_name": "刘亦菲素颜穿平价防晒衣",
+      "product_name_basis": "product_phrase_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [
+        "防晒"
+      ],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "刘亦菲素颜穿平价防晒衣，同款在哪里能买到？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "刘亦菲素颜穿平价防晒衣，同款在哪里能买到？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "price_or_release": "刘亦菲素颜穿平价防晒衣，同款在哪里能买到？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 53,
+      "product_id": "prd_4795652611d7fd",
+      "signal_id": "psg_7c75df85d723ac",
+      "signal_type": "insufficient_product_evidence",
+      "note": "具体商品证据不足，已降级为媒体信号。"
+    },
+    {
+      "headline": "重啤发布2026年半年度报告：持续推进产品创新与品牌建设",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "nbd.com.cn",
+      "source_homepage": "https://www.nbd.com.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5DazdnTXk3Ml91ZXRqeC1CbnN1UHNIajdCVURTZ29wVXpOQTBzUnlqRDVwLU53NUFvS01WWkt0M05GcjcyTFNqSnFJNjYtUkFhdUZGdEowdXl0U3IwVHAzZHh1Uy1HQQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5DazdnTXk3Ml91ZXRqeC1CbnN1UHNIajdCVURTZ29wVXpOQTBzUnlqRDVwLU53NUFvS01WWkt0M05GcjcyTFNqSnFJNjYtUkFhdUZGdEowdXl0U3IwVHAzZHh1Uy1HQQ?oc=5",
+      "published_at": "2026-08-19T20:06+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "运动品牌 新品 发布"
+      ],
+      "signal_id": "psg_cded382c7c8ef0",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发布"
+      ],
+      "evidence": "重啤发布2026年半年度报告：持续推进产品创新与品牌建设 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "ASICS亚瑟士携手blacktoes再度释出共创系列 第二篇章「静·技」—— 跑步与纸艺的无声共鸣",
+      "brand": "ASICS",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [
+        "跑步"
+      ],
+      "source": "中华网生活",
+      "source_homepage": "https://life.china.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9sVWNGVURYR0U2UXN5b21PWVFlQnJ6dlIzNjRMd3ZNZTF2VmZTODVsVUk2NEUtUW00LU5xUkdMY3BfZEVFeVQzbTBZOW1vbEFIbXhuQlVoQkwyYURqNTVwNW9TVQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9sVWNGVURYR0U2UXN5b21PWVFlQnJ6dlIzNjRMd3ZNZTF2VmZTODVsVUk2NEUtUW00LU5xUkdMY3BfZEVFeVQzbTBZOW1vbEFIbXhuQlVoQkwyYURqNTVwNW9TVQ?oc=5",
+      "published_at": "2026-08-19T18:56+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"ASICS\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_523f180599adb4",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "系列"
+      ],
+      "evidence": "ASICS亚瑟士携手blacktoes再度释出共创系列 第二篇章「静·技」—— 跑步与纸艺的无声共鸣 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "MELLER 联名 All Points East：劫持伦敦巴士，开启音乐节派对",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "Hypebae",
+      "source_homepage": "https://hypebae.com",
+      "article_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZHRWYWlWOE1VdWtzc2lWUkI2V2dtdHk1MTAzWTl3dWVxQVFpQkMzeHB5Njl1aXpzcnUxa1ZReEJadGVBUkZ6X2xOYUFrai1sUS1MMnRMLVRBbDduclQ0eFF6SXV0ZTNOdXF0TEg0X00zdVV0NkswLURPSU9Ld1Y0azY2VEhXWGRwZ19CQUdxUHh2RW1YQXNvLWludVdoSmJwOEo4d2RVOS03eFBwVkF0TVBNcGZjMC1BbDZ0aG1YcFJKZjJDT2c?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZHRWYWlWOE1VdWtzc2lWUkI2V2dtdHk1MTAzWTl3dWVxQVFpQkMzeHB5Njl1aXpzcnUxa1ZReEJadGVBUkZ6X2xOYUFrai1sUS1MMnRMLVRBbDduclQ0eFF6SXV0ZTNOdXF0TEg0X00zdVV0NkswLURPSU9Ld1Y0azY2VEhXWGRwZ19CQUdxUHh2RW1YQXNvLWludVdoSmJwOEo4d2RVOS03eFBwVkF0TVBNcGZjMC1BbDZ0aG1YcFJKZjJDT2c?oc=5",
+      "published_at": "2026-08-19T18:52+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "\"New Balance\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+      ],
+      "signal_id": "psg_0b977870e65fb8",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "联名"
+      ],
+      "evidence": "MELLER 联名 All Points East：劫持伦敦巴士，开启音乐节派对 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "针对 On 品牌跑鞋“异响”的集体诉讼被美国法院驳回",
+      "brand": "",
+      "category": "跑鞋",
+      "audience": "成人/通用",
+      "scenarios": [
+        "跑步"
+      ],
+      "source": "华丽志",
+      "source_homepage": "https://luxe.co",
+      "article_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFA0Zmg5MDZCRkpua3F2UUc4VnpMRDBHQ2NyQ1JNb2FNMVFuMTBTRWl4MFVJR3BIVmFHbzFHemlrdnc?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFA0Zmg5MDZCRkpua3F2UUc4VnpMRDBHQ2NyQ1JNb2FNMVFuMTBTRWl4MFVJR3BIVmFHbzFHemlrdnc?oc=5",
+      "published_at": "2026-08-19T18:48+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "",
+      "image_source": "",
+      "verification": "trusted_media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"On昂跑\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "product_name": "品牌跑鞋",
+      "product_name_basis": "product_phrase_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "针对 On 品牌跑鞋“异响”的集体诉讼被美国法院驳回",
+        "technology": "",
+        "price_or_release": "针对 On 品牌跑鞋“异响”的集体诉讼被美国法院驳回"
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 51,
+      "product_id": "prd_7384fe89b5b20d",
+      "signal_id": "psg_a6abe5d4df16aa",
+      "signal_type": "insufficient_product_evidence",
+      "note": "具体商品证据不足，已降级为媒体信号。"
+    },
+    {
+      "headline": "报告：运动零售成上海商业项目升级、客流增长重要引擎-中新社上海",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "sh.chinanews.com.cn",
+      "source_homepage": "https://www.sh.chinanews.com.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA3U0IzdUxna1M0TjF6YnV4b1ZKeXRUT2VKdi0yUndYX3NJQmtJSG1XVC03bWllcXQ1WjRCYm0yb3N0WmxIWW94SkF0NkpxamhyVFEzZGdVRmJIR25jY19oM192Tk9vdVFGTTFoQTdkTHZDQQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA3U0IzdUxna1M0TjF6YnV4b1ZKeXRUT2VKdi0yUndYX3NJQmtJSG1XVC03bWllcXQ1WjRCYm0yb3N0WmxIWW94SkF0NkpxamhyVFEzZGdVRmJIR25jY19oM192Tk9vdVFGTTFoQTdkTHZDQQ?oc=5",
+      "published_at": "2026-08-19T18:44+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_business",
+        "channel",
+        "consumer_macro",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "运动品牌 中国市场",
+        "运动品牌 门店 旗舰店",
+        "购物中心 运动品牌",
+        "运动消费 趋势",
+        "户外消费 市场"
+      ],
+      "signal_id": "psg_ae3fdb5e21350f",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "升级"
+      ],
+      "evidence": "报告：运动零售成上海商业项目升级、客流增长重要引擎-中新社上海 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "CBRE世邦魏理仕发布《从赛道到趋势：上海如何引领中国运动零售市场发展》报告",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "资鲸",
+      "source_homepage": "http://m.capwhale.com",
+      "article_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNS1MzVlRjOEcyQlk2bXc4YTFDZnZQUEU0cXVpSXVpekk0NUhtTHZGbnFpQ1JYNndISENXelZkSnh5ZEJjcFZUR3ZKYURzVlk1b2FWbDBDSlQ3ZDVXSmJpcXV0czZjNDl4YTZxbkRYdnNZdEFxVjBxWjhxQkRZTjZxZzZnUVNNRWx1WVd3MTBxNHZZdw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNS1MzVlRjOEcyQlk2bXc4YTFDZnZQUEU0cXVpSXVpekk0NUhtTHZGbnFpQ1JYNndISENXelZkSnh5ZEJjcFZUR3ZKYURzVlk1b2FWbDBDSlQ3ZDVXSmJpcXV0czZjNDl4YTZxbkRYdnNZdEFxVjBxWjhxQkRZTjZxZzZnUVNNRWx1WVd3MTBxNHZZdw?oc=5",
+      "published_at": "2026-08-19T18:22+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "\"迪桑特\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+      ],
+      "signal_id": "psg_c51a9714b94735",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发布"
+      ],
+      "evidence": "CBRE世邦魏理仕发布《从赛道到趋势：上海如何引领中国运动零售市场发展》报告 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "adidas Running x SFTM 2026 秋冬系列登场",
+      "brand": "Adidas",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "hypebeast.cn",
+      "source_homepage": "https://hypebeast.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSjVmMkotWTRLM0x2bmVyMEFjalN6a0JPNEtHYkg1R2Z3Rmw5aEJHRVVjRTQ2a2tsRHI2MldPRGZLOFBQekZNcGd0YnlRVnhuMGRab3Z6OGJTdmR2elpZczRsNU91VDliVVFySlMzWWo0dWJhZl83RmJnaDd5NmxlM3lyVQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSjVmMkotWTRLM0x2bmVyMEFjalN6a0JPNEtHYkg1R2Z3Rmw5aEJHRVVjRTQ2a2tsRHI2MldPRGZLOFBQekZNcGd0YnlRVnhuMGRab3Z6OGJTdmR2elpZczRsNU91VDliVVFySlMzWWo0dWJhZl83RmJnaDd5NmxlM3lyVQ?oc=5",
+      "published_at": "2026-08-19T18:16+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "\"Adidas\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+      ],
+      "signal_id": "psg_40f57863bb95fa",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "登场",
+        "系列"
+      ],
+      "evidence": "adidas Running x SFTM 2026 秋冬系列登场 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "中华体育精神颂标准朗诵文本发布- 新体育网",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "新体育网",
+      "source_homepage": "http://www.new-sports.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5MRTVPdTd1VERHWmwyeDJMUlF6M1VwM1BSZFp5LUJ0STdLN1UybDF4eDhxc1N1M3ROcFcwc0ZTZHBnRnl6TXRHdk9jdGFWMENRbzVYUnJ2dVByWUJPN2E3bWZsblZ2RGtWbnFUYg?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5MRTVPdTd1VERHWmwyeDJMUlF6M1VwM1BSZFp5LUJ0STdLN1UybDF4eDhxc1N1M3ROcFcwc0ZTZHBnRnl6TXRHdk9jdGFWMENRbzVYUnJ2dVByWUJPN2E3bWZsblZ2RGtWbnFUYg?oc=5",
+      "published_at": "2026-08-19T17:23+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "运动品牌 新品 发布"
+      ],
+      "signal_id": "psg_718a6aee4c6f4f",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发布"
+      ],
+      "evidence": "中华体育精神颂标准朗诵文本发布- 新体育网 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "WOOLMARK×安踏冠军推出美丽诺羊毛系列新品 体操世界冠军张博恒以“本能”诠释天然高性能",
+      "brand": "安踏",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "TOM体育",
+      "source_homepage": "https://sports.tom.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5NODlBSWtZR2EzOEFGNkxrbmNmTWt0a0lNUkZRLWFJLXg3WUNyZTA1NERRZ2RrMzJvbE1aSHh1RXJoTmhJX1VCRjdUMU1pbnhUWFpkR2hnUFc?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5NODlBSWtZR2EzOEFGNkxrbmNmTWt0a0lNUkZRLWFJLXg3WUNyZTA1NERRZ2RrMzJvbE1aSHh1RXJoTmhJX1VCRjdUMU1pbnhUWFpkR2hnUFc?oc=5",
+      "published_at": "2026-08-19T16:38+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"安踏\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_40676b0ed117af",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "新品",
+        "推出",
+        "系列"
+      ],
+      "evidence": "WOOLMARK×安踏冠军推出美丽诺羊毛系列新品 体操世界冠军张博恒以“本能”诠释天然高性能 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "adidas Running x SFTM FW26联名系列",
+      "brand": "Adidas",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "Supreme情报网",
+      "source_homepage": "https://www.supreme007.com",
+      "article_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBLQ3NjZDg1RVFCcWVLNUk4bGtMVnpaNE4wdHFaYkkwRlMtakFPeGJScThYRjJOVDF3R25FeVkwQmExcHlEamNoOHJ6clN5eU50bzB3elBqanI5aFVMWjNGMU1xZWEzLVdJN0I0YUtNeWoxbkZ1clBUYw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBLQ3NjZDg1RVFCcWVLNUk4bGtMVnpaNE4wdHFaYkkwRlMtakFPeGJScThYRjJOVDF3R25FeVkwQmExcHlEamNoOHJ6clN5eU50bzB3elBqanI5aFVMWjNGMU1xZWEzLVdJN0I0YUtNeWoxbkZ1clBUYw?oc=5",
+      "published_at": "2026-08-19T15:51+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "\"Adidas\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+      ],
+      "signal_id": "psg_64160746dc0fb4",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "系列",
+        "联名"
+      ],
+      "evidence": "adidas Running x SFTM FW26联名系列 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "刘亦菲同款防晒衣在哪些渠道可以买到？",
+      "brand": "",
+      "category": "夏季功能服饰",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "新浪网",
+      "source_homepage": "https://k.sina.com.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAzc3lfS3lleEtzVkhiSjFXVDg1RW1VR09qZkpFbUlLVWtlYjFOX0FDMXhNcGdsTEZKSHd1WXE2SkdLS3FZLXo1VnN6LUF3VmRSemR5Z056Ukt3TURjZXl2R2xmRHVwa1F2R3l0T3ViaXdMUQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAzc3lfS3lleEtzVkhiSjFXVDg1RW1VR09qZkpFbUlLVWtlYjFOX0FDMXhNcGdsTEZKSHd1WXE2SkdLS3FZLXo1VnN6LUF3VmRSemR5Z056Ukt3TURjZXl2R2xmRHVwa1F2R3l0T3ViaXdMUQ?oc=5",
+      "published_at": "2026-08-19T15:41+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product",
+        "weekly_source_pool",
+        "seasonal"
+      ],
+      "discovered_by": [
+        "防晒衣 运动品牌",
+        "夏季 防晒衣 运动品牌"
+      ],
+      "product_name": "刘亦菲同款防晒衣",
+      "product_name_basis": "product_phrase_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [
+        "防晒"
+      ],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "刘亦菲同款防晒衣在哪些渠道可以买到？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "刘亦菲同款防晒衣在哪些渠道可以买到？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "price_or_release": "刘亦菲同款防晒衣在哪些渠道可以买到？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 53,
+      "product_id": "prd_b68f84b17b3c81",
+      "signal_id": "psg_8c385103870fa9",
+      "signal_type": "insufficient_product_evidence",
+      "note": "具体商品证据不足，已降级为媒体信号。"
+    },
+    {
+      "headline": "361度发布中期业绩：全域渠道革新，海外业务迎来持续增长",
+      "brand": "361°",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "中华网",
+      "source_homepage": "https://hea.china.com",
+      "article_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4wR0tXQkhfWWpIemZPeVdvSTNDSjdQQlV1Z2dFZ2NfV3I5eWswVV8tVTZhQ0d3TzFfTExSaWxpNmlyNXFQLW5tdXFMNHlkckdkVFdveHIyaU5HUGF2bV9VZDN6OXFMaTE2cXRBYw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4wR0tXQkhfWWpIemZPeVdvSTNDSjdQQlV1Z2dFZ2NfV3I5eWswVV8tVTZhQ0d3TzFfTExSaWxpNmlyNXFQLW5tdXFMNHlkckdkVFdveHIyaU5HUGF2bV9VZDN6OXFMaTE2cXRBYw?oc=5",
+      "published_at": "2026-08-19T15:32+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_business",
+        "research",
+        "brand",
+        "weekly_source_pool",
+        "product"
+      ],
+      "discovered_by": [
+        "运动品牌 财报 业绩",
+        "运动品牌 渠道 库存",
+        "运动鞋服 行业报告",
+        "\"361度\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "儿童运动鞋 新品 发布"
+      ],
+      "signal_id": "psg_bc591ab46cbc57",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发布"
+      ],
+      "evidence": "361度发布中期业绩：全域渠道革新，海外业务迎来持续增长 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "New Balance 3倍积分福利=变相10%返现！240L 运动鞋$70 3.7折起+额外9折",
+      "brand": "New Balance",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "dealmoon.ca",
+      "source_homepage": "https://www.dealmoon.ca",
+      "article_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUWpUaEZBdG9vXzhfTy13eUVXMzBFUmllMkxGbHBHMmxkOGJWVmEzUHd2TFdHZDZnd0wtOXZnSmF3SlB5aGM1TlNQcUlKVGFvaTY2MVdYVnFwYWJWTi1BU1NIVjRBTDhRUU1FTXhtRDBsMzFnMFl2S2dsc0tFeGk0eUJXa05ibEozSGkwR0JHY2RyNm9nWjRRYW5zWkh5R25xT0ZGeFFUUFgwQW8?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUWpUaEZBdG9vXzhfTy13eUVXMzBFUmllMkxGbHBHMmxkOGJWVmEzUHd2TFdHZDZnd0wtOXZnSmF3SlB5aGM1TlNQcUlKVGFvaTY2MVdYVnFwYWJWTi1BU1NIVjRBTDhRUU1FTXhtRDBsMzFnMFl2S2dsc0tFeGk0eUJXa05ibEozSGkwR0JHY2RyNm9nWjRRYW5zWkh5R25xT0ZGeFFUUFgwQW8?oc=5",
+      "published_at": "2026-08-19T15:28+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "kids",
+        "weekly_source_pool",
+        "product",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "儿童运动鞋 新品",
+        "儿童运动鞋 新品 发布",
+        "\"New Balance\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_84278765318621",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "运动鞋"
+      ],
+      "evidence": "New Balance 3倍积分福利=变相10%返现！240L 运动鞋$70 3.7折起+额外9折 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "50 周年纪念！BEAMS x HOKA 联名新鞋国区消息来了！",
+      "brand": "HOKA",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "FLIGHTCLUB中文站",
+      "source_homepage": "https://www.flightclub.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFB0c1ZTWlZJMmc0ZVdXT3JVVm5WN2NHQ2dCbEthbU0yY1g1eGZuRlJtNkJkcWFPLThZVWl0dGdtTS11WVhZMVZUWWd0d1c?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFB0c1ZTWlZJMmc0ZVdXT3JVVm5WN2NHQ2dCbEthbU0yY1g1eGZuRlJtNkJkcWFPLThZVWl0dGdtTS11WVhZMVZUWWd0d1c?oc=5",
+      "published_at": "2026-08-19T14:54+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"HOKA\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"HOKA\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_a03150c4e871ba",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "联名"
+      ],
+      "evidence": "50 周年纪念！BEAMS x HOKA 联名新鞋国区消息来了！ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "NEIGHBORHOOD 发布 2026 繁复硬朗秋冬基础单品",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "hypebeast.cn",
+      "source_homepage": "https://hypebeast.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQl9YdE0zSzhTZWlXcTRBT0w3Ync0NVRseThDZHBxVW1SXzVLSzFLbHNIaUdyT2RERGNQV25lejhOQUd0ZzZlZERNTjZMT2VxNktzOG5vMUVBYnJXTVBKWGNlWGVvZ2R3Vl83RDNmdk82UGdWcGtIX3JYWjNvWnZ3aGV1Q2ptZEJW?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQl9YdE0zSzhTZWlXcTRBT0w3Ync0NVRseThDZHBxVW1SXzVLSzFLbHNIaUdyT2RERGNQV25lejhOQUd0ZzZlZERNTjZMT2VxNktzOG5vMUVBYnJXTVBKWGNlWGVvZ2R3Vl83RDNmdk82UGdWcGtIX3JYWjNvWnZ3aGV1Q2ptZEJW?oc=5",
+      "published_at": "2026-08-19T13:54+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "",
+      "image_source": "",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"ASICS\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_1bb6b2f3056dee",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发布"
+      ],
+      "evidence": "NEIGHBORHOOD 发布 2026 繁复硬朗秋冬基础单品",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "刘亦菲同款79.8元防晒衣是哪个品牌？",
+      "brand": "",
+      "category": "夏季功能服饰",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "新浪网",
+      "source_homepage": "https://k.sina.com.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1URkZSTmdQdWRORjdoMnNsYTFDbkxERVEtZWZNM0VLZU1fSGd5ZGpURGk1Wm9Ca1dmSGgyZXNuWjVmZER3UzhDeVhKenJtS1JWZXZtNlEzTkVYeE45bXhyYkdxQ2RTbWsyZURQdHU3NGxmZw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1URkZSTmdQdWRORjdoMnNsYTFDbkxERVEtZWZNM0VLZU1fSGd5ZGpURGk1Wm9Ca1dmSGgyZXNuWjVmZER3UzhDeVhKenJtS1JWZXZtNlEzTkVYeE45bXhyYkdxQ2RTbWsyZURQdHU3NGxmZw?oc=5",
+      "published_at": "2026-08-19T13:25+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product",
+        "weekly_source_pool",
+        "seasonal"
+      ],
+      "discovered_by": [
+        "防晒衣 运动品牌",
+        "夏季 防晒衣 运动品牌"
+      ],
+      "product_name": "8元防晒衣",
+      "product_name_basis": "product_phrase_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [
+        "防晒"
+      ],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "刘亦菲同款79.8元防晒衣是哪个品牌？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "刘亦菲同款79.8元防晒衣是哪个品牌？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "price_or_release": "刘亦菲同款79.8元防晒衣是哪个品牌？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 53,
+      "product_id": "prd_6e4a9dad430436",
+      "signal_id": "psg_fd2d88b55fbd87",
+      "signal_type": "insufficient_product_evidence",
+      "note": "具体商品证据不足，已降级为媒体信号。"
+    },
+    {
+      "headline": "WOOLMARK 携手安踏冠军打造美丽诺羊毛系列",
+      "brand": "安踏",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "hypebeast.cn",
+      "source_homepage": "https://hypebeast.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9UN0N2T3NOaU9tN1dmZ21ScU1NMzZDcjh0UTEwZ1piVXhUX2gwZ2U3ZnNfb1RUeVBsME9NNGIyQ3BmRERIQmpuMHhrUnk?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9UN0N2T3NOaU9tN1dmZ21ScU1NMzZDcjh0UTEwZ1piVXhUX2gwZ2U3ZnNfb1RUeVBsME9NNGIyQ3BmRERIQmpuMHhrUnk?oc=5",
+      "published_at": "2026-08-19T13:04+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "\"安踏\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+      ],
+      "signal_id": "psg_ab81352489ce61",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "系列"
+      ],
+      "evidence": "WOOLMARK 携手安踏冠军打造美丽诺羊毛系列 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "lululemon 推出全新换季外套系列",
+      "brand": "lululemon",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "hypebeast.cn",
+      "source_homepage": "https://hypebeast.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5wd0FtTGdCQ2YxWkt1eFpjeklZSmdTRzdZTmx0djRUVmNjMlhKZEtkVGRYMUEwY1RhS2N2bkd4TEh3WEs4SDhhOUNKU3JEdnB3bVVmNFdRVDF6emEzX083TFJBUVc0UzNyRl9oZExLR0RSbFNscmc?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5wd0FtTGdCQ2YxWkt1eFpjeklZSmdTRzdZTmx0djRUVmNjMlhKZEtkVGRYMUEwY1RhS2N2bkd4TEh3WEs4SDhhOUNKU3JEdnB3bVVmNFdRVDF6emEzX083TFJBUVc0UzNyRl9oZExLR0RSbFNscmc?oc=5",
+      "published_at": "2026-08-19T11:57+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "",
+      "image_source": "",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"lululemon\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_bb8ad3f631562a",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "推出",
+        "系列"
+      ],
+      "evidence": "lululemon 推出全新换季外套系列",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "真要成为adidas下一代yeezy？多双adidas x Bad Bunny全新联名曝光",
+      "brand": "Adidas",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "搜狐网",
+      "source_homepage": "https://m.sohu.com",
+      "article_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZEFKamhTSUtpeVA1MzFrZFZMMmdEb2M2OVNqZGFEZUNnc0hkTVJpTGN2eDFLaTY1LXBnRHlqaGN4bGE0NjA5dDBuUFFvcnJEVXVmRl9kNUdPYlBrQzVPSGlhakpwcGduTWQ0M0ZqSHM2cld1bXNHZDZZd2xhNlBreThyWmFSWXlZaWxnUQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZEFKamhTSUtpeVA1MzFrZFZMMmdEb2M2OVNqZGFEZUNnc0hkTVJpTGN2eDFLaTY1LXBnRHlqaGN4bGE0NjA5dDBuUFFvcnJEVXVmRl9kNUdPYlBrQzVPSGlhakpwcGduTWQ0M0ZqSHM2cld1bXNHZDZZd2xhNlBreThyWmFSWXlZaWxnUQ?oc=5",
+      "published_at": "2026-08-19T11:47+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "\"Adidas\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+      ],
+      "signal_id": "psg_e2309aa840a31f",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "联名"
+      ],
+      "evidence": "真要成为adidas下一代yeezy？多双adidas x Bad Bunny全新联名曝光 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "Reebok 携手 Zellerfeld 发布 3D 打印 Question 96/26",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "hypebeast.cn",
+      "source_homepage": "https://hypebeast.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOODBjdkNRdmVVLWxLYWZqZS14dGtBMVN6RTJrRnU2Z0RpMGFLN1JDcE9HbEZaR1Y1clkwWmxCMEtiREU3TjZ6VDZxX3RvblRxbFNJdU1RbnQwa0JUQUlOQlppRXVrNk5WVnpEZFVOeWFMU1dTVDdDT3I5RXdWZmtCdHpxaWpnby04YkdmXzFtLTRJcmxnLS1xTElCMWFENENmcnEyTU9QZm1CZw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOODBjdkNRdmVVLWxLYWZqZS14dGtBMVN6RTJrRnU2Z0RpMGFLN1JDcE9HbEZaR1Y1clkwWmxCMEtiREU3TjZ6VDZxX3RvblRxbFNJdU1RbnQwa0JUQUlOQlppRXVrNk5WVnpEZFVOeWFMU1dTVDdDT3I5RXdWZmtCdHpxaWpnby04YkdmXzFtLTRJcmxnLS1xTElCMWFENENmcnEyTU9QZm1CZw?oc=5",
+      "published_at": "2026-08-19T11:19+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product"
+      ],
+      "discovered_by": [
+        "篮球鞋 新品 发布"
+      ],
+      "product_name": "Question 96",
+      "product_name_basis": "model_code_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "Reebok 携手 Zellerfeld 发布 3D 打印 Question 96/26 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "",
+        "price_or_release": "Reebok 携手 Zellerfeld 发布 3D 打印 Question 96/26 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 46,
+      "product_id": "prd_260de3fa201c1a",
+      "signal_id": "psg_47bf31fe8197b1",
+      "signal_type": "insufficient_product_evidence",
+      "note": "具体商品证据不足，已降级为媒体信号。"
+    },
+    {
+      "headline": "361°发布集团2026年中期业绩：上半年营收61.6亿元，同比增长8%",
+      "brand": "361°",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "手机网易网",
+      "source_homepage": "https://m.163.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5JeXpuWXhYWFd0d2lxZGhPS2lveUlqR1U2T0xtZGF6TWUtaUZLR19vRVB6bzRNLU02cWVMa0dkUzZ6UDNINDRNM211dDUwVXVfbHNEb1pqdXdiRXhpX1FhLTUxRzBNQnNoZFRzV2huU0FDb3R4QldZU0ln?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5JeXpuWXhYWFd0d2lxZGhPS2lveUlqR1U2T0xtZGF6TWUtaUZLR19vRVB6bzRNLU02cWVMa0dkUzZ6UDNINDRNM211dDUwVXVfbHNEb1pqdXdiRXhpX1FhLTUxRzBNQnNoZFRzV2huU0FDb3R4QldZU0ln?oc=5",
+      "published_at": "2026-08-19T09:09+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "\"361度\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+      ],
+      "signal_id": "psg_2bcb607b2acd41",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发布"
+      ],
+      "evidence": "361°发布集团2026年中期业绩：上半年营收61.6亿元，同比增长8% Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "巨星罗斯助阵少年逐梦！蒙牛MN Hi188新品亮相《灌篮吧！少年强》收官战",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "大河财立方",
+      "source_homepage": "https://app.dahecube.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5mblcxUVk1a05IZ1VDcjNNZWlHZ0xjR1kxUFdwZHl3QXVRZXhiOE1fZkk5bEZjV1BNU2xEVlFhQm5WTzFfbzZPYlo1Vl9Ma241NnFTcWRpaDVaV0cyR0x3VmhFcnM4WXpRV3c?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5mblcxUVk1a05IZ1VDcjNNZWlHZ0xjR1kxUFdwZHl3QXVRZXhiOE1fZkk5bEZjV1BNU2xEVlFhQm5WTzFfbzZPYlo1Vl9Ma241NnFTcWRpaDVaV0cyR0x3VmhFcnM4WXpRV3c?oc=5",
+      "published_at": "2026-08-19T08:35+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "kids",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "儿童运动 行业"
+      ],
+      "signal_id": "psg_4ad95e823fba30",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "新品",
+        "亮相"
+      ],
+      "evidence": "巨星罗斯助阵少年逐梦！蒙牛MN Hi188新品亮相《灌篮吧！少年强》收官战 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "BBIN体育游戏_产业_运动鞋服，不再是运动品牌的独市生意",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "womenofchina.com",
+      "source_homepage": "https://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5Yc1k0czdxNzVHV0NudVpDQ2VuLXFqNVNoYlgwQUlWX1llMGtibUZOSjJ2QVg0eTIzRHpTYTBOUFBLd2NXU1BodGxxQ0gxU3VUZ3JTWUZjaDZJRjlJV2NDVA?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5Yc1k0czdxNzVHV0NudVpDQ2VuLXFqNVNoYlgwQUlWX1llMGtibUZOSjJ2QVg0eTIzRHpTYTBOUFBLd2NXU1BodGxxQ0gxU3VUZ3JTWUZjaDZJRjlJV2NDVA?oc=5",
+      "published_at": "2026-08-19T08:20+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_business",
+        "consumer_macro",
+        "brand",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "运动品牌 中国市场",
+        "运动消费 趋势",
+        "\"迪桑特\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+      ],
+      "signal_id": "psg_1aa04133f28fe6",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "运动鞋"
+      ],
+      "evidence": "BBIN体育游戏_产业_运动鞋服，不再是运动品牌的独市生意 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "必发软件中红色代表什么_NBA_拉梅洛·鲍尔第六代签名鞋MB.06亮相首发配色将于近日小面积发售",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "womenofchina.com",
+      "source_homepage": "https://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1XUm9BS2pBRm1vWjJiOW5ubmw1RnB5RHVrcG5ZMFQxYVBzeVR2VjVTS0ljWE5IZDZJZ18tcUpFUXJvVk9HdTlBVFJIVWNQM25DcWs2ckJheDAzazhJ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1XUm9BS2pBRm1vWjJiOW5ubmw1RnB5RHVrcG5ZMFQxYVBzeVR2VjVTS0ljWE5IZDZJZ18tcUpFUXJvVk9HdTlBVFJIVWNQM25DcWs2ckJheDAzazhJ?oc=5",
+      "published_at": "2026-08-19T04:02+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"Puma\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_a6c07de5d6aab9",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "首发",
+        "发售",
+        "亮相",
+        "配色"
+      ],
+      "evidence": "必发软件中红色代表什么_NBA_拉梅洛·鲍尔第六代签名鞋MB.06亮相首发配色将于近日小面积发售 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "明年夏天发售！球鞋媒体晒好运线上投注参与设计的最后一款个人签名鞋",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "womenofchina.com",
+      "source_homepage": "https://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5CNDdqWjA4ZWVHMG1aSGxMLWtBQU5vdnczV3pwWmFVelBjdG1ITko5Y2JUYXVsdHlnaW5QR2FGNHkyRGpkSzBKVTR5Yks2QUdPaFlFZEl6ak51UVg4SUE?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5CNDdqWjA4ZWVHMG1aSGxMLWtBQU5vdnczV3pwWmFVelBjdG1ITko5Y2JUYXVsdHlnaW5QR2FGNHkyRGpkSzBKVTR5Yks2QUdPaFlFZEl6ak51UVg4SUE?oc=5",
+      "published_at": "2026-08-19T02:52+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"Nike\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_319026b7cbe7b8",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发售"
+      ],
+      "evidence": "明年夏天发售！球鞋媒体晒好运线上投注参与设计的最后一款个人签名鞋 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "Pharrell Williams 携手 adidas 推出全新“Tan”配色 VIRGINIA Adistar Jellyfish",
+      "brand": "Adidas",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "Hypebae",
+      "source_homepage": "https://hypebae.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPb3VKQzhOLVVHeHUwQ0JqWjZBT0c0UDFVVlpKemFHdVo1RXlrdjE4ekczUUw4aU40eWdxZ1NuYVU1NzU4OUlIRUROVXdhUWItenBOblZ0c1VpVTU5dG5xb1gtNjlNU1NSTVktNW1Da1BTc0J5YTQ2cEFnYTFXQ0JVTEZ3SnpJcHZHVTljUHNqaXMzU05RZDg2eUlGTmg3QlJteVk2eXhIVkRieW5wRXpZMGl3LVp0LTdOeloydFhJWlQtQ25lam03cQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPb3VKQzhOLVVHeHUwQ0JqWjZBT0c0UDFVVlpKemFHdVo1RXlrdjE4ekczUUw4aU40eWdxZ1NuYVU1NzU4OUlIRUROVXdhUWItenBOblZ0c1VpVTU5dG5xb1gtNjlNU1NSTVktNW1Da1BTc0J5YTQ2cEFnYTFXQ0JVTEZ3SnpJcHZHVTljUHNqaXMzU05RZDg2eUlGTmg3QlJteVk2eXhIVkRieW5wRXpZMGl3LVp0LTdOeloydFhJWlQtQ25lam03cQ?oc=5",
+      "published_at": "2026-08-19T01:51+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "\"Adidas\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+      ],
+      "signal_id": "psg_87837621dbbb35",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "推出",
+        "配色"
+      ],
+      "evidence": "Pharrell Williams 携手 adidas 推出全新“Tan”配色 VIRGINIA Adistar Jellyfish Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "一条裤子1150元、开售秒空 Alo入华背后的“中产消费K型分化”",
+      "brand": "Alo Yoga",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "新浪网",
+      "source_homepage": "https://finance.sina.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQd1RGNF9DLTBJWTVTUEZyLVJyYVI3Vmh4Znd0Rm1xSWtwWGEzV2pmTVIzUUY5ekwxbDVQRGRCU2R0Qmw4Wjktd3VzdFdCOW1vTzBGUjU4amk1c1ZYRUw2YUl6c2hCbDEydVZMcGpHcl9Ja1FfT29nUUotOEhoUkowV3p1TGZUQzZqZi1VMkNPMUxYYl9iU19wLTZnRTVfOXdpX3dBSHBKclNJZ0FORmZsVk9DWVByZGJ2ZlpWU0FnQ0RlOG96a3VicmJ5QW1LdVhOdGZpQVJqQ2l2UWY5blFGbTlIbnE1WWdkZUZVc3VLZTlVQk1nbFNLNE1OajgtRHlhX2hsRXN2S1BYcmRrb0ZGczlvN2s3aE0?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQd1RGNF9DLTBJWTVTUEZyLVJyYVI3Vmh4Znd0Rm1xSWtwWGEzV2pmTVIzUUY5ekwxbDVQRGRCU2R0Qmw4Wjktd3VzdFdCOW1vTzBGUjU4amk1c1ZYRUw2YUl6c2hCbDEydVZMcGpHcl9Ja1FfT29nUUotOEhoUkowV3p1TGZUQzZqZi1VMkNPMUxYYl9iU19wLTZnRTVfOXdpX3dBSHBKclNJZ0FORmZsVk9DWVByZGJ2ZlpWU0FnQ0RlOG96a3VicmJ5QW1LdVhOdGZpQVJqQ2l2UWY5blFGbTlIbnE1WWdkZUZVc3VLZTlVQk1nbFNLNE1OajgtRHlhX2hsRXN2S1BYcmRrb0ZGczlvN2s3aE0?oc=5",
+      "published_at": "2026-08-19T00:24+08:00",
+      "published_date": "2026-08-19",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_business",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "运动品牌 门店 旗舰店"
+      ],
+      "signal_id": "psg_c1818a98a42781",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "开售"
+      ],
+      "evidence": "一条裤子1150元、开售秒空 Alo入华背后的“中产消费K型分化” Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "防晒衣十款十大榜单梳理，男女款参考，哪个牌子防晒效果最好",
+      "brand": "",
+      "category": "夏季功能服饰",
+      "audience": "女性",
+      "scenarios": [],
+      "source": "搜狐网",
+      "source_homepage": "https://m.sohu.com",
+      "article_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNlk4cXpIRDY5eDZBLUJ0ZVRSUXV3UEFVZWtQM0h6WmlxTnRuMnEzby1WbEx2VXdLY21TRVI3ODROUURsR1pJaGRwZnFobzJ2U3hQRHc3U2JNSHBJUkp6TWd6SWx6Qm5QZWoxT2Z3V2E3V2RHZDRQaVZ5SWRBT05lSDVLWlpINlNjZ1JQQw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNlk4cXpIRDY5eDZBLUJ0ZVRSUXV3UEFVZWtQM0h6WmlxTnRuMnEzby1WbEx2VXdLY21TRVI3ODROUURsR1pJaGRwZnFobzJ2U3hQRHc3U2JNSHBJUkp6TWd6SWx6Qm5QZWoxT2Z3V2E3V2RHZDRQaVZ5SWRBT05lSDVLWlpINlNjZ1JQQw?oc=5",
+      "published_at": "2026-08-18T21:12+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "",
+      "image_source": "",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "seasonal"
+      ],
+      "discovered_by": [
+        "夏季 防晒衣 运动品牌"
+      ],
+      "signal_id": "psg_3bb87bc78922e7",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "防晒衣",
+        "防晒"
+      ],
+      "evidence": "防晒衣十款十大榜单梳理，男女款参考，哪个牌子防晒效果最好",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "登顶速度之巅奔赴舒适之境开拓竞速与缓震的全新版图特步全场景跑步新品发布会倒计时3天迈入双旗舰时代8月21日 #RUNTOX跑出无限可能# http://t.cn/AXpPCJyr",
+      "brand": "特步",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [
+        "跑步"
+      ],
+      "source": "新浪网",
+      "source_homepage": "https://www.sina.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1hOFhNSHV0NlpQbHh3dUtqM01nZlpndW1FRzVOeXZHQ2h3ZFhWNXJUN2QzTHBrdm9fLU9Mczc5YmExSjdzSVBFTmZvVVZ6QklWcGVMVlhVdGR0alQxRGF3MDZ3SQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1hOFhNSHV0NlpQbHh3dUtqM01nZlpndW1FRzVOeXZHQ2h3ZFhWNXJUN2QzTHBrdm9fLU9Mczc5YmExSjdzSVBFTmZvVVZ6QklWcGVMVlhVdGR0alQxRGF3MDZ3SQ?oc=5",
+      "published_at": "2026-08-18T19:51+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"特步\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"特步\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_ac1a171c5326cc",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "新品",
+        "发布",
+        "缓震"
+      ],
+      "evidence": "登顶速度之巅奔赴舒适之境开拓竞速与缓震的全新版图特步全场景跑步新品发布会倒计时3天迈入双旗舰时代8月21日 #RUNTOX跑出无限可能# http://t.cn/AXpPCJyr Google News Comprehensive up-to-date news coverage, aggregated from sources all over the w",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "诺特兰德联名JOYMARK落地全国百家门店 深耕儿童“泛运动营养”场景",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "儿童/青少年",
+      "scenarios": [
+        "校园运动"
+      ],
+      "source": "搜狐网",
+      "source_homepage": "https://m.sohu.com",
+      "article_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQWnZWLUxHSV9vd1VNNkNQU0FkbElYME1ISG83eElNV3NFb3NNTjY2d0dCTk40bUJmQWJmeEJTTGd0RWs1UlNqcnNhQU5Id1N3SFRZeXkyNVVlRllpQ0RVOG9OcEVva3lSVWdXUUR0S1RWOUt4aXQyVUlqWkFFU1M2Tm5LUlR1aFl0eEhsTA?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQWnZWLUxHSV9vd1VNNkNQU0FkbElYME1ISG83eElNV3NFb3NNTjY2d0dCTk40bUJmQWJmeEJTTGd0RWs1UlNqcnNhQU5Id1N3SFRZeXkyNVVlRllpQ0RVOG9OcEVva3lSVWdXUUR0S1RWOUt4aXQyVUlqWkFFU1M2Tm5LUlR1aFl0eEhsTA?oc=5",
+      "published_at": "2026-08-18T18:55+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "kids",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "儿童运动 行业"
+      ],
+      "signal_id": "psg_fc9423b4dbe7c7",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "联名"
+      ],
+      "evidence": "诺特兰德联名JOYMARK落地全国百家门店 深耕儿童“泛运动营养”场景 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "Justin Bieber 发布 SKYLRK Sensory Runner 全新「Black/White」配色",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "hypebeast.cn",
+      "source_homepage": "https://hypebeast.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTWpGaW42MjFCdzNud05vZHBOYjlCTUJFNjJ2blI0MEVmaElzanNHQ1BuZkFwWDFZQUlYXzlDRW9OMGU1RHVMdzdHUVNjQVUtY2NqM1ljWks3VWRzQjBiQlhid1VxdVFQbXBFTTZrclNzc21ONDlGZElnSm1NQUgyWjJ5bnJfOWFBZGQ4QkwzNXVXN0otQzBTa1lneWdwVi1TRWNVQTBR?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTWpGaW42MjFCdzNud05vZHBOYjlCTUJFNjJ2blI0MEVmaElzanNHQ1BuZkFwWDFZQUlYXzlDRW9OMGU1RHVMdzdHUVNjQVUtY2NqM1ljWks3VWRzQjBiQlhid1VxdVFQbXBFTTZrclNzc21ONDlGZElnSm1NQUgyWjJ5bnJfOWFBZGQ4QkwzNXVXN0otQzBTa1lneWdwVi1TRWNVQTBR?oc=5",
+      "published_at": "2026-08-18T18:25+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product"
+      ],
+      "discovered_by": [
+        "篮球鞋 新品 发布"
+      ],
+      "signal_id": "psg_c02179cf41ff73",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发布",
+        "配色"
+      ],
+      "evidence": "Justin Bieber 发布 SKYLRK Sensory Runner 全新「Black/White」配色 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "adidas Originals x Jennie系列预告片曝光！芭蕾运动风成新潮流",
+      "brand": "Adidas",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "香港01",
+      "source_homepage": "https://global.hk01.com",
+      "article_url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxQYnRCdVg1RmtLemRmM2VuMHEwZ2QtRUx0dkxkWkh0XzNaT0dsbUpLeFNHbkR1MXB1dWxRcmlhNW5JbmplQjBoZC12SlJyaGZ2bVRYUXZGdW9WekhCZThVZjJlMHhKTlZHQU5vQ1hRQWxtU21acUpBU1E3OG5CWjB6dUV0OTZodGYwWEtkYmJOcjBzWVlLaFIxb25maFRub2dyMlVuanlsVlVjRUN4aHdrb0dhdkRSeUw4aDAycjVhcUdndkJKS3p1cThEc3BPNGlJSFRNOHlUa0pSck5CY0xaRi1LN1lKNzVFaG9EU2pfQ0ZOb0VSeFl0bWpteXd3U056TnRCYXYtczh0UndGVC1QeE1SYWhHSmJkeVRQQ3cxMWllN1NZakhEOU5WSlFDdU9Ea2g3NlRoaUxQYTA0bFIzcEZ4R3g2WVl5LWdEMXVrdE5mZ1MwQnpUZkN5d2U?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxQYnRCdVg1RmtLemRmM2VuMHEwZ2QtRUx0dkxkWkh0XzNaT0dsbUpLeFNHbkR1MXB1dWxRcmlhNW5JbmplQjBoZC12SlJyaGZ2bVRYUXZGdW9WekhCZThVZjJlMHhKTlZHQU5vQ1hRQWxtU21acUpBU1E3OG5CWjB6dUV0OTZodGYwWEtkYmJOcjBzWVlLaFIxb25maFRub2dyMlVuanlsVlVjRUN4aHdrb0dhdkRSeUw4aDAycjVhcUdndkJKS3p1cThEc3BPNGlJSFRNOHlUa0pSck5CY0xaRi1LN1lKNzVFaG9EU2pfQ0ZOb0VSeFl0bWpteXd3U056TnRCYXYtczh0UndGVC1QeE1SYWhHSmJkeVRQQ3cxMWllN1NZakhEOU5WSlFDdU9Ea2g3NlRoaUxQYTA0bFIzcEZ4R3g2WVl5LWdEMXVrdE5mZ1MwQnpUZkN5d2U?oc=5",
+      "published_at": "2026-08-18T17:30+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "\"Adidas\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+      ],
+      "signal_id": "psg_084021c706ec94",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "系列"
+      ],
+      "evidence": "adidas Originals x Jennie系列预告片曝光！芭蕾运动风成新潮流 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "金融携手体育共燃申城活力 交通银行推出申花系列金融产品， 解锁体育消费新体验2026-08-18",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "上海市人民政府",
+      "source_homepage": "https://www.shanghai.gov.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMUFybFQ1T0NPdk05dGdFLUx3dmp1aVZOdDRoNF9YeU05bHg4Q3lVYkpVamNhS0F6b3VFcnV1eXRYeW9XRHpueG1PdkRQZnFpekE0NndkcVNKRGRDb0t3TnBZZHRpbGxoQk9VQmNuX3BCa3FoQWpIOVVidlNTbmJwN3FQOG5wTUtjM0E?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMUFybFQ1T0NPdk05dGdFLUx3dmp1aVZOdDRoNF9YeU05bHg4Q3lVYkpVamNhS0F6b3VFcnV1eXRYeW9XRHpueG1PdkRQZnFpekE0NndkcVNKRGRDb0t3TnBZZHRpbGxoQk9VQmNuX3BCa3FoQWpIOVVidlNTbmJwN3FQOG5wTUtjM0E?oc=5",
+      "published_at": "2026-08-18T16:53+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "consumer_macro",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "健康消费 体育产业"
+      ],
+      "signal_id": "psg_9d78ccadf1ab7f",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "推出",
+        "系列"
+      ],
+      "evidence": "金融携手体育共燃申城活力 交通银行推出申花系列金融产品， 解锁体育消费新体验2026-08-18 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "adidas Originals 與 Pharrell Williams 推出 VIRGINIA Adistar Jellyfish 最新「Tan」配色",
+      "brand": "Adidas",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "hypebeast.cn",
+      "source_homepage": "https://hypebeast.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVXVYVkJkajRPeXVoNXFWYVJNRmQxbkNnd1pLYmxJQkgyWDhxSTFNV3FROGJpbmRsOHlTbTRBZDNHQkJfclotc3dKbE1lMDliYl9mU0pfbW5qemctaUI3RUtUNGJBdW1lNFJEQkV4SGYzRUtfelEtZEt6cWd3cHU4ZEZnMFdBaU5INV9SLUV1YnBPTWZhaVY2cWhoVDJKMFBWNDNwcTVPNA?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVXVYVkJkajRPeXVoNXFWYVJNRmQxbkNnd1pLYmxJQkgyWDhxSTFNV3FROGJpbmRsOHlTbTRBZDNHQkJfclotc3dKbE1lMDliYl9mU0pfbW5qemctaUI3RUtUNGJBdW1lNFJEQkV4SGYzRUtfelEtZEt6cWd3cHU4ZEZnMFdBaU5INV9SLUV1YnBPTWZhaVY2cWhoVDJKMFBWNDNwcTVPNA?oc=5",
+      "published_at": "2026-08-18T14:24+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"Adidas\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"Adidas\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_9a99df5a6c4c58",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "推出",
+        "配色"
+      ],
+      "evidence": "adidas Originals 與 Pharrell Williams 推出 VIRGINIA Adistar Jellyfish 最新「Tan」配色 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Googl",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "阿迪达斯三叶草携手Jennie推出首个共创系列",
+      "brand": "Adidas",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "cn.concall.com",
+      "source_homepage": "https://cn.concall.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5UVDV4SzNtWHoteU9wMnFXQ2dCaWgtcTBERU9mdFl3eTdFWTg4eU1BTE1RbVE2ZnY3NVl4dGNXeXNGTmlxM1lMWFRmRWFWZ0tGaUl6VTR0WEUzUXBRM3pYeUMyVQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5UVDV4SzNtWHoteU9wMnFXQ2dCaWgtcTBERU9mdFl3eTdFWTg4eU1BTE1RbVE2ZnY3NVl4dGNXeXNGTmlxM1lMWFRmRWFWZ0tGaUl6VTR0WEUzUXBRM3pYeUMyVQ?oc=5",
+      "published_at": "2026-08-18T14:15+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"Adidas\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_7e75c9914e3e4b",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "推出",
+        "系列"
+      ],
+      "evidence": "阿迪达斯三叶草携手Jennie推出首个共创系列 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "Supreme x Nike新鞋官宣，一双AF1新配色还有一款新设计！",
+      "brand": "Nike",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "搜狐网",
+      "source_homepage": "https://m.sohu.com",
+      "article_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZnVBZFpIcFBET2syMS0wOHpQUzRQTmViUWR2N2lzc1V3V09GbzUycGtkT2k1WWNGajc1cnpzbkhadFlqcUFzal83clpRVmVkVDNtVUc3cVpiNUJJMng0bkFMak1sNXZmZDEzeGowT3lQUEl0SFNMc291b3VscTlZc290d2pDU2F4Y3lTaw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZnVBZFpIcFBET2syMS0wOHpQUzRQTmViUWR2N2lzc1V3V09GbzUycGtkT2k1WWNGajc1cnpzbkhadFlqcUFzal83clpRVmVkVDNtVUc3cVpiNUJJMng0bkFMak1sNXZmZDEzeGowT3lQUEl0SFNMc291b3VscTlZc290d2pDU2F4Y3lTaw?oc=5",
+      "published_at": "2026-08-18T11:47+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"Nike\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"Nike\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_87a1225283f6a7",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "配色"
+      ],
+      "evidence": "Supreme x Nike新鞋官宣，一双AF1新配色还有一款新设计！ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "快手优选开学季正式开到手启，八大品牌联名好物焕新开学装备_行业新闻",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [
+        "校园运动"
+      ],
+      "source": "证券之星",
+      "source_homepage": "https://finance.stockstar.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1Ca21RLVg4NWhDZHhtWEpFMlE1bC1CT3VFYmtPSkdiU1k2bHRPM0JiOGtkcU1vVFhFUml2MFozaFJpb1A0dTZmY1FjZDNCTTEyR0xjemtNVlVTN3Nub1dfNUNQRXo?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1Ca21RLVg4NWhDZHhtWEpFMlE1bC1CT3VFYmtPSkdiU1k2bHRPM0JiOGtkcU1vVFhFUml2MFozaFJpb1A0dTZmY1FjZDNCTTEyR0xjemtNVlVTN3Nub1dfNUNQRXo?oc=5",
+      "published_at": "2026-08-18T11:30+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "seasonal",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "开学季 青少年运动",
+        "\"安踏\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_f7630d536d5e8a",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "联名"
+      ],
+      "evidence": "快手优选开学季正式开到手启，八大品牌联名好物焕新开学装备_行业新闻 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "三诺 ×Keep｜跨界联名，活力上新！三诺铁三角，为运动而生！",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "中华网",
+      "source_homepage": "https://mtz.china.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9kTFdtQWVKN2xCTkZkNFY4Q0VpSkFpTjBoanJ0M21NN21JZTVtb3AwcG1RRDltWmtXX2dCb1VEMGlPRVRuaE1mbGVRZTVZc09kejlibjRyNVFPR0JTRHc?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9kTFdtQWVKN2xCTkZkNFY4Q0VpSkFpTjBoanJ0M21NN21JZTVtb3AwcG1RRDltWmtXX2dCb1VEMGlPRVRuaE1mbGVRZTVZc09kejlibjRyNVFPR0JTRHc?oc=5",
+      "published_at": "2026-08-18T09:38+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "运动品牌 新品 发布"
+      ],
+      "signal_id": "psg_fc406c8ea87517",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "上新",
+        "联名"
+      ],
+      "evidence": "三诺 ×Keep｜跨界联名，活力上新！三诺铁三角，为运动而生！ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "五省区107名青少年银川竞速 全国越野滑轮系列赛圆满收官",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "儿童/青少年",
+      "scenarios": [
+        "跑步",
+        "校园运动",
+        "越野跑"
+      ],
+      "source": "nx.cnr.cn",
+      "source_homepage": "https://nx.cnr.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1hdFgxcHM3ek9lTVo0d1VyU0ZiX2x5Y0V2cDA2bUxlM3NkYnZiakRDZnVncEZNV2dfa21mLTFFb1BOSXZXNC00N3JtZlRrVTJ2cXIxdU5McGM2Z1V4enhGZFByLWM5Zndr?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1hdFgxcHM3ek9lTVo0d1VyU0ZiX2x5Y0V2cDA2bUxlM3NkYnZiakRDZnVncEZNV2dfa21mLTFFb1BOSXZXNC00N3JtZlRrVTJ2cXIxdU5McGM2Z1V4enhGZFByLWM5Zndr?oc=5",
+      "published_at": "2026-08-18T09:36+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "kids",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "青少年运动 消费"
+      ],
+      "signal_id": "psg_90baf7ca6aecdb",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "系列"
+      ],
+      "evidence": "五省区107名青少年银川竞速 全国越野滑轮系列赛圆满收官 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "ECHT Nova Trek 系列：实现你的 Gorpcore 户外机能风幻想",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [
+        "户外徒步"
+      ],
+      "source": "Hypebae",
+      "source_homepage": "https://hypebae.com",
+      "article_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUklJbWRScS1CWEE2MVo1eDhEbTBFbWpac3hENHp3RGNWYTNGSjhrcTFvUFZiQlpGNWEtbUV4NU9kRG1TU1lMdjFCZ1Z4dTNSWU5rbThodDRhaWd6WXRmTUNDTmxzb0txRmRvbmZIbkpxRDZJUndaV0hsTUhMaVRyVlRnbkZxVktoTWFuNGtBdy00ZWwwV2U0T25vX1JPLW9MRFpLQ1R1Tm1sRXp5RnZJaVJmeHBsZTFOTVd2a2JB?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUklJbWRScS1CWEE2MVo1eDhEbTBFbWpac3hENHp3RGNWYTNGSjhrcTFvUFZiQlpGNWEtbUV4NU9kRG1TU1lMdjFCZ1Z4dTNSWU5rbThodDRhaWd6WXRmTUNDTmxzb0txRmRvbmZIbkpxRDZJUndaV0hsTUhMaVRyVlRnbkZxVktoTWFuNGtBdy00ZWwwV2U0T25vX1JPLW9MRFpLQ1R1Tm1sRXp5RnZJaVJmeHBsZTFOTVd2a2JB?oc=5",
+      "published_at": "2026-08-18T05:22+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "",
+      "image_source": "",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"The North Face\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_9b6d7a93728a0f",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "系列"
+      ],
+      "evidence": "ECHT Nova Trek 系列：实现你的 Gorpcore 户外机能风幻想",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "adidas联手JENNIE预告全新联名系列",
+      "brand": "Adidas",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "Hypebae",
+      "source_homepage": "https://hypebae.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdDlYLWk5ZFozdXlOMG8yVUxhU0Z5SlZWTUFxN1g2TnQtZTBrQmZlM0RPamI1ZnpOQ2ZiZHRMeV84aFM1VTlHbDQ4eG44NFRBZlFrLUhsZThzLU5TdDlXQ1Ixdi0xT3Vvb25uanpWM3didDlZblp3b3VkQ2VjZTBDUV9zMktUUG03ampuNm5saWhMYkNkUXB1OXNsRU5oa0FCZEVtOW5xQy1Ldw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdDlYLWk5ZFozdXlOMG8yVUxhU0Z5SlZWTUFxN1g2TnQtZTBrQmZlM0RPamI1ZnpOQ2ZiZHRMeV84aFM1VTlHbDQ4eG44NFRBZlFrLUhsZThzLU5TdDlXQ1Ixdi0xT3Vvb25uanpWM3didDlZblp3b3VkQ2VjZTBDUV9zMktUUG03ampuNm5saWhMYkNkUXB1OXNsRU5oa0FCZEVtOW5xQy1Ldw?oc=5",
+      "published_at": "2026-08-18T04:06+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"Adidas\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"Adidas\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_9cdce845c12579",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "系列",
+        "联名"
+      ],
+      "evidence": "adidas联手JENNIE预告全新联名系列 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "消费升级与怀旧经济双重驱动，天梭·体育app网页登录入口市场升温，全国现存相关企业超1800家",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "womenofchina.com",
+      "source_homepage": "http://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9FcWRFdDdrTFk2aWZJdC1PMDBGZjE2cGx2cTF6YVhvLTZIdklYazJBMndCR1FnQ0I2LUtyMWhXUE9SMkprQkF1LVYtajJlNG5zM1ZRbXhscWlnTzh1Qk02Z1gzVWtqZzA?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9FcWRFdDdrTFk2aWZJdC1PMDBGZjE2cGx2cTF6YVhvLTZIdklYazJBMndCR1FnQ0I2LUtyMWhXUE9SMkprQkF1LVYtajJlNG5zM1ZRbXhscWlnTzh1Qk02Z1gzVWtqZzA?oc=5",
+      "published_at": "2026-08-18T00:59+08:00",
+      "published_date": "2026-08-18",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "channel",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "抖音电商 运动品牌",
+        "小红书 运动消费"
+      ],
+      "signal_id": "psg_9899401ec2fbd9",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "升级"
+      ],
+      "evidence": "消费升级与怀旧经济双重驱动，天梭·体育app网页登录入口市场升温，全国现存相关企业超1800家 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "Lacoste 推出全新 Slam Break 运动鞋，演绎网球风潮",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "Hypebae",
+      "source_homepage": "https://hypebae.com",
+      "article_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPR3NUR2x4Q0dkb3o1VHp3WnJVd1hrSzgwRk41bzRsRGM0eTZSbm9PY3NDaDlYeE0wMHdJN1ljOWpRVy1oUUFDX3RfVWNCUUhpdUEtYUQ1WXdzdEY0Yl9PaFpNS3RvdEVJcm9ycHRMUVhSMXpKbDhVMnZobFBqZ1R2U0lOcHBOVm1mTXF0RUJybS02QmQxZnlqWQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPR3NUR2x4Q0dkb3o1VHp3WnJVd1hrSzgwRk41bzRsRGM0eTZSbm9PY3NDaDlYeE0wMHdJN1ljOWpRVy1oUUFDX3RfVWNCUUhpdUEtYUQ1WXdzdEY0Yl9PaFpNS3RvdEVJcm9ycHRMUVhSMXpKbDhVMnZobFBqZ1R2U0lOcHBOVm1mTXF0RUJybS02QmQxZnlqWQ?oc=5",
+      "published_at": "2026-08-17T23:42+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"New Balance\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_f111a1bff52fff",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "运动鞋",
+        "推出"
+      ],
+      "evidence": "Lacoste 推出全新 Slam Break 运动鞋，演绎网球风潮 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "HUNTER与Beibei Cat发布联名潮玩，珑骧新系列诠释法式日常优雅｜是日美好事物",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [
+        "城市通勤"
+      ],
+      "source": "Jiemian.com",
+      "source_homepage": "https://www.jiemian.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1taUtnR0J4Q3Y4V0NWMGhJYklidWlfdTQ0RndKVENrYjlFRFRrd2dRWXN2bzgzVjhZZjZ5LXRTZjNCSkhZdGJlSHRQMVNKTVRBeE9seFA2eHU?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1taUtnR0J4Q3Y4V0NWMGhJYklidWlfdTQ0RndKVENrYjlFRFRrd2dRWXN2bzgzVjhZZjZ5LXRTZjNCSkhZdGJlSHRQMVNKTVRBeE9seFA2eHU?oc=5",
+      "published_at": "2026-08-17T20:02+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "trusted_media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"迪桑特\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"迪桑特\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_29fe8f969515c6",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发布",
+        "系列",
+        "联名"
+      ],
+      "evidence": "HUNTER与Beibei Cat发布联名潮玩，珑骧新系列诠释法式日常优雅｜是日美好事物 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "JENNIE 与 adidas Originals 预告首个联名创作系列",
+      "brand": "Adidas",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "hypebeast.cn",
+      "source_homepage": "https://hypebeast.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9lVVZ4MUJfT3NqVnZmb1gwcWQ1T3ktZTRoLThoY24yRkZ6aU92a0VjdThEbXJiYlhrVzBQbjJoSXk2akZVNjBLNF9YYVNlcUlEVkZESlMwWTVJcE83dHYyUXlZT3hqVG9NQlNPSUhtQkZaZHFwdDBmcDNWZw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9lVVZ4MUJfT3NqVnZmb1gwcWQ1T3ktZTRoLThoY24yRkZ6aU92a0VjdThEbXJiYlhrVzBQbjJoSXk2akZVNjBLNF9YYVNlcUlEVkZESlMwWTVJcE83dHYyUXlZT3hqVG9NQlNPSUhtQkZaZHFwdDBmcDNWZw?oc=5",
+      "published_at": "2026-08-17T19:58+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"Adidas\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"Adidas\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_b02674ca4f83f9",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "系列",
+        "联名"
+      ],
+      "evidence": "JENNIE 与 adidas Originals 预告首个联名创作系列 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "李宁利刃7 篮球鞋“我该被看见”主题推广|利刃7|李宁_新浪新闻",
+      "brand": "李宁",
+      "category": "篮球鞋",
+      "audience": "成人/通用",
+      "scenarios": [
+        "篮球"
+      ],
+      "source": "新浪网",
+      "source_homepage": "https://www.sina.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBFa0xzNFVjZm1LcXlkbXpibjZ3blpHRDBXTEhIVWV6dmZtUDhlSEJCbTQ2a3hQbHJ3cHhpS09aU0dQXzFnMy0zSzZmOFo1RVg2Mk16RDl1c2F0cnlWdXE0TXdCQQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBFa0xzNFVjZm1LcXlkbXpibjZ3blpHRDBXTEhIVWV6dmZtUDhlSEJCbTQ2a3hQbHJ3cHhpS09aU0dQXzFnMy0zSzZmOFo1RVg2Mk16RDl1c2F0cnlWdXE0TXdCQQ?oc=5",
+      "published_at": "2026-08-17T19:05+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"李宁\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_11d66c378eb52b",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "篮球鞋"
+      ],
+      "evidence": "李宁利刃7 篮球鞋“我该被看见”主题推广|利刃7|李宁_新浪新闻 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "李宁利刃7正式发布，一代神鞋再升级",
+      "brand": "李宁",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "新浪网",
+      "source_homepage": "https://k.sina.com.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQR2ZEWVhTcVFOU0RKMUxUcTVCcXlleGtfbnpqa05QZU1fV1N3WW1nWFRBLTZEeG1rUnBqS3dvVjJXYWliZXBGblFzSWpzVGRRM0dyWS1laktQX0ZWbWVFSC1qcVVJSGowd1l0c2VYVmxocVpVUkNDcWNKM3RWTllvRm9B?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQR2ZEWVhTcVFOU0RKMUxUcTVCcXlleGtfbnpqa05QZU1fV1N3WW1nWFRBLTZEeG1rUnBqS3dvVjJXYWliZXBGblFzSWpzVGRRM0dyWS1laktQX0ZWbWVFSC1qcVVJSGowd1l0c2VYVmxocVpVUkNDcWNKM3RWTllvRm9B?oc=5",
+      "published_at": "2026-08-17T18:40+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"李宁\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_13aca9dbd2ffd7",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发布",
+        "升级"
+      ],
+      "evidence": "李宁利刃7正式发布，一代神鞋再升级 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "FILA 与 Mugler 联名鞋款「FILA 羊皮卷」发售_新浪新闻",
+      "brand": "FILA",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "新浪网",
+      "source_homepage": "https://www.sina.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFByNUpVTjBNTTA4QjljRUI0RU1HbHF4Uk53aUc0U0paMENtVm5oQzk3Qzc5Um41Umh0MlFxVXZSTi1LRnRDUnNERllWWTZfZWJTanVlVWFrRjE0eE9sZkx2MHIxcw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFByNUpVTjBNTTA4QjljRUI0RU1HbHF4Uk53aUc0U0paMENtVm5oQzk3Qzc5Um41Umh0MlFxVXZSTi1LRnRDUnNERllWWTZfZWJTanVlVWFrRjE0eE9sZkx2MHIxcw?oc=5",
+      "published_at": "2026-08-17T17:58+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "\"FILA\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+      ],
+      "signal_id": "psg_032ca035d79865",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发售",
+        "联名"
+      ],
+      "evidence": "FILA 与 Mugler 联名鞋款「FILA 羊皮卷」发售_新浪新闻 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "李宁利刃7 篮球鞋线下发布活动|利刃7|对抗赛|防侧翻|推进反馈_新浪新闻",
+      "brand": "李宁",
+      "category": "篮球鞋",
+      "audience": "成人/通用",
+      "scenarios": [
+        "篮球"
+      ],
+      "source": "新浪网",
+      "source_homepage": "https://www.sina.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9lNHI4X3B2YzBEV25VVUFlQXF2LW1mNzZocmRNN0V3d1ZJckpseGRvUlpIazBGcmFBSjBKWkR0SkdqTFNrcHlQTl9ZZFVLSFVlVWZlbDdCblo4bVhVZWF2OUM5Yw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9lNHI4X3B2YzBEV25VVUFlQXF2LW1mNzZocmRNN0V3d1ZJckpseGRvUlpIazBGcmFBSjBKWkR0SkdqTFNrcHlQTl9ZZFVLSFVlVWZlbDdCblo4bVhVZWF2OUM5Yw?oc=5",
+      "published_at": "2026-08-17T17:35+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product"
+      ],
+      "discovered_by": [
+        "篮球鞋 新品 发布"
+      ],
+      "signal_id": "psg_11cd5acd533e44",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "篮球鞋",
+        "发布"
+      ],
+      "evidence": "李宁利刃7 篮球鞋线下发布活动|利刃7|对抗赛|防侧翻|推进反馈_新浪新闻 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "刘亦菲穿的79.8元防晒衣是哪个品牌？",
+      "brand": "",
+      "category": "夏季功能服饰",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "新浪网",
+      "source_homepage": "https://k.sina.com.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBPelc3TGtQUENEUjJpbmZNbGljRmg1R0RmcXI5SE1lRzdHekZpb293bGRYWHNoMWgyVGs1c0JzNVo3S0ZKZGFmLXNkOVBFUzd5bjlKSno1RGJJVDBIcGVaNnlqZHh5SlduVXY4LXRlbnM1QQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBPelc3TGtQUENEUjJpbmZNbGljRmg1R0RmcXI5SE1lRzdHekZpb293bGRYWHNoMWgyVGs1c0JzNVo3S0ZKZGFmLXNkOVBFUzd5bjlKSno1RGJJVDBIcGVaNnlqZHh5SlduVXY4LXRlbnM1QQ?oc=5",
+      "published_at": "2026-08-17T15:00+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "防晒衣 运动品牌"
+      ],
+      "product_name": "8元防晒衣",
+      "product_name_basis": "product_phrase_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [
+        "防晒"
+      ],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "刘亦菲穿的79.8元防晒衣是哪个品牌？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "刘亦菲穿的79.8元防晒衣是哪个品牌？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "price_or_release": "刘亦菲穿的79.8元防晒衣是哪个品牌？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 53,
+      "product_id": "prd_6e4a9dad430436",
+      "signal_id": "psg_a0384b7fd3293b",
+      "signal_type": "insufficient_product_evidence",
+      "note": "具体商品证据不足，已降级为媒体信号。"
+    },
+    {
+      "headline": "刘亦菲穿的79.8元防晒衣是什么品牌？",
+      "brand": "",
+      "category": "夏季功能服饰",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "新浪网",
+      "source_homepage": "https://k.sina.com.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9DS0xzWW9PY0VLY01fTmYzQmUzcjNBV1c5SndJOXpDRkp2bEpSN0RtcmpBMFpYOEJiNmx6YnI3V2J0b0JxOGJ2Q25wN1pDaUM4RzVYSkRTeWstVTdMbWlEb2sxOWVybWk0dWRENUVUaTVBZw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9DS0xzWW9PY0VLY01fTmYzQmUzcjNBV1c5SndJOXpDRkp2bEpSN0RtcmpBMFpYOEJiNmx6YnI3V2J0b0JxOGJ2Q25wN1pDaUM4RzVYSkRTeWstVTdMbWlEb2sxOWVybWk0dWRENUVUaTVBZw?oc=5",
+      "published_at": "2026-08-17T15:00+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "防晒衣 运动品牌"
+      ],
+      "product_name": "8元防晒衣",
+      "product_name_basis": "product_phrase_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [
+        "防晒"
+      ],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "刘亦菲穿的79.8元防晒衣是什么品牌？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "刘亦菲穿的79.8元防晒衣是什么品牌？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "price_or_release": "刘亦菲穿的79.8元防晒衣是什么品牌？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 53,
+      "product_id": "prd_6e4a9dad430436",
+      "signal_id": "psg_b49ff5395f2147",
+      "signal_type": "insufficient_product_evidence",
+      "note": "具体商品证据不足，已降级为媒体信号。"
+    },
+    {
+      "headline": "细腻的全皮鞋身！FILA 奢侈品联名新鞋即将限量发售",
+      "brand": "FILA",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "FLIGHTCLUB中文站",
+      "source_homepage": "https://www.flightclub.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFA4VDRSam1EOGVlQ2dlTVVrc1NxX294ZnZ4SHdxZWFFMXNLVEs4Y1ZPaTVHSk9DLUFYNXVHUEstYXplMzZNdWQ3NnRnVHQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFA4VDRSam1EOGVlQ2dlTVVrc1NxX294ZnZ4SHdxZWFFMXNLVEs4Y1ZPaTVHSk9DLUFYNXVHUEstYXplMzZNdWQ3NnRnVHQ?oc=5",
+      "published_at": "2026-08-17T14:58+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "\"FILA\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+      ],
+      "signal_id": "psg_553687bab23191",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发售",
+        "联名"
+      ],
+      "evidence": "细腻的全皮鞋身！FILA 奢侈品联名新鞋即将限量发售 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "FILA与Mugler首度联名推出限量鞋款「羊皮卷」",
+      "brand": "FILA",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "DoNews",
+      "source_homepage": "https://www.donews.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ZQ2NpV3hrZFVtSmpnMHpjVHFZVU9zR0lyckxVWU5NZ3hzZE9HZjlRVm5LbmJTNFBJU1NNcDFXYXhnYkFJOFpPU2Z3dldZTWMxTmhXZzlJeVc1c0U0NHc?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ZQ2NpV3hrZFVtSmpnMHpjVHFZVU9zR0lyckxVWU5NZ3hzZE9HZjlRVm5LbmJTNFBJU1NNcDFXYXhnYkFJOFpPU2Z3dldZTWMxTmhXZzlJeVc1c0U0NHc?oc=5",
+      "published_at": "2026-08-17T14:57+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "\"FILA\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+      ],
+      "signal_id": "psg_127239c2fc4215",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "推出",
+        "联名"
+      ],
+      "evidence": "FILA与Mugler首度联名推出限量鞋款「羊皮卷」 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "ZXMOTO创始人张雪访安踏总部共商联名合作",
+      "brand": "安踏",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "DoNews",
+      "source_homepage": "https://www.donews.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBhUWtlTUpUVmZPVjl2dlJOMk1oOVVDbjJDZFhFUXdVUHVSZlVjalBOVlk4NVM2Wldrd1VtRGpDYnRPaHB5NmNCSk9vNjVKRHF5QXp0MmcxOG9mdVEzSlE?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBhUWtlTUpUVmZPVjl2dlJOMk1oOVVDbjJDZFhFUXdVUHVSZlVjalBOVlk4NVM2Wldrd1VtRGpDYnRPaHB5NmNCSk9vNjVKRHF5QXp0MmcxOG9mdVEzSlE?oc=5",
+      "published_at": "2026-08-17T14:19+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "\"安踏\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+      ],
+      "signal_id": "psg_602e76bc9d12a2",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "联名"
+      ],
+      "evidence": "ZXMOTO创始人张雪访安踏总部共商联名合作 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "新澳门开奖记录_产业_On昂跑新一代Cloudboom系列马拉松竞速跑鞋正式发布",
+      "brand": "On昂跑",
+      "category": "跑鞋",
+      "audience": "成人/通用",
+      "scenarios": [
+        "跑步"
+      ],
+      "source": "womenofchina.com",
+      "source_homepage": "https://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE45dUMzVFdGYlFFLWNUNV8xaG11RnJ2STFrVGQ0WC1VOU9QemhuRXZDRWtRZ09kRmUwNktBSElQNEIzUmxTTGZJS1dWLWJVTmhuZHBpaEI4MDljdw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE45dUMzVFdGYlFFLWNUNV8xaG11RnJ2STFrVGQ0WC1VOU9QemhuRXZDRWtRZ09kRmUwNktBSElQNEIzUmxTTGZJS1dWLWJVTmhuZHBpaEI4MDljdw?oc=5",
+      "published_at": "2026-08-17T12:59+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "",
+      "image_source": "",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"On昂跑\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "product_name": "Cloudboom",
+      "product_name_basis": "model_name_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "新澳门开奖记录_产业_On昂跑新一代Cloudboom系列马拉松竞速跑鞋正式发布",
+        "technology": "",
+        "price_or_release": "新澳门开奖记录_产业_On昂跑新一代Cloudboom系列马拉松竞速跑鞋正式发布"
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 41,
+      "product_id": "prd_e8f6ab94b5790c",
+      "signal_id": "psg_0d7b7c5f3b662c",
+      "signal_type": "insufficient_product_evidence",
+      "note": "具体商品证据不足，已降级为媒体信号。"
+    },
+    {
+      "headline": "一分钟狂卖1000万，一条瑜伽裤来中国“抢钱”：年入67亿-yeeyi",
+      "brand": "",
+      "category": "瑜伽与训练服",
+      "audience": "女性",
+      "scenarios": [
+        "瑜伽"
+      ],
+      "source": "yeeyi.com",
+      "source_homepage": "https://www.yeeyi.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9kTEI2YUJMVTl2aWs1UjJ2RE1sNTB5WUhqdERDNjJ1VDhHMlJNVEljeG9ULUxaeHd5dmZWSklqdThzODhDbkNaekFEdERrRHdwbmZ5UDF3?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9kTEI2YUJMVTl2aWs1UjJ2RE1sNTB5WUhqdERDNjJ1VDhHMlJNVEljeG9ULUxaeHd5dmZWSklqdThzODhDbkNaekFEdERrRHdwbmZ5UDF3?oc=5",
+      "published_at": "2026-08-17T12:52+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"Alo Yoga\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"Alo Yoga\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "product_name": "一条瑜伽裤",
+      "product_name_basis": "product_phrase_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "一分钟狂卖1000万，一条瑜伽裤来中国“抢钱”：年入67亿-yeeyi Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "",
+        "price_or_release": "一分钟狂卖1000万，一条瑜伽裤来中国“抢钱”：年入67亿-yeeyi Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 46,
+      "product_id": "prd_996337115a46e6",
+      "signal_id": "psg_0c26d622e4e9e1",
+      "signal_type": "insufficient_product_evidence",
+      "note": "具体商品证据不足，已降级为媒体信号。"
+    },
+    {
+      "headline": "全新Q60硬壳冲锋衣| 未登峰20周年主题款发售2006年，凯乐石发起未登峰计划未登峰之上，不仅刻下攀登者的精神传承也见证硬壳装备技术标准的持续突破成为持续挑战极限的革新坐标#KAILAS凯乐石##凯乐石未登峰计划##凯乐石未登峰计划20年##只为攀登##凯",
+      "brand": "凯乐石",
+      "category": "户外服饰",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "新浪网",
+      "source_homepage": "https://www.sina.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9GaVRJTlc1MkRLMXdUY3FYQ3YtSzhYeUo0TXZHLWROSjZwSm12dTJ2SElWbjVhMkVnLTNESnd6enBMMHc4ai1EaE9XX2NxaXgyV0tMWHJwVTFCSGVyTkRMbU9WVQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9GaVRJTlc1MkRLMXdUY3FYQ3YtSzhYeUo0TXZHLWROSjZwSm12dTJ2SElWbjVhMkVnLTNESnd6enBMMHc4ai1EaE9XX2NxaXgyV0tMWHJwVTFCSGVyTkRMbU9WVQ?oc=5",
+      "published_at": "2026-08-17T12:50+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "",
+      "image_source": "",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"凯乐石\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "product_name": "Q60硬壳冲锋衣",
+      "product_name_basis": "product_phrase_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "全新Q60硬壳冲锋衣| 未登峰20周年主题款发售2006年，凯乐石发起未登峰计划未登峰之上，不仅刻下攀登者的精神传承也见证硬壳装备技术标准的持续突破成为持续挑战极限的革新坐标#KAILAS凯乐石##凯乐石未登峰计划##凯乐石未登峰计划20年##只为攀登##凯",
+        "technology": "",
+        "price_or_release": "全新Q60硬壳冲锋衣| 未登峰20周年主题款发售2006年，凯乐石发起未登峰计划未登峰之上，不仅刻下攀登者的精神传承也见证硬壳装备技术标准的持续突破成为持续挑战极限的革新坐标#KAILAS凯乐石##凯乐石未登峰计划##凯乐石未登峰计划20年##只为攀登##凯"
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 41,
+      "product_id": "prd_34587a0b8c28fa",
+      "signal_id": "psg_31e7f900efa1a1",
+      "signal_type": "insufficient_product_evidence",
+      "note": "具体商品证据不足，已降级为媒体信号。"
+    },
+    {
+      "headline": "FILA x Mugler全球限量联名鞋款重磅发售，开启高智先锋美学新篇章",
+      "brand": "FILA",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "搜狐网",
+      "source_homepage": "https://m.sohu.com",
+      "article_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRDNCQ2pybGpVWmRzeXhIcFd4elUxbHk1UjEwcVpDNFIzZWpncTY1UW5KekhTZWZ2UXFOazJSZldpWWU0bW1iUXdvUXZydWlPSWRwUExoWWdYMDFaTHRwLUNIRWl5MFRWQUJuOGhRNUxKV2JQWGVIbjVXUm9oXzVTUGluLUI0VXBuM0Vreg?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRDNCQ2pybGpVWmRzeXhIcFd4elUxbHk1UjEwcVpDNFIzZWpncTY1UW5KekhTZWZ2UXFOazJSZldpWWU0bW1iUXdvUXZydWlPSWRwUExoWWdYMDFaTHRwLUNIRWl5MFRWQUJuOGhRNUxKV2JQWGVIbjVXUm9oXzVTUGluLUI0VXBuM0Vreg?oc=5",
+      "published_at": "2026-08-17T12:33+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "\"FILA\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+      ],
+      "signal_id": "psg_2afad92d7de0c9",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发售",
+        "联名"
+      ],
+      "evidence": "FILA x Mugler全球限量联名鞋款重磅发售，开启高智先锋美学新篇章 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "劲动科技召开「金沙乐娱app下载」主题发布会，旗舰运动手表X1领衔多款新品正式亮相",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "womenofchina.com",
+      "source_homepage": "https://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOM3ZYSlRwWHpaaGhDRTU4MG4tLTNJenBQSjhaZmJSRFBLcVdBc3A4U1JFYVI0anBGU3B1NW9za1JYbWhhOGNObXV1T0szNGNaMElwMDdZV3JJRzY5bk9JS0trVTZjMV9pNXZ4bDEwQU1hQjVDX2NsUWZBVVFYcW9ZdjNR?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOM3ZYSlRwWHpaaGhDRTU4MG4tLTNJenBQSjhaZmJSRFBLcVdBc3A4U1JFYVI0anBGU3B1NW9za1JYbWhhOGNObXV1T0szNGNaMElwMDdZV3JJRzY5bk9JS0trVTZjMV9pNXZ4bDEwQU1hQjVDX2NsUWZBVVFYcW9ZdjNR?oc=5",
+      "published_at": "2026-08-17T11:29+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "跑鞋 科技 新品",
+        "跑鞋 新品 科技 发布"
+      ],
+      "signal_id": "psg_0e09c29bad1bd2",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "新品",
+        "发布",
+        "亮相"
+      ],
+      "evidence": "劲动科技召开「金沙乐娱app下载」主题发布会，旗舰运动手表X1领衔多款新品正式亮相 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "2026大连时装周暨第34届“大连杯”青年服装设计大赛新闻发布会顺利召开",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "中华网",
+      "source_homepage": "https://hea.china.com",
+      "article_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBMbTNYcE9jcF9Ua09UR3U5MUZyWU1JTURwSVRMQ183RGh4LXNBZURjUnFqVFlVc3R1S1NqWlVHYnB4S0tpcXhIVXpKeGVaaXkySExlQWNYbGZhZGNoR2tJQTZtX2RBOUlWV2lCRg?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBMbTNYcE9jcF9Ua09UR3U5MUZyWU1JTURwSVRMQ183RGh4LXNBZURjUnFqVFlVc3R1S1NqWlVHYnB4S0tpcXhIVXpKeGVaaXkySExlQWNYbGZhZGNoR2tJQTZtX2RBOUlWV2lCRg?oc=5",
+      "published_at": "2026-08-17T11:05+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "户外鞋服 新品",
+        "户外鞋服 新品 发布"
+      ],
+      "signal_id": "psg_0ecb2d8ae251c0",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发布"
+      ],
+      "evidence": "2026大连时装周暨第34届“大连杯”青年服装设计大赛新闻发布会顺利召开 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "昨夜今晨：h365官方遊戲平台入囗限量发售破纪录 全新碳板科技引热议 联名版溢价超三倍 二级市场交易量激增",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "womenofchina.com",
+      "source_homepage": "http://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQT05udVVDLVhNR2tMRl9QWlBrVTh3UThlSDFJT1UzQTBfa0xnSWR4ZGlEdTlhOHJnT3lfTDZZTHFMQ3FDME1ucXhzazZLUkFYNmpyalhIeFJubHpDSkZrb3d6cjl6aHBzSWcyWGs5anVPV0txZ0ZVal9TQXc4dEtMakZGV2U3Q0k?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQT05udVVDLVhNR2tMRl9QWlBrVTh3UThlSDFJT1UzQTBfa0xnSWR4ZGlEdTlhOHJnT3lfTDZZTHFMQ3FDME1ucXhzazZLUkFYNmpyalhIeFJubHpDSkZrb3d6cjl6aHBzSWcyWGs5anVPV0txZ0ZVal9TQXc4dEtMakZGV2U3Q0k?oc=5",
+      "published_at": "2026-08-17T10:40+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "kids",
+        "channel",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "青少年篮球鞋",
+        "得物 运动鞋",
+        "\"Nike\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_40b06a99c11e08",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发售",
+        "联名",
+        "碳板"
+      ],
+      "evidence": "昨夜今晨：h365官方遊戲平台入囗限量发售破纪录 全新碳板科技引热议 联名版溢价超三倍 二级市场交易量激增 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "商体融合聚人气全民健身惠民生——2026年金桥镇全民健身日系列活动圆满举办_工作动态",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [
+        "训练健身"
+      ],
+      "source": "pudong.gov.cn",
+      "source_homepage": "https://www.pudong.gov.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1IYW9GMWFRTjVNeXN1Ykd1LUdyaHBvamJNcmJ5bFFqdjBuUkdybUtBTHBJUHlIUURBc0poQlFHOGNJc0dpM0RNbDFzV3Mxc2pENVNlTFJUOHZNaTdXX1hYdktFQkhaWGM?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1IYW9GMWFRTjVNeXN1Ykd1LUdyaHBvamJNcmJ5bFFqdjBuUkdybUtBTHBJUHlIUURBc0poQlFHOGNJc0dpM0RNbDFzV3Mxc2pENVNlTFJUOHZNaTdXX1hYdktFQkhaWGM?oc=5",
+      "published_at": "2026-08-17T09:52+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "kids",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "青少年运动 消费"
+      ],
+      "signal_id": "psg_e46114923bd07a",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "系列"
+      ],
+      "evidence": "商体融合聚人气全民健身惠民生——2026年金桥镇全民健身日系列活动圆满举办_工作动态 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "一分钟狂卖1000万，一条瑜伽裤来中国“抢钱”：年入67亿",
+      "brand": "",
+      "category": "瑜伽与训练服",
+      "audience": "女性",
+      "scenarios": [
+        "瑜伽"
+      ],
+      "source": "搜狐网",
+      "source_homepage": "https://m.sohu.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNR0FuRDl5RG1QV1JrMG1SNkhBT1NtQzlGTFRlY0k0azFWX3JBbmthNWp3cUpNLV9sWFZkR2pYd01iMzBnY1lIdC1WVTVMSXl5eHlNNmY2S3BJNVcta3RwVmFuSXZURHh6emsyOXlpbUFoOVJtLWk4QXcwVmxLekpUNTdUdFpJbEg3?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNR0FuRDl5RG1QV1JrMG1SNkhBT1NtQzlGTFRlY0k0azFWX3JBbmthNWp3cUpNLV9sWFZkR2pYd01iMzBnY1lIdC1WVTVMSXl5eHlNNmY2S3BJNVcta3RwVmFuSXZURHh6emsyOXlpbUFoOVJtLWk4QXcwVmxLekpUNTdUdFpJbEg3?oc=5",
+      "published_at": "2026-08-17T09:44+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_business",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "运动品牌 门店 旗舰店"
+      ],
+      "product_name": "一条瑜伽裤",
+      "product_name_basis": "product_phrase_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "一分钟狂卖1000万，一条瑜伽裤来中国“抢钱”：年入67亿 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "",
+        "price_or_release": "一分钟狂卖1000万，一条瑜伽裤来中国“抢钱”：年入67亿 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 46,
+      "product_id": "prd_996337115a46e6",
+      "signal_id": "psg_63fe8f77e5e1bc",
+      "signal_type": "insufficient_product_evidence",
+      "note": "具体商品证据不足，已降级为媒体信号。"
+    },
+    {
+      "headline": "全新一代Q60硬壳冲锋衣秉承对极致性能最严苛的追求历经专业攀登者高海拔实测与反复验证专为长周期高强度的远征式技术攀登设计#KAILAS凯乐石##凯乐石未登峰计划##凯乐石未登峰计划20年##只为攀登##凯乐石冲锋衣",
+      "brand": "凯乐石",
+      "category": "户外服饰",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "新浪网",
+      "source_homepage": "https://www.sina.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1rbUI4dVE2YldZS3ZsU3BGSmVrQnpnVEx4UUJtWHYyUkIxRWczZVVYRFlpUHlnTERqZkcxV043dEJ0aEVBd0FfUUxpTW1OV3J6QmpEU0x6ZFBoLTBodFVRLUdjVQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1rbUI4dVE2YldZS3ZsU3BGSmVrQnpnVEx4UUJtWHYyUkIxRWczZVVYRFlpUHlnTERqZkcxV043dEJ0aEVBd0FfUUxpTW1OV3J6QmpEU0x6ZFBoLTBodFVRLUdjVQ?oc=5",
+      "published_at": "2026-08-17T09:34+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "",
+      "image_source": "",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"凯乐石\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "product_name": "一代Q60硬壳冲锋衣",
+      "product_name_basis": "product_phrase_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "全新一代Q60硬壳冲锋衣秉承对极致性能最严苛的追求历经专业攀登者高海拔实测与反复验证专为长周期高强度的远征式技术攀登设计#KAILAS凯乐石##凯乐石未登峰计划##凯乐石未登峰计划20年##只为攀登##凯乐石冲锋衣",
+        "technology": "",
+        "price_or_release": "全新一代Q60硬壳冲锋衣秉承对极致性能最严苛的追求历经专业攀登者高海拔实测与反复验证专为长周期高强度的远征式技术攀登设计#KAILAS凯乐石##凯乐石未登峰计划##凯乐石未登峰计划20年##只为攀登##凯乐石冲锋衣"
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 41,
+      "product_id": "prd_8a7cf85699efa4",
+      "signal_id": "psg_3b1afdf502ae3b",
+      "signal_type": "insufficient_product_evidence",
+      "note": "具体商品证据不足，已降级为媒体信号。"
+    },
+    {
+      "headline": "manbext发布元宝app官方下载战略升级暨产业生态联盟，全面推动体育产业智能化发展",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "womenofchina.com",
+      "source_homepage": "http://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBncVNacVBHT0Nyb2JxWUZ2Nlp0VFQyRWlraVR0dlNEbkZhb1RJUzhRNFp6VzdzN29XSG1sMWRMQjVieWtLYkU2Wk13MTVtVFZVcWlqU05aMEd1bEZJVWJITnhWcnk?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBncVNacVBHT0Nyb2JxWUZ2Nlp0VFQyRWlraVR0dlNEbkZhb1RJUzhRNFp6VzdzN29XSG1sMWRMQjVieWtLYkU2Wk13MTVtVFZVcWlqU05aMEd1bEZJVWJITnhWcnk?oc=5",
+      "published_at": "2026-08-17T09:24+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "consumer_macro",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "体育消费 数据"
+      ],
+      "signal_id": "psg_d0ef55f5a22750",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发布",
+        "升级"
+      ],
+      "evidence": "manbext发布元宝app官方下载战略升级暨产业生态联盟，全面推动体育产业智能化发展 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "震撼了那奇沃夫怎么会穿老玫和PUMA的联名啊啊啊 对不起我还以为是造型师安排的原来真的是同担[苦涩]",
+      "brand": "Puma",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "新浪网",
+      "source_homepage": "https://www.sina.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBKU2RFTG5fbjN2WEdkNTdwbEctV205MVR0VTcwWnNERnp1eTJTRzJSY2F3cUJIeGx5NEZaZWp0c1pLSm9OaUhpZU96WHJCQTVpd0twaWxiZzdBWUI4WmdvdURZOA?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBKU2RFTG5fbjN2WEdkNTdwbEctV205MVR0VTcwWnNERnp1eTJTRzJSY2F3cUJIeGx5NEZaZWp0c1pLSm9OaUhpZU96WHJCQTVpd0twaWxiZzdBWUI4WmdvdURZOA?oc=5",
+      "published_at": "2026-08-17T07:53+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand",
+        "weekly_source_pool",
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"Puma\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+        "\"Puma\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_1fbf797805de0c",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "联名"
+      ],
+      "evidence": "震撼了那奇沃夫怎么会穿老玫和PUMA的联名啊啊啊 对不起我还以为是造型师安排的原来真的是同担[苦涩] Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "全套超700元的联名洞洞鞋滞销，瑞幸一点不慌",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "风闻",
+      "source_homepage": "https://user.guancha.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBkeDUxakd6bXU3NzhNektLYXJhRUpVWllUV0ZOaFhMNHNPSG8yV0gxZ3VrSmZEem9UVjhoNHp1QmI1bXplOUE4Rk1nRUgxVEVwaUNFMUZNX09VNFhrMVdNdlVuZFFhQk41c210RTZn?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBkeDUxakd6bXU3NzhNektLYXJhRUpVWllUV0ZOaFhMNHNPSG8yV0gxZ3VrSmZEem9UVjhoNHp1QmI1bXplOUE4Rk1nRUgxVEVwaUNFMUZNX09VNFhrMVdNdlVuZFFhQk41c210RTZn?oc=5",
+      "published_at": "2026-08-17T01:27+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "channel",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "得物 运动鞋"
+      ],
+      "signal_id": "psg_a9fc6c2502be83",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "联名"
+      ],
+      "evidence": "全套超700元的联名洞洞鞋滞销，瑞幸一点不慌 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "2026红蓝体育科技大会圆满落幕：云开·体育app发布全新生态平台，吸引200+企业、150款新品首发",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "womenofchina.com",
+      "source_homepage": "https://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1sSDZENHMyZU5zY09SU0ZheTFrRnVQNEhoZ0R0LTNZUE9vNlA5elJRcUxqSFlmRjByMG1UOE1kdF9TeTR6WDFheTRFV1gxWE5UMmluYXJWeDBaV3FoemNFeFlpODl3Nms?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1sSDZENHMyZU5zY09SU0ZheTFrRnVQNEhoZ0R0LTNZUE9vNlA5elJRcUxqSFlmRjByMG1UOE1kdF9TeTR6WDFheTRFV1gxWE5UMmluYXJWeDBaV3FoemNFeFlpODl3Nms?oc=5",
+      "published_at": "2026-08-17T00:03+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product",
+        "consumer_macro",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "运动品牌 新品 发布",
+        "跑鞋 科技 新品",
+        "运动消费 趋势",
+        "跑鞋 新品 科技 发布"
+      ],
+      "signal_id": "psg_2ddc5cb2e14148",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "新品",
+        "发布",
+        "首发"
+      ],
+      "evidence": "2026红蓝体育科技大会圆满落幕：云开·体育app发布全新生态平台，吸引200+企业、150款新品首发 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "bsport体育app下载入口新品发布：以跨界融合之力，重塑智慧生活新范式",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "womenofchina.com",
+      "source_homepage": "http://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE90R3FsX3NxQmtfSU5TNHpYWThtLVhHYUF0b1hac2ZZNHVOZXJuNDMzdmtnTEc5Q1ozc3dfSmpEb2tsMlNSX2F6eGtUWHltaUx2VEV1WmF0d29YZ3BwbmFB?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE90R3FsX3NxQmtfSU5TNHpYWThtLVhHYUF0b1hac2ZZNHVOZXJuNDMzdmtnTEc5Q1ozc3dfSmpEb2tsMlNSX2F6eGtUWHltaUx2VEV1WmF0d29YZ3BwbmFB?oc=5",
+      "published_at": "2026-08-16T20:02+08:00",
+      "published_date": "2026-08-16",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "运动品牌 新品 发布"
+      ],
+      "signal_id": "psg_3f1fb536170bc1",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "新品",
+        "发布"
+      ],
+      "evidence": "bsport体育app下载入口新品发布：以跨界融合之力，重塑智慧生活新范式 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "商贸零售行业周报：上美增持Newpage股权，丸美新品筑牢成分壁垒_行业研究_研报",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "证券之星",
+      "source_homepage": "https://stock.stockstar.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0tNjcxOFhVRnpVTmdKVTN1eUJTN3Q3bXdTODFMYjZ2bzFpemN6N2VWNDhHd1Q2eGdoUlRBY0VOcGVIbExaYmhuQ2FDVW1xR3Z4YVNqS3gwTGUzTTVRVmdTMWN3?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0tNjcxOFhVRnpVTmdKVTN1eUJTN3Q3bXdTODFMYjZ2bzFpemN6N2VWNDhHd1Q2eGdoUlRBY0VOcGVIbExaYmhuQ2FDVW1xR3Z4YVNqS3gwTGUzTTVRVmdTMWN3?oc=5",
+      "published_at": "2026-08-16T19:28+08:00",
+      "published_date": "2026-08-16",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "research",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "零售行业 消费洞察"
+      ],
+      "signal_id": "psg_3fd04ebe5a01cf",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "新品"
+      ],
+      "evidence": "商贸零售行业周报：上美增持Newpage股权，丸美新品筑牢成分壁垒_行业研究_研报 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "b・体育在线登录入口体系升级：开放数据、智能定价、协同供应链，苏宁智慧零售平台重塑家电定价生态",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "womenofchina.com",
+      "source_homepage": "http://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE81ZlItWWVQZExWblVkRFZaRVFTM25QWF85SWxwRjU2NDQ3dDFSOVplU1FiZG1FMU8wVDU4LVlJVFdCdDVhaXhHVEE1bG5qanhWcDNvX0xGLU51aGlLMVN0ZDdQRWZDT2FS?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE81ZlItWWVQZExWblVkRFZaRVFTM25QWF85SWxwRjU2NDQ3dDFSOVplU1FiZG1FMU8wVDU4LVlJVFdCdDVhaXhHVEE1bG5qanhWcDNvX0xGLU51aGlLMVN0ZDdQRWZDT2FS?oc=5",
+      "published_at": "2026-08-16T19:03+08:00",
+      "published_date": "2026-08-16",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_business",
+        "channel",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "运动品牌 渠道 库存",
+        "运动零售 渠道变革"
+      ],
+      "signal_id": "psg_00211660d4055b",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "升级"
+      ],
+      "evidence": "b・体育在线登录入口体系升级：开放数据、智能定价、协同供应链，苏宁智慧零售平台重塑家电定价生态 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "lululemon劲敌ALO正式入华 瑜伽服赛道双雄对决虽迟但到",
+      "brand": "lululemon",
+      "category": "瑜伽与训练服",
+      "audience": "女性",
+      "scenarios": [
+        "瑜伽"
+      ],
+      "source": "36 Kr",
+      "source_homepage": "https://eu.36kr.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vOXIwMVlURlV5dmpQMks3SlVFSkZZYk1xT2xnQldGLVdWY2NqSXZmeFI4S2R6cHpManNHNFVVaHdrSnRES0tPMG1xc3RacTdZOEtj?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vOXIwMVlURlV5dmpQMks3SlVFSkZZYk1xT2xnQldGLVdWY2NqSXZmeFI4S2R6cHpManNHNFVVaHdrSnRES0tPMG1xc3RacTdZOEtj?oc=5",
+      "published_at": "2026-08-16T17:50+08:00",
+      "published_date": "2026-08-16",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "channel",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "天猫 运动户外 平台",
+        "京东 运动服饰"
+      ],
+      "signal_id": "psg_bf4d2ae3ed9fd6",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "瑜伽服"
+      ],
+      "evidence": "lululemon劲敌ALO正式入华 瑜伽服赛道双雄对决虽迟但到 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "人人体育直播下载安装系列新品发布：以超长续航与AI健康监测重塑全天候智能体验",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "womenofchina.com",
+      "source_homepage": "https://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9xLVZNVGNVeUZsRWg5N2c1b0lkV3BDenJObVBMSzdJbWluS1Q0MjhZQ2R1NmgwM0RIUTA3c0hGZUhodVd5c25QZThyZ2lLeXAyNlk3bFFWQVRUTGxhaU53aW9SQUVVY3ZSQTF0LVplX201S2puMUE?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9xLVZNVGNVeUZsRWg5N2c1b0lkV3BDenJObVBMSzdJbWluS1Q0MjhZQ2R1NmgwM0RIUTA3c0hGZUhodVd5c25QZThyZ2lLeXAyNlk3bFFWQVRUTGxhaU53aW9SQUVVY3ZSQTF0LVplX201S2puMUE?oc=5",
+      "published_at": "2026-08-16T13:16+08:00",
+      "published_date": "2026-08-16",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "运动品牌 新品 发布"
+      ],
+      "signal_id": "psg_6a3ba72de5c71e",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "新品",
+        "发布",
+        "系列"
+      ],
+      "evidence": "人人体育直播下载安装系列新品发布：以超长续航与AI健康监测重塑全天候智能体验 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "2025年我国社会消费品零售总额超50万亿元 网上零售额近16万亿元 hga体育皇冠登录入口发布详细报告",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "womenofchina.com",
+      "source_homepage": "https://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5NVGtrVXFfVDVKTmNGdVBBTnBKakFPeXhENm5faGd2UUNxcVdWQThnQ3Z2QXlQOHRvZWMxOHU3OEZDM2MtYnRmZ2ZYUVdNdEtJWE9rM1cwRk9JMXVxYzBLLWY5N2N2eDJ5Qm90bm5pWmJSZw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5NVGtrVXFfVDVKTmNGdVBBTnBKakFPeXhENm5faGd2UUNxcVdWQThnQ3Z2QXlQOHRvZWMxOHU3OEZDM2MtYnRmZ2ZYUVdNdEtJWE9rM1cwRk9JMXVxYzBLLWY5N2N2eDJ5Qm90bm5pWmJSZw?oc=5",
+      "published_at": "2026-08-16T12:47+08:00",
+      "published_date": "2026-08-16",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "consumer_macro",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "体育消费 数据"
+      ],
+      "signal_id": "psg_3380c945b493cc",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发布"
+      ],
+      "evidence": "025年我国社会消费品零售总额超50万亿元 网上零售额近16万亿元 hga体育皇冠登录入口发布详细报告 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "2026“李宁·中国农业银行杯”全国IM体育竞彩极速版球锦标赛赛事发布会在云梦山举行",
+      "brand": "李宁",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "womenofchina.com",
+      "source_homepage": "https://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE96cVN4TWU2aUxjSGZiZDZvZHZOSDFiSkk2cUxBZVFWMnFTcUllVkdUUFd5UG5hZnQyUHBPamdteldzc3BxMFA0ZTJJb2RmNVNvT0hUcTU4azJoOEl4?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE96cVN4TWU2aUxjSGZiZDZvZHZOSDFiSkk2cUxBZVFWMnFTcUllVkdUUFd5UG5hZnQyUHBPamdteldzc3BxMFA0ZTJJb2RmNVNvT0hUcTU4azJoOEl4?oc=5",
+      "published_at": "2026-08-16T10:44+08:00",
+      "published_date": "2026-08-16",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"李宁\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_d126fa44d3ace8",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发布"
+      ],
+      "evidence": "2026“李宁·中国农业银行杯”全国IM体育竞彩极速版球锦标赛赛事发布会在云梦山举行 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "凯发网址在线登录_产业_lululemon发布「与汉密尔顿共度休赛日」系列内容，探索赛道外的成长之路",
+      "brand": "lululemon",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "womenofchina.com",
+      "source_homepage": "https://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5zcDBSakhvYXpoQU1xSnFzZzRzUUlua1gyMFhRRlhxX1Q2azNBOVVLdm1JaHo1T3hPR1U2SmNNTm5TTnc3MVFBVXNtNk5kTUFpeVJ6TDlNV0pOd3phTEkzTS1LTXJXdw?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5zcDBSakhvYXpoQU1xSnFzZzRzUUlua1gyMFhRRlhxX1Q2azNBOVVLdm1JaHo1T3hPR1U2SmNNTm5TTnc3MVFBVXNtNk5kTUFpeVJ6TDlNV0pOd3phTEkzTS1LTXJXdw?oc=5",
+      "published_at": "2026-08-16T06:54+08:00",
+      "published_date": "2026-08-16",
+      "image_url": "",
+      "image_source": "",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "brand_product"
+      ],
+      "discovered_by": [
+        "\"lululemon\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+      ],
+      "signal_id": "psg_f04b11975f694e",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "发布",
+        "系列"
+      ],
+      "evidence": "凯发网址在线登录_产业_lululemon发布「与汉密尔顿共度休赛日」系列内容，探索赛道外的成长之路",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "九州官方体育推出夏日限定新品 融合传统风味引领冰淇淋新风潮",
+      "brand": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "womenofchina.com",
+      "source_homepage": "https://www.womenofchina.com",
+      "article_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5iSTBTOXZHNVZYdHB2Z1hoV09vTEJ0bjRxSlFGSnIydV8zdnJaTjlfOUJqSUVvMW90a3FLaHRyR1FxUVcwTTFwV1Zpc3hESmltbzhsSllNcE80c0plZWlQblc5V2x0Rkd6Wnc?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5iSTBTOXZHNVZYdHB2Z1hoV09vTEJ0bjRxSlFGSnIydV8zdnJaTjlfOUJqSUVvMW90a3FLaHRyR1FxUVcwTTFwV1Zpc3hESmltbzhsSllNcE80c0plZWlQblc5V2x0Rkd6Wnc?oc=5",
+      "published_at": "2026-08-16T00:09+08:00",
+      "published_date": "2026-08-16",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "运动品牌 新品 发布"
+      ],
+      "signal_id": "psg_28d5967a57e6c2",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "新品",
+        "推出"
+      ],
+      "evidence": "九州官方体育推出夏日限定新品 融合传统风味引领冰淇淋新风潮 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    }
+  ]
+}
