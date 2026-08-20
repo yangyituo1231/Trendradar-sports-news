@@ -1,20 +1,20 @@
 {
   "schema_version": "3.0",
-  "generated_at": "2026-08-20T14:45+08:00",
+  "generated_at": "2026-08-20T15:08+08:00",
   "report_window": {
     "start_date": "2026-08-13",
     "end_date": "2026-08-19",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "本周行业焦点集中于头部品牌中期业绩分化、海外扩张与高端瑜伽服入华，儿童消费场景与开学季成本成为关注点。",
-    "week_in_one_paragraph": "361度、森马、亚玛芬等发布中期业绩，显示增长与渠道调整并存；Alo入华引发高端瑜伽服市场讨论；亲子活动与开学季消费受关注。",
+    "weekly_thesis": "本周361度中期业绩与海外高增长成为核心，行业整体社零增速放缓，童装市场分化，需关注渠道效率与儿童消费场景创新。",
+    "week_in_one_paragraph": "361度发布中期业绩，营收61.6亿元，跨境电商增长140%，海外销售流水增超八成，但国内关店超300家。行业社零总额增速仅1.2%，服装社零下滑，消费疲软。亚玛芬、彪马等国际品牌增长强劲，Alo入华引发瑜伽服市场关注。儿童领域，巴拉巴拉助力森马增长，亲子活动与儿童营养场景受关注。",
     "next_week_focus": [
-      "关注361度海外市场具体品类表现，特别是儿童产品线。",
-      "跟踪Alo等高端品牌在华质量口碑与销售调整。",
-      "观察开学季儿童鞋服消费数据与促销活动。",
-      "留意亚玛芬多品牌战略对户外儿童市场的启示。",
-      "关注亲子消费场景案例对儿童品牌营销的借鉴。"
+      "关注361度海外市场具体区域和品类，是否涉及儿童产品。",
+      "跟踪社零数据后续月份变化，评估消费复苏趋势。",
+      "观察巴拉巴拉童装新策略，是否影响儿童运动品牌竞争。",
+      "关注Alo等高端品牌是否扩展儿童产品线。",
+      "留意开学季儿童运动装备消费动态。"
     ]
   },
   "key_developments": [
@@ -37,7 +37,7 @@
       "editorial_score": 64,
       "selection_score": 90,
       "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-      "editorial_reason": "361度中期业绩显示营收61.6亿元，跨境电商增长140%，反映海外扩张成效。"
+      "editorial_reason": "361度上半年营收61.6亿元，跨境电商增长140%，显示海外市场成为新增长点，对儿童事业部有战略参考。"
     },
     {
       "event_id": "evt_7fa9cec695484e",
@@ -58,7 +58,47 @@
       "editorial_score": 47,
       "selection_score": 64,
       "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-      "editorial_reason": "361度海外销售流水增超八成，加速拓展新兴市场，对儿童业务有参考价值。"
+      "editorial_reason": "361度海外销售流水增超八成，加速拓展新兴市场，反映品牌国际化趋势，需关注海外儿童产品布局。"
+    },
+    {
+      "event_id": "evt_4c8d25df74362e",
+      "title": "增速放缓，半年关店超300家！361度如何稳大众运动盘？",
+      "category": "行业动态",
+      "brands": [
+        "361°"
+      ],
+      "source": "搜狐网",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNanZQdVI5QndTcy1lY3k4a2tKeFpoTTJKRGtidE13MmxpYkVqQzBfRGcwdDJSSWRpSWV1UUlVVDFqVGxSZTZmYWs1RXlEYWtTSmtRMHNwbmZmeWpwVWFqLVVGYnQzdksySnFHZjJvcUJNWjZuX2lYM3dLN2xnb1RYbWRhdDdfZzFE?oc=5",
+      "published_at": "2026-08-19T16:39+08:00",
+      "published_date": "2026-08-19",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "mention_count": 1,
+      "editorial_score": 45,
+      "selection_score": 56,
+      "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "editorial_reason": "361度增速放缓、半年关店超300家，提示国内渠道调整压力，儿童业务需关注门店效率。"
+    },
+    {
+      "event_id": "evt_a59845d6c39e48",
+      "title": "2026年1—7月份社会消费品零售总额增长1.2%",
+      "category": "行业动态",
+      "brands": [],
+      "source": "stats.gov.cn",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBNbUQzLTNCWWtxb0hQeWRzN1FhX0diXzZCSS1WRkZXbXZYVlJMei1WRGRzMU9VTHB3LTh4WEtZVTJJYi1KZU5JQVRCcUZsMlVNeEZ0WHBsdEFtNWkweXNib19WV1NNaUwzLUN5TVVSVQ?oc=5",
+      "published_at": "2026-08-17T15:00+08:00",
+      "published_date": "2026-08-17",
+      "status": "new",
+      "verification": "official_source",
+      "is_official": true,
+      "source_count": 1,
+      "mention_count": 1,
+      "editorial_score": 55,
+      "selection_score": 76,
+      "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "editorial_reason": "社零总额增长1.2%，消费大盘疲软，影响儿童消费预期，需谨慎制定增长目标。"
     },
     {
       "event_id": "evt_a357e43549c47b",
@@ -79,7 +119,7 @@
       "editorial_score": 59,
       "selection_score": 72,
       "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-      "editorial_reason": "巴拉巴拉童装对森马业绩的贡献，体现童装业务在集团中的战略地位。"
+      "editorial_reason": "巴拉巴拉童装对森马业绩贡献显著，显示童装业务在集团中的战略价值，值得对标。"
     },
     {
       "event_id": "evt_8670b602888068",
@@ -100,28 +140,7 @@
       "editorial_score": 54,
       "selection_score": 75,
       "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-      "editorial_reason": "亚玛芬上调业绩指引，始祖鸟恢复净开店，显示高端户外品牌增长韧性。"
-    },
-    {
-      "event_id": "evt_e4b0a87b2370af",
-      "title": "一条裤子1150元、开售秒空 Alo入华背后的“中产消费K型分化”",
-      "category": "产品与科技",
-      "brands": [
-        "Alo"
-      ],
-      "source": "新浪网",
-      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQd1RGNF9DLTBJWTVTUEZyLVJyYVI3Vmh4Znd0Rm1xSWtwWGEzV2pmTVIzUUY5ekwxbDVQRGRCU2R0Qmw4Wjktd3VzdFdCOW1vTzBGUjU4amk1c1ZYRUw2YUl6c2hCbDEydVZMcGpHcl9Ja1FfT29nUUotOEhoUkowV3p1TGZUQzZqZi1VMkNPMUxYYl9iU19wLTZnRTVfOXdpX3dBSHBKclNJZ0FORmZsVk9DWVByZGJ2ZlpWU0FnQ0RlOG96a3VicmJ5QW1LdVhOdGZpQVJqQ2l2UWY5blFGbTlIbnE1WWdkZUZVc3VLZTlVQk1nbFNLNE1OajgtRHlhX2hsRXN2S1BYcmRrb0ZGczlvN2s3aE0?oc=5",
-      "published_at": "2026-08-19T00:24+08:00",
-      "published_date": "2026-08-19",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "mention_count": 1,
-      "editorial_score": 45,
-      "selection_score": 61,
-      "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-      "editorial_reason": "Alo入华高价策略与市场反应，揭示中产消费K型分化趋势。"
+      "editorial_reason": "亚玛芬上半年净利增78%，始祖鸟恢复净开店，高端运动品牌增长强劲，反映消费分化。"
     },
     {
       "event_id": "evt_68a2d1207fae61",
@@ -140,51 +159,32 @@
       "editorial_score": 54,
       "selection_score": 76,
       "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-      "editorial_reason": "亲子家庭活动撬动文商旅体消费，为儿童品牌场景营销提供案例。"
+      "editorial_reason": "亲子家庭活动撬动文商旅体消费，为儿童运动品牌提供场景化营销思路。"
     },
     {
-      "event_id": "evt_d474236e347b51",
-      "title": "西班牙开学季临近：每名学生平均开销已达505欧元，四年上涨19%",
-      "category": "儿童与青少年",
+      "event_id": "evt_6b1d8939558b03",
+      "title": "金融携手体育共燃申城活力 交通银行推出申花系列金融产品， 解锁体育消费新体验2026-08-18",
+      "category": "产品与科技",
       "brands": [],
-      "source": "欧洲头条",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQR2tTU2x0aDBBTW1UNGFFczB6X3VyeExBX3dWV05UX0w2TTJfOXhibk9TT1Utb1d4cUdsOUVEX2ZBdkRvRXlMT19uaS1KMmxuZXdpT1RVbXdLZThtRmVSaks4Qnl0Z0NVM0V0c190UVBKbUdTdFZKMFFPa2xhaEV1YVd2VWxkZTZkeE5HV1Y2OEpyZ2RZT0dRWU02STNwaE9WWkdHUUhoZUlua3VQMTNLdTVsd1FGeGNnczh0Qm9CbEFPc3BUcWNwVG9CNi1RcWJhY1RfY2ZoNGVWVVM0QWc?oc=5",
-      "published_at": "2026-08-17T22:31+08:00",
-      "published_date": "2026-08-17",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "mention_count": 1,
-      "editorial_score": 43,
-      "selection_score": 61,
-      "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-      "editorial_reason": "西班牙开学季成本上涨，提示儿童用品市场成本压力与消费变化。"
-    },
-    {
-      "event_id": "evt_a59845d6c39e48",
-      "title": "2026年1—7月份社会消费品零售总额增长1.2%",
-      "category": "行业动态",
-      "brands": [],
-      "source": "stats.gov.cn",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBNbUQzLTNCWWtxb0hQeWRzN1FhX0diXzZCSS1WRkZXbXZYVlJMei1WRGRzMU9VTHB3LTh4WEtZVTJJYi1KZU5JQVRCcUZsMlVNeEZ0WHBsdEFtNWkweXNib19WV1NNaUwzLUN5TVVSVQ?oc=5",
-      "published_at": "2026-08-17T15:00+08:00",
-      "published_date": "2026-08-17",
+      "source": "上海市人民政府",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMUFybFQ1T0NPdk05dGdFLUx3dmp1aVZOdDRoNF9YeU05bHg4Q3lVYkpVamNhS0F6b3VFcnV1eXRYeW9XRHpueG1PdkRQZnFpekE0NndkcVNKRGRDb0t3TnBZZHRpbGxoQk9VQmNuX3BCa3FoQWpIOVVidlNTbmJwN3FQOG5wTUtjM0E?oc=5",
+      "published_at": "2026-08-18T16:53+08:00",
+      "published_date": "2026-08-18",
       "status": "new",
       "verification": "official_source",
       "is_official": true,
       "source_count": 1,
       "mention_count": 1,
-      "editorial_score": 55,
-      "selection_score": 76,
+      "editorial_score": 53,
+      "selection_score": 74,
       "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-      "editorial_reason": "属于行业动态的重要本周新事件且有官方来源。"
+      "editorial_reason": "属于产品与科技的重要本周新事件且有官方来源。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "361度中期业绩与海外扩张策略",
-      "analysis": "361度上半年营收61.6亿元，跨境电商增长140%，海外销售流水增超八成，但国内门店减少超300家。显示品牌在海外市场发力，同时国内渠道调整。儿童业务作为重要板块，海外扩张可能带来新增长点，但需关注国内渠道优化效果。",
+      "headline": "361度中期业绩：海外高增长与国内渠道调整并行",
+      "analysis": "361度上半年营收61.6亿元，跨境电商增长140%，海外销售流水增超八成，显示海外市场成为重要增长引擎。但国内半年关店超300家，增速放缓，反映渠道调整压力。行业层面，品牌出海与国内渠道优化并行，儿童业务需平衡海外拓展与国内门店效率。",
       "event_ids": [
         "evt_dd45446d1303c3",
         "evt_7fa9cec695484e",
@@ -215,37 +215,21 @@
       ]
     },
     {
-      "headline": "高端瑜伽服入华与消费分化",
-      "analysis": "Alo入华首秀，产品定价高（裤子1150元），赠品包被炒至400元，但核心产品被吐槽起球。反映高端运动品牌在中国市场的机遇与挑战，中产消费K型分化明显，品质与品牌溢价需平衡。",
+      "headline": "消费大盘疲软下的童装市场分化",
+      "analysis": "社零总额增长1.2%，服装社零下滑，消费整体疲软。但森马服饰营收增长9.3%，巴拉巴拉童装贡献显著，显示童装市场仍有结构性机会。行业层面，童装品牌需聚焦产品力与渠道效率，在弱市中抢占份额。",
       "event_ids": [
-        "evt_e4b0a87b2370af",
-        "evt_bd5bbecfdc34f4"
-      ],
-      "evidence": [
-        {
-          "event_id": "evt_e4b0a87b2370af",
-          "title": "一条裤子1150元、开售秒空 Alo入华背后的“中产消费K型分化”",
-          "source": "新浪网",
-          "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQd1RGNF9DLTBJWTVTUEZyLVJyYVI3Vmh4Znd0Rm1xSWtwWGEzV2pmTVIzUUY5ekwxbDVQRGRCU2R0Qmw4Wjktd3VzdFdCOW1vTzBGUjU4amk1c1ZYRUw2YUl6c2hCbDEydVZMcGpHcl9Ja1FfT29nUUotOEhoUkowV3p1TGZUQzZqZi1VMkNPMUxYYl9iU19wLTZnRTVfOXdpX3dBSHBKclNJZ0FORmZsVk9DWVByZGJ2ZlpWU0FnQ0RlOG96a3VicmJ5QW1LdVhOdGZpQVJqQ2l2UWY5blFGbTlIbnE1WWdkZUZVc3VLZTlVQk1nbFNLNE1OajgtRHlhX2hsRXN2S1BYcmRrb0ZGczlvN2s3aE0?oc=5",
-          "published_date": "2026-08-19"
-        },
-        {
-          "event_id": "evt_bd5bbecfdc34f4",
-          "title": "ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球",
-          "source": "新京报",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Vb0tJWUs0cEFWVzI4bmtsanRYbERWYUdUUkpjbTduSjg3aWo1QzhuSF9VOHdKYW8xNWlVeGJGaXllSndtNzFtTnFiQVhYbWlrNzZHeUU5cmVwTi1TY212V1gzZUg?oc=5",
-          "published_date": "2026-08-14"
-        }
-      ]
-    },
-    {
-      "headline": "童装业务在集团中的战略价值",
-      "analysis": "森马上半年营收增长9.3%，巴拉巴拉童装被指“有魔法”，显示童装业务对集团增长的关键作用。儿童消费市场潜力大，但竞争激烈，品牌需持续创新。",
-      "event_ids": [
+        "evt_a59845d6c39e48",
         "evt_a357e43549c47b",
         "evt_50ca615ae8c930"
       ],
       "evidence": [
+        {
+          "event_id": "evt_a59845d6c39e48",
+          "title": "2026年1—7月份社会消费品零售总额增长1.2%",
+          "source": "stats.gov.cn",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBNbUQzLTNCWWtxb0hQeWRzN1FhX0diXzZCSS1WRkZXbXZYVlJMei1WRGRzMU9VTHB3LTh4WEtZVTJJYi1KZU5JQVRCcUZsMlVNeEZ0WHBsdEFtNWkweXNib19WV1NNaUwzLUN5TVVSVQ?oc=5",
+          "published_date": "2026-08-17"
+        },
         {
           "event_id": "evt_a357e43549c47b",
           "title": "“巴拉巴拉”有魔法，童装救森马？",
@@ -263,79 +247,39 @@
       ]
     },
     {
-      "headline": "亲子消费场景与开学季经济",
-      "analysis": "上海杨浦亲子活动吸引300组家庭，撬动文商旅体消费；西班牙开学季学生平均开销505欧元，四年上涨19%。显示亲子消费场景化、体验化趋势，开学季成本上升可能影响家庭消费决策。",
+      "headline": "高端运动品牌增长强劲，消费K型分化加剧",
+      "analysis": "亚玛芬上半年净利增78%，大中华区增长35.5%，始祖鸟、萨洛蒙等高端品牌表现强劲。Alo入华首秀，高价产品引发关注，显示高端运动消费需求旺盛。行业层面，消费K型分化明显，儿童高端市场或有机会，但需谨慎评估。",
       "event_ids": [
-        "evt_68a2d1207fae61",
-        "evt_d474236e347b51"
+        "evt_8670b602888068",
+        "evt_43fc2fa27ca7fe",
+        "evt_e4b0a87b2370af"
       ],
       "evidence": [
         {
-          "event_id": "evt_68a2d1207fae61",
-          "title": "300组亲子家庭“暴走”杨浦 “一日打卡”如何撬动家庭文商旅体长效消费",
-          "source": "shyp.gov.cn",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBhRDgtZ3hrVkJJVkZDNnJkZjROT0ExWFVOR1BiZVd0M2o2ZGI2bGxtcVV5MEhxYmRnblpkeVlpR1BZUTNlSXFmSzdHN3c1Y3JkSUhzSU1oSk1sUllzUGFTQ2VybnNvbkdrLTdnZw?oc=5",
-          "published_date": "2026-08-18"
+          "event_id": "evt_8670b602888068",
+          "title": "亚玛芬上半年净利2.72亿美元增78%：中国市场始祖鸟恢复净开店，再次上调年度业绩指引",
+          "source": "thepaper.cn",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9LUzc4NkduV0otM1RMWkNUVjhRMkk3cHlRSjFzU1RqN1VHSjRSdzNHbERHaFdVb2dJZzlIZDdmdnhwWlRTWWlWdGoyNTB3NVpVVE5ub1lqNS04ajhkRVJOWE5oY2pENUh0X2J1ZGpLR0hNZw?oc=5",
+          "published_date": "2026-08-19"
         },
         {
-          "event_id": "evt_d474236e347b51",
-          "title": "西班牙开学季临近：每名学生平均开销已达505欧元，四年上涨19%",
-          "source": "欧洲头条",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQR2tTU2x0aDBBTW1UNGFFczB6X3VyeExBX3dWV05UX0w2TTJfOXhibk9TT1Utb1d4cUdsOUVEX2ZBdkRvRXlMT19uaS1KMmxuZXdpT1RVbXdLZThtRmVSaks4Qnl0Z0NVM0V0c190UVBKbUdTdFZKMFFPa2xhaEV1YVd2VWxkZTZkeE5HV1Y2OEpyZ2RZT0dRWU02STNwaE9WWkdHUUhoZUlua3VQMTNLdTVsd1FGeGNnczh0Qm9CbEFPc3BUcWNwVG9CNi1RcWJhY1RfY2ZoNGVWVVM0QWc?oc=5",
-          "published_date": "2026-08-17"
+          "event_id": "evt_43fc2fa27ca7fe",
+          "title": "亚玛芬体育二季度全球营收增长32%，大中华区增长35.5%",
+          "source": "华丽志",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9RVUVjb3YyLTRiUHlYTkppNERxbzIzQXpYOGJITlBOem5oenZkRkdveWpkTWhvQ3JZSGgxX0E5VHM?oc=5",
+          "published_date": "2026-08-19"
+        },
+        {
+          "event_id": "evt_e4b0a87b2370af",
+          "title": "一条裤子1150元、开售秒空 Alo入华背后的“中产消费K型分化”",
+          "source": "新浪网",
+          "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQd1RGNF9DLTBJWTVTUEZyLVJyYVI3Vmh4Znd0Rm1xSWtwWGEzV2pmTVIzUUY5ekwxbDVQRGRCU2R0Qmw4Wjktd3VzdFdCOW1vTzBGUjU4amk1c1ZYRUw2YUl6c2hCbDEydVZMcGpHcl9Ja1FfT29nUUotOEhoUkowV3p1TGZUQzZqZi1VMkNPMUxYYl9iU19wLTZnRTVfOXdpX3dBSHBKclNJZ0FORmZsVk9DWVByZGJ2ZlpWU0FnQ0RlOG96a3VicmJ5QW1LdVhOdGZpQVJqQ2l2UWY5blFGbTlIbnE1WWdkZUZVc3VLZTlVQk1nbFNLNE1OajgtRHlhX2hsRXN2S1BYcmRrb0ZGczlvN2s3aE0?oc=5",
+          "published_date": "2026-08-19"
         }
       ]
     }
   ],
   "product_radar": [
-    {
-      "product_id": "prd_074bbf9f2017a8",
-      "brand": "Alo Yoga",
-      "product_name": "核心产品瑜伽服",
-      "model_code": "",
-      "category": "瑜伽与训练服",
-      "audience": "女性",
-      "scenarios": [
-        "瑜伽"
-      ],
-      "release_date": "",
-      "release_date_basis": "not_disclosed",
-      "price": {
-        "value": null,
-        "currency": "",
-        "display": "未披露",
-        "basis": "not_disclosed"
-      },
-      "technologies": [],
-      "materials": [],
-      "source": "新京报",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Vb0tJWUs0cEFWVzI4bmtsanRYbERWYUdUUkpjbTduSjg3aWo1QzhuSF9VOHdKYW8xNWlVeGJGaXllSndtNzFtTnFiQVhYbWlrNzZHeUU5cmVwTi1TY212V1gzZUg?oc=5",
-      "official_url": "",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
-      "headline": "ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球",
-      "published_at": "2026-08-14T20:57+08:00",
-      "published_date": "2026-08-14",
-      "verification": "trusted_media",
-      "is_official": false,
-      "confidence_score": 56,
-      "status": "new",
-      "first_seen": "2026-08-13",
-      "last_seen": "2026-08-19",
-      "evidence": {
-        "product": "ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-        "technology": "",
-        "price_or_release": "ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
-      },
-      "coverage": [
-        {
-          "headline": "ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球",
-          "source": "新京报",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Vb0tJWUs0cEFWVzI4bmtsanRYbERWYUdUUkpjbTduSjg3aWo1QzhuSF9VOHdKYW8xNWlVeGJGaXllSndtNzFtTnFiQVhYbWlrNzZHeUU5cmVwTi1TY212V1gzZUg?oc=5",
-          "published_at": "2026-08-14T20:57+08:00"
-        }
-      ],
-      "editorial_reason": "Alo Yoga核心产品瑜伽服入华后质量争议，反映高端品牌品质把控问题。"
-    },
     {
       "product_id": "prd_e27a7bd50222e3",
       "brand": "安踏儿童",
@@ -383,7 +327,55 @@
           "published_at": "2026-08-16T00:06+08:00"
         }
       ],
-      "editorial_reason": "安踏儿童骇浪5体测跑鞋在青少年赛事首秀，体现儿童专业运动产品趋势。"
+      "editorial_reason": "安踏儿童骇浪5体测跑鞋在青少年赛事首秀，反映儿童专业运动产品趋势，值得关注。"
+    },
+    {
+      "product_id": "prd_074bbf9f2017a8",
+      "brand": "Alo Yoga",
+      "product_name": "核心产品瑜伽服",
+      "model_code": "",
+      "category": "瑜伽与训练服",
+      "audience": "女性",
+      "scenarios": [
+        "瑜伽"
+      ],
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "source": "新京报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Vb0tJWUs0cEFWVzI4bmtsanRYbERWYUdUUkpjbTduSjg3aWo1QzhuSF9VOHdKYW8xNWlVeGJGaXllSndtNzFtTnFiQVhYbWlrNzZHeUU5cmVwTi1TY212V1gzZUg?oc=5",
+      "official_url": "",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "headline": "ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球",
+      "published_at": "2026-08-14T20:57+08:00",
+      "published_date": "2026-08-14",
+      "verification": "trusted_media",
+      "is_official": false,
+      "confidence_score": 56,
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "evidence": {
+        "product": "ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "",
+        "price_or_release": "ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球 Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "coverage": [
+        {
+          "headline": "ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球",
+          "source": "新京报",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Vb0tJWUs0cEFWVzI4bmtsanRYbERWYUdUUkpjbTduSjg3aWo1QzhuSF9VOHdKYW8xNWlVeGJGaXllSndtNzFtTnFiQVhYbWlrNzZHeUU5cmVwTi1TY212V1gzZUg?oc=5",
+          "published_at": "2026-08-14T20:57+08:00"
+        }
+      ],
+      "editorial_reason": "Alo瑜伽服入华首秀，高价与品质争议并存，反映高端瑜伽服市场动态，对儿童运动服饰有参考。"
     },
     {
       "product_id": "prd_16697b6e409bfa",
@@ -429,7 +421,7 @@
           "published_at": "2026-08-19T02:37+08:00"
         }
       ],
-      "editorial_reason": "Salomon XT-6新色发布，户外鞋款持续受关注，可作为儿童户外产品参考。"
+      "editorial_reason": "Salomon XT-6新色发布，户外鞋款持续热销，显示户外风潮对儿童鞋履的潜在影响。"
     },
     {
       "product_id": "prd_9cff465ccc80e9",
@@ -475,7 +467,7 @@
           "published_at": "2026-08-19T23:13+08:00"
         }
       ],
-      "editorial_reason": "Nike Kobe 3联名鞋款，运动品牌联名策略，对儿童产品联名有借鉴意义。"
+      "editorial_reason": "Nike Kobe 3联名鞋款，篮球文化持续影响青少年，儿童篮球鞋市场可关注。"
     }
   ],
   "competitor_channel": [
@@ -520,23 +512,23 @@
       "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
     },
     {
-      "event_id": "evt_098df293675ba2",
-      "title": "昂跑狂奔的B面：亚太撑起的利润，遮不住北美的收缩",
+      "event_id": "evt_694d75e472dff2",
+      "title": "耐克300亿级线上收权腾讯上半年营收破4000亿 | 邦小白零售周报- 零售",
       "category": "品牌与公司",
       "brands": [
-        "On昂跑"
+        "Nike"
       ],
-      "source": "新京报",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JVmZMeTNXdnU3Tkw0NVVMdTdWTS10T3dRTEhNRC1sREw1c2ExQ0FiM0hzdkVIUGtBczFQQXlWMzFBZUdRN3FPQzAxTVpjOFhfNldBLVdGQjEzWE96NnZ6c2UtQmI?oc=5",
-      "published_at": "2026-08-18T15:39+08:00",
-      "published_date": "2026-08-18",
+      "source": "亿邦动力网",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE14ekhNajd1dWRGRUoxQU0zanlaam5IbVZaNGlOU2hNMlAtN3o2dVZvTHdEVm1mVjYtc2N5RkltU3V1aDhsckVRQkFHTU5ib0N3c2pVQkln?oc=5",
+      "published_at": "2026-08-17T08:55+08:00",
+      "published_date": "2026-08-17",
       "status": "new",
       "verification": "single_source",
       "is_official": false,
       "source_count": 1,
       "mention_count": 1,
-      "editorial_score": 48,
-      "selection_score": 60,
+      "editorial_score": 54,
+      "selection_score": 70,
       "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
     }
   ],
@@ -560,24 +552,6 @@
       "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
     },
     {
-      "event_id": "evt_d474236e347b51",
-      "title": "西班牙开学季临近：每名学生平均开销已达505欧元，四年上涨19%",
-      "category": "儿童与青少年",
-      "brands": [],
-      "source": "欧洲头条",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQR2tTU2x0aDBBTW1UNGFFczB6X3VyeExBX3dWV05UX0w2TTJfOXhibk9TT1Utb1d4cUdsOUVEX2ZBdkRvRXlMT19uaS1KMmxuZXdpT1RVbXdLZThtRmVSaks4Qnl0Z0NVM0V0c190UVBKbUdTdFZKMFFPa2xhaEV1YVd2VWxkZTZkeE5HV1Y2OEpyZ2RZT0dRWU02STNwaE9WWkdHUUhoZUlua3VQMTNLdTVsd1FGeGNnczh0Qm9CbEFPc3BUcWNwVG9CNi1RcWJhY1RfY2ZoNGVWVVM0QWc?oc=5",
-      "published_at": "2026-08-17T22:31+08:00",
-      "published_date": "2026-08-17",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "mention_count": 1,
-      "editorial_score": 43,
-      "selection_score": 61,
-      "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
-    },
-    {
       "event_id": "evt_2ac4927b73fd18",
       "title": "诺特兰德联名JOYMARK落地全国百家门店 深耕儿童“泛运动营养”场景",
       "category": "儿童与青少年",
@@ -594,36 +568,55 @@
       "editorial_score": 46,
       "selection_score": 59,
       "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+    },
+    {
+      "event_id": "evt_8ec115888f9dbc",
+      "title": "暑假8岁孩子适合去哪？携程报告：亲子游预订涨45%，按年龄选目的地是关键+FAQ",
+      "category": "儿童与青少年",
+      "brands": [],
+      "source": "新浪网",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNeHRZcDFDU3pXTW9GWF92WEstRGNhUWwtTW54SEx4YXFYS1dPVlhzSkRUR293eFU5WFNVVTdPZDhxdFo0VzVrMXRnZlRQOHo1aC11YXJkVmMxaHFUWFpsNUlTZVVDRUlrejBveGJMbDNsZWZIamZWX2tFdy1sLTRTX1JvS1g?oc=5",
+      "published_at": "2026-08-16T06:01+08:00",
+      "published_date": "2026-08-16",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "mention_count": 1,
+      "editorial_score": 39,
+      "selection_score": 57,
+      "summary_snippet": ""
     }
   ],
   "watchlist": [
     {
-      "title": "361度海外扩张对儿童业务的影响",
+      "title": "361度海外市场拓展对儿童业务的影响",
       "event_ids": [
-        "evt_dd45446d1303c3",
-        "evt_7fa9cec695484e"
+        "evt_7fa9cec695484e",
+        "evt_dd45446d1303c3"
       ],
       "product_ids": [],
-      "reason": "关注海外市场增长是否带动儿童产品线，以及新兴市场儿童消费需求。"
+      "reason": "关注海外销售增长是否带动儿童产品线出海，以及新兴市场儿童消费需求。"
     },
     {
-      "title": "高端瑜伽服品牌入华后续表现",
+      "title": "童装市场在消费疲软下的表现",
       "event_ids": [
-        "evt_e4b0a87b2370af",
-        "evt_bd5bbecfdc34f4"
+        "evt_a357e43549c47b",
+        "evt_50ca615ae8c930"
+      ],
+      "product_ids": [],
+      "reason": "观察巴拉巴拉等童装品牌如何应对社零放缓，是否出现价格或渠道策略调整。"
+    },
+    {
+      "title": "高端运动品牌对儿童市场的渗透",
+      "event_ids": [
+        "evt_8670b602888068",
+        "evt_e4b0a87b2370af"
       ],
       "product_ids": [
         "prd_074bbf9f2017a8"
       ],
-      "reason": "观察Alo等品牌如何应对质量争议，以及定价策略是否调整。"
-    },
-    {
-      "title": "开学季儿童消费动态",
-      "event_ids": [
-        "evt_d474236e347b51"
-      ],
-      "product_ids": [],
-      "reason": "关注开学季儿童用品消费趋势，特别是成本上涨对购买行为的影响。"
+      "reason": "关注高端品牌是否推出儿童线，以及高价儿童运动产品的市场接受度。"
     }
   ],
   "tracking": {
@@ -647,7 +640,7 @@
         "editorial_score": 64,
         "selection_score": 90,
         "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-        "editorial_reason": "361度中期业绩显示营收61.6亿元，跨境电商增长140%，反映海外扩张成效。"
+        "editorial_reason": "361度上半年营收61.6亿元，跨境电商增长140%，显示海外市场成为新增长点，对儿童事业部有战略参考。"
       },
       {
         "event_id": "evt_7fa9cec695484e",
@@ -668,7 +661,47 @@
         "editorial_score": 47,
         "selection_score": 64,
         "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-        "editorial_reason": "361度海外销售流水增超八成，加速拓展新兴市场，对儿童业务有参考价值。"
+        "editorial_reason": "361度海外销售流水增超八成，加速拓展新兴市场，反映品牌国际化趋势，需关注海外儿童产品布局。"
+      },
+      {
+        "event_id": "evt_4c8d25df74362e",
+        "title": "增速放缓，半年关店超300家！361度如何稳大众运动盘？",
+        "category": "行业动态",
+        "brands": [
+          "361°"
+        ],
+        "source": "搜狐网",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNanZQdVI5QndTcy1lY3k4a2tKeFpoTTJKRGtidE13MmxpYkVqQzBfRGcwdDJSSWRpSWV1UUlVVDFqVGxSZTZmYWs1RXlEYWtTSmtRMHNwbmZmeWpwVWFqLVVGYnQzdksySnFHZjJvcUJNWjZuX2lYM3dLN2xnb1RYbWRhdDdfZzFE?oc=5",
+        "published_at": "2026-08-19T16:39+08:00",
+        "published_date": "2026-08-19",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "mention_count": 1,
+        "editorial_score": 45,
+        "selection_score": 56,
+        "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "editorial_reason": "361度增速放缓、半年关店超300家，提示国内渠道调整压力，儿童业务需关注门店效率。"
+      },
+      {
+        "event_id": "evt_a59845d6c39e48",
+        "title": "2026年1—7月份社会消费品零售总额增长1.2%",
+        "category": "行业动态",
+        "brands": [],
+        "source": "stats.gov.cn",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBNbUQzLTNCWWtxb0hQeWRzN1FhX0diXzZCSS1WRkZXbXZYVlJMei1WRGRzMU9VTHB3LTh4WEtZVTJJYi1KZU5JQVRCcUZsMlVNeEZ0WHBsdEFtNWkweXNib19WV1NNaUwzLUN5TVVSVQ?oc=5",
+        "published_at": "2026-08-17T15:00+08:00",
+        "published_date": "2026-08-17",
+        "status": "new",
+        "verification": "official_source",
+        "is_official": true,
+        "source_count": 1,
+        "mention_count": 1,
+        "editorial_score": 55,
+        "selection_score": 76,
+        "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "editorial_reason": "社零总额增长1.2%，消费大盘疲软，影响儿童消费预期，需谨慎制定增长目标。"
       },
       {
         "event_id": "evt_a357e43549c47b",
@@ -689,7 +722,7 @@
         "editorial_score": 59,
         "selection_score": 72,
         "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-        "editorial_reason": "巴拉巴拉童装对森马业绩的贡献，体现童装业务在集团中的战略地位。"
+        "editorial_reason": "巴拉巴拉童装对森马业绩贡献显著，显示童装业务在集团中的战略价值，值得对标。"
       },
       {
         "event_id": "evt_8670b602888068",
@@ -710,28 +743,7 @@
         "editorial_score": 54,
         "selection_score": 75,
         "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-        "editorial_reason": "亚玛芬上调业绩指引，始祖鸟恢复净开店，显示高端户外品牌增长韧性。"
-      },
-      {
-        "event_id": "evt_e4b0a87b2370af",
-        "title": "一条裤子1150元、开售秒空 Alo入华背后的“中产消费K型分化”",
-        "category": "产品与科技",
-        "brands": [
-          "Alo"
-        ],
-        "source": "新浪网",
-        "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQd1RGNF9DLTBJWTVTUEZyLVJyYVI3Vmh4Znd0Rm1xSWtwWGEzV2pmTVIzUUY5ekwxbDVQRGRCU2R0Qmw4Wjktd3VzdFdCOW1vTzBGUjU4amk1c1ZYRUw2YUl6c2hCbDEydVZMcGpHcl9Ja1FfT29nUUotOEhoUkowV3p1TGZUQzZqZi1VMkNPMUxYYl9iU19wLTZnRTVfOXdpX3dBSHBKclNJZ0FORmZsVk9DWVByZGJ2ZlpWU0FnQ0RlOG96a3VicmJ5QW1LdVhOdGZpQVJqQ2l2UWY5blFGbTlIbnE1WWdkZUZVc3VLZTlVQk1nbFNLNE1OajgtRHlhX2hsRXN2S1BYcmRrb0ZGczlvN2s3aE0?oc=5",
-        "published_at": "2026-08-19T00:24+08:00",
-        "published_date": "2026-08-19",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "mention_count": 1,
-        "editorial_score": 45,
-        "selection_score": 61,
-        "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-        "editorial_reason": "Alo入华高价策略与市场反应，揭示中产消费K型分化趋势。"
+        "editorial_reason": "亚玛芬上半年净利增78%，始祖鸟恢复净开店，高端运动品牌增长强劲，反映消费分化。"
       },
       {
         "event_id": "evt_68a2d1207fae61",
@@ -750,45 +762,26 @@
         "editorial_score": 54,
         "selection_score": 76,
         "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-        "editorial_reason": "亲子家庭活动撬动文商旅体消费，为儿童品牌场景营销提供案例。"
+        "editorial_reason": "亲子家庭活动撬动文商旅体消费，为儿童运动品牌提供场景化营销思路。"
       },
       {
-        "event_id": "evt_d474236e347b51",
-        "title": "西班牙开学季临近：每名学生平均开销已达505欧元，四年上涨19%",
-        "category": "儿童与青少年",
+        "event_id": "evt_6b1d8939558b03",
+        "title": "金融携手体育共燃申城活力 交通银行推出申花系列金融产品， 解锁体育消费新体验2026-08-18",
+        "category": "产品与科技",
         "brands": [],
-        "source": "欧洲头条",
-        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQR2tTU2x0aDBBTW1UNGFFczB6X3VyeExBX3dWV05UX0w2TTJfOXhibk9TT1Utb1d4cUdsOUVEX2ZBdkRvRXlMT19uaS1KMmxuZXdpT1RVbXdLZThtRmVSaks4Qnl0Z0NVM0V0c190UVBKbUdTdFZKMFFPa2xhaEV1YVd2VWxkZTZkeE5HV1Y2OEpyZ2RZT0dRWU02STNwaE9WWkdHUUhoZUlua3VQMTNLdTVsd1FGeGNnczh0Qm9CbEFPc3BUcWNwVG9CNi1RcWJhY1RfY2ZoNGVWVVM0QWc?oc=5",
-        "published_at": "2026-08-17T22:31+08:00",
-        "published_date": "2026-08-17",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "mention_count": 1,
-        "editorial_score": 43,
-        "selection_score": 61,
-        "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-        "editorial_reason": "西班牙开学季成本上涨，提示儿童用品市场成本压力与消费变化。"
-      },
-      {
-        "event_id": "evt_a59845d6c39e48",
-        "title": "2026年1—7月份社会消费品零售总额增长1.2%",
-        "category": "行业动态",
-        "brands": [],
-        "source": "stats.gov.cn",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBNbUQzLTNCWWtxb0hQeWRzN1FhX0diXzZCSS1WRkZXbXZYVlJMei1WRGRzMU9VTHB3LTh4WEtZVTJJYi1KZU5JQVRCcUZsMlVNeEZ0WHBsdEFtNWkweXNib19WV1NNaUwzLUN5TVVSVQ?oc=5",
-        "published_at": "2026-08-17T15:00+08:00",
-        "published_date": "2026-08-17",
+        "source": "上海市人民政府",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMUFybFQ1T0NPdk05dGdFLUx3dmp1aVZOdDRoNF9YeU05bHg4Q3lVYkpVamNhS0F6b3VFcnV1eXRYeW9XRHpueG1PdkRQZnFpekE0NndkcVNKRGRDb0t3TnBZZHRpbGxoQk9VQmNuX3BCa3FoQWpIOVVidlNTbmJwN3FQOG5wTUtjM0E?oc=5",
+        "published_at": "2026-08-18T16:53+08:00",
+        "published_date": "2026-08-18",
         "status": "new",
         "verification": "official_source",
         "is_official": true,
         "source_count": 1,
         "mention_count": 1,
-        "editorial_score": 55,
-        "selection_score": 76,
+        "editorial_score": 53,
+        "selection_score": 74,
         "summary_snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-        "editorial_reason": "属于行业动态的重要本周新事件且有官方来源。"
+        "editorial_reason": "属于产品与科技的重要本周新事件且有官方来源。"
       }
     ],
     "follow_up_selected": [],
@@ -815,6 +808,22 @@
     },
     {
       "type": "event",
+      "id": "evt_4c8d25df74362e",
+      "title": "增速放缓，半年关店超300家！361度如何稳大众运动盘？",
+      "source": "搜狐网",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNanZQdVI5QndTcy1lY3k4a2tKeFpoTTJKRGtidE13MmxpYkVqQzBfRGcwdDJSSWRpSWV1UUlVVDFqVGxSZTZmYWs1RXlEYWtTSmtRMHNwbmZmeWpwVWFqLVVGYnQzdksySnFHZjJvcUJNWjZuX2lYM3dLN2xnb1RYbWRhdDdfZzFE?oc=5",
+      "published_date": "2026-08-19"
+    },
+    {
+      "type": "event",
+      "id": "evt_a59845d6c39e48",
+      "title": "2026年1—7月份社会消费品零售总额增长1.2%",
+      "source": "stats.gov.cn",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBNbUQzLTNCWWtxb0hQeWRzN1FhX0diXzZCSS1WRkZXbXZYVlJMei1WRGRzMU9VTHB3LTh4WEtZVTJJYi1KZU5JQVRCcUZsMlVNeEZ0WHBsdEFtNWkweXNib19WV1NNaUwzLUN5TVVSVQ?oc=5",
+      "published_date": "2026-08-17"
+    },
+    {
+      "type": "event",
       "id": "evt_a357e43549c47b",
       "title": "“巴拉巴拉”有魔法，童装救森马？",
       "source": "新华网",
@@ -831,14 +840,6 @@
     },
     {
       "type": "event",
-      "id": "evt_e4b0a87b2370af",
-      "title": "一条裤子1150元、开售秒空 Alo入华背后的“中产消费K型分化”",
-      "source": "新浪网",
-      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQd1RGNF9DLTBJWTVTUEZyLVJyYVI3Vmh4Znd0Rm1xSWtwWGEzV2pmTVIzUUY5ekwxbDVQRGRCU2R0Qmw4Wjktd3VzdFdCOW1vTzBGUjU4amk1c1ZYRUw2YUl6c2hCbDEydVZMcGpHcl9Ja1FfT29nUUotOEhoUkowV3p1TGZUQzZqZi1VMkNPMUxYYl9iU19wLTZnRTVfOXdpX3dBSHBKclNJZ0FORmZsVk9DWVByZGJ2ZlpWU0FnQ0RlOG96a3VicmJ5QW1LdVhOdGZpQVJqQ2l2UWY5blFGbTlIbnE1WWdkZUZVc3VLZTlVQk1nbFNLNE1OajgtRHlhX2hsRXN2S1BYcmRrb0ZGczlvN2s3aE0?oc=5",
-      "published_date": "2026-08-19"
-    },
-    {
-      "type": "event",
       "id": "evt_68a2d1207fae61",
       "title": "300组亲子家庭“暴走”杨浦 “一日打卡”如何撬动家庭文商旅体长效消费",
       "source": "shyp.gov.cn",
@@ -847,19 +848,11 @@
     },
     {
       "type": "event",
-      "id": "evt_d474236e347b51",
-      "title": "西班牙开学季临近：每名学生平均开销已达505欧元，四年上涨19%",
-      "source": "欧洲头条",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQR2tTU2x0aDBBTW1UNGFFczB6X3VyeExBX3dWV05UX0w2TTJfOXhibk9TT1Utb1d4cUdsOUVEX2ZBdkRvRXlMT19uaS1KMmxuZXdpT1RVbXdLZThtRmVSaks4Qnl0Z0NVM0V0c190UVBKbUdTdFZKMFFPa2xhaEV1YVd2VWxkZTZkeE5HV1Y2OEpyZ2RZT0dRWU02STNwaE9WWkdHUUhoZUlua3VQMTNLdTVsd1FGeGNnczh0Qm9CbEFPc3BUcWNwVG9CNi1RcWJhY1RfY2ZoNGVWVVM0QWc?oc=5",
-      "published_date": "2026-08-17"
-    },
-    {
-      "type": "event",
-      "id": "evt_a59845d6c39e48",
-      "title": "2026年1—7月份社会消费品零售总额增长1.2%",
-      "source": "stats.gov.cn",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBNbUQzLTNCWWtxb0hQeWRzN1FhX0diXzZCSS1WRkZXbXZYVlJMei1WRGRzMU9VTHB3LTh4WEtZVTJJYi1KZU5JQVRCcUZsMlVNeEZ0WHBsdEFtNWkweXNib19WV1NNaUwzLUN5TVVSVQ?oc=5",
-      "published_date": "2026-08-17"
+      "id": "evt_6b1d8939558b03",
+      "title": "金融携手体育共燃申城活力 交通银行推出申花系列金融产品， 解锁体育消费新体验2026-08-18",
+      "source": "上海市人民政府",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMUFybFQ1T0NPdk05dGdFLUx3dmp1aVZOdDRoNF9YeU05bHg4Q3lVYkpVamNhS0F6b3VFcnV1eXRYeW9XRHpueG1PdkRQZnFpekE0NndkcVNKRGRDb0t3TnBZZHRpbGxoQk9VQmNuX3BCa3FoQWpIOVVidlNTbmJwN3FQOG5wTUtjM0E?oc=5",
+      "published_date": "2026-08-18"
     },
     {
       "type": "event",
@@ -871,11 +864,11 @@
     },
     {
       "type": "event",
-      "id": "evt_098df293675ba2",
-      "title": "昂跑狂奔的B面：亚太撑起的利润，遮不住北美的收缩",
-      "source": "新京报",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JVmZMeTNXdnU3Tkw0NVVMdTdWTS10T3dRTEhNRC1sREw1c2ExQ0FiM0hzdkVIUGtBczFQQXlWMzFBZUdRN3FPQzAxTVpjOFhfNldBLVdGQjEzWE96NnZ6c2UtQmI?oc=5",
-      "published_date": "2026-08-18"
+      "id": "evt_694d75e472dff2",
+      "title": "耐克300亿级线上收权腾讯上半年营收破4000亿 | 邦小白零售周报- 零售",
+      "source": "亿邦动力网",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE14ekhNajd1dWRGRUoxQU0zanlaam5IbVZaNGlOU2hNMlAtN3o2dVZvTHdEVm1mVjYtc2N5RkltU3V1aDhsckVRQkFHTU5ib0N3c2pVQkln?oc=5",
+      "published_date": "2026-08-17"
     },
     {
       "type": "event",
@@ -887,19 +880,11 @@
     },
     {
       "type": "event",
-      "id": "evt_4c8d25df74362e",
-      "title": "增速放缓，半年关店超300家！361度如何稳大众运动盘？",
-      "source": "搜狐网",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNanZQdVI5QndTcy1lY3k4a2tKeFpoTTJKRGtidE13MmxpYkVqQzBfRGcwdDJSSWRpSWV1UUlVVDFqVGxSZTZmYWs1RXlEYWtTSmtRMHNwbmZmeWpwVWFqLVVGYnQzdksySnFHZjJvcUJNWjZuX2lYM3dLN2xnb1RYbWRhdDdfZzFE?oc=5",
-      "published_date": "2026-08-19"
-    },
-    {
-      "type": "event",
-      "id": "evt_bd5bbecfdc34f4",
-      "title": "ALO入华首秀：赠品包被炒至400元，核心产品瑜伽服被吐槽起球",
-      "source": "新京报",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Vb0tJWUs0cEFWVzI4bmtsanRYbERWYUdUUkpjbTduSjg3aWo1QzhuSF9VOHdKYW8xNWlVeGJGaXllSndtNzFtTnFiQVhYbWlrNzZHeUU5cmVwTi1TY212V1gzZUg?oc=5",
-      "published_date": "2026-08-14"
+      "id": "evt_8ec115888f9dbc",
+      "title": "暑假8岁孩子适合去哪？携程报告：亲子游预订涨45%，按年龄选目的地是关键+FAQ",
+      "source": "新浪网",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNeHRZcDFDU3pXTW9GWF92WEstRGNhUWwtTW54SEx4YXFYS1dPVlhzSkRUR293eFU5WFNVVTdPZDhxdFo0VzVrMXRnZlRQOHo1aC11YXJkVmMxaHFUWFpsNUlTZVVDRUlrejBveGJMbDNsZWZIamZWX2tFdy1sLTRTX1JvS1g?oc=5",
+      "published_date": "2026-08-16"
     },
     {
       "type": "event",
@@ -910,12 +895,20 @@
       "published_date": "2026-08-19"
     },
     {
-      "type": "product",
-      "id": "prd_074bbf9f2017a8",
-      "title": "Alo Yoga 核心产品瑜伽服",
-      "source": "新京报",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Vb0tJWUs0cEFWVzI4bmtsanRYbERWYUdUUkpjbTduSjg3aWo1QzhuSF9VOHdKYW8xNWlVeGJGaXllSndtNzFtTnFiQVhYbWlrNzZHeUU5cmVwTi1TY212V1gzZUg?oc=5",
-      "published_date": "2026-08-14"
+      "type": "event",
+      "id": "evt_43fc2fa27ca7fe",
+      "title": "亚玛芬体育二季度全球营收增长32%，大中华区增长35.5%",
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9RVUVjb3YyLTRiUHlYTkppNERxbzIzQXpYOGJITlBOem5oenZkRkdveWpkTWhvQ3JZSGgxX0E5VHM?oc=5",
+      "published_date": "2026-08-19"
+    },
+    {
+      "type": "event",
+      "id": "evt_e4b0a87b2370af",
+      "title": "一条裤子1150元、开售秒空 Alo入华背后的“中产消费K型分化”",
+      "source": "新浪网",
+      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQd1RGNF9DLTBJWTVTUEZyLVJyYVI3Vmh4Znd0Rm1xSWtwWGEzV2pmTVIzUUY5ekwxbDVQRGRCU2R0Qmw4Wjktd3VzdFdCOW1vTzBGUjU4amk1c1ZYRUw2YUl6c2hCbDEydVZMcGpHcl9Ja1FfT29nUUotOEhoUkowV3p1TGZUQzZqZi1VMkNPMUxYYl9iU19wLTZnRTVfOXdpX3dBSHBKclNJZ0FORmZsVk9DWVByZGJ2ZlpWU0FnQ0RlOG96a3VicmJ5QW1LdVhOdGZpQVJqQ2l2UWY5blFGbTlIbnE1WWdkZUZVc3VLZTlVQk1nbFNLNE1OajgtRHlhX2hsRXN2S1BYcmRrb0ZGczlvN2s3aE0?oc=5",
+      "published_date": "2026-08-19"
     },
     {
       "type": "product",
@@ -924,6 +917,14 @@
       "source": "womenofchina.com",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBxLVhZT0JzRWxFcktDUloxOW5PYmdxX3NMWEU1S0tldTNIbDRCTW5sR3hpWkx6NkJCbEt5aGJJeVZuejVob3VHMW1ZQ0NDZ3dpbnFIVTFVUXJaZw?oc=5",
       "published_date": "2026-08-16"
+    },
+    {
+      "type": "product",
+      "id": "prd_074bbf9f2017a8",
+      "title": "Alo Yoga 核心产品瑜伽服",
+      "source": "新京报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Vb0tJWUs0cEFWVzI4bmtsanRYbERWYUdUUkpjbTduSjg3aWo1QzhuSF9VOHdKYW8xNWlVeGJGaXllSndtNzFtTnFiQVhYbWlrNzZHeUU5cmVwTi1TY212V1gzZUg?oc=5",
+      "published_date": "2026-08-14"
     },
     {
       "type": "product",
@@ -947,26 +948,26 @@
     "ai_error": "",
     "source_schema_version": "2.0",
     "product_schema_version": "2.0",
-    "raw_event_count": 215,
-    "eligible_event_count": 164,
+    "raw_event_count": 214,
+    "eligible_event_count": 162,
     "selected_event_count": 8,
     "raw_product_count": 14,
     "eligible_product_count": 14,
     "selected_product_count": 4,
     "conflict_count": 0,
-    "source_link_count": 18,
+    "source_link_count": 19,
     "event_rejections": {
-      "low_editorial_score": 51
+      "low_editorial_score": 52
     },
     "product_rejections": {},
     "eligible_categories": {
       "电商与平台": 6,
-      "行业动态": 55,
+      "行业动态": 53,
       "儿童与青少年": 19,
-      "品牌与公司": 32,
+      "品牌与公司": 31,
       "产品与科技": 34,
       "宏观与消费": 5,
-      "渠道与零售": 11,
+      "渠道与零售": 12,
       "研究与数据": 1,
       "户外与场景": 1
     },
@@ -1137,14 +1138,14 @@
             "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNlk4cXpIRDY5eDZBLUJ0ZVRSUXV3UEFVZWtQM0h6WmlxTnRuMnEzby1WbEx2VXdLY21TRVI3ODROUURsR1pJaGRwZnFobzJ2U3hQRHc3U2JNSHBJUkp6TWd6SWx6Qm5QZWoxT2Z3V2E3V2RHZDRQaVZ5SWRBT05lSDVLWlpINlNjZ1JQQw?oc=5"
           },
           {
-            "title": "刘亦菲穿的79.8元防晒衣是哪个品牌？",
-            "source": "新浪网",
-            "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBPelc3TGtQUENEUjJpbmZNbGljRmg1R0RmcXI5SE1lRzdHekZpb293bGRYWHNoMWgyVGs1c0JzNVo3S0ZKZGFmLXNkOVBFUzd5bjlKSno1RGJJVDBIcGVaNnlqZHh5SlduVXY4LXRlbnM1QQ?oc=5"
-          },
-          {
             "title": "刘亦菲穿的79.8元防晒衣是什么品牌？",
             "source": "新浪网",
             "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9DS0xzWW9PY0VLY01fTmYzQmUzcjNBV1c5SndJOXpDRkp2bEpSN0RtcmpBMFpYOEJiNmx6YnI3V2J0b0JxOGJ2Q25wN1pDaUM4RzVYSkRTeWstVTdMbWlEb2sxOWVybWk0dWRENUVUaTVBZw?oc=5"
+          },
+          {
+            "title": "刘亦菲穿的79.8元防晒衣是哪个品牌？",
+            "source": "新浪网",
+            "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBPelc3TGtQUENEUjJpbmZNbGljRmg1R0RmcXI5SE1lRzdHekZpb293bGRYWHNoMWgyVGs1c0JzNVo3S0ZKZGFmLXNkOVBFUzd5bjlKSno1RGJJVDBIcGVaNnlqZHh5SlduVXY4LXRlbnM1QQ?oc=5"
           }
         ],
         "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
@@ -1349,7 +1350,7 @@
         "category": "商品趋势",
         "audience": "成人/通用",
         "scenarios": [],
-        "source": "nbd.com.cn",
+        "source": "每日经济新闻",
         "source_homepage": "https://www.nbd.com.cn",
         "article_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5DazdnTXk3Ml91ZXRqeC1CbnN1UHNIajdCVURTZ29wVXpOQTBzUnlqRDVwLU53NUFvS01WWkt0M05GcjcyTFNqSnFJNjYtUkFhdUZGdEowdXl0U3IwVHAzZHh1Uy1HQQ?oc=5",
         "google_news_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5DazdnTXk3Ml91ZXRqeC1CbnN1UHNIajdCVURTZ29wVXpOQTBzUnlqRDVwLU53NUFvS01WWkt0M05GcjcyTFNqSnFJNjYtUkFhdUZGdEowdXl0U3IwVHAzZHh1Uy1HQQ?oc=5",
@@ -1366,7 +1367,7 @@
         "discovered_by": [
           "运动品牌 新品 发布"
         ],
-        "signal_id": "psg_cded382c7c8ef0",
+        "signal_id": "psg_5ee5367b1de704",
         "signal_type": "product_media_signal",
         "keywords": [
           "发布"
@@ -1637,9 +1638,12 @@
         "verification": "media",
         "is_official": false,
         "query_groups": [
+          "brand",
+          "weekly_source_pool",
           "brand_product"
         ],
         "discovered_by": [
+          "\"安踏\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
           "\"安踏\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
         ],
         "signal_id": "psg_40676b0ed117af",

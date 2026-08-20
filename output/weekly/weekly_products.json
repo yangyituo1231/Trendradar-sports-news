@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "generated_at": "2026-08-20T14:44+08:00",
+  "generated_at": "2026-08-20T15:07+08:00",
   "report_window": {
     "start_date": "2026-08-13",
     "end_date": "2026-08-19",
@@ -35,8 +35,8 @@
       "media": 13
     },
     "rejected": {
-      "no_product_signal": 90,
-      "bad_or_non_product_topic": 15,
+      "no_product_signal": 91,
+      "bad_or_non_product_topic": 14,
       "outside_window": 23,
       "missing_or_short_title": 2
     }
@@ -464,7 +464,7 @@
         },
         {
           "headline": "INVINCIBLE x MADNESS x ASICS 即将推出GEL-KAYANO 12.1联名鞋款",
-          "source": "香港01",
+          "source": "global.hk01.com",
           "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNaEVES1NUeXRsbHBDWGRMUkNBcXV0Y05ncTlCdlFJMVFkNW1oakh5WHI0d1VkN1F1cDZ4UExncWJ5QXFmQ1MtR010SnQ1OG9KaUdSYTh5d2xBM25VMXBleVA0enZ1RHRabG1wNTVuc0V0UkdjdVZnb2p5NXBWbVc2VXBmczR0Qm9COWFlaWR1VjEyWnVleDdUbVBLQXczdmMxd2hVWGl2WnlsT1JMaTdyYlp3X012cWNDcXg1V1RQaVN6MDVkQkNQRlV4RTFWQ3BTaThfNGV5OENIenJIUFFraGxRNWh1eHRYNVNLMTJpNXhncnZmTXE0WjJjTjg?oc=5",
           "published_at": "2026-08-14T18:40+08:00"
         },
@@ -1234,14 +1234,14 @@
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNlk4cXpIRDY5eDZBLUJ0ZVRSUXV3UEFVZWtQM0h6WmlxTnRuMnEzby1WbEx2VXdLY21TRVI3ODROUURsR1pJaGRwZnFobzJ2U3hQRHc3U2JNSHBJUkp6TWd6SWx6Qm5QZWoxT2Z3V2E3V2RHZDRQaVZ5SWRBT05lSDVLWlpINlNjZ1JQQw?oc=5"
         },
         {
-          "title": "刘亦菲穿的79.8元防晒衣是哪个品牌？",
-          "source": "新浪网",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBPelc3TGtQUENEUjJpbmZNbGljRmg1R0RmcXI5SE1lRzdHekZpb293bGRYWHNoMWgyVGs1c0JzNVo3S0ZKZGFmLXNkOVBFUzd5bjlKSno1RGJJVDBIcGVaNnlqZHh5SlduVXY4LXRlbnM1QQ?oc=5"
-        },
-        {
           "title": "刘亦菲穿的79.8元防晒衣是什么品牌？",
           "source": "新浪网",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9DS0xzWW9PY0VLY01fTmYzQmUzcjNBV1c5SndJOXpDRkp2bEpSN0RtcmpBMFpYOEJiNmx6YnI3V2J0b0JxOGJ2Q25wN1pDaUM4RzVYSkRTeWstVTdMbWlEb2sxOWVybWk0dWRENUVUaTVBZw?oc=5"
+        },
+        {
+          "title": "刘亦菲穿的79.8元防晒衣是哪个品牌？",
+          "source": "新浪网",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBPelc3TGtQUENEUjJpbmZNbGljRmg1R0RmcXI5SE1lRzdHekZpb293bGRYWHNoMWgyVGs1c0JzNVo3S0ZKZGFmLXNkOVBFUzd5bjlKSno1RGJJVDBIcGVaNnlqZHh5SlduVXY4LXRlbnM1QQ?oc=5"
         }
       ],
       "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
@@ -1446,7 +1446,7 @@
       "category": "商品趋势",
       "audience": "成人/通用",
       "scenarios": [],
-      "source": "nbd.com.cn",
+      "source": "每日经济新闻",
       "source_homepage": "https://www.nbd.com.cn",
       "article_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5DazdnTXk3Ml91ZXRqeC1CbnN1UHNIajdCVURTZ29wVXpOQTBzUnlqRDVwLU53NUFvS01WWkt0M05GcjcyTFNqSnFJNjYtUkFhdUZGdEowdXl0U3IwVHAzZHh1Uy1HQQ?oc=5",
       "google_news_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5DazdnTXk3Ml91ZXRqeC1CbnN1UHNIajdCVURTZ29wVXpOQTBzUnlqRDVwLU53NUFvS01WWkt0M05GcjcyTFNqSnFJNjYtUkFhdUZGdEowdXl0U3IwVHAzZHh1Uy1HQQ?oc=5",
@@ -1463,7 +1463,7 @@
       "discovered_by": [
         "运动品牌 新品 发布"
       ],
-      "signal_id": "psg_cded382c7c8ef0",
+      "signal_id": "psg_5ee5367b1de704",
       "signal_type": "product_media_signal",
       "keywords": [
         "发布"
@@ -1734,9 +1734,12 @@
       "verification": "media",
       "is_official": false,
       "query_groups": [
+        "brand",
+        "weekly_source_pool",
         "brand_product"
       ],
       "discovered_by": [
+        "\"安踏\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
         "\"安踏\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
       ],
       "signal_id": "psg_40676b0ed117af",
@@ -2532,7 +2535,7 @@
       "category": "商品趋势",
       "audience": "成人/通用",
       "scenarios": [],
-      "source": "香港01",
+      "source": "global.hk01.com",
       "source_homepage": "https://global.hk01.com",
       "article_url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxQYnRCdVg1RmtLemRmM2VuMHEwZ2QtRUx0dkxkWkh0XzNaT0dsbUpLeFNHbkR1MXB1dWxRcmlhNW5JbmplQjBoZC12SlJyaGZ2bVRYUXZGdW9WekhCZThVZjJlMHhKTlZHQU5vQ1hRQWxtU21acUpBU1E3OG5CWjB6dUV0OTZodGYwWEtkYmJOcjBzWVlLaFIxb25maFRub2dyMlVuanlsVlVjRUN4aHdrb0dhdkRSeUw4aDAycjVhcUdndkJKS3p1cThEc3BPNGlJSFRNOHlUa0pSck5CY0xaRi1LN1lKNzVFaG9EU2pfQ0ZOb0VSeFl0bWpteXd3U056TnRCYXYtczh0UndGVC1QeE1SYWhHSmJkeVRQQ3cxMWllN1NZakhEOU5WSlFDdU9Ea2g3NlRoaUxQYTA0bFIzcEZ4R3g2WVl5LWdEMXVrdE5mZ1MwQnpUZkN5d2U?oc=5",
       "google_news_url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxQYnRCdVg1RmtLemRmM2VuMHEwZ2QtRUx0dkxkWkh0XzNaT0dsbUpLeFNHbkR1MXB1dWxRcmlhNW5JbmplQjBoZC12SlJyaGZ2bVRYUXZGdW9WekhCZThVZjJlMHhKTlZHQU5vQ1hRQWxtU21acUpBU1E3OG5CWjB6dUV0OTZodGYwWEtkYmJOcjBzWVlLaFIxb25maFRub2dyMlVuanlsVlVjRUN4aHdrb0dhdkRSeUw4aDAycjVhcUdndkJKS3p1cThEc3BPNGlJSFRNOHlUa0pSck5CY0xaRi1LN1lKNzVFaG9EU2pfQ0ZOb0VSeFl0bWpteXd3U056TnRCYXYtczh0UndGVC1QeE1SYWhHSmJkeVRQQ3cxMWllN1NZakhEOU5WSlFDdU9Ea2g3NlRoaUxQYTA0bFIzcEZ4R3g2WVl5LWdEMXVrdE5mZ1MwQnpUZkN5d2U?oc=5",
@@ -2549,7 +2552,7 @@
       "discovered_by": [
         "\"Adidas\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
       ],
-      "signal_id": "psg_084021c706ec94",
+      "signal_id": "psg_6ba96bd30ee6ee",
       "signal_type": "product_media_signal",
       "keywords": [
         "系列"
@@ -2740,10 +2743,12 @@
       "is_official": false,
       "query_groups": [
         "product",
+        "channel",
         "weekly_source_pool"
       ],
       "discovered_by": [
-        "运动品牌 新品 发布"
+        "运动品牌 新品 发布",
+        "小红书 运动消费"
       ],
       "signal_id": "psg_fc406c8ea87517",
       "signal_type": "product_media_signal",
@@ -3118,59 +3123,6 @@
       "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
     },
     {
-      "headline": "刘亦菲穿的79.8元防晒衣是哪个品牌？",
-      "brand": "",
-      "category": "夏季功能服饰",
-      "audience": "成人/通用",
-      "scenarios": [],
-      "source": "新浪网",
-      "source_homepage": "https://k.sina.com.cn",
-      "article_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBPelc3TGtQUENEUjJpbmZNbGljRmg1R0RmcXI5SE1lRzdHekZpb293bGRYWHNoMWgyVGs1c0JzNVo3S0ZKZGFmLXNkOVBFUzd5bjlKSno1RGJJVDBIcGVaNnlqZHh5SlduVXY4LXRlbnM1QQ?oc=5",
-      "google_news_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBPelc3TGtQUENEUjJpbmZNbGljRmg1R0RmcXI5SE1lRzdHekZpb293bGRYWHNoMWgyVGs1c0JzNVo3S0ZKZGFmLXNkOVBFUzd5bjlKSno1RGJJVDBIcGVaNnlqZHh5SlduVXY4LXRlbnM1QQ?oc=5",
-      "published_at": "2026-08-17T15:00+08:00",
-      "published_date": "2026-08-17",
-      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
-      "image_source": "page_open_graph",
-      "verification": "media",
-      "is_official": false,
-      "query_groups": [
-        "product",
-        "weekly_source_pool"
-      ],
-      "discovered_by": [
-        "防晒衣 运动品牌"
-      ],
-      "product_name": "8元防晒衣",
-      "product_name_basis": "product_phrase_in_source",
-      "model_code": "",
-      "release_date": "",
-      "release_date_basis": "not_disclosed",
-      "price": {
-        "value": null,
-        "currency": "",
-        "display": "未披露",
-        "basis": "not_disclosed"
-      },
-      "technologies": [
-        "防晒"
-      ],
-      "materials": [],
-      "official_url": "",
-      "evidence": {
-        "product": "刘亦菲穿的79.8元防晒衣是哪个品牌？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-        "technology": "刘亦菲穿的79.8元防晒衣是哪个品牌？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
-        "price_or_release": "刘亦菲穿的79.8元防晒衣是哪个品牌？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
-      },
-      "status": "new",
-      "first_seen": "2026-08-13",
-      "last_seen": "2026-08-19",
-      "confidence_score": 53,
-      "product_id": "prd_6e4a9dad430436",
-      "signal_id": "psg_a0384b7fd3293b",
-      "signal_type": "insufficient_product_evidence",
-      "note": "具体商品证据不足，已降级为媒体信号。"
-    },
-    {
       "headline": "刘亦菲穿的79.8元防晒衣是什么品牌？",
       "brand": "",
       "category": "夏季功能服饰",
@@ -3220,6 +3172,59 @@
       "confidence_score": 53,
       "product_id": "prd_6e4a9dad430436",
       "signal_id": "psg_b49ff5395f2147",
+      "signal_type": "insufficient_product_evidence",
+      "note": "具体商品证据不足，已降级为媒体信号。"
+    },
+    {
+      "headline": "刘亦菲穿的79.8元防晒衣是哪个品牌？",
+      "brand": "",
+      "category": "夏季功能服饰",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "新浪网",
+      "source_homepage": "https://k.sina.com.cn",
+      "article_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBPelc3TGtQUENEUjJpbmZNbGljRmg1R0RmcXI5SE1lRzdHekZpb293bGRYWHNoMWgyVGs1c0JzNVo3S0ZKZGFmLXNkOVBFUzd5bjlKSno1RGJJVDBIcGVaNnlqZHh5SlduVXY4LXRlbnM1QQ?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBPelc3TGtQUENEUjJpbmZNbGljRmg1R0RmcXI5SE1lRzdHekZpb293bGRYWHNoMWgyVGs1c0JzNVo3S0ZKZGFmLXNkOVBFUzd5bjlKSno1RGJJVDBIcGVaNnlqZHh5SlduVXY4LXRlbnM1QQ?oc=5",
+      "published_at": "2026-08-17T15:00+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw",
+      "image_source": "page_open_graph",
+      "verification": "media",
+      "is_official": false,
+      "query_groups": [
+        "product",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "防晒衣 运动品牌"
+      ],
+      "product_name": "8元防晒衣",
+      "product_name_basis": "product_phrase_in_source",
+      "model_code": "",
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "未披露",
+        "basis": "not_disclosed"
+      },
+      "technologies": [
+        "防晒"
+      ],
+      "materials": [],
+      "official_url": "",
+      "evidence": {
+        "product": "刘亦菲穿的79.8元防晒衣是哪个品牌？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "technology": "刘亦菲穿的79.8元防晒衣是哪个品牌？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "price_or_release": "刘亦菲穿的79.8元防晒衣是哪个品牌？ Google News Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      },
+      "status": "new",
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-19",
+      "confidence_score": 53,
+      "product_id": "prd_6e4a9dad430436",
+      "signal_id": "psg_a0384b7fd3293b",
       "signal_type": "insufficient_product_evidence",
       "note": "具体商品证据不足，已降级为媒体信号。"
     },
