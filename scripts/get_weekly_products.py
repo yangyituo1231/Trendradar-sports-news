@@ -255,7 +255,7 @@ PRODUCT_MODEL_FAMILIES = [
     "XT-6", "ACS Pro", "Gel-Kayano", "GEL-NIMBUS", "Novablast",
     "Fresh Foam", "FuelCell", "Deviate Nitro", "ForeverRun",
     "飞燃", "超轻", "赤兔", "绝影", "烈骏", "C202", "氮科技",
-    "冠军跑鞋", "马赫", "竞速160", "飞飚", "咻",
+    "冠军跑鞋", "马赫", "竞速160", "飞飚", "咻", "骇浪", "Kobe",
 ]
 
 TECHNOLOGY_WORDS = [
@@ -329,6 +329,74 @@ OFFICIAL_SOURCE_WORDS = [
 TRUSTED_MEDIA_WORDS = [
     "第一财经", "界面新闻", "Jiemian", "新京报", "澎湃", "36氪", "亿邦动力",
     "联商网", "赢商网", "CBNData", "华丽志", "时尚商业", "美通社", "中国纺织报",
+]
+
+TIER_1_WORDS = [
+    "国家统计局", "商务部", "国家体育总局", "新华网", "人民网", "央视",
+    "新华社", "中国政府网",
+]
+
+TIER_2_WORDS = TRUSTED_MEDIA_WORDS + [
+    "中国妇女网", "中国日报", "经济观察报", "南方都市报", "北京商报",
+    "证券时报", "财联社", "虎嗅", "钛媒体", "品牌星球", "Morketing",
+]
+
+LOW_SOURCE_WORDS = [
+    "搜狐号", "百家号", "网易号", "企鹅号", "财富号", "自媒体", "省钱快报",
+    "Dealmoon", "北美省钱快报", "Traders Union", "投資慧眼", "推荐榜",
+]
+
+LOW_SOURCE_DOMAINS = [
+    "dealmoon.com", "dealmoon.ca", "tradersunion.com", "sohu.com/a/",
+]
+
+SOURCE_NAME_ALIASES = {
+    "thepaper.cn": "澎湃新闻",
+    "澎湃": "澎湃新闻",
+    "jiemian.com": "界面新闻",
+    "Jiemian": "界面新闻",
+    "yicai.com": "第一财经",
+    "ebrun.com": "亿邦动力",
+    "womenofchina.com": "中国妇女网",
+    "stats.gov.cn": "国家统计局",
+    "mofcom.gov.cn": "商务部",
+    "sport.gov.cn": "国家体育总局",
+    "xinhuanet.com": "新华网",
+    "people.com.cn": "人民网",
+    "shyp.gov.cn": "上海杨浦",
+    "Sohu": "搜狐网",
+    "搜狐": "搜狐网",
+}
+
+DOMAIN_SOURCE_NAMES = [
+    ("stats.gov.cn", "国家统计局"),
+    ("mofcom.gov.cn", "商务部"),
+    ("sport.gov.cn", "国家体育总局"),
+    ("xinhuanet.com", "新华网"),
+    ("people.com.cn", "人民网"),
+    ("thepaper.cn", "澎湃新闻"),
+    ("jiemian.com", "界面新闻"),
+    ("yicai.com", "第一财经"),
+    ("ebrun.com", "亿邦动力"),
+    ("womenofchina.com", "中国妇女网"),
+    ("shyp.gov.cn", "上海杨浦"),
+    ("dealmoon.com", "北美省钱快报"),
+    ("dealmoon.ca", "北美省钱快报"),
+]
+
+GENERIC_PRODUCT_PHRASES = [
+    "核心产品", "代表产品", "主推产品", "明星产品", "运动品牌新品", "品牌新品",
+    "全线产品", "新品系列", "新款系列", "核心产品瑜伽服", "瑜伽服核心产品",
+]
+
+INVALID_IMAGE_HOSTS = [
+    "google.com", "googleusercontent.com", "gstatic.com", "ggpht.com",
+    "googleapis.com", "news.google.com",
+]
+
+INVALID_IMAGE_TOKENS = [
+    "logo", "icon", "favicon", "avatar", "default", "placeholder", "sprite",
+    "loading", "blank", "transparent", "brandmark", "site-logo", "news-logo",
 ]
 
 
@@ -451,20 +519,27 @@ def fetch_rss(query_row: dict[str, str], session: requests.Session) -> tuple[lis
 
     for node in root.findall(".//item")[:RSS_PER_QUERY]:
         source_node = node.find("source")
-        source = clean_text(source_node.text if source_node is not None else "")
+        raw_source = clean_text(source_node.text if source_node is not None else "")
         source_homepage = clean_url(source_node.attrib.get("url", "") if source_node is not None else "")
+        source = normalize_source_name(raw_source, source_homepage)
         pub_dt = parse_datetime(node.findtext("pubDate"))
+        google_url = clean_url(node.findtext("link"))
 
         rows.append({
-            "headline": normalize_rss_title(node.findtext("title") or "", source),
+            "headline": normalize_rss_title(node.findtext("title") or "", raw_source),
             "source": source,
             "source_homepage": source_homepage,
-            "google_news_url": clean_url(node.findtext("link")),
-            "article_url": clean_url(node.findtext("link")),
+            "google_news_url": google_url,
+            "article_url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback" if google_url else "missing",
             "published_at": pub_dt.isoformat(timespec="minutes") if pub_dt else "",
             "published_date": pub_dt.date().isoformat() if pub_dt else "",
             "query_groups": [query_row["group"]],
             "discovered_by": [query_row["query"]],
+            "source_tier": "",
+            "is_official": False,
+            "core_eligible": True,
         })
 
     return rows, ""
@@ -483,18 +558,33 @@ def rows_from_weekly_sources() -> list[dict[str, Any]]:
         if not has_any(title, PRODUCT_NOUNS + PRODUCT_ACTION_WORDS + PRODUCT_MODEL_FAMILIES):
             continue
 
+        source_homepage = clean_url(item.get("source_url"))
+        direct_url = direct_article_url(item)
+        source = normalize_source_name(item.get("source"), source_homepage, direct_url)
+        image_url = clean_url(item.get("image_url"))
+
         rows.append({
             "headline": title,
-            "source": clean_text(item.get("source")),
-            "source_homepage": clean_url(item.get("source_url")),
+            "source": source,
+            "source_homepage": source_homepage,
             "google_news_url": clean_url(item.get("google_news_url")),
-            "article_url": clean_url(item.get("direct_url") or item.get("url")),
+            "article_url": direct_url,
+            "direct_url": direct_url,
+            "link_status": clean_text(item.get("link_status")) or ("direct" if direct_url else "google_news_fallback"),
             "published_at": clean_text(item.get("published_at")),
             "published_date": clean_text(item.get("published_date")),
             "query_groups": list(dict.fromkeys(safe_list(item.get("query_groups")) + ["weekly_source_pool"])),
             "discovered_by": safe_list(item.get("discovered_by")),
             "meta_description": clean_text(item.get("meta_description")),
-            "image_url": clean_url(item.get("image_url")),
+            "image_url": image_url if is_valid_image_url(image_url) else "",
+            "image_source_url": (
+                clean_url(item.get("image_source_url")) or direct_url
+            ) if is_valid_image_url(image_url) else "",
+            "source_tier": clean_text(item.get("source_tier")),
+            "is_official": bool(item.get("is_official")),
+            "core_eligible": bool(item.get("core_eligible", True)),
+            "core_exclusion_reason": clean_text(item.get("core_exclusion_reason")),
+            "event_family": clean_text(item.get("event_family")),
         })
 
     return rows
@@ -514,16 +604,97 @@ def detect_brand(text: str) -> str:
     return ""
 
 
-def source_verification(source: str, source_homepage: str, article_url: str) -> tuple[str, bool]:
+def normalize_source_name(source: str, *urls: str) -> str:
+    original = clean_text(source)
+    lower_source = original.lower()
+
+    for key, display in SOURCE_NAME_ALIASES.items():
+        if key.lower() in lower_source:
+            return display
+
+    hosts = " ".join(host_of(url) for url in urls if clean_url(url))
+    for domain, display in DOMAIN_SOURCE_NAMES:
+        if domain in hosts:
+            return display
+
+    return original
+
+
+def source_profile(
+    source: str,
+    source_homepage: str,
+    article_url: str,
+    inherited_tier: str = "",
+    inherited_official: bool = False,
+) -> tuple[str, bool, int]:
     combined = f"{source} {source_homepage} {article_url}"
     hosts = f"{host_of(source_homepage)} {host_of(article_url)}"
-    official = has_any(combined, OFFICIAL_SOURCE_WORDS) or any(domain in hosts for domain in OFFICIAL_DOMAINS)
+    official = bool(inherited_official) or has_any(combined, OFFICIAL_SOURCE_WORDS)
+    official = official or any(domain in hosts for domain in OFFICIAL_DOMAINS)
 
     if official:
+        return "official", True, 32
+
+    inherited_tier = clean_text(inherited_tier)
+    if inherited_tier in {"tier_1", "tier_2", "tier_3", "low"}:
+        points = {"tier_1": 26, "tier_2": 20, "tier_3": 10, "low": 2}
+        return inherited_tier, False, points[inherited_tier]
+
+    if has_any(combined, TIER_1_WORDS):
+        return "tier_1", False, 26
+    if has_any(combined, TIER_2_WORDS):
+        return "tier_2", False, 20
+    if has_any(combined, LOW_SOURCE_WORDS) or any(domain in combined.lower() for domain in LOW_SOURCE_DOMAINS):
+        return "low", False, 2
+    return "tier_3", False, 10
+
+
+def source_verification(
+    source: str,
+    source_homepage: str,
+    article_url: str,
+    inherited_tier: str = "",
+    inherited_official: bool = False,
+) -> tuple[str, bool]:
+    tier, official, _ = source_profile(
+        source,
+        source_homepage,
+        article_url,
+        inherited_tier,
+        inherited_official,
+    )
+    if official:
         return "official", True
-    if has_any(combined, TRUSTED_MEDIA_WORDS):
+    if tier in {"tier_1", "tier_2"}:
         return "trusted_media", False
     return "media", False
+
+
+def is_valid_image_url(value: Any) -> bool:
+    url = clean_url(value)
+    if not url:
+        return False
+
+    parsed = urlparse(url)
+    host = parsed.netloc.lower().removeprefix("www.")
+    path = parsed.path.lower()
+    full = f"{host}{path}"
+
+    if any(host == blocked or host.endswith("." + blocked) for blocked in INVALID_IMAGE_HOSTS):
+        return False
+    if path.endswith((".svg", ".ico", ".gif")):
+        return False
+    if any(token in full for token in INVALID_IMAGE_TOKENS):
+        return False
+    return True
+
+
+def direct_article_url(item: dict[str, Any]) -> str:
+    for key in ["direct_url", "article_url", "url"]:
+        url = clean_url(item.get(key))
+        if url and is_external_url(url):
+            return url
+    return ""
 
 
 def detect_category(text: str) -> str:
@@ -595,7 +766,7 @@ def extract_page_text(soup: BeautifulSoup) -> str:
 
 def enrich_candidate(item: dict[str, Any]) -> dict[str, Any]:
     enriched = dict(item)
-    url = clean_url(item.get("article_url") or item.get("google_news_url"))
+    url = direct_article_url(item)
 
     if not url:
         return enriched
@@ -612,8 +783,12 @@ def enrich_candidate(item: dict[str, Any]) -> dict[str, Any]:
         return enriched
 
     final_url = clean_url(response.url)
-    if is_external_url(final_url):
-        enriched["article_url"] = final_url
+    if not is_external_url(final_url):
+        return enriched
+
+    enriched["article_url"] = final_url
+    enriched["direct_url"] = final_url
+    enriched["link_status"] = "direct"
 
     if "html" not in response.headers.get("content-type", "").lower():
         return enriched
@@ -628,6 +803,7 @@ def enrich_candidate(item: dict[str, Any]) -> dict[str, Any]:
         canonical = clean_url(urljoin(final_url, canonical_node.get("href", "")))
         if canonical and is_external_url(canonical):
             enriched["article_url"] = canonical
+            enriched["direct_url"] = canonical
 
     page_title = (
         meta_content(soup, prop="og:title")
@@ -648,10 +824,29 @@ def enrich_candidate(item: dict[str, Any]) -> dict[str, Any]:
         enriched["page_title"] = page_title
     if description:
         enriched["meta_description"] = description[:700]
-    if image_url:
-        enriched["image_url"] = urljoin(enriched.get("article_url") or final_url, image_url)
+    resolved_image = clean_url(urljoin(enriched.get("article_url") or final_url, image_url)) if image_url else ""
+    if is_valid_image_url(resolved_image):
+        enriched["image_url"] = resolved_image
+        enriched["image_source_url"] = enriched.get("article_url") or final_url
+    elif not is_valid_image_url(enriched.get("image_url")):
+        enriched.pop("image_url", None)
+        enriched.pop("image_source_url", None)
 
     enriched["page_text"] = extract_page_text(soup)
+    enriched["source"] = normalize_source_name(
+        enriched.get("source", ""),
+        enriched.get("source_homepage", ""),
+        enriched.get("article_url", ""),
+    )
+    tier, official, _ = source_profile(
+        enriched.get("source", ""),
+        enriched.get("source_homepage", ""),
+        enriched.get("article_url", ""),
+        enriched.get("source_tier", ""),
+        bool(enriched.get("is_official")),
+    )
+    enriched["source_tier"] = tier
+    enriched["is_official"] = official
     return enriched
 
 
@@ -691,12 +886,52 @@ def clean_product_name(value: str, brand: str) -> str:
     generic = {
         "新品", "新款", "运动品牌新品", "跑鞋新品", "儿童运动鞋", "运动鞋",
         "跑鞋", "篮球鞋", "户外鞋", "防晒衣", "运动服饰", "新品系列",
+        "核心产品", "代表产品", "主推产品", "明星产品", "核心产品瑜伽服",
+        "瑜伽服核心产品", "瑜伽服", "瑜伽裤", "运动内衣", "商品趋势",
     }
 
     if not text or text in generic or len(text) < 2 or len(text) > 60:
         return ""
 
     return text
+
+
+def is_specific_product_name(value: str, brand: str = "") -> bool:
+    name = clean_product_name(value, brand)
+    if not name:
+        return False
+
+    residue = name
+    for variants in BRAND_VARIANTS.values():
+        for variant in variants:
+            residue = re.sub(re.escape(variant), "", residue, flags=re.IGNORECASE)
+
+    # 标题正则可能从多词英文品牌中间开始匹配；继续剔除品牌组成词，
+    # 避免把“Yoga核心产品瑜伽服”误认成Alo Yoga的具体型号。
+    for brand_part in re.findall(r"[A-Za-z0-9°]+|[一-龥]{2,}", clean_text(brand)):
+        if len(brand_part) >= 2:
+            residue = re.sub(re.escape(brand_part), "", residue, flags=re.IGNORECASE)
+
+    removable = sorted(
+        GENERIC_PRODUCT_PHRASES + PRODUCT_ACTION_WORDS + PRODUCT_NOUNS + [
+            "产品", "商品", "核心", "代表", "主推", "明星", "全新", "系列",
+            "运动", "儿童", "青少年", "成人", "男款", "女款", "同款",
+        ],
+        key=len,
+        reverse=True,
+    )
+    for token in removable:
+        residue = re.sub(re.escape(token), "", residue, flags=re.IGNORECASE)
+
+    residue = re.sub(r"[^A-Za-z0-9一-龥]+", "", residue)
+    if len(residue) < 2:
+        return False
+
+    # 只有通用品类和营销词，不视为“具名产品”。
+    if re.fullmatch(r"(?:新品|新款|核心|产品|商品|系列|运动|鞋服|服装)+", residue):
+        return False
+
+    return True
 
 
 def extract_product_name(text: str, brand: str) -> tuple[str, str]:
@@ -710,7 +945,9 @@ def extract_product_name(text: str, brand: str) -> tuple[str, str]:
         )
         family_match = re.search(family_pattern, search_text, flags=re.IGNORECASE)
         if family_match:
-            return clean_text(family_match.group(0)), "model_name_in_source"
+            candidate = clean_product_name(family_match.group(0), brand)
+            if is_specific_product_name(candidate, brand):
+                return candidate, "model_name_in_source"
 
     # 2. 引号中的具体产品名。
     quoted_patterns = [
@@ -721,7 +958,11 @@ def extract_product_name(text: str, brand: str) -> tuple[str, str]:
     for pattern in quoted_patterns:
         for match in re.findall(pattern, search_text):
             candidate = clean_product_name(match, brand)
-            if candidate and has_any(candidate, PRODUCT_NOUNS + PRODUCT_MODEL_FAMILIES):
+            if (
+                candidate
+                and has_any(candidate, PRODUCT_NOUNS + PRODUCT_MODEL_FAMILIES)
+                and is_specific_product_name(candidate, brand)
+            ):
                 return candidate, "quoted_product_name"
 
     # 3. 中文/英文型号 + 商品名。
@@ -736,7 +977,7 @@ def extract_product_name(text: str, brand: str) -> tuple[str, str]:
 
     for match in re.findall(product_pattern, search_text, flags=re.IGNORECASE):
         candidate = clean_product_name(match, brand)
-        if candidate:
+        if candidate and is_specific_product_name(candidate, brand):
             return candidate, "product_phrase_in_source"
 
     # 4. 独立英文/数字型号，例如 AB1234-001、C202 6代。
@@ -746,7 +987,7 @@ def extract_product_name(text: str, brand: str) -> tuple[str, str]:
     )
     if model_match:
         candidate = clean_product_name(model_match.group(1), brand)
-        if candidate:
+        if candidate and is_specific_product_name(candidate, brand):
             return candidate, "model_code_in_source"
 
     return "", "not_identified"
@@ -798,7 +1039,7 @@ def extract_price(text: str) -> dict[str, Any]:
     return {
         "value": None,
         "currency": "",
-        "display": "未披露",
+        "display": "",
         "basis": "not_disclosed",
     }
 
@@ -841,29 +1082,34 @@ def evidence_snippet(text: str, terms: list[str], length: int = 180) -> str:
 
 def confidence_score(product: dict[str, Any]) -> int:
     score = 0
-    score += 36 if product.get("is_official") else 22 if product.get("verification") == "trusted_media" else 12
-    score += 24 if product.get("product_name") else 0
+    tier = clean_text(product.get("source_tier"))
+    score += 34 if product.get("is_official") else 23 if tier == "tier_1" else 19 if tier == "tier_2" else 9
+    score += 24 if is_specific_product_name(product.get("product_name", ""), product.get("brand", "")) else 0
     score += 8 if product.get("model_code") else 0
     score += 8 if product.get("release_date") else 0
     score += 7 if product.get("price", {}).get("value") is not None else 0
     score += 7 if product.get("technologies") else 0
-    score += 5 if product.get("image_url") else 0
-    score += 5 if product.get("article_url") else 0
+    score += 4 if is_valid_image_url(product.get("image_url")) else 0
+    score += 8 if direct_article_url(product) else 0
+    score += 12 if int(product.get("credible_source_count") or 0) >= 2 else 0
     return max(0, min(100, score))
 
 
 def build_product_or_signal(item: dict[str, Any]) -> tuple[str, dict[str, Any]]:
     headline = clean_text(item.get("headline"))
-    combined = " ".join([
+    identification_text = " ".join([
         headline,
         clean_text(item.get("page_title")),
         clean_text(item.get("meta_description")),
+    ])
+    combined = " ".join([
+        identification_text,
         clean_text(item.get("page_text"))[:12_000],
     ])
 
-    brand = detect_brand(combined)
+    brand = detect_brand(identification_text) or detect_brand(combined)
     product_name, product_name_basis = extract_product_name(
-        " ".join([headline, clean_text(item.get("page_title")), clean_text(item.get("meta_description"))]),
+        identification_text,
         brand,
     )
     model_code = extract_model_code(combined)
@@ -874,11 +1120,20 @@ def build_product_or_signal(item: dict[str, Any]) -> tuple[str, dict[str, Any]]:
     materials = detect_terms(combined, MATERIAL_WORDS, 8)
     price = extract_price(combined)
     release = extract_release_date(combined, clean_text(item.get("published_date")))
-    verification, is_official = source_verification(
-        clean_text(item.get("source")),
-        clean_url(item.get("source_homepage")),
-        clean_url(item.get("article_url")),
+    article_url = direct_article_url(item)
+    source_homepage = clean_url(item.get("source_homepage"))
+    source = normalize_source_name(item.get("source"), source_homepage, article_url)
+    source_tier, is_official, _ = source_profile(
+        source,
+        source_homepage,
+        article_url,
+        clean_text(item.get("source_tier")),
+        bool(item.get("is_official")),
     )
+    verification = "official" if is_official else "trusted_media" if source_tier in {"tier_1", "tier_2"} else "media"
+    image_url = clean_url(item.get("image_url"))
+    if not is_valid_image_url(image_url):
+        image_url = ""
 
     base = {
         "headline": headline,
@@ -886,21 +1141,28 @@ def build_product_or_signal(item: dict[str, Any]) -> tuple[str, dict[str, Any]]:
         "category": category,
         "audience": audience,
         "scenarios": scenarios,
-        "source": clean_text(item.get("source")),
-        "source_homepage": clean_url(item.get("source_homepage")),
-        "article_url": clean_url(item.get("article_url")),
+        "source": source,
+        "source_homepage": source_homepage,
+        "article_url": article_url,
+        "direct_url": article_url,
         "google_news_url": clean_url(item.get("google_news_url")),
+        "link_status": clean_text(item.get("link_status")) or ("direct" if article_url else "google_news_fallback"),
         "published_at": clean_text(item.get("published_at")),
         "published_date": clean_text(item.get("published_date")),
-        "image_url": clean_url(item.get("image_url")),
-        "image_source": "page_open_graph" if item.get("image_url") else "",
+        "image_url": image_url,
+        "image_source": "page_open_graph" if image_url else "",
+        "image_source_url": clean_url(item.get("image_source_url")) if image_url else "",
         "verification": verification,
+        "source_tier": source_tier,
         "is_official": is_official,
+        "core_eligible": bool(item.get("core_eligible", True)),
+        "core_exclusion_reason": clean_text(item.get("core_exclusion_reason")),
+        "event_family": clean_text(item.get("event_family")),
         "query_groups": safe_list(item.get("query_groups")),
         "discovered_by": safe_list(item.get("discovered_by")),
     }
 
-    if product_name:
+    if product_name and is_specific_product_name(product_name, brand):
         official_url = base["article_url"] if is_official else ""
         product = {
             **base,
@@ -951,7 +1213,21 @@ def merge_discovery_duplicates(items: list[dict[str, Any]]) -> list[dict[str, An
     best: dict[str, dict[str, Any]] = {}
 
     for item in items:
-        key = norm_key(item.get("headline"))
+        item = dict(item)
+        direct_url = direct_article_url(item)
+        source = normalize_source_name(
+            item.get("source", ""),
+            item.get("source_homepage", ""),
+            direct_url,
+        )
+        item["source"] = source
+        if direct_url:
+            item["article_url"] = direct_url
+            item["direct_url"] = direct_url
+            item["link_status"] = "direct"
+
+        source_identity = source.lower() or host_of(direct_url) or host_of(item.get("source_homepage", ""))
+        key = f"{norm_key(item.get('headline'))}|{source_identity}"
         if not key:
             continue
 
@@ -963,12 +1239,18 @@ def merge_discovery_duplicates(items: list[dict[str, Any]]) -> list[dict[str, An
         old["query_groups"] = list(dict.fromkeys(safe_list(old.get("query_groups")) + safe_list(item.get("query_groups"))))
         old["discovered_by"] = list(dict.fromkeys(safe_list(old.get("discovered_by")) + safe_list(item.get("discovered_by"))))
 
-        if not old.get("image_url") and item.get("image_url"):
+        if not is_valid_image_url(old.get("image_url")) and is_valid_image_url(item.get("image_url")):
             old["image_url"] = item.get("image_url")
+            old["image_source_url"] = item.get("image_source_url", "")
         if not old.get("meta_description") and item.get("meta_description"):
             old["meta_description"] = item.get("meta_description")
         if not is_external_url(old.get("article_url", "")) and is_external_url(item.get("article_url", "")):
             old["article_url"] = item.get("article_url")
+            old["direct_url"] = item.get("article_url")
+            old["link_status"] = "direct"
+        if not old.get("source_tier") and item.get("source_tier"):
+            old["source_tier"] = item.get("source_tier")
+        old["is_official"] = bool(old.get("is_official") or item.get("is_official"))
 
     return list(best.values())
 
@@ -979,6 +1261,30 @@ def product_similarity(a: dict[str, Any], b: dict[str, Any]) -> float:
     if a.get("brand") and b.get("brand") and a["brand"] != b["brand"]:
         return 0.0
     return SequenceMatcher(None, norm_key(a.get("product_name")), norm_key(b.get("product_name"))).ratio()
+
+
+def coverage_row(product: dict[str, Any]) -> dict[str, Any]:
+    url = direct_article_url(product)
+    return {
+        "headline": clean_text(product.get("headline")),
+        "source": normalize_source_name(
+            product.get("source", ""),
+            product.get("source_homepage", ""),
+            url,
+        ),
+        "url": url,
+        "direct_url": url,
+        "link_status": "direct" if url else clean_text(product.get("link_status")) or "google_news_fallback",
+        "published_at": clean_text(product.get("published_at")),
+        "published_date": clean_text(product.get("published_date")),
+        "source_tier": clean_text(product.get("source_tier")) or "tier_3",
+        "is_official": bool(product.get("is_official")),
+    }
+
+
+def coverage_identity(row: dict[str, Any]) -> str:
+    source = normalize_source_name(row.get("source", ""), row.get("url", ""))
+    return source.lower() or host_of(clean_url(row.get("url")))
 
 
 def merge_products(products: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -992,28 +1298,27 @@ def merge_products(products: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 break
 
         if target is None:
-            product["coverage"] = [{
-                "headline": product.get("headline", ""),
-                "source": product.get("source", ""),
-                "url": product.get("article_url") or product.get("google_news_url", ""),
-                "published_at": product.get("published_at", ""),
-            }]
+            product["coverage"] = [coverage_row(product)]
             merged.append(product)
             continue
 
-        target["coverage"].append({
-            "headline": product.get("headline", ""),
-            "source": product.get("source", ""),
-            "url": product.get("article_url") or product.get("google_news_url", ""),
-            "published_at": product.get("published_at", ""),
-        })
+        new_coverage = coverage_row(product)
+        existing_keys = {
+            (coverage_identity(row), norm_key(row.get("headline")))
+            for row in safe_list(target.get("coverage"))
+            if isinstance(row, dict)
+        }
+        coverage_key = (coverage_identity(new_coverage), norm_key(new_coverage.get("headline")))
+        if coverage_key not in existing_keys:
+            target["coverage"].append(new_coverage)
         target["technologies"] = list(dict.fromkeys(target.get("technologies", []) + product.get("technologies", [])))[:10]
         target["materials"] = list(dict.fromkeys(target.get("materials", []) + product.get("materials", [])))[:8]
         target["scenarios"] = list(dict.fromkeys(target.get("scenarios", []) + product.get("scenarios", [])))[:4]
 
-        if not target.get("image_url") and product.get("image_url"):
+        if not is_valid_image_url(target.get("image_url")) and is_valid_image_url(product.get("image_url")):
             target["image_url"] = product.get("image_url")
             target["image_source"] = product.get("image_source", "")
+            target["image_source_url"] = product.get("image_source_url", "")
         if not target.get("official_url") and product.get("official_url"):
             target["official_url"] = product.get("official_url")
         if target.get("price", {}).get("value") is None and product.get("price", {}).get("value") is not None:
@@ -1023,8 +1328,98 @@ def merge_products(products: list[dict[str, Any]]) -> list[dict[str, Any]]:
             target["release_date_basis"] = product.get("release_date_basis")
 
         target["confidence_score"] = max(target.get("confidence_score", 0), product.get("confidence_score", 0))
+        if product.get("is_official"):
+            target["is_official"] = True
+            target["verification"] = "official"
+            target["source_tier"] = "official"
 
     return merged
+
+
+def evaluate_product_verification(product: dict[str, Any]) -> tuple[bool, str]:
+    coverage = [x for x in safe_list(product.get("coverage")) if isinstance(x, dict)]
+    unique_coverage = []
+    used_sources = set()
+
+    for row in coverage:
+        identity = coverage_identity(row)
+        if not identity or identity in used_sources:
+            continue
+        used_sources.add(identity)
+        unique_coverage.append(row)
+
+    direct_rows = [x for x in unique_coverage if is_external_url(clean_url(x.get("direct_url") or x.get("url")))]
+    credible_rows = [
+        x for x in direct_rows
+        if x.get("is_official") or clean_text(x.get("source_tier")) in {"tier_1", "tier_2"}
+    ]
+    official_rows = [x for x in direct_rows if x.get("is_official")]
+
+    product["coverage"] = unique_coverage
+    product["source_count"] = len(unique_coverage)
+    product["direct_source_count"] = len(direct_rows)
+    product["credible_source_count"] = len(credible_rows)
+    product["official_evidence_count"] = len(official_rows)
+    product["evidence_status"] = "verified" if official_rows or len(credible_rows) >= 2 else "lead"
+
+    if not clean_text(product.get("brand")):
+        return False, "missing_brand"
+    if not is_specific_product_name(product.get("product_name", ""), product.get("brand", "")):
+        return False, "generic_or_missing_product_name"
+    if not in_report_window(product.get("published_at") or product.get("published_date")):
+        return False, "outside_or_missing_date"
+    if not direct_rows:
+        return False, "missing_direct_source"
+    if official_rows:
+        product["verification"] = "official"
+        product["verification_reason"] = "官方来源直接核验"
+        return True, "official_source"
+    if len(credible_rows) >= 2:
+        product["verification"] = "multi_source"
+        product["verification_reason"] = "至少两家独立可信来源交叉核验"
+        return True, "two_credible_sources"
+
+    product["verification"] = "product_lead"
+    product["verification_reason"] = "仅有单一非官方来源，保留为商品线索"
+    return False, "insufficient_independent_evidence"
+
+
+def product_to_lead(product: dict[str, Any], reason: str) -> dict[str, Any]:
+    lead = dict(product)
+    lead["signal_id"] = stable_id(
+        "pld",
+        f"{lead.get('brand', '')}|{norm_key(lead.get('product_name'))}|{norm_key(lead.get('headline'))}",
+    )
+    lead["signal_type"] = "product_lead"
+    lead["lead_reason"] = reason
+    lead["evidence_status"] = "lead"
+    lead["note"] = "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+    return lead
+
+
+def suppress_duplicate_images(rows: list[dict[str, Any]]) -> int:
+    counts = Counter(
+        clean_url(row.get("image_url"))
+        for row in rows
+        if isinstance(row, dict) and is_valid_image_url(row.get("image_url"))
+    )
+    duplicated = {url for url, count in counts.items() if url and count > 1}
+    suppressed = 0
+
+    for row in rows:
+        image_url = clean_url(row.get("image_url"))
+        if not is_valid_image_url(image_url) or image_url in duplicated:
+            if image_url:
+                suppressed += 1
+            row["image_url"] = ""
+            row["image_source"] = ""
+            row["image_source_url"] = ""
+            if image_url in duplicated:
+                row["image_rejection_reason"] = "duplicate_image_across_products"
+            elif image_url:
+                row["image_rejection_reason"] = "invalid_or_generic_image"
+
+    return suppressed
 
 
 def load_prior_products() -> list[dict[str, Any]]:
@@ -1162,32 +1557,43 @@ def main() -> None:
     print(f"Accepted candidates after dedupe: {len(candidates)}")
 
     enriched = enrich_candidates(candidates) if candidates else []
-    products = []
+    provisional_products = []
+    product_leads = []
     media_signals = []
 
     for item in enriched:
         kind, row = build_product_or_signal(item)
 
         if kind == "product":
-            # 非官方媒体识别出的产品，至少需要具体产品名、品牌和可点击来源。
-            quality_ok = bool(
+            basic_identity_ok = bool(
                 row.get("product_name")
                 and row.get("brand")
-                and (row.get("article_url") or row.get("google_news_url"))
-                and row.get("confidence_score", 0) >= 46
+                and is_specific_product_name(row.get("product_name", ""), row.get("brand", ""))
             )
 
-            if quality_ok:
-                products.append(row)
+            if basic_identity_ok:
+                provisional_products.append(row)
             else:
                 row["signal_id"] = stable_id("psg", norm_key(row.get("headline")))
-                row["signal_type"] = "insufficient_product_evidence"
-                row["note"] = "具体商品证据不足，已降级为媒体信号。"
+                row["signal_type"] = "generic_product_signal"
+                row["note"] = "品牌或具体商品名不足，已降级为普通商品媒体信号。"
                 media_signals.append(row)
         else:
             media_signals.append(row)
 
-    products = merge_products(products)
+    merged_candidates = merge_products(provisional_products)
+    products = []
+
+    for product in merged_candidates:
+        verified, reason = evaluate_product_verification(product)
+        product["verification_gate_reason"] = reason
+        product["confidence_score"] = confidence_score(product)
+
+        if verified:
+            products.append(product)
+        else:
+            product_leads.append(product_to_lead(product, reason))
+
     prior_products = load_prior_products()
     apply_product_history(products, prior_products)
 
@@ -1201,21 +1607,34 @@ def main() -> None:
         reverse=True,
     )
 
-    media_signals = sorted(
-        media_signals,
+    product_leads = sorted(
+        product_leads,
         key=lambda x: (
+            x.get("credible_source_count", 0),
+            x.get("confidence_score", 0),
+            x.get("published_at", ""),
+        ),
+        reverse=True,
+    )[:50]
+
+    media_signals = sorted(
+        product_leads + media_signals,
+        key=lambda x: (
+            1 if x.get("signal_type") == "product_lead" else 0,
             1 if x.get("is_official") else 0,
             x.get("published_at", ""),
         ),
         reverse=True,
     )[:80]
 
+    duplicate_image_suppressed_count = suppress_duplicate_images(products + media_signals)
+
     category_signals = build_category_signals(products, media_signals)
     product_status = Counter(x.get("status", "new") for x in products)
     verification_counts = Counter(x.get("verification", "unknown") for x in products)
 
     payload = {
-        "schema_version": "2.0",
+        "schema_version": "2.1",
         "generated_at": GENERATED_AT.isoformat(timespec="minutes"),
         "report_window": {
             "start_date": REPORT_START_DATE.isoformat(),
@@ -1226,9 +1645,10 @@ def main() -> None:
             "purpose": "发现并核验周内出现的具体运动鞋服产品，不生成销量排名",
             "sources": "周度资讯池 + Google News RSS + 可访问网页元数据/正文",
             "active_campaigns": active_campaigns,
-            "quality_gate": "进入products必须具备具体产品名、品牌、日期和可点击来源",
+            "quality_gate": "进入products必须具备品牌、具体型号/系列名、周期内日期和原文直链，并满足官方单源或至少两家独立可信来源",
             "missing_value_policy": "价格、货号、发售日、技术或图片未披露时保持为空，不进行猜测",
-            "image_policy": "仅保留原网页Open Graph图片，不使用通用图库占位",
+            "image_policy": "仅保留官方页或原文页有效Open Graph图片；Google图标、Logo、占位图及跨产品重复图全部清空",
+            "lead_policy": "未达到核验门槛的具名商品进入product_leads/media_signals，不进入已核验产品清单",
             "score_note": "confidence_score只代表资料完整度与来源可靠性，不代表销量或市场热度",
         },
         "stats": {
@@ -1237,18 +1657,24 @@ def main() -> None:
             "candidate_count": len(candidates),
             "verified_product_count": len(products),
             "official_product_count": sum(1 for x in products if x.get("is_official")),
+            "multi_source_product_count": sum(1 for x in products if x.get("verification") == "multi_source"),
             "new_product_count": product_status.get("new", 0),
             "follow_up_product_count": product_status.get("follow_up", 0),
+            "product_lead_count": len(product_leads),
             "media_signal_count": len(media_signals),
             "product_with_price_count": sum(1 for x in products if x.get("price", {}).get("value") is not None),
             "product_with_release_date_count": sum(1 for x in products if x.get("release_date")),
             "product_with_image_count": sum(1 for x in products if x.get("image_url")),
+            "duplicate_image_suppressed_count": duplicate_image_suppressed_count,
+            "direct_source_product_count": sum(1 for x in products if x.get("direct_source_count", 0) > 0),
             "verification": dict(verification_counts),
+            "lead_reasons": dict(Counter(x.get("lead_reason", "unknown") for x in product_leads)),
             "rejected": dict(rejected),
         },
         "queries": queries,
         "fetch_errors": fetch_errors[:30],
         "products": products,
+        "product_leads": product_leads,
         "category_signals": category_signals,
         "media_signals": media_signals,
     }
