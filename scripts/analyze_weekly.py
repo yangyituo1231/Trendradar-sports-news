@@ -9,6 +9,7 @@ from datetime import date, datetime, timedelta
 from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 
 import requests
@@ -31,13 +32,13 @@ OUTPUT_FILE = WEEKLY_DIR / "weekly_analysis.json"
 WEEKLY_DIR.mkdir(parents=True, exist_ok=True)
 ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
 
-MIN_EVENT_SCORE = 35
+MIN_EVENT_SCORE = 42
 MAX_EVENT_CANDIDATES_FOR_AI = 55
 MAX_PRODUCT_CANDIDATES_FOR_AI = 24
 MAX_KEY_DEVELOPMENTS = 8
-MIN_KEY_DEVELOPMENTS = 5
+MIN_KEY_DEVELOPMENTS = 4
 MAX_DEEP_DIVES = 4
-MAX_PRODUCTS = 8
+MAX_PRODUCTS = 6
 MAX_COMPETITOR_CHANNEL = 6
 MAX_KIDS_CONSUMER = 5
 MAX_WATCHLIST = 5
@@ -83,6 +84,56 @@ def clean_url(value: Any) -> str:
     if url.startswith("http://") or url.startswith("https://"):
         return url
     return ""
+
+
+def host_of(value: Any) -> str:
+    try:
+        return urlparse(clean_url(value)).netloc.lower().removeprefix("www.")
+    except Exception:
+        return ""
+
+
+def is_direct_url(value: Any) -> bool:
+    url = clean_url(value)
+    host = host_of(url)
+    if not url or not host:
+        return False
+    blocked = ["news.google.com", "google.com", "consent.google.com", "accounts.google.com"]
+    return not any(host == x or host.endswith("." + x) for x in blocked)
+
+
+def valid_image_url(value: Any) -> str:
+    url = clean_url(value)
+    host = host_of(url)
+    path = urlparse(url).path.lower() if url else ""
+    full = f"{host}{path}"
+
+    if not url or not host:
+        return ""
+    if any(
+        host == x or host.endswith("." + x)
+        for x in ["google.com", "googleusercontent.com", "gstatic.com", "ggpht.com", "news.google.com"]
+    ):
+        return ""
+    if path.endswith((".svg", ".ico", ".gif")):
+        return ""
+    if any(token in full for token in ["logo", "icon", "favicon", "avatar", "default", "placeholder", "sprite"]):
+        return ""
+    return url
+
+
+GOOGLE_BOILERPLATE_MARKERS = [
+    "Comprehensive up-to-date news coverage",
+    "aggregated from sources all over the world by Google News",
+    "Google News provides comprehensive",
+]
+
+
+def clean_summary(value: Any, length: int = 260) -> str:
+    text = clean_text(value)
+    if not text or any(marker.lower() in text.lower() for marker in GOOGLE_BOILERPLATE_MARKERS):
+        return ""
+    return short_text(text, length)
 
 
 def to_int(value: Any, default: int = 0) -> int:
@@ -226,15 +277,132 @@ if product_window:
 GENERATED_AT = datetime.now(LOCAL_TZ)
 
 source_items = [x for x in safe_list(weekly_sources.get("items")) if isinstance(x, dict)]
-source_events = [x for x in safe_list(weekly_sources.get("events")) if isinstance(x, dict)]
+source_events_raw = [x for x in safe_list(weekly_sources.get("events")) if isinstance(x, dict)]
 source_conflicts = [x for x in safe_list(weekly_sources.get("conflict_groups")) if isinstance(x, dict)]
 product_rows = [x for x in safe_list(weekly_products.get("products")) if isinstance(x, dict)]
+product_leads = [x for x in safe_list(weekly_products.get("product_leads")) if isinstance(x, dict)]
 product_media_signals = [x for x in safe_list(weekly_products.get("media_signals")) if isinstance(x, dict)]
 product_category_signals = [x for x in safe_list(weekly_products.get("category_signals")) if isinstance(x, dict)]
 
 item_map = {clean_text(x.get("id")): x for x in source_items if clean_text(x.get("id"))}
-event_map = {clean_text(x.get("event_id")): x for x in source_events if clean_text(x.get("event_id"))}
 product_map = {clean_text(x.get("product_id")): x for x in product_rows if clean_text(x.get("product_id"))}
+
+
+def coalesce_financial_events(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """分析层兜底：同一品牌、同一财务周期只保留一个事件。"""
+    grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
+
+    for event in events:
+        event_id = clean_text(event.get("event_id"))
+        family = clean_text(event.get("event_family"))
+        period = clean_text(event.get("reporting_period"))
+        brands = unique_strings(safe_list(event.get("brands")), 5)
+        primary_brand = brands[0].lower() if brands else ""
+
+        if family == "financial_results" and period and primary_brand:
+            key = f"financial|{primary_brand}|{period}"
+        else:
+            key = f"event|{event_id or norm_key(event.get('title'))}"
+        grouped[key].append(event)
+
+    output = []
+    for rows in grouped.values():
+        if len(rows) == 1:
+            row = dict(rows[0])
+            row["merged_event_ids"] = unique_strings(
+                [row.get("event_id")] + safe_list(row.get("merged_event_ids")),
+                12,
+            )
+            output.append(row)
+            continue
+
+        def representative_rank(row: dict[str, Any]) -> tuple[int, int, int, int]:
+            verification = clean_text(row.get("verification"))
+            return (
+                2 if verification == "official_source" else 1 if verification == "multi_source" else 0,
+                1 if is_direct_url(row.get("direct_url") or row.get("url")) else 0,
+                to_int(row.get("editorial_score"), 0),
+                to_int(row.get("source_count"), 0),
+            )
+
+        representative = dict(max(rows, key=representative_rank))
+        evidence = []
+        evidence_used = set()
+        sources = []
+        source_used = set()
+
+        for row in rows:
+            for item in safe_list(row.get("evidence")):
+                if not isinstance(item, dict):
+                    continue
+                key = clean_text(item.get("item_id")) or clean_url(item.get("direct_url") or item.get("url"))
+                if not key or key in evidence_used:
+                    continue
+                evidence_used.add(key)
+                evidence.append(dict(item))
+            for source in safe_list(row.get("sources")):
+                source = clean_text(source)
+                if source and source not in source_used:
+                    source_used.add(source)
+                    sources.append(source)
+
+        direct_hosts = {
+            host_of(x.get("direct_url") or x.get("url"))
+            for x in evidence
+            if is_direct_url(x.get("direct_url") or x.get("url"))
+        }
+        official_count = sum(1 for x in evidence if x.get("is_official"))
+        verification = (
+            "official_source" if official_count
+            else "multi_source" if len(direct_hosts) >= 2
+            else clean_text(representative.get("verification")) or "single_source"
+        )
+
+        merged_ids = unique_strings(
+            [x.get("event_id") for x in rows]
+            + [y for x in rows for y in safe_list(x.get("merged_event_ids"))],
+            30,
+        )
+        representative.update({
+            "evidence": evidence,
+            "sources": sources,
+            "item_ids": unique_strings([y for x in rows for y in safe_list(x.get("item_ids"))], 80),
+            "original_titles": unique_strings(
+                [x.get("title") for x in rows]
+                + [y for x in rows for y in safe_list(x.get("original_titles"))],
+                30,
+            ),
+            "brands": unique_strings([y for x in rows for y in safe_list(x.get("brands"))], 8),
+            "keywords": unique_strings([y for x in rows for y in safe_list(x.get("keywords"))], 20),
+            "merged_event_ids": merged_ids,
+            "mention_count": sum(max(1, to_int(x.get("mention_count"), 1)) for x in rows),
+            "source_count": len(direct_hosts) or max(to_int(x.get("source_count"), 0) for x in rows),
+            "direct_source_count": len(direct_hosts),
+            "verification": verification,
+            "conflict_flag": any(bool(x.get("conflict_flag")) for x in rows),
+            "editorial_score": min(
+                100,
+                max(to_int(x.get("editorial_score"), 0) for x in rows) + min(8, (len(rows) - 1) * 3),
+            ),
+        })
+        output.append(representative)
+
+    return sorted(
+        output,
+        key=lambda x: (to_int(x.get("editorial_score"), 0), to_int(x.get("source_count"), 0)),
+        reverse=True,
+    )
+
+
+source_events = coalesce_financial_events(source_events_raw)
+event_map = {}
+for event in source_events:
+    aliases = unique_strings(
+        [event.get("event_id")] + safe_list(event.get("merged_event_ids")),
+        40,
+    )
+    for event_id in aliases:
+        event_map[event_id] = event
 
 
 # =========================================================
@@ -242,6 +410,18 @@ product_map = {clean_text(x.get("product_id")): x for x in product_rows if clean
 # =========================================================
 
 INVALID_SOURCE_NAMES = {"", "公开资讯", "Google", "Google News", "网络资讯", "综合网络"}
+
+LOW_VALUE_EVENT_WORDS = [
+    "股价", "K线", "支撑位", "压力位", "目标价", "涨停", "跌停", "龙虎榜", "股票",
+    "优惠券", "省钱", "值得买", "怎么买", "怎么选", "适合去哪", "旅游攻略", "选购攻略", "FAQ",
+]
+
+GENERIC_PRODUCT_WORDS = [
+    "核心产品", "代表产品", "主推产品", "明星产品", "新品系列", "新款系列", "品牌新品",
+    "产品", "商品", "核心", "代表", "主推", "明星", "全新", "新品", "新款", "系列",
+    "运动", "儿童", "青少年", "成人", "男款", "女款", "同款", "跑鞋", "运动鞋", "篮球鞋",
+    "户外鞋", "防晒衣", "瑜伽服", "瑜伽裤", "运动内衣", "服装", "鞋服", "商品趋势",
+]
 
 
 def event_representative_item(event: dict[str, Any]) -> dict[str, Any]:
@@ -256,33 +436,106 @@ def event_representative_item(event: dict[str, Any]) -> dict[str, Any]:
     return {}
 
 
-def event_url(event: dict[str, Any]) -> str:
-    representative = event_representative_item(event)
-    return (
-        clean_url(representative.get("direct_url"))
-        or clean_url(representative.get("url"))
-        or clean_url(event.get("url"))
-        or clean_url(representative.get("google_news_url"))
+def event_evidence_rows(event: dict[str, Any]) -> list[dict[str, Any]]:
+    output = []
+    used = set()
+
+    for row in safe_list(event.get("evidence")):
+        if not isinstance(row, dict):
+            continue
+        url = clean_url(row.get("direct_url") or row.get("url"))
+        if not is_direct_url(url) or url in used:
+            continue
+        used.add(url)
+        output.append({
+            "item_id": clean_text(row.get("item_id")),
+            "title": clean_text(row.get("title")),
+            "source": clean_text(row.get("source")),
+            "source_tier": clean_text(row.get("source_tier")),
+            "is_official": bool(row.get("is_official")),
+            "url": url,
+            "published_at": clean_text(row.get("published_at")),
+            "summary": clean_summary(row.get("summary")),
+        })
+
+    return sorted(
+        output,
+        key=lambda x: (
+            1 if x.get("is_official") else 0,
+            2 if x.get("source_tier") == "tier_1" else 1 if x.get("source_tier") == "tier_2" else 0,
+            x.get("published_at", ""),
+        ),
+        reverse=True,
     )
+
+
+def event_primary_evidence(event: dict[str, Any]) -> dict[str, Any]:
+    representative = event_representative_item(event)
+    candidates = [
+        {
+            "title": event.get("title"),
+            "source": event.get("source"),
+            "source_tier": event.get("source_tier"),
+            "is_official": event.get("verification") == "official_source",
+            "url": event.get("direct_url") or event.get("url"),
+            "published_at": event.get("published_at"),
+            "summary": event.get("summary"),
+        },
+        {
+            "item_id": representative.get("id"),
+            "title": representative.get("title"),
+            "source": representative.get("source"),
+            "source_tier": representative.get("source_tier"),
+            "is_official": representative.get("is_official"),
+            "url": representative.get("direct_url") or representative.get("url"),
+            "published_at": representative.get("published_at") or representative.get("published_date"),
+            "summary": representative.get("meta_description"),
+        },
+    ] + event_evidence_rows(event)
+
+    for row in candidates:
+        url = clean_url(row.get("url"))
+        source = clean_text(row.get("source"))
+        if is_direct_url(url) and source not in INVALID_SOURCE_NAMES:
+            copied = dict(row)
+            copied["url"] = url
+            copied["summary"] = clean_summary(copied.get("summary"))
+            return copied
+
+    return {}
+
+
+def event_url(event: dict[str, Any]) -> str:
+    return clean_url(event_primary_evidence(event).get("url"))
 
 
 def event_source(event: dict[str, Any]) -> str:
-    representative = event_representative_item(event)
-    return clean_text(representative.get("source") or event.get("source"))
+    return clean_text(event_primary_evidence(event).get("source"))
 
 
-def event_date(event: dict[str, Any]) -> date | None:
-    representative = event_representative_item(event)
-    return parse_date(
-        representative.get("published_date")
-        or representative.get("published_at")
-        or event.get("published_at")
+def event_source_tier(event: dict[str, Any]) -> str:
+    return clean_text(event_primary_evidence(event).get("source_tier"))
+
+
+def event_summary(event: dict[str, Any]) -> str:
+    primary = event_primary_evidence(event)
+    return (
+        clean_summary(event.get("summary"))
+        or clean_summary(primary.get("summary"))
     )
 
 
+def event_date(event: dict[str, Any]) -> date | None:
+    primary = event_primary_evidence(event)
+    return parse_date(primary.get("published_at") or event.get("published_at"))
+
+
 def event_is_official(event: dict[str, Any]) -> bool:
-    representative = event_representative_item(event)
-    return bool(representative.get("is_official") or event.get("verification") == "official_source")
+    return bool(
+        event.get("verification") == "official_source"
+        or event_primary_evidence(event).get("is_official")
+        or any(x.get("is_official") for x in event_evidence_rows(event))
+    )
 
 
 def event_quality_reason(event: dict[str, Any]) -> str:
@@ -295,10 +548,22 @@ def event_quality_reason(event: dict[str, Any]) -> str:
         return "missing_event_id"
     if not title:
         return "missing_title"
+    if any(word.lower() in title.lower() for word in LOW_VALUE_EVENT_WORDS):
+        return "low_value_topic"
+    if clean_text(event.get("event_family")) == "local_activity":
+        return "local_promotion"
     if source in INVALID_SOURCE_NAMES:
         return "invalid_source"
     if not url:
-        return "missing_url"
+        return "missing_direct_url"
+    if event_source_tier(event) == "tier_4":
+        return "low_quality_source"
+    if (
+        clean_text(event.get("verification")) == "single_source"
+        and to_int(event.get("source_count"), 1) < 2
+        and event_source_tier(event) == "tier_3"
+    ):
+        return "weak_single_source"
     if not published_date:
         return "missing_date"
     if not (REPORT_START_DATE <= published_date <= REPORT_END_DATE):
@@ -310,12 +575,47 @@ def event_quality_reason(event: dict[str, Any]) -> str:
     return ""
 
 
+def is_specific_product_name(value: Any, brand: Any = "") -> bool:
+    residue = clean_text(value)
+    if not residue:
+        return False
+
+    for token in [clean_text(brand)] + GENERIC_PRODUCT_WORDS:
+        if token:
+            residue = re.sub(re.escape(token), "", residue, flags=re.IGNORECASE)
+
+    for brand_part in re.findall(r"[A-Za-z0-9°]+|[一-龥]{2,}", clean_text(brand)):
+        if len(brand_part) >= 2:
+            residue = re.sub(re.escape(brand_part), "", residue, flags=re.IGNORECASE)
+
+    residue = re.sub(r"[^A-Za-z0-9一-龥]+", "", residue)
+    return len(residue) >= 2
+
+
+def product_direct_url(product: dict[str, Any]) -> str:
+    for value in [
+        product.get("official_url"),
+        product.get("direct_url"),
+        product.get("article_url"),
+        product.get("url"),
+    ]:
+        if is_direct_url(value):
+            return clean_url(value)
+
+    for row in safe_list(product.get("coverage")):
+        if isinstance(row, dict) and is_direct_url(row.get("direct_url") or row.get("url")):
+            return clean_url(row.get("direct_url") or row.get("url"))
+    return ""
+
+
 def product_quality_reason(product: dict[str, Any]) -> str:
     product_name = clean_text(product.get("product_name"))
     brand = clean_text(product.get("brand"))
     source = clean_text(product.get("source"))
-    url = clean_url(product.get("official_url") or product.get("article_url") or product.get("google_news_url"))
+    url = product_direct_url(product)
     published_date = parse_date(product.get("published_date") or product.get("published_at"))
+    verification = clean_text(product.get("verification"))
+    evidence_status = clean_text(product.get("evidence_status"))
 
     if not clean_text(product.get("product_id")):
         return "missing_product_id"
@@ -323,14 +623,25 @@ def product_quality_reason(product: dict[str, Any]) -> str:
         return "missing_brand"
     if not product_name:
         return "missing_product_name"
+    if not is_specific_product_name(product_name, brand):
+        return "generic_product_name"
     if source in INVALID_SOURCE_NAMES:
         return "invalid_source"
     if not url:
-        return "missing_url"
+        return "missing_direct_url"
     if not published_date:
         return "missing_date"
     if not (REPORT_START_DATE <= published_date <= REPORT_END_DATE):
         return "outside_window"
+    if evidence_status and evidence_status != "verified":
+        return "unverified_product"
+    if verification and verification not in {"official", "multi_source"}:
+        return "insufficient_independent_evidence"
+    if to_int(product.get("official_evidence_count"), 0) < 1 and to_int(product.get("credible_source_count"), 0) < 2:
+        if clean_text(weekly_products.get("schema_version")) == "2.1":
+            return "insufficient_independent_evidence"
+    if clean_text(product.get("source_tier")) == "tier_4":
+        return "low_quality_source"
     if to_int(product.get("confidence_score"), 0) < 46:
         return "low_confidence"
     return ""
@@ -391,48 +702,91 @@ def event_selection_score(event: dict[str, Any]) -> int:
 
 
 def event_evidence_text(event: dict[str, Any]) -> str:
-    representative = event_representative_item(event)
-    cluster_items = [item_map.get(clean_text(x), {}) for x in safe_list(event.get("item_ids"))]
     parts = [
         clean_text(event.get("title")),
-        clean_text(representative.get("meta_description")),
+        event_summary(event),
     ]
 
-    for item in cluster_items:
+    for item in event_evidence_rows(event):
         parts.extend([
             clean_text(item.get("title")),
-            clean_text(item.get("meta_description")),
+            clean_summary(item.get("summary")),
         ])
 
     return " ".join([x for x in parts if x])
 
 
 def event_public(event: dict[str, Any]) -> dict[str, Any]:
-    representative = event_representative_item(event)
+    primary = event_primary_evidence(event)
+    evidence = event_evidence_rows(event)
     return {
         "event_id": clean_text(event.get("event_id")),
         "title": clean_text(event.get("title")),
         "category": clean_text(event.get("category")) or "行业动态",
+        "event_family": clean_text(event.get("event_family")),
+        "reporting_period": clean_text(event.get("reporting_period")),
         "brands": unique_strings(safe_list(event.get("brands")), 5),
         "source": event_source(event),
         "url": event_url(event),
-        "published_at": clean_text(representative.get("published_at") or event.get("published_at")),
-        "published_date": clean_text(representative.get("published_date")) or (
-            event_date(event).isoformat() if event_date(event) else ""
-        ),
+        "direct_url": event_url(event),
+        "published_at": clean_text(primary.get("published_at") or event.get("published_at")),
+        "published_date": event_date(event).isoformat() if event_date(event) else "",
         "status": clean_text(event.get("status")) or "new",
         "verification": clean_text(event.get("verification")) or "single_source",
         "is_official": event_is_official(event),
         "source_count": to_int(event.get("source_count"), 1),
+        "direct_source_count": to_int(event.get("direct_source_count"), len(evidence)),
         "mention_count": to_int(event.get("mention_count"), 1),
         "editorial_score": to_int(event.get("editorial_score"), 0),
         "selection_score": event_selection_score(event),
-        "summary_snippet": short_text(representative.get("meta_description"), 240),
+        "summary_snippet": event_summary(event),
+        "merged_event_ids": unique_strings(safe_list(event.get("merged_event_ids")), 30),
+        "evidence": evidence[:12],
     }
+
+
+def product_coverage_rows(product: dict[str, Any]) -> list[dict[str, Any]]:
+    output = []
+    used = set()
+
+    for row in safe_list(product.get("coverage")):
+        if not isinstance(row, dict):
+            continue
+        url = clean_url(row.get("direct_url") or row.get("url"))
+        if not is_direct_url(url) or url in used:
+            continue
+        used.add(url)
+        output.append({
+            "headline": clean_text(row.get("headline") or row.get("title")),
+            "source": clean_text(row.get("source")),
+            "source_tier": clean_text(row.get("source_tier")),
+            "is_official": bool(row.get("is_official")),
+            "url": url,
+            "direct_url": url,
+            "published_at": clean_text(row.get("published_at")),
+            "published_date": clean_text(row.get("published_date")) or (
+                parse_date(row.get("published_at")).isoformat() if parse_date(row.get("published_at")) else ""
+            ),
+        })
+
+    if not output and product_direct_url(product):
+        output.append({
+            "headline": clean_text(product.get("headline")),
+            "source": clean_text(product.get("source")),
+            "source_tier": clean_text(product.get("source_tier")),
+            "is_official": bool(product.get("is_official")),
+            "url": product_direct_url(product),
+            "direct_url": product_direct_url(product),
+            "published_at": clean_text(product.get("published_at")),
+            "published_date": clean_text(product.get("published_date")),
+        })
+
+    return output
 
 
 def product_public(product: dict[str, Any]) -> dict[str, Any]:
     price = safe_dict(product.get("price"))
+    coverage = product_coverage_rows(product)
     return {
         "product_id": clean_text(product.get("product_id")),
         "brand": clean_text(product.get("brand")),
@@ -446,26 +800,33 @@ def product_public(product: dict[str, Any]) -> dict[str, Any]:
         "price": {
             "value": price.get("value"),
             "currency": clean_text(price.get("currency")),
-            "display": clean_text(price.get("display")) or "未披露",
+            "display": clean_text(price.get("display")),
             "basis": clean_text(price.get("basis")) or "not_disclosed",
         },
         "technologies": unique_strings(safe_list(product.get("technologies")), 10),
         "materials": unique_strings(safe_list(product.get("materials")), 8),
         "source": clean_text(product.get("source")),
-        "url": clean_url(product.get("official_url") or product.get("article_url") or product.get("google_news_url")),
-        "official_url": clean_url(product.get("official_url")),
-        "image_url": clean_url(product.get("image_url")),
+        "url": product_direct_url(product),
+        "direct_url": product_direct_url(product),
+        "official_url": clean_url(product.get("official_url")) if is_direct_url(product.get("official_url")) else "",
+        "image_url": valid_image_url(product.get("image_url")),
         "headline": clean_text(product.get("headline")),
         "published_at": clean_text(product.get("published_at")),
         "published_date": clean_text(product.get("published_date")),
         "verification": clean_text(product.get("verification")),
+        "verification_reason": clean_text(product.get("verification_reason")),
+        "evidence_status": clean_text(product.get("evidence_status")),
         "is_official": bool(product.get("is_official")),
         "confidence_score": to_int(product.get("confidence_score"), 0),
+        "source_count": to_int(product.get("source_count"), len(coverage)),
+        "direct_source_count": to_int(product.get("direct_source_count"), len(coverage)),
+        "credible_source_count": to_int(product.get("credible_source_count"), 0),
+        "official_evidence_count": to_int(product.get("official_evidence_count"), 0),
         "status": clean_text(product.get("status")) or "new",
         "first_seen": clean_text(product.get("first_seen")),
         "last_seen": clean_text(product.get("last_seen")),
         "evidence": safe_dict(product.get("evidence")),
-        "coverage": safe_list(product.get("coverage"))[:6],
+        "coverage": coverage[:8],
     }
 
 
@@ -492,50 +853,42 @@ def select_diverse_events(events: list[dict[str, Any]], limit: int) -> list[dict
     output = []
     brand_counter = Counter()
     category_counter = Counter()
+    brand_family_used = set()
 
     for event in events:
         category = clean_text(event.get("category")) or "行业动态"
         brands = unique_strings(safe_list(event.get("brands")), 5)
         primary_brand = brands[0] if brands else ""
+        event_family = clean_text(event.get("event_family")) or "other"
+        brand_family_key = (primary_brand.lower(), event_family)
 
         if primary_brand and brand_counter[primary_brand] >= 2:
             continue
-        if category_counter[category] >= 3:
+        if primary_brand and brand_family_key in brand_family_used:
+            continue
+        if category_counter[category] >= 2:
             continue
 
         output.append(event)
         if primary_brand:
             brand_counter[primary_brand] += 1
+            brand_family_used.add(brand_family_key)
         category_counter[category] += 1
 
         if len(output) >= limit:
             break
 
-    if len(output) < min(limit, MIN_KEY_DEVELOPMENTS):
-        used = {x.get("event_id") for x in output}
-        for event in events:
-            if event.get("event_id") in used:
-                continue
-            output.append(event)
-            used.add(event.get("event_id"))
-            if len(output) >= min(limit, MIN_KEY_DEVELOPMENTS):
-                break
-
     return output[:limit]
 
 
 def fallback_weekly_thesis(events: list[dict[str, Any]], products: list[dict[str, Any]]) -> str:
-    categories = Counter(clean_text(x.get("category")) or "行业动态" for x in events[:12])
-    top_categories = [name for name, _ in categories.most_common(3)]
-    new_count = sum(1 for x in events[:12] if x.get("status") == "new")
-
-    if top_categories:
-        category_text = "、".join(top_categories)
-        product_text = f"，并出现{len(products)}项具名产品证据" if products else ""
-        return short_text(
-            f"本周有效变化主要集中在{category_text}，其中{new_count}项为首次出现{product_text}。",
-            78,
-        )
+    if events:
+        first = clean_text(events[0].get("title"))
+        second = clean_text(events[1].get("title")) if len(events) > 1 else ""
+        product_note = "；具名产品仅收录已达到核验门槛的项目" if products else ""
+        if second:
+            return short_text(f"本周核心变化是{first}；同时关注{second}{product_note}。", 78)
+        return short_text(f"本周核心变化是{first}{product_note}。", 78)
 
     return "本周有效资讯有限，周报以已核验事件和后续观察为主。"
 
@@ -615,19 +968,22 @@ def ai_event_candidates() -> list[dict[str, Any]]:
 
     for event in eligible_events[:MAX_EVENT_CANDIDATES_FOR_AI]:
         public = event_public(event)
-        representative = event_representative_item(event)
         output.append({
             "event_id": public["event_id"],
             "title": public["title"],
             "category": public["category"],
+            "event_family": public["event_family"],
+            "reporting_period": public["reporting_period"],
             "brands": public["brands"],
             "source": public["source"],
             "published_date": public["published_date"],
             "status": public["status"],
             "verification": public["verification"],
             "source_count": public["source_count"],
+            "direct_source_count": public["direct_source_count"],
             "editorial_score": public["editorial_score"],
-            "description": short_text(representative.get("meta_description"), 260),
+            "description": public["summary_snippet"],
+            "evidence_titles": [x.get("title", "") for x in public.get("evidence", [])[:5]],
         })
 
     return output
@@ -652,6 +1008,9 @@ def ai_product_candidates() -> list[dict[str, Any]]:
             "source": public["source"],
             "published_date": public["published_date"],
             "verification": public["verification"],
+            "verification_reason": public["verification_reason"],
+            "credible_source_count": public["credible_source_count"],
+            "official_evidence_count": public["official_evidence_count"],
             "confidence_score": public["confidence_score"],
             "headline": public["headline"],
         })
@@ -676,12 +1035,13 @@ def deepseek_prompt() -> str:
 2. 不要输出或改写新闻标题；程序会用ID回填原始标题、日期、来源和链接。
 3. 不得增加候选证据中没有出现的数字、品牌动作、产品功能、价格或结论。
 4. 不要把报道篇数、编辑分数或资料完整度写成销量、搜索量或市场热度。
-5. key_developments选择5至8项，并保持品牌、平台、商品、消费等方向适度分散。
-6. deep_dives选择3至4个主题，每个主题必须绑定1至3个event_id。
-7. product_selection最多8项；如果产品证据少，可以少选或不选，禁止凑数。
-8. competitor_channel_ids和kids_consumer_ids只能来自事件候选。
-9. 所有分析文字应说明“发生了什么、为什么值得关注、行业层面的变化”，不要写空泛经营口号。
-10. 只输出严格JSON，不要Markdown，不要代码围栏，不要额外解释。
+5. key_developments选择4至8项，并保持品牌、平台、商品、消费等方向适度分散；候选不足时可以少于4项，禁止凑数。
+6. 同一品牌同一财务周期只能保留一个事件，不得把同一份财报的营收、利润、海外增长拆成多项。
+7. deep_dives选择2至4个主题，每个主题必须绑定1至3个event_id。
+8. product_selection最多6项；如果产品证据少，可以少选或不选，禁止凑数。
+9. competitor_channel_ids和kids_consumer_ids只能来自事件候选，且不要重复key_developments已选事件。
+10. 所有分析文字应说明“发生了什么、为什么值得关注、行业层面的变化”，不要写空泛经营口号。
+11. 只输出严格JSON，不要Markdown，不要代码围栏，不要额外解释。
 
 输出结构：
 {{
@@ -810,6 +1170,32 @@ def valid_product_ids(values: Any, limit: int | None = None) -> list[str]:
 def validate_key_developments(ai_data: dict[str, Any]) -> list[dict[str, Any]]:
     output = []
     used = set()
+    brand_counter = Counter()
+    category_counter = Counter()
+    brand_family_used = set()
+
+    def can_add(event: dict[str, Any]) -> bool:
+        category = clean_text(event.get("category")) or "行业动态"
+        brands = unique_strings(safe_list(event.get("brands")), 5)
+        primary_brand = brands[0] if brands else ""
+        family = clean_text(event.get("event_family")) or "other"
+        if category_counter[category] >= 2:
+            return False
+        if primary_brand and brand_counter[primary_brand] >= 2:
+            return False
+        if primary_brand and (primary_brand.lower(), family) in brand_family_used:
+            return False
+        return True
+
+    def register(event: dict[str, Any]) -> None:
+        category = clean_text(event.get("category")) or "行业动态"
+        brands = unique_strings(safe_list(event.get("brands")), 5)
+        primary_brand = brands[0] if brands else ""
+        family = clean_text(event.get("event_family")) or "other"
+        category_counter[category] += 1
+        if primary_brand:
+            brand_counter[primary_brand] += 1
+            brand_family_used.add((primary_brand.lower(), family))
 
     for row in safe_list(ai_data.get("key_developments")):
         if not isinstance(row, dict):
@@ -819,20 +1205,30 @@ def validate_key_developments(ai_data: dict[str, Any]) -> list[dict[str, Any]]:
             continue
 
         event = eligible_event_map[event_id]
+        if not can_add(event):
+            continue
         reason = sanitize_grounded_text(row.get("reason"), event_evidence_text(event), 80)
         output.append({"event_id": event_id, "reason": reason or fallback_key_reason(event)})
         used.add(event_id)
+        register(event)
 
         if len(output) >= MAX_KEY_DEVELOPMENTS:
             break
+
+    fill_target = max(MIN_KEY_DEVELOPMENTS, len(output)) if ai_data else MAX_KEY_DEVELOPMENTS
+    if len(output) >= fill_target:
+        return output[:MAX_KEY_DEVELOPMENTS]
 
     for event in rule_key_events:
         event_id = clean_text(event.get("event_id"))
         if event_id in used:
             continue
+        if not can_add(event):
+            continue
         output.append({"event_id": event_id, "reason": fallback_key_reason(event)})
         used.add(event_id)
-        if len(output) >= MAX_KEY_DEVELOPMENTS:
+        register(event)
+        if len(output) >= fill_target:
             break
 
     return output
@@ -865,14 +1261,14 @@ def validate_deep_dives(ai_data: dict[str, Any], key_event_ids: list[str]) -> li
         if len(output) >= MAX_DEEP_DIVES:
             break
 
-    if len(output) < 3:
+    if len(output) < 2:
         fallback_events = [eligible_event_map[x] for x in key_event_ids if x in eligible_event_map]
         for row in fallback_deep_dives(fallback_events):
             key = norm_key(row.get("headline"))
             if any(norm_key(x.get("headline")) == key for x in output):
                 continue
             output.append(row)
-            if len(output) >= min(3, MAX_DEEP_DIVES):
+            if len(output) >= min(2, MAX_DEEP_DIVES):
                 break
 
     return output[:MAX_DEEP_DIVES]
@@ -907,27 +1303,26 @@ def validate_product_selection(ai_data: dict[str, Any]) -> list[dict[str, Any]]:
         reason = sanitize_grounded_text(row.get("reason"), product_evidence_text(product), 90)
         output.append({
             "product_id": product_id,
-            "reason": reason or "具备可核验的品牌、产品名、日期和来源，进入本周产品雷达。",
+            "reason": reason or clean_text(product.get("verification_reason")) or "具名商品已达到核验门槛，进入本周产品雷达。",
         })
         used.add(product_id)
 
         if len(output) >= MAX_PRODUCTS:
             break
 
-    # 产品不强制补满，只补充高完整度或官方产品。
-    for product in eligible_products:
-        product_id = clean_text(product.get("product_id"))
-        if product_id in used:
-            continue
-        if not product.get("is_official") and to_int(product.get("confidence_score"), 0) < 62:
-            continue
-        output.append({
-            "product_id": product_id,
-            "reason": "产品资料具备较高完整度或来自官方渠道，进入本周产品雷达。",
-        })
-        used.add(product_id)
-        if len(output) >= MAX_PRODUCTS:
-            break
+    if not ai_data:
+        # 无AI时，上游products均已通过核验门槛，按资料完整度回填，不用随机商品补位。
+        for product in eligible_products:
+            product_id = clean_text(product.get("product_id"))
+            if product_id in used:
+                continue
+            output.append({
+                "product_id": product_id,
+                "reason": clean_text(product.get("verification_reason")) or "具名商品已达到官方单源或两家独立可信来源的核验门槛。",
+            })
+            used.add(product_id)
+            if len(output) >= MAX_PRODUCTS:
+                break
 
     return output
 
@@ -976,23 +1371,48 @@ key_event_ids = [x["event_id"] for x in validated_key_rows]
 validated_deep_dives = validate_deep_dives(ai_data, key_event_ids)
 validated_product_rows = validate_product_selection(ai_data)
 
-competitor_channel_ids = valid_event_ids(ai_data.get("competitor_channel_ids"), MAX_COMPETITOR_CHANNEL)
-kids_consumer_ids = valid_event_ids(ai_data.get("kids_consumer_ids"), MAX_KIDS_CONSUMER)
+OWN_BRAND_MARKERS = ["361儿童", "361°儿童", "361度儿童", "361 Kids", "361度", "361°"]
+
+
+def is_own_brand_event(event: dict[str, Any]) -> bool:
+    brands = unique_strings(safe_list(event.get("brands")), 8)
+    own_names = {"361", "361°", "361度", "361儿童", "361°儿童", "361度儿童", "361 kids"}
+    if any(clean_text(brand).lower() in own_names for brand in brands):
+        return True
+    title = clean_text(event.get("title"))
+    return any(marker.lower() in title.lower() for marker in OWN_BRAND_MARKERS)
+
+
+competitor_channel_ids = [
+    x for x in valid_event_ids(ai_data.get("competitor_channel_ids"), MAX_COMPETITOR_CHANNEL * 2)
+    if x not in key_event_ids and not is_own_brand_event(eligible_event_map[x])
+][:MAX_COMPETITOR_CHANNEL]
+kids_consumer_ids = [
+    x for x in valid_event_ids(ai_data.get("kids_consumer_ids"), MAX_KIDS_CONSUMER * 2)
+    if x not in key_event_ids
+][:MAX_KIDS_CONSUMER]
 
 if not competitor_channel_ids:
     competitor_channel_ids = [
         clean_text(x.get("event_id"))
         for x in eligible_events
         if clean_text(x.get("category")) in ["品牌与公司", "电商与平台", "渠道与零售"]
+        and clean_text(x.get("event_id")) not in key_event_ids
+        and not is_own_brand_event(x)
     ][:MAX_COMPETITOR_CHANNEL]
 
 if not kids_consumer_ids:
     kids_consumer_ids = [
         clean_text(x.get("event_id"))
         for x in eligible_events
-        if clean_text(x.get("category")) == "儿童与青少年"
-        or any("儿童" in clean_text(brand) for brand in safe_list(x.get("brands")))
+        if clean_text(x.get("event_id")) not in key_event_ids
+        and (
+            clean_text(x.get("category")) == "儿童与青少年"
+            or any("儿童" in clean_text(brand) for brand in safe_list(x.get("brands")))
+        )
     ][:MAX_KIDS_CONSUMER]
+
+kids_consumer_ids = [x for x in kids_consumer_ids if x not in competitor_channel_ids][:MAX_KIDS_CONSUMER]
 
 validated_watchlist = validate_watchlist(ai_data)
 
@@ -1032,6 +1452,12 @@ for row in validated_product_rows:
     product = product_public(eligible_product_map[row["product_id"]])
     product["editorial_reason"] = row["reason"]
     product_radar.append(product)
+
+image_counts = Counter(x.get("image_url") for x in product_radar if x.get("image_url"))
+duplicate_images = {url for url, count in image_counts.items() if url and count > 1}
+for product in product_radar:
+    if product.get("image_url") in duplicate_images:
+        product["image_url"] = ""
 
 competitor_channel = [
     event_public(eligible_event_map[event_id])
@@ -1151,15 +1577,16 @@ week_in_one_paragraph = sanitize_grounded_text(
 ) if ai_used else ""
 
 if not week_in_one_paragraph:
-    selected_categories = unique_strings([x.get("category") for x in key_developments], 4)
-    selected_brands = unique_strings([brand for x in key_developments for brand in safe_list(x.get("brands"))], 5)
-    week_in_one_paragraph = short_text(
-        f"本周有效资讯主要覆盖{'、'.join(selected_categories) or '行业动态'}；"
-        f"涉及{'、'.join(selected_brands) or '多个行业主体'}。"
-        f"已筛选{len(key_developments)}项重点变化和{len(product_radar)}项具名产品证据，"
-        "矛盾或证据不足的内容已单独进入核验队列。",
-        180,
-    )
+    selected_facts = [clean_text(x.get("title")) for x in key_developments[:3] if clean_text(x.get("title"))]
+    if selected_facts:
+        week_in_one_paragraph = short_text(
+            f"本周已核验的主要变化包括：{'；'.join(selected_facts)}。"
+            + (f"另有{len(product_radar)}项具名产品通过来源核验进入产品雷达。" if product_radar else "")
+            + "证据不足或存在冲突的内容未进入核心结论。",
+            180,
+        )
+    else:
+        week_in_one_paragraph = "本周可核验的核心事件有限，证据不足内容未进入管理层结论。"
 
 next_week_focus = []
 for value in safe_list(ai_data.get("next_week_focus")):
@@ -1187,9 +1614,9 @@ def build_source_registry() -> list[dict[str, Any]]:
 
     def add(source_type: str, item_id: str, title: str, source: str, url: str, published_date: str) -> None:
         url = clean_url(url)
-        if not url:
+        if not is_direct_url(url):
             return
-        key = (url, clean_text(title))
+        key = url
         if key in used:
             return
         used.add(key)
@@ -1211,6 +1638,18 @@ def build_source_registry() -> list[dict[str, Any]]:
             event.get("url", ""),
             event.get("published_date", ""),
         )
+        for evidence in safe_list(event.get("evidence")):
+            if not isinstance(evidence, dict):
+                continue
+            evidence_date = parse_date(evidence.get("published_at"))
+            add(
+                "event_evidence",
+                evidence.get("item_id", "") or event.get("event_id", ""),
+                evidence.get("title", "") or event.get("title", ""),
+                evidence.get("source", ""),
+                evidence.get("url", ""),
+                evidence_date.isoformat() if evidence_date else event.get("published_date", ""),
+            )
 
     for dive in deep_dives:
         for evidence in safe_list(dive.get("evidence")):
@@ -1223,6 +1662,18 @@ def build_source_registry() -> list[dict[str, Any]]:
                     evidence.get("url", ""),
                     evidence.get("published_date", ""),
                 )
+                event_id = clean_text(evidence.get("event_id"))
+                if event_id in eligible_event_map:
+                    for row in event_evidence_rows(eligible_event_map[event_id]):
+                        row_date = parse_date(row.get("published_at"))
+                        add(
+                            "event_evidence",
+                            row.get("item_id", "") or event_id,
+                            row.get("title", "") or evidence.get("title", ""),
+                            row.get("source", ""),
+                            row.get("url", ""),
+                            row_date.isoformat() if row_date else evidence.get("published_date", ""),
+                        )
 
     for product in product_radar:
         add(
@@ -1233,11 +1684,44 @@ def build_source_registry() -> list[dict[str, Any]]:
             product.get("url", ""),
             product.get("published_date", ""),
         )
+        for coverage in safe_list(product.get("coverage")):
+            if not isinstance(coverage, dict):
+                continue
+            add(
+                "product_evidence",
+                product.get("product_id", ""),
+                coverage.get("headline", "") or f"{product.get('brand', '')} {product.get('product_name', '')}",
+                coverage.get("source", ""),
+                coverage.get("url", ""),
+                coverage.get("published_date", "") or product.get("published_date", ""),
+            )
 
     return rows
 
 
 source_registry = build_source_registry()
+
+
+def product_lead_public(product: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "signal_id": clean_text(product.get("signal_id") or product.get("product_id")),
+        "brand": clean_text(product.get("brand")),
+        "product_name": clean_text(product.get("product_name")),
+        "headline": clean_text(product.get("headline")),
+        "source": clean_text(product.get("source")),
+        "url": product_direct_url(product),
+        "published_date": clean_text(product.get("published_date")),
+        "lead_reason": clean_text(product.get("lead_reason")),
+        "verification_reason": clean_text(product.get("verification_reason")),
+        "note": clean_text(product.get("note")) or "证据尚未达到产品雷达门槛，仅供后续核验。",
+    }
+
+
+pending_product_leads = [
+    product_lead_public(x)
+    for x in product_leads[:20]
+    if product_direct_url(x) and is_specific_product_name(x.get("product_name"), x.get("brand"))
+]
 
 
 # =========================================================
@@ -1248,7 +1732,7 @@ category_counts = Counter(clean_text(x.get("category")) or "行业动态" for x 
 selected_status_counts = Counter(clean_text(x.get("status")) or "new" for x in key_developments)
 
 output = {
-    "schema_version": "3.0",
+    "schema_version": "3.1",
     "generated_at": GENERATED_AT.isoformat(timespec="minutes"),
     "report_window": {
         "start_date": REPORT_START_DATE.isoformat(),
@@ -1270,6 +1754,7 @@ output = {
         "new_selected": [x for x in key_developments if x.get("status") == "new"],
         "follow_up_selected": [x for x in key_developments if x.get("status") == "follow_up"],
         "verification_queue": verification_queue,
+        "product_leads_pending_verification": pending_product_leads[:8],
         "not_seen_this_week": not_seen_this_week,
         "note": "‘本周未出现’只表示检索期内没有明确后续，不代表事件已结束。",
     },
@@ -1279,14 +1764,18 @@ output = {
         "ai_error": ai_error,
         "source_schema_version": clean_text(weekly_sources.get("schema_version")),
         "product_schema_version": clean_text(weekly_products.get("schema_version")),
-        "raw_event_count": len(source_events),
+        "raw_event_count": len(source_events_raw),
+        "coalesced_event_count": len(source_events),
         "eligible_event_count": len(eligible_events),
         "selected_event_count": len(key_developments),
         "raw_product_count": len(product_rows),
+        "product_lead_count": len(product_leads),
         "eligible_product_count": len(eligible_products),
         "selected_product_count": len(product_radar),
         "conflict_count": len(verification_queue),
         "source_link_count": len(source_registry),
+        "selected_event_direct_link_count": sum(1 for x in key_developments if is_direct_url(x.get("url"))),
+        "selected_product_direct_link_count": sum(1 for x in product_radar if is_direct_url(x.get("url"))),
         "event_rejections": dict(event_rejections),
         "product_rejections": dict(product_rejections),
         "eligible_categories": dict(category_counts),
@@ -1294,12 +1783,16 @@ output = {
         "quality_notes": [
             "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
             "冲突事件不会进入已确认重点，而是进入核验队列。",
-            "产品资料不足时允许产品雷达为空，不使用随机商品补位。",
+            "同一品牌同一财务周期在分析层再次合并，避免一份财报被拆成多条重点。",
+            "产品必须满足官方单源或至少两家独立可信来源；未达门槛的具名商品只进入待核验线索。",
+            "产品资料不足时允许产品雷达为空，不使用随机商品、通用品类名或占位图片补位。",
+            "核心事件、产品雷达和来源目录只保留原文直链，不使用Google News回跳链接。",
             "所有分数仅用于编辑和资料完整度判断，不代表销量或市场热度。",
         ],
     },
     "supporting_signals": {
         "product_categories": product_category_signals[:12],
+        "product_leads": pending_product_leads[:20],
         "product_media_signals": product_media_signals[:30],
     },
     "input_files": {
@@ -1321,8 +1814,12 @@ archive_file.write_text(content, encoding="utf-8")
 print(f"weekly analysis saved: {OUTPUT_FILE}")
 print(f"weekly analysis archived: {archive_file}")
 print(f"AI used: {ai_used} | AI error: {ai_error or 'none'}")
-print(f"events raw/eligible/selected: {len(source_events)}/{len(eligible_events)}/{len(key_developments)}")
+print(
+    f"events raw/coalesced/eligible/selected: "
+    f"{len(source_events_raw)}/{len(source_events)}/{len(eligible_events)}/{len(key_developments)}"
+)
 print(f"products raw/eligible/selected: {len(product_rows)}/{len(eligible_products)}/{len(product_radar)}")
+print(f"product leads pending verification: {len(pending_product_leads)}")
 print(f"deep dives: {len(deep_dives)} | conflicts: {len(verification_queue)} | source links: {len(source_registry)}")
 
 print("\nSelected developments:")
