@@ -151,7 +151,8 @@ RELEVANCE_WORDS = list(dict.fromkeys(KIDS_WORDS + PRODUCT_WORDS + BUSINESS_WORDS
 HARD_BAD_WORDS = [
     "彩票", "博彩", "赌球", "比分", "赛程", "转会", "伤病名单", "首发阵容",
     "主教练下课", "股票推荐", "个股推荐", "涨停", "跌停", "龙虎榜", "目标价",
-    "买入评级", "荐股", "优惠券", "券后", "凑单", "省钱快报", "招商加盟",
+    "买入评级", "荐股", "股价", "支撑位", "阻力位", "技术面", "K线",
+    "优惠券", "券后", "凑单", "省钱快报", "招商加盟",
     "加盟代理", "招聘", "成人用品", "汽车导购", "购车", "新车上市",
     "手机评测", "电视评测", "楼市", "房价",
 ]
@@ -159,7 +160,33 @@ HARD_BAD_WORDS = [
 LOW_VALUE_WORDS = [
     "怎么买", "怎么选", "哪个牌子好", "排行榜", "推荐购买", "值得买",
     "开箱测评", "深度测评", "避坑", "种草清单", "好物推荐", "低至",
-    "直降", "满减", "包邮", "抽奖", "送福利",
+    "直降", "满减", "包邮", "抽奖", "送福利", "适合去哪", "去哪玩",
+    "旅游攻略", "选购指南", "+FAQ", "FAQ", "门票攻略", "一日游攻略",
+]
+
+# 这些内容可以作为场景素材留在原始items中，但不应进入管理层核心事件。
+LOCAL_PROMO_WORDS = [
+    "打卡", "趣味运动会", "社区活动", "亲子家庭", "嘉年华", "游园会",
+    "一日游", "亲子游", "文商旅体", "现场体验", "报名开启",
+]
+
+CLICKBAIT_WORDS = [
+    "救", "魔法", "爆了", "炸了", "最怕", "背后", "能否", "为何",
+    "怎么办", "稳住", "抢钱", "突然", "彻底", "狂飙",
+]
+
+GENERIC_DESCRIPTION_WORDS = [
+    "Comprehensive up-to-date news coverage",
+    "aggregated from sources all over the world by Google News",
+    "Google News provides comprehensive",
+    "Read full coverage",
+    "查看完整报道",
+    "由 Google 新闻汇总",
+]
+
+GENERIC_IMAGE_WORDS = [
+    "google", "gstatic", "logo", "icon", "favicon", "avatar", "default",
+    "placeholder", "sprite", "brandmark", "site-logo", "site_logo",
 ]
 
 EVENT_KEYWORDS = [
@@ -433,8 +460,69 @@ def is_external_article_url(url: str) -> bool:
     host = host_of(url)
     if not host:
         return False
-    blocked = ["news.google.com", "google.com", "consent.google.com", "accounts.google.com"]
+    blocked = [
+        "news.google.com", "google.com", "consent.google.com", "accounts.google.com",
+        "facebook.com", "x.com", "twitter.com", "weibo.com", "youtube.com",
+    ]
     return not any(host == x or host.endswith("." + x) for x in blocked)
+
+
+def site_hint(host: str) -> str:
+    """用于自动链接解析的轻量同站判断，不承担严格公共后缀识别。"""
+    host = clean_text(host).lower().removeprefix("www.")
+    parts = [x for x in host.split(".") if x]
+    if len(parts) <= 2:
+        return host
+    if tuple(parts[-2:]) in {("com", "cn"), ("net", "cn"), ("org", "cn"), ("gov", "cn")}:
+        return ".".join(parts[-3:])
+    return ".".join(parts[-2:])
+
+
+def same_site(url_a: str, url_b: str) -> bool:
+    left = site_hint(host_of(url_a))
+    right = site_hint(host_of(url_b))
+    return bool(left and right and left == right)
+
+
+def prepare_description(value: Any, title: str = "") -> str:
+    text = clean_text(value)
+    if len(text) < 28:
+        return ""
+    if has_any(text, GENERIC_DESCRIPTION_WORDS):
+        return ""
+    if title and title_similarity(text, title) >= 0.92:
+        return ""
+    if has_any(text, ["Javascript is disabled", "请启用JavaScript", "访问验证", "安全验证"]):
+        return ""
+
+    # 把网页描述控制在适合后续编辑的长度，尽量在句号处截断。
+    if len(text) > 360:
+        candidate = text[:360]
+        stops = [candidate.rfind(mark) for mark in ["。", "！", "？", ". "]]
+        stop = max(stops)
+        text = candidate[:stop + 1] if stop >= 80 else candidate.rstrip() + "…"
+
+    return text
+
+
+def is_valid_image_url(url: str, width: int = 0, height: int = 0) -> bool:
+    url = clean_url(url)
+    if not url:
+        return False
+
+    lower = url.lower()
+    host = host_of(url)
+    if any(token in lower for token in GENERIC_IMAGE_WORDS):
+        return False
+    if any(domain in host for domain in ["googleusercontent.com", "gstatic.com", "google.com"]):
+        return False
+    if re.search(r"\.(?:svg|ico|gif)(?:\?|$)", lower):
+        return False
+    if width and width < 400:
+        return False
+    if height and height < 180:
+        return False
+    return True
 
 
 def has_any(text: str, words: list[str]) -> bool:
@@ -480,6 +568,88 @@ def detect_category(title: str, query_groups: list[str]) -> str:
     return "行业动态"
 
 
+def detect_reporting_period(title: str, published_at: Any = "") -> str:
+    dt = parse_published_at(published_at)
+    fallback_year = dt.year if dt else REPORT_END_DATE.year
+    year_match = re.search(r"(20\d{2})年?", title)
+    year = int(year_match.group(1)) if year_match else fallback_year
+
+    if has_any(title, ["上半年", "半年", "半年度", "中期业绩", "中期报告", "半年报"]):
+        return f"{year}_h1"
+    if has_any(title, ["下半年"]):
+        return f"{year}_h2"
+    if re.search(r"(?:Q1|第一季度|一季度)", title, flags=re.I):
+        return f"{year}_q1"
+    if re.search(r"(?:Q2|第二季度|二季度)", title, flags=re.I):
+        return f"{year}_q2"
+    if re.search(r"(?:Q3|第三季度|三季度)", title, flags=re.I):
+        return f"{year}_q3"
+    if re.search(r"(?:Q4|第四季度|四季度)", title, flags=re.I):
+        return f"{year}_q4"
+    if has_any(title, ["全年业绩", "年度业绩", "年报"]):
+        return f"{year}_fy"
+    return ""
+
+
+def detect_event_family(title: str) -> str:
+    # 财务事件放在渠道判断之前，使“半年关店/渠道调整”仍与同期业绩合并阅读。
+    if has_any(title, ["财报", "业绩", "营收", "收入", "净利", "利润", "毛利率", "半年报", "中期"]):
+        return "financial_results"
+    if detect_reporting_period(title) and has_any(title, ["增长", "下滑", "关店", "闭店", "门店", "渠道"]):
+        return "financial_results"
+    if has_any(title, ["收购", "出售", "并购", "投资入股", "易主"]):
+        return "capital_strategy"
+    if has_any(title, ["CEO", "总裁", "董事长", "高管", "管理层", "任命", "换帅"]):
+        return "management"
+    if has_any(title, ["签约", "代言", "合作伙伴", "赞助"]):
+        return "endorsement_partnership"
+    if has_any(title, ["联名", "限定", "共创"]):
+        return "collaboration"
+    if has_any(title, ["新品", "新款", "首发", "发售", "开售", "上新", "推出"]):
+        return "product_launch"
+    if has_any(title, ["旗舰店", "开业", "开店", "闭店", "关店", "门店", "奥莱"]):
+        return "store_channel"
+    if has_any(title, ["平台规则", "流量机制", "直播", "天猫", "京东", "抖音", "小红书", "唯品会"]):
+        return "platform_channel"
+    if has_any(title, ["社零", "社会消费品零售", "国家统计局", "体育消费", "市场规模"]):
+        return "macro_data"
+    if has_any(title, LOCAL_PROMO_WORDS):
+        return "local_activity"
+    if has_any(title, ["报告", "白皮书", "研究", "洞察", "调查"]):
+        return "research_report"
+    return "industry_event"
+
+
+def event_signature(item: dict[str, Any]) -> str:
+    title = item.get("title", "")
+    brands = safe_list(item.get("brands")) or detect_brands(title)
+    brand = brands[0] if brands else "industry"
+    family = item.get("event_family") or detect_event_family(title)
+    period = item.get("reporting_period") or detect_reporting_period(title, item.get("published_at"))
+
+    # 同品牌、同财务周期的报道无论分别强调收入、海外或门店，都归为一个事件。
+    if family == "financial_results" and period:
+        return f"{brand}|{family}|{period}"
+
+    return f"{brand}|{family}|{similarity_text(title)[:32]}"
+
+
+def core_exclusion_reason(item: dict[str, Any]) -> str:
+    title = clean_text(item.get("title"))
+    source_tier = item.get("source_tier", "tier_3")
+    score = int(item.get("editorial_score", 0))
+
+    if source_tier == "low":
+        return "low_quality_source"
+    if has_any(title, LOCAL_PROMO_WORDS):
+        return "local_promotional_activity"
+    if score < 42:
+        return "editorial_score_below_core_threshold"
+    if not item.get("is_official") and source_tier == "tier_3" and not detect_brands(title):
+        return "weak_single_source_without_brand"
+    return ""
+
+
 # =========================================================
 # 4. 来源分级与筛选
 # =========================================================
@@ -502,6 +672,11 @@ TIER_2_WORDS = [
 
 LOW_SOURCE_WORDS = [
     "百家号", "财富号", "搜狐号", "自媒体", "个人号", "省钱快报",
+    "Traders Union", "Dealmoon", "北美省钱快报",
+]
+
+LOW_SOURCE_DOMAINS = [
+    "dealmoon.com", "dealmoon.ca", "tradersunion.com", "sohu.com",
 ]
 
 OFFICIAL_DOMAINS = [
@@ -511,6 +686,63 @@ OFFICIAL_DOMAINS = [
     "lululemon.com", "on.com", "hoka.com", "puma.com", "asics.com",
     "salomon.com", "newbalance.com", "decathlon.com",
 ]
+
+SOURCE_NAME_ALIASES = {
+    "thepaper.cn": "澎湃新闻",
+    "澎湃": "澎湃新闻",
+    "stats.gov.cn": "国家统计局",
+    "国家统计局": "国家统计局",
+    "mofcom.gov.cn": "商务部",
+    "sport.gov.cn": "国家体育总局",
+    "xinhuanet.com": "新华网",
+    "新华网": "新华网",
+    "people.com.cn": "人民网",
+    "jiemian.com": "界面新闻",
+    "Jiemian": "界面新闻",
+    "yicai.com": "第一财经",
+    "第一财经": "第一财经",
+    "ebrun.com": "亿邦动力",
+    "亿邦动力": "亿邦动力",
+    "cbndata.com": "CBNData",
+    "womenofchina.com": "中国妇女网",
+    "shyp.gov.cn": "上海杨浦",
+    "xinhua": "新华网",
+    "Sohu": "搜狐网",
+    "搜狐": "搜狐网",
+}
+
+DOMAIN_SOURCE_NAMES = [
+    ("stats.gov.cn", "国家统计局"),
+    ("mofcom.gov.cn", "商务部"),
+    ("sport.gov.cn", "国家体育总局"),
+    ("xinhuanet.com", "新华网"),
+    ("people.com.cn", "人民网"),
+    ("thepaper.cn", "澎湃新闻"),
+    ("jiemian.com", "界面新闻"),
+    ("yicai.com", "第一财经"),
+    ("ebrun.com", "亿邦动力"),
+    ("cbndata.com", "CBNData"),
+    ("womenofchina.com", "中国妇女网"),
+    ("shyp.gov.cn", "上海杨浦"),
+    ("dealmoon.com", "北美省钱快报"),
+    ("dealmoon.ca", "北美省钱快报"),
+]
+
+
+def normalize_source_name(source: str, *urls: str) -> str:
+    original = clean_text(source)
+    lower_source = original.lower()
+
+    for key, display in SOURCE_NAME_ALIASES.items():
+        if key.lower() in lower_source:
+            return display
+
+    hosts = " ".join(host_of(url) for url in urls if clean_url(url))
+    for domain, display in DOMAIN_SOURCE_NAMES:
+        if domain in hosts:
+            return display
+
+    return original
 
 
 def source_profile(source: str, source_url: str, direct_url: str = "") -> tuple[str, bool, int]:
@@ -525,7 +757,7 @@ def source_profile(source: str, source_url: str, direct_url: str = "") -> tuple[
         return "tier_1", False, 24
     if has_any(text, TIER_2_WORDS):
         return "tier_2", False, 18
-    if has_any(text, LOW_SOURCE_WORDS):
+    if has_any(text, LOW_SOURCE_WORDS) or any(domain in host_text for domain in LOW_SOURCE_DOMAINS):
         return "low", False, 3
     return "tier_3", False, 10
 
@@ -604,7 +836,19 @@ def editorial_score(item: dict[str, Any]) -> int:
         specificity += 3
 
     kids_bonus = 6 if has_any(title, KIDS_WORDS) else 0
-    score = freshness + source_points + impact + min(specificity, 15) + kids_bonus
+    penalty = 0
+    if has_any(title, LOCAL_PROMO_WORDS):
+        penalty += 25
+    if has_any(title, CLICKBAIT_WORDS) or "?" in title or "？" in title:
+        penalty += 6
+    if source_profile(
+        item.get("source", ""),
+        item.get("source_url", ""),
+        item.get("direct_url", ""),
+    )[0] == "low":
+        penalty += 12
+
+    score = freshness + source_points + impact + min(specificity, 15) + kids_bonus - penalty
     return max(1, min(100, score))
 
 
@@ -638,15 +882,17 @@ def fetch_rss(query_row: dict[str, str], session: requests.Session) -> tuple[lis
 
     for node in root.findall(".//item")[:RSS_PER_QUERY]:
         source_node = node.find("source")
-        source = clean_text(source_node.text if source_node is not None else "")
+        source_original = clean_text(source_node.text if source_node is not None else "")
         source_url = clean_url(source_node.attrib.get("url", "") if source_node is not None else "")
-        title = normalize_title(node.findtext("title") or "", source)
+        source = normalize_source_name(source_original, source_url)
+        title = normalize_title(node.findtext("title") or "", source_original)
         pub_raw = clean_text(node.findtext("pubDate"))
         pub_dt = parse_published_at(pub_raw)
 
         row = {
             "title": title,
             "source": source,
+            "source_original": source_original,
             "source_url": source_url,
             "google_news_url": clean_url(node.findtext("link")),
             "direct_url": "",
@@ -705,6 +951,87 @@ def meta_content(soup: BeautifulSoup, *, name: str = "", prop: str = "") -> str:
     return ""
 
 
+def meta_int(soup: BeautifulSoup, prop: str) -> int:
+    value = meta_content(soup, prop=prop)
+    match = re.search(r"\d+", value)
+    return int(match.group()) if match else 0
+
+
+def discover_original_url(soup: BeautifulSoup, base_url: str, source_url: str) -> str:
+    """从Google News落地页中只选择与RSS来源站点一致的外链，避免误取广告链接。"""
+    candidates = []
+
+    for node in [
+        soup.find("link", attrs={"rel": "canonical"}),
+        soup.find("meta", attrs={"property": "og:url"}),
+        soup.find("meta", attrs={"name": "twitter:url"}),
+    ]:
+        if not node:
+            continue
+        value = node.get("href") or node.get("content") or ""
+        candidate = clean_url(urljoin(base_url, value))
+        if candidate:
+            candidates.append(candidate)
+
+    for node in soup.find_all("a", href=True):
+        candidate = clean_url(urljoin(base_url, node.get("href", "")))
+        if candidate:
+            candidates.append(candidate)
+
+    deduped = []
+    used = set()
+    for candidate in candidates:
+        if candidate in used or not is_external_article_url(candidate):
+            continue
+        used.add(candidate)
+        path = urlparse(candidate).path.strip("/")
+        if len(path) < 3:
+            continue
+        deduped.append(candidate)
+
+    same_source = [x for x in deduped if source_url and same_site(x, source_url)]
+    if same_source:
+        return max(same_source, key=lambda x: len(urlparse(x).path))
+    return ""
+
+
+def json_ld_description(soup: BeautifulSoup) -> str:
+    for node in soup.find_all("script", attrs={"type": "application/ld+json"})[:12]:
+        try:
+            data = json.loads(node.string or node.get_text() or "")
+        except Exception:
+            continue
+
+        queue = data if isinstance(data, list) else [data]
+        while queue:
+            current = queue.pop(0)
+            if not isinstance(current, dict):
+                continue
+            description = clean_text(current.get("description"))
+            if description:
+                return description
+            graph = current.get("@graph")
+            if isinstance(graph, list):
+                queue.extend(graph)
+    return ""
+
+
+def first_article_paragraph(soup: BeautifulSoup) -> str:
+    selectors = [
+        "article p", ".article-content p", ".article_content p", ".content p",
+        ".post-content p", ".story-body p", "main p",
+    ]
+    for selector in selectors:
+        for node in soup.select(selector)[:12]:
+            text = clean_text(node.get_text(" ", strip=True))
+            if 45 <= len(text) <= 600 and not has_any(
+                text,
+                ["责任编辑", "版权声明", "免责声明", "扫码", "关注公众号", "打开客户端"],
+            ):
+                return text
+    return ""
+
+
 def enrich_one(item: dict[str, Any]) -> dict[str, Any]:
     enriched = dict(item)
     url = clean_url(item.get("google_news_url") or item.get("url"))
@@ -712,55 +1039,120 @@ def enrich_one(item: dict[str, Any]) -> dict[str, Any]:
     if not url:
         return enriched
 
+    headers = {
+        "User-Agent": USER_AGENT,
+        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.7",
+    }
+
     try:
         response = requests.get(
             url,
             timeout=REQUEST_TIMEOUT,
             allow_redirects=True,
-            headers={"User-Agent": USER_AGENT, "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.7"},
+            headers=headers,
         )
         response.raise_for_status()
     except Exception:
+        enriched["link_status"] = "google_news_fallback"
+        enriched.pop("meta_description", None)
+        enriched.pop("image_url", None)
         return enriched
 
     final_url = clean_url(response.url)
+    direct_url = final_url if is_external_article_url(final_url) else ""
+    response_soup = None
 
-    if is_external_article_url(final_url):
-        enriched["direct_url"] = final_url
-        enriched["url"] = final_url
+    if "html" in response.headers.get("content-type", "").lower():
+        try:
+            response_soup = BeautifulSoup(response.text[:1_500_000], "html.parser")
+        except Exception:
+            response_soup = None
 
-    content_type = response.headers.get("content-type", "").lower()
-    if "html" not in content_type:
+    if not direct_url and response_soup is not None:
+        direct_url = discover_original_url(
+            response_soup,
+            final_url or url,
+            clean_url(item.get("source_url")),
+        )
+
+    # Google落地页本身没有可核验摘要和新闻图片，宁可留空也不使用Google占位内容。
+    if not direct_url:
+        enriched["url"] = url
+        enriched["link_status"] = "google_news_fallback"
+        enriched.pop("meta_description", None)
+        enriched.pop("image_url", None)
+        return enriched
+
+    article_response = response
+    if not same_site(final_url, direct_url):
+        try:
+            article_response = requests.get(
+                direct_url,
+                timeout=REQUEST_TIMEOUT,
+                allow_redirects=True,
+                headers=headers,
+            )
+            article_response.raise_for_status()
+            if is_external_article_url(article_response.url):
+                direct_url = clean_url(article_response.url)
+        except Exception:
+            article_response = None
+
+    enriched["direct_url"] = direct_url
+    enriched["url"] = direct_url
+    enriched["link_status"] = "direct"
+    enriched["source"] = normalize_source_name(
+        enriched.get("source", ""),
+        enriched.get("source_url", ""),
+        direct_url,
+    )
+
+    if article_response is None or "html" not in article_response.headers.get("content-type", "").lower():
         return enriched
 
     try:
-        soup = BeautifulSoup(response.text[:1_500_000], "html.parser")
+        soup = BeautifulSoup(article_response.text[:1_500_000], "html.parser")
     except Exception:
         return enriched
 
     canonical_node = soup.find("link", attrs={"rel": "canonical"})
     canonical = ""
     if canonical_node:
-        canonical = clean_url(urljoin(final_url, canonical_node.get("href", "")))
+        canonical = clean_url(urljoin(direct_url, canonical_node.get("href", "")))
 
-    if canonical and is_external_article_url(canonical):
+    if canonical and is_external_article_url(canonical) and same_site(canonical, direct_url):
         enriched["direct_url"] = canonical
         enriched["url"] = canonical
+        direct_url = canonical
 
-    description = (
+    description = prepare_description(
         meta_content(soup, prop="og:description")
         or meta_content(soup, name="description")
         or meta_content(soup, name="twitter:description")
+        or json_ld_description(soup)
+        or first_article_paragraph(soup),
+        enriched.get("title", ""),
     )
-    image_url = (
+
+    image_raw = (
         meta_content(soup, prop="og:image")
         or meta_content(soup, name="twitter:image")
     )
+    image_url = clean_url(urljoin(direct_url, image_raw)) if image_raw else ""
+    image_width = meta_int(soup, "og:image:width")
+    image_height = meta_int(soup, "og:image:height")
 
-    if description and len(description) >= 24:
-        enriched["meta_description"] = description[:500]
-    if image_url:
-        enriched["image_url"] = urljoin(enriched.get("url") or final_url, image_url)
+    if description:
+        enriched["meta_description"] = description
+    else:
+        enriched.pop("meta_description", None)
+
+    if is_valid_image_url(image_url, image_width, image_height):
+        enriched["image_url"] = image_url
+        enriched["image_source_url"] = direct_url
+    else:
+        enriched.pop("image_url", None)
+        enriched.pop("image_source_url", None)
 
     return enriched
 
@@ -828,24 +1220,51 @@ def same_event(a: dict[str, Any], b: dict[str, Any]) -> bool:
     brands_b = set(b.get("brands", []))
     keywords_a = set(a.get("keywords", []))
     keywords_b = set(b.get("keywords", []))
+    family_a = a.get("event_family") or detect_event_family(a.get("title", ""))
+    family_b = b.get("event_family") or detect_event_family(b.get("title", ""))
+    period_a = a.get("reporting_period") or detect_reporting_period(
+        a.get("title", ""), a.get("published_at", "")
+    )
+    period_b = b.get("reporting_period") or detect_reporting_period(
+        b.get("title", ""), b.get("published_at", "")
+    )
+
+    if (
+        brands_a & brands_b
+        and family_a == family_b == "financial_results"
+        and period_a
+        and period_a == period_b
+    ):
+        return True
 
     if similarity >= 0.72:
         return True
     if brands_a & brands_b and similarity >= 0.54:
+        return True
+    if (
+        brands_a & brands_b
+        and family_a == family_b
+        and family_a in {"capital_strategy", "management", "endorsement_partnership", "store_channel"}
+        and similarity >= 0.42
+    ):
         return True
     if len(keywords_a & keywords_b) >= 2 and similarity >= 0.58:
         return True
     return False
 
 
-def representative_rank(item: dict[str, Any]) -> tuple[int, int, int, int]:
+def representative_rank(item: dict[str, Any]) -> tuple[int, int, int, int, int, int]:
     tier, official, _ = source_profile(item.get("source", ""), item.get("source_url", ""), item.get("direct_url", ""))
     tier_rank = {"official": 5, "tier_1": 4, "tier_2": 3, "tier_3": 2, "low": 1}.get(tier, 0)
+    title = item.get("title", "")
+    headline_quality = 0 if has_any(title, CLICKBAIT_WORDS) or "?" in title or "？" in title else 1
     return (
         1 if official else 0,
         tier_rank,
-        int(item.get("editorial_score", 0)),
+        headline_quality,
+        1 if item.get("meta_description") else 0,
         1 if item.get("direct_url") else 0,
+        int(item.get("editorial_score", 0)),
     )
 
 
@@ -882,10 +1301,41 @@ def build_events(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
             for x in cluster
         )
 
-        event_seed = similarity_text(representative.get("title", ""))
+        event_seed = event_signature(representative)
         event_id = stable_id("evt", event_seed)
         source_count = len(sources)
         official_count = sum(1 for x in cluster if x.get("is_official"))
+        direct_source_count = sum(1 for x in cluster if x.get("direct_url"))
+        family = representative.get("event_family") or detect_event_family(representative.get("title", ""))
+        period = representative.get("reporting_period") or detect_reporting_period(
+            representative.get("title", ""), representative.get("published_at", "")
+        )
+
+        summaries = []
+        for row in sorted(cluster, key=representative_rank, reverse=True):
+            summary = prepare_description(row.get("meta_description"), row.get("title", ""))
+            if summary and summary not in summaries:
+                summaries.append(summary)
+
+        evidence = []
+        used_evidence = set()
+        for row in sorted(cluster, key=representative_rank, reverse=True):
+            evidence_key = f"{row.get('source')}|{row.get('url')}"
+            if evidence_key in used_evidence:
+                continue
+            used_evidence.add(evidence_key)
+            evidence.append({
+                "item_id": row.get("id", ""),
+                "title": row.get("title", ""),
+                "source": row.get("source", ""),
+                "source_tier": row.get("source_tier", ""),
+                "is_official": bool(row.get("is_official")),
+                "url": row.get("url", ""),
+                "direct_url": row.get("direct_url", ""),
+                "link_status": row.get("link_status", ""),
+                "published_at": row.get("published_at", ""),
+                "summary": prepare_description(row.get("meta_description"), row.get("title", "")),
+            })
 
         if official_count:
             verification = "official_source"
@@ -894,23 +1344,38 @@ def build_events(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
         else:
             verification = "single_source"
 
+        event_score = min(
+            100,
+            max(int(x.get("editorial_score", 0)) for x in cluster)
+            + min(max(source_count - 1, 0) * 4, 12)
+            + (5 if official_count else 0),
+        )
+
         events.append({
             "event_id": event_id,
             "fingerprint": event_seed,
             "representative_id": representative.get("id", ""),
             "title": representative.get("title", ""),
+            "summary": summaries[0] if summaries else "",
             "category": representative.get("category", ""),
+            "event_family": family,
+            "reporting_period": period,
             "brands": brands,
             "keywords": keywords[:16],
             "source": representative.get("source", ""),
             "url": representative.get("url", ""),
+            "direct_url": representative.get("direct_url", ""),
+            "link_status": representative.get("link_status", ""),
             "published_at": representative.get("published_at", ""),
             "first_published_at": min(published).isoformat(timespec="minutes") if published else "",
             "last_published_at": max(published).isoformat(timespec="minutes") if published else "",
-            "editorial_score": max(int(x.get("editorial_score", 0)) for x in cluster),
+            "editorial_score": event_score,
             "mention_count": len(cluster),
             "source_count": source_count,
+            "direct_source_count": direct_source_count,
             "sources": sources,
+            "evidence": evidence,
+            "original_titles": list(dict.fromkeys(x.get("title", "") for x in cluster if x.get("title"))),
             "item_ids": [x.get("id", "") for x in cluster],
             "verification": verification,
             "conflict_flag": bool(has_negative and has_positive),
@@ -1078,9 +1543,18 @@ def main() -> None:
     prepared = []
     for item in items:
         item = dict(item)
+        item["source"] = normalize_source_name(
+            item.get("source", ""),
+            item.get("source_url", ""),
+            item.get("direct_url", ""),
+        )
         item["brands"] = detect_brands(item.get("title", ""))
         item["keywords"] = detect_keywords(item.get("title", ""))
         item["category"] = detect_category(item.get("title", ""), item.get("query_groups", []))
+        item["event_family"] = detect_event_family(item.get("title", ""))
+        item["reporting_period"] = detect_reporting_period(
+            item.get("title", ""), item.get("published_at", "")
+        )
 
         tier, official, _ = source_profile(
             item.get("source", ""),
@@ -1090,17 +1564,31 @@ def main() -> None:
         item["source_tier"] = tier
         item["is_official"] = official
         item["editorial_score"] = editorial_score(item)
+        exclusion = core_exclusion_reason(item)
+        item["core_eligible"] = not exclusion
+        item["core_exclusion_reason"] = exclusion
         item["id"] = stable_id(
             "src",
             f"{norm_key(item.get('title'))}|{item.get('published_date')}|{item.get('source')}",
         )
+
+        description = prepare_description(item.get("meta_description"), item.get("title", ""))
+        if description:
+            item["meta_description"] = description
+        else:
+            item.pop("meta_description", None)
+
+        if not is_valid_image_url(item.get("image_url", "")):
+            item.pop("image_url", None)
+            item.pop("image_source_url", None)
 
         # RSS description通常只是Google News列表HTML；没有抓到正文摘要时不冒充摘要。
         item.pop("rss_description", None)
         prepared.append(item)
 
     items = sorted(prepared, key=lambda x: x.get("editorial_score", 0), reverse=True)[:MAX_ITEMS]
-    events = build_events(items)
+    core_items = [x for x in items if x.get("core_eligible")]
+    events = build_events(core_items)
 
     prior_events = load_prior_events()
     apply_history_status(events, prior_events)
@@ -1111,7 +1599,7 @@ def main() -> None:
     status_counts = Counter(x.get("status", "new") for x in events)
 
     payload = {
-        "schema_version": "2.0",
+        "schema_version": "2.1",
         "generated_at": GENERATED_AT.isoformat(timespec="minutes"),
         "report_window": {
             "start_date": REPORT_START_DATE.isoformat(),
@@ -1124,7 +1612,10 @@ def main() -> None:
             "hard_date_filter": True,
             "date_basis": "报道发布时间，统一换算为Asia/Shanghai后过滤",
             "seasonal_queries": active_campaigns,
-            "deduplication": "标准化标题去重 + 标题相似度事件聚类",
+            "deduplication": "标准化标题去重 + 品牌/事件类型/财务周期聚类 + 标题相似度复核",
+            "summary_policy": "仅保留原文页有效描述；Google News固定英文说明不作为摘要",
+            "link_policy": "优先解析原文链接，无法安全解析时保留Google News链接并标记fallback",
+            "core_event_policy": "低质量来源、本地宣传活动和编辑分不足的内容保留在线索池但不进入核心事件",
             "editorial_score_note": "仅代表周报编辑优先级，不代表销量、搜索量或市场热度",
             "product_note": "本文件只发现产品相关新闻，不把新闻篇数当作商品销量",
         },
@@ -1132,6 +1623,7 @@ def main() -> None:
             "query_count": len(queries),
             "fetch_error_count": len(fetch_errors),
             "accepted_item_count": len(items),
+            "core_eligible_item_count": len(core_items),
             "event_count": len(events),
             "new_event_count": status_counts.get("new", 0),
             "follow_up_event_count": status_counts.get("follow_up", 0),
@@ -1142,6 +1634,11 @@ def main() -> None:
             "rejected": dict(rejected),
             "categories": dict(category_counts),
             "source_tiers": dict(source_tier_counts),
+            "core_exclusions": dict(Counter(
+                x.get("core_exclusion_reason", "")
+                for x in items
+                if x.get("core_exclusion_reason")
+            )),
         },
         "queries": queries,
         "fetch_errors": fetch_errors[:30],
