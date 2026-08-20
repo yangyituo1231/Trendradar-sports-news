@@ -1,98 +1,290 @@
 name: Weekly Industry Report
 
 on:
+  # GitHub Actions 的 cron 固定使用 UTC。
+  # 00:30 UTC = 北京时间周一 08:30。
   schedule:
-    - cron: '30 18 * * 1'
+    - cron: "30 0 * * 1"
+
   workflow_dispatch:
+    inputs:
+      end_date:
+        description: "可选：重跑指定统计截止日，格式 YYYY-MM-DD；留空则统计最近7个完整自然日"
+        required: false
+        type: string
 
 env:
   TZ: Asia/Shanghai
+  PYTHONUNBUFFERED: "1"
 
 permissions:
   contents: write
 
+concurrency:
+  group: weekly-industry-report
+  cancel-in-progress: false
+
 jobs:
-  weekly-report:
+  build-weekly-report:
     runs-on: ubuntu-latest
+    timeout-minutes: 40
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - uses: actions/setup-python@v5
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4 pyyaml lxml playwright openai pandas
+          python -m pip install --upgrade pip
+          python -m pip install requests beautifulsoup4
 
-      - name: Install browser and fonts
+      # ---------------------------------------------------
+      # 1. 建立最近7个完整自然日的可信资讯池
+      # ---------------------------------------------------
+      - name: Collect weekly sources
+        env:
+          WEEKLY_END_DATE: ${{ github.event.inputs.end_date || '' }}
         run: |
-          sudo apt-get update
-          sudo apt-get install -y fonts-noto-cjk fonts-wqy-zenhei fontconfig
-          sudo fc-cache -fv
-          playwright install --with-deps chromium
+          python scripts/get_weekly_news.py
 
-      - name: Generate Weekly Data
+      # ---------------------------------------------------
+      # 2. 收集具名产品证据；资料不足时允许为空
+      # ---------------------------------------------------
+      - name: Collect verified products
         run: |
-          python scripts/generate_weekly.py
+          python scripts/get_weekly_products.py
 
-      - name: Generate Products
-        run: |
-          python scripts/get_products.py
-
-      - name: Generate Product Signals
-        run: |
-          python scripts/get_product_signals.py
-
-      - name: Analyze Weekly
+      # ---------------------------------------------------
+      # 3. DeepSeek只能选择已有event_id/product_id
+      #    Secret缺失或API失败时，脚本自动使用规则版兜底
+      # ---------------------------------------------------
+      - name: Analyze weekly evidence
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
           python scripts/analyze_weekly.py
 
-      - name: Fetch News Images
-        run: python scripts/fetch_news_images.py
-
-      - name: Generate Weekly HTML
+      # ---------------------------------------------------
+      # 4. 生成响应式纯HTML网页
+      # ---------------------------------------------------
+      - name: Generate weekly HTML
         run: |
           python scripts/generate_weekly_html.py
 
-      - name: Generate Daily Report
+      # ---------------------------------------------------
+      # 5. 发布前质量检查
+      # ---------------------------------------------------
+      - name: Validate weekly report
         run: |
-          python scripts/generate_daily_report.py
+          python - <<'PY'
+          from pathlib import Path
+          from datetime import datetime
+          import json
 
-      - name: Render Weekly Image
-        run: |
-          python scripts/render_weekly_report.py
+          weekly_dir = Path("output/weekly")
 
-      - name: Upload Weekly HTML
+          required_files = [
+              weekly_dir / "weekly_sources.json",
+              weekly_dir / "weekly_products.json",
+              weekly_dir / "weekly_analysis.json",
+              weekly_dir / "weekly_report.html",
+          ]
+
+          for path in required_files:
+              if not path.exists():
+                  raise SystemExit(f"missing required output: {path}")
+              if path.stat().st_size == 0:
+                  raise SystemExit(f"empty required output: {path}")
+
+          sources = json.loads(
+              (weekly_dir / "weekly_sources.json").read_text(encoding="utf-8")
+          )
+          products = json.loads(
+              (weekly_dir / "weekly_products.json").read_text(encoding="utf-8")
+          )
+          analysis = json.loads(
+              (weekly_dir / "weekly_analysis.json").read_text(encoding="utf-8")
+          )
+          page = (weekly_dir / "weekly_report.html").read_text(encoding="utf-8")
+
+          source_window = sources.get("report_window", {})
+          product_window = products.get("report_window", {})
+          analysis_window = analysis.get("report_window", {})
+
+          def comparable_window(value):
+              return {
+                  "start_date": value.get("start_date", ""),
+                  "end_date": value.get("end_date", ""),
+                  "timezone": value.get("timezone", ""),
+              }
+
+          if (
+              comparable_window(source_window) != comparable_window(product_window)
+              or comparable_window(source_window) != comparable_window(analysis_window)
+          ):
+              raise SystemExit(
+                  "report windows do not match: "
+                  f"sources={source_window}, products={product_window}, analysis={analysis_window}"
+              )
+
+          start_date = datetime.strptime(source_window["start_date"], "%Y-%m-%d").date()
+          end_date = datetime.strptime(source_window["end_date"], "%Y-%m-%d").date()
+
+          if (end_date - start_date).days != 6:
+              raise SystemExit(
+                  f"report window must contain 7 calendar days: {start_date} ~ {end_date}"
+              )
+
+          if not str(analysis.get("schema_version", "")).startswith("3"):
+              raise SystemExit(
+                  f"unexpected weekly_analysis schema: {analysis.get('schema_version')}"
+              )
+
+          for event in analysis.get("key_developments", []):
+              event_date = datetime.strptime(event["published_date"][:10], "%Y-%m-%d").date()
+              if not start_date <= event_date <= end_date:
+                  raise SystemExit(
+                      f"selected event outside report window: {event.get('title')} | {event_date}"
+                  )
+              if not event.get("url") or not event.get("source"):
+                  raise SystemExit(
+                      f"selected event missing source or url: {event.get('title')}"
+                  )
+
+          forbidden_fragments = [
+              "P2｜",
+              "P3-P4",
+              "P5-P7",
+              "sales_heat",
+              "TrendRadar product monitor",
+              "半真实运动品牌鞋服商品趋势池",
+          ]
+
+          for fragment in forbidden_fragments:
+              if fragment in page:
+                  raise SystemExit(f"legacy content found in HTML: {fragment}")
+
+          if 'name="viewport"' not in page:
+              raise SystemExit("HTML has no responsive viewport declaration")
+
+          if len(page) < 15000:
+              raise SystemExit(f"HTML output is unexpectedly small: {len(page)} chars")
+
+          quality = analysis.get("data_quality", {})
+          print("validation passed")
+          print(f"window: {start_date} ~ {end_date}")
+          print(
+              "events raw/eligible/selected: "
+              f"{quality.get('raw_event_count', 0)}/"
+              f"{quality.get('eligible_event_count', 0)}/"
+              f"{quality.get('selected_event_count', 0)}"
+          )
+          print(
+              "products raw/eligible/selected: "
+              f"{quality.get('raw_product_count', 0)}/"
+              f"{quality.get('eligible_product_count', 0)}/"
+              f"{quality.get('selected_product_count', 0)}"
+          )
+          print(f"AI used: {quality.get('ai_used', False)}")
+          print(f"HTML chars: {len(page)}")
+          PY
+
+      # ---------------------------------------------------
+      # 6. 下载备份：HTML和对应JSON一起保留
+      # ---------------------------------------------------
+      - name: Upload weekly report package
         uses: actions/upload-artifact@v4
         with:
-          name: weekly-report-html
-          path: output/weekly/weekly_report.html
+          name: weekly-industry-report-${{ github.run_number }}
+          if-no-files-found: error
+          retention-days: 30
+          path: |
+            output/weekly/weekly_report.html
+            output/weekly/weekly_analysis.json
+            output/weekly/weekly_sources.json
+            output/weekly/weekly_products.json
 
-      - name: Upload Weekly Image
-        uses: actions/upload-artifact@v4
-        with:
-          name: weekly-report-image
-          path: weekly-report.png
-
-      - name: Commit Weekly Report
+      # ---------------------------------------------------
+      # 7. 提交网页与周度档案，触发原有GitHub Pages更新
+      # ---------------------------------------------------
+      - name: Commit weekly report
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "weekly report" || echo "nothing to commit"
-          git push
-   
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Send Weekly WeCom
+          git add output/weekly
+
+          if git diff --cached --quiet; then
+            echo "No weekly report changes to commit"
+            exit 0
+          fi
+
+          git commit -m "weekly industry report: $(date +'%Y-%m-%d')"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      # ---------------------------------------------------
+      # 8. 企业微信只发送网页链接，不再发送长截图
+      # ---------------------------------------------------
+      - name: Send weekly report link to WeCom
         continue-on-error: true
         env:
           REPORT_WEBHOOK: ${{ secrets.REPORT_WEBHOOK }}
           WEEKLY_URL: https://yangyituo1231.github.io/Trendradar-sports-news/output/weekly/weekly_report.html
-          SOURCE_FILE: weekly-report.png
-          SEND_FILE: weekly-report-send.jpg
         run: |
-          python scripts/send_weekly_wecom.py
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          import os
+          import requests
+
+          webhook = os.getenv("REPORT_WEBHOOK", "").strip()
+          report_url = os.getenv("WEEKLY_URL", "").strip()
+
+          if not webhook:
+              print("REPORT_WEBHOOK not configured; skip WeCom notification")
+              raise SystemExit(0)
+
+          analysis = json.loads(
+              Path("output/weekly/weekly_analysis.json").read_text(encoding="utf-8")
+          )
+
+          window = analysis.get("report_window", {})
+          editorial = analysis.get("editorial", {})
+          quality = analysis.get("data_quality", {})
+
+          start_date = window.get("start_date", "")
+          end_date = window.get("end_date", "")
+          thesis = editorial.get("weekly_thesis", "本周周报已更新")
+          event_count = quality.get("selected_event_count", 0)
+          product_count = quality.get("selected_product_count", 0)
+
+          content = (
+              "## 361°儿童｜运动产业周度情报\n"
+              f"> **统计周期：** {start_date} 至 {end_date}\n"
+              f"> **本周判断：** {thesis}\n"
+              f"> **本期内容：** {event_count}项重点变化，{product_count}项具名产品\n\n"
+              f"[点击查看完整周报]({report_url})\n\n"
+              "> 页面提交后可能需要1—2分钟完成刷新。"
+          )
+
+          response = requests.post(
+              webhook,
+              json={"msgtype": "markdown", "markdown": {"content": content}},
+              timeout=20,
+          )
+          response.raise_for_status()
+          result = response.json()
+
+          if result.get("errcode", 0) != 0:
+              raise RuntimeError(f"WeCom error: {result}")
+
+          print("weekly report link sent to WeCom")
+          PY
