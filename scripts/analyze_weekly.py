@@ -450,12 +450,28 @@ LOW_VALUE_EVENT_WORDS = [
     "股价", "K线", "支撑位", "压力位", "目标价", "涨停", "跌停", "龙虎榜", "股票",
     "优惠券", "省钱", "值得买", "怎么买", "怎么选", "适合去哪", "旅游攻略", "选购攻略", "FAQ",
     "餐饮团购", "餐饮套餐", "七夕餐饮", "股票支撑", "股票走势", "股价能否", "TOPBRAND |",
+    "DSA罚款", "欧元DSA", "反垄断罚款", "Temu罚款", "拼多多罚款",
 ]
 
 LOW_RELEVANCE_EVENT_PATTERNS = [
     r"TOPBRAND.*(?:；|;).*(?:；|;)",
     r"(?:餐饮|外卖).*(?:团购|套餐|优惠)",
     r"(?:股价|股票).*(?:支撑|压力|走势|目标价)",
+    r"(?:Temu|拼多多).*(?:DSA|罚款|欧盟|上诉)",
+    r"(?:前CEO|离职|辞职).*(?:Temu|罚款|DSA)",
+]
+
+SPORTS_INDUSTRY_TERMS = [
+    "运动品牌", "运动鞋", "运动服", "运动鞋服", "体育用品", "跑鞋", "篮球鞋",
+    "户外鞋", "户外品牌", "童鞋", "童装", "儿童", "青少年", "瑜伽", "健身",
+    "安踏", "李宁", "特步", "361", "耐克", "Nike", "阿迪", "Adidas", "彪马",
+    "Puma", "亚玛芬", "始祖鸟", "萨洛蒙", "HOKA", "昂跑", "On", "lululemon",
+    "FILA", "森马", "巴拉巴拉", "New Balance", "ASICS", "迪桑特", "迪卡侬",
+]
+
+GENERIC_PLATFORM_TERMS = [
+    "外卖", "餐饮", "本地生活", "团购", "即时零售", "DSA", "罚款", "反垄断",
+    "Temu", "拼多多", "腾讯营收", "广告收入", "游戏收入",
 ]
 
 GENERIC_PRODUCT_WORDS = [
@@ -594,6 +610,10 @@ def event_quality_reason(event: dict[str, Any]) -> str:
         return "low_value_topic"
     if any(re.search(pattern, title, flags=re.IGNORECASE) for pattern in LOW_RELEVANCE_EVENT_PATTERNS):
         return "low_relevance_topic"
+    if any(word.lower() in title.lower() for word in GENERIC_PLATFORM_TERMS) and not any(
+        word.lower() in title.lower() for word in SPORTS_INDUSTRY_TERMS
+    ):
+        return "generic_platform_without_sports_relevance"
     if clean_text(event.get("event_family")) == "local_activity":
         return "local_promotion"
     if source in INVALID_SOURCE_NAMES:
@@ -692,7 +712,9 @@ def product_quality_reason(product: dict[str, Any]) -> str:
             return "insufficient_independent_evidence"
     if clean_text(product.get("source_tier")) == "tier_4":
         return "low_quality_source"
-    if to_int(product.get("confidence_score"), 0) < (52 if evidence_status == "media_confirmed" else 46):
+    # 可信媒体单源已明确标注为“媒体确认”，不冒充官方或多源交叉核验。
+    # 48分仍要求：具体商品名 + 周期内日期 + 可点击证据 + tier_1/tier_2来源。
+    if to_int(product.get("confidence_score"), 0) < (48 if evidence_status == "media_confirmed" else 46):
         return "low_confidence"
     return ""
 
@@ -1439,9 +1461,29 @@ def is_own_brand_event(event: dict[str, Any]) -> bool:
     return any(marker.lower() in title.lower() for marker in OWN_BRAND_MARKERS)
 
 
+def is_market_landscape_relevant(event: dict[str, Any]) -> bool:
+    """竞品/渠道栏只保留与运动鞋服、儿童消费直接相关的事件。"""
+    title = clean_text(event.get("title"))
+    category = clean_text(event.get("category"))
+    brands = " ".join(unique_strings(safe_list(event.get("brands")), 8))
+    text = f"{title} {brands}"
+
+    if any(word.lower() in text.lower() for word in GENERIC_PLATFORM_TERMS) and not any(
+        word.lower() in text.lower() for word in SPORTS_INDUSTRY_TERMS
+    ):
+        return False
+    if category in {"品牌与公司", "渠道与零售"}:
+        return any(word.lower() in text.lower() for word in SPORTS_INDUSTRY_TERMS)
+    if category == "电商与平台":
+        return any(word.lower() in text.lower() for word in SPORTS_INDUSTRY_TERMS)
+    return False
+
+
 competitor_channel_ids = [
     x for x in valid_event_ids(ai_data.get("competitor_channel_ids"), MAX_COMPETITOR_CHANNEL * 2)
-    if x not in key_event_ids and not is_own_brand_event(eligible_event_map[x])
+    if x not in key_event_ids
+    and not is_own_brand_event(eligible_event_map[x])
+    and is_market_landscape_relevant(eligible_event_map[x])
 ][:MAX_COMPETITOR_CHANNEL]
 kids_consumer_ids = [
     x for x in valid_event_ids(ai_data.get("kids_consumer_ids"), MAX_KIDS_CONSUMER * 2)
@@ -1455,6 +1497,7 @@ if not competitor_channel_ids:
         if clean_text(x.get("category")) in ["品牌与公司", "电商与平台", "渠道与零售"]
         and clean_text(x.get("event_id")) not in key_event_ids
         and not is_own_brand_event(x)
+        and is_market_landscape_relevant(x)
     ][:MAX_COMPETITOR_CHANNEL]
 
 if not kids_consumer_ids:
