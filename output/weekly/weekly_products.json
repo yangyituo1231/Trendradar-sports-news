@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "generated_at": "2026-08-21T13:28+08:00",
+  "generated_at": "2026-08-21T14:09+08:00",
   "report_window": {
     "start_date": "2026-08-14",
     "end_date": "2026-08-20",
@@ -23,7 +23,7 @@
   "stats": {
     "query_count": 48,
     "fetch_error_count": 0,
-    "candidate_count": 117,
+    "candidate_count": 116,
     "verified_product_count": 0,
     "official_product_count": 0,
     "multi_source_product_count": 0,
@@ -42,8 +42,8 @@
     },
     "rejected": {
       "no_product_signal": 88,
-      "bad_or_non_product_topic": 20,
-      "outside_window": 26,
+      "bad_or_non_product_topic": 19,
+      "outside_window": 29,
       "missing_or_short_title": 1
     }
   },
@@ -1711,9 +1711,9 @@
       "brands": [
         "未识别品牌",
         "Adidas",
+        "安踏",
         "ASICS",
         "Nike",
-        "安踏",
         "FILA"
       ],
       "evidence": [
@@ -1868,7 +1868,7 @@
         {
           "title": "战亚运添新装 中国滑板队签约运动装备独家赞助商",
           "source": "京报网",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1wTmlhQS1pTzl5WGZuYnVlWmJsYVJjMFJ5WTdZZEc3Z3NFcGhTQ3FvQWhuQnlkbXJ1dVJ2WmJ0YzRkWHpNNzEwUHF4aVp3UldXbkxITHJZakNtb3RqR3c?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ZaDdpTmlkR0VnMHNGRHE5ZDV4VW9ES0x6eDBESFVwNzAwUDB4QzJMX3NiQl9HWDZoSHhjYmtXY3NHeG5yVG1GVmdiXzBWX0I2eUhnYzVHX2NQNzFzbGFzT29ET0VnOVlSLUpPZjg3cGFadw?oc=5"
         },
         {
           "title": "李宁正式成为中国国家滑板队运动装备独家赞助商",
@@ -3688,10 +3688,10 @@
       "audience": "成人/通用",
       "scenarios": [],
       "source": "京报网",
-      "source_homepage": "https://news.bjd.com.cn",
+      "source_homepage": "https://xinwen.bjd.com.cn",
       "article_url": "",
       "direct_url": "",
-      "google_news_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1wTmlhQS1pTzl5WGZuYnVlWmJsYVJjMFJ5WTdZZEc3Z3NFcGhTQ3FvQWhuQnlkbXJ1dVJ2WmJ0YzRkWHpNNzEwUHF4aVp3UldXbkxITHJZakNtb3RqR3c?oc=5",
+      "google_news_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ZaDdpTmlkR0VnMHNGRHE5ZDV4VW9ES0x6eDBESFVwNzAwUDB4QzJMX3NiQl9HWDZoSHhjYmtXY3NHeG5yVG1GVmdiXzBWX0I2eUhnYzVHX2NQNzFzbGFzT29ET0VnOVlSLUpPZjg3cGFadw?oc=5",
       "link_status": "google_news_fallback",
       "published_at": "2026-08-20T13:27+08:00",
       "published_date": "2026-08-20",
@@ -3749,8 +3749,7 @@
         "weekly_source_pool"
       ],
       "discovered_by": [
-        "\"Adidas\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
-        "\"ASICS\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+        "\"Adidas\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
       ],
       "signal_id": "psg_66891ac0ed17c1",
       "signal_type": "product_media_signal",
@@ -3785,12 +3784,10 @@
       "event_family": "endorsement_partnership",
       "query_groups": [
         "brand_business",
-        "weekly_source_pool",
-        "brand_product"
+        "weekly_source_pool"
       ],
       "discovered_by": [
-        "运动品牌 战略 调整",
-        "\"李宁\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        "运动品牌 战略 调整"
       ],
       "signal_id": "psg_62f888968f2443",
       "signal_type": "product_media_signal",
@@ -4629,46 +4626,6 @@
         "系列"
       ],
       "evidence": "WOOLMARK×安踏冠军推出美丽诺羊毛系列新品 体操世界冠军张博恒以“本能”诠释天然高性能",
-      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
-    },
-    {
-      "headline": "邓医生大师膏亮相 2026 全民健身日暨广州市体育节",
-      "brand": "",
-      "category": "商品趋势",
-      "audience": "成人/通用",
-      "scenarios": [
-        "训练健身"
-      ],
-      "source": "中国日报网",
-      "source_homepage": "https://cn.chinadaily.com.cn",
-      "article_url": "",
-      "direct_url": "",
-      "google_news_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1VOU5RM0ItcmRmNWZ3WDA3b2syTERvNEJkaTJvQ2xOVTNpaC15ZkJVdUMyTVN1Y1dnZmlqRUs1cE1tLXRlUnJPYVN1al9mSnpQUEhVeEE4RFJTVUt2bW5qWDkwYkdYR2tTSWZsTWR6NnFfdi1OdDlNRHlJYkc?oc=5",
-      "link_status": "google_news_fallback",
-      "published_at": "2026-08-19T16:33+08:00",
-      "published_date": "2026-08-19",
-      "image_url": "",
-      "image_source": "",
-      "image_source_url": "",
-      "verification": "media",
-      "source_tier": "tier_3",
-      "is_official": false,
-      "core_eligible": false,
-      "core_exclusion_reason": "editorial_score_below_core_threshold",
-      "event_family": "industry_event",
-      "query_groups": [
-        "consumer_macro",
-        "weekly_source_pool"
-      ],
-      "discovered_by": [
-        "健康消费 体育产业"
-      ],
-      "signal_id": "psg_db9edf3574f36a",
-      "signal_type": "product_media_signal",
-      "keywords": [
-        "亮相"
-      ],
-      "evidence": "邓医生大师膏亮相 2026 全民健身日暨广州市体育节",
       "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
     },
     {
@@ -6038,6 +5995,44 @@
         "联名"
       ],
       "evidence": "FILA与Mugler首度联名推出限量鞋款「羊皮卷」",
+      "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+    },
+    {
+      "headline": "ZXMOTO创始人张雪访安踏总部共商联名合作",
+      "brand": "安踏",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "source": "DoNews",
+      "source_homepage": "https://www.donews.com",
+      "article_url": "",
+      "direct_url": "",
+      "google_news_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBhUWtlTUpUVmZPVjl2dlJOMk1oOVVDbjJDZFhFUXdVUHVSZlVjalBOVlk4NVM2Wldrd1VtRGpDYnRPaHB5NmNCSk9vNjVKRHF5QXp0MmcxOG9mdVEzSlE?oc=5",
+      "link_status": "google_news_fallback",
+      "published_at": "2026-08-17T14:19+08:00",
+      "published_date": "2026-08-17",
+      "image_url": "",
+      "image_source": "",
+      "image_source_url": "",
+      "verification": "media",
+      "source_tier": "tier_3",
+      "is_official": false,
+      "core_eligible": false,
+      "core_exclusion_reason": "editorial_score_below_core_threshold",
+      "event_family": "collaboration",
+      "query_groups": [
+        "brand",
+        "weekly_source_pool"
+      ],
+      "discovered_by": [
+        "\"安踏\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+      ],
+      "signal_id": "psg_602e76bc9d12a2",
+      "signal_type": "product_media_signal",
+      "keywords": [
+        "联名"
+      ],
+      "evidence": "ZXMOTO创始人张雪访安踏总部共商联名合作",
       "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
     }
   ]
