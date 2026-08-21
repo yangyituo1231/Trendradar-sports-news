@@ -229,6 +229,7 @@ def verification_label(value: Any, is_official: bool = False) -> str:
         "official": "官方来源",
         "multi_source": "多源交叉",
         "trusted_media": "可信媒体",
+        "media_confirmed": "媒体确认",
         "single_source": "单一来源",
         "media": "媒体报道",
     }
@@ -1281,7 +1282,7 @@ html_text = f"""<!DOCTYPE html>
           <p class="section-kicker">03 / Verified products</p>
           <div>
             <h2>具名产品雷达</h2>
-            <p class="section-intro">仅收录经官方单源或两家独立可信来源核验的具名商品；原文没有提供的价格、发售日和技术字段不展示。</p>
+            <p class="section-intro">优先收录官方来源或多源核验商品；单一可信媒体报道标记为“媒体确认”。原文未披露的价格、发售日和技术字段不展示。</p>
           </div>
         </div>
         <div class="product-list">{render_products()}</div>
@@ -1341,7 +1342,7 @@ html_text = f"""<!DOCTYPE html>
           <p class="section-kicker">07 / Source book</p>
           <div>
             <h2>来源与核验口径</h2>
-            <p class="section-intro">每项重点均保留原媒体直链；无法解析到原媒体的中转链接不会进入来源目录。</p>
+            <p class="section-intro">每项重点优先保留原媒体直链；原文解析失败时，保留Google News中转链接作为可点击证据。</p>
           </div>
         </div>
         {render_sources()}
