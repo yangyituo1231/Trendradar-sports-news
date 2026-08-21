@@ -291,8 +291,31 @@ GENERATED_AT = datetime.now(LOCAL_TZ)
 source_items = [x for x in safe_list(weekly_sources.get("items")) if isinstance(x, dict)]
 source_events_raw = [x for x in safe_list(weekly_sources.get("events")) if isinstance(x, dict)]
 source_conflicts = [x for x in safe_list(weekly_sources.get("conflict_groups")) if isinstance(x, dict)]
-product_rows = [x for x in safe_list(weekly_products.get("products")) if isinstance(x, dict)]
 product_leads = [x for x in safe_list(weekly_products.get("product_leads")) if isinstance(x, dict)]
+
+
+def normalize_product_candidate(row: dict[str, Any]) -> dict[str, Any]:
+    """把可信单一来源的具名商品转为可审阅候选，不补写原文未披露字段。"""
+    copied = dict(row)
+    source_tier = clean_text(copied.get("source_tier"))
+    trusted_single = bool(copied.get("is_official")) or source_tier in {"official", "tier_1", "tier_2"}
+
+    if trusted_single and clean_text(copied.get("evidence_status")) != "verified":
+        copied["evidence_status"] = "media_confirmed"
+        copied["verification"] = "official" if copied.get("is_official") else "trusted_media"
+        copied["verification_reason"] = (
+            "官方来源单篇报道确认；链接解析失败时保留Google News中转链接。"
+            if copied.get("is_official")
+            else "单一可信媒体报道确认；价格、发售日和技术字段仅在原文披露时展示。"
+        )
+    return copied
+
+
+product_rows = [
+    normalize_product_candidate(x)
+    for x in safe_list(weekly_products.get("products")) + product_leads
+    if isinstance(x, dict)
+]
 product_media_signals = [x for x in safe_list(weekly_products.get("media_signals")) if isinstance(x, dict)]
 product_category_signals = [x for x in safe_list(weekly_products.get("category_signals")) if isinstance(x, dict)]
 
@@ -426,6 +449,13 @@ INVALID_SOURCE_NAMES = {"", "公开资讯", "Google", "Google News", "网络资�
 LOW_VALUE_EVENT_WORDS = [
     "股价", "K线", "支撑位", "压力位", "目标价", "涨停", "跌停", "龙虎榜", "股票",
     "优惠券", "省钱", "值得买", "怎么买", "怎么选", "适合去哪", "旅游攻略", "选购攻略", "FAQ",
+    "餐饮团购", "餐饮套餐", "七夕餐饮", "股票支撑", "股票走势", "股价能否", "TOPBRAND |",
+]
+
+LOW_RELEVANCE_EVENT_PATTERNS = [
+    r"TOPBRAND.*(?:；|;).*(?:；|;)",
+    r"(?:餐饮|外卖).*(?:团购|套餐|优惠)",
+    r"(?:股价|股票).*(?:支撑|压力|走势|目标价)",
 ]
 
 GENERIC_PRODUCT_WORDS = [
@@ -562,6 +592,8 @@ def event_quality_reason(event: dict[str, Any]) -> str:
         return "missing_title"
     if any(word.lower() in title.lower() for word in LOW_VALUE_EVENT_WORDS):
         return "low_value_topic"
+    if any(re.search(pattern, title, flags=re.IGNORECASE) for pattern in LOW_RELEVANCE_EVENT_PATTERNS):
+        return "low_relevance_topic"
     if clean_text(event.get("event_family")) == "local_activity":
         return "local_promotion"
     if source in INVALID_SOURCE_NAMES:
@@ -648,16 +680,19 @@ def product_quality_reason(product: dict[str, Any]) -> str:
         return "missing_date"
     if not (REPORT_START_DATE <= published_date <= REPORT_END_DATE):
         return "outside_window"
-    if evidence_status and evidence_status != "verified":
+    trusted_single = bool(product.get("is_official")) or clean_text(product.get("source_tier")) in {
+        "official", "tier_1", "tier_2"
+    }
+    if evidence_status and evidence_status not in {"verified", "media_confirmed"}:
         return "unverified_product"
-    if verification and verification not in {"official", "multi_source"}:
+    if verification and verification not in {"official", "multi_source", "trusted_media"}:
         return "insufficient_independent_evidence"
     if to_int(product.get("official_evidence_count"), 0) < 1 and to_int(product.get("credible_source_count"), 0) < 2:
-        if clean_text(weekly_products.get("schema_version")) == "2.1":
+        if clean_text(weekly_products.get("schema_version")) == "2.1" and not trusted_single:
             return "insufficient_independent_evidence"
     if clean_text(product.get("source_tier")) == "tier_4":
         return "low_quality_source"
-    if to_int(product.get("confidence_score"), 0) < 46:
+    if to_int(product.get("confidence_score"), 0) < (52 if evidence_status == "media_confirmed" else 46):
         return "low_confidence"
     return ""
 
@@ -708,6 +743,12 @@ def event_selection_score(event: dict[str, Any]) -> int:
     score += 3 if event.get("status") == "new" else 1
 
     title = clean_text(event.get("title"))
+    if any(word in title for word in [
+        "儿童", "青少年", "童装", "童鞋", "校园运动", "开学季", "跑鞋", "篮球鞋", "运动品牌"
+    ]):
+        score += 10
+    if any(word in title for word in ["餐饮", "外卖", "旅游攻略", "股价", "股票"]):
+        score -= 18
     if re.search(r"\d+(?:\.\d+)?%", title):
         score += 5
     if re.search(r"\d+(?:\.\d+)?(?:亿|万|元|美元|港元|门|家)", title):
@@ -1732,10 +1773,13 @@ def product_lead_public(product: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+eligible_product_ids = {clean_text(x.get("product_id")) for x in eligible_products}
 pending_product_leads = [
     product_lead_public(x)
     for x in product_leads[:20]
-    if product_direct_url(x) and is_specific_product_name(x.get("product_name"), x.get("brand"))
+    if clean_text(x.get("product_id")) not in eligible_product_ids
+    and product_direct_url(x)
+    and is_specific_product_name(x.get("product_name"), x.get("brand"))
 ]
 
 
@@ -1799,9 +1843,9 @@ output = {
             "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
             "冲突事件不会进入已确认重点，而是进入核验队列。",
             "同一品牌同一财务周期在分析层再次合并，避免一份财报被拆成多条重点。",
-            "产品必须满足官方单源或至少两家独立可信来源；未达门槛的具名商品只进入待核验线索。",
+            "产品优先采用官方单源或至少两家独立可信来源；单一可信媒体报道可标记为媒体确认进入雷达。",
             "产品资料不足时允许产品雷达为空，不使用随机商品、通用品类名或占位图片补位。",
-            "核心事件、产品雷达和来源目录只保留原文直链，不使用Google News回跳链接。",
+            "核心事件、产品雷达和来源目录优先保留原文直链；解析失败时允许Google News中转链接作为可点击证据。",
             "所有分数仅用于编辑和资料完整度判断，不代表销量或市场热度。",
         ],
     },
