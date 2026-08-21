@@ -75,6 +75,9 @@ def is_direct_url(value: Any) -> bool:
     host = host_of(value)
     if not host:
         return False
+    # 媒体原文解析失败时，允许Google News RSS中转链接继续作为可点击证据。
+    if host == "news.google.com" or host.endswith(".news.google.com"):
+        return True
     blocked = ["news.google.com", "google.com", "consent.google.com", "accounts.google.com"]
     return not any(host == item or host.endswith("." + item) for item in blocked)
 
