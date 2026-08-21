@@ -1,19 +1,19 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-08-21T15:11+08:00",
+  "generated_at": "2026-08-21T15:42+08:00",
   "report_window": {
     "start_date": "2026-08-14",
     "end_date": "2026-08-20",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "本周运动品牌中报密集发布，361度、森马、亚玛芬均实现增长，海外与童装成为亮点；消费大盘增速放缓，行业分化加剧。",
-    "week_in_one_paragraph": "同时，7月社零总额仅增1.2%，消费大盘疲软，但运动消费仍具韧性。行业呈现海外扩张、童装驱动、高端户外增长等结构性机会。",
+    "weekly_thesis": "本周运动品牌中报密集发布，361度、森马童装、亚玛芬均实现增长，跨境电商与海外市场成为亮点，行业整体呈现稳健复苏态势。",
+    "week_in_one_paragraph": "宏观社零数据温和增长，暑期消费场景丰富。品牌动作聚焦产品创新与渠道拓展，女性运动消费崛起，行业竞争加剧。",
     "next_week_focus": [
-      "亚玛芬上调指引后，关注始祖鸟、萨洛蒙后续季度增长持续性。",
-      "361度海外市场拓展，关注跨境电商及海外门店扩张进展。",
-      "森马童装业务增长，关注巴拉巴拉在童装市场的份额变化。",
-      "消费大盘放缓背景下，关注运动品牌下半年业绩指引及渠道调整。"
+      "跟踪361度海外市场具体开店数据及儿童产品在跨境电商中的占比。",
+      "观察亚玛芬上调指引后，始祖鸟、萨洛蒙在中国市场的门店扩张速度。",
+      "监测女性运动品牌ALO、NikeSKIMS在天猫首店后的销售表现，评估对儿童消费的带动。",
+      "关注暑期消费数据对运动零售的拉动，尤其是儿童运动装备的销售情况。"
     ]
   },
   "key_developments": [
@@ -105,7 +105,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "361度上半年营收61.6亿元，跨境电商增140%，海外销售流水增超八成，显示国际化战略成效显著。"
+      "editorial_reason": "361度中报显示营收61.6亿元，跨境电商增140%，海外销售流水增超八成，对儿童事业部有直接参考价值。"
     },
     {
       "event_id": "evt_f8c7e9a9179a71",
@@ -143,7 +143,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "森马集团上半年营收增9%，童装业务增12%，印证童装仍是服装行业核心增长引擎。"
+      "editorial_reason": "森马集团童装业务增长12%，巴拉巴拉表现强劲，是童装市场的重要风向标。"
     },
     {
       "event_id": "evt_122197085242e7",
@@ -194,7 +194,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "亚玛芬上半年净利增78%，始祖鸟恢复净开店并上调指引，显示高端户外品牌在中国市场强劲复苏。"
+      "editorial_reason": "亚玛芬上半年净利增78%，始祖鸟恢复净开店，上调指引，显示高端运动品牌在中国市场强劲复苏。"
     },
     {
       "event_id": "evt_a6e1fa8d1063c8",
@@ -232,7 +232,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "1-7月社零总额仅增1.2%，消费大盘增速放缓，为运动消费行业提供宏观背景参考。"
+      "editorial_reason": "1-7月社零总额增长1.2%，宏观消费环境温和，为行业判断提供背景。"
     },
     {
       "event_id": "evt_32508fcd3a1289",
@@ -273,7 +273,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "女性运动健身消费崛起，ALO、NikeSKIMS等品牌抢滩，反映运动消费细分市场新趋势。"
+      "editorial_reason": "女性运动消费崛起，ALO、NikeSKIMS等品牌抢滩，提示儿童事业部关注女性消费者对家庭购买的影响。"
     },
     {
       "event_id": "evt_7c703715ff9d45",
@@ -313,15 +313,16 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "超100个海外品牌首店开在天猫，电商平台成为国际品牌入华首选渠道，渠道格局生变。"
+      "editorial_reason": "超100个海外品牌天猫开首店，电商平台成为国际品牌入华首选，渠道趋势值得关注。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "运动品牌中报季：海外市场成为增长新引擎",
-      "analysis": "361度上半年营收61.6亿元，跨境电商业务同比增长140%，海外销售流水增超八成；两家公司均将海外市场作为重要增长极，显示中国运动品牌出海加速，国际品牌深耕中国市场，双向流动趋势明显。",
+      "headline": "运动品牌中报季：增长引擎转向海外与电商",
+      "analysis": "本周361度、森马、亚玛芬发布中报，均实现增长。361度跨境电商增140%，海外销售流水增超八成；森马童装业务增长12%；共同显示海外市场和电商渠道成为增长主动力，国内运动品牌国际化加速，高端品牌在中国市场依然强劲。",
       "event_ids": [
         "evt_acf7c5c9e3ddd9",
+        "evt_f8c7e9a9179a71",
         "evt_122197085242e7"
       ],
       "evidence": [
@@ -333,6 +334,13 @@
           "published_date": "2026-08-18"
         },
         {
+          "event_id": "evt_f8c7e9a9179a71",
+          "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
+          "source": "华丽志",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
+          "published_date": "2026-08-20"
+        },
+        {
           "event_id": "evt_122197085242e7",
           "title": "亚玛芬上半年净利2.72亿美元增78%：中国市场始祖鸟恢复净开店，再次上调年度业绩指引",
           "source": "澎湃新闻",
@@ -342,49 +350,25 @@
       ]
     },
     {
-      "headline": "童装业务驱动服装集团增长，巴拉巴拉价值凸显",
-      "analysis": "森马集团上半年营收增9%，童装业务增12%，巴拉巴拉成为增长主力。媒体分析指出童装业务对森马的重要性，显示在成人装增长乏力背景下，童装成为服装集团的核心增长引擎，行业对儿童消费市场的重视程度持续提升。",
+      "headline": "女性运动消费崛起，品牌加速布局“她经济”",
+      "analysis": "ALO、NikeSKIMS等品牌抢滩女性运动市场，同时超100个海外品牌通过天猫首店入华，其中不少聚焦女性运动。女性消费者对运动服饰的偏好正影响家庭购买决策，儿童运动品牌需关注女性消费者对儿童运动产品的连带购买行为。",
       "event_ids": [
-        "evt_f8c7e9a9179a71",
-        "evt_24ed2d7685b517"
+        "evt_32508fcd3a1289",
+        "evt_7c703715ff9d45"
       ],
       "evidence": [
-        {
-          "event_id": "evt_f8c7e9a9179a71",
-          "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
-          "source": "华丽志",
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
-          "published_date": "2026-08-20"
-        },
-        {
-          "event_id": "evt_24ed2d7685b517",
-          "title": "“巴拉巴拉”有魔法，童装救森马？",
-          "source": "新华网",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZjAzanBEQXVGalU0QnlyY1BLTFpQem5vSzVNaDdmMHBFR0dZVC1nZzBqMDdQeDJDRkExQnJxb2NxMndZMmcxajhndjNoWTNCeUp2UkpsLXJjY0c3NHNuR2szTGZ1RzVyakRQUHFGYThlR2xnSi1OUnAxSnJ1d2FWZA?oc=5",
-          "published_date": "2026-08-19"
-        }
-      ]
-    },
-    {
-      "headline": "消费大盘放缓，运动消费结构性机会凸显",
-      "analysis": "1-7月社零总额仅增1.2%，整体消费疲软，但运动消费领域仍现亮点：女性运动健身消费崛起，ALO、NikeSKIMS等品牌抢滩；暑期冰雪、水上运动等新场景释放活力。显示运动消费在细分场景和人群上仍有结构性增长机会。",
-      "event_ids": [
-        "evt_a6e1fa8d1063c8",
-        "evt_32508fcd3a1289"
-      ],
-      "evidence": [
-        {
-          "event_id": "evt_a6e1fa8d1063c8",
-          "title": "2026年1—7月份社会消费品零售总额增长1.2%",
-          "source": "国家统计局",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBNbUQzLTNCWWtxb0hQeWRzN1FhX0diXzZCSS1WRkZXbXZYVlJMei1WRGRzMU9VTHB3LTh4WEtZVTJJYi1KZU5JQVRCcUZsMlVNeEZ0WHBsdEFtNWkweXNib19WV1NNaUwzLUN5TVVSVQ?oc=5",
-          "published_date": "2026-08-17"
-        },
         {
           "event_id": "evt_32508fcd3a1289",
           "title": "中国女性运动健身消费崛起：ALO、NikeSKIMS抢滩“她经济”",
           "source": "第一财经",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4TjZVaUtpX2Z6SXRuZlQ3bUlNRkJmcUllN0llYnctQU5qYV9MQXB4dTljWlpRSEstamFjNm8tZkt5N2ZPcHhCZUNjbUkwZ0FxVzVv?oc=5",
+          "published_date": "2026-08-19"
+        },
+        {
+          "event_id": "evt_7c703715ff9d45",
+          "title": "品牌入华电商先行：ALO、VEJA、Mardi等超100个首店开在天猫- 业界",
+          "source": "亿邦动力",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wZjZlRWJHQjhEOTlaQ1BTX0J4ZVlEckVYQ21RazRKRzRMb2JyQUhoR2dYUExiVUR4cWh4VHV6cDJmZlZEY0FzTm8xbTVuMFpkRi1DWWFn?oc=5",
           "published_date": "2026-08-19"
         }
       ]
@@ -449,49 +433,10 @@
           "published_date": "2026-08-20"
         }
       ],
-      "editorial_reason": "Nike全新节奏跑训练鞋Pegasus Plus 2发布，作为经典系列迭代，反映主流品牌在跑鞋市场的产品策略。"
+      "editorial_reason": "Nike Pegasus Plus 2节奏跑训练鞋发布，体现成人跑鞋技术趋势，可参考其设计理念用于儿童跑鞋开发。"
     }
   ],
   "competitor_channel": [
-    {
-      "event_id": "evt_62bcf40cf7fac1",
-      "title": "电商早报：安踏前CEO徐阳首度回应离职；Temu就2亿欧元DSA罚款上诉欧盟- 栏目",
-      "category": "电商与平台",
-      "event_family": "management",
-      "reporting_period": "",
-      "brands": [
-        "安踏"
-      ],
-      "source": "亿邦动力",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE85Y3FzWmNpMjBMVnI0RFZSU3J1QkRaNng4aGVTRE85WlJFSzg4VVcydms1akg3czlEY1RkYmJnNVpxUU40cXdTekktUkRSWmZvYWNWSFRn?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE85Y3FzWmNpMjBMVnI0RFZSU3J1QkRaNng4aGVTRE85WlJFSzg4VVcydms1akg3czlEY1RkYmJnNVpxUU40cXdTekktUkRSWmZvYWNWSFRn?oc=5",
-      "published_at": "2026-08-20T06:51+08:00",
-      "published_date": "2026-08-20",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 58,
-      "selection_score": 73,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_62bcf40cf7fac1"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_3005bb556371a5",
-          "title": "电商早报：安踏前CEO徐阳首度回应离职；Temu就2亿欧元DSA罚款上诉欧盟- 栏目",
-          "source": "亿邦动力",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE85Y3FzWmNpMjBMVnI0RFZSU3J1QkRaNng4aGVTRE85WlJFSzg4VVcydms1akg3czlEY1RkYmJnNVpxUU40cXdTekktUkRSWmZvYWNWSFRn?oc=5",
-          "published_at": "2026-08-20T06:51+08:00",
-          "summary": ""
-        }
-      ]
-    },
     {
       "event_id": "evt_54efa30959b72a",
       "title": "美国运动品牌Fabletics 全球拓店将暂时避开“难度很高的”中国市场，目标五年内营收达20亿美元",
@@ -606,6 +551,45 @@
       ]
     },
     {
+      "event_id": "evt_e5ba4de0248ee8",
+      "title": "昂跑狂奔的B面：亚太撑起的利润，遮不住北美的收缩",
+      "category": "品牌与公司",
+      "event_family": "financial_results",
+      "reporting_period": "",
+      "brands": [
+        "On昂跑"
+      ],
+      "source": "新京报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JVmZMeTNXdnU3Tkw0NVVMdTdWTS10T3dRTEhNRC1sREw1c2ExQ0FiM0hzdkVIUGtBczFQQXlWMzFBZUdRN3FPQzAxTVpjOFhfNldBLVdGQjEzWE96NnZ6c2UtQmI?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JVmZMeTNXdnU3Tkw0NVVMdTdWTS10T3dRTEhNRC1sREw1c2ExQ0FiM0hzdkVIUGtBczFQQXlWMzFBZUdRN3FPQzAxTVpjOFhfNldBLVdGQjEzWE96NnZ6c2UtQmI?oc=5",
+      "published_at": "2026-08-18T15:39+08:00",
+      "published_date": "2026-08-18",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 48,
+      "selection_score": 60,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_e5ba4de0248ee8"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_bf3ead519e6ab8",
+          "title": "昂跑狂奔的B面：亚太撑起的利润，遮不住北美的收缩",
+          "source": "新京报",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JVmZMeTNXdnU3Tkw0NVVMdTdWTS10T3dRTEhNRC1sREw1c2ExQ0FiM0hzdkVIUGtBczFQQXlWMzFBZUdRN3FPQzAxTVpjOFhfNldBLVdGQjEzWE96NnZ6c2UtQmI?oc=5",
+          "published_at": "2026-08-18T15:39+08:00",
+          "summary": ""
+        }
+      ]
+    },
+    {
       "event_id": "evt_f8cb5d71be4172",
       "title": "始祖鸟与萨洛蒙增长强劲，亚玛芬体育年内第二次上调业绩预期",
       "category": "品牌与公司",
@@ -641,45 +625,6 @@
           "is_official": false,
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9TTGhNN0gtZ28zMi1rUzgtSFVObXhLUTlFTHRTWXhoc0c1YlcyTEp0VTZTaTVObHBwc1N6SlJ2czF1RW0zbVJ2NXZ1NzhRTXI0eDhDcFFnbjA?oc=5",
           "published_at": "2026-08-19T14:02+08:00",
-          "summary": ""
-        }
-      ]
-    },
-    {
-      "event_id": "evt_e5ba4de0248ee8",
-      "title": "昂跑狂奔的B面：亚太撑起的利润，遮不住北美的收缩",
-      "category": "品牌与公司",
-      "event_family": "financial_results",
-      "reporting_period": "",
-      "brands": [
-        "On昂跑"
-      ],
-      "source": "新京报",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JVmZMeTNXdnU3Tkw0NVVMdTdWTS10T3dRTEhNRC1sREw1c2ExQ0FiM0hzdkVIUGtBczFQQXlWMzFBZUdRN3FPQzAxTVpjOFhfNldBLVdGQjEzWE96NnZ6c2UtQmI?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JVmZMeTNXdnU3Tkw0NVVMdTdWTS10T3dRTEhNRC1sREw1c2ExQ0FiM0hzdkVIUGtBczFQQXlWMzFBZUdRN3FPQzAxTVpjOFhfNldBLVdGQjEzWE96NnZ6c2UtQmI?oc=5",
-      "published_at": "2026-08-18T15:39+08:00",
-      "published_date": "2026-08-18",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 48,
-      "selection_score": 60,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_e5ba4de0248ee8"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_bf3ead519e6ab8",
-          "title": "昂跑狂奔的B面：亚太撑起的利润，遮不住北美的收缩",
-          "source": "新京报",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JVmZMeTNXdnU3Tkw0NVVMdTdWTS10T3dRTEhNRC1sREw1c2ExQ0FiM0hzdkVIUGtBczFQQXlWMzFBZUdRN3FPQzAxTVpjOFhfNldBLVdGQjEzWE96NnZ6c2UtQmI?oc=5",
-          "published_at": "2026-08-18T15:39+08:00",
           "summary": ""
         }
       ]
@@ -728,28 +673,20 @@
   ],
   "watchlist": [
     {
-      "title": "特步双旗舰新品发布",
-      "event_ids": [
-        "evt_d19014ea503a7c"
-      ],
-      "product_ids": [],
-      "reason": "特步将于8月21日发布竞速与缓震双旗舰新品，关注其产品定位及对跑步市场的布局。"
-    },
-    {
-      "title": "亚玛芬上调指引后业绩兑现",
-      "event_ids": [
-        "evt_122197085242e7"
-      ],
-      "product_ids": [],
-      "reason": "亚玛芬年内第二次上调业绩预期，关注后续季度始祖鸟、萨洛蒙增长能否持续。"
-    },
-    {
       "title": "361度海外市场拓展进展",
       "event_ids": [
         "evt_acf7c5c9e3ddd9"
       ],
       "product_ids": [],
-      "reason": "361度跨境电商增140%，关注其海外新兴市场拓展策略及对整体营收的贡献。"
+      "reason": "关注361度海外新兴市场开店节奏及跨境电商品类结构，评估对儿童线的借鉴意义。"
+    },
+    {
+      "title": "亚玛芬上调指引后的大中华区表现",
+      "event_ids": [
+        "evt_122197085242e7"
+      ],
+      "product_ids": [],
+      "reason": "关注始祖鸟、萨洛蒙在大中华区的门店扩张与产品策略，判断高端运动消费趋势是否延续。"
     }
   ],
   "tracking": {
@@ -842,7 +779,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "361度上半年营收61.6亿元，跨境电商增140%，海外销售流水增超八成，显示国际化战略成效显著。"
+        "editorial_reason": "361度中报显示营收61.6亿元，跨境电商增140%，海外销售流水增超八成，对儿童事业部有直接参考价值。"
       },
       {
         "event_id": "evt_f8c7e9a9179a71",
@@ -880,7 +817,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "森马集团上半年营收增9%，童装业务增12%，印证童装仍是服装行业核心增长引擎。"
+        "editorial_reason": "森马集团童装业务增长12%，巴拉巴拉表现强劲，是童装市场的重要风向标。"
       },
       {
         "event_id": "evt_122197085242e7",
@@ -931,7 +868,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "亚玛芬上半年净利增78%，始祖鸟恢复净开店并上调指引，显示高端户外品牌在中国市场强劲复苏。"
+        "editorial_reason": "亚玛芬上半年净利增78%，始祖鸟恢复净开店，上调指引，显示高端运动品牌在中国市场强劲复苏。"
       },
       {
         "event_id": "evt_a6e1fa8d1063c8",
@@ -969,7 +906,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "1-7月社零总额仅增1.2%，消费大盘增速放缓，为运动消费行业提供宏观背景参考。"
+        "editorial_reason": "1-7月社零总额增长1.2%，宏观消费环境温和，为行业判断提供背景。"
       },
       {
         "event_id": "evt_32508fcd3a1289",
@@ -1010,7 +947,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "女性运动健身消费崛起，ALO、NikeSKIMS等品牌抢滩，反映运动消费细分市场新趋势。"
+        "editorial_reason": "女性运动消费崛起，ALO、NikeSKIMS等品牌抢滩，提示儿童事业部关注女性消费者对家庭购买的影响。"
       },
       {
         "event_id": "evt_7c703715ff9d45",
@@ -1050,7 +987,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "超100个海外品牌首店开在天猫，电商平台成为国际品牌入华首选渠道，渠道格局生变。"
+        "editorial_reason": "超100个海外品牌天猫开首店，电商平台成为国际品牌入华首选，渠道趋势值得关注。"
       }
     ],
     "follow_up_selected": [],
@@ -1255,14 +1192,6 @@
     },
     {
       "type": "event",
-      "id": "evt_62bcf40cf7fac1",
-      "title": "电商早报：安踏前CEO徐阳首度回应离职；Temu就2亿欧元DSA罚款上诉欧盟- 栏目",
-      "source": "亿邦动力",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE85Y3FzWmNpMjBMVnI0RFZSU3J1QkRaNng4aGVTRE85WlJFSzg4VVcydms1akg3czlEY1RkYmJnNVpxUU40cXdTekktUkRSWmZvYWNWSFRn?oc=5",
-      "published_date": "2026-08-20"
-    },
-    {
-      "type": "event",
       "id": "evt_54efa30959b72a",
       "title": "美国运动品牌Fabletics 全球拓店将暂时避开“难度很高的”中国市场，目标五年内营收达20亿美元",
       "source": "华丽志",
@@ -1287,19 +1216,19 @@
     },
     {
       "type": "event",
-      "id": "evt_f8cb5d71be4172",
-      "title": "始祖鸟与萨洛蒙增长强劲，亚玛芬体育年内第二次上调业绩预期",
-      "source": "时尚商业网",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9TTGhNN0gtZ28zMi1rUzgtSFVObXhLUTlFTHRTWXhoc0c1YlcyTEp0VTZTaTVObHBwc1N6SlJ2czF1RW0zbVJ2NXZ1NzhRTXI0eDhDcFFnbjA?oc=5",
-      "published_date": "2026-08-19"
-    },
-    {
-      "type": "event",
       "id": "evt_e5ba4de0248ee8",
       "title": "昂跑狂奔的B面：亚太撑起的利润，遮不住北美的收缩",
       "source": "新京报",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JVmZMeTNXdnU3Tkw0NVVMdTdWTS10T3dRTEhNRC1sREw1c2ExQ0FiM0hzdkVIUGtBczFQQXlWMzFBZUdRN3FPQzAxTVpjOFhfNldBLVdGQjEzWE96NnZ6c2UtQmI?oc=5",
       "published_date": "2026-08-18"
+    },
+    {
+      "type": "event",
+      "id": "evt_f8cb5d71be4172",
+      "title": "始祖鸟与萨洛蒙增长强劲，亚玛芬体育年内第二次上调业绩预期",
+      "source": "时尚商业网",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9TTGhNN0gtZ28zMi1rUzgtSFVObXhLUTlFTHRTWXhoc0c1YlcyTEp0VTZTaTVObHBwc1N6SlJ2czF1RW0zbVJ2NXZ1NzhRTXI0eDhDcFFnbjA?oc=5",
+      "published_date": "2026-08-19"
     },
     {
       "type": "event",
@@ -1323,20 +1252,20 @@
     "ai_error": "",
     "source_schema_version": "2.1",
     "product_schema_version": "2.1",
-    "raw_event_count": 38,
-    "coalesced_event_count": 38,
-    "eligible_event_count": 36,
+    "raw_event_count": 37,
+    "coalesced_event_count": 37,
+    "eligible_event_count": 34,
     "selected_event_count": 6,
     "raw_product_count": 18,
     "product_lead_count": 18,
     "eligible_product_count": 1,
     "selected_product_count": 1,
     "conflict_count": 0,
-    "source_link_count": 20,
+    "source_link_count": 19,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {
-      "low_value_topic": 2
+      "low_value_topic": 3
     },
     "product_rejections": {
       "low_confidence": 4,
@@ -1344,10 +1273,10 @@
     },
     "eligible_categories": {
       "儿童与青少年": 2,
-      "电商与平台": 3,
+      "电商与平台": 2,
       "品牌与公司": 6,
-      "产品与科技": 8,
-      "行业动态": 17
+      "行业动态": 17,
+      "产品与科技": 7
     },
     "selected_status": {
       "new": 6
@@ -1366,7 +1295,7 @@
     "product_categories": [
       {
         "category": "商品趋势",
-        "evidence_count": 56,
+        "evidence_count": 58,
         "brands": [
           "未识别品牌",
           "Adidas",
@@ -1387,24 +1316,24 @@
             "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSFVfbUxVRkV6U2dYMGpEWWtYQ3NGQzE0MlFTYkNsd0hIVlEtbnJ5Um1JVDJnNFlfUzVheS0yR2JtWF9VRDlEWmdFcTBlMkNiR1JfXzRtSlNYZDdjU1MydTQ5d25tcTktbW93ZnJoWkdJSHhSVXJOcXB5NmVFRVIyT2ZB?oc=5"
           },
           {
+            "title": "065COM开元棋牌公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔",
+            "source": "中国妇女网",
+            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1BU3dhblp6T3ZlUGZRb3VmblFBLXE1bFJYQ1ctdWVUNF9Lb0t3aU5OQXAxc0tYT05ha29TNE9Za3M1M1NzQm5JbFY2NjBQSC10N2g2M2JVSW9OTDhqZmJrSw?oc=5"
+          },
+          {
             "title": "Chevy x Nike Book 2 布克在底特律的活动上揭晓了和雪佛兰的全部 Book 2 联名款 - © DB #潮流inbox# #鞋控的日常#",
             "source": "手机新浪网",
             "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0xMFhJdnk0Ti1mQWpzODY4OXRka3hOaG9Qcm91X3E3bFZnaGE4a3o4Smc0Y0JmQ0VqZVAzajAxV3lxY1RMd1MtelFqS3ZlY0VZRkNRUVFIZ3g5TktwcWVBa3BtQQ?oc=5"
           },
           {
-            "title": "神仙道电竞公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔",
-            "source": "中国妇女网",
-            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9pVG5uTHI5T2tfejNQWXVZdW1tSXQwdU5wYXZ0U2xqekRRVVc3OXpBVWw0eDBQT1RVNHBJaENvcUhDV0NaV3ZveXM4V2ZJY0xlZERsbg?oc=5"
-          },
-          {
-            "title": "金融携手体育共燃申城活力 交通银行推出申花系列金融产品， 解锁体育消费新体验2026-08-18",
-            "source": "上海市人民政府",
-            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMUFybFQ1T0NPdk05dGdFLUx3dmp1aVZOdDRoNF9YeU05bHg4Q3lVYkpVamNhS0F6b3VFcnV1eXRYeW9XRHpueG1PdkRQZnFpekE0NndkcVNKRGRDb0t3TnBZZHRpbGxoQk9VQmNuX3BCa3FoQWpIOVVidlNTbmJwN3FQOG5wTUtjM0E?oc=5"
-          },
-          {
             "title": "HUF 再度联手 Toyota Racing Development 推出 FW26 胶囊系列",
             "source": "Hypebeast CN",
             "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQa3h4R1l4b2dMd3U3S0I3T2ctNUxmNzYxSGpZeTdteGRhT2V5V3ZGVENTN1c2TkQwT0QzOWdpaVdvNVZZZzA5LWxEVmVtLVZ6OFdSbm4tZk5hRW9jRmc3ZDRLemFfWUU3bEItY3k2TlJzTE9zWlVSY3ZSR3hUbGVzVUJLbUx5WXJyaThHMHdCS2ZQTDA4VHJMMkxMdw?oc=5"
+          },
+          {
+            "title": "多方共探“械字号”产业升级路径 医用金选行动启动赋能大众健康消费",
+            "source": "新华网",
+            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQV0VVUzRoMUgwa0ZocnQ3QXpkbU1HQ2lvaTZ3RWZ3ZUc3NDNrSkVsYW5ud1htT3k3c1hJd0J3bTRaMXhUOW8yVzVvc0ZGTTdjdkZldS1LTk8zZFp0T3VjWWJpaVJXdERxVzJVS1JHOTg4OEloYlFwQVNuYl9XSzQ4eQ?oc=5"
           }
         ],
         "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
@@ -1455,41 +1384,6 @@
         "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
       },
       {
-        "category": "夏季功能服饰",
-        "evidence_count": 5,
-        "brands": [
-          "未识别品牌"
-        ],
-        "evidence": [
-          {
-            "title": "刘亦菲穿79元防晒衣是品牌代言还是个人选择？",
-            "source": "手机新浪网",
-            "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBWLXlmWUdHUTVuemtqTmxyTjE5azBHVzhKa0lQM2tQN3FPaGppc1JhUkl0RHRuajdUV1FmR2kyVGNMZV9zVkhXSDBkUVFJMGQyV1d0QXFpSW9CaDgtcVlkV2NUOEJnNDlNOVp1VGVjSkZvdw?oc=5"
-          },
-          {
-            "title": "刘亦菲最近穿的高定和百元防晒衣为何反差这么大？",
-            "source": "手机新浪网",
-            "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9CbTZ3cHZtT3d6LVcxZnZJSUdXRG5JQWZqSk96WWNLVU9UWV9vTDdaVUxrNTVGTmM1a1JoWnoyaUJrQk03anBvVXJBclVIcWkxNERES0FYRnlBS3I4RVBMODFEOU5wMEoyeHliZWo4ZFZZUQ?oc=5"
-          },
-          {
-            "title": "防晒衣十款十大榜单梳理，男女款参考，哪个牌子防晒效果最好",
-            "source": "搜狐网",
-            "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNlk4cXpIRDY5eDZBLUJ0ZVRSUXV3UEFVZWtQM0h6WmlxTnRuMnEzby1WbEx2VXdLY21TRVI3ODROUURsR1pJaGRwZnFobzJ2U3hQRHc3U2JNSHBJUkp6TWd6SWx6Qm5QZWoxT2Z3V2E3V2RHZDRQaVZ5SWRBT05lSDVLWlpINlNjZ1JQQw?oc=5"
-          },
-          {
-            "title": "刘亦菲素颜穿79.8元防晒衣引热议",
-            "source": "VanPeople",
-            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE44cTlyRGs3Y0gtdzR5bFVIRUVvU1RaLTVPajd0OW4wRVo0XzlQUXBzY1Q4SzJJYVBrQWNCTF9qdUx3UkIwQk5RYV8wR01SYUlt?oc=5"
-          },
-          {
-            "title": "高定是工作，防晒衣是生活，刘亦菲79.8元的防晒衣把LV衬得像配角",
-            "source": "手机网易网",
-            "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5TbnFaanJUQUJFVWRNRm5leWRqTWg2X3V0QkNaWDZHb0NMXzAzTUladUVYUnNiTEk2MjBTVzY4dG1FTXZ1VG9fVXZtSlJ2Vk9QNlJUcV9OTzJvTFdrVF9qM253?oc=5"
-          }
-        ],
-        "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
-      },
-      {
         "category": "户外服饰",
         "evidence_count": 3,
         "brands": [
@@ -1517,6 +1411,31 @@
         "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
       },
       {
+        "category": "夏季功能服饰",
+        "evidence_count": 3,
+        "brands": [
+          "未识别品牌"
+        ],
+        "evidence": [
+          {
+            "title": "防晒衣十款十大榜单梳理，男女款参考，哪个牌子防晒效果最好",
+            "source": "搜狐网",
+            "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNlk4cXpIRDY5eDZBLUJ0ZVRSUXV3UEFVZWtQM0h6WmlxTnRuMnEzby1WbEx2VXdLY21TRVI3ODROUURsR1pJaGRwZnFobzJ2U3hQRHc3U2JNSHBJUkp6TWd6SWx6Qm5QZWoxT2Z3V2E3V2RHZDRQaVZ5SWRBT05lSDVLWlpINlNjZ1JQQw?oc=5"
+          },
+          {
+            "title": "刘亦菲素颜穿79.8元防晒衣引热议",
+            "source": "VanPeople",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE44cTlyRGs3Y0gtdzR5bFVIRUVvU1RaLTVPajd0OW4wRVo0XzlQUXBzY1Q4SzJJYVBrQWNCTF9qdUx3UkIwQk5RYV8wR01SYUlt?oc=5"
+          },
+          {
+            "title": "高定是工作，防晒衣是生活，刘亦菲79.8元的防晒衣把LV衬得像配角",
+            "source": "手机网易网",
+            "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5TbnFaanJUQUJFVWRNRm5leWRqTWg2X3V0QkNaWDZHb0NMXzAzTUladUVYUnNiTEk2MjBTVzY4dG1FTXZ1VG9fVXZtSlJ2Vk9QNlJUcV9OTzJvTFdrVF9qM253?oc=5"
+          }
+        ],
+        "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+      },
+      {
         "category": "运动配件",
         "evidence_count": 2,
         "brands": [
@@ -1531,7 +1450,7 @@
           },
           {
             "title": "李宁正式成为中国国家滑板队运动装备独家赞助商",
-            "source": "新浪财经",
+            "source": "finance.sina.com.cn",
             "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNU0o1dnVQWnljSkJVcUh1R0I2Yi1SN20xb0lTdXNpTllWNU1KVmZHaHRlcFRHUTFtZHFIVEx3d0o2dHBwS0QxVTBWck9pS1VsSVJpLVYwUlgzVEMteEgxSVI2aFB1U0dFTWtvVUVSUHl4ZnVXR2lLeVZWRDdoSUFoZFVObnZndWREb2pyRXFGLWtKOE9ULXBCOG1mQ2o5RERULUIzWE5Fa2dCRkdmNXl3YUhCWjhoOHlCUERydnE5SEFXRzZRZ1FwMmRpNndWVXZ0TjNn?oc=5"
           }
         ],
@@ -1591,7 +1510,7 @@
         "evidence": [
           {
             "title": "比lululemon还贵的瑜伽服，来中国抢生意了",
-            "source": "新浪财经",
+            "source": "finance.sina.com.cn",
             "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5nZGdlQWFGU3F2WV84V29GcUlmQzA3QjJqc0c0LTJjTzE3ZzY5Y3BYYlp1X1ZnZ3d6eENLV0NySUNTdVNObUZSaGRvd0tMbWl0ZnB2OURtck5HVVlKdERLUl92M18yTEhqUE9VOHJpdVprMnhIX1Zr?oc=5"
           }
         ],
@@ -1744,6 +1663,18 @@
         "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
       },
       {
+        "signal_id": "pld_949a0b910a58a6",
+        "brand": "Nike",
+        "product_name": "Force 1",
+        "headline": "065COM开元棋牌公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔",
+        "source": "中国妇女网",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1BU3dhblp6T3ZlUGZRb3VmblFBLXE1bFJYQ1ctdWVUNF9Lb0t3aU5OQXAxc0tYT05ha29TNE9Za3M1M1NzQm5JbFY2NjBQSC10N2g2M2JVSW9OTDhqZmJrSw?oc=5",
+        "published_date": "2026-08-19",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
         "signal_id": "pld_2f9c68124c7c54",
         "brand": "Nike",
         "product_name": "Book 2",
@@ -1768,18 +1699,6 @@
         "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
       },
       {
-        "signal_id": "pld_7f141293858019",
-        "brand": "Nike",
-        "product_name": "Force 1",
-        "headline": "神仙道电竞公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔",
-        "source": "中国妇女网",
-        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9pVG5uTHI5T2tfejNQWXVZdW1tSXQwdU5wYXZ0U2xqekRRVVc3OXpBVWw0eDBQT1RVNHBJaENvcUhDV0NaV3ZveXM4V2ZJY0xlZERsbg?oc=5",
-        "published_date": "2026-08-17",
-        "lead_reason": "missing_direct_source",
-        "verification_reason": "",
-        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
-      },
-      {
         "signal_id": "pld_ecd9700693c239",
         "brand": "New Balance",
         "product_name": "多大豪庭娱乐下载APP竞训跑鞋",
@@ -1796,7 +1715,7 @@
         "brand": "lululemon",
         "product_name": "比还贵的瑜伽服",
         "headline": "比lululemon还贵的瑜伽服，来中国抢生意了",
-        "source": "新浪财经",
+        "source": "finance.sina.com.cn",
         "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5nZGdlQWFGU3F2WV84V29GcUlmQzA3QjJqc0c0LTJjTzE3ZzY5Y3BYYlp1X1ZnZ3d6eENLV0NySUNTdVNObUZSaGRvd0tMbWl0ZnB2OURtck5HVVlKdERLUl92M18yTEhqUE9VOHJpdVprMnhIX1Zr?oc=5",
         "published_date": "2026-08-14",
         "lead_reason": "missing_direct_source",
@@ -1901,7 +1820,7 @@
         "direct_url": "",
         "google_news_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTEhGMjNMc25VenkwanpZZTVxZGVjSERkSlF5SFJDNzNVTWUwU3lSV0FKYmsxdjdYRkFsNXdHT1lFVjdFajhYaVRxbU9QUXdqakJpS19TLVQzLWE4ZFRBcnRSdkFwXzY3ZXN4ZXZQaVFiQmhnLXRWZHhMV1VPUFNxY0FLWWhOdmw3R3JUVF9n?oc=5",
         "link_status": "google_news_fallback",
-        "published_at": "2026-08-20T17:17+08:00",
+        "published_at": "2026-08-20T17:22+08:00",
         "published_date": "2026-08-20",
         "image_url": "",
         "image_source": "",
@@ -1949,7 +1868,7 @@
             "url": "",
             "direct_url": "",
             "link_status": "google_news_fallback",
-            "published_at": "2026-08-20T17:17+08:00",
+            "published_at": "2026-08-20T17:22+08:00",
             "published_date": "2026-08-20",
             "source_tier": "low",
             "is_official": false
@@ -2621,6 +2540,86 @@
         "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
       },
       {
+        "headline": "065COM开元棋牌公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔",
+        "brand": "Nike",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "中国妇女网",
+        "source_homepage": "https://www.womenofchina.com",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1BU3dhblp6T3ZlUGZRb3VmblFBLXE1bFJYQ1ctdWVUNF9Lb0t3aU5OQXAxc0tYT05ha29TNE9Za3M1M1NzQm5JbFY2NjBQSC10N2g2M2JVSW9OTDhqZmJrSw?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-08-19T00:06+08:00",
+        "published_date": "2026-08-19",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "collaboration",
+        "query_groups": [
+          "brand",
+          "weekly_source_pool",
+          "brand_product"
+        ],
+        "discovered_by": [
+          "\"Nike\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+          "\"Nike\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "product_name": "Force 1",
+        "product_name_basis": "model_code_in_source",
+        "model_code": "",
+        "release_date": "",
+        "release_date_basis": "not_disclosed",
+        "price": {
+          "value": null,
+          "currency": "",
+          "display": "",
+          "basis": "not_disclosed"
+        },
+        "technologies": [],
+        "materials": [],
+        "official_url": "",
+        "evidence": {
+          "product": "065COM开元棋牌公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔",
+          "technology": "",
+          "price_or_release": "065COM开元棋牌公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔"
+        },
+        "status": "new",
+        "first_seen": "2026-08-14",
+        "last_seen": "2026-08-20",
+        "confidence_score": 33,
+        "product_id": "prd_9ba6c7f41caacb",
+        "coverage": [
+          {
+            "headline": "065COM开元棋牌公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔",
+            "source": "中国妇女网",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-08-19T00:06+08:00",
+            "published_date": "2026-08-19",
+            "source_tier": "tier_3",
+            "is_official": false
+          }
+        ],
+        "source_count": 1,
+        "direct_source_count": 0,
+        "credible_source_count": 0,
+        "official_evidence_count": 0,
+        "evidence_status": "lead",
+        "verification_gate_reason": "missing_direct_source",
+        "signal_id": "pld_949a0b910a58a6",
+        "signal_type": "product_lead",
+        "lead_reason": "missing_direct_source",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
         "headline": "史低价：The North Face 北面 Antora 防水冲锋衣 L码 $62.99",
         "brand": "The North Face",
         "category": "户外服饰",
@@ -2938,84 +2937,6 @@
         "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
       },
       {
-        "headline": "神仙道电竞公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔",
-        "brand": "Nike",
-        "category": "商品趋势",
-        "audience": "成人/通用",
-        "scenarios": [],
-        "source": "中国妇女网",
-        "source_homepage": "https://www.womenofchina.com",
-        "article_url": "",
-        "direct_url": "",
-        "google_news_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9pVG5uTHI5T2tfejNQWXVZdW1tSXQwdU5wYXZ0U2xqekRRVVc3OXpBVWw0eDBQT1RVNHBJaENvcUhDV0NaV3ZveXM4V2ZJY0xlZERsbg?oc=5",
-        "link_status": "google_news_fallback",
-        "published_at": "2026-08-17T05:34+08:00",
-        "published_date": "2026-08-17",
-        "image_url": "",
-        "image_source": "",
-        "image_source_url": "",
-        "verification": "media",
-        "source_tier": "tier_3",
-        "is_official": false,
-        "core_eligible": false,
-        "core_exclusion_reason": "editorial_score_below_core_threshold",
-        "event_family": "collaboration",
-        "query_groups": [
-          "brand",
-          "weekly_source_pool"
-        ],
-        "discovered_by": [
-          "\"Nike\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
-        ],
-        "product_name": "Force 1",
-        "product_name_basis": "model_code_in_source",
-        "model_code": "",
-        "release_date": "",
-        "release_date_basis": "not_disclosed",
-        "price": {
-          "value": null,
-          "currency": "",
-          "display": "",
-          "basis": "not_disclosed"
-        },
-        "technologies": [],
-        "materials": [],
-        "official_url": "",
-        "evidence": {
-          "product": "神仙道电竞公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔",
-          "technology": "",
-          "price_or_release": "神仙道电竞公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔"
-        },
-        "status": "new",
-        "first_seen": "2026-08-14",
-        "last_seen": "2026-08-20",
-        "confidence_score": 33,
-        "product_id": "prd_9ba6c7f41caacb",
-        "coverage": [
-          {
-            "headline": "神仙道电竞公布耐克 Air Force 1 联名套装，包含新版经典太空人小人仔",
-            "source": "中国妇女网",
-            "url": "",
-            "direct_url": "",
-            "link_status": "google_news_fallback",
-            "published_at": "2026-08-17T05:34+08:00",
-            "published_date": "2026-08-17",
-            "source_tier": "tier_3",
-            "is_official": false
-          }
-        ],
-        "source_count": 1,
-        "direct_source_count": 0,
-        "credible_source_count": 0,
-        "official_evidence_count": 0,
-        "evidence_status": "lead",
-        "verification_gate_reason": "missing_direct_source",
-        "signal_id": "pld_7f141293858019",
-        "signal_type": "product_lead",
-        "lead_reason": "missing_direct_source",
-        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
-      },
-      {
         "headline": "「不等了，跑就现在」 New Balance 推出全新 SC Rebel 多大豪庭娱乐下载APP竞训跑鞋",
         "brand": "New Balance",
         "category": "跑鞋",
@@ -3188,7 +3109,7 @@
         "scenarios": [
           "瑜伽"
         ],
-        "source": "新浪财经",
+        "source": "finance.sina.com.cn",
         "source_homepage": "http://finance.sina.com.cn",
         "article_url": "",
         "direct_url": "",
@@ -3241,7 +3162,7 @@
         "coverage": [
           {
             "headline": "比lululemon还贵的瑜伽服，来中国抢生意了",
-            "source": "新浪财经",
+            "source": "finance.sina.com.cn",
             "url": "",
             "direct_url": "",
             "link_status": "google_news_fallback",
@@ -3261,45 +3182,6 @@
         "signal_type": "product_lead",
         "lead_reason": "missing_direct_source",
         "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
-      },
-      {
-        "headline": "金融携手体育共燃申城活力 交通银行推出申花系列金融产品， 解锁体育消费新体验2026-08-18",
-        "brand": "",
-        "category": "商品趋势",
-        "audience": "成人/通用",
-        "scenarios": [],
-        "source": "上海市人民政府",
-        "source_homepage": "https://www.shanghai.gov.cn",
-        "article_url": "",
-        "direct_url": "",
-        "google_news_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMUFybFQ1T0NPdk05dGdFLUx3dmp1aVZOdDRoNF9YeU05bHg4Q3lVYkpVamNhS0F6b3VFcnV1eXRYeW9XRHpueG1PdkRQZnFpekE0NndkcVNKRGRDb0t3TnBZZHRpbGxoQk9VQmNuX3BCa3FoQWpIOVVidlNTbmJwN3FQOG5wTUtjM0E?oc=5",
-        "link_status": "google_news_fallback",
-        "published_at": "2026-08-18T16:53+08:00",
-        "published_date": "2026-08-18",
-        "image_url": "",
-        "image_source": "",
-        "image_source_url": "",
-        "verification": "official",
-        "source_tier": "official",
-        "is_official": true,
-        "core_eligible": true,
-        "core_exclusion_reason": "",
-        "event_family": "product_launch",
-        "query_groups": [
-          "consumer_macro",
-          "weekly_source_pool"
-        ],
-        "discovered_by": [
-          "健康消费 体育产业"
-        ],
-        "signal_id": "psg_9d78ccadf1ab7f",
-        "signal_type": "product_media_signal",
-        "keywords": [
-          "推出",
-          "系列"
-        ],
-        "evidence": "金融携手体育共燃申城活力 交通银行推出申花系列金融产品， 解锁体育消费新体验2026-08-18",
-        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
       },
       {
         "headline": "HUF 再度联手 Toyota Racing Development 推出 FW26 胶囊系列",
@@ -3512,7 +3394,6 @@
           "brand_product"
         ],
         "discovered_by": [
-          "运动品牌 新品 发布",
           "运动恢复 鞋类",
           "\"Puma\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
         ],
@@ -3628,7 +3509,7 @@
         "category": "运动配件",
         "audience": "成人/通用",
         "scenarios": [],
-        "source": "新浪财经",
+        "source": "finance.sina.com.cn",
         "source_homepage": "http://finance.sina.com.cn",
         "article_url": "",
         "direct_url": "",
@@ -3652,7 +3533,7 @@
         "discovered_by": [
           "运动品牌 战略 调整"
         ],
-        "signal_id": "psg_0da978d9600525",
+        "signal_id": "psg_62f888968f2443",
         "signal_type": "product_media_signal",
         "keywords": [
           "运动装备"
@@ -3688,8 +3569,7 @@
           "weekly_source_pool"
         ],
         "discovered_by": [
-          "\"Puma\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
-          "\"ASICS\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+          "\"Puma\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
         ],
         "signal_id": "psg_07807c746a00a1",
         "signal_type": "product_media_signal",
@@ -3701,18 +3581,18 @@
         "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
       },
       {
-        "headline": "刘亦菲穿79元防晒衣是品牌代言还是个人选择？",
+        "headline": "魔镜洞察：2026年3C数码行业分析报告——线上市场全景复盘与AI硬件趋势洞察",
         "brand": "",
-        "category": "夏季功能服饰",
+        "category": "商品趋势",
         "audience": "成人/通用",
         "scenarios": [],
-        "source": "手机新浪网",
-        "source_homepage": "https://k.sina.com.cn",
+        "source": "新华报业网",
+        "source_homepage": "https://www.xhby.net",
         "article_url": "",
         "direct_url": "",
-        "google_news_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBWLXlmWUdHUTVuemtqTmxyTjE5azBHVzhKa0lQM2tQN3FPaGppc1JhUkl0RHRuajdUV1FmR2kyVGNMZV9zVkhXSDBkUVFJMGQyV1d0QXFpSW9CaDgtcVlkV2NUOEJnNDlNOVp1VGVjSkZvdw?oc=5",
+        "google_news_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9PQk16cjBqQmNPNzY4d2NYSElndjdVb3JHUTZDMElDZ0M2dlI4Y0xlaWQ5TnJYel96Y0NWWTVZelJ5QzJha05MTGZvXzhmMmMzWm9LaVprMEdKUHJid2lBTGNJWkQ2Z3U1UFpn?oc=5",
         "link_status": "google_news_fallback",
-        "published_at": "2026-08-20T10:27+08:00",
+        "published_at": "2026-08-20T10:11+08:00",
         "published_date": "2026-08-20",
         "image_url": "",
         "image_source": "",
@@ -3722,57 +3602,73 @@
         "is_official": false,
         "core_eligible": false,
         "core_exclusion_reason": "editorial_score_below_core_threshold",
-        "event_family": "endorsement_partnership",
+        "event_family": "research_report",
         "query_groups": [
-          "product",
+          "research",
           "weekly_source_pool"
         ],
         "discovered_by": [
-          "防晒衣 运动品牌"
+          "零售行业 消费洞察"
         ],
-        "product_name": "刘亦菲穿79元防晒衣",
-        "product_name_basis": "product_phrase_in_source",
-        "model_code": "",
-        "release_date": "",
-        "release_date_basis": "not_disclosed",
-        "price": {
-          "value": null,
-          "currency": "",
-          "display": "",
-          "basis": "not_disclosed"
-        },
-        "technologies": [
-          "防晒"
+        "signal_id": "psg_c1fbb49886973a",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "上市"
         ],
-        "materials": [],
-        "official_url": "",
-        "evidence": {
-          "product": "刘亦菲穿79元防晒衣是品牌代言还是个人选择？",
-          "technology": "刘亦菲穿79元防晒衣是品牌代言还是个人选择？",
-          "price_or_release": "刘亦菲穿79元防晒衣是品牌代言还是个人选择？"
-        },
-        "status": "new",
-        "first_seen": "2026-08-14",
-        "last_seen": "2026-08-20",
-        "confidence_score": 40,
-        "product_id": "prd_6e7c5ac624a7b8",
-        "signal_id": "psg_52756d19c35c22",
-        "signal_type": "generic_product_signal",
-        "note": "品牌或具体商品名不足，已降级为普通商品媒体信号。"
+        "evidence": "魔镜洞察：2026年3C数码行业分析报告——线上市场全景复盘与AI硬件趋势洞察",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
       },
       {
-        "headline": "刘亦菲最近穿的高定和百元防晒衣为何反差这么大？",
+        "headline": "CBRE世邦魏理仕发布《从赛道到趋势：上海如何引领中国运动零售市场发展》报告",
         "brand": "",
-        "category": "夏季功能服饰",
+        "category": "商品趋势",
         "audience": "成人/通用",
         "scenarios": [],
-        "source": "手机新浪网",
-        "source_homepage": "https://k.sina.com.cn",
+        "source": "中华网生活",
+        "source_homepage": "https://life.china.com",
         "article_url": "",
         "direct_url": "",
-        "google_news_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9CbTZ3cHZtT3d6LVcxZnZJSUdXRG5JQWZqSk96WWNLVU9UWV9vTDdaVUxrNTVGTmM1a1JoWnoyaUJrQk03anBvVXJBclVIcWkxNERES0FYRnlBS3I4RVBMODFEOU5wMEoyeHliZWo4ZFZZUQ?oc=5",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBnN2t1d19Sei1MeDNXZHV6cG5mYzg1c0RZbEpOemRSX01kUUdSUlk4X2xnTzdOUG9TNWsyRHV2dm5reFo0ajJfUjZIUF9vbXJSSmM4Q3F3dWpHd1ZOQjZQNlduMA?oc=5",
         "link_status": "google_news_fallback",
-        "published_at": "2026-08-20T10:25+08:00",
+        "published_at": "2026-08-20T09:43+08:00",
+        "published_date": "2026-08-20",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "",
+        "query_groups": [
+          "brand_product"
+        ],
+        "discovered_by": [
+          "\"迪桑特\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)",
+          "\"凯乐石\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "signal_id": "psg_3b09280f6aa942",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "发布"
+        ],
+        "evidence": "CBRE世邦魏理仕发布《从赛道到趋势：上海如何引领中国运动零售市场发展》报告",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+      },
+      {
+        "headline": "开心电玩城app下载新品发布：科技与潮流融合，引领赛场新风尚",
+        "brand": "",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "中国妇女网",
+        "source_homepage": "https://www.womenofchina.com",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE85SWx6WXd2aHJDU0tfN0pOczZGRGl1d3FwUHBiUVhOaGJvSThLWkJ6Q0tFejZZUDEwaVVKZHo3RF9JV1ROV2F5cG5NWUhqN2d3dG9aVzFEUUlfMmtvQml1bHZIVFgzTG8?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-08-20T06:15+08:00",
         "published_date": "2026-08-20",
         "image_url": "",
         "image_source": "",
@@ -3781,44 +3677,26 @@
         "source_tier": "tier_3",
         "is_official": false,
         "core_eligible": false,
-        "core_exclusion_reason": "editorial_score_below_core_threshold",
-        "event_family": "industry_event",
+        "core_exclusion_reason": "weak_single_source_without_brand",
+        "event_family": "product_launch",
         "query_groups": [
+          "kids",
           "product",
           "weekly_source_pool"
         ],
         "discovered_by": [
-          "防晒衣 运动品牌"
+          "青少年篮球鞋",
+          "篮球鞋 新品 科技",
+          "篮球鞋 新品 发布"
         ],
-        "product_name": "刘亦菲最近穿的高定和百元防晒衣",
-        "product_name_basis": "product_phrase_in_source",
-        "model_code": "",
-        "release_date": "",
-        "release_date_basis": "not_disclosed",
-        "price": {
-          "value": null,
-          "currency": "",
-          "display": "",
-          "basis": "not_disclosed"
-        },
-        "technologies": [
-          "防晒"
+        "signal_id": "psg_6a83749157b8b7",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "新品",
+          "发布"
         ],
-        "materials": [],
-        "official_url": "",
-        "evidence": {
-          "product": "刘亦菲最近穿的高定和百元防晒衣为何反差这么大？",
-          "technology": "刘亦菲最近穿的高定和百元防晒衣为何反差这么大？",
-          "price_or_release": "刘亦菲最近穿的高定和百元防晒衣为何反差这么大？"
-        },
-        "status": "new",
-        "first_seen": "2026-08-14",
-        "last_seen": "2026-08-20",
-        "confidence_score": 40,
-        "product_id": "prd_50d9ad19045b3f",
-        "signal_id": "psg_d0763b51bd436a",
-        "signal_type": "generic_product_signal",
-        "note": "品牌或具体商品名不足，已降级为普通商品媒体信号。"
+        "evidence": "开心电玩城app下载新品发布：科技与潮流融合，引领赛场新风尚",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
       }
     ]
   },
