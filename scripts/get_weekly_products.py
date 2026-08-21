@@ -446,6 +446,12 @@ OFFICIAL_SITE_QUERIES = [
     "site:on.com 新品 跑鞋",
     "site:hoka.com 新品 跑鞋",
     "site:salomon.com 新品",
+    "site:newbalance.com 新品 鞋",
+    "site:asics.com 新品 跑鞋",
+    "site:thenorthface.com 新品 鞋服",
+    "site:lululemon.com 新品",
+    "site:anta.com 儿童 新品",
+    "site:361sport.com 儿童 新品",
 ]
 
 
