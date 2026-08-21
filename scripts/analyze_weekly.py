@@ -102,6 +102,18 @@ def is_direct_url(value: Any) -> bool:
     return not any(host == x or host.endswith("." + x) for x in blocked)
 
 
+def is_google_news_url(value: Any) -> bool:
+    """Google News RSS链接可作为受控回退证据，但不冒充媒体原文直链。"""
+    url = clean_url(value)
+    host = host_of(url)
+    return bool(url and (host == "news.google.com" or host.endswith(".news.google.com")))
+
+
+def is_evidence_url(value: Any) -> bool:
+    """优先接受媒体原文；原文解析失败时允许Google News可点击中转链接。"""
+    return is_direct_url(value) or is_google_news_url(value)
+
+
 def valid_image_url(value: Any) -> str:
     url = clean_url(value)
     host = host_of(url)
@@ -443,8 +455,8 @@ def event_evidence_rows(event: dict[str, Any]) -> list[dict[str, Any]]:
     for row in safe_list(event.get("evidence")):
         if not isinstance(row, dict):
             continue
-        url = clean_url(row.get("direct_url") or row.get("url"))
-        if not is_direct_url(url) or url in used:
+        url = clean_url(row.get("direct_url") or row.get("url") or row.get("google_news_url"))
+        if not is_evidence_url(url) or url in used:
             continue
         used.add(url)
         output.append({
@@ -477,7 +489,7 @@ def event_primary_evidence(event: dict[str, Any]) -> dict[str, Any]:
             "source": event.get("source"),
             "source_tier": event.get("source_tier"),
             "is_official": event.get("verification") == "official_source",
-            "url": event.get("direct_url") or event.get("url"),
+            "url": event.get("direct_url") or event.get("url") or event.get("google_news_url"),
             "published_at": event.get("published_at"),
             "summary": event.get("summary"),
         },
@@ -487,7 +499,7 @@ def event_primary_evidence(event: dict[str, Any]) -> dict[str, Any]:
             "source": representative.get("source"),
             "source_tier": representative.get("source_tier"),
             "is_official": representative.get("is_official"),
-            "url": representative.get("direct_url") or representative.get("url"),
+            "url": representative.get("direct_url") or representative.get("url") or representative.get("google_news_url"),
             "published_at": representative.get("published_at") or representative.get("published_date"),
             "summary": representative.get("meta_description"),
         },
@@ -496,7 +508,7 @@ def event_primary_evidence(event: dict[str, Any]) -> dict[str, Any]:
     for row in candidates:
         url = clean_url(row.get("url"))
         source = clean_text(row.get("source"))
-        if is_direct_url(url) and source not in INVALID_SOURCE_NAMES:
+        if is_evidence_url(url) and source not in INVALID_SOURCE_NAMES:
             copied = dict(row)
             copied["url"] = url
             copied["summary"] = clean_summary(copied.get("summary"))
@@ -598,13 +610,16 @@ def product_direct_url(product: dict[str, Any]) -> str:
         product.get("direct_url"),
         product.get("article_url"),
         product.get("url"),
+        product.get("google_news_url"),
     ]:
-        if is_direct_url(value):
+        if is_evidence_url(value):
             return clean_url(value)
 
     for row in safe_list(product.get("coverage")):
-        if isinstance(row, dict) and is_direct_url(row.get("direct_url") or row.get("url")):
-            return clean_url(row.get("direct_url") or row.get("url"))
+        if isinstance(row, dict) and is_evidence_url(
+            row.get("direct_url") or row.get("url") or row.get("google_news_url")
+        ):
+            return clean_url(row.get("direct_url") or row.get("url") or row.get("google_news_url"))
     return ""
 
 
@@ -752,8 +767,8 @@ def product_coverage_rows(product: dict[str, Any]) -> list[dict[str, Any]]:
     for row in safe_list(product.get("coverage")):
         if not isinstance(row, dict):
             continue
-        url = clean_url(row.get("direct_url") or row.get("url"))
-        if not is_direct_url(url) or url in used:
+        url = clean_url(row.get("direct_url") or row.get("url") or row.get("google_news_url"))
+        if not is_evidence_url(url) or url in used:
             continue
         used.add(url)
         output.append({
@@ -1614,7 +1629,7 @@ def build_source_registry() -> list[dict[str, Any]]:
 
     def add(source_type: str, item_id: str, title: str, source: str, url: str, published_date: str) -> None:
         url = clean_url(url)
-        if not is_direct_url(url):
+        if not is_evidence_url(url):
             return
         key = url
         if key in used:
