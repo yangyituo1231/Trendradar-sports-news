@@ -1,0 +1,181 @@
+name: Weekly Industry Report
+
+on:
+  schedule:
+    # GitHub cron uses UTC: Monday 00:30 UTC = Monday 08:30 China time.
+    - cron: "30 0 * * 1"
+  workflow_dispatch:
+
+env:
+  TZ: Asia/Shanghai
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-weekly-report:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}output/weekly/weekly_report.html
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
+
+      - name: Collect weekly sources
+        run: |
+          python scripts/get_weekly_news.py
+
+      - name: Collect verified products
+        run: |
+          python scripts/get_weekly_products.py
+
+      - name: Analyze weekly evidence
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          python scripts/analyze_weekly.py
+
+      - name: Generate weekly HTML
+        run: |
+          python scripts/generate_weekly_html.py
+
+      - name: Validate weekly report
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+
+          required = [
+              Path("output/weekly/weekly_sources.json"),
+              Path("output/weekly/weekly_products.json"),
+              Path("output/weekly/weekly_analysis.json"),
+              Path("output/weekly/weekly_report.html"),
+          ]
+
+          for path in required:
+              if not path.exists() or path.stat().st_size == 0:
+                  raise SystemExit(f"missing or empty: {path}")
+
+          for path in required[:3]:
+              json.loads(path.read_text(encoding="utf-8"))
+
+          html = required[3].read_text(encoding="utf-8")
+          if "<html" not in html.lower() or "</html>" not in html.lower():
+              raise SystemExit("weekly_report.html is not a complete HTML document")
+
+          print("weekly report validation passed")
+          PY
+
+      - name: Upload weekly report package
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-industry-report-${{ github.run_number }}
+          path: |
+            output/weekly/weekly_report.html
+            output/weekly/weekly_analysis.json
+            output/weekly/weekly_sources.json
+            output/weekly/weekly_products.json
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Commit weekly report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/weekly
+
+          if ! git diff --cached --quiet; then
+            git commit -m "weekly industry report: $(date +'%Y-%m-%d')"
+          else
+            echo "nothing to commit"
+          fi
+
+          git pull --rebase origin master
+          git push origin HEAD:master
+
+      # Pages is configured to use GitHub Actions, so committing the HTML is
+      # not enough. Before publishing the repository snapshot, replace the
+      # raw daily template with the latest filled daily report. This change
+      # only affects the runner and is not committed back to the repository.
+      - name: Protect filled daily report for Pages
+        run: |
+          if [ ! -s daily-report-filled.html ]; then
+            echo "daily-report-filled.html is missing or empty"
+            exit 1
+          fi
+
+          cp daily-report-filled.html daily-report.html
+
+          if grep -Fq '{{top1_title}}' daily-report.html; then
+            echo "daily-report.html still contains unresolved placeholders"
+            exit 1
+          fi
+
+          echo "Pages will publish the filled daily report"
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Send weekly report link to WeCom
+        continue-on-error: true
+        env:
+          REPORT_WEBHOOK: ${{ secrets.REPORT_WEBHOOK }}
+          WEEKLY_URL: https://yangyituo1231.github.io/Trendradar-sports-news/output/weekly/weekly_report.html
+        run: |
+          python - <<'PY'
+          import os
+          import requests
+
+          webhook = os.getenv("REPORT_WEBHOOK", "").strip()
+          report_url = os.getenv("WEEKLY_URL", "").strip()
+
+          if not webhook:
+              print("REPORT_WEBHOOK is empty; skip WeCom notification")
+              raise SystemExit(0)
+
+          payload = {
+              "msgtype": "markdown",
+              "markdown": {
+                  "content": (
+                      "**361°儿童｜运动品牌行业周报**\n"
+                      f"> 本周报告已更新：[点击查看完整周报]({report_url})"
+                  )
+              },
+          }
+
+          response = requests.post(webhook, json=payload, timeout=20)
+          response.raise_for_status()
+          result = response.json()
+          if result.get("errcode") != 0:
+              raise SystemExit(f"WeCom error: {result}")
+          print("weekly report link sent to WeCom")
+          PY
