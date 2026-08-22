@@ -1,19 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-08-21T15:42+08:00",
+  "generated_at": "2026-08-22T08:31+08:00",
   "report_window": {
     "start_date": "2026-08-14",
     "end_date": "2026-08-20",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "本周运动品牌中报密集发布，361度、森马童装、亚玛芬均实现增长，跨境电商与海外市场成为亮点，行业整体呈现稳健复苏态势。",
-    "week_in_one_paragraph": "宏观社零数据温和增长，暑期消费场景丰富。品牌动作聚焦产品创新与渠道拓展，女性运动消费崛起，行业竞争加剧。",
+    "weekly_thesis": "本周运动品牌财报密集发布，361度、亚玛芬等业绩亮眼，跨境电商与海外市场成为增长引擎，童装业务亦表现稳健，行业整体呈复苏态势。",
+    "week_in_one_paragraph": "宏观社零数据温和增长，暑期消费场景活跃。品牌动作聚焦产品创新与渠道拓展，如特步双旗舰发布会、安踏羊毛系列等。",
     "next_week_focus": [
-      "跟踪361度海外市场具体开店数据及儿童产品在跨境电商中的占比。",
-      "观察亚玛芬上调指引后，始祖鸟、萨洛蒙在中国市场的门店扩张速度。",
-      "监测女性运动品牌ALO、NikeSKIMS在天猫首店后的销售表现，评估对儿童消费的带动。",
-      "关注暑期消费数据对运动零售的拉动，尤其是儿童运动装备的销售情况。"
+      "关注特步新品发布后的市场评价及销售数据。",
+      "跟踪361度海外市场拓展的具体动作和成效。",
+      "观察亚玛芬上调指引后，始祖鸟等品牌在中国市场的开店节奏。",
+      "监测暑期消费数据对运动及童装销售的拉动作用。",
+      "留意国际品牌通过电商入华对本土品牌的竞争压力。"
     ]
   },
   "key_developments": [
@@ -105,45 +106,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "361度中报显示营收61.6亿元，跨境电商增140%，海外销售流水增超八成，对儿童事业部有直接参考价值。"
-    },
-    {
-      "event_id": "evt_f8c7e9a9179a71",
-      "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
-      "category": "儿童与青少年",
-      "event_family": "financial_results",
-      "reporting_period": "2026_h1",
-      "brands": [],
-      "source": "华丽志",
-      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
-      "published_at": "2026-08-20T20:51+08:00",
-      "published_date": "2026-08-20",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 66,
-      "selection_score": 98,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_f8c7e9a9179a71"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_3fc02f376532ba",
-          "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
-          "source": "华丽志",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
-          "published_at": "2026-08-20T20:51+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "森马集团童装业务增长12%，巴拉巴拉表现强劲，是童装市场的重要风向标。"
+      "editorial_reason": "361度上半年营收61.6亿元，跨境电商增140%，海外流水增超八成，显示国际化与电商双轮驱动成效显著。"
     },
     {
       "event_id": "evt_122197085242e7",
@@ -194,7 +157,45 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "亚玛芬上半年净利增78%，始祖鸟恢复净开店，上调指引，显示高端运动品牌在中国市场强劲复苏。"
+      "editorial_reason": "亚玛芬上半年净利增78%，始祖鸟中国恢复净开店，上调指引，印证高端户外品牌在中国市场的强劲复苏。"
+    },
+    {
+      "event_id": "evt_f8c7e9a9179a71",
+      "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
+      "category": "儿童与青少年",
+      "event_family": "financial_results",
+      "reporting_period": "2026_h1",
+      "brands": [],
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
+      "published_at": "2026-08-20T20:51+08:00",
+      "published_date": "2026-08-20",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 66,
+      "selection_score": 98,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_f8c7e9a9179a71"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_3fc02f376532ba",
+          "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
+          "source": "华丽志",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
+          "published_at": "2026-08-20T20:51+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "森马集团童装业务增长12%，巴拉巴拉作为核心品牌，其表现直接关联儿童消费趋势，对童装行业有参考意义。"
     },
     {
       "event_id": "evt_a6e1fa8d1063c8",
@@ -232,7 +233,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "1-7月社零总额增长1.2%，宏观消费环境温和，为行业判断提供背景。"
+      "editorial_reason": "1-7月社零总额增长1.2%，为消费行业提供宏观背景，影响运动及童装市场的整体需求预期。"
     },
     {
       "event_id": "evt_32508fcd3a1289",
@@ -273,7 +274,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "女性运动消费崛起，ALO、NikeSKIMS等品牌抢滩，提示儿童事业部关注女性消费者对家庭购买的影响。"
+      "editorial_reason": "属于行业动态的重要本周新事件。"
     },
     {
       "event_id": "evt_7c703715ff9d45",
@@ -313,16 +314,15 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "超100个海外品牌天猫开首店，电商平台成为国际品牌入华首选，渠道趋势值得关注。"
+      "editorial_reason": "超100个海外品牌天猫开首店，显示电商平台成为国际品牌入华首选渠道，加剧国内市场竞争。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "运动品牌中报季：增长引擎转向海外与电商",
-      "analysis": "本周361度、森马、亚玛芬发布中报，均实现增长。361度跨境电商增140%，海外销售流水增超八成；森马童装业务增长12%；共同显示海外市场和电商渠道成为增长主动力，国内运动品牌国际化加速，高端品牌在中国市场依然强劲。",
+      "headline": "运动品牌国际化与跨境电商增长路径",
+      "analysis": "361度加速拓展海外新兴市场，亚玛芬则依托始祖鸟等品牌在中国恢复净开店。行业层面，运动品牌出海从代工转向品牌运营，跨境电商成为重要跳板，同时高端品牌在中国市场仍有较大增长空间。",
       "event_ids": [
         "evt_acf7c5c9e3ddd9",
-        "evt_f8c7e9a9179a71",
         "evt_122197085242e7"
       ],
       "evidence": [
@@ -334,13 +334,6 @@
           "published_date": "2026-08-18"
         },
         {
-          "event_id": "evt_f8c7e9a9179a71",
-          "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
-          "source": "华丽志",
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
-          "published_date": "2026-08-20"
-        },
-        {
           "event_id": "evt_122197085242e7",
           "title": "亚玛芬上半年净利2.72亿美元增78%：中国市场始祖鸟恢复净开店，再次上调年度业绩指引",
           "source": "澎湃新闻",
@@ -350,25 +343,25 @@
       ]
     },
     {
-      "headline": "女性运动消费崛起，品牌加速布局“她经济”",
-      "analysis": "ALO、NikeSKIMS等品牌抢滩女性运动市场，同时超100个海外品牌通过天猫首店入华，其中不少聚焦女性运动。女性消费者对运动服饰的偏好正影响家庭购买决策，儿童运动品牌需关注女性消费者对儿童运动产品的连带购买行为。",
+      "headline": "童装业务在集团中的战略价值凸显",
+      "analysis": "森马集团童装业务增长12%，高于集团整体9%的增速，巴拉巴拉作为主力品牌，其“魔法”效应持续拉动增长。在成人装增长乏力的背景下，童装成为集团增长引擎。行业层面，童装市场集中度提升，头部品牌凭借渠道和品牌力优势，有望进一步扩大份额，同时需关注儿童消费趋势变化。",
       "event_ids": [
-        "evt_32508fcd3a1289",
-        "evt_7c703715ff9d45"
+        "evt_f8c7e9a9179a71",
+        "evt_24ed2d7685b517"
       ],
       "evidence": [
         {
-          "event_id": "evt_32508fcd3a1289",
-          "title": "中国女性运动健身消费崛起：ALO、NikeSKIMS抢滩“她经济”",
-          "source": "第一财经",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4TjZVaUtpX2Z6SXRuZlQ3bUlNRkJmcUllN0llYnctQU5qYV9MQXB4dTljWlpRSEstamFjNm8tZkt5N2ZPcHhCZUNjbUkwZ0FxVzVv?oc=5",
-          "published_date": "2026-08-19"
+          "event_id": "evt_f8c7e9a9179a71",
+          "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
+          "source": "华丽志",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
+          "published_date": "2026-08-20"
         },
         {
-          "event_id": "evt_7c703715ff9d45",
-          "title": "品牌入华电商先行：ALO、VEJA、Mardi等超100个首店开在天猫- 业界",
-          "source": "亿邦动力",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wZjZlRWJHQjhEOTlaQ1BTX0J4ZVlEckVYQ21RazRKRzRMb2JyQUhoR2dYUExiVUR4cWh4VHV6cDJmZlZEY0FzTm8xbTVuMFpkRi1DWWFn?oc=5",
+          "event_id": "evt_24ed2d7685b517",
+          "title": "“巴拉巴拉”有魔法，童装救森马？",
+          "source": "新华网",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZjAzanBEQXVGalU0QnlyY1BLTFpQem5vSzVNaDdmMHBFR0dZVC1nZzBqMDdQeDJDRkExQnJxb2NxMndZMmcxajhndjNoWTNCeUp2UkpsLXJjY0c3NHNuR2szTGZ1RzVyakRQUHFGYThlR2xnSi1OUnAxSnJ1d2FWZA?oc=5",
           "published_date": "2026-08-19"
         }
       ]
@@ -433,7 +426,7 @@
           "published_date": "2026-08-20"
         }
       ],
-      "editorial_reason": "Nike Pegasus Plus 2节奏跑训练鞋发布，体现成人跑鞋技术趋势，可参考其设计理念用于儿童跑鞋开发。"
+      "editorial_reason": "官方来源单篇报道确认；链接解析失败时保留Google News中转链接。"
     }
   ],
   "competitor_channel": [
@@ -673,20 +666,20 @@
   ],
   "watchlist": [
     {
-      "title": "361度海外市场拓展进展",
+      "title": "特步双旗舰新品发布市场反响",
       "event_ids": [
-        "evt_acf7c5c9e3ddd9"
+        "evt_d19014ea503a7c"
       ],
       "product_ids": [],
-      "reason": "关注361度海外新兴市场开店节奏及跨境电商品类结构，评估对儿童线的借鉴意义。"
+      "reason": "关注特步8月21日发布会后新品的市场反馈，及其对跑步细分市场的竞争格局影响。"
     },
     {
-      "title": "亚玛芬上调指引后的大中华区表现",
+      "title": "女性运动消费趋势对童装启发",
       "event_ids": [
-        "evt_122197085242e7"
+        "evt_32508fcd3a1289"
       ],
       "product_ids": [],
-      "reason": "关注始祖鸟、萨洛蒙在大中华区的门店扩张与产品策略，判断高端运动消费趋势是否延续。"
+      "reason": "观察女性运动品牌策略，是否会影响儿童运动产品的设计、营销和品类拓展。"
     }
   ],
   "tracking": {
@@ -779,45 +772,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "361度中报显示营收61.6亿元，跨境电商增140%，海外销售流水增超八成，对儿童事业部有直接参考价值。"
-      },
-      {
-        "event_id": "evt_f8c7e9a9179a71",
-        "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
-        "category": "儿童与青少年",
-        "event_family": "financial_results",
-        "reporting_period": "2026_h1",
-        "brands": [],
-        "source": "华丽志",
-        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
-        "published_at": "2026-08-20T20:51+08:00",
-        "published_date": "2026-08-20",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 66,
-        "selection_score": 98,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_f8c7e9a9179a71"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_3fc02f376532ba",
-            "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
-            "source": "华丽志",
-            "source_tier": "tier_2",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
-            "published_at": "2026-08-20T20:51+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "森马集团童装业务增长12%，巴拉巴拉表现强劲，是童装市场的重要风向标。"
+        "editorial_reason": "361度上半年营收61.6亿元，跨境电商增140%，海外流水增超八成，显示国际化与电商双轮驱动成效显著。"
       },
       {
         "event_id": "evt_122197085242e7",
@@ -868,7 +823,45 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "亚玛芬上半年净利增78%，始祖鸟恢复净开店，上调指引，显示高端运动品牌在中国市场强劲复苏。"
+        "editorial_reason": "亚玛芬上半年净利增78%，始祖鸟中国恢复净开店，上调指引，印证高端户外品牌在中国市场的强劲复苏。"
+      },
+      {
+        "event_id": "evt_f8c7e9a9179a71",
+        "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
+        "category": "儿童与青少年",
+        "event_family": "financial_results",
+        "reporting_period": "2026_h1",
+        "brands": [],
+        "source": "华丽志",
+        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
+        "published_at": "2026-08-20T20:51+08:00",
+        "published_date": "2026-08-20",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 66,
+        "selection_score": 98,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_f8c7e9a9179a71"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_3fc02f376532ba",
+            "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
+            "source": "华丽志",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
+            "published_at": "2026-08-20T20:51+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "森马集团童装业务增长12%，巴拉巴拉作为核心品牌，其表现直接关联儿童消费趋势，对童装行业有参考意义。"
       },
       {
         "event_id": "evt_a6e1fa8d1063c8",
@@ -906,7 +899,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "1-7月社零总额增长1.2%，宏观消费环境温和，为行业判断提供背景。"
+        "editorial_reason": "1-7月社零总额增长1.2%，为消费行业提供宏观背景，影响运动及童装市场的整体需求预期。"
       },
       {
         "event_id": "evt_32508fcd3a1289",
@@ -947,7 +940,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "女性运动消费崛起，ALO、NikeSKIMS等品牌抢滩，提示儿童事业部关注女性消费者对家庭购买的影响。"
+        "editorial_reason": "属于行业动态的重要本周新事件。"
       },
       {
         "event_id": "evt_7c703715ff9d45",
@@ -987,7 +980,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "超100个海外品牌天猫开首店，电商平台成为国际品牌入华首选，渠道趋势值得关注。"
+        "editorial_reason": "超100个海外品牌天猫开首店，显示电商平台成为国际品牌入华首选渠道，加剧国内市场竞争。"
       }
     ],
     "follow_up_selected": [],
@@ -1144,14 +1137,6 @@
     },
     {
       "type": "event",
-      "id": "evt_f8c7e9a9179a71",
-      "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
-      "source": "华丽志",
-      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
-      "published_date": "2026-08-20"
-    },
-    {
-      "type": "event",
       "id": "evt_122197085242e7",
       "title": "亚玛芬上半年净利2.72亿美元增78%：中国市场始祖鸟恢复净开店，再次上调年度业绩指引",
       "source": "澎湃新闻",
@@ -1164,6 +1149,14 @@
       "title": "萨洛蒙继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
       "source": "时代在线",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9nNHZzWEh1OXdaWU0yZVczS3RVVVAtYzRfR3J6RUxHRFpIb2hxOExFSllfREdFR0M1SWVIOXBndVp6TjZwanNEeWs4VFZVT1Y2NTFrXw?oc=5",
+      "published_date": "2026-08-20"
+    },
+    {
+      "type": "event",
+      "id": "evt_f8c7e9a9179a71",
+      "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
       "published_date": "2026-08-20"
     },
     {
