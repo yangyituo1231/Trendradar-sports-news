@@ -1,6 +1,6 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-08-23T08:34+08:00",
+  "generated_at": "2026-08-24T08:33+08:00",
   "report_window": {
     "start_date": "2026-08-14",
     "end_date": "2026-08-20",
@@ -8,13 +8,13 @@
   },
   "editorial": {
     "weekly_thesis": "本周运动品牌财报密集发布，361度、亚玛芬、森马等业绩分化，跨境电商与海外市场成增长亮点，行业竞争加剧。",
-    "week_in_one_paragraph": "本周361度、亚玛芬、森马等发布中期业绩，361度营收61.6亿元，跨境电商增140%；亚玛芬净利增78%，上调指引；森马童装增12%。宏观社零增速放缓至1.2%，行业聚焦海外与电商增量。",
+    "week_in_one_paragraph": "本周361度、亚玛芬、森马等发布上半年业绩，361度营收61.6亿元，跨境电商增140%；亚玛芬净利增78%，上调指引；森马童装增12%。宏观社零增速放缓至1.2%，行业聚焦海外与电商增量。",
     "next_week_focus": [
-      "关注361度海外市场具体拓展区域和渠道策略。",
-      "跟踪亚玛芬上调指引后股价及市场反应。",
-      "观察森马童装业务下半年增长动力。",
-      "留意宏观消费数据对运动零售的影响。",
-      "监测海外品牌天猫首店后续销售表现。"
+      "关注361度海外市场具体品类增长数据。",
+      "跟踪亚玛芬上调指引后股价及门店扩张。",
+      "观察巴拉巴拉童装新品及营销动作。",
+      "监测社零数据对运动消费的影响。",
+      "留意女性运动品牌后续营销活动。"
     ]
   },
   "key_developments": [
@@ -106,7 +106,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "361度上半年营收61.6亿元，跨境电商增140%，海外销售流水增超八成，是核心竞品关键动态。"
+      "editorial_reason": "361度上半年营收61.6亿元，跨境电商增140%，海外销售流水增超八成，是核心竞品最新业绩。"
     },
     {
       "event_id": "evt_122197085242e7",
@@ -157,7 +157,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "亚玛芬上半年净利增78%，始祖鸟恢复净开店，上调指引，反映高端户外市场强劲。"
+      "editorial_reason": "亚玛芬上半年净利增78%，始祖鸟中国恢复净开店，上调指引，反映高端户外景气。"
     },
     {
       "event_id": "evt_f8c7e9a9179a71",
@@ -195,7 +195,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "森马集团童装业务增长12%，巴拉巴拉表现受关注，直接关联儿童市场竞争格局。"
+      "editorial_reason": "森马集团童装业务增长12%，巴拉巴拉表现受关注，是童装领域重要对标。"
     },
     {
       "event_id": "evt_a6e1fa8d1063c8",
@@ -233,7 +233,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "1-7月社零总额增长1.2%，宏观消费增速放缓，为行业整体需求提供背景。"
+      "editorial_reason": "1-7月社零总额增长1.2%，宏观消费增速放缓，影响行业整体预期。"
     },
     {
       "event_id": "evt_32508fcd3a1289",
@@ -274,7 +274,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "女性运动消费崛起，ALO、NikeSKIMS抢滩，反映细分市场新机会。"
+      "editorial_reason": "女性运动消费崛起，ALO、NikeSKIMS抢滩，提示细分市场机会。"
     },
     {
       "event_id": "evt_7c703715ff9d45",
@@ -319,8 +319,8 @@
   ],
   "deep_dives": [
     {
-      "headline": "运动品牌中期业绩分化：海外与电商成增长引擎",
-      "analysis": "本周361度、亚玛芬、森马发布中期业绩，均实现增长但驱动不同。361度营收61.6亿元，跨境电商增140%，海外销售流水增超八成，显示海外市场贡献显著。亚玛芬净利增78%，始祖鸟恢复净开店，高端户外需求强劲。森马童装增12%，巴拉巴拉表现稳健。共同点在于品牌通过渠道革新和品类拓展实现增长，行业竞争从国内转向全球化。",
+      "headline": "运动品牌上半年业绩分化：海外与电商成增长引擎",
+      "analysis": "361度、亚玛芬、森马上半年业绩均增长，但驱动因素不同。361度跨境电商增140%，海外销售流水增超八成，显示海外市场贡献显著。亚玛芬净利增78%，始祖鸟中国恢复净开店，高端户外需求强劲。森马童装增12%，巴拉巴拉仍是核心。行业整体增长依赖海外扩张与高端化，国内社零增速放缓背景下，出海成为共同选择。",
       "event_ids": [
         "evt_acf7c5c9e3ddd9",
         "evt_122197085242e7",
@@ -351,19 +351,19 @@
       ]
     },
     {
-      "headline": "宏观消费放缓下的运动零售渠道变革",
-      "analysis": "1-7月社零总额仅增1.2%，消费整体疲软，但运动品牌仍通过电商渠道寻求增量。超100个海外品牌在天猫开设首店，电商成为入华首选，反映渠道重心转移。在宏观压力下，品牌更依赖线上和体验式消费场景，如暑期冰雪运动、水上运动等新场景，以吸引消费者。",
+      "headline": "女性运动消费崛起：新品牌入华与渠道变革",
+      "analysis": "ALO、NikeSKIMS等品牌瞄准中国女性运动市场，同时超100个海外品牌选择天猫作为首店渠道，电商平台成为入华捷径。女性运动消费需求细分，瑜伽、健身等场景增长，品牌通过联名、新品快速切入。",
       "event_ids": [
-        "evt_a6e1fa8d1063c8",
+        "evt_32508fcd3a1289",
         "evt_7c703715ff9d45"
       ],
       "evidence": [
         {
-          "event_id": "evt_a6e1fa8d1063c8",
-          "title": "2026年1—7月份社会消费品零售总额增长1.2%",
-          "source": "国家统计局",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBNbUQzLTNCWWtxb0hQeWRzN1FhX0diXzZCSS1WRkZXbXZYVlJMei1WRGRzMU9VTHB3LTh4WEtZVTJJYi1KZU5JQVRCcUZsMlVNeEZ0WHBsdEFtNWkweXNib19WV1NNaUwzLUN5TVVSVQ?oc=5",
-          "published_date": "2026-08-17"
+          "event_id": "evt_32508fcd3a1289",
+          "title": "中国女性运动健身消费崛起：ALO、NikeSKIMS抢滩“她经济”",
+          "source": "第一财经",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4TjZVaUtpX2Z6SXRuZlQ3bUlNRkJmcUllN0llYnctQU5qYV9MQXB4dTljWlpRSEstamFjNm8tZkt5N2ZPcHhCZUNjbUkwZ0FxVzVv?oc=5",
+          "published_date": "2026-08-19"
         },
         {
           "event_id": "evt_7c703715ff9d45",
@@ -434,7 +434,7 @@
           "published_date": "2026-08-20"
         }
       ],
-      "editorial_reason": "Nike Pegasus Plus 2节奏跑训练鞋，官方发布，体现Nike在跑鞋市场的产品更新，可作为竞品参考。"
+      "editorial_reason": "Nike Pegasus Plus 2节奏跑训练鞋，官方发布，反映成人跑鞋技术趋势，可参考儿童跑鞋设计。"
     }
   ],
   "competitor_channel": [
@@ -674,28 +674,28 @@
   ],
   "watchlist": [
     {
-      "title": "361度海外市场拓展后续动作",
+      "title": "361度海外扩张后续动作",
       "event_ids": [
         "evt_acf7c5c9e3ddd9"
       ],
       "product_ids": [],
-      "reason": "关注361度跨境电商和海外销售流水增长是否持续，以及新市场拓展计划。"
+      "reason": "关注361度海外新兴市场拓展计划及跨境电商品类表现。"
     },
     {
-      "title": "亚玛芬上调指引后季度表现",
+      "title": "亚玛芬上调指引后高端户外趋势",
       "event_ids": [
         "evt_122197085242e7"
       ],
       "product_ids": [],
-      "reason": "观察始祖鸟和萨洛蒙增长动能，以及大中华区门店扩张节奏。"
+      "reason": "观察始祖鸟、萨洛蒙在中国市场的开店与产品策略。"
     },
     {
-      "title": "森马童装业务增长可持续性",
+      "title": "女性运动品牌入华渠道效果",
       "event_ids": [
-        "evt_f8c7e9a9179a71"
+        "evt_32508fcd3a1289"
       ],
       "product_ids": [],
-      "reason": "跟踪巴拉巴拉品牌表现及童装市场竞争态势。"
+      "reason": "跟踪ALO、NikeSKIMS在天猫等平台的首店表现。"
     }
   ],
   "tracking": {
@@ -788,7 +788,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "361度上半年营收61.6亿元，跨境电商增140%，海外销售流水增超八成，是核心竞品关键动态。"
+        "editorial_reason": "361度上半年营收61.6亿元，跨境电商增140%，海外销售流水增超八成，是核心竞品最新业绩。"
       },
       {
         "event_id": "evt_122197085242e7",
@@ -839,7 +839,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "亚玛芬上半年净利增78%，始祖鸟恢复净开店，上调指引，反映高端户外市场强劲。"
+        "editorial_reason": "亚玛芬上半年净利增78%，始祖鸟中国恢复净开店，上调指引，反映高端户外景气。"
       },
       {
         "event_id": "evt_f8c7e9a9179a71",
@@ -877,7 +877,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "森马集团童装业务增长12%，巴拉巴拉表现受关注，直接关联儿童市场竞争格局。"
+        "editorial_reason": "森马集团童装业务增长12%，巴拉巴拉表现受关注，是童装领域重要对标。"
       },
       {
         "event_id": "evt_a6e1fa8d1063c8",
@@ -915,7 +915,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "1-7月社零总额增长1.2%，宏观消费增速放缓，为行业整体需求提供背景。"
+        "editorial_reason": "1-7月社零总额增长1.2%，宏观消费增速放缓，影响行业整体预期。"
       },
       {
         "event_id": "evt_32508fcd3a1289",
@@ -956,7 +956,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "女性运动消费崛起，ALO、NikeSKIMS抢滩，反映细分市场新机会。"
+        "editorial_reason": "女性运动消费崛起，ALO、NikeSKIMS抢滩，提示细分市场机会。"
       },
       {
         "event_id": "evt_7c703715ff9d45",
