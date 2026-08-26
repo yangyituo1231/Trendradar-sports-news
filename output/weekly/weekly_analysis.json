@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-08-25T08:32+08:00",
+  "generated_at": "2026-08-26T08:33+08:00",
   "report_window": {
     "start_date": "2026-08-17",
     "end_date": "2026-08-23",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "运动品牌中报密集发布，行业整体增速放缓，但童装与跨境电商成为结构性亮点，专业细分与全场景布局成竞争焦点。",
-    "week_in_one_paragraph": "本周多家运动品牌发布中报，李宁、361度、森马等业绩分化，361度跨境电商增长140%尤为突出。童装领域，森马童装增长12%，安踏儿童篮球鞋获赛事指定，迪桑特儿童受关注。特步发布全场景跑步新品，亚玛芬上调指引，行业竞争聚焦专业与细分市场。",
+    "weekly_thesis": "运动品牌中报密集发布，行业分化加剧：李宁稳健、361度高增、亚玛芬上调指引，童装赛道专业化和场景化趋势明显。",
+    "week_in_one_paragraph": "本周运动品牌中报密集发布，李宁营收微增2.8%至152.4亿元，361度营收61.6亿元增8%，跨境电商增140%，亚玛芬净利增78%并上调指引。童装领域，森马童装增12%，安踏儿童篮球鞋成为官方指定战靴，迪桑特儿童探索专业破局。行业整体社零增速放缓，品牌更注重经营质量。",
     "next_week_focus": [
-      "关注特步全场景跑步新品后续销售数据及儿童线延伸可能。",
-      "跟踪安踏儿童篮球鞋赛事营销效果及销量反馈。",
-      "观察361度跨境电商增长对儿童产品出海的带动作用。",
-      "关注迪桑特儿童专业运动童装的市场接受度。",
-      "留意李宁下半年风险控制策略对行业的影响。"
+      "关注361度儿童业务在跨境电商中的具体表现和产品布局。",
+      "跟踪安踏儿童星火X篮球鞋的后续市场推广和销售数据。",
+      "观察迪桑特儿童专业运动童装的市场接受度和渠道拓展。",
+      "留意李宁下半年控风险策略对儿童业务的影响。",
+      "关注亚玛芬上调指引后对户外童装市场的带动效应。"
     ]
   },
   "key_developments": [
@@ -96,55 +96,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "361度中报显示跨境电商增长140%，海外拓展成效显著，对儿童事业部有直接参考价值。"
-    },
-    {
-      "event_id": "evt_f8c7e9a9179a71",
-      "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
-      "category": "儿童与青少年",
-      "event_family": "financial_results",
-      "reporting_period": "2026_h1",
-      "brands": [],
-      "source": "华丽志",
-      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
-      "published_at": "2026-08-20T20:51+08:00",
-      "published_date": "2026-08-20",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 2,
-      "editorial_score": 61,
-      "selection_score": 93,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_f8c7e9a9179a71"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_3fc02f376532ba",
-          "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
-          "source": "华丽志",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
-          "published_at": "2026-08-20T20:51+08:00",
-          "summary": ""
-        },
-        {
-          "item_id": "src_41c0583ce7e655",
-          "title": "QuestMobile：2026年上半年中国互联网广告市场规模达3853.4亿元，同比增长7.1%",
-          "source": "澎湃新闻",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1tdjZsYkYwRUlPMWVhN2VINzFoMThaYlkzdU1TOHBWQnFmMHhjVkNGUlh1S052NmV0Mmw5dmNuY09lbllTMlgxM1BGV0FUc20xT1J4Rzh6dmw1SzhVVlE?oc=5",
-          "published_at": "2026-08-20T14:54+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "森马童装业务增长12%，印证童装市场韧性，为儿童品牌提供增长参照。"
+      "editorial_reason": "361度上半年营收61.6亿元增8%，跨境电商增140%，海外扩张显著，对儿童事业部有直接参考价值。"
     },
     {
       "event_id": "evt_5ae2ba50be7f0b",
@@ -235,7 +187,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "李宁中报营收微增，强调经营质量，反映行业整体增速放缓，需关注风险控制。"
+      "editorial_reason": "李宁上半年营收微增2.8%，毛利率提升至50.9%，体现行业龙头在压力下的稳健经营策略。"
     },
     {
       "event_id": "evt_122197085242e7",
@@ -286,7 +238,55 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "亚玛芬上调业绩指引，始祖鸟、萨洛蒙强劲增长，显示高端户外和专业运动市场活力。"
+      "editorial_reason": "亚玛芬净利增78%，始祖鸟恢复净开店并上调指引，显示高端户外品牌在中国市场的强劲增长。"
+    },
+    {
+      "event_id": "evt_f8c7e9a9179a71",
+      "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
+      "category": "儿童与青少年",
+      "event_family": "financial_results",
+      "reporting_period": "2026_h1",
+      "brands": [],
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
+      "published_at": "2026-08-20T20:51+08:00",
+      "published_date": "2026-08-20",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 2,
+      "editorial_score": 61,
+      "selection_score": 93,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_f8c7e9a9179a71"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_3fc02f376532ba",
+          "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
+          "source": "华丽志",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
+          "published_at": "2026-08-20T20:51+08:00",
+          "summary": ""
+        },
+        {
+          "item_id": "src_41c0583ce7e655",
+          "title": "QuestMobile：2026年上半年中国互联网广告市场规模达3853.4亿元，同比增长7.1%",
+          "source": "澎湃新闻",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1tdjZsYkYwRUlPMWVhN2VINzFoMThaYlkzdU1TOHBWQnFmMHhjVkNGUlh1S052NmV0Mmw5dmNuY09lbllTMlgxM1BGV0FUc20xT1J4Rzh6dmw1SzhVVlE?oc=5",
+          "published_at": "2026-08-20T14:54+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "属于儿童与青少年的重要本周新事件。"
     },
     {
       "event_id": "evt_ceb98e5dff6d8c",
@@ -327,19 +327,26 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏儿童篮球鞋成为小篮球总决赛指定战靴，体现儿童专业运动装备的赛事营销价值。"
+      "editorial_reason": "安踏儿童篮球鞋成为小篮球总决赛指定战靴，体现专业赛事对儿童运动品牌背书的重要性。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "运动品牌中报分化：增长引擎转向童装与海外",
-      "analysis": "本周中报显示，李宁营收微增2.8%，361度增长8%，森马增长9%且童装增长12%。361度跨境电商增长140%，海外市场成为新增长点。森马童装业务增速高于整体，显示童装赛道韧性。行业整体增速放缓，但细分领域如童装和海外市场仍有结构性机会，品牌需在质量与规模间平衡。",
+      "headline": "运动品牌中报分化：稳健与高增并存",
+      "analysis": "本周多家运动品牌发布中报，呈现明显分化。李宁营收微增2.8%，毛利率提升至50.9%，强调经营质量而非规模增长；361度营收增8%，跨境电商增140%，海外市场成为新引擎；亚玛芬净利增78%，始祖鸟恢复净开店并上调指引，高端户外需求强劲。行业整体社零增速放缓，但细分赛道如户外、跨境电商仍有高增长机会。",
       "event_ids": [
+        "evt_5ae2ba50be7f0b",
         "evt_acf7c5c9e3ddd9",
-        "evt_f8c7e9a9179a71",
-        "evt_5ae2ba50be7f0b"
+        "evt_122197085242e7"
       ],
       "evidence": [
+        {
+          "event_id": "evt_5ae2ba50be7f0b",
+          "title": "李宁上半年营收微增2.8%至152.4亿元 毛利率提升至50.9%",
+          "source": "亿邦动力",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9XanhnRnp2NFpHUl9YVG1Qc2UzNHhMRDZXWElnbjYxWTVyZlBVTnlralpQQ1ZVelo3QXlZQzh6eEFIMTNtSTBMNGdEdUVjOUlISEpTMjNB?oc=5",
+          "published_date": "2026-08-21"
+        },
         {
           "event_id": "evt_acf7c5c9e3ddd9",
           "title": "361度上半年营收61.6亿元 跨境电商业务同比增长140%",
@@ -348,29 +355,30 @@
           "published_date": "2026-08-18"
         },
         {
+          "event_id": "evt_122197085242e7",
+          "title": "亚玛芬上半年净利2.72亿美元增78%：中国市场始祖鸟恢复净开店，再次上调年度业绩指引",
+          "source": "澎湃新闻",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE90OHcxZjRPOFdqOXdZWVpENHlkMWRCY29ZQTRVTDVVZlYzcGZST25RTHVEVFVRc01kZzdVWWlTU2lfT0szdUFFNEVjbzIwZ3BhWW0xZGtwZVR1UlkwLWc?oc=5",
+          "published_date": "2026-08-19"
+        }
+      ]
+    },
+    {
+      "headline": "童装赛道：专业化和场景化成为破局关键",
+      "analysis": "童装市场呈现新动向：森马童装业务增长12%，成为集团增长引擎；安踏儿童通过赞助小篮球赛事强化专业形象；迪桑特儿童从专业运动切入，探索高端童装差异化。这些案例表明，童装竞争已从大众休闲转向专业运动场景，品牌需通过赛事背书、专业产品线建立壁垒。",
+      "event_ids": [
+        "evt_f8c7e9a9179a71",
+        "evt_ceb98e5dff6d8c",
+        "evt_8cdfde38246e19"
+      ],
+      "evidence": [
+        {
           "event_id": "evt_f8c7e9a9179a71",
           "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
           "source": "华丽志",
           "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
           "published_date": "2026-08-20"
         },
-        {
-          "event_id": "evt_5ae2ba50be7f0b",
-          "title": "李宁上半年营收微增2.8%至152.4亿元 毛利率提升至50.9%",
-          "source": "亿邦动力",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9XanhnRnp2NFpHUl9YVG1Qc2UzNHhMRDZXWElnbjYxWTVyZlBVTnlralpQQ1ZVelo3QXlZQzh6eEFIMTNtSTBMNGdEdUVjOUlISEpTMjNB?oc=5",
-          "published_date": "2026-08-21"
-        }
-      ]
-    },
-    {
-      "headline": "儿童运动装备专业化趋势加速",
-      "analysis": "安踏儿童篮球鞋成为小篮球总决赛官方指定战靴，迪桑特儿童从专业运动切入童装，均显示儿童运动装备正走向专业化、赛事化。这要求品牌在产品功能、科技含量和赛事背书上下功夫，而非仅依赖卡通IP。专业运动品牌进入童装市场，将加剧竞争，但也提升行业标准。",
-      "event_ids": [
-        "evt_ceb98e5dff6d8c",
-        "evt_8cdfde38246e19"
-      ],
-      "evidence": [
         {
           "event_id": "evt_ceb98e5dff6d8c",
           "title": "安踏儿童星火X篮球鞋成2026小篮球全国总决赛官方指定战靴",
@@ -447,10 +455,88 @@
           "published_date": "2026-08-20"
         }
       ],
-      "editorial_reason": "Nike Pegasus Plus 2跑鞋发布，体现成人跑鞋技术趋势，可参考其功能设计用于儿童产品开发。"
+      "editorial_reason": "Nike Pegasus Plus 2作为节奏跑训练鞋，体现成人跑鞋技术趋势，可参考其产品定位和功能设计。"
     }
   ],
   "competitor_channel": [
+    {
+      "event_id": "evt_0ac4ed4c98cd5f",
+      "title": "李宁2026中报：营收增长2.8%达152.4亿，稳健经营，积极布局运动资源",
+      "category": "品牌与公司",
+      "event_family": "financial_results",
+      "reporting_period": "",
+      "brands": [
+        "李宁"
+      ],
+      "source": "界面新闻",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0zU3dPbU5HWFJIeWdhLTRHajFhYVZjUTVIUzFRRG1BQ216V3hrUHNMdUdNbHVTZHI2Z2NrWW1MVVVIMVRybzMwOW1NaF9uU3A4WXZ1WjhQNkg?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0zU3dPbU5HWFJIeWdhLTRHajFhYVZjUTVIUzFRRG1BQ216V3hrUHNMdUdNbHVTZHI2Z2NrWW1MVVVIMVRybzMwOW1NaF9uU3A4WXZ1WjhQNkg?oc=5",
+      "published_at": "2026-08-21T10:28+08:00",
+      "published_date": "2026-08-21",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 58,
+      "selection_score": 79,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_0ac4ed4c98cd5f"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_6c43e0b870895b",
+          "title": "李宁2026中报：营收增长2.8%达152.4亿，稳健经营，积极布局运动资源",
+          "source": "界面新闻",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0zU3dPbU5HWFJIeWdhLTRHajFhYVZjUTVIUzFRRG1BQ216V3hrUHNMdUdNbHVTZHI2Z2NrWW1MVVVIMVRybzMwOW1NaF9uU3A4WXZ1WjhQNkg?oc=5",
+          "published_at": "2026-08-21T10:28+08:00",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "event_id": "evt_c6f08f8cc1f57c",
+      "title": "李宁2026年中报：营收稳增2.8%，战略定力锚定长期价值",
+      "category": "品牌与公司",
+      "event_family": "financial_results",
+      "reporting_period": "",
+      "brands": [
+        "李宁"
+      ],
+      "source": "每日经济新闻",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9hLWhaQ25IVUdFMDBnZmdJSnBpMTFvUzR4TVdZem5Hd1ZiRlVtWi1CRWlFTWxkNTBNZkY5Qkl0dUJOakpwak1iaVNtdmJiNzUyb0hZWjl2bGk0bGxzc2ZiVkFxRlNwQQ?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9hLWhaQ25IVUdFMDBnZmdJSnBpMTFvUzR4TVdZem5Hd1ZiRlVtWi1CRWlFTWxkNTBNZkY5Qkl0dUJOakpwak1iaVNtdmJiNzUyb0hZWjl2bGk0bGxzc2ZiVkFxRlNwQQ?oc=5",
+      "published_at": "2026-08-21T21:10+08:00",
+      "published_date": "2026-08-21",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 52,
+      "selection_score": 69,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_c6f08f8cc1f57c"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_a1a04e061eaecb",
+          "title": "李宁2026年中报：营收稳增2.8%，战略定力锚定长期价值",
+          "source": "每日经济新闻",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9hLWhaQ25IVUdFMDBnZmdJSnBpMTFvUzR4TVdZem5Hd1ZiRlVtWi1CRWlFTWxkNTBNZkY5Qkl0dUJOakpwak1iaVNtdmJiNzUyb0hZWjl2bGk0bGxzc2ZiVkFxRlNwQQ?oc=5",
+          "published_at": "2026-08-21T21:10+08:00",
+          "summary": ""
+        }
+      ]
+    },
     {
       "event_id": "evt_62aab9d3ca50c9",
       "title": "亚瑟士集团上半年营收同比净增长22%，大中华区增长17.6%",
@@ -486,6 +572,122 @@
           "is_official": false,
           "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE0yOGgxNTF0akdjTndFbnlQTm5jbkh2NmtRZkQ5WGJVdklNZHBvblEzVEQ3bTdTRHZ3ZUhzTTdjQ2I?oc=5",
           "published_at": "2026-08-18T20:52+08:00",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "event_id": "evt_e0f2bd00f4294e",
+      "title": "亚玛芬体育二季度全球营收增长32%，大中华区增长35.5%",
+      "category": "品牌与公司",
+      "event_family": "financial_results",
+      "reporting_period": "2026_q2",
+      "brands": [],
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9RVUVjb3YyLTRiUHlYTkppNERxbzIzQXpYOGJITlBOem5oenZkRkdveWpkTWhvQ3JZSGgxX0E5VHM?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9RVUVjb3YyLTRiUHlYTkppNERxbzIzQXpYOGJITlBOem5oenZkRkdveWpkTWhvQ3JZSGgxX0E5VHM?oc=5",
+      "published_at": "2026-08-19T10:09+08:00",
+      "published_date": "2026-08-19",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 46,
+      "selection_score": 63,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_e0f2bd00f4294e"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_17aa79137e38ea",
+          "title": "亚玛芬体育二季度全球营收增长32%，大中华区增长35.5%",
+          "source": "华丽志",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9RVUVjb3YyLTRiUHlYTkppNERxbzIzQXpYOGJITlBOem5oenZkRkdveWpkTWhvQ3JZSGgxX0E5VHM?oc=5",
+          "published_at": "2026-08-19T10:09+08:00",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "event_id": "evt_32e53955cb9ea2",
+      "title": "安踏前CEO徐阳高空官宣离职：因家人留学，陪妻儿迁居美国",
+      "category": "品牌与公司",
+      "event_family": "management",
+      "reporting_period": "",
+      "brands": [
+        "安踏"
+      ],
+      "source": "手机新浪网",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNjNaTUtKVWQ4ZTlRa1hsWnBhMjVFLW5FcUt0UTU0MHdFdnJxVXpXV0gtcktYWExhTUlrRlljb3l0YjZCbU40ZVozRUZxdndwLVRwX2JkX3lzVV9tYXBVMGt6LTg1V3oySTQxS29MVWh5R3NvNTdaVDlFNFVVWGtPXzZDSQ?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNjNaTUtKVWQ4ZTlRa1hsWnBhMjVFLW5FcUt0UTU0MHdFdnJxVXpXV0gtcktYWExhTUlrRlljb3l0YjZCbU40ZVozRUZxdndwLVRwX2JkX3lzVV9tYXBVMGt6LTg1V3oySTQxS29MVWh5R3NvNTdaVDlFNFVVWGtPXzZDSQ?oc=5",
+      "published_at": "2026-08-23T02:18+08:00",
+      "published_date": "2026-08-23",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 44,
+      "selection_score": 56,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_32e53955cb9ea2"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_f2ebe83e18fa7a",
+          "title": "安踏前CEO徐阳高空官宣离职：因家人留学，陪妻儿迁居美国",
+          "source": "手机新浪网",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNjNaTUtKVWQ4ZTlRa1hsWnBhMjVFLW5FcUt0UTU0MHdFdnJxVXpXV0gtcktYWExhTUlrRlljb3l0YjZCbU40ZVozRUZxdndwLVRwX2JkX3lzVV9tYXBVMGt6LTg1V3oySTQxS29MVWh5R3NvNTdaVDlFNFVVWGtPXzZDSQ?oc=5",
+          "published_at": "2026-08-23T02:18+08:00",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "event_id": "evt_f8cb5d71be4172",
+      "title": "始祖鸟与萨洛蒙增长强劲，亚玛芬体育年内第二次上调业绩预期",
+      "category": "品牌与公司",
+      "event_family": "financial_results",
+      "reporting_period": "",
+      "brands": [
+        "Salomon",
+        "始祖鸟"
+      ],
+      "source": "时尚商业网",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9TTGhNN0gtZ28zMi1rUzgtSFVObXhLUTlFTHRTWXhoc0c1YlcyTEp0VTZTaTVObHBwc1N6SlJ2czF1RW0zbVJ2NXZ1NzhRTXI0eDhDcFFnbjA?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9TTGhNN0gtZ28zMi1rUzgtSFVObXhLUTlFTHRTWXhoc0c1YlcyTEp0VTZTaTVObHBwc1N6SlJ2czF1RW0zbVJ2NXZ1NzhRTXI0eDhDcFFnbjA?oc=5",
+      "published_at": "2026-08-19T14:02+08:00",
+      "published_date": "2026-08-19",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 44,
+      "selection_score": 56,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_f8cb5d71be4172"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_1efc961ec39d5a",
+          "title": "始祖鸟与萨洛蒙增长强劲，亚玛芬体育年内第二次上调业绩预期",
+          "source": "时尚商业网",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9TTGhNN0gtZ28zMi1rUzgtSFVObXhLUTlFTHRTWXhoc0c1YlcyTEp0VTZTaTVObHBwc1N6SlJ2czF1RW0zbVJ2NXZ1NzhRTXI0eDhDcFFnbjA?oc=5",
+          "published_at": "2026-08-19T14:02+08:00",
           "summary": ""
         }
       ]
@@ -530,26 +732,63 @@
           "summary": ""
         }
       ]
+    },
+    {
+      "event_id": "evt_24ed2d7685b517",
+      "title": "“巴拉巴拉”有魔法，童装救森马？",
+      "category": "儿童与青少年",
+      "event_family": "industry_event",
+      "reporting_period": "",
+      "brands": [
+        "巴拉巴拉"
+      ],
+      "source": "新华网",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZjAzanBEQXVGalU0QnlyY1BLTFpQem5vSzVNaDdmMHBFR0dZVC1nZzBqMDdQeDJDRkExQnJxb2NxMndZMmcxajhndjNoWTNCeUp2UkpsLXJjY0c3NHNuR2szTGZ1RzVyakRQUHFGYThlR2xnSi1OUnAxSnJ1d2FWZA?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZjAzanBEQXVGalU0QnlyY1BLTFpQem5vSzVNaDdmMHBFR0dZVC1nZzBqMDdQeDJDRkExQnJxb2NxMndZMmcxajhndjNoWTNCeUp2UkpsLXJjY0c3NHNuR2szTGZ1RzVyakRQUHFGYThlR2xnSi1OUnAxSnJ1d2FWZA?oc=5",
+      "published_at": "2026-08-19T09:21+08:00",
+      "published_date": "2026-08-19",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 45,
+      "selection_score": 68,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_24ed2d7685b517"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_6fcdc874cacdd7",
+          "title": "“巴拉巴拉”有魔法，童装救森马？",
+          "source": "新华网",
+          "source_tier": "tier_1",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZjAzanBEQXVGalU0QnlyY1BLTFpQem5vSzVNaDdmMHBFR0dZVC1nZzBqMDdQeDJDRkExQnJxb2NxMndZMmcxajhndjNoWTNCeUp2UkpsLXJjY0c3NHNuR2szTGZ1RzVyakRQUHFGYThlR2xnSi1OUnAxSnJ1d2FWZA?oc=5",
+          "published_at": "2026-08-19T09:21+08:00",
+          "summary": ""
+        }
+      ]
     }
   ],
   "watchlist": [
     {
-      "title": "特步全场景跑步新品市场反响",
+      "title": "361度海外扩张对儿童业务的带动",
       "event_ids": [
-        "evt_098f275f84d417",
-        "evt_3b0af8865537b0"
+        "evt_acf7c5c9e3ddd9"
       ],
       "product_ids": [],
-      "reason": "特步发布全场景跑步新品，关注其产品线布局及对儿童跑步市场的潜在延伸。"
+      "reason": "关注361度跨境电商高增长是否延伸至儿童产品线，以及海外市场对儿童业务的具体布局。"
     },
     {
-      "title": "亚玛芬上调指引后大中华区表现",
+      "title": "安踏儿童赛事营销效果",
       "event_ids": [
-        "evt_122197085242e7",
-        "evt_e0f2bd00f4294e"
+        "evt_ceb98e5dff6d8c"
       ],
       "product_ids": [],
-      "reason": "亚玛芬连续上调业绩指引，关注始祖鸟、萨洛蒙在高端市场的持续增长动力。"
+      "reason": "观察安踏儿童篮球鞋在赛事后的市场反馈和销量表现，评估专业赛事对儿童品牌的赋能效果。"
     }
   ],
   "tracking": {
@@ -632,55 +871,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "361度中报显示跨境电商增长140%，海外拓展成效显著，对儿童事业部有直接参考价值。"
-      },
-      {
-        "event_id": "evt_f8c7e9a9179a71",
-        "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
-        "category": "儿童与青少年",
-        "event_family": "financial_results",
-        "reporting_period": "2026_h1",
-        "brands": [],
-        "source": "华丽志",
-        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
-        "published_at": "2026-08-20T20:51+08:00",
-        "published_date": "2026-08-20",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 2,
-        "editorial_score": 61,
-        "selection_score": 93,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_f8c7e9a9179a71"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_3fc02f376532ba",
-            "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
-            "source": "华丽志",
-            "source_tier": "tier_2",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
-            "published_at": "2026-08-20T20:51+08:00",
-            "summary": ""
-          },
-          {
-            "item_id": "src_41c0583ce7e655",
-            "title": "QuestMobile：2026年上半年中国互联网广告市场规模达3853.4亿元，同比增长7.1%",
-            "source": "澎湃新闻",
-            "source_tier": "tier_2",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1tdjZsYkYwRUlPMWVhN2VINzFoMThaYlkzdU1TOHBWQnFmMHhjVkNGUlh1S052NmV0Mmw5dmNuY09lbllTMlgxM1BGV0FUc20xT1J4Rzh6dmw1SzhVVlE?oc=5",
-            "published_at": "2026-08-20T14:54+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "森马童装业务增长12%，印证童装市场韧性，为儿童品牌提供增长参照。"
+        "editorial_reason": "361度上半年营收61.6亿元增8%，跨境电商增140%，海外扩张显著，对儿童事业部有直接参考价值。"
       },
       {
         "event_id": "evt_5ae2ba50be7f0b",
@@ -771,7 +962,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "李宁中报营收微增，强调经营质量，反映行业整体增速放缓，需关注风险控制。"
+        "editorial_reason": "李宁上半年营收微增2.8%，毛利率提升至50.9%，体现行业龙头在压力下的稳健经营策略。"
       },
       {
         "event_id": "evt_122197085242e7",
@@ -822,7 +1013,55 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "亚玛芬上调业绩指引，始祖鸟、萨洛蒙强劲增长，显示高端户外和专业运动市场活力。"
+        "editorial_reason": "亚玛芬净利增78%，始祖鸟恢复净开店并上调指引，显示高端户外品牌在中国市场的强劲增长。"
+      },
+      {
+        "event_id": "evt_f8c7e9a9179a71",
+        "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
+        "category": "儿童与青少年",
+        "event_family": "financial_results",
+        "reporting_period": "2026_h1",
+        "brands": [],
+        "source": "华丽志",
+        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
+        "published_at": "2026-08-20T20:51+08:00",
+        "published_date": "2026-08-20",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 2,
+        "editorial_score": 61,
+        "selection_score": 93,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_f8c7e9a9179a71"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_3fc02f376532ba",
+            "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
+            "source": "华丽志",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
+            "published_at": "2026-08-20T20:51+08:00",
+            "summary": ""
+          },
+          {
+            "item_id": "src_41c0583ce7e655",
+            "title": "QuestMobile：2026年上半年中国互联网广告市场规模达3853.4亿元，同比增长7.1%",
+            "source": "澎湃新闻",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1tdjZsYkYwRUlPMWVhN2VINzFoMThaYlkzdU1TOHBWQnFmMHhjVkNGUlh1S052NmV0Mmw5dmNuY09lbllTMlgxM1BGV0FUc20xT1J4Rzh6dmw1SzhVVlE?oc=5",
+            "published_at": "2026-08-20T14:54+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "属于儿童与青少年的重要本周新事件。"
       },
       {
         "event_id": "evt_ceb98e5dff6d8c",
@@ -863,7 +1102,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏儿童篮球鞋成为小篮球总决赛指定战靴，体现儿童专业运动装备的赛事营销价值。"
+        "editorial_reason": "安踏儿童篮球鞋成为小篮球总决赛指定战靴，体现专业赛事对儿童运动品牌背书的重要性。"
       }
     ],
     "follow_up_selected": [],
@@ -1012,22 +1251,6 @@
     },
     {
       "type": "event",
-      "id": "evt_f8c7e9a9179a71",
-      "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
-      "source": "华丽志",
-      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
-      "published_date": "2026-08-20"
-    },
-    {
-      "type": "event_evidence",
-      "id": "src_41c0583ce7e655",
-      "title": "QuestMobile：2026年上半年中国互联网广告市场规模达3853.4亿元，同比增长7.1%",
-      "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1tdjZsYkYwRUlPMWVhN2VINzFoMThaYlkzdU1TOHBWQnFmMHhjVkNGUlh1S052NmV0Mmw5dmNuY09lbllTMlgxM1BGV0FUc20xT1J4Rzh6dmw1SzhVVlE?oc=5",
-      "published_date": "2026-08-20"
-    },
-    {
-      "type": "event",
       "id": "evt_5ae2ba50be7f0b",
       "title": "李宁上半年营收微增2.8%至152.4亿元 毛利率提升至50.9%",
       "source": "亿邦动力",
@@ -1092,10 +1315,42 @@
     },
     {
       "type": "event",
+      "id": "evt_f8c7e9a9179a71",
+      "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
+      "published_date": "2026-08-20"
+    },
+    {
+      "type": "event_evidence",
+      "id": "src_41c0583ce7e655",
+      "title": "QuestMobile：2026年上半年中国互联网广告市场规模达3853.4亿元，同比增长7.1%",
+      "source": "澎湃新闻",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1tdjZsYkYwRUlPMWVhN2VINzFoMThaYlkzdU1TOHBWQnFmMHhjVkNGUlh1S052NmV0Mmw5dmNuY09lbllTMlgxM1BGV0FUc20xT1J4Rzh6dmw1SzhVVlE?oc=5",
+      "published_date": "2026-08-20"
+    },
+    {
+      "type": "event",
       "id": "evt_ceb98e5dff6d8c",
       "title": "安踏儿童星火X篮球鞋成2026小篮球全国总决赛官方指定战靴",
       "source": "新浪财经",
       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZDA4UjFZb2NfY0ptVE0xa0FwNTVpSTBiQXAzMDFRNmZiWU1wbGsySElROXhfOFZpNUE1WEZ0OTE2akhNUWQ1bHlRZW8tNUp2TFBrUWdaZjVpcmxPRWdDalJ3S2RCZlpNcnk4V1A4THU4bUMwaEpPbkR5TUVmek13MjRIT0NBSGtZbEE1YVVBQnR1Tnl0RUQyVnZhYVJUWl9NNnFxcGw3U21CSXlSeWJweDR2Z3FFcS00T25yTEhudmpsbmpmRlI5QWZBMEZvcmtzSWc?oc=5",
+      "published_date": "2026-08-21"
+    },
+    {
+      "type": "event",
+      "id": "evt_0ac4ed4c98cd5f",
+      "title": "李宁2026中报：营收增长2.8%达152.4亿，稳健经营，积极布局运动资源",
+      "source": "界面新闻",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0zU3dPbU5HWFJIeWdhLTRHajFhYVZjUTVIUzFRRG1BQ216V3hrUHNMdUdNbHVTZHI2Z2NrWW1MVVVIMVRybzMwOW1NaF9uU3A4WXZ1WjhQNkg?oc=5",
+      "published_date": "2026-08-21"
+    },
+    {
+      "type": "event",
+      "id": "evt_c6f08f8cc1f57c",
+      "title": "李宁2026年中报：营收稳增2.8%，战略定力锚定长期价值",
+      "source": "每日经济新闻",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9hLWhaQ25IVUdFMDBnZmdJSnBpMTFvUzR4TVdZem5Hd1ZiRlVtWi1CRWlFTWxkNTBNZkY5Qkl0dUJOakpwak1iaVNtdmJiNzUyb0hZWjl2bGk0bGxzc2ZiVkFxRlNwQQ?oc=5",
       "published_date": "2026-08-21"
     },
     {
@@ -1108,11 +1363,43 @@
     },
     {
       "type": "event",
+      "id": "evt_e0f2bd00f4294e",
+      "title": "亚玛芬体育二季度全球营收增长32%，大中华区增长35.5%",
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9RVUVjb3YyLTRiUHlYTkppNERxbzIzQXpYOGJITlBOem5oenZkRkdveWpkTWhvQ3JZSGgxX0E5VHM?oc=5",
+      "published_date": "2026-08-19"
+    },
+    {
+      "type": "event",
+      "id": "evt_32e53955cb9ea2",
+      "title": "安踏前CEO徐阳高空官宣离职：因家人留学，陪妻儿迁居美国",
+      "source": "手机新浪网",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNjNaTUtKVWQ4ZTlRa1hsWnBhMjVFLW5FcUt0UTU0MHdFdnJxVXpXV0gtcktYWExhTUlrRlljb3l0YjZCbU40ZVozRUZxdndwLVRwX2JkX3lzVV9tYXBVMGt6LTg1V3oySTQxS29MVWh5R3NvNTdaVDlFNFVVWGtPXzZDSQ?oc=5",
+      "published_date": "2026-08-23"
+    },
+    {
+      "type": "event",
+      "id": "evt_f8cb5d71be4172",
+      "title": "始祖鸟与萨洛蒙增长强劲，亚玛芬体育年内第二次上调业绩预期",
+      "source": "时尚商业网",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9TTGhNN0gtZ28zMi1rUzgtSFVObXhLUTlFTHRTWXhoc0c1YlcyTEp0VTZTaTVObHBwc1N6SlJ2czF1RW0zbVJ2NXZ1NzhRTXI0eDhDcFFnbjA?oc=5",
+      "published_date": "2026-08-19"
+    },
+    {
+      "type": "event",
       "id": "evt_8cdfde38246e19",
       "title": "迪桑特儿童，如何从专业运动破局童装？",
       "source": "华丽志",
       "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE81WUxBeG5tbTI5NWhrbjBBS1pjMVliQmJKSjY0eEFZbFFNallRNVFTVXNQU3Q5a21abXdocDV6SnU?oc=5",
       "published_date": "2026-08-23"
+    },
+    {
+      "type": "event",
+      "id": "evt_24ed2d7685b517",
+      "title": "“巴拉巴拉”有魔法，童装救森马？",
+      "source": "新华网",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZjAzanBEQXVGalU0QnlyY1BLTFpQem5vSzVNaDdmMHBFR0dZVC1nZzBqMDdQeDJDRkExQnJxb2NxMndZMmcxajhndjNoWTNCeUp2UkpsLXJjY0c3NHNuR2szTGZ1RzVyakRQUHFGYThlR2xnSi1OUnAxSnJ1d2FWZA?oc=5",
+      "published_date": "2026-08-19"
     },
     {
       "type": "product",
@@ -1137,7 +1424,7 @@
     "eligible_product_count": 1,
     "selected_product_count": 1,
     "conflict_count": 0,
-    "source_link_count": 19,
+    "source_link_count": 25,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {
