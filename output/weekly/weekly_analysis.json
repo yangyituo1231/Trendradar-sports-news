@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-08-27T13:24+08:00",
+  "generated_at": "2026-08-28T15:20+08:00",
   "report_window": {
     "start_date": "2026-08-17",
     "end_date": "2026-08-23",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "运动品牌中报密集发布，行业分化加剧，361度儿童业务与跨境电商增长亮眼，童装专业化和女性运动消费成为新焦点。",
-    "week_in_one_paragraph": "本周运动品牌中报密集，李宁、361度、森马、亚玛芬、亚瑟士等披露业绩，整体增速放缓但分化明显。361度营收61.6亿元增8%，跨境电商增140%；森马童装增12%；亚玛芬大中华区强劲。童装领域，迪桑特儿童专业破局、安踏儿童篮球鞋赛事背书，女性运动消费崛起，Alo等品牌抢滩。",
+    "weekly_thesis": "本周运动品牌中报密集发布，行业整体增速放缓，童装与专业运动细分领域表现分化，361度跨境电商高增长与安踏儿童赛事营销值得关注。",
+    "week_in_one_paragraph": "本周多家运动品牌发布中报，李宁营收微增2.8%，361度营收增8%且跨境电商增140%，森马童装增12%，亚玛芬净利增78%。行业整体增速放缓，但专业运动与童装细分领域仍有亮点，安踏儿童篮球鞋成为小篮球总决赛指定战靴，迪桑特儿童从专业运动破局童装。",
     "next_week_focus": [
-      "关注361度儿童业务具体数据及跨境电商对儿童产品的带动作用。",
-      "跟踪迪桑特儿童和安踏儿童后续产品布局及市场反馈。",
-      "观察女性运动品牌是否推出儿童线，以及家长消费偏好变化。",
-      "留意特步全场景跑步新品对儿童跑鞋市场的潜在影响。",
-      "关注暑期消费数据对儿童运动装备销售的提振效果。"
+      "关注361度跨境电商具体品类和区域，评估对儿童产品的借鉴意义。",
+      "跟踪安踏儿童星火X篮球鞋的销售反馈和消费者评价。",
+      "观察迪桑特儿童专业运动童装的市场策略和渠道布局。",
+      "留意李宁下半年控风险策略对行业价格和渠道的影响。",
+      "关注暑期消费数据对儿童运动消费的拉动作用。"
     ]
   },
   "key_developments": [
@@ -96,7 +96,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "361度中报显示营收61.6亿元增8%，跨境电商增140%，儿童业务相关，直接关系本部门。"
+      "editorial_reason": "361度中报显示营收增8%，跨境电商增140%，海外拓展加速，对儿童事业部有直接参考价值。"
     },
     {
       "event_id": "evt_f8c7e9a9179a71",
@@ -144,326 +144,8 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "森马集团童装业务增长12%，显示童装市场韧性，对儿童事业部有参考价值。"
+      "editorial_reason": "森马童装业务增长12%，显示童装市场仍有韧性，是儿童消费趋势的重要信号。"
     },
-    {
-      "event_id": "evt_122197085242e7",
-      "title": "亚玛芬上半年净利2.72亿美元增78%：中国市场始祖鸟恢复净开店，再次上调年度业绩指引",
-      "category": "品牌与公司",
-      "event_family": "financial_results",
-      "reporting_period": "2026_h1",
-      "brands": [
-        "始祖鸟",
-        "Salomon"
-      ],
-      "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE90OHcxZjRPOFdqOXdZWVpENHlkMWRCY29ZQTRVTDVVZlYzcGZST25RTHVEVFVRc01kZzdVWWlTU2lfT0szdUFFNEVjbzIwZ3BhWW0xZGtwZVR1UlkwLWc?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE90OHcxZjRPOFdqOXdZWVpENHlkMWRCY29ZQTRVTDVVZlYzcGZST25RTHVEVFVRc01kZzdVWWlTU2lfT0szdUFFNEVjbzIwZ3BhWW0xZGtwZVR1UlkwLWc?oc=5",
-      "published_at": "2026-08-19T08:48+08:00",
-      "published_date": "2026-08-19",
-      "status": "new",
-      "verification": "multi_source",
-      "is_official": false,
-      "source_count": 2,
-      "direct_source_count": 0,
-      "mention_count": 2,
-      "editorial_score": 58,
-      "selection_score": 85,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_122197085242e7"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_483c7a47877ec0",
-          "title": "亚玛芬上半年净利2.72亿美元增78%：中国市场始祖鸟恢复净开店，再次上调年度业绩指引",
-          "source": "澎湃新闻",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE90OHcxZjRPOFdqOXdZWVpENHlkMWRCY29ZQTRVTDVVZlYzcGZST25RTHVEVFVRc01kZzdVWWlTU2lfT0szdUFFNEVjbzIwZ3BhWW0xZGtwZVR1UlkwLWc?oc=5",
-          "published_at": "2026-08-19T08:48+08:00",
-          "summary": ""
-        },
-        {
-          "item_id": "src_96c1470a777772",
-          "title": "萨洛蒙继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
-          "source": "时代财经",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdFJRR1RMQVpCcUE4Rkg5TUlKNENtVTVabFN3MTRLSlFLOTd1X2ViaTJXYUxqVndINzJRU1JkN085VDk4TW5qY0hZdUo5dHRRTXloR2tjcWxIeU1RR2thZUhPb05pVXpNY1ZGQTVBVjZvLXNsemJselRzWHh3dzhXSElsOGdoUDJjX21vLV95Qzc?oc=5",
-          "published_at": "2026-08-20T09:28+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "亚玛芬净利增78%，始祖鸟恢复净开店，高端户外品牌增长强劲，反映消费升级趋势。"
-    },
-    {
-      "event_id": "evt_62aab9d3ca50c9",
-      "title": "亚瑟士集团上半年营收同比净增长22%，大中华区增长17.6%",
-      "category": "品牌与公司",
-      "event_family": "financial_results",
-      "reporting_period": "2026_h1",
-      "brands": [
-        "ASICS"
-      ],
-      "source": "华丽志",
-      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE0yOGgxNTF0akdjTndFbnlQTm5jbkh2NmtRZkQ5WGJVdklNZHBvblEzVEQ3bTdTRHZ3ZUhzTTdjQ2I?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE0yOGgxNTF0akdjTndFbnlQTm5jbkh2NmtRZkQ5WGJVdklNZHBvblEzVEQ3bTdTRHZ3ZUhzTTdjQ2I?oc=5",
-      "published_at": "2026-08-18T20:52+08:00",
-      "published_date": "2026-08-18",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 47,
-      "selection_score": 64,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_62aab9d3ca50c9"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_4598efb39b2272",
-          "title": "亚瑟士集团上半年营收同比净增长22%，大中华区增长17.6%",
-          "source": "华丽志",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE0yOGgxNTF0akdjTndFbnlQTm5jbkh2NmtRZkQ5WGJVdklNZHBvblEzVEQ3bTdTRHZ3ZUhzTTdjQ2I?oc=5",
-          "published_at": "2026-08-18T20:52+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "亚瑟士上半年营收增22%，大中华区增17.6%，专业运动品牌持续增长，值得关注。"
-    },
-    {
-      "event_id": "evt_8cdfde38246e19",
-      "title": "迪桑特儿童，如何从专业运动破局童装？",
-      "category": "儿童与青少年",
-      "event_family": "industry_event",
-      "reporting_period": "",
-      "brands": [
-        "迪桑特"
-      ],
-      "source": "华丽志",
-      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE81WUxBeG5tbTI5NWhrbjBBS1pjMVliQmJKSjY0eEFZbFFNallRNVFTVXNQU3Q5a21abXdocDV6SnU?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE81WUxBeG5tbTI5NWhrbjBBS1pjMVliQmJKSjY0eEFZbFFNallRNVFTVXNQU3Q5a21abXdocDV6SnU?oc=5",
-      "published_at": "2026-08-23T20:30+08:00",
-      "published_date": "2026-08-23",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 47,
-      "selection_score": 70,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_8cdfde38246e19"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_229e1a323ddeed",
-          "title": "迪桑特儿童，如何从专业运动破局童装？",
-          "source": "华丽志",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE81WUxBeG5tbTI5NWhrbjBBS1pjMVliQmJKSjY0eEFZbFFNallRNVFTVXNQU3Q5a21abXdocDV6SnU?oc=5",
-          "published_at": "2026-08-23T20:30+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "迪桑特儿童从专业运动破局童装，为儿童运动品牌提供差异化思路。"
-    },
-    {
-      "event_id": "evt_32508fcd3a1289",
-      "title": "中国女性运动健身消费崛起：ALO、NikeSKIMS抢滩“她经济”",
-      "category": "行业动态",
-      "event_family": "industry_event",
-      "reporting_period": "",
-      "brands": [
-        "Nike",
-        "Alo"
-      ],
-      "source": "第一财经",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4TjZVaUtpX2Z6SXRuZlQ3bUlNRkJmcUllN0llYnctQU5qYV9MQXB4dTljWlpRSEstamFjNm8tZkt5N2ZPcHhCZUNjbUkwZ0FxVzVv?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4TjZVaUtpX2Z6SXRuZlQ3bUlNRkJmcUllN0llYnctQU5qYV9MQXB4dTljWlpRSEstamFjNm8tZkt5N2ZPcHhCZUNjbUkwZ0FxVzVv?oc=5",
-      "published_at": "2026-08-21T04:43+08:00",
-      "published_date": "2026-08-21",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 43,
-      "selection_score": 50,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_32508fcd3a1289"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_70012ee471a165",
-          "title": "中国女性运动健身消费崛起：ALO、NikeSKIMS抢滩“她经济”",
-          "source": "第一财经",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4TjZVaUtpX2Z6SXRuZlQ3bUlNRkJmcUllN0llYnctQU5qYV9MQXB4dTljWlpRSEstamFjNm8tZkt5N2ZPcHhCZUNjbUkwZ0FxVzVv?oc=5",
-          "published_at": "2026-08-21T04:43+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "女性运动消费崛起，ALO、NikeSKIMS抢滩，可能影响儿童运动消费趋势。"
-    }
-  ],
-  "deep_dives": [
-    {
-      "headline": "运动品牌中报分化：稳健增长与高增长并存",
-      "analysis": "本周多家运动品牌发布中报，李宁营收增2.8%但管理层谨慎，361度增8%且跨境电商增140%，亚瑟士增22%。显示行业整体增速放缓，但细分领域如跑步、户外仍有高增长。361度在儿童和电商领域表现突出，对儿童事业部有直接借鉴意义。",
-      "event_ids": [
-        "evt_5ae2ba50be7f0b",
-        "evt_acf7c5c9e3ddd9",
-        "evt_62aab9d3ca50c9"
-      ],
-      "evidence": [
-        {
-          "event_id": "evt_5ae2ba50be7f0b",
-          "title": "李宁上半年营收微增2.8%至152.4亿元 毛利率提升至50.9%",
-          "source": "亿邦动力",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9XanhnRnp2NFpHUl9YVG1Qc2UzNHhMRDZXWElnbjYxWTVyZlBVTnlralpQQ1ZVelo3QXlZQzh6eEFIMTNtSTBMNGdEdUVjOUlISEpTMjNB?oc=5",
-          "published_date": "2026-08-21"
-        },
-        {
-          "event_id": "evt_acf7c5c9e3ddd9",
-          "title": "361度上半年营收61.6亿元 跨境电商业务同比增长140%",
-          "source": "亿邦动力",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB3eExfcUV0Z29VR2N6c01wQV85TkNvcEw2NEt1eDBocEVUcDJBQW9ieTJnc2tfMnFOamtyUFNKWTBwcUJRU0xEU0t6b0dHbzNINmhWclpn?oc=5",
-          "published_date": "2026-08-18"
-        },
-        {
-          "event_id": "evt_62aab9d3ca50c9",
-          "title": "亚瑟士集团上半年营收同比净增长22%，大中华区增长17.6%",
-          "source": "华丽志",
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE0yOGgxNTF0akdjTndFbnlQTm5jbkh2NmtRZkQ5WGJVdklNZHBvblEzVEQ3bTdTRHZ3ZUhzTTdjQ2I?oc=5",
-          "published_date": "2026-08-18"
-        }
-      ]
-    },
-    {
-      "headline": "童装市场专业化与赛事营销趋势",
-      "analysis": "迪桑特儿童以专业运动切入童装，安踏儿童通过篮球赛事背书，森马童装增长12%。童装市场正从大众化向专业化、运动化升级，赛事营销成为建立品牌专业形象的关键手段。",
-      "event_ids": [
-        "evt_8cdfde38246e19",
-        "evt_ceb98e5dff6d8c",
-        "evt_f8c7e9a9179a71"
-      ],
-      "evidence": [
-        {
-          "event_id": "evt_8cdfde38246e19",
-          "title": "迪桑特儿童，如何从专业运动破局童装？",
-          "source": "华丽志",
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE81WUxBeG5tbTI5NWhrbjBBS1pjMVliQmJKSjY0eEFZbFFNallRNVFTVXNQU3Q5a21abXdocDV6SnU?oc=5",
-          "published_date": "2026-08-23"
-        },
-        {
-          "event_id": "evt_ceb98e5dff6d8c",
-          "title": "安踏儿童星火X篮球鞋成2026小篮球全国总决赛官方指定战靴",
-          "source": "新浪财经",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZDA4UjFZb2NfY0ptVE0xa0FwNTVpSTBiQXAzMDFRNmZiWU1wbGsySElROXhfOFZpNUE1WEZ0OTE2akhNUWQ1bHlRZW8tNUp2TFBrUWdaZjVpcmxPRWdDalJ3S2RCZlpNcnk4V1A4THU4bUMwaEpPbkR5TUVmek13MjRIT0NBSGtZbEE1YVVBQnR1Tnl0RUQyVnZhYVJUWl9NNnFxcGw3U21CSXlSeWJweDR2Z3FFcS00T25yTEhudmpsbmpmRlI5QWZBMEZvcmtzSWc?oc=5",
-          "published_date": "2026-08-21"
-        },
-        {
-          "event_id": "evt_f8c7e9a9179a71",
-          "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
-          "source": "华丽志",
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
-          "published_date": "2026-08-20"
-        }
-      ]
-    },
-    {
-      "headline": "女性运动消费崛起对儿童市场的启示",
-      "analysis": "女性运动消费快速增长，ALO、NikeSKIMS等品牌抢滩，反映运动消费细分化和个性化趋势。这一趋势可能延伸至儿童市场，家长更注重儿童运动装备的专业性和时尚感，为儿童运动品牌提供新机会。",
-      "event_ids": [
-        "evt_32508fcd3a1289"
-      ],
-      "evidence": [
-        {
-          "event_id": "evt_32508fcd3a1289",
-          "title": "中国女性运动健身消费崛起：ALO、NikeSKIMS抢滩“她经济”",
-          "source": "第一财经",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4TjZVaUtpX2Z6SXRuZlQ3bUlNRkJmcUllN0llYnctQU5qYV9MQXB4dTljWlpRSEstamFjNm8tZkt5N2ZPcHhCZUNjbUkwZ0FxVzVv?oc=5",
-          "published_date": "2026-08-21"
-        }
-      ]
-    }
-  ],
-  "product_radar": [
-    {
-      "product_id": "prd_e32369a32cf35a",
-      "brand": "Nike",
-      "product_name": "Pegasus",
-      "model_code": "",
-      "category": "跑鞋",
-      "audience": "成人/通用",
-      "scenarios": [
-        "训练健身",
-        "城市通勤"
-      ],
-      "release_date": "",
-      "release_date_basis": "not_disclosed",
-      "price": {
-        "value": null,
-        "currency": "",
-        "display": "",
-        "basis": "not_disclosed"
-      },
-      "technologies": [],
-      "materials": [],
-      "source": "About Nike",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNmdJdFVVU2kwTFVBcFNTLUhBQU94bkh2OTZ2clVMaW51b09IZWg2RkxkSjFxOEZDdl9XLXpUNzE4ZGktd2lqYVpXbWtVdnNqekk2NGg2MEFqNHc5UXMyYlZ6WWlwdEFreW12UHp0b3BUQjloNERsdHJpbl9nZi1vTHNqUFJNbGF3NmgtRmVfcU1jWG0yaTNzSENNUWN1M2ZEMzlqa0NCZzg4NjZzc1dsMjFUeFFiWnhablh3TU5zTzk4cTBuTkdhd3AtQlVNUTRaVmc?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNmdJdFVVU2kwTFVBcFNTLUhBQU94bkh2OTZ2clVMaW51b09IZWg2RkxkSjFxOEZDdl9XLXpUNzE4ZGktd2lqYVpXbWtVdnNqekk2NGg2MEFqNHc5UXMyYlZ6WWlwdEFreW12UHp0b3BUQjloNERsdHJpbl9nZi1vTHNqUFJNbGF3NmgtRmVfcU1jWG0yaTNzSENNUWN1M2ZEMzlqa0NCZzg4NjZzc1dsMjFUeFFiWnhablh3TU5zTzk4cTBuTkdhd3AtQlVNUTRaVmc?oc=5",
-      "official_url": "",
-      "image_url": "",
-      "headline": "Nike 全新节奏跑训练鞋Pegasus Plus 2，助力日常畅跑和比赛日提速— NIKE, Inc.",
-      "published_at": "2026-08-20T22:18+08:00",
-      "published_date": "2026-08-20",
-      "verification": "official",
-      "verification_reason": "官方来源单篇报道确认；链接解析失败时保留Google News中转链接。",
-      "evidence_status": "media_confirmed",
-      "is_official": true,
-      "confidence_score": 58,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "credible_source_count": 0,
-      "official_evidence_count": 0,
-      "status": "new",
-      "first_seen": "2026-08-17",
-      "last_seen": "2026-08-23",
-      "evidence": {
-        "product": "Nike 全新节奏跑训练鞋Pegasus Plus 2，助力日常畅跑和比赛日提速— NIKE, Inc.",
-        "technology": "",
-        "price_or_release": "Nike 全新节奏跑训练鞋Pegasus Plus 2，助力日常畅跑和比赛日提速— NIKE, Inc."
-      },
-      "coverage": [
-        {
-          "headline": "Nike 全新节奏跑训练鞋Pegasus Plus 2，助力日常畅跑和比赛日提速— NIKE, Inc.",
-          "source": "About Nike",
-          "source_tier": "official",
-          "is_official": true,
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNmdJdFVVU2kwTFVBcFNTLUhBQU94bkh2OTZ2clVMaW51b09IZWg2RkxkSjFxOEZDdl9XLXpUNzE4ZGktd2lqYVpXbWtVdnNqekk2NGg2MEFqNHc5UXMyYlZ6WWlwdEFreW12UHp0b3BUQjloNERsdHJpbl9nZi1vTHNqUFJNbGF3NmgtRmVfcU1jWG0yaTNzSENNUWN1M2ZEMzlqa0NCZzg4NjZzc1dsMjFUeFFiWnhablh3TU5zTzk4cTBuTkdhd3AtQlVNUTRaVmc?oc=5",
-          "direct_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNmdJdFVVU2kwTFVBcFNTLUhBQU94bkh2OTZ2clVMaW51b09IZWg2RkxkSjFxOEZDdl9XLXpUNzE4ZGktd2lqYVpXbWtVdnNqekk2NGg2MEFqNHc5UXMyYlZ6WWlwdEFreW12UHp0b3BUQjloNERsdHJpbl9nZi1vTHNqUFJNbGF3NmgtRmVfcU1jWG0yaTNzSENNUWN1M2ZEMzlqa0NCZzg4NjZzc1dsMjFUeFFiWnhablh3TU5zTzk4cTBuTkdhd3AtQlVNUTRaVmc?oc=5",
-          "published_at": "2026-08-20T22:18+08:00",
-          "published_date": "2026-08-20"
-        }
-      ],
-      "editorial_reason": "Nike Pegasus Plus 2跑鞋发布，反映成人跑鞋技术趋势，可能影响儿童跑鞋设计。"
-    }
-  ],
-  "competitor_channel": [
     {
       "event_id": "evt_5ae2ba50be7f0b",
       "title": "李宁上半年营收微增2.8%至152.4亿元 毛利率提升至50.9%",
@@ -552,8 +234,231 @@
           "published_at": "2026-08-21T11:19+08:00",
           "summary": ""
         }
+      ],
+      "editorial_reason": "李宁营收微增但毛利率提升，反映行业竞争加剧，头部品牌更重经营质量，对行业策略有启示。"
+    },
+    {
+      "event_id": "evt_122197085242e7",
+      "title": "亚玛芬上半年净利2.72亿美元增78%：中国市场始祖鸟恢复净开店，再次上调年度业绩指引",
+      "category": "品牌与公司",
+      "event_family": "financial_results",
+      "reporting_period": "2026_h1",
+      "brands": [
+        "始祖鸟",
+        "Salomon"
+      ],
+      "source": "澎湃新闻",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE90OHcxZjRPOFdqOXdZWVpENHlkMWRCY29ZQTRVTDVVZlYzcGZST25RTHVEVFVRc01kZzdVWWlTU2lfT0szdUFFNEVjbzIwZ3BhWW0xZGtwZVR1UlkwLWc?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE90OHcxZjRPOFdqOXdZWVpENHlkMWRCY29ZQTRVTDVVZlYzcGZST25RTHVEVFVRc01kZzdVWWlTU2lfT0szdUFFNEVjbzIwZ3BhWW0xZGtwZVR1UlkwLWc?oc=5",
+      "published_at": "2026-08-19T08:48+08:00",
+      "published_date": "2026-08-19",
+      "status": "new",
+      "verification": "multi_source",
+      "is_official": false,
+      "source_count": 2,
+      "direct_source_count": 0,
+      "mention_count": 2,
+      "editorial_score": 58,
+      "selection_score": 85,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_122197085242e7"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_483c7a47877ec0",
+          "title": "亚玛芬上半年净利2.72亿美元增78%：中国市场始祖鸟恢复净开店，再次上调年度业绩指引",
+          "source": "澎湃新闻",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE90OHcxZjRPOFdqOXdZWVpENHlkMWRCY29ZQTRVTDVVZlYzcGZST25RTHVEVFVRc01kZzdVWWlTU2lfT0szdUFFNEVjbzIwZ3BhWW0xZGtwZVR1UlkwLWc?oc=5",
+          "published_at": "2026-08-19T08:48+08:00",
+          "summary": ""
+        },
+        {
+          "item_id": "src_96c1470a777772",
+          "title": "萨洛蒙继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
+          "source": "时代财经",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdFJRR1RMQVpCcUE4Rkg5TUlKNENtVTVabFN3MTRLSlFLOTd1X2ViaTJXYUxqVndINzJRU1JkN085VDk4TW5qY0hZdUo5dHRRTXloR2tjcWxIeU1RR2thZUhPb05pVXpNY1ZGQTVBVjZvLXNsemJselRzWHh3dzhXSElsOGdoUDJjX21vLV95Qzc?oc=5",
+          "published_at": "2026-08-20T09:28+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "亚玛芬净利大增78%，始祖鸟恢复净开店，高端专业运动需求强劲，影响儿童高端市场预期。"
+    },
+    {
+      "event_id": "evt_ceb98e5dff6d8c",
+      "title": "安踏儿童星火X篮球鞋成2026小篮球全国总决赛官方指定战靴",
+      "category": "儿童与青少年",
+      "event_family": "industry_event",
+      "reporting_period": "",
+      "brands": [
+        "安踏儿童",
+        "安踏"
+      ],
+      "source": "新浪财经",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZDA4UjFZb2NfY0ptVE0xa0FwNTVpSTBiQXAzMDFRNmZiWU1wbGsySElROXhfOFZpNUE1WEZ0OTE2akhNUWQ1bHlRZW8tNUp2TFBrUWdaZjVpcmxPRWdDalJ3S2RCZlpNcnk4V1A4THU4bUMwaEpPbkR5TUVmek13MjRIT0NBSGtZbEE1YVVBQnR1Tnl0RUQyVnZhYVJUWl9NNnFxcGw3U21CSXlSeWJweDR2Z3FFcS00T25yTEhudmpsbmpmRlI5QWZBMEZvcmtzSWc?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZDA4UjFZb2NfY0ptVE0xa0FwNTVpSTBiQXAzMDFRNmZiWU1wbGsySElROXhfOFZpNUE1WEZ0OTE2akhNUWQ1bHlRZW8tNUp2TFBrUWdaZjVpcmxPRWdDalJ3S2RCZlpNcnk4V1A4THU4bUMwaEpPbkR5TUVmek13MjRIT0NBSGtZbEE1YVVBQnR1Tnl0RUQyVnZhYVJUWl9NNnFxcGw3U21CSXlSeWJweDR2Z3FFcS00T25yTEhudmpsbmpmRlI5QWZBMEZvcmtzSWc?oc=5",
+      "published_at": "2026-08-21T15:55+08:00",
+      "published_date": "2026-08-21",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 44,
+      "selection_score": 67,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_ceb98e5dff6d8c"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_0fe27922e58019",
+          "title": "安踏儿童星火X篮球鞋成2026小篮球全国总决赛官方指定战靴",
+          "source": "新浪财经",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZDA4UjFZb2NfY0ptVE0xa0FwNTVpSTBiQXAzMDFRNmZiWU1wbGsySElROXhfOFZpNUE1WEZ0OTE2akhNUWQ1bHlRZW8tNUp2TFBrUWdaZjVpcmxPRWdDalJ3S2RCZlpNcnk4V1A4THU4bUMwaEpPbkR5TUVmek13MjRIT0NBSGtZbEE1YVVBQnR1Tnl0RUQyVnZhYVJUWl9NNnFxcGw3U21CSXlSeWJweDR2Z3FFcS00T25yTEhudmpsbmpmRlI5QWZBMEZvcmtzSWc?oc=5",
+          "published_at": "2026-08-21T15:55+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "安踏儿童篮球鞋成为小篮球总决赛指定战靴，体现儿童专业运动装备的赛事营销价值。"
+    }
+  ],
+  "deep_dives": [
+    {
+      "headline": "运动品牌中报分化：增速放缓与结构优化",
+      "analysis": "本周李宁、361度、亚玛芬等发布中报，营收增速差异明显：李宁仅增2.8%，361度增8%，亚玛芬净利增78%。头部品牌普遍强调经营质量而非规模，如李宁表示不追求规模增长，亚玛芬上调业绩指引。行业整体增速放缓，但专业运动与高端市场仍有增长动力，361度跨境电商增140%显示海外市场潜力。",
+      "event_ids": [
+        "evt_5ae2ba50be7f0b",
+        "evt_acf7c5c9e3ddd9",
+        "evt_122197085242e7"
+      ],
+      "evidence": [
+        {
+          "event_id": "evt_5ae2ba50be7f0b",
+          "title": "李宁上半年营收微增2.8%至152.4亿元 毛利率提升至50.9%",
+          "source": "亿邦动力",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9XanhnRnp2NFpHUl9YVG1Qc2UzNHhMRDZXWElnbjYxWTVyZlBVTnlralpQQ1ZVelo3QXlZQzh6eEFIMTNtSTBMNGdEdUVjOUlISEpTMjNB?oc=5",
+          "published_date": "2026-08-21"
+        },
+        {
+          "event_id": "evt_acf7c5c9e3ddd9",
+          "title": "361度上半年营收61.6亿元 跨境电商业务同比增长140%",
+          "source": "亿邦动力",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB3eExfcUV0Z29VR2N6c01wQV85TkNvcEw2NEt1eDBocEVUcDJBQW9ieTJnc2tfMnFOamtyUFNKWTBwcUJRU0xEU0t6b0dHbzNINmhWclpn?oc=5",
+          "published_date": "2026-08-18"
+        },
+        {
+          "event_id": "evt_122197085242e7",
+          "title": "亚玛芬上半年净利2.72亿美元增78%：中国市场始祖鸟恢复净开店，再次上调年度业绩指引",
+          "source": "澎湃新闻",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE90OHcxZjRPOFdqOXdZWVpENHlkMWRCY29ZQTRVTDVVZlYzcGZST25RTHVEVFVRc01kZzdVWWlTU2lfT0szdUFFNEVjbzIwZ3BhWW0xZGtwZVR1UlkwLWc?oc=5",
+          "published_date": "2026-08-19"
+        }
       ]
     },
+    {
+      "headline": "童装市场：专业运动与赛事营销成突破口",
+      "analysis": "森马童装增长12%显示童装市场稳健，但竞争加剧。安踏儿童通过成为小篮球总决赛指定战靴强化专业形象，迪桑特儿童从专业运动切入童装，均体现专业运动装备在儿童市场的差异化机会。赛事营销与专业背书成为童装品牌提升竞争力的关键路径。",
+      "event_ids": [
+        "evt_ceb98e5dff6d8c",
+        "evt_8cdfde38246e19",
+        "evt_f8c7e9a9179a71"
+      ],
+      "evidence": [
+        {
+          "event_id": "evt_ceb98e5dff6d8c",
+          "title": "安踏儿童星火X篮球鞋成2026小篮球全国总决赛官方指定战靴",
+          "source": "新浪财经",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZDA4UjFZb2NfY0ptVE0xa0FwNTVpSTBiQXAzMDFRNmZiWU1wbGsySElROXhfOFZpNUE1WEZ0OTE2akhNUWQ1bHlRZW8tNUp2TFBrUWdaZjVpcmxPRWdDalJ3S2RCZlpNcnk4V1A4THU4bUMwaEpPbkR5TUVmek13MjRIT0NBSGtZbEE1YVVBQnR1Tnl0RUQyVnZhYVJUWl9NNnFxcGw3U21CSXlSeWJweDR2Z3FFcS00T25yTEhudmpsbmpmRlI5QWZBMEZvcmtzSWc?oc=5",
+          "published_date": "2026-08-21"
+        },
+        {
+          "event_id": "evt_8cdfde38246e19",
+          "title": "迪桑特儿童，如何从专业运动破局童装？",
+          "source": "华丽志",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE81WUxBeG5tbTI5NWhrbjBBS1pjMVliQmJKSjY0eEFZbFFNallRNVFTVXNQU3Q5a21abXdocDV6SnU?oc=5",
+          "published_date": "2026-08-23"
+        },
+        {
+          "event_id": "evt_f8c7e9a9179a71",
+          "title": "森马集团上半年营收同比增长9%至67亿元，童装业务增长12%",
+          "source": "华丽志",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04ZXVaY29PZjlMc2ZPMlR5Vm5LYTFmMG9xYlVrVExnSzJKYWhsSFVQNURVNXlreTVQY2dLSEJFOXo?oc=5",
+          "published_date": "2026-08-20"
+        }
+      ]
+    }
+  ],
+  "product_radar": [
+    {
+      "product_id": "prd_e32369a32cf35a",
+      "brand": "Nike",
+      "product_name": "Pegasus",
+      "model_code": "",
+      "category": "跑鞋",
+      "audience": "成人/通用",
+      "scenarios": [
+        "训练健身",
+        "城市通勤"
+      ],
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "source": "About Nike",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNmdJdFVVU2kwTFVBcFNTLUhBQU94bkh2OTZ2clVMaW51b09IZWg2RkxkSjFxOEZDdl9XLXpUNzE4ZGktd2lqYVpXbWtVdnNqekk2NGg2MEFqNHc5UXMyYlZ6WWlwdEFreW12UHp0b3BUQjloNERsdHJpbl9nZi1vTHNqUFJNbGF3NmgtRmVfcU1jWG0yaTNzSENNUWN1M2ZEMzlqa0NCZzg4NjZzc1dsMjFUeFFiWnhablh3TU5zTzk4cTBuTkdhd3AtQlVNUTRaVmc?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNmdJdFVVU2kwTFVBcFNTLUhBQU94bkh2OTZ2clVMaW51b09IZWg2RkxkSjFxOEZDdl9XLXpUNzE4ZGktd2lqYVpXbWtVdnNqekk2NGg2MEFqNHc5UXMyYlZ6WWlwdEFreW12UHp0b3BUQjloNERsdHJpbl9nZi1vTHNqUFJNbGF3NmgtRmVfcU1jWG0yaTNzSENNUWN1M2ZEMzlqa0NCZzg4NjZzc1dsMjFUeFFiWnhablh3TU5zTzk4cTBuTkdhd3AtQlVNUTRaVmc?oc=5",
+      "official_url": "",
+      "image_url": "",
+      "headline": "Nike 全新节奏跑训练鞋Pegasus Plus 2，助力日常畅跑和比赛日提速— NIKE, Inc.",
+      "published_at": "2026-08-20T22:18+08:00",
+      "published_date": "2026-08-20",
+      "verification": "official",
+      "verification_reason": "官方来源单篇报道确认；链接解析失败时保留Google News中转链接。",
+      "evidence_status": "media_confirmed",
+      "is_official": true,
+      "confidence_score": 58,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "credible_source_count": 0,
+      "official_evidence_count": 0,
+      "status": "new",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-23",
+      "evidence": {
+        "product": "Nike 全新节奏跑训练鞋Pegasus Plus 2，助力日常畅跑和比赛日提速— NIKE, Inc.",
+        "technology": "",
+        "price_or_release": "Nike 全新节奏跑训练鞋Pegasus Plus 2，助力日常畅跑和比赛日提速— NIKE, Inc."
+      },
+      "coverage": [
+        {
+          "headline": "Nike 全新节奏跑训练鞋Pegasus Plus 2，助力日常畅跑和比赛日提速— NIKE, Inc.",
+          "source": "About Nike",
+          "source_tier": "official",
+          "is_official": true,
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNmdJdFVVU2kwTFVBcFNTLUhBQU94bkh2OTZ2clVMaW51b09IZWg2RkxkSjFxOEZDdl9XLXpUNzE4ZGktd2lqYVpXbWtVdnNqekk2NGg2MEFqNHc5UXMyYlZ6WWlwdEFreW12UHp0b3BUQjloNERsdHJpbl9nZi1vTHNqUFJNbGF3NmgtRmVfcU1jWG0yaTNzSENNUWN1M2ZEMzlqa0NCZzg4NjZzc1dsMjFUeFFiWnhablh3TU5zTzk4cTBuTkdhd3AtQlVNUTRaVmc?oc=5",
+          "direct_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNmdJdFVVU2kwTFVBcFNTLUhBQU94bkh2OTZ2clVMaW51b09IZWg2RkxkSjFxOEZDdl9XLXpUNzE4ZGktd2lqYVpXbWtVdnNqekk2NGg2MEFqNHc5UXMyYlZ6WWlwdEFreW12UHp0b3BUQjloNERsdHJpbl9nZi1vTHNqUFJNbGF3NmgtRmVfcU1jWG0yaTNzSENNUWN1M2ZEMzlqa0NCZzg4NjZzc1dsMjFUeFFiWnhablh3TU5zTzk4cTBuTkdhd3AtQlVNUTRaVmc?oc=5",
+          "published_at": "2026-08-20T22:18+08:00",
+          "published_date": "2026-08-20"
+        }
+      ],
+      "editorial_reason": "Nike Pegasus Plus 2跑鞋发布，作为头部品牌核心跑鞋迭代，反映成人跑鞋技术趋势，对儿童跑鞋研发有参考价值。"
+    }
+  ],
+  "competitor_channel": [
     {
       "event_id": "evt_0ac4ed4c98cd5f",
       "title": "李宁2026中报：营收增长2.8%达152.4亿，稳健经营，积极布局运动资源",
@@ -628,6 +533,45 @@
           "is_official": false,
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9hLWhaQ25IVUdFMDBnZmdJSnBpMTFvUzR4TVdZem5Hd1ZiRlVtWi1CRWlFTWxkNTBNZkY5Qkl0dUJOakpwak1iaVNtdmJiNzUyb0hZWjl2bGk0bGxzc2ZiVkFxRlNwQQ?oc=5",
           "published_at": "2026-08-21T21:10+08:00",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "event_id": "evt_62aab9d3ca50c9",
+      "title": "亚瑟士集团上半年营收同比净增长22%，大中华区增长17.6%",
+      "category": "品牌与公司",
+      "event_family": "financial_results",
+      "reporting_period": "2026_h1",
+      "brands": [
+        "ASICS"
+      ],
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE0yOGgxNTF0akdjTndFbnlQTm5jbkh2NmtRZkQ5WGJVdklNZHBvblEzVEQ3bTdTRHZ3ZUhzTTdjQ2I?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE0yOGgxNTF0akdjTndFbnlQTm5jbkh2NmtRZkQ5WGJVdklNZHBvblEzVEQ3bTdTRHZ3ZUhzTTdjQ2I?oc=5",
+      "published_at": "2026-08-18T20:52+08:00",
+      "published_date": "2026-08-18",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 47,
+      "selection_score": 64,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_62aab9d3ca50c9"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_4598efb39b2272",
+          "title": "亚瑟士集团上半年营收同比净增长22%，大中华区增长17.6%",
+          "source": "华丽志",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE0yOGgxNTF0akdjTndFbnlQTm5jbkh2NmtRZkQ5WGJVdklNZHBvblEzVEQ3bTdTRHZ3ZUhzTTdjQ2I?oc=5",
+          "published_at": "2026-08-18T20:52+08:00",
           "summary": ""
         }
       ]
@@ -751,41 +695,79 @@
   ],
   "kids_consumer": [
     {
-      "event_id": "evt_ceb98e5dff6d8c",
-      "title": "安踏儿童星火X篮球鞋成2026小篮球全国总决赛官方指定战靴",
+      "event_id": "evt_8cdfde38246e19",
+      "title": "迪桑特儿童，如何从专业运动破局童装？",
       "category": "儿童与青少年",
       "event_family": "industry_event",
       "reporting_period": "",
       "brands": [
-        "安踏儿童",
-        "安踏"
+        "迪桑特"
       ],
-      "source": "新浪财经",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZDA4UjFZb2NfY0ptVE0xa0FwNTVpSTBiQXAzMDFRNmZiWU1wbGsySElROXhfOFZpNUE1WEZ0OTE2akhNUWQ1bHlRZW8tNUp2TFBrUWdaZjVpcmxPRWdDalJ3S2RCZlpNcnk4V1A4THU4bUMwaEpPbkR5TUVmek13MjRIT0NBSGtZbEE1YVVBQnR1Tnl0RUQyVnZhYVJUWl9NNnFxcGw3U21CSXlSeWJweDR2Z3FFcS00T25yTEhudmpsbmpmRlI5QWZBMEZvcmtzSWc?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZDA4UjFZb2NfY0ptVE0xa0FwNTVpSTBiQXAzMDFRNmZiWU1wbGsySElROXhfOFZpNUE1WEZ0OTE2akhNUWQ1bHlRZW8tNUp2TFBrUWdaZjVpcmxPRWdDalJ3S2RCZlpNcnk4V1A4THU4bUMwaEpPbkR5TUVmek13MjRIT0NBSGtZbEE1YVVBQnR1Tnl0RUQyVnZhYVJUWl9NNnFxcGw3U21CSXlSeWJweDR2Z3FFcS00T25yTEhudmpsbmpmRlI5QWZBMEZvcmtzSWc?oc=5",
-      "published_at": "2026-08-21T15:55+08:00",
-      "published_date": "2026-08-21",
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE81WUxBeG5tbTI5NWhrbjBBS1pjMVliQmJKSjY0eEFZbFFNallRNVFTVXNQU3Q5a21abXdocDV6SnU?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE81WUxBeG5tbTI5NWhrbjBBS1pjMVliQmJKSjY0eEFZbFFNallRNVFTVXNQU3Q5a21abXdocDV6SnU?oc=5",
+      "published_at": "2026-08-23T20:30+08:00",
+      "published_date": "2026-08-23",
       "status": "new",
       "verification": "single_source",
       "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 44,
-      "selection_score": 67,
+      "editorial_score": 47,
+      "selection_score": 70,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_ceb98e5dff6d8c"
+        "evt_8cdfde38246e19"
       ],
       "evidence": [
         {
-          "item_id": "src_0fe27922e58019",
-          "title": "安踏儿童星火X篮球鞋成2026小篮球全国总决赛官方指定战靴",
-          "source": "新浪财经",
-          "source_tier": "tier_3",
+          "item_id": "src_229e1a323ddeed",
+          "title": "迪桑特儿童，如何从专业运动破局童装？",
+          "source": "华丽志",
+          "source_tier": "tier_2",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZDA4UjFZb2NfY0ptVE0xa0FwNTVpSTBiQXAzMDFRNmZiWU1wbGsySElROXhfOFZpNUE1WEZ0OTE2akhNUWQ1bHlRZW8tNUp2TFBrUWdaZjVpcmxPRWdDalJ3S2RCZlpNcnk4V1A4THU4bUMwaEpPbkR5TUVmek13MjRIT0NBSGtZbEE1YVVBQnR1Tnl0RUQyVnZhYVJUWl9NNnFxcGw3U21CSXlSeWJweDR2Z3FFcS00T25yTEhudmpsbmpmRlI5QWZBMEZvcmtzSWc?oc=5",
-          "published_at": "2026-08-21T15:55+08:00",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE81WUxBeG5tbTI5NWhrbjBBS1pjMVliQmJKSjY0eEFZbFFNallRNVFTVXNQU3Q5a21abXdocDV6SnU?oc=5",
+          "published_at": "2026-08-23T20:30+08:00",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "event_id": "evt_24ed2d7685b517",
+      "title": "“巴拉巴拉”有魔法，童装救森马？",
+      "category": "儿童与青少年",
+      "event_family": "industry_event",
+      "reporting_period": "",
+      "brands": [
+        "巴拉巴拉"
+      ],
+      "source": "新华网",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZjAzanBEQXVGalU0QnlyY1BLTFpQem5vSzVNaDdmMHBFR0dZVC1nZzBqMDdQeDJDRkExQnJxb2NxMndZMmcxajhndjNoWTNCeUp2UkpsLXJjY0c3NHNuR2szTGZ1RzVyakRQUHFGYThlR2xnSi1OUnAxSnJ1d2FWZA?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZjAzanBEQXVGalU0QnlyY1BLTFpQem5vSzVNaDdmMHBFR0dZVC1nZzBqMDdQeDJDRkExQnJxb2NxMndZMmcxajhndjNoWTNCeUp2UkpsLXJjY0c3NHNuR2szTGZ1RzVyakRQUHFGYThlR2xnSi1OUnAxSnJ1d2FWZA?oc=5",
+      "published_at": "2026-08-19T09:21+08:00",
+      "published_date": "2026-08-19",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 45,
+      "selection_score": 68,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_24ed2d7685b517"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_6fcdc874cacdd7",
+          "title": "“巴拉巴拉”有魔法，童装救森马？",
+          "source": "新华网",
+          "source_tier": "tier_1",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZjAzanBEQXVGalU0QnlyY1BLTFpQem5vSzVNaDdmMHBFR0dZVC1nZzBqMDdQeDJDRkExQnJxb2NxMndZMmcxajhndjNoWTNCeUp2UkpsLXJjY0c3NHNuR2szTGZ1RzVyakRQUHFGYThlR2xnSi1OUnAxSnJ1d2FWZA?oc=5",
+          "published_at": "2026-08-19T09:21+08:00",
           "summary": ""
         }
       ]
@@ -793,29 +775,20 @@
   ],
   "watchlist": [
     {
-      "title": "361度儿童业务后续表现",
+      "title": "361度跨境电商后续表现",
       "event_ids": [
         "evt_acf7c5c9e3ddd9"
       ],
       "product_ids": [],
-      "reason": "关注361度儿童业务具体数据及跨境电商对儿童产品的带动作用。"
+      "reason": "关注361度跨境电商高增长是否持续，以及海外市场对儿童产品的带动作用。"
     },
     {
-      "title": "童装专业化趋势的持续影响",
+      "title": "安踏儿童赛事营销效果",
       "event_ids": [
-        "evt_8cdfde38246e19",
         "evt_ceb98e5dff6d8c"
       ],
       "product_ids": [],
-      "reason": "观察迪桑特儿童和安踏儿童后续产品布局及市场反馈。"
-    },
-    {
-      "title": "女性运动消费对儿童市场的延伸",
-      "event_ids": [
-        "evt_32508fcd3a1289"
-      ],
-      "product_ids": [],
-      "reason": "跟踪女性运动品牌是否推出儿童线，以及家长消费偏好变化。"
+      "reason": "观察安踏儿童篮球鞋在小篮球赛事后的市场反馈，评估赛事营销对儿童品牌的影响。"
     }
   ],
   "tracking": {
@@ -898,7 +871,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "361度中报显示营收61.6亿元增8%，跨境电商增140%，儿童业务相关，直接关系本部门。"
+        "editorial_reason": "361度中报显示营收增8%，跨境电商增140%，海外拓展加速，对儿童事业部有直接参考价值。"
       },
       {
         "event_id": "evt_f8c7e9a9179a71",
@@ -946,7 +919,98 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "森马集团童装业务增长12%，显示童装市场韧性，对儿童事业部有参考价值。"
+        "editorial_reason": "森马童装业务增长12%，显示童装市场仍有韧性，是儿童消费趋势的重要信号。"
+      },
+      {
+        "event_id": "evt_5ae2ba50be7f0b",
+        "title": "李宁上半年营收微增2.8%至152.4亿元 毛利率提升至50.9%",
+        "category": "品牌与公司",
+        "event_family": "financial_results",
+        "reporting_period": "2026_h1",
+        "brands": [
+          "李宁",
+          "lululemon"
+        ],
+        "source": "亿邦动力",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9XanhnRnp2NFpHUl9YVG1Qc2UzNHhMRDZXWElnbjYxWTVyZlBVTnlralpQQ1ZVelo3QXlZQzh6eEFIMTNtSTBMNGdEdUVjOUlISEpTMjNB?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9XanhnRnp2NFpHUl9YVG1Qc2UzNHhMRDZXWElnbjYxWTVyZlBVTnlralpQQ1ZVelo3QXlZQzh6eEFIMTNtSTBMNGdEdUVjOUlISEpTMjNB?oc=5",
+        "published_at": "2026-08-21T10:46+08:00",
+        "published_date": "2026-08-21",
+        "status": "new",
+        "verification": "multi_source",
+        "is_official": false,
+        "source_count": 6,
+        "direct_source_count": 0,
+        "mention_count": 6,
+        "editorial_score": 72,
+        "selection_score": 99,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_5ae2ba50be7f0b"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_3b5b9433dbba8a",
+            "title": "李宁：下半年要控风险，“不会为了追求规模增长放弃对经营质量的追求”",
+            "source": "第一财经",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12WC1LczRBUktPTGh1NnBHcVZBZ2R5am9kdUlJeWVXT2N2XzdjYTJtbVo2TXNwUzhSN0NHOERVRFVEaHNQUk04M2g3aWtCcjFxa0l3?oc=5",
+            "published_at": "2026-08-21T17:16+08:00",
+            "summary": ""
+          },
+          {
+            "item_id": "src_03b91daf12b19f",
+            "title": "李宁上半年营收微增2.8%至152.4亿元 毛利率提升至50.9%",
+            "source": "亿邦动力",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9XanhnRnp2NFpHUl9YVG1Qc2UzNHhMRDZXWElnbjYxWTVyZlBVTnlralpQQ1ZVelo3QXlZQzh6eEFIMTNtSTBMNGdEdUVjOUlISEpTMjNB?oc=5",
+            "published_at": "2026-08-21T10:46+08:00",
+            "summary": ""
+          },
+          {
+            "item_id": "src_e887505bb770ee",
+            "title": "直击业绩会|李宁上半年营收同比增长2.8%至152.4亿元，联席CEO钱炜：审慎应对下半年市场压力",
+            "source": "东方财富",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9nQVZXdlRGZTBjS3RNVVF4YnAtTUpmaXo0QkVqd2Q3eUMtdXBTYXNBUVpER2I3dGJJMzYxX0d6dFZrY0t4Q0cxdmNFMlhFSWpMSDA2OWY1NVdoc3IyVnh3dzRfWmw?oc=5",
+            "published_at": "2026-08-22T02:15+08:00",
+            "summary": ""
+          },
+          {
+            "item_id": "src_ffa8d60a116578",
+            "title": "李宁2026上半年营收152.4亿元同比增2.8% 净利率11.9%",
+            "source": "虎嗅",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5paE8tSDRWcUhkenFtSnI1NXB4MS02dkgtV3hlY0VpNEJZck42dGpJRmlfT01lTUdiQTVoUVpTREp5R1UwYkdia3djcFpaWEZwNHc?oc=5",
+            "published_at": "2026-08-21T18:35+08:00",
+            "summary": ""
+          },
+          {
+            "item_id": "src_9312b0be3d9f3e",
+            "title": "李宁2026半年营收增2.8%达152.4亿；好想来自有品牌携手吴敏霞探秘长白山；lululemon宣布中国及亚太区新任命；汉庭旗舰店亮相｜消研所周报",
+            "source": "Moomoo",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1rVHFFczRIM01oa1g0T0hIUERRdUFzWlNSQUhuaUFJWEh0cEx2R0ZaTm5IZDZjd2hqc3UydGc4eTQ4QmtnNldOeTRyN0FNNmstdjcydUJna2lidw?oc=5",
+            "published_at": "2026-08-21T17:56+08:00",
+            "summary": ""
+          },
+          {
+            "item_id": "src_801d40b2afb908",
+            "title": "李宁2026上半年营收增长2.8%，积极布局运动资源",
+            "source": "中华网财经",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5RV1pYb1ZxVkp3VTFaaWIwV2RBRVBIdFBUSy1hWFFaaU8xS3g2RU96SXF0QTR6VS1DWVFWcm12OWR6U1BkTnU1RFZNNjlSQTI5T1dnQXBlS2hWWmpfZG5sRWYyUGwtbm9oZERVcDRBUU9iYVU?oc=5",
+            "published_at": "2026-08-21T11:19+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "李宁营收微增但毛利率提升，反映行业竞争加剧，头部品牌更重经营质量，对行业策略有启示。"
       },
       {
         "event_id": "evt_122197085242e7",
@@ -997,102 +1061,22 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "亚玛芬净利增78%，始祖鸟恢复净开店，高端户外品牌增长强劲，反映消费升级趋势。"
+        "editorial_reason": "亚玛芬净利大增78%，始祖鸟恢复净开店，高端专业运动需求强劲，影响儿童高端市场预期。"
       },
       {
-        "event_id": "evt_62aab9d3ca50c9",
-        "title": "亚瑟士集团上半年营收同比净增长22%，大中华区增长17.6%",
-        "category": "品牌与公司",
-        "event_family": "financial_results",
-        "reporting_period": "2026_h1",
-        "brands": [
-          "ASICS"
-        ],
-        "source": "华丽志",
-        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE0yOGgxNTF0akdjTndFbnlQTm5jbkh2NmtRZkQ5WGJVdklNZHBvblEzVEQ3bTdTRHZ3ZUhzTTdjQ2I?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE0yOGgxNTF0akdjTndFbnlQTm5jbkh2NmtRZkQ5WGJVdklNZHBvblEzVEQ3bTdTRHZ3ZUhzTTdjQ2I?oc=5",
-        "published_at": "2026-08-18T20:52+08:00",
-        "published_date": "2026-08-18",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 47,
-        "selection_score": 64,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_62aab9d3ca50c9"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_4598efb39b2272",
-            "title": "亚瑟士集团上半年营收同比净增长22%，大中华区增长17.6%",
-            "source": "华丽志",
-            "source_tier": "tier_2",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE0yOGgxNTF0akdjTndFbnlQTm5jbkh2NmtRZkQ5WGJVdklNZHBvblEzVEQ3bTdTRHZ3ZUhzTTdjQ2I?oc=5",
-            "published_at": "2026-08-18T20:52+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "亚瑟士上半年营收增22%，大中华区增17.6%，专业运动品牌持续增长，值得关注。"
-      },
-      {
-        "event_id": "evt_8cdfde38246e19",
-        "title": "迪桑特儿童，如何从专业运动破局童装？",
+        "event_id": "evt_ceb98e5dff6d8c",
+        "title": "安踏儿童星火X篮球鞋成2026小篮球全国总决赛官方指定战靴",
         "category": "儿童与青少年",
         "event_family": "industry_event",
         "reporting_period": "",
         "brands": [
-          "迪桑特"
+          "安踏儿童",
+          "安踏"
         ],
-        "source": "华丽志",
-        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE81WUxBeG5tbTI5NWhrbjBBS1pjMVliQmJKSjY0eEFZbFFNallRNVFTVXNQU3Q5a21abXdocDV6SnU?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE81WUxBeG5tbTI5NWhrbjBBS1pjMVliQmJKSjY0eEFZbFFNallRNVFTVXNQU3Q5a21abXdocDV6SnU?oc=5",
-        "published_at": "2026-08-23T20:30+08:00",
-        "published_date": "2026-08-23",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 47,
-        "selection_score": 70,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_8cdfde38246e19"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_229e1a323ddeed",
-            "title": "迪桑特儿童，如何从专业运动破局童装？",
-            "source": "华丽志",
-            "source_tier": "tier_2",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE81WUxBeG5tbTI5NWhrbjBBS1pjMVliQmJKSjY0eEFZbFFNallRNVFTVXNQU3Q5a21abXdocDV6SnU?oc=5",
-            "published_at": "2026-08-23T20:30+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "迪桑特儿童从专业运动破局童装，为儿童运动品牌提供差异化思路。"
-      },
-      {
-        "event_id": "evt_32508fcd3a1289",
-        "title": "中国女性运动健身消费崛起：ALO、NikeSKIMS抢滩“她经济”",
-        "category": "行业动态",
-        "event_family": "industry_event",
-        "reporting_period": "",
-        "brands": [
-          "Nike",
-          "Alo"
-        ],
-        "source": "第一财经",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4TjZVaUtpX2Z6SXRuZlQ3bUlNRkJmcUllN0llYnctQU5qYV9MQXB4dTljWlpRSEstamFjNm8tZkt5N2ZPcHhCZUNjbUkwZ0FxVzVv?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4TjZVaUtpX2Z6SXRuZlQ3bUlNRkJmcUllN0llYnctQU5qYV9MQXB4dTljWlpRSEstamFjNm8tZkt5N2ZPcHhCZUNjbUkwZ0FxVzVv?oc=5",
-        "published_at": "2026-08-21T04:43+08:00",
+        "source": "新浪财经",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZDA4UjFZb2NfY0ptVE0xa0FwNTVpSTBiQXAzMDFRNmZiWU1wbGsySElROXhfOFZpNUE1WEZ0OTE2akhNUWQ1bHlRZW8tNUp2TFBrUWdaZjVpcmxPRWdDalJ3S2RCZlpNcnk4V1A4THU4bUMwaEpPbkR5TUVmek13MjRIT0NBSGtZbEE1YVVBQnR1Tnl0RUQyVnZhYVJUWl9NNnFxcGw3U21CSXlSeWJweDR2Z3FFcS00T25yTEhudmpsbmpmRlI5QWZBMEZvcmtzSWc?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZDA4UjFZb2NfY0ptVE0xa0FwNTVpSTBiQXAzMDFRNmZiWU1wbGsySElROXhfOFZpNUE1WEZ0OTE2akhNUWQ1bHlRZW8tNUp2TFBrUWdaZjVpcmxPRWdDalJ3S2RCZlpNcnk4V1A4THU4bUMwaEpPbkR5TUVmek13MjRIT0NBSGtZbEE1YVVBQnR1Tnl0RUQyVnZhYVJUWl9NNnFxcGw3U21CSXlSeWJweDR2Z3FFcS00T25yTEhudmpsbmpmRlI5QWZBMEZvcmtzSWc?oc=5",
+        "published_at": "2026-08-21T15:55+08:00",
         "published_date": "2026-08-21",
         "status": "new",
         "verification": "single_source",
@@ -1100,25 +1084,25 @@
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 43,
-        "selection_score": 50,
+        "editorial_score": 44,
+        "selection_score": 67,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_32508fcd3a1289"
+          "evt_ceb98e5dff6d8c"
         ],
         "evidence": [
           {
-            "item_id": "src_70012ee471a165",
-            "title": "中国女性运动健身消费崛起：ALO、NikeSKIMS抢滩“她经济”",
-            "source": "第一财经",
-            "source_tier": "tier_2",
+            "item_id": "src_0fe27922e58019",
+            "title": "安踏儿童星火X篮球鞋成2026小篮球全国总决赛官方指定战靴",
+            "source": "新浪财经",
+            "source_tier": "tier_3",
             "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4TjZVaUtpX2Z6SXRuZlQ3bUlNRkJmcUllN0llYnctQU5qYV9MQXB4dTljWlpRSEstamFjNm8tZkt5N2ZPcHhCZUNjbUkwZ0FxVzVv?oc=5",
-            "published_at": "2026-08-21T04:43+08:00",
+            "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZDA4UjFZb2NfY0ptVE0xa0FwNTVpSTBiQXAzMDFRNmZiWU1wbGsySElROXhfOFZpNUE1WEZ0OTE2akhNUWQ1bHlRZW8tNUp2TFBrUWdaZjVpcmxPRWdDalJ3S2RCZlpNcnk4V1A4THU4bUMwaEpPbkR5TUVmek13MjRIT0NBSGtZbEE1YVVBQnR1Tnl0RUQyVnZhYVJUWl9NNnFxcGw3U21CSXlSeWJweDR2Z3FFcS00T25yTEhudmpsbmpmRlI5QWZBMEZvcmtzSWc?oc=5",
+            "published_at": "2026-08-21T15:55+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "女性运动消费崛起，ALO、NikeSKIMS抢滩，可能影响儿童运动消费趋势。"
+        "editorial_reason": "安踏儿童篮球鞋成为小篮球总决赛指定战靴，体现儿童专业运动装备的赛事营销价值。"
       }
     ],
     "follow_up_selected": [],
@@ -1283,46 +1267,6 @@
     },
     {
       "type": "event",
-      "id": "evt_122197085242e7",
-      "title": "亚玛芬上半年净利2.72亿美元增78%：中国市场始祖鸟恢复净开店，再次上调年度业绩指引",
-      "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE90OHcxZjRPOFdqOXdZWVpENHlkMWRCY29ZQTRVTDVVZlYzcGZST25RTHVEVFVRc01kZzdVWWlTU2lfT0szdUFFNEVjbzIwZ3BhWW0xZGtwZVR1UlkwLWc?oc=5",
-      "published_date": "2026-08-19"
-    },
-    {
-      "type": "event_evidence",
-      "id": "src_96c1470a777772",
-      "title": "萨洛蒙继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
-      "source": "时代财经",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdFJRR1RMQVpCcUE4Rkg5TUlKNENtVTVabFN3MTRLSlFLOTd1X2ViaTJXYUxqVndINzJRU1JkN085VDk4TW5qY0hZdUo5dHRRTXloR2tjcWxIeU1RR2thZUhPb05pVXpNY1ZGQTVBVjZvLXNsemJselRzWHh3dzhXSElsOGdoUDJjX21vLV95Qzc?oc=5",
-      "published_date": "2026-08-20"
-    },
-    {
-      "type": "event",
-      "id": "evt_62aab9d3ca50c9",
-      "title": "亚瑟士集团上半年营收同比净增长22%，大中华区增长17.6%",
-      "source": "华丽志",
-      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE0yOGgxNTF0akdjTndFbnlQTm5jbkh2NmtRZkQ5WGJVdklNZHBvblEzVEQ3bTdTRHZ3ZUhzTTdjQ2I?oc=5",
-      "published_date": "2026-08-18"
-    },
-    {
-      "type": "event",
-      "id": "evt_8cdfde38246e19",
-      "title": "迪桑特儿童，如何从专业运动破局童装？",
-      "source": "华丽志",
-      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE81WUxBeG5tbTI5NWhrbjBBS1pjMVliQmJKSjY0eEFZbFFNallRNVFTVXNQU3Q5a21abXdocDV6SnU?oc=5",
-      "published_date": "2026-08-23"
-    },
-    {
-      "type": "event",
-      "id": "evt_32508fcd3a1289",
-      "title": "中国女性运动健身消费崛起：ALO、NikeSKIMS抢滩“她经济”",
-      "source": "第一财经",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4TjZVaUtpX2Z6SXRuZlQ3bUlNRkJmcUllN0llYnctQU5qYV9MQXB4dTljWlpRSEstamFjNm8tZkt5N2ZPcHhCZUNjbUkwZ0FxVzVv?oc=5",
-      "published_date": "2026-08-21"
-    },
-    {
-      "type": "event",
       "id": "evt_5ae2ba50be7f0b",
       "title": "李宁上半年营收微增2.8%至152.4亿元 毛利率提升至50.9%",
       "source": "亿邦动力",
@@ -1371,6 +1315,30 @@
     },
     {
       "type": "event",
+      "id": "evt_122197085242e7",
+      "title": "亚玛芬上半年净利2.72亿美元增78%：中国市场始祖鸟恢复净开店，再次上调年度业绩指引",
+      "source": "澎湃新闻",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE90OHcxZjRPOFdqOXdZWVpENHlkMWRCY29ZQTRVTDVVZlYzcGZST25RTHVEVFVRc01kZzdVWWlTU2lfT0szdUFFNEVjbzIwZ3BhWW0xZGtwZVR1UlkwLWc?oc=5",
+      "published_date": "2026-08-19"
+    },
+    {
+      "type": "event_evidence",
+      "id": "src_96c1470a777772",
+      "title": "萨洛蒙继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
+      "source": "时代财经",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdFJRR1RMQVpCcUE4Rkg5TUlKNENtVTVabFN3MTRLSlFLOTd1X2ViaTJXYUxqVndINzJRU1JkN085VDk4TW5qY0hZdUo5dHRRTXloR2tjcWxIeU1RR2thZUhPb05pVXpNY1ZGQTVBVjZvLXNsemJselRzWHh3dzhXSElsOGdoUDJjX21vLV95Qzc?oc=5",
+      "published_date": "2026-08-20"
+    },
+    {
+      "type": "event",
+      "id": "evt_ceb98e5dff6d8c",
+      "title": "安踏儿童星火X篮球鞋成2026小篮球全国总决赛官方指定战靴",
+      "source": "新浪财经",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZDA4UjFZb2NfY0ptVE0xa0FwNTVpSTBiQXAzMDFRNmZiWU1wbGsySElROXhfOFZpNUE1WEZ0OTE2akhNUWQ1bHlRZW8tNUp2TFBrUWdaZjVpcmxPRWdDalJ3S2RCZlpNcnk4V1A4THU4bUMwaEpPbkR5TUVmek13MjRIT0NBSGtZbEE1YVVBQnR1Tnl0RUQyVnZhYVJUWl9NNnFxcGw3U21CSXlSeWJweDR2Z3FFcS00T25yTEhudmpsbmpmRlI5QWZBMEZvcmtzSWc?oc=5",
+      "published_date": "2026-08-21"
+    },
+    {
+      "type": "event",
       "id": "evt_0ac4ed4c98cd5f",
       "title": "李宁2026中报：营收增长2.8%达152.4亿，稳健经营，积极布局运动资源",
       "source": "界面新闻",
@@ -1384,6 +1352,14 @@
       "source": "每日经济新闻",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9hLWhaQ25IVUdFMDBnZmdJSnBpMTFvUzR4TVdZem5Hd1ZiRlVtWi1CRWlFTWxkNTBNZkY5Qkl0dUJOakpwak1iaVNtdmJiNzUyb0hZWjl2bGk0bGxzc2ZiVkFxRlNwQQ?oc=5",
       "published_date": "2026-08-21"
+    },
+    {
+      "type": "event",
+      "id": "evt_62aab9d3ca50c9",
+      "title": "亚瑟士集团上半年营收同比净增长22%，大中华区增长17.6%",
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE0yOGgxNTF0akdjTndFbnlQTm5jbkh2NmtRZkQ5WGJVdklNZHBvblEzVEQ3bTdTRHZ3ZUhzTTdjQ2I?oc=5",
+      "published_date": "2026-08-18"
     },
     {
       "type": "event",
@@ -1411,11 +1387,19 @@
     },
     {
       "type": "event",
-      "id": "evt_ceb98e5dff6d8c",
-      "title": "安踏儿童星火X篮球鞋成2026小篮球全国总决赛官方指定战靴",
-      "source": "新浪财经",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZDA4UjFZb2NfY0ptVE0xa0FwNTVpSTBiQXAzMDFRNmZiWU1wbGsySElROXhfOFZpNUE1WEZ0OTE2akhNUWQ1bHlRZW8tNUp2TFBrUWdaZjVpcmxPRWdDalJ3S2RCZlpNcnk4V1A4THU4bUMwaEpPbkR5TUVmek13MjRIT0NBSGtZbEE1YVVBQnR1Tnl0RUQyVnZhYVJUWl9NNnFxcGw3U21CSXlSeWJweDR2Z3FFcS00T25yTEhudmpsbmpmRlI5QWZBMEZvcmtzSWc?oc=5",
-      "published_date": "2026-08-21"
+      "id": "evt_8cdfde38246e19",
+      "title": "迪桑特儿童，如何从专业运动破局童装？",
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE81WUxBeG5tbTI5NWhrbjBBS1pjMVliQmJKSjY0eEFZbFFNallRNVFTVXNQU3Q5a21abXdocDV6SnU?oc=5",
+      "published_date": "2026-08-23"
+    },
+    {
+      "type": "event",
+      "id": "evt_24ed2d7685b517",
+      "title": "“巴拉巴拉”有魔法，童装救森马？",
+      "source": "新华网",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZjAzanBEQXVGalU0QnlyY1BLTFpQem5vSzVNaDdmMHBFR0dZVC1nZzBqMDdQeDJDRkExQnJxb2NxMndZMmcxajhndjNoWTNCeUp2UkpsLXJjY0c3NHNuR2szTGZ1RzVyakRQUHFGYThlR2xnSi1OUnAxSnJ1d2FWZA?oc=5",
+      "published_date": "2026-08-19"
     },
     {
       "type": "product",
@@ -1434,7 +1418,7 @@
     "raw_event_count": 32,
     "coalesced_event_count": 31,
     "eligible_event_count": 30,
-    "selected_event_count": 6,
+    "selected_event_count": 5,
     "raw_product_count": 25,
     "product_lead_count": 25,
     "eligible_product_count": 1,
@@ -1458,7 +1442,7 @@
       "行业动态": 9
     },
     "selected_status": {
-      "new": 6
+      "new": 5
     },
     "quality_notes": [
       "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
