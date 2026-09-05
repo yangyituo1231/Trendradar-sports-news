@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-09-04T09:39+08:00",
+  "generated_at": "2026-09-05T09:40+08:00",
   "report_window": {
     "start_date": "2026-08-24",
     "end_date": "2026-08-30",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "本周行业焦点集中于头部品牌中期业绩分化与跑步品类科技升级，儿童业务需关注专业运动增长逻辑与渠道效率变化。",
-    "week_in_one_paragraph": "Nike高管变动及新品发布显示竞争加剧。跑步鞋科技迭代加速，儿童市场可借鉴专业细分与全场景策略。",
+    "weekly_thesis": "本周行业聚焦头部品牌财报分化与渠道变革，安踏多品牌高增长、特步承压，儿童业务需关注专业运动细分与数字化提效。",
+    "week_in_one_paragraph": "特步营收微降，索康尼成第二曲线。Nike任命新首席商务官，必迈IPO问询。行业呈现头部集中、专业细分与渠道数字化趋势，儿童业务可借鉴多品牌运营与专业产品策略。",
     "next_week_focus": [
-      "安踏收购PUMA股权进展及监管动态",
-      "特步索康尼门店扩张与销售表现",
-      "Nike新首席商务官上任后首批举措",
-      "跑步鞋科技新品市场反馈",
-      "儿童运动品牌竞争格局变化"
+      "安踏收购PUMA股权进展及监管审批情况。",
+      "特步索康尼儿童产品线动态及门店扩张计划。",
+      "Nike新首席商务官上任后渠道策略调整信号。",
+      "必迈IPO问询结果及跑步垂类模式市场反馈。",
+      "体育用品出海政策与展会动态，寻找儿童品牌出海机会。"
     ]
   },
   "key_developments": [
@@ -129,7 +129,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏集团上半年营收增12.9%至435.1亿，多品牌及AI工具赋能，为行业头部增长标杆。"
+      "editorial_reason": "安踏多品牌矩阵高增长，尤其户外品牌增44%，为儿童业务多品牌布局提供参考。"
     },
     {
       "event_id": "evt_7a10ccc8b5fc1b",
@@ -199,7 +199,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "特步国际营收微降，但专业运动品牌索康尼等增长11.4%，显示第二曲线潜力。"
+      "editorial_reason": "特步营收微降但专业运动品牌增11.4%，显示专业细分赛道仍有韧性。"
     },
     {
       "event_id": "evt_963fbeee7398e2",
@@ -239,53 +239,51 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "Nike任命沃尔玛资深高管为首席商务官，或影响其渠道与零售策略。"
+      "editorial_reason": "Nike任命沃尔玛高管为首席商务官，零售渠道策略或生变，影响行业风向。"
     },
     {
-      "event_id": "evt_250cce691a29c4",
-      "title": "Nike ACG 发布 Picklejus 高山越野跑鞋",
-      "category": "产品与科技",
+      "event_id": "evt_551bfaf6f3dfda",
+      "title": "瞄准“体育出海”持续国际化布局 152名境外采购商落子山东体育用品博览会",
+      "category": "行业动态",
       "event_family": "industry_event",
       "reporting_period": "",
-      "brands": [
-        "Nike"
-      ],
-      "source": "Hypebeast CN",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSzZhNnZSaWVVdUVXLVUwY0dNcl9aa05hMlBIWXduZ2k5aGZZUFFJclNRYmpQM0FLMzZQUVNFM01jOFBRUWc4cXNYUzRyTElkbUMwOUVaRDhHUHNxTkNDRmpSOHNqRDh2eWFib2xxMi13OWcxd2xmbVU1YjZyR0FTN2JGcUNlQ0k?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSzZhNnZSaWVVdUVXLVUwY0dNcl9aa05hMlBIWXduZ2k5aGZZUFFJclNRYmpQM0FLMzZQUVNFM01jOFBRUWc4cXNYUzRyTElkbUMwOUVaRDhHUHNxTkNDRmpSOHNqRDh2eWFib2xxMi13OWcxd2xmbVU1YjZyR0FTN2JGcUNlQ0k?oc=5",
-      "published_at": "2026-08-28T19:05+08:00",
-      "published_date": "2026-08-28",
+      "brands": [],
+      "source": "山东宣传网",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ybjRtVV9ocjl6b2x3UksxbzF6X29YbzZQY0R4VEl1TE5kdmhFaWNrTmlvSGRQN0xkWkszcUZFZ1JSeTdhRTEtTDRBd1lidVlRcWlvZlZjN0VXdnB1RDR5NUl4aHNENm4ycXNYcmZ3TQ?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ybjRtVV9ocjl6b2x3UksxbzF6X29YbzZQY0R4VEl1TE5kdmhFaWNrTmlvSGRQN0xkWkszcUZFZ1JSeTdhRTEtTDRBd1lidVlRcWlvZlZjN0VXdnB1RDR5NUl4aHNENm4ycXNYcmZ3TQ?oc=5",
+      "published_at": "2026-08-30T10:10+08:00",
+      "published_date": "2026-08-30",
       "status": "new",
-      "verification": "single_source",
-      "is_official": false,
+      "verification": "official_source",
+      "is_official": true,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 43,
-      "selection_score": 65,
+      "editorial_score": 57,
+      "selection_score": 73,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_250cce691a29c4"
+        "evt_551bfaf6f3dfda"
       ],
       "evidence": [
         {
-          "item_id": "src_94f74cc203484d",
-          "title": "Nike ACG 发布 Picklejus 高山越野跑鞋",
-          "source": "Hypebeast CN",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSzZhNnZSaWVVdUVXLVUwY0dNcl9aa05hMlBIWXduZ2k5aGZZUFFJclNRYmpQM0FLMzZQUVNFM01jOFBRUWc4cXNYUzRyTElkbUMwOUVaRDhHUHNxTkNDRmpSOHNqRDh2eWFib2xxMi13OWcxd2xmbVU1YjZyR0FTN2JGcUNlQ0k?oc=5",
-          "published_at": "2026-08-28T19:05+08:00",
+          "item_id": "src_d28c3806aa61c0",
+          "title": "瞄准“体育出海”持续国际化布局 152名境外采购商落子山东体育用品博览会",
+          "source": "山东宣传网",
+          "source_tier": "official",
+          "is_official": true,
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ybjRtVV9ocjl6b2x3UksxbzF6X29YbzZQY0R4VEl1TE5kdmhFaWNrTmlvSGRQN0xkWkszcUZFZ1JSeTdhRTEtTDRBd1lidVlRcWlvZlZjN0VXdnB1RDR5NUl4aHNENm4ycXNYcmZ3TQ?oc=5",
+          "published_at": "2026-08-30T10:10+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "Nike ACG发布高山越野跑鞋，户外细分品类持续创新，值得关注。"
+      "editorial_reason": "体育用品出海加速，境外采购商增加，为儿童品牌国际化提供路径参考。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "头部运动品牌中期业绩分化：多品牌战略与专业线增长",
-      "analysis": "安踏集团营收增12.9%，FILA破150亿，特步微降但索康尼等专业品牌增11.4%。显示多品牌矩阵中专业运动线成为增长引擎。安踏其他品牌（迪桑特、可隆）增44%，FILA独立增长，特步依赖索康尼。行业层面，单一主品牌增长乏力，细分专业品牌贡献增量，儿童业务可借鉴多品牌或专业线布局。",
+      "headline": "头部品牌财报分化：多品牌战略与专业细分驱动增长",
+      "analysis": "安踏集团上半年营收增12.9%至435.1亿元，FILA破150亿，迪桑特、可隆等户外品牌增44%，显示多品牌矩阵覆盖不同价格带与运动场景的成功。特步营收微降0.6%，但索康尼、迈乐等专业运动品牌增11.4%，表明专业细分市场仍有增长空间。FILA米兰双主场策略强化品牌高端形象。行业层面，单一品牌增长乏力，多品牌运营与专业产品线成为头部企业共同选择，儿童业务可借鉴此策略，布局专业儿童运动细分。",
       "event_ids": [
         "evt_d56ea93745ff35",
         "evt_7a10ccc8b5fc1b",
@@ -316,26 +314,18 @@
       ]
     },
     {
-      "headline": "跑步品类科技升级与垂类模式IPO",
-      "analysis": "必迈体育IPO问询，三年营收从10.66亿增至18.18亿，跑步垂类模式受关注。Nike ACG发布越野跑鞋，显示户外跑步细分创新。行业从大众跑鞋向专业、场景化细分演进，儿童跑步产品可关注科技下放与场景细分。",
+      "headline": "体育用品出海与渠道国际化：新增长点显现",
+      "analysis": "山东体博会吸引152名境外采购商，显示体育用品出海需求旺盛。安踏拟收购PUMA股权，进一步国际化布局。行业正从本土竞争转向全球市场拓展，儿童运动品牌可关注海外市场对专业儿童运动装备的需求，以及跨境电商渠道的潜力。",
       "event_ids": [
-        "evt_9129e09bc14159",
-        "evt_250cce691a29c4"
+        "evt_551bfaf6f3dfda"
       ],
       "evidence": [
         {
-          "event_id": "evt_9129e09bc14159",
-          "title": "李宁前CEO张志勇创立的必迈体育IPO进入问询，以“必迈+美津浓”双品牌驱动，三年营收从10.66亿元增至18.18亿元，其跑步垂类模式与授权依赖结构亦同步接受市场检视中国基金报",
-          "source": "chnfund.com",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9hQkc1OUJOWG0zczlrLWM5dnlsN01pMXMwRU5waWo4bDN5T1owR3BBWE5YVnZIbU9hYXRXcm1hNUpoY3FyTGpydlJsaEtIc2hRTFJpeFR4OUxSd1lJNlVnUVctczNyaWdYRmVDbkhCcWJOUmxpbHFaUVNn?oc=5",
-          "published_date": "2026-08-27"
-        },
-        {
-          "event_id": "evt_250cce691a29c4",
-          "title": "Nike ACG 发布 Picklejus 高山越野跑鞋",
-          "source": "Hypebeast CN",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSzZhNnZSaWVVdUVXLVUwY0dNcl9aa05hMlBIWXduZ2k5aGZZUFFJclNRYmpQM0FLMzZQUVNFM01jOFBRUWc4cXNYUzRyTElkbUMwOUVaRDhHUHNxTkNDRmpSOHNqRDh2eWFib2xxMi13OWcxd2xmbVU1YjZyR0FTN2JGcUNlQ0k?oc=5",
-          "published_date": "2026-08-28"
+          "event_id": "evt_551bfaf6f3dfda",
+          "title": "瞄准“体育出海”持续国际化布局 152名境外采购商落子山东体育用品博览会",
+          "source": "山东宣传网",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ybjRtVV9ocjl6b2x3UksxbzF6X29YbzZQY0R4VEl1TE5kdmhFaWNrTmlvSGRQN0xkWkszcUZFZ1JSeTdhRTEtTDRBd1lidVlRcWlvZlZjN0VXdnB1RDR5NUl4aHNENm4ycXNYcmZ3TQ?oc=5",
+          "published_date": "2026-08-30"
         }
       ]
     }
@@ -500,31 +490,70 @@
       ]
     }
   ],
-  "kids_consumer": [],
+  "kids_consumer": [
+    {
+      "event_id": "evt_7b02570df25125",
+      "title": "活力中国调研行｜新消费，从“卖产品”到“懂人心”",
+      "category": "行业动态",
+      "event_family": "industry_event",
+      "reporting_period": "",
+      "brands": [],
+      "source": "山东宣传网",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1uQnVrX3o0bVBETGhOTkVwLXJaSUZ6bkJ6Ri1yRGJqTlREalRIRmYzazk3N3YxMlV1dE9LUkgtV2hZcGhGV0RyekRseHBPejhWQThNOThneVhrVFFsOU41RXVnc1JBbG5kaHN6MEl3?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1uQnVrX3o0bVBETGhOTkVwLXJaSUZ6bkJ6Ri1yRGJqTlREalRIRmYzazk3N3YxMlV1dE9LUkgtV2hZcGhGV0RyekRseHBPejhWQThNOThneVhrVFFsOU41RXVnc1JBbG5kaHN6MEl3?oc=5",
+      "published_at": "2026-08-30T10:19+08:00",
+      "published_date": "2026-08-30",
+      "status": "new",
+      "verification": "official_source",
+      "is_official": true,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 57,
+      "selection_score": 73,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_7b02570df25125"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_0a33efde4ff9ca",
+          "title": "活力中国调研行｜新消费，从“卖产品”到“懂人心”",
+          "source": "山东宣传网",
+          "source_tier": "official",
+          "is_official": true,
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1uQnVrX3o0bVBETGhOTkVwLXJaSUZ6bkJ6Ri1yRGJqTlREalRIRmYzazk3N3YxMlV1dE9LUkgtV2hZcGhGV0RyekRseHBPejhWQThNOThneVhrVFFsOU41RXVnc1JBbG5kaHN6MEl3?oc=5",
+          "published_at": "2026-08-30T10:19+08:00",
+          "summary": ""
+        }
+      ]
+    }
+  ],
   "watchlist": [
     {
-      "title": "安踏收购PUMA股权进展",
+      "title": "安踏收购PUMA进展及对儿童业务影响",
       "event_ids": [
         "evt_fd379d6c6f8270"
       ],
       "product_ids": [],
-      "reason": "安踏拟年内完成收购PUMA股权，关注对多品牌矩阵及儿童业务潜在影响。"
+      "reason": "关注收购完成时间及PUMA儿童产品线整合，可能影响儿童运动市场竞争格局。"
     },
     {
-      "title": "特步专业运动品牌增长持续性",
+      "title": "特步索康尼第二增长曲线验证",
       "event_ids": [
+        "evt_7a10ccc8b5fc1b",
         "evt_ba6a23226346df"
       ],
       "product_ids": [],
-      "reason": "关注后续官方信息、渠道落地或产品资料补充。"
+      "reason": "索康尼门店达180家，关注其儿童产品线拓展及对特步整体业绩的拉动。"
     },
     {
-      "title": "Nike高管变动后渠道策略",
+      "title": "Nike新首席商务官渠道策略调整",
       "event_ids": [
-        "evt_0e96fd47f83b10"
+        "evt_963fbeee7398e2"
       ],
       "product_ids": [],
-      "reason": "新任首席商务官来自山姆中国，关注其对中国市场渠道和零售运营的调整。"
+      "reason": "关注Nike在儿童市场的渠道策略变化，可能影响行业竞争。"
     }
   ],
   "tracking": {
@@ -640,7 +669,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏集团上半年营收增12.9%至435.1亿，多品牌及AI工具赋能，为行业头部增长标杆。"
+        "editorial_reason": "安踏多品牌矩阵高增长，尤其户外品牌增44%，为儿童业务多品牌布局提供参考。"
       },
       {
         "event_id": "evt_7a10ccc8b5fc1b",
@@ -710,7 +739,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "特步国际营收微降，但专业运动品牌索康尼等增长11.4%，显示第二曲线潜力。"
+        "editorial_reason": "特步营收微降但专业运动品牌增11.4%，显示专业细分赛道仍有韧性。"
       },
       {
         "event_id": "evt_963fbeee7398e2",
@@ -750,47 +779,45 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "Nike任命沃尔玛资深高管为首席商务官，或影响其渠道与零售策略。"
+        "editorial_reason": "Nike任命沃尔玛高管为首席商务官，零售渠道策略或生变，影响行业风向。"
       },
       {
-        "event_id": "evt_250cce691a29c4",
-        "title": "Nike ACG 发布 Picklejus 高山越野跑鞋",
-        "category": "产品与科技",
+        "event_id": "evt_551bfaf6f3dfda",
+        "title": "瞄准“体育出海”持续国际化布局 152名境外采购商落子山东体育用品博览会",
+        "category": "行业动态",
         "event_family": "industry_event",
         "reporting_period": "",
-        "brands": [
-          "Nike"
-        ],
-        "source": "Hypebeast CN",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSzZhNnZSaWVVdUVXLVUwY0dNcl9aa05hMlBIWXduZ2k5aGZZUFFJclNRYmpQM0FLMzZQUVNFM01jOFBRUWc4cXNYUzRyTElkbUMwOUVaRDhHUHNxTkNDRmpSOHNqRDh2eWFib2xxMi13OWcxd2xmbVU1YjZyR0FTN2JGcUNlQ0k?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSzZhNnZSaWVVdUVXLVUwY0dNcl9aa05hMlBIWXduZ2k5aGZZUFFJclNRYmpQM0FLMzZQUVNFM01jOFBRUWc4cXNYUzRyTElkbUMwOUVaRDhHUHNxTkNDRmpSOHNqRDh2eWFib2xxMi13OWcxd2xmbVU1YjZyR0FTN2JGcUNlQ0k?oc=5",
-        "published_at": "2026-08-28T19:05+08:00",
-        "published_date": "2026-08-28",
+        "brands": [],
+        "source": "山东宣传网",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ybjRtVV9ocjl6b2x3UksxbzF6X29YbzZQY0R4VEl1TE5kdmhFaWNrTmlvSGRQN0xkWkszcUZFZ1JSeTdhRTEtTDRBd1lidVlRcWlvZlZjN0VXdnB1RDR5NUl4aHNENm4ycXNYcmZ3TQ?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ybjRtVV9ocjl6b2x3UksxbzF6X29YbzZQY0R4VEl1TE5kdmhFaWNrTmlvSGRQN0xkWkszcUZFZ1JSeTdhRTEtTDRBd1lidVlRcWlvZlZjN0VXdnB1RDR5NUl4aHNENm4ycXNYcmZ3TQ?oc=5",
+        "published_at": "2026-08-30T10:10+08:00",
+        "published_date": "2026-08-30",
         "status": "new",
-        "verification": "single_source",
-        "is_official": false,
+        "verification": "official_source",
+        "is_official": true,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 43,
-        "selection_score": 65,
+        "editorial_score": 57,
+        "selection_score": 73,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_250cce691a29c4"
+          "evt_551bfaf6f3dfda"
         ],
         "evidence": [
           {
-            "item_id": "src_94f74cc203484d",
-            "title": "Nike ACG 发布 Picklejus 高山越野跑鞋",
-            "source": "Hypebeast CN",
-            "source_tier": "tier_3",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSzZhNnZSaWVVdUVXLVUwY0dNcl9aa05hMlBIWXduZ2k5aGZZUFFJclNRYmpQM0FLMzZQUVNFM01jOFBRUWc4cXNYUzRyTElkbUMwOUVaRDhHUHNxTkNDRmpSOHNqRDh2eWFib2xxMi13OWcxd2xmbVU1YjZyR0FTN2JGcUNlQ0k?oc=5",
-            "published_at": "2026-08-28T19:05+08:00",
+            "item_id": "src_d28c3806aa61c0",
+            "title": "瞄准“体育出海”持续国际化布局 152名境外采购商落子山东体育用品博览会",
+            "source": "山东宣传网",
+            "source_tier": "official",
+            "is_official": true,
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ybjRtVV9ocjl6b2x3UksxbzF6X29YbzZQY0R4VEl1TE5kdmhFaWNrTmlvSGRQN0xkWkszcUZFZ1JSeTdhRTEtTDRBd1lidVlRcWlvZlZjN0VXdnB1RDR5NUl4aHNENm4ycXNYcmZ3TQ?oc=5",
+            "published_at": "2026-08-30T10:10+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "Nike ACG发布高山越野跑鞋，户外细分品类持续创新，值得关注。"
+        "editorial_reason": "体育用品出海加速，境外采购商增加，为儿童品牌国际化提供路径参考。"
       }
     ],
     "follow_up_selected": [],
@@ -1044,11 +1071,11 @@
     },
     {
       "type": "event",
-      "id": "evt_250cce691a29c4",
-      "title": "Nike ACG 发布 Picklejus 高山越野跑鞋",
-      "source": "Hypebeast CN",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSzZhNnZSaWVVdUVXLVUwY0dNcl9aa05hMlBIWXduZ2k5aGZZUFFJclNRYmpQM0FLMzZQUVNFM01jOFBRUWc4cXNYUzRyTElkbUMwOUVaRDhHUHNxTkNDRmpSOHNqRDh2eWFib2xxMi13OWcxd2xmbVU1YjZyR0FTN2JGcUNlQ0k?oc=5",
-      "published_date": "2026-08-28"
+      "id": "evt_551bfaf6f3dfda",
+      "title": "瞄准“体育出海”持续国际化布局 152名境外采购商落子山东体育用品博览会",
+      "source": "山东宣传网",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ybjRtVV9ocjl6b2x3UksxbzF6X29YbzZQY0R4VEl1TE5kdmhFaWNrTmlvSGRQN0xkWkszcUZFZ1JSeTdhRTEtTDRBd1lidVlRcWlvZlZjN0VXdnB1RDR5NUl4aHNENm4ycXNYcmZ3TQ?oc=5",
+      "published_date": "2026-08-30"
     },
     {
       "type": "event",
@@ -1081,6 +1108,14 @@
       "source": "界面新闻",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ZSVZ0RktNSWtWb1RWNG9RYnZ6aV9tT1pvaEhLc1JtMzdncmVNYmdyMXhrUE9xU05xSks5bE5SaU9MUGU1NFZIdDQzRjZCR2J2Q3dnTjBn?oc=5",
       "published_date": "2026-08-27"
+    },
+    {
+      "type": "event",
+      "id": "evt_7b02570df25125",
+      "title": "活力中国调研行｜新消费，从“卖产品”到“懂人心”",
+      "source": "山东宣传网",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1uQnVrX3o0bVBETGhOTkVwLXJaSUZ6bkJ6Ri1yRGJqTlREalRIRmYzazk3N3YxMlV1dE9LUkgtV2hZcGhGV0RyekRseHBPejhWQThNOThneVhrVFFsOU41RXVnc1JBbG5kaHN6MEl3?oc=5",
+      "published_date": "2026-08-30"
     }
   ],
   "data_quality": {
@@ -1097,7 +1132,7 @@
     "eligible_product_count": 0,
     "selected_product_count": 0,
     "conflict_count": 0,
-    "source_link_count": 18,
+    "source_link_count": 19,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {
