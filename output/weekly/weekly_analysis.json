@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-09-05T09:40+08:00",
+  "generated_at": "2026-09-06T09:42+08:00",
   "report_window": {
     "start_date": "2026-08-24",
     "end_date": "2026-08-30",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "本周行业聚焦头部品牌财报分化与渠道变革，安踏多品牌高增长、特步承压，儿童业务需关注专业运动细分与数字化提效。",
-    "week_in_one_paragraph": "特步营收微降，索康尼成第二曲线。Nike任命新首席商务官，必迈IPO问询。行业呈现头部集中、专业细分与渠道数字化趋势，儿童业务可借鉴多品牌运营与专业产品策略。",
+    "weekly_thesis": "本周行业焦点集中于头部品牌财报分化与战略调整，安踏高增长与特步承压形成对比，儿童业务需关注专业运动细分与渠道效率。",
+    "week_in_one_paragraph": "特步营收微降0.6%，索康尼成第二曲线但待验证。Nike任命新首席商务官，lululemon诉讼被驳回，行业竞争与法律风险并存。",
     "next_week_focus": [
-      "安踏收购PUMA股权进展及监管审批情况。",
-      "特步索康尼儿童产品线动态及门店扩张计划。",
-      "Nike新首席商务官上任后渠道策略调整信号。",
-      "必迈IPO问询结果及跑步垂类模式市场反馈。",
-      "体育用品出海政策与展会动态，寻找儿童品牌出海机会。"
+      "跟踪安踏收购PUMA股权后续公告及监管进展。",
+      "观察特步索康尼下半年门店扩张与销售数据。",
+      "关注Nike新首席商务官上任后的渠道策略调整。",
+      "留意lululemon诉讼后续是否影响国际品牌在华维权。",
+      "监测必迈体育IPO问询结果对跑步细分市场影响。"
     ]
   },
   "key_developments": [
@@ -129,7 +129,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏多品牌矩阵高增长，尤其户外品牌增44%，为儿童业务多品牌布局提供参考。"
+      "editorial_reason": "安踏上半年营收增12.9%至435.1亿元，多品牌战略成效显著，为行业提供增长范本。"
     },
     {
       "event_id": "evt_7a10ccc8b5fc1b",
@@ -199,7 +199,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "特步营收微降但专业运动品牌增11.4%，显示专业细分赛道仍有韧性。"
+      "editorial_reason": "特步营收微降，专业运动品牌增长11.4%，显示第二曲线潜力，但整体承压需关注。"
     },
     {
       "event_id": "evt_963fbeee7398e2",
@@ -239,55 +239,56 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "Nike任命沃尔玛高管为首席商务官，零售渠道策略或生变，影响行业风向。"
+      "editorial_reason": "Nike任命沃尔玛资深高管为首席商务官，零售管理经验或改变其渠道策略。"
     },
     {
-      "event_id": "evt_551bfaf6f3dfda",
-      "title": "瞄准“体育出海”持续国际化布局 152名境外采购商落子山东体育用品博览会",
+      "event_id": "evt_860187ec9925c0",
+      "title": "lululemon向国产品牌索赔2000万，南京中院一审宣判驳回",
       "category": "行业动态",
       "event_family": "industry_event",
       "reporting_period": "",
-      "brands": [],
-      "source": "山东宣传网",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ybjRtVV9ocjl6b2x3UksxbzF6X29YbzZQY0R4VEl1TE5kdmhFaWNrTmlvSGRQN0xkWkszcUZFZ1JSeTdhRTEtTDRBd1lidVlRcWlvZlZjN0VXdnB1RDR5NUl4aHNENm4ycXNYcmZ3TQ?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ybjRtVV9ocjl6b2x3UksxbzF6X29YbzZQY0R4VEl1TE5kdmhFaWNrTmlvSGRQN0xkWkszcUZFZ1JSeTdhRTEtTDRBd1lidVlRcWlvZlZjN0VXdnB1RDR5NUl4aHNENm4ycXNYcmZ3TQ?oc=5",
-      "published_at": "2026-08-30T10:10+08:00",
+      "brands": [
+        "lululemon"
+      ],
+      "source": "手机网易网",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE45bi1neTVDZEZUMmdZeklFZmRaaGVRVVlFdEZLQ0ZYSDJFQnNRMU9YWHhoSU5tREtIdkZzcmlqa0l6MmdMMmdDYTNVeVJseE5DV1pad3FsTGxCQU9RTE5naVd3?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE45bi1neTVDZEZUMmdZeklFZmRaaGVRVVlFdEZLQ0ZYSDJFQnNRMU9YWHhoSU5tREtIdkZzcmlqa0l6MmdMMmdDYTNVeVJseE5DV1pad3FsTGxCQU9RTE5naVd3?oc=5",
+      "published_at": "2026-08-30T12:36+08:00",
       "published_date": "2026-08-30",
       "status": "new",
-      "verification": "official_source",
-      "is_official": true,
+      "verification": "single_source",
+      "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 57,
-      "selection_score": 73,
+      "editorial_score": 45,
+      "selection_score": 56,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_551bfaf6f3dfda"
+        "evt_860187ec9925c0"
       ],
       "evidence": [
         {
-          "item_id": "src_d28c3806aa61c0",
-          "title": "瞄准“体育出海”持续国际化布局 152名境外采购商落子山东体育用品博览会",
-          "source": "山东宣传网",
-          "source_tier": "official",
-          "is_official": true,
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ybjRtVV9ocjl6b2x3UksxbzF6X29YbzZQY0R4VEl1TE5kdmhFaWNrTmlvSGRQN0xkWkszcUZFZ1JSeTdhRTEtTDRBd1lidVlRcWlvZlZjN0VXdnB1RDR5NUl4aHNENm4ycXNYcmZ3TQ?oc=5",
-          "published_at": "2026-08-30T10:10+08:00",
+          "item_id": "src_934a2babdfbfae",
+          "title": "lululemon向国产品牌索赔2000万，南京中院一审宣判驳回",
+          "source": "手机网易网",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE45bi1neTVDZEZUMmdZeklFZmRaaGVRVVlFdEZLQ0ZYSDJFQnNRMU9YWHhoSU5tREtIdkZzcmlqa0l6MmdMMmdDYTNVeVJseE5DV1pad3FsTGxCQU9RTE5naVd3?oc=5",
+          "published_at": "2026-08-30T12:36+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "体育用品出海加速，境外采购商增加，为儿童品牌国际化提供路径参考。"
+      "editorial_reason": "lululemon索赔被驳回，提示国际品牌在华法律风险，对国产品牌有借鉴意义。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "头部品牌财报分化：多品牌战略与专业细分驱动增长",
-      "analysis": "安踏集团上半年营收增12.9%至435.1亿元，FILA破150亿，迪桑特、可隆等户外品牌增44%，显示多品牌矩阵覆盖不同价格带与运动场景的成功。特步营收微降0.6%，但索康尼、迈乐等专业运动品牌增11.4%，表明专业细分市场仍有增长空间。FILA米兰双主场策略强化品牌高端形象。行业层面，单一品牌增长乏力，多品牌运营与专业产品线成为头部企业共同选择，儿童业务可借鉴此策略，布局专业儿童运动细分。",
+      "headline": "头部运动品牌财报分化：安踏多品牌高增长 vs 特步专业线承压",
+      "analysis": "特步营收微降0.6%，但索康尼、迈乐等专业品牌增11.4%，门店达180家，第二曲线初现。两者对比表明，儿童业务可借鉴安踏的多品牌分层策略，同时特步的专业线增长提示垂直深耕的价值。",
       "event_ids": [
         "evt_d56ea93745ff35",
-        "evt_7a10ccc8b5fc1b",
-        "evt_c50718b06f2b22"
+        "evt_7a10ccc8b5fc1b"
       ],
       "evidence": [
         {
@@ -303,29 +304,30 @@
           "source": "华丽志",
           "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFA1VEEtNlJUYWpIY0NVQnVLekpwTUoySUFPdTZDU0xWeVZFd2NWN3JDdVgwVmNtX05Mb1pDOXNZSFQ?oc=5",
           "published_date": "2026-08-27"
-        },
-        {
-          "event_id": "evt_c50718b06f2b22",
-          "title": "FILA上半年营收首破150亿，米兰“双主场”回归点燃增长引擎",
-          "source": "Sina Sports",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBRQnkyaXhqMVF0d1kxZEFZbExxSWVGaklTY3kxeHZHTUFqay0wUks0LUIzSGl2QWtUMWtZOVV6Y2N5d2xzdlJCVjRKU01LVXJhTHhicXFseWNqQTZ6aXNQNHVuOTRZaFFQMTJpTWVGbEl6cFZ1WjhB?oc=5",
-          "published_date": "2026-08-26"
         }
       ]
     },
     {
-      "headline": "体育用品出海与渠道国际化：新增长点显现",
-      "analysis": "山东体博会吸引152名境外采购商，显示体育用品出海需求旺盛。安踏拟收购PUMA股权，进一步国际化布局。行业正从本土竞争转向全球市场拓展，儿童运动品牌可关注海外市场对专业儿童运动装备的需求，以及跨境电商渠道的潜力。",
+      "headline": "资本与人事变动：安踏收购PUMA、Nike换帅的行业信号",
+      "analysis": "安踏拟年内完成收购PUMA股权，若成行将强化其国际多品牌版图，对儿童业务可能带来高端品牌资源。Nike任命沃尔玛资深高管Jane Ewing为首席商务官，反映零售效率与供应链管理成为竞争焦点。这些变动预示行业从产品驱动转向资本与运营驱动，儿童品牌需关注渠道效率与成本控制。",
       "event_ids": [
-        "evt_551bfaf6f3dfda"
+        "evt_fd379d6c6f8270",
+        "evt_963fbeee7398e2"
       ],
       "evidence": [
         {
-          "event_id": "evt_551bfaf6f3dfda",
-          "title": "瞄准“体育出海”持续国际化布局 152名境外采购商落子山东体育用品博览会",
-          "source": "山东宣传网",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ybjRtVV9ocjl6b2x3UksxbzF6X29YbzZQY0R4VEl1TE5kdmhFaWNrTmlvSGRQN0xkWkszcUZFZ1JSeTdhRTEtTDRBd1lidVlRcWlvZlZjN0VXdnB1RDR5NUl4aHNENm4ycXNYcmZ3TQ?oc=5",
-          "published_date": "2026-08-30"
+          "event_id": "evt_fd379d6c6f8270",
+          "title": "安踏上半年纯利按年升34.9% 拟年内完成收购PUMA股权",
+          "source": "星島頭條",
+          "url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxOWl8wRG5PWEp1bWxzRFVub0tselVhYW1yVktHbUlTbW1yVG1sYTU3X25SVHdhNGVKUlhiQjVjSzJkajRsU1JJT2kwWGdOWHpLYnEzS1BCbzQ3QTd1RXpoTlc1LVUzNC0yZ2pSM0gwbENNeER2ZWt0ZDkwa1BsQmNPVGIzUU50LTZqRkpOX2NuamdUZ0ItMDJrQm9BSml6N3had000NE5zc0dMVEtXeko0NnpIYjFmQnZ2bWJpdnIwM2ZaUzZtSG5kQjRKdnRQMlNYdmJSRy1ua3ZiZjRhbkZIaTJwU0JuU1hqZ29jTUFjSU5oY09iSzFWQkU1WXdtMk5QUzYxbW9IdFJuQ0FiNHNiZUNYZzRWSlkxS3drY1huaDdsUnVjYjVIbUJUZENPQ2FRSlNacjBNaXJ3WlIxWmV2TDBzUmRZVFBuRF9IRW1mam8xeFBodUE?oc=5",
+          "published_date": "2026-08-26"
+        },
+        {
+          "event_id": "evt_963fbeee7398e2",
+          "title": "Nike任命沃尔玛资深高管Jane Ewing为首席商务官",
+          "source": "时尚商业网",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1qV0E1eFZaWTZBUkJWNzRmOUNsNWFXaXdHd3F3RG9pQnhsNUs0Nl9uNjNiRW1pbHBoc0cwN1ZVajV4aUNkNWxpV181UGZ5NnRJYjlzLVJQOUY?oc=5",
+          "published_date": "2026-08-28"
         }
       ]
     }
@@ -490,70 +492,23 @@
       ]
     }
   ],
-  "kids_consumer": [
-    {
-      "event_id": "evt_7b02570df25125",
-      "title": "活力中国调研行｜新消费，从“卖产品”到“懂人心”",
-      "category": "行业动态",
-      "event_family": "industry_event",
-      "reporting_period": "",
-      "brands": [],
-      "source": "山东宣传网",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1uQnVrX3o0bVBETGhOTkVwLXJaSUZ6bkJ6Ri1yRGJqTlREalRIRmYzazk3N3YxMlV1dE9LUkgtV2hZcGhGV0RyekRseHBPejhWQThNOThneVhrVFFsOU41RXVnc1JBbG5kaHN6MEl3?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1uQnVrX3o0bVBETGhOTkVwLXJaSUZ6bkJ6Ri1yRGJqTlREalRIRmYzazk3N3YxMlV1dE9LUkgtV2hZcGhGV0RyekRseHBPejhWQThNOThneVhrVFFsOU41RXVnc1JBbG5kaHN6MEl3?oc=5",
-      "published_at": "2026-08-30T10:19+08:00",
-      "published_date": "2026-08-30",
-      "status": "new",
-      "verification": "official_source",
-      "is_official": true,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 57,
-      "selection_score": 73,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_7b02570df25125"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_0a33efde4ff9ca",
-          "title": "活力中国调研行｜新消费，从“卖产品”到“懂人心”",
-          "source": "山东宣传网",
-          "source_tier": "official",
-          "is_official": true,
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1uQnVrX3o0bVBETGhOTkVwLXJaSUZ6bkJ6Ri1yRGJqTlREalRIRmYzazk3N3YxMlV1dE9LUkgtV2hZcGhGV0RyekRseHBPejhWQThNOThneVhrVFFsOU41RXVnc1JBbG5kaHN6MEl3?oc=5",
-          "published_at": "2026-08-30T10:19+08:00",
-          "summary": ""
-        }
-      ]
-    }
-  ],
+  "kids_consumer": [],
   "watchlist": [
     {
-      "title": "安踏收购PUMA进展及对儿童业务影响",
+      "title": "安踏收购PUMA进展",
       "event_ids": [
         "evt_fd379d6c6f8270"
       ],
       "product_ids": [],
-      "reason": "关注收购完成时间及PUMA儿童产品线整合，可能影响儿童运动市场竞争格局。"
+      "reason": "关注收购完成时间及对安踏多品牌矩阵的整合，可能影响儿童高端市场竞争。"
     },
     {
-      "title": "特步索康尼第二增长曲线验证",
+      "title": "特步索康尼第二曲线表现",
       "event_ids": [
-        "evt_7a10ccc8b5fc1b",
-        "evt_ba6a23226346df"
+        "evt_7a10ccc8b5fc1b"
       ],
       "product_ids": [],
-      "reason": "索康尼门店达180家，关注其儿童产品线拓展及对特步整体业绩的拉动。"
-    },
-    {
-      "title": "Nike新首席商务官渠道策略调整",
-      "event_ids": [
-        "evt_963fbeee7398e2"
-      ],
-      "product_ids": [],
-      "reason": "关注Nike在儿童市场的渠道策略变化，可能影响行业竞争。"
+      "reason": "观察索康尼门店扩张与营收贡献，评估专业运动细分对儿童业务的启示。"
     }
   ],
   "tracking": {
@@ -669,7 +624,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏多品牌矩阵高增长，尤其户外品牌增44%，为儿童业务多品牌布局提供参考。"
+        "editorial_reason": "安踏上半年营收增12.9%至435.1亿元，多品牌战略成效显著，为行业提供增长范本。"
       },
       {
         "event_id": "evt_7a10ccc8b5fc1b",
@@ -739,7 +694,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "特步营收微降但专业运动品牌增11.4%，显示专业细分赛道仍有韧性。"
+        "editorial_reason": "特步营收微降，专业运动品牌增长11.4%，显示第二曲线潜力，但整体承压需关注。"
       },
       {
         "event_id": "evt_963fbeee7398e2",
@@ -779,45 +734,47 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "Nike任命沃尔玛高管为首席商务官，零售渠道策略或生变，影响行业风向。"
+        "editorial_reason": "Nike任命沃尔玛资深高管为首席商务官，零售管理经验或改变其渠道策略。"
       },
       {
-        "event_id": "evt_551bfaf6f3dfda",
-        "title": "瞄准“体育出海”持续国际化布局 152名境外采购商落子山东体育用品博览会",
+        "event_id": "evt_860187ec9925c0",
+        "title": "lululemon向国产品牌索赔2000万，南京中院一审宣判驳回",
         "category": "行业动态",
         "event_family": "industry_event",
         "reporting_period": "",
-        "brands": [],
-        "source": "山东宣传网",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ybjRtVV9ocjl6b2x3UksxbzF6X29YbzZQY0R4VEl1TE5kdmhFaWNrTmlvSGRQN0xkWkszcUZFZ1JSeTdhRTEtTDRBd1lidVlRcWlvZlZjN0VXdnB1RDR5NUl4aHNENm4ycXNYcmZ3TQ?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ybjRtVV9ocjl6b2x3UksxbzF6X29YbzZQY0R4VEl1TE5kdmhFaWNrTmlvSGRQN0xkWkszcUZFZ1JSeTdhRTEtTDRBd1lidVlRcWlvZlZjN0VXdnB1RDR5NUl4aHNENm4ycXNYcmZ3TQ?oc=5",
-        "published_at": "2026-08-30T10:10+08:00",
+        "brands": [
+          "lululemon"
+        ],
+        "source": "手机网易网",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE45bi1neTVDZEZUMmdZeklFZmRaaGVRVVlFdEZLQ0ZYSDJFQnNRMU9YWHhoSU5tREtIdkZzcmlqa0l6MmdMMmdDYTNVeVJseE5DV1pad3FsTGxCQU9RTE5naVd3?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE45bi1neTVDZEZUMmdZeklFZmRaaGVRVVlFdEZLQ0ZYSDJFQnNRMU9YWHhoSU5tREtIdkZzcmlqa0l6MmdMMmdDYTNVeVJseE5DV1pad3FsTGxCQU9RTE5naVd3?oc=5",
+        "published_at": "2026-08-30T12:36+08:00",
         "published_date": "2026-08-30",
         "status": "new",
-        "verification": "official_source",
-        "is_official": true,
+        "verification": "single_source",
+        "is_official": false,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 57,
-        "selection_score": 73,
+        "editorial_score": 45,
+        "selection_score": 56,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_551bfaf6f3dfda"
+          "evt_860187ec9925c0"
         ],
         "evidence": [
           {
-            "item_id": "src_d28c3806aa61c0",
-            "title": "瞄准“体育出海”持续国际化布局 152名境外采购商落子山东体育用品博览会",
-            "source": "山东宣传网",
-            "source_tier": "official",
-            "is_official": true,
-            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ybjRtVV9ocjl6b2x3UksxbzF6X29YbzZQY0R4VEl1TE5kdmhFaWNrTmlvSGRQN0xkWkszcUZFZ1JSeTdhRTEtTDRBd1lidVlRcWlvZlZjN0VXdnB1RDR5NUl4aHNENm4ycXNYcmZ3TQ?oc=5",
-            "published_at": "2026-08-30T10:10+08:00",
+            "item_id": "src_934a2babdfbfae",
+            "title": "lululemon向国产品牌索赔2000万，南京中院一审宣判驳回",
+            "source": "手机网易网",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE45bi1neTVDZEZUMmdZeklFZmRaaGVRVVlFdEZLQ0ZYSDJFQnNRMU9YWHhoSU5tREtIdkZzcmlqa0l6MmdMMmdDYTNVeVJseE5DV1pad3FsTGxCQU9RTE5naVd3?oc=5",
+            "published_at": "2026-08-30T12:36+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "体育用品出海加速，境外采购商增加，为儿童品牌国际化提供路径参考。"
+        "editorial_reason": "lululemon索赔被驳回，提示国际品牌在华法律风险，对国产品牌有借鉴意义。"
       }
     ],
     "follow_up_selected": [],
@@ -1071,10 +1028,10 @@
     },
     {
       "type": "event",
-      "id": "evt_551bfaf6f3dfda",
-      "title": "瞄准“体育出海”持续国际化布局 152名境外采购商落子山东体育用品博览会",
-      "source": "山东宣传网",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ybjRtVV9ocjl6b2x3UksxbzF6X29YbzZQY0R4VEl1TE5kdmhFaWNrTmlvSGRQN0xkWkszcUZFZ1JSeTdhRTEtTDRBd1lidVlRcWlvZlZjN0VXdnB1RDR5NUl4aHNENm4ycXNYcmZ3TQ?oc=5",
+      "id": "evt_860187ec9925c0",
+      "title": "lululemon向国产品牌索赔2000万，南京中院一审宣判驳回",
+      "source": "手机网易网",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE45bi1neTVDZEZUMmdZeklFZmRaaGVRVVlFdEZLQ0ZYSDJFQnNRMU9YWHhoSU5tREtIdkZzcmlqa0l6MmdMMmdDYTNVeVJseE5DV1pad3FsTGxCQU9RTE5naVd3?oc=5",
       "published_date": "2026-08-30"
     },
     {
@@ -1108,14 +1065,6 @@
       "source": "界面新闻",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ZSVZ0RktNSWtWb1RWNG9RYnZ6aV9tT1pvaEhLc1JtMzdncmVNYmdyMXhrUE9xU05xSks5bE5SaU9MUGU1NFZIdDQzRjZCR2J2Q3dnTjBn?oc=5",
       "published_date": "2026-08-27"
-    },
-    {
-      "type": "event",
-      "id": "evt_7b02570df25125",
-      "title": "活力中国调研行｜新消费，从“卖产品”到“懂人心”",
-      "source": "山东宣传网",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1uQnVrX3o0bVBETGhOTkVwLXJaSUZ6bkJ6Ri1yRGJqTlREalRIRmYzazk3N3YxMlV1dE9LUkgtV2hZcGhGV0RyekRseHBPejhWQThNOThneVhrVFFsOU41RXVnc1JBbG5kaHN6MEl3?oc=5",
-      "published_date": "2026-08-30"
     }
   ],
   "data_quality": {
@@ -1132,7 +1081,7 @@
     "eligible_product_count": 0,
     "selected_product_count": 0,
     "conflict_count": 0,
-    "source_link_count": 19,
+    "source_link_count": 18,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {
