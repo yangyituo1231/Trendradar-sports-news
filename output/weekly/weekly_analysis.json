@@ -1,20 +1,19 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-09-07T13:03+08:00",
+  "generated_at": "2026-09-08T09:43+08:00",
   "report_window": {
     "start_date": "2026-08-31",
     "end_date": "2026-09-06",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "本周运动品牌财报密集，lululemon业绩下滑与安踏主品牌隐忧凸显行业分化；科技与联名产品成竞争焦点，儿童市场政策与消费场景受关注。",
-    "week_in_one_paragraph": "本周lululemon二季度营收利润双降并下调指引，引发市场对高端运动品牌增长瓶颈的讨论；安踏、特步等本土品牌财报亦显示主品牌承压。同时，耐克与英特尔合作智能篮球鞋、李宁库里系列等科技联名产品密集发布，行业竞争转向产品创新。儿童健康与体育消费政策、暑期夜间体育消费等宏观动态为儿童业务提供场景参考。",
+    "weekly_thesis": "本周运动品牌财报密集，lululemon业绩下滑引发行业关注，国产品牌分化，儿童市场政策与消费场景受重视。",
+    "week_in_one_paragraph": "lululemon二季度营收利润双降并下调指引，引发市场对高端运动品牌增长瓶颈的讨论；特步、安踏中报显示主品牌承压，行业竞争加剧。同时，开学季健康主题发布会及地方消费券政策为儿童消费提供支持，户外研学活动增多，儿童运动场景受关注。",
     "next_week_focus": [
-      "关注lululemon新CEO战略发布及中国市场应对措施。",
-      "跟踪安踏、特步儿童业务最新动态与产品发布。",
-      "观察耐克智能篮球鞋市场反响及儿童版本可能性。",
-      "留意开学季儿童健康政策对运动装备的潜在影响。",
-      "监测瑜伽服市场竞争变化，Alo入华后对儿童瑜伽市场的溢出效应。"
+      "关注lululemon后续市场反应及新CEO战略发布。",
+      "跟踪特步、安踏主品牌新品发布及渠道动态。",
+      "留意开学季儿童健康政策对运动消费的带动。",
+      "观察瑜伽服市场竞争格局变化，Alo等品牌扩张。"
     ]
   },
   "key_developments": [
@@ -79,126 +78,6 @@
       "editorial_reason": "lululemon二季度营收利润双降，下调全年预期，反映高端运动品牌增长瓶颈，对行业有警示意义。"
     },
     {
-      "event_id": "evt_d56ea93745ff35",
-      "title": "安踏半年报：看起来完美的财报，藏着“主品牌安踏”的隐忧",
-      "category": "品牌与公司",
-      "event_family": "financial_results",
-      "reporting_period": "2026_h1",
-      "brands": [
-        "安踏"
-      ],
-      "source": "新浪网",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
-      "published_at": "2026-09-06T09:09+08:00",
-      "published_date": "2026-09-06",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 44,
-      "selection_score": 56,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_d56ea93745ff35"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_556a48af0eb28a",
-          "title": "安踏半年报：看起来完美的财报，藏着“主品牌安踏”的隐忧",
-          "source": "新浪网",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
-          "published_at": "2026-09-06T09:09+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "安踏半年报表面完美但主品牌隐忧，揭示本土龙头多品牌战略下的结构性挑战。"
-    },
-    {
-      "event_id": "evt_c9b3dd9e2a96a9",
-      "title": "CES2026丨耐克与英特尔联手发布手机APP足球跟单智能篮球鞋，定义运动科技新标杆",
-      "category": "产品与科技",
-      "event_family": "industry_event",
-      "reporting_period": "",
-      "brands": [
-        "Nike"
-      ],
-      "source": "ttplus.cn",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9BWndCemxENnNrMzlCYkFNbzJsQkdwc0l3VnBoNVplSy1NaHQzQ1NST2ZWM2VUWDB2OG1VZE5SYkVuU0lzWEd5WGVReUVKSVFlWmc?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9BWndCemxENnNrMzlCYkFNbzJsQkdwc0l3VnBoNVplSy1NaHQzQ1NST2ZWM2VUWDB2OG1VZE5SYkVuU0lzWEd5WGVReUVKSVFlWmc?oc=5",
-      "published_at": "2026-09-05T10:52+08:00",
-      "published_date": "2026-09-05",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 43,
-      "selection_score": 65,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_c9b3dd9e2a96a9"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_98e86c9e59ff57",
-          "title": "CES2026丨耐克与英特尔联手发布手机APP足球跟单智能篮球鞋，定义运动科技新标杆",
-          "source": "ttplus.cn",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9BWndCemxENnNrMzlCYkFNbzJsQkdwc0l3VnBoNVplSy1NaHQzQ1NST2ZWM2VUWDB2OG1VZE5SYkVuU0lzWEd5WGVReUVKSVFlWmc?oc=5",
-          "published_at": "2026-09-05T10:52+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "耐克与英特尔合作智能篮球鞋，代表运动科技产品新方向，值得关注技术应用趋势。"
-    },
-    {
-      "event_id": "evt_992543c2fbb5e1",
-      "title": "李宁库里中国行系列新品发布，首批带Logo鞋款亮相",
-      "category": "产品与科技",
-      "event_family": "product_launch",
-      "reporting_period": "",
-      "brands": [
-        "李宁"
-      ],
-      "source": "新浪网",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JRUh3WDVRX1NteDZCLTNWWmN4a2J0SkhJQVktd2E2UVdBVUFuYjQzYUtXbmhqVnRZY0lKNTFlWXJPNnpFZVlFSVhXWVlmM0ItZWJKM2ZFSUUwX19QY28zRG9sM1J2YlBuU3M5bDJtTThYQnM?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JRUh3WDVRX1NteDZCLTNWWmN4a2J0SkhJQVktd2E2UVdBVUFuYjQzYUtXbmhqVnRZY0lKNTFlWXJPNnpFZVlFSVhXWVlmM0ItZWJKM2ZFSUUwX19QY28zRG9sM1J2YlBuU3M5bDJtTThYQnM?oc=5",
-      "published_at": "2026-09-06T10:03+08:00",
-      "published_date": "2026-09-06",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 52,
-      "selection_score": 64,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_992543c2fbb5e1"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_122bcd0d8f3066",
-          "title": "李宁库里中国行系列新品发布，首批带Logo鞋款亮相",
-          "source": "新浪网",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JRUh3WDVRX1NteDZCLTNWWmN4a2J0SkhJQVktd2E2UVdBVUFuYjQzYUtXbmhqVnRZY0lKNTFlWXJPNnpFZVlFSVhXWVlmM0ItZWJKM2ZFSUUwX19QY28zRG9sM1J2YlBuU3M5bDJtTThYQnM?oc=5",
-          "published_at": "2026-09-06T10:03+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "李宁库里中国行系列新品发布，明星IP驱动产品营销，对儿童运动品牌有借鉴意义。"
-    },
-    {
       "event_id": "evt_b7e8e68623ae92",
       "title": "国家疾病预防控制局举行“科学防病开学季 健康护航新学期”主题新闻发布会",
       "category": "儿童与青少年",
@@ -234,51 +113,92 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "疾控局开学季发布会，关注儿童健康政策动向，影响儿童运动装备需求。"
+      "editorial_reason": "开学季健康主题发布会，聚焦儿童健康，为儿童运动产品提供政策与健康导向。"
     },
     {
-      "event_id": "evt_48b52a05db21fb",
-      "title": "热浪退场 运动上场——暑期夜间体育消费新场景观察",
-      "category": "宏观与消费",
-      "event_family": "macro_data",
-      "reporting_period": "",
+      "event_id": "evt_f8c7e9a9179a71",
+      "title": "海澜之家上半年营收同比增长7.38%至124.2亿元，收购意大利马术品牌Cavalleria Toscana 商标权",
+      "category": "品牌与公司",
+      "event_family": "financial_results",
+      "reporting_period": "2026_h1",
       "brands": [],
-      "source": "新华网",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VVU02YXFYelpVWlN2S2JDTWFLYjg0dTJzSjd6Q2RWUjdEUGJKM2ZUUkZQMldiWWh0RkZka3dOSzd6OC1zY0RTdGo4eTk2RGhxcFVadHdURVBwWVdLek1wZjluWHdnaUpqWUZFYW5rSEZCdGpfbzE1aU5xOFlnLTA?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VVU02YXFYelpVWlN2S2JDTWFLYjg0dTJzSjd6Q2RWUjdEUGJKM2ZUUkZQMldiWWh0RkZka3dOSzd6OC1zY0RTdGo4eTk2RGhxcFVadHdURVBwWVdLek1wZjluWHdnaUpqWUZFYW5rSEZCdGpfbzE1aU5xOFlnLTA?oc=5",
-      "published_at": "2026-09-04T09:14+08:00",
-      "published_date": "2026-09-04",
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9YWnF2aWhQMkgwNkxFZXk4SlhGOXBCSnMzcWZUaXFDQ2VLdGRzNG9JSVEzQUcwckNlSkI3bThyWlk?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9YWnF2aWhQMkgwNkxFZXk4SlhGOXBCSnMzcWZUaXFDQ2VLdGRzNG9JSVEzQUcwckNlSkI3bThyWlk?oc=5",
+      "published_at": "2026-09-03T17:35+08:00",
+      "published_date": "2026-09-03",
       "status": "new",
       "verification": "single_source",
       "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 49,
-      "selection_score": 59,
+      "editorial_score": 57,
+      "selection_score": 78,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_48b52a05db21fb"
+        "evt_f8c7e9a9179a71"
       ],
       "evidence": [
         {
-          "item_id": "src_6984799f63b2eb",
-          "title": "热浪退场 运动上场——暑期夜间体育消费新场景观察",
-          "source": "新华网",
-          "source_tier": "tier_1",
+          "item_id": "src_01400a2750eac5",
+          "title": "海澜之家上半年营收同比增长7.38%至124.2亿元，收购意大利马术品牌Cavalleria Toscana 商标权",
+          "source": "华丽志",
+          "source_tier": "tier_2",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VVU02YXFYelpVWlN2S2JDTWFLYjg0dTJzSjd6Q2RWUjdEUGJKM2ZUUkZQMldiWWh0RkZka3dOSzd6OC1zY0RTdGo4eTk2RGhxcFVadHdURVBwWVdLek1wZjluWHdnaUpqWUZFYW5rSEZCdGpfbzE1aU5xOFlnLTA?oc=5",
-          "published_at": "2026-09-04T09:14+08:00",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9YWnF2aWhQMkgwNkxFZXk4SlhGOXBCSnMzcWZUaXFDQ2VLdGRzNG9JSVEzQUcwckNlSkI3bThyWlk?oc=5",
+          "published_at": "2026-09-03T17:35+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "暑期夜间体育消费观察，提供消费场景新视角，对儿童户外活动产品有参考。"
+      "editorial_reason": "海澜之家上半年营收增长并收购马术品牌，显示传统服饰企业多元化布局，关注跨界动向。"
+    },
+    {
+      "event_id": "evt_8d052cf6c24403",
+      "title": "瑜伽服江湖变局：Alo入华、MAIA ACTIVE突围与lululemon的守成之战",
+      "category": "产品与科技",
+      "event_family": "industry_event",
+      "reporting_period": "",
+      "brands": [
+        "lululemon",
+        "Alo"
+      ],
+      "source": "澎湃新闻",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ndV80OGtwS2tHVGVqZmZIb1BCVE5SQmFQTG9XYUlENVJFaE52T1Jfa2E3c19mdnBUaElBZkN2cXZGWnZjQmtTRFJUNHVhN19Qck9sQTAxdkJkMXp4V2c?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ndV80OGtwS2tHVGVqZmZIb1BCVE5SQmFQTG9XYUlENVJFaE52T1Jfa2E3c19mdnBUaElBZkN2cXZGWnZjQmtTRFJUNHVhN19Qck9sQTAxdkJkMXp4V2c?oc=5",
+      "published_at": "2026-09-06T10:08+08:00",
+      "published_date": "2026-09-06",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 47,
+      "selection_score": 59,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_8d052cf6c24403"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_4276e216fbfa9e",
+          "title": "瑜伽服江湖变局：Alo入华、MAIA ACTIVE突围与lululemon的守成之战",
+          "source": "澎湃新闻",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ndV80OGtwS2tHVGVqZmZIb1BCVE5SQmFQTG9XYUlENVJFaE52T1Jfa2E3c19mdnBUaElBZkN2cXZGWnZjQmtTRFJUNHVhN19Qck9sQTAxdkJkMXp4V2c?oc=5",
+          "published_at": "2026-09-06T10:08+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "瑜伽服市场变局，Alo入华、MAIA突围，lululemon守成，显示细分市场竞争加剧。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "高端运动品牌增长承压：lululemon财报背后的行业信号",
-      "analysis": "lululemon二季度营收利润双降，可比销售疫情以来首降，并连续下调全年指引，显示高端瑜伽服市场需求疲软。同时Alo等新品牌入华加剧竞争，lululemon面临守成挑战。对儿童运动品牌而言，高端市场增长放缓可能促使消费者更关注性价比，需平衡品质与价格。",
+      "headline": "高端运动品牌增长承压：lululemon业绩下滑与市场变局",
+      "analysis": "lululemon二季度营收利润双降，下调全年指引，可比销售疫情以来首降，新CEO面临挑战。同时，瑜伽服市场出现Alo入华、MAIA ACTIVE突围等竞争，lululemon的守成之战加剧。这表明高端运动品牌在核心品类上面临增长瓶颈，新兴品牌通过差异化定位和本土化策略抢占市场，行业竞争从产品延伸到品牌文化和渠道。",
       "event_ids": [
         "evt_76dd29b9927c26",
         "evt_8d052cf6c24403"
@@ -301,49 +221,25 @@
       ]
     },
     {
-      "headline": "本土运动品牌分化：安踏与特步的主品牌挑战",
-      "analysis": "安踏半年报整体亮眼但主品牌安踏增速放缓，特步中报营收净利双下滑，主品牌承压。两者均依赖多品牌或跑步细分，但主品牌增长乏力反映大众市场竞争激烈。儿童业务作为主品牌重要延伸，需关注如何通过产品创新和渠道优化提升增长动力。",
+      "headline": "国产运动品牌分化：特步、安踏主品牌承压与多元化探索",
+      "analysis": "特步国际中报营收净利双下滑，但毛利率提升至46.4%，主品牌业绩承压；安踏半年报看似完美但主品牌安踏存隐忧。两者均面临主品牌增长挑战，但通过提升毛利率、多品牌布局等方式应对。行业层面，国产运动品牌在跑步、篮球等细分市场竞争加剧，需在产品创新和品牌升级上持续投入。",
       "event_ids": [
-        "evt_d56ea93745ff35",
-        "evt_bff6dad22b8179"
+        "evt_bff6dad22b8179",
+        "evt_d56ea93745ff35"
       ],
       "evidence": [
-        {
-          "event_id": "evt_d56ea93745ff35",
-          "title": "安踏半年报：看起来完美的财报，藏着“主品牌安踏”的隐忧",
-          "source": "新浪网",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
-          "published_date": "2026-09-06"
-        },
         {
           "event_id": "evt_bff6dad22b8179",
           "title": "特步国际2026年中报：营收净利双下滑，毛利率提升至46.4%，主品牌业绩承压",
           "source": "QQ News",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tQ0Nob0t1X2ZRWUpLb21EY0FqZHNWVVVtcmZSdE5sel9yUGV0dWZCaFlSTFlTeFgxQ3h5S2sxQUFsZHV6VVBDOFdyTV9WWGZiNklXemtR?oc=5",
           "published_date": "2026-09-02"
-        }
-      ]
-    },
-    {
-      "headline": "运动科技产品兴起：智能装备与联名策略",
-      "analysis": "耐克与英特尔合作推出智能篮球鞋，李宁借库里IP发布新品，显示头部品牌通过科技和明星联名提升产品溢价。儿童运动品牌可借鉴科技功能（如数据追踪）和IP合作，但需注意儿童适用性与安全性。",
-      "event_ids": [
-        "evt_c9b3dd9e2a96a9",
-        "evt_992543c2fbb5e1"
-      ],
-      "evidence": [
-        {
-          "event_id": "evt_c9b3dd9e2a96a9",
-          "title": "CES2026丨耐克与英特尔联手发布手机APP足球跟单智能篮球鞋，定义运动科技新标杆",
-          "source": "ttplus.cn",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9BWndCemxENnNrMzlCYkFNbzJsQkdwc0l3VnBoNVplSy1NaHQzQ1NST2ZWM2VUWDB2OG1VZE5SYkVuU0lzWEd5WGVReUVKSVFlWmc?oc=5",
-          "published_date": "2026-09-05"
         },
         {
-          "event_id": "evt_992543c2fbb5e1",
-          "title": "李宁库里中国行系列新品发布，首批带Logo鞋款亮相",
+          "event_id": "evt_d56ea93745ff35",
+          "title": "安踏半年报：看起来完美的财报，藏着“主品牌安踏”的隐忧",
           "source": "新浪网",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JRUh3WDVRX1NteDZCLTNWWmN4a2J0SkhJQVktd2E2UVdBVUFuYjQzYUtXbmhqVnRZY0lKNTFlWXJPNnpFZVlFSVhXWVlmM0ItZWJKM2ZFSUUwX19QY28zRG9sM1J2YlBuU3M5bDJtTThYQnM?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
           "published_date": "2026-09-06"
         }
       ]
@@ -389,42 +285,65 @@
           "summary": ""
         }
       ]
+    },
+    {
+      "event_id": "evt_d56ea93745ff35",
+      "title": "安踏半年报：看起来完美的财报，藏着“主品牌安踏”的隐忧",
+      "category": "品牌与公司",
+      "event_family": "financial_results",
+      "reporting_period": "2026_h1",
+      "brands": [
+        "安踏"
+      ],
+      "source": "新浪网",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
+      "published_at": "2026-09-06T09:09+08:00",
+      "published_date": "2026-09-06",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 44,
+      "selection_score": 56,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_d56ea93745ff35"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_556a48af0eb28a",
+          "title": "安踏半年报：看起来完美的财报，藏着“主品牌安踏”的隐忧",
+          "source": "新浪网",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
+          "published_at": "2026-09-06T09:09+08:00",
+          "summary": ""
+        }
+      ]
     }
   ],
   "kids_consumer": [],
   "watchlist": [
     {
-      "title": "lululemon后续业绩与策略调整",
+      "title": "lululemon新CEO战略调整与市场反应",
       "event_ids": [
         "evt_76dd29b9927c26"
       ],
       "product_ids": [],
-      "reason": "观察lululemon新CEO上任后如何应对业绩下滑，是否调整产品线或价格策略，影响高端运动市场走向。"
+      "reason": "关注新CEO上任后如何应对业绩下滑，是否调整产品线或渠道策略，以及市场对后续指引的反应。"
     },
     {
-      "title": "安踏主品牌儿童线表现",
+      "title": "国产运动品牌主品牌复苏策略",
       "event_ids": [
+        "evt_bff6dad22b8179",
         "evt_d56ea93745ff35"
       ],
       "product_ids": [],
-      "reason": "关注安踏主品牌在儿童市场的具体动作，如新品发布或渠道拓展，评估其儿童业务增长潜力。"
-    },
-    {
-      "title": "特步跑步产品线更新",
-      "event_ids": [
-        "evt_bff6dad22b8179",
-        "evt_cdba54879b7b3d"
-      ],
-      "product_ids": [],
-      "reason": "特步全场景跑步新品发布后，观察其儿童跑鞋产品是否跟进，以及市场反馈。"
-    },
-    {
-      "title": "智能运动装备在儿童市场的应用",
-      "event_ids": [
-        "evt_c9b3dd9e2a96a9"
-      ],
-      "product_ids": [],
-      "reason": "耐克智能篮球鞋发布后，关注是否有儿童版本或类似技术下探，评估儿童智能装备需求。"
+      "reason": "观察特步、安踏主品牌在下半年是否有新品或营销动作提振业绩，以及多品牌协同效果。"
     }
   ],
   "tracking": {
@@ -490,126 +409,6 @@
         "editorial_reason": "lululemon二季度营收利润双降，下调全年预期，反映高端运动品牌增长瓶颈，对行业有警示意义。"
       },
       {
-        "event_id": "evt_d56ea93745ff35",
-        "title": "安踏半年报：看起来完美的财报，藏着“主品牌安踏”的隐忧",
-        "category": "品牌与公司",
-        "event_family": "financial_results",
-        "reporting_period": "2026_h1",
-        "brands": [
-          "安踏"
-        ],
-        "source": "新浪网",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
-        "published_at": "2026-09-06T09:09+08:00",
-        "published_date": "2026-09-06",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 44,
-        "selection_score": 56,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_d56ea93745ff35"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_556a48af0eb28a",
-            "title": "安踏半年报：看起来完美的财报，藏着“主品牌安踏”的隐忧",
-            "source": "新浪网",
-            "source_tier": "tier_3",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
-            "published_at": "2026-09-06T09:09+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "安踏半年报表面完美但主品牌隐忧，揭示本土龙头多品牌战略下的结构性挑战。"
-      },
-      {
-        "event_id": "evt_c9b3dd9e2a96a9",
-        "title": "CES2026丨耐克与英特尔联手发布手机APP足球跟单智能篮球鞋，定义运动科技新标杆",
-        "category": "产品与科技",
-        "event_family": "industry_event",
-        "reporting_period": "",
-        "brands": [
-          "Nike"
-        ],
-        "source": "ttplus.cn",
-        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9BWndCemxENnNrMzlCYkFNbzJsQkdwc0l3VnBoNVplSy1NaHQzQ1NST2ZWM2VUWDB2OG1VZE5SYkVuU0lzWEd5WGVReUVKSVFlWmc?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9BWndCemxENnNrMzlCYkFNbzJsQkdwc0l3VnBoNVplSy1NaHQzQ1NST2ZWM2VUWDB2OG1VZE5SYkVuU0lzWEd5WGVReUVKSVFlWmc?oc=5",
-        "published_at": "2026-09-05T10:52+08:00",
-        "published_date": "2026-09-05",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 43,
-        "selection_score": 65,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_c9b3dd9e2a96a9"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_98e86c9e59ff57",
-            "title": "CES2026丨耐克与英特尔联手发布手机APP足球跟单智能篮球鞋，定义运动科技新标杆",
-            "source": "ttplus.cn",
-            "source_tier": "tier_3",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9BWndCemxENnNrMzlCYkFNbzJsQkdwc0l3VnBoNVplSy1NaHQzQ1NST2ZWM2VUWDB2OG1VZE5SYkVuU0lzWEd5WGVReUVKSVFlWmc?oc=5",
-            "published_at": "2026-09-05T10:52+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "耐克与英特尔合作智能篮球鞋，代表运动科技产品新方向，值得关注技术应用趋势。"
-      },
-      {
-        "event_id": "evt_992543c2fbb5e1",
-        "title": "李宁库里中国行系列新品发布，首批带Logo鞋款亮相",
-        "category": "产品与科技",
-        "event_family": "product_launch",
-        "reporting_period": "",
-        "brands": [
-          "李宁"
-        ],
-        "source": "新浪网",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JRUh3WDVRX1NteDZCLTNWWmN4a2J0SkhJQVktd2E2UVdBVUFuYjQzYUtXbmhqVnRZY0lKNTFlWXJPNnpFZVlFSVhXWVlmM0ItZWJKM2ZFSUUwX19QY28zRG9sM1J2YlBuU3M5bDJtTThYQnM?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JRUh3WDVRX1NteDZCLTNWWmN4a2J0SkhJQVktd2E2UVdBVUFuYjQzYUtXbmhqVnRZY0lKNTFlWXJPNnpFZVlFSVhXWVlmM0ItZWJKM2ZFSUUwX19QY28zRG9sM1J2YlBuU3M5bDJtTThYQnM?oc=5",
-        "published_at": "2026-09-06T10:03+08:00",
-        "published_date": "2026-09-06",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 52,
-        "selection_score": 64,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_992543c2fbb5e1"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_122bcd0d8f3066",
-            "title": "李宁库里中国行系列新品发布，首批带Logo鞋款亮相",
-            "source": "新浪网",
-            "source_tier": "tier_3",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JRUh3WDVRX1NteDZCLTNWWmN4a2J0SkhJQVktd2E2UVdBVUFuYjQzYUtXbmhqVnRZY0lKNTFlWXJPNnpFZVlFSVhXWVlmM0ItZWJKM2ZFSUUwX19QY28zRG9sM1J2YlBuU3M5bDJtTThYQnM?oc=5",
-            "published_at": "2026-09-06T10:03+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "李宁库里中国行系列新品发布，明星IP驱动产品营销，对儿童运动品牌有借鉴意义。"
-      },
-      {
         "event_id": "evt_b7e8e68623ae92",
         "title": "国家疾病预防控制局举行“科学防病开学季 健康护航新学期”主题新闻发布会",
         "category": "儿童与青少年",
@@ -645,45 +444,86 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "疾控局开学季发布会，关注儿童健康政策动向，影响儿童运动装备需求。"
+        "editorial_reason": "开学季健康主题发布会，聚焦儿童健康，为儿童运动产品提供政策与健康导向。"
       },
       {
-        "event_id": "evt_48b52a05db21fb",
-        "title": "热浪退场 运动上场——暑期夜间体育消费新场景观察",
-        "category": "宏观与消费",
-        "event_family": "macro_data",
-        "reporting_period": "",
+        "event_id": "evt_f8c7e9a9179a71",
+        "title": "海澜之家上半年营收同比增长7.38%至124.2亿元，收购意大利马术品牌Cavalleria Toscana 商标权",
+        "category": "品牌与公司",
+        "event_family": "financial_results",
+        "reporting_period": "2026_h1",
         "brands": [],
-        "source": "新华网",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VVU02YXFYelpVWlN2S2JDTWFLYjg0dTJzSjd6Q2RWUjdEUGJKM2ZUUkZQMldiWWh0RkZka3dOSzd6OC1zY0RTdGo4eTk2RGhxcFVadHdURVBwWVdLek1wZjluWHdnaUpqWUZFYW5rSEZCdGpfbzE1aU5xOFlnLTA?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VVU02YXFYelpVWlN2S2JDTWFLYjg0dTJzSjd6Q2RWUjdEUGJKM2ZUUkZQMldiWWh0RkZka3dOSzd6OC1zY0RTdGo4eTk2RGhxcFVadHdURVBwWVdLek1wZjluWHdnaUpqWUZFYW5rSEZCdGpfbzE1aU5xOFlnLTA?oc=5",
-        "published_at": "2026-09-04T09:14+08:00",
-        "published_date": "2026-09-04",
+        "source": "华丽志",
+        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9YWnF2aWhQMkgwNkxFZXk4SlhGOXBCSnMzcWZUaXFDQ2VLdGRzNG9JSVEzQUcwckNlSkI3bThyWlk?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9YWnF2aWhQMkgwNkxFZXk4SlhGOXBCSnMzcWZUaXFDQ2VLdGRzNG9JSVEzQUcwckNlSkI3bThyWlk?oc=5",
+        "published_at": "2026-09-03T17:35+08:00",
+        "published_date": "2026-09-03",
         "status": "new",
         "verification": "single_source",
         "is_official": false,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 49,
-        "selection_score": 59,
+        "editorial_score": 57,
+        "selection_score": 78,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_48b52a05db21fb"
+          "evt_f8c7e9a9179a71"
         ],
         "evidence": [
           {
-            "item_id": "src_6984799f63b2eb",
-            "title": "热浪退场 运动上场——暑期夜间体育消费新场景观察",
-            "source": "新华网",
-            "source_tier": "tier_1",
+            "item_id": "src_01400a2750eac5",
+            "title": "海澜之家上半年营收同比增长7.38%至124.2亿元，收购意大利马术品牌Cavalleria Toscana 商标权",
+            "source": "华丽志",
+            "source_tier": "tier_2",
             "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VVU02YXFYelpVWlN2S2JDTWFLYjg0dTJzSjd6Q2RWUjdEUGJKM2ZUUkZQMldiWWh0RkZka3dOSzd6OC1zY0RTdGo4eTk2RGhxcFVadHdURVBwWVdLek1wZjluWHdnaUpqWUZFYW5rSEZCdGpfbzE1aU5xOFlnLTA?oc=5",
-            "published_at": "2026-09-04T09:14+08:00",
+            "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9YWnF2aWhQMkgwNkxFZXk4SlhGOXBCSnMzcWZUaXFDQ2VLdGRzNG9JSVEzQUcwckNlSkI3bThyWlk?oc=5",
+            "published_at": "2026-09-03T17:35+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "暑期夜间体育消费观察，提供消费场景新视角，对儿童户外活动产品有参考。"
+        "editorial_reason": "海澜之家上半年营收增长并收购马术品牌，显示传统服饰企业多元化布局，关注跨界动向。"
+      },
+      {
+        "event_id": "evt_8d052cf6c24403",
+        "title": "瑜伽服江湖变局：Alo入华、MAIA ACTIVE突围与lululemon的守成之战",
+        "category": "产品与科技",
+        "event_family": "industry_event",
+        "reporting_period": "",
+        "brands": [
+          "lululemon",
+          "Alo"
+        ],
+        "source": "澎湃新闻",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ndV80OGtwS2tHVGVqZmZIb1BCVE5SQmFQTG9XYUlENVJFaE52T1Jfa2E3c19mdnBUaElBZkN2cXZGWnZjQmtTRFJUNHVhN19Qck9sQTAxdkJkMXp4V2c?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ndV80OGtwS2tHVGVqZmZIb1BCVE5SQmFQTG9XYUlENVJFaE52T1Jfa2E3c19mdnBUaElBZkN2cXZGWnZjQmtTRFJUNHVhN19Qck9sQTAxdkJkMXp4V2c?oc=5",
+        "published_at": "2026-09-06T10:08+08:00",
+        "published_date": "2026-09-06",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 47,
+        "selection_score": 59,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_8d052cf6c24403"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_4276e216fbfa9e",
+            "title": "瑜伽服江湖变局：Alo入华、MAIA ACTIVE突围与lululemon的守成之战",
+            "source": "澎湃新闻",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ndV80OGtwS2tHVGVqZmZIb1BCVE5SQmFQTG9XYUlENVJFaE52T1Jfa2E3c19mdnBUaElBZkN2cXZGWnZjQmtTRFJUNHVhN19Qck9sQTAxdkJkMXp4V2c?oc=5",
+            "published_at": "2026-09-06T10:08+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "瑜伽服市场变局，Alo入华、MAIA突围，lululemon守成，显示细分市场竞争加剧。"
       }
     ],
     "follow_up_selected": [],
@@ -849,30 +689,6 @@
     },
     {
       "type": "event",
-      "id": "evt_d56ea93745ff35",
-      "title": "安踏半年报：看起来完美的财报，藏着“主品牌安踏”的隐忧",
-      "source": "新浪网",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
-      "published_date": "2026-09-06"
-    },
-    {
-      "type": "event",
-      "id": "evt_c9b3dd9e2a96a9",
-      "title": "CES2026丨耐克与英特尔联手发布手机APP足球跟单智能篮球鞋，定义运动科技新标杆",
-      "source": "ttplus.cn",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9BWndCemxENnNrMzlCYkFNbzJsQkdwc0l3VnBoNVplSy1NaHQzQ1NST2ZWM2VUWDB2OG1VZE5SYkVuU0lzWEd5WGVReUVKSVFlWmc?oc=5",
-      "published_date": "2026-09-05"
-    },
-    {
-      "type": "event",
-      "id": "evt_992543c2fbb5e1",
-      "title": "李宁库里中国行系列新品发布，首批带Logo鞋款亮相",
-      "source": "新浪网",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JRUh3WDVRX1NteDZCLTNWWmN4a2J0SkhJQVktd2E2UVdBVUFuYjQzYUtXbmhqVnRZY0lKNTFlWXJPNnpFZVlFSVhXWVlmM0ItZWJKM2ZFSUUwX19QY28zRG9sM1J2YlBuU3M5bDJtTThYQnM?oc=5",
-      "published_date": "2026-09-06"
-    },
-    {
-      "type": "event",
       "id": "evt_b7e8e68623ae92",
       "title": "国家疾病预防控制局举行“科学防病开学季 健康护航新学期”主题新闻发布会",
       "source": "新华网",
@@ -881,11 +697,19 @@
     },
     {
       "type": "event",
-      "id": "evt_48b52a05db21fb",
-      "title": "热浪退场 运动上场——暑期夜间体育消费新场景观察",
-      "source": "新华网",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9VVU02YXFYelpVWlN2S2JDTWFLYjg0dTJzSjd6Q2RWUjdEUGJKM2ZUUkZQMldiWWh0RkZka3dOSzd6OC1zY0RTdGo4eTk2RGhxcFVadHdURVBwWVdLek1wZjluWHdnaUpqWUZFYW5rSEZCdGpfbzE1aU5xOFlnLTA?oc=5",
-      "published_date": "2026-09-04"
+      "id": "evt_f8c7e9a9179a71",
+      "title": "海澜之家上半年营收同比增长7.38%至124.2亿元，收购意大利马术品牌Cavalleria Toscana 商标权",
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9YWnF2aWhQMkgwNkxFZXk4SlhGOXBCSnMzcWZUaXFDQ2VLdGRzNG9JSVEzQUcwckNlSkI3bThyWlk?oc=5",
+      "published_date": "2026-09-03"
+    },
+    {
+      "type": "event",
+      "id": "evt_8d052cf6c24403",
+      "title": "瑜伽服江湖变局：Alo入华、MAIA ACTIVE突围与lululemon的守成之战",
+      "source": "澎湃新闻",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ndV80OGtwS2tHVGVqZmZIb1BCVE5SQmFQTG9XYUlENVJFaE52T1Jfa2E3c19mdnBUaElBZkN2cXZGWnZjQmtTRFJUNHVhN19Qck9sQTAxdkJkMXp4V2c?oc=5",
+      "published_date": "2026-09-06"
     },
     {
       "type": "event",
@@ -897,10 +721,10 @@
     },
     {
       "type": "event",
-      "id": "evt_8d052cf6c24403",
-      "title": "瑜伽服江湖变局：Alo入华、MAIA ACTIVE突围与lululemon的守成之战",
-      "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ndV80OGtwS2tHVGVqZmZIb1BCVE5SQmFQTG9XYUlENVJFaE52T1Jfa2E3c19mdnBUaElBZkN2cXZGWnZjQmtTRFJUNHVhN19Qck9sQTAxdkJkMXp4V2c?oc=5",
+      "id": "evt_d56ea93745ff35",
+      "title": "安踏半年报：看起来完美的财报，藏着“主品牌安踏”的隐忧",
+      "source": "新浪网",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
       "published_date": "2026-09-06"
     }
   ],
@@ -912,13 +736,13 @@
     "raw_event_count": 30,
     "coalesced_event_count": 30,
     "eligible_event_count": 30,
-    "selected_event_count": 6,
+    "selected_event_count": 4,
     "raw_product_count": 12,
     "product_lead_count": 12,
     "eligible_product_count": 0,
     "selected_product_count": 0,
     "conflict_count": 0,
-    "source_link_count": 10,
+    "source_link_count": 8,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
@@ -935,7 +759,7 @@
       "宏观与消费": 1
     },
     "selected_status": {
-      "new": 6
+      "new": 4
     },
     "quality_notes": [
       "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
