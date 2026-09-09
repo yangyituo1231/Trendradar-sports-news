@@ -1,19 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-09-08T09:43+08:00",
+  "generated_at": "2026-09-09T09:50+08:00",
   "report_window": {
     "start_date": "2026-08-31",
     "end_date": "2026-09-06",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "本周运动品牌财报密集，lululemon业绩下滑引发行业关注，国产品牌分化，儿童市场政策与消费场景受重视。",
-    "week_in_one_paragraph": "lululemon二季度营收利润双降并下调指引，引发市场对高端运动品牌增长瓶颈的讨论；特步、安踏中报显示主品牌承压，行业竞争加剧。同时，开学季健康主题发布会及地方消费券政策为儿童消费提供支持，户外研学活动增多，儿童运动场景受关注。",
+    "weekly_thesis": "本周运动品牌财报密集发布，lululemon业绩下滑引发行业关注，国产品牌分化明显，儿童市场需关注开学季健康与消费政策动向。",
+    "week_in_one_paragraph": "lululemon二季度营收利润双降并下调全年指引，引发市场对高端运动品牌增长瓶颈的讨论。特步、安踏等本土品牌中报显示主品牌承压，但毛利率改善。行业层面，瑜伽服赛道竞争加剧，Alo入华、MAIA ACTIVE突围。开学季健康主题发布会及地方消费券政策或影响儿童消费。",
     "next_week_focus": [
-      "关注lululemon后续市场反应及新CEO战略发布。",
-      "跟踪特步、安踏主品牌新品发布及渠道动态。",
-      "留意开学季儿童健康政策对运动消费的带动。",
-      "观察瑜伽服市场竞争格局变化，Alo等品牌扩张。"
+      "lululemon新CEO战略发布及中国市场应对措施。",
+      "特步、安踏儿童业务线中报数据及后续动作。",
+      "开学季儿童运动装备消费趋势及健康政策落地。",
+      "瑜伽服赛道竞争动态，Alo入华进展。",
+      "地方消费券对体育零售的短期刺激效果。"
     ]
   },
   "key_developments": [
@@ -75,7 +76,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "lululemon二季度营收利润双降，下调全年预期，反映高端运动品牌增长瓶颈，对行业有警示意义。"
+      "editorial_reason": "lululemon二季度营收利润双降，负面舆论冲击中国销售，反映高端运动品牌在华挑战。"
     },
     {
       "event_id": "evt_b7e8e68623ae92",
@@ -113,7 +114,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "开学季健康主题发布会，聚焦儿童健康，为儿童运动产品提供政策与健康导向。"
+      "editorial_reason": "开学季健康主题发布会，涉及儿童健康防护，对儿童运动装备需求有政策导向意义。"
     },
     {
       "event_id": "evt_f8c7e9a9179a71",
@@ -151,7 +152,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "海澜之家上半年营收增长并收购马术品牌，显示传统服饰企业多元化布局，关注跨界动向。"
+      "editorial_reason": "海澜之家上半年营收增长并收购马术品牌，显示传统服饰企业多元化布局动向。"
     },
     {
       "event_id": "evt_8d052cf6c24403",
@@ -192,13 +193,13 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "瑜伽服市场变局，Alo入华、MAIA突围，lululemon守成，显示细分市场竞争加剧。"
+      "editorial_reason": "瑜伽服赛道变局，Alo入华、MAIA ACTIVE突围，lululemon守成，行业竞争格局生变。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "高端运动品牌增长承压：lululemon业绩下滑与市场变局",
-      "analysis": "lululemon二季度营收利润双降，下调全年指引，可比销售疫情以来首降，新CEO面临挑战。同时，瑜伽服市场出现Alo入华、MAIA ACTIVE突围等竞争，lululemon的守成之战加剧。这表明高端运动品牌在核心品类上面临增长瓶颈，新兴品牌通过差异化定位和本土化策略抢占市场，行业竞争从产品延伸到品牌文化和渠道。",
+      "headline": "高端运动品牌增长承压：lululemon财报透视行业拐点",
+      "analysis": "lululemon二季度营收利润双降，可比销售疫情以来首降，全年指引连续下调，新CEO面临挑战。瑜伽服赛道竞争加剧，Alo入华、MAIA ACTIVE突围，lululemon守成困难。行业层面，高端运动品牌依赖单一品类增长模式遭遇瓶颈，需多元化或强化DTC。",
       "event_ids": [
         "evt_76dd29b9927c26",
         "evt_8d052cf6c24403"
@@ -221,8 +222,8 @@
       ]
     },
     {
-      "headline": "国产运动品牌分化：特步、安踏主品牌承压与多元化探索",
-      "analysis": "特步国际中报营收净利双下滑，但毛利率提升至46.4%，主品牌业绩承压；安踏半年报看似完美但主品牌安踏存隐忧。两者均面临主品牌增长挑战，但通过提升毛利率、多品牌布局等方式应对。行业层面，国产运动品牌在跑步、篮球等细分市场竞争加剧，需在产品创新和品牌升级上持续投入。",
+      "headline": "本土运动品牌中报分化：主品牌承压与毛利率改善并存",
+      "analysis": "特步国际中报营收净利双下滑，但毛利率提升至46.4%，主品牌业绩承压；安踏半年报看似完美，但主品牌安踏存隐忧。两者均显示多品牌或子品牌增长未能完全抵消主品牌压力。行业层面，本土品牌在跑步、篮球等核心品类竞争白热化，需通过产品创新和渠道优化提升盈利能力。儿童业务作为细分领域，或成新增长点。",
       "event_ids": [
         "evt_bff6dad22b8179",
         "evt_d56ea93745ff35"
@@ -326,24 +327,69 @@
       ]
     }
   ],
-  "kids_consumer": [],
+  "kids_consumer": [
+    {
+      "event_id": "evt_62723577b57dde",
+      "title": "“乐购普陀”商圈零售消费券明天10:00 开领2026-09-03",
+      "category": "行业动态",
+      "event_family": "industry_event",
+      "reporting_period": "",
+      "brands": [],
+      "source": "上海市人民政府",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPUnR1TTlkdmxwSGhpLUt6cy1nSUU5Ul9mTDQ3TENIb182Rmp3ZDlEZHc5YWV0clA3cV9RQlFVV3BSbjNlNEsweXJWMDZwa3puazFtYVk0N2FBWE9kQkJtc1NHUC1kaEFwU2kzcXRNUjBFQV9GNU9iYTBpSUVlVWNsdzBEZXVkdHpVSEE?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPUnR1TTlkdmxwSGhpLUt6cy1nSUU5Ul9mTDQ3TENIb182Rmp3ZDlEZHc5YWV0clA3cV9RQlFVV3BSbjNlNEsweXJWMDZwa3puazFtYVk0N2FBWE9kQkJtc1NHUC1kaEFwU2kzcXRNUjBFQV9GNU9iYTBpSUVlVWNsdzBEZXVkdHpVSEE?oc=5",
+      "published_at": "2026-09-04T10:35+08:00",
+      "published_date": "2026-09-04",
+      "status": "new",
+      "verification": "official_source",
+      "is_official": true,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 53,
+      "selection_score": 69,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_62723577b57dde"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_762c575fcad928",
+          "title": "“乐购普陀”商圈零售消费券明天10:00 开领2026-09-03",
+          "source": "上海市人民政府",
+          "source_tier": "official",
+          "is_official": true,
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPUnR1TTlkdmxwSGhpLUt6cy1nSUU5Ul9mTDQ3TENIb182Rmp3ZDlEZHc5YWV0clA3cV9RQlFVV3BSbjNlNEsweXJWMDZwa3puazFtYVk0N2FBWE9kQkJtc1NHUC1kaEFwU2kzcXRNUjBFQV9GNU9iYTBpSUVlVWNsdzBEZXVkdHpVSEE?oc=5",
+          "published_at": "2026-09-04T10:35+08:00",
+          "summary": ""
+        }
+      ]
+    }
+  ],
   "watchlist": [
     {
-      "title": "lululemon新CEO战略调整与市场反应",
+      "title": "lululemon新CEO战略调整及中国市场表现",
       "event_ids": [
         "evt_76dd29b9927c26"
       ],
       "product_ids": [],
-      "reason": "关注新CEO上任后如何应对业绩下滑，是否调整产品线或渠道策略，以及市场对后续指引的反应。"
+      "reason": "关注新CEO上任后如何应对业绩下滑，以及中国市场的具体策略变化。"
     },
     {
-      "title": "国产运动品牌主品牌复苏策略",
+      "title": "开学季健康政策对儿童运动装备需求的影响",
       "event_ids": [
-        "evt_bff6dad22b8179",
-        "evt_d56ea93745ff35"
+        "evt_b7e8e68623ae92"
       ],
       "product_ids": [],
-      "reason": "观察特步、安踏主品牌在下半年是否有新品或营销动作提振业绩，以及多品牌协同效果。"
+      "reason": "观察疾控中心开学季健康主题是否带动儿童运动防护装备需求。"
+    },
+    {
+      "title": "地方消费券对体育零售的拉动效果",
+      "event_ids": [
+        "evt_62723577b57dde"
+      ],
+      "product_ids": [],
+      "reason": "普陀区消费券发放后，观察商圈体育用品销售数据变化。"
     }
   ],
   "tracking": {
@@ -406,7 +452,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "lululemon二季度营收利润双降，下调全年预期，反映高端运动品牌增长瓶颈，对行业有警示意义。"
+        "editorial_reason": "lululemon二季度营收利润双降，负面舆论冲击中国销售，反映高端运动品牌在华挑战。"
       },
       {
         "event_id": "evt_b7e8e68623ae92",
@@ -444,7 +490,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "开学季健康主题发布会，聚焦儿童健康，为儿童运动产品提供政策与健康导向。"
+        "editorial_reason": "开学季健康主题发布会，涉及儿童健康防护，对儿童运动装备需求有政策导向意义。"
       },
       {
         "event_id": "evt_f8c7e9a9179a71",
@@ -482,7 +528,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "海澜之家上半年营收增长并收购马术品牌，显示传统服饰企业多元化布局，关注跨界动向。"
+        "editorial_reason": "海澜之家上半年营收增长并收购马术品牌，显示传统服饰企业多元化布局动向。"
       },
       {
         "event_id": "evt_8d052cf6c24403",
@@ -523,7 +569,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "瑜伽服市场变局，Alo入华、MAIA突围，lululemon守成，显示细分市场竞争加剧。"
+        "editorial_reason": "瑜伽服赛道变局，Alo入华、MAIA ACTIVE突围，lululemon守成，行业竞争格局生变。"
       }
     ],
     "follow_up_selected": [],
@@ -726,6 +772,14 @@
       "source": "新浪网",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
       "published_date": "2026-09-06"
+    },
+    {
+      "type": "event",
+      "id": "evt_62723577b57dde",
+      "title": "“乐购普陀”商圈零售消费券明天10:00 开领2026-09-03",
+      "source": "上海市人民政府",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPUnR1TTlkdmxwSGhpLUt6cy1nSUU5Ul9mTDQ3TENIb182Rmp3ZDlEZHc5YWV0clA3cV9RQlFVV3BSbjNlNEsweXJWMDZwa3puazFtYVk0N2FBWE9kQkJtc1NHUC1kaEFwU2kzcXRNUjBFQV9GNU9iYTBpSUVlVWNsdzBEZXVkdHpVSEE?oc=5",
+      "published_date": "2026-09-04"
     }
   ],
   "data_quality": {
@@ -742,7 +796,7 @@
     "eligible_product_count": 0,
     "selected_product_count": 0,
     "conflict_count": 0,
-    "source_link_count": 8,
+    "source_link_count": 9,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
