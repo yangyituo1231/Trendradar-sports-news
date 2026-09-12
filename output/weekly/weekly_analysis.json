@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-09-11T09:44+08:00",
+  "generated_at": "2026-09-12T09:50+08:00",
   "report_window": {
     "start_date": "2026-08-31",
     "end_date": "2026-09-06",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "国际品牌财报分化，lululemon承压；本土品牌加码跑步与篮球产品，儿童运动场景受政策关注。",
-    "week_in_one_paragraph": "本周lululemon二季度营收利润双降并下调指引，中国销售受舆论冲击，新CEO面临挑战；特步、安踏中报显主品牌承压，On昂跑DTC增长亮眼。产品端李宁、特步、Nike密集发布新品，篮球与跑鞋科技竞争升温。儿童健康与体育消费政策信号持续，开学季防病与夜间运动场景值得关注。",
+    "weekly_thesis": "国际品牌财报分化，lululemon承压；儿童开学健康与体育消费政策释放场景信号。",
+    "week_in_one_paragraph": "本周lululemon二季度营收利润双降并下调指引，成为最集中的品牌信号；特步、安踏、海澜之家等本土公司中报呈现分化。平台侧耐高运营权易主抖音，渠道格局生变。儿童与青少年方向，疾控局开学季健康发布会与暑期夜间体育消费观察，提示健康防护和运动场景仍是家庭消费关注点。",
     "next_week_focus": [
-      "lululemon中国销售负面舆论是否持续发酵",
-      "特步、安踏儿童线是否有新品或渠道调整",
-      "开学季儿童运动装备消费趋势变化",
-      "国际品牌财报对童装线资源投入的影响",
-      "夜间运动场景是否催生儿童运动新品"
+      "跟踪lululemon中国销售与舆论后续反应",
+      "关注特步、安踏中报后主品牌策略调整",
+      "观察耐高抖音独家直播的招商与内容动向",
+      "留意开学季儿童健康防护相关消费场景",
+      "跟踪瑜伽服市场竞争格局变化"
     ]
   },
   "key_developments": [
@@ -76,7 +76,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "lululemon营收利润双降且中国销售受舆论冲击，反映国际瑜伽品牌在华竞争压力。"
+      "editorial_reason": "lululemon营收利润双降且中国销售受舆论冲击，是本周最集中的国际品牌财务信号。"
     },
     {
       "event_id": "evt_bff6dad22b8179",
@@ -116,87 +116,47 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "特步中报营收净利双下滑但毛利率提升，主品牌承压，为本土运动品牌提供参照。"
+      "editorial_reason": "特步中报营收净利双下滑但毛利率提升，反映本土运动品牌主品牌承压与结构变化。"
     },
     {
-      "event_id": "evt_992543c2fbb5e1",
-      "title": "李宁库里中国行系列新品发布，首批带Logo鞋款亮相",
-      "category": "产品与科技",
-      "event_family": "product_launch",
+      "event_id": "evt_edc6b6119dc172",
+      "title": "耐高运营权易主抖音独家直播新赛季，lululemon索赔2000万元败诉",
+      "category": "电商与平台",
+      "event_family": "capital_strategy",
       "reporting_period": "",
       "brands": [
-        "李宁"
+        "lululemon"
       ],
-      "source": "新浪网",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JRUh3WDVRX1NteDZCLTNWWmN4a2J0SkhJQVktd2E2UVdBVUFuYjQzYUtXbmhqVnRZY0lKNTFlWXJPNnpFZVlFSVhXWVlmM0ItZWJKM2ZFSUUwX19QY28zRG9sM1J2YlBuU3M5bDJtTThYQnM?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JRUh3WDVRX1NteDZCLTNWWmN4a2J0SkhJQVktd2E2UVdBVUFuYjQzYUtXbmhqVnRZY0lKNTFlWXJPNnpFZVlFSVhXWVlmM0ItZWJKM2ZFSUUwX19QY28zRG9sM1J2YlBuU3M5bDJtTThYQnM?oc=5",
-      "published_at": "2026-09-06T10:03+08:00",
-      "published_date": "2026-09-06",
+      "source": "澎湃新闻",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE96ZVhDREhBZmpRdmZXeldsbk5ycXNROVZkcU5vbWF2bHRnV2tSMk5XWEQ5YVpQQmdkY29wYlg0NVUyQnYwd1FicWpPTFZJYlFjRTV2Q2ROaFM4NEN4NHc?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE96ZVhDREhBZmpRdmZXeldsbk5ycXNROVZkcU5vbWF2bHRnV2tSMk5XWEQ5YVpQQmdkY29wYlg0NVUyQnYwd1FicWpPTFZJYlFjRTV2Q2ROaFM4NEN4NHc?oc=5",
+      "published_at": "2026-09-04T16:10+08:00",
+      "published_date": "2026-09-04",
       "status": "new",
       "verification": "single_source",
       "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 52,
-      "selection_score": 64,
+      "editorial_score": 54,
+      "selection_score": 69,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_992543c2fbb5e1"
+        "evt_edc6b6119dc172"
       ],
       "evidence": [
         {
-          "item_id": "src_122bcd0d8f3066",
-          "title": "李宁库里中国行系列新品发布，首批带Logo鞋款亮相",
-          "source": "新浪网",
-          "source_tier": "tier_3",
+          "item_id": "src_dfa512a89537e3",
+          "title": "耐高运营权易主抖音独家直播新赛季，lululemon索赔2000万元败诉",
+          "source": "澎湃新闻",
+          "source_tier": "tier_2",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JRUh3WDVRX1NteDZCLTNWWmN4a2J0SkhJQVktd2E2UVdBVUFuYjQzYUtXbmhqVnRZY0lKNTFlWXJPNnpFZVlFSVhXWVlmM0ItZWJKM2ZFSUUwX19QY28zRG9sM1J2YlBuU3M5bDJtTThYQnM?oc=5",
-          "published_at": "2026-09-06T10:03+08:00",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE96ZVhDREhBZmpRdmZXeldsbk5ycXNROVZkcU5vbWF2bHRnV2tSMk5XWEQ5YVpQQmdkY29wYlg0NVUyQnYwd1FicWpPTFZJYlFjRTV2Q2ROaFM4NEN4NHc?oc=5",
+          "published_at": "2026-09-04T16:10+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "李宁库里中国行系列新品发布，篮球品类营销与产品联动值得关注。"
-    },
-    {
-      "event_id": "evt_cdba54879b7b3d",
-      "title": "特步举行2026全场景跑步新品发布会",
-      "category": "产品与科技",
-      "event_family": "product_launch",
-      "reporting_period": "",
-      "brands": [
-        "特步"
-      ],
-      "source": "东方财富",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE00bElCOGU5X3ctUWw4amdNZjFlVmJmeFNYMVB0bXNBMEVYRWtsTHZjTlFEemZVenBiYXl3bHdIUzByWVVPN0JEcXplRmJQSVZuUG9RNWUxTHAzMkVkSHpHNg?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE00bElCOGU5X3ctUWw4amdNZjFlVmJmeFNYMVB0bXNBMEVYRWtsTHZjTlFEemZVenBiYXl3bHdIUzByWVVPN0JEcXplRmJQSVZuUG9RNWUxTHAzMkVkSHpHNg?oc=5",
-      "published_at": "2026-09-03T21:37+08:00",
-      "published_date": "2026-09-03",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 44,
-      "selection_score": 56,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_cdba54879b7b3d"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_c1b3782ab2e6a3",
-          "title": "特步举行2026全场景跑步新品发布会",
-          "source": "东方财富",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE00bElCOGU5X3ctUWw4amdNZjFlVmJmeFNYMVB0bXNBMEVYRWtsTHZjTlFEemZVenBiYXl3bHdIUzByWVVPN0JEcXplRmJQSVZuUG9RNWUxTHAzMkVkSHpHNg?oc=5",
-          "published_at": "2026-09-03T21:37+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "特步全场景跑步新品发布，跑步品类竞争加剧，对儿童跑鞋有间接参考。"
+      "editorial_reason": "耐高运营权易主抖音独家直播，青少年篮球赛事平台格局出现变化。"
     },
     {
       "event_id": "evt_b7e8e68623ae92",
@@ -234,7 +194,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "疾控局开学季健康发布会，儿童防病与健康场景与童装运动需求相关。"
+      "editorial_reason": "疾控局开学季健康发布会，直接关联儿童青少年健康防护与家庭消费场景。"
     },
     {
       "event_id": "evt_48b52a05db21fb",
@@ -272,16 +232,17 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "暑期夜间体育消费新场景观察，反映运动消费时段与场景变化。"
+      "editorial_reason": "暑期夜间体育消费观察，提示运动消费场景向夜间和体验延伸。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "国际运动品牌财报分化：lululemon承压与On昂跑增长",
-      "analysis": "lululemon二季度营收利润双降，中国销售受负面舆论冲击，全年指引下调；On昂跑同期营收8.5亿瑞士法郎，DTC收入大增26%。两者对比显示，国际品牌在中国市场表现分化，DTC渠道与品牌舆情成为关键变量。对儿童运动品牌而言，需关注成人运动品牌波动对童装线资源投入的潜在影响。",
+      "headline": "国际与本土运动品牌财报分化",
+      "analysis": "lululemon二季度营收利润双降并下调全年指引，中国销售受负面舆论冲击；特步中报营收净利双下滑但毛利率提升，主品牌承压；安踏半年报被指主品牌存隐忧。三者共同显示，运动品牌在2026年中段普遍面临主品牌增长压力，国际品牌的中国市场表现与本土品牌的盈利结构同时受到关注。",
       "event_ids": [
         "evt_76dd29b9927c26",
-        "evt_fedce136f234cb"
+        "evt_bff6dad22b8179",
+        "evt_d56ea93745ff35"
       ],
       "evidence": [
         {
@@ -292,24 +253,6 @@
           "published_date": "2026-09-04"
         },
         {
-          "event_id": "evt_fedce136f234cb",
-          "title": "On昂跑26年Q2营收8.5亿瑞士法郎，DTC收入大增26%",
-          "source": "品牌方舟",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11TnpIY250VW93MDlqLUFJcE9MMTBtdl8ydVBQb21DdzFxQ2JQdDhhb25HdDhINVlxLVFjYmdhNmNpbkVscWNRWk5Rbw?oc=5",
-          "published_date": "2026-09-01"
-        }
-      ]
-    },
-    {
-      "headline": "本土运动品牌中报与产品攻势",
-      "analysis": "特步中报营收净利双下滑，主品牌承压但毛利率提升，同时举行全场景跑步新品发布会；李宁发布库里中国行系列新品。本土品牌在财报压力下仍加码产品创新与营销，跑步和篮球是重点方向。儿童线可借鉴其场景化产品策略，但需注意主品牌业绩波动可能影响子品牌投入。",
-      "event_ids": [
-        "evt_bff6dad22b8179",
-        "evt_cdba54879b7b3d",
-        "evt_992543c2fbb5e1"
-      ],
-      "evidence": [
-        {
           "event_id": "evt_bff6dad22b8179",
           "title": "特步国际2026年中报：营收净利双下滑，毛利率提升至46.4%，主品牌业绩承压",
           "source": "QQ News",
@@ -317,29 +260,30 @@
           "published_date": "2026-09-02"
         },
         {
-          "event_id": "evt_cdba54879b7b3d",
-          "title": "特步举行2026全场景跑步新品发布会",
-          "source": "东方财富",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE00bElCOGU5X3ctUWw4amdNZjFlVmJmeFNYMVB0bXNBMEVYRWtsTHZjTlFEemZVenBiYXl3bHdIUzByWVVPN0JEcXplRmJQSVZuUG9RNWUxTHAzMkVkSHpHNg?oc=5",
-          "published_date": "2026-09-03"
-        },
-        {
-          "event_id": "evt_992543c2fbb5e1",
-          "title": "李宁库里中国行系列新品发布，首批带Logo鞋款亮相",
+          "event_id": "evt_d56ea93745ff35",
+          "title": "安踏半年报：看起来完美的财报，藏着“主品牌安踏”的隐忧",
           "source": "新浪网",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JRUh3WDVRX1NteDZCLTNWWmN4a2J0SkhJQVktd2E2UVdBVUFuYjQzYUtXbmhqVnRZY0lKNTFlWXJPNnpFZVlFSVhXWVlmM0ItZWJKM2ZFSUUwX19QY28zRG9sM1J2YlBuU3M5bDJtTThYQnM?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
           "published_date": "2026-09-06"
         }
       ]
     },
     {
-      "headline": "儿童健康与运动消费场景政策信号",
-      "analysis": "国家疾控局举行开学季健康主题发布会，强调科学防病；同时媒体观察暑期夜间体育消费新场景。两者共同指向儿童与青少年健康防护和运动参与场景的持续受关注。对童装运动品牌而言，开学季健康需求与夜间运动场景可能带动功能性服饰和鞋履的细分机会。",
+      "headline": "青少年赛事平台与儿童健康场景",
+      "analysis": "耐高运营权易主抖音独家直播，青少年篮球赛事传播渠道向短视频平台集中；疾控局开学季健康发布会强调科学防病，暑期夜间体育消费观察显示运动场景向夜间延伸。对儿童事业部而言，校园健康防护与青少年赛事流量迁移是值得跟踪的场景变化。",
       "event_ids": [
+        "evt_edc6b6119dc172",
         "evt_b7e8e68623ae92",
         "evt_48b52a05db21fb"
       ],
       "evidence": [
+        {
+          "event_id": "evt_edc6b6119dc172",
+          "title": "耐高运营权易主抖音独家直播新赛季，lululemon索赔2000万元败诉",
+          "source": "澎湃新闻",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE96ZVhDREhBZmpRdmZXeldsbk5ycXNROVZkcU5vbWF2bHRnV2tSMk5XWEQ5YVpQQmdkY29wYlg0NVUyQnYwd1FicWpPTFZJYlFjRTV2Q2ROaFM4NEN4NHc?oc=5",
+          "published_date": "2026-09-04"
+        },
         {
           "event_id": "evt_b7e8e68623ae92",
           "title": "国家疾病预防控制局举行“科学防病开学季 健康护航新学期”主题新闻发布会",
@@ -360,18 +304,18 @@
   "product_radar": [],
   "competitor_channel": [
     {
-      "event_id": "evt_edc6b6119dc172",
-      "title": "耐高运营权易主抖音独家直播新赛季，lululemon索赔2000万元败诉",
-      "category": "电商与平台",
-      "event_family": "capital_strategy",
-      "reporting_period": "",
+      "event_id": "evt_5b619c943bac4d",
+      "title": "盘前跌超17%！lululemon上财季净利下滑超一成，再次下调年度业绩指引",
+      "category": "品牌与公司",
+      "event_family": "financial_results",
+      "reporting_period": "2026_fy",
       "brands": [
         "lululemon"
       ],
       "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE96ZVhDREhBZmpRdmZXeldsbk5ycXNROVZkcU5vbWF2bHRnV2tSMk5XWEQ5YVpQQmdkY29wYlg0NVUyQnYwd1FicWpPTFZJYlFjRTV2Q2ROaFM4NEN4NHc?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE96ZVhDREhBZmpRdmZXeldsbk5ycXNROVZkcU5vbWF2bHRnV2tSMk5XWEQ5YVpQQmdkY29wYlg0NVUyQnYwd1FicWpPTFZJYlFjRTV2Q2ROaFM4NEN4NHc?oc=5",
-      "published_at": "2026-09-04T16:10+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Xckw3RVU3cjBUb1pLN1pKak9sYXJYXzIyZzdTWXU1RFdsYzJxTnpMT3JOMFNrbGdqNVZScEtCNXJNSGtHQmdINjM1SDI4aTBCZE41TUMycnFzelZrWG9WVQ?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Xckw3RVU3cjBUb1pLN1pKak9sYXJYXzIyZzdTWXU1RFdsYzJxTnpMT3JOMFNrbGdqNVZScEtCNXJNSGtHQmdINjM1SDI4aTBCZE41TUMycnFzelZrWG9WVQ?oc=5",
+      "published_at": "2026-09-04T17:06+08:00",
       "published_date": "2026-09-04",
       "status": "new",
       "verification": "single_source",
@@ -379,21 +323,177 @@
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 54,
-      "selection_score": 69,
+      "editorial_score": 55,
+      "selection_score": 72,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_edc6b6119dc172"
+        "evt_5b619c943bac4d"
       ],
       "evidence": [
         {
-          "item_id": "src_dfa512a89537e3",
-          "title": "耐高运营权易主抖音独家直播新赛季，lululemon索赔2000万元败诉",
+          "item_id": "src_154f5d73cfa081",
+          "title": "盘前跌超17%！lululemon上财季净利下滑超一成，再次下调年度业绩指引",
           "source": "澎湃新闻",
           "source_tier": "tier_2",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE96ZVhDREhBZmpRdmZXeldsbk5ycXNROVZkcU5vbWF2bHRnV2tSMk5XWEQ5YVpQQmdkY29wYlg0NVUyQnYwd1FicWpPTFZJYlFjRTV2Q2ROaFM4NEN4NHc?oc=5",
-          "published_at": "2026-09-04T16:10+08:00",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Xckw3RVU3cjBUb1pLN1pKak9sYXJYXzIyZzdTWXU1RFdsYzJxTnpMT3JOMFNrbGdqNVZScEtCNXJNSGtHQmdINjM1SDI4aTBCZE41TUMycnFzelZrWG9WVQ?oc=5",
+          "published_at": "2026-09-04T17:06+08:00",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "event_id": "evt_fedce136f234cb",
+      "title": "On昂跑26年Q2营收8.5亿瑞士法郎，DTC收入大增26%",
+      "category": "品牌与公司",
+      "event_family": "financial_results",
+      "reporting_period": "2026_q2",
+      "brands": [
+        "On昂跑"
+      ],
+      "source": "品牌方舟",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11TnpIY250VW93MDlqLUFJcE9MMTBtdl8ydVBQb21DdzFxQ2JQdDhhb25HdDhINVlxLVFjYmdhNmNpbkVscWNRWk5Rbw?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11TnpIY250VW93MDlqLUFJcE9MMTBtdl8ydVBQb21DdzFxQ2JQdDhhb25HdDhINVlxLVFjYmdhNmNpbkVscWNRWk5Rbw?oc=5",
+      "published_at": "2026-09-01T07:41+08:00",
+      "published_date": "2026-09-01",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 42,
+      "selection_score": 63,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_fedce136f234cb"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_216951de4defa1",
+          "title": "On昂跑26年Q2营收8.5亿瑞士法郎，DTC收入大增26%",
+          "source": "品牌方舟",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11TnpIY250VW93MDlqLUFJcE9MMTBtdl8ydVBQb21DdzFxQ2JQdDhhb25HdDhINVlxLVFjYmdhNmNpbkVscWNRWk5Rbw?oc=5",
+          "published_at": "2026-09-01T07:41+08:00",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "event_id": "evt_e8f99fe4397a1a",
+      "title": "Lululemon大跌！可比销售疫情以来首降、全年指引连续下调，新CEO上任面临挑战｜财报见闻",
+      "category": "品牌与公司",
+      "event_family": "financial_results",
+      "reporting_period": "",
+      "brands": [
+        "lululemon"
+      ],
+      "source": "华尔街见闻",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1Fd3hZeXRUR0hva3lDLU56bGpyYThBMVloRE1LTzZSYTdqWjNfZlpIVzVPTTJPZlFvVGJybWxWNlVrbF9sdS1mOE9WU2dqbEtqNHVj?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1Fd3hZeXRUR0hva3lDLU56bGpyYThBMVloRE1LTzZSYTdqWjNfZlpIVzVPTTJPZlFvVGJybWxWNlVrbF9sdS1mOE9WU2dqbEtqNHVj?oc=5",
+      "published_at": "2026-09-04T07:08+08:00",
+      "published_date": "2026-09-04",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 45,
+      "selection_score": 57,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_e8f99fe4397a1a"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_0e666e5d5c1e0a",
+          "title": "Lululemon大跌！可比销售疫情以来首降、全年指引连续下调，新CEO上任面临挑战｜财报见闻",
+          "source": "华尔街见闻",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1Fd3hZeXRUR0hva3lDLU56bGpyYThBMVloRE1LTzZSYTdqWjNfZlpIVzVPTTJPZlFvVGJybWxWNlVrbF9sdS1mOE9WU2dqbEtqNHVj?oc=5",
+          "published_at": "2026-09-04T07:08+08:00",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "event_id": "evt_d56ea93745ff35",
+      "title": "安踏半年报：看起来完美的财报，藏着“主品牌安踏”的隐忧",
+      "category": "品牌与公司",
+      "event_family": "financial_results",
+      "reporting_period": "2026_h1",
+      "brands": [
+        "安踏"
+      ],
+      "source": "新浪网",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
+      "published_at": "2026-09-06T09:09+08:00",
+      "published_date": "2026-09-06",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 44,
+      "selection_score": 56,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_d56ea93745ff35"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_556a48af0eb28a",
+          "title": "安踏半年报：看起来完美的财报，藏着“主品牌安踏”的隐忧",
+          "source": "新浪网",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
+          "published_at": "2026-09-06T09:09+08:00",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "event_id": "evt_586702d5385523",
+      "title": "lululemon新帅遇业绩危机- 21世纪经济报道",
+      "category": "品牌与公司",
+      "event_family": "financial_results",
+      "reporting_period": "",
+      "brands": [
+        "lululemon"
+      ],
+      "source": "21财经",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPanMzbVlOa2dNY3pmdTQ4LVVzOEFaSWw3ck0yQjNkZUpSZ0J2RDVOalZ3QTR1aU8xQjFkdmdybTFtME41cnRaVTRaeENpSFU4eVB5MGZuS1AybnlKQmJfRGxUZUJCYTBZaEtUbDBFSVVkS0xZY084b1cybVEyS3NTMUl2eDJxTU9MQTk0?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPanMzbVlOa2dNY3pmdTQ4LVVzOEFaSWw3ck0yQjNkZUpSZ0J2RDVOalZ3QTR1aU8xQjFkdmdybTFtME41cnRaVTRaeENpSFU4eVB5MGZuS1AybnlKQmJfRGxUZUJCYTBZaEtUbDBFSVVkS0xZY084b1cybVEyS3NTMUl2eDJxTU9MQTk0?oc=5",
+      "published_at": "2026-09-06T14:48+08:00",
+      "published_date": "2026-09-06",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 44,
+      "selection_score": 56,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_586702d5385523"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_cd67c4ef23cd34",
+          "title": "lululemon新帅遇业绩危机- 21世纪经济报道",
+          "source": "21财经",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPanMzbVlOa2dNY3pmdTQ4LVVzOEFaSWw3ck0yQjNkZUpSZ0J2RDVOalZ3QTR1aU8xQjFkdmdybTFtME41cnRaVTRaeENpSFU4eVB5MGZuS1AybnlKQmJfRGxUZUJCYTBZaEtUbDBFSVVkS0xZY084b1cybVEyS3NTMUl2eDJxTU9MQTk0?oc=5",
+          "published_at": "2026-09-06T14:48+08:00",
           "summary": ""
         }
       ]
@@ -436,71 +536,33 @@
           "summary": ""
         }
       ]
-    },
-    {
-      "event_id": "evt_a7529822ed0f4f",
-      "title": "“伴乐优”消化酶经销商被罚45万，类似产品仍靠跨境购进入国内",
-      "category": "行业动态",
-      "event_family": "industry_event",
-      "reporting_period": "",
-      "brands": [],
-      "source": "新京报",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE45SnZ5ZDRyUHZ3Y0M4RVZmb1ZaZS11RHpJSWQ2SWUwRFdGdkVRakFXbkw2ZHdHWnUzMF9sdWFvSGdiNjB2akRQNmNGVF9NbTNYcTY5WHNwa1k1M184TTNMSkVUSmU?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE45SnZ5ZDRyUHZ3Y0M4RVZmb1ZaZS11RHpJSWQ2SWUwRFdGdkVRakFXbkw2ZHdHWnUzMF9sdWFvSGdiNjB2akRQNmNGVF9NbTNYcTY5WHNwa1k1M184TTNMSkVUSmU?oc=5",
-      "published_at": "2026-09-02T07:10+08:00",
-      "published_date": "2026-09-02",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 45,
-      "selection_score": 56,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_a7529822ed0f4f"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_2dc6a714e3b80b",
-          "title": "“伴乐优”消化酶经销商被罚45万，类似产品仍靠跨境购进入国内",
-          "source": "新京报",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE45SnZ5ZDRyUHZ3Y0M4RVZmb1ZaZS11RHpJSWQ2SWUwRFdGdkVRakFXbkw2ZHdHWnUzMF9sdWFvSGdiNjB2akRQNmNGVF9NbTNYcTY5WHNwa1k1M184TTNMSkVUSmU?oc=5",
-          "published_at": "2026-09-02T07:10+08:00",
-          "summary": ""
-        }
-      ]
     }
   ],
   "watchlist": [
     {
-      "title": "国际品牌中国区销售走势",
+      "title": "lululemon中国销售与舆论走向",
       "event_ids": [
         "evt_76dd29b9927c26",
-        "evt_8d052cf6c24403"
+        "evt_1fc8969acc46a5"
       ],
       "product_ids": [],
-      "reason": "观察lululemon负面舆论是否持续影响其中国销售，以及Alo入华对瑜伽服格局的冲击。"
+      "reason": "关注负面舆论是否持续影响其中国销售及后续指引调整。"
     },
     {
-      "title": "本土品牌儿童线产品动向",
+      "title": "青少年赛事平台迁移",
       "event_ids": [
-        "evt_bff6dad22b8179",
-        "evt_cdba54879b7b3d"
+        "evt_edc6b6119dc172"
       ],
       "product_ids": [],
-      "reason": "关注特步、李宁等品牌在财报后是否调整儿童产品线或营销策略。"
+      "reason": "观察抖音独家直播耐高后，青少年篮球内容与品牌赞助格局变化。"
     },
     {
-      "title": "开学季儿童健康消费",
+      "title": "开学季儿童健康防护",
       "event_ids": [
         "evt_b7e8e68623ae92"
       ],
       "product_ids": [],
-      "reason": "跟踪疾控局健康提示对儿童运动防护用品需求的后续影响。"
+      "reason": "跟踪疾控局开学季健康提示对儿童运动与防护品类的场景影响。"
     }
   ],
   "tracking": {
@@ -563,7 +625,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "lululemon营收利润双降且中国销售受舆论冲击，反映国际瑜伽品牌在华竞争压力。"
+        "editorial_reason": "lululemon营收利润双降且中国销售受舆论冲击，是本周最集中的国际品牌财务信号。"
       },
       {
         "event_id": "evt_bff6dad22b8179",
@@ -603,87 +665,47 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "特步中报营收净利双下滑但毛利率提升，主品牌承压，为本土运动品牌提供参照。"
+        "editorial_reason": "特步中报营收净利双下滑但毛利率提升，反映本土运动品牌主品牌承压与结构变化。"
       },
       {
-        "event_id": "evt_992543c2fbb5e1",
-        "title": "李宁库里中国行系列新品发布，首批带Logo鞋款亮相",
-        "category": "产品与科技",
-        "event_family": "product_launch",
+        "event_id": "evt_edc6b6119dc172",
+        "title": "耐高运营权易主抖音独家直播新赛季，lululemon索赔2000万元败诉",
+        "category": "电商与平台",
+        "event_family": "capital_strategy",
         "reporting_period": "",
         "brands": [
-          "李宁"
+          "lululemon"
         ],
-        "source": "新浪网",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JRUh3WDVRX1NteDZCLTNWWmN4a2J0SkhJQVktd2E2UVdBVUFuYjQzYUtXbmhqVnRZY0lKNTFlWXJPNnpFZVlFSVhXWVlmM0ItZWJKM2ZFSUUwX19QY28zRG9sM1J2YlBuU3M5bDJtTThYQnM?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JRUh3WDVRX1NteDZCLTNWWmN4a2J0SkhJQVktd2E2UVdBVUFuYjQzYUtXbmhqVnRZY0lKNTFlWXJPNnpFZVlFSVhXWVlmM0ItZWJKM2ZFSUUwX19QY28zRG9sM1J2YlBuU3M5bDJtTThYQnM?oc=5",
-        "published_at": "2026-09-06T10:03+08:00",
-        "published_date": "2026-09-06",
+        "source": "澎湃新闻",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE96ZVhDREhBZmpRdmZXeldsbk5ycXNROVZkcU5vbWF2bHRnV2tSMk5XWEQ5YVpQQmdkY29wYlg0NVUyQnYwd1FicWpPTFZJYlFjRTV2Q2ROaFM4NEN4NHc?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE96ZVhDREhBZmpRdmZXeldsbk5ycXNROVZkcU5vbWF2bHRnV2tSMk5XWEQ5YVpQQmdkY29wYlg0NVUyQnYwd1FicWpPTFZJYlFjRTV2Q2ROaFM4NEN4NHc?oc=5",
+        "published_at": "2026-09-04T16:10+08:00",
+        "published_date": "2026-09-04",
         "status": "new",
         "verification": "single_source",
         "is_official": false,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 52,
-        "selection_score": 64,
+        "editorial_score": 54,
+        "selection_score": 69,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_992543c2fbb5e1"
+          "evt_edc6b6119dc172"
         ],
         "evidence": [
           {
-            "item_id": "src_122bcd0d8f3066",
-            "title": "李宁库里中国行系列新品发布，首批带Logo鞋款亮相",
-            "source": "新浪网",
-            "source_tier": "tier_3",
+            "item_id": "src_dfa512a89537e3",
+            "title": "耐高运营权易主抖音独家直播新赛季，lululemon索赔2000万元败诉",
+            "source": "澎湃新闻",
+            "source_tier": "tier_2",
             "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JRUh3WDVRX1NteDZCLTNWWmN4a2J0SkhJQVktd2E2UVdBVUFuYjQzYUtXbmhqVnRZY0lKNTFlWXJPNnpFZVlFSVhXWVlmM0ItZWJKM2ZFSUUwX19QY28zRG9sM1J2YlBuU3M5bDJtTThYQnM?oc=5",
-            "published_at": "2026-09-06T10:03+08:00",
+            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE96ZVhDREhBZmpRdmZXeldsbk5ycXNROVZkcU5vbWF2bHRnV2tSMk5XWEQ5YVpQQmdkY29wYlg0NVUyQnYwd1FicWpPTFZJYlFjRTV2Q2ROaFM4NEN4NHc?oc=5",
+            "published_at": "2026-09-04T16:10+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "李宁库里中国行系列新品发布，篮球品类营销与产品联动值得关注。"
-      },
-      {
-        "event_id": "evt_cdba54879b7b3d",
-        "title": "特步举行2026全场景跑步新品发布会",
-        "category": "产品与科技",
-        "event_family": "product_launch",
-        "reporting_period": "",
-        "brands": [
-          "特步"
-        ],
-        "source": "东方财富",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE00bElCOGU5X3ctUWw4amdNZjFlVmJmeFNYMVB0bXNBMEVYRWtsTHZjTlFEemZVenBiYXl3bHdIUzByWVVPN0JEcXplRmJQSVZuUG9RNWUxTHAzMkVkSHpHNg?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE00bElCOGU5X3ctUWw4amdNZjFlVmJmeFNYMVB0bXNBMEVYRWtsTHZjTlFEemZVenBiYXl3bHdIUzByWVVPN0JEcXplRmJQSVZuUG9RNWUxTHAzMkVkSHpHNg?oc=5",
-        "published_at": "2026-09-03T21:37+08:00",
-        "published_date": "2026-09-03",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 44,
-        "selection_score": 56,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_cdba54879b7b3d"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_c1b3782ab2e6a3",
-            "title": "特步举行2026全场景跑步新品发布会",
-            "source": "东方财富",
-            "source_tier": "tier_3",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE00bElCOGU5X3ctUWw4amdNZjFlVmJmeFNYMVB0bXNBMEVYRWtsTHZjTlFEemZVenBiYXl3bHdIUzByWVVPN0JEcXplRmJQSVZuUG9RNWUxTHAzMkVkSHpHNg?oc=5",
-            "published_at": "2026-09-03T21:37+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "特步全场景跑步新品发布，跑步品类竞争加剧，对儿童跑鞋有间接参考。"
+        "editorial_reason": "耐高运营权易主抖音独家直播，青少年篮球赛事平台格局出现变化。"
       },
       {
         "event_id": "evt_b7e8e68623ae92",
@@ -721,7 +743,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "疾控局开学季健康发布会，儿童防病与健康场景与童装运动需求相关。"
+        "editorial_reason": "疾控局开学季健康发布会，直接关联儿童青少年健康防护与家庭消费场景。"
       },
       {
         "event_id": "evt_48b52a05db21fb",
@@ -759,7 +781,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "暑期夜间体育消费新场景观察，反映运动消费时段与场景变化。"
+        "editorial_reason": "暑期夜间体育消费观察，提示运动消费场景向夜间和体验延伸。"
       }
     ],
     "follow_up_selected": [],
@@ -933,19 +955,11 @@
     },
     {
       "type": "event",
-      "id": "evt_992543c2fbb5e1",
-      "title": "李宁库里中国行系列新品发布，首批带Logo鞋款亮相",
-      "source": "新浪网",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JRUh3WDVRX1NteDZCLTNWWmN4a2J0SkhJQVktd2E2UVdBVUFuYjQzYUtXbmhqVnRZY0lKNTFlWXJPNnpFZVlFSVhXWVlmM0ItZWJKM2ZFSUUwX19QY28zRG9sM1J2YlBuU3M5bDJtTThYQnM?oc=5",
-      "published_date": "2026-09-06"
-    },
-    {
-      "type": "event",
-      "id": "evt_cdba54879b7b3d",
-      "title": "特步举行2026全场景跑步新品发布会",
-      "source": "东方财富",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE00bElCOGU5X3ctUWw4amdNZjFlVmJmeFNYMVB0bXNBMEVYRWtsTHZjTlFEemZVenBiYXl3bHdIUzByWVVPN0JEcXplRmJQSVZuUG9RNWUxTHAzMkVkSHpHNg?oc=5",
-      "published_date": "2026-09-03"
+      "id": "evt_edc6b6119dc172",
+      "title": "耐高运营权易主抖音独家直播新赛季，lululemon索赔2000万元败诉",
+      "source": "澎湃新闻",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE96ZVhDREhBZmpRdmZXeldsbk5ycXNROVZkcU5vbWF2bHRnV2tSMk5XWEQ5YVpQQmdkY29wYlg0NVUyQnYwd1FicWpPTFZJYlFjRTV2Q2ROaFM4NEN4NHc?oc=5",
+      "published_date": "2026-09-04"
     },
     {
       "type": "event",
@@ -965,27 +979,11 @@
     },
     {
       "type": "event",
-      "id": "evt_edc6b6119dc172",
-      "title": "耐高运营权易主抖音独家直播新赛季，lululemon索赔2000万元败诉",
+      "id": "evt_5b619c943bac4d",
+      "title": "盘前跌超17%！lululemon上财季净利下滑超一成，再次下调年度业绩指引",
       "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE96ZVhDREhBZmpRdmZXeldsbk5ycXNROVZkcU5vbWF2bHRnV2tSMk5XWEQ5YVpQQmdkY29wYlg0NVUyQnYwd1FicWpPTFZJYlFjRTV2Q2ROaFM4NEN4NHc?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Xckw3RVU3cjBUb1pLN1pKak9sYXJYXzIyZzdTWXU1RFdsYzJxTnpMT3JOMFNrbGdqNVZScEtCNXJNSGtHQmdINjM1SDI4aTBCZE41TUMycnFzelZrWG9WVQ?oc=5",
       "published_date": "2026-09-04"
-    },
-    {
-      "type": "event",
-      "id": "evt_027851a8c8e76c",
-      "title": "“科探未来·智创无限” ——罗湖区东晓街道草埔东社区开展户外自然探索研学活动",
-      "source": "sz.gov.cn",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9kZE9yY3d3QXFrOUhMVEdCWWZBWjYzaDc0SXIwV0dBQ1hvTXZodW9maGFmQnpQYlV4TU93M2g5cGxfNzBUejl5NFBCMlY0UENDSlpxYzUyN0JpOWQ3Wm5FLUZBcGZZbFlpQTN5Smx5QjBGSFNCWUZ3?oc=5",
-      "published_date": "2026-09-02"
-    },
-    {
-      "type": "event",
-      "id": "evt_a7529822ed0f4f",
-      "title": "“伴乐优”消化酶经销商被罚45万，类似产品仍靠跨境购进入国内",
-      "source": "新京报",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE45SnZ5ZDRyUHZ3Y0M4RVZmb1ZaZS11RHpJSWQ2SWUwRFdGdkVRakFXbkw2ZHdHWnUzMF9sdWFvSGdiNjB2akRQNmNGVF9NbTNYcTY5WHNwa1k1M184TTNMSkVUSmU?oc=5",
-      "published_date": "2026-09-02"
     },
     {
       "type": "event",
@@ -994,6 +992,38 @@
       "source": "品牌方舟",
       "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11TnpIY250VW93MDlqLUFJcE9MMTBtdl8ydVBQb21DdzFxQ2JQdDhhb25HdDhINVlxLVFjYmdhNmNpbkVscWNRWk5Rbw?oc=5",
       "published_date": "2026-09-01"
+    },
+    {
+      "type": "event",
+      "id": "evt_e8f99fe4397a1a",
+      "title": "Lululemon大跌！可比销售疫情以来首降、全年指引连续下调，新CEO上任面临挑战｜财报见闻",
+      "source": "华尔街见闻",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1Fd3hZeXRUR0hva3lDLU56bGpyYThBMVloRE1LTzZSYTdqWjNfZlpIVzVPTTJPZlFvVGJybWxWNlVrbF9sdS1mOE9WU2dqbEtqNHVj?oc=5",
+      "published_date": "2026-09-04"
+    },
+    {
+      "type": "event",
+      "id": "evt_d56ea93745ff35",
+      "title": "安踏半年报：看起来完美的财报，藏着“主品牌安踏”的隐忧",
+      "source": "新浪网",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMC1zaV83OGxEaTJneFZQcV9hM2gxdVlpbXlSajdTZjNkc3lNbXA3QmI3bDhaak43MjYxUUxCeEpRdS1DRTB5QXlNV0FvT0ZhM21HOVR6eG9EUHdUamlPQjNSX1NNN0Rnd0FEeXdJUk1JWmpPWmVfdnEyREZQUTVQVmcyOA?oc=5",
+      "published_date": "2026-09-06"
+    },
+    {
+      "type": "event",
+      "id": "evt_586702d5385523",
+      "title": "lululemon新帅遇业绩危机- 21世纪经济报道",
+      "source": "21财经",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPanMzbVlOa2dNY3pmdTQ4LVVzOEFaSWw3ck0yQjNkZUpSZ0J2RDVOalZ3QTR1aU8xQjFkdmdybTFtME41cnRaVTRaeENpSFU4eVB5MGZuS1AybnlKQmJfRGxUZUJCYTBZaEtUbDBFSVVkS0xZY084b1cybVEyS3NTMUl2eDJxTU9MQTk0?oc=5",
+      "published_date": "2026-09-06"
+    },
+    {
+      "type": "event",
+      "id": "evt_027851a8c8e76c",
+      "title": "“科探未来·智创无限” ——罗湖区东晓街道草埔东社区开展户外自然探索研学活动",
+      "source": "sz.gov.cn",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9kZE9yY3d3QXFrOUhMVEdCWWZBWjYzaDc0SXIwV0dBQ1hvTXZodW9maGFmQnpQYlV4TU93M2g5cGxfNzBUejl5NFBCMlY0UENDSlpxYzUyN0JpOWQ3Wm5FLUZBcGZZbFlpQTN5Smx5QjBGSFNCWUZ3?oc=5",
+      "published_date": "2026-09-02"
     }
   ],
   "data_quality": {
@@ -1004,13 +1034,13 @@
     "raw_event_count": 30,
     "coalesced_event_count": 30,
     "eligible_event_count": 30,
-    "selected_event_count": 6,
+    "selected_event_count": 5,
     "raw_product_count": 12,
     "product_lead_count": 12,
     "eligible_product_count": 0,
     "selected_product_count": 0,
     "conflict_count": 0,
-    "source_link_count": 12,
+    "source_link_count": 13,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
@@ -1027,7 +1057,7 @@
       "宏观与消费": 1
     },
     "selected_status": {
-      "new": 6
+      "new": 5
     },
     "quality_notes": [
       "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
