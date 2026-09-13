@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-09-12T09:50+08:00",
+  "generated_at": "2026-09-13T09:41+08:00",
   "report_window": {
     "start_date": "2026-08-31",
     "end_date": "2026-09-06",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "国际品牌财报分化，lululemon承压；儿童开学健康与体育消费政策释放场景信号。",
-    "week_in_one_paragraph": "本周lululemon二季度营收利润双降并下调指引，成为最集中的品牌信号；特步、安踏、海澜之家等本土公司中报呈现分化。平台侧耐高运营权易主抖音，渠道格局生变。儿童与青少年方向，疾控局开学季健康发布会与暑期夜间体育消费观察，提示健康防护和运动场景仍是家庭消费关注点。",
+    "weekly_thesis": "国际运动品牌财报分化加剧，lululemon中国承压、昂跑DTC走强，儿童运动消费场景向开学健康与夜间运动延伸。",
+    "week_in_one_paragraph": "本周lululemon二季度营收利润双降并下调全年指引，中国销售受负面舆论冲击，新CEO面临挑战；昂跑DTC收入增长，特步、安踏中报显主品牌承压。平台端耐高运营权易主抖音。儿童与消费侧，疾控局开学季健康发布会与暑期夜间体育消费观察，提示开学健康防护和夜间运动场景值得关注。",
     "next_week_focus": [
-      "跟踪lululemon中国销售与舆论后续反应",
-      "关注特步、安踏中报后主品牌策略调整",
-      "观察耐高抖音独家直播的招商与内容动向",
-      "留意开学季儿童健康防护相关消费场景",
-      "跟踪瑜伽服市场竞争格局变化"
+      "lululemon中国销售后续及新CEO策略动向",
+      "昂跑DTC增长能否持续并影响行业渠道策略",
+      "本土运动品牌主品牌增长压力与应对",
+      "耐高抖音独家直播后青少年赛事传播变化",
+      "开学季儿童健康防护与夜间运动消费趋势"
     ]
   },
   "key_developments": [
@@ -76,47 +76,47 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "lululemon营收利润双降且中国销售受舆论冲击，是本周最集中的国际品牌财务信号。"
+      "editorial_reason": "lululemon二季度营收利润双降且中国销售受负面舆论冲击，是本周最重磅的国际品牌财务信号。"
     },
     {
-      "event_id": "evt_bff6dad22b8179",
-      "title": "特步国际2026年中报：营收净利双下滑，毛利率提升至46.4%，主品牌业绩承压",
+      "event_id": "evt_fedce136f234cb",
+      "title": "On昂跑26年Q2营收8.5亿瑞士法郎，DTC收入大增26%",
       "category": "品牌与公司",
       "event_family": "financial_results",
-      "reporting_period": "",
+      "reporting_period": "2026_q2",
       "brands": [
-        "特步"
+        "On昂跑"
       ],
-      "source": "QQ News",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tQ0Nob0t1X2ZRWUpLb21EY0FqZHNWVVVtcmZSdE5sel9yUGV0dWZCaFlSTFlTeFgxQ3h5S2sxQUFsZHV6VVBDOFdyTV9WWGZiNklXemtR?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tQ0Nob0t1X2ZRWUpLb21EY0FqZHNWVVVtcmZSdE5sel9yUGV0dWZCaFlSTFlTeFgxQ3h5S2sxQUFsZHV6VVBDOFdyTV9WWGZiNklXemtR?oc=5",
-      "published_at": "2026-09-02T10:28+08:00",
-      "published_date": "2026-09-02",
+      "source": "品牌方舟",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11TnpIY250VW93MDlqLUFJcE9MMTBtdl8ydVBQb21DdzFxQ2JQdDhhb25HdDhINVlxLVFjYmdhNmNpbkVscWNRWk5Rbw?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11TnpIY250VW93MDlqLUFJcE9MMTBtdl8ydVBQb21DdzFxQ2JQdDhhb25HdDhINVlxLVFjYmdhNmNpbkVscWNRWk5Rbw?oc=5",
+      "published_at": "2026-09-01T07:41+08:00",
+      "published_date": "2026-09-01",
       "status": "new",
       "verification": "single_source",
       "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 48,
-      "selection_score": 65,
+      "editorial_score": 42,
+      "selection_score": 63,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_bff6dad22b8179"
+        "evt_fedce136f234cb"
       ],
       "evidence": [
         {
-          "item_id": "src_b44e0f19b9984a",
-          "title": "特步国际2026年中报：营收净利双下滑，毛利率提升至46.4%，主品牌业绩承压",
-          "source": "QQ News",
+          "item_id": "src_216951de4defa1",
+          "title": "On昂跑26年Q2营收8.5亿瑞士法郎，DTC收入大增26%",
+          "source": "品牌方舟",
           "source_tier": "tier_3",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tQ0Nob0t1X2ZRWUpLb21EY0FqZHNWVVVtcmZSdE5sel9yUGV0dWZCaFlSTFlTeFgxQ3h5S2sxQUFsZHV6VVBDOFdyTV9WWGZiNklXemtR?oc=5",
-          "published_at": "2026-09-02T10:28+08:00",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11TnpIY250VW93MDlqLUFJcE9MMTBtdl8ydVBQb21DdzFxQ2JQdDhhb25HdDhINVlxLVFjYmdhNmNpbkVscWNRWk5Rbw?oc=5",
+          "published_at": "2026-09-01T07:41+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "特步中报营收净利双下滑但毛利率提升，反映本土运动品牌主品牌承压与结构变化。"
+      "editorial_reason": "昂跑DTC收入大增，与lululemon形成对照，反映运动品牌直营渠道分化。"
     },
     {
       "event_id": "evt_edc6b6119dc172",
@@ -156,7 +156,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "耐高运营权易主抖音独家直播，青少年篮球赛事平台格局出现变化。"
+      "editorial_reason": "耐高运营权易主抖音独家直播，青少年篮球赛事平台格局变化值得关注。"
     },
     {
       "event_id": "evt_b7e8e68623ae92",
@@ -194,7 +194,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "疾控局开学季健康发布会，直接关联儿童青少年健康防护与家庭消费场景。"
+      "editorial_reason": "疾控局开学季健康发布会，直接关联儿童开学健康防护与运动场景。"
     },
     {
       "event_id": "evt_48b52a05db21fb",
@@ -232,17 +232,16 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "暑期夜间体育消费观察，提示运动消费场景向夜间和体验延伸。"
+      "editorial_reason": "暑期夜间体育消费新场景观察，提示儿童运动消费时段与场景变化。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "国际与本土运动品牌财报分化",
-      "analysis": "lululemon二季度营收利润双降并下调全年指引，中国销售受负面舆论冲击；特步中报营收净利双下滑但毛利率提升，主品牌承压；安踏半年报被指主品牌存隐忧。三者共同显示，运动品牌在2026年中段普遍面临主品牌增长压力，国际品牌的中国市场表现与本土品牌的盈利结构同时受到关注。",
+      "headline": "国际运动品牌财报分化：lululemon承压与昂跑DTC走强",
+      "analysis": "lululemon二季度营收利润双降，中国销售受负面舆论冲击，并下调全年指引；昂跑同期营收8.5亿瑞士法郎，DTC收入大增26%。两者对比显示，国际运动品牌在中国市场与直营渠道上的表现正在分化，依赖单一品牌势能的风险上升，而DTC模式在部分品牌中仍具韧性。",
       "event_ids": [
         "evt_76dd29b9927c26",
-        "evt_bff6dad22b8179",
-        "evt_d56ea93745ff35"
+        "evt_fedce136f234cb"
       ],
       "evidence": [
         {
@@ -252,6 +251,23 @@
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5KRHZrMHRFZnFYSURwaC0weHZ5b08zRzNyZkJXY0NOeHVmTGpmeDg3S3NvYjBsUEdKMHFhN2xUUEhHS2hXOE5sVVRHSGhlTDhhUFVaX2llT1JENXZKT29iMlIzc3Q?oc=5",
           "published_date": "2026-09-04"
         },
+        {
+          "event_id": "evt_fedce136f234cb",
+          "title": "On昂跑26年Q2营收8.5亿瑞士法郎，DTC收入大增26%",
+          "source": "品牌方舟",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11TnpIY250VW93MDlqLUFJcE9MMTBtdl8ydVBQb21DdzFxQ2JQdDhhb25HdDhINVlxLVFjYmdhNmNpbkVscWNRWk5Rbw?oc=5",
+          "published_date": "2026-09-01"
+        }
+      ]
+    },
+    {
+      "headline": "本土运动品牌中报：主品牌增长压力显现",
+      "analysis": "特步国际2026年中报营收净利双下滑，毛利率提升至46.4%，主品牌业绩承压；安踏半年报虽整体表现较好，但主品牌安踏存在隐忧。两份财报共同指向本土头部运动品牌在主品牌增长上面临压力，毛利率改善与规模增长之间的平衡成为行业课题。",
+      "event_ids": [
+        "evt_bff6dad22b8179",
+        "evt_d56ea93745ff35"
+      ],
+      "evidence": [
         {
           "event_id": "evt_bff6dad22b8179",
           "title": "特步国际2026年中报：营收净利双下滑，毛利率提升至46.4%，主品牌业绩承压",
@@ -269,8 +285,8 @@
       ]
     },
     {
-      "headline": "青少年赛事平台与儿童健康场景",
-      "analysis": "耐高运营权易主抖音独家直播，青少年篮球赛事传播渠道向短视频平台集中；疾控局开学季健康发布会强调科学防病，暑期夜间体育消费观察显示运动场景向夜间延伸。对儿童事业部而言，校园健康防护与青少年赛事流量迁移是值得跟踪的场景变化。",
+      "headline": "青少年赛事平台与儿童健康场景变化",
+      "analysis": "耐高运营权易主抖音并独家直播新赛季，青少年篮球赛事传播平台发生迁移；疾控局开学季健康发布会强调科学防病；暑期夜间体育消费观察显示运动场景向夜间延伸。三者共同提示，儿童青少年运动消费正与健康防护、夜间场景和短视频平台深度绑定。",
       "event_ids": [
         "evt_edc6b6119dc172",
         "evt_b7e8e68623ae92",
@@ -343,40 +359,40 @@
       ]
     },
     {
-      "event_id": "evt_fedce136f234cb",
-      "title": "On昂跑26年Q2营收8.5亿瑞士法郎，DTC收入大增26%",
+      "event_id": "evt_bff6dad22b8179",
+      "title": "特步国际2026年中报：营收净利双下滑，毛利率提升至46.4%，主品牌业绩承压",
       "category": "品牌与公司",
       "event_family": "financial_results",
-      "reporting_period": "2026_q2",
+      "reporting_period": "",
       "brands": [
-        "On昂跑"
+        "特步"
       ],
-      "source": "品牌方舟",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11TnpIY250VW93MDlqLUFJcE9MMTBtdl8ydVBQb21DdzFxQ2JQdDhhb25HdDhINVlxLVFjYmdhNmNpbkVscWNRWk5Rbw?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11TnpIY250VW93MDlqLUFJcE9MMTBtdl8ydVBQb21DdzFxQ2JQdDhhb25HdDhINVlxLVFjYmdhNmNpbkVscWNRWk5Rbw?oc=5",
-      "published_at": "2026-09-01T07:41+08:00",
-      "published_date": "2026-09-01",
+      "source": "QQ News",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tQ0Nob0t1X2ZRWUpLb21EY0FqZHNWVVVtcmZSdE5sel9yUGV0dWZCaFlSTFlTeFgxQ3h5S2sxQUFsZHV6VVBDOFdyTV9WWGZiNklXemtR?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tQ0Nob0t1X2ZRWUpLb21EY0FqZHNWVVVtcmZSdE5sel9yUGV0dWZCaFlSTFlTeFgxQ3h5S2sxQUFsZHV6VVBDOFdyTV9WWGZiNklXemtR?oc=5",
+      "published_at": "2026-09-02T10:28+08:00",
+      "published_date": "2026-09-02",
       "status": "new",
       "verification": "single_source",
       "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 42,
-      "selection_score": 63,
+      "editorial_score": 48,
+      "selection_score": 65,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_fedce136f234cb"
+        "evt_bff6dad22b8179"
       ],
       "evidence": [
         {
-          "item_id": "src_216951de4defa1",
-          "title": "On昂跑26年Q2营收8.5亿瑞士法郎，DTC收入大增26%",
-          "source": "品牌方舟",
+          "item_id": "src_b44e0f19b9984a",
+          "title": "特步国际2026年中报：营收净利双下滑，毛利率提升至46.4%，主品牌业绩承压",
+          "source": "QQ News",
           "source_tier": "tier_3",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11TnpIY250VW93MDlqLUFJcE9MMTBtdl8ydVBQb21DdzFxQ2JQdDhhb25HdDhINVlxLVFjYmdhNmNpbkVscWNRWk5Rbw?oc=5",
-          "published_at": "2026-09-01T07:41+08:00",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tQ0Nob0t1X2ZRWUpLb21EY0FqZHNWVVVtcmZSdE5sel9yUGV0dWZCaFlSTFlTeFgxQ3h5S2sxQUFsZHV6VVBDOFdyTV9WWGZiNklXemtR?oc=5",
+          "published_at": "2026-09-02T10:28+08:00",
           "summary": ""
         }
       ]
@@ -536,33 +552,71 @@
           "summary": ""
         }
       ]
+    },
+    {
+      "event_id": "evt_a7529822ed0f4f",
+      "title": "“伴乐优”消化酶经销商被罚45万，类似产品仍靠跨境购进入国内",
+      "category": "行业动态",
+      "event_family": "industry_event",
+      "reporting_period": "",
+      "brands": [],
+      "source": "新京报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE45SnZ5ZDRyUHZ3Y0M4RVZmb1ZaZS11RHpJSWQ2SWUwRFdGdkVRakFXbkw2ZHdHWnUzMF9sdWFvSGdiNjB2akRQNmNGVF9NbTNYcTY5WHNwa1k1M184TTNMSkVUSmU?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE45SnZ5ZDRyUHZ3Y0M4RVZmb1ZaZS11RHpJSWQ2SWUwRFdGdkVRakFXbkw2ZHdHWnUzMF9sdWFvSGdiNjB2akRQNmNGVF9NbTNYcTY5WHNwa1k1M184TTNMSkVUSmU?oc=5",
+      "published_at": "2026-09-02T07:10+08:00",
+      "published_date": "2026-09-02",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 45,
+      "selection_score": 56,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_a7529822ed0f4f"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_2dc6a714e3b80b",
+          "title": "“伴乐优”消化酶经销商被罚45万，类似产品仍靠跨境购进入国内",
+          "source": "新京报",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE45SnZ5ZDRyUHZ3Y0M4RVZmb1ZaZS11RHpJSWQ2SWUwRFdGdkVRakFXbkw2ZHdHWnUzMF9sdWFvSGdiNjB2akRQNmNGVF9NbTNYcTY5WHNwa1k1M184TTNMSkVUSmU?oc=5",
+          "published_at": "2026-09-02T07:10+08:00",
+          "summary": ""
+        }
+      ]
     }
   ],
   "watchlist": [
     {
-      "title": "lululemon中国销售与舆论走向",
+      "title": "lululemon中国销售与全年指引后续",
       "event_ids": [
         "evt_76dd29b9927c26",
-        "evt_1fc8969acc46a5"
+        "evt_5b619c943bac4d"
       ],
       "product_ids": [],
-      "reason": "关注负面舆论是否持续影响其中国销售及后续指引调整。"
+      "reason": "关注lululemon下调指引后中国区销售是否继续承压，以及新CEO应对措施。"
     },
     {
-      "title": "青少年赛事平台迁移",
+      "title": "青少年篮球赛事平台迁移影响",
       "event_ids": [
         "evt_edc6b6119dc172"
       ],
       "product_ids": [],
-      "reason": "观察抖音独家直播耐高后，青少年篮球内容与品牌赞助格局变化。"
+      "reason": "观察耐高易主抖音后青少年篮球内容与装备曝光渠道的变化。"
     },
     {
-      "title": "开学季儿童健康防护",
+      "title": "开学季儿童健康防护与运动场景",
       "event_ids": [
-        "evt_b7e8e68623ae92"
+        "evt_b7e8e68623ae92",
+        "evt_48b52a05db21fb"
       ],
       "product_ids": [],
-      "reason": "跟踪疾控局开学季健康提示对儿童运动与防护品类的场景影响。"
+      "reason": "跟踪开学健康防护需求与夜间运动场景对儿童运动产品的影响。"
     }
   ],
   "tracking": {
@@ -625,47 +679,47 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "lululemon营收利润双降且中国销售受舆论冲击，是本周最集中的国际品牌财务信号。"
+        "editorial_reason": "lululemon二季度营收利润双降且中国销售受负面舆论冲击，是本周最重磅的国际品牌财务信号。"
       },
       {
-        "event_id": "evt_bff6dad22b8179",
-        "title": "特步国际2026年中报：营收净利双下滑，毛利率提升至46.4%，主品牌业绩承压",
+        "event_id": "evt_fedce136f234cb",
+        "title": "On昂跑26年Q2营收8.5亿瑞士法郎，DTC收入大增26%",
         "category": "品牌与公司",
         "event_family": "financial_results",
-        "reporting_period": "",
+        "reporting_period": "2026_q2",
         "brands": [
-          "特步"
+          "On昂跑"
         ],
-        "source": "QQ News",
-        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tQ0Nob0t1X2ZRWUpLb21EY0FqZHNWVVVtcmZSdE5sel9yUGV0dWZCaFlSTFlTeFgxQ3h5S2sxQUFsZHV6VVBDOFdyTV9WWGZiNklXemtR?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tQ0Nob0t1X2ZRWUpLb21EY0FqZHNWVVVtcmZSdE5sel9yUGV0dWZCaFlSTFlTeFgxQ3h5S2sxQUFsZHV6VVBDOFdyTV9WWGZiNklXemtR?oc=5",
-        "published_at": "2026-09-02T10:28+08:00",
-        "published_date": "2026-09-02",
+        "source": "品牌方舟",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11TnpIY250VW93MDlqLUFJcE9MMTBtdl8ydVBQb21DdzFxQ2JQdDhhb25HdDhINVlxLVFjYmdhNmNpbkVscWNRWk5Rbw?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11TnpIY250VW93MDlqLUFJcE9MMTBtdl8ydVBQb21DdzFxQ2JQdDhhb25HdDhINVlxLVFjYmdhNmNpbkVscWNRWk5Rbw?oc=5",
+        "published_at": "2026-09-01T07:41+08:00",
+        "published_date": "2026-09-01",
         "status": "new",
         "verification": "single_source",
         "is_official": false,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 48,
-        "selection_score": 65,
+        "editorial_score": 42,
+        "selection_score": 63,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_bff6dad22b8179"
+          "evt_fedce136f234cb"
         ],
         "evidence": [
           {
-            "item_id": "src_b44e0f19b9984a",
-            "title": "特步国际2026年中报：营收净利双下滑，毛利率提升至46.4%，主品牌业绩承压",
-            "source": "QQ News",
+            "item_id": "src_216951de4defa1",
+            "title": "On昂跑26年Q2营收8.5亿瑞士法郎，DTC收入大增26%",
+            "source": "品牌方舟",
             "source_tier": "tier_3",
             "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tQ0Nob0t1X2ZRWUpLb21EY0FqZHNWVVVtcmZSdE5sel9yUGV0dWZCaFlSTFlTeFgxQ3h5S2sxQUFsZHV6VVBDOFdyTV9WWGZiNklXemtR?oc=5",
-            "published_at": "2026-09-02T10:28+08:00",
+            "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11TnpIY250VW93MDlqLUFJcE9MMTBtdl8ydVBQb21DdzFxQ2JQdDhhb25HdDhINVlxLVFjYmdhNmNpbkVscWNRWk5Rbw?oc=5",
+            "published_at": "2026-09-01T07:41+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "特步中报营收净利双下滑但毛利率提升，反映本土运动品牌主品牌承压与结构变化。"
+        "editorial_reason": "昂跑DTC收入大增，与lululemon形成对照，反映运动品牌直营渠道分化。"
       },
       {
         "event_id": "evt_edc6b6119dc172",
@@ -705,7 +759,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "耐高运营权易主抖音独家直播，青少年篮球赛事平台格局出现变化。"
+        "editorial_reason": "耐高运营权易主抖音独家直播，青少年篮球赛事平台格局变化值得关注。"
       },
       {
         "event_id": "evt_b7e8e68623ae92",
@@ -743,7 +797,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "疾控局开学季健康发布会，直接关联儿童青少年健康防护与家庭消费场景。"
+        "editorial_reason": "疾控局开学季健康发布会，直接关联儿童开学健康防护与运动场景。"
       },
       {
         "event_id": "evt_48b52a05db21fb",
@@ -781,7 +835,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "暑期夜间体育消费观察，提示运动消费场景向夜间和体验延伸。"
+        "editorial_reason": "暑期夜间体育消费新场景观察，提示儿童运动消费时段与场景变化。"
       }
     ],
     "follow_up_selected": [],
@@ -947,11 +1001,11 @@
     },
     {
       "type": "event",
-      "id": "evt_bff6dad22b8179",
-      "title": "特步国际2026年中报：营收净利双下滑，毛利率提升至46.4%，主品牌业绩承压",
-      "source": "QQ News",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tQ0Nob0t1X2ZRWUpLb21EY0FqZHNWVVVtcmZSdE5sel9yUGV0dWZCaFlSTFlTeFgxQ3h5S2sxQUFsZHV6VVBDOFdyTV9WWGZiNklXemtR?oc=5",
-      "published_date": "2026-09-02"
+      "id": "evt_fedce136f234cb",
+      "title": "On昂跑26年Q2营收8.5亿瑞士法郎，DTC收入大增26%",
+      "source": "品牌方舟",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11TnpIY250VW93MDlqLUFJcE9MMTBtdl8ydVBQb21DdzFxQ2JQdDhhb25HdDhINVlxLVFjYmdhNmNpbkVscWNRWk5Rbw?oc=5",
+      "published_date": "2026-09-01"
     },
     {
       "type": "event",
@@ -987,11 +1041,11 @@
     },
     {
       "type": "event",
-      "id": "evt_fedce136f234cb",
-      "title": "On昂跑26年Q2营收8.5亿瑞士法郎，DTC收入大增26%",
-      "source": "品牌方舟",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE11TnpIY250VW93MDlqLUFJcE9MMTBtdl8ydVBQb21DdzFxQ2JQdDhhb25HdDhINVlxLVFjYmdhNmNpbkVscWNRWk5Rbw?oc=5",
-      "published_date": "2026-09-01"
+      "id": "evt_bff6dad22b8179",
+      "title": "特步国际2026年中报：营收净利双下滑，毛利率提升至46.4%，主品牌业绩承压",
+      "source": "QQ News",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tQ0Nob0t1X2ZRWUpLb21EY0FqZHNWVVVtcmZSdE5sel9yUGV0dWZCaFlSTFlTeFgxQ3h5S2sxQUFsZHV6VVBDOFdyTV9WWGZiNklXemtR?oc=5",
+      "published_date": "2026-09-02"
     },
     {
       "type": "event",
@@ -1024,6 +1078,14 @@
       "source": "sz.gov.cn",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9kZE9yY3d3QXFrOUhMVEdCWWZBWjYzaDc0SXIwV0dBQ1hvTXZodW9maGFmQnpQYlV4TU93M2g5cGxfNzBUejl5NFBCMlY0UENDSlpxYzUyN0JpOWQ3Wm5FLUZBcGZZbFlpQTN5Smx5QjBGSFNCWUZ3?oc=5",
       "published_date": "2026-09-02"
+    },
+    {
+      "type": "event",
+      "id": "evt_a7529822ed0f4f",
+      "title": "“伴乐优”消化酶经销商被罚45万，类似产品仍靠跨境购进入国内",
+      "source": "新京报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE45SnZ5ZDRyUHZ3Y0M4RVZmb1ZaZS11RHpJSWQ2SWUwRFdGdkVRakFXbkw2ZHdHWnUzMF9sdWFvSGdiNjB2akRQNmNGVF9NbTNYcTY5WHNwa1k1M184TTNMSkVUSmU?oc=5",
+      "published_date": "2026-09-02"
     }
   ],
   "data_quality": {
@@ -1040,7 +1102,7 @@
     "eligible_product_count": 0,
     "selected_product_count": 0,
     "conflict_count": 0,
-    "source_link_count": 13,
+    "source_link_count": 14,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
