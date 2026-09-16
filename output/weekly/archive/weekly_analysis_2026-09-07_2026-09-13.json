@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-09-15T10:08+08:00",
+  "generated_at": "2026-09-16T09:59+08:00",
   "report_window": {
     "start_date": "2026-09-07",
     "end_date": "2026-09-13",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "安踏收购Puma获批重塑全球格局，耐克渠道与DTC纠偏并行，儿童运动消费场景持续细分。",
-    "week_in_one_paragraph": "本周安踏收购Puma股权获中国监管无条件批准，全球运动品牌竞争格局面临重构；耐克中国收回两大经销商线上业务并反思DTC战略，渠道权力再分配；李宁增长失速与lululemon营收下滑显示单品牌与高端瑜伽服承压；儿童运动消费向体验型零售和校园竞速跑鞋延伸，安全穿着议题浮现。",
+    "weekly_thesis": "安踏收购Puma获批重塑全球格局，耐克渠道调整与李宁增长承压，儿童运动市场竞争加剧。",
+    "week_in_one_paragraph": "本周安踏收购Puma股权获中国监管无条件批准，全球运动品牌格局面临重构；耐克中国收回经销商线上业务，DTC战略持续调整；李宁核心鞋类微增但现金流骤降，单品牌困局显现；lululemon营收下滑，中产瑜伽服市场格局生变。儿童运动消费方面，百货业强化儿童体验内容，竞速碳板跑鞋成校园新宠但专家提示青少年不宜日常穿着。",
     "next_week_focus": [
-      "安踏Puma交易后续整合动作与儿童线协同可能",
-      "耐克中国经销商线上业务收回后的终端反应",
-      "李宁增长失速后是否调整儿童产品策略",
-      "校园竞速跑鞋安全争议对儿童跑鞋品类的潜在影响",
-      "运动品牌女性高端化对家庭儿童消费的溢出效应"
+      "安踏收购Puma后对童装童鞋市场的潜在影响",
+      "耐克中国渠道调整后儿童产品线上销售变化",
+      "李宁业绩承压下童装业务是否调整",
+      "lululemon品牌风波对儿童瑜伽服市场的波及",
+      "百货业强化儿童体验内容对运动童装渠道的启示"
     ]
   },
   "key_developments": [
@@ -67,7 +67,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏收购Puma股权获中国监管批准，全球运动品牌格局面临重构，对儿童运动市场竞争有间接影响。"
+      "editorial_reason": "安踏收购Puma股权获中国监管批准，全球运动品牌格局面临重构，对儿童运动市场有间接影响。"
     },
     {
       "event_id": "evt_c06e9322e3c007",
@@ -107,7 +107,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "耐克中国收回经销商线上业务，渠道权力再分配，反映国际品牌在华零售策略调整。"
+      "editorial_reason": "耐克中国收回两大经销商线上业务，渠道大洗牌，反映国际品牌在华策略调整。"
     },
     {
       "event_id": "evt_6da3246912ad52",
@@ -147,7 +147,85 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "李宁核心鞋类微增、现金流骤降，单品牌增长困局对国产运动品牌有警示意义。"
+      "editorial_reason": "李宁核心鞋类微增但现金流骤降，单品牌困局显现，国产运动品牌竞争压力加剧。"
+    },
+    {
+      "event_id": "evt_aa9c8da21a9eeb",
+      "title": "lululemon刚“稳”住董事会，创始人婚姻又“爆雷”",
+      "category": "行业动态",
+      "event_family": "industry_event",
+      "reporting_period": "",
+      "brands": [
+        "lululemon"
+      ],
+      "source": "新京报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5FM2NULU41a0ZVQzAxdmZxTmNFZklIMHIteGY3TXBpamk4TmhOeWs4VXlDcWdMZXk4LXBqVWRnRDNQRHo5a0FkUmJvaWlJQ3Mta3NYZDVsOFZpc1A2WkdqVUpGN2g?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5FM2NULU41a0ZVQzAxdmZxTmNFZklIMHIteGY3TXBpamk4TmhOeWs4VXlDcWdMZXk4LXBqVWRnRDNQRHo5a0FkUmJvaWlJQ3Mta3NYZDVsOFZpc1A2WkdqVUpGN2g?oc=5",
+      "published_at": "2026-09-13T19:50+08:00",
+      "published_date": "2026-09-13",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 47,
+      "selection_score": 54,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_aa9c8da21a9eeb"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_10fbbc153b7ed9",
+          "title": "lululemon刚“稳”住董事会，创始人婚姻又“爆雷”",
+          "source": "新京报",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5FM2NULU41a0ZVQzAxdmZxTmNFZklIMHIteGY3TXBpamk4TmhOeWs4VXlDcWdMZXk4LXBqVWRnRDNQRHo5a0FkUmJvaWlJQ3Mta3NYZDVsOFZpc1A2WkdqVUpGN2g?oc=5",
+          "published_at": "2026-09-13T19:50+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "lululemon董事会刚稳又遇创始人婚姻风波，品牌治理与形象风险值得关注。"
+    },
+    {
+      "event_id": "evt_c177d18574805a",
+      "title": "百亿库存压顶、闭店潮持续：海澜之家们涌向年轻人",
+      "category": "渠道与零售",
+      "event_family": "store_channel",
+      "reporting_period": "",
+      "brands": [],
+      "source": "第一财经",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iTUJrMUFhNFVzMUQwel80NEJKYVpJaEc1NUlKY1ZEZmt3dk91RlNpUUJDTks3N3FBWnZWejJUVUFnanNMYXl6N1pJNHM2NXlmdGE4TQ?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iTUJrMUFhNFVzMUQwel80NEJKYVpJaEc1NUlKY1ZEZmt3dk91RlNpUUJDTks3N3FBWnZWejJUVUFnanNMYXl6N1pJNHM2NXlmdGE4TQ?oc=5",
+      "published_at": "2026-09-11T16:19+08:00",
+      "published_date": "2026-09-11",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 48,
+      "selection_score": 59,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_c177d18574805a"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_364b12b41d53c1",
+          "title": "百亿库存压顶、闭店潮持续：海澜之家们涌向年轻人",
+          "source": "第一财经",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iTUJrMUFhNFVzMUQwel80NEJKYVpJaEc1NUlKY1ZEZmt3dk91RlNpUUJDTks3N3FBWnZWejJUVUFnanNMYXl6N1pJNHM2NXlmdGE4TQ?oc=5",
+          "published_at": "2026-09-11T16:19+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "百亿库存压顶、闭店潮持续，海澜之家等品牌涌向年轻人，童装市场竞争加剧。"
     },
     {
       "event_id": "evt_457d78c8056292",
@@ -188,45 +266,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "多个运动户外品牌瞄准中国女性高端市场，显示细分人群竞争加剧，与儿童家庭消费决策相关。"
-    },
-    {
-      "event_id": "evt_c177d18574805a",
-      "title": "百亿库存压顶、闭店潮持续：海澜之家们涌向年轻人",
-      "category": "渠道与零售",
-      "event_family": "store_channel",
-      "reporting_period": "",
-      "brands": [],
-      "source": "第一财经",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iTUJrMUFhNFVzMUQwel80NEJKYVpJaEc1NUlKY1ZEZmt3dk91RlNpUUJDTks3N3FBWnZWejJUVUFnanNMYXl6N1pJNHM2NXlmdGE4TQ?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iTUJrMUFhNFVzMUQwel80NEJKYVpJaEc1NUlKY1ZEZmt3dk91RlNpUUJDTks3N3FBWnZWejJUVUFnanNMYXl6N1pJNHM2NXlmdGE4TQ?oc=5",
-      "published_at": "2026-09-11T16:19+08:00",
-      "published_date": "2026-09-11",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 48,
-      "selection_score": 59,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_c177d18574805a"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_364b12b41d53c1",
-          "title": "百亿库存压顶、闭店潮持续：海澜之家们涌向年轻人",
-          "source": "第一财经",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iTUJrMUFhNFVzMUQwel80NEJKYVpJaEc1NUlKY1ZEZmt3dk91RlNpUUJDTks3N3FBWnZWejJUVUFnanNMYXl6N1pJNHM2NXlmdGE4TQ?oc=5",
-          "published_at": "2026-09-11T16:19+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "百亿库存压顶与闭店潮下品牌涌向年轻人，反映传统服饰渠道压力与年轻化转型趋势。"
+      "editorial_reason": "NikeSKIMS、Alo等品牌瞄准中国女性高端运动市场，细分赛道竞争升温。"
     },
     {
       "event_id": "evt_d17bd839a06374",
@@ -266,13 +306,13 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "特步亮相中国国际时装周发布时尚胶囊，运动品牌时尚化与场景延伸的行业动向。"
+      "editorial_reason": "特步五度亮相中国国际时装周，运动时尚化趋势延续，对儿童运动时尚有参考意义。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "安踏收购Puma获批：全球运动品牌格局生变",
-      "analysis": "安踏收购Puma股权案获中国市场监管总局无条件批准，多源报道确认。Puma欧美业绩承压，安踏借此加速全球化。对儿童运动市场而言，安踏系多品牌矩阵可能进一步整合供应链与渠道资源，国际品牌在华竞争压力上升，行业集中度提高。",
+      "headline": "安踏收购Puma获批：全球运动品牌格局重构",
+      "analysis": "安踏收购Puma股权案获中国市场监管总局无条件批准，多源报道确认。Puma欧美业绩承压，安踏全球化战略加速。此举将改变全球运动品牌竞争格局，对儿童运动市场而言，安踏系品牌矩阵扩大，可能影响未来童装童鞋市场的品牌竞争态势。",
       "event_ids": [
         "evt_b520b095587aa9",
         "evt_4cfb80f513a8bd",
@@ -303,8 +343,8 @@
       ]
     },
     {
-      "headline": "耐克渠道纠偏：DTC代价与经销商线上业务收回",
-      "analysis": "耐克中国收回两大经销商线上业务，同时新CEO反思DTC战略导致市值蒸发。这显示国际品牌在直营与分销之间寻求再平衡，渠道权力向品牌集中。对儿童运动品牌而言，线上经销体系可能面临类似调整，需关注渠道控制力与消费者触达效率。",
+      "headline": "耐克中国渠道调整与DTC战略反思",
+      "analysis": "耐克中国收回两大经销商线上业务，百亿营收面临重构；同时DTC战略代价显现，市值蒸发超1.5万亿，新CEO回归纠偏。耐克渠道策略调整反映国际品牌在华运营模式转变，对儿童运动品牌渠道布局有借鉴意义。",
       "event_ids": [
         "evt_c06e9322e3c007",
         "evt_1414868141b8e0"
@@ -327,11 +367,11 @@
       ]
     },
     {
-      "headline": "国产运动品牌增长分化：李宁失速与特步时尚化",
-      "analysis": "李宁核心鞋类微增0.6%、现金流骤降60%，单品牌困局显现；特步则通过时装周发布时尚胶囊拓展运动时尚场景。两者对比反映国产运动品牌在专业与时尚、单品牌与多品牌之间的路径分化，儿童线产品策略亦受此影响。",
+      "headline": "国产运动品牌增长承压与细分市场竞争",
+      "analysis": "李宁核心鞋类微增0.6%、现金流骤降60%，陷增长失速与单品牌困局；与此同时，NikeSKIMS、Alo等品牌瞄准中国女性高端运动市场。国产运动品牌面临增长压力，细分赛道竞争加剧，儿童运动市场亦需关注差异化竞争。",
       "event_ids": [
         "evt_6da3246912ad52",
-        "evt_d17bd839a06374"
+        "evt_457d78c8056292"
       ],
       "evidence": [
         {
@@ -342,11 +382,11 @@
           "published_date": "2026-09-11"
         },
         {
-          "event_id": "evt_d17bd839a06374",
-          "title": "特步五度亮相中国国际时装周，\"Run To X\" 时尚胶囊发布秀诠释新运动时尚",
-          "source": "美通社",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBhWnFfUE1UU3djbkZzbndaR2JRSWRFZmM2SGllbk8tN1kxVjZrVXlNTzdkcFVsQkswT3czWUsyLXltSUd6X0ppV0FGalhTSXYzVEZoY1dLSQ?oc=5",
-          "published_date": "2026-09-10"
+          "event_id": "evt_457d78c8056292",
+          "title": "华丽观察| 瞄准中国女性高端市场，这些运动户外品牌争相发力：NikeSKIMS、Alo、Maia Active、Peak Performance、Sweaty Betty – 华丽志",
+          "source": "华丽志",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFBqVGpSaEtENC02VGFmM1ZIU3doeWFiWDdVTll3UW9CWDhsSGtKMVFacW5BRjNMbXRQc1RQRS02MTI?oc=5",
+          "published_date": "2026-09-13"
         }
       ]
     }
@@ -407,7 +447,7 @@
           "published_date": "2026-09-09"
         }
       ],
-      "editorial_reason": "Jordan Tatum 5正式发布，官方来源确认，代表篮球鞋产品迭代趋势，可观察青少年篮球鞋市场反应。"
+      "editorial_reason": "Jordan Tatum 5正式发布，作为篮球鞋新品，其设计理念与科技配置对儿童篮球鞋产品开发有参考价值。"
     }
   ],
   "competitor_channel": [
@@ -455,30 +495,29 @@
   "kids_consumer": [],
   "watchlist": [
     {
-      "title": "安踏整合Puma后的多品牌协同",
+      "title": "安踏收购Puma后续整合",
       "event_ids": [
         "evt_b520b095587aa9",
         "evt_4cfb80f513a8bd"
       ],
       "product_ids": [],
-      "reason": "关注安踏是否将Puma资源与儿童线联动，以及渠道整合对童装童鞋的影响。"
+      "reason": "关注安踏对Puma的整合策略及对儿童运动市场的潜在影响。"
     },
     {
-      "title": "耐克中国渠道调整对经销商体系的影响",
+      "title": "耐克中国渠道调整落地",
       "event_ids": [
         "evt_c06e9322e3c007"
       ],
       "product_ids": [],
-      "reason": "观察经销商线上业务收回后，终端价格与库存是否波动，是否波及儿童产品分销。"
+      "reason": "观察耐克收回经销商线上业务后，其儿童产品渠道策略是否变化。"
     },
     {
-      "title": "儿童运动消费场景延伸",
+      "title": "李宁业绩与战略调整",
       "event_ids": [
-        "evt_457d78c8056292",
-        "evt_c177d18574805a"
+        "evt_6da3246912ad52"
       ],
       "product_ids": [],
-      "reason": "跟踪女性高端运动与年轻化转型是否带动儿童运动服饰的家庭消费决策变化。"
+      "reason": "关注李宁如何应对增长失速，是否调整童装业务策略。"
     }
   ],
   "tracking": {
@@ -532,7 +571,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏收购Puma股权获中国监管批准，全球运动品牌格局面临重构，对儿童运动市场竞争有间接影响。"
+        "editorial_reason": "安踏收购Puma股权获中国监管批准，全球运动品牌格局面临重构，对儿童运动市场有间接影响。"
       },
       {
         "event_id": "evt_c06e9322e3c007",
@@ -572,7 +611,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "耐克中国收回经销商线上业务，渠道权力再分配，反映国际品牌在华零售策略调整。"
+        "editorial_reason": "耐克中国收回两大经销商线上业务，渠道大洗牌，反映国际品牌在华策略调整。"
       },
       {
         "event_id": "evt_6da3246912ad52",
@@ -612,7 +651,85 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "李宁核心鞋类微增、现金流骤降，单品牌增长困局对国产运动品牌有警示意义。"
+        "editorial_reason": "李宁核心鞋类微增但现金流骤降，单品牌困局显现，国产运动品牌竞争压力加剧。"
+      },
+      {
+        "event_id": "evt_aa9c8da21a9eeb",
+        "title": "lululemon刚“稳”住董事会，创始人婚姻又“爆雷”",
+        "category": "行业动态",
+        "event_family": "industry_event",
+        "reporting_period": "",
+        "brands": [
+          "lululemon"
+        ],
+        "source": "新京报",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5FM2NULU41a0ZVQzAxdmZxTmNFZklIMHIteGY3TXBpamk4TmhOeWs4VXlDcWdMZXk4LXBqVWRnRDNQRHo5a0FkUmJvaWlJQ3Mta3NYZDVsOFZpc1A2WkdqVUpGN2g?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5FM2NULU41a0ZVQzAxdmZxTmNFZklIMHIteGY3TXBpamk4TmhOeWs4VXlDcWdMZXk4LXBqVWRnRDNQRHo5a0FkUmJvaWlJQ3Mta3NYZDVsOFZpc1A2WkdqVUpGN2g?oc=5",
+        "published_at": "2026-09-13T19:50+08:00",
+        "published_date": "2026-09-13",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 47,
+        "selection_score": 54,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_aa9c8da21a9eeb"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_10fbbc153b7ed9",
+            "title": "lululemon刚“稳”住董事会，创始人婚姻又“爆雷”",
+            "source": "新京报",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5FM2NULU41a0ZVQzAxdmZxTmNFZklIMHIteGY3TXBpamk4TmhOeWs4VXlDcWdMZXk4LXBqVWRnRDNQRHo5a0FkUmJvaWlJQ3Mta3NYZDVsOFZpc1A2WkdqVUpGN2g?oc=5",
+            "published_at": "2026-09-13T19:50+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "lululemon董事会刚稳又遇创始人婚姻风波，品牌治理与形象风险值得关注。"
+      },
+      {
+        "event_id": "evt_c177d18574805a",
+        "title": "百亿库存压顶、闭店潮持续：海澜之家们涌向年轻人",
+        "category": "渠道与零售",
+        "event_family": "store_channel",
+        "reporting_period": "",
+        "brands": [],
+        "source": "第一财经",
+        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iTUJrMUFhNFVzMUQwel80NEJKYVpJaEc1NUlKY1ZEZmt3dk91RlNpUUJDTks3N3FBWnZWejJUVUFnanNMYXl6N1pJNHM2NXlmdGE4TQ?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iTUJrMUFhNFVzMUQwel80NEJKYVpJaEc1NUlKY1ZEZmt3dk91RlNpUUJDTks3N3FBWnZWejJUVUFnanNMYXl6N1pJNHM2NXlmdGE4TQ?oc=5",
+        "published_at": "2026-09-11T16:19+08:00",
+        "published_date": "2026-09-11",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 48,
+        "selection_score": 59,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_c177d18574805a"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_364b12b41d53c1",
+            "title": "百亿库存压顶、闭店潮持续：海澜之家们涌向年轻人",
+            "source": "第一财经",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iTUJrMUFhNFVzMUQwel80NEJKYVpJaEc1NUlKY1ZEZmt3dk91RlNpUUJDTks3N3FBWnZWejJUVUFnanNMYXl6N1pJNHM2NXlmdGE4TQ?oc=5",
+            "published_at": "2026-09-11T16:19+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "百亿库存压顶、闭店潮持续，海澜之家等品牌涌向年轻人，童装市场竞争加剧。"
       },
       {
         "event_id": "evt_457d78c8056292",
@@ -653,45 +770,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "多个运动户外品牌瞄准中国女性高端市场，显示细分人群竞争加剧，与儿童家庭消费决策相关。"
-      },
-      {
-        "event_id": "evt_c177d18574805a",
-        "title": "百亿库存压顶、闭店潮持续：海澜之家们涌向年轻人",
-        "category": "渠道与零售",
-        "event_family": "store_channel",
-        "reporting_period": "",
-        "brands": [],
-        "source": "第一财经",
-        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iTUJrMUFhNFVzMUQwel80NEJKYVpJaEc1NUlKY1ZEZmt3dk91RlNpUUJDTks3N3FBWnZWejJUVUFnanNMYXl6N1pJNHM2NXlmdGE4TQ?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iTUJrMUFhNFVzMUQwel80NEJKYVpJaEc1NUlKY1ZEZmt3dk91RlNpUUJDTks3N3FBWnZWejJUVUFnanNMYXl6N1pJNHM2NXlmdGE4TQ?oc=5",
-        "published_at": "2026-09-11T16:19+08:00",
-        "published_date": "2026-09-11",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 48,
-        "selection_score": 59,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_c177d18574805a"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_364b12b41d53c1",
-            "title": "百亿库存压顶、闭店潮持续：海澜之家们涌向年轻人",
-            "source": "第一财经",
-            "source_tier": "tier_2",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iTUJrMUFhNFVzMUQwel80NEJKYVpJaEc1NUlKY1ZEZmt3dk91RlNpUUJDTks3N3FBWnZWejJUVUFnanNMYXl6N1pJNHM2NXlmdGE4TQ?oc=5",
-            "published_at": "2026-09-11T16:19+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "百亿库存压顶与闭店潮下品牌涌向年轻人，反映传统服饰渠道压力与年轻化转型趋势。"
+        "editorial_reason": "NikeSKIMS、Alo等品牌瞄准中国女性高端运动市场，细分赛道竞争升温。"
       },
       {
         "event_id": "evt_d17bd839a06374",
@@ -731,7 +810,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "特步亮相中国国际时装周发布时尚胶囊，运动品牌时尚化与场景延伸的行业动向。"
+        "editorial_reason": "特步五度亮相中国国际时装周，运动时尚化趋势延续，对儿童运动时尚有参考意义。"
       }
     ],
     "follow_up_selected": [],
@@ -913,10 +992,10 @@
     },
     {
       "type": "event",
-      "id": "evt_457d78c8056292",
-      "title": "华丽观察| 瞄准中国女性高端市场，这些运动户外品牌争相发力：NikeSKIMS、Alo、Maia Active、Peak Performance、Sweaty Betty – 华丽志",
-      "source": "华丽志",
-      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFBqVGpSaEtENC02VGFmM1ZIU3doeWFiWDdVTll3UW9CWDhsSGtKMVFacW5BRjNMbXRQc1RQRS02MTI?oc=5",
+      "id": "evt_aa9c8da21a9eeb",
+      "title": "lululemon刚“稳”住董事会，创始人婚姻又“爆雷”",
+      "source": "新京报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5FM2NULU41a0ZVQzAxdmZxTmNFZklIMHIteGY3TXBpamk4TmhOeWs4VXlDcWdMZXk4LXBqVWRnRDNQRHo5a0FkUmJvaWlJQ3Mta3NYZDVsOFZpc1A2WkdqVUpGN2g?oc=5",
       "published_date": "2026-09-13"
     },
     {
@@ -926,6 +1005,14 @@
       "source": "第一财经",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iTUJrMUFhNFVzMUQwel80NEJKYVpJaEc1NUlKY1ZEZmt3dk91RlNpUUJDTks3N3FBWnZWejJUVUFnanNMYXl6N1pJNHM2NXlmdGE4TQ?oc=5",
       "published_date": "2026-09-11"
+    },
+    {
+      "type": "event",
+      "id": "evt_457d78c8056292",
+      "title": "华丽观察| 瞄准中国女性高端市场，这些运动户外品牌争相发力：NikeSKIMS、Alo、Maia Active、Peak Performance、Sweaty Betty – 华丽志",
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFBqVGpSaEtENC02VGFmM1ZIU3doeWFiWDdVTll3UW9CWDhsSGtKMVFacW5BRjNMbXRQc1RQRS02MTI?oc=5",
+      "published_date": "2026-09-13"
     },
     {
       "type": "event",
@@ -984,13 +1071,13 @@
     "raw_event_count": 18,
     "coalesced_event_count": 18,
     "eligible_event_count": 18,
-    "selected_event_count": 6,
+    "selected_event_count": 7,
     "raw_product_count": 14,
     "product_lead_count": 14,
     "eligible_product_count": 1,
     "selected_product_count": 1,
     "conflict_count": 0,
-    "source_link_count": 12,
+    "source_link_count": 13,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
@@ -1006,7 +1093,7 @@
       "户外与场景": 1
     },
     "selected_status": {
-      "new": 6
+      "new": 7
     },
     "quality_notes": [
       "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
