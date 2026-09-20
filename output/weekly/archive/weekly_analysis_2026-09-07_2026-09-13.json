@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-09-19T09:56+08:00",
+  "generated_at": "2026-09-20T09:58+08:00",
   "report_window": {
     "start_date": "2026-09-07",
     "end_date": "2026-09-13",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "安踏收购Puma获批重塑全球格局，耐克渠道调整与DTC反思并行，儿童运动市场需关注竞品渠道与产品创新。",
-    "week_in_one_paragraph": "本周安踏收购Puma股权获中国监管无条件批准，全球运动品牌格局面临重构；耐克中国收回经销商线上业务，DTC战略进入纠偏期；Puma任命前耐克高管强化体育营销；李宁增长失速与lululemon营收下滑显示本土与国际品牌竞争加剧；儿童运动消费场景在百货渠道持续强化。",
+    "weekly_thesis": "安踏收购Puma获批重塑全球格局，耐克渠道调整与李宁增长承压，儿童运动市场竞争加剧。",
+    "week_in_one_paragraph": "本周安踏收购Puma股权获中国监管无条件批准，全球运动品牌格局面临重构；耐克中国收回经销商线上业务，DTC战略持续调整；李宁鞋类微增但现金流骤降，单品牌困局显现；儿童运动消费与女性高端市场成为品牌争夺焦点。",
     "next_week_focus": [
-      "安踏收购Puma后是否公布儿童业务整合计划",
-      "耐克中国渠道调整后儿童产品线上价格与库存变化",
-      "李宁儿童线新品发布或营销动作",
-      "运动品牌儿童品类秋季新品上市节奏",
-      "百货渠道儿童运动消费场景强化案例"
+      "安踏收购Puma后整合动作及对儿童运动市场影响",
+      "耐克中国渠道调整后经销商反应与库存变化",
+      "李宁业绩承压下是否调整儿童产品线策略",
+      "女性高端运动品牌入华对儿童运动细分启发",
+      "运动品牌时尚化联名对儿童产品设计借鉴"
     ]
   },
   "key_developments": [
@@ -67,7 +67,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏收购Puma股权获中国监管批准，全球运动品牌格局生变，对儿童运动市场竞争有间接影响。"
+      "editorial_reason": "安踏收购Puma获批，全球运动品牌格局生变，对国内儿童运动市场竞争有间接影响。"
     },
     {
       "event_id": "evt_c06e9322e3c007",
@@ -107,7 +107,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "耐克中国收回经销商线上业务，渠道重构可能影响儿童运动产品分销与零售模式。"
+      "editorial_reason": "耐克中国渠道大洗牌，经销商线上业务被收回，反映国际品牌在华渠道策略调整。"
     },
     {
       "event_id": "evt_6da3246912ad52",
@@ -147,7 +147,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "李宁核心鞋类微增、现金流骤降，本土品牌增长压力显现，需关注其儿童线策略。"
+      "editorial_reason": "李宁核心鞋类微增但现金流骤降，单品牌增长困境为行业提供警示。"
     },
     {
       "event_id": "evt_457d78c8056292",
@@ -188,7 +188,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "多个运动户外品牌瞄准中国女性高端市场，细分赛道竞争加剧，可能延伸至儿童品类。"
+      "editorial_reason": "女性高端运动市场品牌争相发力，NikeSKIMS、Alo等入局，消费细分趋势明显。"
     },
     {
       "event_id": "evt_c177d18574805a",
@@ -226,13 +226,93 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "海澜之家等品牌库存压顶、闭店潮持续，涌向年轻人，反映大众服饰渠道调整。"
+      "editorial_reason": "海澜之家等传统服饰品牌涌向年轻人，库存与闭店压力下寻求转型。"
+    },
+    {
+      "event_id": "evt_d17bd839a06374",
+      "title": "特步五度亮相中国国际时装周，\"Run To X\" 时尚胶囊发布秀诠释新运动时尚",
+      "category": "产品与科技",
+      "event_family": "industry_event",
+      "reporting_period": "",
+      "brands": [
+        "特步"
+      ],
+      "source": "美通社",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBhWnFfUE1UU3djbkZzbndaR2JRSWRFZmM2SGllbk8tN1kxVjZrVXlNTzdkcFVsQkswT3czWUsyLXltSUd6X0ppV0FGalhTSXYzVEZoY1dLSQ?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBhWnFfUE1UU3djbkZzbndaR2JRSWRFZmM2SGllbk8tN1kxVjZrVXlNTzdkcFVsQkswT3czWUsyLXltSUd6X0ppV0FGalhTSXYzVEZoY1dLSQ?oc=5",
+      "published_at": "2026-09-10T12:00+08:00",
+      "published_date": "2026-09-10",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 47,
+      "selection_score": 59,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_d17bd839a06374"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_a2bbb54d025466",
+          "title": "特步五度亮相中国国际时装周，\"Run To X\" 时尚胶囊发布秀诠释新运动时尚",
+          "source": "美通社",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBhWnFfUE1UU3djbkZzbndaR2JRSWRFZmM2SGllbk8tN1kxVjZrVXlNTzdkcFVsQkswT3czWUsyLXltSUd6X0ppV0FGalhTSXYzVEZoY1dLSQ?oc=5",
+          "published_at": "2026-09-10T12:00+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "特步亮相中国国际时装周发布时尚胶囊，运动品牌时尚化趋势延续。"
+    },
+    {
+      "event_id": "evt_6d3bbc5791d8b9",
+      "title": "6999元起，华为WATCH Ultimate 2迪桑特联名款正式发布",
+      "category": "产品与科技",
+      "event_family": "collaboration",
+      "reporting_period": "",
+      "brands": [
+        "迪桑特"
+      ],
+      "source": "中关村在线",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5lcmJsMVpreEZ2QTVJN3A2MkUwSFRTYk9nd2NFNkdZeV9PeWJZVnZsaVcwdTJta0dKNkNlOE5yV2tSZFZXaE1ldDNyRHZteTlJc1pha0hjcw?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5lcmJsMVpreEZ2QTVJN3A2MkUwSFRTYk9nd2NFNkdZeV9PeWJZVnZsaVcwdTJta0dKNkNlOE5yV2tSZFZXaE1ldDNyRHZteTlJc1pha0hjcw?oc=5",
+      "published_at": "2026-09-09T11:14+08:00",
+      "published_date": "2026-09-09",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 50,
+      "selection_score": 66,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_6d3bbc5791d8b9"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_4ac0576f9e02ca",
+          "title": "6999元起，华为WATCH Ultimate 2迪桑特联名款正式发布",
+          "source": "中关村在线",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5lcmJsMVpreEZ2QTVJN3A2MkUwSFRTYk9nd2NFNkdZeV9PeWJZVnZsaVcwdTJta0dKNkNlOE5yV2tSZFZXaE1ldDNyRHZteTlJc1pha0hjcw?oc=5",
+          "published_at": "2026-09-09T11:14+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "华为与迪桑特联名智能手表发布，运动科技跨界合作拓展场景。"
     }
   ],
   "deep_dives": [
     {
       "headline": "安踏收购Puma获批：全球运动品牌格局重构",
-      "analysis": "安踏收购Puma股权案获中国市场监管总局无条件批准，多源报道确认。此举将改变全球运动品牌竞争格局，安踏有望借助Puma的欧美渠道与品牌资产加速全球化，但Puma欧美业绩承压也带来整合挑战。对儿童运动市场而言，安踏系多品牌矩阵可能进一步强化，需关注其儿童业务协同与渠道复用。",
+      "analysis": "安踏收购Puma股权案获中国市场监管总局无条件批准，多源报道确认。Puma欧美业绩承压，安踏全球化战略加速。此举可能改变全球运动品牌竞争态势，对国内儿童运动市场的品牌格局和渠道资源分配产生间接影响，值得持续关注整合进展。",
       "event_ids": [
         "evt_b520b095587aa9",
         "evt_4cfb80f513a8bd",
@@ -263,8 +343,8 @@
       ]
     },
     {
-      "headline": "耐克渠道调整与DTC反思：经销商线上业务收回",
-      "analysis": "耐克中国收回两大经销商线上业务，同时DTC战略代价显现，新CEO希尔回归纠偏。这反映国际品牌在渠道控制与分销效率之间的再平衡。对儿童运动品牌而言，需关注耐克渠道变革是否影响其儿童产品铺货与线上运营模式，以及经销商体系调整带来的市场空隙。",
+      "headline": "耐克中国渠道调整与DTC战略反思",
+      "analysis": "耐克中国收回两大经销商线上业务，百亿营收面临重构；同时DTC战略代价显现，市值蒸发超1.5万亿，新CEO回归纠偏。这反映国际品牌在华渠道策略从激进DTC向平衡调整，对依赖经销渠道的儿童运动品牌有参考意义。",
       "event_ids": [
         "evt_c06e9322e3c007",
         "evt_1414868141b8e0"
@@ -287,12 +367,10 @@
       ]
     },
     {
-      "headline": "本土品牌增长压力与细分市场竞争",
-      "analysis": "李宁核心鞋类微增、现金流骤降，显示本土龙头增长失速；同时多个运动户外品牌瞄准中国女性高端市场，细分赛道竞争加剧；海澜之家等大众服饰库存压顶、闭店潮持续，涌向年轻人。这些变化表明运动消费市场分化，儿童运动品牌需关注成人市场波动对儿童品类的传导效应。",
+      "headline": "李宁增长失速与单品牌困局",
+      "analysis": "李宁核心鞋类微增0.6%，现金流骤降60%，单品牌增长面临瓶颈。在安踏多品牌矩阵和耐克渠道调整背景下，李宁的困境凸显国内运动品牌竞争加剧，对儿童运动市场的品牌策略和产品创新提出更高要求。",
       "event_ids": [
-        "evt_6da3246912ad52",
-        "evt_457d78c8056292",
-        "evt_c177d18574805a"
+        "evt_6da3246912ad52"
       ],
       "evidence": [
         {
@@ -301,20 +379,22 @@
           "source": "finance.sina.cn",
           "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbmxSckpLVE9EU3dweVlFWUJ4WTQyb21SZzRHbHhOakdpcDFmN2ZTNEppRThHTVZmZW9TV2JPejh5LTUtRENVcXA3X3pTZVFfeklQbnRrQ1JOdWd5RWw4eGFVcWZVNXJ0Wl95WFI5RmZQVDRzYzdzT1BfVU9NRGxFUHQ4ZWM4R19OT2c?oc=5",
           "published_date": "2026-09-11"
-        },
+        }
+      ]
+    },
+    {
+      "headline": "女性高端运动市场争夺升温",
+      "analysis": "NikeSKIMS、Alo、Maia Active、Peak Performance、Sweaty Betty等品牌瞄准中国女性高端市场争相发力。女性运动消费细分趋势明显，高端化、专业化成为竞争焦点，对儿童运动品牌的产品细分和场景拓展有借鉴意义。",
+      "event_ids": [
+        "evt_457d78c8056292"
+      ],
+      "evidence": [
         {
           "event_id": "evt_457d78c8056292",
           "title": "华丽观察| 瞄准中国女性高端市场，这些运动户外品牌争相发力：NikeSKIMS、Alo、Maia Active、Peak Performance、Sweaty Betty – 华丽志",
           "source": "华丽志",
           "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFBqVGpSaEtENC02VGFmM1ZIU3doeWFiWDdVTll3UW9CWDhsSGtKMVFacW5BRjNMbXRQc1RQRS02MTI?oc=5",
           "published_date": "2026-09-13"
-        },
-        {
-          "event_id": "evt_c177d18574805a",
-          "title": "百亿库存压顶、闭店潮持续：海澜之家们涌向年轻人",
-          "source": "第一财经",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iTUJrMUFhNFVzMUQwel80NEJKYVpJaEc1NUlKY1ZEZmt3dk91RlNpUUJDTks3N3FBWnZWejJUVUFnanNMYXl6N1pJNHM2NXlmdGE4TQ?oc=5",
-          "published_date": "2026-09-11"
         }
       ]
     }
@@ -375,89 +455,10 @@
           "published_date": "2026-09-09"
         }
       ],
-      "editorial_reason": "Jordan Tatum 5正式发布，作为篮球鞋新品，其设计理念与科技配置可参考用于儿童篮球鞋产品趋势分析。"
+      "editorial_reason": "Jordan Tatum 5正式发布，篮球鞋产品迭代，反映运动品牌在篮球品类持续投入。"
     }
   ],
   "competitor_channel": [
-    {
-      "event_id": "evt_1414868141b8e0",
-      "title": "耐克DTC战略代价：市值蒸发超1.5万亿，新CEO希尔回归纠偏",
-      "category": "品牌与公司",
-      "event_family": "management",
-      "reporting_period": "",
-      "brands": [
-        "Nike"
-      ],
-      "source": "虎嗅网",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ZNnpCczAxbENlX1ZydHFuZUhwS0VTZTBLSTc3NlZoWDFGTTQyeWRreUpDWkNkQ0IteGxiZTlWY2RlQ2g2SFh5XzR4TGdJYkR1OGc?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ZNnpCczAxbENlX1ZydHFuZUhwS0VTZTBLSTc3NlZoWDFGTTQyeWRreUpDWkNkQ0IteGxiZTlWY2RlQ2g2SFh5XzR4TGdJYkR1OGc?oc=5",
-      "published_at": "2026-09-12T20:18+08:00",
-      "published_date": "2026-09-12",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 51,
-      "selection_score": 67,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_1414868141b8e0"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_a0c9cc3990bf9e",
-          "title": "耐克DTC战略代价：市值蒸发超1.5万亿，新CEO希尔回归纠偏",
-          "source": "虎嗅网",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ZNnpCczAxbENlX1ZydHFuZUhwS0VTZTBLSTc3NlZoWDFGTTQyeWRreUpDWkNkQ0IteGxiZTlWY2RlQ2g2SFh5XzR4TGdJYkR1OGc?oc=5",
-          "published_at": "2026-09-12T20:18+08:00",
-          "summary": ""
-        }
-      ]
-    },
-    {
-      "event_id": "evt_4cfb80f513a8bd",
-      "title": "安踏收购彪马股权获无条件批准，后者欧美业绩承压",
-      "category": "品牌与公司",
-      "event_family": "financial_results",
-      "reporting_period": "",
-      "brands": [
-        "安踏",
-        "Puma"
-      ],
-      "source": "新京报",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA4OWh0allBVTVwMWwyVWQ4RldpbGVmdGd1Nm5QUTNnTTQ5RGxpMkJ3ckROMFBQUVVmcmlCZGh3UzlTUU5nQVpJNTVCWlRxaXI3LUxBSWphWVA1Ym9FQVlOMkp6S2o?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA4OWh0allBVTVwMWwyVWQ4RldpbGVmdGd1Nm5QUTNnTTQ5RGxpMkJ3ckROMFBQUVVmcmlCZGh3UzlTUU5nQVpJNTVCWlRxaXI3LUxBSWphWVA1Ym9FQVlOMkp6S2o?oc=5",
-      "published_at": "2026-09-12T16:26+08:00",
-      "published_date": "2026-09-12",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 53,
-      "selection_score": 65,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_4cfb80f513a8bd"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_2491601928dc8b",
-          "title": "安踏收购彪马股权获无条件批准，后者欧美业绩承压",
-          "source": "新京报",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA4OWh0allBVTVwMWwyVWQ4RldpbGVmdGd1Nm5QUTNnTTQ5RGxpMkJ3ckROMFBQUVVmcmlCZGh3UzlTUU5nQVpJNTVCWlRxaXI3LUxBSWphWVA1Ym9FQVlOMkp6S2o?oc=5",
-          "published_at": "2026-09-12T16:26+08:00",
-          "summary": ""
-        }
-      ]
-    },
     {
       "event_id": "evt_df527669a872cd",
       "title": "Puma任命前Nike高管Steve Cecchini为体育营销高级副总裁",
@@ -497,74 +498,74 @@
           "summary": ""
         }
       ]
-    },
+    }
+  ],
+  "kids_consumer": [
     {
-      "event_id": "evt_b26f98931d5c85",
-      "title": "市场监管总局无条件批准安踏体育用品有限公司收购彪马股份公司股权案",
-      "category": "品牌与公司",
-      "event_family": "capital_strategy",
+      "event_id": "evt_aa9c8da21a9eeb",
+      "title": "lululemon刚“稳”住董事会，创始人婚姻又“爆雷”",
+      "category": "行业动态",
+      "event_family": "industry_event",
       "reporting_period": "",
       "brands": [
-        "安踏",
-        "Puma"
+        "lululemon"
       ],
-      "source": "证券时报",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1xdVl4c3Z0azJnNUkxbkdsOXZDanRKV2RsVXRkOU9MSVRINm9CbmluMXBxRzNCRU1YbExfZzlBVHFHYWg1ekRuQUJBNkdlZDVsWE9JMXVjYmVYNWwz?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1xdVl4c3Z0azJnNUkxbkdsOXZDanRKV2RsVXRkOU9MSVRINm9CbmluMXBxRzNCRU1YbExfZzlBVHFHYWg1ekRuQUJBNkdlZDVsWE9JMXVjYmVYNWwz?oc=5",
-      "published_at": "2026-09-11T08:59+08:00",
-      "published_date": "2026-09-11",
+      "source": "新京报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5FM2NULU41a0ZVQzAxdmZxTmNFZklIMHIteGY3TXBpamk4TmhOeWs4VXlDcWdMZXk4LXBqVWRnRDNQRHo5a0FkUmJvaWlJQ3Mta3NYZDVsOFZpc1A2WkdqVUpGN2g?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5FM2NULU41a0ZVQzAxdmZxTmNFZklIMHIteGY3TXBpamk4TmhOeWs4VXlDcWdMZXk4LXBqVWRnRDNQRHo5a0FkUmJvaWlJQ3Mta3NYZDVsOFZpc1A2WkdqVUpGN2g?oc=5",
+      "published_at": "2026-09-13T19:50+08:00",
+      "published_date": "2026-09-13",
       "status": "new",
       "verification": "single_source",
       "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 48,
-      "selection_score": 60,
+      "editorial_score": 47,
+      "selection_score": 54,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_b26f98931d5c85"
+        "evt_aa9c8da21a9eeb"
       ],
       "evidence": [
         {
-          "item_id": "src_85bc59e5f8beab",
-          "title": "市场监管总局无条件批准安踏体育用品有限公司收购彪马股份公司股权案",
-          "source": "证券时报",
+          "item_id": "src_10fbbc153b7ed9",
+          "title": "lululemon刚“稳”住董事会，创始人婚姻又“爆雷”",
+          "source": "新京报",
           "source_tier": "tier_2",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1xdVl4c3Z0azJnNUkxbkdsOXZDanRKV2RsVXRkOU9MSVRINm9CbmluMXBxRzNCRU1YbExfZzlBVHFHYWg1ekRuQUJBNkdlZDVsWE9JMXVjYmVYNWwz?oc=5",
-          "published_at": "2026-09-11T08:59+08:00",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5FM2NULU41a0ZVQzAxdmZxTmNFZklIMHIteGY3TXBpamk4TmhOeWs4VXlDcWdMZXk4LXBqVWRnRDNQRHo5a0FkUmJvaWlJQ3Mta3NYZDVsOFZpc1A2WkdqVUpGN2g?oc=5",
+          "published_at": "2026-09-13T19:50+08:00",
           "summary": ""
         }
       ]
     }
   ],
-  "kids_consumer": [],
   "watchlist": [
     {
-      "title": "安踏收购Puma后儿童业务整合动向",
+      "title": "安踏整合Puma进展",
       "event_ids": [
         "evt_b520b095587aa9",
         "evt_4cfb80f513a8bd"
       ],
       "product_ids": [],
-      "reason": "关注安踏是否将Puma儿童线引入中国市场，以及渠道协同策略。"
+      "reason": "关注安踏收购Puma后整合动作及对儿童运动市场格局的潜在影响。"
     },
     {
-      "title": "耐克中国渠道调整对儿童产品分销影响",
+      "title": "耐克中国渠道调整后续",
       "event_ids": [
         "evt_c06e9322e3c007"
       ],
       "product_ids": [],
-      "reason": "观察经销商线上业务收回后，耐克儿童产品线上铺货与促销变化。"
+      "reason": "观察耐克收回经销商线上业务后，渠道库存和价格体系变化。"
     },
     {
-      "title": "李宁儿童线增长与渠道表现",
+      "title": "儿童运动消费趋势",
       "event_ids": [
-        "evt_6da3246912ad52"
+        "evt_c177d18574805a"
       ],
       "product_ids": [],
-      "reason": "李宁整体增长失速，需关注其儿童线是否受波及及应对措施。"
+      "reason": "关注传统服饰品牌涌向年轻人对儿童运动消费市场的分流效应。"
     }
   ],
   "tracking": {
@@ -618,7 +619,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏收购Puma股权获中国监管批准，全球运动品牌格局生变，对儿童运动市场竞争有间接影响。"
+        "editorial_reason": "安踏收购Puma获批，全球运动品牌格局生变，对国内儿童运动市场竞争有间接影响。"
       },
       {
         "event_id": "evt_c06e9322e3c007",
@@ -658,7 +659,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "耐克中国收回经销商线上业务，渠道重构可能影响儿童运动产品分销与零售模式。"
+        "editorial_reason": "耐克中国渠道大洗牌，经销商线上业务被收回，反映国际品牌在华渠道策略调整。"
       },
       {
         "event_id": "evt_6da3246912ad52",
@@ -698,7 +699,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "李宁核心鞋类微增、现金流骤降，本土品牌增长压力显现，需关注其儿童线策略。"
+        "editorial_reason": "李宁核心鞋类微增但现金流骤降，单品牌增长困境为行业提供警示。"
       },
       {
         "event_id": "evt_457d78c8056292",
@@ -739,7 +740,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "多个运动户外品牌瞄准中国女性高端市场，细分赛道竞争加剧，可能延伸至儿童品类。"
+        "editorial_reason": "女性高端运动市场品牌争相发力，NikeSKIMS、Alo等入局，消费细分趋势明显。"
       },
       {
         "event_id": "evt_c177d18574805a",
@@ -777,7 +778,87 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "海澜之家等品牌库存压顶、闭店潮持续，涌向年轻人，反映大众服饰渠道调整。"
+        "editorial_reason": "海澜之家等传统服饰品牌涌向年轻人，库存与闭店压力下寻求转型。"
+      },
+      {
+        "event_id": "evt_d17bd839a06374",
+        "title": "特步五度亮相中国国际时装周，\"Run To X\" 时尚胶囊发布秀诠释新运动时尚",
+        "category": "产品与科技",
+        "event_family": "industry_event",
+        "reporting_period": "",
+        "brands": [
+          "特步"
+        ],
+        "source": "美通社",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBhWnFfUE1UU3djbkZzbndaR2JRSWRFZmM2SGllbk8tN1kxVjZrVXlNTzdkcFVsQkswT3czWUsyLXltSUd6X0ppV0FGalhTSXYzVEZoY1dLSQ?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBhWnFfUE1UU3djbkZzbndaR2JRSWRFZmM2SGllbk8tN1kxVjZrVXlNTzdkcFVsQkswT3czWUsyLXltSUd6X0ppV0FGalhTSXYzVEZoY1dLSQ?oc=5",
+        "published_at": "2026-09-10T12:00+08:00",
+        "published_date": "2026-09-10",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 47,
+        "selection_score": 59,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_d17bd839a06374"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_a2bbb54d025466",
+            "title": "特步五度亮相中国国际时装周，\"Run To X\" 时尚胶囊发布秀诠释新运动时尚",
+            "source": "美通社",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBhWnFfUE1UU3djbkZzbndaR2JRSWRFZmM2SGllbk8tN1kxVjZrVXlNTzdkcFVsQkswT3czWUsyLXltSUd6X0ppV0FGalhTSXYzVEZoY1dLSQ?oc=5",
+            "published_at": "2026-09-10T12:00+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "特步亮相中国国际时装周发布时尚胶囊，运动品牌时尚化趋势延续。"
+      },
+      {
+        "event_id": "evt_6d3bbc5791d8b9",
+        "title": "6999元起，华为WATCH Ultimate 2迪桑特联名款正式发布",
+        "category": "产品与科技",
+        "event_family": "collaboration",
+        "reporting_period": "",
+        "brands": [
+          "迪桑特"
+        ],
+        "source": "中关村在线",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5lcmJsMVpreEZ2QTVJN3A2MkUwSFRTYk9nd2NFNkdZeV9PeWJZVnZsaVcwdTJta0dKNkNlOE5yV2tSZFZXaE1ldDNyRHZteTlJc1pha0hjcw?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5lcmJsMVpreEZ2QTVJN3A2MkUwSFRTYk9nd2NFNkdZeV9PeWJZVnZsaVcwdTJta0dKNkNlOE5yV2tSZFZXaE1ldDNyRHZteTlJc1pha0hjcw?oc=5",
+        "published_at": "2026-09-09T11:14+08:00",
+        "published_date": "2026-09-09",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 50,
+        "selection_score": 66,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_6d3bbc5791d8b9"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_4ac0576f9e02ca",
+            "title": "6999元起，华为WATCH Ultimate 2迪桑特联名款正式发布",
+            "source": "中关村在线",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5lcmJsMVpreEZ2QTVJN3A2MkUwSFRTYk9nd2NFNkdZeV9PeWJZVnZsaVcwdTJta0dKNkNlOE5yV2tSZFZXaE1ldDNyRHZteTlJc1pha0hjcw?oc=5",
+            "published_at": "2026-09-09T11:14+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "华为与迪桑特联名智能手表发布，运动科技跨界合作拓展场景。"
       }
     ],
     "follow_up_selected": [],
@@ -975,19 +1056,19 @@
     },
     {
       "type": "event",
-      "id": "evt_1414868141b8e0",
-      "title": "耐克DTC战略代价：市值蒸发超1.5万亿，新CEO希尔回归纠偏",
-      "source": "虎嗅网",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ZNnpCczAxbENlX1ZydHFuZUhwS0VTZTBLSTc3NlZoWDFGTTQyeWRreUpDWkNkQ0IteGxiZTlWY2RlQ2g2SFh5XzR4TGdJYkR1OGc?oc=5",
-      "published_date": "2026-09-12"
+      "id": "evt_d17bd839a06374",
+      "title": "特步五度亮相中国国际时装周，\"Run To X\" 时尚胶囊发布秀诠释新运动时尚",
+      "source": "美通社",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBhWnFfUE1UU3djbkZzbndaR2JRSWRFZmM2SGllbk8tN1kxVjZrVXlNTzdkcFVsQkswT3czWUsyLXltSUd6X0ppV0FGalhTSXYzVEZoY1dLSQ?oc=5",
+      "published_date": "2026-09-10"
     },
     {
       "type": "event",
-      "id": "evt_4cfb80f513a8bd",
-      "title": "安踏收购彪马股权获无条件批准，后者欧美业绩承压",
-      "source": "新京报",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA4OWh0allBVTVwMWwyVWQ4RldpbGVmdGd1Nm5QUTNnTTQ5RGxpMkJ3ckROMFBQUVVmcmlCZGh3UzlTUU5nQVpJNTVCWlRxaXI3LUxBSWphWVA1Ym9FQVlOMkp6S2o?oc=5",
-      "published_date": "2026-09-12"
+      "id": "evt_6d3bbc5791d8b9",
+      "title": "6999元起，华为WATCH Ultimate 2迪桑特联名款正式发布",
+      "source": "中关村在线",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5lcmJsMVpreEZ2QTVJN3A2MkUwSFRTYk9nd2NFNkdZeV9PeWJZVnZsaVcwdTJta0dKNkNlOE5yV2tSZFZXaE1ldDNyRHZteTlJc1pha0hjcw?oc=5",
+      "published_date": "2026-09-09"
     },
     {
       "type": "event",
@@ -999,11 +1080,35 @@
     },
     {
       "type": "event",
+      "id": "evt_aa9c8da21a9eeb",
+      "title": "lululemon刚“稳”住董事会，创始人婚姻又“爆雷”",
+      "source": "新京报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5FM2NULU41a0ZVQzAxdmZxTmNFZklIMHIteGY3TXBpamk4TmhOeWs4VXlDcWdMZXk4LXBqVWRnRDNQRHo5a0FkUmJvaWlJQ3Mta3NYZDVsOFZpc1A2WkdqVUpGN2g?oc=5",
+      "published_date": "2026-09-13"
+    },
+    {
+      "type": "event",
+      "id": "evt_4cfb80f513a8bd",
+      "title": "安踏收购彪马股权获无条件批准，后者欧美业绩承压",
+      "source": "新京报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA4OWh0allBVTVwMWwyVWQ4RldpbGVmdGd1Nm5QUTNnTTQ5RGxpMkJ3ckROMFBQUVVmcmlCZGh3UzlTUU5nQVpJNTVCWlRxaXI3LUxBSWphWVA1Ym9FQVlOMkp6S2o?oc=5",
+      "published_date": "2026-09-12"
+    },
+    {
+      "type": "event",
       "id": "evt_b26f98931d5c85",
       "title": "市场监管总局无条件批准安踏体育用品有限公司收购彪马股份公司股权案",
       "source": "证券时报",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1xdVl4c3Z0azJnNUkxbkdsOXZDanRKV2RsVXRkOU9MSVRINm9CbmluMXBxRzNCRU1YbExfZzlBVHFHYWg1ekRuQUJBNkdlZDVsWE9JMXVjYmVYNWwz?oc=5",
       "published_date": "2026-09-11"
+    },
+    {
+      "type": "event",
+      "id": "evt_1414868141b8e0",
+      "title": "耐克DTC战略代价：市值蒸发超1.5万亿，新CEO希尔回归纠偏",
+      "source": "虎嗅网",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ZNnpCczAxbENlX1ZydHFuZUhwS0VTZTBLSTc3NlZoWDFGTTQyeWRreUpDWkNkQ0IteGxiZTlWY2RlQ2g2SFh5XzR4TGdJYkR1OGc?oc=5",
+      "published_date": "2026-09-12"
     },
     {
       "type": "product",
@@ -1022,13 +1127,13 @@
     "raw_event_count": 18,
     "coalesced_event_count": 18,
     "eligible_event_count": 18,
-    "selected_event_count": 5,
+    "selected_event_count": 7,
     "raw_product_count": 14,
     "product_lead_count": 14,
     "eligible_product_count": 1,
     "selected_product_count": 1,
     "conflict_count": 0,
-    "source_link_count": 11,
+    "source_link_count": 14,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
@@ -1044,7 +1149,7 @@
       "户外与场景": 1
     },
     "selected_status": {
-      "new": 5
+      "new": 7
     },
     "quality_notes": [
       "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
