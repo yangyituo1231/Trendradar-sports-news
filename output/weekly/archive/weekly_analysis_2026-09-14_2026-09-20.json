@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-09-21T13:17+08:00",
+  "generated_at": "2026-09-22T10:06+08:00",
   "report_window": {
     "start_date": "2026-09-14",
     "end_date": "2026-09-20",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "运动品牌竞争转向足球、女性与儿童细分赛道，渠道与资本动作同步加速。",
-    "week_in_one_paragraph": "本周On昂跑签约姆巴佩进军足球，安踏被指收购彪马非控制权，亚玛芬与阿迪达斯披露财报；Nike、Alo等加码线下渠道，安踏儿童赛事提及骇浪5跑鞋，儿童运动场景竞争升温。",
+    "weekly_thesis": "运动品牌资本与代言动作密集，昂跑签约姆巴佩进军足球，安踏资本布局彪马，儿童赛道证据偏少。",
+    "week_in_one_paragraph": "本周运动行业焦点集中在品牌资本与代言层面：On昂跑签约姆巴佩并宣布进军足球领域，安踏被报道以123亿元收购彪马非控制权，Puma首席商务官离职；渠道端Nike进驻武汉奥莱、Alo加速线下扩张；宏观层面社零总额增长1.1%提供消费背景。儿童与青少年直接证据仅安踏儿童WSE冠军赛一项，信息量有限。",
     "next_week_focus": [
-      "跟踪安踏收购彪马传闻的官方确认或否认。",
-      "关注On昂跑足球品类后续产品与签约动作。",
-      "观察Alo线下门店扩张对女性运动服饰格局影响。",
-      "留意儿童运动品牌赛事营销与新品曝光节奏。",
-      "跟踪社零数据后运动消费相关解读与政策信号。"
+      "昂跑签约姆巴佩后足球品类产品规划是否进一步披露",
+      "安踏与彪马资本交易的官方确认与后续管理层安排",
+      "儿童运动品牌是否有新的赛事或产品动作",
+      "运动品牌奥莱与正价渠道的开店节奏变化",
+      "社零数据后续月份是否延续低速增长态势"
     ]
   },
   "key_developments": [
@@ -77,7 +77,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "姆巴佩结束与Nike长期合作转投On昂跑，后者借此进军足球领域，头部球星代言格局生变。"
+      "editorial_reason": "属于行业动态的重要本周新事件且有多来源交叉报道。"
     },
     {
       "event_id": "evt_6360b5edb4888c",
@@ -118,47 +118,45 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏被指以123亿元收购彪马非控制权，若属实将改变本土品牌与国际品牌的资本竞合关系。"
+      "editorial_reason": "安踏以123亿元收购彪马非控制权，涉及头部国产品牌与全球品牌的资本联动，值得持续跟踪。"
     },
     {
-      "event_id": "evt_122197085242e7",
-      "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
-      "category": "品牌与公司",
-      "event_family": "financial_results",
-      "reporting_period": "2026_h1",
-      "brands": [
-        "始祖鸟"
-      ],
-      "source": "体坛加",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
-      "published_at": "2026-09-17T22:02+08:00",
-      "published_date": "2026-09-17",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
+      "event_id": "evt_1a4df5115b3a2e",
+      "title": "2026年1—8月份社会消费品零售总额增长1.1%",
+      "category": "行业动态",
+      "event_family": "macro_data",
+      "reporting_period": "",
+      "brands": [],
+      "source": "国家统计局",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAzYjFCNFBSNWQxcFFpdkVfSEZVei1VWkhVWnRwcjd0bl84RjVpSkV6dllEdnF2NUx4bXUxSGJvdkJIMkhicTlUaGhVSUlfRC1pZEJibTZOaXlGdEpicGk3SWJWMU90WXgwMFNNcVFmUQ?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAzYjFCNFBSNWQxcFFpdkVfSEZVei1VWkhVWnRwcjd0bl84RjVpSkV6dllEdnF2NUx4bXUxSGJvdkJIMkhicTlUaGhVSUlfRC1pZEJibTZOaXlGdEpicGk3SWJWMU90WXgwMFNNcVFmUQ?oc=5",
+      "published_at": "2026-09-15T10:00+08:00",
+      "published_date": "2026-09-15",
+      "status": "follow_up",
+      "verification": "official_source",
+      "is_official": true,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 42,
-      "selection_score": 68,
+      "editorial_score": 52,
+      "selection_score": 71,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_122197085242e7"
+        "evt_1a4df5115b3a2e"
       ],
       "evidence": [
         {
-          "item_id": "src_7df094e260083a",
-          "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
-          "source": "体坛加",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
-          "published_at": "2026-09-17T22:02+08:00",
+          "item_id": "src_eca3e5436ea8d9",
+          "title": "2026年1—8月份社会消费品零售总额增长1.1%",
+          "source": "国家统计局",
+          "source_tier": "official",
+          "is_official": true,
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAzYjFCNFBSNWQxcFFpdkVfSEZVei1VWkhVWnRwcjd0bl84RjVpSkV6dllEdnF2NUx4bXUxSGJvdkJIMkhicTlUaGhVSUlfRC1pZEJibTZOaXlGdEpicGk3SWJWMU90WXgwMFNNcVFmUQ?oc=5",
+          "published_at": "2026-09-15T10:00+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "亚玛芬半年营收240亿元且大中华区为最大市场，显示高端户外品牌在华增长动能。"
+      "editorial_reason": "1—8月社零总额增长1.1%，为运动消费提供宏观参照，是本周唯一的官方消费数据。"
     },
     {
       "event_id": "evt_cb13efe7198e69",
@@ -198,7 +196,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "Nike正式登陆武汉杉杉奥莱，国际品牌继续通过奥莱渠道下沉并争夺区域客流。"
+      "editorial_reason": "Nike正式登陆武汉杉杉奥莱，反映国际品牌在奥特莱斯渠道的持续布局。"
     },
     {
       "event_id": "evt_f3261ac156ada3",
@@ -238,7 +236,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "Alo线上高销售表现并加速7城8门店布局，中高端女性运动服饰渠道竞争加剧。"
+      "editorial_reason": "Alo线上销售表现与线下7城8门店扩张计划，反映中高端运动休闲品牌入华节奏。"
     },
     {
       "event_id": "evt_1194cfd80907f3",
@@ -279,51 +277,53 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏儿童WSE冠军赛提及骇浪5跑鞋，儿童跑鞋与赛事营销结合，直接关联童装童鞋竞争。"
+      "editorial_reason": "安踏儿童WSE冠军赛提及骇浪5跑鞋，是本周唯一直接涉及儿童运动品牌的事件。"
     },
     {
-      "event_id": "evt_1a4df5115b3a2e",
-      "title": "2026年1—8月份社会消费品零售总额增长1.1%",
-      "category": "行业动态",
-      "event_family": "macro_data",
+      "event_id": "evt_8fbf536b0d8a5c",
+      "title": "运动户外人事｜Mountain Hardwear 任命总裁；Colmar 母公司管理层调整；Puma首席商务官离职",
+      "category": "品牌与公司",
+      "event_family": "management",
       "reporting_period": "",
-      "brands": [],
-      "source": "国家统计局",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAzYjFCNFBSNWQxcFFpdkVfSEZVei1VWkhVWnRwcjd0bl84RjVpSkV6dllEdnF2NUx4bXUxSGJvdkJIMkhicTlUaGhVSUlfRC1pZEJibTZOaXlGdEpicGk3SWJWMU90WXgwMFNNcVFmUQ?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAzYjFCNFBSNWQxcFFpdkVfSEZVei1VWkhVWnRwcjd0bl84RjVpSkV6dllEdnF2NUx4bXUxSGJvdkJIMkhicTlUaGhVSUlfRC1pZEJibTZOaXlGdEpicGk3SWJWMU90WXgwMFNNcVFmUQ?oc=5",
-      "published_at": "2026-09-15T10:00+08:00",
-      "published_date": "2026-09-15",
-      "status": "follow_up",
-      "verification": "official_source",
-      "is_official": true,
+      "brands": [
+        "Puma"
+      ],
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE00c0pJMGpaYkxXQ3lmTE05S1dxMmxyWjhuS2dxWE1kQW9DekRTT2lNejBhRmhtaThPUDZTLTBXMUo?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE00c0pJMGpaYkxXQ3lmTE05S1dxMmxyWjhuS2dxWE1kQW9DekRTT2lNejBhRmhtaThPUDZTLTBXMUo?oc=5",
+      "published_at": "2026-09-14T19:56+08:00",
+      "published_date": "2026-09-14",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 52,
-      "selection_score": 71,
+      "editorial_score": 50,
+      "selection_score": 62,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_1a4df5115b3a2e"
+        "evt_8fbf536b0d8a5c"
       ],
       "evidence": [
         {
-          "item_id": "src_eca3e5436ea8d9",
-          "title": "2026年1—8月份社会消费品零售总额增长1.1%",
-          "source": "国家统计局",
-          "source_tier": "official",
-          "is_official": true,
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAzYjFCNFBSNWQxcFFpdkVfSEZVei1VWkhVWnRwcjd0bl84RjVpSkV6dllEdnF2NUx4bXUxSGJvdkJIMkhicTlUaGhVSUlfRC1pZEJibTZOaXlGdEpicGk3SWJWMU90WXgwMFNNcVFmUQ?oc=5",
-          "published_at": "2026-09-15T10:00+08:00",
+          "item_id": "src_4ce09bcbac2974",
+          "title": "运动户外人事｜Mountain Hardwear 任命总裁；Colmar 母公司管理层调整；Puma首席商务官离职",
+          "source": "华丽志",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE00c0pJMGpaYkxXQ3lmTE05S1dxMmxyWjhuS2dxWE1kQW9DekRTT2lNejBhRmhtaThPUDZTLTBXMUo?oc=5",
+          "published_at": "2026-09-14T19:56+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "1—8月社零总额增长1.1%，为判断运动消费所处宏观环境提供官方数据基准。"
+      "editorial_reason": "Puma首席商务官离职，叠加安踏入主彪马传闻，管理层变动值得关注。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "球星代言与足球赛道争夺升温",
-      "analysis": "同期体育营销榜单显示On昂跑与HOKA均在加码代言。头部球星资源从传统巨头向新兴品牌流动，足球品类成为跑鞋品牌寻求增量的新入口，对儿童足球鞋市场的品牌认知也可能产生间接影响。",
+      "headline": "昂跑签约姆巴佩：跑步品牌向足球品类的跨界",
+      "analysis": "对昂跑而言，这是从跑步、网球向足球这一全球最大运动品类延伸的关键一步；对Nike而言，失去顶级足球代言人意味着在该品类的营销阵地出现缺口。行业层面，新兴运动品牌正通过顶级运动员代言切入传统巨头主导的品类。",
       "event_ids": [
         "evt_24e793136a0fd4",
         "evt_77a224f0264ee4"
@@ -346,12 +346,11 @@
       ]
     },
     {
-      "headline": "国际运动品牌资本与财务信号",
-      "analysis": "安踏被指以123亿元收购彪马非控制权，亚玛芬半年营收240亿元且大中华区为最大市场，阿迪达斯Q2营收同比增14%。三则信息分别指向本土资本出海、高端户外在华增长、国际品牌复苏。对儿童事业部而言，需关注这些集团资源调配是否向童装童鞋线倾斜，以及高端户外品牌下沉对儿童户外品类的影响。",
+      "headline": "安踏资本动作与彪马管理层变动叠加",
+      "analysis": "本周安踏被报道以123亿元收购彪马非控制权，同期彪马首席商务官离职。两件事叠加，反映彪马正处于资本与管理层双重调整期，而安踏作为国产头部品牌，正通过资本方式介入全球运动品牌格局。对行业而言，这意味着国产运动品牌从产品竞争走向资本与全球资源整合的新阶段，后续管理层安排与品牌策略值得跟踪。",
       "event_ids": [
         "evt_6360b5edb4888c",
-        "evt_122197085242e7",
-        "evt_1d412dba2e85ad"
+        "evt_8fbf536b0d8a5c"
       ],
       "evidence": [
         {
@@ -362,37 +361,22 @@
           "published_date": "2026-09-17"
         },
         {
-          "event_id": "evt_122197085242e7",
-          "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
-          "source": "体坛加",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
-          "published_date": "2026-09-17"
-        },
-        {
-          "event_id": "evt_1d412dba2e85ad",
-          "title": "环亚国际APP网站引爆品牌热度！阿迪达斯全球2026年Q2营收同比增涨14%",
-          "source": "体坛加",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9JTk14dWFfSlFibmZuRzNJU2pBWGpyVUZ1b0FMSTBBWVFndzc4WThSaTYtV3BUWTJ5NXFHRF93VHpydl9JLXVZcjcwV3hNX2dr?oc=5",
-          "published_date": "2026-09-17"
+          "event_id": "evt_8fbf536b0d8a5c",
+          "title": "运动户外人事｜Mountain Hardwear 任命总裁；Colmar 母公司管理层调整；Puma首席商务官离职",
+          "source": "华丽志",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE00c0pJMGpaYkxXQ3lmTE05S1dxMmxyWjhuS2dxWE1kQW9DekRTT2lNejBhRmhtaThPUDZTLTBXMUo?oc=5",
+          "published_date": "2026-09-14"
         }
       ]
     },
     {
-      "headline": "女性与儿童运动消费渠道扩张",
-      "analysis": "Alo线上高销售表现并加速7城8门店，Nike登陆武汉杉杉奥莱，安踏儿童赛事提及骇浪5跑鞋。三者共同显示运动品牌正通过奥莱、购物中心与赛事场景争夺家庭客流。儿童运动消费与女性运动服饰在渠道和客群上高度重叠，门店体验与赛事触点成为品牌接触亲子家庭的关键路径。",
+      "headline": "运动品牌渠道扩张：奥莱与线下门店并行",
+      "analysis": "Nike正式登陆武汉杉杉奥莱，Alo则计划在7城8门店加速线下布局。两者分别代表国际成熟品牌通过奥莱渠道消化库存与触达价格敏感客群，以及新兴中高端品牌以线下门店建立品牌体验。渠道层面的共同信号是：运动品牌仍在加码线下物理触点，奥莱与正价门店承担不同功能，渠道结构持续分化。",
       "event_ids": [
-        "evt_f3261ac156ada3",
         "evt_cb13efe7198e69",
-        "evt_1194cfd80907f3"
+        "evt_f3261ac156ada3"
       ],
       "evidence": [
-        {
-          "event_id": "evt_f3261ac156ada3",
-          "title": "线上1分钟狂卖1000万，线下加速7城8门店，ALO等不及了",
-          "source": "36氪",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
-          "published_date": "2026-09-18"
-        },
         {
           "event_id": "evt_cb13efe7198e69",
           "title": "一周年庆预热来啦！ NIKE正式登陆武汉杉杉奥莱",
@@ -401,10 +385,10 @@
           "published_date": "2026-09-20"
         },
         {
-          "event_id": "evt_1194cfd80907f3",
-          "title": "安踏儿童WSE冠军赛提及骇浪5跑鞋 门店位于宝安大仟里",
-          "source": "观点网",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5aLTdFXzFaaWtlTHZmX0prd2ZNUjk0bjkxT0FqTTk5ei1veFBSTVZMOUhfQ1hHUF9XSW1JeFI1YU83cHJpUFMySFBmVktoYXBoMFBzQUcybUwxOFVvWExSalpn?oc=5",
+          "event_id": "evt_f3261ac156ada3",
+          "title": "线上1分钟狂卖1000万，线下加速7城8门店，ALO等不及了",
+          "source": "36氪",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
           "published_date": "2026-09-18"
         }
       ]
@@ -466,45 +450,45 @@
           "published_date": "2026-09-14"
         }
       ],
-      "editorial_reason": "Nike为凯特琳·克拉克推出Caitlin 1签名系列，反映女子篮球与女性运动员签名产品线扩张趋势。"
+      "editorial_reason": "Nike为凯特琳·克拉克推出签名系列Caitlin 1，是本周唯一有官方来源的具体产品，反映女子篮球签名鞋趋势。"
     }
   ],
   "competitor_channel": [
     {
-      "event_id": "evt_8fbf536b0d8a5c",
-      "title": "运动户外人事｜Mountain Hardwear 任命总裁；Colmar 母公司管理层调整；Puma首席商务官离职",
+      "event_id": "evt_122197085242e7",
+      "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
       "category": "品牌与公司",
-      "event_family": "management",
-      "reporting_period": "",
+      "event_family": "financial_results",
+      "reporting_period": "2026_h1",
       "brands": [
-        "Puma"
+        "始祖鸟"
       ],
-      "source": "华丽志",
-      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE00c0pJMGpaYkxXQ3lmTE05S1dxMmxyWjhuS2dxWE1kQW9DekRTT2lNejBhRmhtaThPUDZTLTBXMUo?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE00c0pJMGpaYkxXQ3lmTE05S1dxMmxyWjhuS2dxWE1kQW9DekRTT2lNejBhRmhtaThPUDZTLTBXMUo?oc=5",
-      "published_at": "2026-09-14T19:56+08:00",
-      "published_date": "2026-09-14",
+      "source": "体坛加",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
+      "published_at": "2026-09-17T22:02+08:00",
+      "published_date": "2026-09-17",
       "status": "new",
       "verification": "single_source",
       "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 50,
-      "selection_score": 62,
+      "editorial_score": 42,
+      "selection_score": 68,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_8fbf536b0d8a5c"
+        "evt_122197085242e7"
       ],
       "evidence": [
         {
-          "item_id": "src_4ce09bcbac2974",
-          "title": "运动户外人事｜Mountain Hardwear 任命总裁；Colmar 母公司管理层调整；Puma首席商务官离职",
-          "source": "华丽志",
-          "source_tier": "tier_2",
+          "item_id": "src_7df094e260083a",
+          "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
+          "source": "体坛加",
+          "source_tier": "tier_3",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE00c0pJMGpaYkxXQ3lmTE05S1dxMmxyWjhuS2dxWE1kQW9DekRTT2lNejBhRmhtaThPUDZTLTBXMUo?oc=5",
-          "published_at": "2026-09-14T19:56+08:00",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
+          "published_at": "2026-09-17T22:02+08:00",
           "summary": ""
         }
       ]
@@ -586,70 +570,33 @@
           "summary": ""
         }
       ]
-    },
-    {
-      "event_id": "evt_d3437d11c9566f",
-      "title": "康比特加速布局高端零售渠道 入驻BHG精品超市拓宽运动营养消费边界",
-      "category": "行业动态",
-      "event_family": "industry_event",
-      "reporting_period": "",
-      "brands": [],
-      "source": "新华网",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSVFoY0VBRzUxYkxBZHpNWHVmck1aYmtJQWs2NlE0QnQxcTJ4ekMyMnpvdFg2dnJ4UTVULWdSbHpJbHRMM284M09yZndtakFHWDQ3eEhrZlNXVURVbjFQUnJhUUFoblo0ZnhqT2VWa08tTkRsc3VSOE5YcXNrU0RZRHdSb20wVzNxM2QyaWpMdlQ3V3dndUxmT2x3?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSVFoY0VBRzUxYkxBZHpNWHVmck1aYmtJQWs2NlE0QnQxcTJ4ekMyMnpvdFg2dnJ4UTVULWdSbHpJbHRMM284M09yZndtakFHWDQ3eEhrZlNXVURVbjFQUnJhUUFoblo0ZnhqT2VWa08tTkRsc3VSOE5YcXNrU0RZRHdSb20wVzNxM2QyaWpMdlQ3V3dndUxmT2x3?oc=5",
-      "published_at": "2026-09-18T16:03+08:00",
-      "published_date": "2026-09-18",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 49,
-      "selection_score": 56,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_d3437d11c9566f"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_182b56a976b837",
-          "title": "康比特加速布局高端零售渠道 入驻BHG精品超市拓宽运动营养消费边界",
-          "source": "新华网",
-          "source_tier": "tier_1",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSVFoY0VBRzUxYkxBZHpNWHVmck1aYmtJQWs2NlE0QnQxcTJ4ekMyMnpvdFg2dnJ4UTVULWdSbHpJbHRMM284M09yZndtakFHWDQ3eEhrZlNXVURVbjFQUnJhUUFoblo0ZnhqT2VWa08tTkRsc3VSOE5YcXNrU0RZRHdSb20wVzNxM2QyaWpMdlQ3V3dndUxmT2x3?oc=5",
-          "published_at": "2026-09-18T16:03+08:00",
-          "summary": ""
-        }
-      ]
     }
   ],
   "watchlist": [
     {
-      "title": "安踏收购彪马后续进展",
+      "title": "昂跑足球品类落地进展",
       "event_ids": [
-        "evt_6360b5edb4888c"
+        "evt_24e793136a0fd4"
       ],
       "product_ids": [],
-      "reason": "关注交易是否正式落地及对童装童鞋业务线的潜在资源影响。"
+      "reason": "关注昂跑签约姆巴佩后首款足球鞋的研发与上市节奏，以及对足球品类竞争格局的影响。"
     },
     {
-      "title": "On昂跑足球产品线规划",
+      "title": "安踏与彪马资本合作后续",
       "event_ids": [
-        "evt_24e793136a0fd4",
-        "evt_77a224f0264ee4"
+        "evt_6360b5edb4888c",
+        "evt_8fbf536b0d8a5c"
       ],
       "product_ids": [],
-      "reason": "跟踪首款足球鞋上市节奏及是否延伸至青少年足球品类。"
+      "reason": "跟踪彪马管理层调整后安踏资本介入的进一步动作，是否影响其品牌与渠道策略。"
     },
     {
-      "title": "儿童跑鞋赛事营销",
+      "title": "儿童运动品牌赛事营销",
       "event_ids": [
         "evt_1194cfd80907f3"
       ],
       "product_ids": [],
-      "reason": "观察安踏儿童骇浪5跑鞋在赛事场景中的曝光转化与后续动作。"
+      "reason": "观察安踏儿童WSE冠军赛后续是否带动更多儿童运动品牌以赛事绑定产品推广。"
     }
   ],
   "tracking": {
@@ -713,7 +660,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "姆巴佩结束与Nike长期合作转投On昂跑，后者借此进军足球领域，头部球星代言格局生变。"
+        "editorial_reason": "属于行业动态的重要本周新事件且有多来源交叉报道。"
       },
       {
         "event_id": "evt_6360b5edb4888c",
@@ -754,47 +701,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏被指以123亿元收购彪马非控制权，若属实将改变本土品牌与国际品牌的资本竞合关系。"
-      },
-      {
-        "event_id": "evt_122197085242e7",
-        "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
-        "category": "品牌与公司",
-        "event_family": "financial_results",
-        "reporting_period": "2026_h1",
-        "brands": [
-          "始祖鸟"
-        ],
-        "source": "体坛加",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
-        "published_at": "2026-09-17T22:02+08:00",
-        "published_date": "2026-09-17",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 42,
-        "selection_score": 68,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_122197085242e7"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_7df094e260083a",
-            "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
-            "source": "体坛加",
-            "source_tier": "tier_3",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
-            "published_at": "2026-09-17T22:02+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "亚玛芬半年营收240亿元且大中华区为最大市场，显示高端户外品牌在华增长动能。"
+        "editorial_reason": "安踏以123亿元收购彪马非控制权，涉及头部国产品牌与全球品牌的资本联动，值得持续跟踪。"
       },
       {
         "event_id": "evt_cb13efe7198e69",
@@ -834,7 +741,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "Nike正式登陆武汉杉杉奥莱，国际品牌继续通过奥莱渠道下沉并争夺区域客流。"
+        "editorial_reason": "Nike正式登陆武汉杉杉奥莱，反映国际品牌在奥特莱斯渠道的持续布局。"
       },
       {
         "event_id": "evt_f3261ac156ada3",
@@ -874,7 +781,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "Alo线上高销售表现并加速7城8门店布局，中高端女性运动服饰渠道竞争加剧。"
+        "editorial_reason": "Alo线上销售表现与线下7城8门店扩张计划，反映中高端运动休闲品牌入华节奏。"
       },
       {
         "event_id": "evt_1194cfd80907f3",
@@ -915,7 +822,47 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏儿童WSE冠军赛提及骇浪5跑鞋，儿童跑鞋与赛事营销结合，直接关联童装童鞋竞争。"
+        "editorial_reason": "安踏儿童WSE冠军赛提及骇浪5跑鞋，是本周唯一直接涉及儿童运动品牌的事件。"
+      },
+      {
+        "event_id": "evt_8fbf536b0d8a5c",
+        "title": "运动户外人事｜Mountain Hardwear 任命总裁；Colmar 母公司管理层调整；Puma首席商务官离职",
+        "category": "品牌与公司",
+        "event_family": "management",
+        "reporting_period": "",
+        "brands": [
+          "Puma"
+        ],
+        "source": "华丽志",
+        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE00c0pJMGpaYkxXQ3lmTE05S1dxMmxyWjhuS2dxWE1kQW9DekRTT2lNejBhRmhtaThPUDZTLTBXMUo?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE00c0pJMGpaYkxXQ3lmTE05S1dxMmxyWjhuS2dxWE1kQW9DekRTT2lNejBhRmhtaThPUDZTLTBXMUo?oc=5",
+        "published_at": "2026-09-14T19:56+08:00",
+        "published_date": "2026-09-14",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 50,
+        "selection_score": 62,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_8fbf536b0d8a5c"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_4ce09bcbac2974",
+            "title": "运动户外人事｜Mountain Hardwear 任命总裁；Colmar 母公司管理层调整；Puma首席商务官离职",
+            "source": "华丽志",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE00c0pJMGpaYkxXQ3lmTE05S1dxMmxyWjhuS2dxWE1kQW9DekRTT2lNejBhRmhtaThPUDZTLTBXMUo?oc=5",
+            "published_at": "2026-09-14T19:56+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "Puma首席商务官离职，叠加安踏入主彪马传闻，管理层变动值得关注。"
       }
     ],
     "follow_up_selected": [
@@ -955,7 +902,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "1—8月社零总额增长1.1%，为判断运动消费所处宏观环境提供官方数据基准。"
+        "editorial_reason": "1—8月社零总额增长1.1%，为运动消费提供宏观参照，是本周唯一的官方消费数据。"
       }
     ],
     "verification_queue": [],
@@ -1136,11 +1083,11 @@
     },
     {
       "type": "event",
-      "id": "evt_122197085242e7",
-      "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
-      "source": "体坛加",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
-      "published_date": "2026-09-17"
+      "id": "evt_1a4df5115b3a2e",
+      "title": "2026年1—8月份社会消费品零售总额增长1.1%",
+      "source": "国家统计局",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAzYjFCNFBSNWQxcFFpdkVfSEZVei1VWkhVWnRwcjd0bl84RjVpSkV6dllEdnF2NUx4bXUxSGJvdkJIMkhicTlUaGhVSUlfRC1pZEJibTZOaXlGdEpicGk3SWJWMU90WXgwMFNNcVFmUQ?oc=5",
+      "published_date": "2026-09-15"
     },
     {
       "type": "event",
@@ -1168,19 +1115,19 @@
     },
     {
       "type": "event",
-      "id": "evt_1a4df5115b3a2e",
-      "title": "2026年1—8月份社会消费品零售总额增长1.1%",
-      "source": "国家统计局",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAzYjFCNFBSNWQxcFFpdkVfSEZVei1VWkhVWnRwcjd0bl84RjVpSkV6dllEdnF2NUx4bXUxSGJvdkJIMkhicTlUaGhVSUlfRC1pZEJibTZOaXlGdEpicGk3SWJWMU90WXgwMFNNcVFmUQ?oc=5",
-      "published_date": "2026-09-15"
-    },
-    {
-      "type": "event",
       "id": "evt_8fbf536b0d8a5c",
       "title": "运动户外人事｜Mountain Hardwear 任命总裁；Colmar 母公司管理层调整；Puma首席商务官离职",
       "source": "华丽志",
       "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE00c0pJMGpaYkxXQ3lmTE05S1dxMmxyWjhuS2dxWE1kQW9DekRTT2lNejBhRmhtaThPUDZTLTBXMUo?oc=5",
       "published_date": "2026-09-14"
+    },
+    {
+      "type": "event",
+      "id": "evt_122197085242e7",
+      "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
+      "source": "体坛加",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
+      "published_date": "2026-09-17"
     },
     {
       "type": "event",
@@ -1197,14 +1144,6 @@
       "source": "新华网",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBSN1N3VUdiU0pVeFR2TW9VM0sxY25yWFZrS1NBOC1PbWdNT09qVzdZUUM0ZXlwN1hsc3EzSjRoV1Z6T2IwNXYxU2JoZHZoTVpKSlllX1dua28yaUF1V1lSZERjTVBYbUpDWk50NnhLbkZvb0VyRG9B?oc=5",
       "published_date": "2026-09-20"
-    },
-    {
-      "type": "event",
-      "id": "evt_d3437d11c9566f",
-      "title": "康比特加速布局高端零售渠道 入驻BHG精品超市拓宽运动营养消费边界",
-      "source": "新华网",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSVFoY0VBRzUxYkxBZHpNWHVmck1aYmtJQWs2NlE0QnQxcTJ4ekMyMnpvdFg2dnJ4UTVULWdSbHpJbHRMM284M09yZndtakFHWDQ3eEhrZlNXVURVbjFQUnJhUUFoblo0ZnhqT2VWa08tTkRsc3VSOE5YcXNrU0RZRHdSb20wVzNxM2QyaWpMdlQ3V3dndUxmT2x3?oc=5",
-      "published_date": "2026-09-18"
     },
     {
       "type": "event",
@@ -1237,7 +1176,7 @@
     "eligible_product_count": 1,
     "selected_product_count": 1,
     "conflict_count": 0,
-    "source_link_count": 15,
+    "source_link_count": 14,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
