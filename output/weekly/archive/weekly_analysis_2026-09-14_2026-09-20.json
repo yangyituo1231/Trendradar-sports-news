@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-09-23T10:05+08:00",
+  "generated_at": "2026-09-24T09:53+08:00",
   "report_window": {
     "start_date": "2026-09-14",
     "end_date": "2026-09-20",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "运动品牌资本与代言动作密集，儿童赛道证据偏薄，渠道与赛事转化成观察主线。",
-    "week_in_one_paragraph": "本周运动行业信息集中在品牌资本与代言：安踏拟入股彪马、On昂跑签约姆巴佩进军足球、亚玛芬与阿迪达斯披露财报；渠道端Nike进驻武汉奥莱、Alo加速线下开店。儿童与青少年直接证据仅安踏儿童WSE冠军赛一条，商品端仅有Nike Caitlin 1签名系列可确认，整体对儿童业务的直接参考有限。",
+    "weekly_thesis": "运动品牌资本与代言动作密集，儿童赛道信号偏弱，渠道与产品联名成主要看点。",
+    "week_in_one_paragraph": "本周运动行业焦点集中在资本与代言层面：安踏拟收购彪马非控制权、On昂跑签约姆巴佩进军足球、Hyrox创始团队回购股权。渠道端Nike进驻武汉奥莱、Alo加速线下扩张。儿童相关仅安踏儿童赛事提及骇浪5跑鞋，直接信号有限。宏观消费增速平缓，赛事流量转化消费成为讨论方向。",
     "next_week_focus": [
-      "跟踪安踏入股彪马后续是否涉及儿童或青少年品类。",
-      "观察On昂跑签约姆巴佩后足球鞋产品线规划。",
-      "留意安踏儿童赛事与跑鞋商品的后续传播。",
-      "关注国际品牌奥莱及购物中心渠道新店动态。",
-      "补充儿童运动消费与赛事转化相关证据。"
+      "安踏收购彪马非控制权交易是否有新进展",
+      "On昂跑签约姆巴佩后足球品类规划披露",
+      "儿童运动品牌是否有新品或赛事营销跟进",
+      "运动品牌奥莱及线下门店扩张动态",
+      "社零数据后续对运动消费的影响解读"
     ]
   },
   "key_developments": [
@@ -57,7 +57,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏以非控制权方式入股彪马，涉及头部运动集团资本布局，对多品牌竞争格局有参考意义。"
+      "editorial_reason": "安踏拟以123亿元收购彪马非控制权，涉及头部运动品牌资本格局变化，值得关注。"
     },
     {
       "event_id": "evt_24e793136a0fd4",
@@ -118,47 +118,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "姆巴佩结束与Nike长期合作转投On昂跑，后者借此进入足球领域，属品牌代言与品类扩张信号。"
-    },
-    {
-      "event_id": "evt_122197085242e7",
-      "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
-      "category": "品牌与公司",
-      "event_family": "financial_results",
-      "reporting_period": "2026_h1",
-      "brands": [
-        "始祖鸟"
-      ],
-      "source": "体坛加",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
-      "published_at": "2026-09-17T22:02+08:00",
-      "published_date": "2026-09-17",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 42,
-      "selection_score": 68,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_122197085242e7"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_7df094e260083a",
-          "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
-          "source": "体坛加",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
-          "published_at": "2026-09-17T22:02+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "亚玛芬披露半年营收与大中华区表现，反映高端户外与运动品牌在华需求侧信息。"
+      "editorial_reason": "属于行业动态的重要本周新事件且有多来源交叉报道。"
     },
     {
       "event_id": "evt_cb13efe7198e69",
@@ -198,7 +158,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "Nike进驻武汉杉杉奥莱，反映国际品牌继续加码奥莱渠道与区域零售布局。"
+      "editorial_reason": "Nike正式登陆武汉杉杉奥莱，头部品牌持续加码奥莱渠道，反映线下零售布局动向。"
     },
     {
       "event_id": "evt_f3261ac156ada3",
@@ -238,7 +198,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "Alo线上放量并加速多城开店，显示中高端女性运动服饰品牌在华扩张节奏。"
+      "editorial_reason": "Alo线上销售表现突出并加速7城8门店布局，运动休闲品牌线下扩张值得关注。"
     },
     {
       "event_id": "evt_1194cfd80907f3",
@@ -279,7 +239,45 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏儿童WSE冠军赛关联骇浪5跑鞋与门店，是本周少见的儿童运动品牌赛事与商品结合案例。"
+      "editorial_reason": "安踏儿童WSE冠军赛提及骇浪5跑鞋，是本周少有的儿童运动品牌赛事与产品结合信号。"
+    },
+    {
+      "event_id": "evt_f088fc8d649251",
+      "title": "Hyrox完成出售，创始团队重获多数股权",
+      "category": "品牌与公司",
+      "event_family": "capital_strategy",
+      "reporting_period": "",
+      "brands": [],
+      "source": "时尚商业网",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
+      "published_at": "2026-09-20T13:05+08:00",
+      "published_date": "2026-09-20",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 47,
+      "selection_score": 59,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_f088fc8d649251"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_3779ad6154bd3e",
+          "title": "Hyrox完成出售，创始团队重获多数股权",
+          "source": "时尚商业网",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
+          "published_at": "2026-09-20T13:05+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "Hyrox完成出售、创始团队重获多数股权，健身赛事IP资本结构变化值得留意。"
     },
     {
       "event_id": "evt_1a4df5115b3a2e",
@@ -317,16 +315,17 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "社零总额增速数据提供消费大盘背景，用于判断运动消费所处宏观环境。"
+      "editorial_reason": "1—8月社零总额增长1.1%，为消费大环境提供官方宏观参照。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "运动品牌资本与代言格局生变",
-      "analysis": "安踏拟以非控制权方式入股彪马，On昂跑则签下姆巴佩并计划进入足球鞋领域。两件事共同指向头部运动品牌正通过资本与顶级运动员资源重新划分品类与市场边界。对儿童业务而言，成人品牌的足球、跑步资源投入可能外溢至青少年品类，但本周证据未涉及儿童具体动作。",
+      "headline": "运动品牌资本与代言格局同步调整",
+      "analysis": "本周三起资本与代言事件指向同一趋势：运动品牌竞争正从产品层面向资本与顶级运动员资源延伸。安踏拟以123亿元收购彪马非控制权，若落地将改变头部品牌股权结构；Hyrox创始团队回购多数股权，则显示赛事IP方倾向收回主导权。三者共同说明运动行业资源重组节奏加快。",
       "event_ids": [
         "evt_6360b5edb4888c",
-        "evt_24e793136a0fd4"
+        "evt_24e793136a0fd4",
+        "evt_f088fc8d649251"
       ],
       "evidence": [
         {
@@ -342,44 +341,43 @@
           "source": "界面新闻",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBzczNHUUVzTVlOUnV4UFpYakIzUmZkWFJ0bkl6NlpXMWMtZGs0b0pfUHBPQ1pSQW1qUlFGME5nRjZqbVY5S0dOUXgyd2cteTBEQVRzV0xlbUI?oc=5",
           "published_date": "2026-09-18"
+        },
+        {
+          "event_id": "evt_f088fc8d649251",
+          "title": "Hyrox完成出售，创始团队重获多数股权",
+          "source": "时尚商业网",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
+          "published_date": "2026-09-20"
         }
       ]
     },
     {
-      "headline": "国际品牌财报与渠道扩张并行",
-      "analysis": "亚玛芬半年营收与大中华区表现、阿迪达斯季度增长，显示国际运动品牌在华仍有增长叙事；渠道端Nike进驻武汉奥莱、Alo加速多城开店，说明品牌仍在争夺线下触点。对儿童事业部而言，成人品牌的奥莱与购物中心布局可能影响家庭客群动线，但候选证据未提供儿童渠道直接数据。",
+      "headline": "线下渠道与奥莱布局持续加码",
+      "analysis": "Nike正式登陆武汉杉杉奥莱，Alo则线上表现突出并加速7城8门店布局。两者路径不同但方向一致：头部与新兴运动品牌都在强化线下触点。奥莱渠道承接品牌库存与流量，新锐品牌则通过门店扩张建立体验与认知。对儿童运动品类而言，成人品牌的渠道节奏可作为线下选址与奥莱合作的参照。",
       "event_ids": [
-        "evt_122197085242e7",
-        "evt_1d412dba2e85ad",
-        "evt_cb13efe7198e69"
+        "evt_cb13efe7198e69",
+        "evt_f3261ac156ada3"
       ],
       "evidence": [
-        {
-          "event_id": "evt_122197085242e7",
-          "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
-          "source": "体坛加",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
-          "published_date": "2026-09-17"
-        },
-        {
-          "event_id": "evt_1d412dba2e85ad",
-          "title": "环亚国际APP网站引爆品牌热度！阿迪达斯全球2026年Q2营收同比增涨14%",
-          "source": "体坛加",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9JTk14dWFfSlFibmZuRzNJU2pBWGpyVUZ1b0FMSTBBWVFndzc4WThSaTYtV3BUWTJ5NXFHRF93VHpydl9JLXVZcjcwV3hNX2dr?oc=5",
-          "published_date": "2026-09-17"
-        },
         {
           "event_id": "evt_cb13efe7198e69",
           "title": "一周年庆预热来啦！ NIKE正式登陆武汉杉杉奥莱",
           "source": "sw.wuhan.gov.cn",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lZzV3UWpEY1FSVGVQQXlWLWZSay1rN01tTDJWejY0MkVRYXJ6dG0xc3EzVk1RLThFSE1GZWEwaXhMbEJkSjdUckYyRlVINzNmNl9vRm5oR2pfU0o4dnRFZURDc3NsNHlVWkV5MUF6R1pKdw?oc=5",
           "published_date": "2026-09-20"
+        },
+        {
+          "event_id": "evt_f3261ac156ada3",
+          "title": "线上1分钟狂卖1000万，线下加速7城8门店，ALO等不及了",
+          "source": "36氪",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
+          "published_date": "2026-09-18"
         }
       ]
     },
     {
-      "headline": "儿童运动赛事与商品结合样本有限",
-      "analysis": "安踏儿童WSE冠军赛提及骇浪5跑鞋，并关联宝安大仟里门店，是本周唯一直接涉及儿童运动品牌赛事与具体商品的信息。该案例显示儿童品牌正尝试以赛事场景带动跑鞋品类认知，但单一来源、信息量有限，尚不足以判断行业普遍趋势。",
+      "headline": "儿童运动信号偏弱，赛事与产品结合是少数亮点",
+      "analysis": "本周儿童与青少年方向仅安踏儿童WSE冠军赛提及骇浪5跑鞋，门店位于宝安大仟里。该事件将赛事、具体跑鞋产品与门店场景绑定，是儿童运动品牌少见的“赛事+产品+渠道”组合。相比成人品牌密集的资本与代言动作，儿童赛道本周公开信息明显偏少，需持续观察后续是否有更多品牌跟进类似打法。",
       "event_ids": [
         "evt_1194cfd80907f3"
       ],
@@ -450,10 +448,49 @@
           "published_date": "2026-09-14"
         }
       ],
-      "editorial_reason": "Nike Caitlin 1为官方来源确认的签名系列，是本周唯一可核实的商品候选，可观察女子篮球签名鞋趋势。"
+      "editorial_reason": "Nike Caitlin 1为官方发布的签名系列产品，是本周唯一可确认的具体商品信息，具参考价值。"
     }
   ],
   "competitor_channel": [
+    {
+      "event_id": "evt_122197085242e7",
+      "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
+      "category": "品牌与公司",
+      "event_family": "financial_results",
+      "reporting_period": "2026_h1",
+      "brands": [
+        "始祖鸟"
+      ],
+      "source": "体坛加",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
+      "published_at": "2026-09-17T22:02+08:00",
+      "published_date": "2026-09-17",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 42,
+      "selection_score": 68,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_122197085242e7"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_7df094e260083a",
+          "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
+          "source": "体坛加",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
+          "published_at": "2026-09-17T22:02+08:00",
+          "summary": ""
+        }
+      ]
+    },
     {
       "event_id": "evt_8fbf536b0d8a5c",
       "title": "运动户外人事｜Mountain Hardwear 任命总裁；Colmar 母公司管理层调整；Puma首席商务官离职",
@@ -574,30 +611,38 @@
   ],
   "watchlist": [
     {
-      "title": "儿童运动品牌赛事与跑鞋联动",
+      "title": "安踏收购彪马进展",
+      "event_ids": [
+        "evt_6360b5edb4888c"
+      ],
+      "product_ids": [],
+      "reason": "关注交易是否推进及对运动品牌竞争格局的后续影响。"
+    },
+    {
+      "title": "On昂跑足球品类落地",
+      "event_ids": [
+        "evt_24e793136a0fd4",
+        "evt_77a224f0264ee4"
+      ],
+      "product_ids": [],
+      "reason": "关注其首款足球鞋上市节奏及足球领域渠道铺设。"
+    },
+    {
+      "title": "儿童运动赛事与产品结合",
       "event_ids": [
         "evt_1194cfd80907f3"
       ],
       "product_ids": [],
-      "reason": "观察安踏儿童WSE冠军赛后续是否释放更多骇浪5跑鞋的品类与门店信息。"
+      "reason": "观察安踏儿童骇浪5跑鞋是否借赛事形成持续曝光。"
     },
     {
-      "title": "国际品牌奥莱与购物中心渠道动向",
+      "title": "运动品牌奥莱与线下扩张",
       "event_ids": [
         "evt_cb13efe7198e69",
         "evt_f3261ac156ada3"
       ],
       "product_ids": [],
-      "reason": "跟踪Nike奥莱新店与Alo多城开店是否影响家庭客群线下运动消费选择。"
-    },
-    {
-      "title": "运动品牌资本与代言后续",
-      "event_ids": [
-        "evt_6360b5edb4888c",
-        "evt_24e793136a0fd4"
-      ],
-      "product_ids": [],
-      "reason": "关注安踏入股彪马与On昂跑签约姆巴佩后是否延伸至青少年或足球品类动作。"
+      "reason": "跟踪Nike奥莱店与Alo新门店的落地效果及渠道策略。"
     }
   ],
   "tracking": {
@@ -641,7 +686,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏以非控制权方式入股彪马，涉及头部运动集团资本布局，对多品牌竞争格局有参考意义。"
+        "editorial_reason": "安踏拟以123亿元收购彪马非控制权，涉及头部运动品牌资本格局变化，值得关注。"
       },
       {
         "event_id": "evt_24e793136a0fd4",
@@ -702,47 +747,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "姆巴佩结束与Nike长期合作转投On昂跑，后者借此进入足球领域，属品牌代言与品类扩张信号。"
-      },
-      {
-        "event_id": "evt_122197085242e7",
-        "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
-        "category": "品牌与公司",
-        "event_family": "financial_results",
-        "reporting_period": "2026_h1",
-        "brands": [
-          "始祖鸟"
-        ],
-        "source": "体坛加",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
-        "published_at": "2026-09-17T22:02+08:00",
-        "published_date": "2026-09-17",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 42,
-        "selection_score": 68,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_122197085242e7"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_7df094e260083a",
-            "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
-            "source": "体坛加",
-            "source_tier": "tier_3",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
-            "published_at": "2026-09-17T22:02+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "亚玛芬披露半年营收与大中华区表现，反映高端户外与运动品牌在华需求侧信息。"
+        "editorial_reason": "属于行业动态的重要本周新事件且有多来源交叉报道。"
       },
       {
         "event_id": "evt_cb13efe7198e69",
@@ -782,7 +787,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "Nike进驻武汉杉杉奥莱，反映国际品牌继续加码奥莱渠道与区域零售布局。"
+        "editorial_reason": "Nike正式登陆武汉杉杉奥莱，头部品牌持续加码奥莱渠道，反映线下零售布局动向。"
       },
       {
         "event_id": "evt_f3261ac156ada3",
@@ -822,7 +827,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "Alo线上放量并加速多城开店，显示中高端女性运动服饰品牌在华扩张节奏。"
+        "editorial_reason": "Alo线上销售表现突出并加速7城8门店布局，运动休闲品牌线下扩张值得关注。"
       },
       {
         "event_id": "evt_1194cfd80907f3",
@@ -863,7 +868,45 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏儿童WSE冠军赛关联骇浪5跑鞋与门店，是本周少见的儿童运动品牌赛事与商品结合案例。"
+        "editorial_reason": "安踏儿童WSE冠军赛提及骇浪5跑鞋，是本周少有的儿童运动品牌赛事与产品结合信号。"
+      },
+      {
+        "event_id": "evt_f088fc8d649251",
+        "title": "Hyrox完成出售，创始团队重获多数股权",
+        "category": "品牌与公司",
+        "event_family": "capital_strategy",
+        "reporting_period": "",
+        "brands": [],
+        "source": "时尚商业网",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
+        "published_at": "2026-09-20T13:05+08:00",
+        "published_date": "2026-09-20",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 47,
+        "selection_score": 59,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_f088fc8d649251"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_3779ad6154bd3e",
+            "title": "Hyrox完成出售，创始团队重获多数股权",
+            "source": "时尚商业网",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
+            "published_at": "2026-09-20T13:05+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "Hyrox完成出售、创始团队重获多数股权，健身赛事IP资本结构变化值得留意。"
       }
     ],
     "follow_up_selected": [
@@ -903,7 +946,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "社零总额增速数据提供消费大盘背景，用于判断运动消费所处宏观环境。"
+        "editorial_reason": "1—8月社零总额增长1.1%，为消费大环境提供官方宏观参照。"
       }
     ],
     "verification_queue": [],
@@ -1084,14 +1127,6 @@
     },
     {
       "type": "event",
-      "id": "evt_122197085242e7",
-      "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
-      "source": "体坛加",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
-      "published_date": "2026-09-17"
-    },
-    {
-      "type": "event",
       "id": "evt_cb13efe7198e69",
       "title": "一周年庆预热来啦！ NIKE正式登陆武汉杉杉奥莱",
       "source": "sw.wuhan.gov.cn",
@@ -1116,11 +1151,27 @@
     },
     {
       "type": "event",
+      "id": "evt_f088fc8d649251",
+      "title": "Hyrox完成出售，创始团队重获多数股权",
+      "source": "时尚商业网",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
+      "published_date": "2026-09-20"
+    },
+    {
+      "type": "event",
       "id": "evt_1a4df5115b3a2e",
       "title": "2026年1—8月份社会消费品零售总额增长1.1%",
       "source": "国家统计局",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAzYjFCNFBSNWQxcFFpdkVfSEZVei1VWkhVWnRwcjd0bl84RjVpSkV6dllEdnF2NUx4bXUxSGJvdkJIMkhicTlUaGhVSUlfRC1pZEJibTZOaXlGdEpicGk3SWJWMU90WXgwMFNNcVFmUQ?oc=5",
       "published_date": "2026-09-15"
+    },
+    {
+      "type": "event",
+      "id": "evt_122197085242e7",
+      "title": "888集团最新登录继续上位、始祖鸟女装和跑鞋卖爆，亚玛芬半年营收240亿元，大中华区是最大市场",
+      "source": "体坛加",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XbzdyeWxDSUd6V0EwQ2lDSWlWOExxLWJrNEd4eWZBem1VVUVUMU9fS3E4YlNmdjFrbl9fVnZqUHhMVktQRmVyaXh4eERCNVpRN3ZqYzBUQjZQd2tV?oc=5",
+      "published_date": "2026-09-17"
     },
     {
       "type": "event",
@@ -1169,7 +1220,7 @@
     "eligible_product_count": 1,
     "selected_product_count": 1,
     "conflict_count": 0,
-    "source_link_count": 13,
+    "source_link_count": 14,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
