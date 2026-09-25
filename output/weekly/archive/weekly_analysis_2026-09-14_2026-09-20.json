@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-09-24T09:53+08:00",
+  "generated_at": "2026-09-25T10:10+08:00",
   "report_window": {
     "start_date": "2026-09-14",
     "end_date": "2026-09-20",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "运动品牌资本与代言动作密集，儿童赛道信号偏弱，渠道与产品联名成主要看点。",
-    "week_in_one_paragraph": "本周运动行业焦点集中在资本与代言层面：安踏拟收购彪马非控制权、On昂跑签约姆巴佩进军足球、Hyrox创始团队回购股权。渠道端Nike进驻武汉奥莱、Alo加速线下扩张。儿童相关仅安踏儿童赛事提及骇浪5跑鞋，直接信号有限。宏观消费增速平缓，赛事流量转化消费成为讨论方向。",
+    "weekly_thesis": "运动品牌资本与代言动作密集，儿童赛道信号偏弱，渠道与赛事转化成关注焦点。",
+    "week_in_one_paragraph": "本周运动行业资本与代言动作集中：安踏拟收购彪马非控制权、On昂跑签约姆巴佩进军足球、Hyrox创始团队重获多数股权。渠道端Nike进驻武汉奥莱、Alo加速线下扩张。儿童相关仅安踏儿童赛事提及跑鞋，宏观社零增速1.1%提供消费背景。",
     "next_week_focus": [
-      "安踏收购彪马非控制权交易是否有新进展",
-      "On昂跑签约姆巴佩后足球品类规划披露",
-      "儿童运动品牌是否有新品或赛事营销跟进",
-      "运动品牌奥莱及线下门店扩张动态",
-      "社零数据后续对运动消费的影响解读"
+      "跟踪安踏收购彪马交易的后续官方披露与市场反应。",
+      "关注On昂跑签约姆巴佩后足球品类产品规划信息。",
+      "观察儿童运动品牌是否有新的赛事或产品动作。",
+      "留意运动品牌奥莱及线下渠道扩张动态。",
+      "关注社零数据后续发布对消费环境的指引。"
     ]
   },
   "key_developments": [
@@ -57,7 +57,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏拟以123亿元收购彪马非控制权，涉及头部运动品牌资本格局变化，值得关注。"
+      "editorial_reason": "安踏拟以123亿元收购彪马非控制权，涉及头部运动集团资本布局，影响行业竞争格局。"
     },
     {
       "event_id": "evt_24e793136a0fd4",
@@ -158,7 +158,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "Nike正式登陆武汉杉杉奥莱，头部品牌持续加码奥莱渠道，反映线下零售布局动向。"
+      "editorial_reason": "Nike正式登陆武汉杉杉奥莱，头部品牌加码奥莱渠道，反映线下折扣零售布局动向。"
     },
     {
       "event_id": "evt_f3261ac156ada3",
@@ -198,7 +198,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "Alo线上销售表现突出并加速7城8门店布局，运动休闲品牌线下扩张值得关注。"
+      "editorial_reason": "Alo线上快速起量并加速7城8门店扩张，中高端运动休闲品牌入华节奏值得关注。"
     },
     {
       "event_id": "evt_1194cfd80907f3",
@@ -242,44 +242,6 @@
       "editorial_reason": "安踏儿童WSE冠军赛提及骇浪5跑鞋，是本周少有的儿童运动品牌赛事与产品结合信号。"
     },
     {
-      "event_id": "evt_f088fc8d649251",
-      "title": "Hyrox完成出售，创始团队重获多数股权",
-      "category": "品牌与公司",
-      "event_family": "capital_strategy",
-      "reporting_period": "",
-      "brands": [],
-      "source": "时尚商业网",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
-      "published_at": "2026-09-20T13:05+08:00",
-      "published_date": "2026-09-20",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 47,
-      "selection_score": 59,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_f088fc8d649251"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_3779ad6154bd3e",
-          "title": "Hyrox完成出售，创始团队重获多数股权",
-          "source": "时尚商业网",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
-          "published_at": "2026-09-20T13:05+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "Hyrox完成出售、创始团队重获多数股权，健身赛事IP资本结构变化值得留意。"
-    },
-    {
       "event_id": "evt_1a4df5115b3a2e",
       "title": "2026年1—8月份社会消费品零售总额增长1.1%",
       "category": "行业动态",
@@ -315,13 +277,51 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "1—8月社零总额增长1.1%，为消费大环境提供官方宏观参照。"
+      "editorial_reason": "1—8月社零总额增长1.1%，为判断运动消费所处宏观环境提供官方数据基准。"
+    },
+    {
+      "event_id": "evt_f088fc8d649251",
+      "title": "Hyrox完成出售，创始团队重获多数股权",
+      "category": "品牌与公司",
+      "event_family": "capital_strategy",
+      "reporting_period": "",
+      "brands": [],
+      "source": "时尚商业网",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
+      "published_at": "2026-09-20T13:05+08:00",
+      "published_date": "2026-09-20",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 47,
+      "selection_score": 59,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_f088fc8d649251"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_3779ad6154bd3e",
+          "title": "Hyrox完成出售，创始团队重获多数股权",
+          "source": "时尚商业网",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
+          "published_at": "2026-09-20T13:05+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "Hyrox完成出售、创始团队重获多数股权，健身赛事IP资本结构变化值得跟踪。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "运动品牌资本与代言格局同步调整",
-      "analysis": "本周三起资本与代言事件指向同一趋势：运动品牌竞争正从产品层面向资本与顶级运动员资源延伸。安踏拟以123亿元收购彪马非控制权，若落地将改变头部品牌股权结构；Hyrox创始团队回购多数股权，则显示赛事IP方倾向收回主导权。三者共同说明运动行业资源重组节奏加快。",
+      "headline": "运动品牌资本与代言格局同步生变",
+      "analysis": "三件事分别指向头部集团资本扩张、新兴品牌借顶级代言切入足球品类、赛事IP股权重组，说明运动行业竞争正从产品层面向资本与代言资源层面延伸。",
       "event_ids": [
         "evt_6360b5edb4888c",
         "evt_24e793136a0fd4",
@@ -352,8 +352,8 @@
       ]
     },
     {
-      "headline": "线下渠道与奥莱布局持续加码",
-      "analysis": "Nike正式登陆武汉杉杉奥莱，Alo则线上表现突出并加速7城8门店布局。两者路径不同但方向一致：头部与新兴运动品牌都在强化线下触点。奥莱渠道承接品牌库存与流量，新锐品牌则通过门店扩张建立体验与认知。对儿童运动品类而言，成人品牌的渠道节奏可作为线下选址与奥莱合作的参照。",
+      "headline": "线下渠道与折扣零售持续加码",
+      "analysis": "Nike正式登陆武汉杉杉奥莱，Alo线上起量后加速7城8门店布局。头部国际品牌加码奥莱折扣渠道，新兴运动休闲品牌则加速线下门店扩张，反映品牌在线上流量之外仍将线下渠道视为触达消费者的关键阵地，渠道结构变化值得持续观察。",
       "event_ids": [
         "evt_cb13efe7198e69",
         "evt_f3261ac156ada3"
@@ -376,10 +376,11 @@
       ]
     },
     {
-      "headline": "儿童运动信号偏弱，赛事与产品结合是少数亮点",
-      "analysis": "本周儿童与青少年方向仅安踏儿童WSE冠军赛提及骇浪5跑鞋，门店位于宝安大仟里。该事件将赛事、具体跑鞋产品与门店场景绑定，是儿童运动品牌少见的“赛事+产品+渠道”组合。相比成人品牌密集的资本与代言动作，儿童赛道本周公开信息明显偏少，需持续观察后续是否有更多品牌跟进类似打法。",
+      "headline": "儿童运动信号与宏观消费背景",
+      "analysis": "本周儿童运动直接信号仅安踏儿童WSE冠军赛提及骇浪5跑鞋，显示儿童赛道品牌动作相对稀疏。同期1—8月社零总额增长1.1%，整体消费增速偏温和，为评估儿童运动消费所处环境提供背景参照，但不宜据此推断儿童品类具体表现。",
       "event_ids": [
-        "evt_1194cfd80907f3"
+        "evt_1194cfd80907f3",
+        "evt_1a4df5115b3a2e"
       ],
       "evidence": [
         {
@@ -388,6 +389,13 @@
           "source": "观点网",
           "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5aLTdFXzFaaWtlTHZmX0prd2ZNUjk0bjkxT0FqTTk5ei1veFBSTVZMOUhfQ1hHUF9XSW1JeFI1YU83cHJpUFMySFBmVktoYXBoMFBzQUcybUwxOFVvWExSalpn?oc=5",
           "published_date": "2026-09-18"
+        },
+        {
+          "event_id": "evt_1a4df5115b3a2e",
+          "title": "2026年1—8月份社会消费品零售总额增长1.1%",
+          "source": "国家统计局",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAzYjFCNFBSNWQxcFFpdkVfSEZVei1VWkhVWnRwcjd0bl84RjVpSkV6dllEdnF2NUx4bXUxSGJvdkJIMkhicTlUaGhVSUlfRC1pZEJibTZOaXlGdEpicGk3SWJWMU90WXgwMFNNcVFmUQ?oc=5",
+          "published_date": "2026-09-15"
         }
       ]
     }
@@ -448,7 +456,7 @@
           "published_date": "2026-09-14"
         }
       ],
-      "editorial_reason": "Nike Caitlin 1为官方发布的签名系列产品，是本周唯一可确认的具体商品信息，具参考价值。"
+      "editorial_reason": "Nike Caitlin 1签名系列，是本周唯一有官方来源确认的具体商品，反映女子篮球签名鞋动向。"
     }
   ],
   "competitor_channel": [
@@ -611,38 +619,29 @@
   ],
   "watchlist": [
     {
-      "title": "安踏收购彪马进展",
+      "title": "安踏收购彪马后续进展",
       "event_ids": [
         "evt_6360b5edb4888c"
       ],
       "product_ids": [],
-      "reason": "关注交易是否推进及对运动品牌竞争格局的后续影响。"
+      "reason": "关注交易是否推进及对运动品牌竞争格局的进一步影响。"
     },
     {
-      "title": "On昂跑足球品类落地",
+      "title": "On昂跑足球品类落地节奏",
       "event_ids": [
         "evt_24e793136a0fd4",
         "evt_77a224f0264ee4"
       ],
       "product_ids": [],
-      "reason": "关注其首款足球鞋上市节奏及足球领域渠道铺设。"
+      "reason": "跟踪姆巴佩签约后品牌足球产品线及营销动作的后续披露。"
     },
     {
-      "title": "儿童运动赛事与产品结合",
+      "title": "儿童运动品牌赛事与产品结合",
       "event_ids": [
         "evt_1194cfd80907f3"
       ],
       "product_ids": [],
-      "reason": "观察安踏儿童骇浪5跑鞋是否借赛事形成持续曝光。"
-    },
-    {
-      "title": "运动品牌奥莱与线下扩张",
-      "event_ids": [
-        "evt_cb13efe7198e69",
-        "evt_f3261ac156ada3"
-      ],
-      "product_ids": [],
-      "reason": "跟踪Nike奥莱店与Alo新门店的落地效果及渠道策略。"
+      "reason": "观察安踏儿童等品牌是否围绕赛事推出更多儿童跑鞋产品信息。"
     }
   ],
   "tracking": {
@@ -686,7 +685,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏拟以123亿元收购彪马非控制权，涉及头部运动品牌资本格局变化，值得关注。"
+        "editorial_reason": "安踏拟以123亿元收购彪马非控制权，涉及头部运动集团资本布局，影响行业竞争格局。"
       },
       {
         "event_id": "evt_24e793136a0fd4",
@@ -787,7 +786,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "Nike正式登陆武汉杉杉奥莱，头部品牌持续加码奥莱渠道，反映线下零售布局动向。"
+        "editorial_reason": "Nike正式登陆武汉杉杉奥莱，头部品牌加码奥莱渠道，反映线下折扣零售布局动向。"
       },
       {
         "event_id": "evt_f3261ac156ada3",
@@ -827,7 +826,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "Alo线上销售表现突出并加速7城8门店布局，运动休闲品牌线下扩张值得关注。"
+        "editorial_reason": "Alo线上快速起量并加速7城8门店扩张，中高端运动休闲品牌入华节奏值得关注。"
       },
       {
         "event_id": "evt_1194cfd80907f3",
@@ -906,7 +905,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "Hyrox完成出售、创始团队重获多数股权，健身赛事IP资本结构变化值得留意。"
+        "editorial_reason": "Hyrox完成出售、创始团队重获多数股权，健身赛事IP资本结构变化值得跟踪。"
       }
     ],
     "follow_up_selected": [
@@ -946,7 +945,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "1—8月社零总额增长1.1%，为消费大环境提供官方宏观参照。"
+        "editorial_reason": "1—8月社零总额增长1.1%，为判断运动消费所处宏观环境提供官方数据基准。"
       }
     ],
     "verification_queue": [],
@@ -1151,19 +1150,19 @@
     },
     {
       "type": "event",
-      "id": "evt_f088fc8d649251",
-      "title": "Hyrox完成出售，创始团队重获多数股权",
-      "source": "时尚商业网",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
-      "published_date": "2026-09-20"
-    },
-    {
-      "type": "event",
       "id": "evt_1a4df5115b3a2e",
       "title": "2026年1—8月份社会消费品零售总额增长1.1%",
       "source": "国家统计局",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAzYjFCNFBSNWQxcFFpdkVfSEZVei1VWkhVWnRwcjd0bl84RjVpSkV6dllEdnF2NUx4bXUxSGJvdkJIMkhicTlUaGhVSUlfRC1pZEJibTZOaXlGdEpicGk3SWJWMU90WXgwMFNNcVFmUQ?oc=5",
       "published_date": "2026-09-15"
+    },
+    {
+      "type": "event",
+      "id": "evt_f088fc8d649251",
+      "title": "Hyrox完成出售，创始团队重获多数股权",
+      "source": "时尚商业网",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
+      "published_date": "2026-09-20"
     },
     {
       "type": "event",
