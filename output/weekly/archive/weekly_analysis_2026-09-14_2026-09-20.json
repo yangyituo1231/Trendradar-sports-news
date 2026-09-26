@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-09-25T10:10+08:00",
+  "generated_at": "2026-09-26T10:15+08:00",
   "report_window": {
     "start_date": "2026-09-14",
     "end_date": "2026-09-20",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "运动品牌资本与代言动作密集，儿童赛道信号偏弱，渠道与赛事转化成关注焦点。",
-    "week_in_one_paragraph": "本周运动行业资本与代言动作集中：安踏拟收购彪马非控制权、On昂跑签约姆巴佩进军足球、Hyrox创始团队重获多数股权。渠道端Nike进驻武汉奥莱、Alo加速线下扩张。儿童相关仅安踏儿童赛事提及跑鞋，宏观社零增速1.1%提供消费背景。",
+    "weekly_thesis": "运动品牌资本与代言动作密集，儿童赛道仅安踏儿童有明确赛事曝光，行业信息偏向成人端。",
+    "week_in_one_paragraph": "本周运动行业信息集中在品牌资本与代言层面：安踏拟收购彪马非控制权、On昂跑签约姆巴佩进军足球、斯凯奇更新品牌形象；渠道端Nike进入武汉奥莱、Alo加速线下。儿童相关仅安踏儿童WSE冠军赛提及骇浪5跑鞋。宏观社零增速1.1%提供消费背景。",
     "next_week_focus": [
-      "跟踪安踏收购彪马交易的后续官方披露与市场反应。",
-      "关注On昂跑签约姆巴佩后足球品类产品规划信息。",
-      "观察儿童运动品牌是否有新的赛事或产品动作。",
-      "留意运动品牌奥莱及线下渠道扩张动态。",
-      "关注社零数据后续发布对消费环境的指引。"
+      "安踏收购彪马非控制权后续进展",
+      "On昂跑足球品类产品规划披露",
+      "儿童运动品牌赛事营销新动作",
+      "运动品牌奥莱及线下门店扩张动态",
+      "社零数据对运动消费的后续影响"
     ]
   },
   "key_developments": [
@@ -118,87 +118,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "属于行业动态的重要本周新事件且有多来源交叉报道。"
-    },
-    {
-      "event_id": "evt_cb13efe7198e69",
-      "title": "一周年庆预热来啦！ NIKE正式登陆武汉杉杉奥莱",
-      "category": "渠道与零售",
-      "event_family": "store_channel",
-      "reporting_period": "",
-      "brands": [
-        "Nike"
-      ],
-      "source": "sw.wuhan.gov.cn",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lZzV3UWpEY1FSVGVQQXlWLWZSay1rN01tTDJWejY0MkVRYXJ6dG0xc3EzVk1RLThFSE1GZWEwaXhMbEJkSjdUckYyRlVINzNmNl9vRm5oR2pfU0o4dnRFZURDc3NsNHlVWkV5MUF6R1pKdw?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lZzV3UWpEY1FSVGVQQXlWLWZSay1rN01tTDJWejY0MkVRYXJ6dG0xc3EzVk1RLThFSE1GZWEwaXhMbEJkSjdUckYyRlVINzNmNl9vRm5oR2pfU0o4dnRFZURDc3NsNHlVWkV5MUF6R1pKdw?oc=5",
-      "published_at": "2026-09-20T10:31+08:00",
-      "published_date": "2026-09-20",
-      "status": "new",
-      "verification": "official_source",
-      "is_official": true,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 62,
-      "selection_score": 82,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_cb13efe7198e69"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_bd4557a95248ae",
-          "title": "一周年庆预热来啦！ NIKE正式登陆武汉杉杉奥莱",
-          "source": "sw.wuhan.gov.cn",
-          "source_tier": "official",
-          "is_official": true,
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lZzV3UWpEY1FSVGVQQXlWLWZSay1rN01tTDJWejY0MkVRYXJ6dG0xc3EzVk1RLThFSE1GZWEwaXhMbEJkSjdUckYyRlVINzNmNl9vRm5oR2pfU0o4dnRFZURDc3NsNHlVWkV5MUF6R1pKdw?oc=5",
-          "published_at": "2026-09-20T10:31+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "Nike正式登陆武汉杉杉奥莱，头部品牌加码奥莱渠道，反映线下折扣零售布局动向。"
-    },
-    {
-      "event_id": "evt_f3261ac156ada3",
-      "title": "线上1分钟狂卖1000万，线下加速7城8门店，ALO等不及了",
-      "category": "渠道与零售",
-      "event_family": "store_channel",
-      "reporting_period": "",
-      "brands": [
-        "Alo"
-      ],
-      "source": "36氪",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
-      "published_at": "2026-09-18T05:03+08:00",
-      "published_date": "2026-09-18",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 54,
-      "selection_score": 69,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_f3261ac156ada3"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_db9d5179254da7",
-          "title": "线上1分钟狂卖1000万，线下加速7城8门店，ALO等不及了",
-          "source": "36氪",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
-          "published_at": "2026-09-18T05:03+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "Alo线上快速起量并加速7城8门店扩张，中高端运动休闲品牌入华节奏值得关注。"
+      "editorial_reason": "姆巴佩结束与Nike合作转签On昂跑，后者借此进军足球领域，代言格局出现变化。"
     },
     {
       "event_id": "evt_1194cfd80907f3",
@@ -239,7 +159,87 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏儿童WSE冠军赛提及骇浪5跑鞋，是本周少有的儿童运动品牌赛事与产品结合信号。"
+      "editorial_reason": "安踏儿童WSE冠军赛提及骇浪5跑鞋，是本周少有的儿童运动品牌赛事与产品结合信息。"
+    },
+    {
+      "event_id": "evt_cb13efe7198e69",
+      "title": "一周年庆预热来啦！ NIKE正式登陆武汉杉杉奥莱",
+      "category": "渠道与零售",
+      "event_family": "store_channel",
+      "reporting_period": "",
+      "brands": [
+        "Nike"
+      ],
+      "source": "sw.wuhan.gov.cn",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lZzV3UWpEY1FSVGVQQXlWLWZSay1rN01tTDJWejY0MkVRYXJ6dG0xc3EzVk1RLThFSE1GZWEwaXhMbEJkSjdUckYyRlVINzNmNl9vRm5oR2pfU0o4dnRFZURDc3NsNHlVWkV5MUF6R1pKdw?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lZzV3UWpEY1FSVGVQQXlWLWZSay1rN01tTDJWejY0MkVRYXJ6dG0xc3EzVk1RLThFSE1GZWEwaXhMbEJkSjdUckYyRlVINzNmNl9vRm5oR2pfU0o4dnRFZURDc3NsNHlVWkV5MUF6R1pKdw?oc=5",
+      "published_at": "2026-09-20T10:31+08:00",
+      "published_date": "2026-09-20",
+      "status": "new",
+      "verification": "official_source",
+      "is_official": true,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 62,
+      "selection_score": 82,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_cb13efe7198e69"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_bd4557a95248ae",
+          "title": "一周年庆预热来啦！ NIKE正式登陆武汉杉杉奥莱",
+          "source": "sw.wuhan.gov.cn",
+          "source_tier": "official",
+          "is_official": true,
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lZzV3UWpEY1FSVGVQQXlWLWZSay1rN01tTDJWejY0MkVRYXJ6dG0xc3EzVk1RLThFSE1GZWEwaXhMbEJkSjdUckYyRlVINzNmNl9vRm5oR2pfU0o4dnRFZURDc3NsNHlVWkV5MUF6R1pKdw?oc=5",
+          "published_at": "2026-09-20T10:31+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "Nike正式登陆武汉杉杉奥莱，反映运动品牌持续加码奥莱渠道布局。"
+    },
+    {
+      "event_id": "evt_f3261ac156ada3",
+      "title": "线上1分钟狂卖1000万，线下加速7城8门店，ALO等不及了",
+      "category": "渠道与零售",
+      "event_family": "store_channel",
+      "reporting_period": "",
+      "brands": [
+        "Alo"
+      ],
+      "source": "36氪",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
+      "published_at": "2026-09-18T05:03+08:00",
+      "published_date": "2026-09-18",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 54,
+      "selection_score": 69,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_f3261ac156ada3"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_db9d5179254da7",
+          "title": "线上1分钟狂卖1000万，线下加速7城8门店，ALO等不及了",
+          "source": "36氪",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
+          "published_at": "2026-09-18T05:03+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "Alo线上销售表现与线下7城8门店扩张计划，显示新入华运动品牌渠道推进节奏。"
     },
     {
       "event_id": "evt_1a4df5115b3a2e",
@@ -277,55 +277,56 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "1—8月社零总额增长1.1%，为判断运动消费所处宏观环境提供官方数据基准。"
+      "editorial_reason": "1—8月社零总额增长1.1%，为判断运动消费所处宏观环境提供官方数据参照。"
     },
     {
-      "event_id": "evt_f088fc8d649251",
-      "title": "Hyrox完成出售，创始团队重获多数股权",
-      "category": "品牌与公司",
-      "event_family": "capital_strategy",
+      "event_id": "evt_3b192433dde301",
+      "title": "斯凯奇发布全新品牌形象「舒适奇了 Comfort For All」",
+      "category": "产品与科技",
+      "event_family": "product_launch",
       "reporting_period": "",
-      "brands": [],
-      "source": "时尚商业网",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
-      "published_at": "2026-09-20T13:05+08:00",
-      "published_date": "2026-09-20",
+      "brands": [
+        "Skechers"
+      ],
+      "source": "ELLE China",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
+      "published_at": "2026-09-19T16:35+08:00",
+      "published_date": "2026-09-19",
       "status": "new",
       "verification": "single_source",
       "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 47,
-      "selection_score": 59,
+      "editorial_score": 48,
+      "selection_score": 60,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_f088fc8d649251"
+        "evt_3b192433dde301"
       ],
       "evidence": [
         {
-          "item_id": "src_3779ad6154bd3e",
-          "title": "Hyrox完成出售，创始团队重获多数股权",
-          "source": "时尚商业网",
-          "source_tier": "tier_2",
+          "item_id": "src_5cb0c348f1dbdd",
+          "title": "斯凯奇发布全新品牌形象「舒适奇了 Comfort For All」",
+          "source": "ELLE China",
+          "source_tier": "tier_3",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
-          "published_at": "2026-09-20T13:05+08:00",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
+          "published_at": "2026-09-19T16:35+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "Hyrox完成出售、创始团队重获多数股权，健身赛事IP资本结构变化值得跟踪。"
+      "editorial_reason": "斯凯奇发布全新品牌形象，头部大众运动品牌在品牌定位层面做出调整。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "运动品牌资本与代言格局同步生变",
-      "analysis": "三件事分别指向头部集团资本扩张、新兴品牌借顶级代言切入足球品类、赛事IP股权重组，说明运动行业竞争正从产品层面向资本与代言资源层面延伸。",
+      "headline": "运动品牌资本与代言格局同步调整",
+      "analysis": "两件事分别指向头部集团通过资本方式扩大品牌矩阵，以及新兴品牌借顶级运动员切入足球品类。对儿童运动赛道而言，成人端品牌格局变化可能间接影响未来资源分配与品类竞争方向。",
       "event_ids": [
         "evt_6360b5edb4888c",
-        "evt_24e793136a0fd4",
-        "evt_f088fc8d649251"
+        "evt_24e793136a0fd4"
       ],
       "evidence": [
         {
@@ -341,19 +342,12 @@
           "source": "界面新闻",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBzczNHUUVzTVlOUnV4UFpYakIzUmZkWFJ0bkl6NlpXMWMtZGs0b0pfUHBPQ1pSQW1qUlFGME5nRjZqbVY5S0dOUXgyd2cteTBEQVRzV0xlbUI?oc=5",
           "published_date": "2026-09-18"
-        },
-        {
-          "event_id": "evt_f088fc8d649251",
-          "title": "Hyrox完成出售，创始团队重获多数股权",
-          "source": "时尚商业网",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
-          "published_date": "2026-09-20"
         }
       ]
     },
     {
-      "headline": "线下渠道与折扣零售持续加码",
-      "analysis": "Nike正式登陆武汉杉杉奥莱，Alo线上起量后加速7城8门店布局。头部国际品牌加码奥莱折扣渠道，新兴运动休闲品牌则加速线下门店扩张，反映品牌在线上流量之外仍将线下渠道视为触达消费者的关键阵地，渠道结构变化值得持续观察。",
+      "headline": "运动品牌渠道向奥莱与线下门店延伸",
+      "analysis": "Nike进入武汉杉杉奥莱，Alo在线上表现后加速7城8门店布局。两者共同显示运动品牌仍在通过奥莱和线下门店争夺消费者触点。对儿童业务而言，成人运动品牌的渠道下沉与扩张节奏，可作为观察家庭消费场景和商场业态变化的参考。",
       "event_ids": [
         "evt_cb13efe7198e69",
         "evt_f3261ac156ada3"
@@ -376,8 +370,8 @@
       ]
     },
     {
-      "headline": "儿童运动信号与宏观消费背景",
-      "analysis": "本周儿童运动直接信号仅安踏儿童WSE冠军赛提及骇浪5跑鞋，显示儿童赛道品牌动作相对稀疏。同期1—8月社零总额增长1.1%，整体消费增速偏温和，为评估儿童运动消费所处环境提供背景参照，但不宜据此推断儿童品类具体表现。",
+      "headline": "儿童运动品牌赛事曝光与宏观消费背景",
+      "analysis": "安踏儿童WSE冠军赛提及骇浪5跑鞋，是本周儿童运动品牌少有的赛事与产品结合信息。同期1—8月社零总额增长1.1%，显示整体消费增速平稳。儿童运动品牌在赛事场景中的产品露出，仍需结合宏观消费环境观察其后续渠道与营销动作。",
       "event_ids": [
         "evt_1194cfd80907f3",
         "evt_1a4df5115b3a2e"
@@ -456,7 +450,7 @@
           "published_date": "2026-09-14"
         }
       ],
-      "editorial_reason": "Nike Caitlin 1签名系列，是本周唯一有官方来源确认的具体商品，反映女子篮球签名鞋动向。"
+      "editorial_reason": "Nike Caitlin 1签名系列是本周唯一明确的产品候选，代表品牌在女性篮球签名鞋方向的商品动作。"
     }
   ],
   "competitor_channel": [
@@ -619,12 +613,21 @@
   ],
   "watchlist": [
     {
-      "title": "安踏收购彪马后续进展",
+      "title": "安踏儿童赛事与产品联动后续",
       "event_ids": [
-        "evt_6360b5edb4888c"
+        "evt_1194cfd80907f3"
       ],
       "product_ids": [],
-      "reason": "关注交易是否推进及对运动品牌竞争格局的进一步影响。"
+      "reason": "观察骇浪5跑鞋在WSE冠军赛后的门店与线上曝光是否延续。"
+    },
+    {
+      "title": "运动品牌奥莱与线下渠道扩张",
+      "event_ids": [
+        "evt_cb13efe7198e69",
+        "evt_f3261ac156ada3"
+      ],
+      "product_ids": [],
+      "reason": "关注Nike奥莱店与Alo新门店是否带来儿童或家庭消费场景变化。"
     },
     {
       "title": "On昂跑足球品类落地节奏",
@@ -633,15 +636,7 @@
         "evt_77a224f0264ee4"
       ],
       "product_ids": [],
-      "reason": "跟踪姆巴佩签约后品牌足球产品线及营销动作的后续披露。"
-    },
-    {
-      "title": "儿童运动品牌赛事与产品结合",
-      "event_ids": [
-        "evt_1194cfd80907f3"
-      ],
-      "product_ids": [],
-      "reason": "观察安踏儿童等品牌是否围绕赛事推出更多儿童跑鞋产品信息。"
+      "reason": "关注后续官方信息、渠道落地或产品资料补充。"
     }
   ],
   "tracking": {
@@ -746,87 +741,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "属于行业动态的重要本周新事件且有多来源交叉报道。"
-      },
-      {
-        "event_id": "evt_cb13efe7198e69",
-        "title": "一周年庆预热来啦！ NIKE正式登陆武汉杉杉奥莱",
-        "category": "渠道与零售",
-        "event_family": "store_channel",
-        "reporting_period": "",
-        "brands": [
-          "Nike"
-        ],
-        "source": "sw.wuhan.gov.cn",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lZzV3UWpEY1FSVGVQQXlWLWZSay1rN01tTDJWejY0MkVRYXJ6dG0xc3EzVk1RLThFSE1GZWEwaXhMbEJkSjdUckYyRlVINzNmNl9vRm5oR2pfU0o4dnRFZURDc3NsNHlVWkV5MUF6R1pKdw?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lZzV3UWpEY1FSVGVQQXlWLWZSay1rN01tTDJWejY0MkVRYXJ6dG0xc3EzVk1RLThFSE1GZWEwaXhMbEJkSjdUckYyRlVINzNmNl9vRm5oR2pfU0o4dnRFZURDc3NsNHlVWkV5MUF6R1pKdw?oc=5",
-        "published_at": "2026-09-20T10:31+08:00",
-        "published_date": "2026-09-20",
-        "status": "new",
-        "verification": "official_source",
-        "is_official": true,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 62,
-        "selection_score": 82,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_cb13efe7198e69"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_bd4557a95248ae",
-            "title": "一周年庆预热来啦！ NIKE正式登陆武汉杉杉奥莱",
-            "source": "sw.wuhan.gov.cn",
-            "source_tier": "official",
-            "is_official": true,
-            "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lZzV3UWpEY1FSVGVQQXlWLWZSay1rN01tTDJWejY0MkVRYXJ6dG0xc3EzVk1RLThFSE1GZWEwaXhMbEJkSjdUckYyRlVINzNmNl9vRm5oR2pfU0o4dnRFZURDc3NsNHlVWkV5MUF6R1pKdw?oc=5",
-            "published_at": "2026-09-20T10:31+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "Nike正式登陆武汉杉杉奥莱，头部品牌加码奥莱渠道，反映线下折扣零售布局动向。"
-      },
-      {
-        "event_id": "evt_f3261ac156ada3",
-        "title": "线上1分钟狂卖1000万，线下加速7城8门店，ALO等不及了",
-        "category": "渠道与零售",
-        "event_family": "store_channel",
-        "reporting_period": "",
-        "brands": [
-          "Alo"
-        ],
-        "source": "36氪",
-        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
-        "published_at": "2026-09-18T05:03+08:00",
-        "published_date": "2026-09-18",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 54,
-        "selection_score": 69,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_f3261ac156ada3"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_db9d5179254da7",
-            "title": "线上1分钟狂卖1000万，线下加速7城8门店，ALO等不及了",
-            "source": "36氪",
-            "source_tier": "tier_2",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
-            "published_at": "2026-09-18T05:03+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "Alo线上快速起量并加速7城8门店扩张，中高端运动休闲品牌入华节奏值得关注。"
+        "editorial_reason": "姆巴佩结束与Nike合作转签On昂跑，后者借此进军足球领域，代言格局出现变化。"
       },
       {
         "event_id": "evt_1194cfd80907f3",
@@ -867,45 +782,127 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏儿童WSE冠军赛提及骇浪5跑鞋，是本周少有的儿童运动品牌赛事与产品结合信号。"
+        "editorial_reason": "安踏儿童WSE冠军赛提及骇浪5跑鞋，是本周少有的儿童运动品牌赛事与产品结合信息。"
       },
       {
-        "event_id": "evt_f088fc8d649251",
-        "title": "Hyrox完成出售，创始团队重获多数股权",
-        "category": "品牌与公司",
-        "event_family": "capital_strategy",
+        "event_id": "evt_cb13efe7198e69",
+        "title": "一周年庆预热来啦！ NIKE正式登陆武汉杉杉奥莱",
+        "category": "渠道与零售",
+        "event_family": "store_channel",
         "reporting_period": "",
-        "brands": [],
-        "source": "时尚商业网",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
-        "published_at": "2026-09-20T13:05+08:00",
+        "brands": [
+          "Nike"
+        ],
+        "source": "sw.wuhan.gov.cn",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lZzV3UWpEY1FSVGVQQXlWLWZSay1rN01tTDJWejY0MkVRYXJ6dG0xc3EzVk1RLThFSE1GZWEwaXhMbEJkSjdUckYyRlVINzNmNl9vRm5oR2pfU0o4dnRFZURDc3NsNHlVWkV5MUF6R1pKdw?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lZzV3UWpEY1FSVGVQQXlWLWZSay1rN01tTDJWejY0MkVRYXJ6dG0xc3EzVk1RLThFSE1GZWEwaXhMbEJkSjdUckYyRlVINzNmNl9vRm5oR2pfU0o4dnRFZURDc3NsNHlVWkV5MUF6R1pKdw?oc=5",
+        "published_at": "2026-09-20T10:31+08:00",
         "published_date": "2026-09-20",
+        "status": "new",
+        "verification": "official_source",
+        "is_official": true,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 62,
+        "selection_score": 82,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_cb13efe7198e69"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_bd4557a95248ae",
+            "title": "一周年庆预热来啦！ NIKE正式登陆武汉杉杉奥莱",
+            "source": "sw.wuhan.gov.cn",
+            "source_tier": "official",
+            "is_official": true,
+            "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lZzV3UWpEY1FSVGVQQXlWLWZSay1rN01tTDJWejY0MkVRYXJ6dG0xc3EzVk1RLThFSE1GZWEwaXhMbEJkSjdUckYyRlVINzNmNl9vRm5oR2pfU0o4dnRFZURDc3NsNHlVWkV5MUF6R1pKdw?oc=5",
+            "published_at": "2026-09-20T10:31+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "Nike正式登陆武汉杉杉奥莱，反映运动品牌持续加码奥莱渠道布局。"
+      },
+      {
+        "event_id": "evt_f3261ac156ada3",
+        "title": "线上1分钟狂卖1000万，线下加速7城8门店，ALO等不及了",
+        "category": "渠道与零售",
+        "event_family": "store_channel",
+        "reporting_period": "",
+        "brands": [
+          "Alo"
+        ],
+        "source": "36氪",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
+        "published_at": "2026-09-18T05:03+08:00",
+        "published_date": "2026-09-18",
         "status": "new",
         "verification": "single_source",
         "is_official": false,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 47,
-        "selection_score": 59,
+        "editorial_score": 54,
+        "selection_score": 69,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_f088fc8d649251"
+          "evt_f3261ac156ada3"
         ],
         "evidence": [
           {
-            "item_id": "src_3779ad6154bd3e",
-            "title": "Hyrox完成出售，创始团队重获多数股权",
-            "source": "时尚商业网",
+            "item_id": "src_db9d5179254da7",
+            "title": "线上1分钟狂卖1000万，线下加速7城8门店，ALO等不及了",
+            "source": "36氪",
             "source_tier": "tier_2",
             "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
-            "published_at": "2026-09-20T13:05+08:00",
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
+            "published_at": "2026-09-18T05:03+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "Hyrox完成出售、创始团队重获多数股权，健身赛事IP资本结构变化值得跟踪。"
+        "editorial_reason": "Alo线上销售表现与线下7城8门店扩张计划，显示新入华运动品牌渠道推进节奏。"
+      },
+      {
+        "event_id": "evt_3b192433dde301",
+        "title": "斯凯奇发布全新品牌形象「舒适奇了 Comfort For All」",
+        "category": "产品与科技",
+        "event_family": "product_launch",
+        "reporting_period": "",
+        "brands": [
+          "Skechers"
+        ],
+        "source": "ELLE China",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
+        "published_at": "2026-09-19T16:35+08:00",
+        "published_date": "2026-09-19",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 48,
+        "selection_score": 60,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_3b192433dde301"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_5cb0c348f1dbdd",
+            "title": "斯凯奇发布全新品牌形象「舒适奇了 Comfort For All」",
+            "source": "ELLE China",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
+            "published_at": "2026-09-19T16:35+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "斯凯奇发布全新品牌形象，头部大众运动品牌在品牌定位层面做出调整。"
       }
     ],
     "follow_up_selected": [
@@ -945,7 +942,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "1—8月社零总额增长1.1%，为判断运动消费所处宏观环境提供官方数据基准。"
+        "editorial_reason": "1—8月社零总额增长1.1%，为判断运动消费所处宏观环境提供官方数据参照。"
       }
     ],
     "verification_queue": [],
@@ -1126,6 +1123,14 @@
     },
     {
       "type": "event",
+      "id": "evt_1194cfd80907f3",
+      "title": "安踏儿童WSE冠军赛提及骇浪5跑鞋 门店位于宝安大仟里",
+      "source": "观点网",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5aLTdFXzFaaWtlTHZmX0prd2ZNUjk0bjkxT0FqTTk5ei1veFBSTVZMOUhfQ1hHUF9XSW1JeFI1YU83cHJpUFMySFBmVktoYXBoMFBzQUcybUwxOFVvWExSalpn?oc=5",
+      "published_date": "2026-09-18"
+    },
+    {
+      "type": "event",
       "id": "evt_cb13efe7198e69",
       "title": "一周年庆预热来啦！ NIKE正式登陆武汉杉杉奥莱",
       "source": "sw.wuhan.gov.cn",
@@ -1142,14 +1147,6 @@
     },
     {
       "type": "event",
-      "id": "evt_1194cfd80907f3",
-      "title": "安踏儿童WSE冠军赛提及骇浪5跑鞋 门店位于宝安大仟里",
-      "source": "观点网",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5aLTdFXzFaaWtlTHZmX0prd2ZNUjk0bjkxT0FqTTk5ei1veFBSTVZMOUhfQ1hHUF9XSW1JeFI1YU83cHJpUFMySFBmVktoYXBoMFBzQUcybUwxOFVvWExSalpn?oc=5",
-      "published_date": "2026-09-18"
-    },
-    {
-      "type": "event",
       "id": "evt_1a4df5115b3a2e",
       "title": "2026年1—8月份社会消费品零售总额增长1.1%",
       "source": "国家统计局",
@@ -1158,11 +1155,11 @@
     },
     {
       "type": "event",
-      "id": "evt_f088fc8d649251",
-      "title": "Hyrox完成出售，创始团队重获多数股权",
-      "source": "时尚商业网",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9qYmJhLWVEVHc2MUN6b1l4eUZlY3Z1MmQweEN1VlVCb1dhUnptb2hXTHhrTHk3enJ6MnhZYUxaV19JQlUxeERRcmpxWTNyRExSak53ZnNjMlQ?oc=5",
-      "published_date": "2026-09-20"
+      "id": "evt_3b192433dde301",
+      "title": "斯凯奇发布全新品牌形象「舒适奇了 Comfort For All」",
+      "source": "ELLE China",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
+      "published_date": "2026-09-19"
     },
     {
       "type": "event",
