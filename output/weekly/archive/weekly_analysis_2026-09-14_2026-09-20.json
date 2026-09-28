@@ -1,23 +1,64 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-09-27T10:09+08:00",
+  "generated_at": "2026-09-28T10:14+08:00",
   "report_window": {
     "start_date": "2026-09-14",
     "end_date": "2026-09-20",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "姆巴佩转投昂跑与安踏资本动作，显示运动品牌竞争正从产品延伸至资源与资本层面。",
-    "week_in_one_paragraph": "本周运动品牌竞争维度明显拓宽：昂跑签约姆巴佩并宣布进军足球，安踏被报道以123亿元收购彪马非控制权，斯凯奇发布全新品牌形象，Nike在武汉奥莱落店。儿童与青少年方向仅安踏儿童WSE冠军赛提及骇浪5跑鞋一条，直接证据偏少。",
+    "weekly_thesis": "运动品牌资本与代言动作密集，儿童赛道仅安踏儿童有赛事曝光，行业信息偏向成人市场。",
+    "week_in_one_paragraph": "渠道端Nike登陆武汉奥莱、Alo加速线下扩张。儿童与青少年方向仅安踏儿童WSE冠军赛提及骇浪5跑鞋，直接相关证据有限。",
     "next_week_focus": [
-      "昂跑签约姆巴佩后足球产品线是否进一步披露。",
-      "安踏与彪马资本交易是否出现官方确认。",
-      "儿童运动鞋是否有更多品牌产品与渠道证据。",
-      "奥莱渠道国际运动品牌开店动态。",
-      "运动品牌品牌形象更新是否带动同类跟进。"
+      "安踏收购彪马非控制权是否有进一步官方进展",
+      "昂跑签约姆巴佩后足球品类产品规划动向",
+      "儿童运动品牌赛事与新品结合案例是否增多",
+      "奥莱及线下渠道品牌开店节奏变化",
+      "消费宏观数据对运动品牌预期的影响"
     ]
   },
   "key_developments": [
+    {
+      "event_id": "evt_6360b5edb4888c",
+      "title": "123亿元收购非控制权门票 安踏入主彪马的三重资本账本深度解析",
+      "category": "品牌与公司",
+      "event_family": "capital_strategy",
+      "reporting_period": "",
+      "brands": [
+        "安踏",
+        "Puma"
+      ],
+      "source": "eu.36kr.com",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4M29IVDZQeGxhVHVoTVhhSUQySkhaeWlNUEpwSFF4b2N5RHFTU3FGSGFGRF9SUlBrRFYxbml2WkpoellUbE80bnJrNXZWZE5LdUhR?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4M29IVDZQeGxhVHVoTVhhSUQySkhaeWlNUEpwSFF4b2N5RHFTU3FGSGFGRF9SUlBrRFYxbml2WkpoellUbE80bnJrNXZWZE5LdUhR?oc=5",
+      "published_at": "2026-09-17T19:45+08:00",
+      "published_date": "2026-09-17",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 42,
+      "selection_score": 58,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_6360b5edb4888c"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_a8aeabb24a3125",
+          "title": "123亿元收购非控制权门票 安踏入主彪马的三重资本账本深度解析",
+          "source": "eu.36kr.com",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4M29IVDZQeGxhVHVoTVhhSUQySkhaeWlNUEpwSFF4b2N5RHFTU3FGSGFGRF9SUlBrRFYxbml2WkpoellUbE80bnJrNXZWZE5LdUhR?oc=5",
+          "published_at": "2026-09-17T19:45+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "安踏拟123亿元收购彪马非控制权，涉及头部运动集团资本布局，影响行业竞争格局。"
+    },
     {
       "event_id": "evt_24e793136a0fd4",
       "title": "法国球星姆巴佩宣布签约On昂跑",
@@ -77,88 +118,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "昂跑签约姆巴佩并宣布进军足球，是本周品牌资源竞争最受关注的动作。"
-    },
-    {
-      "event_id": "evt_6360b5edb4888c",
-      "title": "123亿元收购非控制权门票 安踏入主彪马的三重资本账本深度解析",
-      "category": "品牌与公司",
-      "event_family": "capital_strategy",
-      "reporting_period": "",
-      "brands": [
-        "安踏",
-        "Puma"
-      ],
-      "source": "eu.36kr.com",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4M29IVDZQeGxhVHVoTVhhSUQySkhaeWlNUEpwSFF4b2N5RHFTU3FGSGFGRF9SUlBrRFYxbml2WkpoellUbE80bnJrNXZWZE5LdUhR?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4M29IVDZQeGxhVHVoTVhhSUQySkhaeWlNUEpwSFF4b2N5RHFTU3FGSGFGRF9SUlBrRFYxbml2WkpoellUbE80bnJrNXZWZE5LdUhR?oc=5",
-      "published_at": "2026-09-17T19:45+08:00",
-      "published_date": "2026-09-17",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 42,
-      "selection_score": 58,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_6360b5edb4888c"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_a8aeabb24a3125",
-          "title": "123亿元收购非控制权门票 安踏入主彪马的三重资本账本深度解析",
-          "source": "eu.36kr.com",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4M29IVDZQeGxhVHVoTVhhSUQySkhaeWlNUEpwSFF4b2N5RHFTU3FGSGFGRF9SUlBrRFYxbml2WkpoellUbE80bnJrNXZWZE5LdUhR?oc=5",
-          "published_at": "2026-09-17T19:45+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "安踏被报道以123亿元收购彪马非控制权，涉及头部运动品牌资本格局变化。"
-    },
-    {
-      "event_id": "evt_3b192433dde301",
-      "title": "斯凯奇发布全新品牌形象「舒适奇了 Comfort For All」",
-      "category": "产品与科技",
-      "event_family": "product_launch",
-      "reporting_period": "",
-      "brands": [
-        "Skechers"
-      ],
-      "source": "ELLE China",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
-      "published_at": "2026-09-19T16:35+08:00",
-      "published_date": "2026-09-19",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 48,
-      "selection_score": 60,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_3b192433dde301"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_5cb0c348f1dbdd",
-          "title": "斯凯奇发布全新品牌形象「舒适奇了 Comfort For All」",
-          "source": "ELLE China",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
-          "published_at": "2026-09-19T16:35+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "斯凯奇发布全新品牌形象，反映运动休闲品牌在定位层面的主动调整。"
+      "editorial_reason": "属于行业动态的重要本周新事件且有多来源交叉报道。"
     },
     {
       "event_id": "evt_cb13efe7198e69",
@@ -198,7 +158,47 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "Nike正式登陆武汉杉杉奥莱，体现国际品牌对奥莱渠道的持续投入。"
+      "editorial_reason": "Nike正式登陆武汉杉杉奥莱，头部品牌持续加码奥莱渠道，反映渠道下沉与库存策略。"
+    },
+    {
+      "event_id": "evt_f3261ac156ada3",
+      "title": "线上1分钟狂卖1000万，线下加速7城8门店，ALO等不及了",
+      "category": "渠道与零售",
+      "event_family": "store_channel",
+      "reporting_period": "",
+      "brands": [
+        "Alo"
+      ],
+      "source": "36氪",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
+      "published_at": "2026-09-18T05:03+08:00",
+      "published_date": "2026-09-18",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 54,
+      "selection_score": 69,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_f3261ac156ada3"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_db9d5179254da7",
+          "title": "线上1分钟狂卖1000万，线下加速7城8门店，ALO等不及了",
+          "source": "36氪",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
+          "published_at": "2026-09-18T05:03+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "Alo线上快速起量并加速7城8门店布局，中高端女性运动服饰竞争加剧。"
     },
     {
       "event_id": "evt_1194cfd80907f3",
@@ -239,7 +239,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏儿童WSE冠军赛提及骇浪5跑鞋，是本周少有的儿童运动鞋直接证据。"
+      "editorial_reason": "安踏儿童WSE冠军赛提及骇浪5跑鞋，是本周少有的儿童运动品牌赛事与产品结合案例。"
     },
     {
       "event_id": "evt_1a4df5115b3a2e",
@@ -277,61 +277,109 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "1—8月社零总额增长1.1%，为消费与渠道判断提供宏观参照。"
+      "editorial_reason": "1—8月社零总额增长1.1%，为消费大环境提供官方宏观参照，影响行业预期。"
+    },
+    {
+      "event_id": "evt_3b192433dde301",
+      "title": "斯凯奇发布全新品牌形象「舒适奇了 Comfort For All」",
+      "category": "产品与科技",
+      "event_family": "product_launch",
+      "reporting_period": "",
+      "brands": [
+        "Skechers"
+      ],
+      "source": "ELLE China",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
+      "published_at": "2026-09-19T16:35+08:00",
+      "published_date": "2026-09-19",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 48,
+      "selection_score": 60,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_3b192433dde301"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_5cb0c348f1dbdd",
+          "title": "斯凯奇发布全新品牌形象「舒适奇了 Comfort For All」",
+          "source": "ELLE China",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
+          "published_at": "2026-09-19T16:35+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "斯凯奇发布全新品牌形象，舒适定位升级，反映运动休闲品牌差异化竞争。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "运动品牌资源与资本竞争同步升温",
-      "analysis": "昂跑签约姆巴佩并宣布进军足球，意味着其从跑步向足球品类延伸，直接挑战Nike等传统足球品牌。同期安踏被报道以123亿元收购彪马非控制权，显示头部中国运动集团正通过资本方式获取国际品牌影响力。两者共同说明，运动品牌竞争已从单一产品延伸到代言资源与资本布局，行业格局变量增多。",
+      "headline": "运动品牌资本与代言格局生变",
+      "analysis": "安踏拟以123亿元收购彪马非控制权，若落地将改变头部运动集团竞争结构；两件事分别从资本和代言两端显示运动品牌正在重新划分势力范围，头部资源向多品牌集团和新兴品牌双向流动。",
       "event_ids": [
-        "evt_24e793136a0fd4",
-        "evt_6360b5edb4888c"
+        "evt_6360b5edb4888c",
+        "evt_24e793136a0fd4"
       ],
       "evidence": [
-        {
-          "event_id": "evt_24e793136a0fd4",
-          "title": "法国球星姆巴佩宣布签约On昂跑",
-          "source": "界面新闻",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBzczNHUUVzTVlOUnV4UFpYakIzUmZkWFJ0bkl6NlpXMWMtZGs0b0pfUHBPQ1pSQW1qUlFGME5nRjZqbVY5S0dOUXgyd2cteTBEQVRzV0xlbUI?oc=5",
-          "published_date": "2026-09-18"
-        },
         {
           "event_id": "evt_6360b5edb4888c",
           "title": "123亿元收购非控制权门票 安踏入主彪马的三重资本账本深度解析",
           "source": "eu.36kr.com",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4M29IVDZQeGxhVHVoTVhhSUQySkhaeWlNUEpwSFF4b2N5RHFTU3FGSGFGRF9SUlBrRFYxbml2WkpoellUbE80bnJrNXZWZE5LdUhR?oc=5",
           "published_date": "2026-09-17"
+        },
+        {
+          "event_id": "evt_24e793136a0fd4",
+          "title": "法国球星姆巴佩宣布签约On昂跑",
+          "source": "界面新闻",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBzczNHUUVzTVlOUnV4UFpYakIzUmZkWFJ0bkl6NlpXMWMtZGs0b0pfUHBPQ1pSQW1qUlFGME5nRjZqbVY5S0dOUXgyd2cteTBEQVRzV0xlbUI?oc=5",
+          "published_date": "2026-09-18"
         }
       ]
     },
     {
-      "headline": "品牌形象与渠道同步调整",
-      "analysis": "斯凯奇发布全新品牌形象，强调舒适定位，属于品牌层面的主动刷新。Nike登陆武汉杉杉奥莱，则反映国际品牌继续加码奥莱渠道。两者分别从品牌表达和线下渠道切入，说明运动品牌在需求分化背景下，正同时调整形象与零售触点，以维持消费者触达。",
+      "headline": "渠道扩张与消费环境观察",
+      "analysis": "Nike登陆武汉奥莱、Alo加速7城8门店，显示品牌在奥莱和线下门店两端同时扩张；同期1—8月社零总额仅增长1.1%，消费大盘偏弱。品牌逆势加码线下，说明渠道争夺仍在继续，但需关注消费力能否支撑扩张节奏。",
       "event_ids": [
-        "evt_3b192433dde301",
-        "evt_cb13efe7198e69"
+        "evt_cb13efe7198e69",
+        "evt_f3261ac156ada3",
+        "evt_1a4df5115b3a2e"
       ],
       "evidence": [
-        {
-          "event_id": "evt_3b192433dde301",
-          "title": "斯凯奇发布全新品牌形象「舒适奇了 Comfort For All」",
-          "source": "ELLE China",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
-          "published_date": "2026-09-19"
-        },
         {
           "event_id": "evt_cb13efe7198e69",
           "title": "一周年庆预热来啦！ NIKE正式登陆武汉杉杉奥莱",
           "source": "sw.wuhan.gov.cn",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lZzV3UWpEY1FSVGVQQXlWLWZSay1rN01tTDJWejY0MkVRYXJ6dG0xc3EzVk1RLThFSE1GZWEwaXhMbEJkSjdUckYyRlVINzNmNl9vRm5oR2pfU0o4dnRFZURDc3NsNHlVWkV5MUF6R1pKdw?oc=5",
           "published_date": "2026-09-20"
+        },
+        {
+          "event_id": "evt_f3261ac156ada3",
+          "title": "线上1分钟狂卖1000万，线下加速7城8门店，ALO等不及了",
+          "source": "36氪",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
+          "published_date": "2026-09-18"
+        },
+        {
+          "event_id": "evt_1a4df5115b3a2e",
+          "title": "2026年1—8月份社会消费品零售总额增长1.1%",
+          "source": "国家统计局",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAzYjFCNFBSNWQxcFFpdkVfSEZVei1VWkhVWnRwcjd0bl84RjVpSkV6dllEdnF2NUx4bXUxSGJvdkJIMkhicTlUaGhVSUlfRC1pZEJibTZOaXlGdEpicGk3SWJWMU90WXgwMFNNcVFmUQ?oc=5",
+          "published_date": "2026-09-15"
         }
       ]
     },
     {
-      "headline": "儿童运动鞋信息仍以赛事场景为主",
-      "analysis": "本周儿童与青少年方向直接证据有限，安踏儿童WSE冠军赛提及骇浪5跑鞋，门店位于宝安大仟里，属于赛事与门店结合的曝光方式。该信息显示儿童运动鞋仍依赖赛事场景和线下门店联动，但单条证据不足以判断品类整体走向，需持续观察后续产品与渠道动作。",
+      "headline": "儿童运动品牌赛事与产品结合",
+      "analysis": "安踏儿童WSE冠军赛提及骇浪5跑鞋，门店位于宝安大仟里，是本周唯一直接涉及儿童运动品牌的事件。其将赛事与具体跑鞋产品、门店场景绑定，为儿童运动品牌提供了赛事引流加产品曝光的参考路径，但单一来源证据有限，需持续观察。",
       "event_ids": [
         "evt_1194cfd80907f3"
       ],
@@ -402,7 +450,7 @@
           "published_date": "2026-09-14"
         }
       ],
-      "editorial_reason": "Nike Caitlin 1签名系列是本周唯一明确产品候选，代表品牌以运动员签名产品强化篮球品类。"
+      "editorial_reason": "Nike Caitlin 1签名系列，是本周唯一可用的具体商品证据，反映女子篮球签名鞋趋势。"
     }
   ],
   "competitor_channel": [
@@ -565,33 +613,74 @@
   ],
   "watchlist": [
     {
-      "title": "昂跑足球品类落地节奏",
+      "title": "安踏收购彪马进展",
+      "event_ids": [
+        "evt_6360b5edb4888c"
+      ],
+      "product_ids": [],
+      "reason": "关注收购是否推进及对运动品牌竞争格局的实际影响。"
+    },
+    {
+      "title": "昂跑足球品类落地",
       "event_ids": [
         "evt_24e793136a0fd4",
         "evt_77a224f0264ee4"
       ],
       "product_ids": [],
-      "reason": "关注昂跑签约姆巴佩后，足球鞋产品与营销动作是否进一步明确。"
+      "reason": "关注昂跑签约姆巴佩后足球产品线及品牌营销的后续动作。"
     },
     {
-      "title": "安踏资本动作后续",
-      "event_ids": [
-        "evt_6360b5edb4888c"
-      ],
-      "product_ids": [],
-      "reason": "关注安踏与彪马交易是否出现更多官方确认或整合细节。"
-    },
-    {
-      "title": "儿童运动鞋赛事与门店联动",
+      "title": "儿童运动赛事与产品联动",
       "event_ids": [
         "evt_1194cfd80907f3"
       ],
       "product_ids": [],
-      "reason": "观察安踏儿童骇浪5跑鞋是否在更多赛事或门店场景中出现。"
+      "reason": "观察安踏儿童WSE冠军赛是否带来更多儿童跑鞋产品与门店联动信息。"
     }
   ],
   "tracking": {
     "new_selected": [
+      {
+        "event_id": "evt_6360b5edb4888c",
+        "title": "123亿元收购非控制权门票 安踏入主彪马的三重资本账本深度解析",
+        "category": "品牌与公司",
+        "event_family": "capital_strategy",
+        "reporting_period": "",
+        "brands": [
+          "安踏",
+          "Puma"
+        ],
+        "source": "eu.36kr.com",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4M29IVDZQeGxhVHVoTVhhSUQySkhaeWlNUEpwSFF4b2N5RHFTU3FGSGFGRF9SUlBrRFYxbml2WkpoellUbE80bnJrNXZWZE5LdUhR?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4M29IVDZQeGxhVHVoTVhhSUQySkhaeWlNUEpwSFF4b2N5RHFTU3FGSGFGRF9SUlBrRFYxbml2WkpoellUbE80bnJrNXZWZE5LdUhR?oc=5",
+        "published_at": "2026-09-17T19:45+08:00",
+        "published_date": "2026-09-17",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 42,
+        "selection_score": 58,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_6360b5edb4888c"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_a8aeabb24a3125",
+            "title": "123亿元收购非控制权门票 安踏入主彪马的三重资本账本深度解析",
+            "source": "eu.36kr.com",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4M29IVDZQeGxhVHVoTVhhSUQySkhaeWlNUEpwSFF4b2N5RHFTU3FGSGFGRF9SUlBrRFYxbml2WkpoellUbE80bnJrNXZWZE5LdUhR?oc=5",
+            "published_at": "2026-09-17T19:45+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "安踏拟123亿元收购彪马非控制权，涉及头部运动集团资本布局，影响行业竞争格局。"
+      },
       {
         "event_id": "evt_24e793136a0fd4",
         "title": "法国球星姆巴佩宣布签约On昂跑",
@@ -651,88 +740,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "昂跑签约姆巴佩并宣布进军足球，是本周品牌资源竞争最受关注的动作。"
-      },
-      {
-        "event_id": "evt_6360b5edb4888c",
-        "title": "123亿元收购非控制权门票 安踏入主彪马的三重资本账本深度解析",
-        "category": "品牌与公司",
-        "event_family": "capital_strategy",
-        "reporting_period": "",
-        "brands": [
-          "安踏",
-          "Puma"
-        ],
-        "source": "eu.36kr.com",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4M29IVDZQeGxhVHVoTVhhSUQySkhaeWlNUEpwSFF4b2N5RHFTU3FGSGFGRF9SUlBrRFYxbml2WkpoellUbE80bnJrNXZWZE5LdUhR?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4M29IVDZQeGxhVHVoTVhhSUQySkhaeWlNUEpwSFF4b2N5RHFTU3FGSGFGRF9SUlBrRFYxbml2WkpoellUbE80bnJrNXZWZE5LdUhR?oc=5",
-        "published_at": "2026-09-17T19:45+08:00",
-        "published_date": "2026-09-17",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 42,
-        "selection_score": 58,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_6360b5edb4888c"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_a8aeabb24a3125",
-            "title": "123亿元收购非控制权门票 安踏入主彪马的三重资本账本深度解析",
-            "source": "eu.36kr.com",
-            "source_tier": "tier_3",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4M29IVDZQeGxhVHVoTVhhSUQySkhaeWlNUEpwSFF4b2N5RHFTU3FGSGFGRF9SUlBrRFYxbml2WkpoellUbE80bnJrNXZWZE5LdUhR?oc=5",
-            "published_at": "2026-09-17T19:45+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "安踏被报道以123亿元收购彪马非控制权，涉及头部运动品牌资本格局变化。"
-      },
-      {
-        "event_id": "evt_3b192433dde301",
-        "title": "斯凯奇发布全新品牌形象「舒适奇了 Comfort For All」",
-        "category": "产品与科技",
-        "event_family": "product_launch",
-        "reporting_period": "",
-        "brands": [
-          "Skechers"
-        ],
-        "source": "ELLE China",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
-        "published_at": "2026-09-19T16:35+08:00",
-        "published_date": "2026-09-19",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 48,
-        "selection_score": 60,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_3b192433dde301"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_5cb0c348f1dbdd",
-            "title": "斯凯奇发布全新品牌形象「舒适奇了 Comfort For All」",
-            "source": "ELLE China",
-            "source_tier": "tier_3",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
-            "published_at": "2026-09-19T16:35+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "斯凯奇发布全新品牌形象，反映运动休闲品牌在定位层面的主动调整。"
+        "editorial_reason": "属于行业动态的重要本周新事件且有多来源交叉报道。"
       },
       {
         "event_id": "evt_cb13efe7198e69",
@@ -772,7 +780,47 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "Nike正式登陆武汉杉杉奥莱，体现国际品牌对奥莱渠道的持续投入。"
+        "editorial_reason": "Nike正式登陆武汉杉杉奥莱，头部品牌持续加码奥莱渠道，反映渠道下沉与库存策略。"
+      },
+      {
+        "event_id": "evt_f3261ac156ada3",
+        "title": "线上1分钟狂卖1000万，线下加速7城8门店，ALO等不及了",
+        "category": "渠道与零售",
+        "event_family": "store_channel",
+        "reporting_period": "",
+        "brands": [
+          "Alo"
+        ],
+        "source": "36氪",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
+        "published_at": "2026-09-18T05:03+08:00",
+        "published_date": "2026-09-18",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 54,
+        "selection_score": 69,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_f3261ac156ada3"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_db9d5179254da7",
+            "title": "线上1分钟狂卖1000万，线下加速7城8门店，ALO等不及了",
+            "source": "36氪",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
+            "published_at": "2026-09-18T05:03+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "Alo线上快速起量并加速7城8门店布局，中高端女性运动服饰竞争加剧。"
       },
       {
         "event_id": "evt_1194cfd80907f3",
@@ -813,7 +861,47 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏儿童WSE冠军赛提及骇浪5跑鞋，是本周少有的儿童运动鞋直接证据。"
+        "editorial_reason": "安踏儿童WSE冠军赛提及骇浪5跑鞋，是本周少有的儿童运动品牌赛事与产品结合案例。"
+      },
+      {
+        "event_id": "evt_3b192433dde301",
+        "title": "斯凯奇发布全新品牌形象「舒适奇了 Comfort For All」",
+        "category": "产品与科技",
+        "event_family": "product_launch",
+        "reporting_period": "",
+        "brands": [
+          "Skechers"
+        ],
+        "source": "ELLE China",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
+        "published_at": "2026-09-19T16:35+08:00",
+        "published_date": "2026-09-19",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 48,
+        "selection_score": 60,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_3b192433dde301"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_5cb0c348f1dbdd",
+            "title": "斯凯奇发布全新品牌形象「舒适奇了 Comfort For All」",
+            "source": "ELLE China",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
+            "published_at": "2026-09-19T16:35+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "斯凯奇发布全新品牌形象，舒适定位升级，反映运动休闲品牌差异化竞争。"
       }
     ],
     "follow_up_selected": [
@@ -853,7 +941,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "1—8月社零总额增长1.1%，为消费与渠道判断提供宏观参照。"
+        "editorial_reason": "1—8月社零总额增长1.1%，为消费大环境提供官方宏观参照，影响行业预期。"
       }
     ],
     "verification_queue": [],
@@ -1002,6 +1090,14 @@
   "source_registry": [
     {
       "type": "event",
+      "id": "evt_6360b5edb4888c",
+      "title": "123亿元收购非控制权门票 安踏入主彪马的三重资本账本深度解析",
+      "source": "eu.36kr.com",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4M29IVDZQeGxhVHVoTVhhSUQySkhaeWlNUEpwSFF4b2N5RHFTU3FGSGFGRF9SUlBrRFYxbml2WkpoellUbE80bnJrNXZWZE5LdUhR?oc=5",
+      "published_date": "2026-09-17"
+    },
+    {
+      "type": "event",
       "id": "evt_24e793136a0fd4",
       "title": "法国球星姆巴佩宣布签约On昂跑",
       "source": "界面新闻",
@@ -1026,27 +1122,19 @@
     },
     {
       "type": "event",
-      "id": "evt_6360b5edb4888c",
-      "title": "123亿元收购非控制权门票 安踏入主彪马的三重资本账本深度解析",
-      "source": "eu.36kr.com",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4M29IVDZQeGxhVHVoTVhhSUQySkhaeWlNUEpwSFF4b2N5RHFTU3FGSGFGRF9SUlBrRFYxbml2WkpoellUbE80bnJrNXZWZE5LdUhR?oc=5",
-      "published_date": "2026-09-17"
-    },
-    {
-      "type": "event",
-      "id": "evt_3b192433dde301",
-      "title": "斯凯奇发布全新品牌形象「舒适奇了 Comfort For All」",
-      "source": "ELLE China",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
-      "published_date": "2026-09-19"
-    },
-    {
-      "type": "event",
       "id": "evt_cb13efe7198e69",
       "title": "一周年庆预热来啦！ NIKE正式登陆武汉杉杉奥莱",
       "source": "sw.wuhan.gov.cn",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lZzV3UWpEY1FSVGVQQXlWLWZSay1rN01tTDJWejY0MkVRYXJ6dG0xc3EzVk1RLThFSE1GZWEwaXhMbEJkSjdUckYyRlVINzNmNl9vRm5oR2pfU0o4dnRFZURDc3NsNHlVWkV5MUF6R1pKdw?oc=5",
       "published_date": "2026-09-20"
+    },
+    {
+      "type": "event",
+      "id": "evt_f3261ac156ada3",
+      "title": "线上1分钟狂卖1000万，线下加速7城8门店，ALO等不及了",
+      "source": "36氪",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EbXJoSGl4SElhODZxRjBuRmxqSXlnd0M2dGZWLVh1eXFxTlVXVlpCcFJUNkJRMUtFNy1CLVpvT1lIY3diWWlTVEw4MXRGdw?oc=5",
+      "published_date": "2026-09-18"
     },
     {
       "type": "event",
@@ -1063,6 +1151,14 @@
       "source": "国家统计局",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAzYjFCNFBSNWQxcFFpdkVfSEZVei1VWkhVWnRwcjd0bl84RjVpSkV6dllEdnF2NUx4bXUxSGJvdkJIMkhicTlUaGhVSUlfRC1pZEJibTZOaXlGdEpicGk3SWJWMU90WXgwMFNNcVFmUQ?oc=5",
       "published_date": "2026-09-15"
+    },
+    {
+      "type": "event",
+      "id": "evt_3b192433dde301",
+      "title": "斯凯奇发布全新品牌形象「舒适奇了 Comfort For All」",
+      "source": "ELLE China",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGNy15ZG0tNDA1c251Tmc3aFJHcmxwT21qcEFCQ2xDZURRWE8wUWpxbFNRSFJwSDZZVUhkRkxaRzNvY3hPWUlCeS1fTW1MME50bldnX1JsakZlVnJMdVE1WldfazlTZUNpR3Npa0czSUpsTTVVNEdQcmNXNF95c28?oc=5",
+      "published_date": "2026-09-19"
     },
     {
       "type": "event",
@@ -1113,13 +1209,13 @@
     "raw_event_count": 25,
     "coalesced_event_count": 25,
     "eligible_event_count": 25,
-    "selected_event_count": 6,
+    "selected_event_count": 7,
     "raw_product_count": 21,
     "product_lead_count": 21,
     "eligible_product_count": 1,
     "selected_product_count": 1,
     "conflict_count": 0,
-    "source_link_count": 13,
+    "source_link_count": 14,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
@@ -1136,7 +1232,7 @@
       "电商与平台": 1
     },
     "selected_status": {
-      "new": 5,
+      "new": 6,
       "follow_up": 1
     },
     "quality_notes": [
