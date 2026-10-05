@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-10-04T11:07+08:00",
+  "generated_at": "2026-10-05T10:40+08:00",
   "report_window": {
     "start_date": "2026-09-21",
     "end_date": "2026-09-27",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "国际品牌密集发布新品与战略目标，本土品牌以渠道和赛事运营应对竞争，行业分化加剧。",
-    "week_in_one_paragraph": "本周已核验的主要变化包括：昨晚今晨：Nike发布全新ReactX 2.0中底科技 Adidas与高通联合推出智能ninegamesports登录新版；昨夜今晨：a.yx体育登录入口下载安装Nike Air Zoom Tempo NEXT%发布 Run Club App升级AI教练；昂跑抛出扩张战略，2029年营收至少56亿瑞郎。证据不足或存在冲突的内容未进入...",
+    "weekly_thesis": "国际品牌密集发布产品与战略，本土品牌以渠道和赛事应对竞争，行业分化加剧。",
+    "week_in_one_paragraph": "本土方面，李宁龙店全球旗舰店开业推进高端化，安踏樊振东系列秋日新品全渠道售卖，361°借柏林马拉松展示跑鞋进化。行业层面，中银国际研报指出第三季度运动服饰仍面临挑战。",
     "next_week_focus": [
-      "Nike与Adidas新品科技在跑鞋市场的后续评测与反馈",
-      "昂跑足球与高尔夫品类是否公布具体产品计划",
-      "李宁龙店高端门店的客流与销售表现",
-      "京东天地首店开业后的运营模式与扩张信号",
-      "本土品牌秋季新品促销力度与渠道库存变化"
+      "关注Nike财报发布后对运动服饰板块的情绪影响。",
+      "跟踪On昂跑足球与高尔夫品类的后续产品落地。",
+      "观察李宁龙店高端门店的消费者反馈与渠道复制可能。",
+      "留意国庆假期前赛事经济与零售体验店的客流表现。",
+      "关注本土品牌线上折扣力度是否延续至国庆促销。"
     ]
   },
   "key_developments": [
@@ -57,87 +57,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "Nike与Adidas同日发布中底科技与智能装备，反映头部品牌在运动科技上的持续投入。"
-    },
-    {
-      "event_id": "evt_86e262d49592f2",
-      "title": "昨夜今晨：a.yx体育登录入口下载安装Nike Air Zoom Tempo NEXT%发布 Run Club App升级AI教练",
-      "category": "产品与科技",
-      "event_family": "industry_event",
-      "reporting_period": "",
-      "brands": [
-        "Nike"
-      ],
-      "source": "体坛加",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE94Uk1naEZUUjBBMjJrU1c1ZHc2OWpNaGU0VmZxQzVGV2dPZTF2N0UwMmRrb2J3czBCdVZleUVRa2F6VUpScFZFdDFjUQ?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE94Uk1naEZUUjBBMjJrU1c1ZHc2OWpNaGU0VmZxQzVGV2dPZTF2N0UwMmRrb2J3czBCdVZleUVRa2F6VUpScFZFdDFjUQ?oc=5",
-      "published_at": "2026-09-27T17:28+08:00",
-      "published_date": "2026-09-27",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 47,
-      "selection_score": 59,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_86e262d49592f2"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_cfccc1c17694ef",
-          "title": "昨夜今晨：a.yx体育登录入口下载安装Nike Air Zoom Tempo NEXT%发布 Run Club App升级AI教练",
-          "source": "体坛加",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE94Uk1naEZUUjBBMjJrU1c1ZHc2OWpNaGU0VmZxQzVGV2dPZTF2N0UwMmRrb2J3czBCdVZleUVRa2F6VUpScFZFdDFjUQ?oc=5",
-          "published_at": "2026-09-27T17:28+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "Nike跑鞋新品与Run Club AI教练升级，显示运动品牌正将硬件与数字服务结合。"
-    },
-    {
-      "event_id": "evt_184828845385c3",
-      "title": "昂跑抛出扩张战略，2029年营收至少56亿瑞郎",
-      "category": "品牌与公司",
-      "event_family": "financial_results",
-      "reporting_period": "",
-      "brands": [
-        "On昂跑"
-      ],
-      "source": "21财经",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdVNSZ3VpQVhWTzByS3ZCLU5GRHhNU1UweDJxei1fY2dzTWpsOHkzTHpoTzVvVmxYdjZseWF6ams2aUdZTDFpME1LbF91VGVEdTRWUVJZWU55VmprYWJaQ1BsdUdVd0dMdXp2ZFhoVUNacUhVR2tCRjItRnlnVTAwclhBUXdSNFhsbWJzLS16MmdfdkZz?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdVNSZ3VpQVhWTzByS3ZCLU5GRHhNU1UweDJxei1fY2dzTWpsOHkzTHpoTzVvVmxYdjZseWF6ams2aUdZTDFpME1LbF91VGVEdTRWUVJZWU55VmprYWJaQ1BsdUdVd0dMdXp2ZFhoVUNacUhVR2tCRjItRnlnVTAwclhBUXdSNFhsbWJzLS16MmdfdkZz?oc=5",
-      "published_at": "2026-09-22T15:00+08:00",
-      "published_date": "2026-09-22",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 43,
-      "selection_score": 59,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_184828845385c3"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_b62c2f9e8fa639",
-          "title": "昂跑抛出扩张战略，2029年营收至少56亿瑞郎",
-          "source": "21财经",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdVNSZ3VpQVhWTzByS3ZCLU5GRHhNU1UweDJxei1fY2dzTWpsOHkzTHpoTzVvVmxYdjZseWF6ams2aUdZTDFpME1LbF91VGVEdTRWUVJZWU55VmprYWJaQ1BsdUdVd0dMdXp2ZFhoVUNacUhVR2tCRjItRnlnVTAwclhBUXdSNFhsbWJzLS16MmdfdkZz?oc=5",
-          "published_at": "2026-09-22T15:00+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "昂跑抛出2029年营收目标，为新兴运动品牌扩张提供可参照的财务预期。"
+      "editorial_reason": "Nike与Adidas同日发布中底科技与智能产品，反映头部品牌以技术迭代争夺市场。"
     },
     {
       "event_id": "evt_81440a03d5060f",
@@ -177,7 +97,87 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "昂跑进军足球与高尔夫，标志其从跑鞋向多品类运动品牌延伸。"
+      "editorial_reason": "On昂跑宣布进军足球与高尔夫并发布三年战略，跑鞋品牌向多品类扩张。"
+    },
+    {
+      "event_id": "evt_3ab1e1fa1d223a",
+      "title": "李宁龙店全球旗舰店开业，高端战略再落关键拼图",
+      "category": "品牌与公司",
+      "event_family": "store_channel",
+      "reporting_period": "",
+      "brands": [
+        "李宁"
+      ],
+      "source": "中华网",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8tbHlHWHFERlNzc1ZHb0RMbXhwcHhQVXhCQUFxTHZjcHhJRk1DalJfbkQtNS11NlU2NmhBR2JfbzVwRS16Q3g4NEdLTTBYSVBacjRRemZUelpuOTBGNm5TX25mWURZZ3U4eUlHZmZUcTcyZw?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8tbHlHWHFERlNzc1ZHb0RMbXhwcHhQVXhCQUFxTHZjcHhJRk1DalJfbkQtNS11NlU2NmhBR2JfbzVwRS16Q3g4NEdLTTBYSVBacjRRemZUelpuOTBGNm5TX25mWURZZ3U4eUlHZmZUcTcyZw?oc=5",
+      "published_at": "2026-09-23T11:37+08:00",
+      "published_date": "2026-09-23",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 46,
+      "selection_score": 58,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_3ab1e1fa1d223a"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_a757d7d09fbd23",
+          "title": "李宁龙店全球旗舰店开业，高端战略再落关键拼图",
+          "source": "中华网",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8tbHlHWHFERlNzc1ZHb0RMbXhwcHhQVXhCQUFxTHZjcHhJRk1DalJfbkQtNS11NlU2NmhBR2JfbzVwRS16Q3g4NEdLTTBYSVBacjRRemZUelpuOTBGNm5TX25mWURZZ3U4eUlHZmZUcTcyZw?oc=5",
+          "published_at": "2026-09-23T11:37+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "李宁龙店全球旗舰店开业，本土品牌高端化战略落子关键渠道。"
+    },
+    {
+      "event_id": "evt_0bfba089620ced",
+      "title": "每一件都好看 安踏樊振东系列 秋日新品 9月25日10:00线上线下渠道全面售卖",
+      "category": "产品与科技",
+      "event_family": "product_launch",
+      "reporting_period": "",
+      "brands": [
+        "安踏"
+      ],
+      "source": "手机新浪网",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB0XzU5TmFIdGQxalZNM1NDRlc4cHAzRGk4YzFQSk44cEVzSU1iM0U5Qkg1d0RHcmhhaGNNSjRlb183cnVNeFV6akYzdkd6Ym5tOTBMT01CQUt1NnhkcDhDRjdiUHFUbkJfajlZenBSTkFERGM?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB0XzU5TmFIdGQxalZNM1NDRlc4cHAzRGk4YzFQSk44cEVzSU1iM0U5Qkg1d0RHcmhhaGNNSjRlb183cnVNeFV6akYzdkd6Ym5tOTBMT01CQUt1NnhkcDhDRjdiUHFUbkJfajlZenBSTkFERGM?oc=5",
+      "published_at": "2026-09-25T16:05+08:00",
+      "published_date": "2026-09-25",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 45,
+      "selection_score": 57,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_0bfba089620ced"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_73137556805f61",
+          "title": "每一件都好看 安踏樊振东系列 秋日新品 9月25日10:00线上线下渠道全面售卖",
+          "source": "手机新浪网",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB0XzU5TmFIdGQxalZNM1NDRlc4cHAzRGk4YzFQSk44cEVzSU1iM0U5Qkg1d0RHcmhhaGNNSjRlb183cnVNeFV6akYzdkd6Ym5tOTBMT01CQUt1NnhkcDhDRjdiUHFUbkJfajlZenBSTkFERGM?oc=5",
+          "published_at": "2026-09-25T16:05+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "安踏樊振东系列秋日新品全渠道售卖，代言人产品线持续拉动大众市场。"
     },
     {
       "event_id": "evt_72b86b5cc1cc10",
@@ -215,7 +215,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "京东天地全国首店落地宿迁，反映电商平台向线下品质零售场景延伸。"
+      "editorial_reason": "京东天地全国首店宿迁开业，电商平台向品质零售与文化体验融合探索。"
     },
     {
       "event_id": "evt_14b495f372d8e8",
@@ -255,17 +255,57 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "361°长裤官旗大促，作为本土品牌价格策略与渠道运营的观察样本。"
+      "editorial_reason": "361°官旗长裤大促低至门店1.8折，反映本土品牌线上折扣力度与库存策略。"
+    },
+    {
+      "event_id": "evt_eec533a7446a9b",
+      "title": "北面官宣李昀锐升任The North Face 代言人",
+      "category": "行业动态",
+      "event_family": "endorsement_partnership",
+      "reporting_period": "",
+      "brands": [
+        "The North Face"
+      ],
+      "source": "美通社",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9tYkhxaGxOS2xqQ0trajhVUkZwVmFmNEdRRW53QmFnazZWaXdRVFR3NnUtdkprYUw0X09wd0d0NWdFc3djcFNfb3BBMi1lM2drRkhLanM1MA?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9tYkhxaGxOS2xqQ0trajhVUkZwVmFmNEdRRW53QmFnazZWaXdRVFR3NnUtdkprYUw0X09wd0d0NWdFc3djcFNfb3BBMi1lM2drRkhLanM1MA?oc=5",
+      "published_at": "2026-09-24T08:24+08:00",
+      "published_date": "2026-09-24",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 44,
+      "selection_score": 51,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_eec533a7446a9b"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_470cfe233ee93b",
+          "title": "北面官宣李昀锐升任The North Face 代言人",
+          "source": "美通社",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9tYkhxaGxOS2xqQ0trajhVUkZwVmFmNEdRRW53QmFnazZWaXdRVFR3NnUtdkprYUw0X09wd0d0NWdFc3djcFNfb3BBMi1lM2drRkhLanM1MA?oc=5",
+          "published_at": "2026-09-24T08:24+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "北面官宣李昀锐升任代言人，户外品牌借明星升级强化年轻消费群体触达。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "国际品牌科技与品类扩张并行",
-      "analysis": "Nike本周发布ReactX 2.0中底科技与Air Zoom Tempo NEXT%跑鞋，并升级Run Club App的AI教练功能，显示其继续以材料科技和数字服务巩固跑步市场。Adidas与高通联合推出智能装备，同样指向运动科技融合。On昂跑则宣布进军足球与高尔夫，从跑鞋品牌向多品类运动品牌延伸。三者共同反映国际品牌在核心科技迭代之外，正通过品类扩张和数字化服务寻找新增长点。",
+      "headline": "国际品牌技术竞赛与品类扩张并行",
+      "analysis": "Nike发布ReactX 2.0中底科技，Adidas联合高通推出智能产品，显示头部品牌持续以材料与智能化构建产品壁垒。On昂跑宣布进军足球与高尔夫，Salomon提出2028年30亿美元目标，跑鞋起家的品牌正从单一品类向多场景扩张。",
       "event_ids": [
         "evt_7ade3d09ec2e90",
-        "evt_86e262d49592f2",
-        "evt_81440a03d5060f"
+        "evt_81440a03d5060f",
+        "evt_dcfa59cab1bfc8"
       ],
       "evidence": [
         {
@@ -276,24 +316,24 @@
           "published_date": "2026-09-27"
         },
         {
-          "event_id": "evt_86e262d49592f2",
-          "title": "昨夜今晨：a.yx体育登录入口下载安装Nike Air Zoom Tempo NEXT%发布 Run Club App升级AI教练",
-          "source": "体坛加",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE94Uk1naEZUUjBBMjJrU1c1ZHc2OWpNaGU0VmZxQzVGV2dPZTF2N0UwMmRrb2J3czBCdVZleUVRa2F6VUpScFZFdDFjUQ?oc=5",
-          "published_date": "2026-09-27"
-        },
-        {
           "event_id": "evt_81440a03d5060f",
           "title": "On昂跑宣布进军足球与高尔夫，发布未来三年战略方向与财务目标",
           "source": "luxe.co",
           "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE80Q0c4bnc2dGRqUndOeGFtUmRwbXJCemhObkhQeXRtNjlrSVdvYzloOFZqbW5wRUZzS1pPd2NBa18?oc=5",
           "published_date": "2026-09-23"
+        },
+        {
+          "event_id": "evt_dcfa59cab1bfc8",
+          "title": "亚玛芬集团和萨洛蒙CEO详解：如何让萨洛蒙2028年销售额达到30亿美元？",
+          "source": "luxe.co",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9EQ0JRTk1OU1JXUTQ4V0xBeGRvUy1MS3V2WU5MTTlkQk5TTkRyUWtILThEdm9odHV6WEJYQW5YZGw?oc=5",
+          "published_date": "2026-09-27"
         }
       ]
     },
     {
-      "headline": "本土品牌渠道与营销节奏",
-      "analysis": "李宁龙店全球旗舰店开业，以高端门店强化品牌形象；安踏樊振东系列秋日新品在9月25日全渠道售卖，借助代言人效应推动季节上新；361°长裤官旗大促以低折扣吸引线上流量。三者分别代表本土品牌在高端渠道、代言人产品线和价格促销上的不同策略，反映出本土品牌在竞争加剧环境下，正通过渠道分层和营销节奏调整来应对市场压力。",
+      "headline": "本土品牌渠道升级与赛事营销双线推进",
+      "analysis": "李宁龙店全球旗舰店开业，以高端门店强化品牌形象；安踏樊振东系列秋日新品全渠道售卖，借代言人IP拉动大众消费；361°官旗长裤大促低至门店1.8折，则体现线上折扣清货的现实压力。三条路径分别对应高端化、IP化和性价比，说明本土品牌在渠道与价格策略上分化明显，儿童线需关注母品牌渠道动作对童装童鞋的连带影响。",
       "event_ids": [
         "evt_3ab1e1fa1d223a",
         "evt_0bfba089620ced",
@@ -324,33 +364,33 @@
       ]
     },
     {
-      "headline": "运动品牌长期目标与零售场景延伸",
-      "analysis": "昂跑提出2029年营收至少56亿瑞郎的目标，Salomon CEO详解2028年销售额达30亿美元的路径，两者均以明确财务目标展示扩张野心，说明新兴运动品牌正从细分市场向规模化迈进。与此同时，京东天地全国首店在宿迁开业，定位品质零售、文化体验与社交休闲一体，显示电商平台正尝试将线下门店作为多场景融合的载体，零售渠道的边界进一步模糊。",
+      "headline": "零售场景与赛事经济拓展消费触点",
+      "analysis": "京东天地全国首店落地宿迁，将品质零售、文化体验与社交休闲融为一体，反映电商平台向线下体验延伸。资阳安岳田径赛事吸引1917名健儿并撬动假日消费，湖北梁子湖铁人三项新闻发布会则显示地方赛事IP持续运营。赛事经济与体验式零售正在成为运动消费的重要触点，儿童运动品牌可关注赛事场景中的家庭消费机会。",
       "event_ids": [
-        "evt_184828845385c3",
-        "evt_dcfa59cab1bfc8",
-        "evt_72b86b5cc1cc10"
+        "evt_72b86b5cc1cc10",
+        "evt_76b1505b12a09b",
+        "evt_e4e55aaddec20d"
       ],
       "evidence": [
-        {
-          "event_id": "evt_184828845385c3",
-          "title": "昂跑抛出扩张战略，2029年营收至少56亿瑞郎",
-          "source": "21财经",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdVNSZ3VpQVhWTzByS3ZCLU5GRHhNU1UweDJxei1fY2dzTWpsOHkzTHpoTzVvVmxYdjZseWF6ams2aUdZTDFpME1LbF91VGVEdTRWUVJZWU55VmprYWJaQ1BsdUdVd0dMdXp2ZFhoVUNacUhVR2tCRjItRnlnVTAwclhBUXdSNFhsbWJzLS16MmdfdkZz?oc=5",
-          "published_date": "2026-09-22"
-        },
-        {
-          "event_id": "evt_dcfa59cab1bfc8",
-          "title": "亚玛芬集团和萨洛蒙CEO详解：如何让萨洛蒙2028年销售额达到30亿美元？",
-          "source": "luxe.co",
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9EQ0JRTk1OU1JXUTQ4V0xBeGRvUy1MS3V2WU5MTTlkQk5TTkRyUWtILThEdm9odHV6WEJYQW5YZGw?oc=5",
-          "published_date": "2026-09-27"
-        },
         {
           "event_id": "evt_72b86b5cc1cc10",
           "title": "品质零售、文化体验、社交休闲一体 京东天地全国首店宿迁开业",
           "source": "新华网",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNYUZUbFhUR1dDOTNvYXdtWVFFTnJ4ZkwzZjMyNTRxOUlZSTM3azc4amRPbXM5Zmc2NERSY3M1eU1nal9NM0JXM0FfQVpXYXdhaDdoN1RZVFNGUE9INm9tcGs5aFFCS0RWVUwweTZ5UUdQWDFBSTBtcHphZkR0c0laSw?oc=5",
+          "published_date": "2026-09-24"
+        },
+        {
+          "event_id": "evt_76b1505b12a09b",
+          "title": "1917名田径健儿齐聚资阳安岳 赛事经济撬动假日消费市场",
+          "source": "人民网",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1IQXNicHhNa3oxWENpTWdpSGlWemttN1dOWXBGc0p6UzJhM2FjM2N0NDhZQ3VoLUE1Z0dKMy1PdjhmSUVFOEZFUm5lY3RTNjljWEdsaE56aENVd1EzOHZQSnJ5THUwRDdqZWc?oc=5",
+          "published_date": "2026-09-26"
+        },
+        {
+          "event_id": "evt_e4e55aaddec20d",
+          "title": "湖北举行2026年鄂州梁子湖全国铁人三项系列赛事活动新闻发布会",
+          "source": "hubei.gov.cn",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE41M1pid1hnb2liRDZhRVc0bkMyQllkS2VnS01zTE5EMXE4b3Iwd3d6eVNuQTB1UGxNZlJSaXFJeUhXNVl5ZGs1YkNsUm1za3NhbEpXNmd0bkZ5X0k0TnA3eDhvam56RHVFeWNIYmtRUExXakdH?oc=5",
           "published_date": "2026-09-24"
         }
       ]
@@ -393,6 +433,45 @@
           "is_official": false,
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUWJQZDBTTmdTb0JOejNrZnZSMWF3MWFMaUt6ZWlxRDhMWno3TzZOeHUzV09Rdnhtc19IdGxoNHlkWGo3NWZuRnlIMGR1bG9tbHNIaVNjLTY1ejdFQjkxem5rczd4d0Z5XzIwWW1MalhIWF9rYkc3blJGckNIb09Ydl9jYWJoOE5laWw2aWUyNC1MUmRtTzVqY0pmT0VuTDJDN3hfR2ZRQk1xMEVW?oc=5",
           "published_at": "2026-09-27T10:52+08:00",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "event_id": "evt_184828845385c3",
+      "title": "昂跑抛出扩张战略，2029年营收至少56亿瑞郎",
+      "category": "品牌与公司",
+      "event_family": "financial_results",
+      "reporting_period": "",
+      "brands": [
+        "On昂跑"
+      ],
+      "source": "21财经",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdVNSZ3VpQVhWTzByS3ZCLU5GRHhNU1UweDJxei1fY2dzTWpsOHkzTHpoTzVvVmxYdjZseWF6ams2aUdZTDFpME1LbF91VGVEdTRWUVJZWU55VmprYWJaQ1BsdUdVd0dMdXp2ZFhoVUNacUhVR2tCRjItRnlnVTAwclhBUXdSNFhsbWJzLS16MmdfdkZz?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdVNSZ3VpQVhWTzByS3ZCLU5GRHhNU1UweDJxei1fY2dzTWpsOHkzTHpoTzVvVmxYdjZseWF6ams2aUdZTDFpME1LbF91VGVEdTRWUVJZWU55VmprYWJaQ1BsdUdVd0dMdXp2ZFhoVUNacUhVR2tCRjItRnlnVTAwclhBUXdSNFhsbWJzLS16MmdfdkZz?oc=5",
+      "published_at": "2026-09-22T15:00+08:00",
+      "published_date": "2026-09-22",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 43,
+      "selection_score": 59,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_184828845385c3"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_b62c2f9e8fa639",
+          "title": "昂跑抛出扩张战略，2029年营收至少56亿瑞郎",
+          "source": "21财经",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdVNSZ3VpQVhWTzByS3ZCLU5GRHhNU1UweDJxei1fY2dzTWpsOHkzTHpoTzVvVmxYdjZseWF6ams2aUdZTDFpME1LbF91VGVEdTRWUVJZWU55VmprYWJaQ1BsdUdVd0dMdXp2ZFhoVUNacUhVR2tCRjItRnlnVTAwclhBUXdSNFhsbWJzLS16MmdfdkZz?oc=5",
+          "published_at": "2026-09-22T15:00+08:00",
           "summary": ""
         }
       ]
@@ -476,31 +555,30 @@
   ],
   "watchlist": [
     {
-      "title": "国际品牌科技新品市场反馈",
+      "title": "Nike财报与运动服饰行业Q3展望",
       "event_ids": [
-        "evt_7ade3d09ec2e90",
-        "evt_86e262d49592f2"
+        "evt_05245de9c906b6"
       ],
       "product_ids": [],
-      "reason": "观察Nike ReactX 2.0与Adidas智能装备发布后，行业对中底科技和智能穿戴的跟进动向。"
+      "reason": "关注后续官方信息、渠道落地或产品资料补充。"
     },
     {
-      "title": "本土品牌高端渠道与促销效果",
+      "title": "On昂跑与Salomon多品类扩张落地",
+      "event_ids": [
+        "evt_81440a03d5060f",
+        "evt_dcfa59cab1bfc8"
+      ],
+      "product_ids": [],
+      "reason": "观察跑鞋品牌进军足球、高尔夫后的产品与渠道动作，评估对儿童运动细分市场的潜在影响。"
+    },
+    {
+      "title": "本土品牌高端门店与折扣策略并行",
       "event_ids": [
         "evt_3ab1e1fa1d223a",
         "evt_14b495f372d8e8"
       ],
       "product_ids": [],
-      "reason": "关注李宁龙店高端门店与361°大促后续的渠道表现和价格策略调整。"
-    },
-    {
-      "title": "运动品牌品类扩张进展",
-      "event_ids": [
-        "evt_81440a03d5060f",
-        "evt_184828845385c3"
-      ],
-      "product_ids": [],
-      "reason": "跟踪昂跑进军足球与高尔夫后的产品落地，以及其营收目标下的市场动作。"
+      "reason": "跟踪李宁高端门店客流与361°线上折扣后续，判断本土品牌价格带与渠道分化趋势。"
     }
   ],
   "tracking": {
@@ -544,87 +622,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "Nike与Adidas同日发布中底科技与智能装备，反映头部品牌在运动科技上的持续投入。"
-      },
-      {
-        "event_id": "evt_86e262d49592f2",
-        "title": "昨夜今晨：a.yx体育登录入口下载安装Nike Air Zoom Tempo NEXT%发布 Run Club App升级AI教练",
-        "category": "产品与科技",
-        "event_family": "industry_event",
-        "reporting_period": "",
-        "brands": [
-          "Nike"
-        ],
-        "source": "体坛加",
-        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE94Uk1naEZUUjBBMjJrU1c1ZHc2OWpNaGU0VmZxQzVGV2dPZTF2N0UwMmRrb2J3czBCdVZleUVRa2F6VUpScFZFdDFjUQ?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE94Uk1naEZUUjBBMjJrU1c1ZHc2OWpNaGU0VmZxQzVGV2dPZTF2N0UwMmRrb2J3czBCdVZleUVRa2F6VUpScFZFdDFjUQ?oc=5",
-        "published_at": "2026-09-27T17:28+08:00",
-        "published_date": "2026-09-27",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 47,
-        "selection_score": 59,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_86e262d49592f2"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_cfccc1c17694ef",
-            "title": "昨夜今晨：a.yx体育登录入口下载安装Nike Air Zoom Tempo NEXT%发布 Run Club App升级AI教练",
-            "source": "体坛加",
-            "source_tier": "tier_3",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE94Uk1naEZUUjBBMjJrU1c1ZHc2OWpNaGU0VmZxQzVGV2dPZTF2N0UwMmRrb2J3czBCdVZleUVRa2F6VUpScFZFdDFjUQ?oc=5",
-            "published_at": "2026-09-27T17:28+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "Nike跑鞋新品与Run Club AI教练升级，显示运动品牌正将硬件与数字服务结合。"
-      },
-      {
-        "event_id": "evt_184828845385c3",
-        "title": "昂跑抛出扩张战略，2029年营收至少56亿瑞郎",
-        "category": "品牌与公司",
-        "event_family": "financial_results",
-        "reporting_period": "",
-        "brands": [
-          "On昂跑"
-        ],
-        "source": "21财经",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdVNSZ3VpQVhWTzByS3ZCLU5GRHhNU1UweDJxei1fY2dzTWpsOHkzTHpoTzVvVmxYdjZseWF6ams2aUdZTDFpME1LbF91VGVEdTRWUVJZWU55VmprYWJaQ1BsdUdVd0dMdXp2ZFhoVUNacUhVR2tCRjItRnlnVTAwclhBUXdSNFhsbWJzLS16MmdfdkZz?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdVNSZ3VpQVhWTzByS3ZCLU5GRHhNU1UweDJxei1fY2dzTWpsOHkzTHpoTzVvVmxYdjZseWF6ams2aUdZTDFpME1LbF91VGVEdTRWUVJZWU55VmprYWJaQ1BsdUdVd0dMdXp2ZFhoVUNacUhVR2tCRjItRnlnVTAwclhBUXdSNFhsbWJzLS16MmdfdkZz?oc=5",
-        "published_at": "2026-09-22T15:00+08:00",
-        "published_date": "2026-09-22",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 43,
-        "selection_score": 59,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_184828845385c3"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_b62c2f9e8fa639",
-            "title": "昂跑抛出扩张战略，2029年营收至少56亿瑞郎",
-            "source": "21财经",
-            "source_tier": "tier_3",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdVNSZ3VpQVhWTzByS3ZCLU5GRHhNU1UweDJxei1fY2dzTWpsOHkzTHpoTzVvVmxYdjZseWF6ams2aUdZTDFpME1LbF91VGVEdTRWUVJZWU55VmprYWJaQ1BsdUdVd0dMdXp2ZFhoVUNacUhVR2tCRjItRnlnVTAwclhBUXdSNFhsbWJzLS16MmdfdkZz?oc=5",
-            "published_at": "2026-09-22T15:00+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "昂跑抛出2029年营收目标，为新兴运动品牌扩张提供可参照的财务预期。"
+        "editorial_reason": "Nike与Adidas同日发布中底科技与智能产品，反映头部品牌以技术迭代争夺市场。"
       },
       {
         "event_id": "evt_81440a03d5060f",
@@ -664,7 +662,87 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "昂跑进军足球与高尔夫，标志其从跑鞋向多品类运动品牌延伸。"
+        "editorial_reason": "On昂跑宣布进军足球与高尔夫并发布三年战略，跑鞋品牌向多品类扩张。"
+      },
+      {
+        "event_id": "evt_3ab1e1fa1d223a",
+        "title": "李宁龙店全球旗舰店开业，高端战略再落关键拼图",
+        "category": "品牌与公司",
+        "event_family": "store_channel",
+        "reporting_period": "",
+        "brands": [
+          "李宁"
+        ],
+        "source": "中华网",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8tbHlHWHFERlNzc1ZHb0RMbXhwcHhQVXhCQUFxTHZjcHhJRk1DalJfbkQtNS11NlU2NmhBR2JfbzVwRS16Q3g4NEdLTTBYSVBacjRRemZUelpuOTBGNm5TX25mWURZZ3U4eUlHZmZUcTcyZw?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8tbHlHWHFERlNzc1ZHb0RMbXhwcHhQVXhCQUFxTHZjcHhJRk1DalJfbkQtNS11NlU2NmhBR2JfbzVwRS16Q3g4NEdLTTBYSVBacjRRemZUelpuOTBGNm5TX25mWURZZ3U4eUlHZmZUcTcyZw?oc=5",
+        "published_at": "2026-09-23T11:37+08:00",
+        "published_date": "2026-09-23",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 46,
+        "selection_score": 58,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_3ab1e1fa1d223a"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_a757d7d09fbd23",
+            "title": "李宁龙店全球旗舰店开业，高端战略再落关键拼图",
+            "source": "中华网",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8tbHlHWHFERlNzc1ZHb0RMbXhwcHhQVXhCQUFxTHZjcHhJRk1DalJfbkQtNS11NlU2NmhBR2JfbzVwRS16Q3g4NEdLTTBYSVBacjRRemZUelpuOTBGNm5TX25mWURZZ3U4eUlHZmZUcTcyZw?oc=5",
+            "published_at": "2026-09-23T11:37+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "李宁龙店全球旗舰店开业，本土品牌高端化战略落子关键渠道。"
+      },
+      {
+        "event_id": "evt_0bfba089620ced",
+        "title": "每一件都好看 安踏樊振东系列 秋日新品 9月25日10:00线上线下渠道全面售卖",
+        "category": "产品与科技",
+        "event_family": "product_launch",
+        "reporting_period": "",
+        "brands": [
+          "安踏"
+        ],
+        "source": "手机新浪网",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB0XzU5TmFIdGQxalZNM1NDRlc4cHAzRGk4YzFQSk44cEVzSU1iM0U5Qkg1d0RHcmhhaGNNSjRlb183cnVNeFV6akYzdkd6Ym5tOTBMT01CQUt1NnhkcDhDRjdiUHFUbkJfajlZenBSTkFERGM?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB0XzU5TmFIdGQxalZNM1NDRlc4cHAzRGk4YzFQSk44cEVzSU1iM0U5Qkg1d0RHcmhhaGNNSjRlb183cnVNeFV6akYzdkd6Ym5tOTBMT01CQUt1NnhkcDhDRjdiUHFUbkJfajlZenBSTkFERGM?oc=5",
+        "published_at": "2026-09-25T16:05+08:00",
+        "published_date": "2026-09-25",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 45,
+        "selection_score": 57,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_0bfba089620ced"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_73137556805f61",
+            "title": "每一件都好看 安踏樊振东系列 秋日新品 9月25日10:00线上线下渠道全面售卖",
+            "source": "手机新浪网",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB0XzU5TmFIdGQxalZNM1NDRlc4cHAzRGk4YzFQSk44cEVzSU1iM0U5Qkg1d0RHcmhhaGNNSjRlb183cnVNeFV6akYzdkd6Ym5tOTBMT01CQUt1NnhkcDhDRjdiUHFUbkJfajlZenBSTkFERGM?oc=5",
+            "published_at": "2026-09-25T16:05+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "安踏樊振东系列秋日新品全渠道售卖，代言人产品线持续拉动大众市场。"
       },
       {
         "event_id": "evt_72b86b5cc1cc10",
@@ -702,7 +780,47 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "京东天地全国首店落地宿迁，反映电商平台向线下品质零售场景延伸。"
+        "editorial_reason": "京东天地全国首店宿迁开业，电商平台向品质零售与文化体验融合探索。"
+      },
+      {
+        "event_id": "evt_eec533a7446a9b",
+        "title": "北面官宣李昀锐升任The North Face 代言人",
+        "category": "行业动态",
+        "event_family": "endorsement_partnership",
+        "reporting_period": "",
+        "brands": [
+          "The North Face"
+        ],
+        "source": "美通社",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9tYkhxaGxOS2xqQ0trajhVUkZwVmFmNEdRRW53QmFnazZWaXdRVFR3NnUtdkprYUw0X09wd0d0NWdFc3djcFNfb3BBMi1lM2drRkhLanM1MA?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9tYkhxaGxOS2xqQ0trajhVUkZwVmFmNEdRRW53QmFnazZWaXdRVFR3NnUtdkprYUw0X09wd0d0NWdFc3djcFNfb3BBMi1lM2drRkhLanM1MA?oc=5",
+        "published_at": "2026-09-24T08:24+08:00",
+        "published_date": "2026-09-24",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 44,
+        "selection_score": 51,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_eec533a7446a9b"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_470cfe233ee93b",
+            "title": "北面官宣李昀锐升任The North Face 代言人",
+            "source": "美通社",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9tYkhxaGxOS2xqQ0trajhVUkZwVmFmNEdRRW53QmFnazZWaXdRVFR3NnUtdkprYUw0X09wd0d0NWdFc3djcFNfb3BBMi1lM2drRkhLanM1MA?oc=5",
+            "published_at": "2026-09-24T08:24+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "北面官宣李昀锐升任代言人，户外品牌借明星升级强化年轻消费群体触达。"
       }
     ],
     "follow_up_selected": [
@@ -744,7 +862,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "361°长裤官旗大促，作为本土品牌价格策略与渠道运营的观察样本。"
+        "editorial_reason": "361°官旗长裤大促低至门店1.8折，反映本土品牌线上折扣力度与库存策略。"
       }
     ],
     "verification_queue": [],
@@ -901,67 +1019,11 @@
     },
     {
       "type": "event",
-      "id": "evt_86e262d49592f2",
-      "title": "昨夜今晨：a.yx体育登录入口下载安装Nike Air Zoom Tempo NEXT%发布 Run Club App升级AI教练",
-      "source": "体坛加",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE94Uk1naEZUUjBBMjJrU1c1ZHc2OWpNaGU0VmZxQzVGV2dPZTF2N0UwMmRrb2J3czBCdVZleUVRa2F6VUpScFZFdDFjUQ?oc=5",
-      "published_date": "2026-09-27"
-    },
-    {
-      "type": "event",
-      "id": "evt_184828845385c3",
-      "title": "昂跑抛出扩张战略，2029年营收至少56亿瑞郎",
-      "source": "21财经",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdVNSZ3VpQVhWTzByS3ZCLU5GRHhNU1UweDJxei1fY2dzTWpsOHkzTHpoTzVvVmxYdjZseWF6ams2aUdZTDFpME1LbF91VGVEdTRWUVJZWU55VmprYWJaQ1BsdUdVd0dMdXp2ZFhoVUNacUhVR2tCRjItRnlnVTAwclhBUXdSNFhsbWJzLS16MmdfdkZz?oc=5",
-      "published_date": "2026-09-22"
-    },
-    {
-      "type": "event",
       "id": "evt_81440a03d5060f",
       "title": "On昂跑宣布进军足球与高尔夫，发布未来三年战略方向与财务目标",
       "source": "luxe.co",
       "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE80Q0c4bnc2dGRqUndOeGFtUmRwbXJCemhObkhQeXRtNjlrSVdvYzloOFZqbW5wRUZzS1pPd2NBa18?oc=5",
       "published_date": "2026-09-23"
-    },
-    {
-      "type": "event",
-      "id": "evt_72b86b5cc1cc10",
-      "title": "品质零售、文化体验、社交休闲一体 京东天地全国首店宿迁开业",
-      "source": "新华网",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNYUZUbFhUR1dDOTNvYXdtWVFFTnJ4ZkwzZjMyNTRxOUlZSTM3azc4amRPbXM5Zmc2NERSY3M1eU1nal9NM0JXM0FfQVpXYXdhaDdoN1RZVFNGUE9INm9tcGs5aFFCS0RWVUwweTZ5UUdQWDFBSTBtcHphZkR0c0laSw?oc=5",
-      "published_date": "2026-09-24"
-    },
-    {
-      "type": "event",
-      "id": "evt_14b495f372d8e8",
-      "title": "仅为门店1.8折 361°长裤官旗大促：到手33.2元起",
-      "source": "驱动之家",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5aU3ZpeW5SSHZJb0VKdlZlQVh4N1J5VGYzY2tEaG5mTmx2aWE5U2FRN0tCSHRhXzlXTVc3TXh2Q3I1blBnaWQ2bUJCNXNDSzlvcmpUUTltRzM?oc=5",
-      "published_date": "2026-09-24"
-    },
-    {
-      "type": "event",
-      "id": "evt_05245de9c906b6",
-      "title": "【美股盘前】康宁引爆AI基建新主线、火箭实验室80亿美元收购Iridium，半年收官日聚焦养老金再平衡与Nike财报",
-      "source": "TradingKey",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUWJQZDBTTmdTb0JOejNrZnZSMWF3MWFMaUt6ZWlxRDhMWno3TzZOeHUzV09Rdnhtc19IdGxoNHlkWGo3NWZuRnlIMGR1bG9tbHNIaVNjLTY1ejdFQjkxem5rczd4d0Z5XzIwWW1MalhIWF9rYkc3blJGckNIb09Ydl9jYWJoOE5laWw2aWUyNC1MUmRtTzVqY0pmT0VuTDJDN3hfR2ZRQk1xMEVW?oc=5",
-      "published_date": "2026-09-27"
-    },
-    {
-      "type": "event",
-      "id": "evt_76b1505b12a09b",
-      "title": "1917名田径健儿齐聚资阳安岳 赛事经济撬动假日消费市场",
-      "source": "人民网",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1IQXNicHhNa3oxWENpTWdpSGlWemttN1dOWXBGc0p6UzJhM2FjM2N0NDhZQ3VoLUE1Z0dKMy1PdjhmSUVFOEZFUm5lY3RTNjljWEdsaE56aENVd1EzOHZQSnJ5THUwRDdqZWc?oc=5",
-      "published_date": "2026-09-26"
-    },
-    {
-      "type": "event",
-      "id": "evt_e4e55aaddec20d",
-      "title": "湖北举行2026年鄂州梁子湖全国铁人三项系列赛事活动新闻发布会",
-      "source": "hubei.gov.cn",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE41M1pid1hnb2liRDZhRVc0bkMyQllkS2VnS01zTE5EMXE4b3Iwd3d6eVNuQTB1UGxNZlJSaXFJeUhXNVl5ZGs1YkNsUm1za3NhbEpXNmd0bkZ5X0k0TnA3eDhvam56RHVFeWNIYmtRUExXakdH?oc=5",
-      "published_date": "2026-09-24"
     },
     {
       "type": "event",
@@ -981,6 +1043,62 @@
     },
     {
       "type": "event",
+      "id": "evt_72b86b5cc1cc10",
+      "title": "品质零售、文化体验、社交休闲一体 京东天地全国首店宿迁开业",
+      "source": "新华网",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNYUZUbFhUR1dDOTNvYXdtWVFFTnJ4ZkwzZjMyNTRxOUlZSTM3azc4amRPbXM5Zmc2NERSY3M1eU1nal9NM0JXM0FfQVpXYXdhaDdoN1RZVFNGUE9INm9tcGs5aFFCS0RWVUwweTZ5UUdQWDFBSTBtcHphZkR0c0laSw?oc=5",
+      "published_date": "2026-09-24"
+    },
+    {
+      "type": "event",
+      "id": "evt_14b495f372d8e8",
+      "title": "仅为门店1.8折 361°长裤官旗大促：到手33.2元起",
+      "source": "驱动之家",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5aU3ZpeW5SSHZJb0VKdlZlQVh4N1J5VGYzY2tEaG5mTmx2aWE5U2FRN0tCSHRhXzlXTVc3TXh2Q3I1blBnaWQ2bUJCNXNDSzlvcmpUUTltRzM?oc=5",
+      "published_date": "2026-09-24"
+    },
+    {
+      "type": "event",
+      "id": "evt_eec533a7446a9b",
+      "title": "北面官宣李昀锐升任The North Face 代言人",
+      "source": "美通社",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9tYkhxaGxOS2xqQ0trajhVUkZwVmFmNEdRRW53QmFnazZWaXdRVFR3NnUtdkprYUw0X09wd0d0NWdFc3djcFNfb3BBMi1lM2drRkhLanM1MA?oc=5",
+      "published_date": "2026-09-24"
+    },
+    {
+      "type": "event",
+      "id": "evt_05245de9c906b6",
+      "title": "【美股盘前】康宁引爆AI基建新主线、火箭实验室80亿美元收购Iridium，半年收官日聚焦养老金再平衡与Nike财报",
+      "source": "TradingKey",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUWJQZDBTTmdTb0JOejNrZnZSMWF3MWFMaUt6ZWlxRDhMWno3TzZOeHUzV09Rdnhtc19IdGxoNHlkWGo3NWZuRnlIMGR1bG9tbHNIaVNjLTY1ejdFQjkxem5rczd4d0Z5XzIwWW1MalhIWF9rYkc3blJGckNIb09Ydl9jYWJoOE5laWw2aWUyNC1MUmRtTzVqY0pmT0VuTDJDN3hfR2ZRQk1xMEVW?oc=5",
+      "published_date": "2026-09-27"
+    },
+    {
+      "type": "event",
+      "id": "evt_184828845385c3",
+      "title": "昂跑抛出扩张战略，2029年营收至少56亿瑞郎",
+      "source": "21财经",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdVNSZ3VpQVhWTzByS3ZCLU5GRHhNU1UweDJxei1fY2dzTWpsOHkzTHpoTzVvVmxYdjZseWF6ams2aUdZTDFpME1LbF91VGVEdTRWUVJZWU55VmprYWJaQ1BsdUdVd0dMdXp2ZFhoVUNacUhVR2tCRjItRnlnVTAwclhBUXdSNFhsbWJzLS16MmdfdkZz?oc=5",
+      "published_date": "2026-09-22"
+    },
+    {
+      "type": "event",
+      "id": "evt_76b1505b12a09b",
+      "title": "1917名田径健儿齐聚资阳安岳 赛事经济撬动假日消费市场",
+      "source": "人民网",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1IQXNicHhNa3oxWENpTWdpSGlWemttN1dOWXBGc0p6UzJhM2FjM2N0NDhZQ3VoLUE1Z0dKMy1PdjhmSUVFOEZFUm5lY3RTNjljWEdsaE56aENVd1EzOHZQSnJ5THUwRDdqZWc?oc=5",
+      "published_date": "2026-09-26"
+    },
+    {
+      "type": "event",
+      "id": "evt_e4e55aaddec20d",
+      "title": "湖北举行2026年鄂州梁子湖全国铁人三项系列赛事活动新闻发布会",
+      "source": "hubei.gov.cn",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE41M1pid1hnb2liRDZhRVc0bkMyQllkS2VnS01zTE5EMXE4b3Iwd3d6eVNuQTB1UGxNZlJSaXFJeUhXNVl5ZGs1YkNsUm1za3NhbEpXNmd0bkZ5X0k0TnA3eDhvam56RHVFeWNIYmtRUExXakdH?oc=5",
+      "published_date": "2026-09-24"
+    },
+    {
+      "type": "event",
       "id": "evt_dcfa59cab1bfc8",
       "title": "亚玛芬集团和萨洛蒙CEO详解：如何让萨洛蒙2028年销售额达到30亿美元？",
       "source": "luxe.co",
@@ -996,7 +1114,7 @@
     "raw_event_count": 15,
     "coalesced_event_count": 15,
     "eligible_event_count": 15,
-    "selected_event_count": 6,
+    "selected_event_count": 7,
     "raw_product_count": 13,
     "product_lead_count": 13,
     "eligible_product_count": 0,
@@ -1017,7 +1135,7 @@
       "行业动态": 3
     },
     "selected_status": {
-      "new": 5,
+      "new": 6,
       "follow_up": 1
     },
     "quality_notes": [
