@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-10-05T14:03+08:00",
+  "generated_at": "2026-10-06T11:33+08:00",
   "report_window": {
     "start_date": "2026-09-28",
     "end_date": "2026-10-04",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "耐克财报与区域重组主导本周，大中华区承压信号明确，儿童运动赛道需关注竞品渠道与产品节奏变化。",
-    "week_in_one_paragraph": "迪卡侬在武汉开出第8家门店并推出外骨骼运动助力装备租赁，Alo中国开店紧邻lululemon，运动品牌渠道与产品竞争持续升温。",
+    "weekly_thesis": "耐克财报下滑并重组大中华区，国际品牌在华渠道与产品竞争同步加剧。",
+    "week_in_one_paragraph": "本周耐克2027财年Q1营收112亿美元、大中华区下滑并宣布区域重组，成为最核心信号；",
     "next_week_focus": [
-      "耐克区域重组后是否披露儿童业务调整细节",
-      "迪卡侬武汉新店儿童运动品类陈列与定价",
-      "Alo中国首店开业后对周边运动品牌客流影响",
-      "国庆假期后运动品牌渠道促销与库存变化",
-      "儿童跑鞋品类是否有竞品新品跟进"
+      "耐克区域重组后是否公布大中华区具体执行方案。",
+      "Alo中国首店选址与开业节奏对lululemon的影响。",
+      "NikeSKIMS在华产品与渠道是否进一步落地。",
+      "迪卡侬武汉新店儿童运动品类表现。",
+      "PUMA与FILA新品在儿童及家庭场景的延伸。"
     ]
   },
   "key_developments": [
@@ -66,7 +66,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "耐克最新财季全球及大中华区营收数据披露，是本周品牌财务层面最核心信息。"
+      "editorial_reason": "耐克最新财季全球及大中华区营收数据，是判断国际品牌在华走势的关键财务信号。"
     },
     {
       "event_id": "evt_501bf6b4d997a9",
@@ -106,97 +106,137 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "耐克宣布区域架构重组，大中华区与亚太合并，直接影响其中国市场运营策略。"
+      "editorial_reason": "耐克将中国市场与亚太合并，区域架构调整直接影响其在华渠道与品牌资源配置。"
     },
     {
-      "event_id": "evt_859020e812fbfa",
-      "title": "武汉迎来第8家迪卡侬，江汉区首店9月30日正式开业",
+      "event_id": "evt_aed708d4604bbd",
+      "title": "Alo中国开店，专挑lululemon旁边",
       "category": "行业动态",
       "event_family": "store_channel",
       "reporting_period": "",
       "brands": [
-        "迪卡侬"
+        "lululemon",
+        "Alo"
       ],
-      "source": "极目新闻",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11dFN2N1ZhcDhSUTlWWGoxQ1VYd2VzYmpUbXZLTTZ4SUVaQTRFakQ3WFhVdzkwN2xBdDB2cWN5UG0xb2Z2ejk2SnpnNE5icDgzSDhhNUJ2ellJaGM?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11dFN2N1ZhcDhSUTlWWGoxQ1VYd2VzYmpUbXZLTTZ4SUVaQTRFakQ3WFhVdzkwN2xBdDB2cWN5UG0xb2Z2ejk2SnpnNE5icDgzSDhhNUJ2ellJaGM?oc=5",
-      "published_at": "2026-09-30T18:29+08:00",
-      "published_date": "2026-09-30",
+      "source": "澎湃新闻",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
+      "published_at": "2026-10-02T18:53+08:00",
+      "published_date": "2026-10-02",
       "status": "new",
       "verification": "single_source",
       "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 42,
-      "selection_score": 53,
+      "editorial_score": 43,
+      "selection_score": 50,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_859020e812fbfa"
+        "evt_aed708d4604bbd"
       ],
       "evidence": [
         {
-          "item_id": "src_e7f39f44377288",
-          "title": "武汉迎来第8家迪卡侬，江汉区首店9月30日正式开业",
-          "source": "极目新闻",
-          "source_tier": "tier_3",
+          "item_id": "src_93b52e1b319422",
+          "title": "Alo中国开店，专挑lululemon旁边",
+          "source": "澎湃新闻",
+          "source_tier": "tier_2",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11dFN2N1ZhcDhSUTlWWGoxQ1VYd2VzYmpUbXZLTTZ4SUVaQTRFakQ3WFhVdzkwN2xBdDB2cWN5UG0xb2Z2ejk2SnpnNE5icDgzSDhhNUJ2ellJaGM?oc=5",
-          "published_at": "2026-09-30T18:29+08:00",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
+          "published_at": "2026-10-02T18:53+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "迪卡侬武汉第8家门店开业，大众运动零售渠道继续下沉扩张。"
+      "editorial_reason": "Alo中国开店选址贴近lululemon，反映女性运动服饰赛道线下竞争进一步升温。"
     },
     {
-      "event_id": "evt_2f69d42342a0ed",
-      "title": "银发快讯 | 小橙集团完成B3轮战略融资；迪卡侬推出外骨骼运动助力装备，79元起租赁体验；上海上线城市特色商业养老金产品“沪养保”",
-      "category": "品牌与公司",
+      "event_id": "evt_1b9d0ad3045816",
+      "title": "PUMA GOLF x Saturdays NYC 推出第二弹联名：豹纹版 Clyde Golf 抢眼亮相",
+      "category": "产品与科技",
+      "event_family": "collaboration",
+      "reporting_period": "",
+      "brands": [
+        "Puma"
+      ],
+      "source": "Hypebeast CN",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZVFsTS1feEhpaUFrVWVWMDhBSXoxYlY1UU0wU2xqZTJkT3FkX0tTZzB1dmxwR1FRa21pRmdHYlBhZWxBWi1kTHdoNXkyenA5bWZkeEJfejNxVTVob0ZKYUJPMVRQTk9wbUhoNk1JM1gzeHA1aG5FbFQzNHl5c3ZJSHlSQ1hldl9CSzZJMGpBM0xWeE03cG94VklTcG8?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZVFsTS1feEhpaUFrVWVWMDhBSXoxYlY1UU0wU2xqZTJkT3FkX0tTZzB1dmxwR1FRa21pRmdHYlBhZWxBWi1kTHdoNXkyenA5bWZkeEJfejNxVTVob0ZKYUJPMVRQTk9wbUhoNk1JM1gzeHA1aG5FbFQzNHl5c3ZJSHlSQ1hldl9CSzZJMGpBM0xWeE03cG94VklTcG8?oc=5",
+      "published_at": "2026-10-04T13:46+08:00",
+      "published_date": "2026-10-04",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 44,
+      "selection_score": 56,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_1b9d0ad3045816"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_cecb0f11c8ada6",
+          "title": "PUMA GOLF x Saturdays NYC 推出第二弹联名：豹纹版 Clyde Golf 抢眼亮相",
+          "source": "Hypebeast CN",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZVFsTS1feEhpaUFrVWVWMDhBSXoxYlY1UU0wU2xqZTJkT3FkX0tTZzB1dmxwR1FRa21pRmdHYlBhZWxBWi1kTHdoNXkyenA5bWZkeEJfejNxVTVob0ZKYUJPMVRQTk9wbUhoNk1JM1gzeHA1aG5FbFQzNHl5c3ZJSHlSQ1hldl9CSzZJMGpBM0xWeE03cG94VklTcG8?oc=5",
+          "published_at": "2026-10-04T13:46+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "PUMA GOLF联名第二弹，展示运动品牌借联名维持产品话题与品类延展。"
+    },
+    {
+      "event_id": "evt_05ffcdfa869e14",
+      "title": "华丽现场｜FILA网球稳定科技平台；香奈儿 le19M上海大展；VEILANCE 短片和新品；尚美巴黎高珠新品",
+      "category": "产品与科技",
       "event_family": "product_launch",
       "reporting_period": "",
       "brands": [
-        "迪卡侬"
+        "FILA"
       ],
-      "source": "AgeClub",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1VWNXMnRsRi1zSGt2RUs2dmhFWVNPZ1I5cDRsRFZYRkZoSmhsempocWxMeFlkdm0ybzVmWWZIR21VQ3lxbU5Qbkt3WmtDTDNFTGlaVg?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1VWNXMnRsRi1zSGt2RUs2dmhFWVNPZ1I5cDRsRFZYRkZoSmhsempocWxMeFlkdm0ybzVmWWZIR21VQ3lxbU5Qbkt3WmtDTDNFTGlaVg?oc=5",
-      "published_at": "2026-09-30T08:51+08:00",
-      "published_date": "2026-09-30",
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFB4eElScXJLTUxveGh2QlFMWlpCQ1lUeUVqMWZfaE5OQTE5aTZoUE1POS10TW9LeXg5TU5vLWxpU0g?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFB4eElScXJLTUxveGh2QlFMWlpCQ1lUeUVqMWZfaE5OQTE5aTZoUE1POS10TW9LeXg5TU5vLWxpU0g?oc=5",
+      "published_at": "2026-10-01T20:30+08:00",
+      "published_date": "2026-10-01",
       "status": "new",
       "verification": "single_source",
       "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 42,
-      "selection_score": 58,
+      "editorial_score": 44,
+      "selection_score": 56,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_2f69d42342a0ed"
+        "evt_05ffcdfa869e14"
       ],
       "evidence": [
         {
-          "item_id": "src_69b929593ca7f6",
-          "title": "银发快讯 | 小橙集团完成B3轮战略融资；迪卡侬推出外骨骼运动助力装备，79元起租赁体验；上海上线城市特色商业养老金产品“沪养保”",
-          "source": "AgeClub",
-          "source_tier": "tier_3",
+          "item_id": "src_9bdb6e551d9ed9",
+          "title": "华丽现场｜FILA网球稳定科技平台；香奈儿 le19M上海大展；VEILANCE 短片和新品；尚美巴黎高珠新品",
+          "source": "华丽志",
+          "source_tier": "tier_2",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1VWNXMnRsRi1zSGt2RUs2dmhFWVNPZ1I5cDRsRFZYRkZoSmhsempocWxMeFlkdm0ybzVmWWZIR21VQ3lxbU5Qbkt3WmtDTDNFTGlaVg?oc=5",
-          "published_at": "2026-09-30T08:51+08:00",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFB4eElScXJLTUxveGh2QlFMWlpCQ1lUeUVqMWZfaE5OQTE5aTZoUE1POS10TW9LeXg5TU5vLWxpU0g?oc=5",
+          "published_at": "2026-10-01T20:30+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "迪卡侬推出外骨骼运动助力装备租赁，运动装备服务化模式值得关注。"
+      "editorial_reason": "FILA发布网球稳定科技平台，说明运动品牌继续以科技平台强化专业品类。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "耐克大中华区承压与架构重组",
-      "analysis": "耐克2027财年Q1全球营收112亿美元，大中华区营收11.8亿美元，收入下滑26%。同时耐克宣布将大中华区与亚太区合并，业务调整为三大区域市场，并推出PACE计划重组组织架构。这一系列动作表明耐克正在重新评估中国市场的运营模式，从区域管理到成本结构均面临调整。对儿童运动品牌而言，竞品在华策略收缩或调整可能带来渠道与营销资源的重新分配窗口。",
+      "headline": "耐克在华承压与区域重组",
+      "analysis": "耐克2027财年Q1全球营收112亿美元，大中华区营收11.8亿美元，同时宣布将中国市场与亚太市场合并为三大区域之一。财务表现与组织调整同步出现，说明耐克正在重新评估大中华区的管理半径与资源投放方式。对国内运动品牌而言，这意味着头部国际品牌可能进入渠道与组织效率调整期，市场竞争节奏或随之变化。",
       "event_ids": [
         "evt_623fadce17b7f6",
-        "evt_501bf6b4d997a9",
-        "evt_ffa16f0a1f9235"
+        "evt_501bf6b4d997a9"
       ],
       "evidence": [
         {
@@ -212,61 +252,30 @@
           "source": "澎湃新闻",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1fM21ZWXZST0taaVNCdmhRQjBhNm1CS2FCR2ZzM3F2MXVrNmhwS0hqZDQzaG5PbGlETWY4aWktQUMzbVJEREg5V2hqZVZKYzk4S2p3ckFDTjZsdEtVLVE?oc=5",
           "published_date": "2026-10-02"
-        },
-        {
-          "event_id": "evt_ffa16f0a1f9235",
-          "title": "耐克大中华区收入下滑26%，CEO贺雁峰推出PACE计划重组组织架构",
-          "source": "虎嗅网",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE50a3hONDBLQUd5dGpfWm9nYWtXelRBajMzV1ZlaTRkTEp4MVcwRmpyN2JqMl9zbzVYNGlVWlRNVzNTeC1wVXpWSG03b1dJX010OHc?oc=5",
-          "published_date": "2026-10-03"
         }
       ]
     },
     {
-      "headline": "大众运动零售渠道与女性运动赛道扩张",
-      "analysis": "迪卡侬在武汉开出第8家门店，江汉区首店于9月30日开业，显示大众运动零售继续通过线下门店加密覆盖。Alo中国开店选址紧邻lululemon，女性运动服饰赛道再添新玩家。两者分别代表大众运动零售和高端女性运动两条渠道扩张路径，对儿童运动品牌的门店选址和品类延伸均有参考价值。",
+      "headline": "女性运动赛道竞争加剧",
+      "analysis": "Alo在中国开店并选择贴近lululemon的位置，NikeSKIMS则切入lululemon与Alo之间的女性运动市场。两个事件共同指向女性运动服饰赛道正从单一品牌主导转向多品牌贴身竞争。对儿童及家庭运动消费而言，女性运动品牌的渠道与产品策略可能外溢至亲子场景，值得持续观察。",
       "event_ids": [
-        "evt_859020e812fbfa",
-        "evt_aed708d4604bbd"
+        "evt_aed708d4604bbd",
+        "evt_5a3106b174626b"
       ],
       "evidence": [
-        {
-          "event_id": "evt_859020e812fbfa",
-          "title": "武汉迎来第8家迪卡侬，江汉区首店9月30日正式开业",
-          "source": "极目新闻",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11dFN2N1ZhcDhSUTlWWGoxQ1VYd2VzYmpUbXZLTTZ4SUVaQTRFakQ3WFhVdzkwN2xBdDB2cWN5UG0xb2Z2ejk2SnpnNE5icDgzSDhhNUJ2ellJaGM?oc=5",
-          "published_date": "2026-09-30"
-        },
         {
           "event_id": "evt_aed708d4604bbd",
           "title": "Alo中国开店，专挑lululemon旁边",
           "source": "澎湃新闻",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
           "published_date": "2026-10-02"
-        }
-      ]
-    },
-    {
-      "headline": "运动装备产品与服务模式创新",
-      "analysis": "迪卡侬推出外骨骼运动助力装备，79元起租赁体验，将运动装备从销售延伸至租赁服务。耐克发布全新顶级旗舰跑鞋，继续在专业跑鞋领域堆料迭代。两者分别从服务模式和产品性能两个方向推进，反映运动品牌在装备端寻求差异化，儿童运动产品可关注轻量化、辅助运动等方向的技术下放可能。",
-      "event_ids": [
-        "evt_2f69d42342a0ed",
-        "evt_78baf96b4b61c6"
-      ],
-      "evidence": [
-        {
-          "event_id": "evt_2f69d42342a0ed",
-          "title": "银发快讯 | 小橙集团完成B3轮战略融资；迪卡侬推出外骨骼运动助力装备，79元起租赁体验；上海上线城市特色商业养老金产品“沪养保”",
-          "source": "AgeClub",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1VWNXMnRsRi1zSGt2RUs2dmhFWVNPZ1I5cDRsRFZYRkZoSmhsempocWxMeFlkdm0ybzVmWWZIR21VQ3lxbU5Qbkt3WmtDTDNFTGlaVg?oc=5",
-          "published_date": "2026-09-30"
         },
         {
-          "event_id": "evt_78baf96b4b61c6",
-          "title": "Nike 发布全新的顶级旗舰跑鞋！堆料堆到极致了！",
-          "source": "FLIGHTCLUB中文站",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1qWjNJTl82Yi1UNzJDc2gxcVBNaVpxajlrVkc0X1l6eExwWEI3M01WUWI2MDVqYzhubmxfUzk0WDRkRE12T1ZVekNiZmU?oc=5",
-          "published_date": "2026-10-02"
+          "event_id": "evt_5a3106b174626b",
+          "title": "NikeSKIMS挤入Lululemon和Alo之间抢生意",
+          "source": "界面新闻",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5DakswWkpBaFpBek1lREpRWWRDUkdpdGhibTFlM3BWNS1TaUNUb2hJWF9La21ocmpGMzBEYjc1enlMOU5Ial9TRUtlYWZtYzRDMjZRWmRiMHY?oc=5",
+          "published_date": "2026-10-04"
         }
       ]
     }
@@ -391,6 +400,45 @@
       ]
     },
     {
+      "event_id": "evt_2f69d42342a0ed",
+      "title": "银发快讯 | 小橙集团完成B3轮战略融资；迪卡侬推出外骨骼运动助力装备，79元起租赁体验；上海上线城市特色商业养老金产品“沪养保”",
+      "category": "品牌与公司",
+      "event_family": "product_launch",
+      "reporting_period": "",
+      "brands": [
+        "迪卡侬"
+      ],
+      "source": "AgeClub",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1VWNXMnRsRi1zSGt2RUs2dmhFWVNPZ1I5cDRsRFZYRkZoSmhsempocWxMeFlkdm0ybzVmWWZIR21VQ3lxbU5Qbkt3WmtDTDNFTGlaVg?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1VWNXMnRsRi1zSGt2RUs2dmhFWVNPZ1I5cDRsRFZYRkZoSmhsempocWxMeFlkdm0ybzVmWWZIR21VQ3lxbU5Qbkt3WmtDTDNFTGlaVg?oc=5",
+      "published_at": "2026-09-30T08:51+08:00",
+      "published_date": "2026-09-30",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 42,
+      "selection_score": 58,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_2f69d42342a0ed"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_69b929593ca7f6",
+          "title": "银发快讯 | 小橙集团完成B3轮战略融资；迪卡侬推出外骨骼运动助力装备，79元起租赁体验；上海上线城市特色商业养老金产品“沪养保”",
+          "source": "AgeClub",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1VWNXMnRsRi1zSGt2RUs2dmhFWVNPZ1I5cDRsRFZYRkZoSmhsempocWxMeFlkdm0ybzVmWWZIR21VQ3lxbU5Qbkt3WmtDTDNFTGlaVg?oc=5",
+          "published_at": "2026-09-30T08:51+08:00",
+          "summary": ""
+        }
+      ]
+    },
+    {
       "event_id": "evt_fa07b0796812f9",
       "title": "麦瑞克在数贸会发布AI健身新品拓展中东市场- 跨境电商",
       "category": "电商与平台",
@@ -465,34 +513,72 @@
           "summary": ""
         }
       ]
+    },
+    {
+      "event_id": "evt_233f7ed6d523fc",
+      "title": "长城脚下燃动国庆 华彬文体活动解锁健康消费新场景",
+      "category": "行业动态",
+      "event_family": "industry_event",
+      "reporting_period": "",
+      "brands": [],
+      "source": "人民网",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTU0gxdHY0VlFDUUtnZU83V3A3bnJMNFUxOEdPWnY2eE51V2o0Y3pCNnhYUmJ4TE5xeDgxMEk4Z0RlUXJwVlhmY3hxRjRiNFVUaThHU1dlVDh6UllURlh5MlBwZUduOVkz?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTU0gxdHY0VlFDUUtnZU83V3A3bnJMNFUxOEdPWnY2eE51V2o0Y3pCNnhYUmJ4TE5xeDgxMEk4Z0RlUXJwVlhmY3hxRjRiNFVUaThHU1dlVDh6UllURlh5MlBwZUduOVkz?oc=5",
+      "published_at": "2026-10-02T17:44+08:00",
+      "published_date": "2026-10-02",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 44,
+      "selection_score": 51,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_233f7ed6d523fc"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_91621c4457b7e5",
+          "title": "长城脚下燃动国庆 华彬文体活动解锁健康消费新场景",
+          "source": "人民网",
+          "source_tier": "tier_1",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTU0gxdHY0VlFDUUtnZU83V3A3bnJMNFUxOEdPWnY2eE51V2o0Y3pCNnhYUmJ4TE5xeDgxMEk4Z0RlUXJwVlhmY3hxRjRiNFVUaThHU1dlVDh6UllURlh5MlBwZUduOVkz?oc=5",
+          "published_at": "2026-10-02T17:44+08:00",
+          "summary": ""
+        }
+      ]
     }
   ],
   "watchlist": [
     {
-      "title": "耐克大中华区重组后续",
+      "title": "耐克重组后大中华区渠道动作",
       "event_ids": [
         "evt_501bf6b4d997a9",
-        "evt_ffa16f0a1f9235"
+        "evt_623fadce17b7f6"
       ],
       "product_ids": [],
-      "reason": "观察耐克合并大中华区与亚太区后，是否调整儿童产品线或渠道策略。"
+      "reason": "观察区域合并后耐克在华门店、经销商及儿童产品线是否出现调整。"
     },
     {
-      "title": "迪卡侬门店与装备服务扩张",
+      "title": "女性运动品牌线下扩张",
+      "event_ids": [
+        "evt_aed708d4604bbd",
+        "evt_5a3106b174626b"
+      ],
+      "product_ids": [],
+      "reason": "跟踪Alo与NikeSKIMS在华开店及产品定价，评估对亲子运动消费的溢出影响。"
+    },
+    {
+      "title": "大众运动零售门店加密",
       "event_ids": [
         "evt_859020e812fbfa",
-        "evt_2f69d42342a0ed"
+        "evt_065f65dc18c8d7"
       ],
       "product_ids": [],
-      "reason": "关注迪卡侬新店开业后儿童运动品类布局及外骨骼租赁是否延伸至儿童场景。"
-    },
-    {
-      "title": "女性运动品牌渠道竞争",
-      "event_ids": [
-        "evt_aed708d4604bbd"
-      ],
-      "product_ids": [],
-      "reason": "观察Alo中国开店后是否影响lululemon及周边儿童运动品牌门店客流。"
+      "reason": "观察迪卡侬及奥莱渠道在假日消费后的客流与儿童品类陈列变化。"
     }
   ],
   "tracking": {
@@ -545,7 +631,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "耐克最新财季全球及大中华区营收数据披露，是本周品牌财务层面最核心信息。"
+        "editorial_reason": "耐克最新财季全球及大中华区营收数据，是判断国际品牌在华走势的关键财务信号。"
       },
       {
         "event_id": "evt_501bf6b4d997a9",
@@ -585,87 +671,128 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "耐克宣布区域架构重组，大中华区与亚太合并，直接影响其中国市场运营策略。"
+        "editorial_reason": "耐克将中国市场与亚太合并，区域架构调整直接影响其在华渠道与品牌资源配置。"
       },
       {
-        "event_id": "evt_859020e812fbfa",
-        "title": "武汉迎来第8家迪卡侬，江汉区首店9月30日正式开业",
+        "event_id": "evt_aed708d4604bbd",
+        "title": "Alo中国开店，专挑lululemon旁边",
         "category": "行业动态",
         "event_family": "store_channel",
         "reporting_period": "",
         "brands": [
-          "迪卡侬"
+          "lululemon",
+          "Alo"
         ],
-        "source": "极目新闻",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11dFN2N1ZhcDhSUTlWWGoxQ1VYd2VzYmpUbXZLTTZ4SUVaQTRFakQ3WFhVdzkwN2xBdDB2cWN5UG0xb2Z2ejk2SnpnNE5icDgzSDhhNUJ2ellJaGM?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11dFN2N1ZhcDhSUTlWWGoxQ1VYd2VzYmpUbXZLTTZ4SUVaQTRFakQ3WFhVdzkwN2xBdDB2cWN5UG0xb2Z2ejk2SnpnNE5icDgzSDhhNUJ2ellJaGM?oc=5",
-        "published_at": "2026-09-30T18:29+08:00",
-        "published_date": "2026-09-30",
+        "source": "澎湃新闻",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
+        "published_at": "2026-10-02T18:53+08:00",
+        "published_date": "2026-10-02",
         "status": "new",
         "verification": "single_source",
         "is_official": false,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 42,
-        "selection_score": 53,
+        "editorial_score": 43,
+        "selection_score": 50,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_859020e812fbfa"
+          "evt_aed708d4604bbd"
         ],
         "evidence": [
           {
-            "item_id": "src_e7f39f44377288",
-            "title": "武汉迎来第8家迪卡侬，江汉区首店9月30日正式开业",
-            "source": "极目新闻",
-            "source_tier": "tier_3",
+            "item_id": "src_93b52e1b319422",
+            "title": "Alo中国开店，专挑lululemon旁边",
+            "source": "澎湃新闻",
+            "source_tier": "tier_2",
             "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11dFN2N1ZhcDhSUTlWWGoxQ1VYd2VzYmpUbXZLTTZ4SUVaQTRFakQ3WFhVdzkwN2xBdDB2cWN5UG0xb2Z2ejk2SnpnNE5icDgzSDhhNUJ2ellJaGM?oc=5",
-            "published_at": "2026-09-30T18:29+08:00",
+            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
+            "published_at": "2026-10-02T18:53+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "迪卡侬武汉第8家门店开业，大众运动零售渠道继续下沉扩张。"
+        "editorial_reason": "Alo中国开店选址贴近lululemon，反映女性运动服饰赛道线下竞争进一步升温。"
       },
       {
-        "event_id": "evt_2f69d42342a0ed",
-        "title": "银发快讯 | 小橙集团完成B3轮战略融资；迪卡侬推出外骨骼运动助力装备，79元起租赁体验；上海上线城市特色商业养老金产品“沪养保”",
-        "category": "品牌与公司",
+        "event_id": "evt_1b9d0ad3045816",
+        "title": "PUMA GOLF x Saturdays NYC 推出第二弹联名：豹纹版 Clyde Golf 抢眼亮相",
+        "category": "产品与科技",
+        "event_family": "collaboration",
+        "reporting_period": "",
+        "brands": [
+          "Puma"
+        ],
+        "source": "Hypebeast CN",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZVFsTS1feEhpaUFrVWVWMDhBSXoxYlY1UU0wU2xqZTJkT3FkX0tTZzB1dmxwR1FRa21pRmdHYlBhZWxBWi1kTHdoNXkyenA5bWZkeEJfejNxVTVob0ZKYUJPMVRQTk9wbUhoNk1JM1gzeHA1aG5FbFQzNHl5c3ZJSHlSQ1hldl9CSzZJMGpBM0xWeE03cG94VklTcG8?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZVFsTS1feEhpaUFrVWVWMDhBSXoxYlY1UU0wU2xqZTJkT3FkX0tTZzB1dmxwR1FRa21pRmdHYlBhZWxBWi1kTHdoNXkyenA5bWZkeEJfejNxVTVob0ZKYUJPMVRQTk9wbUhoNk1JM1gzeHA1aG5FbFQzNHl5c3ZJSHlSQ1hldl9CSzZJMGpBM0xWeE03cG94VklTcG8?oc=5",
+        "published_at": "2026-10-04T13:46+08:00",
+        "published_date": "2026-10-04",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 44,
+        "selection_score": 56,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_1b9d0ad3045816"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_cecb0f11c8ada6",
+            "title": "PUMA GOLF x Saturdays NYC 推出第二弹联名：豹纹版 Clyde Golf 抢眼亮相",
+            "source": "Hypebeast CN",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZVFsTS1feEhpaUFrVWVWMDhBSXoxYlY1UU0wU2xqZTJkT3FkX0tTZzB1dmxwR1FRa21pRmdHYlBhZWxBWi1kTHdoNXkyenA5bWZkeEJfejNxVTVob0ZKYUJPMVRQTk9wbUhoNk1JM1gzeHA1aG5FbFQzNHl5c3ZJSHlSQ1hldl9CSzZJMGpBM0xWeE03cG94VklTcG8?oc=5",
+            "published_at": "2026-10-04T13:46+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "PUMA GOLF联名第二弹，展示运动品牌借联名维持产品话题与品类延展。"
+      },
+      {
+        "event_id": "evt_05ffcdfa869e14",
+        "title": "华丽现场｜FILA网球稳定科技平台；香奈儿 le19M上海大展；VEILANCE 短片和新品；尚美巴黎高珠新品",
+        "category": "产品与科技",
         "event_family": "product_launch",
         "reporting_period": "",
         "brands": [
-          "迪卡侬"
+          "FILA"
         ],
-        "source": "AgeClub",
-        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1VWNXMnRsRi1zSGt2RUs2dmhFWVNPZ1I5cDRsRFZYRkZoSmhsempocWxMeFlkdm0ybzVmWWZIR21VQ3lxbU5Qbkt3WmtDTDNFTGlaVg?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1VWNXMnRsRi1zSGt2RUs2dmhFWVNPZ1I5cDRsRFZYRkZoSmhsempocWxMeFlkdm0ybzVmWWZIR21VQ3lxbU5Qbkt3WmtDTDNFTGlaVg?oc=5",
-        "published_at": "2026-09-30T08:51+08:00",
-        "published_date": "2026-09-30",
+        "source": "华丽志",
+        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFB4eElScXJLTUxveGh2QlFMWlpCQ1lUeUVqMWZfaE5OQTE5aTZoUE1POS10TW9LeXg5TU5vLWxpU0g?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFB4eElScXJLTUxveGh2QlFMWlpCQ1lUeUVqMWZfaE5OQTE5aTZoUE1POS10TW9LeXg5TU5vLWxpU0g?oc=5",
+        "published_at": "2026-10-01T20:30+08:00",
+        "published_date": "2026-10-01",
         "status": "new",
         "verification": "single_source",
         "is_official": false,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 42,
-        "selection_score": 58,
+        "editorial_score": 44,
+        "selection_score": 56,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_2f69d42342a0ed"
+          "evt_05ffcdfa869e14"
         ],
         "evidence": [
           {
-            "item_id": "src_69b929593ca7f6",
-            "title": "银发快讯 | 小橙集团完成B3轮战略融资；迪卡侬推出外骨骼运动助力装备，79元起租赁体验；上海上线城市特色商业养老金产品“沪养保”",
-            "source": "AgeClub",
-            "source_tier": "tier_3",
+            "item_id": "src_9bdb6e551d9ed9",
+            "title": "华丽现场｜FILA网球稳定科技平台；香奈儿 le19M上海大展；VEILANCE 短片和新品；尚美巴黎高珠新品",
+            "source": "华丽志",
+            "source_tier": "tier_2",
             "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1VWNXMnRsRi1zSGt2RUs2dmhFWVNPZ1I5cDRsRFZYRkZoSmhsempocWxMeFlkdm0ybzVmWWZIR21VQ3lxbU5Qbkt3WmtDTDNFTGlaVg?oc=5",
-            "published_at": "2026-09-30T08:51+08:00",
+            "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFB4eElScXJLTUxveGh2QlFMWlpCQ1lUeUVqMWZfaE5OQTE5aTZoUE1POS10TW9LeXg5TU5vLWxpU0g?oc=5",
+            "published_at": "2026-10-01T20:30+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "迪卡侬推出外骨骼运动助力装备租赁，运动装备服务化模式值得关注。"
+        "editorial_reason": "FILA发布网球稳定科技平台，说明运动品牌继续以科技平台强化专业品类。"
       }
     ],
     "follow_up_selected": [],
@@ -839,19 +966,27 @@
     },
     {
       "type": "event",
-      "id": "evt_859020e812fbfa",
-      "title": "武汉迎来第8家迪卡侬，江汉区首店9月30日正式开业",
-      "source": "极目新闻",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11dFN2N1ZhcDhSUTlWWGoxQ1VYd2VzYmpUbXZLTTZ4SUVaQTRFakQ3WFhVdzkwN2xBdDB2cWN5UG0xb2Z2ejk2SnpnNE5icDgzSDhhNUJ2ellJaGM?oc=5",
-      "published_date": "2026-09-30"
+      "id": "evt_aed708d4604bbd",
+      "title": "Alo中国开店，专挑lululemon旁边",
+      "source": "澎湃新闻",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
+      "published_date": "2026-10-02"
     },
     {
       "type": "event",
-      "id": "evt_2f69d42342a0ed",
-      "title": "银发快讯 | 小橙集团完成B3轮战略融资；迪卡侬推出外骨骼运动助力装备，79元起租赁体验；上海上线城市特色商业养老金产品“沪养保”",
-      "source": "AgeClub",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1VWNXMnRsRi1zSGt2RUs2dmhFWVNPZ1I5cDRsRFZYRkZoSmhsempocWxMeFlkdm0ybzVmWWZIR21VQ3lxbU5Qbkt3WmtDTDNFTGlaVg?oc=5",
-      "published_date": "2026-09-30"
+      "id": "evt_1b9d0ad3045816",
+      "title": "PUMA GOLF x Saturdays NYC 推出第二弹联名：豹纹版 Clyde Golf 抢眼亮相",
+      "source": "Hypebeast CN",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZVFsTS1feEhpaUFrVWVWMDhBSXoxYlY1UU0wU2xqZTJkT3FkX0tTZzB1dmxwR1FRa21pRmdHYlBhZWxBWi1kTHdoNXkyenA5bWZkeEJfejNxVTVob0ZKYUJPMVRQTk9wbUhoNk1JM1gzeHA1aG5FbFQzNHl5c3ZJSHlSQ1hldl9CSzZJMGpBM0xWeE03cG94VklTcG8?oc=5",
+      "published_date": "2026-10-04"
+    },
+    {
+      "type": "event",
+      "id": "evt_05ffcdfa869e14",
+      "title": "华丽现场｜FILA网球稳定科技平台；香奈儿 le19M上海大展；VEILANCE 短片和新品；尚美巴黎高珠新品",
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFB4eElScXJLTUxveGh2QlFMWlpCQ1lUeUVqMWZfaE5OQTE5aTZoUE1POS10TW9LeXg5TU5vLWxpU0g?oc=5",
+      "published_date": "2026-10-01"
     },
     {
       "type": "event",
@@ -879,6 +1014,14 @@
     },
     {
       "type": "event",
+      "id": "evt_2f69d42342a0ed",
+      "title": "银发快讯 | 小橙集团完成B3轮战略融资；迪卡侬推出外骨骼运动助力装备，79元起租赁体验；上海上线城市特色商业养老金产品“沪养保”",
+      "source": "AgeClub",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1VWNXMnRsRi1zSGt2RUs2dmhFWVNPZ1I5cDRsRFZYRkZoSmhsempocWxMeFlkdm0ybzVmWWZIR21VQ3lxbU5Qbkt3WmtDTDNFTGlaVg?oc=5",
+      "published_date": "2026-09-30"
+    },
+    {
+      "type": "event",
       "id": "evt_fa07b0796812f9",
       "title": "麦瑞克在数贸会发布AI健身新品拓展中东市场- 跨境电商",
       "source": "亿邦动力",
@@ -895,19 +1038,19 @@
     },
     {
       "type": "event",
-      "id": "evt_aed708d4604bbd",
-      "title": "Alo中国开店，专挑lululemon旁边",
-      "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
+      "id": "evt_233f7ed6d523fc",
+      "title": "长城脚下燃动国庆 华彬文体活动解锁健康消费新场景",
+      "source": "人民网",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTU0gxdHY0VlFDUUtnZU83V3A3bnJMNFUxOEdPWnY2eE51V2o0Y3pCNnhYUmJ4TE5xeDgxMEk4Z0RlUXJwVlhmY3hxRjRiNFVUaThHU1dlVDh6UllURlh5MlBwZUduOVkz?oc=5",
       "published_date": "2026-10-02"
     },
     {
       "type": "event",
-      "id": "evt_78baf96b4b61c6",
-      "title": "Nike 发布全新的顶级旗舰跑鞋！堆料堆到极致了！",
-      "source": "FLIGHTCLUB中文站",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1qWjNJTl82Yi1UNzJDc2gxcVBNaVpxajlrVkc0X1l6eExwWEI3M01WUWI2MDVqYzhubmxfUzk0WDRkRE12T1ZVekNiZmU?oc=5",
-      "published_date": "2026-10-02"
+      "id": "evt_5a3106b174626b",
+      "title": "NikeSKIMS挤入Lululemon和Alo之间抢生意",
+      "source": "界面新闻",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5DakswWkpBaFpBek1lREpRWWRDUkdpdGhibTFlM3BWNS1TaUNUb2hJWF9La21ocmpGMzBEYjc1enlMOU5Ial9TRUtlYWZtYzRDMjZRWmRiMHY?oc=5",
+      "published_date": "2026-10-04"
     }
   ],
   "data_quality": {
@@ -918,13 +1061,13 @@
     "raw_event_count": 19,
     "coalesced_event_count": 19,
     "eligible_event_count": 19,
-    "selected_event_count": 4,
+    "selected_event_count": 5,
     "raw_product_count": 9,
     "product_lead_count": 9,
     "eligible_product_count": 0,
     "selected_product_count": 0,
     "conflict_count": 0,
-    "source_link_count": 12,
+    "source_link_count": 14,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
@@ -940,7 +1083,7 @@
       "电商与平台": 1
     },
     "selected_status": {
-      "new": 4
+      "new": 5
     },
     "quality_notes": [
       "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
