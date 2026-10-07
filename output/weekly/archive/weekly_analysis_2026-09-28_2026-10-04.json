@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-10-06T11:33+08:00",
+  "generated_at": "2026-10-07T10:58+08:00",
   "report_window": {
     "start_date": "2026-09-28",
     "end_date": "2026-10-04",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "耐克财报下滑并重组大中华区，国际品牌在华渠道与产品竞争同步加剧。",
-    "week_in_one_paragraph": "本周耐克2027财年Q1营收112亿美元、大中华区下滑并宣布区域重组，成为最核心信号；",
+    "weekly_thesis": "耐克大中华区下滑与组织重组是本周主线，儿童运动鞋服竞争将更聚焦区域效率与产品节奏。",
+    "week_in_one_paragraph": "本周耐克2027财年Q1营收112亿美元、大中华区11.8亿美元，并宣布将大中华区与亚太区合并、推出PACE重组，同时发布Apex马拉松竞速跑鞋。迪卡侬武汉江汉区首店开业并推外骨骼租赁，Alo在华选址贴近lululemon，PUMA与FILA继续以联名和科技平台更新产品线。",
     "next_week_focus": [
-      "耐克区域重组后是否公布大中华区具体执行方案。",
-      "Alo中国首店选址与开业节奏对lululemon的影响。",
-      "NikeSKIMS在华产品与渠道是否进一步落地。",
-      "迪卡侬武汉新店儿童运动品类表现。",
-      "PUMA与FILA新品在儿童及家庭场景的延伸。"
+      "耐克区域合并后是否披露中国儿童品类调整。",
+      "迪卡侬武汉新店客流与儿童运动品类表现。",
+      "Alo中国首店选址后是否公布开业节奏。",
+      "PUMA与FILA新品在儿童线的延伸可能。",
+      "国庆后户外运动消费场景的延续性。"
     ]
   },
   "key_developments": [
@@ -66,7 +66,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "耐克最新财季全球及大中华区营收数据，是判断国际品牌在华走势的关键财务信号。"
+      "editorial_reason": "耐克季度营收与大中华区数据是本周品牌财务层面最核心的公开信息。"
     },
     {
       "event_id": "evt_501bf6b4d997a9",
@@ -106,48 +106,47 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "耐克将中国市场与亚太合并，区域架构调整直接影响其在华渠道与品牌资源配置。"
+      "editorial_reason": "大中华区与亚太区合并，直接影响耐克在华渠道与组织效率。"
     },
     {
-      "event_id": "evt_aed708d4604bbd",
-      "title": "Alo中国开店，专挑lululemon旁边",
+      "event_id": "evt_859020e812fbfa",
+      "title": "武汉迎来第8家迪卡侬，江汉区首店9月30日正式开业",
       "category": "行业动态",
       "event_family": "store_channel",
       "reporting_period": "",
       "brands": [
-        "lululemon",
-        "Alo"
+        "迪卡侬"
       ],
-      "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
-      "published_at": "2026-10-02T18:53+08:00",
-      "published_date": "2026-10-02",
+      "source": "极目新闻",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11dFN2N1ZhcDhSUTlWWGoxQ1VYd2VzYmpUbXZLTTZ4SUVaQTRFakQ3WFhVdzkwN2xBdDB2cWN5UG0xb2Z2ejk2SnpnNE5icDgzSDhhNUJ2ellJaGM?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11dFN2N1ZhcDhSUTlWWGoxQ1VYd2VzYmpUbXZLTTZ4SUVaQTRFakQ3WFhVdzkwN2xBdDB2cWN5UG0xb2Z2ejk2SnpnNE5icDgzSDhhNUJ2ellJaGM?oc=5",
+      "published_at": "2026-09-30T18:29+08:00",
+      "published_date": "2026-09-30",
       "status": "new",
       "verification": "single_source",
       "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 43,
-      "selection_score": 50,
+      "editorial_score": 42,
+      "selection_score": 53,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_aed708d4604bbd"
+        "evt_859020e812fbfa"
       ],
       "evidence": [
         {
-          "item_id": "src_93b52e1b319422",
-          "title": "Alo中国开店，专挑lululemon旁边",
-          "source": "澎湃新闻",
-          "source_tier": "tier_2",
+          "item_id": "src_e7f39f44377288",
+          "title": "武汉迎来第8家迪卡侬，江汉区首店9月30日正式开业",
+          "source": "极目新闻",
+          "source_tier": "tier_3",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
-          "published_at": "2026-10-02T18:53+08:00",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11dFN2N1ZhcDhSUTlWWGoxQ1VYd2VzYmpUbXZLTTZ4SUVaQTRFakQ3WFhVdzkwN2xBdDB2cWN5UG0xb2Z2ejk2SnpnNE5icDgzSDhhNUJ2ellJaGM?oc=5",
+          "published_at": "2026-09-30T18:29+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "Alo中国开店选址贴近lululemon，反映女性运动服饰赛道线下竞争进一步升温。"
+      "editorial_reason": "迪卡侬武汉第8家门店开业，大众运动渠道继续加密。"
     },
     {
       "event_id": "evt_1b9d0ad3045816",
@@ -187,7 +186,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "PUMA GOLF联名第二弹，展示运动品牌借联名维持产品话题与品类延展。"
+      "editorial_reason": "PUMA GOLF联名更新，显示运动品牌借联名维持产品话题。"
     },
     {
       "event_id": "evt_05ffcdfa869e14",
@@ -227,16 +226,17 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "FILA发布网球稳定科技平台，说明运动品牌继续以科技平台强化专业品类。"
+      "editorial_reason": "FILA网球稳定科技平台发布，运动科技平台化趋势延续。"
     }
   ],
   "deep_dives": [
     {
       "headline": "耐克在华承压与区域重组",
-      "analysis": "耐克2027财年Q1全球营收112亿美元，大中华区营收11.8亿美元，同时宣布将中国市场与亚太市场合并为三大区域之一。财务表现与组织调整同步出现，说明耐克正在重新评估大中华区的管理半径与资源投放方式。对国内运动品牌而言，这意味着头部国际品牌可能进入渠道与组织效率调整期，市场竞争节奏或随之变化。",
+      "analysis": "耐克2027财年Q1全球营收112亿美元，大中华区营收11.8亿美元，同时大中华区收入下滑26%。公司宣布将大中华区与亚太区合并，并推出PACE计划重组组织架构。对儿童运动品类而言，这意味着国际品牌在华资源分配和渠道策略可能调整，区域合并后决策链条与本地响应速度值得关注。",
       "event_ids": [
         "evt_623fadce17b7f6",
-        "evt_501bf6b4d997a9"
+        "evt_501bf6b4d997a9",
+        "evt_ffa16f0a1f9235"
       ],
       "evidence": [
         {
@@ -252,30 +252,69 @@
           "source": "澎湃新闻",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1fM21ZWXZST0taaVNCdmhRQjBhNm1CS2FCR2ZzM3F2MXVrNmhwS0hqZDQzaG5PbGlETWY4aWktQUMzbVJEREg5V2hqZVZKYzk4S2p3ckFDTjZsdEtVLVE?oc=5",
           "published_date": "2026-10-02"
+        },
+        {
+          "event_id": "evt_ffa16f0a1f9235",
+          "title": "耐克大中华区收入下滑26%，CEO贺雁峰推出PACE计划重组组织架构",
+          "source": "虎嗅网",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE50a3hONDBLQUd5dGpfWm9nYWtXelRBajMzV1ZlaTRkTEp4MVcwRmpyN2JqMl9zbzVYNGlVWlRNVzNTeC1wVXpWSG03b1dJX010OHc?oc=5",
+          "published_date": "2026-10-03"
         }
       ]
     },
     {
-      "headline": "女性运动赛道竞争加剧",
-      "analysis": "Alo在中国开店并选择贴近lululemon的位置，NikeSKIMS则切入lululemon与Alo之间的女性运动市场。两个事件共同指向女性运动服饰赛道正从单一品牌主导转向多品牌贴身竞争。对儿童及家庭运动消费而言，女性运动品牌的渠道与产品策略可能外溢至亲子场景，值得持续观察。",
+      "headline": "运动品牌产品与渠道同步更新",
+      "analysis": "耐克发布全新顶级旗舰跑鞋，继续强化竞速跑鞋产品线；迪卡侬在武汉开出第8家门店、江汉区首店，大众运动零售继续下沉加密；Alo中国开店选址贴近lululemon，女性运动服饰赛道竞争加剧。三者分别代表产品、渠道和细分赛道的新动向。",
       "event_ids": [
-        "evt_aed708d4604bbd",
-        "evt_5a3106b174626b"
+        "evt_78baf96b4b61c6",
+        "evt_859020e812fbfa",
+        "evt_aed708d4604bbd"
       ],
       "evidence": [
+        {
+          "event_id": "evt_78baf96b4b61c6",
+          "title": "Nike 发布全新的顶级旗舰跑鞋！堆料堆到极致了！",
+          "source": "FLIGHTCLUB中文站",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1qWjNJTl82Yi1UNzJDc2gxcVBNaVpxajlrVkc0X1l6eExwWEI3M01WUWI2MDVqYzhubmxfUzk0WDRkRE12T1ZVekNiZmU?oc=5",
+          "published_date": "2026-10-02"
+        },
+        {
+          "event_id": "evt_859020e812fbfa",
+          "title": "武汉迎来第8家迪卡侬，江汉区首店9月30日正式开业",
+          "source": "极目新闻",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11dFN2N1ZhcDhSUTlWWGoxQ1VYd2VzYmpUbXZLTTZ4SUVaQTRFakQ3WFhVdzkwN2xBdDB2cWN5UG0xb2Z2ejk2SnpnNE5icDgzSDhhNUJ2ellJaGM?oc=5",
+          "published_date": "2026-09-30"
+        },
         {
           "event_id": "evt_aed708d4604bbd",
           "title": "Alo中国开店，专挑lululemon旁边",
           "source": "澎湃新闻",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
           "published_date": "2026-10-02"
+        }
+      ]
+    },
+    {
+      "headline": "联名与科技平台维持品牌新鲜度",
+      "analysis": "PUMA GOLF与Saturdays NYC推出第二弹联名，FILA发布网球稳定科技平台。运动品牌在核心产品之外，通过联名和科技平台持续制造话题与差异化，说明产品更新节奏和跨界合作仍是维持品牌关注度的重要手段。",
+      "event_ids": [
+        "evt_1b9d0ad3045816",
+        "evt_05ffcdfa869e14"
+      ],
+      "evidence": [
+        {
+          "event_id": "evt_1b9d0ad3045816",
+          "title": "PUMA GOLF x Saturdays NYC 推出第二弹联名：豹纹版 Clyde Golf 抢眼亮相",
+          "source": "Hypebeast CN",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZVFsTS1feEhpaUFrVWVWMDhBSXoxYlY1UU0wU2xqZTJkT3FkX0tTZzB1dmxwR1FRa21pRmdHYlBhZWxBWi1kTHdoNXkyenA5bWZkeEJfejNxVTVob0ZKYUJPMVRQTk9wbUhoNk1JM1gzeHA1aG5FbFQzNHl5c3ZJSHlSQ1hldl9CSzZJMGpBM0xWeE03cG94VklTcG8?oc=5",
+          "published_date": "2026-10-04"
         },
         {
-          "event_id": "evt_5a3106b174626b",
-          "title": "NikeSKIMS挤入Lululemon和Alo之间抢生意",
-          "source": "界面新闻",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5DakswWkpBaFpBek1lREpRWWRDUkdpdGhibTFlM3BWNS1TaUNUb2hJWF9La21ocmpGMzBEYjc1enlMOU5Ial9TRUtlYWZtYzRDMjZRWmRiMHY?oc=5",
-          "published_date": "2026-10-04"
+          "event_id": "evt_05ffcdfa869e14",
+          "title": "华丽现场｜FILA网球稳定科技平台；香奈儿 le19M上海大展；VEILANCE 短片和新品；尚美巴黎高珠新品",
+          "source": "华丽志",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFB4eElScXJLTUxveGh2QlFMWlpCQ1lUeUVqMWZfaE5OQTE5aTZoUE1POS10TW9LeXg5TU5vLWxpU0g?oc=5",
+          "published_date": "2026-10-01"
         }
       ]
     }
@@ -554,31 +593,31 @@
   ],
   "watchlist": [
     {
-      "title": "耐克重组后大中华区渠道动作",
+      "title": "耐克区域重组后续",
       "event_ids": [
         "evt_501bf6b4d997a9",
-        "evt_623fadce17b7f6"
+        "evt_ffa16f0a1f9235"
       ],
       "product_ids": [],
-      "reason": "观察区域合并后耐克在华门店、经销商及儿童产品线是否出现调整。"
+      "reason": "观察大中华区与亚太区合并后，耐克在儿童及家庭运动品类的渠道与营销是否调整。"
     },
     {
-      "title": "女性运动品牌线下扩张",
-      "event_ids": [
-        "evt_aed708d4604bbd",
-        "evt_5a3106b174626b"
-      ],
-      "product_ids": [],
-      "reason": "跟踪Alo与NikeSKIMS在华开店及产品定价，评估对亲子运动消费的溢出影响。"
-    },
-    {
-      "title": "大众运动零售门店加密",
+      "title": "大众运动渠道加密",
       "event_ids": [
         "evt_859020e812fbfa",
         "evt_065f65dc18c8d7"
       ],
       "product_ids": [],
-      "reason": "观察迪卡侬及奥莱渠道在假日消费后的客流与儿童品类陈列变化。"
+      "reason": "关注迪卡侬武汉新店及奥莱假日消费对区域儿童运动零售的分流与带动。"
+    },
+    {
+      "title": "女性运动品牌竞争",
+      "event_ids": [
+        "evt_aed708d4604bbd",
+        "evt_5a3106b174626b"
+      ],
+      "product_ids": [],
+      "reason": "观察Alo与NikeSKIMS在lululemon周边布局，是否影响儿童家庭消费场景。"
     }
   ],
   "tracking": {
@@ -631,7 +670,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "耐克最新财季全球及大中华区营收数据，是判断国际品牌在华走势的关键财务信号。"
+        "editorial_reason": "耐克季度营收与大中华区数据是本周品牌财务层面最核心的公开信息。"
       },
       {
         "event_id": "evt_501bf6b4d997a9",
@@ -671,48 +710,47 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "耐克将中国市场与亚太合并，区域架构调整直接影响其在华渠道与品牌资源配置。"
+        "editorial_reason": "大中华区与亚太区合并，直接影响耐克在华渠道与组织效率。"
       },
       {
-        "event_id": "evt_aed708d4604bbd",
-        "title": "Alo中国开店，专挑lululemon旁边",
+        "event_id": "evt_859020e812fbfa",
+        "title": "武汉迎来第8家迪卡侬，江汉区首店9月30日正式开业",
         "category": "行业动态",
         "event_family": "store_channel",
         "reporting_period": "",
         "brands": [
-          "lululemon",
-          "Alo"
+          "迪卡侬"
         ],
-        "source": "澎湃新闻",
-        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
-        "published_at": "2026-10-02T18:53+08:00",
-        "published_date": "2026-10-02",
+        "source": "极目新闻",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11dFN2N1ZhcDhSUTlWWGoxQ1VYd2VzYmpUbXZLTTZ4SUVaQTRFakQ3WFhVdzkwN2xBdDB2cWN5UG0xb2Z2ejk2SnpnNE5icDgzSDhhNUJ2ellJaGM?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11dFN2N1ZhcDhSUTlWWGoxQ1VYd2VzYmpUbXZLTTZ4SUVaQTRFakQ3WFhVdzkwN2xBdDB2cWN5UG0xb2Z2ejk2SnpnNE5icDgzSDhhNUJ2ellJaGM?oc=5",
+        "published_at": "2026-09-30T18:29+08:00",
+        "published_date": "2026-09-30",
         "status": "new",
         "verification": "single_source",
         "is_official": false,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 43,
-        "selection_score": 50,
+        "editorial_score": 42,
+        "selection_score": 53,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_aed708d4604bbd"
+          "evt_859020e812fbfa"
         ],
         "evidence": [
           {
-            "item_id": "src_93b52e1b319422",
-            "title": "Alo中国开店，专挑lululemon旁边",
-            "source": "澎湃新闻",
-            "source_tier": "tier_2",
+            "item_id": "src_e7f39f44377288",
+            "title": "武汉迎来第8家迪卡侬，江汉区首店9月30日正式开业",
+            "source": "极目新闻",
+            "source_tier": "tier_3",
             "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
-            "published_at": "2026-10-02T18:53+08:00",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11dFN2N1ZhcDhSUTlWWGoxQ1VYd2VzYmpUbXZLTTZ4SUVaQTRFakQ3WFhVdzkwN2xBdDB2cWN5UG0xb2Z2ejk2SnpnNE5icDgzSDhhNUJ2ellJaGM?oc=5",
+            "published_at": "2026-09-30T18:29+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "Alo中国开店选址贴近lululemon，反映女性运动服饰赛道线下竞争进一步升温。"
+        "editorial_reason": "迪卡侬武汉第8家门店开业，大众运动渠道继续加密。"
       },
       {
         "event_id": "evt_1b9d0ad3045816",
@@ -752,7 +790,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "PUMA GOLF联名第二弹，展示运动品牌借联名维持产品话题与品类延展。"
+        "editorial_reason": "PUMA GOLF联名更新，显示运动品牌借联名维持产品话题。"
       },
       {
         "event_id": "evt_05ffcdfa869e14",
@@ -792,7 +830,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "FILA发布网球稳定科技平台，说明运动品牌继续以科技平台强化专业品类。"
+        "editorial_reason": "FILA网球稳定科技平台发布，运动科技平台化趋势延续。"
       }
     ],
     "follow_up_selected": [],
@@ -966,11 +1004,11 @@
     },
     {
       "type": "event",
-      "id": "evt_aed708d4604bbd",
-      "title": "Alo中国开店，专挑lululemon旁边",
-      "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
-      "published_date": "2026-10-02"
+      "id": "evt_859020e812fbfa",
+      "title": "武汉迎来第8家迪卡侬，江汉区首店9月30日正式开业",
+      "source": "极目新闻",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11dFN2N1ZhcDhSUTlWWGoxQ1VYd2VzYmpUbXZLTTZ4SUVaQTRFakQ3WFhVdzkwN2xBdDB2cWN5UG0xb2Z2ejk2SnpnNE5icDgzSDhhNUJ2ellJaGM?oc=5",
+      "published_date": "2026-09-30"
     },
     {
       "type": "event",
@@ -1046,11 +1084,19 @@
     },
     {
       "type": "event",
-      "id": "evt_5a3106b174626b",
-      "title": "NikeSKIMS挤入Lululemon和Alo之间抢生意",
-      "source": "界面新闻",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5DakswWkpBaFpBek1lREpRWWRDUkdpdGhibTFlM3BWNS1TaUNUb2hJWF9La21ocmpGMzBEYjc1enlMOU5Ial9TRUtlYWZtYzRDMjZRWmRiMHY?oc=5",
-      "published_date": "2026-10-04"
+      "id": "evt_78baf96b4b61c6",
+      "title": "Nike 发布全新的顶级旗舰跑鞋！堆料堆到极致了！",
+      "source": "FLIGHTCLUB中文站",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1qWjNJTl82Yi1UNzJDc2gxcVBNaVpxajlrVkc0X1l6eExwWEI3M01WUWI2MDVqYzhubmxfUzk0WDRkRE12T1ZVekNiZmU?oc=5",
+      "published_date": "2026-10-02"
+    },
+    {
+      "type": "event",
+      "id": "evt_aed708d4604bbd",
+      "title": "Alo中国开店，专挑lululemon旁边",
+      "source": "澎湃新闻",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
+      "published_date": "2026-10-02"
     }
   ],
   "data_quality": {
@@ -1067,7 +1113,7 @@
     "eligible_product_count": 0,
     "selected_product_count": 0,
     "conflict_count": 0,
-    "source_link_count": 14,
+    "source_link_count": 15,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
