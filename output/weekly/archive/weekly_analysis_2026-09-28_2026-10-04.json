@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-10-07T10:58+08:00",
+  "generated_at": "2026-10-08T11:15+08:00",
   "report_window": {
     "start_date": "2026-09-28",
     "end_date": "2026-10-04",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "耐克大中华区下滑与组织重组是本周主线，儿童运动鞋服竞争将更聚焦区域效率与产品节奏。",
-    "week_in_one_paragraph": "本周耐克2027财年Q1营收112亿美元、大中华区11.8亿美元，并宣布将大中华区与亚太区合并、推出PACE重组，同时发布Apex马拉松竞速跑鞋。迪卡侬武汉江汉区首店开业并推外骨骼租赁，Alo在华选址贴近lululemon，PUMA与FILA继续以联名和科技平台更新产品线。",
+    "weekly_thesis": "耐克大中华区下滑与区域重组是本周主线，儿童运动鞋服竞争将更聚焦本土化与场景细分。",
+    "week_in_one_paragraph": "渠道端迪卡侬武汉江汉区首店开业，Alo中国开店紧邻lululemon。",
     "next_week_focus": [
-      "耐克区域合并后是否披露中国儿童品类调整。",
-      "迪卡侬武汉新店客流与儿童运动品类表现。",
-      "Alo中国首店选址后是否公布开业节奏。",
-      "PUMA与FILA新品在儿童线的延伸可能。",
-      "国庆后户外运动消费场景的延续性。"
+      "耐克区域重组后儿童线渠道政策是否调整",
+      "国际品牌在华财报压力是否传导至儿童品类",
+      "本土儿童跑鞋专业科技迭代动向",
+      "女性运动品牌扩张对家庭消费场景影响",
+      "大众运动零售新店开业与假日消费表现"
     ]
   },
   "key_developments": [
@@ -66,7 +66,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "耐克季度营收与大中华区数据是本周品牌财务层面最核心的公开信息。"
+      "editorial_reason": "耐克最新财季全球及大中华区核心财务数据披露，是判断国际品牌在华走势的关键依据。"
     },
     {
       "event_id": "evt_501bf6b4d997a9",
@@ -106,7 +106,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "大中华区与亚太区合并，直接影响耐克在华渠道与组织效率。"
+      "editorial_reason": "耐克将中国市场与亚太市场合并，区域管理架构调整直接影响后续渠道与营销资源分配。"
     },
     {
       "event_id": "evt_859020e812fbfa",
@@ -146,47 +146,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "迪卡侬武汉第8家门店开业，大众运动渠道继续加密。"
-    },
-    {
-      "event_id": "evt_1b9d0ad3045816",
-      "title": "PUMA GOLF x Saturdays NYC 推出第二弹联名：豹纹版 Clyde Golf 抢眼亮相",
-      "category": "产品与科技",
-      "event_family": "collaboration",
-      "reporting_period": "",
-      "brands": [
-        "Puma"
-      ],
-      "source": "Hypebeast CN",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZVFsTS1feEhpaUFrVWVWMDhBSXoxYlY1UU0wU2xqZTJkT3FkX0tTZzB1dmxwR1FRa21pRmdHYlBhZWxBWi1kTHdoNXkyenA5bWZkeEJfejNxVTVob0ZKYUJPMVRQTk9wbUhoNk1JM1gzeHA1aG5FbFQzNHl5c3ZJSHlSQ1hldl9CSzZJMGpBM0xWeE03cG94VklTcG8?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZVFsTS1feEhpaUFrVWVWMDhBSXoxYlY1UU0wU2xqZTJkT3FkX0tTZzB1dmxwR1FRa21pRmdHYlBhZWxBWi1kTHdoNXkyenA5bWZkeEJfejNxVTVob0ZKYUJPMVRQTk9wbUhoNk1JM1gzeHA1aG5FbFQzNHl5c3ZJSHlSQ1hldl9CSzZJMGpBM0xWeE03cG94VklTcG8?oc=5",
-      "published_at": "2026-10-04T13:46+08:00",
-      "published_date": "2026-10-04",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 44,
-      "selection_score": 56,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_1b9d0ad3045816"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_cecb0f11c8ada6",
-          "title": "PUMA GOLF x Saturdays NYC 推出第二弹联名：豹纹版 Clyde Golf 抢眼亮相",
-          "source": "Hypebeast CN",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZVFsTS1feEhpaUFrVWVWMDhBSXoxYlY1UU0wU2xqZTJkT3FkX0tTZzB1dmxwR1FRa21pRmdHYlBhZWxBWi1kTHdoNXkyenA5bWZkeEJfejNxVTVob0ZKYUJPMVRQTk9wbUhoNk1JM1gzeHA1aG5FbFQzNHl5c3ZJSHlSQ1hldl9CSzZJMGpBM0xWeE03cG94VklTcG8?oc=5",
-          "published_at": "2026-10-04T13:46+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "PUMA GOLF联名更新，显示运动品牌借联名维持产品话题。"
+      "editorial_reason": "迪卡侬武汉江汉区首店开业，大众运动零售渠道继续向核心城市加密布局。"
     },
     {
       "event_id": "evt_05ffcdfa869e14",
@@ -226,13 +186,13 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "FILA网球稳定科技平台发布，运动科技平台化趋势延续。"
+      "editorial_reason": "FILA发布网球稳定科技平台，运动品牌在细分运动场景持续加码科技叙事。"
     }
   ],
   "deep_dives": [
     {
       "headline": "耐克在华承压与区域重组",
-      "analysis": "耐克2027财年Q1全球营收112亿美元，大中华区营收11.8亿美元，同时大中华区收入下滑26%。公司宣布将大中华区与亚太区合并，并推出PACE计划重组组织架构。对儿童运动品类而言，这意味着国际品牌在华资源分配和渠道策略可能调整，区域合并后决策链条与本地响应速度值得关注。",
+      "analysis": "耐克2027财年Q1全球营收112亿美元，大中华区营收11.8亿美元且收入下滑26%。公司同时宣布将大中华区与亚太区合并为三大区域市场之一，并推出PACE计划重组组织架构、推进节流与裁员。对儿童运动品类而言，国际品牌在华资源分配和渠道策略可能随之调整，本土品牌在区域响应速度和细分场景上的相对优势值得关注。",
       "event_ids": [
         "evt_623fadce17b7f6",
         "evt_501bf6b4d997a9",
@@ -263,12 +223,11 @@
       ]
     },
     {
-      "headline": "运动品牌产品与渠道同步更新",
-      "analysis": "耐克发布全新顶级旗舰跑鞋，继续强化竞速跑鞋产品线；迪卡侬在武汉开出第8家门店、江汉区首店，大众运动零售继续下沉加密；Alo中国开店选址贴近lululemon，女性运动服饰赛道竞争加剧。三者分别代表产品、渠道和细分赛道的新动向。",
+      "headline": "专业跑鞋与运动科技竞赛",
+      "analysis": "耐克发布全新顶级旗舰跑鞋，FILA推出网球稳定科技平台，显示运动品牌继续以专业科技平台和旗舰产品强化细分运动心智。对儿童运动鞋服而言，成人专业科技向儿童线迁移的节奏、以及网球等细分场景的装备需求变化，是后续产品规划可留意的方向。",
       "event_ids": [
         "evt_78baf96b4b61c6",
-        "evt_859020e812fbfa",
-        "evt_aed708d4604bbd"
+        "evt_05ffcdfa869e14"
       ],
       "evidence": [
         {
@@ -278,6 +237,23 @@
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1qWjNJTl82Yi1UNzJDc2gxcVBNaVpxajlrVkc0X1l6eExwWEI3M01WUWI2MDVqYzhubmxfUzk0WDRkRE12T1ZVekNiZmU?oc=5",
           "published_date": "2026-10-02"
         },
+        {
+          "event_id": "evt_05ffcdfa869e14",
+          "title": "华丽现场｜FILA网球稳定科技平台；香奈儿 le19M上海大展；VEILANCE 短片和新品；尚美巴黎高珠新品",
+          "source": "华丽志",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFB4eElScXJLTUxveGh2QlFMWlpCQ1lUeUVqMWZfaE5OQTE5aTZoUE1POS10TW9LeXg5TU5vLWxpU0g?oc=5",
+          "published_date": "2026-10-01"
+        }
+      ]
+    },
+    {
+      "headline": "大众运动零售与女性运动渠道扩张",
+      "analysis": "迪卡侬在武汉江汉区开出首店，继续加密大众运动零售网络；Alo进入中国并选址紧邻lululemon，女性运动服饰线下竞争加剧。两者分别代表大众性价比渠道和高端女性运动渠道的扩张，对儿童运动消费的场景延伸和家庭客群触达具有参考意义。",
+      "event_ids": [
+        "evt_859020e812fbfa",
+        "evt_aed708d4604bbd"
+      ],
+      "evidence": [
         {
           "event_id": "evt_859020e812fbfa",
           "title": "武汉迎来第8家迪卡侬，江汉区首店9月30日正式开业",
@@ -291,30 +267,6 @@
           "source": "澎湃新闻",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50SUZaMHl4WXlGZGU1V0RfX2tuX19idDFDcDUtYThDWVpORkw3Mjl3Z3ZqRmxoVWw4NkJjRnZNbUlpSXRoQUdoMjIxaFBWODAtUzIzeXkxdHJNMm1Demc?oc=5",
           "published_date": "2026-10-02"
-        }
-      ]
-    },
-    {
-      "headline": "联名与科技平台维持品牌新鲜度",
-      "analysis": "PUMA GOLF与Saturdays NYC推出第二弹联名，FILA发布网球稳定科技平台。运动品牌在核心产品之外，通过联名和科技平台持续制造话题与差异化，说明产品更新节奏和跨界合作仍是维持品牌关注度的重要手段。",
-      "event_ids": [
-        "evt_1b9d0ad3045816",
-        "evt_05ffcdfa869e14"
-      ],
-      "evidence": [
-        {
-          "event_id": "evt_1b9d0ad3045816",
-          "title": "PUMA GOLF x Saturdays NYC 推出第二弹联名：豹纹版 Clyde Golf 抢眼亮相",
-          "source": "Hypebeast CN",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZVFsTS1feEhpaUFrVWVWMDhBSXoxYlY1UU0wU2xqZTJkT3FkX0tTZzB1dmxwR1FRa21pRmdHYlBhZWxBWi1kTHdoNXkyenA5bWZkeEJfejNxVTVob0ZKYUJPMVRQTk9wbUhoNk1JM1gzeHA1aG5FbFQzNHl5c3ZJSHlSQ1hldl9CSzZJMGpBM0xWeE03cG94VklTcG8?oc=5",
-          "published_date": "2026-10-04"
-        },
-        {
-          "event_id": "evt_05ffcdfa869e14",
-          "title": "华丽现场｜FILA网球稳定科技平台；香奈儿 le19M上海大展；VEILANCE 短片和新品；尚美巴黎高珠新品",
-          "source": "华丽志",
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFB4eElScXJLTUxveGh2QlFMWlpCQ1lUeUVqMWZfaE5OQTE5aTZoUE1POS10TW9LeXg5TU5vLWxpU0g?oc=5",
-          "published_date": "2026-10-01"
         }
       ]
     }
@@ -552,72 +504,33 @@
           "summary": ""
         }
       ]
-    },
-    {
-      "event_id": "evt_233f7ed6d523fc",
-      "title": "长城脚下燃动国庆 华彬文体活动解锁健康消费新场景",
-      "category": "行业动态",
-      "event_family": "industry_event",
-      "reporting_period": "",
-      "brands": [],
-      "source": "人民网",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTU0gxdHY0VlFDUUtnZU83V3A3bnJMNFUxOEdPWnY2eE51V2o0Y3pCNnhYUmJ4TE5xeDgxMEk4Z0RlUXJwVlhmY3hxRjRiNFVUaThHU1dlVDh6UllURlh5MlBwZUduOVkz?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTU0gxdHY0VlFDUUtnZU83V3A3bnJMNFUxOEdPWnY2eE51V2o0Y3pCNnhYUmJ4TE5xeDgxMEk4Z0RlUXJwVlhmY3hxRjRiNFVUaThHU1dlVDh6UllURlh5MlBwZUduOVkz?oc=5",
-      "published_at": "2026-10-02T17:44+08:00",
-      "published_date": "2026-10-02",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 44,
-      "selection_score": 51,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_233f7ed6d523fc"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_91621c4457b7e5",
-          "title": "长城脚下燃动国庆 华彬文体活动解锁健康消费新场景",
-          "source": "人民网",
-          "source_tier": "tier_1",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTU0gxdHY0VlFDUUtnZU83V3A3bnJMNFUxOEdPWnY2eE51V2o0Y3pCNnhYUmJ4TE5xeDgxMEk4Z0RlUXJwVlhmY3hxRjRiNFVUaThHU1dlVDh6UllURlh5MlBwZUduOVkz?oc=5",
-          "published_at": "2026-10-02T17:44+08:00",
-          "summary": ""
-        }
-      ]
     }
   ],
   "watchlist": [
     {
-      "title": "耐克区域重组后续",
+      "title": "耐克区域重组后续落地",
       "event_ids": [
         "evt_501bf6b4d997a9",
         "evt_ffa16f0a1f9235"
       ],
       "product_ids": [],
-      "reason": "观察大中华区与亚太区合并后，耐克在儿童及家庭运动品类的渠道与营销是否调整。"
+      "reason": "观察大中华区与亚太区合并后，耐克在儿童产品线、渠道政策和营销资源上是否出现调整。"
     },
     {
-      "title": "大众运动渠道加密",
+      "title": "儿童专业跑鞋科技下放",
       "event_ids": [
-        "evt_859020e812fbfa",
-        "evt_065f65dc18c8d7"
+        "evt_78baf96b4b61c6"
       ],
       "product_ids": [],
-      "reason": "关注迪卡侬武汉新店及奥莱假日消费对区域儿童运动零售的分流与带动。"
+      "reason": "关注耐克旗舰跑鞋科技是否向儿童跑鞋延伸，以及安踏儿童等本土品牌是否跟进专业跑鞋迭代。"
     },
     {
-      "title": "女性运动品牌竞争",
+      "title": "女性运动品牌线下扩张",
       "event_ids": [
-        "evt_aed708d4604bbd",
-        "evt_5a3106b174626b"
+        "evt_aed708d4604bbd"
       ],
       "product_ids": [],
-      "reason": "观察Alo与NikeSKIMS在lululemon周边布局，是否影响儿童家庭消费场景。"
+      "reason": "观察Alo中国门店落地后对lululemon及周边儿童家庭客群消费场景的实际影响。"
     }
   ],
   "tracking": {
@@ -670,7 +583,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "耐克季度营收与大中华区数据是本周品牌财务层面最核心的公开信息。"
+        "editorial_reason": "耐克最新财季全球及大中华区核心财务数据披露，是判断国际品牌在华走势的关键依据。"
       },
       {
         "event_id": "evt_501bf6b4d997a9",
@@ -710,7 +623,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "大中华区与亚太区合并，直接影响耐克在华渠道与组织效率。"
+        "editorial_reason": "耐克将中国市场与亚太市场合并，区域管理架构调整直接影响后续渠道与营销资源分配。"
       },
       {
         "event_id": "evt_859020e812fbfa",
@@ -750,47 +663,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "迪卡侬武汉第8家门店开业，大众运动渠道继续加密。"
-      },
-      {
-        "event_id": "evt_1b9d0ad3045816",
-        "title": "PUMA GOLF x Saturdays NYC 推出第二弹联名：豹纹版 Clyde Golf 抢眼亮相",
-        "category": "产品与科技",
-        "event_family": "collaboration",
-        "reporting_period": "",
-        "brands": [
-          "Puma"
-        ],
-        "source": "Hypebeast CN",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZVFsTS1feEhpaUFrVWVWMDhBSXoxYlY1UU0wU2xqZTJkT3FkX0tTZzB1dmxwR1FRa21pRmdHYlBhZWxBWi1kTHdoNXkyenA5bWZkeEJfejNxVTVob0ZKYUJPMVRQTk9wbUhoNk1JM1gzeHA1aG5FbFQzNHl5c3ZJSHlSQ1hldl9CSzZJMGpBM0xWeE03cG94VklTcG8?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZVFsTS1feEhpaUFrVWVWMDhBSXoxYlY1UU0wU2xqZTJkT3FkX0tTZzB1dmxwR1FRa21pRmdHYlBhZWxBWi1kTHdoNXkyenA5bWZkeEJfejNxVTVob0ZKYUJPMVRQTk9wbUhoNk1JM1gzeHA1aG5FbFQzNHl5c3ZJSHlSQ1hldl9CSzZJMGpBM0xWeE03cG94VklTcG8?oc=5",
-        "published_at": "2026-10-04T13:46+08:00",
-        "published_date": "2026-10-04",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 44,
-        "selection_score": 56,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_1b9d0ad3045816"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_cecb0f11c8ada6",
-            "title": "PUMA GOLF x Saturdays NYC 推出第二弹联名：豹纹版 Clyde Golf 抢眼亮相",
-            "source": "Hypebeast CN",
-            "source_tier": "tier_3",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZVFsTS1feEhpaUFrVWVWMDhBSXoxYlY1UU0wU2xqZTJkT3FkX0tTZzB1dmxwR1FRa21pRmdHYlBhZWxBWi1kTHdoNXkyenA5bWZkeEJfejNxVTVob0ZKYUJPMVRQTk9wbUhoNk1JM1gzeHA1aG5FbFQzNHl5c3ZJSHlSQ1hldl9CSzZJMGpBM0xWeE03cG94VklTcG8?oc=5",
-            "published_at": "2026-10-04T13:46+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "PUMA GOLF联名更新，显示运动品牌借联名维持产品话题。"
+        "editorial_reason": "迪卡侬武汉江汉区首店开业，大众运动零售渠道继续向核心城市加密布局。"
       },
       {
         "event_id": "evt_05ffcdfa869e14",
@@ -830,7 +703,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "FILA网球稳定科技平台发布，运动科技平台化趋势延续。"
+        "editorial_reason": "FILA发布网球稳定科技平台，运动品牌在细分运动场景持续加码科技叙事。"
       }
     ],
     "follow_up_selected": [],
@@ -1012,14 +885,6 @@
     },
     {
       "type": "event",
-      "id": "evt_1b9d0ad3045816",
-      "title": "PUMA GOLF x Saturdays NYC 推出第二弹联名：豹纹版 Clyde Golf 抢眼亮相",
-      "source": "Hypebeast CN",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZVFsTS1feEhpaUFrVWVWMDhBSXoxYlY1UU0wU2xqZTJkT3FkX0tTZzB1dmxwR1FRa21pRmdHYlBhZWxBWi1kTHdoNXkyenA5bWZkeEJfejNxVTVob0ZKYUJPMVRQTk9wbUhoNk1JM1gzeHA1aG5FbFQzNHl5c3ZJSHlSQ1hldl9CSzZJMGpBM0xWeE03cG94VklTcG8?oc=5",
-      "published_date": "2026-10-04"
-    },
-    {
-      "type": "event",
       "id": "evt_05ffcdfa869e14",
       "title": "华丽现场｜FILA网球稳定科技平台；香奈儿 le19M上海大展；VEILANCE 短片和新品；尚美巴黎高珠新品",
       "source": "华丽志",
@@ -1076,14 +941,6 @@
     },
     {
       "type": "event",
-      "id": "evt_233f7ed6d523fc",
-      "title": "长城脚下燃动国庆 华彬文体活动解锁健康消费新场景",
-      "source": "人民网",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTU0gxdHY0VlFDUUtnZU83V3A3bnJMNFUxOEdPWnY2eE51V2o0Y3pCNnhYUmJ4TE5xeDgxMEk4Z0RlUXJwVlhmY3hxRjRiNFVUaThHU1dlVDh6UllURlh5MlBwZUduOVkz?oc=5",
-      "published_date": "2026-10-02"
-    },
-    {
-      "type": "event",
       "id": "evt_78baf96b4b61c6",
       "title": "Nike 发布全新的顶级旗舰跑鞋！堆料堆到极致了！",
       "source": "FLIGHTCLUB中文站",
@@ -1107,13 +964,13 @@
     "raw_event_count": 19,
     "coalesced_event_count": 19,
     "eligible_event_count": 19,
-    "selected_event_count": 5,
+    "selected_event_count": 4,
     "raw_product_count": 9,
     "product_lead_count": 9,
     "eligible_product_count": 0,
     "selected_product_count": 0,
     "conflict_count": 0,
-    "source_link_count": 15,
+    "source_link_count": 13,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
@@ -1129,7 +986,7 @@
       "电商与平台": 1
     },
     "selected_status": {
-      "new": 5
+      "new": 4
     },
     "quality_notes": [
       "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
