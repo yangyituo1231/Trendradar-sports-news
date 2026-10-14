@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-10-13T12:11+08:00",
+  "generated_at": "2026-10-14T10:24+08:00",
   "report_window": {
     "start_date": "2026-10-05",
     "end_date": "2026-10-11",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "安踏入股彪马重塑全球格局，耐克调整大中华区架构，儿童运动赛道竞争与消费政策同步升温。",
-    "week_in_one_paragraph": "本周安踏完成收购彪马29.06%股权成为最大股东，全球运动品牌格局生变；耐克宣布撤销大中华区并计划裁员，国际品牌在华策略调整加速；李宁签约NBA与库里强化篮球资源；北京、湖北等地消费数据与体育消费季活动显示区域消费活力；巴拉巴拉等童装品牌推进儿童友好场景落地。",
+    "weekly_thesis": "安踏入股彪马重塑全球格局，儿童运动赛道竞争与消费政策同步升温。",
+    "week_in_one_paragraph": "本周安踏完成对彪马29.06%股权收购，成为其最大股东，全球运动品牌格局出现重大变化；耐克大中华区营收下滑并宣布撤销大中华区，同时计划裁员，国际品牌在华调整加剧。儿童运动领域，巴拉巴拉推动儿童友好城市建设，童鞋材质安全话题受到关注。",
     "next_week_focus": [
-      "安踏入股彪马后是否公布儿童品类协同计划",
-      "耐克大中华区调整对儿童渠道的后续影响",
-      "李宁签约NBA与库里后篮球童鞋产品动向",
-      "北京国际消费高地政策对儿童消费的细化措施",
-      "国庆后儿童运动鞋服消费数据与趋势"
+      "安踏入股彪马后是否披露整合计划或管理层调整。",
+      "耐克大中华区撤销后渠道与营销策略是否出现变化。",
+      "北京国际消费高地政策是否细化到体育用品领域。",
+      "儿童运动鞋安全标准或材质话题是否持续发酵。",
+      "体育消费季活动是否带动区域运动鞋服零售表现。"
     ]
   },
   "key_developments": [
@@ -127,7 +127,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏成为彪马最大股东，全球运动品牌竞争格局出现重大变化，多品牌运营面临整合考验。"
+      "editorial_reason": "安踏完成收购彪马29.06%股权成为最大股东，全球运动品牌格局生变，多品牌运营面临整合考验。"
     },
     {
       "event_id": "evt_7a21f3de7f7c87",
@@ -167,97 +167,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "耐克撤销大中华区并披露营收下滑，国际品牌在华组织架构调整值得关注。"
-    },
-    {
-      "event_id": "evt_5bf804c0100859",
-      "title": "李宁签约NBA、库里",
-      "category": "行业动态",
-      "event_family": "endorsement_partnership",
-      "reporting_period": "",
-      "brands": [
-        "李宁"
-      ],
-      "source": "新浪财经",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KaXJFQldCM0JqRWRPZFpyMUpmRUpNTmFiRUEtSTR4XzVrVmhnVUJRR2RvbS1JLTFwNHFhUW5heGQxWHVqUHkyRnlYaGRodlZXVGVUQUh3TENpWmdCUEJXZXFpa255WkR6UzRoelY4TGxBbklBOFE?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KaXJFQldCM0JqRWRPZFpyMUpmRUpNTmFiRUEtSTR4XzVrVmhnVUJRR2RvbS1JLTFwNHFhUW5heGQxWHVqUHkyRnlYaGRodlZXVGVUQUh3TENpWmdCUEJXZXFpa255WkR6UzRoelY4TGxBbklBOFE?oc=5",
-      "published_at": "2026-10-11T15:40+08:00",
-      "published_date": "2026-10-11",
-      "status": "new",
-      "verification": "multi_source",
-      "is_official": false,
-      "source_count": 2,
-      "direct_source_count": 0,
-      "mention_count": 2,
-      "editorial_score": 48,
-      "selection_score": 61,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_5bf804c0100859"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_a125b866adabde",
-          "title": "李宁签约NBA、库里",
-          "source": "新浪财经",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KaXJFQldCM0JqRWRPZFpyMUpmRUpNTmFiRUEtSTR4XzVrVmhnVUJRR2RvbS1JLTFwNHFhUW5heGQxWHVqUHkyRnlYaGRodlZXVGVUQUh3TENpWmdCUEJXZXFpa255WkR6UzRoelY4TGxBbklBOFE?oc=5",
-          "published_at": "2026-10-11T15:40+08:00",
-          "summary": ""
-        },
-        {
-          "item_id": "src_a07e97e54e1cdf",
-          "title": "李宁签约球员盘点",
-          "source": "虎扑体育",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1uZ1JqdTA0cDZXNllSbWNnNml0WnZWODlrQXFPTGtkRV94QVFnSnJmWFhvZkhVRjVfM1B3MjF6bWJFSzFmci1LZ1ltNllXUjlUUklyLXpqanpUMGN6Rm0zSw?oc=5",
-          "published_at": "2026-10-11T09:30+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "李宁签约NBA与库里，强化篮球领域资源布局，对国内运动品牌竞争有参考意义。"
-    },
-    {
-      "event_id": "evt_309ff072975197",
-      "title": "巴拉巴拉：从品类创新到体验场景落地，助力儿童友好城市建设",
-      "category": "儿童与青少年",
-      "event_family": "industry_event",
-      "reporting_period": "",
-      "brands": [
-        "巴拉巴拉"
-      ],
-      "source": "环球网",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85YS1FZk1RRkFQaG5xTG54ay12Wi1IQy1RN0hha0pLLXN6VFJBdDNQekVtUENsSVp1TGNwb2Jua2xtaXpQd0pCT2w5NWVHWU9hamdpMDhQbk9Kdw?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85YS1FZk1RRkFQaG5xTG54ay12Wi1IQy1RN0hha0pLLXN6VFJBdDNQekVtUENsSVp1TGNwb2Jua2xtaXpQd0pCT2w5NWVHWU9hamdpMDhQbk9Kdw?oc=5",
-      "published_at": "2026-10-11T02:58+08:00",
-      "published_date": "2026-10-11",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 45,
-      "selection_score": 68,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_309ff072975197"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_0a3215abd0e387",
-          "title": "巴拉巴拉：从品类创新到体验场景落地，助力儿童友好城市建设",
-          "source": "环球网",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85YS1FZk1RRkFQaG5xTG54ay12Wi1IQy1RN0hha0pLLXN6VFJBdDNQekVtUENsSVp1TGNwb2Jua2xtaXpQd0pCT2w5NWVHWU9hamdpMDhQbk9Kdw?oc=5",
-          "published_at": "2026-10-11T02:58+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "巴拉巴拉从品类创新到体验场景落地，儿童友好城市建设为童装品牌提供场景化思路。"
+      "editorial_reason": "耐克撤销大中华区并披露营收下滑，国际品牌在华组织与业绩同步调整，值得关注。"
     },
     {
       "event_id": "evt_2cadea9f858127",
@@ -333,56 +243,145 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "国庆假期湖北消费突破500亿元，区域消费亮点为儿童运动品类提供假日经济参考。"
+      "editorial_reason": "国庆假期湖北消费突破500亿元，区域消费活力为运动鞋服渠道提供参考。"
     },
     {
-      "event_id": "evt_ea3ea4d48586b0",
-      "title": "Nike x 航海王联名系列：深入传奇世界，开启探索之旅— NIKE, Inc.",
-      "category": "产品与科技",
-      "event_family": "collaboration",
+      "event_id": "evt_309ff072975197",
+      "title": "巴拉巴拉：从品类创新到体验场景落地，助力儿童友好城市建设",
+      "category": "儿童与青少年",
+      "event_family": "industry_event",
       "reporting_period": "",
       "brands": [
-        "Nike"
+        "巴拉巴拉"
       ],
-      "source": "About Nike",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1LXJFczVsZnFHc3JTVGNoQTNSSG5ZdXd1SnJsMkxaV0N6NUNjbDlpd2xsOUczaElxSWVzOHN0eXNQbTRZMHI3Wldpd2xXQnhDYUpmVFlXY2NjUQ?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1LXJFczVsZnFHc3JTVGNoQTNSSG5ZdXd1SnJsMkxaV0N6NUNjbDlpd2xsOUczaElxSWVzOHN0eXNQbTRZMHI3Wldpd2xXQnhDYUpmVFlXY2NjUQ?oc=5",
-      "published_at": "2026-10-06T03:00+08:00",
-      "published_date": "2026-10-06",
+      "source": "环球网",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85YS1FZk1RRkFQaG5xTG54ay12Wi1IQy1RN0hha0pLLXN6VFJBdDNQekVtUENsSVp1TGNwb2Jua2xtaXpQd0pCT2w5NWVHWU9hamdpMDhQbk9Kdw?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85YS1FZk1RRkFQaG5xTG54ay12Wi1IQy1RN0hha0pLLXN6VFJBdDNQekVtUENsSVp1TGNwb2Jua2xtaXpQd0pCT2w5NWVHWU9hamdpMDhQbk9Kdw?oc=5",
+      "published_at": "2026-10-11T02:58+08:00",
+      "published_date": "2026-10-11",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 45,
+      "selection_score": 68,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_309ff072975197"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_0a3215abd0e387",
+          "title": "巴拉巴拉：从品类创新到体验场景落地，助力儿童友好城市建设",
+          "source": "环球网",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85YS1FZk1RRkFQaG5xTG54ay12Wi1IQy1RN0hha0pLLXN6VFJBdDNQekVtUENsSVp1TGNwb2Jua2xtaXpQd0pCT2w5NWVHWU9hamdpMDhQbk9Kdw?oc=5",
+          "published_at": "2026-10-11T02:58+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "巴拉巴拉从品类创新到体验场景落地，儿童友好城市建设与童装品牌动作直接相关。"
+    },
+    {
+      "event_id": "evt_341d0632e78b3c",
+      "title": "2026年黄渤海城市体育联盟（烟台）消费季暨山东省体育消费季烟台主会场活动10月14日盛大启幕",
+      "category": "宏观与消费",
+      "event_family": "macro_data",
+      "reporting_period": "",
+      "brands": [],
+      "source": "烟台市人民政府",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQkFOZGxPRWsyXzk3TjBaR3NreGcxYjhkWjlGdXR2SjZlOWZHZW9SWXJSMS1UR0FhNnVrQnJocDg2OF8tcldHYTB1QV92MTV3UkxNZXg3amNobWhCOTU0QlQxLUJjOVRoX1NpWGFFRXhHZGJyTnp2VEIyVTQ5RS1pVHFCeF84cjctbHBtNE00YlhCUFE?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQkFOZGxPRWsyXzk3TjBaR3NreGcxYjhkWjlGdXR2SjZlOWZHZW9SWXJSMS1UR0FhNnVrQnJocDg2OF8tcldHYTB1QV92MTV3UkxNZXg3amNobWhCOTU0QlQxLUJjOVRoX1NpWGFFRXhHZGJyTnp2VEIyVTQ5RS1pVHFCeF84cjctbHBtNE00YlhCUFE?oc=5",
+      "published_at": "2026-10-09T09:36+08:00",
+      "published_date": "2026-10-09",
       "status": "new",
       "verification": "official_source",
       "is_official": true,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 55,
-      "selection_score": 76,
+      "editorial_score": 58,
+      "selection_score": 77,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_ea3ea4d48586b0"
+        "evt_341d0632e78b3c"
       ],
       "evidence": [
         {
-          "item_id": "src_6d479b3b2b7cb8",
-          "title": "Nike x 航海王联名系列：深入传奇世界，开启探索之旅— NIKE, Inc.",
-          "source": "About Nike",
+          "item_id": "src_3a9372580ba0cd",
+          "title": "2026年黄渤海城市体育联盟（烟台）消费季暨山东省体育消费季烟台主会场活动10月14日盛大启幕",
+          "source": "烟台市人民政府",
           "source_tier": "official",
           "is_official": true,
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1LXJFczVsZnFHc3JTVGNoQTNSSG5ZdXd1SnJsMkxaV0N6NUNjbDlpd2xsOUczaElxSWVzOHN0eXNQbTRZMHI3Wldpd2xXQnhDYUpmVFlXY2NjUQ?oc=5",
-          "published_at": "2026-10-06T03:00+08:00",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQkFOZGxPRWsyXzk3TjBaR3NreGcxYjhkWjlGdXR2SjZlOWZHZW9SWXJSMS1UR0FhNnVrQnJocDg2OF8tcldHYTB1QV92MTV3UkxNZXg3amNobWhCOTU0QlQxLUJjOVRoX1NpWGFFRXhHZGJyTnp2VEIyVTQ5RS1pVHFCeF84cjctbHBtNE00YlhCUFE?oc=5",
+          "published_at": "2026-10-09T09:36+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "Nike与航海王联名，IP合作在运动产品中持续渗透，对儿童产品联名策略有借鉴意义。"
+      "editorial_reason": "黄渤海城市体育联盟消费季启动，体育消费场景向区域联动延伸。"
+    },
+    {
+      "event_id": "evt_5bf804c0100859",
+      "title": "李宁签约NBA、库里",
+      "category": "行业动态",
+      "event_family": "endorsement_partnership",
+      "reporting_period": "",
+      "brands": [
+        "李宁"
+      ],
+      "source": "新浪财经",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KaXJFQldCM0JqRWRPZFpyMUpmRUpNTmFiRUEtSTR4XzVrVmhnVUJRR2RvbS1JLTFwNHFhUW5heGQxWHVqUHkyRnlYaGRodlZXVGVUQUh3TENpWmdCUEJXZXFpa255WkR6UzRoelY4TGxBbklBOFE?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KaXJFQldCM0JqRWRPZFpyMUpmRUpNTmFiRUEtSTR4XzVrVmhnVUJRR2RvbS1JLTFwNHFhUW5heGQxWHVqUHkyRnlYaGRodlZXVGVUQUh3TENpWmdCUEJXZXFpa255WkR6UzRoelY4TGxBbklBOFE?oc=5",
+      "published_at": "2026-10-11T15:40+08:00",
+      "published_date": "2026-10-11",
+      "status": "new",
+      "verification": "multi_source",
+      "is_official": false,
+      "source_count": 2,
+      "direct_source_count": 0,
+      "mention_count": 2,
+      "editorial_score": 48,
+      "selection_score": 61,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_5bf804c0100859"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_a125b866adabde",
+          "title": "李宁签约NBA、库里",
+          "source": "新浪财经",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KaXJFQldCM0JqRWRPZFpyMUpmRUpNTmFiRUEtSTR4XzVrVmhnVUJRR2RvbS1JLTFwNHFhUW5heGQxWHVqUHkyRnlYaGRodlZXVGVUQUh3TENpWmdCUEJXZXFpa255WkR6UzRoelY4TGxBbklBOFE?oc=5",
+          "published_at": "2026-10-11T15:40+08:00",
+          "summary": ""
+        },
+        {
+          "item_id": "src_a07e97e54e1cdf",
+          "title": "李宁签约球员盘点",
+          "source": "虎扑体育",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1uZ1JqdTA0cDZXNllSbWNnNml0WnZWODlrQXFPTGtkRV94QVFnSnJmWFhvZkhVRjVfM1B3MjF6bWJFSzFmci1LZ1ltNllXUjlUUklyLXpqanpUMGN6Rm0zSw?oc=5",
+          "published_at": "2026-10-11T09:30+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "李宁签约NBA及库里，国内运动品牌加码顶级篮球资源，竞争维度升级。"
     }
   ],
   "deep_dives": [
     {
       "headline": "安踏入股彪马：全球运动品牌格局重构",
-      "analysis": "安踏以15亿欧元完成收购彪马29.06%股权，成为其最大股东。此举使安踏在多品牌运营上迈出关键一步，但报道也提示品牌重塑与库存调整的考验。对儿童运动市场而言，安踏系品牌矩阵扩大可能影响未来渠道与产品线布局，需关注整合后对细分品类的资源倾斜。",
+      "analysis": "安踏以15亿欧元完成收购彪马29.06%股权，成为第一大股东，但并非控股。此举使安踏多品牌矩阵延伸至全球主流运动品牌，同时面临品牌重塑与库存调整考验。对行业而言，中国运动集团首次深度介入国际头部品牌股权，全球竞争格局从耐克、阿迪达斯双强向多极化演变，后续整合效果将影响供应链与渠道资源分配。",
       "event_ids": [
         "evt_5179e4f8a4eeed",
-        "evt_81d6da4bf0e64d"
+        "evt_81d6da4bf0e64d",
+        "evt_c1355cb9fe6f71"
       ],
       "evidence": [
         {
@@ -398,12 +397,19 @@
           "source": "第一财经",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1NRkc0TFMwREV5UFZQZmJRTWg3ekRJMFdNLWZRTmZ1RmtXeU5MWEZPdVFvM1pRRm51SGF3bWtHQVJnekVQWHN2bGR0dGdwV2tSbGpB?oc=5",
           "published_date": "2026-10-07"
+        },
+        {
+          "event_id": "evt_c1355cb9fe6f71",
+          "title": "安踏123亿入股彪马：一场不控股的全球化豪赌",
+          "source": "第一财经",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5Ha3VkQkJBZWhtYkF0bWJ3bjVvaTlxLV9PcWtDMzNtdUJCQ2k2TF82VVI2S0tjOXhLTlRQTTR4VUV2V2VHTE8wRGtVbXpWN3VkZEE?oc=5",
+          "published_date": "2026-10-09"
         }
       ]
     },
     {
-      "headline": "耐克调整大中华区架构与业务收缩",
-      "analysis": "耐克宣布自2028财年起撤销大中华区，并计划进一步裁员，同时披露大中华区营收同比下滑。这反映国际品牌在华面临增长压力，组织架构调整可能影响其儿童产品线的本地化投入与渠道策略，为国内品牌释放竞争空间。",
+      "headline": "耐克在华收缩与组织调整",
+      "analysis": "耐克宣布自2028财年起撤销大中华区，2027财年Q1大中华区营收同比降22%，同时计划进一步裁员以推动业务复苏。这反映国际品牌在中国市场面临本土竞争与消费分化的压力，组织架构从区域独立转向全球统一管理。对国内运动品牌而言，头部国际品牌收缩可能释放部分渠道与营销资源，但也意味着竞争焦点向产品力与本土化运营转移。",
       "event_ids": [
         "evt_7a21f3de7f7c87",
         "evt_05b9eaa256adb7"
@@ -426,8 +432,8 @@
       ]
     },
     {
-      "headline": "儿童运动消费场景与政策驱动",
-      "analysis": "这些信号显示儿童消费与区域消费政策正在结合，运动品牌可关注儿童友好场景落地带来的线下体验与零售机会。",
+      "headline": "儿童运动与消费场景政策共振",
+      "analysis": "巴拉巴拉推动儿童友好城市建设，从品类创新转向体验场景落地；湖北国庆消费突破500亿元。三者共同指向消费政策与儿童场景的融合，儿童运动品牌可关注城市消费地标、亲子体验空间等线下场景机会，但需注意这些是政策与活动信号，并非直接销售数据。",
       "event_ids": [
         "evt_309ff072975197",
         "evt_2cadea9f858127",
@@ -518,7 +524,7 @@
           "published_date": "2026-10-10"
         }
       ],
-      "editorial_reason": "Nike Alphafly 3搭载Air Zoom，代表竞速跑鞋技术方向，对儿童跑鞋科技下放有参考价值。"
+      "editorial_reason": "Nike Alphafly 3搭载Air Zoom，官方定位马拉松跑鞋，代表竞速跑鞋技术方向。"
     },
     {
       "product_id": "prd_6409ba66b3922f",
@@ -575,7 +581,7 @@
           "published_date": "2026-10-06"
         }
       ],
-      "editorial_reason": "LeBron 24强调轻盈战靴，篮球鞋产品迭代反映球星签名鞋在青少年市场的持续影响力。"
+      "editorial_reason": "LeBron 24为Nike篮球旗舰签名鞋，轻盈战靴定位反映篮球鞋产品迭代节奏。"
     },
     {
       "product_id": "prd_b9f0c5be976400",
@@ -634,7 +640,7 @@
           "published_date": "2026-10-05"
         }
       ],
-      "editorial_reason": "Nike新一代竞速跑鞋由全球最快跑者塑造，展示跑鞋研发与运动员共创趋势。"
+      "editorial_reason": "Nike新一代竞速跑鞋与Apex同框，体现品牌对顶级跑者需求的持续投入。"
     }
   ],
   "competitor_channel": [
@@ -681,28 +687,31 @@
   "kids_consumer": [],
   "watchlist": [
     {
-      "title": "安踏整合彪马对儿童产品线的影响",
+      "title": "安踏与彪马整合进展",
       "event_ids": [
-        "evt_5179e4f8a4eeed"
+        "evt_5179e4f8a4eeed",
+        "evt_81d6da4bf0e64d"
       ],
       "product_ids": [],
-      "reason": "观察安踏是否将彪马资源引入儿童运动品类，以及渠道协同动作。"
+      "reason": "关注安踏入股后彪马品牌重塑、库存调整及渠道协同的具体动作。"
     },
     {
-      "title": "耐克大中华区调整后的儿童业务动向",
+      "title": "耐克大中华区调整落地",
       "event_ids": [
-        "evt_7a21f3de7f7c87"
+        "evt_7a21f3de7f7c87",
+        "evt_05b9eaa256adb7"
       ],
       "product_ids": [],
-      "reason": "关注耐克儿童产品线是否因架构调整出现策略变化或渠道收缩。"
+      "reason": "观察耐克撤销大中华区后组织架构、渠道策略及产品投放是否变化。"
     },
     {
-      "title": "儿童友好城市政策与运动品牌落地",
+      "title": "儿童运动消费场景",
       "event_ids": [
-        "evt_309ff072975197"
+        "evt_309ff072975197",
+        "evt_2cadea9f858127"
       ],
       "product_ids": [],
-      "reason": "观察巴拉巴拉等品牌在儿童友好场景中的具体门店或活动落地形式。"
+      "reason": "跟踪儿童友好城市建设与消费政策对童装童鞋线下场景的带动。"
     }
   ],
   "tracking": {
@@ -816,7 +825,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏成为彪马最大股东，全球运动品牌竞争格局出现重大变化，多品牌运营面临整合考验。"
+        "editorial_reason": "安踏完成收购彪马29.06%股权成为最大股东，全球运动品牌格局生变，多品牌运营面临整合考验。"
       },
       {
         "event_id": "evt_7a21f3de7f7c87",
@@ -856,97 +865,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "耐克撤销大中华区并披露营收下滑，国际品牌在华组织架构调整值得关注。"
-      },
-      {
-        "event_id": "evt_5bf804c0100859",
-        "title": "李宁签约NBA、库里",
-        "category": "行业动态",
-        "event_family": "endorsement_partnership",
-        "reporting_period": "",
-        "brands": [
-          "李宁"
-        ],
-        "source": "新浪财经",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KaXJFQldCM0JqRWRPZFpyMUpmRUpNTmFiRUEtSTR4XzVrVmhnVUJRR2RvbS1JLTFwNHFhUW5heGQxWHVqUHkyRnlYaGRodlZXVGVUQUh3TENpWmdCUEJXZXFpa255WkR6UzRoelY4TGxBbklBOFE?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KaXJFQldCM0JqRWRPZFpyMUpmRUpNTmFiRUEtSTR4XzVrVmhnVUJRR2RvbS1JLTFwNHFhUW5heGQxWHVqUHkyRnlYaGRodlZXVGVUQUh3TENpWmdCUEJXZXFpa255WkR6UzRoelY4TGxBbklBOFE?oc=5",
-        "published_at": "2026-10-11T15:40+08:00",
-        "published_date": "2026-10-11",
-        "status": "new",
-        "verification": "multi_source",
-        "is_official": false,
-        "source_count": 2,
-        "direct_source_count": 0,
-        "mention_count": 2,
-        "editorial_score": 48,
-        "selection_score": 61,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_5bf804c0100859"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_a125b866adabde",
-            "title": "李宁签约NBA、库里",
-            "source": "新浪财经",
-            "source_tier": "tier_3",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KaXJFQldCM0JqRWRPZFpyMUpmRUpNTmFiRUEtSTR4XzVrVmhnVUJRR2RvbS1JLTFwNHFhUW5heGQxWHVqUHkyRnlYaGRodlZXVGVUQUh3TENpWmdCUEJXZXFpa255WkR6UzRoelY4TGxBbklBOFE?oc=5",
-            "published_at": "2026-10-11T15:40+08:00",
-            "summary": ""
-          },
-          {
-            "item_id": "src_a07e97e54e1cdf",
-            "title": "李宁签约球员盘点",
-            "source": "虎扑体育",
-            "source_tier": "tier_3",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1uZ1JqdTA0cDZXNllSbWNnNml0WnZWODlrQXFPTGtkRV94QVFnSnJmWFhvZkhVRjVfM1B3MjF6bWJFSzFmci1LZ1ltNllXUjlUUklyLXpqanpUMGN6Rm0zSw?oc=5",
-            "published_at": "2026-10-11T09:30+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "李宁签约NBA与库里，强化篮球领域资源布局，对国内运动品牌竞争有参考意义。"
-      },
-      {
-        "event_id": "evt_309ff072975197",
-        "title": "巴拉巴拉：从品类创新到体验场景落地，助力儿童友好城市建设",
-        "category": "儿童与青少年",
-        "event_family": "industry_event",
-        "reporting_period": "",
-        "brands": [
-          "巴拉巴拉"
-        ],
-        "source": "环球网",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85YS1FZk1RRkFQaG5xTG54ay12Wi1IQy1RN0hha0pLLXN6VFJBdDNQekVtUENsSVp1TGNwb2Jua2xtaXpQd0pCT2w5NWVHWU9hamdpMDhQbk9Kdw?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85YS1FZk1RRkFQaG5xTG54ay12Wi1IQy1RN0hha0pLLXN6VFJBdDNQekVtUENsSVp1TGNwb2Jua2xtaXpQd0pCT2w5NWVHWU9hamdpMDhQbk9Kdw?oc=5",
-        "published_at": "2026-10-11T02:58+08:00",
-        "published_date": "2026-10-11",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 45,
-        "selection_score": 68,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_309ff072975197"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_0a3215abd0e387",
-            "title": "巴拉巴拉：从品类创新到体验场景落地，助力儿童友好城市建设",
-            "source": "环球网",
-            "source_tier": "tier_3",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85YS1FZk1RRkFQaG5xTG54ay12Wi1IQy1RN0hha0pLLXN6VFJBdDNQekVtUENsSVp1TGNwb2Jua2xtaXpQd0pCT2w5NWVHWU9hamdpMDhQbk9Kdw?oc=5",
-            "published_at": "2026-10-11T02:58+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "巴拉巴拉从品类创新到体验场景落地，儿童友好城市建设为童装品牌提供场景化思路。"
+        "editorial_reason": "耐克撤销大中华区并披露营收下滑，国际品牌在华组织与业绩同步调整，值得关注。"
       },
       {
         "event_id": "evt_2cadea9f858127",
@@ -1022,47 +941,135 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "国庆假期湖北消费突破500亿元，区域消费亮点为儿童运动品类提供假日经济参考。"
+        "editorial_reason": "国庆假期湖北消费突破500亿元，区域消费活力为运动鞋服渠道提供参考。"
       },
       {
-        "event_id": "evt_ea3ea4d48586b0",
-        "title": "Nike x 航海王联名系列：深入传奇世界，开启探索之旅— NIKE, Inc.",
-        "category": "产品与科技",
-        "event_family": "collaboration",
+        "event_id": "evt_309ff072975197",
+        "title": "巴拉巴拉：从品类创新到体验场景落地，助力儿童友好城市建设",
+        "category": "儿童与青少年",
+        "event_family": "industry_event",
         "reporting_period": "",
         "brands": [
-          "Nike"
+          "巴拉巴拉"
         ],
-        "source": "About Nike",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1LXJFczVsZnFHc3JTVGNoQTNSSG5ZdXd1SnJsMkxaV0N6NUNjbDlpd2xsOUczaElxSWVzOHN0eXNQbTRZMHI3Wldpd2xXQnhDYUpmVFlXY2NjUQ?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1LXJFczVsZnFHc3JTVGNoQTNSSG5ZdXd1SnJsMkxaV0N6NUNjbDlpd2xsOUczaElxSWVzOHN0eXNQbTRZMHI3Wldpd2xXQnhDYUpmVFlXY2NjUQ?oc=5",
-        "published_at": "2026-10-06T03:00+08:00",
-        "published_date": "2026-10-06",
+        "source": "环球网",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85YS1FZk1RRkFQaG5xTG54ay12Wi1IQy1RN0hha0pLLXN6VFJBdDNQekVtUENsSVp1TGNwb2Jua2xtaXpQd0pCT2w5NWVHWU9hamdpMDhQbk9Kdw?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85YS1FZk1RRkFQaG5xTG54ay12Wi1IQy1RN0hha0pLLXN6VFJBdDNQekVtUENsSVp1TGNwb2Jua2xtaXpQd0pCT2w5NWVHWU9hamdpMDhQbk9Kdw?oc=5",
+        "published_at": "2026-10-11T02:58+08:00",
+        "published_date": "2026-10-11",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 45,
+        "selection_score": 68,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_309ff072975197"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_0a3215abd0e387",
+            "title": "巴拉巴拉：从品类创新到体验场景落地，助力儿童友好城市建设",
+            "source": "环球网",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85YS1FZk1RRkFQaG5xTG54ay12Wi1IQy1RN0hha0pLLXN6VFJBdDNQekVtUENsSVp1TGNwb2Jua2xtaXpQd0pCT2w5NWVHWU9hamdpMDhQbk9Kdw?oc=5",
+            "published_at": "2026-10-11T02:58+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "巴拉巴拉从品类创新到体验场景落地，儿童友好城市建设与童装品牌动作直接相关。"
+      },
+      {
+        "event_id": "evt_341d0632e78b3c",
+        "title": "2026年黄渤海城市体育联盟（烟台）消费季暨山东省体育消费季烟台主会场活动10月14日盛大启幕",
+        "category": "宏观与消费",
+        "event_family": "macro_data",
+        "reporting_period": "",
+        "brands": [],
+        "source": "烟台市人民政府",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQkFOZGxPRWsyXzk3TjBaR3NreGcxYjhkWjlGdXR2SjZlOWZHZW9SWXJSMS1UR0FhNnVrQnJocDg2OF8tcldHYTB1QV92MTV3UkxNZXg3amNobWhCOTU0QlQxLUJjOVRoX1NpWGFFRXhHZGJyTnp2VEIyVTQ5RS1pVHFCeF84cjctbHBtNE00YlhCUFE?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQkFOZGxPRWsyXzk3TjBaR3NreGcxYjhkWjlGdXR2SjZlOWZHZW9SWXJSMS1UR0FhNnVrQnJocDg2OF8tcldHYTB1QV92MTV3UkxNZXg3amNobWhCOTU0QlQxLUJjOVRoX1NpWGFFRXhHZGJyTnp2VEIyVTQ5RS1pVHFCeF84cjctbHBtNE00YlhCUFE?oc=5",
+        "published_at": "2026-10-09T09:36+08:00",
+        "published_date": "2026-10-09",
         "status": "new",
         "verification": "official_source",
         "is_official": true,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 55,
-        "selection_score": 76,
+        "editorial_score": 58,
+        "selection_score": 77,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_ea3ea4d48586b0"
+          "evt_341d0632e78b3c"
         ],
         "evidence": [
           {
-            "item_id": "src_6d479b3b2b7cb8",
-            "title": "Nike x 航海王联名系列：深入传奇世界，开启探索之旅— NIKE, Inc.",
-            "source": "About Nike",
+            "item_id": "src_3a9372580ba0cd",
+            "title": "2026年黄渤海城市体育联盟（烟台）消费季暨山东省体育消费季烟台主会场活动10月14日盛大启幕",
+            "source": "烟台市人民政府",
             "source_tier": "official",
             "is_official": true,
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1LXJFczVsZnFHc3JTVGNoQTNSSG5ZdXd1SnJsMkxaV0N6NUNjbDlpd2xsOUczaElxSWVzOHN0eXNQbTRZMHI3Wldpd2xXQnhDYUpmVFlXY2NjUQ?oc=5",
-            "published_at": "2026-10-06T03:00+08:00",
+            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQkFOZGxPRWsyXzk3TjBaR3NreGcxYjhkWjlGdXR2SjZlOWZHZW9SWXJSMS1UR0FhNnVrQnJocDg2OF8tcldHYTB1QV92MTV3UkxNZXg3amNobWhCOTU0QlQxLUJjOVRoX1NpWGFFRXhHZGJyTnp2VEIyVTQ5RS1pVHFCeF84cjctbHBtNE00YlhCUFE?oc=5",
+            "published_at": "2026-10-09T09:36+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "Nike与航海王联名，IP合作在运动产品中持续渗透，对儿童产品联名策略有借鉴意义。"
+        "editorial_reason": "黄渤海城市体育联盟消费季启动，体育消费场景向区域联动延伸。"
+      },
+      {
+        "event_id": "evt_5bf804c0100859",
+        "title": "李宁签约NBA、库里",
+        "category": "行业动态",
+        "event_family": "endorsement_partnership",
+        "reporting_period": "",
+        "brands": [
+          "李宁"
+        ],
+        "source": "新浪财经",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KaXJFQldCM0JqRWRPZFpyMUpmRUpNTmFiRUEtSTR4XzVrVmhnVUJRR2RvbS1JLTFwNHFhUW5heGQxWHVqUHkyRnlYaGRodlZXVGVUQUh3TENpWmdCUEJXZXFpa255WkR6UzRoelY4TGxBbklBOFE?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KaXJFQldCM0JqRWRPZFpyMUpmRUpNTmFiRUEtSTR4XzVrVmhnVUJRR2RvbS1JLTFwNHFhUW5heGQxWHVqUHkyRnlYaGRodlZXVGVUQUh3TENpWmdCUEJXZXFpa255WkR6UzRoelY4TGxBbklBOFE?oc=5",
+        "published_at": "2026-10-11T15:40+08:00",
+        "published_date": "2026-10-11",
+        "status": "new",
+        "verification": "multi_source",
+        "is_official": false,
+        "source_count": 2,
+        "direct_source_count": 0,
+        "mention_count": 2,
+        "editorial_score": 48,
+        "selection_score": 61,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_5bf804c0100859"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_a125b866adabde",
+            "title": "李宁签约NBA、库里",
+            "source": "新浪财经",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KaXJFQldCM0JqRWRPZFpyMUpmRUpNTmFiRUEtSTR4XzVrVmhnVUJRR2RvbS1JLTFwNHFhUW5heGQxWHVqUHkyRnlYaGRodlZXVGVUQUh3TENpWmdCUEJXZXFpa255WkR6UzRoelY4TGxBbklBOFE?oc=5",
+            "published_at": "2026-10-11T15:40+08:00",
+            "summary": ""
+          },
+          {
+            "item_id": "src_a07e97e54e1cdf",
+            "title": "李宁签约球员盘点",
+            "source": "虎扑体育",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1uZ1JqdTA0cDZXNllSbWNnNml0WnZWODlrQXFPTGtkRV94QVFnSnJmWFhvZkhVRjVfM1B3MjF6bWJFSzFmci1LZ1ltNllXUjlUUklyLXpqanpUMGN6Rm0zSw?oc=5",
+            "published_at": "2026-10-11T09:30+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "李宁签约NBA及库里，国内运动品牌加码顶级篮球资源，竞争维度升级。"
       }
     ],
     "follow_up_selected": [],
@@ -1284,30 +1291,6 @@
     },
     {
       "type": "event",
-      "id": "evt_5bf804c0100859",
-      "title": "李宁签约NBA、库里",
-      "source": "新浪财经",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KaXJFQldCM0JqRWRPZFpyMUpmRUpNTmFiRUEtSTR4XzVrVmhnVUJRR2RvbS1JLTFwNHFhUW5heGQxWHVqUHkyRnlYaGRodlZXVGVUQUh3TENpWmdCUEJXZXFpa255WkR6UzRoelY4TGxBbklBOFE?oc=5",
-      "published_date": "2026-10-11"
-    },
-    {
-      "type": "event_evidence",
-      "id": "src_a07e97e54e1cdf",
-      "title": "李宁签约球员盘点",
-      "source": "虎扑体育",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1uZ1JqdTA0cDZXNllSbWNnNml0WnZWODlrQXFPTGtkRV94QVFnSnJmWFhvZkhVRjVfM1B3MjF6bWJFSzFmci1LZ1ltNllXUjlUUklyLXpqanpUMGN6Rm0zSw?oc=5",
-      "published_date": "2026-10-11"
-    },
-    {
-      "type": "event",
-      "id": "evt_309ff072975197",
-      "title": "巴拉巴拉：从品类创新到体验场景落地，助力儿童友好城市建设",
-      "source": "环球网",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85YS1FZk1RRkFQaG5xTG54ay12Wi1IQy1RN0hha0pLLXN6VFJBdDNQekVtUENsSVp1TGNwb2Jua2xtaXpQd0pCT2w5NWVHWU9hamdpMDhQbk9Kdw?oc=5",
-      "published_date": "2026-10-11"
-    },
-    {
-      "type": "event",
       "id": "evt_2cadea9f858127",
       "title": "总消费额年均增速将达到5%左右二〇三〇年北京建成彰显大国首都风范的国际消费高地_政策解读_首都之窗",
       "source": "北京市人民政府门户网站",
@@ -1324,11 +1307,35 @@
     },
     {
       "type": "event",
-      "id": "evt_ea3ea4d48586b0",
-      "title": "Nike x 航海王联名系列：深入传奇世界，开启探索之旅— NIKE, Inc.",
-      "source": "About Nike",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1LXJFczVsZnFHc3JTVGNoQTNSSG5ZdXd1SnJsMkxaV0N6NUNjbDlpd2xsOUczaElxSWVzOHN0eXNQbTRZMHI3Wldpd2xXQnhDYUpmVFlXY2NjUQ?oc=5",
-      "published_date": "2026-10-06"
+      "id": "evt_309ff072975197",
+      "title": "巴拉巴拉：从品类创新到体验场景落地，助力儿童友好城市建设",
+      "source": "环球网",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85YS1FZk1RRkFQaG5xTG54ay12Wi1IQy1RN0hha0pLLXN6VFJBdDNQekVtUENsSVp1TGNwb2Jua2xtaXpQd0pCT2w5NWVHWU9hamdpMDhQbk9Kdw?oc=5",
+      "published_date": "2026-10-11"
+    },
+    {
+      "type": "event",
+      "id": "evt_341d0632e78b3c",
+      "title": "2026年黄渤海城市体育联盟（烟台）消费季暨山东省体育消费季烟台主会场活动10月14日盛大启幕",
+      "source": "烟台市人民政府",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQkFOZGxPRWsyXzk3TjBaR3NreGcxYjhkWjlGdXR2SjZlOWZHZW9SWXJSMS1UR0FhNnVrQnJocDg2OF8tcldHYTB1QV92MTV3UkxNZXg3amNobWhCOTU0QlQxLUJjOVRoX1NpWGFFRXhHZGJyTnp2VEIyVTQ5RS1pVHFCeF84cjctbHBtNE00YlhCUFE?oc=5",
+      "published_date": "2026-10-09"
+    },
+    {
+      "type": "event",
+      "id": "evt_5bf804c0100859",
+      "title": "李宁签约NBA、库里",
+      "source": "新浪财经",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KaXJFQldCM0JqRWRPZFpyMUpmRUpNTmFiRUEtSTR4XzVrVmhnVUJRR2RvbS1JLTFwNHFhUW5heGQxWHVqUHkyRnlYaGRodlZXVGVUQUh3TENpWmdCUEJXZXFpa255WkR6UzRoelY4TGxBbklBOFE?oc=5",
+      "published_date": "2026-10-11"
+    },
+    {
+      "type": "event_evidence",
+      "id": "src_a07e97e54e1cdf",
+      "title": "李宁签约球员盘点",
+      "source": "虎扑体育",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1uZ1JqdTA0cDZXNllSbWNnNml0WnZWODlrQXFPTGtkRV94QVFnSnJmWFhvZkhVRjVfM1B3MjF6bWJFSzFmci1LZ1ltNllXUjlUUklyLXpqanpUMGN6Rm0zSw?oc=5",
+      "published_date": "2026-10-11"
     },
     {
       "type": "event",
@@ -1345,6 +1352,14 @@
       "source": "第一财经",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1NRkc0TFMwREV5UFZQZmJRTWg3ekRJMFdNLWZRTmZ1RmtXeU5MWEZPdVFvM1pRRm51SGF3bWtHQVJnekVQWHN2bGR0dGdwV2tSbGpB?oc=5",
       "published_date": "2026-10-07"
+    },
+    {
+      "type": "event",
+      "id": "evt_c1355cb9fe6f71",
+      "title": "安踏123亿入股彪马：一场不控股的全球化豪赌",
+      "source": "第一财经",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5Ha3VkQkJBZWhtYkF0bWJ3bjVvaTlxLV9PcWtDMzNtdUJCQ2k2TF82VVI2S0tjOXhLTlRQTTR4VUV2V2VHTE8wRGtVbXpWN3VkZEE?oc=5",
+      "published_date": "2026-10-09"
     },
     {
       "type": "event",
@@ -1393,7 +1408,7 @@
     "eligible_product_count": 3,
     "selected_product_count": 3,
     "conflict_count": 0,
-    "source_link_count": 21,
+    "source_link_count": 22,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
