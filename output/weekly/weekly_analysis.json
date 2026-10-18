@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-10-17T09:50+08:00",
+  "generated_at": "2026-10-18T09:48+08:00",
   "report_window": {
     "start_date": "2026-10-05",
     "end_date": "2026-10-11",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "安踏入股彪马重塑全球运动品牌格局，耐克调整大中华区架构，儿童运动赛道需关注品牌集中与渠道变化。",
-    "week_in_one_paragraph": "本周安踏完成收购彪马29.06%股权成为最大股东，全球多品牌竞争加剧；耐克宣布自2028财年撤销大中华区并计划裁员，国际品牌在华架构调整；巴拉巴拉强调儿童友好城市体验场景，儿童运动消费向场景化延伸。",
+    "weekly_thesis": "安踏入股彪马重塑全球运动品牌格局，耐克调整大中华区架构，儿童运动市场需关注国际品牌战略变动。",
+    "week_in_one_paragraph": "本周安踏完成收购彪马29.06%股权成为最大股东，全球运动品牌竞争格局生变；耐克宣布自2028财年起撤销大中华区，并计划进一步裁员，显示国际品牌在华策略调整；lululemon新CEO上任后高管变阵，高端女性运动服竞争升温；巴拉巴拉推动儿童友好城市建设，儿童运动消费场景持续拓展。",
     "next_week_focus": [
-      "安踏入股彪马后是否公布渠道整合计划",
-      "耐克大中华区调整对儿童产品线的影响",
-      "巴拉巴拉儿童体验场景后续落地动作",
-      "李宁篮球资源在儿童市场的营销转化",
-      "国庆后区域消费数据对儿童鞋服渠道的启示"
+      "安踏入股彪马后是否披露儿童业务协同计划",
+      "耐克大中华区调整对儿童渠道的短期影响",
+      "lululemon新管理层是否涉及儿童品类策略",
+      "巴拉巴拉儿童友好城市项目的新进展",
+      "国庆消费数据中儿童运动品类表现"
     ]
   },
   "key_developments": [
@@ -127,7 +127,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏成为彪马最大股东，全球运动品牌格局生变，影响多品牌竞争与渠道资源分配。"
+      "editorial_reason": "安踏成为彪马最大股东，全球运动品牌格局生变，多品牌运营面临整合考验。"
     },
     {
       "event_id": "evt_7a21f3de7f7c87",
@@ -167,7 +167,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "耐克撤销大中华区并披露营收下滑，国际品牌在华组织调整，渠道与代理策略可能变化。"
+      "editorial_reason": "耐克撤销大中华区并披露营收下滑，国际品牌在华架构调整值得关注。"
     },
     {
       "event_id": "evt_309ff072975197",
@@ -207,7 +207,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "巴拉巴拉从品类创新转向体验场景落地，儿童运动消费与城市友好建设结合，值得童装童鞋参考。"
+      "editorial_reason": "巴拉巴拉从品类创新到体验场景落地，儿童友好城市建设带来渠道机会。"
     },
     {
       "event_id": "evt_5bf804c0100859",
@@ -257,7 +257,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "李宁签约NBA及库里，篮球资源竞争升温，可能影响儿童篮球品类营销与联名方向。"
+      "editorial_reason": "李宁签约NBA及库里，篮球资源竞争加剧，影响儿童篮球品类心智。"
     },
     {
       "event_id": "evt_ea3ea4d48586b0",
@@ -297,54 +297,16 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "耐克与航海王联名，IP合作向年轻及儿童受众渗透，为儿童产品联名提供参考。"
-    },
-    {
-      "event_id": "evt_5e64436622118b",
-      "title": "突破500亿元 国庆假期湖北多元消费亮点纷呈",
-      "category": "行业动态",
-      "event_family": "industry_event",
-      "reporting_period": "",
-      "brands": [],
-      "source": "武汉市商务局",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBaTVVzLXdZSlk5NW9kTWstaFNNRzFDNVgyaVZpSVpuX2xRNld1amt6d1NaLXlOTEUtZFp6VHgzZmVTcE9sbkh5blE0Wk8yY1N1RFViRzRiNmJSQnZQQms3a2ZVOHdXdWpWbEFHNTlCeXhKUQ?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBaTVVzLXdZSlk5NW9kTWstaFNNRzFDNVgyaVZpSVpuX2xRNld1amt6d1NaLXlOTEUtZFp6VHgzZmVTcE9sbkh5blE0Wk8yY1N1RFViRzRiNmJSQnZQQms3a2ZVOHdXdWpWbEFHNTlCeXhKUQ?oc=5",
-      "published_at": "2026-10-09T10:48+08:00",
-      "published_date": "2026-10-09",
-      "status": "new",
-      "verification": "official_source",
-      "is_official": true,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 59,
-      "selection_score": 79,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_5e64436622118b"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_5adb53860d05e9",
-          "title": "突破500亿元 国庆假期湖北多元消费亮点纷呈",
-          "source": "武汉市商务局",
-          "source_tier": "official",
-          "is_official": true,
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBaTVVzLXdZSlk5NW9kTWstaFNNRzFDNVgyaVZpSVpuX2xRNld1amt6d1NaLXlOTEUtZFp6VHgzZmVTcE9sbkh5blE0Wk8yY1N1RFViRzRiNmJSQnZQQms3a2ZVOHdXdWpWbEFHNTlCeXhKUQ?oc=5",
-          "published_at": "2026-10-09T10:48+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "国庆假期湖北消费突破500亿元，区域消费活力对儿童运动鞋服线下渠道有参考意义。"
+      "editorial_reason": "Nike与航海王联名，IP合作拓展年轻消费者，为儿童产品提供联名参考。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "全球运动品牌股权与组织调整",
-      "analysis": "安踏完成收购彪马29.06%股权成为最大股东，同时耐克宣布自2028财年撤销大中华区并披露2027财年Q1大中华区营收同比降22%。两件事共同显示全球运动品牌正在通过股权和组织架构调整应对竞争，国际品牌在华渠道与代理模式可能变化，儿童运动品牌需关注多品牌竞争下的渠道资源再分配。",
+      "headline": "安踏入股彪马：全球多品牌竞争新阶段",
+      "analysis": "安踏完成收购彪马29.06%股权成为最大股东，交易金额15亿欧元。此举使安踏在全球运动品牌阵营中地位提升，但多品牌运营面临品牌重塑与库存调整考验。对儿童运动市场而言，国际品牌竞争格局变化可能影响未来产品线与渠道策略，需关注安踏系与彪马在儿童领域的协同动作。",
       "event_ids": [
         "evt_5179e4f8a4eeed",
-        "evt_7a21f3de7f7c87"
+        "evt_81d6da4bf0e64d"
       ],
       "evidence": [
         {
@@ -355,17 +317,41 @@
           "published_date": "2026-10-11"
         },
         {
+          "event_id": "evt_81d6da4bf0e64d",
+          "title": "15亿欧元收购完成，安踏与彪马达成战略合作共探全球前三",
+          "source": "第一财经",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1NRkc0TFMwREV5UFZQZmJRTWg3ekRJMFdNLWZRTmZ1RmtXeU5MWEZPdVFvM1pRRm51SGF3bWtHQVJnekVQWHN2bGR0dGdwV2tSbGpB?oc=5",
+          "published_date": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "headline": "耐克调整大中华区架构与成本压力",
+      "analysis": "耐克宣布自2028财年起撤销大中华区，2027财年Q1大中华区营收同比降22%，同时计划进一步裁员以推动业务复苏。这反映国际品牌在华面临增长压力，组织架构调整可能影响其儿童业务的本土化运营与渠道投入，为本土儿童品牌提供竞争窗口。",
+      "event_ids": [
+        "evt_7a21f3de7f7c87",
+        "evt_05b9eaa256adb7"
+      ],
+      "evidence": [
+        {
           "event_id": "evt_7a21f3de7f7c87",
           "title": "耐克宣布自2028财年起撤销大中华区，2027财年Q1大中华区营收同比降22%",
           "source": "虎嗅网",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9xdER2Ml9FR253RnZiR2pDZzloa3ZzYkJPR2J0d2lheU5sSHZGNWtUS0pOa0xURWhXb2ZfNFNQTUZLSDZZYkdWZWUtdnVfR3lFNFE?oc=5",
           "published_date": "2026-10-10"
+        },
+        {
+          "event_id": "evt_05b9eaa256adb7",
+          "title": "Nike计划进一步裁员推动业务复苏，预计全年营收大幅下滑",
+          "source": "时尚商业网",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vem4wMWZTV1dGMGtXLVBQMWdFdFNjSUZxMlBsNThocmZRM21HQWV6NnZYVDd4S3liMU9jbWEwaVpKaUVKVWVqSjc3cGpsWUpzNkRN?oc=5",
+          "published_date": "2026-10-08"
         }
       ]
     },
     {
-      "headline": "儿童运动消费场景化与IP联名",
-      "analysis": "巴拉巴拉提出从品类创新到体验场景落地，助力儿童友好城市建设；耐克与航海王联名系列上线。前者说明儿童运动消费正从单一产品转向场景体验，后者显示IP联名持续向年轻及儿童受众渗透，为儿童运动产品在场景化零售和联名开发上提供方向。",
+      "headline": "儿童运动消费场景与品牌创新",
+      "analysis": "巴拉巴拉从品类创新到体验场景落地，助力儿童友好城市建设，显示儿童运动品牌正从产品向场景体验延伸。Nike与航海王联名则通过IP合作吸引年轻消费者。两者共同表明，儿童运动消费越来越注重情感连接与场景化体验，品牌需在产品和渠道上强化互动性。",
       "event_ids": [
         "evt_309ff072975197",
         "evt_ea3ea4d48586b0"
@@ -384,30 +370,6 @@
           "source": "About Nike",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1LXJFczVsZnFHc3JTVGNoQTNSSG5ZdXd1SnJsMkxaV0N6NUNjbDlpd2xsOUczaElxSWVzOHN0eXNQbTRZMHI3Wldpd2xXQnhDYUpmVFlXY2NjUQ?oc=5",
           "published_date": "2026-10-06"
-        }
-      ]
-    },
-    {
-      "headline": "篮球资源与区域消费活力",
-      "analysis": "李宁签约NBA及库里，篮球营销资源竞争升温；国庆假期湖北消费突破500亿元，显示区域消费活力。两者结合看，儿童篮球品类可借势球星资源，同时线下渠道可关注区域消费旺季的客流机会。",
-      "event_ids": [
-        "evt_5bf804c0100859",
-        "evt_5e64436622118b"
-      ],
-      "evidence": [
-        {
-          "event_id": "evt_5bf804c0100859",
-          "title": "李宁签约NBA、库里",
-          "source": "新浪财经",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1KaXJFQldCM0JqRWRPZFpyMUpmRUpNTmFiRUEtSTR4XzVrVmhnVUJRR2RvbS1JLTFwNHFhUW5heGQxWHVqUHkyRnlYaGRodlZXVGVUQUh3TENpWmdCUEJXZXFpa255WkR6UzRoelY4TGxBbklBOFE?oc=5",
-          "published_date": "2026-10-11"
-        },
-        {
-          "event_id": "evt_5e64436622118b",
-          "title": "突破500亿元 国庆假期湖北多元消费亮点纷呈",
-          "source": "武汉市商务局",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBaTVVzLXdZSlk5NW9kTWstaFNNRzFDNVgyaVZpSVpuX2xRNld1amt6d1NaLXlOTEUtZFp6VHgzZmVTcE9sbkh5blE0Wk8yY1N1RFViRzRiNmJSQnZQQms3a2ZVOHdXdWpWbEFHNTlCeXhKUQ?oc=5",
-          "published_date": "2026-10-09"
         }
       ]
     }
@@ -472,7 +434,7 @@
           "published_date": "2026-10-10"
         }
       ],
-      "editorial_reason": "耐克Alphafly 3搭载Air Zoom，官方跑鞋产品信息，可观察竞速跑鞋技术下放至儿童跑鞋的可能性。"
+      "editorial_reason": "Nike Alphafly 3搭载Air Zoom，代表竞速跑鞋技术方向，可为儿童跑鞋科技下放提供参考。"
     },
     {
       "product_id": "prd_6409ba66b3922f",
@@ -529,7 +491,7 @@
           "published_date": "2026-10-06"
         }
       ],
-      "editorial_reason": "LeBron 24官方发布，篮球鞋产品迭代，对儿童篮球鞋产品设计及球星联名有参考价值。"
+      "editorial_reason": "LeBron 24强调轻盈战靴，篮球鞋产品迭代反映球星签名鞋市场趋势，对儿童篮球鞋设计有借鉴意义。"
     },
     {
       "product_id": "prd_b9f0c5be976400",
@@ -588,7 +550,7 @@
           "published_date": "2026-10-05"
         }
       ],
-      "editorial_reason": "耐克新一代竞速跑鞋官方信息，反映竞速跑鞋技术趋势，可关注儿童跑鞋功能升级方向。"
+      "editorial_reason": "Nike新一代竞速跑鞋由全球最快跑者参与塑造，体现专业跑鞋研发思路，可关注儿童专业运动鞋的技术迁移。"
     }
   ],
   "competitor_channel": [
@@ -632,31 +594,108 @@
       ]
     }
   ],
-  "kids_consumer": [],
+  "kids_consumer": [
+    {
+      "event_id": "evt_5e64436622118b",
+      "title": "突破500亿元 国庆假期湖北多元消费亮点纷呈",
+      "category": "行业动态",
+      "event_family": "industry_event",
+      "reporting_period": "",
+      "brands": [],
+      "source": "武汉市商务局",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBaTVVzLXdZSlk5NW9kTWstaFNNRzFDNVgyaVZpSVpuX2xRNld1amt6d1NaLXlOTEUtZFp6VHgzZmVTcE9sbkh5blE0Wk8yY1N1RFViRzRiNmJSQnZQQms3a2ZVOHdXdWpWbEFHNTlCeXhKUQ?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBaTVVzLXdZSlk5NW9kTWstaFNNRzFDNVgyaVZpSVpuX2xRNld1amt6d1NaLXlOTEUtZFp6VHgzZmVTcE9sbkh5blE0Wk8yY1N1RFViRzRiNmJSQnZQQms3a2ZVOHdXdWpWbEFHNTlCeXhKUQ?oc=5",
+      "published_at": "2026-10-09T10:48+08:00",
+      "published_date": "2026-10-09",
+      "status": "new",
+      "verification": "official_source",
+      "is_official": true,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 59,
+      "selection_score": 79,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_5e64436622118b"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_5adb53860d05e9",
+          "title": "突破500亿元 国庆假期湖北多元消费亮点纷呈",
+          "source": "武汉市商务局",
+          "source_tier": "official",
+          "is_official": true,
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBaTVVzLXdZSlk5NW9kTWstaFNNRzFDNVgyaVZpSVpuX2xRNld1amt6d1NaLXlOTEUtZFp6VHgzZmVTcE9sbkh5blE0Wk8yY1N1RFViRzRiNmJSQnZQQms3a2ZVOHdXdWpWbEFHNTlCeXhKUQ?oc=5",
+          "published_at": "2026-10-09T10:48+08:00",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "event_id": "evt_341d0632e78b3c",
+      "title": "2026年黄渤海城市体育联盟（烟台）消费季暨山东省体育消费季烟台主会场活动10月14日盛大启幕",
+      "category": "宏观与消费",
+      "event_family": "macro_data",
+      "reporting_period": "",
+      "brands": [],
+      "source": "烟台市人民政府",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQkFOZGxPRWsyXzk3TjBaR3NreGcxYjhkWjlGdXR2SjZlOWZHZW9SWXJSMS1UR0FhNnVrQnJocDg2OF8tcldHYTB1QV92MTV3UkxNZXg3amNobWhCOTU0QlQxLUJjOVRoX1NpWGFFRXhHZGJyTnp2VEIyVTQ5RS1pVHFCeF84cjctbHBtNE00YlhCUFE?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQkFOZGxPRWsyXzk3TjBaR3NreGcxYjhkWjlGdXR2SjZlOWZHZW9SWXJSMS1UR0FhNnVrQnJocDg2OF8tcldHYTB1QV92MTV3UkxNZXg3amNobWhCOTU0QlQxLUJjOVRoX1NpWGFFRXhHZGJyTnp2VEIyVTQ5RS1pVHFCeF84cjctbHBtNE00YlhCUFE?oc=5",
+      "published_at": "2026-10-09T09:36+08:00",
+      "published_date": "2026-10-09",
+      "status": "new",
+      "verification": "official_source",
+      "is_official": true,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 58,
+      "selection_score": 77,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_341d0632e78b3c"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_3a9372580ba0cd",
+          "title": "2026年黄渤海城市体育联盟（烟台）消费季暨山东省体育消费季烟台主会场活动10月14日盛大启幕",
+          "source": "烟台市人民政府",
+          "source_tier": "official",
+          "is_official": true,
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQkFOZGxPRWsyXzk3TjBaR3NreGcxYjhkWjlGdXR2SjZlOWZHZW9SWXJSMS1UR0FhNnVrQnJocDg2OF8tcldHYTB1QV92MTV3UkxNZXg3amNobWhCOTU0QlQxLUJjOVRoX1NpWGFFRXhHZGJyTnp2VEIyVTQ5RS1pVHFCeF84cjctbHBtNE00YlhCUFE?oc=5",
+          "published_at": "2026-10-09T09:36+08:00",
+          "summary": ""
+        }
+      ]
+    }
+  ],
   "watchlist": [
     {
-      "title": "安踏入股彪马后渠道整合",
+      "title": "安踏与彪马整合对儿童市场的影响",
       "event_ids": [
-        "evt_5179e4f8a4eeed"
+        "evt_5179e4f8a4eeed",
+        "evt_81d6da4bf0e64d"
       ],
       "product_ids": [],
-      "reason": "观察安踏与彪马在渠道、代理层面的后续动作，是否影响儿童运动品牌渠道格局。"
+      "reason": "观察安踏是否将彪马儿童线引入中国市场，以及渠道协同策略。"
     },
     {
-      "title": "耐克大中华区架构调整",
+      "title": "耐克大中华区调整后的儿童业务动向",
       "event_ids": [
-        "evt_7a21f3de7f7c87"
+        "evt_7a21f3de7f7c87",
+        "evt_05b9eaa256adb7"
       ],
       "product_ids": [],
-      "reason": "关注耐克撤销大中华区后儿童产品线及渠道策略是否调整。"
+      "reason": "关注耐克儿童产品线是否受架构调整影响，以及本土化营销变化。"
     },
     {
-      "title": "儿童运动场景化零售",
+      "title": "儿童运动消费场景创新",
       "event_ids": [
         "evt_309ff072975197"
       ],
       "product_ids": [],
-      "reason": "观察巴拉巴拉儿童友好城市体验场景落地形式，是否可复制到儿童运动品类。"
+      "reason": "跟踪巴拉巴拉等品牌在儿童友好城市中的体验场景落地案例。"
     }
   ],
   "tracking": {
@@ -770,7 +809,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏成为彪马最大股东，全球运动品牌格局生变，影响多品牌竞争与渠道资源分配。"
+        "editorial_reason": "安踏成为彪马最大股东，全球运动品牌格局生变，多品牌运营面临整合考验。"
       },
       {
         "event_id": "evt_7a21f3de7f7c87",
@@ -810,7 +849,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "耐克撤销大中华区并披露营收下滑，国际品牌在华组织调整，渠道与代理策略可能变化。"
+        "editorial_reason": "耐克撤销大中华区并披露营收下滑，国际品牌在华架构调整值得关注。"
       },
       {
         "event_id": "evt_309ff072975197",
@@ -850,7 +889,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "巴拉巴拉从品类创新转向体验场景落地，儿童运动消费与城市友好建设结合，值得童装童鞋参考。"
+        "editorial_reason": "巴拉巴拉从品类创新到体验场景落地，儿童友好城市建设带来渠道机会。"
       },
       {
         "event_id": "evt_5bf804c0100859",
@@ -900,7 +939,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "李宁签约NBA及库里，篮球资源竞争升温，可能影响儿童篮球品类营销与联名方向。"
+        "editorial_reason": "李宁签约NBA及库里，篮球资源竞争加剧，影响儿童篮球品类心智。"
       },
       {
         "event_id": "evt_ea3ea4d48586b0",
@@ -940,45 +979,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "耐克与航海王联名，IP合作向年轻及儿童受众渗透，为儿童产品联名提供参考。"
-      },
-      {
-        "event_id": "evt_5e64436622118b",
-        "title": "突破500亿元 国庆假期湖北多元消费亮点纷呈",
-        "category": "行业动态",
-        "event_family": "industry_event",
-        "reporting_period": "",
-        "brands": [],
-        "source": "武汉市商务局",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBaTVVzLXdZSlk5NW9kTWstaFNNRzFDNVgyaVZpSVpuX2xRNld1amt6d1NaLXlOTEUtZFp6VHgzZmVTcE9sbkh5blE0Wk8yY1N1RFViRzRiNmJSQnZQQms3a2ZVOHdXdWpWbEFHNTlCeXhKUQ?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBaTVVzLXdZSlk5NW9kTWstaFNNRzFDNVgyaVZpSVpuX2xRNld1amt6d1NaLXlOTEUtZFp6VHgzZmVTcE9sbkh5blE0Wk8yY1N1RFViRzRiNmJSQnZQQms3a2ZVOHdXdWpWbEFHNTlCeXhKUQ?oc=5",
-        "published_at": "2026-10-09T10:48+08:00",
-        "published_date": "2026-10-09",
-        "status": "new",
-        "verification": "official_source",
-        "is_official": true,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 59,
-        "selection_score": 79,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_5e64436622118b"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_5adb53860d05e9",
-            "title": "突破500亿元 国庆假期湖北多元消费亮点纷呈",
-            "source": "武汉市商务局",
-            "source_tier": "official",
-            "is_official": true,
-            "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBaTVVzLXdZSlk5NW9kTWstaFNNRzFDNVgyaVZpSVpuX2xRNld1amt6d1NaLXlOTEUtZFp6VHgzZmVTcE9sbkh5blE0Wk8yY1N1RFViRzRiNmJSQnZQQms3a2ZVOHdXdWpWbEFHNTlCeXhKUQ?oc=5",
-            "published_at": "2026-10-09T10:48+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "国庆假期湖北消费突破500亿元，区域消费活力对儿童运动鞋服线下渠道有参考意义。"
+        "editorial_reason": "Nike与航海王联名，IP合作拓展年轻消费者，为儿童产品提供联名参考。"
       }
     ],
     "follow_up_selected": [],
@@ -1232,6 +1233,14 @@
     },
     {
       "type": "event",
+      "id": "evt_7cc1fdc315275d",
+      "title": "关店近800家、代理清零 昔日“中国鞋王”为何没接住彪马？",
+      "source": "亿邦动力",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ITDhlMkszaUppWTZfenYtQmVWUmlCNV9USm40ZUdPZDQzUzJBcEZPUjV4amFUNVAtVnZzS0hDWTQ3WjVvMlpLU01wM2FnVVlRSnZuNkJR?oc=5",
+      "published_date": "2026-10-11"
+    },
+    {
+      "type": "event",
       "id": "evt_5e64436622118b",
       "title": "突破500亿元 国庆假期湖北多元消费亮点纷呈",
       "source": "武汉市商务局",
@@ -1240,11 +1249,27 @@
     },
     {
       "type": "event",
-      "id": "evt_7cc1fdc315275d",
-      "title": "关店近800家、代理清零 昔日“中国鞋王”为何没接住彪马？",
-      "source": "亿邦动力",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ITDhlMkszaUppWTZfenYtQmVWUmlCNV9USm40ZUdPZDQzUzJBcEZPUjV4amFUNVAtVnZzS0hDWTQ3WjVvMlpLU01wM2FnVVlRSnZuNkJR?oc=5",
-      "published_date": "2026-10-11"
+      "id": "evt_341d0632e78b3c",
+      "title": "2026年黄渤海城市体育联盟（烟台）消费季暨山东省体育消费季烟台主会场活动10月14日盛大启幕",
+      "source": "烟台市人民政府",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQkFOZGxPRWsyXzk3TjBaR3NreGcxYjhkWjlGdXR2SjZlOWZHZW9SWXJSMS1UR0FhNnVrQnJocDg2OF8tcldHYTB1QV92MTV3UkxNZXg3amNobWhCOTU0QlQxLUJjOVRoX1NpWGFFRXhHZGJyTnp2VEIyVTQ5RS1pVHFCeF84cjctbHBtNE00YlhCUFE?oc=5",
+      "published_date": "2026-10-09"
+    },
+    {
+      "type": "event",
+      "id": "evt_81d6da4bf0e64d",
+      "title": "15亿欧元收购完成，安踏与彪马达成战略合作共探全球前三",
+      "source": "第一财经",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1NRkc0TFMwREV5UFZQZmJRTWg3ekRJMFdNLWZRTmZ1RmtXeU5MWEZPdVFvM1pRRm51SGF3bWtHQVJnekVQWHN2bGR0dGdwV2tSbGpB?oc=5",
+      "published_date": "2026-10-07"
+    },
+    {
+      "type": "event",
+      "id": "evt_05b9eaa256adb7",
+      "title": "Nike计划进一步裁员推动业务复苏，预计全年营收大幅下滑",
+      "source": "时尚商业网",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vem4wMWZTV1dGMGtXLVBQMWdFdFNjSUZxMlBsNThocmZRM21HQWV6NnZYVDd4S3liMU9jbWEwaVpKaUVKVWVqSjc3cGpsWUpzNkRN?oc=5",
+      "published_date": "2026-10-08"
     },
     {
       "type": "product",
@@ -1279,13 +1304,13 @@
     "raw_event_count": 25,
     "coalesced_event_count": 25,
     "eligible_event_count": 25,
-    "selected_event_count": 6,
+    "selected_event_count": 5,
     "raw_product_count": 17,
     "product_lead_count": 17,
     "eligible_product_count": 3,
     "selected_product_count": 3,
     "conflict_count": 0,
-    "source_link_count": 18,
+    "source_link_count": 21,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
@@ -1302,7 +1327,7 @@
       "电商与平台": 1
     },
     "selected_status": {
-      "new": 6
+      "new": 5
     },
     "quality_notes": [
       "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
