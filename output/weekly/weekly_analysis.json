@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-10-19T13:06+08:00",
+  "generated_at": "2026-10-20T10:21+08:00",
   "report_window": {
     "start_date": "2026-10-12",
     "end_date": "2026-10-18",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "户外参与人数超5亿与北京户外市场126亿元，为儿童户外场景提供需求基础；安踏收购Puma重塑竞争格局。",
-    "week_in_one_paragraph": "本周户外运动宏观数据密集：全国参与人数超5亿、北京“十四五”户外用品市场126亿元，叠加户外产业大会开幕，显示户外场景持续扩容。安踏完成收购Puma 29.06%股权成为最大股东，国际品牌竞争格局生变。361°三季度流水正增长获券商维持评级，但童装业务未披露独立细节。上海多区发放消费券，区域零售刺激延续。",
+    "weekly_thesis": "户外参与人数超5亿与北京户外市场数据，为儿童户外场景提供需求侧参照；安踏收购Puma改变竞争格局。",
+    "week_in_one_paragraph": "本周户外运动需求侧信息集中：行业报告显示户外参与人数超5亿，北京披露户外用品市场规模数据，户外场景扩容为儿童户外产品提供参照。安踏完成收购Puma股权成为最大股东，头部品牌资本动作或影响多品牌竞争。361°三季度流水保持正增长，童装线延续正增长。",
     "next_week_focus": [
-      "跟踪户外运动参与数据是否延伸至儿童户外品类",
-      "关注安踏收购Puma后儿童产品线整合动向",
-      "留意361°童装独立经营数据披露",
-      "观察上海消费券对线下儿童运动零售的拉动",
-      "关注童装行业会议后续趋势输出"
+      "跟踪361°童装线终端流水与渠道反馈",
+      "观察儿童户外鞋服新品与场景营销动向",
+      "关注安踏收购Puma后多品牌渠道调整",
+      "留意外资品牌本土化渠道策略变化",
+      "跟踪童装行业会议后续品类信号"
     ]
   },
   "key_developments": [
@@ -54,7 +54,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "全国户外运动参与人数超5亿，为儿童户外鞋服提供需求基础，是本周最宏观的消费信号。"
+      "editorial_reason": "户外参与人数超5亿，为儿童户外场景提供需求侧参照。"
     },
     {
       "event_id": "evt_b8808c5718b3a4",
@@ -92,7 +92,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "北京户外用品市场规模达126亿元，官方数据印证一线城市户外消费扩容，与儿童户外场景相关。"
+      "editorial_reason": "北京披露户外用品市场规模，反映双奥城市户外消费基础。"
     },
     {
       "event_id": "evt_5179e4f8a4eeed",
@@ -133,7 +133,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏完成收购Puma 29.06%股权成为最大股东，国际品牌竞争格局变化，影响儿童运动市场长期竞争。"
+      "editorial_reason": "安踏完成收购Puma股权成最大股东，头部竞争格局变化。"
     },
     {
       "event_id": "evt_d5feecc5d81dd8",
@@ -183,45 +183,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "361°三季度流水正增长获券商维持评级，直接关联本公司经营表现，但童装独立数据未披露。"
-    },
-    {
-      "event_id": "evt_d71373c25d77b0",
-      "title": "虹口消费券加码回归：每天都有，最高立减1500元",
-      "category": "行业动态",
-      "event_family": "industry_event",
-      "reporting_period": "",
-      "brands": [],
-      "source": "上海市人民政府",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSEh2NE5sVjF5MlVicjVpU3BOV0dCa09ael9oX0ZudURzUGZ6T281d3B0UlZUTi13RjlPSGlyTXNydm1LaFlXRzVaQS1pOF9oWUg4R0kxVmNSeXgzTkdnZTJWdWFoVHJ1cXJubGM2N0NDaE9pWmhIRWtDTWtiM0dveXdVSzBZX0NBdnc?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSEh2NE5sVjF5MlVicjVpU3BOV0dCa09ael9oX0ZudURzUGZ6T281d3B0UlZUTi13RjlPSGlyTXNydm1LaFlXRzVaQS1pOF9oWUg4R0kxVmNSeXgzTkdnZTJWdWFoVHJ1cXJubGM2N0NDaE9pWmhIRWtDTWtiM0dveXdVSzBZX0NBdnc?oc=5",
-      "published_at": "2026-10-16T10:24+08:00",
-      "published_date": "2026-10-16",
-      "status": "new",
-      "verification": "official_source",
-      "is_official": true,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 59,
-      "selection_score": 79,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_d71373c25d77b0"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_eed2531f03863a",
-          "title": "虹口消费券加码回归：每天都有，最高立减1500元",
-          "source": "上海市人民政府",
-          "source_tier": "official",
-          "is_official": true,
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSEh2NE5sVjF5MlVicjVpU3BOV0dCa09ael9oX0ZudURzUGZ6T281d3B0UlZUTi13RjlPSGlyTXNydm1LaFlXRzVaQS1pOF9oWUg4R0kxVmNSeXgzTkdnZTJWdWFoVHJ1cXJubGM2N0NDaE9pWmhIRWtDTWtiM0dveXdVSzBZX0NBdnc?oc=5",
-          "published_at": "2026-10-16T10:24+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "上海虹口区消费券加码，区域零售刺激政策延续，反映线下客流争夺与消费券工具常态化。"
+      "editorial_reason": "361°三季度流水正增长，童装线延续正增长，直接相关。"
     },
     {
       "event_id": "evt_a702530ac8edf2",
@@ -259,13 +221,53 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "童装主题会议聚焦行业深耕与价值增长，提供童装行业趋势交流信号，与儿童事业部直接相关。"
+      "editorial_reason": "童装主题会议聚焦行业深耕与价值增长，反映品类动向。"
+    },
+    {
+      "event_id": "evt_5107a980481a11",
+      "title": "阿迪达斯全球CEO：中国市场的决策权在中国团队手中，分销渠道因地制宜优化",
+      "category": "品牌与公司",
+      "event_family": "management",
+      "reporting_period": "",
+      "brands": [
+        "Adidas"
+      ],
+      "source": "澎湃新闻",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
+      "published_at": "2026-10-13T19:48+08:00",
+      "published_date": "2026-10-13",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 45,
+      "selection_score": 57,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_5107a980481a11"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_9277863434e47e",
+          "title": "阿迪达斯全球CEO：中国市场的决策权在中国团队手中，分销渠道因地制宜优化",
+          "source": "澎湃新闻",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
+          "published_at": "2026-10-13T19:48+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "阿迪达斯强调中国团队决策权与渠道优化，外资品牌本土化信号。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "户外运动需求基础持续扩大",
-      "analysis": "全国户外运动参与人数超5亿，北京“十四五”户外用品市场规模达126亿元，两项数据分别从参与人群和区域消费规模印证户外场景扩容。对儿童事业部而言，户外场景的家庭参与度提升意味着儿童户外鞋服需求基础扩大，但需注意这些是宏观统计，不直接等同于儿童品类销量。",
+      "headline": "户外需求侧扩容对儿童场景的参照",
+      "analysis": "本周两项户外信息从参与人数和区域市场规模两个角度呈现需求侧基础：全国户外运动参与人数超5亿，北京户外用品市场规模达126亿元。两者均为宏观或官方口径，不直接等同于儿童户外消费，但说明户外场景的参与广度和区域消费基础在扩大，为儿童户外鞋服的产品场景延伸提供参照。",
       "event_ids": [
         "evt_d48ef27cd1c536",
         "evt_b8808c5718b3a4"
@@ -288,10 +290,11 @@
       ]
     },
     {
-      "headline": "安踏收购Puma改变国际品牌竞争格局",
-      "analysis": "安踏完成收购Puma 29.06%股权成为最大股东，标志中国运动集团通过资本方式深度介入国际品牌。对儿童运动市场而言，国际品牌与本土集团的资源整合可能改变渠道和品牌竞争节奏，但当前仅单源报道，需关注后续整合动作对儿童产品线的影响。",
+      "headline": "头部品牌资本与本土化动作",
+      "analysis": "安踏完成收购Puma 29.06%股权成为其最大股东，属于头部品牌资本层面的格局变化；阿迪达斯全球CEO强调中国市场决策权在中国团队、分销渠道因地制宜优化，反映外资品牌本土化调整。两者共同说明头部竞争正从单一产品转向资本与渠道组织能力，对儿童运动品牌的渠道和品牌资源分配有间接参照。",
       "event_ids": [
-        "evt_5179e4f8a4eeed"
+        "evt_5179e4f8a4eeed",
+        "evt_5107a980481a11"
       ],
       "evidence": [
         {
@@ -300,15 +303,21 @@
           "source": "时尚商业网",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5jcTFvdGpuMnd3Nml1dmdUandMLVRnTjByX1l6c0g1dnc0ZGJaaV9aaHpldkhETmNXNmhhcWtnZGlFaHhCekphbVRfZm5vakx5WEk5REozSlE?oc=5",
           "published_date": "2026-10-18"
+        },
+        {
+          "event_id": "evt_5107a980481a11",
+          "title": "阿迪达斯全球CEO：中国市场的决策权在中国团队手中，分销渠道因地制宜优化",
+          "source": "澎湃新闻",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
+          "published_date": "2026-10-13"
         }
       ]
     },
     {
-      "headline": "361°三季度流水正增长与童装行业交流",
-      "analysis": "361°第三季度主品牌及童装品牌线下零售额同比正增长，券商维持“优于大市”评级，显示公司经营韧性；同期童装主题会议聚焦行业深耕与价值增长，反映童装行业从规模扩张转向价值挖掘。两者结合看，童装赛道竞争更重产品与渠道效率，但童装独立流水细节未披露。",
+      "headline": "361°三季度流水与童装线表现",
+      "analysis": "国信证券报告显示361°三季度流水增长中单位数，主品牌与童装品牌线下渠道零售额同比正增长。该信息直接关系事业部所处品牌与童装线，可作为内部经营节奏的外部参照；但流水增长不等同于销量或市场份额，需结合后续终端数据观察。",
       "event_ids": [
-        "evt_d5feecc5d81dd8",
-        "evt_a702530ac8edf2"
+        "evt_d5feecc5d81dd8"
       ],
       "evidence": [
         {
@@ -316,13 +325,6 @@
           "title": "国信证券：361度维持“优于大市”评级三季度流水增长中单位数|归母净利润|童装|零售额|品牌线|零售",
           "source": "finance.sina.com.cn",
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWlBlajZBQnRUNlk2T1dIRGUwNndRSnI3SjFJYy1mT25RZzNfWVZXZ1BucDQ0SEd5a1JoWGVSN0tENHdSV3JrcVg4bVpfd21OSjNWVWZ4T2pHUEpHLWVfZTNwdlFITjlXcE9QZXh2UFBhVVYwa1BKV20xeTVrTnNJZ3FWckNWSjNKTlZfYktjNjFScjQxazhRVFlqWFpxYUNydlgwSTE1akctZw?oc=5",
-          "published_date": "2026-10-16"
-        },
-        {
-          "event_id": "evt_a702530ac8edf2",
-          "title": "聚力行业深耕，探索价值增长，第二届童学荟·童装主题会议成功举办",
-          "source": "中国纺织报",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWWDJhbHZTcWFqeXgxVjRaQVVlZmpvWkFmVjhTbjRXTTk2S3Q0R21DelFHQkRrcDNVTWtGeHpiVF82Sk1OUVpXTk1kUkk2UG05ejk2V0lrNjVBak5PbkoxNFFuUUE0TnNyeS02YQ?oc=5",
           "published_date": "2026-10-16"
         }
       ]
@@ -386,7 +388,7 @@
           "published_date": "2026-10-17"
         }
       ],
-      "editorial_reason": "Nike推出专为中国篮球爱好者设计的外场篮球鞋，体现国际品牌针对中国细分场景做产品本土化，对儿童篮球鞋场景有参照意义。"
+      "editorial_reason": "Nike推出专为中国篮球爱好者设计的外场篮球鞋，体现本土化产品设计方向，对儿童篮球鞋场景有参照。"
     }
   ],
   "competitor_channel": [
@@ -428,73 +430,34 @@
           "summary": ""
         }
       ]
-    },
-    {
-      "event_id": "evt_5107a980481a11",
-      "title": "阿迪达斯全球CEO：中国市场的决策权在中国团队手中，分销渠道因地制宜优化",
-      "category": "品牌与公司",
-      "event_family": "management",
-      "reporting_period": "",
-      "brands": [
-        "Adidas"
-      ],
-      "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
-      "published_at": "2026-10-13T19:48+08:00",
-      "published_date": "2026-10-13",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 45,
-      "selection_score": 57,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_5107a980481a11"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_9277863434e47e",
-          "title": "阿迪达斯全球CEO：中国市场的决策权在中国团队手中，分销渠道因地制宜优化",
-          "source": "澎湃新闻",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
-          "published_at": "2026-10-13T19:48+08:00",
-          "summary": ""
-        }
-      ]
     }
   ],
   "kids_consumer": [],
   "watchlist": [
     {
-      "title": "户外参与人数与儿童户外场景转化",
+      "title": "儿童户外场景需求验证",
       "event_ids": [
         "evt_d48ef27cd1c536",
         "evt_b8808c5718b3a4"
       ],
       "product_ids": [],
-      "reason": "观察后续是否有儿童户外鞋服细分数据或品牌动作，验证宏观参与人数向儿童品类传导。"
+      "reason": "观察户外参与人数与区域市场数据是否延伸至儿童户外鞋服的终端表现。"
     },
     {
-      "title": "安踏整合Puma对儿童运动市场的影响",
+      "title": "头部品牌资本动作后续",
       "event_ids": [
         "evt_5179e4f8a4eeed"
       ],
       "product_ids": [],
-      "reason": "关注Puma儿童产品线是否借助安踏渠道调整，以及本土集团多品牌运营对儿童市场的竞争影响。"
+      "reason": "关注安踏收购Puma股权后多品牌渠道与儿童线是否出现联动调整。"
     },
     {
-      "title": "361°童装后续独立数据披露",
+      "title": "童装行业会议动向",
       "event_ids": [
-        "evt_d5feecc5d81dd8"
+        "evt_a702530ac8edf2"
       ],
       "product_ids": [],
-      "reason": "本周财报未披露童装独立流水细节，下周关注是否有更细分的童装经营数据或产品动作。"
+      "reason": "跟踪童装主题会议释放的品类与渠道信号。"
     }
   ],
   "tracking": {
@@ -535,7 +498,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "全国户外运动参与人数超5亿，为儿童户外鞋服提供需求基础，是本周最宏观的消费信号。"
+        "editorial_reason": "户外参与人数超5亿，为儿童户外场景提供需求侧参照。"
       },
       {
         "event_id": "evt_b8808c5718b3a4",
@@ -573,7 +536,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "北京户外用品市场规模达126亿元，官方数据印证一线城市户外消费扩容，与儿童户外场景相关。"
+        "editorial_reason": "北京披露户外用品市场规模，反映双奥城市户外消费基础。"
       },
       {
         "event_id": "evt_d5feecc5d81dd8",
@@ -623,45 +586,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "361°三季度流水正增长获券商维持评级，直接关联本公司经营表现，但童装独立数据未披露。"
-      },
-      {
-        "event_id": "evt_d71373c25d77b0",
-        "title": "虹口消费券加码回归：每天都有，最高立减1500元",
-        "category": "行业动态",
-        "event_family": "industry_event",
-        "reporting_period": "",
-        "brands": [],
-        "source": "上海市人民政府",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSEh2NE5sVjF5MlVicjVpU3BOV0dCa09ael9oX0ZudURzUGZ6T281d3B0UlZUTi13RjlPSGlyTXNydm1LaFlXRzVaQS1pOF9oWUg4R0kxVmNSeXgzTkdnZTJWdWFoVHJ1cXJubGM2N0NDaE9pWmhIRWtDTWtiM0dveXdVSzBZX0NBdnc?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSEh2NE5sVjF5MlVicjVpU3BOV0dCa09ael9oX0ZudURzUGZ6T281d3B0UlZUTi13RjlPSGlyTXNydm1LaFlXRzVaQS1pOF9oWUg4R0kxVmNSeXgzTkdnZTJWdWFoVHJ1cXJubGM2N0NDaE9pWmhIRWtDTWtiM0dveXdVSzBZX0NBdnc?oc=5",
-        "published_at": "2026-10-16T10:24+08:00",
-        "published_date": "2026-10-16",
-        "status": "new",
-        "verification": "official_source",
-        "is_official": true,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 59,
-        "selection_score": 79,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_d71373c25d77b0"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_eed2531f03863a",
-            "title": "虹口消费券加码回归：每天都有，最高立减1500元",
-            "source": "上海市人民政府",
-            "source_tier": "official",
-            "is_official": true,
-            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSEh2NE5sVjF5MlVicjVpU3BOV0dCa09ael9oX0ZudURzUGZ6T281d3B0UlZUTi13RjlPSGlyTXNydm1LaFlXRzVaQS1pOF9oWUg4R0kxVmNSeXgzTkdnZTJWdWFoVHJ1cXJubGM2N0NDaE9pWmhIRWtDTWtiM0dveXdVSzBZX0NBdnc?oc=5",
-            "published_at": "2026-10-16T10:24+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "上海虹口区消费券加码，区域零售刺激政策延续，反映线下客流争夺与消费券工具常态化。"
+        "editorial_reason": "361°三季度流水正增长，童装线延续正增长，直接相关。"
       },
       {
         "event_id": "evt_a702530ac8edf2",
@@ -699,7 +624,47 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "童装主题会议聚焦行业深耕与价值增长，提供童装行业趋势交流信号，与儿童事业部直接相关。"
+        "editorial_reason": "童装主题会议聚焦行业深耕与价值增长，反映品类动向。"
+      },
+      {
+        "event_id": "evt_5107a980481a11",
+        "title": "阿迪达斯全球CEO：中国市场的决策权在中国团队手中，分销渠道因地制宜优化",
+        "category": "品牌与公司",
+        "event_family": "management",
+        "reporting_period": "",
+        "brands": [
+          "Adidas"
+        ],
+        "source": "澎湃新闻",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
+        "published_at": "2026-10-13T19:48+08:00",
+        "published_date": "2026-10-13",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 45,
+        "selection_score": 57,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_5107a980481a11"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_9277863434e47e",
+            "title": "阿迪达斯全球CEO：中国市场的决策权在中国团队手中，分销渠道因地制宜优化",
+            "source": "澎湃新闻",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
+            "published_at": "2026-10-13T19:48+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "阿迪达斯强调中国团队决策权与渠道优化，外资品牌本土化信号。"
       }
     ],
     "follow_up_selected": [
@@ -742,7 +707,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏完成收购Puma 29.06%股权成为最大股东，国际品牌竞争格局变化，影响儿童运动市场长期竞争。"
+        "editorial_reason": "安踏完成收购Puma股权成最大股东，头部竞争格局变化。"
       }
     ],
     "verification_queue": [],
@@ -931,14 +896,6 @@
     },
     {
       "type": "event",
-      "id": "evt_d71373c25d77b0",
-      "title": "虹口消费券加码回归：每天都有，最高立减1500元",
-      "source": "上海市人民政府",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSEh2NE5sVjF5MlVicjVpU3BOV0dCa09ael9oX0ZudURzUGZ6T281d3B0UlZUTi13RjlPSGlyTXNydm1LaFlXRzVaQS1pOF9oWUg4R0kxVmNSeXgzTkdnZTJWdWFoVHJ1cXJubGM2N0NDaE9pWmhIRWtDTWtiM0dveXdVSzBZX0NBdnc?oc=5",
-      "published_date": "2026-10-16"
-    },
-    {
-      "type": "event",
       "id": "evt_a702530ac8edf2",
       "title": "聚力行业深耕，探索价值增长，第二届童学荟·童装主题会议成功举办",
       "source": "中国纺织报",
@@ -947,19 +904,19 @@
     },
     {
       "type": "event",
-      "id": "evt_fee0a830841397",
-      "title": "安踏集团与清华大学深化战略合作，升级产学研用一体化创新平台",
-      "source": "新京报",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE96b21SUjAyMWo0eVNMVU1WVE5BZTk2U2V1TWtWLXFYUFZUbjBNY1dGRzF1SkdDY3hMa0k2S1p0UF9VX3hwMmllRkxneDQ4ZHgzal9Jb2JEdUVCcjdpSHBrYkxtVU4?oc=5",
-      "published_date": "2026-10-17"
-    },
-    {
-      "type": "event",
       "id": "evt_5107a980481a11",
       "title": "阿迪达斯全球CEO：中国市场的决策权在中国团队手中，分销渠道因地制宜优化",
       "source": "澎湃新闻",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
       "published_date": "2026-10-13"
+    },
+    {
+      "type": "event",
+      "id": "evt_fee0a830841397",
+      "title": "安踏集团与清华大学深化战略合作，升级产学研用一体化创新平台",
+      "source": "新京报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE96b21SUjAyMWo0eVNMVU1WVE5BZTk2U2V1TWtWLXFYUFZUbjBNY1dGRzF1SkdDY3hMa0k2S1p0UF9VX3hwMmllRkxneDQ4ZHgzal9Jb2JEdUVCcjdpSHBrYkxtVU4?oc=5",
+      "published_date": "2026-10-17"
     },
     {
       "type": "product",
@@ -984,7 +941,7 @@
     "eligible_product_count": 1,
     "selected_product_count": 1,
     "conflict_count": 0,
-    "source_link_count": 10,
+    "source_link_count": 9,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
