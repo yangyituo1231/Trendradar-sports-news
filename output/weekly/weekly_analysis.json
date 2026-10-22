@@ -1,6 +1,6 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-10-21T10:15+08:00",
+  "generated_at": "2026-10-22T10:09+08:00",
   "report_window": {
     "start_date": "2026-10-12",
     "end_date": "2026-10-18",
@@ -8,12 +8,13 @@
   },
   "editorial": {
     "weekly_thesis": "户外参与人数超5亿与北京户外市场数据，为儿童户外场景提供需求侧参照；安踏收购Puma改变竞争格局。",
-    "week_in_one_paragraph": "本周户外运动参与人数超5亿、北京户外用品市场规模达126亿元，显示户外场景持续扩容；安踏完成收购Puma 29.06%股权成为最大股东，国际品牌竞争格局生变；361°三季度流水保持正增长，童装业务维持正增长；上海多区发放消费券，区域零售刺激延续。",
+    "week_in_one_paragraph": "本周户外运动参与人数超5亿、北京户外用品市场规模达126亿元，显示户外场景持续扩容；安踏完成收购Puma 29.06%股权成为最大股东，头部品牌资本动作加剧竞争；361°三季度流水保持正增长，童装业务获券商关注；上海多区发放消费券，零售端促消费延续。",
     "next_week_focus": [
-      "跟踪361°童装终端折扣与库存变化",
-      "关注安踏收购Puma后儿童线整合动作",
-      "观察上海消费券对儿童运动零售的实际拉动",
-      "留意儿童户外鞋服新品与场景营销动态"
+      "跟踪361°童装四季度订货会及渠道反馈",
+      "关注安踏收购Puma后儿童业务是否调整",
+      "观察户外数据对儿童户外鞋服新品节奏影响",
+      "留意上海消费券对运动零售终端动销的传导",
+      "监测国际品牌儿童跑鞋本土化产品动态"
     ]
   },
   "key_developments": [
@@ -91,7 +92,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "北京户外用品市场规模达126亿元，官方数据反映户外消费扩容。"
+      "editorial_reason": "北京户外用品市场规模达126亿元，官方数据反映户外消费基础。"
     },
     {
       "event_id": "evt_5179e4f8a4eeed",
@@ -132,7 +133,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏完成收购Puma 29.06%股权成为最大股东，国际品牌竞争格局生变。"
+      "editorial_reason": "安踏完成收购Puma 29.06%股权成最大股东，头部竞争格局生变。"
     },
     {
       "event_id": "evt_d5feecc5d81dd8",
@@ -182,7 +183,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "361°三季度流水正增长，童装品牌线下零售额同比正增长，直接关联事业部。"
+      "editorial_reason": "361°三季度流水正增长，童装品牌线下零售额同比正增长。"
     },
     {
       "event_id": "evt_d71373c25d77b0",
@@ -220,51 +221,51 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "虹口消费券加码回归，区域零售刺激政策延续，影响线下渠道客流。"
+      "editorial_reason": "虹口消费券加码，零售端促消费政策延续，影响渠道动销环境。"
     },
     {
-      "event_id": "evt_0aa545e24e321a",
-      "title": "最高可减1000元！ 普陀区将发放新一轮商圈零售消费券2026-10-15",
-      "category": "行业动态",
+      "event_id": "evt_a702530ac8edf2",
+      "title": "聚力行业深耕，探索价值增长，第二届童学荟·童装主题会议成功举办",
+      "category": "儿童与青少年",
       "event_family": "industry_event",
       "reporting_period": "",
       "brands": [],
-      "source": "上海市人民政府",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSmJxQzd6Nk9wRm10SkpKSmR1OE5RVEdYeHoyb2c1NUhyQkRVRVZ0RDhxZ0pFNS1iNVBNaF9FUFZDejRWeFh2OV9PX3UwdnNlcDlIbHNnUE1vRkJuSmhxNDZEMUswRlkySnhEaVdISFhzSnViUmJTaHFpZEREVGowRFZQUXlyZUtiWVE?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSmJxQzd6Nk9wRm10SkpKSmR1OE5RVEdYeHoyb2c1NUhyQkRVRVZ0RDhxZ0pFNS1iNVBNaF9FUFZDejRWeFh2OV9PX3UwdnNlcDlIbHNnUE1vRkJuSmhxNDZEMUswRlkySnhEaVdISFhzSnViUmJTaHFpZEREVGowRFZQUXlyZUtiWVE?oc=5",
-      "published_at": "2026-10-15T15:09+08:00",
-      "published_date": "2026-10-15",
+      "source": "中国纺织报",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWWDJhbHZTcWFqeXgxVjRaQVVlZmpvWkFmVjhTbjRXTTk2S3Q0R21DelFHQkRrcDNVTWtGeHpiVF82Sk1OUVpXTk1kUkk2UG05ejk2V0lrNjVBak5PbkoxNFFuUUE0TnNyeS02YQ?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWWDJhbHZTcWFqeXgxVjRaQVVlZmpvWkFmVjhTbjRXTTk2S3Q0R21DelFHQkRrcDNVTWtGeHpiVF82Sk1OUVpXTk1kUkk2UG05ejk2V0lrNjVBak5PbkoxNFFuUUE0TnNyeS02YQ?oc=5",
+      "published_at": "2026-10-16T13:57+08:00",
+      "published_date": "2026-10-16",
       "status": "new",
-      "verification": "official_source",
-      "is_official": true,
+      "verification": "single_source",
+      "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 55,
-      "selection_score": 75,
+      "editorial_score": 44,
+      "selection_score": 67,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_0aa545e24e321a"
+        "evt_a702530ac8edf2"
       ],
       "evidence": [
         {
-          "item_id": "src_177fe40da8a1d8",
-          "title": "最高可减1000元！ 普陀区将发放新一轮商圈零售消费券2026-10-15",
-          "source": "上海市人民政府",
-          "source_tier": "official",
-          "is_official": true,
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSmJxQzd6Nk9wRm10SkpKSmR1OE5RVEdYeHoyb2c1NUhyQkRVRVZ0RDhxZ0pFNS1iNVBNaF9FUFZDejRWeFh2OV9PX3UwdnNlcDlIbHNnUE1vRkJuSmhxNDZEMUswRlkySnhEaVdISFhzSnViUmJTaHFpZEREVGowRFZQUXlyZUtiWVE?oc=5",
-          "published_at": "2026-10-15T15:09+08:00",
+          "item_id": "src_255eb4a1c7725b",
+          "title": "聚力行业深耕，探索价值增长，第二届童学荟·童装主题会议成功举办",
+          "source": "中国纺织报",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWWDJhbHZTcWFqeXgxVjRaQVVlZmpvWkFmVjhTbjRXTTk2S3Q0R21DelFHQkRrcDNVTWtGeHpiVF82Sk1OUVpXTk1kUkk2UG05ejk2V0lrNjVBak5PbkoxNFFuUUE0TnNyeS02YQ?oc=5",
+          "published_at": "2026-10-16T13:57+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "普陀区发放新一轮商圈零售消费券，与虹口形成上海区域消费刺激组合。"
+      "editorial_reason": "童装主题会议聚焦行业深耕与价值增长，反映童装供给端动向。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "户外运动扩容对儿童户外场景的参照",
-      "analysis": "本周两项户外数据值得关注：行业报告显示我国户外运动参与人数已超5亿；北京“十四五”时期户外用品市场规模达126亿元。两则信息分别从参与人群和区域消费规模勾勒户外场景扩容，为儿童户外鞋服的产品规划与场景沟通提供需求侧参照，但均为宏观数据，不直接等同于儿童品类热度。",
+      "headline": "户外需求侧扩容对儿童户外场景的参照",
+      "analysis": "本周两项户外数据值得关注：行业报告显示我国户外运动参与人数已超5亿；北京“十四五”时期户外用品市场规模达126亿元。两者分别从参与人群和区域消费规模勾勒户外场景扩容，为儿童户外鞋服的产品线布局提供需求侧参照，但均为宏观数据，不直接等同于儿童品类热度。",
       "event_ids": [
         "evt_d48ef27cd1c536",
         "evt_b8808c5718b3a4"
@@ -287,8 +288,8 @@
       ]
     },
     {
-      "headline": "安踏收购Puma股权与竞争格局变化",
-      "analysis": "安踏体育完成收购Puma 29.06%股权，成为其最大股东。该动作意味着安踏在多品牌矩阵上进一步向国际品牌延伸，可能改变大众运动与儿童运动市场的竞争资源配置。",
+      "headline": "头部品牌资本动作与竞争格局变化",
+      "analysis": "安踏体育完成收购Puma 29.06%股权，成为其最大股东。该动作意味着头部运动品牌通过资本方式扩展品牌矩阵，可能加剧多品牌、多价格带的竞争。对儿童运动市场而言，需关注头部集团资源整合后对细分品类投入节奏的影响，但当前证据仅确认股权交易，未涉及儿童业务具体动作。",
       "event_ids": [
         "evt_5179e4f8a4eeed"
       ],
@@ -303,8 +304,8 @@
       ]
     },
     {
-      "headline": "361°三季度流水与童装正增长",
-      "analysis": "国信证券研报显示361°三季度流水增长中单位数，童装品牌线下渠道零售额同比实现正增长。该信息直接关联事业部，说明童装线在当前消费环境下保持正增长态势，但增速为券商归纳，需结合后续终端折扣与库存情况持续观察。",
+      "headline": "361°三季度流水与童装业务表现",
+      "analysis": "国信证券报告显示361°三季度流水增长中单位数，童装品牌线下渠道零售额同比实现正增长。该信息为事业部提供自身经营参照，说明童装线在弱消费环境中保持正增长，但券商评级与流水增速不代表终端销量或市场份额，需结合后续订货会与渠道反馈观察。",
       "event_ids": [
         "evt_d5feecc5d81dd8"
       ],
@@ -315,30 +316,6 @@
           "source": "finance.sina.com.cn",
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWlBlajZBQnRUNlk2T1dIRGUwNndRSnI3SjFJYy1mT25RZzNfWVZXZ1BucDQ0SEd5a1JoWGVSN0tENHdSV3JrcVg4bVpfd21OSjNWVWZ4T2pHUEpHLWVfZTNwdlFITjlXcE9QZXh2UFBhVVYwa1BKV20xeTVrTnNJZ3FWckNWSjNKTlZfYktjNjFScjQxazhRVFlqWFpxYUNydlgwSTE1akctZw?oc=5",
           "published_date": "2026-10-16"
-        }
-      ]
-    },
-    {
-      "headline": "上海区域消费券对线下零售的刺激",
-      "analysis": "虹口区消费券加码回归、普陀区发放新一轮商圈零售消费券，均属地方政府主导的线下消费刺激。对儿童运动鞋服而言，商圈消费券可能带动周末家庭客流，但覆盖品类与核销规则未明，需观察实际到店转化及对正价销售的影响。",
-      "event_ids": [
-        "evt_d71373c25d77b0",
-        "evt_0aa545e24e321a"
-      ],
-      "evidence": [
-        {
-          "event_id": "evt_d71373c25d77b0",
-          "title": "虹口消费券加码回归：每天都有，最高立减1500元",
-          "source": "上海市人民政府",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSEh2NE5sVjF5MlVicjVpU3BOV0dCa09ael9oX0ZudURzUGZ6T281d3B0UlZUTi13RjlPSGlyTXNydm1LaFlXRzVaQS1pOF9oWUg4R0kxVmNSeXgzTkdnZTJWdWFoVHJ1cXJubGM2N0NDaE9pWmhIRWtDTWtiM0dveXdVSzBZX0NBdnc?oc=5",
-          "published_date": "2026-10-16"
-        },
-        {
-          "event_id": "evt_0aa545e24e321a",
-          "title": "最高可减1000元！ 普陀区将发放新一轮商圈零售消费券2026-10-15",
-          "source": "上海市人民政府",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSmJxQzd6Nk9wRm10SkpKSmR1OE5RVEdYeHoyb2c1NUhyQkRVRVZ0RDhxZ0pFNS1iNVBNaF9FUFZDejRWeFh2OV9PX3UwdnNlcDlIbHNnUE1vRkJuSmhxNDZEMUswRlkySnhEaVdISFhzSnViUmJTaHFpZEREVGowRFZQUXlyZUtiWVE?oc=5",
-          "published_date": "2026-10-15"
         }
       ]
     }
@@ -401,49 +378,10 @@
           "published_date": "2026-10-17"
         }
       ],
-      "editorial_reason": "Nike推出专为中国篮球爱好者设计的外场篮球鞋，显示国际品牌针对本土场景做产品细分，可参照其儿童篮球场景延伸思路。"
+      "editorial_reason": "Nike推出专为中国篮球爱好者设计的外场篮球鞋，体现国际品牌本土化产品策略，可对照儿童篮球鞋场景。"
     }
   ],
   "competitor_channel": [
-    {
-      "event_id": "evt_fee0a830841397",
-      "title": "安踏集团与清华大学深化战略合作，升级产学研用一体化创新平台",
-      "category": "品牌与公司",
-      "event_family": "industry_event",
-      "reporting_period": "",
-      "brands": [
-        "安踏"
-      ],
-      "source": "新京报",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE96b21SUjAyMWo0eVNMVU1WVE5BZTk2U2V1TWtWLXFYUFZUbjBNY1dGRzF1SkdDY3hMa0k2S1p0UF9VX3hwMmllRkxneDQ4ZHgzal9Jb2JEdUVCcjdpSHBrYkxtVU4?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE96b21SUjAyMWo0eVNMVU1WVE5BZTk2U2V1TWtWLXFYUFZUbjBNY1dGRzF1SkdDY3hMa0k2S1p0UF9VX3hwMmllRkxneDQ4ZHgzal9Jb2JEdUVCcjdpSHBrYkxtVU4?oc=5",
-      "published_at": "2026-10-17T21:26+08:00",
-      "published_date": "2026-10-17",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 48,
-      "selection_score": 60,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_fee0a830841397"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_05dea7382c5c58",
-          "title": "安踏集团与清华大学深化战略合作，升级产学研用一体化创新平台",
-          "source": "新京报",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE96b21SUjAyMWo0eVNMVU1WVE5BZTk2U2V1TWtWLXFYUFZUbjBNY1dGRzF1SkdDY3hMa0k2S1p0UF9VX3hwMmllRkxneDQ4ZHgzal9Jb2JEdUVCcjdpSHBrYkxtVU4?oc=5",
-          "published_at": "2026-10-17T21:26+08:00",
-          "summary": ""
-        }
-      ]
-    },
     {
       "event_id": "evt_5107a980481a11",
       "title": "阿迪达斯全球CEO：中国市场的决策权在中国团队手中，分销渠道因地制宜优化",
@@ -484,72 +422,33 @@
       ]
     }
   ],
-  "kids_consumer": [
-    {
-      "event_id": "evt_a702530ac8edf2",
-      "title": "聚力行业深耕，探索价值增长，第二届童学荟·童装主题会议成功举办",
-      "category": "儿童与青少年",
-      "event_family": "industry_event",
-      "reporting_period": "",
-      "brands": [],
-      "source": "中国纺织报",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWWDJhbHZTcWFqeXgxVjRaQVVlZmpvWkFmVjhTbjRXTTk2S3Q0R21DelFHQkRrcDNVTWtGeHpiVF82Sk1OUVpXTk1kUkk2UG05ejk2V0lrNjVBak5PbkoxNFFuUUE0TnNyeS02YQ?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWWDJhbHZTcWFqeXgxVjRaQVVlZmpvWkFmVjhTbjRXTTk2S3Q0R21DelFHQkRrcDNVTWtGeHpiVF82Sk1OUVpXTk1kUkk2UG05ejk2V0lrNjVBak5PbkoxNFFuUUE0TnNyeS02YQ?oc=5",
-      "published_at": "2026-10-16T13:57+08:00",
-      "published_date": "2026-10-16",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 44,
-      "selection_score": 67,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_a702530ac8edf2"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_255eb4a1c7725b",
-          "title": "聚力行业深耕，探索价值增长，第二届童学荟·童装主题会议成功举办",
-          "source": "中国纺织报",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWWDJhbHZTcWFqeXgxVjRaQVVlZmpvWkFmVjhTbjRXTTk2S3Q0R21DelFHQkRrcDNVTWtGeHpiVF82Sk1OUVpXTk1kUkk2UG05ejk2V0lrNjVBak5PbkoxNFFuUUE0TnNyeS02YQ?oc=5",
-          "published_at": "2026-10-16T13:57+08:00",
-          "summary": ""
-        }
-      ]
-    }
-  ],
+  "kids_consumer": [],
   "watchlist": [
     {
-      "title": "儿童户外鞋服场景渗透",
+      "title": "儿童户外鞋服供给动态",
       "event_ids": [
         "evt_d48ef27cd1c536",
         "evt_b8808c5718b3a4"
       ],
       "product_ids": [],
-      "reason": "观察户外参与人数与区域市场规模数据是否进一步细化到儿童品类。"
+      "reason": "观察户外参与人数与区域市场规模数据后，儿童户外鞋服是否有新品或渠道跟进。"
     },
     {
-      "title": "安踏系多品牌整合对儿童线的传导",
+      "title": "安踏收购Puma后的多品牌竞争",
       "event_ids": [
-        "evt_5179e4f8a4eeed",
-        "evt_fee0a830841397"
+        "evt_5179e4f8a4eeed"
       ],
       "product_ids": [],
-      "reason": "关注安踏收购Puma后是否在儿童运动产品与渠道上产生资源协同。"
+      "reason": "关注交易完成后安踏系品牌矩阵是否涉及儿童或细分运动品类调整。"
     },
     {
-      "title": "上海消费券对儿童运动零售的拉动",
+      "title": "消费券对零售渠道的拉动",
       "event_ids": [
         "evt_d71373c25d77b0",
         "evt_0aa545e24e321a"
       ],
       "product_ids": [],
-      "reason": "跟踪消费券核销品类是否覆盖儿童运动鞋服及周末家庭客流变化。"
+      "reason": "观察上海多区消费券发放后运动鞋服终端动销及儿童品类参与情况。"
     }
   ],
   "tracking": {
@@ -628,7 +527,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "北京户外用品市场规模达126亿元，官方数据反映户外消费扩容。"
+        "editorial_reason": "北京户外用品市场规模达126亿元，官方数据反映户外消费基础。"
       },
       {
         "event_id": "evt_d5feecc5d81dd8",
@@ -678,7 +577,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "361°三季度流水正增长，童装品牌线下零售额同比正增长，直接关联事业部。"
+        "editorial_reason": "361°三季度流水正增长，童装品牌线下零售额同比正增长。"
       },
       {
         "event_id": "evt_d71373c25d77b0",
@@ -716,45 +615,45 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "虹口消费券加码回归，区域零售刺激政策延续，影响线下渠道客流。"
+        "editorial_reason": "虹口消费券加码，零售端促消费政策延续，影响渠道动销环境。"
       },
       {
-        "event_id": "evt_0aa545e24e321a",
-        "title": "最高可减1000元！ 普陀区将发放新一轮商圈零售消费券2026-10-15",
-        "category": "行业动态",
+        "event_id": "evt_a702530ac8edf2",
+        "title": "聚力行业深耕，探索价值增长，第二届童学荟·童装主题会议成功举办",
+        "category": "儿童与青少年",
         "event_family": "industry_event",
         "reporting_period": "",
         "brands": [],
-        "source": "上海市人民政府",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSmJxQzd6Nk9wRm10SkpKSmR1OE5RVEdYeHoyb2c1NUhyQkRVRVZ0RDhxZ0pFNS1iNVBNaF9FUFZDejRWeFh2OV9PX3UwdnNlcDlIbHNnUE1vRkJuSmhxNDZEMUswRlkySnhEaVdISFhzSnViUmJTaHFpZEREVGowRFZQUXlyZUtiWVE?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSmJxQzd6Nk9wRm10SkpKSmR1OE5RVEdYeHoyb2c1NUhyQkRVRVZ0RDhxZ0pFNS1iNVBNaF9FUFZDejRWeFh2OV9PX3UwdnNlcDlIbHNnUE1vRkJuSmhxNDZEMUswRlkySnhEaVdISFhzSnViUmJTaHFpZEREVGowRFZQUXlyZUtiWVE?oc=5",
-        "published_at": "2026-10-15T15:09+08:00",
-        "published_date": "2026-10-15",
+        "source": "中国纺织报",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWWDJhbHZTcWFqeXgxVjRaQVVlZmpvWkFmVjhTbjRXTTk2S3Q0R21DelFHQkRrcDNVTWtGeHpiVF82Sk1OUVpXTk1kUkk2UG05ejk2V0lrNjVBak5PbkoxNFFuUUE0TnNyeS02YQ?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWWDJhbHZTcWFqeXgxVjRaQVVlZmpvWkFmVjhTbjRXTTk2S3Q0R21DelFHQkRrcDNVTWtGeHpiVF82Sk1OUVpXTk1kUkk2UG05ejk2V0lrNjVBak5PbkoxNFFuUUE0TnNyeS02YQ?oc=5",
+        "published_at": "2026-10-16T13:57+08:00",
+        "published_date": "2026-10-16",
         "status": "new",
-        "verification": "official_source",
-        "is_official": true,
+        "verification": "single_source",
+        "is_official": false,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 55,
-        "selection_score": 75,
+        "editorial_score": 44,
+        "selection_score": 67,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_0aa545e24e321a"
+          "evt_a702530ac8edf2"
         ],
         "evidence": [
           {
-            "item_id": "src_177fe40da8a1d8",
-            "title": "最高可减1000元！ 普陀区将发放新一轮商圈零售消费券2026-10-15",
-            "source": "上海市人民政府",
-            "source_tier": "official",
-            "is_official": true,
-            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSmJxQzd6Nk9wRm10SkpKSmR1OE5RVEdYeHoyb2c1NUhyQkRVRVZ0RDhxZ0pFNS1iNVBNaF9FUFZDejRWeFh2OV9PX3UwdnNlcDlIbHNnUE1vRkJuSmhxNDZEMUswRlkySnhEaVdISFhzSnViUmJTaHFpZEREVGowRFZQUXlyZUtiWVE?oc=5",
-            "published_at": "2026-10-15T15:09+08:00",
+            "item_id": "src_255eb4a1c7725b",
+            "title": "聚力行业深耕，探索价值增长，第二届童学荟·童装主题会议成功举办",
+            "source": "中国纺织报",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWWDJhbHZTcWFqeXgxVjRaQVVlZmpvWkFmVjhTbjRXTTk2S3Q0R21DelFHQkRrcDNVTWtGeHpiVF82Sk1OUVpXTk1kUkk2UG05ejk2V0lrNjVBak5PbkoxNFFuUUE0TnNyeS02YQ?oc=5",
+            "published_at": "2026-10-16T13:57+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "普陀区发放新一轮商圈零售消费券，与虹口形成上海区域消费刺激组合。"
+        "editorial_reason": "童装主题会议聚焦行业深耕与价值增长，反映童装供给端动向。"
       }
     ],
     "follow_up_selected": [
@@ -797,7 +696,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏完成收购Puma 29.06%股权成为最大股东，国际品牌竞争格局生变。"
+        "editorial_reason": "安踏完成收购Puma 29.06%股权成最大股东，头部竞争格局生变。"
       }
     ],
     "verification_queue": [],
@@ -994,19 +893,11 @@
     },
     {
       "type": "event",
-      "id": "evt_0aa545e24e321a",
-      "title": "最高可减1000元！ 普陀区将发放新一轮商圈零售消费券2026-10-15",
-      "source": "上海市人民政府",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSmJxQzd6Nk9wRm10SkpKSmR1OE5RVEdYeHoyb2c1NUhyQkRVRVZ0RDhxZ0pFNS1iNVBNaF9FUFZDejRWeFh2OV9PX3UwdnNlcDlIbHNnUE1vRkJuSmhxNDZEMUswRlkySnhEaVdISFhzSnViUmJTaHFpZEREVGowRFZQUXlyZUtiWVE?oc=5",
-      "published_date": "2026-10-15"
-    },
-    {
-      "type": "event",
-      "id": "evt_fee0a830841397",
-      "title": "安踏集团与清华大学深化战略合作，升级产学研用一体化创新平台",
-      "source": "新京报",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE96b21SUjAyMWo0eVNMVU1WVE5BZTk2U2V1TWtWLXFYUFZUbjBNY1dGRzF1SkdDY3hMa0k2S1p0UF9VX3hwMmllRkxneDQ4ZHgzal9Jb2JEdUVCcjdpSHBrYkxtVU4?oc=5",
-      "published_date": "2026-10-17"
+      "id": "evt_a702530ac8edf2",
+      "title": "聚力行业深耕，探索价值增长，第二届童学荟·童装主题会议成功举办",
+      "source": "中国纺织报",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWWDJhbHZTcWFqeXgxVjRaQVVlZmpvWkFmVjhTbjRXTTk2S3Q0R21DelFHQkRrcDNVTWtGeHpiVF82Sk1OUVpXTk1kUkk2UG05ejk2V0lrNjVBak5PbkoxNFFuUUE0TnNyeS02YQ?oc=5",
+      "published_date": "2026-10-16"
     },
     {
       "type": "event",
@@ -1015,14 +906,6 @@
       "source": "澎湃新闻",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
       "published_date": "2026-10-13"
-    },
-    {
-      "type": "event",
-      "id": "evt_a702530ac8edf2",
-      "title": "聚力行业深耕，探索价值增长，第二届童学荟·童装主题会议成功举办",
-      "source": "中国纺织报",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWWDJhbHZTcWFqeXgxVjRaQVVlZmpvWkFmVjhTbjRXTTk2S3Q0R21DelFHQkRrcDNVTWtGeHpiVF82Sk1OUVpXTk1kUkk2UG05ejk2V0lrNjVBak5PbkoxNFFuUUE0TnNyeS02YQ?oc=5",
-      "published_date": "2026-10-16"
     },
     {
       "type": "product",
@@ -1047,7 +930,7 @@
     "eligible_product_count": 1,
     "selected_product_count": 1,
     "conflict_count": 0,
-    "source_link_count": 11,
+    "source_link_count": 9,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
