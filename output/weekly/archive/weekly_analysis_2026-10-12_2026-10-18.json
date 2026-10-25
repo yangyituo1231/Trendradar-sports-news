@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-10-24T10:13+08:00",
+  "generated_at": "2026-10-25T10:00+08:00",
   "report_window": {
     "start_date": "2026-10-12",
     "end_date": "2026-10-18",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "户外参与人数超5亿与北京户外市场数据，为儿童户外场景提供需求侧依据；安踏收购Puma重塑竞争格局。",
-    "week_in_one_paragraph": "本周户外运动参与人数超5亿、北京户外用品市场规模达126亿元，显示户外消费基础扩大；安踏完成收购Puma 29.06%股权成为最大股东，国际品牌竞争格局生变；361°三季度流水保持正增长，童装业务延续。儿童运动鞋与户外服饰出现具体商品动态，但证据有限。",
+    "weekly_thesis": "户外参与人数超5亿与北京户外市场126亿元，为儿童户外鞋服提供需求侧支撑；安踏控股Puma重塑竞争格局。",
+    "week_in_one_paragraph": "本周户外运动需求侧信号集中：报告显示我国户外运动参与人数超5亿，北京“十四五”户外用品市场规模达126亿元，户外场景扩容对儿童户外鞋服形成间接支撑。品牌端，安踏完成收购Puma 29.06%股权成为最大股东，全球多品牌竞争格局生变；361°三季度主品牌及童装线下零售额同比正增长，基本盘保持稳定。",
     "next_week_focus": [
-      "关注儿童户外鞋服是否有新增产品与渠道信息",
-      "跟踪安踏收购Puma后是否披露儿童品类整合动作",
-      "留意361°童装业务后续经营数据披露",
-      "观察地方消费券对运动零售渠道的实际拉动信息",
-      "关注童装行业会议后续发布的趋势内容"
+      "跟踪儿童户外鞋服是否有新品或渠道动作",
+      "关注安踏控股Puma后儿童线是否调整",
+      "留意361°童装四季度流水与折扣情况",
+      "观察本土化产品细分在儿童篮球鞋的延伸",
+      "关注童装行业价值增长讨论的落地信号"
     ]
   },
   "key_developments": [
@@ -54,7 +54,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "户外运动参与人数超5亿，为儿童户外鞋服提供需求侧基础信息。"
+      "editorial_reason": "户外运动参与人数超5亿，为儿童户外鞋服提供需求侧基础信号。"
     },
     {
       "event_id": "evt_b8808c5718b3a4",
@@ -92,7 +92,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "北京户外用品市场规模达126亿元，反映区域户外消费体量。"
+      "editorial_reason": "北京户外用品市场规模达126亿元，显示核心城市户外消费基础。"
     },
     {
       "event_id": "evt_5179e4f8a4eeed",
@@ -133,7 +133,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏完成收购Puma 29.06%股权，成为其最大股东，改变国际品牌竞争格局。"
+      "editorial_reason": "安踏完成收购Puma 29.06%股权成为最大股东，全球品牌竞争格局变化。"
     },
     {
       "event_id": "evt_d5feecc5d81dd8",
@@ -183,7 +183,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "361°三季度流水正增长，童装品牌线下零售额同比正增长，直接关联事业部。"
+      "editorial_reason": "361°三季度主品牌及童装线下零售额同比正增长，直接关联事业部基本盘。"
     },
     {
       "event_id": "evt_a702530ac8edf2",
@@ -221,51 +221,53 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "童装主题会议聚焦行业深耕与价值增长，反映童装行业动向。"
+      "editorial_reason": "童装主题会议聚焦行业深耕与价值增长，反映童装赛道竞争与转型讨论。"
     },
     {
-      "event_id": "evt_0aa545e24e321a",
-      "title": "最高可减1000元！ 普陀区将发放新一轮商圈零售消费券2026-10-15",
-      "category": "行业动态",
-      "event_family": "industry_event",
+      "event_id": "evt_5107a980481a11",
+      "title": "阿迪达斯全球CEO：中国市场的决策权在中国团队手中，分销渠道因地制宜优化",
+      "category": "品牌与公司",
+      "event_family": "management",
       "reporting_period": "",
-      "brands": [],
-      "source": "上海市人民政府",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSmJxQzd6Nk9wRm10SkpKSmR1OE5RVEdYeHoyb2c1NUhyQkRVRVZ0RDhxZ0pFNS1iNVBNaF9FUFZDejRWeFh2OV9PX3UwdnNlcDlIbHNnUE1vRkJuSmhxNDZEMUswRlkySnhEaVdISFhzSnViUmJTaHFpZEREVGowRFZQUXlyZUtiWVE?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSmJxQzd6Nk9wRm10SkpKSmR1OE5RVEdYeHoyb2c1NUhyQkRVRVZ0RDhxZ0pFNS1iNVBNaF9FUFZDejRWeFh2OV9PX3UwdnNlcDlIbHNnUE1vRkJuSmhxNDZEMUswRlkySnhEaVdISFhzSnViUmJTaHFpZEREVGowRFZQUXlyZUtiWVE?oc=5",
-      "published_at": "2026-10-15T15:09+08:00",
-      "published_date": "2026-10-15",
+      "brands": [
+        "Adidas"
+      ],
+      "source": "澎湃新闻",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
+      "published_at": "2026-10-13T19:48+08:00",
+      "published_date": "2026-10-13",
       "status": "new",
-      "verification": "official_source",
-      "is_official": true,
+      "verification": "single_source",
+      "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 55,
-      "selection_score": 75,
+      "editorial_score": 45,
+      "selection_score": 57,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_0aa545e24e321a"
+        "evt_5107a980481a11"
       ],
       "evidence": [
         {
-          "item_id": "src_177fe40da8a1d8",
-          "title": "最高可减1000元！ 普陀区将发放新一轮商圈零售消费券2026-10-15",
-          "source": "上海市人民政府",
-          "source_tier": "official",
-          "is_official": true,
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSmJxQzd6Nk9wRm10SkpKSmR1OE5RVEdYeHoyb2c1NUhyQkRVRVZ0RDhxZ0pFNS1iNVBNaF9FUFZDejRWeFh2OV9PX3UwdnNlcDlIbHNnUE1vRkJuSmhxNDZEMUswRlkySnhEaVdISFhzSnViUmJTaHFpZEREVGowRFZQUXlyZUtiWVE?oc=5",
-          "published_at": "2026-10-15T15:09+08:00",
+          "item_id": "src_9277863434e47e",
+          "title": "阿迪达斯全球CEO：中国市场的决策权在中国团队手中，分销渠道因地制宜优化",
+          "source": "澎湃新闻",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
+          "published_at": "2026-10-13T19:48+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "上海普陀区发放商圈零售消费券，体现地方促消费措施对零售渠道的影响。"
+      "editorial_reason": "阿迪达斯强调中国市场决策权下放与分销渠道优化，提示本土化竞争加剧。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "户外消费基础扩大对儿童户外场景的启示",
-      "analysis": "本周两项信息共同指向户外消费基础扩大：行业报告显示我国户外运动参与人数已超5亿；北京“十四五”时期户外用品市场规模达126亿元。两者分别从参与人数和区域市场规模提供需求侧证据，为儿童户外鞋服场景提供宏观参照，但均非儿童专项数据，不能直接推导儿童户外市场热度。",
+      "headline": "户外需求侧扩容对儿童户外品类的间接支撑",
+      "analysis": "本周两项户外数据形成呼应：行业报告显示我国户外运动参与人数已超5亿，北京“十四五”时期户外用品市场规模达126亿元。两者分别从参与人群和区域消费规模说明户外场景仍在扩容。对儿童事业部而言，这意味着家庭户外活动频次和装备需求具备增长基础，儿童户外鞋服可借势场景延伸，但需注意这些是宏观与区域数据，不能直接等同于儿童品类销量。",
       "event_ids": [
         "evt_d48ef27cd1c536",
         "evt_b8808c5718b3a4"
@@ -288,10 +290,11 @@
       ]
     },
     {
-      "headline": "安踏收购Puma股权与竞争格局变化",
-      "analysis": "安踏体育完成收购Puma 29.06%股权，成为其最大股东。该事件属于资本战略动作，可能影响国际运动品牌在中国及全球市场的竞争关系。对儿童事业部而言，需关注安踏多品牌矩阵后续是否涉及儿童品类资源整合，但当前证据未披露相关计划。",
+      "headline": "安踏控股Puma与本土化竞争同步升温",
+      "analysis": "安踏完成收购Puma 29.06%股权成为其最大股东，同时阿迪达斯全球CEO表示中国市场决策权在中国团队手中并因地制宜优化分销渠道。两件事共同指向国际与本土品牌在华竞争进入资本与组织调整并行阶段。",
       "event_ids": [
-        "evt_5179e4f8a4eeed"
+        "evt_5179e4f8a4eeed",
+        "evt_5107a980481a11"
       ],
       "evidence": [
         {
@@ -300,14 +303,22 @@
           "source": "时尚商业网",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5jcTFvdGpuMnd3Nml1dmdUandMLVRnTjByX1l6c0g1dnc0ZGJaaV9aaHpldkhETmNXNmhhcWtnZGlFaHhCekphbVRfZm5vakx5WEk5REozSlE?oc=5",
           "published_date": "2026-10-18"
+        },
+        {
+          "event_id": "evt_5107a980481a11",
+          "title": "阿迪达斯全球CEO：中国市场的决策权在中国团队手中，分销渠道因地制宜优化",
+          "source": "澎湃新闻",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
+          "published_date": "2026-10-13"
         }
       ]
     },
     {
-      "headline": "361°三季度流水与童装业务表现",
-      "analysis": "国信证券报告显示361°三季度流水增长中单位数，童装品牌线下渠道零售额同比实现正增长。该信息直接关联事业部，说明童装业务在第三季度保持正增长，但具体增速、渠道结构及儿童品类贡献未在证据中展开，需结合后续经营数据观察。",
+      "headline": "361°童装基本盘与童装行业转型讨论",
+      "analysis": "361°三季度主品牌及童装品牌线下渠道零售额同比实现正增长，显示童装基本盘保持稳定。同期第二届童学荟·童装主题会议以“聚力行业深耕，探索价值增长”为主题，反映童装行业正从规模扩张转向价值增长讨论。两者结合看，事业部在保持线下正增长的同时，需关注行业对产品力和品牌价值的更高要求。",
       "event_ids": [
-        "evt_d5feecc5d81dd8"
+        "evt_d5feecc5d81dd8",
+        "evt_a702530ac8edf2"
       ],
       "evidence": [
         {
@@ -315,6 +326,13 @@
           "title": "国信证券：361度维持“优于大市”评级三季度流水增长中单位数|归母净利润|童装|零售额|品牌线|零售",
           "source": "finance.sina.com.cn",
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWlBlajZBQnRUNlk2T1dIRGUwNndRSnI3SjFJYy1mT25RZzNfWVZXZ1BucDQ0SEd5a1JoWGVSN0tENHdSV3JrcVg4bVpfd21OSjNWVWZ4T2pHUEpHLWVfZTNwdlFITjlXcE9QZXh2UFBhVVYwa1BKV20xeTVrTnNJZ3FWckNWSjNKTlZfYktjNjFScjQxazhRVFlqWFpxYUNydlgwSTE1akctZw?oc=5",
+          "published_date": "2026-10-16"
+        },
+        {
+          "event_id": "evt_a702530ac8edf2",
+          "title": "聚力行业深耕，探索价值增长，第二届童学荟·童装主题会议成功举办",
+          "source": "中国纺织报",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWWDJhbHZTcWFqeXgxVjRaQVVlZmpvWkFmVjhTbjRXTTk2S3Q0R21DelFHQkRrcDNVTWtGeHpiVF82Sk1OUVpXTk1kUkk2UG05ejk2V0lrNjVBak5PbkoxNFFuUUE0TnNyeS02YQ?oc=5",
           "published_date": "2026-10-16"
         }
       ]
@@ -378,76 +396,114 @@
           "published_date": "2026-10-17"
         }
       ],
-      "editorial_reason": "Nike推出专为中国篮球爱好者设计的全新外场篮球鞋，体现国际品牌针对本土篮球场景的产品动作。"
+      "editorial_reason": "Nike推出专为中国篮球爱好者设计的全新外场篮球鞋，体现国际品牌针对本土场景做产品细分，对儿童篮球鞋场景化开发有参照意义。"
     }
   ],
   "competitor_channel": [
     {
-      "event_id": "evt_5107a980481a11",
-      "title": "阿迪达斯全球CEO：中国市场的决策权在中国团队手中，分销渠道因地制宜优化",
+      "event_id": "evt_fee0a830841397",
+      "title": "安踏集团与清华大学深化战略合作，升级产学研用一体化创新平台",
       "category": "品牌与公司",
-      "event_family": "management",
+      "event_family": "industry_event",
       "reporting_period": "",
       "brands": [
-        "Adidas"
+        "安踏"
       ],
-      "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
-      "published_at": "2026-10-13T19:48+08:00",
-      "published_date": "2026-10-13",
+      "source": "新京报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE96b21SUjAyMWo0eVNMVU1WVE5BZTk2U2V1TWtWLXFYUFZUbjBNY1dGRzF1SkdDY3hMa0k2S1p0UF9VX3hwMmllRkxneDQ4ZHgzal9Jb2JEdUVCcjdpSHBrYkxtVU4?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE96b21SUjAyMWo0eVNMVU1WVE5BZTk2U2V1TWtWLXFYUFZUbjBNY1dGRzF1SkdDY3hMa0k2S1p0UF9VX3hwMmllRkxneDQ4ZHgzal9Jb2JEdUVCcjdpSHBrYkxtVU4?oc=5",
+      "published_at": "2026-10-17T21:26+08:00",
+      "published_date": "2026-10-17",
       "status": "new",
       "verification": "single_source",
       "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 45,
-      "selection_score": 57,
+      "editorial_score": 48,
+      "selection_score": 60,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_5107a980481a11"
+        "evt_fee0a830841397"
       ],
       "evidence": [
         {
-          "item_id": "src_9277863434e47e",
-          "title": "阿迪达斯全球CEO：中国市场的决策权在中国团队手中，分销渠道因地制宜优化",
-          "source": "澎湃新闻",
+          "item_id": "src_05dea7382c5c58",
+          "title": "安踏集团与清华大学深化战略合作，升级产学研用一体化创新平台",
+          "source": "新京报",
           "source_tier": "tier_2",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
-          "published_at": "2026-10-13T19:48+08:00",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE96b21SUjAyMWo0eVNMVU1WVE5BZTk2U2V1TWtWLXFYUFZUbjBNY1dGRzF1SkdDY3hMa0k2S1p0UF9VX3hwMmllRkxneDQ4ZHgzal9Jb2JEdUVCcjdpSHBrYkxtVU4?oc=5",
+          "published_at": "2026-10-17T21:26+08:00",
           "summary": ""
         }
       ]
     }
   ],
-  "kids_consumer": [],
+  "kids_consumer": [
+    {
+      "event_id": "evt_dc27573a828070",
+      "title": "146亿户外羊毛产品市场，消费者为什么买单？",
+      "category": "户外与场景",
+      "event_family": "industry_event",
+      "reporting_period": "",
+      "brands": [],
+      "source": "新华网",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOczl2eExoeUVpdFZxN2JyWTNNMFV2MlNHT0hyUWg1Zm1vdE81d1J4cmQ5djhibE56QkZZampqenNSaG1Kd0dfRXI3QUlFcFRvMG42ZXR3TWd2QzlDT3NMSDZqMmZnaE5zbnNpdW5sdXFyWEMwUWU0VWhBVDhnczBGeEdn?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOczl2eExoeUVpdFZxN2JyWTNNMFV2MlNHT0hyUWg1Zm1vdE81d1J4cmQ5djhibE56QkZZampqenNSaG1Kd0dfRXI3QUlFcFRvMG42ZXR3TWd2QzlDT3NMSDZqMmZnaE5zbnNpdW5sdXFyWEMwUWU0VWhBVDhnczBGeEdn?oc=5",
+      "published_at": "2026-10-16T10:39+08:00",
+      "published_date": "2026-10-16",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 44,
+      "selection_score": 57,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_dc27573a828070"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_1ab25cc3268a7e",
+          "title": "146亿户外羊毛产品市场，消费者为什么买单？",
+          "source": "新华网",
+          "source_tier": "tier_1",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOczl2eExoeUVpdFZxN2JyWTNNMFV2MlNHT0hyUWg1Zm1vdE81d1J4cmQ5djhibE56QkZZampqenNSaG1Kd0dfRXI3QUlFcFRvMG42ZXR3TWd2QzlDT3NMSDZqMmZnaE5zbnNpdW5sdXFyWEMwUWU0VWhBVDhnczBGeEdn?oc=5",
+          "published_at": "2026-10-16T10:39+08:00",
+          "summary": ""
+        }
+      ]
+    }
+  ],
   "watchlist": [
     {
-      "title": "儿童户外鞋服场景需求",
+      "title": "儿童户外鞋服需求能否随户外人群扩容而提升",
       "event_ids": [
         "evt_d48ef27cd1c536",
         "evt_b8808c5718b3a4"
       ],
       "product_ids": [],
-      "reason": "观察户外参与人数与区域市场规模信息是否延伸至儿童户外品类。"
+      "reason": "观察后续是否有儿童户外鞋服相关的销售、上新或渠道数据，验证宏观户外热度向儿童品类传导。"
     },
     {
-      "title": "安踏多品牌整合对儿童品类的影响",
+      "title": "安踏控股Puma后多品牌竞争对儿童市场的影响",
       "event_ids": [
         "evt_5179e4f8a4eeed"
       ],
       "product_ids": [],
-      "reason": "关注收购完成后安踏是否披露Puma儿童业务或多品牌协同计划。"
+      "reason": "关注Puma及安踏旗下品牌在儿童运动鞋服上的渠道与产品动作，评估竞争格局变化。"
     },
     {
-      "title": "361°童装后续经营数据",
+      "title": "361°童装线下正增长能否延续",
       "event_ids": [
         "evt_d5feecc5d81dd8"
       ],
       "product_ids": [],
-      "reason": "跟踪童装品牌线下零售额增长的具体幅度与渠道表现。"
+      "reason": "跟踪四季度童装流水与渠道反馈，判断三季度正增长是短期波动还是趋势延续。"
     }
   ],
   "tracking": {
@@ -488,7 +544,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "户外运动参与人数超5亿，为儿童户外鞋服提供需求侧基础信息。"
+        "editorial_reason": "户外运动参与人数超5亿，为儿童户外鞋服提供需求侧基础信号。"
       },
       {
         "event_id": "evt_b8808c5718b3a4",
@@ -526,7 +582,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "北京户外用品市场规模达126亿元，反映区域户外消费体量。"
+        "editorial_reason": "北京户外用品市场规模达126亿元，显示核心城市户外消费基础。"
       },
       {
         "event_id": "evt_d5feecc5d81dd8",
@@ -576,7 +632,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "361°三季度流水正增长，童装品牌线下零售额同比正增长，直接关联事业部。"
+        "editorial_reason": "361°三季度主品牌及童装线下零售额同比正增长，直接关联事业部基本盘。"
       },
       {
         "event_id": "evt_a702530ac8edf2",
@@ -614,45 +670,47 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "童装主题会议聚焦行业深耕与价值增长，反映童装行业动向。"
+        "editorial_reason": "童装主题会议聚焦行业深耕与价值增长，反映童装赛道竞争与转型讨论。"
       },
       {
-        "event_id": "evt_0aa545e24e321a",
-        "title": "最高可减1000元！ 普陀区将发放新一轮商圈零售消费券2026-10-15",
-        "category": "行业动态",
-        "event_family": "industry_event",
+        "event_id": "evt_5107a980481a11",
+        "title": "阿迪达斯全球CEO：中国市场的决策权在中国团队手中，分销渠道因地制宜优化",
+        "category": "品牌与公司",
+        "event_family": "management",
         "reporting_period": "",
-        "brands": [],
-        "source": "上海市人民政府",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSmJxQzd6Nk9wRm10SkpKSmR1OE5RVEdYeHoyb2c1NUhyQkRVRVZ0RDhxZ0pFNS1iNVBNaF9FUFZDejRWeFh2OV9PX3UwdnNlcDlIbHNnUE1vRkJuSmhxNDZEMUswRlkySnhEaVdISFhzSnViUmJTaHFpZEREVGowRFZQUXlyZUtiWVE?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSmJxQzd6Nk9wRm10SkpKSmR1OE5RVEdYeHoyb2c1NUhyQkRVRVZ0RDhxZ0pFNS1iNVBNaF9FUFZDejRWeFh2OV9PX3UwdnNlcDlIbHNnUE1vRkJuSmhxNDZEMUswRlkySnhEaVdISFhzSnViUmJTaHFpZEREVGowRFZQUXlyZUtiWVE?oc=5",
-        "published_at": "2026-10-15T15:09+08:00",
-        "published_date": "2026-10-15",
+        "brands": [
+          "Adidas"
+        ],
+        "source": "澎湃新闻",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
+        "published_at": "2026-10-13T19:48+08:00",
+        "published_date": "2026-10-13",
         "status": "new",
-        "verification": "official_source",
-        "is_official": true,
+        "verification": "single_source",
+        "is_official": false,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 55,
-        "selection_score": 75,
+        "editorial_score": 45,
+        "selection_score": 57,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_0aa545e24e321a"
+          "evt_5107a980481a11"
         ],
         "evidence": [
           {
-            "item_id": "src_177fe40da8a1d8",
-            "title": "最高可减1000元！ 普陀区将发放新一轮商圈零售消费券2026-10-15",
-            "source": "上海市人民政府",
-            "source_tier": "official",
-            "is_official": true,
-            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSmJxQzd6Nk9wRm10SkpKSmR1OE5RVEdYeHoyb2c1NUhyQkRVRVZ0RDhxZ0pFNS1iNVBNaF9FUFZDejRWeFh2OV9PX3UwdnNlcDlIbHNnUE1vRkJuSmhxNDZEMUswRlkySnhEaVdISFhzSnViUmJTaHFpZEREVGowRFZQUXlyZUtiWVE?oc=5",
-            "published_at": "2026-10-15T15:09+08:00",
+            "item_id": "src_9277863434e47e",
+            "title": "阿迪达斯全球CEO：中国市场的决策权在中国团队手中，分销渠道因地制宜优化",
+            "source": "澎湃新闻",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
+            "published_at": "2026-10-13T19:48+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "上海普陀区发放商圈零售消费券，体现地方促消费措施对零售渠道的影响。"
+        "editorial_reason": "阿迪达斯强调中国市场决策权下放与分销渠道优化，提示本土化竞争加剧。"
       }
     ],
     "follow_up_selected": [
@@ -695,7 +753,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏完成收购Puma 29.06%股权，成为其最大股东，改变国际品牌竞争格局。"
+        "editorial_reason": "安踏完成收购Puma 29.06%股权成为最大股东，全球品牌竞争格局变化。"
       }
     ],
     "verification_queue": [],
@@ -892,19 +950,27 @@
     },
     {
       "type": "event",
-      "id": "evt_0aa545e24e321a",
-      "title": "最高可减1000元！ 普陀区将发放新一轮商圈零售消费券2026-10-15",
-      "source": "上海市人民政府",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSmJxQzd6Nk9wRm10SkpKSmR1OE5RVEdYeHoyb2c1NUhyQkRVRVZ0RDhxZ0pFNS1iNVBNaF9FUFZDejRWeFh2OV9PX3UwdnNlcDlIbHNnUE1vRkJuSmhxNDZEMUswRlkySnhEaVdISFhzSnViUmJTaHFpZEREVGowRFZQUXlyZUtiWVE?oc=5",
-      "published_date": "2026-10-15"
-    },
-    {
-      "type": "event",
       "id": "evt_5107a980481a11",
       "title": "阿迪达斯全球CEO：中国市场的决策权在中国团队手中，分销渠道因地制宜优化",
       "source": "澎湃新闻",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oNm9JdHFqSHhRZE93c0szcWVaUnhyNExWSXdZTDB0d0xlZWRVNmR0Tl9YekVOcTdscDZBdkdGeUpnTmxTY25iNjZPMURKWXJGbkg5V1Z0MlNJeXZLQzZMTA?oc=5",
       "published_date": "2026-10-13"
+    },
+    {
+      "type": "event",
+      "id": "evt_fee0a830841397",
+      "title": "安踏集团与清华大学深化战略合作，升级产学研用一体化创新平台",
+      "source": "新京报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE96b21SUjAyMWo0eVNMVU1WVE5BZTk2U2V1TWtWLXFYUFZUbjBNY1dGRzF1SkdDY3hMa0k2S1p0UF9VX3hwMmllRkxneDQ4ZHgzal9Jb2JEdUVCcjdpSHBrYkxtVU4?oc=5",
+      "published_date": "2026-10-17"
+    },
+    {
+      "type": "event",
+      "id": "evt_dc27573a828070",
+      "title": "146亿户外羊毛产品市场，消费者为什么买单？",
+      "source": "新华网",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOczl2eExoeUVpdFZxN2JyWTNNMFV2MlNHT0hyUWg1Zm1vdE81d1J4cmQ5djhibE56QkZZampqenNSaG1Kd0dfRXI3QUlFcFRvMG42ZXR3TWd2QzlDT3NMSDZqMmZnaE5zbnNpdW5sdXFyWEMwUWU0VWhBVDhnczBGeEdn?oc=5",
+      "published_date": "2026-10-16"
     },
     {
       "type": "product",
@@ -929,7 +995,7 @@
     "eligible_product_count": 1,
     "selected_product_count": 1,
     "conflict_count": 0,
-    "source_link_count": 9,
+    "source_link_count": 10,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
