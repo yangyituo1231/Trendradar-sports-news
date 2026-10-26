@@ -1,0 +1,3201 @@
+{
+  "schema_version": "3.1",
+  "generated_at": "2026-10-26T13:09+08:00",
+  "report_window": {
+    "start_date": "2026-10-19",
+    "end_date": "2026-10-25",
+    "timezone": "Asia/Shanghai"
+  },
+  "editorial": {
+    "weekly_thesis": "运动品牌资本与研发动作密集，儿童赛道户外化信号初现，消费大盘平稳。",
+    "week_in_one_paragraph": "本周安踏、李宁被传洽购Castore，安踏加码研发合作；361度三季度流水稳健；双11天猫首发新品商家增长；户外产业规模超3.1万亿，童鞋品牌切入户外。",
+    "next_week_focus": [
+      "跟踪Castore洽购传闻的后续回应与进展",
+      "关注双11预售期儿童运动品类表现",
+      "留意儿童户外鞋服新品发布动态",
+      "观察运动品牌三季度流水披露节奏"
+    ]
+  },
+  "key_developments": [
+    {
+      "event_id": "evt_6e3b31394ffd0d",
+      "title": "英国高端运动服品牌 Castore 创始人称：已收到安踏、李宁关于收购的主动问询",
+      "category": "品牌与公司",
+      "event_family": "capital_strategy",
+      "reporting_period": "",
+      "brands": [
+        "安踏",
+        "李宁"
+      ],
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1yR1dwYVZqRnNTM3dOUks4b2tER2R3aHo2d1lLV1dqMU1zYmlBLUZTRVZRN2t1S1ZGOElXbDRKYlk?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1yR1dwYVZqRnNTM3dOUks4b2tER2R3aHo2d1lLV1dqMU1zYmlBLUZTRVZRN2t1S1ZGOElXbDRKYlk?oc=5",
+      "published_at": "2026-10-25T20:12+08:00",
+      "published_date": "2026-10-25",
+      "status": "new",
+      "verification": "multi_source",
+      "is_official": false,
+      "source_count": 2,
+      "direct_source_count": 0,
+      "mention_count": 2,
+      "editorial_score": 56,
+      "selection_score": 74,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_6e3b31394ffd0d"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_03799ccfca2443",
+          "title": "英国高端运动服品牌 Castore 创始人称：已收到安踏、李宁关于收购的主动问询",
+          "source": "华丽志",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1yR1dwYVZqRnNTM3dOUks4b2tER2R3aHo2d1lLV1dqMU1zYmlBLUZTRVZRN2t1S1ZGOElXbDRKYlk?oc=5",
+          "published_at": "2026-10-25T20:12+08:00",
+          "summary": ""
+        },
+        {
+          "item_id": "src_83d0cba623c5e1",
+          "title": "英国运动品牌Castore与安踏李宁洽谈潜在出售 2023年估值9.5亿英镑",
+          "source": "观点网",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE94OVUzTUNFZ0VUMWwtUHF5b2xzdzhwWnh5N1FIVU9nd0h4SmFVWjV0VEVmM19VWmdXc2xmQm5vRWhDRk5HdmhKU2c2My14QQ?oc=5",
+          "published_at": "2026-10-21T14:16+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "安踏、李宁同时被传洽购Castore，反映头部国牌通过并购补强高端运动服饰的意图。"
+    },
+    {
+      "event_id": "evt_3b6de197b2b4a9",
+      "title": "安踏集团与清华大学战略合作升级 未来五年预计再投200亿元研发",
+      "category": "品牌与公司",
+      "event_family": "industry_event",
+      "reporting_period": "",
+      "brands": [
+        "安踏"
+      ],
+      "source": "观点网",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5USkljRFNrZDNNQlREeTEzeDZTaXhBQnhoMVFJR0hFWmhWMEJkdjdJYW9VT1gwNGoySi1vdmZmMjdZOFpvZ0JaXy1lSHpNZw?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5USkljRFNrZDNNQlREeTEzeDZTaXhBQnhoMVFJR0hFWmhWMEJkdjdJYW9VT1gwNGoySi1vdmZmMjdZOFpvZ0JaXy1lSHpNZw?oc=5",
+      "published_at": "2026-10-21T10:18+08:00",
+      "published_date": "2026-10-21",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 42,
+      "selection_score": 58,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_3b6de197b2b4a9"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_1e4bfcabdc8f5e",
+          "title": "安踏集团与清华大学战略合作升级 未来五年预计再投200亿元研发",
+          "source": "观点网",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5USkljRFNrZDNNQlREeTEzeDZTaXhBQnhoMVFJR0hFWmhWMEJkdjdJYW9VT1gwNGoySi1vdmZmMjdZOFpvZ0JaXy1lSHpNZw?oc=5",
+          "published_at": "2026-10-21T10:18+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "安踏与清华合作升级并计划五年再投200亿元研发，显示头部品牌持续加码运动科技。"
+    },
+    {
+      "event_id": "evt_d5feecc5d81dd8",
+      "title": "361度早盘涨逾3% 公司三季度各渠道流水仍保持稳健增长势头",
+      "category": "行业动态",
+      "event_family": "financial_results",
+      "reporting_period": "2026_q3",
+      "brands": [
+        "361°"
+      ],
+      "source": "新浪财经",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZ3ppY3RQY0xFeFRUQkduT2dkUXJBenhKcmE5aDloRmRvWC0zckhMUjV2ZF90N0Z2WWlkVHRKc0hQSzJXcHFXekJwM2VWVzd5alpKTUZQZmRrUGZ6SFRpZ2RJMkZRUXBwYXllLXhwTzNmLTJJdXVKSlZNblBJSHdlT1JFSjN1Zlp3bjZXRVFDbDNyV2loY3c?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZ3ppY3RQY0xFeFRUQkduT2dkUXJBenhKcmE5aDloRmRvWC0zckhMUjV2ZF90N0Z2WWlkVHRKc0hQSzJXcHFXekJwM2VWVzd5alpKTUZQZmRrUGZ6SFRpZ2RJMkZRUXBwYXllLXhwTzNmLTJJdXVKSlZNblBJSHdlT1JFSjN1Zlp3bjZXRVFDbDNyV2loY3c?oc=5",
+      "published_at": "2026-10-23T11:15+08:00",
+      "published_date": "2026-10-23",
+      "status": "new",
+      "verification": "multi_source",
+      "is_official": false,
+      "source_count": 2,
+      "direct_source_count": 0,
+      "mention_count": 2,
+      "editorial_score": 51,
+      "selection_score": 69,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_d5feecc5d81dd8"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_5e7b689042ca59",
+          "title": "361度早盘涨逾3% 公司三季度各渠道流水仍保持稳健增长势头",
+          "source": "新浪财经",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZ3ppY3RQY0xFeFRUQkduT2dkUXJBenhKcmE5aDloRmRvWC0zckhMUjV2ZF90N0Z2WWlkVHRKc0hQSzJXcHFXekJwM2VWVzd5alpKTUZQZmRrUGZ6SFRpZ2RJMkZRUXBwYXllLXhwTzNmLTJJdXVKSlZNblBJSHdlT1JFSjN1Zlp3bjZXRVFDbDNyV2loY3c?oc=5",
+          "published_at": "2026-10-23T11:15+08:00",
+          "summary": ""
+        },
+        {
+          "item_id": "src_b08c1ddf089f45",
+          "title": "港股异动 | 361度(01361)涨超3% 公司三季度各渠道流水仍保持稳健增长势头 海外业务高速放量",
+          "source": "凤凰网",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE04bHpiSmpLUlRPb0V4MWpqeGhmcVd4OWFzQ1NOc09adFM3VnBMdVRsVEVFTWhXZGVYekZxb0QzdWJvU2JIbGFNQ2VkRHg?oc=5",
+          "published_at": "2026-10-23T11:02+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "361度三季度各渠道流水保持稳健增长，作为直接竞品提供近期经营参照。"
+    },
+    {
+      "event_id": "evt_6ddee63a4aa09e",
+      "title": "双11品牌集体重仓天猫 首发新品商家数同比强劲增长64%",
+      "category": "电商与平台",
+      "event_family": "product_launch",
+      "reporting_period": "",
+      "brands": [],
+      "source": "亿邦动力",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBHREtjc19VdnJCYnpscnVUcGtLQXJkeTRXaDRsQ2VUdndJdTY2RWU3bTZIWnBDMHhUWlhhZlNwM21KS1dQRGliT2tUQWNfblFvcVNYOXdn?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBHREtjc19VdnJCYnpscnVUcGtLQXJkeTRXaDRsQ2VUdndJdTY2RWU3bTZIWnBDMHhUWlhhZlNwM21KS1dQRGliT2tUQWNfblFvcVNYOXdn?oc=5",
+      "published_at": "2026-10-19T16:31+08:00",
+      "published_date": "2026-10-19",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 47,
+      "selection_score": 63,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_6ddee63a4aa09e"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_41f2f23d284c85",
+          "title": "双11品牌集体重仓天猫 首发新品商家数同比强劲增长64%",
+          "source": "亿邦动力",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBHREtjc19VdnJCYnpscnVUcGtLQXJkeTRXaDRsQ2VUdndJdTY2RWU3bTZIWnBDMHhUWlhhZlNwM21KS1dQRGliT2tUQWNfblFvcVNYOXdn?oc=5",
+          "published_at": "2026-10-19T16:31+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "双11天猫首发新品商家数同比增长64%，反映平台新品首发竞争加剧。"
+    },
+    {
+      "event_id": "evt_bcb4740b444f0f",
+      "title": "全国户外运动相关产业总规模超3.1万亿元",
+      "category": "户外与场景",
+      "event_family": "industry_event",
+      "reporting_period": "",
+      "brands": [],
+      "source": "人民网",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
+      "published_at": "2026-10-19T09:02+08:00",
+      "published_date": "2026-10-19",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 42,
+      "selection_score": 55,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_bcb4740b444f0f"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_c3d43958a2ccf3",
+          "title": "全国户外运动相关产业总规模超3.1万亿元",
+          "source": "人民网",
+          "source_tier": "tier_1",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
+          "published_at": "2026-10-19T09:02+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "全国户外运动产业总规模超3.1万亿元，为儿童户外产品线提供宏观需求背景。"
+    },
+    {
+      "event_id": "evt_d09a3fe6427900",
+      "title": "2026年1—9月份社会消费品零售总额增长1.1%",
+      "category": "行业动态",
+      "event_family": "macro_data",
+      "reporting_period": "",
+      "brands": [],
+      "source": "国家统计局",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
+      "published_at": "2026-10-19T10:00+08:00",
+      "published_date": "2026-10-19",
+      "status": "follow_up",
+      "verification": "official_source",
+      "is_official": true,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 52,
+      "selection_score": 71,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_d09a3fe6427900"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_112f27730db091",
+          "title": "2026年1—9月份社会消费品零售总额增长1.1%",
+          "source": "国家统计局",
+          "source_tier": "official",
+          "is_official": true,
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
+          "published_at": "2026-10-19T10:00+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "1—9月社零总额同比增长1.1%，提供消费大盘温和复苏的基准参照。"
+    }
+  ],
+  "deep_dives": [
+    {
+      "headline": "头部国牌资本与研发双线并进",
+      "analysis": "安踏、李宁被传洽购英国高端运动服品牌Castore，同时安踏与清华合作升级并计划五年再投200亿元研发。两件事共同指向头部国牌正通过外延并购与内生研发补强高端运动服饰能力，行业竞争从规模扩张转向品牌资产与技术壁垒的争夺。",
+      "event_ids": [
+        "evt_6e3b31394ffd0d",
+        "evt_3b6de197b2b4a9"
+      ],
+      "evidence": [
+        {
+          "event_id": "evt_6e3b31394ffd0d",
+          "title": "英国高端运动服品牌 Castore 创始人称：已收到安踏、李宁关于收购的主动问询",
+          "source": "华丽志",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1yR1dwYVZqRnNTM3dOUks4b2tER2R3aHo2d1lLV1dqMU1zYmlBLUZTRVZRN2t1S1ZGOElXbDRKYlk?oc=5",
+          "published_date": "2026-10-25"
+        },
+        {
+          "event_id": "evt_3b6de197b2b4a9",
+          "title": "安踏集团与清华大学战略合作升级 未来五年预计再投200亿元研发",
+          "source": "观点网",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5USkljRFNrZDNNQlREeTEzeDZTaXhBQnhoMVFJR0hFWmhWMEJkdjdJYW9VT1gwNGoySi1vdmZmMjdZOFpvZ0JaXy1lSHpNZw?oc=5",
+          "published_date": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "headline": "消费大盘与平台新品节奏",
+      "analysis": "1—9月社零总额同比增长1.1%，消费大盘保持温和增长；双11天猫首发新品商家数同比增长64%，平台端新品首发竞争明显升温。对儿童运动品牌而言，大促期间的新品供给密度和首发资源争夺将直接影响曝光效率。",
+      "event_ids": [
+        "evt_d09a3fe6427900",
+        "evt_6ddee63a4aa09e"
+      ],
+      "evidence": [
+        {
+          "event_id": "evt_d09a3fe6427900",
+          "title": "2026年1—9月份社会消费品零售总额增长1.1%",
+          "source": "国家统计局",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
+          "published_date": "2026-10-19"
+        },
+        {
+          "event_id": "evt_6ddee63a4aa09e",
+          "title": "双11品牌集体重仓天猫 首发新品商家数同比强劲增长64%",
+          "source": "亿邦动力",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBHREtjc19VdnJCYnpscnVUcGtLQXJkeTRXaDRsQ2VUdndJdTY2RWU3bTZIWnBDMHhUWlhhZlNwM21KS1dQRGliT2tUQWNfblFvcVNYOXdn?oc=5",
+          "published_date": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "headline": "户外热潮向儿童场景延伸",
+      "analysis": "全国户外运动相关产业总规模超3.1万亿元，户外消费基础持续扩大。结合本周童鞋品牌切入户外的报道，儿童户外鞋服可能成为下一个细分增长点，值得关注产品线布局与场景化设计。",
+      "event_ids": [
+        "evt_bcb4740b444f0f"
+      ],
+      "evidence": [
+        {
+          "event_id": "evt_bcb4740b444f0f",
+          "title": "全国户外运动相关产业总规模超3.1万亿元",
+          "source": "人民网",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
+          "published_date": "2026-10-19"
+        }
+      ]
+    }
+  ],
+  "product_radar": [],
+  "competitor_channel": [
+    {
+      "event_id": "evt_45d3d4c16c609d",
+      "title": "安踏、李宁被传洽谈收购英国运动品牌Castore，两家企业回应",
+      "category": "品牌与公司",
+      "event_family": "capital_strategy",
+      "reporting_period": "",
+      "brands": [
+        "安踏",
+        "李宁"
+      ],
+      "source": "新京报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE10cHRSS2pveXB1Qy1KR2VCcWFkM2RjT3hsUFU2SnNGd2JmUkFKX1BaVjJsbmJmSXFZTFRWVkRJUjNIMTZFZml1YTlsRmZ1dlphYVpKeUx3X1VXd0w5SzIxMDh1ck0?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE10cHRSS2pveXB1Qy1KR2VCcWFkM2RjT3hsUFU2SnNGd2JmUkFKX1BaVjJsbmJmSXFZTFRWVkRJUjNIMTZFZml1YTlsRmZ1dlphYVpKeUx3X1VXd0w5SzIxMDh1ck0?oc=5",
+      "published_at": "2026-10-23T16:36+08:00",
+      "published_date": "2026-10-23",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 48,
+      "selection_score": 70,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_45d3d4c16c609d"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_35ed11025dda42",
+          "title": "安踏、李宁被传洽谈收购英国运动品牌Castore，两家企业回应",
+          "source": "新京报",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE10cHRSS2pveXB1Qy1KR2VCcWFkM2RjT3hsUFU2SnNGd2JmUkFKX1BaVjJsbmJmSXFZTFRWVkRJUjNIMTZFZml1YTlsRmZ1dlphYVpKeUx3X1VXd0w5SzIxMDh1ck0?oc=5",
+          "published_at": "2026-10-23T16:36+08:00",
+          "summary": ""
+        }
+      ]
+    }
+  ],
+  "kids_consumer": [
+    {
+      "event_id": "evt_73b4ef5cdcc9cf",
+      "title": "顶级赛事点燃“双奥之城”，北京以赛促消费谋产业新局",
+      "category": "行业动态",
+      "event_family": "industry_event",
+      "reporting_period": "",
+      "brands": [],
+      "source": "新京报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5TcWNYWnFSRkJaSUZwRUZJNm9CVnd5M1dMTG91RGF2Wk0xcFJaMWFnRm54SUJSNzZEQnVUTi16b3RITG5HRVozQmNFWl9BOS1uSHZxeVhhblpMN09rbG1DZXpsVHE?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5TcWNYWnFSRkJaSUZwRUZJNm9CVnd5M1dMTG91RGF2Wk0xcFJaMWFnRm54SUJSNzZEQnVUTi16b3RITG5HRVozQmNFWl9BOS1uSHZxeVhhblpMN09rbG1DZXpsVHE?oc=5",
+      "published_at": "2026-10-25T16:52+08:00",
+      "published_date": "2026-10-25",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 42,
+      "selection_score": 49,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_73b4ef5cdcc9cf"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_025a8cfeb11382",
+          "title": "顶级赛事点燃“双奥之城”，北京以赛促消费谋产业新局",
+          "source": "新京报",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5TcWNYWnFSRkJaSUZwRUZJNm9CVnd5M1dMTG91RGF2Wk0xcFJaMWFnRm54SUJSNzZEQnVUTi16b3RITG5HRVozQmNFWl9BOS1uSHZxeVhhblpMN09rbG1DZXpsVHE?oc=5",
+          "published_at": "2026-10-25T16:52+08:00",
+          "summary": ""
+        }
+      ]
+    }
+  ],
+  "watchlist": [
+    {
+      "title": "儿童户外鞋服动向",
+      "event_ids": [
+        "evt_bcb4740b444f0f"
+      ],
+      "product_ids": [],
+      "reason": "关注后续官方信息、渠道落地或产品资料补充。"
+    },
+    {
+      "title": "双11新品首发竞争",
+      "event_ids": [
+        "evt_6ddee63a4aa09e"
+      ],
+      "product_ids": [],
+      "reason": "跟踪天猫双11期间儿童运动品牌的新品首发数量与资源位变化。"
+    },
+    {
+      "title": "头部国牌并购与研发落地",
+      "event_ids": [
+        "evt_6e3b31394ffd0d",
+        "evt_3b6de197b2b4a9"
+      ],
+      "product_ids": [],
+      "reason": "关注Castore洽购进展及安踏研发投入的具体方向，判断行业技术竞争节奏。"
+    }
+  ],
+  "tracking": {
+    "new_selected": [
+      {
+        "event_id": "evt_6e3b31394ffd0d",
+        "title": "英国高端运动服品牌 Castore 创始人称：已收到安踏、李宁关于收购的主动问询",
+        "category": "品牌与公司",
+        "event_family": "capital_strategy",
+        "reporting_period": "",
+        "brands": [
+          "安踏",
+          "李宁"
+        ],
+        "source": "华丽志",
+        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1yR1dwYVZqRnNTM3dOUks4b2tER2R3aHo2d1lLV1dqMU1zYmlBLUZTRVZRN2t1S1ZGOElXbDRKYlk?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1yR1dwYVZqRnNTM3dOUks4b2tER2R3aHo2d1lLV1dqMU1zYmlBLUZTRVZRN2t1S1ZGOElXbDRKYlk?oc=5",
+        "published_at": "2026-10-25T20:12+08:00",
+        "published_date": "2026-10-25",
+        "status": "new",
+        "verification": "multi_source",
+        "is_official": false,
+        "source_count": 2,
+        "direct_source_count": 0,
+        "mention_count": 2,
+        "editorial_score": 56,
+        "selection_score": 74,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_6e3b31394ffd0d"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_03799ccfca2443",
+            "title": "英国高端运动服品牌 Castore 创始人称：已收到安踏、李宁关于收购的主动问询",
+            "source": "华丽志",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1yR1dwYVZqRnNTM3dOUks4b2tER2R3aHo2d1lLV1dqMU1zYmlBLUZTRVZRN2t1S1ZGOElXbDRKYlk?oc=5",
+            "published_at": "2026-10-25T20:12+08:00",
+            "summary": ""
+          },
+          {
+            "item_id": "src_83d0cba623c5e1",
+            "title": "英国运动品牌Castore与安踏李宁洽谈潜在出售 2023年估值9.5亿英镑",
+            "source": "观点网",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE94OVUzTUNFZ0VUMWwtUHF5b2xzdzhwWnh5N1FIVU9nd0h4SmFVWjV0VEVmM19VWmdXc2xmQm5vRWhDRk5HdmhKU2c2My14QQ?oc=5",
+            "published_at": "2026-10-21T14:16+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "安踏、李宁同时被传洽购Castore，反映头部国牌通过并购补强高端运动服饰的意图。"
+      },
+      {
+        "event_id": "evt_3b6de197b2b4a9",
+        "title": "安踏集团与清华大学战略合作升级 未来五年预计再投200亿元研发",
+        "category": "品牌与公司",
+        "event_family": "industry_event",
+        "reporting_period": "",
+        "brands": [
+          "安踏"
+        ],
+        "source": "观点网",
+        "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5USkljRFNrZDNNQlREeTEzeDZTaXhBQnhoMVFJR0hFWmhWMEJkdjdJYW9VT1gwNGoySi1vdmZmMjdZOFpvZ0JaXy1lSHpNZw?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5USkljRFNrZDNNQlREeTEzeDZTaXhBQnhoMVFJR0hFWmhWMEJkdjdJYW9VT1gwNGoySi1vdmZmMjdZOFpvZ0JaXy1lSHpNZw?oc=5",
+        "published_at": "2026-10-21T10:18+08:00",
+        "published_date": "2026-10-21",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 42,
+        "selection_score": 58,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_3b6de197b2b4a9"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_1e4bfcabdc8f5e",
+            "title": "安踏集团与清华大学战略合作升级 未来五年预计再投200亿元研发",
+            "source": "观点网",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5USkljRFNrZDNNQlREeTEzeDZTaXhBQnhoMVFJR0hFWmhWMEJkdjdJYW9VT1gwNGoySi1vdmZmMjdZOFpvZ0JaXy1lSHpNZw?oc=5",
+            "published_at": "2026-10-21T10:18+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "安踏与清华合作升级并计划五年再投200亿元研发，显示头部品牌持续加码运动科技。"
+      },
+      {
+        "event_id": "evt_d5feecc5d81dd8",
+        "title": "361度早盘涨逾3% 公司三季度各渠道流水仍保持稳健增长势头",
+        "category": "行业动态",
+        "event_family": "financial_results",
+        "reporting_period": "2026_q3",
+        "brands": [
+          "361°"
+        ],
+        "source": "新浪财经",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZ3ppY3RQY0xFeFRUQkduT2dkUXJBenhKcmE5aDloRmRvWC0zckhMUjV2ZF90N0Z2WWlkVHRKc0hQSzJXcHFXekJwM2VWVzd5alpKTUZQZmRrUGZ6SFRpZ2RJMkZRUXBwYXllLXhwTzNmLTJJdXVKSlZNblBJSHdlT1JFSjN1Zlp3bjZXRVFDbDNyV2loY3c?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZ3ppY3RQY0xFeFRUQkduT2dkUXJBenhKcmE5aDloRmRvWC0zckhMUjV2ZF90N0Z2WWlkVHRKc0hQSzJXcHFXekJwM2VWVzd5alpKTUZQZmRrUGZ6SFRpZ2RJMkZRUXBwYXllLXhwTzNmLTJJdXVKSlZNblBJSHdlT1JFSjN1Zlp3bjZXRVFDbDNyV2loY3c?oc=5",
+        "published_at": "2026-10-23T11:15+08:00",
+        "published_date": "2026-10-23",
+        "status": "new",
+        "verification": "multi_source",
+        "is_official": false,
+        "source_count": 2,
+        "direct_source_count": 0,
+        "mention_count": 2,
+        "editorial_score": 51,
+        "selection_score": 69,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_d5feecc5d81dd8"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_5e7b689042ca59",
+            "title": "361度早盘涨逾3% 公司三季度各渠道流水仍保持稳健增长势头",
+            "source": "新浪财经",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZ3ppY3RQY0xFeFRUQkduT2dkUXJBenhKcmE5aDloRmRvWC0zckhMUjV2ZF90N0Z2WWlkVHRKc0hQSzJXcHFXekJwM2VWVzd5alpKTUZQZmRrUGZ6SFRpZ2RJMkZRUXBwYXllLXhwTzNmLTJJdXVKSlZNblBJSHdlT1JFSjN1Zlp3bjZXRVFDbDNyV2loY3c?oc=5",
+            "published_at": "2026-10-23T11:15+08:00",
+            "summary": ""
+          },
+          {
+            "item_id": "src_b08c1ddf089f45",
+            "title": "港股异动 | 361度(01361)涨超3% 公司三季度各渠道流水仍保持稳健增长势头 海外业务高速放量",
+            "source": "凤凰网",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE04bHpiSmpLUlRPb0V4MWpqeGhmcVd4OWFzQ1NOc09adFM3VnBMdVRsVEVFTWhXZGVYekZxb0QzdWJvU2JIbGFNQ2VkRHg?oc=5",
+            "published_at": "2026-10-23T11:02+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "361度三季度各渠道流水保持稳健增长，作为直接竞品提供近期经营参照。"
+      },
+      {
+        "event_id": "evt_6ddee63a4aa09e",
+        "title": "双11品牌集体重仓天猫 首发新品商家数同比强劲增长64%",
+        "category": "电商与平台",
+        "event_family": "product_launch",
+        "reporting_period": "",
+        "brands": [],
+        "source": "亿邦动力",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBHREtjc19VdnJCYnpscnVUcGtLQXJkeTRXaDRsQ2VUdndJdTY2RWU3bTZIWnBDMHhUWlhhZlNwM21KS1dQRGliT2tUQWNfblFvcVNYOXdn?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBHREtjc19VdnJCYnpscnVUcGtLQXJkeTRXaDRsQ2VUdndJdTY2RWU3bTZIWnBDMHhUWlhhZlNwM21KS1dQRGliT2tUQWNfblFvcVNYOXdn?oc=5",
+        "published_at": "2026-10-19T16:31+08:00",
+        "published_date": "2026-10-19",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 47,
+        "selection_score": 63,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_6ddee63a4aa09e"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_41f2f23d284c85",
+            "title": "双11品牌集体重仓天猫 首发新品商家数同比强劲增长64%",
+            "source": "亿邦动力",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBHREtjc19VdnJCYnpscnVUcGtLQXJkeTRXaDRsQ2VUdndJdTY2RWU3bTZIWnBDMHhUWlhhZlNwM21KS1dQRGliT2tUQWNfblFvcVNYOXdn?oc=5",
+            "published_at": "2026-10-19T16:31+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "双11天猫首发新品商家数同比增长64%，反映平台新品首发竞争加剧。"
+      },
+      {
+        "event_id": "evt_bcb4740b444f0f",
+        "title": "全国户外运动相关产业总规模超3.1万亿元",
+        "category": "户外与场景",
+        "event_family": "industry_event",
+        "reporting_period": "",
+        "brands": [],
+        "source": "人民网",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
+        "published_at": "2026-10-19T09:02+08:00",
+        "published_date": "2026-10-19",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 42,
+        "selection_score": 55,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_bcb4740b444f0f"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_c3d43958a2ccf3",
+            "title": "全国户外运动相关产业总规模超3.1万亿元",
+            "source": "人民网",
+            "source_tier": "tier_1",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
+            "published_at": "2026-10-19T09:02+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "全国户外运动产业总规模超3.1万亿元，为儿童户外产品线提供宏观需求背景。"
+      }
+    ],
+    "follow_up_selected": [
+      {
+        "event_id": "evt_d09a3fe6427900",
+        "title": "2026年1—9月份社会消费品零售总额增长1.1%",
+        "category": "行业动态",
+        "event_family": "macro_data",
+        "reporting_period": "",
+        "brands": [],
+        "source": "国家统计局",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
+        "published_at": "2026-10-19T10:00+08:00",
+        "published_date": "2026-10-19",
+        "status": "follow_up",
+        "verification": "official_source",
+        "is_official": true,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 52,
+        "selection_score": 71,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_d09a3fe6427900"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_112f27730db091",
+            "title": "2026年1—9月份社会消费品零售总额增长1.1%",
+            "source": "国家统计局",
+            "source_tier": "official",
+            "is_official": true,
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
+            "published_at": "2026-10-19T10:00+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "1—9月社零总额同比增长1.1%，提供消费大盘温和复苏的基准参照。"
+      }
+    ],
+    "verification_queue": [],
+    "product_leads_pending_verification": [
+      {
+        "signal_id": "pld_1b600c4e71ccf3",
+        "brand": "安踏",
+        "product_name": "英国高端运动服",
+        "headline": "英国高端运动服品牌 Castore 创始人称：已收到安踏、李宁关于收购的主动问询",
+        "source": "华丽志",
+        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1yR1dwYVZqRnNTM3dOUks4b2tER2R3aHo2d1lLV1dqMU1zYmlBLUZTRVZRN2t1S1ZGOElXbDRKYlk?oc=5",
+        "published_date": "2026-10-25",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_eb4553b9adbba6",
+        "brand": "Nike",
+        "product_name": "Force 1",
+        "headline": "率先近赏 Supreme x Nike Air Force 1 Low「Olive Camo」配色",
+        "source": "HYPEBEAST",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOM1B2OFRVZ2dleUxPQWxhSlhXVG14NldmLTlKU0JYd1p0dm9kTG9jUUQxT1o0LTBNVmZiazFBVzZ4X0pZQ2N3VkFfNW9JOC1lSTlCZl82aTZlTkp3eWl0MDk5c0cwS1VpbGlweG5FQWtvUnV0bVhBV0hieWotTVQ1SV93MDZId1U1UjdyS0FqeHpERGFoT2thZ3lkV0ZrdVlsNUU2M3RR?oc=5",
+        "published_date": "2026-10-23",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_06edf32092424e",
+        "brand": "New Balance",
+        "product_name": "T500",
+        "headline": "Todd Snyder 與 New Balance 再次聯乘推出 T500「Cafe Pack」",
+        "source": "HYPEBEAST",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPT3RKcTA2OVl3bzVWcFJhMGZHZDlfZl9JR2Yza0FpVEMzalVYN1M5c1lYcmxINTNIb1c2OVN1VEQ5djYzcmtLek8taW9nZXhQNjlnby0zZmZDUnBtS2RYWlVfaDNxSFFQSVRBRTlFZ1JhVnVfUk56cjNBcHRTRWlFRF9tNkhKc0tXQ3B6Tmw0V04wSldMVnlXRlhB?oc=5",
+        "published_date": "2026-10-23",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_fd2eb322f19c5f",
+        "brand": "Puma",
+        "product_name": "Elite 2",
+        "headline": "PUMA 正式发布 FAST-RB NITRO™ Elite 2",
+        "source": "HYPEBEAST",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9NX1FIV2pfU20xZktqZGlqcDlEM3Q2SnVqanhfLXI3TG03MDBqN21XN2hEZXlNd28zcHFPWHFNNmZsdWdsZ3hvME0tdG41N3NCSmNCRktER05BeTNadTFRVnBFUm5sdw?oc=5",
+        "published_date": "2026-10-23",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_b2b6b123db4c50",
+        "brand": "Adidas",
+        "product_name": "ADIZERO",
+        "headline": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+        "source": "HYPEBEAST",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+        "published_date": "2026-10-23",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_3401d2f189a9ec",
+        "brand": "ASICS",
+        "product_name": "GEL-KAYANO 12.1",
+        "headline": "ASICS 携手 atmos Indonesia 推出全新联名鞋款 GEL-KAYANO 12.1「ARCHIPELAGO群岛」",
+        "source": "Supreme情报网",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE42YXhlWmUxSkhJRzkxQlRhSXRsYUljM1VpUU1wdklDM05WVjZVYjJJcnF2UGZpRXdqTElmVk9PWUQ5b0JYSTVRcUZ2MXpfNUlrS1NOQkIza2E4Uy1zc25tQUdLTUlIUk9adXc0R2xhQU94QQ?oc=5",
+        "published_date": "2026-10-23",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_6124c4d87e574e",
+        "brand": "Puma",
+        "product_name": "AW26",
+        "headline": "PUMA 与 Jil Sander 再次携手推出 AW26 系列",
+        "source": "Hypebae",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOUpxMkJTcTdKTy1fMWk1Z2I5Y3VKY0dsNGZoSXlycXZkelRSRzg3dzFYX1lRM3BONVJscllQeGRXeDBWRE9TaE5ZM2FvN09NNml5bFJpVzF1QlFMM3ZERXZ3ZXM0VklkdUlMRHg1ODQ3NXNSUXJkVDZnV1dxYzY3MDdzODQ2R1l2N3IxTnVnS3hvMW1XZGs3OXhCVG05bngtTjRwTEs5WWptWEJZMnJqc1JRUWs1a0hU?oc=5",
+        "published_date": "2026-10-23",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_5987e05aad90f8",
+        "brand": "Nike",
+        "product_name": "Air Max",
+        "headline": "Masyn 携手 Zellerfeld 发布 3D 打印 Nike Air Max 穆勒鞋",
+        "source": "HYPEBEAST",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVlV6N3UxdUNBVkpLdG9ZVnFyaEJ4SldnSEU3ZlFSMzRrR0RwOUNzRHF3Wm5KYmR1c3lpUEcyV19lajBhaHhIeHV1RTVCc3NDMFBVeW9FNE9rTVF2angyUDZTcUtOS2pfejRWMXpacC01ZzU0QUdmUEJwRjhKNDJVZ1kwOVYxUTJkY0JN?oc=5",
+        "published_date": "2026-10-22",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      }
+    ],
+    "not_seen_this_week": [
+      {
+        "event_id": "evt_d48ef27cd1c536",
+        "title": "行业报告显示我国户外运动参与人数已超5亿",
+        "source": "新华网",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZW41OXRhYjVzRDJvRkFFd2FmelZIZ3Rlbmc0eGRxT2dCMmliWnpsVmVrRDBBS1ZNU01CX21FMnpMMXdzZkJINFp0RmtzenU4V2h6Zm1GeUctSW9Bd3YxTW1BTmVQRzlwa2t3enJqRGoycjdiU0N1c0ZDYlM4bVpieg?oc=5",
+        "last_seen": "2026-10-17",
+        "note": "本周未检索到明确后续，不等同于事件已经结束。"
+      },
+      {
+        "event_id": "evt_b8808c5718b3a4",
+        "title": "“十四五”时期北京户外用品市场规模达126亿元 “双奥之城”涌动户外热潮",
+        "source": "北京市人民政府门户网站",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE84dlNyYzJyYWdEVkhaYk1nS2I3OGNRS3RDc0V1NElNQVV3Rl9wMWhEWmVrQVR0N0o1WDI0SXppWEVjbXVFQzZWdUJQSXNUNFVaWTRiR3NyV1VDZE9UdWZEeXNHbEs3Z29HTU5FMjRiZHhuMmUtcXAxWG96aw?oc=5",
+        "last_seen": "2026-10-18",
+        "note": "本周未检索到明确后续，不等同于事件已经结束。"
+      },
+      {
+        "event_id": "evt_5179e4f8a4eeed",
+        "title": "安踏体育完成收购Puma 29.06%股权，成为其最大股东",
+        "source": "时尚商业网",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5jcTFvdGpuMnd3Nml1dmdUandMLVRnTjByX1l6c0g1dnc0ZGJaaV9aaHpldkhETmNXNmhhcWtnZGlFaHhCekphbVRfZm5vakx5WEk5REozSlE?oc=5",
+        "last_seen": "2026-10-18",
+        "note": "本周未检索到明确后续，不等同于事件已经结束。"
+      },
+      {
+        "event_id": "evt_d5feecc5d81dd8",
+        "title": "国信证券：361度维持“优于大市”评级三季度流水增长中单位数|归母净利润|童装|零售额|品牌线|零售",
+        "source": "finance.sina.com.cn",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWlBlajZBQnRUNlk2T1dIRGUwNndRSnI3SjFJYy1mT25RZzNfWVZXZ1BucDQ0SEd5a1JoWGVSN0tENHdSV3JrcVg4bVpfd21OSjNWVWZ4T2pHUEpHLWVfZTNwdlFITjlXcE9QZXh2UFBhVVYwa1BKV20xeTVrTnNJZ3FWckNWSjNKTlZfYktjNjFScjQxazhRVFlqWFpxYUNydlgwSTE1akctZw?oc=5",
+        "last_seen": "2026-10-16",
+        "note": "本周未检索到明确后续，不等同于事件已经结束。"
+      },
+      {
+        "event_id": "evt_25850303678a39",
+        "title": "华丽现场｜迪桑特高尔夫大师周启幕、耐克推出全新本土源创系列、UAx王逢陈联名系列中国首秀",
+        "source": "华丽志",
+        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFBRSnpnajdsMmIxa3A0SzVhU2I1bnBlOHVDbmw0M01JZGlQLUZfWnNCZFZIMmZ0YzRIeEk5MmVLZm8?oc=5",
+        "last_seen": "2026-10-16",
+        "note": "本周未检索到明确后续，不等同于事件已经结束。"
+      }
+    ],
+    "note": "‘本周未出现’只表示检索期内没有明确后续，不代表事件已结束。"
+  },
+  "source_registry": [
+    {
+      "type": "event",
+      "id": "evt_6e3b31394ffd0d",
+      "title": "英国高端运动服品牌 Castore 创始人称：已收到安踏、李宁关于收购的主动问询",
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1yR1dwYVZqRnNTM3dOUks4b2tER2R3aHo2d1lLV1dqMU1zYmlBLUZTRVZRN2t1S1ZGOElXbDRKYlk?oc=5",
+      "published_date": "2026-10-25"
+    },
+    {
+      "type": "event_evidence",
+      "id": "src_83d0cba623c5e1",
+      "title": "英国运动品牌Castore与安踏李宁洽谈潜在出售 2023年估值9.5亿英镑",
+      "source": "观点网",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE94OVUzTUNFZ0VUMWwtUHF5b2xzdzhwWnh5N1FIVU9nd0h4SmFVWjV0VEVmM19VWmdXc2xmQm5vRWhDRk5HdmhKU2c2My14QQ?oc=5",
+      "published_date": "2026-10-21"
+    },
+    {
+      "type": "event",
+      "id": "evt_3b6de197b2b4a9",
+      "title": "安踏集团与清华大学战略合作升级 未来五年预计再投200亿元研发",
+      "source": "观点网",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5USkljRFNrZDNNQlREeTEzeDZTaXhBQnhoMVFJR0hFWmhWMEJkdjdJYW9VT1gwNGoySi1vdmZmMjdZOFpvZ0JaXy1lSHpNZw?oc=5",
+      "published_date": "2026-10-21"
+    },
+    {
+      "type": "event",
+      "id": "evt_d5feecc5d81dd8",
+      "title": "361度早盘涨逾3% 公司三季度各渠道流水仍保持稳健增长势头",
+      "source": "新浪财经",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZ3ppY3RQY0xFeFRUQkduT2dkUXJBenhKcmE5aDloRmRvWC0zckhMUjV2ZF90N0Z2WWlkVHRKc0hQSzJXcHFXekJwM2VWVzd5alpKTUZQZmRrUGZ6SFRpZ2RJMkZRUXBwYXllLXhwTzNmLTJJdXVKSlZNblBJSHdlT1JFSjN1Zlp3bjZXRVFDbDNyV2loY3c?oc=5",
+      "published_date": "2026-10-23"
+    },
+    {
+      "type": "event_evidence",
+      "id": "src_b08c1ddf089f45",
+      "title": "港股异动 | 361度(01361)涨超3% 公司三季度各渠道流水仍保持稳健增长势头 海外业务高速放量",
+      "source": "凤凰网",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE04bHpiSmpLUlRPb0V4MWpqeGhmcVd4OWFzQ1NOc09adFM3VnBMdVRsVEVFTWhXZGVYekZxb0QzdWJvU2JIbGFNQ2VkRHg?oc=5",
+      "published_date": "2026-10-23"
+    },
+    {
+      "type": "event",
+      "id": "evt_6ddee63a4aa09e",
+      "title": "双11品牌集体重仓天猫 首发新品商家数同比强劲增长64%",
+      "source": "亿邦动力",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBHREtjc19VdnJCYnpscnVUcGtLQXJkeTRXaDRsQ2VUdndJdTY2RWU3bTZIWnBDMHhUWlhhZlNwM21KS1dQRGliT2tUQWNfblFvcVNYOXdn?oc=5",
+      "published_date": "2026-10-19"
+    },
+    {
+      "type": "event",
+      "id": "evt_bcb4740b444f0f",
+      "title": "全国户外运动相关产业总规模超3.1万亿元",
+      "source": "人民网",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
+      "published_date": "2026-10-19"
+    },
+    {
+      "type": "event",
+      "id": "evt_d09a3fe6427900",
+      "title": "2026年1—9月份社会消费品零售总额增长1.1%",
+      "source": "国家统计局",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
+      "published_date": "2026-10-19"
+    },
+    {
+      "type": "event",
+      "id": "evt_45d3d4c16c609d",
+      "title": "安踏、李宁被传洽谈收购英国运动品牌Castore，两家企业回应",
+      "source": "新京报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE10cHRSS2pveXB1Qy1KR2VCcWFkM2RjT3hsUFU2SnNGd2JmUkFKX1BaVjJsbmJmSXFZTFRWVkRJUjNIMTZFZml1YTlsRmZ1dlphYVpKeUx3X1VXd0w5SzIxMDh1ck0?oc=5",
+      "published_date": "2026-10-23"
+    },
+    {
+      "type": "event",
+      "id": "evt_73b4ef5cdcc9cf",
+      "title": "顶级赛事点燃“双奥之城”，北京以赛促消费谋产业新局",
+      "source": "新京报",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5TcWNYWnFSRkJaSUZwRUZJNm9CVnd5M1dMTG91RGF2Wk0xcFJaMWFnRm54SUJSNzZEQnVUTi16b3RITG5HRVozQmNFWl9BOS1uSHZxeVhhblpMN09rbG1DZXpsVHE?oc=5",
+      "published_date": "2026-10-25"
+    }
+  ],
+  "data_quality": {
+    "ai_used": true,
+    "ai_error": "",
+    "source_schema_version": "2.1",
+    "product_schema_version": "2.1",
+    "raw_event_count": 17,
+    "coalesced_event_count": 17,
+    "eligible_event_count": 17,
+    "selected_event_count": 6,
+    "raw_product_count": 14,
+    "product_lead_count": 14,
+    "eligible_product_count": 0,
+    "selected_product_count": 0,
+    "conflict_count": 0,
+    "source_link_count": 10,
+    "selected_event_direct_link_count": 0,
+    "selected_product_direct_link_count": 0,
+    "event_rejections": {},
+    "product_rejections": {
+      "low_confidence": 1,
+      "unverified_product": 13
+    },
+    "eligible_categories": {
+      "品牌与公司": 4,
+      "行业动态": 6,
+      "产品与科技": 5,
+      "电商与平台": 1,
+      "户外与场景": 1
+    },
+    "selected_status": {
+      "new": 5,
+      "follow_up": 1
+    },
+    "quality_notes": [
+      "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
+      "冲突事件不会进入已确认重点，而是进入核验队列。",
+      "同一品牌同一财务周期在分析层再次合并，避免一份财报被拆成多条重点。",
+      "产品优先采用官方单源或至少两家独立可信来源；单一可信媒体报道可标记为媒体确认进入雷达。",
+      "产品资料不足时允许产品雷达为空，不使用随机商品、通用品类名或占位图片补位。",
+      "核心事件、产品雷达和来源目录优先保留原文直链；解析失败时允许Google News中转链接作为可点击证据。",
+      "所有分数仅用于编辑和资料完整度判断，不代表销量或市场热度。"
+    ]
+  },
+  "supporting_signals": {
+    "product_categories": [
+      {
+        "category": "商品趋势",
+        "evidence_count": 61,
+        "brands": [
+          "未识别品牌",
+          "Nike",
+          "Salomon",
+          "New Balance",
+          "Puma",
+          "Adidas"
+        ],
+        "evidence": [
+          {
+            "title": "率先近赏 Supreme x Nike Air Force 1 Low「Olive Camo」配色",
+            "source": "HYPEBEAST",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOM1B2OFRVZ2dleUxPQWxhSlhXVG14NldmLTlKU0JYd1p0dm9kTG9jUUQxT1o0LTBNVmZiazFBVzZ4X0pZQ2N3VkFfNW9JOC1lSTlCZl82aTZlTkp3eWl0MDk5c0cwS1VpbGlweG5FQWtvUnV0bVhBV0hieWotTVQ1SV93MDZId1U1UjdyS0FqeHpERGFoT2thZ3lkV0ZrdVlsNUU2M3RR?oc=5"
+          },
+          {
+            "title": "Todd Snyder 與 New Balance 再次聯乘推出 T500「Cafe Pack」",
+            "source": "HYPEBEAST",
+            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPT3RKcTA2OVl3bzVWcFJhMGZHZDlfZl9JR2Yza0FpVEMzalVYN1M5c1lYcmxINTNIb1c2OVN1VEQ5djYzcmtLek8taW9nZXhQNjlnby0zZmZDUnBtS2RYWlVfaDNxSFFQSVRBRTlFZ1JhVnVfUk56cjNBcHRTRWlFRF9tNkhKc0tXQ3B6Tmw0V04wSldMVnlXRlhB?oc=5"
+          },
+          {
+            "title": "PUMA 正式发布 FAST-RB NITRO™ Elite 2",
+            "source": "HYPEBEAST",
+            "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9NX1FIV2pfU20xZktqZGlqcDlEM3Q2SnVqanhfLXI3TG03MDBqN21XN2hEZXlNd28zcHFPWHFNNmZsdWdsZ3hvME0tdG41N3NCSmNCRktER05BeTNadTFRVnBFUm5sdw?oc=5"
+          },
+          {
+            "title": "ASICS 携手 atmos Indonesia 推出全新联名鞋款 GEL-KAYANO 12.1「ARCHIPELAGO群岛」",
+            "source": "Supreme情报网",
+            "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE42YXhlWmUxSkhJRzkxQlRhSXRsYUljM1VpUU1wdklDM05WVjZVYjJJcnF2UGZpRXdqTElmVk9PWUQ5b0JYSTVRcUZ2MXpfNUlrS1NOQkIza2E4Uy1zc25tQUdLTUlIUk9adXc0R2xhQU94QQ?oc=5"
+          },
+          {
+            "title": "PUMA 与 Jil Sander 再次携手推出 AW26 系列",
+            "source": "Hypebae",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOUpxMkJTcTdKTy1fMWk1Z2I5Y3VKY0dsNGZoSXlycXZkelRSRzg3dzFYX1lRM3BONVJscllQeGRXeDBWRE9TaE5ZM2FvN09NNml5bFJpVzF1QlFMM3ZERXZ3ZXM0VklkdUlMRHg1ODQ3NXNSUXJkVDZnV1dxYzY3MDdzODQ2R1l2N3IxTnVnS3hvMW1XZGs3OXhCVG05bngtTjRwTEs5WWptWEJZMnJqc1JRUWs1a0hU?oc=5"
+          },
+          {
+            "title": "Masyn 携手 Zellerfeld 发布 3D 打印 Nike Air Max 穆勒鞋",
+            "source": "HYPEBEAST",
+            "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVlV6N3UxdUNBVkpLdG9ZVnFyaEJ4SldnSEU3ZlFSMzRrR0RwOUNzRHF3Wm5KYmR1c3lpUEcyV19lajBhaHhIeHV1RTVCc3NDMFBVeW9FNE9rTVF2angyUDZTcUtOS2pfejRWMXpacC01ZzU0QUdmUEJwRjhKNDJVZ1kwOVYxUTJkY0JN?oc=5"
+          }
+        ],
+        "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+      },
+      {
+        "category": "户外服饰",
+        "evidence_count": 6,
+        "brands": [
+          "未识别品牌",
+          "lululemon",
+          "始祖鸟"
+        ],
+        "evidence": [
+          {
+            "title": "买羽绒服京东和天猫哪个便宜？2026双十一终极省钱攻略",
+            "source": "手机新浪网",
+            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOX2o0Sk9lZDZ4UXFCRjh4S0RkVXRxZEZYMXRFQkZEQ0NDNjJBQkpKMnZzSFI4d2NoTmpTSmgyOWNtQ2VJY29oRHJEVEpOb1Nhc1I2dVNZeVFkWFE2SDJQcVRJeDNiczdpRnFDd05nV0pqcTNaVGpydUVWcjNha2xJRUN2cjYxTmhHNDRsWFJmMmVGUQ?oc=5"
+          },
+          {
+            "title": "lululemon 巨保暖Featherweight 羽绒服$189起 男女同款！李宇春也在穿",
+            "source": "北美省钱快报",
+            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSVJsUGFJUXNfamZwYmtRNWhqZ3VwRno5ckQ3MFo1WGVZRjB4S3N0RG1ROUU4ZWl1UkgtVnRJQ1JjdGZIUHktVGwyR1R6SjZaY2Q1M2ZFTThRbng2bDR5SkYyZVo0Tk5OX2VpdnFPa0JCMjIyMUZfWDZCUlB6NXlqd0taNlFhc3M1dlp1UjdnOU1YOWJ5b2RmZ09hLTg2MWRTM0VvZFNVS3R4TTFvaHBwYnVR?oc=5"
+          },
+          {
+            "title": "突袭了！「始祖鸟Arc'teryx」原住民联名3.0冲锋衣曝光，有人夜排3天...",
+            "source": "Supreme情报网",
+            "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBZYU4xODBWNmg2WDZkdHdJQWdaOW5jSDAtaU9MZnBqeHNVeHRyS2I5THFYNDFIeFVlSlBpSlFhR0VKNGFLVlpMaGhjbjZCSUF6RU9OelZJT2VlYVp2c1YwaHNWcw?oc=5"
+          },
+          {
+            "title": "国产冲锋衣，冲疯了",
+            "source": "中国新闻周刊",
+            "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5OQmdLYmNCY09IS1pPcWJzaVpHdFlVZ3FmV09pVzUwT0plTEt3SGxxSm5mdDYzZk9FdDh2SGN0R3M4WVhYYkhFS1EzcXVET1B5anVLWTRGVmU2NEFta2FPZFFoc2NVdw?oc=5"
+          },
+          {
+            "title": "国产冲锋衣，冲疯了",
+            "source": "凤凰网",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBleGJ3b3RibEc1MzRiNTZSb1ZuRnhPdFZzbWN1R0JwNkNTUlI3Q0JBWHd4dU9KYlJFS3ZGdFhzdk9Sa19SXzJaNjZvQi1JUmpX?oc=5"
+          },
+          {
+            "title": "京东11.11黑色羽绒服包揽北京销量TOP5",
+            "source": "东方财富",
+            "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5MZ0x1ZnhFaXJQQTVnUGU0VkFIN3JVanRPVXRGRGpRZjN1cFJzUVE1bmk1eWg0UXh4WHdWdFc1ZjhUQWJjQUU5dkszYTFJdDNCN0ZEb3g4VWV5S2tuWWk0Q2RvbHpjUQ?oc=5"
+          }
+        ],
+        "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+      },
+      {
+        "category": "跑鞋",
+        "evidence_count": 5,
+        "brands": [
+          "未识别品牌",
+          "Adidas",
+          "ASICS"
+        ],
+        "evidence": [
+          {
+            "title": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+            "source": "HYPEBEAST",
+            "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5"
+          },
+          {
+            "title": "跑鞋推荐2026/2027｜ASICS Nike等跑鞋最新上架｜跑手实测介绍",
+            "source": "香港01",
+            "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxOVHczclJzMjdHMU14VGowcnN4cU9MWkpTdHF2aTNoY3ZNc05VTzBSVVlUc3NwWUJQNFdtUl85cTQ2ZXYxNzI0dnlUQ25kS0YwZy1wamJFRDdxY0lGUXpJTW9fZUtZVnlXV0kwalVmM2hfQU1tU2E1WWhGdXlZamhLZGl1dnR0WklYS2MwbThXbjZ3T1ZOT1J6US1iMUJWdzdVV0E1WjdFWmc3dnkwX2wycWNkY3NMeEowaFpOUVM2N3VxbW92cWZUbjExMjlpZDhLYXkyRC1oOGk5MXBlTTZ5ci15dUVaWEd1VUl3cjl2b280RWUzZUNrNUVRNlBkLWJUREdoT3BRZWpIZGs2MWxqVHl5UEJJQTBfcmwxVUF0VG96RHBiRnp5TjVrQmI5UHVvRGsyc2ozcGNnWElkakNoSmlTVVJ4eW1ldEE?oc=5"
+          },
+          {
+            "title": "ON 官网 折扣区来了 Cloudsurfer跑鞋$80 超多不过百！ 4.8折起+包邮! 热卖款一应俱全",
+            "source": "北美省钱快报",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVS1FZGNlWjF4bnlJZVE2cG1ubjAwWUk1aTk2SDQ0LURiT2R6eE1QZm00NUFKbkVOa2JhWndSZTdRRkVWNnd5RUZpcnpnQk1uQXA3TG90Mng4OWlpVUR0Z2Q4akJPM1hQVzZZUUJXRldjNUVOS2twV2QybXQwcWZMb1VqUEYwOXZvNXJhaEZzbGRyM21BZTNpOXJINjZGV2hLeE0w?oc=5"
+          },
+          {
+            "title": "《中国学生体育考试装备白皮书》发布 沃兰迪多款跑鞋入选 A 级推荐名录",
+            "source": "TOM",
+            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjZEplYlZIMEE4QjllakYyeHl4My1HT3N1SEZJU1AyT2U0aGxKZC1NMXZxN0lzWS1LNmxHdjVmUG1zWE1uS0VWMUd1dlFJenJQQmdQWnJn?oc=5"
+          },
+          {
+            "title": "国货母婴品牌曼龙推出奶皮硅胶爬爬垫：跑鞋级缓震+低敏硅胶，守护宝宝成长",
+            "source": "中华网",
+            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB3bmhiVXY4b3UzdFZ5TW9iZXRFSW9Ed0dLNGRvdFhEODNuaURPSTNSdERoYTl6NWl4QUJNSEV3eVN5ZFNKdTJyNGlqYURyQnlwRVdRcXlsclU5UldLay1ub1V0UV9IaVlpMFdNOA?oc=5"
+          }
+        ],
+        "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+      },
+      {
+        "category": "运动服饰",
+        "evidence_count": 3,
+        "brands": [
+          "安踏",
+          "Nike",
+          "未识别品牌"
+        ],
+        "evidence": [
+          {
+            "title": "英国高端运动服品牌 Castore 创始人称：已收到安踏、李宁关于收购的主动问询",
+            "source": "华丽志",
+            "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1yR1dwYVZqRnNTM3dOUks4b2tER2R3aHo2d1lLV1dqMU1zYmlBLUZTRVZRN2t1S1ZGOElXbDRKYlk?oc=5"
+          },
+          {
+            "title": "兼具防护性能与时尚风格，Nike Tech 运动服饰以创新设计焕新回归— NIKE, Inc.",
+            "source": "About Nike",
+            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5TeHVIci1rb2dBX0ZMbExNZmg5R1FGUVZnSDZjYXBpUzhzLW1EUFpLY1lUWWhLSGVrQXRDSkI3UXZpMXBFZE5yLWVrMmVxdVJXQ2E2RlotdGEtUnh0MThEZHZzZnlqQ0tTd2c?oc=5"
+          },
+          {
+            "title": "港股体育用品概念集体下跌，三季度运动服饰行业流水承压丨港股异动-证券之星",
+            "source": "证券之星",
+            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE03TEhLa1p3c2czN21GU0FCQVgtbXZRWkNROUFpbWNNVXR2a1hDU0hJeDJ1czk2Snk1UkJXek51VnBBWlhZN3VtaGZiZXZpdXdyVGM0cXhrMmFnVXI1RWc?oc=5"
+          }
+        ],
+        "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+      },
+      {
+        "category": "篮球鞋",
+        "evidence_count": 1,
+        "brands": [
+          "李宁"
+        ],
+        "evidence": [
+          {
+            "title": "库里：选择李宁是看中创新能力&投入力度 希望改变篮球鞋设计方式",
+            "source": "直播吧",
+            "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBHTnJVLU5CakhpV29LM1dpRlNULVo4VjJaQy1YQjBRTmE1bjVXNzJqTERSeXJ0RlR2Y3ZSelRVVmtHdGhCTXZhemdoajdFbnhybmFHR3c0dXdUdzA5OU9oOUJBTUktRHpYWmRXWXdmX2YtS2FwYXpn?oc=5"
+          }
+        ],
+        "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+      },
+      {
+        "category": "户外鞋",
+        "evidence_count": 1,
+        "brands": [
+          "Salomon"
+        ],
+        "evidence": [
+          {
+            "title": "Salomon XT-6 PROTECTIVE 與 XT-WHISPER GTX 迎來 BILLY'S 獨家配色",
+            "source": "HYPEBEAST",
+            "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOOGlNQjQ0ZWZmVmt5eDc4OXVJWGF2a3g5YkZjQ2FCbHc2UTlER0VkLVZXVzVjdkh2dW9EeUJtM3N5cFNuTXFLcWgxZzEwdWRIaFV2YWpmb3dBQU9DM25WVWxoQXhtR1dSVkxEeGFNSzI4Y3ZiWW0xc2VBdjdqZzBIU0lFbFpXYzBYZ1VVdVB1MTAtMDVRVkc4MWVkV0tyVGY2X0JYTDQ1Y2dXbFIteTFnM08yZk1kVnZOV2J5Rkxyd3ZzTUl0b0hrMEs4SGhZQlYwUEwtakRoZV9pWW1VREE?oc=5"
+          }
+        ],
+        "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+      },
+      {
+        "category": "儿童运动鞋",
+        "evidence_count": 1,
+        "brands": [
+          "未识别品牌"
+        ],
+        "evidence": [
+          {
+            "title": "“童鞋界爱马仕”杀入户外，中产小孩的钱太好赚了",
+            "source": "澎湃新闻",
+            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1VVmlhelYzUklpTzNfR2tNNzNNc3RhSFBNaEsxWTMzbGl0ck5HVTdfT3BjbXFISU44UklTYlpCdk1tQVRiaHBWNTBjdThJVW50Mk9Gb2xLVUwzWHR3VmVFWA?oc=5"
+          }
+        ],
+        "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+      },
+      {
+        "category": "瑜伽与训练服",
+        "evidence_count": 1,
+        "brands": [
+          "Alo Yoga"
+        ],
+        "evidence": [
+          {
+            "title": "澳洲Alo Yoga 购买推荐+折扣汇总 瑜伽裤/网球风穿搭",
+            "source": "今日悉尼",
+            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE84d1dFWnRMRm0zOXJCMDRudm5fUjVUQWRIeVlodlpkNzBxQlpLOTJSWHJ2blVUaTRhYXFqaFZvdnV5WGRJT3VMVWtyQlJKN0RKc1lrVE40RUMwRlh0RFE?oc=5"
+          }
+        ],
+        "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+      },
+      {
+        "category": "运动配件",
+        "evidence_count": 1,
+        "brands": [
+          "安踏"
+        ],
+        "evidence": [
+          {
+            "title": "清华大学-安踏集团运动时尚联合研究院成立！第三届全球运动装备创新设计大赛圆满收官",
+            "source": "中华网",
+            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5TbjlBSG5pNGNEZXF3Tm83Wi1DN2dWN3hKWFloZzdGcTBaWks5LVFmaExmZjRBREltWUZVSUtuTG5xR2hacUJfNzRZSFRraVIxUUFLN2ZFS0dSeW1jeVJKVXNwSHpObWNGZnJkUQ?oc=5"
+          }
+        ],
+        "note": "证据数量只代表本周可见媒体/官方信息数量，不代表销量或搜索热度。"
+      }
+    ],
+    "product_leads": [
+      {
+        "signal_id": "pld_1b600c4e71ccf3",
+        "brand": "安踏",
+        "product_name": "英国高端运动服",
+        "headline": "英国高端运动服品牌 Castore 创始人称：已收到安踏、李宁关于收购的主动问询",
+        "source": "华丽志",
+        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1yR1dwYVZqRnNTM3dOUks4b2tER2R3aHo2d1lLV1dqMU1zYmlBLUZTRVZRN2t1S1ZGOElXbDRKYlk?oc=5",
+        "published_date": "2026-10-25",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_eb4553b9adbba6",
+        "brand": "Nike",
+        "product_name": "Force 1",
+        "headline": "率先近赏 Supreme x Nike Air Force 1 Low「Olive Camo」配色",
+        "source": "HYPEBEAST",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOM1B2OFRVZ2dleUxPQWxhSlhXVG14NldmLTlKU0JYd1p0dm9kTG9jUUQxT1o0LTBNVmZiazFBVzZ4X0pZQ2N3VkFfNW9JOC1lSTlCZl82aTZlTkp3eWl0MDk5c0cwS1VpbGlweG5FQWtvUnV0bVhBV0hieWotTVQ1SV93MDZId1U1UjdyS0FqeHpERGFoT2thZ3lkV0ZrdVlsNUU2M3RR?oc=5",
+        "published_date": "2026-10-23",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_06edf32092424e",
+        "brand": "New Balance",
+        "product_name": "T500",
+        "headline": "Todd Snyder 與 New Balance 再次聯乘推出 T500「Cafe Pack」",
+        "source": "HYPEBEAST",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPT3RKcTA2OVl3bzVWcFJhMGZHZDlfZl9JR2Yza0FpVEMzalVYN1M5c1lYcmxINTNIb1c2OVN1VEQ5djYzcmtLek8taW9nZXhQNjlnby0zZmZDUnBtS2RYWlVfaDNxSFFQSVRBRTlFZ1JhVnVfUk56cjNBcHRTRWlFRF9tNkhKc0tXQ3B6Tmw0V04wSldMVnlXRlhB?oc=5",
+        "published_date": "2026-10-23",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_fd2eb322f19c5f",
+        "brand": "Puma",
+        "product_name": "Elite 2",
+        "headline": "PUMA 正式发布 FAST-RB NITRO™ Elite 2",
+        "source": "HYPEBEAST",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9NX1FIV2pfU20xZktqZGlqcDlEM3Q2SnVqanhfLXI3TG03MDBqN21XN2hEZXlNd28zcHFPWHFNNmZsdWdsZ3hvME0tdG41N3NCSmNCRktER05BeTNadTFRVnBFUm5sdw?oc=5",
+        "published_date": "2026-10-23",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_b2b6b123db4c50",
+        "brand": "Adidas",
+        "product_name": "ADIZERO",
+        "headline": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+        "source": "HYPEBEAST",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+        "published_date": "2026-10-23",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_3401d2f189a9ec",
+        "brand": "ASICS",
+        "product_name": "GEL-KAYANO 12.1",
+        "headline": "ASICS 携手 atmos Indonesia 推出全新联名鞋款 GEL-KAYANO 12.1「ARCHIPELAGO群岛」",
+        "source": "Supreme情报网",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE42YXhlWmUxSkhJRzkxQlRhSXRsYUljM1VpUU1wdklDM05WVjZVYjJJcnF2UGZpRXdqTElmVk9PWUQ5b0JYSTVRcUZ2MXpfNUlrS1NOQkIza2E4Uy1zc25tQUdLTUlIUk9adXc0R2xhQU94QQ?oc=5",
+        "published_date": "2026-10-23",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_6124c4d87e574e",
+        "brand": "Puma",
+        "product_name": "AW26",
+        "headline": "PUMA 与 Jil Sander 再次携手推出 AW26 系列",
+        "source": "Hypebae",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOUpxMkJTcTdKTy1fMWk1Z2I5Y3VKY0dsNGZoSXlycXZkelRSRzg3dzFYX1lRM3BONVJscllQeGRXeDBWRE9TaE5ZM2FvN09NNml5bFJpVzF1QlFMM3ZERXZ3ZXM0VklkdUlMRHg1ODQ3NXNSUXJkVDZnV1dxYzY3MDdzODQ2R1l2N3IxTnVnS3hvMW1XZGs3OXhCVG05bngtTjRwTEs5WWptWEJZMnJqc1JRUWs1a0hU?oc=5",
+        "published_date": "2026-10-23",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_5987e05aad90f8",
+        "brand": "Nike",
+        "product_name": "Air Max",
+        "headline": "Masyn 携手 Zellerfeld 发布 3D 打印 Nike Air Max 穆勒鞋",
+        "source": "HYPEBEAST",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVlV6N3UxdUNBVkpLdG9ZVnFyaEJ4SldnSEU3ZlFSMzRrR0RwOUNzRHF3Wm5KYmR1c3lpUEcyV19lajBhaHhIeHV1RTVCc3NDMFBVeW9FNE9rTVF2angyUDZTcUtOS2pfejRWMXpacC01ZzU0QUdmUEJwRjhKNDJVZ1kwOVYxUTJkY0JN?oc=5",
+        "published_date": "2026-10-22",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_d060541afa4986",
+        "brand": "Adidas",
+        "product_name": "Samba",
+        "headline": "携手共创经典： 梅赛德斯-奔驰与 adidas 联袂推出限量版 adidas Samba OG x Mercedes-Benz",
+        "source": "时尚COSMO",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5rVW9iSTBoa1NyN2Y4eklxLTRzVDZCVVFrdG45cjE4S0xuV04zMVNLbUpMUG1DX2VueGlsQ0VwTHpSZEVqSkZvWEwzSGtVa0U4d3lSYkstY2QwaUpBaTVZeG1OYzVnSHA0?oc=5",
+        "published_date": "2026-10-22",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_b6eb681c1ad85e",
+        "brand": "李宁",
+        "product_name": "希望改变篮球鞋",
+        "headline": "库里：选择李宁是看中创新能力&投入力度 希望改变篮球鞋设计方式",
+        "source": "直播吧",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBHTnJVLU5CakhpV29LM1dpRlNULVo4VjJaQy1YQjBRTmE1bjVXNzJqTERSeXJ0RlR2Y3ZSelRVVmtHdGhCTXZhemdoajdFbnhybmFHR3c0dXdUdzA5OU9oOUJBTUktRHpYWmRXWXdmX2YtS2FwYXpn?oc=5",
+        "published_date": "2026-10-21",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_e32d9fd5abfa5f",
+        "brand": "Salomon",
+        "product_name": "XT-6",
+        "headline": "Salomon XT-6 PROTECTIVE 與 XT-WHISPER GTX 迎來 BILLY'S 獨家配色",
+        "source": "HYPEBEAST",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOOGlNQjQ0ZWZmVmt5eDc4OXVJWGF2a3g5YkZjQ2FCbHc2UTlER0VkLVZXVzVjdkh2dW9EeUJtM3N5cFNuTXFLcWgxZzEwdWRIaFV2YWpmb3dBQU9DM25WVWxoQXhtR1dSVkxEeGFNSzI4Y3ZiWW0xc2VBdjdqZzBIU0lFbFpXYzBYZ1VVdVB1MTAtMDVRVkc4MWVkV0tyVGY2X0JYTDQ1Y2dXbFIteTFnM08yZk1kVnZOV2J5Rkxyd3ZzTUl0b0hrMEs4SGhZQlYwUEwtakRoZV9pWW1VREE?oc=5",
+        "published_date": "2026-10-20",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_e0316ad94ac650",
+        "brand": "Salomon",
+        "product_name": "MM6",
+        "headline": "MM6 Maison Margiela 携手 Salomon 发布 2026 秋冬八款联名鞋履系列",
+        "source": "HYPEBEAST",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPSTI2eXhZc3NwU09oTkNHZTdWVTRRRVFuMUE1T2ZpNFB3dDVXdnVNRjBQVzBuM3lnU1VvNWplY09OLU5OeGFHank0c2ptT2Y5LURMMWhadE5iNUlKaHU1cmdsV2VvQkJFSGEyS0FOMnAtYUpiU1VzZTZMVXlZNVphYmxaUHR4eUVvU2ZTQ0lJQQ?oc=5",
+        "published_date": "2026-10-20",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_5b6da71a97810d",
+        "brand": "Nike",
+        "product_name": "Kobe 3",
+        "headline": "Nike 推出 Kobe 3 Low Protro「Mamba Eterno」致敬墨西哥亡靈節",
+        "source": "HYPEBEAST",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQQU45YUZhMWNybk9PZEphYUpXaDRhdWVfMEllMV9faWhfaWkzOE9YOFBwcERIZHIxVlJiMUxfRjJ3bW5yT2QtUVFMLUMyMl8wZ0Npb0RBQ1ZDMHh0NmxpUlNySzVkUXFQMlNzUEdPN0lPOHVEU0JKVm8wRUNvR1plWjhfdUdMdFNpSUNqQnF3dTZOUQ?oc=5",
+        "published_date": "2026-10-19",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "signal_id": "pld_78e854227438e5",
+        "brand": "迪卡侬",
+        "product_name": "AF 12",
+        "headline": "Decathlon 推出全新 Van Rysel E-EDR AF 12 速电助力自行车",
+        "source": "Notebookcheck CN",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQY2xuNi1NVTlucS1pTEI2UTREdlZYWHRMYjVkLWpiRHBJZkdxVk0tUnFjdU1RcjVKS3NnS0dSTF8tUW54d1VjNEZlamxRZzFZMTZqUUNSaUUza3oxdzJzY2czdHg3Zm5TSWNYQjNsQnZmbng5NXV1aGlFWi1jUHZVczVVZjlwUQ?oc=5",
+        "published_date": "2026-10-19",
+        "lead_reason": "missing_direct_source",
+        "verification_reason": "",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      }
+    ],
+    "product_media_signals": [
+      {
+        "headline": "英国高端运动服品牌 Castore 创始人称：已收到安踏、李宁关于收购的主动问询",
+        "brand": "安踏",
+        "category": "运动服饰",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "华丽志",
+        "source_homepage": "https://luxe.co",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1yR1dwYVZqRnNTM3dOUks4b2tER2R3aHo2d1lLV1dqMU1zYmlBLUZTRVZRN2t1S1ZGOElXbDRKYlk?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-25T20:12+08:00",
+        "published_date": "2026-10-25",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "trusted_media",
+        "source_tier": "tier_2",
+        "is_official": false,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "capital_strategy",
+        "query_groups": [
+          "brand_business",
+          "weekly_source_pool"
+        ],
+        "discovered_by": [
+          "运动品牌 收购 出售"
+        ],
+        "product_name": "英国高端运动服",
+        "product_name_basis": "product_phrase_in_source",
+        "model_code": "",
+        "release_date": "",
+        "release_date_basis": "not_disclosed",
+        "price": {
+          "value": null,
+          "currency": "",
+          "display": "",
+          "basis": "not_disclosed"
+        },
+        "technologies": [],
+        "materials": [],
+        "official_url": "",
+        "evidence": {
+          "product": "英国高端运动服品牌 Castore 创始人称：已收到安踏、李宁关于收购的主动问询",
+          "technology": "",
+          "price_or_release": "英国高端运动服品牌 Castore 创始人称：已收到安踏、李宁关于收购的主动问询"
+        },
+        "status": "new",
+        "first_seen": "2026-10-19",
+        "last_seen": "2026-10-25",
+        "confidence_score": 43,
+        "product_id": "prd_4d459ec551e901",
+        "coverage": [
+          {
+            "headline": "英国高端运动服品牌 Castore 创始人称：已收到安踏、李宁关于收购的主动问询",
+            "source": "华丽志",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-25T20:12+08:00",
+            "published_date": "2026-10-25",
+            "source_tier": "tier_2",
+            "is_official": false
+          }
+        ],
+        "source_count": 1,
+        "direct_source_count": 0,
+        "credible_source_count": 0,
+        "official_evidence_count": 0,
+        "evidence_status": "lead",
+        "verification_gate_reason": "missing_direct_source",
+        "signal_id": "pld_1b600c4e71ccf3",
+        "signal_type": "product_lead",
+        "lead_reason": "missing_direct_source",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "headline": "率先近赏 Supreme x Nike Air Force 1 Low「Olive Camo」配色",
+        "brand": "Nike",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "HYPEBEAST",
+        "source_homepage": "https://hypebeast.cn",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOM1B2OFRVZ2dleUxPQWxhSlhXVG14NldmLTlKU0JYd1p0dm9kTG9jUUQxT1o0LTBNVmZiazFBVzZ4X0pZQ2N3VkFfNW9JOC1lSTlCZl82aTZlTkp3eWl0MDk5c0cwS1VpbGlweG5FQWtvUnV0bVhBV0hieWotTVQ1SV93MDZId1U1UjdyS0FqeHpERGFoT2thZ3lkV0ZrdVlsNUU2M3RR?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-23T18:01+08:00",
+        "published_date": "2026-10-23",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "",
+        "query_groups": [
+          "product"
+        ],
+        "discovered_by": [
+          "篮球鞋 新品 发布"
+        ],
+        "product_name": "Force 1",
+        "product_name_basis": "model_code_in_source",
+        "model_code": "",
+        "release_date": "",
+        "release_date_basis": "not_disclosed",
+        "price": {
+          "value": null,
+          "currency": "",
+          "display": "",
+          "basis": "not_disclosed"
+        },
+        "technologies": [],
+        "materials": [],
+        "official_url": "",
+        "evidence": {
+          "product": "率先近赏 Supreme x Nike Air Force 1 Low「Olive Camo」配色",
+          "technology": "",
+          "price_or_release": "率先近赏 Supreme x Nike Air Force 1 Low「Olive Camo」配色"
+        },
+        "status": "new",
+        "first_seen": "2026-10-19",
+        "last_seen": "2026-10-25",
+        "confidence_score": 33,
+        "product_id": "prd_9ba6c7f41caacb",
+        "coverage": [
+          {
+            "headline": "率先近赏 Supreme x Nike Air Force 1 Low「Olive Camo」配色",
+            "source": "HYPEBEAST",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-23T18:01+08:00",
+            "published_date": "2026-10-23",
+            "source_tier": "tier_3",
+            "is_official": false
+          }
+        ],
+        "source_count": 1,
+        "direct_source_count": 0,
+        "credible_source_count": 0,
+        "official_evidence_count": 0,
+        "evidence_status": "lead",
+        "verification_gate_reason": "missing_direct_source",
+        "signal_id": "pld_eb4553b9adbba6",
+        "signal_type": "product_lead",
+        "lead_reason": "missing_direct_source",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "headline": "Todd Snyder 與 New Balance 再次聯乘推出 T500「Cafe Pack」",
+        "brand": "New Balance",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "HYPEBEAST",
+        "source_homepage": "https://hypebeast.cn",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPT3RKcTA2OVl3bzVWcFJhMGZHZDlfZl9JR2Yza0FpVEMzalVYN1M5c1lYcmxINTNIb1c2OVN1VEQ5djYzcmtLek8taW9nZXhQNjlnby0zZmZDUnBtS2RYWlVfaDNxSFFQSVRBRTlFZ1JhVnVfUk56cjNBcHRTRWlFRF9tNkhKc0tXQ3B6Tmw0V04wSldMVnlXRlhB?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-23T17:59+08:00",
+        "published_date": "2026-10-23",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": false,
+        "core_exclusion_reason": "editorial_score_below_core_threshold",
+        "event_family": "product_launch",
+        "query_groups": [
+          "brand",
+          "weekly_source_pool",
+          "product",
+          "brand_product"
+        ],
+        "discovered_by": [
+          "\"New Balance\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+          "篮球鞋 新品 发布",
+          "\"New Balance\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "product_name": "T500",
+        "product_name_basis": "model_code_in_source",
+        "model_code": "",
+        "release_date": "",
+        "release_date_basis": "not_disclosed",
+        "price": {
+          "value": null,
+          "currency": "",
+          "display": "",
+          "basis": "not_disclosed"
+        },
+        "technologies": [],
+        "materials": [],
+        "official_url": "",
+        "evidence": {
+          "product": "Todd Snyder 與 New Balance 再次聯乘推出 T500「Cafe Pack」",
+          "technology": "",
+          "price_or_release": "Todd Snyder 與 New Balance 再次聯乘推出 T500「Cafe Pack」"
+        },
+        "status": "new",
+        "first_seen": "2026-10-19",
+        "last_seen": "2026-10-25",
+        "confidence_score": 33,
+        "product_id": "prd_c63ea929eaab06",
+        "coverage": [
+          {
+            "headline": "Todd Snyder 與 New Balance 再次聯乘推出 T500「Cafe Pack」",
+            "source": "HYPEBEAST",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-23T17:59+08:00",
+            "published_date": "2026-10-23",
+            "source_tier": "tier_3",
+            "is_official": false
+          }
+        ],
+        "source_count": 1,
+        "direct_source_count": 0,
+        "credible_source_count": 0,
+        "official_evidence_count": 0,
+        "evidence_status": "lead",
+        "verification_gate_reason": "missing_direct_source",
+        "signal_id": "pld_06edf32092424e",
+        "signal_type": "product_lead",
+        "lead_reason": "missing_direct_source",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "headline": "PUMA 正式发布 FAST-RB NITRO™ Elite 2",
+        "brand": "Puma",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [
+          "跑步"
+        ],
+        "source": "HYPEBEAST",
+        "source_homepage": "https://hypebeast.cn",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9NX1FIV2pfU20xZktqZGlqcDlEM3Q2SnVqanhfLXI3TG03MDBqN21XN2hEZXlNd28zcHFPWHFNNmZsdWdsZ3hvME0tdG41N3NCSmNCRktER05BeTNadTFRVnBFUm5sdw?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-23T16:37+08:00",
+        "published_date": "2026-10-23",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "industry_event",
+        "query_groups": [
+          "brand",
+          "weekly_source_pool",
+          "product",
+          "brand_product"
+        ],
+        "discovered_by": [
+          "\"Puma\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+          "篮球鞋 新品 发布",
+          "\"Puma\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "product_name": "Elite 2",
+        "product_name_basis": "model_code_in_source",
+        "model_code": "",
+        "release_date": "",
+        "release_date_basis": "not_disclosed",
+        "price": {
+          "value": null,
+          "currency": "",
+          "display": "",
+          "basis": "not_disclosed"
+        },
+        "technologies": [],
+        "materials": [],
+        "official_url": "",
+        "evidence": {
+          "product": "PUMA 正式发布 FAST-RB NITRO™ Elite 2",
+          "technology": "",
+          "price_or_release": "PUMA 正式发布 FAST-RB NITRO™ Elite 2"
+        },
+        "status": "new",
+        "first_seen": "2026-10-19",
+        "last_seen": "2026-10-25",
+        "confidence_score": 33,
+        "product_id": "prd_77380462f04cc7",
+        "coverage": [
+          {
+            "headline": "PUMA 正式发布 FAST-RB NITRO™ Elite 2",
+            "source": "HYPEBEAST",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-23T16:37+08:00",
+            "published_date": "2026-10-23",
+            "source_tier": "tier_3",
+            "is_official": false
+          },
+          {
+            "headline": "PUMA将于10月28日在日本发售打破常规的跑步鞋FAST-RB NITRO™ ELITE 2 LACED，限量100双",
+            "source": "www.haveagood-holiday.com",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-24T18:42+08:00",
+            "published_date": "2026-10-24",
+            "source_tier": "tier_3",
+            "is_official": false
+          }
+        ],
+        "source_count": 2,
+        "direct_source_count": 0,
+        "credible_source_count": 0,
+        "official_evidence_count": 0,
+        "evidence_status": "lead",
+        "verification_gate_reason": "missing_direct_source",
+        "signal_id": "pld_fd2eb322f19c5f",
+        "signal_type": "product_lead",
+        "lead_reason": "missing_direct_source",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "headline": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+        "brand": "Adidas",
+        "category": "跑鞋",
+        "audience": "成人/通用",
+        "scenarios": [
+          "跑步"
+        ],
+        "source": "HYPEBEAST",
+        "source_homepage": "https://hypebeast.cn",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-23T16:22+08:00",
+        "published_date": "2026-10-23",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "collaboration",
+        "query_groups": [
+          "product",
+          "brand",
+          "weekly_source_pool",
+          "brand_product"
+        ],
+        "discovered_by": [
+          "跑鞋 科技 新品",
+          "\"Adidas\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+          "跑鞋 新品 科技 发布",
+          "\"Adidas\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "product_name": "ADIZERO",
+        "product_name_basis": "model_name_in_source",
+        "model_code": "",
+        "release_date": "",
+        "release_date_basis": "not_disclosed",
+        "price": {
+          "value": null,
+          "currency": "",
+          "display": "",
+          "basis": "not_disclosed"
+        },
+        "technologies": [],
+        "materials": [],
+        "official_url": "",
+        "evidence": {
+          "product": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+          "technology": "",
+          "price_or_release": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋"
+        },
+        "status": "new",
+        "first_seen": "2026-10-19",
+        "last_seen": "2026-10-25",
+        "confidence_score": 33,
+        "product_id": "prd_b6f551ab488b71",
+        "coverage": [
+          {
+            "headline": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+            "source": "HYPEBEAST",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-23T16:22+08:00",
+            "published_date": "2026-10-23",
+            "source_tier": "tier_3",
+            "is_official": false
+          },
+          {
+            "headline": "adidas联乘SATISFY第二波跑鞋登场！全新ADIZERO香港发售资讯公开",
+            "source": "香港01",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-22T18:31+08:00",
+            "published_date": "2026-10-22",
+            "source_tier": "tier_3",
+            "is_official": false
+          }
+        ],
+        "source_count": 2,
+        "direct_source_count": 0,
+        "credible_source_count": 0,
+        "official_evidence_count": 0,
+        "evidence_status": "lead",
+        "verification_gate_reason": "missing_direct_source",
+        "signal_id": "pld_b2b6b123db4c50",
+        "signal_type": "product_lead",
+        "lead_reason": "missing_direct_source",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "headline": "ASICS 携手 atmos Indonesia 推出全新联名鞋款 GEL-KAYANO 12.1「ARCHIPELAGO群岛」",
+        "brand": "ASICS",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "Supreme情报网",
+        "source_homepage": "https://www.supreme007.com",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE42YXhlWmUxSkhJRzkxQlRhSXRsYUljM1VpUU1wdklDM05WVjZVYjJJcnF2UGZpRXdqTElmVk9PWUQ5b0JYSTVRcUZ2MXpfNUlrS1NOQkIza2E4Uy1zc25tQUdLTUlIUk9adXc0R2xhQU94QQ?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-23T16:08+08:00",
+        "published_date": "2026-10-23",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": false,
+        "core_exclusion_reason": "editorial_score_below_core_threshold",
+        "event_family": "collaboration",
+        "query_groups": [
+          "brand",
+          "weekly_source_pool",
+          "brand_product"
+        ],
+        "discovered_by": [
+          "\"ASICS\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+          "\"ASICS\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "product_name": "GEL-KAYANO 12.1",
+        "product_name_basis": "model_name_in_source",
+        "model_code": "",
+        "release_date": "",
+        "release_date_basis": "not_disclosed",
+        "price": {
+          "value": null,
+          "currency": "",
+          "display": "",
+          "basis": "not_disclosed"
+        },
+        "technologies": [],
+        "materials": [],
+        "official_url": "",
+        "evidence": {
+          "product": "ASICS 携手 atmos Indonesia 推出全新联名鞋款 GEL-KAYANO 12.1「ARCHIPELAGO群岛」",
+          "technology": "",
+          "price_or_release": "ASICS 携手 atmos Indonesia 推出全新联名鞋款 GEL-KAYANO 12.1「ARCHIPELAGO群岛」"
+        },
+        "status": "new",
+        "first_seen": "2026-10-19",
+        "last_seen": "2026-10-25",
+        "confidence_score": 33,
+        "product_id": "prd_6b83b3026d1438",
+        "coverage": [
+          {
+            "headline": "ASICS 携手 atmos Indonesia 推出全新联名鞋款 GEL-KAYANO 12.1「ARCHIPELAGO群岛」",
+            "source": "Supreme情报网",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-23T16:08+08:00",
+            "published_date": "2026-10-23",
+            "source_tier": "tier_3",
+            "is_official": false
+          }
+        ],
+        "source_count": 1,
+        "direct_source_count": 0,
+        "credible_source_count": 0,
+        "official_evidence_count": 0,
+        "evidence_status": "lead",
+        "verification_gate_reason": "missing_direct_source",
+        "signal_id": "pld_3401d2f189a9ec",
+        "signal_type": "product_lead",
+        "lead_reason": "missing_direct_source",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "headline": "PUMA 与 Jil Sander 再次携手推出 AW26 系列",
+        "brand": "Puma",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "Hypebae",
+        "source_homepage": "https://hypebae.com",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOUpxMkJTcTdKTy1fMWk1Z2I5Y3VKY0dsNGZoSXlycXZkelRSRzg3dzFYX1lRM3BONVJscllQeGRXeDBWRE9TaE5ZM2FvN09NNml5bFJpVzF1QlFMM3ZERXZ3ZXM0VklkdUlMRHg1ODQ3NXNSUXJkVDZnV1dxYzY3MDdzODQ2R1l2N3IxTnVnS3hvMW1XZGs3OXhCVG05bngtTjRwTEs5WWptWEJZMnJqc1JRUWs1a0hU?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-23T00:19+08:00",
+        "published_date": "2026-10-23",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": false,
+        "core_exclusion_reason": "editorial_score_below_core_threshold",
+        "event_family": "product_launch",
+        "query_groups": [
+          "brand",
+          "weekly_source_pool",
+          "brand_product"
+        ],
+        "discovered_by": [
+          "\"Puma\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+          "\"Puma\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "product_name": "AW26",
+        "product_name_basis": "model_code_in_source",
+        "model_code": "",
+        "release_date": "",
+        "release_date_basis": "not_disclosed",
+        "price": {
+          "value": null,
+          "currency": "",
+          "display": "",
+          "basis": "not_disclosed"
+        },
+        "technologies": [],
+        "materials": [],
+        "official_url": "",
+        "evidence": {
+          "product": "PUMA 与 Jil Sander 再次携手推出 AW26 系列",
+          "technology": "",
+          "price_or_release": "PUMA 与 Jil Sander 再次携手推出 AW26 系列"
+        },
+        "status": "new",
+        "first_seen": "2026-10-19",
+        "last_seen": "2026-10-25",
+        "confidence_score": 33,
+        "product_id": "prd_b1708eb534739e",
+        "coverage": [
+          {
+            "headline": "PUMA 与 Jil Sander 再次携手推出 AW26 系列",
+            "source": "Hypebae",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-23T00:19+08:00",
+            "published_date": "2026-10-23",
+            "source_tier": "tier_3",
+            "is_official": false
+          }
+        ],
+        "source_count": 1,
+        "direct_source_count": 0,
+        "credible_source_count": 0,
+        "official_evidence_count": 0,
+        "evidence_status": "lead",
+        "verification_gate_reason": "missing_direct_source",
+        "signal_id": "pld_6124c4d87e574e",
+        "signal_type": "product_lead",
+        "lead_reason": "missing_direct_source",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "headline": "Masyn 携手 Zellerfeld 发布 3D 打印 Nike Air Max 穆勒鞋",
+        "brand": "Nike",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "HYPEBEAST",
+        "source_homepage": "https://hypebeast.cn",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVlV6N3UxdUNBVkpLdG9ZVnFyaEJ4SldnSEU3ZlFSMzRrR0RwOUNzRHF3Wm5KYmR1c3lpUEcyV19lajBhaHhIeHV1RTVCc3NDMFBVeW9FNE9rTVF2angyUDZTcUtOS2pfejRWMXpacC01ZzU0QUdmUEJwRjhKNDJVZ1kwOVYxUTJkY0JN?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-22T19:23+08:00",
+        "published_date": "2026-10-22",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "",
+        "query_groups": [
+          "brand_product"
+        ],
+        "discovered_by": [
+          "\"Nike\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "product_name": "Air Max",
+        "product_name_basis": "model_name_in_source",
+        "model_code": "",
+        "release_date": "",
+        "release_date_basis": "not_disclosed",
+        "price": {
+          "value": null,
+          "currency": "",
+          "display": "",
+          "basis": "not_disclosed"
+        },
+        "technologies": [],
+        "materials": [],
+        "official_url": "",
+        "evidence": {
+          "product": "Masyn 携手 Zellerfeld 发布 3D 打印 Nike Air Max 穆勒鞋",
+          "technology": "",
+          "price_or_release": "Masyn 携手 Zellerfeld 发布 3D 打印 Nike Air Max 穆勒鞋"
+        },
+        "status": "new",
+        "first_seen": "2026-10-19",
+        "last_seen": "2026-10-25",
+        "confidence_score": 33,
+        "product_id": "prd_d6c01a0498fb37",
+        "coverage": [
+          {
+            "headline": "Masyn 携手 Zellerfeld 发布 3D 打印 Nike Air Max 穆勒鞋",
+            "source": "HYPEBEAST",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-22T19:23+08:00",
+            "published_date": "2026-10-22",
+            "source_tier": "tier_3",
+            "is_official": false
+          }
+        ],
+        "source_count": 1,
+        "direct_source_count": 0,
+        "credible_source_count": 0,
+        "official_evidence_count": 0,
+        "evidence_status": "lead",
+        "verification_gate_reason": "missing_direct_source",
+        "signal_id": "pld_5987e05aad90f8",
+        "signal_type": "product_lead",
+        "lead_reason": "missing_direct_source",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "headline": "携手共创经典： 梅赛德斯-奔驰与 adidas 联袂推出限量版 adidas Samba OG x Mercedes-Benz",
+        "brand": "Adidas",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "时尚COSMO",
+        "source_homepage": "https://www.cosmopolitancn.com",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5rVW9iSTBoa1NyN2Y4eklxLTRzVDZCVVFrdG45cjE4S0xuV04zMVNLbUpMUG1DX2VueGlsQ0VwTHpSZEVqSkZvWEwzSGtVa0U4d3lSYkstY2QwaUpBaTVZeG1OYzVnSHA0?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-22T18:16+08:00",
+        "published_date": "2026-10-22",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": false,
+        "core_exclusion_reason": "editorial_score_below_core_threshold",
+        "event_family": "collaboration",
+        "query_groups": [
+          "brand",
+          "weekly_source_pool"
+        ],
+        "discovered_by": [
+          "\"Adidas\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+        ],
+        "product_name": "Samba",
+        "product_name_basis": "model_name_in_source",
+        "model_code": "",
+        "release_date": "",
+        "release_date_basis": "not_disclosed",
+        "price": {
+          "value": null,
+          "currency": "",
+          "display": "",
+          "basis": "not_disclosed"
+        },
+        "technologies": [],
+        "materials": [],
+        "official_url": "",
+        "evidence": {
+          "product": "携手共创经典： 梅赛德斯-奔驰与 adidas 联袂推出限量版 adidas Samba OG x Mercedes-Benz",
+          "technology": "",
+          "price_or_release": "携手共创经典： 梅赛德斯-奔驰与 adidas 联袂推出限量版 adidas Samba OG x Mercedes-Benz"
+        },
+        "status": "new",
+        "first_seen": "2026-10-19",
+        "last_seen": "2026-10-25",
+        "confidence_score": 33,
+        "product_id": "prd_909f9da21bf591",
+        "coverage": [
+          {
+            "headline": "携手共创经典： 梅赛德斯-奔驰与 adidas 联袂推出限量版 adidas Samba OG x Mercedes-Benz",
+            "source": "时尚COSMO",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-22T18:16+08:00",
+            "published_date": "2026-10-22",
+            "source_tier": "tier_3",
+            "is_official": false
+          }
+        ],
+        "source_count": 1,
+        "direct_source_count": 0,
+        "credible_source_count": 0,
+        "official_evidence_count": 0,
+        "evidence_status": "lead",
+        "verification_gate_reason": "missing_direct_source",
+        "signal_id": "pld_d060541afa4986",
+        "signal_type": "product_lead",
+        "lead_reason": "missing_direct_source",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "headline": "库里：选择李宁是看中创新能力&投入力度 希望改变篮球鞋设计方式",
+        "brand": "李宁",
+        "category": "篮球鞋",
+        "audience": "成人/通用",
+        "scenarios": [
+          "篮球"
+        ],
+        "source": "直播吧",
+        "source_homepage": "https://m.zhibo8.com",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBHTnJVLU5CakhpV29LM1dpRlNULVo4VjJaQy1YQjBRTmE1bjVXNzJqTERSeXJ0RlR2Y3ZSelRVVmtHdGhCTXZhemdoajdFbnhybmFHR3c0dXdUdzA5OU9oOUJBTUktRHpYWmRXWXdmX2YtS2FwYXpn?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-21T00:40+08:00",
+        "published_date": "2026-10-21",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "",
+        "query_groups": [
+          "brand_product"
+        ],
+        "discovered_by": [
+          "\"李宁\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "product_name": "希望改变篮球鞋",
+        "product_name_basis": "product_phrase_in_source",
+        "model_code": "",
+        "release_date": "",
+        "release_date_basis": "not_disclosed",
+        "price": {
+          "value": null,
+          "currency": "",
+          "display": "",
+          "basis": "not_disclosed"
+        },
+        "technologies": [],
+        "materials": [],
+        "official_url": "",
+        "evidence": {
+          "product": "库里：选择李宁是看中创新能力&投入力度 希望改变篮球鞋设计方式",
+          "technology": "",
+          "price_or_release": "库里：选择李宁是看中创新能力&投入力度 希望改变篮球鞋设计方式"
+        },
+        "status": "new",
+        "first_seen": "2026-10-19",
+        "last_seen": "2026-10-25",
+        "confidence_score": 33,
+        "product_id": "prd_4c59a00cabbfac",
+        "coverage": [
+          {
+            "headline": "库里：选择李宁是看中创新能力&投入力度 希望改变篮球鞋设计方式",
+            "source": "直播吧",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-21T00:40+08:00",
+            "published_date": "2026-10-21",
+            "source_tier": "tier_3",
+            "is_official": false
+          }
+        ],
+        "source_count": 1,
+        "direct_source_count": 0,
+        "credible_source_count": 0,
+        "official_evidence_count": 0,
+        "evidence_status": "lead",
+        "verification_gate_reason": "missing_direct_source",
+        "signal_id": "pld_b6eb681c1ad85e",
+        "signal_type": "product_lead",
+        "lead_reason": "missing_direct_source",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "headline": "Salomon XT-6 PROTECTIVE 與 XT-WHISPER GTX 迎來 BILLY'S 獨家配色",
+        "brand": "Salomon",
+        "category": "户外鞋",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "HYPEBEAST",
+        "source_homepage": "https://hypebeast.cn",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOOGlNQjQ0ZWZmVmt5eDc4OXVJWGF2a3g5YkZjQ2FCbHc2UTlER0VkLVZXVzVjdkh2dW9EeUJtM3N5cFNuTXFLcWgxZzEwdWRIaFV2YWpmb3dBQU9DM25WVWxoQXhtR1dSVkxEeGFNSzI4Y3ZiWW0xc2VBdjdqZzBIU0lFbFpXYzBYZ1VVdVB1MTAtMDVRVkc4MWVkV0tyVGY2X0JYTDQ1Y2dXbFIteTFnM08yZk1kVnZOV2J5Rkxyd3ZzTUl0b0hrMEs4SGhZQlYwUEwtakRoZV9pWW1VREE?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-20T23:50+08:00",
+        "published_date": "2026-10-20",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "",
+        "query_groups": [
+          "brand_product"
+        ],
+        "discovered_by": [
+          "\"Salomon\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "product_name": "XT-6",
+        "product_name_basis": "model_name_in_source",
+        "model_code": "",
+        "release_date": "",
+        "release_date_basis": "not_disclosed",
+        "price": {
+          "value": null,
+          "currency": "",
+          "display": "",
+          "basis": "not_disclosed"
+        },
+        "technologies": [],
+        "materials": [],
+        "official_url": "",
+        "evidence": {
+          "product": "Salomon XT-6 PROTECTIVE 與 XT-WHISPER GTX 迎來 BILLY'S 獨家配色",
+          "technology": "",
+          "price_or_release": "Salomon XT-6 PROTECTIVE 與 XT-WHISPER GTX 迎來 BILLY'S 獨家配色"
+        },
+        "status": "new",
+        "first_seen": "2026-10-19",
+        "last_seen": "2026-10-25",
+        "confidence_score": 33,
+        "product_id": "prd_16697b6e409bfa",
+        "coverage": [
+          {
+            "headline": "Salomon XT-6 PROTECTIVE 與 XT-WHISPER GTX 迎來 BILLY'S 獨家配色",
+            "source": "HYPEBEAST",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-20T23:50+08:00",
+            "published_date": "2026-10-20",
+            "source_tier": "tier_3",
+            "is_official": false
+          }
+        ],
+        "source_count": 1,
+        "direct_source_count": 0,
+        "credible_source_count": 0,
+        "official_evidence_count": 0,
+        "evidence_status": "lead",
+        "verification_gate_reason": "missing_direct_source",
+        "signal_id": "pld_e32d9fd5abfa5f",
+        "signal_type": "product_lead",
+        "lead_reason": "missing_direct_source",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "headline": "MM6 Maison Margiela 携手 Salomon 发布 2026 秋冬八款联名鞋履系列",
+        "brand": "Salomon",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "HYPEBEAST",
+        "source_homepage": "https://hypebeast.cn",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPSTI2eXhZc3NwU09oTkNHZTdWVTRRRVFuMUE1T2ZpNFB3dDVXdnVNRjBQVzBuM3lnU1VvNWplY09OLU5OeGFHank0c2ptT2Y5LURMMWhadE5iNUlKaHU1cmdsV2VvQkJFSGEyS0FOMnAtYUpiU1VzZTZMVXlZNVphYmxaUHR4eUVvU2ZTQ0lJQQ?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-20T04:20+08:00",
+        "published_date": "2026-10-20",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": false,
+        "core_exclusion_reason": "editorial_score_below_core_threshold",
+        "event_family": "collaboration",
+        "query_groups": [
+          "brand",
+          "weekly_source_pool",
+          "brand_product"
+        ],
+        "discovered_by": [
+          "\"Salomon\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+          "\"The North Face\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+          "\"Salomon\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)",
+          "\"The North Face\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "product_name": "MM6",
+        "product_name_basis": "model_code_in_source",
+        "model_code": "",
+        "release_date": "",
+        "release_date_basis": "not_disclosed",
+        "price": {
+          "value": null,
+          "currency": "",
+          "display": "",
+          "basis": "not_disclosed"
+        },
+        "technologies": [],
+        "materials": [],
+        "official_url": "",
+        "evidence": {
+          "product": "MM6 Maison Margiela 携手 Salomon 发布 2026 秋冬八款联名鞋履系列",
+          "technology": "",
+          "price_or_release": "MM6 Maison Margiela 携手 Salomon 发布 2026 秋冬八款联名鞋履系列"
+        },
+        "status": "new",
+        "first_seen": "2026-10-19",
+        "last_seen": "2026-10-25",
+        "confidence_score": 33,
+        "product_id": "prd_49a77005f9c192",
+        "coverage": [
+          {
+            "headline": "MM6 Maison Margiela 携手 Salomon 发布 2026 秋冬八款联名鞋履系列",
+            "source": "HYPEBEAST",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-20T04:20+08:00",
+            "published_date": "2026-10-20",
+            "source_tier": "tier_3",
+            "is_official": false
+          },
+          {
+            "headline": "8 个鞋款！MM6 Maison Margiela x Salomon 全新联名登场",
+            "source": "FLIGHTCLUB中文站",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-21T15:55+08:00",
+            "published_date": "2026-10-21",
+            "source_tier": "tier_3",
+            "is_official": false
+          },
+          {
+            "headline": "MM6 Maison Margiela 和 Salomon 为你的双脚推出“羽绒服”",
+            "source": "Hypebae",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-21T00:08+08:00",
+            "published_date": "2026-10-21",
+            "source_tier": "tier_3",
+            "is_official": false
+          },
+          {
+            "headline": "8 个鞋款！MM6 Maison Margiela x Salomon 全新联名登场",
+            "source": "搜狐网",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-21T11:45+08:00",
+            "published_date": "2026-10-21",
+            "source_tier": "tier_3",
+            "is_official": false
+          }
+        ],
+        "source_count": 4,
+        "direct_source_count": 0,
+        "credible_source_count": 0,
+        "official_evidence_count": 0,
+        "evidence_status": "lead",
+        "verification_gate_reason": "missing_direct_source",
+        "signal_id": "pld_e0316ad94ac650",
+        "signal_type": "product_lead",
+        "lead_reason": "missing_direct_source",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "headline": "Nike 推出 Kobe 3 Low Protro「Mamba Eterno」致敬墨西哥亡靈節",
+        "brand": "Nike",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "HYPEBEAST",
+        "source_homepage": "https://hypebeast.cn",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQQU45YUZhMWNybk9PZEphYUpXaDRhdWVfMEllMV9faWhfaWkzOE9YOFBwcERIZHIxVlJiMUxfRjJ3bW5yT2QtUVFMLUMyMl8wZ0Npb0RBQ1ZDMHh0NmxpUlNySzVkUXFQMlNzUEdPN0lPOHVEU0JKVm8wRUNvR1plWjhfdUdMdFNpSUNqQnF3dTZOUQ?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-19T19:38+08:00",
+        "published_date": "2026-10-19",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "",
+        "query_groups": [
+          "brand_product"
+        ],
+        "discovered_by": [
+          "\"Nike\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)",
+          "\"The North Face\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "product_name": "Kobe 3",
+        "product_name_basis": "model_name_in_source",
+        "model_code": "",
+        "release_date": "",
+        "release_date_basis": "not_disclosed",
+        "price": {
+          "value": null,
+          "currency": "",
+          "display": "",
+          "basis": "not_disclosed"
+        },
+        "technologies": [],
+        "materials": [],
+        "official_url": "",
+        "evidence": {
+          "product": "Nike 推出 Kobe 3 Low Protro「Mamba Eterno」致敬墨西哥亡靈節",
+          "technology": "",
+          "price_or_release": "Nike 推出 Kobe 3 Low Protro「Mamba Eterno」致敬墨西哥亡靈節"
+        },
+        "status": "new",
+        "first_seen": "2026-10-19",
+        "last_seen": "2026-10-25",
+        "confidence_score": 33,
+        "product_id": "prd_9cff465ccc80e9",
+        "coverage": [
+          {
+            "headline": "Nike 推出 Kobe 3 Low Protro「Mamba Eterno」致敬墨西哥亡靈節",
+            "source": "HYPEBEAST",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-19T19:38+08:00",
+            "published_date": "2026-10-19",
+            "source_tier": "tier_3",
+            "is_official": false
+          }
+        ],
+        "source_count": 1,
+        "direct_source_count": 0,
+        "credible_source_count": 0,
+        "official_evidence_count": 0,
+        "evidence_status": "lead",
+        "verification_gate_reason": "missing_direct_source",
+        "signal_id": "pld_5b6da71a97810d",
+        "signal_type": "product_lead",
+        "lead_reason": "missing_direct_source",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "headline": "Decathlon 推出全新 Van Rysel E-EDR AF 12 速电助力自行车",
+        "brand": "迪卡侬",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "Notebookcheck CN",
+        "source_homepage": "https://www.notebookcheck-cn.com",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQY2xuNi1NVTlucS1pTEI2UTREdlZYWHRMYjVkLWpiRHBJZkdxVk0tUnFjdU1RcjVKS3NnS0dSTF8tUW54d1VjNEZlamxRZzFZMTZqUUNSaUUza3oxdzJzY2czdHg3Zm5TSWNYQjNsQnZmbng5NXV1aGlFWi1jUHZVczVVZjlwUQ?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-19T11:29+08:00",
+        "published_date": "2026-10-19",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "",
+        "query_groups": [
+          "brand_product"
+        ],
+        "discovered_by": [
+          "\"迪卡侬\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "product_name": "AF 12",
+        "product_name_basis": "model_code_in_source",
+        "model_code": "",
+        "release_date": "",
+        "release_date_basis": "not_disclosed",
+        "price": {
+          "value": null,
+          "currency": "",
+          "display": "",
+          "basis": "not_disclosed"
+        },
+        "technologies": [],
+        "materials": [],
+        "official_url": "",
+        "evidence": {
+          "product": "Decathlon 推出全新 Van Rysel E-EDR AF 12 速电助力自行车",
+          "technology": "",
+          "price_or_release": "Decathlon 推出全新 Van Rysel E-EDR AF 12 速电助力自行车"
+        },
+        "status": "new",
+        "first_seen": "2026-10-19",
+        "last_seen": "2026-10-25",
+        "confidence_score": 33,
+        "product_id": "prd_3574d9182e6930",
+        "coverage": [
+          {
+            "headline": "Decathlon 推出全新 Van Rysel E-EDR AF 12 速电助力自行车",
+            "source": "Notebookcheck CN",
+            "url": "",
+            "direct_url": "",
+            "link_status": "google_news_fallback",
+            "published_at": "2026-10-19T11:29+08:00",
+            "published_date": "2026-10-19",
+            "source_tier": "tier_3",
+            "is_official": false
+          }
+        ],
+        "source_count": 1,
+        "direct_source_count": 0,
+        "credible_source_count": 0,
+        "official_evidence_count": 0,
+        "evidence_status": "lead",
+        "verification_gate_reason": "missing_direct_source",
+        "signal_id": "pld_78e854227438e5",
+        "signal_type": "product_lead",
+        "lead_reason": "missing_direct_source",
+        "note": "具名商品证据尚未达到官方单源或两家独立可信来源的核验门槛。"
+      },
+      {
+        "headline": "兼具防护性能与时尚风格，Nike Tech 运动服饰以创新设计焕新回归— NIKE, Inc.",
+        "brand": "Nike",
+        "category": "运动服饰",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "About Nike",
+        "source_homepage": "https://about.nike.com",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5TeHVIci1rb2dBX0ZMbExNZmg5R1FGUVZnSDZjYXBpUzhzLW1EUFpLY1lUWWhLSGVrQXRDSkI3UXZpMXBFZE5yLWVrMmVxdVJXQ2E2RlotdGEtUnh0MThEZHZzZnlqQ0tTd2c?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-23T22:00+08:00",
+        "published_date": "2026-10-23",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "official",
+        "source_tier": "official",
+        "is_official": true,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "",
+        "query_groups": [
+          "brand_product"
+        ],
+        "discovered_by": [
+          "\"Nike\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "signal_id": "psg_ce71b935e75483",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "运动服"
+        ],
+        "evidence": "兼具防护性能与时尚风格，Nike Tech 运动服饰以创新设计焕新回归— NIKE, Inc.",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+      },
+      {
+        "headline": "Nike 发布全新篮球风N7 系列，礼赞原住民文化与设计— NIKE, Inc.",
+        "brand": "Nike",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [
+          "篮球"
+        ],
+        "source": "About Nike",
+        "source_homepage": "https://about.nike.com",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVDlubGxpQXVlR0xLQWpkWkY4aXc1LVM5bGVPWUtHMmNrRE84SDZGWnZxbmZUSTJsYV9pdThwQmgzQTJxRE04RHVfRWxYaTl6ZEhvZjNSamt2cndYVVoxTmM3MTczSFVpNmJGZzkzRGFYdUVNVHF2U0NoNVlfeVEyYmRnLUt5WW1abUV6WUgwdTN4SWYyVTZNdEszdzl1WXdXVjl5eVJLdFFKSzdkRHFiRlBoY1hURVlCQTl0RVpfUXp5VjZLbVZaclFXWGZFUUxR?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-20T22:00+08:00",
+        "published_date": "2026-10-20",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "official",
+        "source_tier": "official",
+        "is_official": true,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "",
+        "query_groups": [
+          "brand_product",
+          "official_site"
+        ],
+        "discovered_by": [
+          "\"Nike\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)",
+          "site:about.nike.com 鞋 发布"
+        ],
+        "signal_id": "psg_d57e7c9d0089fb",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "发布",
+          "系列"
+        ],
+        "evidence": "Nike 发布全新篮球风N7 系列，礼赞原住民文化与设计— NIKE, Inc.",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+      },
+      {
+        "headline": "百联商业空间焕新时尚供给，助推年轻消费升级_国企动态",
+        "brand": "",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "上海市国有资产监督管理委员会",
+        "source_homepage": "https://www.gzw.sh.gov.cn",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQQVBiN3FReDEzU045NHlYTVhmTnhHcDlsaEFoT01EZHZ5TnpVZFZVejF5bm1FeHpFTTYwVDZ3a3dxX0tvaERMelgySkdxNHBFUy14cU5WS3VSa19ZNk5qY2otSU5xMmlrM2t0WUExa05BTXJwcEloUHQ3dFBPSlBZNmVITjZFVXFsdFVPNjQ2b0JrQQ?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-20T10:32+08:00",
+        "published_date": "2026-10-20",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "official",
+        "source_tier": "official",
+        "is_official": true,
+        "core_eligible": false,
+        "core_exclusion_reason": "editorial_score_below_core_threshold",
+        "event_family": "industry_event",
+        "query_groups": [
+          "channel",
+          "weekly_source_pool"
+        ],
+        "discovered_by": [
+          "奥莱 运动品牌"
+        ],
+        "signal_id": "psg_8b4fcdc04fc762",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "升级"
+        ],
+        "evidence": "百联商业空间焕新时尚供给，助推年轻消费升级_国企动态",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+      },
+      {
+        "headline": "NikeSKIMS 推出外套系列，新增醒目的大学红配色— NIKE, Inc.",
+        "brand": "Nike",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "About Nike",
+        "source_homepage": "https://about.nike.com",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS3Y3UkRaamxwNmNkSW80ci1wei1kNmJKWkRBZDNkTU5JcTMyajZQVHFIQXhwdnRkdm1waEk5enNOUGxxTWxDQ1ZlRzRvREw5aFN4S2FrM083YzY4WlVpZlEteWFtV0ozTkF5YUt4NC1qMVpxd2pjR0c1dU5oZ19YVkU3OHNYbzVKX1g4UUp6Y1pweTNjZ1dORmllaktEejUtdjB4MkJDcUtqQTdXX2VUUHNzRjU1eUZOVDVmSjRhalYyN0ZYbVRaUjl0c1lhZw?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-19T22:00+08:00",
+        "published_date": "2026-10-19",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "official",
+        "source_tier": "official",
+        "is_official": true,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "product_launch",
+        "query_groups": [
+          "product",
+          "brand",
+          "weekly_source_pool",
+          "brand_product",
+          "official_site"
+        ],
+        "discovered_by": [
+          "运动品牌 新品 发布",
+          "\"Nike\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+          "\"Nike\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)",
+          "site:about.nike.com 鞋 发布"
+        ],
+        "signal_id": "psg_9ce1824ffc2e68",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "推出",
+          "系列",
+          "配色"
+        ],
+        "evidence": "NikeSKIMS 推出外套系列，新增醒目的大学红配色— NIKE, Inc.",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+      },
+      {
+        "headline": "运动品牌密集推出裙裤叠穿产品，版型创新承接时尚趋势",
+        "brand": "",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "虎嗅网",
+        "source_homepage": "https://www.huxiu.com",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFAxeHNidlNqVTU3eVdodmNUM1c5UGlxNGpFZzdyTnhnb0FpRVBQdzhRNXZveTI3MS12MExJTnRwRjVVSHBrRVdqSVlSOU1KVWwzMlYwZQ?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-25T23:55+08:00",
+        "published_date": "2026-10-25",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": false,
+        "core_exclusion_reason": "editorial_score_below_core_threshold",
+        "event_family": "product_launch",
+        "query_groups": [
+          "brand_business",
+          "research",
+          "brand",
+          "weekly_source_pool"
+        ],
+        "discovered_by": [
+          "运动品牌 中国市场",
+          "运动品牌 门店 旗舰店",
+          "运动鞋服 行业报告",
+          "\"HOKA\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)",
+          "\"lululemon\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+        ],
+        "signal_id": "psg_d9d4ec6506f447",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "推出"
+        ],
+        "evidence": "运动品牌密集推出裙裤叠穿产品，版型创新承接时尚趋势",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+      },
+      {
+        "headline": "lululemon新款平底鞋因神似“老奶奶布鞋”被吐槽，网友：白云女士应该很喜欢",
+        "brand": "lululemon",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "华人头条",
+        "source_homepage": "https://www.52hrtt.com",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeHhpbEVUZF9aN1BybnVkdl8wNUlzQWVvNUxzdjhXT3kySkZqSnFtcG0zTEJZek5rTWduSWZONWZWcUdMWExnOWN3LWd1NmpXeFg2LTlEVjFPV2lvNEpwUlZKajBYalZJZG4xQTRCRF9iVndUNUs1d3BhRURIWWxiWmVUNDNqdEJI?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-25T22:19+08:00",
+        "published_date": "2026-10-25",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "",
+        "query_groups": [
+          "brand_product"
+        ],
+        "discovered_by": [
+          "\"lululemon\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "signal_id": "psg_2a8e754b9e1955",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "新款"
+        ],
+        "evidence": "lululemon新款平底鞋因神似“老奶奶布鞋”被吐槽，网友：白云女士应该很喜欢",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+      },
+      {
+        "headline": "利物浦vs布莱顿首发：伊萨克、维尔茨、巴尔科拉出战",
+        "brand": "",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "https://www.ppsports.com/",
+        "source_homepage": "https://www.ppsports.com",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9CNjVCZ0V1OFl3elV3b3o4cFRtMGxiMlFHeUgxdDJLaVR3bVp4OVBRYlFPMEtLUFBoUjZmNmczbUxnbUVBSGtaVjdQT29abzJXUU5fanNBMTlfRGQxM1I4?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-25T21:27+08:00",
+        "published_date": "2026-10-25",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": false,
+        "core_exclusion_reason": "editorial_score_below_core_threshold",
+        "event_family": "product_launch",
+        "query_groups": [
+          "channel",
+          "weekly_source_pool"
+        ],
+        "discovered_by": [
+          "奥莱 运动品牌"
+        ],
+        "signal_id": "psg_661a140beb2b93",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "首发"
+        ],
+        "evidence": "利物浦vs布莱顿首发：伊萨克、维尔茨、巴尔科拉出战",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+      },
+      {
+        "headline": "初代 CLIMACOOL 1 迎来联名新合作！国区即将发售！",
+        "brand": "",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "FLIGHTCLUB中文站",
+        "source_homepage": "https://www.flightclub.cn",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE85a0dpcTNrYW55YzVFUnp1V09xZjlxbEx5cmpKYlluYzRuQjlyakVZSDAtRjVzcGZ2bTJnem9HSDZZeWItQ2g5UjhoaVI?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-25T16:05+08:00",
+        "published_date": "2026-10-25",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": false,
+        "core_exclusion_reason": "editorial_score_below_core_threshold",
+        "event_family": "collaboration",
+        "query_groups": [
+          "brand",
+          "weekly_source_pool"
+        ],
+        "discovered_by": [
+          "\"Adidas\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+        ],
+        "product_name": "CLIMACOOL 1",
+        "product_name_basis": "model_code_in_source",
+        "model_code": "",
+        "release_date": "",
+        "release_date_basis": "not_disclosed",
+        "price": {
+          "value": null,
+          "currency": "",
+          "display": "",
+          "basis": "not_disclosed"
+        },
+        "technologies": [],
+        "materials": [],
+        "official_url": "",
+        "evidence": {
+          "product": "初代 CLIMACOOL 1 迎来联名新合作！国区即将发售！",
+          "technology": "",
+          "price_or_release": "初代 CLIMACOOL 1 迎来联名新合作！国区即将发售！"
+        },
+        "status": "new",
+        "first_seen": "2026-10-19",
+        "last_seen": "2026-10-25",
+        "confidence_score": 33,
+        "product_id": "prd_7e49459e4e253e",
+        "signal_id": "psg_cd4f6f551f43ca",
+        "signal_type": "generic_product_signal",
+        "note": "品牌或具体商品名不足，已降级为普通商品媒体信号。"
+      },
+      {
+        "headline": "赛事「禁穿」鞋款！PUMA 全新「性能怪兽」正式登场！",
+        "brand": "Puma",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "FLIGHTCLUB中文站",
+        "source_homepage": "https://www.flightclub.cn",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE42dzlwWF9pQmt2MjEyT2xQSXo2V3F5ZDJwWFBIUGpmUDVhNHZuUVVyakdGanFOZEJISVlmNWZBQ0t1cFhMa3V6RTdaR2U?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-25T16:05+08:00",
+        "published_date": "2026-10-25",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": false,
+        "core_exclusion_reason": "editorial_score_below_core_threshold",
+        "event_family": "industry_event",
+        "query_groups": [
+          "product",
+          "weekly_source_pool",
+          "brand_product"
+        ],
+        "discovered_by": [
+          "跑鞋 科技 新品",
+          "\"Puma\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "signal_id": "psg_b583df3ec68da1",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "登场"
+        ],
+        "evidence": "赛事「禁穿」鞋款！PUMA 全新「性能怪兽」正式登场！",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+      },
+      {
+        "headline": "AI赋能幼儿科学运动，数据守护健康成长——波菲教育“菲行动”儿童健康成长管理平台发布会在杭州举行",
+        "brand": "",
+        "category": "商品趋势",
+        "audience": "儿童/青少年",
+        "scenarios": [
+          "校园运动"
+        ],
+        "source": "搜狐网",
+        "source_homepage": "https://m.sohu.com",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSWJydENzUklZeld5bWw3bXdmQXhncExHdTRTVGF2TmhIcEVTakwxYjlheXNVeVFJNUx6WUthWE9pbmV1OXR2UnZZSTFpYTd1eFc5X21ITmJmeGNpajRCdnZ5aFg3WGU2T19EV3VUWUpGeW5pUnRCQUhxRjRZSE45RkY4a2lfaXUzUnhkUg?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-25T14:41+08:00",
+        "published_date": "2026-10-25",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "low",
+        "is_official": false,
+        "core_eligible": false,
+        "core_exclusion_reason": "low_quality_source",
+        "event_family": "industry_event",
+        "query_groups": [
+          "kids",
+          "weekly_source_pool"
+        ],
+        "discovered_by": [
+          "儿童运动 行业"
+        ],
+        "signal_id": "psg_68d40a306a2b46",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "发布"
+        ],
+        "evidence": "AI赋能幼儿科学运动，数据守护健康成长——波菲教育“菲行动”儿童健康成长管理平台发布会在杭州举行",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+      },
+      {
+        "headline": "Kith × Salomon 冬季联名，XT-4 这次长高了",
+        "brand": "Salomon",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "搜狐网",
+        "source_homepage": "https://m.sohu.com",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOckM1c0ZLUkdXZnA2Z3BNZ01OaXlucVlESjJLcXZYekNmN1Z1UkNlMDBCaE1LWWlsMkZoTjB1QUtFd3VVOFFlQ0t2R2NUcGlsdlhtLWEwTC0yNXJhZF9CaV9pYzRMZUtDSzIyVUwwc1hPN19GT1dJUERvNFVTWk5EZzd1R2wwWjVPZmRKRQ?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-25T11:45+08:00",
+        "published_date": "2026-10-25",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "low",
+        "is_official": false,
+        "core_eligible": false,
+        "core_exclusion_reason": "low_quality_source",
+        "event_family": "collaboration",
+        "query_groups": [
+          "brand",
+          "weekly_source_pool"
+        ],
+        "discovered_by": [
+          "\"Salomon\" (战略 OR 财报 OR 新品 OR 门店 OR 渠道 OR 中国市场 OR 签约 OR 联名)"
+        ],
+        "signal_id": "psg_635aa78f0a081b",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "联名"
+        ],
+        "evidence": "Kith × Salomon 冬季联名，XT-4 这次长高了",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+      },
+      {
+        "headline": "史低价：lululemon 迷你饭盒包🔥爆款回归 6.5L大容量 珍珠粉色上新 统统只要$38！",
+        "brand": "lululemon",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "北美省钱快报",
+        "source_homepage": "https://www.dealmoon.ca",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNREZrRU4xS3RVamtpdU5CeUJTVnBUWHI0WEZXZlpzRzVqUkV1MEhnbW4xRExLem1EZkFzbFY4eGpkdlZxMFFsSGc4TXNKM2NtRzJyYlpkc0x4SmZ1dHNqSEJKR0liZzQtUE9SZC1VSFU4eFB2aFd6Q1hVQWhiZjc3QnFyRkdESTJFcjJwelJnTTlNNDZFVXBKOTdtZjR6cE9qV3RHNGw1aXBFOFdOMmhJZmp3WEpBY0pmNnAtRkVJOUVLT0xEenJrUENVUHNHVnEyelRpWS00bExmWTZUX1JfaWNmcTYwbm1W?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-25T02:35+08:00",
+        "published_date": "2026-10-25",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "low",
+        "is_official": false,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "",
+        "query_groups": [
+          "brand_product"
+        ],
+        "discovered_by": [
+          "\"lululemon\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "signal_id": "psg_c2a4e554959ebc",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "上新"
+        ],
+        "evidence": "史低价：lululemon 迷你饭盒包🔥爆款回归 6.5L大容量 珍珠粉色上新 统统只要$38！",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+      },
+      {
+        "headline": "买羽绒服京东和天猫哪个便宜？2026双十一终极省钱攻略",
+        "brand": "",
+        "category": "户外服饰",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "手机新浪网",
+        "source_homepage": "https://k.sina.com.cn",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOX2o0Sk9lZDZ4UXFCRjh4S0RkVXRxZEZYMXRFQkZEQ0NDNjJBQkpKMnZzSFI4d2NoTmpTSmgyOWNtQ2VJY29oRHJEVEpOb1Nhc1I2dVNZeVFkWFE2SDJQcVRJeDNiczdpRnFDd05nV0pqcTNaVGpydUVWcjNha2xJRUN2cjYxTmhHNDRsWFJmMmVGUQ?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-24T23:07+08:00",
+        "published_date": "2026-10-24",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": false,
+        "core_exclusion_reason": "editorial_score_below_core_threshold",
+        "event_family": "platform_channel",
+        "query_groups": [
+          "channel",
+          "weekly_source_pool"
+        ],
+        "discovered_by": [
+          "京东 运动服饰"
+        ],
+        "signal_id": "psg_3e1a26d0ee2971",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "羽绒服"
+        ],
+        "evidence": "买羽绒服京东和天猫哪个便宜？2026双十一终极省钱攻略",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+      },
+      {
+        "headline": "开门红强势爆发！抖音商城双11热卖品牌榜发布",
+        "brand": "",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "品玩",
+        "source_homepage": "https://www.pingwest.com",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1qM202aHBTaG5TaDhKNV9xN0MzYVc2ZEdRWmNlcTdMOTV0YWZ5T2N1bkZadHBJdjFmNnU1aUU2cWFCVE9DYmxnSw?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-24T20:44+08:00",
+        "published_date": "2026-10-24",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "",
+        "query_groups": [
+          "brand_product"
+        ],
+        "discovered_by": [
+          "\"巴拉巴拉\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "signal_id": "psg_3d37d5fc8afeac",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "发布"
+        ],
+        "evidence": "开门红强势爆发！抖音商城双11热卖品牌榜发布",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+      },
+      {
+        "headline": "【早报】美联储“放鸽”，美股走强；国际金价，大幅上涨；创业板芯片指数，今日发布；Lululemon，盘后暴跌",
+        "brand": "lululemon",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [],
+        "source": "财联社",
+        "source_homepage": "https://www.cls.cn",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBoT0hiU01IY1k2Umw0RzJGQXl6a2c4cU9KejM5X2xuN0tOSnd6TUMzMEFQTUdwa0lXY0VlZW56MGwyQ0VlYUcwQQ?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-24T20:42+08:00",
+        "published_date": "2026-10-24",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "trusted_media",
+        "source_tier": "tier_2",
+        "is_official": false,
+        "core_eligible": true,
+        "core_exclusion_reason": "",
+        "event_family": "",
+        "query_groups": [
+          "brand_product"
+        ],
+        "discovered_by": [
+          "\"lululemon\" (新品 OR 新款 OR 发布 OR 首发 OR 上新 OR 跑鞋 OR 篮球鞋 OR 童鞋 OR 户外鞋)"
+        ],
+        "signal_id": "psg_60859ff6ba30b9",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "发布"
+        ],
+        "evidence": "【早报】美联储“放鸽”，美股走强；国际金价，大幅上涨；创业板芯片指数，今日发布；Lululemon，盘后暴跌",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+      },
+      {
+        "headline": "徒步暴汗后别再只灌水了，户外运动饮料新品王者英雄用天然能量+电解质把状态续上",
+        "brand": "",
+        "category": "商品趋势",
+        "audience": "成人/通用",
+        "scenarios": [
+          "户外徒步"
+        ],
+        "source": "新浪网",
+        "source_homepage": "https://k.sina.com.cn",
+        "article_url": "",
+        "direct_url": "",
+        "google_news_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNYW0zSFU3a1RTQkNJYWhIaTBYWnloNXhVbVpPNTJ4N2pTWlJqQVJNdVo4a2FzSTNLT1FWV1hFbXVpVmU0SHd1aDZDdzY0S2ZuellId0xtOGpuNldSOTlhUWtvQVZodVlYU2NIamcxQ3NsTWRtRUJub1BBVmswUWFtRkR3?oc=5",
+        "link_status": "google_news_fallback",
+        "published_at": "2026-10-24T15:04+08:00",
+        "published_date": "2026-10-24",
+        "image_url": "",
+        "image_source": "",
+        "image_source_url": "",
+        "verification": "media",
+        "source_tier": "tier_3",
+        "is_official": false,
+        "core_eligible": false,
+        "core_exclusion_reason": "editorial_score_below_core_threshold",
+        "event_family": "product_launch",
+        "query_groups": [
+          "channel",
+          "weekly_source_pool"
+        ],
+        "discovered_by": [
+          "天猫 运动户外 平台"
+        ],
+        "signal_id": "psg_d7806dedf0626e",
+        "signal_type": "product_media_signal",
+        "keywords": [
+          "新品"
+        ],
+        "evidence": "徒步暴汗后别再只灌水了，户外运动饮料新品王者英雄用天然能量+电解质把状态续上",
+        "note": "未识别到可核验的具体产品名，只作为媒体信号，不进入真实产品清单。"
+      }
+    ]
+  },
+  "input_files": {
+    "weekly_sources": "output/weekly/weekly_sources.json",
+    "weekly_products": "output/weekly/weekly_products.json"
+  }
+}
