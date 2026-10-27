@@ -1,19 +1,19 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-10-26T13:09+08:00",
+  "generated_at": "2026-10-27T10:38+08:00",
   "report_window": {
     "start_date": "2026-10-19",
     "end_date": "2026-10-25",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "运动品牌资本与研发动作密集，儿童赛道户外化信号初现，消费大盘平稳。",
-    "week_in_one_paragraph": "本周安踏、李宁被传洽购Castore，安踏加码研发合作；361度三季度流水稳健；双11天猫首发新品商家增长；户外产业规模超3.1万亿，童鞋品牌切入户外。",
+    "weekly_thesis": "运动品牌资本与研发动作密集，儿童运动赛道需关注户外化与专业化的交叉机会。",
+    "week_in_one_paragraph": "本周安踏、李宁被传洽购Castore，安踏同时宣布与清华加大研发投入；361°三季度流水保持增长。平台侧双11天猫首发新品商家数增长，户外产业规模超3.1万亿元，儿童户外鞋服成为值得跟踪的细分方向。",
     "next_week_focus": [
-      "跟踪Castore洽购传闻的后续回应与进展",
-      "关注双11预售期儿童运动品类表现",
-      "留意儿童户外鞋服新品发布动态",
-      "观察运动品牌三季度流水披露节奏"
+      "跟踪安踏、李宁收购Castore传闻的官方进展。",
+      "关注双11儿童运动品牌新品首发与折扣策略。",
+      "观察361°三季度流水增长后的渠道和产品动作。",
+      "留意户外运动产业政策与儿童户外品类关联信号。"
     ]
   },
   "key_developments": [
@@ -66,7 +66,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏、李宁同时被传洽购Castore，反映头部国牌通过并购补强高端运动服饰的意图。"
+      "editorial_reason": "安踏、李宁同时被传问询收购Castore，反映头部国产品牌寻求高端户外资产补位。"
     },
     {
       "event_id": "evt_3b6de197b2b4a9",
@@ -106,7 +106,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏与清华合作升级并计划五年再投200亿元研发，显示头部品牌持续加码运动科技。"
+      "editorial_reason": "安踏与清华合作升级并计划加大研发投入，显示头部品牌以研发合作强化产品力。"
     },
     {
       "event_id": "evt_d5feecc5d81dd8",
@@ -156,7 +156,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "361度三季度各渠道流水保持稳健增长，作为直接竞品提供近期经营参照。"
+      "editorial_reason": "361°三季度各渠道流水保持增长，作为直接竞品需关注其渠道与海外业务节奏。"
     },
     {
       "event_id": "evt_6ddee63a4aa09e",
@@ -194,7 +194,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "双11天猫首发新品商家数同比增长64%，反映平台新品首发竞争加剧。"
+      "editorial_reason": "双11天猫首发新品商家数增长，平台新品首发竞争加剧，影响儿童品牌上新节奏。"
     },
     {
       "event_id": "evt_bcb4740b444f0f",
@@ -232,51 +232,53 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "全国户外运动产业总规模超3.1万亿元，为儿童户外产品线提供宏观需求背景。"
+      "editorial_reason": "全国户外运动产业规模超3.1万亿元，为儿童户外产品延伸提供宏观需求背景。"
     },
     {
-      "event_id": "evt_d09a3fe6427900",
-      "title": "2026年1—9月份社会消费品零售总额增长1.1%",
+      "event_id": "evt_37687e15d4f7ba",
+      "title": "从代言人签约，看FILA如何锁定“大而美”品牌生态位？",
       "category": "行业动态",
-      "event_family": "macro_data",
+      "event_family": "endorsement_partnership",
       "reporting_period": "",
-      "brands": [],
-      "source": "国家统计局",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
-      "published_at": "2026-10-19T10:00+08:00",
-      "published_date": "2026-10-19",
-      "status": "follow_up",
-      "verification": "official_source",
-      "is_official": true,
+      "brands": [
+        "FILA"
+      ],
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1MbDZHZk1tb1JZcEhPV1lUQldEc296ZTZDbWprd0V1U0hXeWJSR2NtalY3RS0weV9ldUNXQV81MGk?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1MbDZHZk1tb1JZcEhPV1lUQldEc296ZTZDbWprd0V1U0hXeWJSR2NtalY3RS0weV9ldUNXQV81MGk?oc=5",
+      "published_at": "2026-10-23T21:34+08:00",
+      "published_date": "2026-10-23",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 52,
-      "selection_score": 71,
+      "editorial_score": 47,
+      "selection_score": 54,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_d09a3fe6427900"
+        "evt_37687e15d4f7ba"
       ],
       "evidence": [
         {
-          "item_id": "src_112f27730db091",
-          "title": "2026年1—9月份社会消费品零售总额增长1.1%",
-          "source": "国家统计局",
-          "source_tier": "official",
-          "is_official": true,
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
-          "published_at": "2026-10-19T10:00+08:00",
+          "item_id": "src_6d71f7289435f0",
+          "title": "从代言人签约，看FILA如何锁定“大而美”品牌生态位？",
+          "source": "华丽志",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1MbDZHZk1tb1JZcEhPV1lUQldEc296ZTZDbWprd0V1U0hXeWJSR2NtalY3RS0weV9ldUNXQV81MGk?oc=5",
+          "published_at": "2026-10-23T21:34+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "1—9月社零总额同比增长1.1%，提供消费大盘温和复苏的基准参照。"
+      "editorial_reason": "FILA代言人签约策略反映运动时尚品牌生态位竞争，对儿童运动时尚定位有参照意义。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "头部国牌资本与研发双线并进",
-      "analysis": "安踏、李宁被传洽购英国高端运动服品牌Castore，同时安踏与清华合作升级并计划五年再投200亿元研发。两件事共同指向头部国牌正通过外延并购与内生研发补强高端运动服饰能力，行业竞争从规模扩张转向品牌资产与技术壁垒的争夺。",
+      "headline": "头部国产品牌的资本与研发双线布局",
+      "analysis": "安踏、李宁被传主动问询收购英国高端运动服品牌Castore，同时安踏宣布与清华大学战略合作升级并计划未来五年再投200亿元研发。两件事共同指向头部国产品牌正通过外部并购与内部研发两条路径补强高端和专业运动能力。对儿童事业部而言，这意味着成人运动品牌的技术与品牌资产可能加速向童装线溢出，需关注专业运动童装的产品力竞争升级。",
       "event_ids": [
         "evt_6e3b31394ffd0d",
         "evt_3b6de197b2b4a9"
@@ -299,42 +301,50 @@
       ]
     },
     {
-      "headline": "消费大盘与平台新品节奏",
-      "analysis": "1—9月社零总额同比增长1.1%，消费大盘保持温和增长；双11天猫首发新品商家数同比增长64%，平台端新品首发竞争明显升温。对儿童运动品牌而言，大促期间的新品供给密度和首发资源争夺将直接影响曝光效率。",
+      "headline": "平台新品首发与户外消费扩容",
+      "analysis": "双11期间品牌集体重仓天猫，首发新品商家数同比增长64%，平台正成为新品首发和品牌曝光的关键节点。同期全国户外运动相关产业总规模超3.1万亿元，户外消费基础持续扩大。两者叠加意味着儿童运动品牌在双11等大促节点的新品首发效率，以及户外场景产品线的布局节奏，将直接影响渠道曝光与消费触达。",
       "event_ids": [
-        "evt_d09a3fe6427900",
-        "evt_6ddee63a4aa09e"
+        "evt_6ddee63a4aa09e",
+        "evt_bcb4740b444f0f"
       ],
       "evidence": [
-        {
-          "event_id": "evt_d09a3fe6427900",
-          "title": "2026年1—9月份社会消费品零售总额增长1.1%",
-          "source": "国家统计局",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
-          "published_date": "2026-10-19"
-        },
         {
           "event_id": "evt_6ddee63a4aa09e",
           "title": "双11品牌集体重仓天猫 首发新品商家数同比强劲增长64%",
           "source": "亿邦动力",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBHREtjc19VdnJCYnpscnVUcGtLQXJkeTRXaDRsQ2VUdndJdTY2RWU3bTZIWnBDMHhUWlhhZlNwM21KS1dQRGliT2tUQWNfblFvcVNYOXdn?oc=5",
           "published_date": "2026-10-19"
-        }
-      ]
-    },
-    {
-      "headline": "户外热潮向儿童场景延伸",
-      "analysis": "全国户外运动相关产业总规模超3.1万亿元，户外消费基础持续扩大。结合本周童鞋品牌切入户外的报道，儿童户外鞋服可能成为下一个细分增长点，值得关注产品线布局与场景化设计。",
-      "event_ids": [
-        "evt_bcb4740b444f0f"
-      ],
-      "evidence": [
+        },
         {
           "event_id": "evt_bcb4740b444f0f",
           "title": "全国户外运动相关产业总规模超3.1万亿元",
           "source": "人民网",
           "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
           "published_date": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "headline": "竞品流水表现与品牌生态位争夺",
+      "analysis": "361°三季度各渠道流水保持稳健增长，海外业务被提及高速放量；FILA则通过代言人签约强化其运动时尚品牌生态位。两者分别代表专业运动大众市场与运动时尚高端市场的竞争态势。对儿童事业部而言，需关注竞品在成人端的渠道增长和品牌定位如何传导至儿童产品线，尤其是在运动时尚与专业运动之间的定位选择。",
+      "event_ids": [
+        "evt_d5feecc5d81dd8",
+        "evt_37687e15d4f7ba"
+      ],
+      "evidence": [
+        {
+          "event_id": "evt_d5feecc5d81dd8",
+          "title": "361度早盘涨逾3% 公司三季度各渠道流水仍保持稳健增长势头",
+          "source": "新浪财经",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZ3ppY3RQY0xFeFRUQkduT2dkUXJBenhKcmE5aDloRmRvWC0zckhMUjV2ZF90N0Z2WWlkVHRKc0hQSzJXcHFXekJwM2VWVzd5alpKTUZQZmRrUGZ6SFRpZ2RJMkZRUXBwYXllLXhwTzNmLTJJdXVKSlZNblBJSHdlT1JFSjN1Zlp3bjZXRVFDbDNyV2loY3c?oc=5",
+          "published_date": "2026-10-23"
+        },
+        {
+          "event_id": "evt_37687e15d4f7ba",
+          "title": "从代言人签约，看FILA如何锁定“大而美”品牌生态位？",
+          "source": "华丽志",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1MbDZHZk1tb1JZcEhPV1lUQldEc296ZTZDbWprd0V1U0hXeWJSR2NtalY3RS0weV9ldUNXQV81MGk?oc=5",
+          "published_date": "2026-10-23"
         }
       ]
     }
@@ -423,29 +433,29 @@
   ],
   "watchlist": [
     {
-      "title": "儿童户外鞋服动向",
+      "title": "儿童户外鞋服赛道动向",
       "event_ids": [
         "evt_bcb4740b444f0f"
       ],
       "product_ids": [],
-      "reason": "关注后续官方信息、渠道落地或产品资料补充。"
+      "reason": "观察户外产业规模扩大后，儿童户外鞋服是否出现新的品牌动作或产品发布。"
     },
     {
-      "title": "双11新品首发竞争",
+      "title": "双11儿童运动品牌上新与平台策略",
       "event_ids": [
         "evt_6ddee63a4aa09e"
       ],
       "product_ids": [],
-      "reason": "跟踪天猫双11期间儿童运动品牌的新品首发数量与资源位变化。"
+      "reason": "跟踪双11期间儿童运动品牌在天猫等平台的首发节奏和促销策略变化。"
     },
     {
-      "title": "头部国牌并购与研发落地",
+      "title": "安踏李宁收购Castore后续",
       "event_ids": [
         "evt_6e3b31394ffd0d",
-        "evt_3b6de197b2b4a9"
+        "evt_45d3d4c16c609d"
       ],
       "product_ids": [],
-      "reason": "关注Castore洽购进展及安踏研发投入的具体方向，判断行业技术竞争节奏。"
+      "reason": "关注收购传闻是否落地，以及是否影响儿童运动品牌的高端户外布局。"
     }
   ],
   "tracking": {
@@ -499,7 +509,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏、李宁同时被传洽购Castore，反映头部国牌通过并购补强高端运动服饰的意图。"
+        "editorial_reason": "安踏、李宁同时被传问询收购Castore，反映头部国产品牌寻求高端户外资产补位。"
       },
       {
         "event_id": "evt_3b6de197b2b4a9",
@@ -539,7 +549,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏与清华合作升级并计划五年再投200亿元研发，显示头部品牌持续加码运动科技。"
+        "editorial_reason": "安踏与清华合作升级并计划加大研发投入，显示头部品牌以研发合作强化产品力。"
       },
       {
         "event_id": "evt_d5feecc5d81dd8",
@@ -589,7 +599,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "361度三季度各渠道流水保持稳健增长，作为直接竞品提供近期经营参照。"
+        "editorial_reason": "361°三季度各渠道流水保持增长，作为直接竞品需关注其渠道与海外业务节奏。"
       },
       {
         "event_id": "evt_6ddee63a4aa09e",
@@ -627,7 +637,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "双11天猫首发新品商家数同比增长64%，反映平台新品首发竞争加剧。"
+        "editorial_reason": "双11天猫首发新品商家数增长，平台新品首发竞争加剧，影响儿童品牌上新节奏。"
       },
       {
         "event_id": "evt_bcb4740b444f0f",
@@ -665,49 +675,50 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "全国户外运动产业总规模超3.1万亿元，为儿童户外产品线提供宏观需求背景。"
-      }
-    ],
-    "follow_up_selected": [
+        "editorial_reason": "全国户外运动产业规模超3.1万亿元，为儿童户外产品延伸提供宏观需求背景。"
+      },
       {
-        "event_id": "evt_d09a3fe6427900",
-        "title": "2026年1—9月份社会消费品零售总额增长1.1%",
+        "event_id": "evt_37687e15d4f7ba",
+        "title": "从代言人签约，看FILA如何锁定“大而美”品牌生态位？",
         "category": "行业动态",
-        "event_family": "macro_data",
+        "event_family": "endorsement_partnership",
         "reporting_period": "",
-        "brands": [],
-        "source": "国家统计局",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
-        "published_at": "2026-10-19T10:00+08:00",
-        "published_date": "2026-10-19",
-        "status": "follow_up",
-        "verification": "official_source",
-        "is_official": true,
+        "brands": [
+          "FILA"
+        ],
+        "source": "华丽志",
+        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1MbDZHZk1tb1JZcEhPV1lUQldEc296ZTZDbWprd0V1U0hXeWJSR2NtalY3RS0weV9ldUNXQV81MGk?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1MbDZHZk1tb1JZcEhPV1lUQldEc296ZTZDbWprd0V1U0hXeWJSR2NtalY3RS0weV9ldUNXQV81MGk?oc=5",
+        "published_at": "2026-10-23T21:34+08:00",
+        "published_date": "2026-10-23",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 52,
-        "selection_score": 71,
+        "editorial_score": 47,
+        "selection_score": 54,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_d09a3fe6427900"
+          "evt_37687e15d4f7ba"
         ],
         "evidence": [
           {
-            "item_id": "src_112f27730db091",
-            "title": "2026年1—9月份社会消费品零售总额增长1.1%",
-            "source": "国家统计局",
-            "source_tier": "official",
-            "is_official": true,
-            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
-            "published_at": "2026-10-19T10:00+08:00",
+            "item_id": "src_6d71f7289435f0",
+            "title": "从代言人签约，看FILA如何锁定“大而美”品牌生态位？",
+            "source": "华丽志",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1MbDZHZk1tb1JZcEhPV1lUQldEc296ZTZDbWprd0V1U0hXeWJSR2NtalY3RS0weV9ldUNXQV81MGk?oc=5",
+            "published_at": "2026-10-23T21:34+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "1—9月社零总额同比增长1.1%，提供消费大盘温和复苏的基准参照。"
+        "editorial_reason": "FILA代言人签约策略反映运动时尚品牌生态位竞争，对儿童运动时尚定位有参照意义。"
       }
     ],
+    "follow_up_selected": [],
     "verification_queue": [],
     "product_leads_pending_verification": [
       {
@@ -910,11 +921,11 @@
     },
     {
       "type": "event",
-      "id": "evt_d09a3fe6427900",
-      "title": "2026年1—9月份社会消费品零售总额增长1.1%",
-      "source": "国家统计局",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
-      "published_date": "2026-10-19"
+      "id": "evt_37687e15d4f7ba",
+      "title": "从代言人签约，看FILA如何锁定“大而美”品牌生态位？",
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1MbDZHZk1tb1JZcEhPV1lUQldEc296ZTZDbWprd0V1U0hXeWJSR2NtalY3RS0weV9ldUNXQV81MGk?oc=5",
+      "published_date": "2026-10-23"
     },
     {
       "type": "event",
@@ -963,8 +974,7 @@
       "户外与场景": 1
     },
     "selected_status": {
-      "new": 5,
-      "follow_up": 1
+      "new": 6
     },
     "quality_notes": [
       "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
