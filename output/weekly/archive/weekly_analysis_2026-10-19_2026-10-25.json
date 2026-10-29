@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-10-28T10:48+08:00",
+  "generated_at": "2026-10-29T11:09+08:00",
   "report_window": {
     "start_date": "2026-10-19",
     "end_date": "2026-10-25",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "运动品牌资本动作与研发投入升温，消费大盘温和增长，儿童运动赛道需关注户外化与专业化趋势。",
-    "week_in_one_paragraph": "本周安踏、李宁被传洽购Castore，安踏宣布与清华深化合作并加码研发，头部品牌通过资本与研发巩固壁垒；361°三季度流水保持稳健；宏观消费仅增1.1%，双11平台新品首发增长，户外产业规模超3.1万亿，儿童运动鞋向户外延伸。",
+    "weekly_thesis": "运动品牌资本与研发动作密集，儿童赛道户外化信号初现，消费大盘平稳。",
+    "week_in_one_paragraph": "本周安踏、李宁被传问询收购Castore，安踏同时宣布与清华加大研发投入；361°三季度流水保持增长。平台侧双11天猫首发新品商家数增长。品类端户外与跑鞋联名活跃，儿童运动鞋出现户外化讨论，但缺乏具体产品与销售数据。",
     "next_week_focus": [
-      "跟踪安踏、李宁对Castore收购问询的后续回应与实质进展。",
-      "关注双11预售中儿童运动品类新品首发与平台资源分布。",
-      "留意361°三季度流水稳健增长背后的渠道与产品结构变化。",
-      "观察户外产业规模数据对儿童户外运动产品线的启示。",
-      "关注消费大盘温和背景下运动品牌促销与库存策略。"
+      "关注Castore收购问询是否有进一步回应",
+      "跟踪双11运动品牌新品首发与折扣节奏",
+      "观察儿童运动鞋户外化相关产品动向",
+      "留意361°三季度流水后的渠道反馈",
+      "关注户外产业规模数据对儿童场景的延伸"
     ]
   },
   "key_developments": [
@@ -67,7 +67,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏、李宁同时被传问询收购Castore，反映头部品牌寻求海外高端运动服资产。"
+      "editorial_reason": "安踏、李宁同时被传问询收购Castore，反映头部国产品牌寻求海外高端运动服资产。"
     },
     {
       "event_id": "evt_3b6de197b2b4a9",
@@ -107,7 +107,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏与清华合作升级并计划五年再投200亿元研发，显示研发军备竞赛加剧。"
+      "editorial_reason": "安踏与清华合作升级并计划五年再投200亿元研发，显示头部品牌加码运动科技长期投入。"
     },
     {
       "event_id": "evt_d5feecc5d81dd8",
@@ -160,44 +160,6 @@
       "editorial_reason": "361°三季度各渠道流水保持稳健增长，作为直接竞品提供近期经营参照。"
     },
     {
-      "event_id": "evt_d09a3fe6427900",
-      "title": "2026年1—9月份社会消费品零售总额增长1.1%",
-      "category": "行业动态",
-      "event_family": "macro_data",
-      "reporting_period": "",
-      "brands": [],
-      "source": "国家统计局",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
-      "published_at": "2026-10-19T10:00+08:00",
-      "published_date": "2026-10-19",
-      "status": "follow_up",
-      "verification": "official_source",
-      "is_official": true,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 52,
-      "selection_score": 71,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_d09a3fe6427900"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_112f27730db091",
-          "title": "2026年1—9月份社会消费品零售总额增长1.1%",
-          "source": "国家统计局",
-          "source_tier": "official",
-          "is_official": true,
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
-          "published_at": "2026-10-19T10:00+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "1—9月社零仅增1.1%，提示消费大盘温和，运动消费需精耕存量。"
-    },
-    {
       "event_id": "evt_6ddee63a4aa09e",
       "title": "双11品牌集体重仓天猫 首发新品商家数同比强劲增长64%",
       "category": "电商与平台",
@@ -233,7 +195,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "双11品牌重仓天猫、首发新品商家数增64%，平台新品竞争窗口值得关注。"
+      "editorial_reason": "双11天猫首发新品商家数同比增长64%，反映平台新品首发竞争加剧。"
     },
     {
       "event_id": "evt_bcb4740b444f0f",
@@ -271,13 +233,53 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "全国户外运动产业总规模超3.1万亿元，户外场景扩容利好儿童户外运动品类。"
+      "editorial_reason": "全国户外运动产业总规模超3.1万亿元，为儿童户外运动场景提供宏观需求背景。"
+    },
+    {
+      "event_id": "evt_c114c6b1b747e6",
+      "title": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+      "category": "产品与科技",
+      "event_family": "collaboration",
+      "reporting_period": "",
+      "brands": [
+        "Adidas"
+      ],
+      "source": "HYPEBEAST",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+      "published_at": "2026-10-23T16:22+08:00",
+      "published_date": "2026-10-23",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 48,
+      "selection_score": 70,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_c114c6b1b747e6"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_3711909f913720",
+          "title": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+          "source": "HYPEBEAST",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+          "published_at": "2026-10-23T16:22+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "adidas与SATISFY联名发布ADIZERO跑鞋，体现跑鞋品类联名与专业化的持续活跃。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "头部运动品牌资本与研发双线加码",
-      "analysis": "本周安踏、李宁被传主动问询收购英国高端运动服品牌Castore，同时安踏宣布与清华大学战略合作升级、未来五年预计再投200亿元研发。两件事共同指向头部品牌正通过外延并购与内生研发巩固竞争壁垒，行业资源进一步向头部集中，中小品牌面临差异化压力。",
+      "headline": "头部国产品牌的资本与研发双线布局",
+      "analysis": "本周安踏、李宁被传就收购英国高端运动服品牌Castore进行问询，同时安踏宣布与清华大学战略合作升级并计划未来五年再投200亿元研发。两件事共同指向头部国产品牌在海外品牌资产与本土研发能力上的双向投入，行业竞争从渠道扩张转向品牌组合与技术积累。",
       "event_ids": [
         "evt_6e3b31394ffd0d",
         "evt_3b6de197b2b4a9"
@@ -300,43 +302,43 @@
       ]
     },
     {
-      "headline": "消费温和与平台新品竞争并行",
-      "analysis": "1—9月社零总额同比仅增1.1%，显示消费大盘温和；同期双11品牌集体重仓天猫，首发新品商家数同比强劲增长64%。平台新品首发成为品牌争夺增量抓手，但宏观消费偏弱意味着新品需更精准匹配细分需求，而非单纯铺量。",
+      "headline": "平台新品首发与户外产业规模信号",
+      "analysis": "双11期间天猫首发新品商家数同比增长64%，说明品牌把新品作为大促核心抓手；同期全国户外运动产业总规模超3.1万亿元，显示户外场景仍具规模基础。两者结合，提示运动品牌在电商首发与户外品类上仍有布局空间，但需注意证据仅为平台与产业总量信息。",
       "event_ids": [
-        "evt_d09a3fe6427900",
-        "evt_6ddee63a4aa09e"
+        "evt_6ddee63a4aa09e",
+        "evt_bcb4740b444f0f"
       ],
       "evidence": [
-        {
-          "event_id": "evt_d09a3fe6427900",
-          "title": "2026年1—9月份社会消费品零售总额增长1.1%",
-          "source": "国家统计局",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
-          "published_date": "2026-10-19"
-        },
         {
           "event_id": "evt_6ddee63a4aa09e",
           "title": "双11品牌集体重仓天猫 首发新品商家数同比强劲增长64%",
           "source": "亿邦动力",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBHREtjc19VdnJCYnpscnVUcGtLQXJkeTRXaDRsQ2VUdndJdTY2RWU3bTZIWnBDMHhUWlhhZlNwM21KS1dQRGliT2tUQWNfblFvcVNYOXdn?oc=5",
           "published_date": "2026-10-19"
-        }
-      ]
-    },
-    {
-      "headline": "户外产业扩容与竞品流水稳健",
-      "analysis": "全国户外运动相关产业总规模超3.1万亿元，户外场景持续扩容；361°三季度各渠道流水保持稳健增长。户外大盘扩张为儿童户外运动产品提供场景红利，而直接竞品流水稳健提示大众运动消费仍具韧性，需关注其渠道与产品策略。",
-      "event_ids": [
-        "evt_bcb4740b444f0f",
-        "evt_d5feecc5d81dd8"
-      ],
-      "evidence": [
+        },
         {
           "event_id": "evt_bcb4740b444f0f",
           "title": "全国户外运动相关产业总规模超3.1万亿元",
           "source": "人民网",
           "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
           "published_date": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "headline": "跑鞋联名活跃与竞品流水表现",
+      "analysis": "adidas与SATISFY联名推出两款ADIZERO跑鞋，延续专业跑鞋联名化趋势；361°三季度各渠道流水保持稳健增长，显示大众运动品牌在渠道端仍有韧性。两者分别代表产品创新与渠道经营两个维度，对儿童运动鞋的产品联名与渠道节奏有参照意义。",
+      "event_ids": [
+        "evt_c114c6b1b747e6",
+        "evt_d5feecc5d81dd8"
+      ],
+      "evidence": [
+        {
+          "event_id": "evt_c114c6b1b747e6",
+          "title": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+          "source": "HYPEBEAST",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+          "published_date": "2026-10-23"
         },
         {
           "event_id": "evt_d5feecc5d81dd8",
@@ -432,29 +434,29 @@
   ],
   "watchlist": [
     {
-      "title": "安踏李宁收购Castore进展",
-      "event_ids": [
-        "evt_6e3b31394ffd0d",
-        "evt_45d3d4c16c609d"
-      ],
-      "product_ids": [],
-      "reason": "关注双方回应后是否进入实质谈判，及其对运动服竞争格局的影响。"
-    },
-    {
-      "title": "双11新品首发与儿童运动消费",
-      "event_ids": [
-        "evt_6ddee63a4aa09e"
-      ],
-      "product_ids": [],
-      "reason": "观察双11期间儿童运动品类新品首发及平台资源倾斜情况。"
-    },
-    {
-      "title": "户外产业扩容对儿童户外产品的带动",
+      "title": "儿童运动鞋户外化趋势",
       "event_ids": [
         "evt_bcb4740b444f0f"
       ],
       "product_ids": [],
-      "reason": "跟踪户外运动产业规模数据及儿童户外鞋服细分品类动向。"
+      "reason": "关注儿童运动鞋品牌是否跟进户外场景产品与营销动作。"
+    },
+    {
+      "title": "双11新品首发竞争",
+      "event_ids": [
+        "evt_6ddee63a4aa09e"
+      ],
+      "product_ids": [],
+      "reason": "观察运动品牌在双11期间的新品首发节奏与平台资源分配。"
+    },
+    {
+      "title": "头部品牌收购与研发进展",
+      "event_ids": [
+        "evt_6e3b31394ffd0d",
+        "evt_3b6de197b2b4a9"
+      ],
+      "product_ids": [],
+      "reason": "跟踪Castore收购问询是否有实质进展及安踏研发投入落地方向。"
     }
   ],
   "tracking": {
@@ -508,7 +510,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏、李宁同时被传问询收购Castore，反映头部品牌寻求海外高端运动服资产。"
+        "editorial_reason": "安踏、李宁同时被传问询收购Castore，反映头部国产品牌寻求海外高端运动服资产。"
       },
       {
         "event_id": "evt_3b6de197b2b4a9",
@@ -548,7 +550,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏与清华合作升级并计划五年再投200亿元研发，显示研发军备竞赛加剧。"
+        "editorial_reason": "安踏与清华合作升级并计划五年再投200亿元研发，显示头部品牌加码运动科技长期投入。"
       },
       {
         "event_id": "evt_d5feecc5d81dd8",
@@ -636,7 +638,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "双11品牌重仓天猫、首发新品商家数增64%，平台新品竞争窗口值得关注。"
+        "editorial_reason": "双11天猫首发新品商家数同比增长64%，反映平台新品首发竞争加剧。"
       },
       {
         "event_id": "evt_bcb4740b444f0f",
@@ -674,49 +676,50 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "全国户外运动产业总规模超3.1万亿元，户外场景扩容利好儿童户外运动品类。"
-      }
-    ],
-    "follow_up_selected": [
+        "editorial_reason": "全国户外运动产业总规模超3.1万亿元，为儿童户外运动场景提供宏观需求背景。"
+      },
       {
-        "event_id": "evt_d09a3fe6427900",
-        "title": "2026年1—9月份社会消费品零售总额增长1.1%",
-        "category": "行业动态",
-        "event_family": "macro_data",
+        "event_id": "evt_c114c6b1b747e6",
+        "title": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+        "category": "产品与科技",
+        "event_family": "collaboration",
         "reporting_period": "",
-        "brands": [],
-        "source": "国家统计局",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
-        "published_at": "2026-10-19T10:00+08:00",
-        "published_date": "2026-10-19",
-        "status": "follow_up",
-        "verification": "official_source",
-        "is_official": true,
+        "brands": [
+          "Adidas"
+        ],
+        "source": "HYPEBEAST",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+        "published_at": "2026-10-23T16:22+08:00",
+        "published_date": "2026-10-23",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 52,
-        "selection_score": 71,
+        "editorial_score": 48,
+        "selection_score": 70,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_d09a3fe6427900"
+          "evt_c114c6b1b747e6"
         ],
         "evidence": [
           {
-            "item_id": "src_112f27730db091",
-            "title": "2026年1—9月份社会消费品零售总额增长1.1%",
-            "source": "国家统计局",
-            "source_tier": "official",
-            "is_official": true,
-            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
-            "published_at": "2026-10-19T10:00+08:00",
+            "item_id": "src_3711909f913720",
+            "title": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+            "source": "HYPEBEAST",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+            "published_at": "2026-10-23T16:22+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "1—9月社零仅增1.1%，提示消费大盘温和，运动消费需精耕存量。"
+        "editorial_reason": "adidas与SATISFY联名发布ADIZERO跑鞋，体现跑鞋品类联名与专业化的持续活跃。"
       }
     ],
+    "follow_up_selected": [],
     "verification_queue": [],
     "product_leads_pending_verification": [
       {
@@ -903,14 +906,6 @@
     },
     {
       "type": "event",
-      "id": "evt_d09a3fe6427900",
-      "title": "2026年1—9月份社会消费品零售总额增长1.1%",
-      "source": "国家统计局",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
-      "published_date": "2026-10-19"
-    },
-    {
-      "type": "event",
       "id": "evt_6ddee63a4aa09e",
       "title": "双11品牌集体重仓天猫 首发新品商家数同比强劲增长64%",
       "source": "亿邦动力",
@@ -924,6 +919,14 @@
       "source": "人民网",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
       "published_date": "2026-10-19"
+    },
+    {
+      "type": "event",
+      "id": "evt_c114c6b1b747e6",
+      "title": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+      "source": "HYPEBEAST",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+      "published_date": "2026-10-23"
     },
     {
       "type": "event",
@@ -972,8 +975,7 @@
       "户外与场景": 1
     },
     "selected_status": {
-      "new": 5,
-      "follow_up": 1
+      "new": 6
     },
     "quality_notes": [
       "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
