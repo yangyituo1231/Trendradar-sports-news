@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30 07:24:55",
+  "generated_at": "2026-10-30 03:12:36",
   "source": "Open-Meteo",
   "regions": {
     "north": {
@@ -9,22 +9,22 @@
         {
           "date": "2026-10-30",
           "weather": "晴",
-          "temp_max": 20.2,
-          "temp_min": 6.5,
+          "temp_max": 19.9,
+          "temp_min": 6.4,
           "alert": ""
         },
         {
           "date": "2026-10-31",
           "weather": "阴",
-          "temp_max": 10.9,
-          "temp_min": 4.1,
+          "temp_max": 10.6,
+          "temp_min": 4.0,
           "alert": ""
         },
         {
           "date": "2026-11-01",
           "weather": "阴",
-          "temp_max": 16.3,
-          "temp_min": 5.5,
+          "temp_max": 16.6,
+          "temp_min": 4.9,
           "alert": ""
         }
       ]
@@ -37,20 +37,20 @@
           "date": "2026-10-30",
           "weather": "雾",
           "temp_max": 21.9,
-          "temp_min": 13.3,
+          "temp_min": 13.7,
           "alert": ""
         },
         {
           "date": "2026-10-31",
-          "weather": "晴",
+          "weather": "雾",
           "temp_max": 23.0,
           "temp_min": 11.4,
           "alert": ""
         },
         {
           "date": "2026-11-01",
-          "weather": "小雨",
-          "temp_max": 26.2,
+          "weather": "中雨",
+          "temp_max": 26.3,
           "temp_min": 17.1,
           "alert": ""
         }
@@ -63,22 +63,22 @@
         {
           "date": "2026-10-30",
           "weather": "阴",
-          "temp_max": 33.1,
-          "temp_min": 22.8,
+          "temp_max": 32.9,
+          "temp_min": 22.9,
           "alert": ""
         },
         {
           "date": "2026-10-31",
           "weather": "阴",
-          "temp_max": 32.5,
-          "temp_min": 23.2,
+          "temp_max": 31.9,
+          "temp_min": 23.1,
           "alert": ""
         },
         {
           "date": "2026-11-01",
           "weather": "小雨",
-          "temp_max": 31.8,
-          "temp_min": 23.0,
+          "temp_max": 32.0,
+          "temp_min": 22.7,
           "alert": ""
         }
       ]
@@ -91,21 +91,21 @@
           "date": "2026-10-30",
           "weather": "阴",
           "temp_max": 21.6,
-          "temp_min": 11.6,
+          "temp_min": 12.0,
           "alert": ""
         },
         {
           "date": "2026-10-31",
           "weather": "阴",
-          "temp_max": 21.6,
-          "temp_min": 13.6,
+          "temp_max": 21.2,
+          "temp_min": 13.8,
           "alert": ""
         },
         {
           "date": "2026-11-01",
           "weather": "阴",
-          "temp_max": 18.7,
-          "temp_min": 15.1,
+          "temp_max": 19.6,
+          "temp_min": 14.2,
           "alert": ""
         }
       ]
@@ -117,22 +117,22 @@
         {
           "date": "2026-10-30",
           "weather": "晴到多云",
-          "temp_max": 18.9,
+          "temp_max": 19.0,
           "temp_min": 5.7,
           "alert": ""
         },
         {
           "date": "2026-10-31",
           "weather": "小雨",
-          "temp_max": 14.2,
-          "temp_min": 9.3,
+          "temp_max": 14.3,
+          "temp_min": 8.6,
           "alert": ""
         },
         {
           "date": "2026-11-01",
           "weather": "小雨",
-          "temp_max": 15.0,
-          "temp_min": 8.5,
+          "temp_max": 15.2,
+          "temp_min": 7.7,
           "alert": ""
         }
       ]
