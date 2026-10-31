@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-10-30T11:12+08:00",
+  "generated_at": "2026-10-31T10:58+08:00",
   "report_window": {
     "start_date": "2026-10-19",
     "end_date": "2026-10-25",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "运动品牌资本动作与研发投入升温，儿童运动鞋向户外延伸，平台双11新品竞争加剧。",
-    "week_in_one_paragraph": "本周安踏、李宁被传洽购Castore，安踏宣布与清华深化合作并加大研发投入；361°三季度流水保持增长；双11天猫首发新品商家数增长；户外产业规模超3.1万亿元，儿童运动鞋出现户外化讨论。",
+    "weekly_thesis": "运动品牌资本与研发动作密集，儿童赛道户外化信号初现，消费大盘平稳。",
+    "week_in_one_paragraph": "本周安踏、李宁被传洽谈收购Castore，安踏同时宣布与清华加大研发投入；361°三季度流水保持增长。平台端双11天猫首发新品商家数增长。品类侧跑鞋联名与户外鞋款更新活跃，儿童运动鞋出现户外化讨论，但缺乏具体产品与销售数据。",
     "next_week_focus": [
-      "跟踪安踏、李宁对Castore收购问询的后续回应与进展。",
-      "关注双11预售及首波销售中儿童运动品类的表现。",
-      "留意儿童户外鞋服新品发布及品牌户外化动作。",
-      "观察361°三季度流水增长是否延续至童装童鞋渠道。",
-      "关注运动品牌与高校研发合作在儿童产品上的转化。"
+      "关注Castore收购传闻后续进展及对安踏、李宁品牌矩阵的影响。",
+      "跟踪双11儿童运动品类预售与首发新品表现。",
+      "留意儿童户外鞋新品或品牌入局信号。",
+      "观察361°儿童线是否借势三季度流水增长加大营销。",
+      "关注运动品牌联名款向儿童线延伸的可能性。"
     ]
   },
   "key_developments": [
@@ -67,7 +67,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏、李宁同时被传问询收购Castore，反映头部国产品牌寻求海外高端运动服资产。"
+      "editorial_reason": "安踏、李宁同时被传问询收购Castore，反映头部国牌通过资本手段补强高端运动服矩阵的动向。"
     },
     {
       "event_id": "evt_3b6de197b2b4a9",
@@ -107,7 +107,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏与清华合作升级并计划五年再投200亿元研发，显示头部品牌加码运动科技长期投入。"
+      "editorial_reason": "安踏与清华合作升级并计划五年再投200亿元研发，显示头部品牌持续加码运动科技长期投入。"
     },
     {
       "event_id": "evt_d5feecc5d81dd8",
@@ -157,7 +157,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "361°三季度各渠道流水保持稳健增长，作为直接竞品提供近期经营参照。"
+      "editorial_reason": "361°三季度各渠道流水保持稳健增长，作为直接竞品，其渠道表现对儿童事业部有参照意义。"
     },
     {
       "event_id": "evt_6ddee63a4aa09e",
@@ -195,91 +195,132 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "双11天猫首发新品商家数同比增长64%，平台新品首发竞争加剧，影响童装上新节奏。"
+      "editorial_reason": "双11天猫首发新品商家数同比增长64%，反映平台新品首发竞争加剧，对儿童新品上新节奏有参考。"
     },
     {
-      "event_id": "evt_bcb4740b444f0f",
-      "title": "全国户外运动相关产业总规模超3.1万亿元",
-      "category": "户外与场景",
-      "event_family": "industry_event",
+      "event_id": "evt_c114c6b1b747e6",
+      "title": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+      "category": "产品与科技",
+      "event_family": "collaboration",
       "reporting_period": "",
-      "brands": [],
-      "source": "人民网",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
-      "published_at": "2026-10-19T09:02+08:00",
-      "published_date": "2026-10-19",
+      "brands": [
+        "Adidas"
+      ],
+      "source": "HYPEBEAST",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+      "published_at": "2026-10-23T16:22+08:00",
+      "published_date": "2026-10-23",
       "status": "new",
       "verification": "single_source",
       "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 42,
-      "selection_score": 55,
+      "editorial_score": 48,
+      "selection_score": 70,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_bcb4740b444f0f"
+        "evt_c114c6b1b747e6"
       ],
       "evidence": [
         {
-          "item_id": "src_c3d43958a2ccf3",
-          "title": "全国户外运动相关产业总规模超3.1万亿元",
-          "source": "人民网",
-          "source_tier": "tier_1",
+          "item_id": "src_3711909f913720",
+          "title": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+          "source": "HYPEBEAST",
+          "source_tier": "tier_3",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
-          "published_at": "2026-10-19T09:02+08:00",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+          "published_at": "2026-10-23T16:22+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "全国户外运动产业总规模超3.1万亿元，户外场景扩容为儿童户外运动产品提供需求背景。"
+      "editorial_reason": "adidas与SATISFY联名发布两款ADIZERO跑鞋，体现跑鞋品类联名化与专业化并行趋势。"
     },
     {
-      "event_id": "evt_585f86aefcc02b",
-      "title": "NikeSKIMS 推出外套系列，新增醒目的大学红配色— NIKE, Inc.",
+      "event_id": "evt_e7c471881c1efc",
+      "title": "Salomon携手Protect发布ACS NEXT PROTECT: SLUSHIE联名鞋款",
       "category": "产品与科技",
-      "event_family": "product_launch",
+      "event_family": "collaboration",
       "reporting_period": "",
       "brands": [
-        "Nike"
+        "Salomon",
+        "Alo"
       ],
-      "source": "About Nike",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS3Y3UkRaamxwNmNkSW80ci1wei1kNmJKWkRBZDNkTU5JcTMyajZQVHFIQXhwdnRkdm1waEk5enNOUGxxTWxDQ1ZlRzRvREw5aFN4S2FrM083YzY4WlVpZlEteWFtV0ozTkF5YUt4NC1qMVpxd2pjR0c1dU5oZ19YVkU3OHNYbzVKX1g4UUp6Y1pweTNjZ1dORmllaktEejUtdjB4MkJDcUtqQTdXX2VUUHNzRjU1eUZOVDVmSjRhalYyN0ZYbVRaUjl0c1lhZw?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS3Y3UkRaamxwNmNkSW80ci1wei1kNmJKWkRBZDNkTU5JcTMyajZQVHFIQXhwdnRkdm1waEk5enNOUGxxTWxDQ1ZlRzRvREw5aFN4S2FrM083YzY4WlVpZlEteWFtV0ozTkF5YUt4NC1qMVpxd2pjR0c1dU5oZ19YVkU3OHNYbzVKX1g4UUp6Y1pweTNjZ1dORmllaktEejUtdjB4MkJDcUtqQTdXX2VUUHNzRjU1eUZOVDVmSjRhalYyN0ZYbVRaUjl0c1lhZw?oc=5",
-      "published_at": "2026-10-19T22:00+08:00",
-      "published_date": "2026-10-19",
+      "source": "Hypebae",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWDBzZlpyY0p2QW1iQ0lPYWl5YkFINmw4TWFEQi1QUUFUSVpLYXhKZFhfOW13Rmdka29wU1ZIaU1MUzRUZDVIY3J2aGFMbkZZb3FKS0dlTzA0RjdkRUMwc1hSdmhPWlRYX0RaYUhDcm5JT3hjRUlwNnZJanAxUVZHMk1HbXd0MmIwS2ZEN1hzUUxLS2lLVFoyZkQyVXlTZVdhVmV4RXBMQ0o5QkUzTEs3NGNB?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWDBzZlpyY0p2QW1iQ0lPYWl5YkFINmw4TWFEQi1QUUFUSVpLYXhKZFhfOW13Rmdka29wU1ZIaU1MUzRUZDVIY3J2aGFMbkZZb3FKS0dlTzA0RjdkRUMwc1hSdmhPWlRYX0RaYUhDcm5JT3hjRUlwNnZJanAxUVZHMk1HbXd0MmIwS2ZEN1hzUUxLS2lLVFoyZkQyVXlTZVdhVmV4RXBMQ0o5QkUzTEs3NGNB?oc=5",
+      "published_at": "2026-10-24T00:26+08:00",
+      "published_date": "2026-10-24",
       "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 48,
+      "selection_score": 60,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_e7c471881c1efc"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_f01471fa9d6578",
+          "title": "Salomon携手Protect发布ACS NEXT PROTECT: SLUSHIE联名鞋款",
+          "source": "Hypebae",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWDBzZlpyY0p2QW1iQ0lPYWl5YkFINmw4TWFEQi1QUUFUSVpLYXhKZFhfOW13Rmdka29wU1ZIaU1MUzRUZDVIY3J2aGFMbkZZb3FKS0dlTzA0RjdkRUMwc1hSdmhPWlRYX0RaYUhDcm5JT3hjRUlwNnZJanAxUVZHMk1HbXd0MmIwS2ZEN1hzUUxLS2lLVFoyZkQyVXlTZVdhVmV4RXBMQ0o5QkUzTEs3NGNB?oc=5",
+          "published_at": "2026-10-24T00:26+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "Salomon携手Protect发布联名鞋款，户外品牌跨界联名持续活跃，对儿童户外鞋设计有借鉴。"
+    },
+    {
+      "event_id": "evt_d09a3fe6427900",
+      "title": "2026年1—9月份社会消费品零售总额增长1.1%",
+      "category": "行业动态",
+      "event_family": "macro_data",
+      "reporting_period": "",
+      "brands": [],
+      "source": "国家统计局",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
+      "published_at": "2026-10-19T10:00+08:00",
+      "published_date": "2026-10-19",
+      "status": "follow_up",
       "verification": "official_source",
       "is_official": true,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 50,
+      "editorial_score": 52,
       "selection_score": 71,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_585f86aefcc02b"
+        "evt_d09a3fe6427900"
       ],
       "evidence": [
         {
-          "item_id": "src_986d79f411e72e",
-          "title": "NikeSKIMS 推出外套系列，新增醒目的大学红配色— NIKE, Inc.",
-          "source": "About Nike",
+          "item_id": "src_112f27730db091",
+          "title": "2026年1—9月份社会消费品零售总额增长1.1%",
+          "source": "国家统计局",
           "source_tier": "official",
           "is_official": true,
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS3Y3UkRaamxwNmNkSW80ci1wei1kNmJKWkRBZDNkTU5JcTMyajZQVHFIQXhwdnRkdm1waEk5enNOUGxxTWxDQ1ZlRzRvREw5aFN4S2FrM083YzY4WlVpZlEteWFtV0ozTkF5YUt4NC1qMVpxd2pjR0c1dU5oZ19YVkU3OHNYbzVKX1g4UUp6Y1pweTNjZ1dORmllaktEejUtdjB4MkJDcUtqQTdXX2VUUHNzRjU1eUZOVDVmSjRhalYyN0ZYbVRaUjl0c1lhZw?oc=5",
-          "published_at": "2026-10-19T22:00+08:00",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
+          "published_at": "2026-10-19T10:00+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "NikeSKIMS推出外套系列并新增配色，显示运动品牌跨界服饰仍在扩展产品边界。"
+      "editorial_reason": "1—9月社零总额同比增长1.1%，提供消费大盘背景，提示整体消费复苏仍偏温和。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "国产头部运动品牌海外并购与研发双线布局",
-      "analysis": "本周安踏、李宁被传就收购英国高端运动服品牌Castore进行问询，同时安踏宣布与清华大学战略合作升级并计划未来五年再投200亿元研发。两件事共同指向头部国产品牌在资本与研发两端同时布局：一方面通过潜在海外收购获取高端运动服品牌资产，另一方面以校企合作强化运动科技储备。对儿童运动赛道而言，这意味着头部品牌可能在专业运动与高端化上继续拉大投入差距。",
+      "headline": "头部国牌资本与研发双线加码",
+      "analysis": "本周安踏、李宁被传就收购Castore进行问询，同时安踏宣布与清华合作升级并计划五年再投200亿元研发。两件事共同指向头部国牌正通过外部并购与内部研发两条路径补强高端运动服与科技能力。对儿童事业部而言，这意味着母品牌资源池扩大，但儿童线能否承接成人科技下放、形成差异化产品，仍需观察。",
       "event_ids": [
         "evt_6e3b31394ffd0d",
         "evt_3b6de197b2b4a9"
@@ -302,34 +343,11 @@
       ]
     },
     {
-      "headline": "平台双11新品首发竞争与户外消费扩容",
-      "analysis": "双11期间品牌集体重仓天猫，首发新品商家数同比增长64%，平台正成为新品首发的关键战场；同期全国户外运动相关产业总规模超3.1万亿元，户外消费基础持续扩大。两者结合看，运动品牌在双11的新品投放不仅拼折扣，更拼首发节奏与户外等场景化产品供给，儿童运动品牌需关注平台首发资源与户外场景产品的结合机会。",
+      "headline": "竞品渠道流水与平台新品节奏",
+      "analysis": "361°三季度各渠道流水保持稳健增长，显示其渠道运营仍具韧性；同期双11天猫首发新品商家数同比增长64%，平台新品首发竞争升温。两者结合看，运动品牌在电商大促中的新品首发密度提高，渠道流水增长更依赖上新节奏与平台资源配合。儿童线需关注大促期间新品曝光与渠道协同效率。",
       "event_ids": [
-        "evt_6ddee63a4aa09e",
-        "evt_bcb4740b444f0f"
-      ],
-      "evidence": [
-        {
-          "event_id": "evt_6ddee63a4aa09e",
-          "title": "双11品牌集体重仓天猫 首发新品商家数同比强劲增长64%",
-          "source": "亿邦动力",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBHREtjc19VdnJCYnpscnVUcGtLQXJkeTRXaDRsQ2VUdndJdTY2RWU3bTZIWnBDMHhUWlhhZlNwM21KS1dQRGliT2tUQWNfblFvcVNYOXdn?oc=5",
-          "published_date": "2026-10-19"
-        },
-        {
-          "event_id": "evt_bcb4740b444f0f",
-          "title": "全国户外运动相关产业总规模超3.1万亿元",
-          "source": "人民网",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
-          "published_date": "2026-10-19"
-        }
-      ]
-    },
-    {
-      "headline": "竞品流水表现与运动服饰行业短期承压",
-      "analysis": "361°三季度各渠道流水仍保持稳健增长，海外业务高速放量，显示其在行业整体承压背景下仍维持渠道流水韧性。该信息为儿童运动事业部提供直接竞品的近期经营参照，但需注意流水增长不等同于儿童品类表现，后续应结合童装童鞋细分数据判断竞争态势。",
-      "event_ids": [
-        "evt_d5feecc5d81dd8"
+        "evt_d5feecc5d81dd8",
+        "evt_6ddee63a4aa09e"
       ],
       "evidence": [
         {
@@ -338,6 +356,37 @@
           "source": "新浪财经",
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZ3ppY3RQY0xFeFRUQkduT2dkUXJBenhKcmE5aDloRmRvWC0zckhMUjV2ZF90N0Z2WWlkVHRKc0hQSzJXcHFXekJwM2VWVzd5alpKTUZQZmRrUGZ6SFRpZ2RJMkZRUXBwYXllLXhwTzNmLTJJdXVKSlZNblBJSHdlT1JFSjN1Zlp3bjZXRVFDbDNyV2loY3c?oc=5",
           "published_date": "2026-10-23"
+        },
+        {
+          "event_id": "evt_6ddee63a4aa09e",
+          "title": "双11品牌集体重仓天猫 首发新品商家数同比强劲增长64%",
+          "source": "亿邦动力",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBHREtjc19VdnJCYnpscnVUcGtLQXJkeTRXaDRsQ2VUdndJdTY2RWU3bTZIWnBDMHhUWlhhZlNwM21KS1dQRGliT2tUQWNfblFvcVNYOXdn?oc=5",
+          "published_date": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "headline": "跑鞋与户外鞋联名专业化",
+      "analysis": "adidas与SATISFY联名推出两款ADIZERO跑鞋，Salomon与Protect联名发布鞋款，显示跑鞋与户外鞋品类正通过联名强化专业形象与潮流属性。对儿童运动鞋的启示在于，户外场景与专业功能结合可能成为产品差异化方向，但本周证据未涉及儿童具体产品，需谨慎看待。",
+      "event_ids": [
+        "evt_c114c6b1b747e6",
+        "evt_e7c471881c1efc"
+      ],
+      "evidence": [
+        {
+          "event_id": "evt_c114c6b1b747e6",
+          "title": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+          "source": "HYPEBEAST",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+          "published_date": "2026-10-23"
+        },
+        {
+          "event_id": "evt_e7c471881c1efc",
+          "title": "Salomon携手Protect发布ACS NEXT PROTECT: SLUSHIE联名鞋款",
+          "source": "Hypebae",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWDBzZlpyY0p2QW1iQ0lPYWl5YkFINmw4TWFEQi1QUUFUSVpLYXhKZFhfOW13Rmdka29wU1ZIaU1MUzRUZDVIY3J2aGFMbkZZb3FKS0dlTzA0RjdkRUMwc1hSdmhPWlRYX0RaYUhDcm5JT3hjRUlwNnZJanAxUVZHMk1HbXd0MmIwS2ZEN1hzUUxLS2lLVFoyZkQyVXlTZVdhVmV4RXBMQ0o5QkUzTEs3NGNB?oc=5",
+          "published_date": "2026-10-24"
         }
       ]
     }
@@ -426,21 +475,20 @@
   ],
   "watchlist": [
     {
-      "title": "双11童装童鞋首发与折扣节奏",
+      "title": "双11儿童运动品类上新与平台资源",
       "event_ids": [
         "evt_6ddee63a4aa09e"
       ],
       "product_ids": [],
-      "reason": "关注天猫双11期间儿童运动品牌的新品首发数量及促销力度变化。"
+      "reason": "关注双11期间儿童运动品牌在天猫的首发新品数量及平台资源倾斜情况。"
     },
     {
-      "title": "安踏李宁收购Castore进展",
+      "title": "安踏儿童是否承接集团研发资源",
       "event_ids": [
-        "evt_6e3b31394ffd0d",
-        "evt_45d3d4c16c609d"
+        "evt_3b6de197b2b4a9"
       ],
       "product_ids": [],
-      "reason": "跟踪双方回应及交易是否进入实质阶段，评估对儿童运动品牌竞争格局的间接影响。"
+      "reason": "安踏集团加大研发投入后，观察儿童线是否获得科技下放或独立研发动作。"
     }
   ],
   "tracking": {
@@ -494,7 +542,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏、李宁同时被传问询收购Castore，反映头部国产品牌寻求海外高端运动服资产。"
+        "editorial_reason": "安踏、李宁同时被传问询收购Castore，反映头部国牌通过资本手段补强高端运动服矩阵的动向。"
       },
       {
         "event_id": "evt_3b6de197b2b4a9",
@@ -534,7 +582,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏与清华合作升级并计划五年再投200亿元研发，显示头部品牌加码运动科技长期投入。"
+        "editorial_reason": "安踏与清华合作升级并计划五年再投200亿元研发，显示头部品牌持续加码运动科技长期投入。"
       },
       {
         "event_id": "evt_d5feecc5d81dd8",
@@ -584,7 +632,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "361°三季度各渠道流水保持稳健增长，作为直接竞品提供近期经营参照。"
+        "editorial_reason": "361°三季度各渠道流水保持稳健增长，作为直接竞品，其渠道表现对儿童事业部有参照意义。"
       },
       {
         "event_id": "evt_6ddee63a4aa09e",
@@ -622,88 +670,130 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "双11天猫首发新品商家数同比增长64%，平台新品首发竞争加剧，影响童装上新节奏。"
+        "editorial_reason": "双11天猫首发新品商家数同比增长64%，反映平台新品首发竞争加剧，对儿童新品上新节奏有参考。"
       },
       {
-        "event_id": "evt_bcb4740b444f0f",
-        "title": "全国户外运动相关产业总规模超3.1万亿元",
-        "category": "户外与场景",
-        "event_family": "industry_event",
+        "event_id": "evt_c114c6b1b747e6",
+        "title": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+        "category": "产品与科技",
+        "event_family": "collaboration",
         "reporting_period": "",
-        "brands": [],
-        "source": "人民网",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
-        "published_at": "2026-10-19T09:02+08:00",
-        "published_date": "2026-10-19",
+        "brands": [
+          "Adidas"
+        ],
+        "source": "HYPEBEAST",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+        "published_at": "2026-10-23T16:22+08:00",
+        "published_date": "2026-10-23",
         "status": "new",
         "verification": "single_source",
         "is_official": false,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 42,
-        "selection_score": 55,
+        "editorial_score": 48,
+        "selection_score": 70,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_bcb4740b444f0f"
+          "evt_c114c6b1b747e6"
         ],
         "evidence": [
           {
-            "item_id": "src_c3d43958a2ccf3",
-            "title": "全国户外运动相关产业总规模超3.1万亿元",
-            "source": "人民网",
-            "source_tier": "tier_1",
+            "item_id": "src_3711909f913720",
+            "title": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+            "source": "HYPEBEAST",
+            "source_tier": "tier_3",
             "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
-            "published_at": "2026-10-19T09:02+08:00",
+            "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+            "published_at": "2026-10-23T16:22+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "全国户外运动产业总规模超3.1万亿元，户外场景扩容为儿童户外运动产品提供需求背景。"
+        "editorial_reason": "adidas与SATISFY联名发布两款ADIZERO跑鞋，体现跑鞋品类联名化与专业化并行趋势。"
       },
       {
-        "event_id": "evt_585f86aefcc02b",
-        "title": "NikeSKIMS 推出外套系列，新增醒目的大学红配色— NIKE, Inc.",
+        "event_id": "evt_e7c471881c1efc",
+        "title": "Salomon携手Protect发布ACS NEXT PROTECT: SLUSHIE联名鞋款",
         "category": "产品与科技",
-        "event_family": "product_launch",
+        "event_family": "collaboration",
         "reporting_period": "",
         "brands": [
-          "Nike"
+          "Salomon",
+          "Alo"
         ],
-        "source": "About Nike",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS3Y3UkRaamxwNmNkSW80ci1wei1kNmJKWkRBZDNkTU5JcTMyajZQVHFIQXhwdnRkdm1waEk5enNOUGxxTWxDQ1ZlRzRvREw5aFN4S2FrM083YzY4WlVpZlEteWFtV0ozTkF5YUt4NC1qMVpxd2pjR0c1dU5oZ19YVkU3OHNYbzVKX1g4UUp6Y1pweTNjZ1dORmllaktEejUtdjB4MkJDcUtqQTdXX2VUUHNzRjU1eUZOVDVmSjRhalYyN0ZYbVRaUjl0c1lhZw?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS3Y3UkRaamxwNmNkSW80ci1wei1kNmJKWkRBZDNkTU5JcTMyajZQVHFIQXhwdnRkdm1waEk5enNOUGxxTWxDQ1ZlRzRvREw5aFN4S2FrM083YzY4WlVpZlEteWFtV0ozTkF5YUt4NC1qMVpxd2pjR0c1dU5oZ19YVkU3OHNYbzVKX1g4UUp6Y1pweTNjZ1dORmllaktEejUtdjB4MkJDcUtqQTdXX2VUUHNzRjU1eUZOVDVmSjRhalYyN0ZYbVRaUjl0c1lhZw?oc=5",
-        "published_at": "2026-10-19T22:00+08:00",
-        "published_date": "2026-10-19",
+        "source": "Hypebae",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWDBzZlpyY0p2QW1iQ0lPYWl5YkFINmw4TWFEQi1QUUFUSVpLYXhKZFhfOW13Rmdka29wU1ZIaU1MUzRUZDVIY3J2aGFMbkZZb3FKS0dlTzA0RjdkRUMwc1hSdmhPWlRYX0RaYUhDcm5JT3hjRUlwNnZJanAxUVZHMk1HbXd0MmIwS2ZEN1hzUUxLS2lLVFoyZkQyVXlTZVdhVmV4RXBMQ0o5QkUzTEs3NGNB?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWDBzZlpyY0p2QW1iQ0lPYWl5YkFINmw4TWFEQi1QUUFUSVpLYXhKZFhfOW13Rmdka29wU1ZIaU1MUzRUZDVIY3J2aGFMbkZZb3FKS0dlTzA0RjdkRUMwc1hSdmhPWlRYX0RaYUhDcm5JT3hjRUlwNnZJanAxUVZHMk1HbXd0MmIwS2ZEN1hzUUxLS2lLVFoyZkQyVXlTZVdhVmV4RXBMQ0o5QkUzTEs3NGNB?oc=5",
+        "published_at": "2026-10-24T00:26+08:00",
+        "published_date": "2026-10-24",
         "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 48,
+        "selection_score": 60,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_e7c471881c1efc"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_f01471fa9d6578",
+            "title": "Salomon携手Protect发布ACS NEXT PROTECT: SLUSHIE联名鞋款",
+            "source": "Hypebae",
+            "source_tier": "tier_3",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWDBzZlpyY0p2QW1iQ0lPYWl5YkFINmw4TWFEQi1QUUFUSVpLYXhKZFhfOW13Rmdka29wU1ZIaU1MUzRUZDVIY3J2aGFMbkZZb3FKS0dlTzA0RjdkRUMwc1hSdmhPWlRYX0RaYUhDcm5JT3hjRUlwNnZJanAxUVZHMk1HbXd0MmIwS2ZEN1hzUUxLS2lLVFoyZkQyVXlTZVdhVmV4RXBMQ0o5QkUzTEs3NGNB?oc=5",
+            "published_at": "2026-10-24T00:26+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "Salomon携手Protect发布联名鞋款，户外品牌跨界联名持续活跃，对儿童户外鞋设计有借鉴。"
+      }
+    ],
+    "follow_up_selected": [
+      {
+        "event_id": "evt_d09a3fe6427900",
+        "title": "2026年1—9月份社会消费品零售总额增长1.1%",
+        "category": "行业动态",
+        "event_family": "macro_data",
+        "reporting_period": "",
+        "brands": [],
+        "source": "国家统计局",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
+        "published_at": "2026-10-19T10:00+08:00",
+        "published_date": "2026-10-19",
+        "status": "follow_up",
         "verification": "official_source",
         "is_official": true,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 50,
+        "editorial_score": 52,
         "selection_score": 71,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_585f86aefcc02b"
+          "evt_d09a3fe6427900"
         ],
         "evidence": [
           {
-            "item_id": "src_986d79f411e72e",
-            "title": "NikeSKIMS 推出外套系列，新增醒目的大学红配色— NIKE, Inc.",
-            "source": "About Nike",
+            "item_id": "src_112f27730db091",
+            "title": "2026年1—9月份社会消费品零售总额增长1.1%",
+            "source": "国家统计局",
             "source_tier": "official",
             "is_official": true,
-            "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS3Y3UkRaamxwNmNkSW80ci1wei1kNmJKWkRBZDNkTU5JcTMyajZQVHFIQXhwdnRkdm1waEk5enNOUGxxTWxDQ1ZlRzRvREw5aFN4S2FrM083YzY4WlVpZlEteWFtV0ozTkF5YUt4NC1qMVpxd2pjR0c1dU5oZ19YVkU3OHNYbzVKX1g4UUp6Y1pweTNjZ1dORmllaktEejUtdjB4MkJDcUtqQTdXX2VUUHNzRjU1eUZOVDVmSjRhalYyN0ZYbVRaUjl0c1lhZw?oc=5",
-            "published_at": "2026-10-19T22:00+08:00",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
+            "published_at": "2026-10-19T10:00+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "NikeSKIMS推出外套系列并新增配色，显示运动品牌跨界服饰仍在扩展产品边界。"
+        "editorial_reason": "1—9月社零总额同比增长1.1%，提供消费大盘背景，提示整体消费复苏仍偏温和。"
       }
     ],
-    "follow_up_selected": [],
     "verification_queue": [],
     "product_leads_pending_verification": [
       {
@@ -898,18 +988,26 @@
     },
     {
       "type": "event",
-      "id": "evt_bcb4740b444f0f",
-      "title": "全国户外运动相关产业总规模超3.1万亿元",
-      "source": "人民网",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
-      "published_date": "2026-10-19"
+      "id": "evt_c114c6b1b747e6",
+      "title": "adidas x SATISFY 联名系列第二弹发布两款 ADIZERO 跑鞋",
+      "source": "HYPEBEAST",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXRWljS1NCSmRZMm9yVUNsUms5VmZfYzd6b3lKMlFPcmhic1ZETWc3WnpJMm5iNVAxZUFyb1A0Zk5QTFYwTHZNVzdqamhLUDRRY19IUTY5TW9IR0JqRGhTTXVCdw?oc=5",
+      "published_date": "2026-10-23"
     },
     {
       "type": "event",
-      "id": "evt_585f86aefcc02b",
-      "title": "NikeSKIMS 推出外套系列，新增醒目的大学红配色— NIKE, Inc.",
-      "source": "About Nike",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS3Y3UkRaamxwNmNkSW80ci1wei1kNmJKWkRBZDNkTU5JcTMyajZQVHFIQXhwdnRkdm1waEk5enNOUGxxTWxDQ1ZlRzRvREw5aFN4S2FrM083YzY4WlVpZlEteWFtV0ozTkF5YUt4NC1qMVpxd2pjR0c1dU5oZ19YVkU3OHNYbzVKX1g4UUp6Y1pweTNjZ1dORmllaktEejUtdjB4MkJDcUtqQTdXX2VUUHNzRjU1eUZOVDVmSjRhalYyN0ZYbVRaUjl0c1lhZw?oc=5",
+      "id": "evt_e7c471881c1efc",
+      "title": "Salomon携手Protect发布ACS NEXT PROTECT: SLUSHIE联名鞋款",
+      "source": "Hypebae",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWDBzZlpyY0p2QW1iQ0lPYWl5YkFINmw4TWFEQi1QUUFUSVpLYXhKZFhfOW13Rmdka29wU1ZIaU1MUzRUZDVIY3J2aGFMbkZZb3FKS0dlTzA0RjdkRUMwc1hSdmhPWlRYX0RaYUhDcm5JT3hjRUlwNnZJanAxUVZHMk1HbXd0MmIwS2ZEN1hzUUxLS2lLVFoyZkQyVXlTZVdhVmV4RXBMQ0o5QkUzTEs3NGNB?oc=5",
+      "published_date": "2026-10-24"
+    },
+    {
+      "type": "event",
+      "id": "evt_d09a3fe6427900",
+      "title": "2026年1—9月份社会消费品零售总额增长1.1%",
+      "source": "国家统计局",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
       "published_date": "2026-10-19"
     },
     {
@@ -937,13 +1035,13 @@
     "raw_event_count": 17,
     "coalesced_event_count": 17,
     "eligible_event_count": 17,
-    "selected_event_count": 6,
+    "selected_event_count": 7,
     "raw_product_count": 14,
     "product_lead_count": 14,
     "eligible_product_count": 0,
     "selected_product_count": 0,
     "conflict_count": 0,
-    "source_link_count": 10,
+    "source_link_count": 11,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
@@ -959,7 +1057,8 @@
       "户外与场景": 1
     },
     "selected_status": {
-      "new": 6
+      "new": 6,
+      "follow_up": 1
     },
     "quality_notes": [
       "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
