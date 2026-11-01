@@ -1,6 +1,6 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-10-31T10:58+08:00",
+  "generated_at": "2026-11-01T10:52+08:00",
   "report_window": {
     "start_date": "2026-10-19",
     "end_date": "2026-10-25",
@@ -8,13 +8,13 @@
   },
   "editorial": {
     "weekly_thesis": "运动品牌资本与研发动作密集，儿童赛道户外化信号初现，消费大盘平稳。",
-    "week_in_one_paragraph": "本周安踏、李宁被传洽谈收购Castore，安踏同时宣布与清华加大研发投入；361°三季度流水保持增长。平台端双11天猫首发新品商家数增长。品类侧跑鞋联名与户外鞋款更新活跃，儿童运动鞋出现户外化讨论，但缺乏具体产品与销售数据。",
+    "week_in_one_paragraph": "本周安踏、李宁被传洽购Castore，安踏宣布与清华深化研发合作；361°三季度流水保持增长。平台侧双11天猫首发新品商家数增长。品类端跑鞋联名与户外鞋款更新活跃，儿童运动鞋出现户外化讨论，社零总额增速1.1%提供平淡消费背景。",
     "next_week_focus": [
-      "关注Castore收购传闻后续进展及对安踏、李宁品牌矩阵的影响。",
-      "跟踪双11儿童运动品类预售与首发新品表现。",
-      "留意儿童户外鞋新品或品牌入局信号。",
-      "观察361°儿童线是否借势三季度流水增长加大营销。",
-      "关注运动品牌联名款向儿童线延伸的可能性。"
+      "跟踪Castore收购传闻的后续回应与进展",
+      "关注双11儿童运动品类首发新品表现",
+      "观察361°三季度流水增长的结构性来源",
+      "留意儿童户外鞋服新品与营销动作",
+      "跟踪社零增速偏弱下的消费信心变化"
     ]
   },
   "key_developments": [
@@ -67,7 +67,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏、李宁同时被传问询收购Castore，反映头部国牌通过资本手段补强高端运动服矩阵的动向。"
+      "editorial_reason": "安踏、李宁同时被传问询收购Castore，反映头部国牌寻求高端户外资产补位。"
     },
     {
       "event_id": "evt_3b6de197b2b4a9",
@@ -107,7 +107,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "安踏与清华合作升级并计划五年再投200亿元研发，显示头部品牌持续加码运动科技长期投入。"
+      "editorial_reason": "安踏与清华合作升级并计划五年再投200亿元研发，显示头部品牌研发投入加码。"
     },
     {
       "event_id": "evt_d5feecc5d81dd8",
@@ -157,7 +157,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "361°三季度各渠道流水保持稳健增长，作为直接竞品，其渠道表现对儿童事业部有参照意义。"
+      "editorial_reason": "361°三季度各渠道流水保持稳健增长，作为本事业部直接竞对需跟踪。"
     },
     {
       "event_id": "evt_6ddee63a4aa09e",
@@ -195,7 +195,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "双11天猫首发新品商家数同比增长64%，反映平台新品首发竞争加剧，对儿童新品上新节奏有参考。"
+      "editorial_reason": "双11天猫首发新品商家数同比增长64%，平台新品首发竞争加剧。"
     },
     {
       "event_id": "evt_c114c6b1b747e6",
@@ -235,48 +235,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "adidas与SATISFY联名发布两款ADIZERO跑鞋，体现跑鞋品类联名化与专业化并行趋势。"
-    },
-    {
-      "event_id": "evt_e7c471881c1efc",
-      "title": "Salomon携手Protect发布ACS NEXT PROTECT: SLUSHIE联名鞋款",
-      "category": "产品与科技",
-      "event_family": "collaboration",
-      "reporting_period": "",
-      "brands": [
-        "Salomon",
-        "Alo"
-      ],
-      "source": "Hypebae",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWDBzZlpyY0p2QW1iQ0lPYWl5YkFINmw4TWFEQi1QUUFUSVpLYXhKZFhfOW13Rmdka29wU1ZIaU1MUzRUZDVIY3J2aGFMbkZZb3FKS0dlTzA0RjdkRUMwc1hSdmhPWlRYX0RaYUhDcm5JT3hjRUlwNnZJanAxUVZHMk1HbXd0MmIwS2ZEN1hzUUxLS2lLVFoyZkQyVXlTZVdhVmV4RXBMQ0o5QkUzTEs3NGNB?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWDBzZlpyY0p2QW1iQ0lPYWl5YkFINmw4TWFEQi1QUUFUSVpLYXhKZFhfOW13Rmdka29wU1ZIaU1MUzRUZDVIY3J2aGFMbkZZb3FKS0dlTzA0RjdkRUMwc1hSdmhPWlRYX0RaYUhDcm5JT3hjRUlwNnZJanAxUVZHMk1HbXd0MmIwS2ZEN1hzUUxLS2lLVFoyZkQyVXlTZVdhVmV4RXBMQ0o5QkUzTEs3NGNB?oc=5",
-      "published_at": "2026-10-24T00:26+08:00",
-      "published_date": "2026-10-24",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 48,
-      "selection_score": 60,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_e7c471881c1efc"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_f01471fa9d6578",
-          "title": "Salomon携手Protect发布ACS NEXT PROTECT: SLUSHIE联名鞋款",
-          "source": "Hypebae",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWDBzZlpyY0p2QW1iQ0lPYWl5YkFINmw4TWFEQi1QUUFUSVpLYXhKZFhfOW13Rmdka29wU1ZIaU1MUzRUZDVIY3J2aGFMbkZZb3FKS0dlTzA0RjdkRUMwc1hSdmhPWlRYX0RaYUhDcm5JT3hjRUlwNnZJanAxUVZHMk1HbXd0MmIwS2ZEN1hzUUxLS2lLVFoyZkQyVXlTZVdhVmV4RXBMQ0o5QkUzTEs3NGNB?oc=5",
-          "published_at": "2026-10-24T00:26+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "Salomon携手Protect发布联名鞋款，户外品牌跨界联名持续活跃，对儿童户外鞋设计有借鉴。"
+      "editorial_reason": "adidas与SATISFY联名推出两款ADIZERO跑鞋，跑鞋联名迭代节奏持续。"
     },
     {
       "event_id": "evt_d09a3fe6427900",
@@ -314,13 +273,13 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "1—9月社零总额同比增长1.1%，提供消费大盘背景，提示整体消费复苏仍偏温和。"
+      "editorial_reason": "1—9月社零总额同比增长1.1%，提供消费大盘偏弱的宏观参照。"
     }
   ],
   "deep_dives": [
     {
       "headline": "头部国牌资本与研发双线加码",
-      "analysis": "本周安踏、李宁被传就收购Castore进行问询，同时安踏宣布与清华合作升级并计划五年再投200亿元研发。两件事共同指向头部国牌正通过外部并购与内部研发两条路径补强高端运动服与科技能力。对儿童事业部而言，这意味着母品牌资源池扩大，但儿童线能否承接成人科技下放、形成差异化产品，仍需观察。",
+      "analysis": "安踏、李宁被传主动问询收购英国高端运动服品牌Castore，同时安踏宣布与清华大学战略合作升级、未来五年预计再投200亿元研发。两件事共同指向头部国牌在品牌资产与研发能力上同步加码，行业竞争从渠道铺货转向高端资产与技术储备的长期投入。",
       "event_ids": [
         "evt_6e3b31394ffd0d",
         "evt_3b6de197b2b4a9"
@@ -343,35 +302,35 @@
       ]
     },
     {
-      "headline": "竞品渠道流水与平台新品节奏",
-      "analysis": "361°三季度各渠道流水保持稳健增长，显示其渠道运营仍具韧性；同期双11天猫首发新品商家数同比增长64%，平台新品首发竞争升温。两者结合看，运动品牌在电商大促中的新品首发密度提高，渠道流水增长更依赖上新节奏与平台资源配合。儿童线需关注大促期间新品曝光与渠道协同效率。",
+      "headline": "平台新品首发与消费大盘的冷热对照",
+      "analysis": "双11期间品牌集体重仓天猫，首发新品商家数同比增长64%，显示平台仍是新品首发关键阵地；但同期社零总额仅增长1.1%，消费大盘偏弱。品牌在有限增量中更依赖新品首发和平台资源争夺曝光，对儿童品类的上新节奏与平台运营提出更高要求。",
       "event_ids": [
-        "evt_d5feecc5d81dd8",
-        "evt_6ddee63a4aa09e"
+        "evt_6ddee63a4aa09e",
+        "evt_d09a3fe6427900"
       ],
       "evidence": [
-        {
-          "event_id": "evt_d5feecc5d81dd8",
-          "title": "361度早盘涨逾3% 公司三季度各渠道流水仍保持稳健增长势头",
-          "source": "新浪财经",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZ3ppY3RQY0xFeFRUQkduT2dkUXJBenhKcmE5aDloRmRvWC0zckhMUjV2ZF90N0Z2WWlkVHRKc0hQSzJXcHFXekJwM2VWVzd5alpKTUZQZmRrUGZ6SFRpZ2RJMkZRUXBwYXllLXhwTzNmLTJJdXVKSlZNblBJSHdlT1JFSjN1Zlp3bjZXRVFDbDNyV2loY3c?oc=5",
-          "published_date": "2026-10-23"
-        },
         {
           "event_id": "evt_6ddee63a4aa09e",
           "title": "双11品牌集体重仓天猫 首发新品商家数同比强劲增长64%",
           "source": "亿邦动力",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBHREtjc19VdnJCYnpscnVUcGtLQXJkeTRXaDRsQ2VUdndJdTY2RWU3bTZIWnBDMHhUWlhhZlNwM21KS1dQRGliT2tUQWNfblFvcVNYOXdn?oc=5",
           "published_date": "2026-10-19"
+        },
+        {
+          "event_id": "evt_d09a3fe6427900",
+          "title": "2026年1—9月份社会消费品零售总额增长1.1%",
+          "source": "国家统计局",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9KVVlUSDdhc0VlcEo3OVVBSGxJRHNHMllqdzVPNmpKbXRxNy1aR0paYlBfUU5wWU9Pa3B0dnVtS0YtOGt4UHlIZV9FSjdrN21CUmF2RTU5U1FRQndvT3NCQ25vTHRuNGppd3Znc05COA?oc=5",
+          "published_date": "2026-10-19"
         }
       ]
     },
     {
-      "headline": "跑鞋与户外鞋联名专业化",
-      "analysis": "adidas与SATISFY联名推出两款ADIZERO跑鞋，Salomon与Protect联名发布鞋款，显示跑鞋与户外鞋品类正通过联名强化专业形象与潮流属性。对儿童运动鞋的启示在于，户外场景与专业功能结合可能成为产品差异化方向，但本周证据未涉及儿童具体产品，需谨慎看待。",
+      "headline": "跑鞋联名与竞对流水信号",
+      "analysis": "adidas与SATISFY联名第二弹发布两款ADIZERO跑鞋，跑鞋品类继续通过联名维持话题与产品迭代；361°三季度各渠道流水保持稳健增长，海外业务被提及放量。两者分别代表产品端联名活跃与竞对渠道基本盘稳固，需关注联名策略是否向儿童跑鞋延伸。",
       "event_ids": [
         "evt_c114c6b1b747e6",
-        "evt_e7c471881c1efc"
+        "evt_d5feecc5d81dd8"
       ],
       "evidence": [
         {
@@ -382,11 +341,11 @@
           "published_date": "2026-10-23"
         },
         {
-          "event_id": "evt_e7c471881c1efc",
-          "title": "Salomon携手Protect发布ACS NEXT PROTECT: SLUSHIE联名鞋款",
-          "source": "Hypebae",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWDBzZlpyY0p2QW1iQ0lPYWl5YkFINmw4TWFEQi1QUUFUSVpLYXhKZFhfOW13Rmdka29wU1ZIaU1MUzRUZDVIY3J2aGFMbkZZb3FKS0dlTzA0RjdkRUMwc1hSdmhPWlRYX0RaYUhDcm5JT3hjRUlwNnZJanAxUVZHMk1HbXd0MmIwS2ZEN1hzUUxLS2lLVFoyZkQyVXlTZVdhVmV4RXBMQ0o5QkUzTEs3NGNB?oc=5",
-          "published_date": "2026-10-24"
+          "event_id": "evt_d5feecc5d81dd8",
+          "title": "361度早盘涨逾3% 公司三季度各渠道流水仍保持稳健增长势头",
+          "source": "新浪财经",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZ3ppY3RQY0xFeFRUQkduT2dkUXJBenhKcmE5aDloRmRvWC0zckhMUjV2ZF90N0Z2WWlkVHRKc0hQSzJXcHFXekJwM2VWVzd5alpKTUZQZmRrUGZ6SFRpZ2RJMkZRUXBwYXllLXhwTzNmLTJJdXVKSlZNblBJSHdlT1JFSjN1Zlp3bjZXRVFDbDNyV2loY3c?oc=5",
+          "published_date": "2026-10-23"
         }
       ]
     }
@@ -471,24 +430,70 @@
           "summary": ""
         }
       ]
+    },
+    {
+      "event_id": "evt_bcb4740b444f0f",
+      "title": "全国户外运动相关产业总规模超3.1万亿元",
+      "category": "户外与场景",
+      "event_family": "industry_event",
+      "reporting_period": "",
+      "brands": [],
+      "source": "人民网",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
+      "published_at": "2026-10-19T09:02+08:00",
+      "published_date": "2026-10-19",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 42,
+      "selection_score": 55,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_bcb4740b444f0f"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_c3d43958a2ccf3",
+          "title": "全国户外运动相关产业总规模超3.1万亿元",
+          "source": "人民网",
+          "source_tier": "tier_1",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
+          "published_at": "2026-10-19T09:02+08:00",
+          "summary": ""
+        }
+      ]
     }
   ],
   "watchlist": [
     {
-      "title": "双11儿童运动品类上新与平台资源",
+      "title": "儿童运动鞋户外化趋势",
+      "event_ids": [
+        "evt_bcb4740b444f0f"
+      ],
+      "product_ids": [],
+      "reason": "户外产业规模超3.1万亿元，关注儿童户外鞋服是否跟进推出对应产品。"
+    },
+    {
+      "title": "双11平台新品首发竞争",
       "event_ids": [
         "evt_6ddee63a4aa09e"
       ],
       "product_ids": [],
-      "reason": "关注双11期间儿童运动品牌在天猫的首发新品数量及平台资源倾斜情况。"
+      "reason": "观察天猫首发新品商家增长对儿童运动品牌上新节奏与资源分配的影响。"
     },
     {
-      "title": "安踏儿童是否承接集团研发资源",
+      "title": "头部国牌收购与研发动向",
       "event_ids": [
+        "evt_6e3b31394ffd0d",
         "evt_3b6de197b2b4a9"
       ],
       "product_ids": [],
-      "reason": "安踏集团加大研发投入后，观察儿童线是否获得科技下放或独立研发动作。"
+      "reason": "跟踪Castore收购传闻后续及安踏研发投入落地方向是否涉及儿童品类。"
     }
   ],
   "tracking": {
@@ -542,7 +547,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏、李宁同时被传问询收购Castore，反映头部国牌通过资本手段补强高端运动服矩阵的动向。"
+        "editorial_reason": "安踏、李宁同时被传问询收购Castore，反映头部国牌寻求高端户外资产补位。"
       },
       {
         "event_id": "evt_3b6de197b2b4a9",
@@ -582,7 +587,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "安踏与清华合作升级并计划五年再投200亿元研发，显示头部品牌持续加码运动科技长期投入。"
+        "editorial_reason": "安踏与清华合作升级并计划五年再投200亿元研发，显示头部品牌研发投入加码。"
       },
       {
         "event_id": "evt_d5feecc5d81dd8",
@@ -632,7 +637,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "361°三季度各渠道流水保持稳健增长，作为直接竞品，其渠道表现对儿童事业部有参照意义。"
+        "editorial_reason": "361°三季度各渠道流水保持稳健增长，作为本事业部直接竞对需跟踪。"
       },
       {
         "event_id": "evt_6ddee63a4aa09e",
@@ -670,7 +675,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "双11天猫首发新品商家数同比增长64%，反映平台新品首发竞争加剧，对儿童新品上新节奏有参考。"
+        "editorial_reason": "双11天猫首发新品商家数同比增长64%，平台新品首发竞争加剧。"
       },
       {
         "event_id": "evt_c114c6b1b747e6",
@@ -710,48 +715,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "adidas与SATISFY联名发布两款ADIZERO跑鞋，体现跑鞋品类联名化与专业化并行趋势。"
-      },
-      {
-        "event_id": "evt_e7c471881c1efc",
-        "title": "Salomon携手Protect发布ACS NEXT PROTECT: SLUSHIE联名鞋款",
-        "category": "产品与科技",
-        "event_family": "collaboration",
-        "reporting_period": "",
-        "brands": [
-          "Salomon",
-          "Alo"
-        ],
-        "source": "Hypebae",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWDBzZlpyY0p2QW1iQ0lPYWl5YkFINmw4TWFEQi1QUUFUSVpLYXhKZFhfOW13Rmdka29wU1ZIaU1MUzRUZDVIY3J2aGFMbkZZb3FKS0dlTzA0RjdkRUMwc1hSdmhPWlRYX0RaYUhDcm5JT3hjRUlwNnZJanAxUVZHMk1HbXd0MmIwS2ZEN1hzUUxLS2lLVFoyZkQyVXlTZVdhVmV4RXBMQ0o5QkUzTEs3NGNB?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWDBzZlpyY0p2QW1iQ0lPYWl5YkFINmw4TWFEQi1QUUFUSVpLYXhKZFhfOW13Rmdka29wU1ZIaU1MUzRUZDVIY3J2aGFMbkZZb3FKS0dlTzA0RjdkRUMwc1hSdmhPWlRYX0RaYUhDcm5JT3hjRUlwNnZJanAxUVZHMk1HbXd0MmIwS2ZEN1hzUUxLS2lLVFoyZkQyVXlTZVdhVmV4RXBMQ0o5QkUzTEs3NGNB?oc=5",
-        "published_at": "2026-10-24T00:26+08:00",
-        "published_date": "2026-10-24",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 48,
-        "selection_score": 60,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_e7c471881c1efc"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_f01471fa9d6578",
-            "title": "Salomon携手Protect发布ACS NEXT PROTECT: SLUSHIE联名鞋款",
-            "source": "Hypebae",
-            "source_tier": "tier_3",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWDBzZlpyY0p2QW1iQ0lPYWl5YkFINmw4TWFEQi1QUUFUSVpLYXhKZFhfOW13Rmdka29wU1ZIaU1MUzRUZDVIY3J2aGFMbkZZb3FKS0dlTzA0RjdkRUMwc1hSdmhPWlRYX0RaYUhDcm5JT3hjRUlwNnZJanAxUVZHMk1HbXd0MmIwS2ZEN1hzUUxLS2lLVFoyZkQyVXlTZVdhVmV4RXBMQ0o5QkUzTEs3NGNB?oc=5",
-            "published_at": "2026-10-24T00:26+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "Salomon携手Protect发布联名鞋款，户外品牌跨界联名持续活跃，对儿童户外鞋设计有借鉴。"
+        "editorial_reason": "adidas与SATISFY联名推出两款ADIZERO跑鞋，跑鞋联名迭代节奏持续。"
       }
     ],
     "follow_up_selected": [
@@ -791,7 +755,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "1—9月社零总额同比增长1.1%，提供消费大盘背景，提示整体消费复苏仍偏温和。"
+        "editorial_reason": "1—9月社零总额同比增长1.1%，提供消费大盘偏弱的宏观参照。"
       }
     ],
     "verification_queue": [],
@@ -996,14 +960,6 @@
     },
     {
       "type": "event",
-      "id": "evt_e7c471881c1efc",
-      "title": "Salomon携手Protect发布ACS NEXT PROTECT: SLUSHIE联名鞋款",
-      "source": "Hypebae",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWDBzZlpyY0p2QW1iQ0lPYWl5YkFINmw4TWFEQi1QUUFUSVpLYXhKZFhfOW13Rmdka29wU1ZIaU1MUzRUZDVIY3J2aGFMbkZZb3FKS0dlTzA0RjdkRUMwc1hSdmhPWlRYX0RaYUhDcm5JT3hjRUlwNnZJanAxUVZHMk1HbXd0MmIwS2ZEN1hzUUxLS2lLVFoyZkQyVXlTZVdhVmV4RXBMQ0o5QkUzTEs3NGNB?oc=5",
-      "published_date": "2026-10-24"
-    },
-    {
-      "type": "event",
       "id": "evt_d09a3fe6427900",
       "title": "2026年1—9月份社会消费品零售总额增长1.1%",
       "source": "国家统计局",
@@ -1025,6 +981,14 @@
       "source": "新京报",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5TcWNYWnFSRkJaSUZwRUZJNm9CVnd5M1dMTG91RGF2Wk0xcFJaMWFnRm54SUJSNzZEQnVUTi16b3RITG5HRVozQmNFWl9BOS1uSHZxeVhhblpMN09rbG1DZXpsVHE?oc=5",
       "published_date": "2026-10-25"
+    },
+    {
+      "type": "event",
+      "id": "evt_bcb4740b444f0f",
+      "title": "全国户外运动相关产业总规模超3.1万亿元",
+      "source": "人民网",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQ1QxMk5sRUM4aUN1dkFrenRDakJXSHBqcHVGbjFpZE12b1RSc2V4dDlES181eUJzRFU3V0EySTdNdElNVzFUVm81bmxuNWNKRTlMSFp0aVE1d3FMcXRLVlNqZ0xWejhTVUpiTlF5NVlvekFJZzdvS19RYzFyRjhIa3hjYw?oc=5",
+      "published_date": "2026-10-19"
     }
   ],
   "data_quality": {
@@ -1035,7 +999,7 @@
     "raw_event_count": 17,
     "coalesced_event_count": 17,
     "eligible_event_count": 17,
-    "selected_event_count": 7,
+    "selected_event_count": 6,
     "raw_product_count": 14,
     "product_lead_count": 14,
     "eligible_product_count": 0,
@@ -1057,7 +1021,7 @@
       "户外与场景": 1
     },
     "selected_status": {
-      "new": 6,
+      "new": 5,
       "follow_up": 1
     },
     "quality_notes": [
