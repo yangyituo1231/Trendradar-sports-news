@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-11-02T14:37+08:00",
+  "generated_at": "2026-11-03T12:18+08:00",
   "report_window": {
     "start_date": "2026-10-26",
     "end_date": "2026-11-01",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "国际品牌在华表现分化，渠道与供应链调整加速，儿童运动鞋高溢价与平台双11竞争值得关注。",
-    "week_in_one_paragraph": "本周阿迪达斯三季度大中华区增长13%，而VF、Puma在华承压，国际品牌分化明显。耐克调整线上渠道，滔搏回应线下合作不变；耐克启用越南电动驳船降碳。京东双11时尚中小商家成交增长，平台竞争加剧。儿童运动鞋出现高溢价案例，需关注消费接受度。",
+    "weekly_thesis": "运动品牌在华分化加剧，渠道与库存调整成焦点；儿童运动鞋高溢价争议提示细分市场需谨慎。",
+    "week_in_one_paragraph": "本周阿迪达斯大中华区增长与VF、Puma在华下滑形成对比，耐克线上渠道调整引发经销商回应，京东双11时尚中小商家增长显著，儿童运动鞋出现高溢价讨论，行业渠道与消费分层信号增强。",
     "next_week_focus": [
-      "跟踪阿迪达斯与VF、Puma在华渠道策略差异对童装线的影响",
-      "关注耐克线上渠道调整后滔搏等经销商的库存与促销动态",
-      "观察双11后半程儿童运动品类在京东、天猫的竞争格局",
-      "留意儿童运动鞋高溢价产品的消费者反馈与复购表现",
-      "跟踪国际品牌供应链减碳举措是否延伸至童装产品线"
+      "跟踪阿迪达斯与Puma在华渠道策略差异",
+      "关注耐克线上渠道调整对经销商库存影响",
+      "观察京东双11后半程运动儿童品类表现",
+      "留意儿童运动鞋高溢价讨论的后续反应",
+      "关注国际品牌大中华区财报披露节奏"
     ]
   },
   "key_developments": [
@@ -56,7 +56,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "阿迪达斯大中华区增长13%，释放渠道扩张信号，与VF、Puma在华下滑形成对比。"
+      "editorial_reason": "阿迪达斯大中华区增长13%，与多家国际品牌在华下滑形成反差，渠道扩张信号值得关注。"
     },
     {
       "event_id": "evt_eafe2420660175",
@@ -94,7 +94,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "VF全球营收下滑4%，大中华区下滑5%，反映国际品牌在华普遍承压。"
+      "editorial_reason": "VF全球营收下滑且大中华区下降5%，反映国际品牌在华普遍承压。"
     },
     {
       "event_id": "evt_cb949eb1622bdc",
@@ -134,7 +134,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "滔搏回应耐克线上渠道调整，线下合作不变，渠道权力博弈值得关注。"
+      "editorial_reason": "滔搏回应耐克线上渠道调整，线下合作不变，显示品牌与经销商渠道权力再平衡。"
     },
     {
       "event_id": "evt_d26ebb2c143c3c",
@@ -172,21 +172,22 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "京东双11时尚中小商家成交增长，平台竞争与中小品牌机会值得关注。"
+      "editorial_reason": "京东双11时尚中小商家成交增长，平台渠道对中小品牌重要性上升。"
     },
     {
-      "event_id": "evt_5cd6b13cb17029",
-      "title": "大中华区给彪马亚太区增长拖了后腿",
+      "event_id": "evt_f37907b5e95aa1",
+      "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
       "category": "行业动态",
       "event_family": "industry_event",
       "reporting_period": "",
       "brands": [
-        "Puma"
+        "Puma",
+        "安踏"
       ],
-      "source": "界面新闻",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
-      "published_at": "2026-10-31T11:43+08:00",
+      "source": "OR新媒体",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+      "published_at": "2026-10-31T17:04+08:00",
       "published_date": "2026-10-31",
       "status": "new",
       "verification": "single_source",
@@ -194,31 +195,31 @@
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 43,
-      "selection_score": 50,
+      "editorial_score": 46,
+      "selection_score": 58,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_5cd6b13cb17029"
+        "evt_f37907b5e95aa1"
       ],
       "evidence": [
         {
-          "item_id": "src_b33d6ac55a5b62",
-          "title": "大中华区给彪马亚太区增长拖了后腿",
-          "source": "界面新闻",
-          "source_tier": "tier_2",
+          "item_id": "src_156d10ccdf575c",
+          "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
+          "source": "OR新媒体",
+          "source_tier": "tier_3",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
-          "published_at": "2026-10-31T11:43+08:00",
+          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+          "published_at": "2026-10-31T17:04+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "Puma大中华区拖累亚太增长，与阿迪达斯增长形成反差，凸显品牌分化。"
+      "editorial_reason": "Puma库存下降24%与安踏渠道调整并置，揭示库存与渠道权力转移。"
     }
   ],
   "deep_dives": [
     {
       "headline": "国际运动品牌在华表现分化",
-      "analysis": "阿迪达斯三季度大中华区增长13%，而VF大中华区下滑5%，Puma大中华区拖累亚太增长。同一周期内国际品牌在华表现明显分化，反映品牌定位、渠道策略和产品组合的差异正在放大。对儿童事业部而言，需关注成人运动品牌在华势能变化对童装线渠道资源和消费者心智的传导。",
+      "analysis": "阿迪达斯大中华区增长13%，而VF大中华区下滑5%、Puma大中华区拖累亚太增长。同一周期内品牌表现分化，说明中国运动消费并非整体收缩，而是份额与渠道效率重新分配，品牌本土化与渠道策略差异正在放大。",
       "event_ids": [
         "evt_d12e6d3ed3ae6b",
         "evt_eafe2420660175",
@@ -249,11 +250,11 @@
       ]
     },
     {
-      "headline": "渠道调整与供应链减碳并行",
-      "analysis": "耐克调整线上渠道，滔搏回应线下合作不变，显示品牌与经销商在渠道权力和库存资源上的博弈持续。同时耐克启用越南电动驳船降低供应链碳排放，表明国际品牌在渠道优化的同时推进绿色物流。行业层面，渠道效率与可持续供应链正成为品牌竞争力的双重维度。",
+      "headline": "渠道调整与库存权力再平衡",
+      "analysis": "耐克线上渠道调整引发滔搏回应，线下合作不变但就库存回收和促销补贴持续沟通；Puma库存下降24%背后被解读为渠道权力转移。品牌方与经销商在库存、促销资源上的博弈加剧，渠道效率成为库存健康的关键变量。",
       "event_ids": [
         "evt_cb949eb1622bdc",
-        "evt_3ce4cc8defea25"
+        "evt_f37907b5e95aa1"
       ],
       "evidence": [
         {
@@ -264,17 +265,17 @@
           "published_date": "2026-10-29"
         },
         {
-          "event_id": "evt_3ce4cc8defea25",
-          "title": "Nike 启用越南首艘电动驳船，降低供应链碳排放— NIKE, Inc.",
-          "source": "About Nike",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQa0VFaXhSVWpTR0dwX2tCVVlCdjAzaEdMMktCXzhORWFVSk5GczVRNlJKNjRueTg5anFWNjlVWk1oWjdnZVFzemowZmlRcjJzU1BCc2Y5LU5mZTl5Mk5VR0JBcXJ1ZXcweDE4d2g0Nkd5VjhNMExsVnNtelVWbE1ndzBLblpVeGtzbXc4aDdoOG15blJ3bEZVdXdvOXUwQy1aMW91VGtWT2ZVUGZDaDVuTFZKaW1qUnJLWkE5bnAxc0VBVUZSX3ItTzhyRkdjYXE2OUE3bEVuY1BTUjFSbHc?oc=5",
-          "published_date": "2026-10-29"
+          "event_id": "evt_f37907b5e95aa1",
+          "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
+          "source": "OR新媒体",
+          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+          "published_date": "2026-10-31"
         }
       ]
     },
     {
-      "headline": "双11平台竞争与中小商家机会",
-      "analysis": "京东双11前半程2900个时尚中小商家成交额同比增长超200%，显示平台流量向中小商家倾斜，时尚品类竞争加剧。对儿童运动品牌而言，双11既是销售窗口也是品牌曝光机会，需关注平台资源分配和中小商家崛起对传统品牌份额的潜在影响。",
+      "headline": "平台大促中的中小商家机会",
+      "analysis": "京东双11前半程2900个时尚中小商家成交额同比增长超200%，显示平台大促流量与工具正在向中小商家倾斜。对儿童运动品牌而言，平台渠道可能成为细分品类触达消费者的重要补充，但需结合自身渠道结构评估。",
       "event_ids": [
         "evt_d26ebb2c143c3c"
       ],
@@ -378,7 +379,7 @@
         "evt_00b35a2f60315e"
       ],
       "product_ids": [],
-      "reason": "观察耐克线上渠道调整对经销商库存和促销资源的具体影响，以及是否波及童装线渠道。"
+      "reason": "关注耐克与滔搏沟通进展及是否引发其他品牌经销商类似调整。"
     }
   ],
   "tracking": {
@@ -421,7 +422,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "阿迪达斯大中华区增长13%，释放渠道扩张信号，与VF、Puma在华下滑形成对比。"
+        "editorial_reason": "阿迪达斯大中华区增长13%，与多家国际品牌在华下滑形成反差，渠道扩张信号值得关注。"
       },
       {
         "event_id": "evt_eafe2420660175",
@@ -459,7 +460,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "VF全球营收下滑4%，大中华区下滑5%，反映国际品牌在华普遍承压。"
+        "editorial_reason": "VF全球营收下滑且大中华区下降5%，反映国际品牌在华普遍承压。"
       },
       {
         "event_id": "evt_cb949eb1622bdc",
@@ -499,7 +500,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "滔搏回应耐克线上渠道调整，线下合作不变，渠道权力博弈值得关注。"
+        "editorial_reason": "滔搏回应耐克线上渠道调整，线下合作不变，显示品牌与经销商渠道权力再平衡。"
       },
       {
         "event_id": "evt_d26ebb2c143c3c",
@@ -537,21 +538,22 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "京东双11时尚中小商家成交增长，平台竞争与中小品牌机会值得关注。"
+        "editorial_reason": "京东双11时尚中小商家成交增长，平台渠道对中小品牌重要性上升。"
       },
       {
-        "event_id": "evt_5cd6b13cb17029",
-        "title": "大中华区给彪马亚太区增长拖了后腿",
+        "event_id": "evt_f37907b5e95aa1",
+        "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
         "category": "行业动态",
         "event_family": "industry_event",
         "reporting_period": "",
         "brands": [
-          "Puma"
+          "Puma",
+          "安踏"
         ],
-        "source": "界面新闻",
-        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
-        "published_at": "2026-10-31T11:43+08:00",
+        "source": "OR新媒体",
+        "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+        "published_at": "2026-10-31T17:04+08:00",
         "published_date": "2026-10-31",
         "status": "new",
         "verification": "single_source",
@@ -559,25 +561,25 @@
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 43,
-        "selection_score": 50,
+        "editorial_score": 46,
+        "selection_score": 58,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_5cd6b13cb17029"
+          "evt_f37907b5e95aa1"
         ],
         "evidence": [
           {
-            "item_id": "src_b33d6ac55a5b62",
-            "title": "大中华区给彪马亚太区增长拖了后腿",
-            "source": "界面新闻",
-            "source_tier": "tier_2",
+            "item_id": "src_156d10ccdf575c",
+            "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
+            "source": "OR新媒体",
+            "source_tier": "tier_3",
             "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
-            "published_at": "2026-10-31T11:43+08:00",
+            "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+            "published_at": "2026-10-31T17:04+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "Puma大中华区拖累亚太增长，与阿迪达斯增长形成反差，凸显品牌分化。"
+        "editorial_reason": "Puma库存下降24%与安踏渠道调整并置，揭示库存与渠道权力转移。"
       }
     ],
     "follow_up_selected": [],
@@ -747,10 +749,10 @@
     },
     {
       "type": "event",
-      "id": "evt_5cd6b13cb17029",
-      "title": "大中华区给彪马亚太区增长拖了后腿",
-      "source": "界面新闻",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
+      "id": "evt_f37907b5e95aa1",
+      "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
+      "source": "OR新媒体",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
       "published_date": "2026-10-31"
     },
     {
@@ -771,11 +773,11 @@
     },
     {
       "type": "event",
-      "id": "evt_3ce4cc8defea25",
-      "title": "Nike 启用越南首艘电动驳船，降低供应链碳排放— NIKE, Inc.",
-      "source": "About Nike",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQa0VFaXhSVWpTR0dwX2tCVVlCdjAzaEdMMktCXzhORWFVSk5GczVRNlJKNjRueTg5anFWNjlVWk1oWjdnZVFzemowZmlRcjJzU1BCc2Y5LU5mZTl5Mk5VR0JBcXJ1ZXcweDE4d2g0Nkd5VjhNMExsVnNtelVWbE1ndzBLblpVeGtzbXc4aDdoOG15blJ3bEZVdXdvOXUwQy1aMW91VGtWT2ZVUGZDaDVuTFZKaW1qUnJLWkE5bnAxc0VBVUZSX3ItTzhyRkdjYXE2OUE3bEVuY1BTUjFSbHc?oc=5",
-      "published_date": "2026-10-29"
+      "id": "evt_5cd6b13cb17029",
+      "title": "大中华区给彪马亚太区增长拖了后腿",
+      "source": "界面新闻",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
+      "published_date": "2026-10-31"
     }
   ],
   "data_quality": {
