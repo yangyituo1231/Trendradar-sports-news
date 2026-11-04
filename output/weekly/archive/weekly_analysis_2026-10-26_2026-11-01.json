@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-11-03T12:18+08:00",
+  "generated_at": "2026-11-04T11:36+08:00",
   "report_window": {
     "start_date": "2026-10-26",
     "end_date": "2026-11-01",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "运动品牌在华分化加剧，渠道与库存调整成焦点；儿童运动鞋高溢价争议提示细分市场需谨慎。",
-    "week_in_one_paragraph": "本周阿迪达斯大中华区增长与VF、Puma在华下滑形成对比，耐克线上渠道调整引发经销商回应，京东双11时尚中小商家增长显著，儿童运动鞋出现高溢价讨论，行业渠道与消费分层信号增强。",
+    "weekly_thesis": "国际品牌在华分化加剧，渠道与库存调整成焦点；儿童运动鞋高溢价争议提示细分市场需谨慎。",
+    "week_in_one_paragraph": "本周阿迪达斯大中华区增长与VF、Puma在华下滑形成对比，耐克线上渠道调整引发经销商回应；京东双11时尚中小商家增长，体育消费场景获政策展示。儿童运动鞋出现高溢价讨论，但产品候选缺失，需持续观察。",
     "next_week_focus": [
-      "跟踪阿迪达斯与Puma在华渠道策略差异",
-      "关注耐克线上渠道调整对经销商库存影响",
-      "观察京东双11后半程运动儿童品类表现",
-      "留意儿童运动鞋高溢价讨论的后续反应",
-      "关注国际品牌大中华区财报披露节奏"
+      "跟踪阿迪达斯大中华区增长是否伴随渠道扩张动作",
+      "关注耐克线上渠道调整对经销商库存与促销的后续影响",
+      "观察Puma大中华区下滑与库存去化进展",
+      "留意京东双11后半程运动时尚品类表现",
+      "关注儿童运动鞋高溢价讨论的后续证据"
     ]
   },
   "key_developments": [
@@ -137,44 +137,6 @@
       "editorial_reason": "滔搏回应耐克线上渠道调整，线下合作不变，显示品牌与经销商渠道权力再平衡。"
     },
     {
-      "event_id": "evt_d26ebb2c143c3c",
-      "title": "京东双11前半程 2900个时尚中小商家成交额同比增长超200%",
-      "category": "电商与平台",
-      "event_family": "platform_channel",
-      "reporting_period": "",
-      "brands": [],
-      "source": "亿邦动力",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UcFItV3hUUzBKam9CUVQwM09sZWExQUdCaUVhOFVjc2V6U1UyZjJrRThIM0M5ZjZfUHF2X3JybFBFMUoxYXZzdzdaSkhkTThQMlVManF3?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UcFItV3hUUzBKam9CUVQwM09sZWExQUdCaUVhOFVjc2V6U1UyZjJrRThIM0M5ZjZfUHF2X3JybFBFMUoxYXZzdzdaSkhkTThQMlVManF3?oc=5",
-      "published_at": "2026-11-01T19:11+08:00",
-      "published_date": "2026-11-01",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 49,
-      "selection_score": 65,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_d26ebb2c143c3c"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_25399668bf1b27",
-          "title": "京东双11前半程 2900个时尚中小商家成交额同比增长超200%",
-          "source": "亿邦动力",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UcFItV3hUUzBKam9CUVQwM09sZWExQUdCaUVhOFVjc2V6U1UyZjJrRThIM0M5ZjZfUHF2X3JybFBFMUoxYXZzdzdaSkhkTThQMlVManF3?oc=5",
-          "published_at": "2026-11-01T19:11+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "京东双11时尚中小商家成交增长，平台渠道对中小品牌重要性上升。"
-    },
-    {
       "event_id": "evt_f37907b5e95aa1",
       "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
       "category": "行业动态",
@@ -213,17 +175,93 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "Puma库存下降24%与安踏渠道调整并置，揭示库存与渠道权力转移。"
+      "editorial_reason": "Puma库存下降24%与安踏渠道调整并置，揭示库存去化背后的渠道权力转移。"
+    },
+    {
+      "event_id": "evt_d26ebb2c143c3c",
+      "title": "京东双11前半程 2900个时尚中小商家成交额同比增长超200%",
+      "category": "电商与平台",
+      "event_family": "platform_channel",
+      "reporting_period": "",
+      "brands": [],
+      "source": "亿邦动力",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UcFItV3hUUzBKam9CUVQwM09sZWExQUdCaUVhOFVjc2V6U1UyZjJrRThIM0M5ZjZfUHF2X3JybFBFMUoxYXZzdzdaSkhkTThQMlVManF3?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UcFItV3hUUzBKam9CUVQwM09sZWExQUdCaUVhOFVjc2V6U1UyZjJrRThIM0M5ZjZfUHF2X3JybFBFMUoxYXZzdzdaSkhkTThQMlVManF3?oc=5",
+      "published_at": "2026-11-01T19:11+08:00",
+      "published_date": "2026-11-01",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 49,
+      "selection_score": 65,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_d26ebb2c143c3c"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_25399668bf1b27",
+          "title": "京东双11前半程 2900个时尚中小商家成交额同比增长超200%",
+          "source": "亿邦动力",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UcFItV3hUUzBKam9CUVQwM09sZWExQUdCaUVhOFVjc2V6U1UyZjJrRThIM0M5ZjZfUHF2X3JybFBFMUoxYXZzdzdaSkhkTThQMlVManF3?oc=5",
+          "published_at": "2026-11-01T19:11+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "京东双11前半程时尚中小商家成交增长，平台促销对运动时尚品类有渠道参考价值。"
+    },
+    {
+      "event_id": "evt_7479a91787ca00",
+      "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
+      "category": "宏观与消费",
+      "event_family": "macro_data",
+      "reporting_period": "",
+      "brands": [],
+      "source": "新华网",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
+      "published_at": "2026-11-01T12:21+08:00",
+      "published_date": "2026-11-01",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 53,
+      "selection_score": 63,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_7479a91787ca00"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_7305fdeb00ccae",
+          "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
+          "source": "新华网",
+          "source_tier": "tier_1",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
+          "published_at": "2026-11-01T12:21+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "湖北体育消费场景案例亮相村网，显示体育消费与地方场景融合的政策导向。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "国际运动品牌在华表现分化",
-      "analysis": "阿迪达斯大中华区增长13%，而VF大中华区下滑5%、Puma大中华区拖累亚太增长。同一周期内品牌表现分化，说明中国运动消费并非整体收缩，而是份额与渠道效率重新分配，品牌本土化与渠道策略差异正在放大。",
+      "headline": "国际运动品牌在华业绩分化与渠道调整",
+      "analysis": "阿迪达斯大中华区增长13%，而VF大中华区下滑5%，耐克线上渠道调整引发滔搏回应线下合作不变。三者共同显示国际品牌在华表现分化，渠道策略从线上扩张转向线下稳定与经销商协同，库存和促销资源成为品牌与渠道博弈焦点。",
       "event_ids": [
         "evt_d12e6d3ed3ae6b",
         "evt_eafe2420660175",
-        "evt_5cd6b13cb17029"
+        "evt_cb949eb1622bdc"
       ],
       "evidence": [
         {
@@ -241,6 +279,30 @@
           "published_date": "2026-10-29"
         },
         {
+          "event_id": "evt_cb949eb1622bdc",
+          "title": "内地最大经销商滔搏回应耐克线上渠道调整：线下合作不变",
+          "source": "界面新闻",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Tb2ZrbldjN0wtcXVfR0Vib1BSNTFTdXZaRlRyaW82VHB1VlUtbnR6MjI1d2YwYmEwQU1KbmladkpZd0ZTVXNrdUt2bUpIbVFERkdYWVRn?oc=5",
+          "published_date": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "headline": "库存去化与渠道权力转移",
+      "analysis": "Puma库存下降24%被解读为渠道权力静默转移，同时大中华区拖累亚太增长。库存去化不仅是运营指标，更反映品牌对经销商依赖加深，渠道话语权从品牌向零售端倾斜，行业需关注库存回收与补贴机制。",
+      "event_ids": [
+        "evt_f37907b5e95aa1",
+        "evt_5cd6b13cb17029"
+      ],
+      "evidence": [
+        {
+          "event_id": "evt_f37907b5e95aa1",
+          "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
+          "source": "OR新媒体",
+          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+          "published_date": "2026-10-31"
+        },
+        {
           "event_id": "evt_5cd6b13cb17029",
           "title": "大中华区给彪马亚太区增长拖了后腿",
           "source": "界面新闻",
@@ -250,34 +312,11 @@
       ]
     },
     {
-      "headline": "渠道调整与库存权力再平衡",
-      "analysis": "耐克线上渠道调整引发滔搏回应，线下合作不变但就库存回收和促销补贴持续沟通；Puma库存下降24%背后被解读为渠道权力转移。品牌方与经销商在库存、促销资源上的博弈加剧，渠道效率成为库存健康的关键变量。",
+      "headline": "平台促销与体育消费场景",
+      "analysis": "京东双11前半程时尚中小商家成交增长，显示平台促销对中小运动时尚商家有拉动；湖北体育消费场景案例亮相村网，表明体育消费与地方赛事、场景融合获政策展示。两者分别从线上促销和线下场景提供消费观察窗口。",
       "event_ids": [
-        "evt_cb949eb1622bdc",
-        "evt_f37907b5e95aa1"
-      ],
-      "evidence": [
-        {
-          "event_id": "evt_cb949eb1622bdc",
-          "title": "内地最大经销商滔搏回应耐克线上渠道调整：线下合作不变",
-          "source": "界面新闻",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Tb2ZrbldjN0wtcXVfR0Vib1BSNTFTdXZaRlRyaW82VHB1VlUtbnR6MjI1d2YwYmEwQU1KbmladkpZd0ZTVXNrdUt2bUpIbVFERkdYWVRn?oc=5",
-          "published_date": "2026-10-29"
-        },
-        {
-          "event_id": "evt_f37907b5e95aa1",
-          "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
-          "source": "OR新媒体",
-          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
-          "published_date": "2026-10-31"
-        }
-      ]
-    },
-    {
-      "headline": "平台大促中的中小商家机会",
-      "analysis": "京东双11前半程2900个时尚中小商家成交额同比增长超200%，显示平台大促流量与工具正在向中小商家倾斜。对儿童运动品牌而言，平台渠道可能成为细分品类触达消费者的重要补充，但需结合自身渠道结构评估。",
-      "event_ids": [
-        "evt_d26ebb2c143c3c"
+        "evt_d26ebb2c143c3c",
+        "evt_7479a91787ca00"
       ],
       "evidence": [
         {
@@ -285,6 +324,13 @@
           "title": "京东双11前半程 2900个时尚中小商家成交额同比增长超200%",
           "source": "亿邦动力",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UcFItV3hUUzBKam9CUVQwM09sZWExQUdCaUVhOFVjc2V6U1UyZjJrRThIM0M5ZjZfUHF2X3JybFBFMUoxYXZzdzdaSkhkTThQMlVManF3?oc=5",
+          "published_date": "2026-11-01"
+        },
+        {
+          "event_id": "evt_7479a91787ca00",
+          "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
+          "source": "新华网",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
           "published_date": "2026-11-01"
         }
       ]
@@ -379,7 +425,7 @@
         "evt_00b35a2f60315e"
       ],
       "product_ids": [],
-      "reason": "关注耐克与滔搏沟通进展及是否引发其他品牌经销商类似调整。"
+      "reason": "关注耐克与滔搏在库存回收、促销补贴上的进一步沟通及对线下渠道的影响。"
     }
   ],
   "tracking": {
@@ -503,44 +549,6 @@
         "editorial_reason": "滔搏回应耐克线上渠道调整，线下合作不变，显示品牌与经销商渠道权力再平衡。"
       },
       {
-        "event_id": "evt_d26ebb2c143c3c",
-        "title": "京东双11前半程 2900个时尚中小商家成交额同比增长超200%",
-        "category": "电商与平台",
-        "event_family": "platform_channel",
-        "reporting_period": "",
-        "brands": [],
-        "source": "亿邦动力",
-        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UcFItV3hUUzBKam9CUVQwM09sZWExQUdCaUVhOFVjc2V6U1UyZjJrRThIM0M5ZjZfUHF2X3JybFBFMUoxYXZzdzdaSkhkTThQMlVManF3?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UcFItV3hUUzBKam9CUVQwM09sZWExQUdCaUVhOFVjc2V6U1UyZjJrRThIM0M5ZjZfUHF2X3JybFBFMUoxYXZzdzdaSkhkTThQMlVManF3?oc=5",
-        "published_at": "2026-11-01T19:11+08:00",
-        "published_date": "2026-11-01",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 49,
-        "selection_score": 65,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_d26ebb2c143c3c"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_25399668bf1b27",
-            "title": "京东双11前半程 2900个时尚中小商家成交额同比增长超200%",
-            "source": "亿邦动力",
-            "source_tier": "tier_2",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UcFItV3hUUzBKam9CUVQwM09sZWExQUdCaUVhOFVjc2V6U1UyZjJrRThIM0M5ZjZfUHF2X3JybFBFMUoxYXZzdzdaSkhkTThQMlVManF3?oc=5",
-            "published_at": "2026-11-01T19:11+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "京东双11时尚中小商家成交增长，平台渠道对中小品牌重要性上升。"
-      },
-      {
         "event_id": "evt_f37907b5e95aa1",
         "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
         "category": "行业动态",
@@ -579,7 +587,83 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "Puma库存下降24%与安踏渠道调整并置，揭示库存与渠道权力转移。"
+        "editorial_reason": "Puma库存下降24%与安踏渠道调整并置，揭示库存去化背后的渠道权力转移。"
+      },
+      {
+        "event_id": "evt_d26ebb2c143c3c",
+        "title": "京东双11前半程 2900个时尚中小商家成交额同比增长超200%",
+        "category": "电商与平台",
+        "event_family": "platform_channel",
+        "reporting_period": "",
+        "brands": [],
+        "source": "亿邦动力",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UcFItV3hUUzBKam9CUVQwM09sZWExQUdCaUVhOFVjc2V6U1UyZjJrRThIM0M5ZjZfUHF2X3JybFBFMUoxYXZzdzdaSkhkTThQMlVManF3?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UcFItV3hUUzBKam9CUVQwM09sZWExQUdCaUVhOFVjc2V6U1UyZjJrRThIM0M5ZjZfUHF2X3JybFBFMUoxYXZzdzdaSkhkTThQMlVManF3?oc=5",
+        "published_at": "2026-11-01T19:11+08:00",
+        "published_date": "2026-11-01",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 49,
+        "selection_score": 65,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_d26ebb2c143c3c"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_25399668bf1b27",
+            "title": "京东双11前半程 2900个时尚中小商家成交额同比增长超200%",
+            "source": "亿邦动力",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UcFItV3hUUzBKam9CUVQwM09sZWExQUdCaUVhOFVjc2V6U1UyZjJrRThIM0M5ZjZfUHF2X3JybFBFMUoxYXZzdzdaSkhkTThQMlVManF3?oc=5",
+            "published_at": "2026-11-01T19:11+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "京东双11前半程时尚中小商家成交增长，平台促销对运动时尚品类有渠道参考价值。"
+      },
+      {
+        "event_id": "evt_7479a91787ca00",
+        "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
+        "category": "宏观与消费",
+        "event_family": "macro_data",
+        "reporting_period": "",
+        "brands": [],
+        "source": "新华网",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
+        "published_at": "2026-11-01T12:21+08:00",
+        "published_date": "2026-11-01",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 53,
+        "selection_score": 63,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_7479a91787ca00"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_7305fdeb00ccae",
+            "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
+            "source": "新华网",
+            "source_tier": "tier_1",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
+            "published_at": "2026-11-01T12:21+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "湖北体育消费场景案例亮相村网，显示体育消费与地方场景融合的政策导向。"
       }
     ],
     "follow_up_selected": [],
@@ -741,6 +825,14 @@
     },
     {
       "type": "event",
+      "id": "evt_f37907b5e95aa1",
+      "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
+      "source": "OR新媒体",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+      "published_date": "2026-10-31"
+    },
+    {
+      "type": "event",
       "id": "evt_d26ebb2c143c3c",
       "title": "京东双11前半程 2900个时尚中小商家成交额同比增长超200%",
       "source": "亿邦动力",
@@ -749,11 +841,11 @@
     },
     {
       "type": "event",
-      "id": "evt_f37907b5e95aa1",
-      "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
-      "source": "OR新媒体",
-      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
-      "published_date": "2026-10-31"
+      "id": "evt_7479a91787ca00",
+      "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
+      "source": "新华网",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
+      "published_date": "2026-11-01"
     },
     {
       "type": "event",
@@ -788,13 +880,13 @@
     "raw_event_count": 26,
     "coalesced_event_count": 26,
     "eligible_event_count": 26,
-    "selected_event_count": 5,
+    "selected_event_count": 6,
     "raw_product_count": 7,
     "product_lead_count": 7,
     "eligible_product_count": 0,
     "selected_product_count": 0,
     "conflict_count": 0,
-    "source_link_count": 8,
+    "source_link_count": 9,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
@@ -811,7 +903,7 @@
       "户外与场景": 3
     },
     "selected_status": {
-      "new": 5
+      "new": 6
     },
     "quality_notes": [
       "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
