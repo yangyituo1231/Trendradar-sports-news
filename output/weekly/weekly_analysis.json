@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-11-05T11:56+08:00",
+  "generated_at": "2026-11-06T11:54+08:00",
   "report_window": {
     "start_date": "2026-10-26",
     "end_date": "2026-11-01",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "运动品牌在华分化加剧，渠道与库存调整成焦点，儿童品类直接证据有限。",
-    "week_in_one_paragraph": "本周阿迪达斯大中华区增长与VF、Puma在华承压形成对照；耐克线上渠道调整引发滔搏回应，渠道权力再平衡；京东双11时尚中小商家增长与上海淮海路旗舰店换血，显示平台与线下场景同步演变。儿童运动鞋仅有泰兰尼斯高溢价越野童鞋一条产品信息，需持续观察。",
+    "weekly_thesis": "国际品牌在华表现分化，渠道与供应链调整成为本周主线，儿童运动赛道缺乏直接新品信号。",
+    "week_in_one_paragraph": "本周阿迪达斯三季度大中华区增长13%与VF、Puma在华承压形成对照；耐克线上渠道调整引发滔搏回应，渠道权力再平衡；Nike在越南启用电动驳船、推出印度专属跑鞋，显示供应链与本土化并行；京东双11时尚中小商家成交增长，平台竞争持续。",
     "next_week_focus": [
-      "跟踪耐克线上渠道调整对经销商及儿童品类的影响",
-      "关注双11后半程运动与儿童品类平台榜单变化",
-      "观察外资运动品牌在华财报后的渠道与产品动作",
-      "留意儿童运动鞋高溢价与专业细分产品信息",
-      "关注线下旗舰店与亲子体验型门店动态"
+      "跟踪耐克线上渠道调整对经销商库存与促销的后续影响",
+      "关注阿迪达斯在华增长势能是否延续至童装童鞋品类",
+      "观察双11后半程运动时尚品类平台竞争格局",
+      "留意国际品牌供应链减碳举措是否延伸至儿童产品线",
+      "关注儿童运动鞋高溢价产品的市场反馈"
     ]
   },
   "key_developments": [
@@ -56,7 +56,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "阿迪达斯大中华区增长13%，与多家外资品牌在华下滑形成对照，渠道扩张信号值得关注。"
+      "editorial_reason": "阿迪达斯大中华区增长13%，与多家国际品牌在华下滑形成对照，渠道扩张信号值得关注。"
     },
     {
       "event_id": "evt_eafe2420660175",
@@ -94,7 +94,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "VF全球营收下滑且大中华区下降5%，反映外资运动服饰在华仍面临需求压力。"
+      "editorial_reason": "VF全球营收下滑4%、大中华区下滑5%，反映国际品牌在华需求承压。"
     },
     {
       "event_id": "evt_cb949eb1622bdc",
@@ -134,7 +134,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "滔搏回应耐克线上渠道调整，线下合作不变，品牌与经销商渠道权力再平衡。"
+      "editorial_reason": "滔搏回应耐克线上渠道调整，线下合作不变，渠道权力再平衡进入公开沟通阶段。"
     },
     {
       "event_id": "evt_d26ebb2c143c3c",
@@ -172,51 +172,53 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "京东双11时尚中小商家成交增长，平台侧中小品牌活跃度提升，渠道结构变化。"
+      "editorial_reason": "京东双11前半程时尚中小商家成交增长，平台时尚品类竞争与商家结构变化值得跟踪。"
     },
     {
-      "event_id": "evt_c629ca34d5e0f0",
-      "title": "上海淮海路大“换血”，外资争开大店旗舰店，更有“反向代购”新三样做鲶鱼",
+      "event_id": "evt_5cd6b13cb17029",
+      "title": "大中华区给彪马亚太区增长拖了后腿",
       "category": "行业动态",
-      "event_family": "store_channel",
+      "event_family": "industry_event",
       "reporting_period": "",
-      "brands": [],
-      "source": "人民网",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4tZm4xTzh5UVd5Z2dZVHA3T0JIQUlnTVYwTmh5ZDY0Yk91NzZEakpILTFVZG1hVWNrc1JzaFRNN2J1ZGR4NjBNSXNiUnMwaE55N0Y5dWYxb3RwRk1ZV1ZLbGoxckpVdGJVZVE?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4tZm4xTzh5UVd5Z2dZVHA3T0JIQUlnTVYwTmh5ZDY0Yk91NzZEakpILTFVZG1hVWNrc1JzaFRNN2J1ZGR4NjBNSXNiUnMwaE55N0Y5dWYxb3RwRk1ZV1ZLbGoxckpVdGJVZVE?oc=5",
-      "published_at": "2026-10-30T09:36+08:00",
-      "published_date": "2026-10-30",
+      "brands": [
+        "Puma"
+      ],
+      "source": "界面新闻",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
+      "published_at": "2026-10-31T11:43+08:00",
+      "published_date": "2026-10-31",
       "status": "new",
       "verification": "single_source",
       "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 49,
-      "selection_score": 56,
+      "editorial_score": 43,
+      "selection_score": 50,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_c629ca34d5e0f0"
+        "evt_5cd6b13cb17029"
       ],
       "evidence": [
         {
-          "item_id": "src_c69560aaa31bc2",
-          "title": "上海淮海路大“换血”，外资争开大店旗舰店，更有“反向代购”新三样做鲶鱼",
-          "source": "人民网",
-          "source_tier": "tier_1",
+          "item_id": "src_b33d6ac55a5b62",
+          "title": "大中华区给彪马亚太区增长拖了后腿",
+          "source": "界面新闻",
+          "source_tier": "tier_2",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4tZm4xTzh5UVd5Z2dZVHA3T0JIQUlnTVYwTmh5ZDY0Yk91NzZEakpILTFVZG1hVWNrc1JzaFRNN2J1ZGR4NjBNSXNiUnMwaE55N0Y5dWYxb3RwRk1ZV1ZLbGoxckpVdGJVZVE?oc=5",
-          "published_at": "2026-10-30T09:36+08:00",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
+          "published_at": "2026-10-31T11:43+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "上海淮海路外资大店旗舰店换血，线下渠道向体验型大店集中，运动品牌选址参考。"
+      "editorial_reason": "彪马大中华区拖累亚太增长，与阿迪达斯形成反向对照，凸显在华品牌分化。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "外资运动品牌在华分化：阿迪增长与VF、Puma承压",
-      "analysis": "阿迪达斯大中华区增长13%，而VF大中华区下滑5%、Puma亚太增长受大中华区拖累。同一周期内表现分化，说明中国运动消费并非整体收缩，品牌定位、产品节奏与渠道策略差异正在放大。对儿童事业部而言，需关注成人运动品牌在华调整对童装童鞋渠道资源与消费心智的传导。",
+      "headline": "国际运动品牌在华表现分化",
+      "analysis": "阿迪达斯三季度大中华区增长13%，而VF大中华区下滑5%、彪马大中华区拖累亚太增长。同一周期内国际品牌在华走势明显分化，说明中国运动消费并非整体收缩，而是品牌势能与渠道策略差异导致份额再分配。对儿童事业部而言，需关注成人运动品牌在华势能变化对童装童鞋消费的传导。",
       "event_ids": [
         "evt_d12e6d3ed3ae6b",
         "evt_eafe2420660175",
@@ -247,12 +249,11 @@
       ]
     },
     {
-      "headline": "渠道权力再平衡：品牌线上调整与经销商回应",
-      "analysis": "滔搏就耐克线上渠道调整回应线下合作不变，并就库存回收和促销补贴持续沟通；Puma库存下降24%背后亦涉及渠道权力转移。品牌方收紧线上、经销商争取资源支持，反映运动品牌正在重新划分线上线下利益。儿童业务同样依赖经销商与平台资源，渠道政策变化值得提前跟踪。",
+      "headline": "渠道权力再平衡：品牌直营与经销商博弈",
+      "analysis": "滔搏回应耐克线上渠道调整，称线下合作不变，并就库存回收和促销补贴等资源支持与品牌方持续沟通。品牌方调整线上渠道，经销商争取库存与促销资源，反映运动品牌渠道权力正在从经销商向品牌直营和平台化运营转移。渠道库存与补贴机制的变化，将影响终端上新节奏和促销力度。",
       "event_ids": [
         "evt_cb949eb1622bdc",
-        "evt_00b35a2f60315e",
-        "evt_f37907b5e95aa1"
+        "evt_00b35a2f60315e"
       ],
       "evidence": [
         {
@@ -268,37 +269,30 @@
           "source": "澎湃新闻",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5CU3g5TWNGTWZOdTUzLVpZMGlFOGlHNEUzZjBPaEV4RjZZNjRMTG5CcGd4eDVQU2c1RU4tRDk5U0NPcTV1SVVmWVphUDZFNmlWRFZRdDhJamtwdmFOUllPbw?oc=5",
           "published_date": "2026-10-29"
-        },
-        {
-          "event_id": "evt_f37907b5e95aa1",
-          "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
-          "source": "OR新媒体",
-          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
-          "published_date": "2026-10-31"
         }
       ]
     },
     {
-      "headline": "平台与线下场景同步演变：双11中小商家与旗舰店换血",
-      "analysis": "京东双11前半程时尚中小商家成交增长，显示平台流量向中小品牌倾斜；上海淮海路外资争开大店旗舰店，线下向体验型大店集中。线上中小商家活跃与线下旗舰店升级并行，运动品牌需同时应对平台碎片化流量与核心商圈大店成本，儿童品类可关注亲子体验型门店机会。",
+      "headline": "供应链减碳与本土化产品并行",
+      "analysis": "耐克在越南启用首艘电动驳船降低供应链碳排放，同时为印度市场推出专属跑鞋Vegam Run。两件事分别指向供应链绿色化和区域产品本土化，说明国际品牌在成本与合规压力下，正把减碳落到运输环节，并用本地化产品争夺新兴市场跑者。对儿童运动品牌，供应链透明度和区域适配能力将成为长期竞争要素。",
       "event_ids": [
-        "evt_d26ebb2c143c3c",
-        "evt_c629ca34d5e0f0"
+        "evt_3ce4cc8defea25",
+        "evt_dfaafc68c9fa35"
       ],
       "evidence": [
         {
-          "event_id": "evt_d26ebb2c143c3c",
-          "title": "京东双11前半程 2900个时尚中小商家成交额同比增长超200%",
-          "source": "亿邦动力",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UcFItV3hUUzBKam9CUVQwM09sZWExQUdCaUVhOFVjc2V6U1UyZjJrRThIM0M5ZjZfUHF2X3JybFBFMUoxYXZzdzdaSkhkTThQMlVManF3?oc=5",
-          "published_date": "2026-11-01"
+          "event_id": "evt_3ce4cc8defea25",
+          "title": "Nike 启用越南首艘电动驳船，降低供应链碳排放— NIKE, Inc.",
+          "source": "About Nike",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQa0VFaXhSVWpTR0dwX2tCVVlCdjAzaEdMMktCXzhORWFVSk5GczVRNlJKNjRueTg5anFWNjlVWk1oWjdnZVFzemowZmlRcjJzU1BCc2Y5LU5mZTl5Mk5VR0JBcXJ1ZXcweDE4d2g0Nkd5VjhNMExsVnNtelVWbE1ndzBLblpVeGtzbXc4aDdoOG15blJ3bEZVdXdvOXUwQy1aMW91VGtWT2ZVUGZDaDVuTFZKaW1qUnJLWkE5bnAxc0VBVUZSX3ItTzhyRkdjYXE2OUE3bEVuY1BTUjFSbHc?oc=5",
+          "published_date": "2026-10-29"
         },
         {
-          "event_id": "evt_c629ca34d5e0f0",
-          "title": "上海淮海路大“换血”，外资争开大店旗舰店，更有“反向代购”新三样做鲶鱼",
-          "source": "人民网",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4tZm4xTzh5UVd5Z2dZVHA3T0JIQUlnTVYwTmh5ZDY0Yk91NzZEakpILTFVZG1hVWNrc1JzaFRNN2J1ZGR4NjBNSXNiUnMwaE55N0Y5dWYxb3RwRk1ZV1ZLbGoxckpVdGJVZVE?oc=5",
-          "published_date": "2026-10-30"
+          "event_id": "evt_dfaafc68c9fa35",
+          "title": "Nike Vegam Run，专为印度新一代跑者打造— NIKE, Inc.",
+          "source": "About Nike",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMzZiS2FLTHVoY050SFNqWmdvRU5PUUt0dThUWTNFZThQMHdNV1RWTFpBRFdVb0pTOVFQUTJqdUZoeW9nS3BYSXVQdHVVd1pmZ2hpcFJLNHVrQ2ZhVnhBSnpCYjZCR1REUDRJb1VPQ3RiOEZVZjAyS01pWkdvTXBBdVB1NzhQZ0Rlc1VnczNrTE1IWTdCbUdfMlZQdlh1b3lKQWN0SkdPRUdIRTlyTHc4?oc=5",
+          "published_date": "2026-10-29"
         }
       ]
     }
@@ -386,22 +380,21 @@
   ],
   "watchlist": [
     {
-      "title": "外资运动品牌在华渠道调整后续",
+      "title": "国际品牌在华渠道调整后续",
       "event_ids": [
         "evt_cb949eb1622bdc",
         "evt_00b35a2f60315e"
       ],
       "product_ids": [],
-      "reason": "关注耐克与滔搏沟通进展及是否波及儿童品类经销政策。"
+      "reason": "观察耐克线上渠道调整是否引发更多经销商回应及库存补贴政策变化。"
     },
     {
-      "title": "双11平台运动儿童品类表现",
+      "title": "儿童运动消费信号",
       "event_ids": [
-        "evt_d26ebb2c143c3c",
-        "evt_af4654555deb65"
+        "evt_e94848855c89d6"
       ],
       "product_ids": [],
-      "reason": "跟踪双11后半程平台榜单中运动与儿童品类商家表现。"
+      "reason": "跟踪儿童营养与运动消费理念变化对儿童运动鞋服需求的间接影响。"
     }
   ],
   "tracking": {
@@ -444,7 +437,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "阿迪达斯大中华区增长13%，与多家外资品牌在华下滑形成对照，渠道扩张信号值得关注。"
+        "editorial_reason": "阿迪达斯大中华区增长13%，与多家国际品牌在华下滑形成对照，渠道扩张信号值得关注。"
       },
       {
         "event_id": "evt_eafe2420660175",
@@ -482,7 +475,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "VF全球营收下滑且大中华区下降5%，反映外资运动服饰在华仍面临需求压力。"
+        "editorial_reason": "VF全球营收下滑4%、大中华区下滑5%，反映国际品牌在华需求承压。"
       },
       {
         "event_id": "evt_cb949eb1622bdc",
@@ -522,7 +515,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "滔搏回应耐克线上渠道调整，线下合作不变，品牌与经销商渠道权力再平衡。"
+        "editorial_reason": "滔搏回应耐克线上渠道调整，线下合作不变，渠道权力再平衡进入公开沟通阶段。"
       },
       {
         "event_id": "evt_d26ebb2c143c3c",
@@ -560,45 +553,47 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "京东双11时尚中小商家成交增长，平台侧中小品牌活跃度提升，渠道结构变化。"
+        "editorial_reason": "京东双11前半程时尚中小商家成交增长，平台时尚品类竞争与商家结构变化值得跟踪。"
       },
       {
-        "event_id": "evt_c629ca34d5e0f0",
-        "title": "上海淮海路大“换血”，外资争开大店旗舰店，更有“反向代购”新三样做鲶鱼",
+        "event_id": "evt_5cd6b13cb17029",
+        "title": "大中华区给彪马亚太区增长拖了后腿",
         "category": "行业动态",
-        "event_family": "store_channel",
+        "event_family": "industry_event",
         "reporting_period": "",
-        "brands": [],
-        "source": "人民网",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4tZm4xTzh5UVd5Z2dZVHA3T0JIQUlnTVYwTmh5ZDY0Yk91NzZEakpILTFVZG1hVWNrc1JzaFRNN2J1ZGR4NjBNSXNiUnMwaE55N0Y5dWYxb3RwRk1ZV1ZLbGoxckpVdGJVZVE?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4tZm4xTzh5UVd5Z2dZVHA3T0JIQUlnTVYwTmh5ZDY0Yk91NzZEakpILTFVZG1hVWNrc1JzaFRNN2J1ZGR4NjBNSXNiUnMwaE55N0Y5dWYxb3RwRk1ZV1ZLbGoxckpVdGJVZVE?oc=5",
-        "published_at": "2026-10-30T09:36+08:00",
-        "published_date": "2026-10-30",
+        "brands": [
+          "Puma"
+        ],
+        "source": "界面新闻",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
+        "published_at": "2026-10-31T11:43+08:00",
+        "published_date": "2026-10-31",
         "status": "new",
         "verification": "single_source",
         "is_official": false,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 49,
-        "selection_score": 56,
+        "editorial_score": 43,
+        "selection_score": 50,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_c629ca34d5e0f0"
+          "evt_5cd6b13cb17029"
         ],
         "evidence": [
           {
-            "item_id": "src_c69560aaa31bc2",
-            "title": "上海淮海路大“换血”，外资争开大店旗舰店，更有“反向代购”新三样做鲶鱼",
-            "source": "人民网",
-            "source_tier": "tier_1",
+            "item_id": "src_b33d6ac55a5b62",
+            "title": "大中华区给彪马亚太区增长拖了后腿",
+            "source": "界面新闻",
+            "source_tier": "tier_2",
             "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4tZm4xTzh5UVd5Z2dZVHA3T0JIQUlnTVYwTmh5ZDY0Yk91NzZEakpILTFVZG1hVWNrc1JzaFRNN2J1ZGR4NjBNSXNiUnMwaE55N0Y5dWYxb3RwRk1ZV1ZLbGoxckpVdGJVZVE?oc=5",
-            "published_at": "2026-10-30T09:36+08:00",
+            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
+            "published_at": "2026-10-31T11:43+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "上海淮海路外资大店旗舰店换血，线下渠道向体验型大店集中，运动品牌选址参考。"
+        "editorial_reason": "彪马大中华区拖累亚太增长，与阿迪达斯形成反向对照，凸显在华品牌分化。"
       }
     ],
     "follow_up_selected": [],
@@ -768,11 +763,11 @@
     },
     {
       "type": "event",
-      "id": "evt_c629ca34d5e0f0",
-      "title": "上海淮海路大“换血”，外资争开大店旗舰店，更有“反向代购”新三样做鲶鱼",
-      "source": "人民网",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4tZm4xTzh5UVd5Z2dZVHA3T0JIQUlnTVYwTmh5ZDY0Yk91NzZEakpILTFVZG1hVWNrc1JzaFRNN2J1ZGR4NjBNSXNiUnMwaE55N0Y5dWYxb3RwRk1ZV1ZLbGoxckpVdGJVZVE?oc=5",
-      "published_date": "2026-10-30"
+      "id": "evt_5cd6b13cb17029",
+      "title": "大中华区给彪马亚太区增长拖了后腿",
+      "source": "界面新闻",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
+      "published_date": "2026-10-31"
     },
     {
       "type": "event",
@@ -792,14 +787,6 @@
     },
     {
       "type": "event",
-      "id": "evt_5cd6b13cb17029",
-      "title": "大中华区给彪马亚太区增长拖了后腿",
-      "source": "界面新闻",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
-      "published_date": "2026-10-31"
-    },
-    {
-      "type": "event",
       "id": "evt_00b35a2f60315e",
       "title": "滔搏回应耐克线上渠道调整：就库存回收和促销补贴等资源支持与品牌方持续沟通",
       "source": "澎湃新闻",
@@ -808,11 +795,19 @@
     },
     {
       "type": "event",
-      "id": "evt_f37907b5e95aa1",
-      "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
-      "source": "OR新媒体",
-      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
-      "published_date": "2026-10-31"
+      "id": "evt_3ce4cc8defea25",
+      "title": "Nike 启用越南首艘电动驳船，降低供应链碳排放— NIKE, Inc.",
+      "source": "About Nike",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQa0VFaXhSVWpTR0dwX2tCVVlCdjAzaEdMMktCXzhORWFVSk5GczVRNlJKNjRueTg5anFWNjlVWk1oWjdnZVFzemowZmlRcjJzU1BCc2Y5LU5mZTl5Mk5VR0JBcXJ1ZXcweDE4d2g0Nkd5VjhNMExsVnNtelVWbE1ndzBLblpVeGtzbXc4aDdoOG15blJ3bEZVdXdvOXUwQy1aMW91VGtWT2ZVUGZDaDVuTFZKaW1qUnJLWkE5bnAxc0VBVUZSX3ItTzhyRkdjYXE2OUE3bEVuY1BTUjFSbHc?oc=5",
+      "published_date": "2026-10-29"
+    },
+    {
+      "type": "event",
+      "id": "evt_dfaafc68c9fa35",
+      "title": "Nike Vegam Run，专为印度新一代跑者打造— NIKE, Inc.",
+      "source": "About Nike",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMzZiS2FLTHVoY050SFNqWmdvRU5PUUt0dThUWTNFZThQMHdNV1RWTFpBRFdVb0pTOVFQUTJqdUZoeW9nS3BYSXVQdHVVd1pmZ2hpcFJLNHVrQ2ZhVnhBSnpCYjZCR1REUDRJb1VPQ3RiOEZVZjAyS01pWkdvTXBBdVB1NzhQZ0Rlc1VnczNrTE1IWTdCbUdfMlZQdlh1b3lKQWN0SkdPRUdIRTlyTHc4?oc=5",
+      "published_date": "2026-10-29"
     }
   ],
   "data_quality": {
