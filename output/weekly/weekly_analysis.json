@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-11-06T11:54+08:00",
+  "generated_at": "2026-11-07T11:29+08:00",
   "report_window": {
     "start_date": "2026-10-26",
     "end_date": "2026-11-01",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "国际品牌在华表现分化，渠道与供应链调整成为本周主线，儿童运动赛道缺乏直接新品信号。",
-    "week_in_one_paragraph": "本周阿迪达斯三季度大中华区增长13%与VF、Puma在华承压形成对照；耐克线上渠道调整引发滔搏回应，渠道权力再平衡；Nike在越南启用电动驳船、推出印度专属跑鞋，显示供应链与本土化并行；京东双11时尚中小商家成交增长，平台竞争持续。",
+    "weekly_thesis": "国际品牌在华表现分化，渠道与供应链调整加速，儿童运动鞋高溢价争议提示细分市场需谨慎。",
+    "week_in_one_paragraph": "本周阿迪达斯大中华区增长与VF、北面在华下滑形成对比，耐克线上渠道调整引发经销商回应，Puma库存下降折射渠道权力转移；京东双11时尚中小商家增长显示平台机会，泰兰尼斯高价童鞋引发对儿童运动鞋溢价的讨论。",
     "next_week_focus": [
-      "跟踪耐克线上渠道调整对经销商库存与促销的后续影响",
-      "关注阿迪达斯在华增长势能是否延续至童装童鞋品类",
-      "观察双11后半程运动时尚品类平台竞争格局",
-      "留意国际品牌供应链减碳举措是否延伸至儿童产品线",
-      "关注儿童运动鞋高溢价产品的市场反馈"
+      "耐克线上渠道调整后续经销商沟通进展",
+      "阿迪达斯渠道扩张是否涉及儿童品类",
+      "双11后半程儿童运动鞋服榜单变化",
+      "泰兰尼斯高价童鞋市场反馈",
+      "Puma库存策略对行业渠道的传导"
     ]
   },
   "key_developments": [
@@ -56,7 +56,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "阿迪达斯大中华区增长13%，与多家国际品牌在华下滑形成对照，渠道扩张信号值得关注。"
+      "editorial_reason": "阿迪达斯大中华区增长13%，与多家国际品牌在华下滑形成反差，渠道扩张信号值得关注。"
     },
     {
       "event_id": "evt_eafe2420660175",
@@ -94,7 +94,47 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "VF全球营收下滑4%、大中华区下滑5%，反映国际品牌在华需求承压。"
+      "editorial_reason": "VF全球营收下滑且大中华区下降5%，反映国际品牌在华普遍承压。"
+    },
+    {
+      "event_id": "evt_7e7e358d36a4d9",
+      "title": "北面母公司上财季净利2.85亿美元增五成，中国市场收入同比下降7%",
+      "category": "行业动态",
+      "event_family": "financial_results",
+      "reporting_period": "",
+      "brands": [
+        "The North Face"
+      ],
+      "source": "澎湃新闻",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1MFMyM185QUpzQlhhQ3dBcjJ2amUzUGtLUXdwY2tBUDBpajhJeWdzR0JjNEgyQjV5UVBhbXhvRnFKZXlBYkdZVjd6Y3ROay13NjlhMzRJa0RUSHVQTjdiaA?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1MFMyM185QUpzQlhhQ3dBcjJ2amUzUGtLUXdwY2tBUDBpajhJeWdzR0JjNEgyQjV5UVBhbXhvRnFKZXlBYkdZVjd6Y3ROay13NjlhMzRJa0RUSHVQTjdiaA?oc=5",
+      "published_at": "2026-10-29T18:51+08:00",
+      "published_date": "2026-10-29",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 49,
+      "selection_score": 65,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_7e7e358d36a4d9"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_b872d45466f826",
+          "title": "北面母公司上财季净利2.85亿美元增五成，中国市场收入同比下降7%",
+          "source": "澎湃新闻",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1MFMyM185QUpzQlhhQ3dBcjJ2amUzUGtLUXdwY2tBUDBpajhJeWdzR0JjNEgyQjV5UVBhbXhvRnFKZXlBYkdZVjd6Y3ROay13NjlhMzRJa0RUSHVQTjdiaA?oc=5",
+          "published_at": "2026-10-29T18:51+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "北面母公司净利增长但中国收入下降7%，显示户外龙头在华面临挑战。"
     },
     {
       "event_id": "evt_cb949eb1622bdc",
@@ -134,7 +174,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "滔搏回应耐克线上渠道调整，线下合作不变，渠道权力再平衡进入公开沟通阶段。"
+      "editorial_reason": "滔搏回应耐克线上渠道调整，线下合作不变，渠道权力再平衡受关注。"
     },
     {
       "event_id": "evt_d26ebb2c143c3c",
@@ -172,57 +212,17 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "京东双11前半程时尚中小商家成交增长，平台时尚品类竞争与商家结构变化值得跟踪。"
-    },
-    {
-      "event_id": "evt_5cd6b13cb17029",
-      "title": "大中华区给彪马亚太区增长拖了后腿",
-      "category": "行业动态",
-      "event_family": "industry_event",
-      "reporting_period": "",
-      "brands": [
-        "Puma"
-      ],
-      "source": "界面新闻",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
-      "published_at": "2026-10-31T11:43+08:00",
-      "published_date": "2026-10-31",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 43,
-      "selection_score": 50,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_5cd6b13cb17029"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_b33d6ac55a5b62",
-          "title": "大中华区给彪马亚太区增长拖了后腿",
-          "source": "界面新闻",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
-          "published_at": "2026-10-31T11:43+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "彪马大中华区拖累亚太增长，与阿迪达斯形成反向对照，凸显在华品牌分化。"
+      "editorial_reason": "京东双11时尚中小商家成交增长，平台生态变化对童装线上运营有参考意义。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "国际运动品牌在华表现分化",
-      "analysis": "阿迪达斯三季度大中华区增长13%，而VF大中华区下滑5%、彪马大中华区拖累亚太增长。同一周期内国际品牌在华走势明显分化，说明中国运动消费并非整体收缩，而是品牌势能与渠道策略差异导致份额再分配。对儿童事业部而言，需关注成人运动品牌在华势能变化对童装童鞋消费的传导。",
+      "headline": "国际运动品牌在华业绩分化与渠道调整",
+      "analysis": "阿迪达斯大中华区增长13%，而VF大中华区下滑5%、北面中国收入下降7%，显示国际品牌在华表现分化。阿迪达斯强调渠道扩张，VF与北面则承压，行业层面提示品牌需更精细的区域运营与渠道策略，童装线亦需关注成人品牌势能对儿童品类的传导。",
       "event_ids": [
         "evt_d12e6d3ed3ae6b",
         "evt_eafe2420660175",
-        "evt_5cd6b13cb17029"
+        "evt_7e7e358d36a4d9"
       ],
       "evidence": [
         {
@@ -240,20 +240,20 @@
           "published_date": "2026-10-29"
         },
         {
-          "event_id": "evt_5cd6b13cb17029",
-          "title": "大中华区给彪马亚太区增长拖了后腿",
-          "source": "界面新闻",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
-          "published_date": "2026-10-31"
+          "event_id": "evt_7e7e358d36a4d9",
+          "title": "北面母公司上财季净利2.85亿美元增五成，中国市场收入同比下降7%",
+          "source": "澎湃新闻",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1MFMyM185QUpzQlhhQ3dBcjJ2amUzUGtLUXdwY2tBUDBpajhJeWdzR0JjNEgyQjV5UVBhbXhvRnFKZXlBYkdZVjd6Y3ROay13NjlhMzRJa0RUSHVQTjdiaA?oc=5",
+          "published_date": "2026-10-29"
         }
       ]
     },
     {
-      "headline": "渠道权力再平衡：品牌直营与经销商博弈",
-      "analysis": "滔搏回应耐克线上渠道调整，称线下合作不变，并就库存回收和促销补贴等资源支持与品牌方持续沟通。品牌方调整线上渠道，经销商争取库存与促销资源，反映运动品牌渠道权力正在从经销商向品牌直营和平台化运营转移。渠道库存与补贴机制的变化，将影响终端上新节奏和促销力度。",
+      "headline": "渠道库存与线上调整重塑运动品牌分销关系",
+      "analysis": "滔搏回应耐克线上渠道调整，线下合作不变，并就库存回收和促销补贴持续沟通；Puma库存下降24%背后渠道权力转移。两事件共同指向品牌与经销商在库存、促销资源上的再博弈，行业渠道结构正从粗放扩张转向精细化协同，对儿童运动品类的渠道管理有借鉴意义。",
       "event_ids": [
         "evt_cb949eb1622bdc",
-        "evt_00b35a2f60315e"
+        "evt_f37907b5e95aa1"
       ],
       "evidence": [
         {
@@ -264,35 +264,35 @@
           "published_date": "2026-10-29"
         },
         {
-          "event_id": "evt_00b35a2f60315e",
-          "title": "滔搏回应耐克线上渠道调整：就库存回收和促销补贴等资源支持与品牌方持续沟通",
-          "source": "澎湃新闻",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5CU3g5TWNGTWZOdTUzLVpZMGlFOGlHNEUzZjBPaEV4RjZZNjRMTG5CcGd4eDVQU2c1RU4tRDk5U0NPcTV1SVVmWVphUDZFNmlWRFZRdDhJamtwdmFOUllPbw?oc=5",
-          "published_date": "2026-10-29"
+          "event_id": "evt_f37907b5e95aa1",
+          "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
+          "source": "OR新媒体",
+          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+          "published_date": "2026-10-31"
         }
       ]
     },
     {
-      "headline": "供应链减碳与本土化产品并行",
-      "analysis": "耐克在越南启用首艘电动驳船降低供应链碳排放，同时为印度市场推出专属跑鞋Vegam Run。两件事分别指向供应链绿色化和区域产品本土化，说明国际品牌在成本与合规压力下，正把减碳落到运输环节，并用本地化产品争夺新兴市场跑者。对儿童运动品牌，供应链透明度和区域适配能力将成为长期竞争要素。",
+      "headline": "电商平台双11前半程：中小商家增长与榜单变化",
+      "analysis": "京东双11前半程2900个时尚中小商家成交额同比增长超200%，天猫抖音首批榜单出炉。平台流量与扶持政策向中小商家倾斜，运动时尚品类线上竞争加剧，童装品牌需关注平台活动节奏与榜单曝光机会，但证据未涉及具体儿童品类数据。",
       "event_ids": [
-        "evt_3ce4cc8defea25",
-        "evt_dfaafc68c9fa35"
+        "evt_d26ebb2c143c3c",
+        "evt_af4654555deb65"
       ],
       "evidence": [
         {
-          "event_id": "evt_3ce4cc8defea25",
-          "title": "Nike 启用越南首艘电动驳船，降低供应链碳排放— NIKE, Inc.",
-          "source": "About Nike",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQa0VFaXhSVWpTR0dwX2tCVVlCdjAzaEdMMktCXzhORWFVSk5GczVRNlJKNjRueTg5anFWNjlVWk1oWjdnZVFzemowZmlRcjJzU1BCc2Y5LU5mZTl5Mk5VR0JBcXJ1ZXcweDE4d2g0Nkd5VjhNMExsVnNtelVWbE1ndzBLblpVeGtzbXc4aDdoOG15blJ3bEZVdXdvOXUwQy1aMW91VGtWT2ZVUGZDaDVuTFZKaW1qUnJLWkE5bnAxc0VBVUZSX3ItTzhyRkdjYXE2OUE3bEVuY1BTUjFSbHc?oc=5",
-          "published_date": "2026-10-29"
+          "event_id": "evt_d26ebb2c143c3c",
+          "title": "京东双11前半程 2900个时尚中小商家成交额同比增长超200%",
+          "source": "亿邦动力",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UcFItV3hUUzBKam9CUVQwM09sZWExQUdCaUVhOFVjc2V6U1UyZjJrRThIM0M5ZjZfUHF2X3JybFBFMUoxYXZzdzdaSkhkTThQMlVManF3?oc=5",
+          "published_date": "2026-11-01"
         },
         {
-          "event_id": "evt_dfaafc68c9fa35",
-          "title": "Nike Vegam Run，专为印度新一代跑者打造— NIKE, Inc.",
-          "source": "About Nike",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMzZiS2FLTHVoY050SFNqWmdvRU5PUUt0dThUWTNFZThQMHdNV1RWTFpBRFdVb0pTOVFQUTJqdUZoeW9nS3BYSXVQdHVVd1pmZ2hpcFJLNHVrQ2ZhVnhBSnpCYjZCR1REUDRJb1VPQ3RiOEZVZjAyS01pWkdvTXBBdVB1NzhQZ0Rlc1VnczNrTE1IWTdCbUdfMlZQdlh1b3lKQWN0SkdPRUdIRTlyTHc4?oc=5",
-          "published_date": "2026-10-29"
+          "event_id": "evt_af4654555deb65",
+          "title": "电商周报：天猫抖音双11首批榜单出炉；腾讯绿泡泡短剧小程序月活过亿- 零售",
+          "source": "亿邦动力",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8waDRNN0xNSVlPdk02OGZZOHVVbElfWXBPd1JHcGlNNTFEWl9VVzBtZlhiZk5RaktRVHZ3Vm5qVVItcEd5RDl3cWJqV1ZKd2c0cEpmWkZn?oc=5",
+          "published_date": "2026-11-01"
         }
       ]
     }
@@ -380,21 +380,22 @@
   ],
   "watchlist": [
     {
-      "title": "国际品牌在华渠道调整后续",
+      "title": "国际品牌在华渠道调整对童装线影响",
       "event_ids": [
         "evt_cb949eb1622bdc",
         "evt_00b35a2f60315e"
       ],
       "product_ids": [],
-      "reason": "观察耐克线上渠道调整是否引发更多经销商回应及库存补贴政策变化。"
+      "reason": "耐克线上渠道调整与经销商沟通进展，关注是否波及儿童品类分销。"
     },
     {
-      "title": "儿童运动消费信号",
+      "title": "双11后半程运动童装表现",
       "event_ids": [
-        "evt_e94848855c89d6"
+        "evt_d26ebb2c143c3c",
+        "evt_af4654555deb65"
       ],
       "product_ids": [],
-      "reason": "跟踪儿童营养与运动消费理念变化对儿童运动鞋服需求的间接影响。"
+      "reason": "跟踪天猫抖音榜单中儿童运动品牌排名及中小商家增长持续性。"
     }
   ],
   "tracking": {
@@ -437,7 +438,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "阿迪达斯大中华区增长13%，与多家国际品牌在华下滑形成对照，渠道扩张信号值得关注。"
+        "editorial_reason": "阿迪达斯大中华区增长13%，与多家国际品牌在华下滑形成反差，渠道扩张信号值得关注。"
       },
       {
         "event_id": "evt_eafe2420660175",
@@ -475,7 +476,47 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "VF全球营收下滑4%、大中华区下滑5%，反映国际品牌在华需求承压。"
+        "editorial_reason": "VF全球营收下滑且大中华区下降5%，反映国际品牌在华普遍承压。"
+      },
+      {
+        "event_id": "evt_7e7e358d36a4d9",
+        "title": "北面母公司上财季净利2.85亿美元增五成，中国市场收入同比下降7%",
+        "category": "行业动态",
+        "event_family": "financial_results",
+        "reporting_period": "",
+        "brands": [
+          "The North Face"
+        ],
+        "source": "澎湃新闻",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1MFMyM185QUpzQlhhQ3dBcjJ2amUzUGtLUXdwY2tBUDBpajhJeWdzR0JjNEgyQjV5UVBhbXhvRnFKZXlBYkdZVjd6Y3ROay13NjlhMzRJa0RUSHVQTjdiaA?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1MFMyM185QUpzQlhhQ3dBcjJ2amUzUGtLUXdwY2tBUDBpajhJeWdzR0JjNEgyQjV5UVBhbXhvRnFKZXlBYkdZVjd6Y3ROay13NjlhMzRJa0RUSHVQTjdiaA?oc=5",
+        "published_at": "2026-10-29T18:51+08:00",
+        "published_date": "2026-10-29",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 49,
+        "selection_score": 65,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_7e7e358d36a4d9"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_b872d45466f826",
+            "title": "北面母公司上财季净利2.85亿美元增五成，中国市场收入同比下降7%",
+            "source": "澎湃新闻",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1MFMyM185QUpzQlhhQ3dBcjJ2amUzUGtLUXdwY2tBUDBpajhJeWdzR0JjNEgyQjV5UVBhbXhvRnFKZXlBYkdZVjd6Y3ROay13NjlhMzRJa0RUSHVQTjdiaA?oc=5",
+            "published_at": "2026-10-29T18:51+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "北面母公司净利增长但中国收入下降7%，显示户外龙头在华面临挑战。"
       },
       {
         "event_id": "evt_cb949eb1622bdc",
@@ -515,7 +556,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "滔搏回应耐克线上渠道调整，线下合作不变，渠道权力再平衡进入公开沟通阶段。"
+        "editorial_reason": "滔搏回应耐克线上渠道调整，线下合作不变，渠道权力再平衡受关注。"
       },
       {
         "event_id": "evt_d26ebb2c143c3c",
@@ -553,47 +594,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "京东双11前半程时尚中小商家成交增长，平台时尚品类竞争与商家结构变化值得跟踪。"
-      },
-      {
-        "event_id": "evt_5cd6b13cb17029",
-        "title": "大中华区给彪马亚太区增长拖了后腿",
-        "category": "行业动态",
-        "event_family": "industry_event",
-        "reporting_period": "",
-        "brands": [
-          "Puma"
-        ],
-        "source": "界面新闻",
-        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
-        "published_at": "2026-10-31T11:43+08:00",
-        "published_date": "2026-10-31",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 43,
-        "selection_score": 50,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_5cd6b13cb17029"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_b33d6ac55a5b62",
-            "title": "大中华区给彪马亚太区增长拖了后腿",
-            "source": "界面新闻",
-            "source_tier": "tier_2",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
-            "published_at": "2026-10-31T11:43+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "彪马大中华区拖累亚太增长，与阿迪达斯形成反向对照，凸显在华品牌分化。"
+        "editorial_reason": "京东双11时尚中小商家成交增长，平台生态变化对童装线上运营有参考意义。"
       }
     ],
     "follow_up_selected": [],
@@ -747,6 +748,14 @@
     },
     {
       "type": "event",
+      "id": "evt_7e7e358d36a4d9",
+      "title": "北面母公司上财季净利2.85亿美元增五成，中国市场收入同比下降7%",
+      "source": "澎湃新闻",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1MFMyM185QUpzQlhhQ3dBcjJ2amUzUGtLUXdwY2tBUDBpajhJeWdzR0JjNEgyQjV5UVBhbXhvRnFKZXlBYkdZVjd6Y3ROay13NjlhMzRJa0RUSHVQTjdiaA?oc=5",
+      "published_date": "2026-10-29"
+    },
+    {
+      "type": "event",
       "id": "evt_cb949eb1622bdc",
       "title": "内地最大经销商滔搏回应耐克线上渠道调整：线下合作不变",
       "source": "界面新闻",
@@ -760,14 +769,6 @@
       "source": "亿邦动力",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UcFItV3hUUzBKam9CUVQwM09sZWExQUdCaUVhOFVjc2V6U1UyZjJrRThIM0M5ZjZfUHF2X3JybFBFMUoxYXZzdzdaSkhkTThQMlVManF3?oc=5",
       "published_date": "2026-11-01"
-    },
-    {
-      "type": "event",
-      "id": "evt_5cd6b13cb17029",
-      "title": "大中华区给彪马亚太区增长拖了后腿",
-      "source": "界面新闻",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OOWUxV1VIcXJ1cEY5aG55ZkxlSmV5M0p5T01tRVNpQXI5Tzd0NXh1M3l3U0FiUVZEY1Qza2VUVW1hbXNfQVVudGUxbFlSZFFnVkdERXlB?oc=5",
-      "published_date": "2026-10-31"
     },
     {
       "type": "event",
@@ -787,27 +788,19 @@
     },
     {
       "type": "event",
-      "id": "evt_00b35a2f60315e",
-      "title": "滔搏回应耐克线上渠道调整：就库存回收和促销补贴等资源支持与品牌方持续沟通",
-      "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5CU3g5TWNGTWZOdTUzLVpZMGlFOGlHNEUzZjBPaEV4RjZZNjRMTG5CcGd4eDVQU2c1RU4tRDk5U0NPcTV1SVVmWVphUDZFNmlWRFZRdDhJamtwdmFOUllPbw?oc=5",
-      "published_date": "2026-10-29"
+      "id": "evt_f37907b5e95aa1",
+      "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
+      "source": "OR新媒体",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+      "published_date": "2026-10-31"
     },
     {
       "type": "event",
-      "id": "evt_3ce4cc8defea25",
-      "title": "Nike 启用越南首艘电动驳船，降低供应链碳排放— NIKE, Inc.",
-      "source": "About Nike",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQa0VFaXhSVWpTR0dwX2tCVVlCdjAzaEdMMktCXzhORWFVSk5GczVRNlJKNjRueTg5anFWNjlVWk1oWjdnZVFzemowZmlRcjJzU1BCc2Y5LU5mZTl5Mk5VR0JBcXJ1ZXcweDE4d2g0Nkd5VjhNMExsVnNtelVWbE1ndzBLblpVeGtzbXc4aDdoOG15blJ3bEZVdXdvOXUwQy1aMW91VGtWT2ZVUGZDaDVuTFZKaW1qUnJLWkE5bnAxc0VBVUZSX3ItTzhyRkdjYXE2OUE3bEVuY1BTUjFSbHc?oc=5",
-      "published_date": "2026-10-29"
-    },
-    {
-      "type": "event",
-      "id": "evt_dfaafc68c9fa35",
-      "title": "Nike Vegam Run，专为印度新一代跑者打造— NIKE, Inc.",
-      "source": "About Nike",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMzZiS2FLTHVoY050SFNqWmdvRU5PUUt0dThUWTNFZThQMHdNV1RWTFpBRFdVb0pTOVFQUTJqdUZoeW9nS3BYSXVQdHVVd1pmZ2hpcFJLNHVrQ2ZhVnhBSnpCYjZCR1REUDRJb1VPQ3RiOEZVZjAyS01pWkdvTXBBdVB1NzhQZ0Rlc1VnczNrTE1IWTdCbUdfMlZQdlh1b3lKQWN0SkdPRUdIRTlyTHc4?oc=5",
-      "published_date": "2026-10-29"
+      "id": "evt_af4654555deb65",
+      "title": "电商周报：天猫抖音双11首批榜单出炉；腾讯绿泡泡短剧小程序月活过亿- 零售",
+      "source": "亿邦动力",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8waDRNN0xNSVlPdk02OGZZOHVVbElfWXBPd1JHcGlNNTFEWl9VVzBtZlhiZk5RaktRVHZ3Vm5qVVItcEd5RDl3cWJqV1ZKd2c0cEpmWkZn?oc=5",
+      "published_date": "2026-11-01"
     }
   ],
   "data_quality": {
@@ -824,7 +817,7 @@
     "eligible_product_count": 0,
     "selected_product_count": 0,
     "conflict_count": 0,
-    "source_link_count": 10,
+    "source_link_count": 9,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
