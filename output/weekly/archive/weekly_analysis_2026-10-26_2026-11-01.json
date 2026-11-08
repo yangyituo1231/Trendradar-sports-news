@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-11-07T11:29+08:00",
+  "generated_at": "2026-11-08T10:57+08:00",
   "report_window": {
     "start_date": "2026-10-26",
     "end_date": "2026-11-01",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "国际品牌在华表现分化，渠道与供应链调整加速，儿童运动鞋高溢价争议提示细分市场需谨慎。",
-    "week_in_one_paragraph": "本周阿迪达斯大中华区增长与VF、北面在华下滑形成对比，耐克线上渠道调整引发经销商回应，Puma库存下降折射渠道权力转移；京东双11时尚中小商家增长显示平台机会，泰兰尼斯高价童鞋引发对儿童运动鞋溢价的讨论。",
+    "weekly_thesis": "运动品牌在华表现分化，渠道与供应链调整成为本周主线，儿童赛道直接信号有限。",
+    "week_in_one_paragraph": "本周阿迪达斯大中华区增长与VF、北面在华下滑形成对照，耐克线上渠道调整引发滔搏回应，Puma库存与渠道权力转移受关注；平台侧京东双11时尚中小商家增长，体育消费场景与港股运动股波动提供消费侧参照。",
     "next_week_focus": [
-      "耐克线上渠道调整后续经销商沟通进展",
-      "阿迪达斯渠道扩张是否涉及儿童品类",
-      "双11后半程儿童运动鞋服榜单变化",
-      "泰兰尼斯高价童鞋市场反馈",
-      "Puma库存策略对行业渠道的传导"
+      "耐克线上渠道调整对经销商库存与促销资源的影响",
+      "阿迪达斯与VF、北面在华表现分化是否延续",
+      "Puma库存与渠道权力转移的后续讨论",
+      "京东双11时尚品类成交趋势与平台榜单变化",
+      "儿童运动消费相关直接产品与渠道信号"
     ]
   },
   "key_developments": [
@@ -56,7 +56,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "阿迪达斯大中华区增长13%，与多家国际品牌在华下滑形成反差，渠道扩张信号值得关注。"
+      "editorial_reason": "阿迪达斯大中华区增长与渠道扩张信号，为国际品牌在华策略提供直接参照。"
     },
     {
       "event_id": "evt_eafe2420660175",
@@ -94,7 +94,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "VF全球营收下滑且大中华区下降5%，反映国际品牌在华普遍承压。"
+      "editorial_reason": "VF全球营收下滑且大中华区下降，反映国际品牌在华需求承压。"
     },
     {
       "event_id": "evt_7e7e358d36a4d9",
@@ -134,7 +134,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "北面母公司净利增长但中国收入下降7%，显示户外龙头在华面临挑战。"
+      "editorial_reason": "北面母公司净利增长但中国收入下降，显示利润与区域市场表现分化。"
     },
     {
       "event_id": "evt_cb949eb1622bdc",
@@ -174,7 +174,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "滔搏回应耐克线上渠道调整，线下合作不变，渠道权力再平衡受关注。"
+      "editorial_reason": "滔搏回应耐克线上渠道调整，涉及经销关系与库存资源协调。"
     },
     {
       "event_id": "evt_d26ebb2c143c3c",
@@ -212,13 +212,51 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "京东双11时尚中小商家成交增长，平台生态变化对童装线上运营有参考意义。"
+      "editorial_reason": "京东双11时尚中小商家成交增长，反映平台侧时尚品类活跃度。"
+    },
+    {
+      "event_id": "evt_7479a91787ca00",
+      "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
+      "category": "宏观与消费",
+      "event_family": "macro_data",
+      "reporting_period": "",
+      "brands": [],
+      "source": "新华网",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
+      "published_at": "2026-11-01T12:21+08:00",
+      "published_date": "2026-11-01",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 53,
+      "selection_score": 63,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_7479a91787ca00"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_7305fdeb00ccae",
+          "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
+          "source": "新华网",
+          "source_tier": "tier_1",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
+          "published_at": "2026-11-01T12:21+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "湖北体育消费场景案例，提供区域体育消费落地观察样本。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "国际运动品牌在华业绩分化与渠道调整",
-      "analysis": "阿迪达斯大中华区增长13%，而VF大中华区下滑5%、北面中国收入下降7%，显示国际品牌在华表现分化。阿迪达斯强调渠道扩张，VF与北面则承压，行业层面提示品牌需更精细的区域运营与渠道策略，童装线亦需关注成人品牌势能对儿童品类的传导。",
+      "headline": "国际运动品牌在华表现分化",
+      "analysis": "阿迪达斯大中华区增长，而VF与北面母公司在中国市场收入下滑，同一周内呈现明显分化。值得关注的是，国际品牌在华表现并非同步，渠道扩张与区域需求差异可能同时存在。行业层面，大中华区仍是运动品牌关键变量，但各品牌所处阶段和策略效果不同。",
       "event_ids": [
         "evt_d12e6d3ed3ae6b",
         "evt_eafe2420660175",
@@ -249,8 +287,8 @@
       ]
     },
     {
-      "headline": "渠道库存与线上调整重塑运动品牌分销关系",
-      "analysis": "滔搏回应耐克线上渠道调整，线下合作不变，并就库存回收和促销补贴持续沟通；Puma库存下降24%背后渠道权力转移。两事件共同指向品牌与经销商在库存、促销资源上的再博弈，行业渠道结构正从粗放扩张转向精细化协同，对儿童运动品类的渠道管理有借鉴意义。",
+      "headline": "渠道调整与库存权力再分配",
+      "analysis": "滔搏就耐克线上渠道调整回应线下合作不变，并持续沟通库存回收与促销补贴；Puma库存下降被置于安踏渠道动作背景下讨论。两件事共同指向品牌与经销商之间资源协调和渠道权力变化。行业层面，线上调整、库存回收与促销支持正成为品牌与渠道博弈的关键环节。",
       "event_ids": [
         "evt_cb949eb1622bdc",
         "evt_f37907b5e95aa1"
@@ -273,11 +311,11 @@
       ]
     },
     {
-      "headline": "电商平台双11前半程：中小商家增长与榜单变化",
-      "analysis": "京东双11前半程2900个时尚中小商家成交额同比增长超200%，天猫抖音首批榜单出炉。平台流量与扶持政策向中小商家倾斜，运动时尚品类线上竞争加剧，童装品牌需关注平台活动节奏与榜单曝光机会，但证据未涉及具体儿童品类数据。",
+      "headline": "平台大促与体育消费场景",
+      "analysis": "京东双11前半程时尚中小商家成交增长，显示平台大促对时尚品类中小商家的带动；湖北体育消费场景案例则体现区域体育消费的落地探索。两者分别从线上平台和线下场景提供消费侧观察，行业层面反映大促与体育场景仍是运动消费的重要触点。",
       "event_ids": [
         "evt_d26ebb2c143c3c",
-        "evt_af4654555deb65"
+        "evt_7479a91787ca00"
       ],
       "evidence": [
         {
@@ -288,10 +326,10 @@
           "published_date": "2026-11-01"
         },
         {
-          "event_id": "evt_af4654555deb65",
-          "title": "电商周报：天猫抖音双11首批榜单出炉；腾讯绿泡泡短剧小程序月活过亿- 零售",
-          "source": "亿邦动力",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8waDRNN0xNSVlPdk02OGZZOHVVbElfWXBPd1JHcGlNNTFEWl9VVzBtZlhiZk5RaktRVHZ3Vm5qVVItcEd5RDl3cWJqV1ZKd2c0cEpmWkZn?oc=5",
+          "event_id": "evt_7479a91787ca00",
+          "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
+          "source": "新华网",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
           "published_date": "2026-11-01"
         }
       ]
@@ -380,22 +418,31 @@
   ],
   "watchlist": [
     {
-      "title": "国际品牌在华渠道调整对童装线影响",
+      "title": "耐克线上渠道调整后续",
       "event_ids": [
         "evt_cb949eb1622bdc",
         "evt_00b35a2f60315e"
       ],
       "product_ids": [],
-      "reason": "耐克线上渠道调整与经销商沟通进展，关注是否波及儿童品类分销。"
+      "reason": "观察滔搏与耐克在库存回收、促销补贴上的沟通进展及线下合作是否变化。"
     },
     {
-      "title": "双11后半程运动童装表现",
+      "title": "国际品牌在华业绩分化",
       "event_ids": [
-        "evt_d26ebb2c143c3c",
-        "evt_af4654555deb65"
+        "evt_d12e6d3ed3ae6b",
+        "evt_eafe2420660175",
+        "evt_7e7e358d36a4d9"
       ],
       "product_ids": [],
-      "reason": "跟踪天猫抖音榜单中儿童运动品牌排名及中小商家增长持续性。"
+      "reason": "跟踪阿迪达斯、VF、北面后续在华渠道与收入表现是否延续分化。"
+    },
+    {
+      "title": "儿童运动消费信号",
+      "event_ids": [
+        "evt_e94848855c89d6"
+      ],
+      "product_ids": [],
+      "reason": "关注儿童营养与运动消费交叉领域的后续报道，但本周直接商品证据不足。"
     }
   ],
   "tracking": {
@@ -438,7 +485,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "阿迪达斯大中华区增长13%，与多家国际品牌在华下滑形成反差，渠道扩张信号值得关注。"
+        "editorial_reason": "阿迪达斯大中华区增长与渠道扩张信号，为国际品牌在华策略提供直接参照。"
       },
       {
         "event_id": "evt_eafe2420660175",
@@ -476,7 +523,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "VF全球营收下滑且大中华区下降5%，反映国际品牌在华普遍承压。"
+        "editorial_reason": "VF全球营收下滑且大中华区下降，反映国际品牌在华需求承压。"
       },
       {
         "event_id": "evt_7e7e358d36a4d9",
@@ -516,7 +563,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "北面母公司净利增长但中国收入下降7%，显示户外龙头在华面临挑战。"
+        "editorial_reason": "北面母公司净利增长但中国收入下降，显示利润与区域市场表现分化。"
       },
       {
         "event_id": "evt_cb949eb1622bdc",
@@ -556,7 +603,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "滔搏回应耐克线上渠道调整，线下合作不变，渠道权力再平衡受关注。"
+        "editorial_reason": "滔搏回应耐克线上渠道调整，涉及经销关系与库存资源协调。"
       },
       {
         "event_id": "evt_d26ebb2c143c3c",
@@ -594,7 +641,45 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "京东双11时尚中小商家成交增长，平台生态变化对童装线上运营有参考意义。"
+        "editorial_reason": "京东双11时尚中小商家成交增长，反映平台侧时尚品类活跃度。"
+      },
+      {
+        "event_id": "evt_7479a91787ca00",
+        "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
+        "category": "宏观与消费",
+        "event_family": "macro_data",
+        "reporting_period": "",
+        "brands": [],
+        "source": "新华网",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
+        "published_at": "2026-11-01T12:21+08:00",
+        "published_date": "2026-11-01",
+        "status": "new",
+        "verification": "single_source",
+        "is_official": false,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 53,
+        "selection_score": 63,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_7479a91787ca00"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_7305fdeb00ccae",
+            "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
+            "source": "新华网",
+            "source_tier": "tier_1",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
+            "published_at": "2026-11-01T12:21+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "湖北体育消费场景案例，提供区域体育消费落地观察样本。"
       }
     ],
     "follow_up_selected": [],
@@ -772,6 +857,14 @@
     },
     {
       "type": "event",
+      "id": "evt_7479a91787ca00",
+      "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
+      "source": "新华网",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
+      "published_date": "2026-11-01"
+    },
+    {
+      "type": "event",
       "id": "evt_697100d8fdf629",
       "title": "聚力启新程，共逐竞技荣光，ASICS 亚瑟士携手上海田径运动中心开启战略合作",
       "source": "美通社",
@@ -793,14 +886,6 @@
       "source": "OR新媒体",
       "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
       "published_date": "2026-10-31"
-    },
-    {
-      "type": "event",
-      "id": "evt_af4654555deb65",
-      "title": "电商周报：天猫抖音双11首批榜单出炉；腾讯绿泡泡短剧小程序月活过亿- 零售",
-      "source": "亿邦动力",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8waDRNN0xNSVlPdk02OGZZOHVVbElfWXBPd1JHcGlNNTFEWl9VVzBtZlhiZk5RaktRVHZ3Vm5qVVItcEd5RDl3cWJqV1ZKd2c0cEpmWkZn?oc=5",
-      "published_date": "2026-11-01"
     }
   ],
   "data_quality": {
@@ -811,7 +896,7 @@
     "raw_event_count": 26,
     "coalesced_event_count": 26,
     "eligible_event_count": 26,
-    "selected_event_count": 5,
+    "selected_event_count": 6,
     "raw_product_count": 7,
     "product_lead_count": 7,
     "eligible_product_count": 0,
@@ -834,7 +919,7 @@
       "户外与场景": 3
     },
     "selected_status": {
-      "new": 5
+      "new": 6
     },
     "quality_notes": [
       "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
