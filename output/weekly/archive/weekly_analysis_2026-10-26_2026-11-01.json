@@ -1,20 +1,19 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-11-08T10:57+08:00",
+  "generated_at": "2026-11-09T11:18+08:00",
   "report_window": {
     "start_date": "2026-10-26",
     "end_date": "2026-11-01",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "运动品牌在华表现分化，渠道与供应链调整成为本周主线，儿童赛道直接信号有限。",
-    "week_in_one_paragraph": "本周阿迪达斯大中华区增长与VF、北面在华下滑形成对照，耐克线上渠道调整引发滔搏回应，Puma库存与渠道权力转移受关注；平台侧京东双11时尚中小商家增长，体育消费场景与港股运动股波动提供消费侧参照。",
+    "weekly_thesis": "国际品牌在华表现分化，渠道与供应链调整加速，儿童运动鞋高溢价与平台双11竞争值得关注。",
+    "week_in_one_paragraph": "本周阿迪达斯三季度大中华区增长13%，而VF、北面在华下滑，Puma库存下降但大中华区拖累亚太；耐克调整线上渠道，滔搏回应线下合作不变；京东双11时尚中小商家成交增长，儿童运动鞋出现高溢价案例。",
     "next_week_focus": [
-      "耐克线上渠道调整对经销商库存与促销资源的影响",
-      "阿迪达斯与VF、北面在华表现分化是否延续",
-      "Puma库存与渠道权力转移的后续讨论",
-      "京东双11时尚品类成交趋势与平台榜单变化",
-      "儿童运动消费相关直接产品与渠道信号"
+      "跟踪阿迪达斯与VF在华渠道策略后续动作",
+      "关注耐克线上渠道调整对经销商的实际影响",
+      "观察京东双11后半程运动时尚品类表现",
+      "留意儿童运动鞋高溢价产品的市场讨论"
     ]
   },
   "key_developments": [
@@ -56,7 +55,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "阿迪达斯大中华区增长与渠道扩张信号，为国际品牌在华策略提供直接参照。"
+      "editorial_reason": "阿迪达斯大中华区增长13%，与部分国际品牌在华下滑形成对比，反映渠道扩张信号。"
     },
     {
       "event_id": "evt_eafe2420660175",
@@ -94,7 +93,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "VF全球营收下滑且大中华区下降，反映国际品牌在华需求承压。"
+      "editorial_reason": "VF全球营收下滑4%、大中华区下滑5%，显示国际品牌在华仍面临压力。"
     },
     {
       "event_id": "evt_7e7e358d36a4d9",
@@ -134,47 +133,48 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "北面母公司净利增长但中国收入下降，显示利润与区域市场表现分化。"
+      "editorial_reason": "北面母公司净利增五成但中国收入降7%，说明利润与区域市场表现分化。"
     },
     {
-      "event_id": "evt_cb949eb1622bdc",
-      "title": "内地最大经销商滔搏回应耐克线上渠道调整：线下合作不变",
+      "event_id": "evt_f37907b5e95aa1",
+      "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
       "category": "行业动态",
       "event_family": "industry_event",
       "reporting_period": "",
       "brands": [
-        "Nike"
+        "Puma",
+        "安踏"
       ],
-      "source": "界面新闻",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Tb2ZrbldjN0wtcXVfR0Vib1BSNTFTdXZaRlRyaW82VHB1VlUtbnR6MjI1d2YwYmEwQU1KbmladkpZd0ZTVXNrdUt2bUpIbVFERkdYWVRn?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Tb2ZrbldjN0wtcXVfR0Vib1BSNTFTdXZaRlRyaW82VHB1VlUtbnR6MjI1d2YwYmEwQU1KbmladkpZd0ZTVXNrdUt2bUpIbVFERkdYWVRn?oc=5",
-      "published_at": "2026-10-29T01:45+08:00",
-      "published_date": "2026-10-29",
+      "source": "OR新媒体",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+      "published_at": "2026-10-31T17:04+08:00",
+      "published_date": "2026-10-31",
       "status": "new",
       "verification": "single_source",
       "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 49,
-      "selection_score": 56,
+      "editorial_score": 46,
+      "selection_score": 58,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_cb949eb1622bdc"
+        "evt_f37907b5e95aa1"
       ],
       "evidence": [
         {
-          "item_id": "src_a379b1535fb0e9",
-          "title": "内地最大经销商滔搏回应耐克线上渠道调整：线下合作不变",
-          "source": "界面新闻",
-          "source_tier": "tier_2",
+          "item_id": "src_156d10ccdf575c",
+          "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
+          "source": "OR新媒体",
+          "source_tier": "tier_3",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Tb2ZrbldjN0wtcXVfR0Vib1BSNTFTdXZaRlRyaW82VHB1VlUtbnR6MjI1d2YwYmEwQU1KbmladkpZd0ZTVXNrdUt2bUpIbVFERkdYWVRn?oc=5",
-          "published_at": "2026-10-29T01:45+08:00",
+          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+          "published_at": "2026-10-31T17:04+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "滔搏回应耐克线上渠道调整，涉及经销关系与库存资源协调。"
+      "editorial_reason": "Puma库存下降24%与安踏渠道调整并置，反映渠道权力转移和库存管理变化。"
     },
     {
       "event_id": "evt_d26ebb2c143c3c",
@@ -212,51 +212,13 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "京东双11时尚中小商家成交增长，反映平台侧时尚品类活跃度。"
-    },
-    {
-      "event_id": "evt_7479a91787ca00",
-      "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
-      "category": "宏观与消费",
-      "event_family": "macro_data",
-      "reporting_period": "",
-      "brands": [],
-      "source": "新华网",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
-      "published_at": "2026-11-01T12:21+08:00",
-      "published_date": "2026-11-01",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 53,
-      "selection_score": 63,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_7479a91787ca00"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_7305fdeb00ccae",
-          "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
-          "source": "新华网",
-          "source_tier": "tier_1",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
-          "published_at": "2026-11-01T12:21+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "湖北体育消费场景案例，提供区域体育消费落地观察样本。"
+      "editorial_reason": "京东双11时尚中小商家成交增长，反映平台大促对中小商家的渠道机会。"
     }
   ],
   "deep_dives": [
     {
       "headline": "国际运动品牌在华表现分化",
-      "analysis": "阿迪达斯大中华区增长，而VF与北面母公司在中国市场收入下滑，同一周内呈现明显分化。值得关注的是，国际品牌在华表现并非同步，渠道扩张与区域需求差异可能同时存在。行业层面，大中华区仍是运动品牌关键变量，但各品牌所处阶段和策略效果不同。",
+      "analysis": "阿迪达斯三季度大中华区增长13%，而VF大中华区下滑5%、北面中国收入下降7%。同一周期内国际品牌在华走势不一，说明区域渠道策略和品类需求差异正在放大，不能以单一品牌表现推断整体市场。",
       "event_ids": [
         "evt_d12e6d3ed3ae6b",
         "evt_eafe2420660175",
@@ -287,35 +249,35 @@
       ]
     },
     {
-      "headline": "渠道调整与库存权力再分配",
-      "analysis": "滔搏就耐克线上渠道调整回应线下合作不变，并持续沟通库存回收与促销补贴；Puma库存下降被置于安踏渠道动作背景下讨论。两件事共同指向品牌与经销商之间资源协调和渠道权力变化。行业层面，线上调整、库存回收与促销支持正成为品牌与渠道博弈的关键环节。",
+      "headline": "渠道库存与经销商关系调整",
+      "analysis": "Puma库存下降24%被解读为渠道权力转移，同时滔搏回应耐克线上渠道调整称线下合作不变。品牌方与经销商在库存回收、促销补贴和线上渠道上的博弈持续，渠道结构调整成为行业共同课题。",
       "event_ids": [
-        "evt_cb949eb1622bdc",
-        "evt_f37907b5e95aa1"
+        "evt_f37907b5e95aa1",
+        "evt_cb949eb1622bdc"
       ],
       "evidence": [
-        {
-          "event_id": "evt_cb949eb1622bdc",
-          "title": "内地最大经销商滔搏回应耐克线上渠道调整：线下合作不变",
-          "source": "界面新闻",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Tb2ZrbldjN0wtcXVfR0Vib1BSNTFTdXZaRlRyaW82VHB1VlUtbnR6MjI1d2YwYmEwQU1KbmladkpZd0ZTVXNrdUt2bUpIbVFERkdYWVRn?oc=5",
-          "published_date": "2026-10-29"
-        },
         {
           "event_id": "evt_f37907b5e95aa1",
           "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
           "source": "OR新媒体",
           "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
           "published_date": "2026-10-31"
+        },
+        {
+          "event_id": "evt_cb949eb1622bdc",
+          "title": "内地最大经销商滔搏回应耐克线上渠道调整：线下合作不变",
+          "source": "界面新闻",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Tb2ZrbldjN0wtcXVfR0Vib1BSNTFTdXZaRlRyaW82VHB1VlUtbnR6MjI1d2YwYmEwQU1KbmladkpZd0ZTVXNrdUt2bUpIbVFERkdYWVRn?oc=5",
+          "published_date": "2026-10-29"
         }
       ]
     },
     {
-      "headline": "平台大促与体育消费场景",
-      "analysis": "京东双11前半程时尚中小商家成交增长，显示平台大促对时尚品类中小商家的带动；湖北体育消费场景案例则体现区域体育消费的落地探索。两者分别从线上平台和线下场景提供消费侧观察，行业层面反映大促与体育场景仍是运动消费的重要触点。",
+      "headline": "平台大促与供应链减碳并行",
+      "analysis": "京东双11前半程时尚中小商家成交增长，显示平台大促仍是中小商家重要出货窗口；耐克在越南启用电动驳船降低供应链碳排放，表明头部品牌在物流环节推进减碳，供应链绿色化与电商竞争同步演进。",
       "event_ids": [
         "evt_d26ebb2c143c3c",
-        "evt_7479a91787ca00"
+        "evt_3ce4cc8defea25"
       ],
       "evidence": [
         {
@@ -326,11 +288,11 @@
           "published_date": "2026-11-01"
         },
         {
-          "event_id": "evt_7479a91787ca00",
-          "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
-          "source": "新华网",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
-          "published_date": "2026-11-01"
+          "event_id": "evt_3ce4cc8defea25",
+          "title": "Nike 启用越南首艘电动驳船，降低供应链碳排放— NIKE, Inc.",
+          "source": "About Nike",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQa0VFaXhSVWpTR0dwX2tCVVlCdjAzaEdMMktCXzhORWFVSk5GczVRNlJKNjRueTg5anFWNjlVWk1oWjdnZVFzemowZmlRcjJzU1BCc2Y5LU5mZTl5Mk5VR0JBcXJ1ZXcweDE4d2g0Nkd5VjhNMExsVnNtelVWbE1ndzBLblpVeGtzbXc4aDdoOG15blJ3bEZVdXdvOXUwQy1aMW91VGtWT2ZVUGZDaDVuTFZKaW1qUnJLWkE5bnAxc0VBVUZSX3ItTzhyRkdjYXE2OUE3bEVuY1BTUjFSbHc?oc=5",
+          "published_date": "2026-10-29"
         }
       ]
     }
@@ -418,31 +380,13 @@
   ],
   "watchlist": [
     {
-      "title": "耐克线上渠道调整后续",
+      "title": "国际品牌在华渠道调整",
       "event_ids": [
         "evt_cb949eb1622bdc",
         "evt_00b35a2f60315e"
       ],
       "product_ids": [],
-      "reason": "观察滔搏与耐克在库存回收、促销补贴上的沟通进展及线下合作是否变化。"
-    },
-    {
-      "title": "国际品牌在华业绩分化",
-      "event_ids": [
-        "evt_d12e6d3ed3ae6b",
-        "evt_eafe2420660175",
-        "evt_7e7e358d36a4d9"
-      ],
-      "product_ids": [],
-      "reason": "跟踪阿迪达斯、VF、北面后续在华渠道与收入表现是否延续分化。"
-    },
-    {
-      "title": "儿童运动消费信号",
-      "event_ids": [
-        "evt_e94848855c89d6"
-      ],
-      "product_ids": [],
-      "reason": "关注儿童营养与运动消费交叉领域的后续报道，但本周直接商品证据不足。"
+      "reason": "观察耐克线上渠道调整后经销商库存与促销支持是否落地。"
     }
   ],
   "tracking": {
@@ -485,7 +429,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "阿迪达斯大中华区增长与渠道扩张信号，为国际品牌在华策略提供直接参照。"
+        "editorial_reason": "阿迪达斯大中华区增长13%，与部分国际品牌在华下滑形成对比，反映渠道扩张信号。"
       },
       {
         "event_id": "evt_eafe2420660175",
@@ -523,7 +467,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "VF全球营收下滑且大中华区下降，反映国际品牌在华需求承压。"
+        "editorial_reason": "VF全球营收下滑4%、大中华区下滑5%，显示国际品牌在华仍面临压力。"
       },
       {
         "event_id": "evt_7e7e358d36a4d9",
@@ -563,47 +507,48 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "北面母公司净利增长但中国收入下降，显示利润与区域市场表现分化。"
+        "editorial_reason": "北面母公司净利增五成但中国收入降7%，说明利润与区域市场表现分化。"
       },
       {
-        "event_id": "evt_cb949eb1622bdc",
-        "title": "内地最大经销商滔搏回应耐克线上渠道调整：线下合作不变",
+        "event_id": "evt_f37907b5e95aa1",
+        "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
         "category": "行业动态",
         "event_family": "industry_event",
         "reporting_period": "",
         "brands": [
-          "Nike"
+          "Puma",
+          "安踏"
         ],
-        "source": "界面新闻",
-        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Tb2ZrbldjN0wtcXVfR0Vib1BSNTFTdXZaRlRyaW82VHB1VlUtbnR6MjI1d2YwYmEwQU1KbmladkpZd0ZTVXNrdUt2bUpIbVFERkdYWVRn?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Tb2ZrbldjN0wtcXVfR0Vib1BSNTFTdXZaRlRyaW82VHB1VlUtbnR6MjI1d2YwYmEwQU1KbmladkpZd0ZTVXNrdUt2bUpIbVFERkdYWVRn?oc=5",
-        "published_at": "2026-10-29T01:45+08:00",
-        "published_date": "2026-10-29",
+        "source": "OR新媒体",
+        "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+        "published_at": "2026-10-31T17:04+08:00",
+        "published_date": "2026-10-31",
         "status": "new",
         "verification": "single_source",
         "is_official": false,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 49,
-        "selection_score": 56,
+        "editorial_score": 46,
+        "selection_score": 58,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_cb949eb1622bdc"
+          "evt_f37907b5e95aa1"
         ],
         "evidence": [
           {
-            "item_id": "src_a379b1535fb0e9",
-            "title": "内地最大经销商滔搏回应耐克线上渠道调整：线下合作不变",
-            "source": "界面新闻",
-            "source_tier": "tier_2",
+            "item_id": "src_156d10ccdf575c",
+            "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
+            "source": "OR新媒体",
+            "source_tier": "tier_3",
             "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Tb2ZrbldjN0wtcXVfR0Vib1BSNTFTdXZaRlRyaW82VHB1VlUtbnR6MjI1d2YwYmEwQU1KbmladkpZd0ZTVXNrdUt2bUpIbVFERkdYWVRn?oc=5",
-            "published_at": "2026-10-29T01:45+08:00",
+            "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+            "published_at": "2026-10-31T17:04+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "滔搏回应耐克线上渠道调整，涉及经销关系与库存资源协调。"
+        "editorial_reason": "Puma库存下降24%与安踏渠道调整并置，反映渠道权力转移和库存管理变化。"
       },
       {
         "event_id": "evt_d26ebb2c143c3c",
@@ -641,45 +586,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "京东双11时尚中小商家成交增长，反映平台侧时尚品类活跃度。"
-      },
-      {
-        "event_id": "evt_7479a91787ca00",
-        "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
-        "category": "宏观与消费",
-        "event_family": "macro_data",
-        "reporting_period": "",
-        "brands": [],
-        "source": "新华网",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
-        "published_at": "2026-11-01T12:21+08:00",
-        "published_date": "2026-11-01",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 53,
-        "selection_score": 63,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_7479a91787ca00"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_7305fdeb00ccae",
-            "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
-            "source": "新华网",
-            "source_tier": "tier_1",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
-            "published_at": "2026-11-01T12:21+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "湖北体育消费场景案例，提供区域体育消费落地观察样本。"
+        "editorial_reason": "京东双11时尚中小商家成交增长，反映平台大促对中小商家的渠道机会。"
       }
     ],
     "follow_up_selected": [],
@@ -841,11 +748,11 @@
     },
     {
       "type": "event",
-      "id": "evt_cb949eb1622bdc",
-      "title": "内地最大经销商滔搏回应耐克线上渠道调整：线下合作不变",
-      "source": "界面新闻",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Tb2ZrbldjN0wtcXVfR0Vib1BSNTFTdXZaRlRyaW82VHB1VlUtbnR6MjI1d2YwYmEwQU1KbmladkpZd0ZTVXNrdUt2bUpIbVFERkdYWVRn?oc=5",
-      "published_date": "2026-10-29"
+      "id": "evt_f37907b5e95aa1",
+      "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
+      "source": "OR新媒体",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
+      "published_date": "2026-10-31"
     },
     {
       "type": "event",
@@ -853,14 +760,6 @@
       "title": "京东双11前半程 2900个时尚中小商家成交额同比增长超200%",
       "source": "亿邦动力",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UcFItV3hUUzBKam9CUVQwM09sZWExQUdCaUVhOFVjc2V6U1UyZjJrRThIM0M5ZjZfUHF2X3JybFBFMUoxYXZzdzdaSkhkTThQMlVManF3?oc=5",
-      "published_date": "2026-11-01"
-    },
-    {
-      "type": "event",
-      "id": "evt_7479a91787ca00",
-      "title": "2026年湖北体育消费场景案例亮相中国村网（京山）",
-      "source": "新华网",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xcGhuSWJOQXR3VEo3Y1Azb01ETVd3Z1E5UDFlMHdpOVMzRFpoWnJoMzE1TzdNamNEVkFxTWVNZG1JeXphdFp4TEpTQm5sTXFudVV4SUtsYWJvNG1zNHFuUnpvSWJhdGZaZGNXMXJmU2pVT0RG?oc=5",
       "published_date": "2026-11-01"
     },
     {
@@ -881,11 +780,19 @@
     },
     {
       "type": "event",
-      "id": "evt_f37907b5e95aa1",
-      "title": "Puma的“止血”与安踏的“手术”：库存下降24%背后，一场渠道权力的静默转移",
-      "source": "OR新媒体",
-      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9Qa1BzRGpTcExSNHJ5US0yU1NPT3ZDcWdTN19aLW0xVWpXN1ByNHB0azFsa1E5NHhMWndUc0dYUy1wUlZS?oc=5",
-      "published_date": "2026-10-31"
+      "id": "evt_cb949eb1622bdc",
+      "title": "内地最大经销商滔搏回应耐克线上渠道调整：线下合作不变",
+      "source": "界面新闻",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Tb2ZrbldjN0wtcXVfR0Vib1BSNTFTdXZaRlRyaW82VHB1VlUtbnR6MjI1d2YwYmEwQU1KbmladkpZd0ZTVXNrdUt2bUpIbVFERkdYWVRn?oc=5",
+      "published_date": "2026-10-29"
+    },
+    {
+      "type": "event",
+      "id": "evt_3ce4cc8defea25",
+      "title": "Nike 启用越南首艘电动驳船，降低供应链碳排放— NIKE, Inc.",
+      "source": "About Nike",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQa0VFaXhSVWpTR0dwX2tCVVlCdjAzaEdMMktCXzhORWFVSk5GczVRNlJKNjRueTg5anFWNjlVWk1oWjdnZVFzemowZmlRcjJzU1BCc2Y5LU5mZTl5Mk5VR0JBcXJ1ZXcweDE4d2g0Nkd5VjhNMExsVnNtelVWbE1ndzBLblpVeGtzbXc4aDdoOG15blJ3bEZVdXdvOXUwQy1aMW91VGtWT2ZVUGZDaDVuTFZKaW1qUnJLWkE5bnAxc0VBVUZSX3ItTzhyRkdjYXE2OUE3bEVuY1BTUjFSbHc?oc=5",
+      "published_date": "2026-10-29"
     }
   ],
   "data_quality": {
@@ -896,7 +803,7 @@
     "raw_event_count": 26,
     "coalesced_event_count": 26,
     "eligible_event_count": 26,
-    "selected_event_count": 6,
+    "selected_event_count": 5,
     "raw_product_count": 7,
     "product_lead_count": 7,
     "eligible_product_count": 0,
@@ -919,7 +826,7 @@
       "户外与场景": 3
     },
     "selected_status": {
-      "new": 6
+      "new": 5
     },
     "quality_notes": [
       "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
