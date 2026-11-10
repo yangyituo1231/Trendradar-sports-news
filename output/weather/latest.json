@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10 10:17:50",
+  "generated_at": "2026-11-10 04:57:12",
   "source": "Open-Meteo",
   "regions": {
     "north": {
@@ -36,22 +36,22 @@
         {
           "date": "2026-11-10",
           "weather": "阴",
-          "temp_max": 13.7,
-          "temp_min": 6.8,
+          "temp_max": 13.1,
+          "temp_min": 6.4,
           "alert": ""
         },
         {
           "date": "2026-11-11",
-          "weather": "阴",
-          "temp_max": 18.3,
+          "weather": "小雨",
+          "temp_max": 18.2,
           "temp_min": 8.1,
           "alert": ""
         },
         {
           "date": "2026-11-12",
           "weather": "小雨",
-          "temp_max": 22.0,
-          "temp_min": 12.5,
+          "temp_max": 21.3,
+          "temp_min": 11.8,
           "alert": ""
         }
       ]
@@ -90,22 +90,22 @@
         {
           "date": "2026-11-10",
           "weather": "阴",
-          "temp_max": 16.3,
-          "temp_min": 8.9,
+          "temp_max": 16.1,
+          "temp_min": 9.0,
           "alert": ""
         },
         {
           "date": "2026-11-11",
           "weather": "阴",
-          "temp_max": 16.1,
-          "temp_min": 8.0,
+          "temp_max": 15.8,
+          "temp_min": 8.1,
           "alert": ""
         },
         {
           "date": "2026-11-12",
           "weather": "阴",
-          "temp_max": 16.8,
-          "temp_min": 8.4,
+          "temp_max": 16.4,
+          "temp_min": 8.8,
           "alert": ""
         }
       ]

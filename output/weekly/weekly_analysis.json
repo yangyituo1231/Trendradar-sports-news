@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-11-09T15:01+08:00",
+  "generated_at": "2026-11-10T12:57+08:00",
   "report_window": {
     "start_date": "2026-11-02",
     "end_date": "2026-11-08",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "区域体育规划与进博会首发并行，儿童运动鞋服需关注专业细分与本土文化联名。",
-    "week_in_one_paragraph": "本周广东发布体育“十五五”规划，提出2030年体育产业总规模超1.2万亿元；进博会集中呈现首发首秀，lululemon、ASICS、斯凯奇等运动品牌参展；Nike联名推出儿童青少年足球鞋，李宁发布故宫联名羽绒服，安踏篮球新品亮相。",
+    "weekly_thesis": "进博会首发密集，运动品牌借平台推新；广东体育规划与消费数据提供政策与需求参照。",
+    "week_in_one_paragraph": "本周进博会集中释放首发首秀信息，lululemon、ASICS、斯凯奇等品牌借平台展示新品与理念；Nike联名足球鞋覆盖儿童青少年场景。广东体育“十五五”规划提出2030年体育产业总规模超1.2万亿元，为行业提供中长期政策参照。",
     "next_week_focus": [
-      "跟踪广东体育“十五五”规划后续配套政策。",
-      "关注进博会运动品牌首发新品零售落地。",
-      "观察Nike儿童足球鞋联名是否披露尺码信息。",
-      "留意李宁故宫联名是否延伸至童装线。",
-      "跟踪Puma大中华区增长态势后续报道。"
+      "进博会首发运动新品后续渠道落地情况",
+      "儿童青少年足球鞋联名系列是否拓展尺码",
+      "广东体育“十五五”规划配套措施进展",
+      "Puma大中华区增长与全球下滑的后续表现",
+      "社零数据对运动消费环境的持续参照"
     ]
   },
   "key_developments": [
@@ -54,7 +54,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "省级体育产业规划明确2030年总规模目标，为运动鞋服提供中长期区域需求参照。"
+      "editorial_reason": "省级体育产业规划明确2030年规模目标，为运动用品需求提供政策参照。"
     },
     {
       "event_id": "evt_e92951a3987b41",
@@ -92,7 +92,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "进博会首发首秀展品数量创新高，反映运动消费品牌借展会集中推新的渠道趋势。"
+      "editorial_reason": "进博会首发首秀展品数量创新高，反映品牌集中借展会推新的平台化趋势。"
     },
     {
       "event_id": "evt_ea1ddf1cfc95bc",
@@ -132,7 +132,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "斯凯奇连续八年参展进博会，强调专业科技与全渠道布局，属渠道与品牌展示动向。"
+      "editorial_reason": "斯凯奇连续八年参展进博会，强调专业科技与全渠道布局的持续投入。"
     },
     {
       "event_id": "evt_0453dbddd5b7f7",
@@ -173,71 +173,86 @@
         }
       ],
       "editorial_reason": "Puma全球营收下滑但大中华区连续三季正增长，呈现区域市场分化信号。"
+    },
+    {
+      "event_id": "evt_eefe9450ae9781",
+      "title": "2026年1—9月份社会消费品零售总额增长1.1% _ 统计信息解读",
+      "category": "行业动态",
+      "event_family": "macro_data",
+      "reporting_period": "",
+      "brands": [],
+      "source": "福建省商务厅",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1CWF9BUVBfRVJNT3hIWDI1TWlZLVhoMmNxLV8tUFh0cktTOXN2UXdmbnMwQkE5Mlc2ZUwxTW1EZUNRR3pVS1VwQWljMzRmWG8wV0VVTlpmTWs4WkM4amduWlpTT0V5T1pjZjdHd1V6UzB2WFV5T1k0SWl4dw?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1CWF9BUVBfRVJNT3hIWDI1TWlZLVhoMmNxLV8tUFh0cktTOXN2UXdmbnMwQkE5Mlc2ZUwxTW1EZUNRR3pVS1VwQWljMzRmWG8wV0VVTlpmTWs4WkM4amduWlpTT0V5T1pjZjdHd1V6UzB2WFV5T1k0SWl4dw?oc=5",
+      "published_at": "2026-11-02T08:30+08:00",
+      "published_date": "2026-11-02",
+      "status": "follow_up",
+      "verification": "official_source",
+      "is_official": true,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 52,
+      "selection_score": 71,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_eefe9450ae9781"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_124bc02cb45877",
+          "title": "2026年1—9月份社会消费品零售总额增长1.1% _ 统计信息解读",
+          "source": "福建省商务厅",
+          "source_tier": "official",
+          "is_official": true,
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1CWF9BUVBfRVJNT3hIWDI1TWlZLVhoMmNxLV8tUFh0cktTOXN2UXdmbnMwQkE5Mlc2ZUwxTW1EZUNRR3pVS1VwQWljMzRmWG8wV0VVTlpmTWs4WkM4amduWlpTT0V5T1pjZjdHd1V6UzB2WFV5T1k0SWl4dw?oc=5",
+          "published_at": "2026-11-02T08:30+08:00",
+          "summary": ""
+        }
+      ],
+      "editorial_reason": "社零总额增速数据提供消费大盘参照，有助于判断运动消费外部环境。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "区域体育产业规划与进博会首发共振",
-      "analysis": "广东提出2030年体育产业总规模超1.2万亿元，属于省级中长期规划；同期进博会代表性展品超480件、首发首秀首展创新高。两者共同显示体育消费的政策预期与展会首发渠道正在同步活跃，但均为规划或展会信息，不能等同于终端销售或市场热度。",
+      "headline": "进博会成为运动品牌首发首秀集中窗口",
+      "analysis": "本届进博会代表性展品超480件、创历年新高，lululemon与ASICS带来新品牌首秀与新品首发，斯凯奇连续八年参展并强调专业科技与全渠道布局。运动品牌正把进博会作为集中展示新品与品牌理念的窗口，首发节奏与展会平台绑定更紧，行业信息密度在展会期间明显上升。",
       "event_ids": [
-        "evt_93056b943d452e",
-        "evt_e92951a3987b41"
+        "evt_e92951a3987b41",
+        "evt_3258f3abf5f79c",
+        "evt_ea1ddf1cfc95bc"
       ],
       "evidence": [
-        {
-          "event_id": "evt_93056b943d452e",
-          "title": "广东发布体育发展“十五五”规划：到2030年体育产业总规模超1.2万亿元",
-          "source": "云浮市人民政府",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5ydWZJSldZUG4yM05vcDdZcGpjVW4zLU9rVENGVkpzenJZOTZKTW13UDd5Um9wZWU2aElLYXJrZVZaWWxxOWV6UDR5eWdjOTVneE5qUG5QSzBidjhSd2RpVllpR185Mk51SGlsZkJsQUtpWl9k?oc=5",
-          "published_date": "2026-11-06"
-        },
         {
           "event_id": "evt_e92951a3987b41",
           "title": "本届进博会代表性展品超480件 创历年新高 首发首秀首展折射中国市场吸引力",
           "source": "北京市人民政府门户网站",
           "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HVHJPS0NOMGRUeVdjQ2lTRmJQYjF6TUFSVnhuQkFOSW9qZEtkTGRNdTdsSzJtQXV3Tkp4RVF1Y0x6d1p3TDdJNDlZa0NSQlFCWFZTQjhMSFl1bmw3OXlKYjlWeHdZUTU0ZVBFb1Nnam1CSjBZQS1fV2Etaw?oc=5",
           "published_date": "2026-11-07"
-        }
-      ]
-    },
-    {
-      "headline": "运动品牌借联名与专业品类推新",
-      "analysis": "Nike与Kids Of Immigrants联名推出专业及街头足球鞋，李宁发布故宫联名羽绒服，安踏发布篮球新品。三件事分别指向足球、冬季服饰和篮球场景，反映品牌以联名和文化元素做产品差异化，其中Nike足球鞋明确覆盖儿童青少年，对童装童鞋品类有直接参照意义。",
-      "event_ids": [
-        "evt_75958f9052ecaa",
-        "evt_4431f9103eead0",
-        "evt_4fd1b3615abbf1"
-      ],
-      "evidence": [
-        {
-          "event_id": "evt_75958f9052ecaa",
-          "title": "Nike 再度携手Kids Of Immigrants，推出全新专业足球鞋与街头足球鞋联名系列— NIKE, Inc.",
-          "source": "About Nike",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSmNnQlNjN2xmQ2NuSmhhVmdHQUI5RXd4QXZxd1RSYXBrMHFqSmRRWGZNRUNPMklGZks0STFWcXZPXzRya3UzQl9TYzhLSzBnYUxWLVIxSWtZa3IxbC1zSjRjczhZM2hCaGE4cV9odTVROEU2U0p3UE5YV1JIaWFpMHhqTDNCR2hJV1RiZl9VUlBqWWp3bmtfZTRkcENFcTFaVVI5NURsYlBPMzlCNFd2MFI0MWhPY21QLTV1NEI2bVRXdUtPNVM3MzF2VDlXaUs1N2NlNzJucHRQLW1lOThSMlBlcw?oc=5",
-          "published_date": "2026-11-05"
         },
         {
-          "event_id": "evt_4431f9103eead0",
-          "title": "李宁发布好彩羽绒服及故宫联名系列",
-          "source": "观点网",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE02bGNZRTRvNGxIVnRwQ0hwWlFtSmp6Qk5VVERRZUFYT2RHdF9RTXRqM3hFUmdRZlA2M2YtZTJvVE14RXVqN0R4MzUzblVhckttdWczUlpPRWs3WXlMNS1IcQ?oc=5",
-          "published_date": "2026-11-06"
+          "event_id": "evt_3258f3abf5f79c",
+          "title": "进博会华丽快报：Qeelin、lululemon、ASICS 带来新品牌首秀与新品首发",
+          "source": "华丽志",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
+          "published_date": "2026-11-08"
         },
         {
-          "event_id": "evt_4fd1b3615abbf1",
-          "title": "Eclosion Type3 发布！安踏篮球的「新惊喜」正式亮相！",
-          "source": "FLIGHTCLUB中文站",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9RYTI4bExMd19VVzRiNjJfYmhGdHF0Vkw1dWtkcU9PeE50cVRTMVVVejBTVENHY1kwck9JeGp2MHkyTlNXWnhCRHlxQ0s?oc=5",
+          "event_id": "evt_ea1ddf1cfc95bc",
+          "title": "斯凯奇连续八年亮相进博会，以专业科技与全渠道布局引领\"破速\" 新篇",
+          "source": "美通社",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5wbGczeEpkZ1Zsekk0RmVfd1h4S0RaYTJMbTNoUFM3MHRoVXFtc0lpb2l1TEZiNDhiMXhPVzNmXzY5RktoN0xic3ZuTzBrY3BadlE4cmJCc1d6TTVyQXpOY0pxQXZJVDhPTzNJd1Z3?oc=5",
           "published_date": "2026-11-06"
         }
       ]
     },
     {
-      "headline": "国际品牌在华表现分化",
-      "analysis": "Puma最新季报显示全球营收同比下滑5%，但大中华区营收连续三个季度正增长；斯凯奇则连续八年亮相进博会，强调专业科技与全渠道布局。两者共同说明国际运动品牌在华策略分化：部分品牌依靠区域复苏，部分品牌借展会强化科技与渠道形象。",
+      "headline": "区域市场分化与政策目标并行",
+      "analysis": "Puma全球营收同比下滑5%，但大中华区营收连续三个季度正增长，显示区域市场表现分化。同期广东提出2030年体育产业总规模超1.2万亿元，社零总额前九月增长1.1%，政策目标与消费大盘数据共同构成运动品牌判断中长期需求与区域布局的参照。",
       "event_ids": [
         "evt_0453dbddd5b7f7",
-        "evt_ea1ddf1cfc95bc"
+        "evt_93056b943d452e",
+        "evt_eefe9450ae9781"
       ],
       "evidence": [
         {
@@ -248,11 +263,34 @@
           "published_date": "2026-11-02"
         },
         {
-          "event_id": "evt_ea1ddf1cfc95bc",
-          "title": "斯凯奇连续八年亮相进博会，以专业科技与全渠道布局引领\"破速\" 新篇",
-          "source": "美通社",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5wbGczeEpkZ1Zsekk0RmVfd1h4S0RaYTJMbTNoUFM3MHRoVXFtc0lpb2l1TEZiNDhiMXhPVzNmXzY5RktoN0xic3ZuTzBrY3BadlE4cmJCc1d6TTVyQXpOY0pxQXZJVDhPTzNJd1Z3?oc=5",
+          "event_id": "evt_93056b943d452e",
+          "title": "广东发布体育发展“十五五”规划：到2030年体育产业总规模超1.2万亿元",
+          "source": "云浮市人民政府",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5ydWZJSldZUG4yM05vcDdZcGpjVW4zLU9rVENGVkpzenJZOTZKTW13UDd5Um9wZWU2aElLYXJrZVZaWWxxOWV6UDR5eWdjOTVneE5qUG5QSzBidjhSd2RpVllpR185Mk51SGlsZkJsQUtpWl9k?oc=5",
           "published_date": "2026-11-06"
+        },
+        {
+          "event_id": "evt_eefe9450ae9781",
+          "title": "2026年1—9月份社会消费品零售总额增长1.1% _ 统计信息解读",
+          "source": "福建省商务厅",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1CWF9BUVBfRVJNT3hIWDI1TWlZLVhoMmNxLV8tUFh0cktTOXN2UXdmbnMwQkE5Mlc2ZUwxTW1EZUNRR3pVS1VwQWljMzRmWG8wV0VVTlpmTWs4WkM4amduWlpTT0V5T1pjZjdHd1V6UzB2WFV5T1k0SWl4dw?oc=5",
+          "published_date": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "headline": "儿童青少年足球鞋场景出现联名供给",
+      "analysis": "Nike再度携手Kids Of Immigrants推出专业足球鞋与街头足球鞋联名系列，产品候选标注受众为儿童/青少年、场景为足球。该事件显示国际品牌在儿童青少年足球细分场景以联名方式补充供给，对童装童鞋品类的内容运营与场景化选品具有参照意义。",
+      "event_ids": [
+        "evt_75958f9052ecaa"
+      ],
+      "evidence": [
+        {
+          "event_id": "evt_75958f9052ecaa",
+          "title": "Nike 再度携手Kids Of Immigrants，推出全新专业足球鞋与街头足球鞋联名系列— NIKE, Inc.",
+          "source": "About Nike",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSmNnQlNjN2xmQ2NuSmhhVmdHQUI5RXd4QXZxd1RSYXBrMHFqSmRRWGZNRUNPMklGZks0STFWcXZPXzRya3UzQl9TYzhLSzBnYUxWLVIxSWtZa3IxbC1zSjRjczhZM2hCaGE4cV9odTVROEU2U0p3UE5YV1JIaWFpMHhqTDNCR2hJV1RiZl9VUlBqWWp3bmtfZTRkcENFcTFaVVI5NURsYlBPMzlCNFd2MFI0MWhPY21QLTV1NEI2bVRXdUtPNVM3MzF2VDlXaUs1N2NlNzJucHRQLW1lOThSMlBlcw?oc=5",
+          "published_date": "2026-11-05"
         }
       ]
     }
@@ -315,7 +353,64 @@
           "published_date": "2026-11-05"
         }
       ],
-      "editorial_reason": "Nike联名足球鞋明确覆盖儿童青少年足球场景，是本周少有的直接关联儿童运动品类的具体商品信息。"
+      "editorial_reason": "儿童青少年足球场景的联名足球鞋，直接关联童鞋细分品类，信息价值较高。"
+    },
+    {
+      "product_id": "prd_79272f0d1c65e6",
+      "brand": "Nike",
+      "product_name": "Freak 8",
+      "model_code": "",
+      "category": "商品趋势",
+      "audience": "成人/通用",
+      "scenarios": [],
+      "release_date": "",
+      "release_date_basis": "not_disclosed",
+      "price": {
+        "value": null,
+        "currency": "",
+        "display": "",
+        "basis": "not_disclosed"
+      },
+      "technologies": [],
+      "materials": [],
+      "source": "About Nike",
+      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNOEtJUUtUM0lHMGtTQ0o1WXZHVFlxTkVNMnNMODVBaVhhWVl6dFYtZWdnZmFhVG9wcV9hZkNwTmxlS2hPOVpkMnRPdGJTaWVZTUNqM2hEU2Rzc3RrMmtfZWQ4S1RsajlZUllicmVRUHZYdXNHclFJZ2JjX1VqemZVby1Sc0NHNEhJUEplYWxXam56SjBTT0E1ZFZUb2g3ZUg4MHVyYzFKdVZuendkaUEyYUdNTlpxUTZhaTlIYnNvR3hnVXp5OHdPcmpWMzFXVk5INEZCUGMtR1RRdHdGcmdzYV8zTVNHYXRycF8xREdVUThmMkVEM2hFdXE4TndDU0RMWXRVbEhwa1NwcWh4UFdnVWpR?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNOEtJUUtUM0lHMGtTQ0o1WXZHVFlxTkVNMnNMODVBaVhhWVl6dFYtZWdnZmFhVG9wcV9hZkNwTmxlS2hPOVpkMnRPdGJTaWVZTUNqM2hEU2Rzc3RrMmtfZWQ4S1RsajlZUllicmVRUHZYdXNHclFJZ2JjX1VqemZVby1Sc0NHNEhJUEplYWxXam56SjBTT0E1ZFZUb2g3ZUg4MHVyYzFKdVZuendkaUEyYUdNTlpxUTZhaTlIYnNvR3hnVXp5OHdPcmpWMzFXVk5INEZCUGMtR1RRdHdGcmdzYV8zTVNHYXRycF8xREdVUThmMkVEM2hFdXE4TndDU0RMWXRVbEhwa1NwcWh4UFdnVWpR?oc=5",
+      "official_url": "",
+      "image_url": "",
+      "headline": "Nike 推出全新 Giannis Freak 8",
+      "published_at": "2026-11-08T20:21+08:00",
+      "published_date": "2026-11-08",
+      "verification": "official",
+      "verification_reason": "官方来源单篇报道确认；链接解析失败时保留Google News中转链接。",
+      "evidence_status": "media_confirmed",
+      "is_official": true,
+      "confidence_score": 58,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "credible_source_count": 0,
+      "official_evidence_count": 0,
+      "status": "new",
+      "first_seen": "2026-11-02",
+      "last_seen": "2026-11-08",
+      "evidence": {
+        "product": "Nike 推出全新 Giannis Freak 8",
+        "technology": "",
+        "price_or_release": "Nike 推出全新 Giannis Freak 8"
+      },
+      "coverage": [
+        {
+          "headline": "Nike 推出全新 Giannis Freak 8",
+          "source": "About Nike",
+          "source_tier": "official",
+          "is_official": true,
+          "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNOEtJUUtUM0lHMGtTQ0o1WXZHVFlxTkVNMnNMODVBaVhhWVl6dFYtZWdnZmFhVG9wcV9hZkNwTmxlS2hPOVpkMnRPdGJTaWVZTUNqM2hEU2Rzc3RrMmtfZWQ4S1RsajlZUllicmVRUHZYdXNHclFJZ2JjX1VqemZVby1Sc0NHNEhJUEplYWxXam56SjBTT0E1ZFZUb2g3ZUg4MHVyYzFKdVZuendkaUEyYUdNTlpxUTZhaTlIYnNvR3hnVXp5OHdPcmpWMzFXVk5INEZCUGMtR1RRdHdGcmdzYV8zTVNHYXRycF8xREdVUThmMkVEM2hFdXE4TndDU0RMWXRVbEhwa1NwcWh4UFdnVWpR?oc=5",
+          "direct_url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNOEtJUUtUM0lHMGtTQ0o1WXZHVFlxTkVNMnNMODVBaVhhWVl6dFYtZWdnZmFhVG9wcV9hZkNwTmxlS2hPOVpkMnRPdGJTaWVZTUNqM2hEU2Rzc3RrMmtfZWQ4S1RsajlZUllicmVRUHZYdXNHclFJZ2JjX1VqemZVby1Sc0NHNEhJUEplYWxXam56SjBTT0E1ZFZUb2g3ZUg4MHVyYzFKdVZuendkaUEyYUdNTlpxUTZhaTlIYnNvR3hnVXp5OHdPcmpWMzFXVk5INEZCUGMtR1RRdHdGcmdzYV8zTVNHYXRycF8xREdVUThmMkVEM2hFdXE4TndDU0RMWXRVbEhwa1NwcWh4UFdnVWpR?oc=5",
+          "published_at": "2026-11-08T20:21+08:00",
+          "published_date": "2026-11-08"
+        }
+      ],
+      "editorial_reason": "Nike篮球鞋新品，可作为成人篮球鞋产品迭代的参照，但与儿童业务关联间接。"
     }
   ],
   "competitor_channel": [
@@ -361,40 +456,79 @@
   ],
   "kids_consumer": [
     {
-      "event_id": "evt_75958f9052ecaa",
-      "title": "Nike 再度携手Kids Of Immigrants，推出全新专业足球鞋与街头足球鞋联名系列— NIKE, Inc.",
+      "event_id": "evt_4f67d6d49aa488",
+      "title": "汪顺亮相进博会lululemon揭幕式，见证新品全球首发",
       "category": "产品与科技",
-      "event_family": "collaboration",
+      "event_family": "product_launch",
       "reporting_period": "",
       "brands": [
-        "Nike"
+        "lululemon"
       ],
-      "source": "About Nike",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSmNnQlNjN2xmQ2NuSmhhVmdHQUI5RXd4QXZxd1RSYXBrMHFqSmRRWGZNRUNPMklGZks0STFWcXZPXzRya3UzQl9TYzhLSzBnYUxWLVIxSWtZa3IxbC1zSjRjczhZM2hCaGE4cV9odTVROEU2U0p3UE5YV1JIaWFpMHhqTDNCR2hJV1RiZl9VUlBqWWp3bmtfZTRkcENFcTFaVVI5NURsYlBPMzlCNFd2MFI0MWhPY21QLTV1NEI2bVRXdUtPNVM3MzF2VDlXaUs1N2NlNzJucHRQLW1lOThSMlBlcw?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSmNnQlNjN2xmQ2NuSmhhVmdHQUI5RXd4QXZxd1RSYXBrMHFqSmRRWGZNRUNPMklGZks0STFWcXZPXzRya3UzQl9TYzhLSzBnYUxWLVIxSWtZa3IxbC1zSjRjczhZM2hCaGE4cV9odTVROEU2U0p3UE5YV1JIaWFpMHhqTDNCR2hJV1RiZl9VUlBqWWp3bmtfZTRkcENFcTFaVVI5NURsYlBPMzlCNFd2MFI0MWhPY21QLTV1NEI2bVRXdUtPNVM3MzF2VDlXaUs1N2NlNzJucHRQLW1lOThSMlBlcw?oc=5",
-      "published_at": "2026-11-05T16:00+08:00",
-      "published_date": "2026-11-05",
+      "source": "手机新浪网",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBvQXB4Zm5xWXVLME14VTJFTi00TUdPLXVLTGNpTHZkR2lxMTFWVXd4NWhELVZBdFQ3MTA3S29OcGxWa1FXdzFIUXVKU2RIZUNnRm51a0k1WjAtSy1XODFXVEZWclBYbG5nM3JLQ1FPZlFQSVU?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBvQXB4Zm5xWXVLME14VTJFTi00TUdPLXVLTGNpTHZkR2lxMTFWVXd4NWhELVZBdFQ3MTA3S29OcGxWa1FXdzFIUXVKU2RIZUNnRm51a0k1WjAtSy1XODFXVEZWclBYbG5nM3JLQ1FPZlFQSVU?oc=5",
+      "published_at": "2026-11-06T00:23+08:00",
+      "published_date": "2026-11-06",
       "status": "new",
-      "verification": "official_source",
-      "is_official": true,
+      "verification": "single_source",
+      "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 59,
-      "selection_score": 80,
+      "editorial_score": 45,
+      "selection_score": 57,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_75958f9052ecaa"
+        "evt_4f67d6d49aa488"
       ],
       "evidence": [
         {
-          "item_id": "src_015a729afee3be",
-          "title": "Nike 再度携手Kids Of Immigrants，推出全新专业足球鞋与街头足球鞋联名系列— NIKE, Inc.",
-          "source": "About Nike",
-          "source_tier": "official",
-          "is_official": true,
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSmNnQlNjN2xmQ2NuSmhhVmdHQUI5RXd4QXZxd1RSYXBrMHFqSmRRWGZNRUNPMklGZks0STFWcXZPXzRya3UzQl9TYzhLSzBnYUxWLVIxSWtZa3IxbC1zSjRjczhZM2hCaGE4cV9odTVROEU2U0p3UE5YV1JIaWFpMHhqTDNCR2hJV1RiZl9VUlBqWWp3bmtfZTRkcENFcTFaVVI5NURsYlBPMzlCNFd2MFI0MWhPY21QLTV1NEI2bVRXdUtPNVM3MzF2VDlXaUs1N2NlNzJucHRQLW1lOThSMlBlcw?oc=5",
-          "published_at": "2026-11-05T16:00+08:00",
+          "item_id": "src_9d81883194b414",
+          "title": "汪顺亮相进博会lululemon揭幕式，见证新品全球首发",
+          "source": "手机新浪网",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBvQXB4Zm5xWXVLME14VTJFTi00TUdPLXVLTGNpTHZkR2lxMTFWVXd4NWhELVZBdFQ3MTA3S29OcGxWa1FXdzFIUXVKU2RIZUNnRm51a0k1WjAtSy1XODFXVEZWclBYbG5nM3JLQ1FPZlFQSVU?oc=5",
+          "published_at": "2026-11-06T00:23+08:00",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "event_id": "evt_b019c495ddf82f",
+      "title": "进博观察丨第九届进博会开幕，lululemon将发布“触感科学”理念新品",
+      "category": "产品与科技",
+      "event_family": "product_launch",
+      "reporting_period": "",
+      "brands": [
+        "lululemon"
+      ],
+      "source": "中华网财经",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ya3JJZEYxU2l2U00yOU9icG5mN05BUTczeE4zeF91bEtLSVJiSGw1V3FrR21aVmFlWTloamFEMGQ3RTBaZTQzdmVWc0JkMFJ1TkZyYllsaEZFQ28xU0hLZF9nVk1iT183ZkVJaVhBY1dwTW8?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ya3JJZEYxU2l2U00yOU9icG5mN05BUTczeE4zeF91bEtLSVJiSGw1V3FrR21aVmFlWTloamFEMGQ3RTBaZTQzdmVWc0JkMFJ1TkZyYllsaEZFQ28xU0hLZF9nVk1iT183ZkVJaVhBY1dwTW8?oc=5",
+      "published_at": "2026-11-05T14:00+08:00",
+      "published_date": "2026-11-05",
+      "status": "new",
+      "verification": "single_source",
+      "is_official": false,
+      "source_count": 1,
+      "direct_source_count": 0,
+      "mention_count": 1,
+      "editorial_score": 44,
+      "selection_score": 56,
+      "summary_snippet": "",
+      "merged_event_ids": [
+        "evt_b019c495ddf82f"
+      ],
+      "evidence": [
+        {
+          "item_id": "src_6b8dc1fa72db71",
+          "title": "进博观察丨第九届进博会开幕，lululemon将发布“触感科学”理念新品",
+          "source": "中华网财经",
+          "source_tier": "tier_3",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ya3JJZEYxU2l2U00yOU9icG5mN05BUTczeE4zeF91bEtLSVJiSGw1V3FrR21aVmFlWTloamFEMGQ3RTBaZTQzdmVWc0JkMFJ1TkZyYllsaEZFQ28xU0hLZF9nVk1iT183ZkVJaVhBY1dwTW8?oc=5",
+          "published_at": "2026-11-05T14:00+08:00",
           "summary": ""
         }
       ]
@@ -402,31 +536,33 @@
   ],
   "watchlist": [
     {
-      "title": "儿童青少年足球鞋联名后续",
+      "title": "进博会运动品牌首发后续落地",
+      "event_ids": [
+        "evt_3258f3abf5f79c",
+        "evt_ea1ddf1cfc95bc",
+        "evt_4f67d6d49aa488"
+      ],
+      "product_ids": [],
+      "reason": "观察进博会首发新品后续是否进入零售渠道及儿童相关品类延伸。"
+    },
+    {
+      "title": "儿童青少年足球鞋联名系列市场反馈",
       "event_ids": [
         "evt_75958f9052ecaa"
       ],
       "product_ids": [
         "prd_1596f00b3ea1c2"
       ],
-      "reason": "观察Nike联名足球鞋是否披露更多儿童尺码、配色或渠道信息。"
+      "reason": "观察该联名足球鞋是否拓展儿童尺码与校园足球场景。"
     },
     {
-      "title": "本土品牌冬季文化联名",
+      "title": "运动消费大盘与区域政策落地",
       "event_ids": [
-        "evt_4431f9103eead0"
+        "evt_eefe9450ae9781",
+        "evt_93056b943d452e"
       ],
       "product_ids": [],
-      "reason": "观察李宁故宫联名羽绒服是否延伸至儿童或亲子产品线。"
-    },
-    {
-      "title": "进博会运动品牌首发落地",
-      "event_ids": [
-        "evt_e92951a3987b41",
-        "evt_ea1ddf1cfc95bc"
-      ],
-      "product_ids": [],
-      "reason": "观察进博会首发运动新品后续是否进入零售渠道及儿童产品线。"
+      "reason": "跟踪社零增速与广东体育规划后续配套措施对运动消费的影响。"
     }
   ],
   "tracking": {
@@ -467,7 +603,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "省级体育产业规划明确2030年总规模目标，为运动鞋服提供中长期区域需求参照。"
+        "editorial_reason": "省级体育产业规划明确2030年规模目标，为运动用品需求提供政策参照。"
       },
       {
         "event_id": "evt_e92951a3987b41",
@@ -505,7 +641,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "进博会首发首秀展品数量创新高，反映运动消费品牌借展会集中推新的渠道趋势。"
+        "editorial_reason": "进博会首发首秀展品数量创新高，反映品牌集中借展会推新的平台化趋势。"
       },
       {
         "event_id": "evt_ea1ddf1cfc95bc",
@@ -545,7 +681,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "斯凯奇连续八年参展进博会，强调专业科技与全渠道布局，属渠道与品牌展示动向。"
+        "editorial_reason": "斯凯奇连续八年参展进博会，强调专业科技与全渠道布局的持续投入。"
       },
       {
         "event_id": "evt_0453dbddd5b7f7",
@@ -588,7 +724,46 @@
         "editorial_reason": "Puma全球营收下滑但大中华区连续三季正增长，呈现区域市场分化信号。"
       }
     ],
-    "follow_up_selected": [],
+    "follow_up_selected": [
+      {
+        "event_id": "evt_eefe9450ae9781",
+        "title": "2026年1—9月份社会消费品零售总额增长1.1% _ 统计信息解读",
+        "category": "行业动态",
+        "event_family": "macro_data",
+        "reporting_period": "",
+        "brands": [],
+        "source": "福建省商务厅",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1CWF9BUVBfRVJNT3hIWDI1TWlZLVhoMmNxLV8tUFh0cktTOXN2UXdmbnMwQkE5Mlc2ZUwxTW1EZUNRR3pVS1VwQWljMzRmWG8wV0VVTlpmTWs4WkM4amduWlpTT0V5T1pjZjdHd1V6UzB2WFV5T1k0SWl4dw?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1CWF9BUVBfRVJNT3hIWDI1TWlZLVhoMmNxLV8tUFh0cktTOXN2UXdmbnMwQkE5Mlc2ZUwxTW1EZUNRR3pVS1VwQWljMzRmWG8wV0VVTlpmTWs4WkM4amduWlpTT0V5T1pjZjdHd1V6UzB2WFV5T1k0SWl4dw?oc=5",
+        "published_at": "2026-11-02T08:30+08:00",
+        "published_date": "2026-11-02",
+        "status": "follow_up",
+        "verification": "official_source",
+        "is_official": true,
+        "source_count": 1,
+        "direct_source_count": 0,
+        "mention_count": 1,
+        "editorial_score": 52,
+        "selection_score": 71,
+        "summary_snippet": "",
+        "merged_event_ids": [
+          "evt_eefe9450ae9781"
+        ],
+        "evidence": [
+          {
+            "item_id": "src_124bc02cb45877",
+            "title": "2026年1—9月份社会消费品零售总额增长1.1% _ 统计信息解读",
+            "source": "福建省商务厅",
+            "source_tier": "official",
+            "is_official": true,
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1CWF9BUVBfRVJNT3hIWDI1TWlZLVhoMmNxLV8tUFh0cktTOXN2UXdmbnMwQkE5Mlc2ZUwxTW1EZUNRR3pVS1VwQWljMzRmWG8wV0VVTlpmTWs4WkM4amduWlpTT0V5T1pjZjdHd1V6UzB2WFV5T1k0SWl4dw?oc=5",
+            "published_at": "2026-11-02T08:30+08:00",
+            "summary": ""
+          }
+        ],
+        "editorial_reason": "社零总额增速数据提供消费大盘参照，有助于判断运动消费外部环境。"
+      }
+    ],
     "verification_queue": [],
     "product_leads_pending_verification": [
       {
@@ -767,11 +942,43 @@
     },
     {
       "type": "event",
+      "id": "evt_eefe9450ae9781",
+      "title": "2026年1—9月份社会消费品零售总额增长1.1% _ 统计信息解读",
+      "source": "福建省商务厅",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1CWF9BUVBfRVJNT3hIWDI1TWlZLVhoMmNxLV8tUFh0cktTOXN2UXdmbnMwQkE5Mlc2ZUwxTW1EZUNRR3pVS1VwQWljMzRmWG8wV0VVTlpmTWs4WkM4amduWlpTT0V5T1pjZjdHd1V6UzB2WFV5T1k0SWl4dw?oc=5",
+      "published_date": "2026-11-02"
+    },
+    {
+      "type": "event",
       "id": "evt_5ae2ba50be7f0b",
       "title": "【直播回顾】李宁有限公司 2026年中期业绩发布会",
       "source": "hstong.com",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5qMjJJZzNlS0RPSVZ6MmF5VWoyaGZCWGZycGNRbzFXUWs4emI3aFR6cGlfSmZfQWVmcGltUXQ1SW9fVGZxZ2xvUnVMUXA5SjRuVXktRGwtMlp5UG82bURvTWlRR3NCd28?oc=5",
       "published_date": "2026-11-03"
+    },
+    {
+      "type": "event",
+      "id": "evt_4f67d6d49aa488",
+      "title": "汪顺亮相进博会lululemon揭幕式，见证新品全球首发",
+      "source": "手机新浪网",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBvQXB4Zm5xWXVLME14VTJFTi00TUdPLXVLTGNpTHZkR2lxMTFWVXd4NWhELVZBdFQ3MTA3S29OcGxWa1FXdzFIUXVKU2RIZUNnRm51a0k1WjAtSy1XODFXVEZWclBYbG5nM3JLQ1FPZlFQSVU?oc=5",
+      "published_date": "2026-11-06"
+    },
+    {
+      "type": "event",
+      "id": "evt_b019c495ddf82f",
+      "title": "进博观察丨第九届进博会开幕，lululemon将发布“触感科学”理念新品",
+      "source": "中华网财经",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ya3JJZEYxU2l2U00yOU9icG5mN05BUTczeE4zeF91bEtLSVJiSGw1V3FrR21aVmFlWTloamFEMGQ3RTBaZTQzdmVWc0JkMFJ1TkZyYllsaEZFQ28xU0hLZF9nVk1iT183ZkVJaVhBY1dwTW8?oc=5",
+      "published_date": "2026-11-05"
+    },
+    {
+      "type": "event",
+      "id": "evt_3258f3abf5f79c",
+      "title": "进博会华丽快报：Qeelin、lululemon、ASICS 带来新品牌首秀与新品首发",
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
+      "published_date": "2026-11-08"
     },
     {
       "type": "event",
@@ -782,20 +989,12 @@
       "published_date": "2026-11-05"
     },
     {
-      "type": "event",
-      "id": "evt_4431f9103eead0",
-      "title": "李宁发布好彩羽绒服及故宫联名系列",
-      "source": "观点网",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE02bGNZRTRvNGxIVnRwQ0hwWlFtSmp6Qk5VVERRZUFYT2RHdF9RTXRqM3hFUmdRZlA2M2YtZTJvVE14RXVqN0R4MzUzblVhckttdWczUlpPRWs3WXlMNS1IcQ?oc=5",
-      "published_date": "2026-11-06"
-    },
-    {
-      "type": "event",
-      "id": "evt_4fd1b3615abbf1",
-      "title": "Eclosion Type3 发布！安踏篮球的「新惊喜」正式亮相！",
-      "source": "FLIGHTCLUB中文站",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9RYTI4bExMd19VVzRiNjJfYmhGdHF0Vkw1dWtkcU9PeE50cVRTMVVVejBTVENHY1kwck9JeGp2MHkyTlNXWnhCRHlxQ0s?oc=5",
-      "published_date": "2026-11-06"
+      "type": "product",
+      "id": "prd_79272f0d1c65e6",
+      "title": "Nike Freak 8",
+      "source": "About Nike",
+      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNOEtJUUtUM0lHMGtTQ0o1WXZHVFlxTkVNMnNMODVBaVhhWVl6dFYtZWdnZmFhVG9wcV9hZkNwTmxlS2hPOVpkMnRPdGJTaWVZTUNqM2hEU2Rzc3RrMmtfZWQ4S1RsajlZUllicmVRUHZYdXNHclFJZ2JjX1VqemZVby1Sc0NHNEhJUEplYWxXam56SjBTT0E1ZFZUb2g3ZUg4MHVyYzFKdVZuendkaUEyYUdNTlpxUTZhaTlIYnNvR3hnVXp5OHdPcmpWMzFXVk5INEZCUGMtR1RRdHdGcmdzYV8zTVNHYXRycF8xREdVUThmMkVEM2hFdXE4TndDU0RMWXRVbEhwa1NwcWh4UFdnVWpR?oc=5",
+      "published_date": "2026-11-08"
     }
   ],
   "data_quality": {
@@ -806,13 +1005,13 @@
     "raw_event_count": 19,
     "coalesced_event_count": 19,
     "eligible_event_count": 19,
-    "selected_event_count": 4,
+    "selected_event_count": 5,
     "raw_product_count": 14,
     "product_lead_count": 14,
     "eligible_product_count": 2,
-    "selected_product_count": 1,
+    "selected_product_count": 2,
     "conflict_count": 0,
-    "source_link_count": 8,
+    "source_link_count": 11,
     "selected_event_direct_link_count": 0,
     "selected_product_direct_link_count": 0,
     "event_rejections": {},
@@ -827,7 +1026,8 @@
       "电商与平台": 1
     },
     "selected_status": {
-      "new": 4
+      "new": 4,
+      "follow_up": 1
     },
     "quality_notes": [
       "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
