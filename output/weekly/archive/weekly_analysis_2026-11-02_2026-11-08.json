@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-11-14T11:48+08:00",
+  "generated_at": "2026-11-15T11:28+08:00",
   "report_window": {
     "start_date": "2026-11-02",
     "end_date": "2026-11-08",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "区域体育规划与进博会首发并行，运动品牌在华竞争转向专业科技与本土化叙事。",
-    "week_in_one_paragraph": "本周广东发布体育“十五五”规划，提出2030年体育产业总规模超1.2万亿元；进博会集中呈现首发首秀，lululemon、ASICS、斯凯奇等加码专业科技与全渠道展示；Puma季报显示全球营收下滑但大中华区连续三季正增长，李宁则借故宫联名与特别股息强化本土叙事。",
+    "weekly_thesis": "区域体育规划与进博会首发并行，头部品牌以联名和产品迭代争夺注意力，儿童运动市场需关注专业细分与消费理性化。",
+    "week_in_one_paragraph": "本周广东发布体育“十五五”规划，提出2030年体育产业总规模超1.2万亿元，为行业提供中长期政策信号。进博会集中呈现首发首秀，lululemon、ASICS、斯凯奇等品牌借平台发布新品。Nike与Kids Of Immigrants推出足球鞋联名系列，覆盖儿童/青少年场景。Puma季报显示全球营收下滑但大中华区连续三季正增长，李宁发布故宫联名羽绒服，安踏篮球...",
     "next_week_focus": [
-      "跟踪广东体育“十五五”规划配套细则。",
-      "观察进博会运动品牌首发新品上市节奏。",
-      "关注Puma大中华区增长能否延续。",
-      "留意李宁故宫联名系列渠道反馈。",
-      "跟踪迪卡侬东南亚门店扩张进展。"
+      "跟踪Nike儿童足球鞋联名系列是否公布渠道与上市时间。",
+      "观察进博会首发运动品牌新品在零售端的铺货节奏。",
+      "关注广东体育“十五五”规划后续青少年体育配套细则。",
+      "留意Puma大中华区正增长是否延续至下一财季。",
+      "跟踪本土品牌冬季羽绒服联名系列终端反馈。"
     ]
   },
   "key_developments": [
@@ -54,45 +54,48 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "省级体育产业规划明确2030年规模目标，为运动消费提供中长期政策参照。"
+      "editorial_reason": "省级体育产业规划明确2030年总规模目标，为运动鞋服市场提供中长期政策参照。"
     },
     {
-      "event_id": "evt_e92951a3987b41",
-      "title": "本届进博会代表性展品超480件 创历年新高 首发首秀首展折射中国市场吸引力",
+      "event_id": "evt_3258f3abf5f79c",
+      "title": "进博会华丽快报：Qeelin、lululemon、ASICS 带来新品牌首秀与新品首发",
       "category": "产品与科技",
       "event_family": "product_launch",
       "reporting_period": "",
-      "brands": [],
-      "source": "北京市人民政府门户网站",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HVHJPS0NOMGRUeVdjQ2lTRmJQYjF6TUFSVnhuQkFOSW9qZEtkTGRNdTdsSzJtQXV3Tkp4RVF1Y0x6d1p3TDdJNDlZa0NSQlFCWFZTQjhMSFl1bmw3OXlKYjlWeHdZUTU0ZVBFb1Nnam1CSjBZQS1fV2Etaw?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HVHJPS0NOMGRUeVdjQ2lTRmJQYjF6TUFSVnhuQkFOSW9qZEtkTGRNdTdsSzJtQXV3Tkp4RVF1Y0x6d1p3TDdJNDlZa0NSQlFCWFZTQjhMSFl1bmw3OXlKYjlWeHdZUTU0ZVBFb1Nnam1CSjBZQS1fV2Etaw?oc=5",
-      "published_at": "2026-11-07T09:41+08:00",
-      "published_date": "2026-11-07",
+      "brands": [
+        "lululemon",
+        "ASICS"
+      ],
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
+      "published_at": "2026-11-08T12:02+08:00",
+      "published_date": "2026-11-08",
       "status": "new",
-      "verification": "official_source",
-      "is_official": true,
+      "verification": "single_source",
+      "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 58,
-      "selection_score": 79,
+      "editorial_score": 57,
+      "selection_score": 69,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_e92951a3987b41"
+        "evt_3258f3abf5f79c"
       ],
       "evidence": [
         {
-          "item_id": "src_162e2afcfa1db4",
-          "title": "本届进博会代表性展品超480件 创历年新高 首发首秀首展折射中国市场吸引力",
-          "source": "北京市人民政府门户网站",
-          "source_tier": "official",
-          "is_official": true,
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HVHJPS0NOMGRUeVdjQ2lTRmJQYjF6TUFSVnhuQkFOSW9qZEtkTGRNdTdsSzJtQXV3Tkp4RVF1Y0x6d1p3TDdJNDlZa0NSQlFCWFZTQjhMSFl1bmw3OXlKYjlWeHdZUTU0ZVBFb1Nnam1CSjBZQS1fV2Etaw?oc=5",
-          "published_at": "2026-11-07T09:41+08:00",
+          "item_id": "src_933ec16f1935c3",
+          "title": "进博会华丽快报：Qeelin、lululemon、ASICS 带来新品牌首秀与新品首发",
+          "source": "华丽志",
+          "source_tier": "tier_2",
+          "is_official": false,
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
+          "published_at": "2026-11-08T12:02+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "进博会首发首秀展品超480件，反映运动品牌将大型展会作为新品首发窗口。"
+      "editorial_reason": "进博会集中呈现lululemon、ASICS等品牌首秀与首发，反映头部品牌借展会窗口推新。"
     },
     {
       "event_id": "evt_0453dbddd5b7f7",
@@ -132,7 +135,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "Puma全球营收下滑但大中华区连续三季正增长，显示区域市场分化。"
+      "editorial_reason": "Puma全球营收下滑但大中华区连续三季正增长，呈现区域市场与全球表现的分化。"
     },
     {
       "event_id": "evt_ea1ddf1cfc95bc",
@@ -172,56 +175,17 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "斯凯奇连续八年参展进博会，强调专业科技与全渠道布局。"
-    },
-    {
-      "event_id": "evt_be73d6f2acbcd4",
-      "title": "迪卡侬在越南开设第10家门店，首家门店落户平阳省。",
-      "category": "行业动态",
-      "event_family": "store_channel",
-      "reporting_period": "",
-      "brands": [
-        "迪卡侬"
-      ],
-      "source": "Vietnam.vn",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObHhuaV8tY1FTak5oQktBd185dVlrQjBWRnA2anY4eVZ3XzVDTUNmS0RVZEgyTFhzdnF2U2VRTEcxT3RwRVZOei1wRi1kdFNrT0VsdHAyNmY3Y2JfX2NZbnpFVkxJOThwRnRzbkpxc0Rid1c1bTVPcUotY1NCbm15MGtyZkp2ZlcwS2xrUFo5MWw5S0hZUTJTWlNZWnV1cExwcW8xYkdFeG5yV2lTUXAw?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObHhuaV8tY1FTak5oQktBd185dVlrQjBWRnA2anY4eVZ3XzVDTUNmS0RVZEgyTFhzdnF2U2VRTEcxT3RwRVZOei1wRi1kdFNrT0VsdHAyNmY3Y2JfX2NZbnpFVkxJOThwRnRzbkpxc0Rid1c1bTVPcUotY1NCbm15MGtyZkp2ZlcwS2xrUFo5MWw5S0hZUTJTWlNZWnV1cExwcW8xYkdFeG5yV2lTUXAw?oc=5",
-      "published_at": "2026-11-07T21:19+08:00",
-      "published_date": "2026-11-07",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 46,
-      "selection_score": 57,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_be73d6f2acbcd4"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_498af52695f007",
-          "title": "迪卡侬在越南开设第10家门店，首家门店落户平阳省。",
-          "source": "Vietnam.vn",
-          "source_tier": "tier_3",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObHhuaV8tY1FTak5oQktBd185dVlrQjBWRnA2anY4eVZ3XzVDTUNmS0RVZEgyTFhzdnF2U2VRTEcxT3RwRVZOei1wRi1kdFNrT0VsdHAyNmY3Y2JfX2NZbnpFVkxJOThwRnRzbkpxc0Rid1c1bTVPcUotY1NCbm15MGtyZkp2ZlcwS2xrUFo5MWw5S0hZUTJTWlNZWnV1cExwcW8xYkdFeG5yV2lTUXAw?oc=5",
-          "published_at": "2026-11-07T21:19+08:00",
-          "summary": ""
-        }
-      ],
-      "editorial_reason": "迪卡侬越南第10家门店落地平阳省，显示大众运动渠道持续下沉扩张。"
+      "editorial_reason": "斯凯奇连续八年参展进博会，强调专业科技与全渠道布局，展示品牌在华持续投入。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "政策与展会双轮驱动运动消费",
-      "analysis": "广东体育“十五五”规划提出2030年体育产业总规模超1.2万亿元，进博会代表性展品超480件创历年新高。两者分别从区域政策与全国性展会层面释放信号：运动消费被纳入中长期产业目标，同时品牌把进博会作为首发首秀平台。对儿童运动品牌而言，政策扩容与展会首发意味着专业品类和场景化产品有更明确的展示与落地窗口。",
+      "headline": "政策与展会窗口叠加，运动消费供给侧信号密集",
+      "analysis": "广东体育“十五五”规划提出2030年体育产业总规模超1.2万亿元，为运动鞋服需求提供中长期政策背景。同期进博会集中释放首发首秀，lululemon、ASICS、斯凯奇等品牌借展会窗口推新并强调专业科技与全渠道。两者叠加显示供给端在政策预期与展会流量下加速产品露出，但展会首发信息不等同于终端销售表现，需后续观察落地节奏。",
       "event_ids": [
         "evt_93056b943d452e",
-        "evt_e92951a3987b41"
+        "evt_3258f3abf5f79c",
+        "evt_ea1ddf1cfc95bc"
       ],
       "evidence": [
         {
@@ -232,21 +196,27 @@
           "published_date": "2026-11-06"
         },
         {
-          "event_id": "evt_e92951a3987b41",
-          "title": "本届进博会代表性展品超480件 创历年新高 首发首秀首展折射中国市场吸引力",
-          "source": "北京市人民政府门户网站",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HVHJPS0NOMGRUeVdjQ2lTRmJQYjF6TUFSVnhuQkFOSW9qZEtkTGRNdTdsSzJtQXV3Tkp4RVF1Y0x6d1p3TDdJNDlZa0NSQlFCWFZTQjhMSFl1bmw3OXlKYjlWeHdZUTU0ZVBFb1Nnam1CSjBZQS1fV2Etaw?oc=5",
-          "published_date": "2026-11-07"
+          "event_id": "evt_3258f3abf5f79c",
+          "title": "进博会华丽快报：Qeelin、lululemon、ASICS 带来新品牌首秀与新品首发",
+          "source": "华丽志",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
+          "published_date": "2026-11-08"
+        },
+        {
+          "event_id": "evt_ea1ddf1cfc95bc",
+          "title": "斯凯奇连续八年亮相进博会，以专业科技与全渠道布局引领\"破速\" 新篇",
+          "source": "美通社",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5wbGczeEpkZ1Zsekk0RmVfd1h4S0RaYTJMbTNoUFM3MHRoVXFtc0lpb2l1TEZiNDhiMXhPVzNmXzY5RktoN0xic3ZuTzBrY3BadlE4cmJCc1d6TTVyQXpOY0pxQXZJVDhPTzNJd1Z3?oc=5",
+          "published_date": "2026-11-06"
         }
       ]
     },
     {
-      "headline": "国际品牌在华分化与本土化加码",
-      "analysis": "Puma全球营收同比下滑5%，但大中华区连续三个季度正增长；李宁以故宫联名和好彩羽绒服强化本土文化叙事；斯凯奇连续八年参展进博会，突出专业科技与全渠道。三条事件共同显示：国际品牌在华表现分化，本土品牌借文化联名巩固冬季品类，而进博会成为品牌集中展示科技与渠道能力的场域。",
+      "headline": "国际品牌区域分化与本土品牌文化联名并行",
+      "analysis": "Puma最新季报显示全球营收同比下滑5%，但大中华区营收连续三个季度正增长，说明区域市场与全球表现出现分化。李宁则发布好彩羽绒服及故宫联名系列，以文化联名切入冬季服饰。两者分别代表国际品牌在华韧性与本土品牌以文化叙事推新品，行业竞争从单纯规模转向区域深耕与产品差异化。",
       "event_ids": [
         "evt_0453dbddd5b7f7",
-        "evt_4431f9103eead0",
-        "evt_ea1ddf1cfc95bc"
+        "evt_4431f9103eead0"
       ],
       "evidence": [
         {
@@ -262,22 +232,14 @@
           "source": "观点网",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE02bGNZRTRvNGxIVnRwQ0hwWlFtSmp6Qk5VVERRZUFYT2RHdF9RTXRqM3hFUmdRZlA2M2YtZTJvVE14RXVqN0R4MzUzblVhckttdWczUlpPRWs3WXlMNS1IcQ?oc=5",
           "published_date": "2026-11-06"
-        },
-        {
-          "event_id": "evt_ea1ddf1cfc95bc",
-          "title": "斯凯奇连续八年亮相进博会，以专业科技与全渠道布局引领\"破速\" 新篇",
-          "source": "美通社",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5wbGczeEpkZ1Zsekk0RmVfd1h4S0RaYTJMbTNoUFM3MHRoVXFtc0lpb2l1TEZiNDhiMXhPVzNmXzY5RktoN0xic3ZuTzBrY3BadlE4cmJCc1d6TTVyQXpOY0pxQXZJVDhPTzNJd1Z3?oc=5",
-          "published_date": "2026-11-06"
         }
       ]
     },
     {
-      "headline": "专业运动鞋服向细分场景延伸",
-      "analysis": "Nike与Kids Of Immigrants联名推出专业足球鞋与街头足球鞋，覆盖儿童青少年足球场景；迪卡侬在越南开设第10家门店，继续以大众运动渠道扩张。两者分别从产品联名和渠道下沉两个方向说明：运动品牌在细分场景中寻找增量，儿童足球等专业品类成为联名与场景化表达的载体，而大众渠道仍在东南亚等市场加密。",
+      "headline": "儿童足球鞋场景出现联名新品，专业细分值得跟踪",
+      "analysis": "Nike与Kids Of Immigrants推出专业足球鞋与街头足球鞋联名系列，产品候选标注受众为儿童/青少年，场景为足球。该事件是本周少数直接关联儿童运动场景的产品动作，反映品牌以联名方式覆盖专业训练与街头文化两类需求。由于仅单篇官方来源，后续需观察产品是否进入儿童渠道及终端反馈。",
       "event_ids": [
-        "evt_75958f9052ecaa",
-        "evt_be73d6f2acbcd4"
+        "evt_75958f9052ecaa"
       ],
       "evidence": [
         {
@@ -286,13 +248,6 @@
           "source": "About Nike",
           "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSmNnQlNjN2xmQ2NuSmhhVmdHQUI5RXd4QXZxd1RSYXBrMHFqSmRRWGZNRUNPMklGZks0STFWcXZPXzRya3UzQl9TYzhLSzBnYUxWLVIxSWtZa3IxbC1zSjRjczhZM2hCaGE4cV9odTVROEU2U0p3UE5YV1JIaWFpMHhqTDNCR2hJV1RiZl9VUlBqWWp3bmtfZTRkcENFcTFaVVI5NURsYlBPMzlCNFd2MFI0MWhPY21QLTV1NEI2bVRXdUtPNVM3MzF2VDlXaUs1N2NlNzJucHRQLW1lOThSMlBlcw?oc=5",
           "published_date": "2026-11-05"
-        },
-        {
-          "event_id": "evt_be73d6f2acbcd4",
-          "title": "迪卡侬在越南开设第10家门店，首家门店落户平阳省。",
-          "source": "Vietnam.vn",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObHhuaV8tY1FTak5oQktBd185dVlrQjBWRnA2anY4eVZ3XzVDTUNmS0RVZEgyTFhzdnF2U2VRTEcxT3RwRVZOei1wRi1kdFNrT0VsdHAyNmY3Y2JfX2NZbnpFVkxJOThwRnRzbkpxc0Rid1c1bTVPcUotY1NCbm15MGtyZkp2ZlcwS2xrUFo5MWw5S0hZUTJTWlNZWnV1cExwcW8xYkdFeG5yV2lTUXAw?oc=5",
-          "published_date": "2026-11-07"
         }
       ]
     }
@@ -355,7 +310,7 @@
           "published_date": "2026-11-05"
         }
       ],
-      "editorial_reason": "Nike联名足球鞋明确覆盖儿童青少年足球场景，是本周少有的儿童专业运动产品证据。"
+      "editorial_reason": "Nike联名足球鞋系列明确覆盖儿童/青少年足球场景，是本周与儿童事业部品类直接相关的产品证据。"
     }
   ],
   "competitor_channel": [
@@ -401,40 +356,38 @@
   ],
   "kids_consumer": [
     {
-      "event_id": "evt_75958f9052ecaa",
-      "title": "Nike 再度携手Kids Of Immigrants，推出全新专业足球鞋与街头足球鞋联名系列— NIKE, Inc.",
-      "category": "产品与科技",
-      "event_family": "collaboration",
+      "event_id": "evt_eefe9450ae9781",
+      "title": "2026年1—9月份社会消费品零售总额增长1.1% _ 统计信息解读",
+      "category": "行业动态",
+      "event_family": "macro_data",
       "reporting_period": "",
-      "brands": [
-        "Nike"
-      ],
-      "source": "About Nike",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSmNnQlNjN2xmQ2NuSmhhVmdHQUI5RXd4QXZxd1RSYXBrMHFqSmRRWGZNRUNPMklGZks0STFWcXZPXzRya3UzQl9TYzhLSzBnYUxWLVIxSWtZa3IxbC1zSjRjczhZM2hCaGE4cV9odTVROEU2U0p3UE5YV1JIaWFpMHhqTDNCR2hJV1RiZl9VUlBqWWp3bmtfZTRkcENFcTFaVVI5NURsYlBPMzlCNFd2MFI0MWhPY21QLTV1NEI2bVRXdUtPNVM3MzF2VDlXaUs1N2NlNzJucHRQLW1lOThSMlBlcw?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSmNnQlNjN2xmQ2NuSmhhVmdHQUI5RXd4QXZxd1RSYXBrMHFqSmRRWGZNRUNPMklGZks0STFWcXZPXzRya3UzQl9TYzhLSzBnYUxWLVIxSWtZa3IxbC1zSjRjczhZM2hCaGE4cV9odTVROEU2U0p3UE5YV1JIaWFpMHhqTDNCR2hJV1RiZl9VUlBqWWp3bmtfZTRkcENFcTFaVVI5NURsYlBPMzlCNFd2MFI0MWhPY21QLTV1NEI2bVRXdUtPNVM3MzF2VDlXaUs1N2NlNzJucHRQLW1lOThSMlBlcw?oc=5",
-      "published_at": "2026-11-05T16:00+08:00",
-      "published_date": "2026-11-05",
-      "status": "new",
+      "brands": [],
+      "source": "福建省商务厅",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1CWF9BUVBfRVJNT3hIWDI1TWlZLVhoMmNxLV8tUFh0cktTOXN2UXdmbnMwQkE5Mlc2ZUwxTW1EZUNRR3pVS1VwQWljMzRmWG8wV0VVTlpmTWs4WkM4amduWlpTT0V5T1pjZjdHd1V6UzB2WFV5T1k0SWl4dw?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1CWF9BUVBfRVJNT3hIWDI1TWlZLVhoMmNxLV8tUFh0cktTOXN2UXdmbnMwQkE5Mlc2ZUwxTW1EZUNRR3pVS1VwQWljMzRmWG8wV0VVTlpmTWs4WkM4amduWlpTT0V5T1pjZjdHd1V6UzB2WFV5T1k0SWl4dw?oc=5",
+      "published_at": "2026-11-02T08:30+08:00",
+      "published_date": "2026-11-02",
+      "status": "follow_up",
       "verification": "official_source",
       "is_official": true,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 59,
-      "selection_score": 80,
+      "editorial_score": 52,
+      "selection_score": 71,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_75958f9052ecaa"
+        "evt_eefe9450ae9781"
       ],
       "evidence": [
         {
-          "item_id": "src_015a729afee3be",
-          "title": "Nike 再度携手Kids Of Immigrants，推出全新专业足球鞋与街头足球鞋联名系列— NIKE, Inc.",
-          "source": "About Nike",
+          "item_id": "src_124bc02cb45877",
+          "title": "2026年1—9月份社会消费品零售总额增长1.1% _ 统计信息解读",
+          "source": "福建省商务厅",
           "source_tier": "official",
           "is_official": true,
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSmNnQlNjN2xmQ2NuSmhhVmdHQUI5RXd4QXZxd1RSYXBrMHFqSmRRWGZNRUNPMklGZks0STFWcXZPXzRya3UzQl9TYzhLSzBnYUxWLVIxSWtZa3IxbC1zSjRjczhZM2hCaGE4cV9odTVROEU2U0p3UE5YV1JIaWFpMHhqTDNCR2hJV1RiZl9VUlBqWWp3bmtfZTRkcENFcTFaVVI5NURsYlBPMzlCNFd2MFI0MWhPY21QLTV1NEI2bVRXdUtPNVM3MzF2VDlXaUs1N2NlNzJucHRQLW1lOThSMlBlcw?oc=5",
-          "published_at": "2026-11-05T16:00+08:00",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1CWF9BUVBfRVJNT3hIWDI1TWlZLVhoMmNxLV8tUFh0cktTOXN2UXdmbnMwQkE5Mlc2ZUwxTW1EZUNRR3pVS1VwQWljMzRmWG8wV0VVTlpmTWs4WkM4amduWlpTT0V5T1pjZjdHd1V6UzB2WFV5T1k0SWl4dw?oc=5",
+          "published_at": "2026-11-02T08:30+08:00",
           "summary": ""
         }
       ]
@@ -442,23 +395,31 @@
   ],
   "watchlist": [
     {
-      "title": "儿童足球鞋联名落地",
+      "title": "儿童足球鞋联名系列渠道落地",
       "event_ids": [
         "evt_75958f9052ecaa"
       ],
       "product_ids": [
         "prd_1596f00b3ea1c2"
       ],
-      "reason": "观察Nike联名足球鞋是否进一步披露儿童尺码、定价与渠道信息。"
+      "reason": "观察该联名足球鞋是否进入儿童/青少年渠道及终端陈列反馈。"
     },
     {
-      "title": "进博会运动品牌首发后续",
+      "title": "进博会首发新品后续上市节奏",
       "event_ids": [
-        "evt_e92951a3987b41",
+        "evt_3258f3abf5f79c",
         "evt_ea1ddf1cfc95bc"
       ],
       "product_ids": [],
-      "reason": "关注进博会首发首秀展品后续是否转化为具体产品上市与渠道动作。"
+      "reason": "跟踪lululemon、ASICS、斯凯奇等进博首发产品从展台到零售端的转化节奏。"
+    },
+    {
+      "title": "区域体育规划对儿童运动品类的传导",
+      "event_ids": [
+        "evt_93056b943d452e"
+      ],
+      "product_ids": [],
+      "reason": "关注广东体育产业规划后续是否出台青少年体育培训或装备相关配套措施。"
     }
   ],
   "tracking": {
@@ -499,45 +460,48 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "省级体育产业规划明确2030年规模目标，为运动消费提供中长期政策参照。"
+        "editorial_reason": "省级体育产业规划明确2030年总规模目标，为运动鞋服市场提供中长期政策参照。"
       },
       {
-        "event_id": "evt_e92951a3987b41",
-        "title": "本届进博会代表性展品超480件 创历年新高 首发首秀首展折射中国市场吸引力",
+        "event_id": "evt_3258f3abf5f79c",
+        "title": "进博会华丽快报：Qeelin、lululemon、ASICS 带来新品牌首秀与新品首发",
         "category": "产品与科技",
         "event_family": "product_launch",
         "reporting_period": "",
-        "brands": [],
-        "source": "北京市人民政府门户网站",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HVHJPS0NOMGRUeVdjQ2lTRmJQYjF6TUFSVnhuQkFOSW9qZEtkTGRNdTdsSzJtQXV3Tkp4RVF1Y0x6d1p3TDdJNDlZa0NSQlFCWFZTQjhMSFl1bmw3OXlKYjlWeHdZUTU0ZVBFb1Nnam1CSjBZQS1fV2Etaw?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HVHJPS0NOMGRUeVdjQ2lTRmJQYjF6TUFSVnhuQkFOSW9qZEtkTGRNdTdsSzJtQXV3Tkp4RVF1Y0x6d1p3TDdJNDlZa0NSQlFCWFZTQjhMSFl1bmw3OXlKYjlWeHdZUTU0ZVBFb1Nnam1CSjBZQS1fV2Etaw?oc=5",
-        "published_at": "2026-11-07T09:41+08:00",
-        "published_date": "2026-11-07",
+        "brands": [
+          "lululemon",
+          "ASICS"
+        ],
+        "source": "华丽志",
+        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
+        "published_at": "2026-11-08T12:02+08:00",
+        "published_date": "2026-11-08",
         "status": "new",
-        "verification": "official_source",
-        "is_official": true,
+        "verification": "single_source",
+        "is_official": false,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 58,
-        "selection_score": 79,
+        "editorial_score": 57,
+        "selection_score": 69,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_e92951a3987b41"
+          "evt_3258f3abf5f79c"
         ],
         "evidence": [
           {
-            "item_id": "src_162e2afcfa1db4",
-            "title": "本届进博会代表性展品超480件 创历年新高 首发首秀首展折射中国市场吸引力",
-            "source": "北京市人民政府门户网站",
-            "source_tier": "official",
-            "is_official": true,
-            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HVHJPS0NOMGRUeVdjQ2lTRmJQYjF6TUFSVnhuQkFOSW9qZEtkTGRNdTdsSzJtQXV3Tkp4RVF1Y0x6d1p3TDdJNDlZa0NSQlFCWFZTQjhMSFl1bmw3OXlKYjlWeHdZUTU0ZVBFb1Nnam1CSjBZQS1fV2Etaw?oc=5",
-            "published_at": "2026-11-07T09:41+08:00",
+            "item_id": "src_933ec16f1935c3",
+            "title": "进博会华丽快报：Qeelin、lululemon、ASICS 带来新品牌首秀与新品首发",
+            "source": "华丽志",
+            "source_tier": "tier_2",
+            "is_official": false,
+            "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
+            "published_at": "2026-11-08T12:02+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "进博会首发首秀展品超480件，反映运动品牌将大型展会作为新品首发窗口。"
+        "editorial_reason": "进博会集中呈现lululemon、ASICS等品牌首秀与首发，反映头部品牌借展会窗口推新。"
       },
       {
         "event_id": "evt_0453dbddd5b7f7",
@@ -577,7 +541,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "Puma全球营收下滑但大中华区连续三季正增长，显示区域市场分化。"
+        "editorial_reason": "Puma全球营收下滑但大中华区连续三季正增长，呈现区域市场与全球表现的分化。"
       },
       {
         "event_id": "evt_ea1ddf1cfc95bc",
@@ -617,47 +581,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "斯凯奇连续八年参展进博会，强调专业科技与全渠道布局。"
-      },
-      {
-        "event_id": "evt_be73d6f2acbcd4",
-        "title": "迪卡侬在越南开设第10家门店，首家门店落户平阳省。",
-        "category": "行业动态",
-        "event_family": "store_channel",
-        "reporting_period": "",
-        "brands": [
-          "迪卡侬"
-        ],
-        "source": "Vietnam.vn",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObHhuaV8tY1FTak5oQktBd185dVlrQjBWRnA2anY4eVZ3XzVDTUNmS0RVZEgyTFhzdnF2U2VRTEcxT3RwRVZOei1wRi1kdFNrT0VsdHAyNmY3Y2JfX2NZbnpFVkxJOThwRnRzbkpxc0Rid1c1bTVPcUotY1NCbm15MGtyZkp2ZlcwS2xrUFo5MWw5S0hZUTJTWlNZWnV1cExwcW8xYkdFeG5yV2lTUXAw?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObHhuaV8tY1FTak5oQktBd185dVlrQjBWRnA2anY4eVZ3XzVDTUNmS0RVZEgyTFhzdnF2U2VRTEcxT3RwRVZOei1wRi1kdFNrT0VsdHAyNmY3Y2JfX2NZbnpFVkxJOThwRnRzbkpxc0Rid1c1bTVPcUotY1NCbm15MGtyZkp2ZlcwS2xrUFo5MWw5S0hZUTJTWlNZWnV1cExwcW8xYkdFeG5yV2lTUXAw?oc=5",
-        "published_at": "2026-11-07T21:19+08:00",
-        "published_date": "2026-11-07",
-        "status": "new",
-        "verification": "single_source",
-        "is_official": false,
-        "source_count": 1,
-        "direct_source_count": 0,
-        "mention_count": 1,
-        "editorial_score": 46,
-        "selection_score": 57,
-        "summary_snippet": "",
-        "merged_event_ids": [
-          "evt_be73d6f2acbcd4"
-        ],
-        "evidence": [
-          {
-            "item_id": "src_498af52695f007",
-            "title": "迪卡侬在越南开设第10家门店，首家门店落户平阳省。",
-            "source": "Vietnam.vn",
-            "source_tier": "tier_3",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObHhuaV8tY1FTak5oQktBd185dVlrQjBWRnA2anY4eVZ3XzVDTUNmS0RVZEgyTFhzdnF2U2VRTEcxT3RwRVZOei1wRi1kdFNrT0VsdHAyNmY3Y2JfX2NZbnpFVkxJOThwRnRzbkpxc0Rid1c1bTVPcUotY1NCbm15MGtyZkp2ZlcwS2xrUFo5MWw5S0hZUTJTWlNZWnV1cExwcW8xYkdFeG5yV2lTUXAw?oc=5",
-            "published_at": "2026-11-07T21:19+08:00",
-            "summary": ""
-          }
-        ],
-        "editorial_reason": "迪卡侬越南第10家门店落地平阳省，显示大众运动渠道持续下沉扩张。"
+        "editorial_reason": "斯凯奇连续八年参展进博会，强调专业科技与全渠道布局，展示品牌在华持续投入。"
       }
     ],
     "follow_up_selected": [],
@@ -815,11 +739,11 @@
     },
     {
       "type": "event",
-      "id": "evt_e92951a3987b41",
-      "title": "本届进博会代表性展品超480件 创历年新高 首发首秀首展折射中国市场吸引力",
-      "source": "北京市人民政府门户网站",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HVHJPS0NOMGRUeVdjQ2lTRmJQYjF6TUFSVnhuQkFOSW9qZEtkTGRNdTdsSzJtQXV3Tkp4RVF1Y0x6d1p3TDdJNDlZa0NSQlFCWFZTQjhMSFl1bmw3OXlKYjlWeHdZUTU0ZVBFb1Nnam1CSjBZQS1fV2Etaw?oc=5",
-      "published_date": "2026-11-07"
+      "id": "evt_3258f3abf5f79c",
+      "title": "进博会华丽快报：Qeelin、lululemon、ASICS 带来新品牌首秀与新品首发",
+      "source": "华丽志",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
+      "published_date": "2026-11-08"
     },
     {
       "type": "event",
@@ -839,14 +763,6 @@
     },
     {
       "type": "event",
-      "id": "evt_be73d6f2acbcd4",
-      "title": "迪卡侬在越南开设第10家门店，首家门店落户平阳省。",
-      "source": "Vietnam.vn",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObHhuaV8tY1FTak5oQktBd185dVlrQjBWRnA2anY4eVZ3XzVDTUNmS0RVZEgyTFhzdnF2U2VRTEcxT3RwRVZOei1wRi1kdFNrT0VsdHAyNmY3Y2JfX2NZbnpFVkxJOThwRnRzbkpxc0Rid1c1bTVPcUotY1NCbm15MGtyZkp2ZlcwS2xrUFo5MWw5S0hZUTJTWlNZWnV1cExwcW8xYkdFeG5yV2lTUXAw?oc=5",
-      "published_date": "2026-11-07"
-    },
-    {
-      "type": "event",
       "id": "evt_5ae2ba50be7f0b",
       "title": "【直播回顾】李宁有限公司 2026年中期业绩发布会",
       "source": "hstong.com",
@@ -855,11 +771,11 @@
     },
     {
       "type": "event",
-      "id": "evt_75958f9052ecaa",
-      "title": "Nike 再度携手Kids Of Immigrants，推出全新专业足球鞋与街头足球鞋联名系列— NIKE, Inc.",
-      "source": "About Nike",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSmNnQlNjN2xmQ2NuSmhhVmdHQUI5RXd4QXZxd1RSYXBrMHFqSmRRWGZNRUNPMklGZks0STFWcXZPXzRya3UzQl9TYzhLSzBnYUxWLVIxSWtZa3IxbC1zSjRjczhZM2hCaGE4cV9odTVROEU2U0p3UE5YV1JIaWFpMHhqTDNCR2hJV1RiZl9VUlBqWWp3bmtfZTRkcENFcTFaVVI5NURsYlBPMzlCNFd2MFI0MWhPY21QLTV1NEI2bVRXdUtPNVM3MzF2VDlXaUs1N2NlNzJucHRQLW1lOThSMlBlcw?oc=5",
-      "published_date": "2026-11-05"
+      "id": "evt_eefe9450ae9781",
+      "title": "2026年1—9月份社会消费品零售总额增长1.1% _ 统计信息解读",
+      "source": "福建省商务厅",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1CWF9BUVBfRVJNT3hIWDI1TWlZLVhoMmNxLV8tUFh0cktTOXN2UXdmbnMwQkE5Mlc2ZUwxTW1EZUNRR3pVS1VwQWljMzRmWG8wV0VVTlpmTWs4WkM4amduWlpTT0V5T1pjZjdHd1V6UzB2WFV5T1k0SWl4dw?oc=5",
+      "published_date": "2026-11-02"
     },
     {
       "type": "event",
@@ -868,6 +784,14 @@
       "source": "观点网",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE02bGNZRTRvNGxIVnRwQ0hwWlFtSmp6Qk5VVERRZUFYT2RHdF9RTXRqM3hFUmdRZlA2M2YtZTJvVE14RXVqN0R4MzUzblVhckttdWczUlpPRWs3WXlMNS1IcQ?oc=5",
       "published_date": "2026-11-06"
+    },
+    {
+      "type": "event",
+      "id": "evt_75958f9052ecaa",
+      "title": "Nike 再度携手Kids Of Immigrants，推出全新专业足球鞋与街头足球鞋联名系列— NIKE, Inc.",
+      "source": "About Nike",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSmNnQlNjN2xmQ2NuSmhhVmdHQUI5RXd4QXZxd1RSYXBrMHFqSmRRWGZNRUNPMklGZks0STFWcXZPXzRya3UzQl9TYzhLSzBnYUxWLVIxSWtZa3IxbC1zSjRjczhZM2hCaGE4cV9odTVROEU2U0p3UE5YV1JIaWFpMHhqTDNCR2hJV1RiZl9VUlBqWWp3bmtfZTRkcENFcTFaVVI5NURsYlBPMzlCNFd2MFI0MWhPY21QLTV1NEI2bVRXdUtPNVM3MzF2VDlXaUs1N2NlNzJucHRQLW1lOThSMlBlcw?oc=5",
+      "published_date": "2026-11-05"
     }
   ],
   "data_quality": {
@@ -878,7 +802,7 @@
     "raw_event_count": 19,
     "coalesced_event_count": 19,
     "eligible_event_count": 19,
-    "selected_event_count": 5,
+    "selected_event_count": 4,
     "raw_product_count": 14,
     "product_lead_count": 14,
     "eligible_product_count": 2,
@@ -899,7 +823,7 @@
       "电商与平台": 1
     },
     "selected_status": {
-      "new": 5
+      "new": 4
     },
     "quality_notes": [
       "AI只能返回已有event_id/product_id，原始标题、日期、来源和链接由程序回填。",
