@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-11-15T11:28+08:00",
+  "generated_at": "2026-11-16T11:28+08:00",
   "report_window": {
     "start_date": "2026-11-02",
     "end_date": "2026-11-08",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "区域体育规划与进博会首发并行，头部品牌以联名和产品迭代争夺注意力，儿童运动市场需关注专业细分与消费理性化。",
-    "week_in_one_paragraph": "本周广东发布体育“十五五”规划，提出2030年体育产业总规模超1.2万亿元，为行业提供中长期政策信号。进博会集中呈现首发首秀，lululemon、ASICS、斯凯奇等品牌借平台发布新品。Nike与Kids Of Immigrants推出足球鞋联名系列，覆盖儿童/青少年场景。Puma季报显示全球营收下滑但大中华区连续三季正增长，李宁发布故宫联名羽绒服，安踏篮球...",
+    "weekly_thesis": "区域体育规划与进博会首发并行，儿童运动鞋服需关注专业细分与消费理性化信号。",
+    "week_in_one_paragraph": "本周广东发布体育“十五五”规划，提出2030年体育产业总规模超1.2万亿元；进博会集中呈现首发首秀，lululemon、ASICS、斯凯奇等运动品牌参展。Nike联名推出儿童青少年足球鞋，李宁发布故宫联名羽绒服。消费数据与跑鞋讨论显示理性化趋势，儿童运动产品需兼顾专业功能与性价比沟通。",
     "next_week_focus": [
-      "跟踪Nike儿童足球鞋联名系列是否公布渠道与上市时间。",
-      "观察进博会首发运动品牌新品在零售端的铺货节奏。",
-      "关注广东体育“十五五”规划后续青少年体育配套细则。",
-      "留意Puma大中华区正增长是否延续至下一财季。",
-      "跟踪本土品牌冬季羽绒服联名系列终端反馈。"
+      "广东体育“十五五”规划后续配套细则",
+      "进博会运动品牌首发新品是否覆盖儿童线",
+      "Nike联名足球鞋的儿童尺码与渠道信息",
+      "Puma大中华区正增长与全球下滑的后续解读",
+      "社零数据对运动鞋服消费环境的进一步分析"
     ]
   },
   "key_developments": [
@@ -54,48 +54,45 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "省级体育产业规划明确2030年总规模目标，为运动鞋服市场提供中长期政策参照。"
+      "editorial_reason": "省级体育产业规划明确2030年目标，为运动鞋服提供中长期区域政策参照。"
     },
     {
-      "event_id": "evt_3258f3abf5f79c",
-      "title": "进博会华丽快报：Qeelin、lululemon、ASICS 带来新品牌首秀与新品首发",
+      "event_id": "evt_e92951a3987b41",
+      "title": "本届进博会代表性展品超480件 创历年新高 首发首秀首展折射中国市场吸引力",
       "category": "产品与科技",
       "event_family": "product_launch",
       "reporting_period": "",
-      "brands": [
-        "lululemon",
-        "ASICS"
-      ],
-      "source": "华丽志",
-      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
-      "published_at": "2026-11-08T12:02+08:00",
-      "published_date": "2026-11-08",
+      "brands": [],
+      "source": "北京市人民政府门户网站",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HVHJPS0NOMGRUeVdjQ2lTRmJQYjF6TUFSVnhuQkFOSW9qZEtkTGRNdTdsSzJtQXV3Tkp4RVF1Y0x6d1p3TDdJNDlZa0NSQlFCWFZTQjhMSFl1bmw3OXlKYjlWeHdZUTU0ZVBFb1Nnam1CSjBZQS1fV2Etaw?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HVHJPS0NOMGRUeVdjQ2lTRmJQYjF6TUFSVnhuQkFOSW9qZEtkTGRNdTdsSzJtQXV3Tkp4RVF1Y0x6d1p3TDdJNDlZa0NSQlFCWFZTQjhMSFl1bmw3OXlKYjlWeHdZUTU0ZVBFb1Nnam1CSjBZQS1fV2Etaw?oc=5",
+      "published_at": "2026-11-07T09:41+08:00",
+      "published_date": "2026-11-07",
       "status": "new",
-      "verification": "single_source",
-      "is_official": false,
+      "verification": "official_source",
+      "is_official": true,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 57,
-      "selection_score": 69,
+      "editorial_score": 58,
+      "selection_score": 79,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_3258f3abf5f79c"
+        "evt_e92951a3987b41"
       ],
       "evidence": [
         {
-          "item_id": "src_933ec16f1935c3",
-          "title": "进博会华丽快报：Qeelin、lululemon、ASICS 带来新品牌首秀与新品首发",
-          "source": "华丽志",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
-          "published_at": "2026-11-08T12:02+08:00",
+          "item_id": "src_162e2afcfa1db4",
+          "title": "本届进博会代表性展品超480件 创历年新高 首发首秀首展折射中国市场吸引力",
+          "source": "北京市人民政府门户网站",
+          "source_tier": "official",
+          "is_official": true,
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HVHJPS0NOMGRUeVdjQ2lTRmJQYjF6TUFSVnhuQkFOSW9qZEtkTGRNdTdsSzJtQXV3Tkp4RVF1Y0x6d1p3TDdJNDlZa0NSQlFCWFZTQjhMSFl1bmw3OXlKYjlWeHdZUTU0ZVBFb1Nnam1CSjBZQS1fV2Etaw?oc=5",
+          "published_at": "2026-11-07T09:41+08:00",
           "summary": ""
         }
       ],
-      "editorial_reason": "进博会集中呈现lululemon、ASICS等品牌首秀与首发，反映头部品牌借展会窗口推新。"
+      "editorial_reason": "进博会首发首秀数量创新高，反映运动品牌借展会集中推新的渠道趋势。"
     },
     {
       "event_id": "evt_0453dbddd5b7f7",
@@ -135,7 +132,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "Puma全球营收下滑但大中华区连续三季正增长，呈现区域市场与全球表现的分化。"
+      "editorial_reason": "Puma全球营收下滑但大中华区连续三季正增长，呈现区域市场分化信号。"
     },
     {
       "event_id": "evt_ea1ddf1cfc95bc",
@@ -175,17 +172,16 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "斯凯奇连续八年参展进博会，强调专业科技与全渠道布局，展示品牌在华持续投入。"
+      "editorial_reason": "斯凯奇连续八年参展进博会，强调专业科技与全渠道，属竞品渠道沟通样本。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "政策与展会窗口叠加，运动消费供给侧信号密集",
-      "analysis": "广东体育“十五五”规划提出2030年体育产业总规模超1.2万亿元，为运动鞋服需求提供中长期政策背景。同期进博会集中释放首发首秀，lululemon、ASICS、斯凯奇等品牌借展会窗口推新并强调专业科技与全渠道。两者叠加显示供给端在政策预期与展会流量下加速产品露出，但展会首发信息不等同于终端销售表现，需后续观察落地节奏。",
+      "headline": "体育产业政策与展会首发共振",
+      "analysis": "广东体育“十五五”规划提出2030年体育产业总规模超1.2万亿元，进博会代表性展品超480件且首发首秀首展创新高。两者共同显示体育消费供给端在政策与展会渠道同步活跃，运动品牌正借大型展会集中释放新品，区域产业规划则为中长期运动鞋服需求提供政策背景。",
       "event_ids": [
         "evt_93056b943d452e",
-        "evt_3258f3abf5f79c",
-        "evt_ea1ddf1cfc95bc"
+        "evt_e92951a3987b41"
       ],
       "evidence": [
         {
@@ -196,11 +192,28 @@
           "published_date": "2026-11-06"
         },
         {
-          "event_id": "evt_3258f3abf5f79c",
-          "title": "进博会华丽快报：Qeelin、lululemon、ASICS 带来新品牌首秀与新品首发",
+          "event_id": "evt_e92951a3987b41",
+          "title": "本届进博会代表性展品超480件 创历年新高 首发首秀首展折射中国市场吸引力",
+          "source": "北京市人民政府门户网站",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HVHJPS0NOMGRUeVdjQ2lTRmJQYjF6TUFSVnhuQkFOSW9qZEtkTGRNdTdsSzJtQXV3Tkp4RVF1Y0x6d1p3TDdJNDlZa0NSQlFCWFZTQjhMSFl1bmw3OXlKYjlWeHdZUTU0ZVBFb1Nnam1CSjBZQS1fV2Etaw?oc=5",
+          "published_date": "2026-11-07"
+        }
+      ]
+    },
+    {
+      "headline": "国际品牌在华沟通与区域分化",
+      "analysis": "Puma最新季报全球营收同比下滑5%，但大中华区营收连续三个季度正增长；斯凯奇连续八年亮相进博会，强调专业科技与全渠道布局。两者对照可见国际运动品牌在全球承压背景下仍加码中国市场沟通，区域正增长与展会投入并存，竞争将更聚焦专业科技与渠道触达。",
+      "event_ids": [
+        "evt_0453dbddd5b7f7",
+        "evt_ea1ddf1cfc95bc"
+      ],
+      "evidence": [
+        {
+          "event_id": "evt_0453dbddd5b7f7",
+          "title": "Puma 彪马最新季报：全球营收同比下滑5%，大中华区营收连续三个季度正增长",
           "source": "华丽志",
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
-          "published_date": "2026-11-08"
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1HOEpOaXFTZHNaczZXLVdSbGNUQzV5WDdCYmZvWFhMNDVURzhwSVpUMUF5eTlRdE5ITm1BQnFQQmg?oc=5",
+          "published_date": "2026-11-02"
         },
         {
           "event_id": "evt_ea1ddf1cfc95bc",
@@ -212,34 +225,11 @@
       ]
     },
     {
-      "headline": "国际品牌区域分化与本土品牌文化联名并行",
-      "analysis": "Puma最新季报显示全球营收同比下滑5%，但大中华区营收连续三个季度正增长，说明区域市场与全球表现出现分化。李宁则发布好彩羽绒服及故宫联名系列，以文化联名切入冬季服饰。两者分别代表国际品牌在华韧性与本土品牌以文化叙事推新品，行业竞争从单纯规模转向区域深耕与产品差异化。",
+      "headline": "联名与国潮在鞋服品类的延伸",
+      "analysis": "Nike与Kids Of Immigrants联名推出专业足球鞋与街头足球鞋，产品候选标注儿童/青少年受众；李宁发布好彩羽绒服及故宫联名系列。两起事件分别从运动细分场景和冬季服饰切入联名，显示品牌借联名覆盖专业运动与日常穿搭，儿童青少年足球鞋成为联名落点之一。",
       "event_ids": [
-        "evt_0453dbddd5b7f7",
+        "evt_75958f9052ecaa",
         "evt_4431f9103eead0"
-      ],
-      "evidence": [
-        {
-          "event_id": "evt_0453dbddd5b7f7",
-          "title": "Puma 彪马最新季报：全球营收同比下滑5%，大中华区营收连续三个季度正增长",
-          "source": "华丽志",
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1HOEpOaXFTZHNaczZXLVdSbGNUQzV5WDdCYmZvWFhMNDVURzhwSVpUMUF5eTlRdE5ITm1BQnFQQmg?oc=5",
-          "published_date": "2026-11-02"
-        },
-        {
-          "event_id": "evt_4431f9103eead0",
-          "title": "李宁发布好彩羽绒服及故宫联名系列",
-          "source": "观点网",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE02bGNZRTRvNGxIVnRwQ0hwWlFtSmp6Qk5VVERRZUFYT2RHdF9RTXRqM3hFUmdRZlA2M2YtZTJvVE14RXVqN0R4MzUzblVhckttdWczUlpPRWs3WXlMNS1IcQ?oc=5",
-          "published_date": "2026-11-06"
-        }
-      ]
-    },
-    {
-      "headline": "儿童足球鞋场景出现联名新品，专业细分值得跟踪",
-      "analysis": "Nike与Kids Of Immigrants推出专业足球鞋与街头足球鞋联名系列，产品候选标注受众为儿童/青少年，场景为足球。该事件是本周少数直接关联儿童运动场景的产品动作，反映品牌以联名方式覆盖专业训练与街头文化两类需求。由于仅单篇官方来源，后续需观察产品是否进入儿童渠道及终端反馈。",
-      "event_ids": [
-        "evt_75958f9052ecaa"
       ],
       "evidence": [
         {
@@ -248,6 +238,13 @@
           "source": "About Nike",
           "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSmNnQlNjN2xmQ2NuSmhhVmdHQUI5RXd4QXZxd1RSYXBrMHFqSmRRWGZNRUNPMklGZks0STFWcXZPXzRya3UzQl9TYzhLSzBnYUxWLVIxSWtZa3IxbC1zSjRjczhZM2hCaGE4cV9odTVROEU2U0p3UE5YV1JIaWFpMHhqTDNCR2hJV1RiZl9VUlBqWWp3bmtfZTRkcENFcTFaVVI5NURsYlBPMzlCNFd2MFI0MWhPY21QLTV1NEI2bVRXdUtPNVM3MzF2VDlXaUs1N2NlNzJucHRQLW1lOThSMlBlcw?oc=5",
           "published_date": "2026-11-05"
+        },
+        {
+          "event_id": "evt_4431f9103eead0",
+          "title": "李宁发布好彩羽绒服及故宫联名系列",
+          "source": "观点网",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE02bGNZRTRvNGxIVnRwQ0hwWlFtSmp6Qk5VVERRZUFYT2RHdF9RTXRqM3hFUmdRZlA2M2YtZTJvVE14RXVqN0R4MzUzblVhckttdWczUlpPRWs3WXlMNS1IcQ?oc=5",
+          "published_date": "2026-11-06"
         }
       ]
     }
@@ -310,7 +307,7 @@
           "published_date": "2026-11-05"
         }
       ],
-      "editorial_reason": "Nike联名足球鞋系列明确覆盖儿童/青少年足球场景，是本周与儿童事业部品类直接相关的产品证据。"
+      "editorial_reason": "Nike联名足球鞋明确覆盖儿童/青少年足球场景，是本周少有的童鞋相关具体产品证据。"
     }
   ],
   "competitor_channel": [
@@ -395,31 +392,32 @@
   ],
   "watchlist": [
     {
-      "title": "儿童足球鞋联名系列渠道落地",
+      "title": "儿童青少年足球鞋联名落地",
       "event_ids": [
         "evt_75958f9052ecaa"
       ],
       "product_ids": [
         "prd_1596f00b3ea1c2"
       ],
-      "reason": "观察该联名足球鞋是否进入儿童/青少年渠道及终端陈列反馈。"
+      "reason": "观察该联名足球鞋是否披露儿童尺码、定价与铺货渠道。"
     },
     {
-      "title": "进博会首发新品后续上市节奏",
+      "title": "进博会运动品牌首发后续",
       "event_ids": [
+        "evt_e92951a3987b41",
         "evt_3258f3abf5f79c",
-        "evt_ea1ddf1cfc95bc"
+        "evt_b019c495ddf82f"
       ],
       "product_ids": [],
-      "reason": "跟踪lululemon、ASICS、斯凯奇等进博首发产品从展台到零售端的转化节奏。"
+      "reason": "关注lululemon、ASICS等首发新品是否延伸至儿童或家庭运动场景。"
     },
     {
-      "title": "区域体育规划对儿童运动品类的传导",
+      "title": "消费数据与运动鞋服零售",
       "event_ids": [
-        "evt_93056b943d452e"
+        "evt_eefe9450ae9781"
       ],
       "product_ids": [],
-      "reason": "关注广东体育产业规划后续是否出台青少年体育培训或装备相关配套措施。"
+      "reason": "跟踪社零增速对儿童运动鞋服消费环境的后续解读。"
     }
   ],
   "tracking": {
@@ -460,48 +458,45 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "省级体育产业规划明确2030年总规模目标，为运动鞋服市场提供中长期政策参照。"
+        "editorial_reason": "省级体育产业规划明确2030年目标，为运动鞋服提供中长期区域政策参照。"
       },
       {
-        "event_id": "evt_3258f3abf5f79c",
-        "title": "进博会华丽快报：Qeelin、lululemon、ASICS 带来新品牌首秀与新品首发",
+        "event_id": "evt_e92951a3987b41",
+        "title": "本届进博会代表性展品超480件 创历年新高 首发首秀首展折射中国市场吸引力",
         "category": "产品与科技",
         "event_family": "product_launch",
         "reporting_period": "",
-        "brands": [
-          "lululemon",
-          "ASICS"
-        ],
-        "source": "华丽志",
-        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
-        "direct_url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
-        "published_at": "2026-11-08T12:02+08:00",
-        "published_date": "2026-11-08",
+        "brands": [],
+        "source": "北京市人民政府门户网站",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HVHJPS0NOMGRUeVdjQ2lTRmJQYjF6TUFSVnhuQkFOSW9qZEtkTGRNdTdsSzJtQXV3Tkp4RVF1Y0x6d1p3TDdJNDlZa0NSQlFCWFZTQjhMSFl1bmw3OXlKYjlWeHdZUTU0ZVBFb1Nnam1CSjBZQS1fV2Etaw?oc=5",
+        "direct_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HVHJPS0NOMGRUeVdjQ2lTRmJQYjF6TUFSVnhuQkFOSW9qZEtkTGRNdTdsSzJtQXV3Tkp4RVF1Y0x6d1p3TDdJNDlZa0NSQlFCWFZTQjhMSFl1bmw3OXlKYjlWeHdZUTU0ZVBFb1Nnam1CSjBZQS1fV2Etaw?oc=5",
+        "published_at": "2026-11-07T09:41+08:00",
+        "published_date": "2026-11-07",
         "status": "new",
-        "verification": "single_source",
-        "is_official": false,
+        "verification": "official_source",
+        "is_official": true,
         "source_count": 1,
         "direct_source_count": 0,
         "mention_count": 1,
-        "editorial_score": 57,
-        "selection_score": 69,
+        "editorial_score": 58,
+        "selection_score": 79,
         "summary_snippet": "",
         "merged_event_ids": [
-          "evt_3258f3abf5f79c"
+          "evt_e92951a3987b41"
         ],
         "evidence": [
           {
-            "item_id": "src_933ec16f1935c3",
-            "title": "进博会华丽快报：Qeelin、lululemon、ASICS 带来新品牌首秀与新品首发",
-            "source": "华丽志",
-            "source_tier": "tier_2",
-            "is_official": false,
-            "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
-            "published_at": "2026-11-08T12:02+08:00",
+            "item_id": "src_162e2afcfa1db4",
+            "title": "本届进博会代表性展品超480件 创历年新高 首发首秀首展折射中国市场吸引力",
+            "source": "北京市人民政府门户网站",
+            "source_tier": "official",
+            "is_official": true,
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HVHJPS0NOMGRUeVdjQ2lTRmJQYjF6TUFSVnhuQkFOSW9qZEtkTGRNdTdsSzJtQXV3Tkp4RVF1Y0x6d1p3TDdJNDlZa0NSQlFCWFZTQjhMSFl1bmw3OXlKYjlWeHdZUTU0ZVBFb1Nnam1CSjBZQS1fV2Etaw?oc=5",
+            "published_at": "2026-11-07T09:41+08:00",
             "summary": ""
           }
         ],
-        "editorial_reason": "进博会集中呈现lululemon、ASICS等品牌首秀与首发，反映头部品牌借展会窗口推新。"
+        "editorial_reason": "进博会首发首秀数量创新高，反映运动品牌借展会集中推新的渠道趋势。"
       },
       {
         "event_id": "evt_0453dbddd5b7f7",
@@ -541,7 +536,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "Puma全球营收下滑但大中华区连续三季正增长，呈现区域市场与全球表现的分化。"
+        "editorial_reason": "Puma全球营收下滑但大中华区连续三季正增长，呈现区域市场分化信号。"
       },
       {
         "event_id": "evt_ea1ddf1cfc95bc",
@@ -581,7 +576,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "斯凯奇连续八年参展进博会，强调专业科技与全渠道布局，展示品牌在华持续投入。"
+        "editorial_reason": "斯凯奇连续八年参展进博会，强调专业科技与全渠道，属竞品渠道沟通样本。"
       }
     ],
     "follow_up_selected": [],
@@ -739,11 +734,11 @@
     },
     {
       "type": "event",
-      "id": "evt_3258f3abf5f79c",
-      "title": "进博会华丽快报：Qeelin、lululemon、ASICS 带来新品牌首秀与新品首发",
-      "source": "华丽志",
-      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5rVzFZZXRMOEdJaGMtUF9Oc29WWnEyTDVVY3IySVVpdW1fM2M0M0Z4QlNnaG0tZGRvbzY5cno4WjU?oc=5",
-      "published_date": "2026-11-08"
+      "id": "evt_e92951a3987b41",
+      "title": "本届进博会代表性展品超480件 创历年新高 首发首秀首展折射中国市场吸引力",
+      "source": "北京市人民政府门户网站",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HVHJPS0NOMGRUeVdjQ2lTRmJQYjF6TUFSVnhuQkFOSW9qZEtkTGRNdTdsSzJtQXV3Tkp4RVF1Y0x6d1p3TDdJNDlZa0NSQlFCWFZTQjhMSFl1bmw3OXlKYjlWeHdZUTU0ZVBFb1Nnam1CSjBZQS1fV2Etaw?oc=5",
+      "published_date": "2026-11-07"
     },
     {
       "type": "event",
@@ -779,19 +774,19 @@
     },
     {
       "type": "event",
-      "id": "evt_4431f9103eead0",
-      "title": "李宁发布好彩羽绒服及故宫联名系列",
-      "source": "观点网",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE02bGNZRTRvNGxIVnRwQ0hwWlFtSmp6Qk5VVERRZUFYT2RHdF9RTXRqM3hFUmdRZlA2M2YtZTJvVE14RXVqN0R4MzUzblVhckttdWczUlpPRWs3WXlMNS1IcQ?oc=5",
-      "published_date": "2026-11-06"
-    },
-    {
-      "type": "event",
       "id": "evt_75958f9052ecaa",
       "title": "Nike 再度携手Kids Of Immigrants，推出全新专业足球鞋与街头足球鞋联名系列— NIKE, Inc.",
       "source": "About Nike",
       "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSmNnQlNjN2xmQ2NuSmhhVmdHQUI5RXd4QXZxd1RSYXBrMHFqSmRRWGZNRUNPMklGZks0STFWcXZPXzRya3UzQl9TYzhLSzBnYUxWLVIxSWtZa3IxbC1zSjRjczhZM2hCaGE4cV9odTVROEU2U0p3UE5YV1JIaWFpMHhqTDNCR2hJV1RiZl9VUlBqWWp3bmtfZTRkcENFcTFaVVI5NURsYlBPMzlCNFd2MFI0MWhPY21QLTV1NEI2bVRXdUtPNVM3MzF2VDlXaUs1N2NlNzJucHRQLW1lOThSMlBlcw?oc=5",
       "published_date": "2026-11-05"
+    },
+    {
+      "type": "event",
+      "id": "evt_4431f9103eead0",
+      "title": "李宁发布好彩羽绒服及故宫联名系列",
+      "source": "观点网",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE02bGNZRTRvNGxIVnRwQ0hwWlFtSmp6Qk5VVERRZUFYT2RHdF9RTXRqM3hFUmdRZlA2M2YtZTJvVE14RXVqN0R4MzUzblVhckttdWczUlpPRWs3WXlMNS1IcQ?oc=5",
+      "published_date": "2026-11-06"
     }
   ],
   "data_quality": {
