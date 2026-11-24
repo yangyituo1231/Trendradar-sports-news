@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-11-23T16:00+08:00",
+  "generated_at": "2026-11-24T15:19+08:00",
   "report_window": {
     "start_date": "2026-11-16",
     "end_date": "2026-11-22",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "耐克新战略与投资者日集中释放，亚玛芬、亚瑟士在华增长印证专业运动赛道景气，儿童业务需关注成人品牌下探与价格竞争。",
-    "week_in_one_paragraph": "本周耐克发布“全速前进”五年战略并召开投资者日，明确专业运动为增长引擎；双11运动品牌成交价环比下降，耐克部分SKU库存清理完成，价格与库存信号值得关注。",
+    "weekly_thesis": "耐克新战略与投资者日集中释放，运动品牌竞争转向体系化与本土化，儿童赛道直接证据仍稀缺。",
+    "week_in_one_paragraph": "本周耐克发布“全速前进”五年战略并召开投资者日，同时推进训练体系、创新成果与本土系列落地；亚玛芬、亚瑟士披露增长数据，双11运动品牌价格与库存信号显现。儿童运动鞋直接证据仅一条市场展望，需持续观察。",
     "next_week_focus": [
-      "耐克新战略后是否披露中国区渠道与产品调整细节",
-      "双11后运动品牌折扣与库存变化对儿童价格带的影响",
-      "亚玛芬、亚瑟士在华增长势头的后续数据验证",
-      "儿童运动鞋服品类是否有品牌推新或渠道动作",
-      "平台AI工具对运动品牌商家运营的实际渗透"
+      "耐克新战略是否披露青少年或儿童业务细节",
+      "双11后运动品牌价格与库存调整动向",
+      "亚玛芬、亚瑟士增长数据是否引发同类品牌跟进披露",
+      "儿童运动鞋品类是否出现可验证的新品或渠道信息",
+      "平台侧AI运营工具对运动品牌商家策略的影响"
     ]
   },
   "key_developments": [
@@ -56,7 +56,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "耐克发布五年新战略，明确专业运动为增长引擎，影响行业竞争方向。"
+      "editorial_reason": "耐克发布五年新增营收目标与专业运动增长方向，是本周品牌战略层面最集中的信号。"
     },
     {
       "event_id": "evt_32189024e51bd6",
@@ -96,7 +96,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "耐克近十年首个投资者日披露中国市场展望与五年目标，具方向性参考。"
+      "editorial_reason": "耐克近十年首个投资者日披露中国市场展望与五年目标，补充战略落地语境。"
     },
     {
       "event_id": "evt_480617a52108e7",
@@ -136,7 +136,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "亚瑟士前九月全球净销售额增19.2%、大中华区增15.1%，专业跑鞋品牌持续增长。"
+      "editorial_reason": "亚瑟士前九个月全球净销售额增长，大中华区增长15.1%，显示专业运动品牌区域韧性。"
     },
     {
       "event_id": "evt_2c7e1f30e34d71",
@@ -174,13 +174,13 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "天猫双11核心类目服务商客户占比高，反映平台生态与AI工具对商家运营的影响。"
+      "editorial_reason": "天猫双11全周期榜单服务商数据，反映平台侧AI驱动商家运营的确定性趋势。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "耐克新战略与投资者日：专业运动成增长引擎",
-      "analysis": "耐克发布“全速前进”战略，提出五年新增营收目标50亿美元，并将专业运动业务定位为增长引擎；同期召开近十年来首个投资者日，披露中国市场展望与五年目标。两件事共同显示耐克正以专业运动为核心重新校准增长路径，对中国运动用品行业而言，头部品牌强化专业品类将加剧细分赛道竞争，也可能带动训练、跑步等场景的消费教育。",
+      "headline": "耐克战略与投资者日：体系化增长信号",
+      "analysis": "耐克本周同时释放“全速前进”五年战略与近十年首个投资者日信息，前者给出五年新增营收目标并强调专业运动为增长引擎，后者补充中国市场展望与五年目标。两件事共同说明耐克正以中长期规划回应增长压力，并把专业运动与中国市场置于战略叙事中心。对儿童运动赛道而言，需关注其专业运动体系是否向青少年场景延伸，但现有证据未披露儿童相关动作。",
       "event_ids": [
         "evt_ef8f5464135a6c",
         "evt_32189024e51bd6"
@@ -203,11 +203,36 @@
       ]
     },
     {
-      "headline": "国际运动品牌在华增长分化：亚玛芬与亚瑟士保持增势",
-      "analysis": "亚玛芬第三季度净利增67%，中国市场营收增超三成，并再次上调全年业绩指引；亚瑟士前九个月全球净销售额同比增长19.2%，大中华区增长15.1%。两组数据表明，高端户外与专业跑鞋品牌在中国市场仍保持增长动能，与大众运动品牌的价格调整形成对照，行业分层趋势值得持续跟踪。",
+      "headline": "产品与训练体系：从单品到方案",
+      "analysis": "耐克训练推出“激活、训练、恢复”一体化训练体系，同时本土系列快速落地并给出599至1999元价格带。前者显示运动品牌正把产品嵌入训练流程，后者显示国际品牌在华以本土化产品组合加快响应。两者结合，行业竞争从单一鞋服功能转向训练方案与区域产品适配，但均未涉及儿童专属产品信息。",
+      "event_ids": [
+        "evt_99cf9f5c9ccebe",
+        "evt_4f3cc7348a0dc5"
+      ],
+      "evidence": [
+        {
+          "event_id": "evt_99cf9f5c9ccebe",
+          "title": "Nike 训练推出“激活、训练、恢复”一体化训练体系，助力运动员持续进阶— NIKE, Inc.",
+          "source": "About Nike",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBoeWs1OGk3VDdVM3hsUU1CcjZicnZzME1ONTQweDAzdks2aWtCM2NCVEppcFpZaHZXa09seDhreU12MG5GdnhQdlV2THlwYU5mX0ZkS2twVEZMU1BqSGtVSnhRMDM1aTVE?oc=5",
+          "published_date": "2026-11-16"
+        },
+        {
+          "event_id": "evt_4f3cc7348a0dc5",
+          "title": "耐克“本土系列”快速落地，首批新品售价599-1999元",
+          "source": "澎湃新闻",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE52R3JQTU5POUhISUNhRnpxM05iMVRYWlpyT0N1cGktWnFNV2tLYTJ0czduQWdLLWxKOGc2YjVYMlY2Wk5qVlRSQjRjOWFwRV9wN2d5eTlGWTVuVU4tLURKcw?oc=5",
+          "published_date": "2026-11-16"
+        }
+      ]
+    },
+    {
+      "headline": "运动品牌财报与渠道价格信号",
+      "analysis": "亚玛芬三季度净利增长并上调全年指引，亚瑟士前九个月全球净销售额增长、大中华区增长15.1%，显示专业运动与户外品牌仍保持增长。与此同时，双11运动品牌成交价环比下降、耐克部分SKU库存清理完成，提示增长伴随促销与库存调整。行业层面，品牌分化加剧，价格与库存管理成为短期经营关键，但证据未提供儿童品类单独数据。",
       "event_ids": [
         "evt_43eebc255d17d7",
-        "evt_480617a52108e7"
+        "evt_480617a52108e7",
+        "evt_88a56d5c708b91"
       ],
       "evidence": [
         {
@@ -223,16 +248,7 @@
           "source": "华丽志",
           "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE82YmwwbWl4dWZsZTlKblpma0hBZ2F0d3N2RVkybUxTNkRlblFfUVJKRFZNS3llZm5FR2o5RC1uMG8?oc=5",
           "published_date": "2026-11-16"
-        }
-      ]
-    },
-    {
-      "headline": "双11价格信号：运动品牌成交价下行与库存清理",
-      "analysis": "中信证券报告指出，双11运动品牌成交价环比下降10%，耐克部分SKU库存清理完成。该信息反映大促期间运动品牌以价格换成交、加速库存周转的倾向，对儿童运动鞋服而言，成人品牌库存清理可能通过折扣渠道传导至童装童鞋价格带，需关注后续折扣力度与新品定价策略。",
-      "event_ids": [
-        "evt_88a56d5c708b91"
-      ],
-      "evidence": [
+        },
         {
           "event_id": "evt_88a56d5c708b91",
           "title": "中信证券：双11运动品牌成交价环比降10% Nike部分SKU库存清理完成",
@@ -301,7 +317,7 @@
           "published_date": "2026-11-16"
         }
       ],
-      "editorial_reason": "耐克篮球携手德文·布克推出Book 3，官方来源确认，可作为篮球品类产品迭代的观察样本。"
+      "editorial_reason": "耐克篮球携手德文·布克推出Book 3，是本周唯一可确认的具体新品，可观察签名鞋产品节奏。"
     }
   ],
   "competitor_channel": [
@@ -392,112 +408,24 @@
       ]
     }
   ],
-  "kids_consumer": [
-    {
-      "event_id": "evt_1f3926f846d2c6",
-      "title": "山姆卖爆始祖鸟，谁在为低价买单",
-      "category": "行业动态",
-      "event_family": "industry_event",
-      "reporting_period": "",
-      "brands": [
-        "始祖鸟"
-      ],
-      "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kcFBqYTV1eDlMUXJKbDdnMEdndVc2QllVZVVvTzg0YTZ1eVBpTUtZZ21jMzBta2N5bEVvc3JCdkNxOTlKbDFEeWFuaGhJUzdPTzFmYllPMG1pVHdaX245Y2w0eFBBNlFBRFhYYl9IWVlkUQ?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kcFBqYTV1eDlMUXJKbDdnMEdndVc2QllVZVVvTzg0YTZ1eVBpTUtZZ21jMzBta2N5bEVvc3JCdkNxOTlKbDFEeWFuaGhJUzdPTzFmYllPMG1pVHdaX245Y2w0eFBBNlFBRFhYYl9IWVlkUQ?oc=5",
-      "published_at": "2026-11-20T17:57+08:00",
-      "published_date": "2026-11-20",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 43,
-      "selection_score": 50,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_1f3926f846d2c6"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_a98b67cd56ecd5",
-          "title": "山姆卖爆始祖鸟，谁在为低价买单",
-          "source": "澎湃新闻",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kcFBqYTV1eDlMUXJKbDdnMEdndVc2QllVZVVvTzg0YTZ1eVBpTUtZZ21jMzBta2N5bEVvc3JCdkNxOTlKbDFEeWFuaGhJUzdPTzFmYllPMG1pVHdaX245Y2w0eFBBNlFBRFhYYl9IWVlkUQ?oc=5",
-          "published_at": "2026-11-20T17:57+08:00",
-          "summary": ""
-        }
-      ]
-    },
-    {
-      "event_id": "evt_c335f27a8d159a",
-      "title": "网友称在lululemon试衣后被当小偷遭跟踪翻包，门店账号致歉，最新回应：公司正在处理中",
-      "category": "行业动态",
-      "event_family": "store_channel",
-      "reporting_period": "",
-      "brands": [
-        "lululemon"
-      ],
-      "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4zVlUwWC1XdXg2TlJNMk5RQ3pJS1FlR0hkMHVfbUlWbWFGZFhlbk5GYnBHYmxLSDZOSXl1d0FieUJ5Wlo2WGlxcjdXMU5MbWp3R3MyRjZ1Y2ZsNzlYVmJTSQ?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4zVlUwWC1XdXg2TlJNMk5RQ3pJS1FlR0hkMHVfbUlWbWFGZFhlbk5GYnBHYmxLSDZOSXl1d0FieUJ5Wlo2WGlxcjdXMU5MbWp3R3MyRjZ1Y2ZsNzlYVmJTSQ?oc=5",
-      "published_at": "2026-11-18T16:51+08:00",
-      "published_date": "2026-11-18",
-      "status": "new",
-      "verification": "single_source",
-      "is_official": false,
-      "source_count": 1,
-      "direct_source_count": 0,
-      "mention_count": 1,
-      "editorial_score": 44,
-      "selection_score": 51,
-      "summary_snippet": "",
-      "merged_event_ids": [
-        "evt_c335f27a8d159a"
-      ],
-      "evidence": [
-        {
-          "item_id": "src_d5a612dc5a8db6",
-          "title": "网友称在lululemon试衣后被当小偷遭跟踪翻包，门店账号致歉，最新回应：公司正在处理中",
-          "source": "澎湃新闻",
-          "source_tier": "tier_2",
-          "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4zVlUwWC1XdXg2TlJNMk5RQ3pJS1FlR0hkMHVfbUlWbWFGZFhlbk5GYnBHYmxLSDZOSXl1d0FieUJ5Wlo2WGlxcjdXMU5MbWp3R3MyRjZ1Y2ZsNzlYVmJTSQ?oc=5",
-          "published_at": "2026-11-18T16:51+08:00",
-          "summary": ""
-        }
-      ]
-    }
-  ],
+  "kids_consumer": [],
   "watchlist": [
     {
-      "title": "耐克新战略对中国市场及儿童业务的影响",
+      "title": "耐克战略是否延伸至儿童场景",
       "event_ids": [
         "evt_ef8f5464135a6c",
         "evt_32189024e51bd6"
       ],
       "product_ids": [],
-      "reason": "观察耐克后续是否披露中国区渠道、产品线调整及对儿童运动品类的资源倾斜。"
+      "reason": "观察后续是否披露青少年或儿童产品线、门店与训练体系落地信息。"
     },
     {
-      "title": "运动品牌双11后价格与库存走势",
+      "title": "运动品牌促销与库存节奏",
       "event_ids": [
         "evt_88a56d5c708b91"
       ],
       "product_ids": [],
-      "reason": "跟踪运动品牌折扣是否延续，以及库存清理对儿童运动鞋服价格带的传导。"
-    },
-    {
-      "title": "专业运动品牌在华增长持续性",
-      "event_ids": [
-        "evt_43eebc255d17d7",
-        "evt_480617a52108e7"
-      ],
-      "product_ids": [],
-      "reason": "关注亚玛芬、亚瑟士后续季度在华增速及品类扩张动向。"
+      "reason": "关注双11后价格与库存调整是否延续，以及对儿童运动鞋定价的间接影响。"
     }
   ],
   "tracking": {
@@ -540,7 +468,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "耐克发布五年新战略，明确专业运动为增长引擎，影响行业竞争方向。"
+        "editorial_reason": "耐克发布五年新增营收目标与专业运动增长方向，是本周品牌战略层面最集中的信号。"
       },
       {
         "event_id": "evt_32189024e51bd6",
@@ -580,7 +508,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "耐克近十年首个投资者日披露中国市场展望与五年目标，具方向性参考。"
+        "editorial_reason": "耐克近十年首个投资者日披露中国市场展望与五年目标，补充战略落地语境。"
       },
       {
         "event_id": "evt_480617a52108e7",
@@ -620,7 +548,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "亚瑟士前九月全球净销售额增19.2%、大中华区增15.1%，专业跑鞋品牌持续增长。"
+        "editorial_reason": "亚瑟士前九个月全球净销售额增长，大中华区增长15.1%，显示专业运动品牌区域韧性。"
       },
       {
         "event_id": "evt_2c7e1f30e34d71",
@@ -658,7 +586,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "天猫双11核心类目服务商客户占比高，反映平台生态与AI工具对商家运营的影响。"
+        "editorial_reason": "天猫双11全周期榜单服务商数据，反映平台侧AI驱动商家运营的确定性趋势。"
       }
     ],
     "follow_up_selected": [],
@@ -856,19 +784,19 @@
     },
     {
       "type": "event",
-      "id": "evt_1f3926f846d2c6",
-      "title": "山姆卖爆始祖鸟，谁在为低价买单",
-      "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kcFBqYTV1eDlMUXJKbDdnMEdndVc2QllVZVVvTzg0YTZ1eVBpTUtZZ21jMzBta2N5bEVvc3JCdkNxOTlKbDFEeWFuaGhJUzdPTzFmYllPMG1pVHdaX245Y2w0eFBBNlFBRFhYYl9IWVlkUQ?oc=5",
-      "published_date": "2026-11-20"
+      "id": "evt_99cf9f5c9ccebe",
+      "title": "Nike 训练推出“激活、训练、恢复”一体化训练体系，助力运动员持续进阶— NIKE, Inc.",
+      "source": "About Nike",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBoeWs1OGk3VDdVM3hsUU1CcjZicnZzME1ONTQweDAzdks2aWtCM2NCVEppcFpZaHZXa09seDhreU12MG5GdnhQdlV2THlwYU5mX0ZkS2twVEZMU1BqSGtVSnhRMDM1aTVE?oc=5",
+      "published_date": "2026-11-16"
     },
     {
       "type": "event",
-      "id": "evt_c335f27a8d159a",
-      "title": "网友称在lululemon试衣后被当小偷遭跟踪翻包，门店账号致歉，最新回应：公司正在处理中",
+      "id": "evt_4f3cc7348a0dc5",
+      "title": "耐克“本土系列”快速落地，首批新品售价599-1999元",
       "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4zVlUwWC1XdXg2TlJNMk5RQ3pJS1FlR0hkMHVfbUlWbWFGZFhlbk5GYnBHYmxLSDZOSXl1d0FieUJ5Wlo2WGlxcjdXMU5MbWp3R3MyRjZ1Y2ZsNzlYVmJTSQ?oc=5",
-      "published_date": "2026-11-18"
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE52R3JQTU5POUhISUNhRnpxM05iMVRYWlpyT0N1cGktWnFNV2tLYTJ0czduQWdLLWxKOGc2YjVYMlY2Wk5qVlRSQjRjOWFwRV9wN2d5eTlGWTVuVU4tLURKcw?oc=5",
+      "published_date": "2026-11-16"
     },
     {
       "type": "event",
