@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25 05:51:59",
+  "generated_at": "2026-11-26 05:42:11",
   "source": "Open-Meteo",
   "regions": {
     "north": {
@@ -7,24 +7,24 @@
       "city": "Beijing",
       "days": [
         {
-          "date": "2026-11-25",
-          "weather": "多云",
-          "temp_max": 6.8,
-          "temp_min": -2.5,
-          "alert": ""
-        },
-        {
           "date": "2026-11-26",
           "weather": "阴",
-          "temp_max": 11.1,
-          "temp_min": -0.4,
+          "temp_max": 12.2,
+          "temp_min": 0.3,
           "alert": ""
         },
         {
           "date": "2026-11-27",
-          "weather": "多云",
-          "temp_max": 10.2,
+          "weather": "晴到多云",
+          "temp_max": 8.7,
           "temp_min": 4.1,
+          "alert": ""
+        },
+        {
+          "date": "2026-11-28",
+          "weather": "晴到多云",
+          "temp_max": 9.3,
+          "temp_min": 0.4,
           "alert": ""
         }
       ]
@@ -34,24 +34,24 @@
       "city": "Shanghai",
       "days": [
         {
-          "date": "2026-11-25",
-          "weather": "阴",
-          "temp_max": 12.1,
-          "temp_min": 2.4,
-          "alert": ""
-        },
-        {
           "date": "2026-11-26",
           "weather": "阴",
-          "temp_max": 18.5,
-          "temp_min": 8.2,
+          "temp_max": 17.8,
+          "temp_min": 9.3,
           "alert": ""
         },
         {
           "date": "2026-11-27",
-          "weather": "晴到多云",
-          "temp_max": 19.4,
-          "temp_min": 8.6,
+          "weather": "晴",
+          "temp_max": 18.8,
+          "temp_min": 8.4,
+          "alert": ""
+        },
+        {
+          "date": "2026-11-28",
+          "weather": "晴",
+          "temp_max": 15.5,
+          "temp_min": 6.1,
           "alert": ""
         }
       ]
@@ -61,24 +61,24 @@
       "city": "Guangzhou",
       "days": [
         {
-          "date": "2026-11-25",
-          "weather": "小雨",
-          "temp_max": 17.7,
-          "temp_min": 13.1,
-          "alert": ""
-        },
-        {
           "date": "2026-11-26",
-          "weather": "阴",
-          "temp_max": 21.8,
-          "temp_min": 12.0,
+          "weather": "小雨",
+          "temp_max": 19.5,
+          "temp_min": 12.2,
           "alert": ""
         },
         {
           "date": "2026-11-27",
+          "weather": "晴到多云",
+          "temp_max": 24.4,
+          "temp_min": 13.7,
+          "alert": ""
+        },
+        {
+          "date": "2026-11-28",
           "weather": "阴",
-          "temp_max": 23.1,
-          "temp_min": 16.2,
+          "temp_max": 24.8,
+          "temp_min": 15.2,
           "alert": ""
         }
       ]
@@ -88,24 +88,24 @@
       "city": "Chengdu",
       "days": [
         {
-          "date": "2026-11-25",
-          "weather": "阴",
-          "temp_max": 15.7,
-          "temp_min": 7.1,
-          "alert": ""
-        },
-        {
           "date": "2026-11-26",
-          "weather": "阴",
-          "temp_max": 15.1,
-          "temp_min": 7.9,
+          "weather": "小雨",
+          "temp_max": 13.7,
+          "temp_min": 9.2,
           "alert": ""
         },
         {
           "date": "2026-11-27",
           "weather": "晴",
-          "temp_max": 19.4,
-          "temp_min": 6.8,
+          "temp_max": 18.9,
+          "temp_min": 6.5,
+          "alert": ""
+        },
+        {
+          "date": "2026-11-28",
+          "weather": "晴到多云",
+          "temp_max": 17.1,
+          "temp_min": 6.3,
           "alert": ""
         }
       ]
@@ -115,24 +115,24 @@
       "city": "Xi'an",
       "days": [
         {
-          "date": "2026-11-25",
-          "weather": "阴",
-          "temp_max": 16.5,
-          "temp_min": 1.4,
-          "alert": ""
-        },
-        {
           "date": "2026-11-26",
           "weather": "阴",
           "temp_max": 17.8,
-          "temp_min": 7.0,
+          "temp_min": 7.2,
           "alert": ""
         },
         {
           "date": "2026-11-27",
           "weather": "小雨",
-          "temp_max": 13.9,
-          "temp_min": 4.7,
+          "temp_max": 14.0,
+          "temp_min": 5.7,
+          "alert": ""
+        },
+        {
+          "date": "2026-11-28",
+          "weather": "晴",
+          "temp_max": 11.9,
+          "temp_min": 2.5,
           "alert": ""
         }
       ]

@@ -1,20 +1,20 @@
 {
   "schema_version": "3.1",
-  "generated_at": "2026-11-25T13:52+08:00",
+  "generated_at": "2026-11-26T13:42+08:00",
   "report_window": {
     "start_date": "2026-11-16",
     "end_date": "2026-11-22",
     "timezone": "Asia/Shanghai"
   },
   "editorial": {
-    "weekly_thesis": "耐克新战略与投资者日集中释放，运动品牌竞争转向专业场景与本土化落地。",
-    "week_in_one_paragraph": "本周耐克发布“全速前进”五年战略并召开投资者日，明确专业运动与本土系列方向；亚玛芬、亚瑟士披露增长数据，显示高端户外与跑鞋仍具动能。双11运动品牌成交价环比下降，库存清理与折扣环境值得关注。儿童运动鞋直接证据有限，需持续观察。",
+    "weekly_thesis": "耐克新战略与投资者日集中释放，运动品牌在华竞争转向专业与本土化；双11价格信号提示库存与折扣仍关键。",
+    "week_in_one_paragraph": "本周耐克发布“全速前进”五年战略并召开投资者日，明确专业运动与中国市场方向；亚玛芬、亚瑟士披露增长数据，显示高端户外与跑鞋仍具动能。双11运动品牌成交价环比下降、耐克部分SKU库存清理完成，提示渠道折扣与库存节奏仍是短期变量。",
     "next_week_focus": [
-      "耐克新战略后中国市场产品与渠道落地节奏",
-      "亚玛芬、亚瑟士增长指引对户外跑鞋竞争的影响",
-      "双11后运动品牌折扣与库存变化",
-      "儿童运动鞋新品与消费趋势直接证据",
-      "平台榜单变化对品牌排名的间接反映"
+      "耐克新战略是否披露儿童运动品类具体安排",
+      "双11后运动品牌折扣与库存清理进展",
+      "亚玛芬、亚瑟士中国区后续销售数据",
+      "国际品牌本土化产品系列的市场反馈",
+      "儿童运动鞋相关产品与渠道信息更新"
     ]
   },
   "key_developments": [
@@ -56,7 +56,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "耐克发布五年战略，明确专业运动为增长引擎，影响行业竞争方向。"
+      "editorial_reason": "耐克新五年战略明确专业运动为增长引擎，直接影响运动品牌竞争方向。"
     },
     {
       "event_id": "evt_32189024e51bd6",
@@ -96,7 +96,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "耐克近十年首个投资者日披露中国市场展望与五年目标，信息量集中。"
+      "editorial_reason": "近十年来首个投资者日披露中国市场展望与五年目标，补充战略落地细节。"
     },
     {
       "event_id": "evt_480617a52108e7",
@@ -136,7 +136,7 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "亚瑟士前九月全球净销售额增19.2%、大中华区增15.1%，跑鞋品类景气参考。"
+      "editorial_reason": "亚瑟士前九个月全球净销售额增19.2%、大中华区增15.1%，跑鞋赛道保持增长。"
     },
     {
       "event_id": "evt_2c7e1f30e34d71",
@@ -174,17 +174,16 @@
           "summary": ""
         }
       ],
-      "editorial_reason": "天猫双11榜单服务商战报，提供平台侧品牌竞争格局的间接观察。"
+      "editorial_reason": "属于电商与平台的重要本周新事件。"
     }
   ],
   "deep_dives": [
     {
-      "headline": "耐克新战略与投资者日：专业运动与本土化并行",
-      "analysis": "耐克本周同时释放五年战略、投资者日中国市场展望及本土系列落地信息。战略层面强调专业运动为增长引擎，执行层面本土系列已公布价格带，显示从规划到产品的节奏加快。对行业而言，头部品牌把资源向专业场景与区域本土化集中，可能抬高细分赛道竞争门槛，并影响本土产品定价与渠道策略。",
+      "headline": "耐克新战略与投资者日：专业运动和中国市场成关键词",
+      "analysis": "耐克发布“全速前进”战略，提出五年新增营收目标50亿美元，并将专业运动列为增长引擎；随后投资者日进一步披露中国市场展望和五年目标。两件事共同说明耐克正把资源向专业运动品类和关键区域市场集中，对儿童运动品牌而言，专业运动叙事和本土市场投入的竞争会同步加剧。",
       "event_ids": [
         "evt_ef8f5464135a6c",
-        "evt_32189024e51bd6",
-        "evt_4f3cc7348a0dc5"
+        "evt_32189024e51bd6"
       ],
       "evidence": [
         {
@@ -200,19 +199,12 @@
           "source": "华丽志",
           "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE0xb3NCbHBRa2xJWFlMd0NfZmlweVZlR3VOTUxsQWJsOWkyZl9GRGd6UVBxV1RYNFNzRGU0UlgzV2o?oc=5",
           "published_date": "2026-11-21"
-        },
-        {
-          "event_id": "evt_4f3cc7348a0dc5",
-          "title": "耐克“本土系列”快速落地，首批新品售价599-1999元",
-          "source": "澎湃新闻",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE52R3JQTU5POUhISUNhRnpxM05iMVRYWlpyT0N1cGktWnFNV2tLYTJ0czduQWdLLWxKOGc2YjVYMlY2Wk5qVlRSQjRjOWFwRV9wN2d5eTlGWTVuVU4tLURKcw?oc=5",
-          "published_date": "2026-11-16"
         }
       ]
     },
     {
-      "headline": "高端户外与跑鞋增长信号：亚玛芬、亚瑟士业绩对照",
-      "analysis": "亚玛芬三季度净利增67%、中国营收增超三成并上调全年指引；亚瑟士前九月全球净销售额增19.2%、大中华区增15.1%。两组数据共同指向高端户外与专业跑鞋需求仍具韧性，且大中华区是重要增长区域。对儿童运动品类而言，专业化和场景化趋势可能向童鞋设计传导，但本周缺少直接儿童证据。",
+      "headline": "国际运动品牌财报分化：高端户外与跑鞋仍有增长",
+      "analysis": "亚玛芬三季度净利增67%、中国市场营收增超三成并上调全年指引；亚瑟士前九个月全球净销售额增19.2%、大中华区增15.1%。两组数据均来自品牌财报披露，显示高端户外和跑鞋品类在中国市场仍保持增长，但增速和品牌定位分化，行业竞争更依赖专业产品与区域运营。",
       "event_ids": [
         "evt_43eebc255d17d7",
         "evt_480617a52108e7"
@@ -235,11 +227,11 @@
       ]
     },
     {
-      "headline": "双11价格与平台竞争：折扣环境下的品牌分化",
-      "analysis": "中信证券指出双11运动品牌成交价环比降10%，耐克部分SKU库存清理完成；同时天猫双11榜单服务商战报显示核心类目客户占比高。两者结合看，平台大促仍是品牌去库存与争夺流量的关键窗口，价格下行压力与头部集中并存。对儿童运动品牌，需关注折扣对毛利和品牌定位的挤压。",
+      "headline": "双11价格信号：折扣与库存清理仍在影响运动品牌渠道",
+      "analysis": "中信证券报告称双11运动品牌成交价环比降10%，耐克部分SKU库存清理完成；同期耐克本土系列首批新品售价599至1999元。价格下探与新品价格带并行，说明运动品牌在促销节点仍需平衡库存清理与新品定位，渠道折扣可能继续影响消费决策。",
       "event_ids": [
         "evt_88a56d5c708b91",
-        "evt_2c7e1f30e34d71"
+        "evt_4f3cc7348a0dc5"
       ],
       "evidence": [
         {
@@ -250,11 +242,11 @@
           "published_date": "2026-11-19"
         },
         {
-          "event_id": "evt_2c7e1f30e34d71",
-          "title": "慧博科技双11战报：2026天猫双11全周期榜单核心类目慧博客户占比高达80%，AI驱动商家确定性增长",
-          "source": "界面新闻",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE15N2FXS2NmOVJsdVd2YkM0TDF3OXZJMkNsVGwyNG5UNTl2X0FxeHItLWNhY0NpZnZmRTk3N3FDM3p2Q1dnMlRKY0Iwc3QwMl9SMmtPbEIwX2U?oc=5",
-          "published_date": "2026-11-20"
+          "event_id": "evt_4f3cc7348a0dc5",
+          "title": "耐克“本土系列”快速落地，首批新品售价599-1999元",
+          "source": "澎湃新闻",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE52R3JQTU5POUhISUNhRnpxM05iMVRYWlpyT0N1cGktWnFNV2tLYTJ0czduQWdLLWxKOGc2YjVYMlY2Wk5qVlRSQjRjOWFwRV9wN2d5eTlGWTVuVU4tLURKcw?oc=5",
+          "published_date": "2026-11-16"
         }
       ]
     }
@@ -317,7 +309,7 @@
           "published_date": "2026-11-16"
         }
       ],
-      "editorial_reason": "耐克篮球为布克推出Book 3，是本周唯一明确产品候选，可观察签名鞋迭代节奏。"
+      "editorial_reason": "耐克篮球携手德文·布克推出Book 3，是本周唯一明确产品候选，可观察签名篮球鞋迭代方向。"
     }
   ],
   "competitor_channel": [
@@ -449,40 +441,38 @@
       ]
     },
     {
-      "event_id": "evt_1f3926f846d2c6",
-      "title": "山姆卖爆始祖鸟，谁在为低价买单",
-      "category": "行业动态",
+      "event_id": "evt_50e1ee515797c6",
+      "title": "2026年户外运动时尚创新大会暨渠县区域公共品牌发布会举行",
+      "category": "产品与科技",
       "event_family": "industry_event",
       "reporting_period": "",
-      "brands": [
-        "始祖鸟"
-      ],
-      "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kcFBqYTV1eDlMUXJKbDdnMEdndVc2QllVZVVvTzg0YTZ1eVBpTUtZZ21jMzBta2N5bEVvc3JCdkNxOTlKbDFEeWFuaGhJUzdPTzFmYllPMG1pVHdaX245Y2w0eFBBNlFBRFhYYl9IWVlkUQ?oc=5",
-      "direct_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kcFBqYTV1eDlMUXJKbDdnMEdndVc2QllVZVVvTzg0YTZ1eVBpTUtZZ21jMzBta2N5bEVvc3JCdkNxOTlKbDFEeWFuaGhJUzdPTzFmYllPMG1pVHdaX245Y2w0eFBBNlFBRFhYYl9IWVlkUQ?oc=5",
-      "published_at": "2026-11-20T17:57+08:00",
-      "published_date": "2026-11-20",
+      "brands": [],
+      "source": "人民网",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA3dDZLTGhYYmg2NWZCdDg5RHNxUEpxczYyNm5wdFBpUzZkS0xlTVRQMkhDZ0Q4S1JjM19fdE9kZG9vNUJmOFBJMlhtU3ljMVBrX1l4SG1aLVB6UU1yMVprdmg0Z0JzN2xJQ1E?oc=5",
+      "direct_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA3dDZLTGhYYmg2NWZCdDg5RHNxUEpxczYyNm5wdFBpUzZkS0xlTVRQMkhDZ0Q4S1JjM19fdE9kZG9vNUJmOFBJMlhtU3ljMVBrX1l4SG1aLVB6UU1yMVprdmg0Z0JzN2xJQ1E?oc=5",
+      "published_at": "2026-11-19T17:03+08:00",
+      "published_date": "2026-11-19",
       "status": "new",
       "verification": "single_source",
       "is_official": false,
       "source_count": 1,
       "direct_source_count": 0,
       "mention_count": 1,
-      "editorial_score": 43,
-      "selection_score": 50,
+      "editorial_score": 48,
+      "selection_score": 60,
       "summary_snippet": "",
       "merged_event_ids": [
-        "evt_1f3926f846d2c6"
+        "evt_50e1ee515797c6"
       ],
       "evidence": [
         {
-          "item_id": "src_a98b67cd56ecd5",
-          "title": "山姆卖爆始祖鸟，谁在为低价买单",
-          "source": "澎湃新闻",
-          "source_tier": "tier_2",
+          "item_id": "src_aec00bdb1aa589",
+          "title": "2026年户外运动时尚创新大会暨渠县区域公共品牌发布会举行",
+          "source": "人民网",
+          "source_tier": "tier_1",
           "is_official": false,
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kcFBqYTV1eDlMUXJKbDdnMEdndVc2QllVZVVvTzg0YTZ1eVBpTUtZZ21jMzBta2N5bEVvc3JCdkNxOTlKbDFEeWFuaGhJUzdPTzFmYllPMG1pVHdaX245Y2w0eFBBNlFBRFhYYl9IWVlkUQ?oc=5",
-          "published_at": "2026-11-20T17:57+08:00",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA3dDZLTGhYYmg2NWZCdDg5RHNxUEpxczYyNm5wdFBpUzZkS0xlTVRQMkhDZ0Q4S1JjM19fdE9kZG9vNUJmOFBJMlhtU3ljMVBrX1l4SG1aLVB6UU1yMVprdmg0Z0JzN2xJQ1E?oc=5",
+          "published_at": "2026-11-19T17:03+08:00",
           "summary": ""
         }
       ]
@@ -490,20 +480,30 @@
   ],
   "watchlist": [
     {
-      "title": "耐克本土系列后续铺货与价格执行",
+      "title": "耐克新战略在华落地节奏",
       "event_ids": [
-        "evt_4f3cc7348a0dc5"
+        "evt_ef8f5464135a6c",
+        "evt_32189024e51bd6"
       ],
       "product_ids": [],
-      "reason": "观察首批新品上市后渠道覆盖与价格是否调整。"
+      "reason": "观察耐克专业运动与中国市场目标是否转化为具体产品、渠道和儿童线动作。"
     },
     {
-      "title": "运动品牌双11后库存与折扣走势",
+      "title": "运动品牌双11后库存与折扣",
       "event_ids": [
         "evt_88a56d5c708b91"
       ],
       "product_ids": [],
-      "reason": "关注成交价环比下降后是否延续，及库存清理进度。"
+      "reason": "跟踪双11后运动品牌成交价与库存清理进度，判断折扣对消费决策的持续影响。"
+    },
+    {
+      "title": "户外与跑鞋增长持续性",
+      "event_ids": [
+        "evt_43eebc255d17d7",
+        "evt_480617a52108e7"
+      ],
+      "product_ids": [],
+      "reason": "观察亚玛芬、亚瑟士后续财报和区域数据，验证高端户外与跑鞋增长是否延续。"
     }
   ],
   "tracking": {
@@ -546,7 +546,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "耐克发布五年战略，明确专业运动为增长引擎，影响行业竞争方向。"
+        "editorial_reason": "耐克新五年战略明确专业运动为增长引擎，直接影响运动品牌竞争方向。"
       },
       {
         "event_id": "evt_32189024e51bd6",
@@ -586,7 +586,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "耐克近十年首个投资者日披露中国市场展望与五年目标，信息量集中。"
+        "editorial_reason": "近十年来首个投资者日披露中国市场展望与五年目标，补充战略落地细节。"
       },
       {
         "event_id": "evt_480617a52108e7",
@@ -626,7 +626,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "亚瑟士前九月全球净销售额增19.2%、大中华区增15.1%，跑鞋品类景气参考。"
+        "editorial_reason": "亚瑟士前九个月全球净销售额增19.2%、大中华区增15.1%，跑鞋赛道保持增长。"
       },
       {
         "event_id": "evt_2c7e1f30e34d71",
@@ -664,7 +664,7 @@
             "summary": ""
           }
         ],
-        "editorial_reason": "天猫双11榜单服务商战报，提供平台侧品牌竞争格局的间接观察。"
+        "editorial_reason": "属于电商与平台的重要本周新事件。"
       }
     ],
     "follow_up_selected": [],
@@ -870,19 +870,11 @@
     },
     {
       "type": "event",
-      "id": "evt_1f3926f846d2c6",
-      "title": "山姆卖爆始祖鸟，谁在为低价买单",
-      "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kcFBqYTV1eDlMUXJKbDdnMEdndVc2QllVZVVvTzg0YTZ1eVBpTUtZZ21jMzBta2N5bEVvc3JCdkNxOTlKbDFEeWFuaGhJUzdPTzFmYllPMG1pVHdaX245Y2w0eFBBNlFBRFhYYl9IWVlkUQ?oc=5",
-      "published_date": "2026-11-20"
-    },
-    {
-      "type": "event",
-      "id": "evt_4f3cc7348a0dc5",
-      "title": "耐克“本土系列”快速落地，首批新品售价599-1999元",
-      "source": "澎湃新闻",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE52R3JQTU5POUhISUNhRnpxM05iMVRYWlpyT0N1cGktWnFNV2tLYTJ0czduQWdLLWxKOGc2YjVYMlY2Wk5qVlRSQjRjOWFwRV9wN2d5eTlGWTVuVU4tLURKcw?oc=5",
-      "published_date": "2026-11-16"
+      "id": "evt_50e1ee515797c6",
+      "title": "2026年户外运动时尚创新大会暨渠县区域公共品牌发布会举行",
+      "source": "人民网",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA3dDZLTGhYYmg2NWZCdDg5RHNxUEpxczYyNm5wdFBpUzZkS0xlTVRQMkhDZ0Q4S1JjM19fdE9kZG9vNUJmOFBJMlhtU3ljMVBrX1l4SG1aLVB6UU1yMVprdmg0Z0JzN2xJQ1E?oc=5",
+      "published_date": "2026-11-19"
     },
     {
       "type": "event",
@@ -891,6 +883,14 @@
       "source": "观点网",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB2UXhVdEVZTVJwYXRPUGRtTVo4akFYcHdkdTZUZmNBNGZ6RTVNTno2R3FYTzE2VExjbklGYzBQV0kxVjNCR0k1VkN6TndwSVNIT2otUUszZHdxY2p6UnkxVldn?oc=5",
       "published_date": "2026-11-19"
+    },
+    {
+      "type": "event",
+      "id": "evt_4f3cc7348a0dc5",
+      "title": "耐克“本土系列”快速落地，首批新品售价599-1999元",
+      "source": "澎湃新闻",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE52R3JQTU5POUhISUNhRnpxM05iMVRYWlpyT0N1cGktWnFNV2tLYTJ0czduQWdLLWxKOGc2YjVYMlY2Wk5qVlRSQjRjOWFwRV9wN2d5eTlGWTVuVU4tLURKcw?oc=5",
+      "published_date": "2026-11-16"
     },
     {
       "type": "product",
